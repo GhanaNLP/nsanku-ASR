@@ -663,15 +663,6 @@ function setupTabs() {
   });
 }
 
-// ====== WER values (as decimals from YAML). CSV has decimals too. Display as percentages ======
-function normalizeData(data) {
-  return data.map(r => ({
-    ...r,
-    wer: r.wer !== null && r.wer !== undefined && r.wer <= 1 ? r.wer : r.wer !== null ? r.wer / 100 : null,
-    cer: r.cer !== null && r.cer !== undefined && r.cer <= 1 ? r.cer : r.cer !== null ? r.cer / 100 : null,
-  }));
-}
-
 // ====== Sortable table headers ======
 function setupSortableHeaders(tableId, dataExtractor, renderer) {
   document.querySelectorAll(`#${tableId} th[data-sort]`).forEach(th => {
@@ -696,7 +687,6 @@ function setupSortableHeaders(tableId, dataExtractor, renderer) {
 async function main() {
   try {
     let data = await loadAll();
-    data = normalizeData(data);
     ALL_DATA = data;
 
     document.getElementById('loading').style.display = 'none';
