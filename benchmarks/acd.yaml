@@ -1,0 +1,11 @@
+iso_639_3: acd
+num_samples: 300
+benchmarks:
+- model: google/gemini-3.1-flash-lite
+  model_url: https://ai.google.dev/models/gemini-3.1-flash-lite
+  params: API
+  wer: 0.0393
+  cer: 0.005
+  avg_seconds_per_sample: 2.63
+  errors: 0
+  source: evaluated

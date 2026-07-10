@@ -1,0 +1,302 @@
+sample_id,reference,hypothesis,wer,cer
+0,1 TIGISIM 1.,"wè nɛ̀ ti kɛ̀ sèn deɛ̀ yìgɛ̀ tɔnɔ̀
+wè nɛ̀ ti kɛ̀ sèn bupara dɛ̀ duwa",1.7778,0.4938
+1,Isarele tiina nabaara natɔga kam.,Izɛa ti nɛna bara na toga k,0.28,0.0153
+2,Ko zege Adam ne se ko vo ko yi Abaraham.,kuzere adanni sukuvukui Ibrahima,0.1,0.0144
+3,Pulim :-; :-.,n ŋáa bii báa.,4.0,0.36
+4,"Adam, Sɛfi, Enosi, Kenan, Mahalaleli, Jaredi, Enoki, Metusela, Lameke, Noah.","Adam, Setfi, Enosi, Kenan, Mahalaleli, Jeredi, Enoki, Metusela, Lameki, Noa.",0.04,0.0015
+5,"Noah bia bam déem ye Sɛm, de Ham, de Jafete mo.",Noa biɛ bɛnde ye sɛm de hãm di jɛ fɛti.,0.0661,0.0112
+6,"Jafete bia bam mo tento: Gomera, de Magoga, de Madayi, de Javan, de Tubal, de Meseka, dedaane Tirasi.",yefate biəba motonto gomira de magoga de madayi di javan di tubal de meseka de danitirasi,0.0309,0.0019
+7,"Gomera bia bam mo tento: Asekenazi, de Rifata, dedaane Togarama.","Gomire biyamotonto, Aseknazi, de rifata, dedane togarama.",0.07,0.0031
+8,"Javan bia bam mo tento: Elisa, de Tarasisi tiina bam, dedaane Kitim tiina bam, de Rodan tiina bam.",yaba mbiaba motonto Elisa detarasisi tinabam dedanikiti tinabam derodan tinabam,0.0525,0.0019
+9,"Ham bia bam mo tento: Kusi, de Ejipti, de Puti, dedaane Kanaan.",han biebamo ton to kusi de egypt de puti de dande kanna,0.0625,0.005
+10,"Kusi bia bam mo tento: Sebaa, de Havila, de Sabeta, de Raama, dedaane Sabeteka.",Kusɛ biɛ ba mɔtɔntɔ. Siba. De ha villa. De sabita. De rama. De dane sabita.,0.0663,0.0042
+11,Raama bia bam mo tento: Seba de Dedan.,Dama biya ma tunto. Siba didi dan.,0.125,0.0119
+12,Kusi bu wodwoŋi déem ye Nimrodi.,Kusebu dondonyo nimoro dondonyo.,0.1667,0.0266
+13,Nimrodi ma da yiga o ji babea logo kom ne.,Ni mi roo di ma da yiga o juba bia lo ko,0.09,0.0088
+14,"Ejipti bia bam mo tento: Ludi tiina bam, de Anam tiina bam, de Lehabi tiina bam, de Nafitu tiina bam, de Patirusi tiina bam, de Kasilu tiina bam, dedaane Kiriti tiina bam.","Egypt bia ba mɔ tɔn tɔ. Ludi tiina ba, de anan tiina ba, de lihabi tiina ba, de nafi tu tiina ba, de patii rusii tiina ba, de kasilo tiina ba, de daani kirti tiina ba.",0.0215,0.0012
+15,Kanaan bia bam mo tento: Sidon mo déem ye o bu-kwea.,"Kenan bɩ yaa mo ton to. Si dom moden ye, o bo kwiya.",0.0826,0.0085
+16,"Hiti tiina bam de ma woli da, de Jebusi tiina bam, de Amori tiina bam, de Giragasi tiina bam, de Hivi tiina bam, de Ariki tiina bam, de Sini tiina bam, de Aravadi tiina bam, de Zemari tiina bam, dedaane Hamafe tiina bam.",Hiti tinabam de ma wulira. Di jibusi tinabam. Di amori tinabam. Di giraga tinabam. Di hivi tinabam. Di areki tinabam. Di sini tinabam. Di aravadi tinabam. Di zamari tinabam. Di danihamafitinabam.,0.0195,0.001
+17,"Sɛm bia bam mo tento: Elam, de Asuri, de Arapazade, de Ludi, dedaane Aram.","Sɛn biɛ bɛ mo tonto, elam, de asuri, de arapaza de, de ludi, de dane aramu.",0.0459,0.0023
+18,"Aram bia bam mo tento: Yuzi, de Huli, de Getera, dedaane Meseka.",arambeabamtonte Yuzi Dehuli degetira dedane,0.0764,0.0056
+19,Arapazade déem loge Sela mo.,a rapazzadi de elosila,0.2,0.017
+20,Sela de ma lo Ebera.,Sila demalo i bira.,0.2,0.0133
+21,"Ebera de déem loge bia balei mo: Ba dedoa yere mo ye Pɛlega, kokuri to, ba na loge‑o maŋa kalo ne to mo dwia yam déem pɔɔre pɔɔre tega baŋa ne pa se dwi maama wora de laŋa ne.","yibèra dindènnlo, bibèllemmu, badedwa yirimmaye pèllèga, kukurutu, bananlo menga kaloneto, muduyeyanden porpòre tigabangani, passèdi mamawura delangani.",0.0256,0.0032
+22,O nyaane wom yere déem maa ye Jokitan.,O nya na wanyire de maye jòkèta.,0.1094,0.0122
+23,"Jokitan déem loge bia banto mo: Alimodadi, de Sɛlefa, de Hazaremava, de Jera, de Hadoram, de Yuzali, de Dikila, de Obal, de Abimayeli, de Seba, de Ofiri, de Havila, dedaane Jobaba.",yɔ kɛ ta deɛn lu gbiɛbɛn tɔmɔ alimɔ da di di salifa di hazarimava di gɛɛra di hadoram di yazuuli di dikila di obal di abimayeli di seba di ofiri di haviila di dani jobaba,0.0291,0.0021
+24,Nɔɔna banto maama déem mo ye Jokitan bia bam.,"Noana bantuma madem ye, joo ke tambiaba.",0.0988,0.0085
+25,"Sɛm, Arapazade, Sela Ebera, Pɛlega, Rewu, Serugi, Nahora, Tera, Abaram .",Sèm a rapazadi Sèla I bera Pèlaga Rèu Sèrugi Nahora Tèra abaram Abrahamu kòntu,0.12,0.0082
+26,Abaraham dwi dem.,Abraham dii,0.3333,0.0255
+27,Pulim :-.,Bàá yí.,2.0,0.2
+28,"Abaraham bia mo tento: Izaak, de Isameli.",Abraham biamutonto Isaac de Isamalu,0.1224,0.0068
+29,"Isameli dwi dem mo tento: Nebayofa mo déem ye Isameli bu-kwea, ko woli de Kedare, de Adibeeli, de Mibisam, de Misima, de Duma, de Massa, de Hadad, de Tema, de Jetura, de Nafisi, dedaane Kedema.","isemeledi detontuo. Nebayofa, Mudie isemeledi bukuya. Kuwoli kidari, di adibeli, di mibisiam, di mesima, di duma, demasa, dehadat, detema, dijjetura, denafisi, dedaane kedim.",0.0261,0.0017
+30,Banto maama mo déem ye Isameli bia bam.,"Ba n tuma m maamu dɛɛ yi, i sameli biɛ ba.",0.1719,0.0104
+31,"Abaraham ka-bia Ketura de déem na loge bia balo o pa‑o mo tento: Zimiran, de Jokisan, de Medan, de Midian, de Isibaka, dedaane Sua.","Abraham kebia kitura. Dide ne lugbia balo, opao montonto. Zamiran. Dijokisan. Dimidan. Dimidian. Deisibaka. Didasue.",0.0399,0.0021
+32,"Jokisan bia bam mo tento: Seba, de Dedan.","Yo kése am biɛɛba mɔ tɔn tɔ. Seba, dede da.",0.1406,0.0114
+33,"Midian bia bam mo tento: Efa, de Efere, de Hanoki, de Abida, de Elida.",mi de bi e ba mɔn tɔn tɔ e fa de e fe de hanoki de abida de ilida,0.0663,0.0042
+34,Banto maama déem ye Ketura dwi mo.,Bantuma ma den yi kitura dwi,0.1224,0.011
+35,"Abaraham bu Izaak bia bam mo tento: Esawu, dedaane Isarele.","Abraham bo Isaac, Bia bo Tonto, Isau, dedane Israel.",0.09,0.0063
+36,Esawu dwi dem.,"Isso, o dia.",0.3333,0.0661
+37,"Esawu bia bam mo tento: Elifaza, de Reweli, de Jewusi, de Jalam, de Kora.",issao bieba motonto ilifaza de rewilli de jeussi de jalam de koro,0.0459,0.0045
+38,"Elifaza bia bam mo tento: Teman, de Omara, de Zefo, de Gatam, de Kenazi.","Li faz a biabamutonto. Teman, Di omara, Di sefo, Di gatam, Di kanazi.",0.0561,0.0036
+39,Elifaza ka-bia Timina de déem loge Amaleki o pa‑o.,le faza kabiya timina Didɛɛn lo amɛliki opa,0.1111,0.0079
+40,"Reweli bia bam mo tento: Nahafi, de Zera, de Samma, de Miza.",ruwili biaba matonto nahafi de zera de sama de misa,0.0486,0.0036
+41,Dwia yalo na zoore Edom ne to.,du yelna zore et donne,0.1429,0.0189
+42,"Seyira bia bam mo tento: Lotan, de Sobal, de Zibeon, de Ana, de Dison, de Ezere, dedaane Disan.","Seire biaba mototo, lotan, disoba, disibion, de ana, dideson, de ezere, dedani disan.",0.037,0.0029
+43,Lotan bia bam mo tento: Hori dedaane Homam.,Lootan biaba mo tonto. Hori. De Dani Homa.,0.1094,0.0052
+44,Timina de déem maa ye Lotan nakɔ.,timina didemayé lotana,0.1224,0.0118
+45,"Sobal bia bam mo tento: Alivan, de Manahafa, de Ebal, de Sefo, dedaane Onam.","Soba biɛba montonto, alɛvan, dɛmana hafa, dɛbal, dɛsɛfo, dɛdanɛ ona.",0.0714,0.0046
+46,"Zibeon bia bam mo tento: Aya, dedaane Ana.",Zibio biɛba mɔ tonto aya dɔdani ana.,0.0938,0.0088
+47,Ana bu wom mo tento: Dison.,Anabwo montunto dison.,0.1389,0.01
+48,"Dison bia bam mo tento: Hemidan, de Esiban, de Iferan, dedaane Cheran.",di so biɛba motonto hemmi dan di isi ban di ifiran de dan chiran,0.0972,0.0041
+49,"Ezere bia bam mo tento: Bilihan, de Zaavan, dedaane Akan.",zere biẹ bámọ tọntọ bilihani dizanvạn dedana akan,0.09,0.0067
+50,"Disan de bia bam mo tento: Yuzi, dedaane Aran.","Dei san de biya ba mutuntu yuzi, de daani aran.",0.0988,0.0057
+51,Edom tiina pwa bam.,kɛ dontina pɔɔva,0.25,0.0356
+52,Pwa banto déem mo maŋe ba di Edom teo paare ye Isarele tiina ya ta ba jege pɛ se o taa nii ba baŋa ne: Beora bu Bela.,paa bon tudimma mang ba di edom tio paare ye Israel tina ya ta ba jigpe suuta niba bangani bio ra bu bella,0.0242,0.0032
+53,O teo kom yere déem mo ye Dinaaba.,otiyo kon yire de mi ye denaba,0.1094,0.0133
+54,"Bela na tege to, mo Zera bu Jobaba na nwoŋi Bozera to leiri o yuu ne o ji pɛ.","bɛɛ la na tele to, mu zero buu jo baba, no noe, bozira tuleli oyuni, o ye pe.",0.0471,0.0058
+55,"Jobaba de na tege to mo, Husam na nwoŋi Teman tiina bam teo kom to leiri o yuu ne o ji pɛ.",Yoo baba duna tere tomo. Hu səmna nuŋ ëtɛmantɛnɛ ba ntiyokunto leri oyuni oji pɛ.,0.0434,0.0045
+56,"Husam de maa na tege to, Bedad bu Hadad de ma leiri o yuu ne o ji pɛ.",Husein de ma nate gato. Bidat bu hadat. Deme lere oyuni ogipe.,0.0494,0.006
+57,"Wonto déem mo ke tigura de Midian tiina bam, ye o wane-ba Moaba teo kom ne.",Wuntidema kiterugra di mi diantiba. Ye owaniba. Mwabatiokun.,0.0586,0.0062
+58,O teo kom yere déem mo ye Avifa.,O ti o kwo yere de mo ye a vi fe,0.1094,0.0104
+59,"Hadad maa na tege to, Samila de ma leiri o yuu ne o ji pɛ.",Adadmana tetu samila dimaleri uyunu ji,0.0578,0.0074
+60,Wonto déem nwoŋi Masareka ne mo.,U n ti de no ma sarikana?,0.1944,0.0178
+61,"Samila na tege to, mo Sawuli leiri o yuu ne o ji pɛ.",samila natetuo mosawuli leri uyunu jip,0.071,0.0062
+62,Wonto déem nwoŋi Rehobofa teo kolo na wo Yuferata buga kam ni ne to mo.,"wuntɛdɛnɔnɛ, rehobofa, tiyokolo nawo yufirɛta bugɛkɛniintumu",0.0622,0.0064
+63,"Sawuli de na tege to, mo Akebora bu Baal-Hanan leiri o yuu ne o ji pɛ.",Sowuli dina tugato mo akibora bubaal hana lere oyuni oji pe,0.0586,0.0041
+64,"Baal-Hanan déem na tege to, mo Hadad leiri o yuu ne o ji pɛ.",bal hanan dena teto mohadat leri uyuni ojipe,0.0714,0.0057
+65,Wonto teo kom yere déem mo ye Pawu.,wuntɛ̀ tiyɔ̀ kɔnyiré dɛ̀ miyì pàwú,0.125,0.0219
+66,O kaane de yere déem mo ye Mehetabeli.,"O kani diire deem ye, me hi ta bɛlɛ.",0.125,0.0122
+67,Mehetabeli kwo mo déem ye Matiredi ye o kwo-nakwe yere déem ye Mezahabi.,meheta beliko modende metradi yi ukona kwi yidende mezahabi,0.071,0.0051
+68,Hadad de déem ma ba o te.,Hadada dema ba o,0.102,0.0185
+69,"Edom tiina sɔ-yuni tem déem ye: Timina, de Aliva, de Jefeti, de Oholibama, de Ela, de Pinon, de Kenazi, de Teman, de Mibizare, de Magadeli, dedaane Yiram.",de ntina so uniten de yie te mina. De aleeva. De je fiti. De oho libaama. De ela. De pinon. De kenazi. De temen. De me bizare. De magadeli. De daani yiram.,0.0247,0.0014
+70,1 TIGISIM 10.,Wenne tikisiim,0.3333,0.09
+71,Sɔɔl na gɛ o ŋwea tei to.,So nna ge ungwiya ti.,0.1429,0.037
+72,Samuwel :-.,tu,1.0,0.1224
+73,Filisi tiina bam déem kwaare jara dedaane Isarele tiina bam.,Filizitina bendem kwaara jira. Didaani isratina bendem.,0.1,0.0072
+74,Isarele jar-keira bam ma jage sae ye Filisi tiina bam pare-ba.,"Izra yera karaba magaresei, yi felisiti nabam parabam.",0.0909,0.0075
+75,Ba ma go Isarele tiina bam dedɛ Giliboa peo kom yuu ne.,Bama go israel tinabam dede. Gilibuapio kunyuni,0.0764,0.0059
+76,"Sɔɔl de o bia bam ma duri, ye Filisi tiina bam pɛ ba kwaga ba pu.",Sol de obia be madu. Yi fili sitina be ma pebe kuabo,0.0586,0.0078
+77,"Ba ma go Sɔɔl bia Jonatan, de Abinadaba, de Maliki-Sua.",Bama go sol bi a Jonathan de abina daba de Maliki suwa,0.1,0.0023
+78,Jara yam ma tiini ya peene Sɔɔl dedɛ.,yere ya maatini ya pini sol de,0.1094,0.0143
+79,O dona bam ma na‑o ye ba ta ba chena ba tɔ‑o pa ko ke‑o zonne.,"O duna ba ma na wo. Yi ba ta ba kina, ba to wo. Pa ko ke o zone.",0.043,0.0054
+80,"Sɔɔl ma ta de nɔn-doŋo wolo na zei o jara zela yam to o we, “Le n se-zɔɔ kom n ma n zɔ-ne n go.","So, matano ni dungo wolo. Na ze o jera zola ya nte o we. Lin se zo ku man zani, n go",0.0288,0.0054
+81,Amo ba lage se Filisi nɔn-yɔɔro tento yi amo yera ba zɔ-ne se ba mɔne-ne ba ke-ne chaveera.,"A moballa ga si filisi, non yoroton tuyi amo, yira, baswanne, sibamonen ni bakini chavira.",0.0494,0.0044
+82,"Nɔn-doŋo kom maa wo sɛ se o go‑o, foone na tiini de jege‑o to ŋwaane.","Ndɔn dɔn kɔ ma wosɛ se ogo, fɔn nɛ tinɛ de jegi o tɔnwan.",0.0578,0.0076
+83,"Konto baŋa ne, Sɔɔl ma vaŋe o tete se-zɔɔ kom o le.",konto bagnani solma vong te teresozom ole,0.0764,0.0102
+84,"O ma kwei-ko o moore o puga ne, ye o daare o to ko baŋa ne o te.",O ma kwek u umure opugeni. Ye odara otokobane ote.,0.0463,0.0057
+85,"Nɔn-doŋo kom na maane we Sɔɔl tege to, o de ma le o se-zɔɔ kom ye o to ko baŋa ne o te.",Nandun ko na ma ni wosol ti to o demali osizokum ye otukabangan otu.,0.0359,0.0064
+86,"Ko déem ke konto mo ye Sɔɔl de o bia batɔ bam, de o dwi tiina bam maama tɔge daane ba te.",Kudé ké kontoma i sol di obi aba toba di odi tinaba mama to dana ba.,0.0434,0.0055
+87,"Isarele tiina balo déem na zoore Jezerele bwolo kom ne to ma lɔre we Sɔɔl de o bia bam tege mo, ye Isarele jar-keira bam maama duri ba jage.","Israel tina balde nazore, Jesiri bolo koneto ma lare sol du biabana tagamoyi, yi Israel jer kereba mama durba jeri.",0.0333,0.0035
+88,Ba na nigi konto to mo ba duri ba lage jei ba daare ba teene dem.,Bɛ nɛ nni kɔntɔtɔ mʋ bɛ dʋrʋba laayi. Jɛba daarɛɛba tiini nɛ.,0.0625,0.01
+89,Filisi tiina bam ma vo ba zoore de wone.,feliciti nabam mavubazore donu,0.1111,0.0083
+90,"Tega na poore to, Filisi tiina bam ma jwoori jara kapworo kom ne se ba zane ba le jejegero twa bam yera ne.","Ti kana puruto filisiti na ba majoro, jara ka puro koni, subazane ba le jigejigro, ta ban yira ni.",0.0378,0.0033
+91,Ba ma na we Sɔɔl de o bia bam tege mo ba tigi Giliboa peo kom yuu ne.,ba maana o sol di o biɛban tigamo bɛ tii glibwa pio kun yuni,0.0494,0.0073
+92,"Ba na nɛ to, ba ma gwoni Sɔɔl yuu ba le, ye ba lɔɔre o jara zela yam na wo o yera ne to.","ba na ne tu, ba ma goni sol yu ba le ye ba lo re o jera zla yam na wo o yiran tu",0.0208,0.0034
+93,"Ba laam ma toŋe kwora se ka yi Filisi tiina teene dem maama we, ba di Sɔɔl.",Bala matunkura sikayi filisiti na tinedam mawawe badisolo.,0.0588,0.0052
+94,"Ba ma tɔɔle se ba dwi tiina maama ni taane dem konto, ye ba daare ba jege-de ba bore ba jwona yiga ne.",ba ma tole si we du tina ma ma ni tana deng konto yi ba dare ba jigede ba bure ba jona yigini,0.0302,0.0034
+95,"Ko ná ye Sɔɔl jara zela yam, ba kwei-ya ba ja zo ba tiŋi ba jwona diga kam ne mo.","Kunaa sol jala selaya, ba kweiya ba jabazobetingi ba juna digekan",0.04,0.006
+96,Ba ma daare ba kwei o yuu kom ba vo ba pale ba jwoni Dagon diga kam ne.,"Ba ma dare ba kwei, uyukun ba vuvua pale ba jona da gondo digakani.",0.034,0.005
+97,Nɔɔna balo maama déem na zoore Jabese Gilead ne to ma ni Filisi tiina bam na ke Sɔɔl tei maama to.,nwa na balma ma de na zo re ja bi si gili ya ne to ma ni fi li ti na ba na ki sol ti ma ma to,0.0499,0.0035
+98,Balo na tiini ba ye bembɛ ba wone to ma zaŋe ba vo ba pare Sɔɔl de o bia bam yera yam.,ba lene tene ba ebem beba wene to ma zang ba vu ba parsor di u biye ba yere ya,0.0351,0.0054
+99,"Ba ma ja-ya ba jwoori Jabese, ye ba daare ba kwei ba kwi sem ba suli tio-kamunu kodwoŋi kuri ne, Jabese teo wone.",ba ma jeya ba jore je bisi ye ba dare ba kwe ba kwisi ba sulutiyo ka munu ku don kuri ni jebi si tiyo woni,0.034,0.0032
+100,Ba ta ma di ba lwi ye ba vɔ ba nia da yarepɛ.,"Batama di, bɛ lui. Ye ba fɔ bɛ niɛ daa yɛ.",0.0592,0.0088
+101,Sɔɔl déem tega o na nwoŋi Baŋa Wɛ kwaga ne to ŋwaane mo.,"Soldèntra, onenno bangawe kwara ni tungwane.",0.0769,0.0119
+102,O wo sɛ se o toŋe o tɔge Baŋa Wɛ nia yam.,o se so tuo to banga weniye,0.0694,0.019
+103,O déem vei kaane wolo na wae o bwei chira to se o wane o nii o yiga.,o dam ve ka ni wolo na wai u boye Kirato se o wane u ni o yiga,0.034,0.0056
+104,O nam wo sɛ se o bwei Baŋa Wɛ se o bere‑o chwoŋa.,wɔna o seese o bwo banga wɛɛ se o berɛ wu chon,0.0651,0.0139
+105,Mo kokuri Baŋa Wɛ pɛ se Sɔɔl te.,Muku kuri. Banga wɛɛ pɛsɛ solt.,0.125,0.0156
+106,O ma daare o jwoŋi Isarele teo paare dem o jeŋa ne o kwei o pa Jesse bu David.,o ma daare o jong isira tio pare dem o jong ani o kwe o pa je sibu David,0.0249,0.0046
+107,1 TIGISIM 11.,wɛ n tɩgɩ sɩm po pɔra fʊgɛ rɛ dʊwa,1.0,0.22
+108,Isarele tiina kɔgɔ kom maama déem vei Heboron mo.,Isratina ko ko maama de ve hibrom,0.0988,0.01
+109,"Ba ma ta de David ba we, “Nii mo.",bama teri devi bawe nimu,0.1111,0.0145
+110,Debam maama dedaane nmo ye yera dedoa de jana dedoa mo.,Bɛ bɛɛma ma de daanɛ mu. Yɛɛ yira de dwa de jana de dwa mu.,0.1074,0.0072
+111,"Faŋa ye Sɔɔl ta ye debam maama pɛ to, nmo mo ye wolo na tɔge dé yiga pa se dé vei dé ke jara de dé dona to.","Fɛŋa-yi sooliri bama ma bɛɛto, mumu yɛ wulo na toka diiga, pasili veedɛɛ ke jara, dɛdɛ duna",0.0319,0.0058
+112,"Nmo Tu Baŋa Wɛ nam ya maŋe o ta de nmo o we, ‘Nmo mo wó ji a nɔɔna Isarele tiina bam yuu tu ye n nii ba baŋa ne ne nayero tei.","muttu banga wɛ nɛ ya mɔ tade mɔ wɛ. Mɔ mɔ wɛ ji, annɔna Israel tii na bɛ yutu, yɛ nni ba bangani, nɛ na yiriti.",0.0266,0.0042
+113,’ ”.,a biin wāa tuu,4.0,11.0
+114,"Konto to, Isarele nakwa bam maama déem jeeri Pɛ David tei ne Heboron ne mo.","Contour, izlana kwaba mama denge riper debeteni, Hebron numma.",0.0667,0.0075
+115,Baŋa Wɛ yiga ne mo David ke ni-sɛɛm de-ba.,da na we iganni mo David kini sende,0.0864,0.0125
+116,"Ba laam ma lwo nuga o yuu ne se o taa ye Isarele tiina bam maama pɛ, ne Baŋa Wɛ ya na tage de Samuwel we ko wó ke tei to.",mɛ la ma lɔn nuga u yuni se o ta ɛ israel tina ba mama pɛ nɛ bɛŋa wɛɛ yana ta ɛ. de samwɛɛl we ko woki te,0.0239,0.0039
+117,David wane o jwoŋi Jerusalem.,Dé vëtuani o jongo i Jerusalẹ.,0.2,0.0191
+118,Samuwel :-.,yɛɛ,1.0,0.1429
+119,Jebusi tiina déem mo zoore Jerusalem teo kom ne.,Bu sitina de ma zuur Jeruzalem ti ko ni.,0.1111,0.0092
+120,Teo kom yere dedwoŋi déem ye Jebusi mo.,Kio konyire de dondonyi Jebusi.,0.1094,0.0135
+121,David dedaane Isarele tiina jar-keira bam maama ma zaŋe ba vo Jerusalem se ba li teo kom.,de vide da ni Israel ti na ba n jere kaban mama ma zang ba vugiro zelem. Sivaliti yo ko,0.0657,0.0058
+122,"Jebusi tiina bam ma ta de David ba we, “Abam bá na chwoŋa á zo ywo-seeni.",Ye bu siti na bam ma ta di David ba we abam ba na chonga yazo yose ni,0.0391,0.0038
+123,"” De konto de, David wane Zion o di.",de kɔntre de vete wone zayɔ̃ o de,0.0781,0.0192
+124,Zion déem ye teo kom dam jeiga mo.,Zayon den ye ti okum danjeram.,0.1094,0.0148
+125,"Nɔɔna laam maa jege jei sem konto ba bwoi we, ‘David teo’.","Nɔnɔ lamma jige, jii sɔn kɔntɔ bɛ bɔwe devetio.",0.0833,0.0097
+126,"David ya tage o we, “Wolo ná tɔge jar-keira bam yiga o kwaare jara de Jebusi tiina bam, kotu wó ji ba yiga tu.",de wia ta o we wulna to yer kerben yiga o kwarra jara di je bu si tin ben ku tu wuji be yiga tu,0.033,0.004
+127,” Zeruya bu Joaba mo ye wolo na bobo o ja jara yam to.,"Zere ye bujuaba, moye wolo nabo bo o jajara yanto",0.0651,0.0026
+128,Mo kokuri wonto seene o ji jar-keira bam yiga tu.,"Muku kuri, wuntini oji, jara kere ba yiga",0.09,0.0097
+129,"David na di teo kom dam jeiga kam to, mo o lɛɛre o maŋe da o zoore ko wone.",David ne dit-il on quand dangirakanto ou malerou manganda ozo ko,0.0471,0.0109
+130,"Konto ŋwaane mo ba bwoŋi ko yere we, ‘David teo’.","Konton wana mo, babon ko yiri we David tii o.",0.07,0.0077
+131,O ma zege mɛ tega kam na suuri ka maŋe daane to o jwoori o lɔ teo kom o zege o kaage jeiga kam.,"O ma ze ge metga kan, no suri ka manda nu tu, u jori o lotio kom o ze ge, o ka ka jere kan.",0.033,0.0044
+132,Teo kom jei selo ta na daare to mo Joaba fɔge o lɔ.,"Kio kongo eslo, tanadar tumu jwaba foka olo.",0.0769,0.0111
+133,"David dam dem déem ma fɔge de puli de ke da, Paŋwa Tu Baŋa Wɛ wom na wo o tei ne to ŋwaane.","Dè wì dánn dín dé ma fɔ́y, dé pulí, dé kɛda, panwá tɔ́ bɛna wɛ wún na wɛ utɛnu tɔn wán.",0.0397,0.0074
+134,Bembɛ selo na woli Pɛ David to.,bembɛsɛlɛnɛ wulipɛɛ dɛvɛ,0.1429,0.0174
+135,Samuwel :-.,Mba nɛ ń ɡa ŋmɛ́.,5.0,0.2041
+136,Nɔɔna banto déem mo ye Pɛ David bembɛ sem yiga tiina.,no na bantu de mi pẽdevi bẽmbẽsi ngyẽtina,0.0909,0.0113
+137,"Ba ma tɔge de Isarele tiina bam maama ba zege David kwaga ne, pa se o laam ba o di paare tega kam maama baŋa ne, ne Baŋa Wɛ na maŋe o pwooli we, ko wó ke tei to.","Bama toore dii zere tiina bama ma, bazige David kwara ne, pase o laamba o dii paare, teka mama bangani, ne banga wena manga o polo wee, ko okete",0.0197,0.0025
+138,Bembɛ sem yera mo tento: Hakimoni tu Jasobema déem mo ye ‘Bembɛ setɔ sem’ yiga tu wom.,"Bɛmbɛɛsi iramatuntɔ, hakkimoni tu, gyasobima, dema ye, bɛmbɛɛsitasum yigatu.",0.0519,0.0055
+139,O déem jeeri nɔɔna bia yatɔ mo de jara.,"o de yɛɛri nɔne bieɛ tɔɔ, mu de jara",0.0741,0.0133
+140,O ma kwei o chichwei o ma go ba maama jara-keim bedwe baŋa ne.,"O makue o kiki, o mago ba ma ma ja ra kem, bide bangani.",0.0612,0.0068
+141,Wolo na saŋe wonto kwaga bembɛ setɔ sem wone to déem ye Ahohi tu Dodo bu Eleaza mo.,"Wulana sã Wontokwa, benbẽe to sã wone to den yie, ahohi, tu dodo, bu Eliaza.",0.037,0.0045
+142,"Dɛ dedwe Filisi tiina bam na gilimi Pasa-Damim ne jara ŋwaane to, Eleaza wo David tei ne mo.",dede. Felicitina baam na glimi. Pasa da meme ne jarawara to. Eliaza u debi teenu.,0.0494,0.0046
+143,Jei sem konto ne nɔɔna dugi chaara mo ba kara ne.,yɛɛ sɛn ko tɔnɛ nɔ na duu kyɛɛramu ba karani,0.0826,0.0118
+144,Dáane mo Isarele jar-keira bam tutwoni ba duri se ba lu Filisi tiina bam jeŋa ne.,Dan mu Israel jerereba tutoni badiri sibalu filisitina ban jingana,0.0625,0.0049
+145,David de Eleaza ma zege kara kam tetare ne ba kwaane ba ke jara yam ka ŋwaane.,"Devide Liasa, ma zi kara kan te tan ni, ba kwani, ba ke jara yam, kan wani.",0.0381,0.0046
+146,Ba ma go Filisi tiina bam dedɛ.,Bama go furi seti na bandi dɛ.,0.1429,0.0104
+147,Baŋa Wɛ déem ma pa se Isarele tiina bam di wɔnɔ dedɛ.,banga we de ma pasi isila ti nabe ndi wono de,0.0764,0.0101
+148,"Dɛ dedwe mo bembɛ fintɔ sem wone setɔ déem vei David tei, o na seigi Adulam peo bɔɔne wone to.",de de mʊ bɛ bɛ fɪtʊ sɛm wʊnɛsɛ tɔ dɛɛvɛ dɛvɪtɛ wʊnɛsɛrɛ adʊ lam pʊyɔ bɔɔnʊ wʊnɛtɔ,0.05,0.0069
+149,Filisi tiina jar-keira kɔgɔ kodwoŋi ya tu ba tigisi Refayim bwolo kom ne.,Felicitina jerekerako dune ya tu bette se refer yan bolo koni.,0.0651,0.0075
+150,Ba kɔgɔ kodwoŋi de ya jwoŋi Bɛtelehem teo kom mo ba wora.,bakoko ko don di yajon i Betlehem ti okumo baura,0.0833,0.0079
+151,Konto maama dedaane David ya wo o peo kom dalem jei sem ne mo.,kɔntɔma ma dɛ daani devi yawoo piɔkɔm daloŋ ji sinu,0.0714,0.0078
+152,"David boboŋa ma tiini ya ja o tete teo kom ye o ta o we, “Wɔ mo wó zaŋe o vo Bɛtelehem se o mɔ na vole delo na tigi teo kom manchwoŋo ni ne to wone o ja o ba o pa-ne se a nyɔ?",David vo bɔŋa ma tina ya ja o tetio koŋ ye o ta o we. Wo mo zãŋ vo Bethlehem se o mana vo le dolo. Ne tetio koŋ maŋ chogo nina to wone. O jaba o pane se a nyu.,0.0123,0.0019
+153,"” Bembɛ setɔ sem konto ma lɔɔre ba tɔge Filisi tiina kɔgɔ kom wone ba vo ba yi vole dem ba mɔ na bam, ye ba jwoori ba ja-ba ba ba ba pa David.","Bimbe se to sum, kuntumma loori baa toye, filisitina kogo kwo bo, bo vu ba yi volle de, ba muna ba. Yi ba jore ba jaba ba bapa devit.",0.0239,0.0031
+154,"Ba na jwoori to, o ma ve se o nyɔ na bam konto.","bɛna joroto, o mave so nyono naba nkun",0.071,0.011
+155,O ma lwo-ba o yage tega ne se ba taa ye pɛɛre ba pa Baŋa Wɛ.,o mal lu bɔ o yire tɛɛni saba taare peere bapa banga wɛ,0.0547,0.0081
+156,"O ma ta o we, “Amo Tu Wɛ, amo bá wane a nyɔ na banto!","Omata Owe, Am Tuwe, Amabawano nyo na banto.",0.0578,0.0057
+157,"A ná nyɔge-ba, ko nye de a nyɔge nɔɔna banto jana mo, ba na sɛ se ba ga ba ŋwea se ba ma mɔ na banto to ŋwaane.",Annyoroba konyere annyoro nona bantu janamu bana seba ga ba nguya seba ma mo na bantu tu ngwani.,0.0306,0.0041
+158,” O ma ve se o nyɔ-ba.,O ma vi sonyo.,0.1111,0.0296
+159,Bembɛ setɔ sento déem na toŋe tei to mo konto.,Bimbé 602D na 32 mukuntu,0.09,0.0201
+160,Joaba nyaane Abisayi de déem mo ye ‘Bembɛ fintɔ kom’ yiga tu.,Yuaba nyane a bisa ye de de moye ben be fin toke. Yi ga tu,0.0903,0.005
+161,O ma kwei o chichwei o jeeri nɔɔna bia yatɔ jara wone o go.,"U ma kpe o tu chi, o yire none bi ya to, jara wone o",0.051,0.0094
+162,Konto ŋwaane o ma na yere bembɛ setɔ sem yiga ne.,konton wani o mana yiribe besetasin yiga,0.0744,0.0083
+163,"Wonto déem mo tiini o na yere o dwoni bembɛ fintɔ kom maama, ye o ji ba yiga tu.","Wontu de ma tini, o nayeri, o doni be mbe fin toko mama. Yi o jibe yi gata.",0.0471,0.0039
+164,O nam wo woli bembɛ setɔ sem wone.,O nan uwulibɛn be sε tuasan uwu.,0.1094,0.0237
+165,Jehoyada bu Benaya de déem ye jar-keiru mo na ye bembea.,"Gehoya da, bube naya, deden yi, gyerkermu, na ye be mbi.",0.0826,0.0062
+166,"O nwoŋi Kabezele mo, ye o toŋe baare dedɛ.",nnoa kabele yé o ton e bar de,0.1111,0.0137
+167,Benaya déem go Moaba bembɛ selei.,Bin na yadingo muaba bin besle.,0.1667,0.0151
+168,O ta ma tu gwoŋo wone o go nywoŋo dɛ dedwe waaro na tiini te wora maŋa kalo to.,o tu ma tu gong oni o go nyongo de de ware na tini toore manga kan to,0.0332,0.0061
+169,Benaya ta go Ejipti nɔn-wagele dedwoŋi mo.,"bɛ̀ nà yà, tàgò Ìgìptì nɔ̀ wàgìlì, dɛ̀ dɔ̀ŋò mò",0.2041,0.0156
+170,"Nɔɔno wom dedɔrem déem ye jatwogo de noa ni maŋem kuni benu, ye o zei chichwei na maŋe de beiŋa to mo.","No no won de daranden yiri jɛ tɔgɔ de nwa ni, mangɛ kunii bi nu, yi o ze chichwi na mangɛ bɛŋa",0.0434,0.0054
+171,Ko daare ye Benaya jege da-lɔŋɔ.,"kudare, yebannaya jegedalo",0.1667,0.0112
+172,"O ma vo o vere chichwei dem Ejipti tu wom jeŋa ne, o jwoori o ma-de o zɔ‑o o go.","O ma vo, o vre chi chiri i gi tuu ngyana o jore o ma o zoo o",0.03,0.0074
+173,Jehoyada bu Benaya déem na toŋe tei to mo konto.,yɛ hoya dabou binaya dena tungtetumu kuntum,0.1,0.0104
+174,O de ma na yere bembɛ setɔ sem yiga ne.,wo dam ma na yire be mbɛrɛ tosi yigina,0.08,0.0131
+175,"O ma tiini o na yere bembɛ fintɔ kom wone, ye o wo tɔge o woli bembɛ setɔ sem wone.",O matino na yere bembe finto konwone. Yie o tɔy o wolibembe sotaso nwone.,0.0375,0.0039
+176,David ma pa se Benaya ji balo na yere‑o to yiga tu.,deve ma pasibi na ye ji balna yiro tu igi,0.0694,0.0097
+177,Bembɛ sem sedaara yera mo tento: Joaba nyaane Asaheli.,Be ba se sa daara yira mu tun to. Juwaba nyani asahile.,0.1481,0.0067
+178,Bɛtelehem tu Dodo bu Elihanan.,vɛ̀ tì lə̀ɛ̃ tʊ̀ dɔ̀ dɔ̀ bʊ̀ ɛ̀ lɛ̀ hã̀nà,0.4,0.024
+179,Harodi tu Samofa.,Harudi tu samon,0.2222,0.0153
+180,Peloni tu Heleza.,kilo ni tu heleso,0.3333,0.0204
+181,Tekoa tu Ikesa bu Yira.,Tekwa tu ekisabu yira,0.12,0.0093
+182,Anatofe tu Abizeri.,ana tofi tu abizeere,0.3333,0.0117
+183,Husaa tu Sibekayi.,husa tu sebikay,0.2222,0.0178
+184,Ahohi tu Yilayi.,"Aho hitu, Yila",0.3333,0.0118
+185,Netofa tu Maharayi.,nitofa tu mmaharayi,0.2222,0.0078
+186,Netofa tu Baana bu Heledi.,ni to fa tu ba na bu he li de,0.32,0.0091
+187,"Ribayi bu Ifayi, na nwoŋi Gibea teo Benjamin laŋa kam ne to.",re ba yi tu ifayi na no gibia ti o ben ganam laa kan tu,0.0903,0.0068
+188,Pirafon tu Benaya.,pira fontu binaya,0.3333,0.0044
+189,Hurayi na nwoŋi Gaasa bu-nwaro tem seeni to.,Kora inonwe gasa. Bunnarete se no,0.125,0.0114
+190,Arabafa tu Abiyeli.,"Araba fatu, abiele",0.3333,0.0078
+191,Baharum tu Azimavefa.,baharum tu azimavifa,0.1111,0.0031
+192,Saalebon tu Eliaba.,Salibon tu liya,0.2222,0.0195
+193,Gizon tu Hasem bia.,Gizon tu husen bi,0.125,0.0133
+194,Harara tu Sagea bu Jonatan.,Harare tu sagya bugyonata.,0.16,0.0103
+195,Harara tu Sachare bu Ahiyam.,Hada tu sakare bu ahiya.,0.12,0.0113
+196,Yuri bu Elifala.,yuribu ilifala,0.3333,0.0059
+197,Mekerafa tu Hefera.,Mekirafa tu hifa.,0.2222,0.0156
+198,Peloni tu Ahija.,Peloni tu ahija.,0.0,0.0
+199,Kamele tu Hezero.,Kalmele tu he ziro,0.3333,0.0102
+200,Ezibayi bu Naarayi.,Esibayibu nare,0.3333,0.0195
+201,Natan nyaane Joweli.,Netanyani Joel,0.3333,0.0208
+202,Hagiri bu Mibaha.,Hagiri bu miba,0.1111,0.0102
+203,Amon tu Zeleki.,Amɔnbu zelliki.,0.3333,0.0278
+204,Beerofa tu Naharayi.,bɛro fɛ tu na harai,0.4444,0.0138
+205,Wonto déem zei Zeruya bu Joaba jara zela yam mo.,undudenze zero yabu juaba jarazilaya,0.1,0.009
+206,Ifiri tu Yira.,efiri tuo yiri,0.3333,0.0248
+207,Ifiri tu Gareba.,efiriga tugari,0.3333,0.0355
+208,Hiti tu Yuria.,82 urea,0.3333,0.0661
+209,Ahalayi bu Zabadi.,"A halai bu, zaba di",0.4444,0.0044
+210,Ruben dwi tu Siza bu Adina.,Rubin Dui Tu Siza Bu Adina,0.0556,0.0045
+211,"Wonto déem ye Ruben dwi tiina yiga tu, ye o jege kwaga nɔɔna fintɔ.",Wontedeng yi rubin di tina yigatu. I oje kwarono na finto.,0.0714,0.0063
+212,Maaka bu Hanan.,ma kabu hana,0.3333,0.0139
+213,Mitini tu Josafate.,mitini bu josa fa ti,0.4444,0.0078
+214,Aseterafa tu Yuzia.,a sitirafa tu yuzi,0.3333,0.0117
+215,"Arowa tu Hotam bia balei, Sama dedaane Jeyeli.","Ero wa tu ho tan bia be le, samade dani je yeli.",0.1562,0.0044
+216,"Tizi tu Jedayeli bu Simiri, de o nyaane Joha.",Tizi tu jida yeli buse miri de o nyane jo,0.0741,0.0041
+217,Mahavi tu Eleli.,ma ha vi tu ile le,0.5556,0.0118
+218,"Elinaam bia balei, Jeribayi dedaane Josavia.",ele nan biere bele Gerbai de dani Josavia,0.1944,0.0095
+219,Moaba tu Itama.,moa betu itam,0.3333,0.0139
+220,"Eleli, de Obeda, de Mezoba tu Jaaseli.","Lele di Obada, di mizoba tu, ja seli.",0.1429,0.0083
+221,1 TIGISIM 12.,Wunɛ ti kɛsɛm.,0.3333,0.09
+222,David kwaga nɔɔna na wo Zikalag ne to.,David kwa nona nawo Zekalaknet,0.1094,0.0078
+223,"David déem vei o zoore Zikalag ne, Kisi bu Sɔɔl na zeili‑o o tei ne to ŋwaane.","David Denve ozora zekala ne, kise bu sol, ne zelu u ten o to nwaani.",0.045,0.0055
+224,"O na zoore da konto to, mo babɛ sedwonna na yei jara keim chekke to tu ba woli‑o se o ke jara yam.","O na sur da kontoto, mo babe se dona ne ye jere kene cheke totu ba wolu wo se oke jera ya.",0.034,0.0034
+225,Babɛ sem déem jege tɛ mo.,Bɛ bɛsɛn dɛn jɛgɛ tɛm.,0.1667,0.0249
+226,Ba maa yei chena tam de napana dolem chekke jazem de jagwia maama.,Bama ye chinatande na panadolan cheke jase ndi jeguye ma.,0.0769,0.0061
+227,Ba maa ye Benjamin dwi tu Sɔɔl chorro mo.,bɛ ma Benjamin bi tu sol kyoro,0.0864,0.0127
+228,Ba yiga tu wom mo ye Ahiyezera.,"Bɛ yi ga tuom ye, a hiɛ zɛra.",0.1633,0.0122
+229,O nyaane Joasa de maa wo o kwaga ne.,gnyani jwasa dimao okwaga,0.1111,0.0123
+230,Banto balei kwo maa ye Gibea tu Semaa.,Bantiwelle ko ma ye gibya tu sema.,0.0938,0.01
+231,"Ba nɔɔna bam mo ye: Azimavefa bia Jezeli, de Peleti, ko woli de Beraka, de Anatofe tu Jehu, de Gibeon tu Isamaya.",ba nno na ba mwo ye azima vifa bia jesele di peleti ku wole biraka de ana tofi tu jehu di gebuan tu isama,0.0351,0.0024
+232,Wonto déem ye bembea mo jar-keira fintɔ bam wone ye o ta ye ba yiga tu.,wontwe den yi ben bia mu jere kura fin toba wuni yi o tayi ba yi,0.0625,0.0075
+233,Babɛ sedwonna de déem nwoŋi Gad dwi dem wone ba da ba woli David kɔgɔ kom wone.,"Ma bɛ sɔ dɔɔna de den nɔɛ, ga dwiide wɛni, ba daba baawɛli David kɔɔ ko wɛni.",0.0554,0.0062
+234,Ba ma vo o tei kagoa yuu ne.,Bama vutê kagwê yune,0.125,0.0175
+235,Ba de déem ye bembɛ selo na yei jara keim chekke to mo.,"Bade den ye, ben beselo, neye jerakhen cheke to.",0.0651,0.0074
+236,Ba maa jege jara nantane de chichwoa.,"Bamma jigig yarana tanne, di kuchwa",0.1429,0.0133
+237,"Ba maa jege foone ne nywoŋo tei, ye ba tiini ba wara ne feira na duri tei peero yuu ne to.","Bɛ ma jiga foni ni nyɔni ti. Yibe tina ba wara ni fɛra na durtɛ, piri yuni ti",0.0408,0.0061
+238,Ba yiga tu wom mo ye Ezere.,Bɛ gɛ tɔ wumo ye izere.,0.1224,0.02
+239,"O kwaga nɔɔna maa ye: Obadia, de Eliabi, de Misimana, de Jeremia, de Atayi, de Eleli, de Johanan, de Elizabad, de Jeremia, de Makabanayi.",O kwano na maye. O Badia. De Iliabi. De Misi mana. De Jeremiya. De Atayi. De Ileli. De Yohanan. De Elizabeth. De Jeremiya. De Makabana.,0.0243,0.0014
+240,Babɛ sento na ye Gad tiina to déem ye jar-keira yiga tiina mo.,ba besen to nae ganti na to de ja kreetina,0.071,0.0082
+241,Ba dedoa wó wane nɔɔna bi o zeili jara wone.,Bara dua u wane noona bi u zele jara wane,0.07,0.0095
+242,Ba wone wolo dam na daga to wae nɔɔna moro o zeila.,"Ba woni wolo dam na daka, to wayi, nona muro, o zela.",0.0417,0.0053
+243,Babɛ sem konto déem mo bɛ Jɔdan buga kam maŋa kalo ka ni na pɛɛle bene dem boboa chana kam ne to.,"ba bɛ son kontuo, de mo bɛ, joran bua kan, ma nga kalu, kanii na pelle, bene den bo bua kyana kaan tu,",0.0393,0.0039
+244,Ba ma vo ba zeili nɔɔna balo maama na zoore bubɛ dem bwollu tem wɛ-puli de wɛ-zoore seeni to pa se ba duri ba viiri.,"Bama vuvazeli, nwa na balema na zore. Buba din bwolotem, we puli di we zori senitô, pasibè durubè viri.",0.0384,0.0034
+245,Baara badwonna na ye Benjamin dwi tiina de Judah dwi tiina to déem vei David tei o dam jei sem ne.,"bara bedona nayi, Benjamin di tina, di juda di tina to, denve devete odange senne.",0.0431,0.0037
+246,"David ma zaŋe o jeeri-ba ye o ta de-ba o we, “Á veiŋa kam ná ye zaane veiŋa mo á beene se á woli-ne, amo de nam sɛ se dé maama woli daane.",David ma zanga ujeri ba yoo o tade ba o wi avenka na i zani venga mo abinasi awulni amo de nase sede mama wul dani,0.0239,0.0038
+247,"Á nam ná tu se á yeigi-ne mo á pa a dona bam, se debam nabaara Wɛ wom taa yei ko ni ne se o daare o waare abam.",Anna na tu se aya nmo appa adunaba. Sere ba na baara waawun ta yi ku niini. Se o daare o waare aba.,0.0262,0.0041
+248,Kokuri to a wo ke kolokolo a chɔge.,Kokoreto a kye klokolo acho.,0.1094,0.0123
+249,"Wɛ Jworo ma ba Amasayi wolo na ye ba jar-keira fintɔ kom yiga tu to baŋa ne, ye o ta o we.",wɛ̀ɛ yoroma ba ama saai wolo naye ba jara kɛrɛ finto ko yirɛtu tu banganɛ yɛɛ ota o,0.0393,0.0044
+250,“David!,Deiví,1.0,0.16
+251,Debam ye nmo nɔɔna mo.,De ban yee mon no na,0.24,0.0208
+252,Jesse bu!,yee see,0.5,0.0816
+253,Dé wo n kwaga ne.,du kora,0.2,0.0625
+254,Yazura taa wo n tei ne.,yuzuro tawo ntenyi,0.1667,0.0208
+255,se ko kɛ ko yi balo de.,se ko ko ke kookiyi baloe,0.0816,0.0273
+256,na woli‑m to.,na wolim to,0.0,0.0
+257,Nmo Tu Wɛ wom wó zeini‑m.,nu tu wɛ won wu zɛnu,0.1111,0.0247
+258,David ma sɛ o jwoŋi-ba ye o daare o pa se ba ji o jar-keira bam yiga tiina.,dë vït ma se o jomba yii o dare o pasvaji o jarkaraban yïgëtina,0.0432,0.006
+259,Baara badwonna de déem nwoŋi Manasɛ dwi dem wone ba da ba woli David kɔgɔ kom wone maŋa kalo o na tɔge de Filisi tiina bam se ba kwaare jara de Sɔɔl to.,ba na ba du na di de m nu ni ma na se di da wani ba da ba woli David ko ku wani ma nga kalo ona to de filisi ti na bam se ba kwa ri ya de sol,0.0275,0.0027
+260,"Ko nam na ke tei to, David de o nɔɔna bam wo woli Filisi tiina bam, foone na jaane ba yiga tiina bam to ŋwaane.","Konnana kitte tu, DVD onno na bam. Wu wole felisiti na bam. Fone na jaani ba yige ti na ban tong wan.",0.0352,0.0035
+261,Ba déem boŋe we David wó wane o lɔ ba kwaga ne o jwoori Pɛ Sɔɔl tei o daare-ba pa se ba ga ba ŋwea mo.,"Ba deam bon wui, de vitu wani, o loba kwarani, o jori pesol te o darba pasi ba gaban wiam.",0.0311,0.0046
+262,Mo kokuri ba jeini tega ne ba bwɛ daane ye ba pa David pwɛ o tete de-ba.,"mukukuri, bajene tengani, baboyedani, yibapadibit, pwe, otete",0.0588,0.0069
+263,"Maŋa kalo David na maa jwoori Zikalag to, Manasɛ nɔɔna balo na dɛ ba tɔge ded‑o to mo ye: Adina, de Jozabadi, de Jedayeli, de Mikayeli, de Jozabadi, de Elihu, de Ziletayi.","Man a kal nde vit na ma jore zekalatto. Man a se nuna balo na de ba togododo tumoyye. Adina, di Jozabadi, di Jeda yeli, di Mikayeli, di Jozabadi, di Ilihu, di Zelitai.",0.0273,0.0017
+264,Nɔɔna bam konto dedoa dedoa tei Manasɛ dwi jar-keira moro mo.,"No à van ko tora dora, t'à man sa di jare kera muro.",0.1074,0.01
+265,"Ba déem yeini ba woli David pa se o wane venverena balo na ke jara de-ba to, bɛŋwaane ba déem ye babɛ mo chekke ye ba kwori ba ye o jar-keira bam yiga tiina.","Badé yini bè wolí dévít pasé owani venvirena balo. Na ke jara dé bator, bènwani, badé yi bènmu chiki, yi ba kuer ba yi o jar kerben yiga tina.",0.0225,0.0026
+266,Dɛ maama wone nɔɔna déem yeini ba tui ba woli David kɔgɔ kom wone.,De mama wunɛ nuna deɛ yɛnni bɛ tuɛ bɛ wulɛ de bɛ ko kɔn wunɛ.,0.0765,0.0096
+267,"Konto déem ma pa se o na jar-keira kɔgɔ dedɛ, nenɛɛne Wɛ tete jar-keira to.","kontu de ma pase, on ageri kire korde de, ni nani wate te jera kire",0.0622,0.0071
+268,David kwaga nɔɔna na wo Heboron ne to.,David kwa nona na o Hebron to,0.0781,0.0089
+269,"David déem na wo Heboron ne to, baara balo na yei jara keim to mo tu ba woli o jar-keira kɔgɔ kom wone, se ba pa o leiri Sɔɔl yuu ne o di paare dem, ne Baŋa Wɛ na maŋe o pwooli tei to.",Debidena o Hibron nɛ to bara balo nɛ ye jɛrɛ kɛn to ma tuuba wali o jɛrɛ kɔ kɔn wuni. Sɛba pa ulɛri sol yuni o dipaare dem ne banga wena maŋa o poliiti,0.0181,0.0026
+270,Nɔɔna bam ni mo tento: Judah dwi dem wone: Baara morro teredo de bia nana .,"Non benni mɔ tɔntɔn. Duda didɛn wone. Bara mɔrɔtɛrɛ dɔ, dibie n nane.",0.0622,0.0077
+271,Banto déem zei nantane de chichwoa mo de jara zela dedɛ.,Bantu dɛn zena ntanɛ. Di tu cɛwɔ di jarasɛla dɛ.,0.0909,0.0099
+272,Simeon dwi dem wone: Jar-keira morro terepɛ de bi .,Simion didon wune. Jeerɛ kera mu terɛ pe dibi.,0.1111,0.0105
+273,Banto ye babɛ chekke.,Banti ba be che,0.25,0.0242
+274,Levi dwi dem wone: Baara morro tena de bia yaredo .,live dudi wone baram rutunadi biyar do,0.09,0.0092
+275,"Aron dwi tu Jehoyada de woli da, de o nɔɔna morro tetɔ de bia yarepɛ .",A rondi tu ye hoya da di wulda de onona muroti to di biya yarp.,0.0622,0.0053
+276,Zadoki de maa wora.,"Zadoke, dema wure.",0.25,0.0178
+277,"O déem ye nɔn-doŋo kolo na ye bembea to mo, ye dedɛɛra finlei-balei wo o tei ne, ba na ye o chorro to.","O den yii non dunoo kolo. Na yii, ben biia tumo. Yii de dere fin lebe le, wii o teni. Ba na yii o choro to.",0.0359,0.0052
+278,Benjamin dwi dem wone: Baara morro tetɔ .,"bɛn yɛmɛn dii dɛn wonee, baara mɔɔtu to",0.1429,0.0137
+279,Sɔɔl tete dwi dem mo konto.,"So, te ti di dem ko",0.1667,0.0227
+280,Ba dedɛ déem sɛ ba zege Sɔɔl de o diga kam kwaga ne ye ba wo yage.,Badi de dense basiga sol de u diga kam kuani yiba u ya,0.0484,0.0083
+281,Efrayim dwi dem wone: Baara morro finlei de bia nana .,I freen di din wone baran murfein le dibie nana.,0.09,0.0096
+282,Banto déem tiini ba jege yere mo ba sɔ-yuni tem wone.,Bantudeen tinne ba jige yiremo. Ba so yunte wuni.,0.0744,0.0071
+283,Manasɛ dwi chichworo kom wone: Baara morro fuga-nana .,"Manase di tu coro kon wone, bara moro fuge nana.",0.1406,0.0059
+284,Ba chorro tem déem kuri-ba dedoa dedoa se ba yɔɔre ba ba ba woli David se o ji pɛ.,"Be chore ten den kurba, de dwa de dwa, se ba yo ra ba ba woli David, suji pe.",0.0416,0.0042
+285,"Isakara dwi dem wone: Dedɛɛra bia yalei , de ba chorro telo maama na wo ba kwaga nɔɔna to.","a sakara dwi da wone, de dera biye le, de ba choro, te la mama na woba kwara, no na",0.0494,0.0034
+286,Dedɛɛra bam konto yei kolo na jege ko ke kanto maŋa kam ne to pa se ba lɔre chwoŋa kalo Isarele tiina na jege se ba tɔge to.,Didèra ban conto yé konna jè ko ke kantumaga kanne to passe balware chungo kalo. Izera tina na jè gèsè batogo,0.0293,0.0037
+287,Zebulun dwi dem wone: Jar-keira morro finnu .,"Zɛɛ bɔlɔn dii dɛn wone, gɛrɛ kɛra mɔrɔ finnu.",0.1429,0.0122
+288,Ba déem yei jara keim chekke mo.,Bɛ dɛn ye jerɛ kɛn cɛ kɛmɛ,0.1429,0.024
+289,Ba maa jege jara zela dwi dwi se ba ma woli David jara wone.,"Bama, ji gya la zula didi. Sibama, wuli devi, jya la wuli.",0.0714,0.008
+290,Ba déem yɔɔre ba ke ba chega ded‑o.,"Bedeen yoor ba ke, ba chiga, de",0.0781,0.0133
+291,"Nafitali dwi dem wone: Jar-keira yiga tiina moro , ko woli de ba jar-keira morro fintɔ-terepɛ na zeeri jara nantane de chichwoa to.",na fi tali di don wuni jer ker yiga tina moro ku wolde ba jer kera moro finto trepe na zere jeranan tane di ti chuatu,0.0475,0.0025
+292,Dan dwi dem wone: Jar-keira morro finlei-nana de bia yaredo .,"Dan didi nuuni, jere karamure fin lenana di bi erdo.",0.09,0.0086
+293,Asere dwi dem wone: Jar-keira morro finna .,Asɛri dii de wone jere kere moro fin na.,0.1633,0.0083
+294,Banto yei jara keim chekke.,Bantii yaga ken ke,0.2,0.0227
+295,Isarele dwia yalo déem na zoore Jɔdan buga kam wɛ-puli seeni to.,Is da dɔɛ yɛlɔ? De na zor jɔ dɔm bue kɛ̃ wɛ pulu seenu tɔ.,0.0972,0.0088
+296,"Ruben dwi dem, de Gad dwi dem, ko woli de Manasɛ dwi chichworo kom mo konto: Jar-keira morro bi de finlei .","Rubin dim, dega dim, ku wel de mana se di cu curu komu konto. Jerkera moro bi fi le.",0.0431,0.0043
+297,Ba de déem jege jara zela dwi dwi.,Badi de n jiri jara la de,0.0938,0.0192
+298,Nɔɔna bam konto maama déem ye jar-keira balo na ti ba yiga se ba kwaare jara yam to mo.,Noona banko tumama den yige rekere balo ne tibeyege saba kwara jara yam tuma,0.0443,0.0051
+299,"Ba na tu David tei Heboron ne to, ba boboŋa ya jaane se ba pa o di paare Isarele teo kom maama baŋa ne mo.",Bane tu de vi te hebro ne to baba bonga ya janis ba pa u di par isr ti ko ma ma bangane,0.0304,0.0042

@@ -1,0 +1,27 @@
+# nsanku-ASR — H200 GPU setup
+# Install: pip install -r scripts/requirements.txt
+
+# HF model loading + ASR
+torch>=2.4.0
+transformers>=4.46.0
+accelerate>=1.0.0
+datasets>=3.0.0
+soundfile>=0.12.0
+
+# Audio processing
+torchaudio>=2.4.0
+
+# Metrics
+jiwer>=3.0.0
+
+# Gemini API
+google-genai>=1.0.0
+
+# Data formats
+pyyaml>=6.0
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lz4>=4.3.0
+
+# HF hub
+huggingface_hub>=0.26.0

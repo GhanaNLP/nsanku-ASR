@@ -1,0 +1,185 @@
+# Ghanaian languages for nsanku-ASR benchmarking
+# Dataset stats from Common Voice / Ghana NLP speech collections
+
+languages:
+  - name: Akuapem_Twi
+    iso_639_3: twi
+    iso_639_1: tw
+    utterances: 52650
+    hours: 63.25
+    dialect_of: twi
+  - name: Anyin
+    iso_639_3: any
+    utterances: 13986
+    hours: 20.95
+  - name: Asante_Twi
+    iso_639_3: twi
+    iso_639_1: tw
+    utterances: 143383
+    hours: 200.02
+    dialect_of: twi
+  - name: Avatime
+    iso_639_3: avn
+    utterances: 9956
+    hours: 21.62
+  - name: Bassar_Ntcham
+    iso_639_3: bud
+    utterances: 56096
+    hours: 76.90
+  - name: Bimoba
+    iso_639_3: bim
+    utterances: 49533
+    hours: 92.38
+  - name: Birifor_Southern
+    iso_639_3: biv
+    utterances: 7617
+    hours: 14.81
+  - name: Bissa
+    iso_639_3: bib
+    utterances: 9905
+    hours: 16.29
+  - name: Buli
+    iso_639_3: bwu
+    utterances: 39605
+    hours: 85.57
+  - name: Chumburung
+    iso_639_3: ncu
+    utterances: 12234
+    hours: 22.30
+  - name: Dagaare
+    iso_639_3: dga
+    utterances: 7369
+    hours: 15.14
+  - name: Dagbani
+    iso_639_3: dag
+    utterances: 46526
+    hours: 73.06
+  - name: Dangme
+    iso_639_3: ada
+    utterances: 10460
+    hours: 15.94
+  - name: Deg
+    iso_639_3: mzw
+    utterances: 73947
+    hours: 74.97
+  - name: Ewe
+    iso_639_3: ewe
+    iso_639_1: ee
+    utterances: 108240
+    hours: 160.87
+  - name: Fante
+    iso_639_3: fat
+    utterances: 60933
+    hours: 122.03
+  - name: Fulfulde_Maasina
+    iso_639_3: ffm
+    utterances: 11895
+    hours: 17.61
+  - name: Gikyode
+    iso_639_3: acd
+    utterances: 13002
+    hours: 21.83
+  - name: Gonja
+    iso_639_3: gjn
+    utterances: 53590
+    hours: 86.28
+  - name: Hausa
+    iso_639_3: hau
+    iso_639_1: ha
+    utterances: 92082
+    hours: 152.77
+  - name: Kabiye
+    iso_639_3: kbp
+    utterances: 12302
+    hours: 17.63
+  - name: Kasem
+    iso_639_3: xsm
+    utterances: 74077
+    hours: 97.77
+  - name: Konkomba
+    iso_639_3: xon
+    utterances: 50337
+    hours: 81.21
+  - name: Konni
+    iso_639_3: kma
+    utterances: 8463
+    hours: 18.03
+  - name: Kusaal
+    iso_639_3: kus
+    utterances: 48590
+    hours: 72.51
+  - name: Lelemi
+    iso_639_3: lef
+    utterances: 59914
+    hours: 94.16
+  - name: Mampruli
+    iso_639_3: maw
+    utterances: 8651
+    hours: 18.19
+  - name: Nawuri
+    iso_639_3: naw
+    utterances: 10495
+    hours: 20.36
+  - name: Ninkare
+    iso_639_3: gur
+    utterances: 17149
+    hours: 33.88
+  - name: Nkonya
+    iso_639_3: nko
+    utterances: 13878
+    hours: 18.42
+  - name: Ntrubo
+    iso_639_3: ntr
+    utterances: 11660
+    hours: 18.80
+  - name: Nzema
+    iso_639_3: nzi
+    utterances: 9617
+    hours: 16.94
+  - name: Paasaal
+    iso_639_3: sig
+    utterances: 11165
+    hours: 19.21
+  - name: Sehwi
+    iso_639_3: sfw
+    utterances: 46878
+    hours: 73.23
+  - name: Sekpele
+    iso_639_3: lip
+    utterances: 12612
+    hours: 23.87
+  - name: Selee
+    iso_639_3: snw
+    utterances: 12840
+    hours: 23.21
+  - name: Sisaala_Tumulung
+    iso_639_3: sil
+    utterances: 56004
+    hours: 79.42
+  - name: Siwu
+    iso_639_3: akp
+    utterances: 11837
+    hours: 19.00
+  - name: Tampulma
+    iso_639_3: tpm
+    utterances: 13421
+    hours: 20.30
+  - name: Tem
+    iso_639_3: kdh
+    utterances: 11482
+    hours: 23.95
+  - name: Tuwuli
+    iso_639_3: bov
+    utterances: 10838
+    hours: 18.49
+  - name: Vagla
+    iso_639_3: vag
+    utterances: 67734
+    hours: 76.48
+
+# Deduplicated ISO codes with combined stats
+iso_groups:
+  twi:
+    name: Twi (Akuapem + Asante)
+    utterances: 196033
+    hours: 263.27

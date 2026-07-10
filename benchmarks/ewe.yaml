@@ -1,0 +1,225 @@
+iso_639_3: ewe
+num_samples: 300
+benchmarks:
+- model: dodziraynard/Shona
+  model_url: https://huggingface.co/dodziraynard/Shona
+  params: 0.2B
+  wer: 0.1501
+  cer: 0.031
+  avg_seconds_per_sample: 0.73
+  source: evaluated
+- model: waxal-benchmarking/whisper-small-waxal-ewe
+  model_url: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-ewe
+  params: 0.2B
+  wer: 0.1582
+  cer: 0.0333
+  avg_seconds_per_sample: 0.72
+  source: evaluated
+- model: JosueG/whisper-ewe-adja-e4v4
+  model_url: https://huggingface.co/JosueG/whisper-ewe-adja-e4v4
+  params: 0.2B
+  wer: 0.188
+  cer: 0.036
+  avg_seconds_per_sample: 0.73
+  source: evaluated
+- model: UBC-NLP/Simba-W
+  model_url: https://huggingface.co/UBC-NLP/Simba-W
+  params: 2B
+  wer: 0.2122
+  cer: 0.0421
+  avg_seconds_per_sample: 1.14
+  source: evaluated
+- model: dodziraynard/whisper-small-ee
+  model_url: https://huggingface.co/dodziraynard/whisper-small-ee
+  params: 0.2B
+  wer: 0.2128
+  cer: 0.0363
+  avg_seconds_per_sample: 0.76
+  source: evaluated
+- model: waxal-benchmarking/whisper-tiny-waxal-ewe
+  model_url: https://huggingface.co/waxal-benchmarking/whisper-tiny-waxal-ewe
+  params: 37.8M
+  wer: 0.2314
+  cer: 0.0597
+  avg_seconds_per_sample: 0.47
+  source: evaluated
+- model: huwenjie333/whisper-v3-ft-af51-0703
+  model_url: https://huggingface.co/huwenjie333/whisper-v3-ft-af51-0703
+  params: 2B
+  wer: 0.2504
+  cer: 0.3818
+  avg_seconds_per_sample: 1.1
+  source: evaluated
+- model: bc7ec356/heep-universal
+  model_url: https://huggingface.co/bc7ec356/heep-universal
+  params: 0.8B
+  wer: 0.2579
+  cer: 0.1004
+  avg_seconds_per_sample: 0.52
+  source: evaluated
+- model: google/gemini-3.1-flash-lite
+  model_url: https://ai.google.dev/models/gemini-3.1-flash-lite
+  params: API
+  wer: 0.4347
+  cer: 0.0933
+  avg_seconds_per_sample: 2.52
+  errors: 0
+  source: evaluated
+- model: MahmoudAshraf/mms-300m-1130-forced-aligner
+  model_url: https://huggingface.co/MahmoudAshraf/mms-300m-1130-forced-aligner
+  params: 0.3B
+  wer: null
+  cer: null
+  error: 'cuDNN error: CUDNN_STATUS_NOT_INITIALIZED'
+  source: evaluated
+- model: facebook/mms-1b-all
+  model_url: https://huggingface.co/facebook/mms-1b-all
+  params: 1.0B
+  wer: null
+  cer: null
+  error: 'cuDNN error: CUDNN_STATUS_NOT_INITIALIZED'
+  source: evaluated
+- model: facebook/mms-1b-fl102
+  model_url: https://huggingface.co/facebook/mms-1b-fl102
+  params: 1.0B
+  wer: null
+  cer: null
+  error: 'cuDNN error: CUDNN_STATUS_NOT_INITIALIZED'
+  source: evaluated
+- model: onnx-community/mms-300m-1130-forced-aligner-ONNX
+  model_url: https://huggingface.co/onnx-community/mms-300m-1130-forced-aligner-ONNX
+  params: '?'
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: facebook/mms-1b-l1107
+  model_url: https://huggingface.co/facebook/mms-1b-l1107
+  params: 1.0B
+  wer: null
+  cer: null
+  error: 'cuDNN error: CUDNN_STATUS_NOT_INITIALIZED'
+  source: evaluated
+- model: UBC-NLP/Simba-S
+  model_url: https://huggingface.co/UBC-NLP/Simba-S
+  params: 2B
+  wer: null
+  cer: null
+  error: text input must be of type `str` (single example), `list[str]` (batch or
+    single pretokenized example) or `list[list[str]]` (batch of pretokenized examples)
+    or `list[tuple[list[str], list[str]]]` (batch of pretokenized sequence pairs).
+  source: evaluated
+- model: espnet/xeus
+  model_url: https://huggingface.co/espnet/xeus
+  params: '?'
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: UBC-NLP/Simba-M
+  model_url: https://huggingface.co/UBC-NLP/Simba-M
+  params: '?'
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: UBC-NLP/Simba-X
+  model_url: https://huggingface.co/UBC-NLP/Simba-X
+  params: '?'
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: waxal-benchmarking/mms-300m-waxal-ewe
+  model_url: https://huggingface.co/waxal-benchmarking/mms-300m-waxal-ewe
+  params: 0.3B
+  wer: null
+  cer: null
+  error: 'cuDNN error: CUDNN_STATUS_NOT_INITIALIZED'
+  source: evaluated
+- model: johntsi/ZeroSwot-Large_asr-cv_en-to-200
+  model_url: https://huggingface.co/johntsi/ZeroSwot-Large_asr-cv_en-to-200
+  params: 0.4B
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: romara-labs/mms-300m-1130-forced-aligner-ONNX
+  model_url: https://huggingface.co/romara-labs/mms-300m-1130-forced-aligner-ONNX
+  params: '?'
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: UBC-NLP/Simba-H
+  model_url: https://huggingface.co/UBC-NLP/Simba-H
+  params: '?'
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: johntsi/ZeroSwot-Medium_asr-cv_en-to-200
+  model_url: https://huggingface.co/johntsi/ZeroSwot-Medium_asr-cv_en-to-200
+  params: 0.4B
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: UBC-NLP/Simba-SLID-49
+  model_url: https://huggingface.co/UBC-NLP/Simba-SLID-49
+  params: 94.6M
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: johntsi/ZeroSwot-Large_asr-mustc_en-to-200
+  model_url: https://huggingface.co/johntsi/ZeroSwot-Large_asr-mustc_en-to-200
+  params: 0.4B
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: johntsi/ZeroSwot-Medium_asr-mustc_en-to-200
+  model_url: https://huggingface.co/johntsi/ZeroSwot-Medium_asr-mustc_en-to-200
+  params: 0.4B
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: ghananlpcommunity/Simba-S
+  model_url: https://huggingface.co/ghananlpcommunity/Simba-S
+  params: 2B
+  wer: null
+  cer: null
+  error: text input must be of type `str` (single example), `list[str]` (batch or
+    single pretokenized example) or `list[list[str]]` (batch of pretokenized examples)
+    or `list[tuple[list[str], list[str]]]` (batch of pretokenized sequence pairs).
+  source: evaluated
+- model: Umbaji/Yodi
+  model_url: https://huggingface.co/Umbaji/Yodi
+  params: '?'
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: Mimi1782/KMEANS
+  model_url: https://huggingface.co/Mimi1782/KMEANS
+  params: '?'
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: JosueG/whisper-large-v3-ewe-lora-s1-091126
+  model_url: https://huggingface.co/JosueG/whisper-large-v3-ewe-lora-s1-091126
+  params: '?'
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: techsalomon/godai-african-asr
+  model_url: https://huggingface.co/techsalomon/godai-african-asr
+  params: '?'
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated

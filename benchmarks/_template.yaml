@@ -1,0 +1,18 @@
+# nsanku-ASR benchmark results template
+# Copy to {iso}.yaml and fill in WER/CER results
+
+language: "Language Name"
+iso_639_3: xxx
+utterances: 0
+hours: 0.0
+
+benchmarks:
+  - model: org/model-name
+    model_url: https://huggingface.co/org/model-name
+    params: 0.6B
+    test_set: "Test set name (e.g. Common Voice 17, nsanku-test)" 
+    wer: 0.0
+    cer: 0.0
+    source: evaluated  # or "reported" with source_url
+    source_url:
+    notes:

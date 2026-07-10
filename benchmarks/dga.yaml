@@ -1,0 +1,39 @@
+iso_639_3: dga
+num_samples: 300
+benchmarks:
+- model: google/gemini-3.1-flash-lite
+  model_url: https://ai.google.dev/models/gemini-3.1-flash-lite
+  params: API
+  wer: 0.087
+  cer: 0.0244
+  avg_seconds_per_sample: 2.28
+  errors: 0
+  source: evaluated
+- model: waxal-benchmarking/whisper-tiny-waxal-dga
+  model_url: https://huggingface.co/waxal-benchmarking/whisper-tiny-waxal-dga
+  params: 37.8M
+  wer: 0.0962
+  cer: 0.028
+  avg_seconds_per_sample: 0.5
+  source: evaluated
+- model: waxal-benchmarking/whisper-small-waxal-dga
+  model_url: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-dga
+  params: 0.2B
+  wer: 0.2263
+  cer: 0.0496
+  avg_seconds_per_sample: 0.78
+  source: evaluated
+- model: espnet/xeus
+  model_url: https://huggingface.co/espnet/xeus
+  params: '?'
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: waxal-benchmarking/mms-300m-waxal-dga
+  model_url: https://huggingface.co/waxal-benchmarking/mms-300m-waxal-dga
+  params: 0.3B
+  wer: null
+  cer: null
+  error: 'cuDNN error: CUDNN_STATUS_NOT_INITIALIZED'
+  source: evaluated

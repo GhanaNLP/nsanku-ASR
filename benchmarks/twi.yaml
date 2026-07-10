@@ -1,0 +1,331 @@
+iso_639_3: twi
+num_samples: 300
+benchmarks:
+- model: GiftMark/akan-whisper-model
+  model_url: https://huggingface.co/GiftMark/akan-whisper-model
+  params: 0.2B
+  wer: 0.1224
+  cer: 0.0393
+  avg_seconds_per_sample: 0.59
+  source: evaluated
+- model: teckedd/serendepify-gsl-asr-ak-waxal-gnlpclean-whisper-small-replay-fullft-v0.6
+  model_url: https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-gnlpclean-whisper-small-replay-fullft-v0.6
+  params: 0.2B
+  wer: 0.1352
+  cer: 0.0773
+  avg_seconds_per_sample: 0.65
+  source: evaluated
+- model: teckedd/serendepify-gsl-asr-ak-gnlp-whisper-small-only-lowlr-freezeenc-fullft-v0.5
+  model_url: https://huggingface.co/teckedd/serendepify-gsl-asr-ak-gnlp-whisper-small-only-lowlr-freezeenc-fullft-v0.5
+  params: 0.2B
+  wer: 0.1359
+  cer: 0.041
+  avg_seconds_per_sample: 0.46
+  source: evaluated
+- model: teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-replay-fullft-v0.1
+  model_url: https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-replay-fullft-v0.1
+  params: 0.2B
+  wer: 0.1406
+  cer: 0.0769
+  avg_seconds_per_sample: 0.47
+  source: evaluated
+- model: teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-broad-lowlr-freezeenc-fullft-v0.3
+  model_url: https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-broad-lowlr-freezeenc-fullft-v0.3
+  params: 0.2B
+  wer: 0.1425
+  cer: 0.0494
+  avg_seconds_per_sample: 0.51
+  source: evaluated
+- model: teckedd/serendepify-gsl-asr-ak-waxal-whisper-small-only-lowlr-freezeenc-fullft-v0.4
+  model_url: https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-whisper-small-only-lowlr-freezeenc-fullft-v0.4
+  params: 0.2B
+  wer: 0.1484
+  cer: 0.1142
+  avg_seconds_per_sample: 0.51
+  source: evaluated
+- model: teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-balanced-fullft-v0.2
+  model_url: https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-balanced-fullft-v0.2
+  params: 0.2B
+  wer: 0.1504
+  cer: 0.0433
+  avg_seconds_per_sample: 0.49
+  source: evaluated
+- model: teckedd/whisper-small-waxal-round2-specaug-v1
+  model_url: https://huggingface.co/teckedd/whisper-small-waxal-round2-specaug-v1
+  params: 0.2B
+  wer: 0.1518
+  cer: 0.1026
+  avg_seconds_per_sample: 0.62
+  source: evaluated
+- model: bc7ec356/heep-universal
+  model_url: https://huggingface.co/bc7ec356/heep-universal
+  params: 0.8B
+  wer: 0.1562
+  cer: 0.0509
+  avg_seconds_per_sample: 0.34
+  source: evaluated
+- model: Raydox10/Raydox11-whisper-small
+  model_url: https://huggingface.co/Raydox10/Raydox11-whisper-small
+  params: 0.2B
+  wer: 0.1673
+  cer: 0.0888
+  avg_seconds_per_sample: 0.88
+  source: evaluated
+- model: google/gemini-3.1-flash-lite
+  model_url: https://ai.google.dev/models/gemini-3.1-flash-lite
+  params: API
+  wer: 0.1761
+  cer: 0.1565
+  avg_seconds_per_sample: 2.15
+  errors: 0
+  source: evaluated
+- model: Lagyamfi/whisper-small-tw
+  model_url: https://huggingface.co/Lagyamfi/whisper-small-tw
+  params: 0.2B
+  wer: 0.1832
+  cer: 0.0558
+  avg_seconds_per_sample: 0.65
+  source: evaluated
+- model: tiffany101/whisper-twi-v2
+  model_url: https://huggingface.co/tiffany101/whisper-twi-v2
+  params: 37.8M
+  wer: 0.2234
+  cer: 0.0735
+  avg_seconds_per_sample: 0.38
+  source: evaluated
+- model: tiffany101/whisper-small
+  model_url: https://huggingface.co/tiffany101/whisper-small
+  params: 0.2B
+  wer: 0.2304
+  cer: 0.0761
+  avg_seconds_per_sample: 0.95
+  source: evaluated
+- model: dkt-py-bot/whisper-small-DL-Twi
+  model_url: https://huggingface.co/dkt-py-bot/whisper-small-DL-Twi
+  params: 37.8M
+  wer: 0.2371
+  cer: 0.0973
+  avg_seconds_per_sample: 0.42
+  source: evaluated
+- model: UBC-NLP/Simba-W
+  model_url: https://huggingface.co/UBC-NLP/Simba-W
+  params: 2B
+  wer: 0.2378
+  cer: 0.0885
+  avg_seconds_per_sample: 1.03
+  source: evaluated
+- model: teckedd/whisper-small-waxal-akan-continuation-v1
+  model_url: https://huggingface.co/teckedd/whisper-small-waxal-akan-continuation-v1
+  params: 0.2B
+  wer: 0.2387
+  cer: 0.082
+  avg_seconds_per_sample: 0.62
+  source: evaluated
+- model: dkt-py-bot/TG-Whisper-Small-FineTuned-DL-Twi
+  model_url: https://huggingface.co/dkt-py-bot/TG-Whisper-Small-FineTuned-DL-Twi
+  params: 37.8M
+  wer: 0.2963
+  cer: 0.1194
+  avg_seconds_per_sample: 0.51
+  source: evaluated
+- model: 233-Yorozuya/dl_twi_asr
+  model_url: https://huggingface.co/233-Yorozuya/dl_twi_asr
+  params: 0.3B
+  wer: 0.3532
+  cer: 0.0851
+  avg_seconds_per_sample: 1.98
+  source: evaluated
+- model: teckedd/whisper-small-serlabs-twi-asr
+  model_url: https://huggingface.co/teckedd/whisper-small-serlabs-twi-asr
+  params: 0.2B
+  wer: 0.8503
+  cer: 1.0631
+  avg_seconds_per_sample: 0.57
+  source: evaluated
+- model: UBC-NLP/Simba-S
+  model_url: https://huggingface.co/UBC-NLP/Simba-S
+  params: 2B
+  wer: null
+  cer: null
+  error: text input must be of type `str` (single example), `list[str]` (batch or
+    single pretokenized example) or `list[list[str]]` (batch of pretokenized examples)
+    or `list[tuple[list[str], list[str]]]` (batch of pretokenized sequence pairs).
+  source: evaluated
+- model: teckedd/mms-akan-ani-kese-v1
+  model_url: https://huggingface.co/teckedd/mms-akan-ani-kese-v1
+  params: 1.0B
+  wer: null
+  cer: null
+  error: 'cuDNN error: CUDNN_STATUS_NOT_INITIALIZED'
+  source: evaluated
+- model: Kennethdot/kasanoma_whisper
+  model_url: https://huggingface.co/Kennethdot/kasanoma_whisper
+  params: '?'
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: espnet/xeus
+  model_url: https://huggingface.co/espnet/xeus
+  params: '?'
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: UBC-NLP/Simba-M
+  model_url: https://huggingface.co/UBC-NLP/Simba-M
+  params: '?'
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: UBC-NLP/Simba-X
+  model_url: https://huggingface.co/UBC-NLP/Simba-X
+  params: '?'
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: johntsi/ZeroSwot-Large_asr-cv_en-to-200
+  model_url: https://huggingface.co/johntsi/ZeroSwot-Large_asr-cv_en-to-200
+  params: 0.4B
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: UBC-NLP/Simba-H
+  model_url: https://huggingface.co/UBC-NLP/Simba-H
+  params: '?'
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: azunre/wav2vec2large-xlsr-akan
+  model_url: https://huggingface.co/azunre/wav2vec2large-xlsr-akan
+  params: '?'
+  wer: null
+  cer: null
+  error: 'cuDNN error: CUDNN_STATUS_NOT_INITIALIZED'
+  source: evaluated
+- model: johntsi/ZeroSwot-Medium_asr-cv_en-to-200
+  model_url: https://huggingface.co/johntsi/ZeroSwot-Medium_asr-cv_en-to-200
+  params: 0.4B
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: samwell/medasr-ghana
+  model_url: https://huggingface.co/samwell/medasr-ghana
+  params: 0.1B
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: jdapaah/whisper-small-twi-arxiv
+  model_url: https://huggingface.co/jdapaah/whisper-small-twi-arxiv
+  params: 0.2B
+  wer: null
+  cer: null
+  error: 'Unsupported language: twi. Language should be one of: [''english'', ''chinese'',
+    ''german'', ''spanish'', ''russian'', ''korean'', ''french'', ''japanese'', ''portuguese'',
+    ''turkish'', ''polish'', ''catalan'', ''dutch'', ''arabic'', ''swedish'', ''italian'',
+    ''indonesian'', ''hindi'', ''finnish'', ''vietnamese'', ''hebrew'', ''ukrainian'',
+    ''greek'', ''malay'', ''czech'', ''romanian'', ''danish'', ''hungarian'', ''tamil'',
+    ''norwegian'', ''thai'', ''urdu'', ''croatian'', ''bulgarian'', ''lithuanian'',
+    ''latin'', ''maori'', ''malayalam'', ''welsh'', ''slovak'', ''telugu'', ''persian'',
+    ''latvian'', ''bengali'', ''serbian'', ''azerbaijani'', ''slovenian'', ''kannada'',
+    ''estonian'', ''macedonian'', ''breton'', ''basque'', ''icelandic'', ''armenian'',
+    ''nepali'', ''mongolian'', ''bosnian'', ''kazakh'', ''albanian'', ''swahili'',
+    ''galician'', ''marathi'', ''punjabi'', ''sinhala'', ''khmer'', ''shona'', ''yoruba'',
+    ''somali'', ''afrikaans'', ''occitan'', ''georgian'', ''belarusian'', ''tajik'',
+    ''sindhi'', ''gujarati'', ''amharic'', ''yiddish'', ''lao'', ''uzbek'', ''faroese'',
+    ''haitian creole'', ''pashto'', ''turkmen'', ''nynorsk'', ''maltese'', ''sanskrit'',
+    ''luxembourgish'', ''myanmar'', ''tibetan'', ''tagalog'', ''malagasy'', ''assamese'',
+    ''tatar'', ''hawaiian'', ''lingala'', ''hausa'', ''bashkir'', ''javanese'', ''sundanese'',
+    ''cantonese'', ''burmese'', ''valencian'', ''flemish'', ''haitian'', ''letzeburgesch'',
+    ''pushto'', ''panjabi'', ''moldavian'', ''moldovan'', ''sinhalese'', ''castilian'',
+    ''mandarin''].'
+  source: evaluated
+- model: UBC-NLP/Simba-SLID-49
+  model_url: https://huggingface.co/UBC-NLP/Simba-SLID-49
+  params: 94.6M
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: Zzzkay1/Whisper-medium-zh
+  model_url: https://huggingface.co/Zzzkay1/Whisper-medium-zh
+  params: 0.8B
+  wer: null
+  cer: null
+  error: The generation config is outdated and is thus not compatible with the `task`
+    argument to `generate`. Please update the generation config as per the instructions
+    https://github.com/huggingface/transformers/issues/25084#issuecomment-1664398224
+  source: evaluated
+- model: johntsi/ZeroSwot-Large_asr-mustc_en-to-200
+  model_url: https://huggingface.co/johntsi/ZeroSwot-Large_asr-mustc_en-to-200
+  params: 0.4B
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: johntsi/ZeroSwot-Medium_asr-mustc_en-to-200
+  model_url: https://huggingface.co/johntsi/ZeroSwot-Medium_asr-mustc_en-to-200
+  params: 0.4B
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: Zzzkay1/Whisper-medium-nan
+  model_url: https://huggingface.co/Zzzkay1/Whisper-medium-nan
+  params: 0.8B
+  wer: null
+  cer: null
+  error: The generation config is outdated and is thus not compatible with the `task`
+    argument to `generate`. Please update the generation config as per the instructions
+    https://github.com/huggingface/transformers/issues/25084#issuecomment-1664398224
+  source: evaluated
+- model: kennyzhu1/w2v-bert-2.0-zh-colab-CV16.0
+  model_url: https://huggingface.co/kennyzhu1/w2v-bert-2.0-zh-colab-CV16.0
+  params: 0.6B
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: ghananlpcommunity/w2v-bert-2.0_twi_alpha_v1_farmerline-ct2
+  model_url: https://huggingface.co/ghananlpcommunity/w2v-bert-2.0_twi_alpha_v1_farmerline-ct2
+  params: '?'
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: ghananlpcommunity/FarmerlineWav2Vec-Twi-Demo
+  model_url: https://huggingface.co/ghananlpcommunity/FarmerlineWav2Vec-Twi-Demo
+  params: '?'
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: ghananlpcommunity/Simba-S
+  model_url: https://huggingface.co/ghananlpcommunity/Simba-S
+  params: 2B
+  wer: null
+  cer: null
+  error: text input must be of type `str` (single example), `list[str]` (batch or
+    single pretokenized example) or `list[list[str]]` (batch of pretokenized examples)
+    or `list[tuple[list[str], list[str]]]` (batch of pretokenized sequence pairs).
+  source: evaluated
+- model: Kennethdot/kasanoma_wav2vec2
+  model_url: https://huggingface.co/Kennethdot/kasanoma_wav2vec2
+  params: 0.3B
+  wer: null
+  cer: null
+  error: Failed to load model
+  source: evaluated
+- model: dkt-py-bot/TG-Whisper-Tiny-FineTuned-DL-Twi
+  model_url: https://huggingface.co/dkt-py-bot/TG-Whisper-Tiny-FineTuned-DL-Twi
+  params: 37.8M
+  wer: 1.0383
+  cer: 2.3283
+  avg_seconds_per_sample: 0.54
+  source: evaluated

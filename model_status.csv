@@ -1,0 +1,174 @@
+model,language,params,wer,cer,status,fail_reason
+GiftMark/akan-whisper-model,twi,0.2B,0.1224,0.0393,pass,
+teckedd/serendepify-gsl-asr-ak-waxal-gnlpclean-whisper-small-replay-fullft-v0.6,twi,0.2B,0.1352,0.0773,pass,
+teckedd/serendepify-gsl-asr-ak-gnlp-whisper-small-only-lowlr-freezeenc-fullft-v0.5,twi,0.2B,0.1359,0.041,pass,
+teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-replay-fullft-v0.1,twi,0.2B,0.1406,0.0769,pass,
+teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-broad-lowlr-freezeenc-fullft-v0.3,twi,0.2B,0.1425,0.0494,pass,
+teckedd/serendepify-gsl-asr-ak-waxal-whisper-small-only-lowlr-freezeenc-fullft-v0.4,twi,0.2B,0.1484,0.1142,pass,
+teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-balanced-fullft-v0.2,twi,0.2B,0.1504,0.0433,pass,
+teckedd/whisper-small-waxal-round2-specaug-v1,twi,0.2B,0.1518,0.1026,pass,
+bc7ec356/heep-universal,twi,0.8B,0.1562,0.0509,pass,
+Raydox10/Raydox11-whisper-small,twi,0.2B,0.1673,0.0888,pass,
+google/gemini-3.1-flash-lite,twi,API,0.1761,0.1565,pass,
+Lagyamfi/whisper-small-tw,twi,0.2B,0.1832,0.0558,pass,
+tiffany101/whisper-twi-v2,twi,37.8M,0.2234,0.0735,pass,
+tiffany101/whisper-small,twi,0.2B,0.2304,0.0761,pass,
+dkt-py-bot/whisper-small-DL-Twi,twi,37.8M,0.2371,0.0973,pass,
+UBC-NLP/Simba-W,twi,2B,0.2378,0.0885,pass,
+teckedd/whisper-small-waxal-akan-continuation-v1,twi,0.2B,0.2387,0.082,pass,
+dkt-py-bot/TG-Whisper-Small-FineTuned-DL-Twi,twi,37.8M,0.2963,0.1194,pass,
+233-Yorozuya/dl_twi_asr,twi,0.3B,0.3532,0.0851,pass,
+teckedd/whisper-small-serlabs-twi-asr,twi,0.2B,0.8503,1.0631,pass,
+UBC-NLP/Simba-S,twi,2B,,,fail,"text input must be of type `str` (single example), `list[str]` (batch or single "
+teckedd/mms-akan-ani-kese-v1,twi,1.0B,,,fail,cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+Kennethdot/kasanoma_whisper,twi,?,,,fail,Failed to load model
+espnet/xeus,twi,?,,,fail,Failed to load model
+UBC-NLP/Simba-M,twi,?,,,fail,Failed to load model
+UBC-NLP/Simba-X,twi,?,,,fail,Failed to load model
+johntsi/ZeroSwot-Large_asr-cv_en-to-200,twi,0.4B,,,fail,Failed to load model
+UBC-NLP/Simba-H,twi,?,,,fail,Failed to load model
+azunre/wav2vec2large-xlsr-akan,twi,?,,,fail,cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+johntsi/ZeroSwot-Medium_asr-cv_en-to-200,twi,0.4B,,,fail,Failed to load model
+samwell/medasr-ghana,twi,0.1B,,,fail,Failed to load model
+jdapaah/whisper-small-twi-arxiv,twi,0.2B,,,fail,"Unsupported language: twi. Language should be one of: ['english', 'chinese', 'ge"
+UBC-NLP/Simba-SLID-49,twi,94.6M,,,fail,Failed to load model
+Zzzkay1/Whisper-medium-zh,twi,0.8B,,,fail,The generation config is outdated and is thus not compatible with the `task` arg
+johntsi/ZeroSwot-Large_asr-mustc_en-to-200,twi,0.4B,,,fail,Failed to load model
+johntsi/ZeroSwot-Medium_asr-mustc_en-to-200,twi,0.4B,,,fail,Failed to load model
+Zzzkay1/Whisper-medium-nan,twi,0.8B,,,fail,The generation config is outdated and is thus not compatible with the `task` arg
+kennyzhu1/w2v-bert-2.0-zh-colab-CV16.0,twi,0.6B,,,fail,Failed to load model
+ghananlpcommunity/w2v-bert-2.0_twi_alpha_v1_farmerline-ct2,twi,?,,,fail,Failed to load model
+ghananlpcommunity/FarmerlineWav2Vec-Twi-Demo,twi,?,,,fail,Failed to load model
+ghananlpcommunity/Simba-S,twi,2B,,,fail,"text input must be of type `str` (single example), `list[str]` (batch or single "
+Kennethdot/kasanoma_wav2vec2,twi,0.3B,,,fail,Failed to load model
+dkt-py-bot/TG-Whisper-Tiny-FineTuned-DL-Twi,twi,37.8M,1.0383,2.3283,pass,
+dodziraynard/Shona,ewe,0.2B,0.1501,0.031,pass,
+waxal-benchmarking/whisper-small-waxal-ewe,ewe,0.2B,0.1582,0.0333,pass,
+JosueG/whisper-ewe-adja-e4v4,ewe,0.2B,0.188,0.036,pass,
+UBC-NLP/Simba-W,ewe,2B,0.2122,0.0421,pass,
+dodziraynard/whisper-small-ee,ewe,0.2B,0.2128,0.0363,pass,
+waxal-benchmarking/whisper-tiny-waxal-ewe,ewe,37.8M,0.2314,0.0597,pass,
+huwenjie333/whisper-v3-ft-af51-0703,ewe,2B,0.2504,0.3818,pass,
+bc7ec356/heep-universal,ewe,0.8B,0.2579,0.1004,pass,
+google/gemini-3.1-flash-lite,ewe,API,0.4347,0.0933,pass,
+MahmoudAshraf/mms-300m-1130-forced-aligner,ewe,0.3B,,,fail,cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+facebook/mms-1b-all,ewe,1.0B,,,fail,cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+facebook/mms-1b-fl102,ewe,1.0B,,,fail,cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+onnx-community/mms-300m-1130-forced-aligner-ONNX,ewe,?,,,fail,Failed to load model
+facebook/mms-1b-l1107,ewe,1.0B,,,fail,cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+UBC-NLP/Simba-S,ewe,2B,,,fail,"text input must be of type `str` (single example), `list[str]` (batch or single "
+espnet/xeus,ewe,?,,,fail,Failed to load model
+UBC-NLP/Simba-M,ewe,?,,,fail,Failed to load model
+UBC-NLP/Simba-X,ewe,?,,,fail,Failed to load model
+waxal-benchmarking/mms-300m-waxal-ewe,ewe,0.3B,,,fail,cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+johntsi/ZeroSwot-Large_asr-cv_en-to-200,ewe,0.4B,,,fail,Failed to load model
+romara-labs/mms-300m-1130-forced-aligner-ONNX,ewe,?,,,fail,Failed to load model
+UBC-NLP/Simba-H,ewe,?,,,fail,Failed to load model
+johntsi/ZeroSwot-Medium_asr-cv_en-to-200,ewe,0.4B,,,fail,Failed to load model
+UBC-NLP/Simba-SLID-49,ewe,94.6M,,,fail,Failed to load model
+johntsi/ZeroSwot-Large_asr-mustc_en-to-200,ewe,0.4B,,,fail,Failed to load model
+johntsi/ZeroSwot-Medium_asr-mustc_en-to-200,ewe,0.4B,,,fail,Failed to load model
+ghananlpcommunity/Simba-S,ewe,2B,,,fail,"text input must be of type `str` (single example), `list[str]` (batch or single "
+Umbaji/Yodi,ewe,?,,,fail,Failed to load model
+Mimi1782/KMEANS,ewe,?,,,fail,Failed to load model
+JosueG/whisper-large-v3-ewe-lora-s1-091126,ewe,?,,,fail,Failed to load model
+techsalomon/godai-african-asr,ewe,?,,,fail,Failed to load model
+google/gemini-3.1-flash-lite,hau,API,0.1908,0.0564,pass,
+openai/whisper-large-v3,hau,2B,0.2004,0.076,pass,
+CLEAR-Global/whisper-small-clearglobal-hausa-asr-1.0.0,hau,0.2B,0.2025,0.0647,pass,
+alphaedge-ai/whisper-large-v3-turbo-hau-32768,hau,0.8B,0.2253,0.0639,pass,
+openai/whisper-large-v3-turbo,hau,0.8B,0.2264,0.064,pass,
+alphaedge-ai/whisper-large-v3-turbo-hau-16384,hau,0.8B,0.2273,0.0639,pass,
+openai/whisper-tiny,hau,37.8M,0.2379,2.5153,pass,
+alphaedge-ai/whisper-tiny-hau-32768,hau,30.4M,0.2388,0.0597,pass,
+alphaedge-ai/whisper-medium-hau-16384,hau,0.7B,0.2746,0.0987,pass,
+openai/whisper-large,hau,2B,0.3937,0.0884,pass,
+openai/whisper-base,hau,72.6M,0.414,0.1088,pass,
+alphaedge-ai/whisper-medium-hau-32768,hau,0.7B,0.4348,0.1255,pass,
+openai/whisper-medium,hau,0.8B,0.4367,0.1267,pass,
+alphaedge-ai/whisper-tiny-hau-16384,hau,24.1M,0.444,0.8413,pass,
+alphaedge-ai/whisper-base-hau-32768,hau,62.8M,0.457,0.1146,pass,
+openai/whisper-small,hau,0.2B,0.5315,0.1234,pass,
+alphaedge-ai/whisper-small-hau-32768,hau,0.2B,0.5327,0.1237,pass,
+openai/whisper-large-v2,hau,2B,0.5584,0.1217,pass,
+lesliejd/jt-whisper,hau,?,0.5584,0.1217,pass,
+alphaedge-ai/whisper-base-hau-16384,hau,54.4M,0.5723,0.126,pass,
+alphaedge-ai/whisper-small-hau-16384,hau,0.2B,0.6652,0.1312,pass,
+Systran/faster-whisper-small,hau,?,,,fail,Failed to load model
+Systran/faster-whisper-large-v3,hau,?,,,fail,Failed to load model
+Systran/faster-whisper-medium,hau,?,,,fail,Failed to load model
+facebook/seamless-m4t-v2-large,hau,2B,,,fail,Failed to load model
+guillaumekln/faster-whisper-base,hau,?,,,fail,Failed to load model
+aufklarer/Nemotron-3.5-ASR-Streaming-0.6B-CoreML-INT8,hau,?,,,fail,Failed to load model
+Akashpb13/Hausa_xlsr,hau,?,,,fail,Failed to load model
+espnet/xeus,hau,?,,,fail,Failed to load model
+Cdial/hausa-asr,hau,?,,,fail,Failed to load model
+CLEAR-Global/w2v-bert-2.0-clearglobal-hausa-asr-1.0.0,hau,0.6B,,,fail,Failed to load model
+Mofe/xls-r-hausa-40,hau,?,,,fail,cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+Sangramsing/whisper-base,hau,?,,,fail,Failed to load model
+keess/whisper-model-internal,hau,?,,,fail,The generation config is outdated and is thus not compatible with the `task` arg
+anuragshas/whisper-large-v2-ha,hau,?,,,fail,The generation config is outdated and is thus not compatible with the `task` arg
+Sangramsing/whisper-small,hau,?,,,fail,Failed to load model
+Sangramsing/whisper-tiny,hau,?,,,fail,Failed to load model
+Sangramsing/whisper-medium,hau,?,,,fail,Failed to load model
+anuragshas/wav2vec2-large-xls-r-300m-ha-cv8,hau,?,,,fail,cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+arijitx/whisper-base-bn-trans,hau,?,,,fail,The generation config is outdated and is thus not compatible with the `task` arg
+infinitejoy/wav2vec2-large-xls-r-300m-hausa,hau,?,,,fail,cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+DrishtiSharma/whisper-large-v2-hausa,hau,?,,,fail,The generation config is outdated and is thus not compatible with the `task` arg
+jianboy/demo,hau,?,,,fail,Failed to load model
+microsoft/paza-whisper-large-v3-turbo,hau,0.8B,4.9117,3.6811,pass,
+google/gemini-3.1-flash-lite,kbp,API,0.1848,0.0303,pass,
+espnet/xeus,kbp,?,,,fail,Failed to load model
+johntsi/ZeroSwot-Large_asr-cv_en-to-200,kbp,0.4B,,,fail,Failed to load model
+johntsi/ZeroSwot-Medium_asr-cv_en-to-200,kbp,0.4B,,,fail,Failed to load model
+johntsi/ZeroSwot-Large_asr-mustc_en-to-200,kbp,0.4B,,,fail,Failed to load model
+johntsi/ZeroSwot-Medium_asr-mustc_en-to-200,kbp,0.4B,,,fail,Failed to load model
+waxal-benchmarking/whisper-small-waxal-dag,dag,0.2B,0.0977,0.0261,pass,
+waxal-benchmarking/whisper-tiny-waxal-dag,dag,37.8M,0.1059,0.0388,pass,
+google/gemini-3.1-flash-lite,dag,API,0.1128,0.0279,pass,
+espnet/xeus,dag,?,,,fail,Failed to load model
+waxal-benchmarking/mms-300m-waxal-dag,dag,0.3B,,,fail,cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+google/gemini-3.1-flash-lite,dga,API,0.087,0.0244,pass,
+waxal-benchmarking/whisper-tiny-waxal-dga,dga,37.8M,0.0962,0.028,pass,
+waxal-benchmarking/whisper-small-waxal-dga,dga,0.2B,0.2263,0.0496,pass,
+espnet/xeus,dga,?,,,fail,Failed to load model
+waxal-benchmarking/mms-300m-waxal-dga,dga,0.3B,,,fail,cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+google/gemini-3.1-flash-lite,fat,API,0.0999,0.012,pass,
+espnet/xeus,fat,?,,,fail,Failed to load model
+UBC-NLP/Simba-SLID-49,fat,94.6M,,,fail,Failed to load model
+google/gemini-3.1-flash-lite,nko,API,0.3352,0.0423,pass,
+espnet/xeus,nko,?,,,fail,Failed to load model
+Diomande/nko-asr-v1,nko,?,,,fail,Failed to load model
+google/gemini-3.1-flash-lite,any,API,0.0434,0.0058,pass,
+google/gemini-3.1-flash-lite,avn,API,0.1054,0.0176,pass,
+google/gemini-3.1-flash-lite,bud,API,0.1438,0.0181,pass,
+google/gemini-3.1-flash-lite,bim,API,0.075,0.0066,pass,
+google/gemini-3.1-flash-lite,biv,API,0.0364,0.0066,pass,
+google/gemini-3.1-flash-lite,bib,API,0.0524,0.009,pass,
+google/gemini-3.1-flash-lite,bwu,API,0.0911,0.0448,pass,
+google/gemini-3.1-flash-lite,ncu,API,0.0762,0.0152,pass,
+google/gemini-3.1-flash-lite,ada,API,0.0401,0.0071,pass,
+google/gemini-3.1-flash-lite,mzw,API,0.1816,0.0245,pass,
+google/gemini-3.1-flash-lite,ffm,API,0.1183,0.0109,pass,
+google/gemini-3.1-flash-lite,acd,API,0.0393,0.005,pass,
+google/gemini-3.1-flash-lite,gjn,API,0.1025,0.047,pass,
+google/gemini-3.1-flash-lite,xsm,API,0.1765,0.0534,pass,
+google/gemini-3.1-flash-lite,xon,API,0.1037,0.0141,pass,
+google/gemini-3.1-flash-lite,kma,API,0.0528,0.0067,pass,
+google/gemini-3.1-flash-lite,kus,API,0.0935,0.0128,pass,
+google/gemini-3.1-flash-lite,lef,API,0.137,0.0486,pass,
+google/gemini-3.1-flash-lite,maw,API,0.0663,0.019,pass,
+google/gemini-3.1-flash-lite,naw,API,0.2014,0.2149,pass,
+google/gemini-3.1-flash-lite,gur,API,0.1838,0.2268,pass,
+google/gemini-3.1-flash-lite,ntr,API,0.1194,0.1002,pass,
+google/gemini-3.1-flash-lite,nzi,API,0.1713,0.0354,pass,
+google/gemini-3.1-flash-lite,sig,API,0.0365,0.0055,pass,
+google/gemini-3.1-flash-lite,sfw,API,0.1235,0.0124,pass,
+google/gemini-3.1-flash-lite,lip,API,0.0526,0.0049,pass,
+google/gemini-3.1-flash-lite,snw,API,0.0619,0.0047,pass,
+google/gemini-3.1-flash-lite,sil,API,0.0844,0.0084,pass,
+google/gemini-3.1-flash-lite,akp,API,0.1561,0.0249,pass,
+google/gemini-3.1-flash-lite,tpm,API,0.0479,0.0055,pass,
+google/gemini-3.1-flash-lite,kdh,API,0.1401,0.0148,pass,
+google/gemini-3.1-flash-lite,bov,API,0.1417,0.0201,pass,
+google/gemini-3.1-flash-lite,vag,API,0.1863,0.0747,pass,

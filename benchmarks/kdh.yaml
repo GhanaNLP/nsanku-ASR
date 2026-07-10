@@ -1,0 +1,11 @@
+iso_639_3: kdh
+num_samples: 300
+benchmarks:
+- model: google/gemini-3.1-flash-lite
+  model_url: https://ai.google.dev/models/gemini-3.1-flash-lite
+  params: API
+  wer: 0.1401
+  cer: 0.0148
+  avg_seconds_per_sample: 2.29
+  errors: 0
+  source: evaluated

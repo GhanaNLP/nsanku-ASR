@@ -1,0 +1,301 @@
+sample_id,reference,hypothesis,wer,cer
+0,ALA ALƐDI 1 10.,Ala alede udedi lili le vudi,0.3125,0.1322
+1,Ɔga Saul Ɔ́du Lɛlɔ.,"Ogasol, odulélé.",0.25,0.0306
+2,Amu na Ƒilistiƒuɔ békpoku Israelƒuɔ na baabɔku-ma geen na bana anumi na bádu bana akɔ pii lɛnɔ na Gilboa Kɔbi lɛlɔ.,ama na felistifa bepoko israyilifa na babokuma gaine. Na bana anumina badu bana akopil leno na giribua kobile,0.034,0.0036
+3,Nsu Ƒilistiƒuɔ bábi básiaku-ma na béƒie Saul bebi ɛtɛ na bádu-ma.,Niso filisifor babebasia Kuma. Na be hwe sol bebbi ete na baduma,0.0826,0.007
+4,Na bebi ɛtɛ bamɛni ndi Yonatan ku Abinadab ku Malki-Saul.,Na bebietɛ bamenyi idi Jonathan ku Abinadab ku Malkiso.,0.06,0.0043
+5,Na kekpo kammɔ kébo kaayú ɔkplu na kesii kani na Saul ɔkya.,"Na, ke boka mo ke boka you o pulu na kesi kanina sol ocha",0.0833,0.0072
+6,Na Saul bekisine kemmo unwi ɔ́ta kataminta úbalɛ-nwu na nwuna ɔ́ƒɔ ɔlɛ geen.,na aso be kisine kebo ungui otokandamita ubalew na ofolege,0.0651,0.0078
+7,"Amu na Saul ɔ́su nwuna ekpola ala utine ɔnini, “Ni ƒula kewii kpa livuo kemmo na atu-mi adu, kalɛ na kadi bamba bekyuli bani na bétekulo-ma ago mɛni balábadu-mi na bataakun lɛmɛnɛ teedumi-mi.","Amuná solo ósó wuna ekpola ala utine onine. Ni polake wipa livokemo na atumi adu. Kále ná kaliba ma be chuli, bani na betekolo ma ago, meni bala ba dumi. Na bata akule menete dumi",0.0248,0.0015
+8,Nsu Saul ekpola utine ɔmmɔ ɔ́yia ka ɔbla lɛni.,so sol ebola otenne omo oya ka obeleni,0.0988,0.0139
+9,Anwuɔsu Saul údie anwu ɔlati nwuna kewii na úbuli útébi-ka lɛlɔ.,Amɔsɔsɔlɔ di amɔɔla ti wunra kɛwi na obuli otɛbikalɛlo.,0.0826,0.007
+10,"Amu ka nwuna ekpola ala utine ɔ́nu ka Saul úkpi ni, anwu lɛnɔ ɔ́kpa nwuna kewii na úbuli útébi-ka lɛlɔ, na úkpi.",amuka una ekpola alautine. Onuka sol ukpini. Amulena okpa unakewi. Na uguli utebika lelo na ukpue.,0.0393,0.0032
+11,Anwuɔsu Saul ku nwuna bebi ɛtɛ békpi basala.,Amos usol ku na bebi te be pì ba sala.,0.125,0.0108
+12,Na nwuna kaba kadi kátadi lɛga kudii.,"Na una ka ba ka di, ka ta di le ga ko di.",0.2449,0.0067
+13,"Na ka Israelƒuɔ bani beli kɔwɛ kemmo mmɔ bénu ka bekpone bammɔ ƒui békeli ni, békeli na báda bana lɛma béwi.",Naka Izrail fu bani ili kowe kemo mọ benu ka bekone ba mọ fi bekeli ni. Bekeli na bada bala le ma be,0.0431,0.0034
+14,Amu na Ƒilistiƒuɔ bébo na bébelie bana lɛma lɛmmɔ kemmo.,"amuna filisti fo, be gbo na be bele, bana le malemo ke",0.1,0.0071
+15,"Kadi kegye ni, ka Ƒilistiƒuɔ bésie bani bétedie bekpine bammɔ adala ni, mmɔ na bánu Saul ku nwuna bebi ka békpi bátɛ Gilboa Kɔbi lɛlɔ.",Ka ni ke jeni. Ka feliste fo bese. Ba ni be te die be pine ba mo adala ni. E mona ba nu sol ku na be bi ka be pui ba te. Gel bo ko bile lo.,0.0528,0.0029
+16,Békulo-nwu lili na bédie nwuna ekpola ani na ɔkya na bátala batu na bávi Ƒilistiƒuɔ lɛma ƒui básu kenye kamɛni na bana baƒiɔ kakpakɔ ku bekyuli ƒui akɔ.,"bɛkɔlɔwɔ lili, na bɛdiɛ wuna ekpola, ani na ɔcha, na bɛtala batu, na bɛvi filisifɔ lɔma fui, basukenyɛ kamɛni na bɛna bɛhwiɔ kapakɔ, ku bɛchuli fui akɔ",0.0204,0.0019
+17,Amu na béti Saul kekpo adala bétese bana baƒiɔ ɔtɔ unwi kemmo.,"amuna bɛɛ sɔɔl, kɛkpɔ, adala, bɛɛseɛ bana bafwɛ ɔtɔ, ɔwe kamɔ",0.0625,0.008
+18,Na béti nwuna lili bátaƒala bana baƒiɔ bani baalɔ-ma banii Dagon ɔtɔ kemmo.,"Na, beti wuna lili, batafala, bana bafyo, bani baloma, bani Dagon. Otoko",0.0473,0.004
+19,"Na ka bekyuli bani beli Yabes ɔni nnkya Gilead bénu kalɛ na Ƒilistiƒuɔ bábla Saul ni, bana bekpone bani mbo kayi geen bésie na béteti Saul ukpine ku nwuna bebi béboku Yabes.","na ka betu le bani beli ya bes, oni in cha, giliad, be nu kalena felisi fo ba blasol ni, ba na be po ni ba ni in bo ka yi ke in be se na be te ti sol upi ne ko nwu na be bi be bo ku ya bes.",0.0439,0.0017
+20,Na báva-ma na kugyii kubendi kɔdi kalɔ.,na babama na kujikubendi kwadi,0.102,0.0114
+21,Na bekyuli bammɔ bényimi kenye emeyi maatɛ.,"Na, bɛɛtiri ba mɔɔ bɛɛnyimi kɛnye. Ɛmɛ yi ma te.",0.1837,0.01
+22,"Na Saul úkpi, ɔsika útasiaku Unwoti siin.",nana o lo pe o si ka o ta si a ko o we ti si,0.3265,0.0119
+23,Na úni Unwoti ɔda bubo na úsie like bebone kudɔ ka úteye ala únu muedi.,na unni ungeti odabubo na use like bebone kudo. Ka uteye ala unumwedie,0.04,0.0038
+24,Ɔni na Unwoti kudɔ na nka ɔlɛka úsie mmomu.,ɔnɛ na ɔwɛtɛku dɔ na ɛnka ɔlɛka usɛmɔ,0.0741,0.0112
+25,"Ɔmmɔ ɔsu, Unwoti ɔ́du-nwu.",omo osun 180,0.25,0.0416
+26,Na únwini lɛgadi lɛmmɔ úte Yisai ubidi Dawid.,"Na uni, le gadi, le mo utê, ye sai, Obidi David.",0.1562,0.0095
+27,ALA ALƐDI 1 1.,Ala ale de udedi lili dedi,0.3125,0.14
+28,Kaba Kemmo Kɔtɛ Ɔ́si Adam Uwi Útédu Abraham Lɛlɔ.,"kaba ke mo kote, osi adamu ui ude do abraham lele",0.1111,0.0072
+29,Adam ubidi ndi Set ɔni ubi ndi Enos ɔni ubi ndi Kenan ɔni ubi ndi Mahalalel ɔni ubi ndi Yered ɔni ubi ndi Metusala ɔni ubi ndi Hanok ɔni ubi ndi Lamek ɔni ubi ndi Noa.,Adam obidi inndi Set. One obidi inndi Enos. One obidi inndi Kenan. One obidi inndi Mahalalel. One obidi inndi Yered. One obidi inndi Metusela. One obidi inndi Henok. One obidi inndi Lamek. One obidi inndi Noah.,0.0224,0.0036
+30,Na Noa bebi ndi Sem ku Ham ku Yaƒet.,Na nuwa bebe Indism Guham Guyefe.,0.0988,0.0123
+31,Yaƒetƒuɔ.,Yafɛ́ɛ fo.,2.0,0.0938
+32,Na Yaƒet bebi ndi Gomer ku Magog ku Madai ku Yawan ku Tubal ku Mesek ku Tiras.,"Nayafet baby indie goma, ko megok, ko madaya, ko yawon, ko tubal, ko mesek, ko tiras.",0.0484,0.0046
+33,Na Gomer bebi ndi Askenas ku Riƒat ku Togarma.,"Nagu ma bebi indi askenas, ku rifat ku togam",0.0617,0.0051
+34,Na Yawan bebi ndi Elisa ku Tarsis ku Kiti kadi bekyuli ku Dodan kadi bekyuli.,"na ya wa bebe indii Elisa ko tasis, ko kitika di bechuli ko dodan ka di bechuli.",0.0622,0.0029
+35,Hamƒuɔ.,Hamfo,1.0,0.0833
+36,Ham bebi ndi Kus ku Misraim ku Put ku Kanaan.,ambèbi èdikús ko mésaràm ko púts ko kaná,0.1,0.0131
+37,Na Kus bebi ndi Seba ku Hawila ku Sabta ku Raama ku Sabteka.,na kusubi indi seba ku hawila ku septa ku rama ku septa,0.0355,0.0045
+38,Na Raama bebi ndi Seba ku Dedan.,Na ramba bi idi seba ku deda.,0.0816,0.008
+39,Kus ɔ́wɔ Nimrod.,kuss owo nimmro,0.3333,0.0347
+40,Na Nimrod ɔmɛni úbenwini ukpone ɔyikune geen na kalɔ lɛlɔ.,"Na Nimrod, omeni obenwini ukpune oyikune gaini na kalole.",0.07,0.0052
+41,"Na Misraim bebi ndi, Lud kadi bekyuli ku Anamiƒuɔ ku Lehabiƒuɔ ku Naƒtuhiƒuɔ ku Patrusiƒuɔ ku Kasluhiƒuɔ.","Na Mesram Bebi, indi lut karibe culi, ku Amore fo, ku Lehabi fo, ku Naftali fo, ku Patrice fo, ku Kaslo fo.",0.0519,0.0046
+42,Na bana kemmo na Ƒilistiƒuɔ bálɛ bási ku Kaƒtorƒuɔ.,na banakemu na filisifo balebasi. kukafutofu,0.0864,0.0085
+43,Na Kanaan ubidi udeedi ndi Sidon ku nwuna kaba kemmo bebi babambadi bani ndi Hetiƒuɔ ku Yebusƒuɔ ku Amoriƒuɔ ku Girgasiƒuɔ ku Hiwiƒuɔ ku Arkiƒuɔ ku Siniƒuɔ ku Arwadiƒuɔ ku Semariƒuɔ ku Hamatƒuɔ.,"na Kanan, Ubidi, Udedi, Indi, Sidom, ko wuna kabakemo bebi bana nabi, bani indi Hitifo, ku yebusifo, ko Amorefo, ku Gigaafo, ku Hewifo, ko Arekefo, ko Sinifo, ko Awadifo, ku Samariafo, ko Hamatfo.",0.0239,0.0022
+44,Semƒuɔ.,sem for,2.0,0.0833
+45,Na Sem bebi ndi Elam ku Asur ku Arƒaksad ku Lud ku Aram.,"N'asè mbebi n di ilam ku aso, ku alfasa, ku lud, ku aram.",0.0414,0.0043
+46,Na Aram ɔ́ta ɔ́wɔ Us ku Hul ku Geter ku Mesek.,"Na aram ota owo us, kuhul kugeta, kumesek.",0.0661,0.0046
+47,Na Arƒaksad ɔ́ta ɔ́wɔ Sela.,na afasad ota owu seli,0.16,0.0175
+48,Na Sela ɔ́wɔ Eber.,na selà owò èbè,0.1875,0.0355
+49,"Uleku ɔni na Eber úti ni, ɔ́wɔ bebi bananabi inyɔ úte-nwu.",Olekuni na ebe otini. Owo bebi banana bi inyọ otẹ.,0.0826,0.0062
+50,"Na unwi baalɔ banii Peleg, ɔni kalɔ ndi bule, ɔsika nwuna uwi na Katɔti úle kayawi kammɔ.",na ʊ ŋɛ̀ balɔ̀ ba ni pɛlɛg ɔ̀ni kàlɔ̀ ɪ̀ ndì ʊ̀lɛ́. Ɔ̀sì kà ʊ̀nà ʊ̀wì nà kà tɔ́tì ʊ̀lɛ́ kà yà wì kà ʊ̀mʊ̀,0.0796,0.0067
+51,Na ɔnwani baalɔ banii Yoktan.,na ona ni ba lọ bani yọkọtan,0.24,0.0122
+52,Yoktan ɔ́wɔ Almodad ku Seleƒ ku Hasarmawet ku Yera.,yokdan owo almodad gu selef gu hasama wet gu yera,0.0988,0.0048
+53,Anwu kani náwɔ Hadoram ku Usal ku Dikla.,a un kanina wo Hadoram ku usa ku dikra,0.0938,0.0068
+54,Na ɔ́wɔ Obal ku Abimael ku Saba.,na owo obal ku abimayel ku saba,0.0408,0.0052
+55,Na ɔ́wɔ Oƒir ku Hawila ku Yobeb.,"Na owo ofre, ko hawila, ko yobe.",0.102,0.0139
+56,Anwuɔsu bebi bamɛni ƒui badi Yoktan bebi.,Awo su bebiba meni fi ba de yooku dan bebi.,0.1837,0.0087
+57,Na Sem ɔ́wɔ Arƒaksad ɔni ubi ndi Sela ɔni ubi ndi Eber ɔni ubi ndi Peleg ɔni ubi ndi Reu ɔni ubi ndi Serug ɔni ubi ndi Nahor ɔni ubi ndi Tera ɔni ubi ndi Abram ɔni baalɔ Abraham.,Nasem owo okhfasad. Onie obi indi sela. Onie obi indi ebe. Onie obi indi peleg. Onie obi indi rewu. Onie obi indi serug. Onie obi indi nahuo. Onie obi indi tera. Onie obi indi abram. Onie balo abraham.,0.0217,0.0025
+58,Abrahamƒuɔ.,Abraham fo,2.0,0.03
+59,Na Abraham bebi ndi Isak ku Ismael.,"na Abraham bebi Indi Isaac, ku Isma",0.0612,0.0064
+60,Ismael ubi udeedi ndi Nebaiot ku Kedar ku Adbeel ku Mibsam ku Misma ku Duma ku Masa ku Hadad ku Tema ku Yetur ku Naƒis ku Kedema.,ismail obee udadi idi nabayot ku keda ku adebel ku mipsam ku misma ku duma ku massa ku hadat ku tema ku yeto ku nafis ku kedema,0.0165,0.0017
+61,Na Abraham ɔsɔnɔ Ketura bebi bani na ɔ́wɔ ndi Simran ku Yoksan ku Medan ku Midian ku Isbak ku Sua.,"Na Abraham osọ nọ Keturah, bebé banni nọ ọwọ i di, Zimran, ku Yokshan, ku Medani, ku Midiani, ku Ishbak, ku Shuah.",0.0375,0.0029
+62,Na Yoksan bebi ndi Seba ku Dedan.,"Na, yokson bebi inde seba ku deda.",0.0612,0.0059
+63,Na Midian bebi ndi Eƒa ku Eƒer ku Hanok ku Abida ku Eldaa.,"na Median bebi indi Efa ku Efa, ku Henok, ku Abida, ku Elda",0.0355,0.004
+64,Na bebi bamɛni ƒui badi Ketura bawɔ.,Na bébi ba mé ni. Fué ba di kètura ba wo.,0.2041,0.0071
+65,Na Abraham ɔ́wɔ Isak.,na Abraham owo isa,0.125,0.0117
+66,Na Isak bebi ndi Esau ku Israel.,na Isa bebi indi Isa ku Israel,0.0612,0.0064
+67,Esau Kaba Bekyuli Anyi.,Osa okaba bɛtuli anye.,0.25,0.0166
+68,Esau bebi ndi Eliƒas ku Reuel ku Yeus ku Yalam ku Kora.,"Isaa bebi indi, Elifas, ku Rewel, ku Yewus, ku Yoram, ku Korah.",0.0486,0.0049
+69,Na Eliƒas bebi ndi Teman ku Omar ku Seƒo ku Gatam ku Kenas.,"Na elifas bebi indi, Teman, Ku Oma, Ku Sefu, Ku Gatam, Ku Kenas",0.0237,0.0024
+70,Na Timna ɔdi ndi Amalek.,natima odi indi amale,0.2,0.0111
+71,Na Reuel bebi ndi Nahat ku Serah ku Sama ku Misa.,"na ruoel bebi indi, nahat, ku sera, ku sama, ku misai.",0.0331,0.0035
+72,Na Seir bebi ndi Lotan ku Sobal ku Sibeon ku Ana ku Dison ku Eser ku Disan.,"na seyibe bi indi, notan, ku sobal, ku sebiyon, ku ana, ku dison, ku esa, ku dison.",0.0242,0.003
+73,Na Lotan bebi ndi Hori ku Homam.,"Na Lotan, bebi indi, hori ku homa.",0.0408,0.0032
+74,Na Timna ndi Lotan ɔnwani ulekubi.,na tsumina indi lotan onwani olerubi,0.1111,0.0089
+75,Na Sobal bebi ndi Alian ku Manahat ku Ebal ku Seƒo ku Onam.,na subal bebi indi alian ku manahet ku ebal ku sofu ku ona,0.0296,0.0033
+76,Na Sibeon bebi ndi Aya ku Ana.,"Na sibeon, baby indi. Aya, ku ana",0.0408,0.0038
+77,Na Ana ubi ndi Dison.,na ana ubi idi dison,0.04,0.0039
+78,Na Dison bebi ndi Hamram ku Esban ku Itran ku Keran.,"Na disan baby Indi Hamram, ku Esban, ku Itran, ku Keran.",0.0248,0.0018
+79,Na Eser bebi ndi Bilhan ku Saawan ku Yaakan.,na esa bebi indi Bilham ku sewan ku yaka,0.0617,0.0065
+80,Na Disan bebi ndi Us ku Aran.,na disan bebii indi uus ku aramu,0.0816,0.0103
+81,Edom Batɔnkune.,Edom batongu ne.,0.5,0.0118
+82,"Asa na Israelƒuɔ lɛgabɔdi ulu úse kalɔ ni, bekyuli bamɛni nádi lɛga na Edom kalɔ lɛlɔ.","Asana Israel, leka bodii, ulu u sekalo ni. Be chure ba meni na dii leka na Edom kalolele.",0.0586,0.0044
+83,"Na ama ndi Beor ubidi ɔnanabi ɔni baalɔ Bela, na nwuna ɔma unengudi ndi Dinhaba.","na amã indii, bɛɔ, obidi ònana bi, ɔni balɔ, bilã, na nuna ɔwanini, unengude indii, dihaba.",0.0578,0.0049
+84,"Uwi ɔni na Bela úkpi ni, Serah ubidi Yobab ɔni nási Bosra nélie-nwu kenye ɔ́di lɛga.",Wo wia oni na bela okpe ni sera obedi yoba oni na se bosera nele unkenye odilega.,0.0547,0.005
+85,"Ka Yabab úkpi ni, Husam ɔni nási Teman nélie-nwu kenye ɔ́di lɛga.","kanya o ba o pe ni Husam, oninasi Tama ne le un ke ne o di legbe",0.1042,0.008
+86,"Ka Husam úkpi ni, Hadad nébelie-nwu kenye na ɔti ndi Bedad.","Kaho sam ukpini, hadad nebeleunkene na oti indi bedad.",0.0661,0.0047
+87,Na Hadad ɔmɛni nékpo na ɔ́di Midianƒuɔ lɛlɔ na Moab kalɔ lɛlɔ.,na hadat omeni nepo na ode median fol le lo na mo abuka lo le lo,0.0903,0.0071
+88,Na ɔma unengudi ɔni kemmo na ɔ́kya baalɔ Awit.,na oma unon kudi. Oni kemona ocha balor. Ewi,0.0988,0.01
+89,Na Hadad kukpi kama Samla ɔni nási Masreka nébelie-nwu kenye.,"Na hada kukwi kama, Semla, oninasi me zreka nebele unke nyo.",0.09,0.0052
+90,"Ka Samla úkpi ni, Saul ɔni nási ketu kudɔ ɔma ɔni baalɔ Rehobot nébelie-nwu kenye.","Ka semla okpini. Sol, oninasi, ketukudoo oma oninabaalo, Rehobot. Nebe lewonkanya.",0.0578,0.0047
+91,"Ka Saul úkpi ni, Akbor ubidi ɔni baalɔ Baal-Hanan nébelie-nwu kenye.",Kaso olu keni agbo obidi onibalo belhanan nebeleun kenya,0.0909,0.0065
+92,"Uwi ɔni na Baal-Hanan úkpi ni, Hadad nélie-nwu kenye ɔ́di lɛga.","Wo e unina balahann okwini, hada nelen okene odi legbe.",0.0909,0.0082
+93,Na ɔma ɔni na úlie baalɔ Pai.,Na o ma o nina o le ba lo pa.,0.1837,0.0145
+94,Na ulekudi ndi Matred ubidi ulekubi Mehetabel na ɔdi Me-Sahab uwɔ.,na oloku di idi mared obidi olukubi mehita be na odi mehsahab o,0.0909,0.0048
+95,Na Hadad lɛnɔ úbekpi.,Na hada le no o.,0.25,0.0311
+96,Edom baga ndi Timna ku Ahoa ku Yetet ku Oholibama ku Ela ku Pinon ku Kenas ku Teman ku Mibsar ku Magdiel ku Iram.,Edubaga indi timna kuah kuyitet kuoholibama kuilla kupino kukenas kutaman kumipsa kumagdiel kuiram,0.0399,0.0015
+97,Bekyuli bamɛni nádi lɛga na Edom.,Bechelebamani na di lega na edum.,0.1389,0.011
+98,ALA ALƐDI 1 13.,ala alade udedi leli levete,0.25,0.1322
+99,Israelƒuɔ Ƒui Béteti Bunyimi Adaka Ɔmmɔ.,Izrefo fi bete ti Benyamini Adaka omene.,0.1667,0.0147
+100,Amu na Dawid ɔ́ni úde bekpone batɔnkune bani mɔɔnu bekpone esu mpim mpim lɛlɔ ku bekpone esu eti anyɔ anyɔ lɛlɔ.,"Amuna Daud. Òní udèbɛ́pɔ̀ nɛ̀ bàtɔnkùnɛ. Bànì mɔ̀nùbɛ́pɔ̀ nɛ̀ ɛ̀sù, ìmpìmpìm. Lɛ̀lɔ̀kù bɛ́pɔ̀ nɛ̀. Ɛ̀sù, ɛ̀ti ànyɔ̀-ànyɔ̀, Lɛ̀lɔ̀.",0.0454,0.0042
+101,"Na ɔmmɔ kama ɔ́su Israelƒuɔ ƒui ɔnini, “Si ɔdia-mii na ɔdi bula Unwoti Katɔti lɛyɔla ni, na buti kenye bumene bula banwani bani na bégyingya bákya Israel lɛmii lɛlɔ.","Na omo kama. Osu Isarae po fi onini. Si odia mini na odibula onweti katoti leyolani, na butikinyi bumene bula bwani. Bani na bejincha bacha Isarae menilelo.",0.0262,0.0023
+102,Na bɔsɔ buti kadi lɛnɔ bumene bakpane ku Lewiƒuɔ bani nnkya-ma kudɔ na bana lɛma ku bebuo kɔdikɔ.,"na ba sa bu ti ka di le no. Bu me ne ba pa ne ku le wi po, ba ni i cha ma ku do. Na ba na le ma ku be bu ka di",0.0988,0.003
+103,Na bebebunku-bu na busie na butaƒɔ Unwoti Bunyimi Adaka ɔni na bɔ́sɔ búteye lili kudii ɔ́su uwi ɔni na Saul ɔɔdi lɛga mmɔ.,"na Bebunkubu. Na buse na Butapo. Owete abunyi mi adaka. Oni na basobete ye Lililkudi, osu owii oni na soul, o dilega ima.",0.034,0.0028
+104,” Amu na bekyuli bammɔ ƒui bénu kalɔ ka bádubusie ɔsika ɔdia-ma lɛni.,"Amuna bechedeba mofii, benukalo, ka badubose osika odeamaleni.",0.0764,0.0062
+105,Anwuɔsu Dawid ɔ́lɔ Israelƒuɔ bammɔ ƒui ɔ́siku Sihor Ketu kudɔ na Egyipte útédu Hamat ka bésie betéti Bunyimi Adaka ɔmmɔ basiku Kiriat-Yearim.,A wonsu David Olo Israel fɔ bamɔ fwi. Osiku siho keto kudo na Egipte utedu hamat ka besi bete tibinyimi adaka ɔmɔ basiku kiret yaire.,0.0413,0.0022
+106,Na Dawid ku bekyuli bammɔ ƒui bésie Yudaƒuɔ ɔma ɔni ndi Baala na basɔ baalɔ-nwu Kiriat-Yearim ka bátaƒɔ Katɔti Bunyimi Adaka ɔni na Unwoti lɛnyi lɛ́sia-nwu lɛlɔ na unye bebweyi badi udu ku avwi lɛlɔ na baalɔ-ma Kerub.,"Na, da we ku bɛchiire ba mɔ, wee bɛ sε yu ra fɔ ɔma. Ɔni ndi bala, na ba sɔ ba lɔng kiratiarim. Ka ba ta fɔ ka tɔti bu nyimi adaka, ɔni na onwe tile nyi, lε si a wulo lɔ na unye bε buei badi udu ku avwi le lɔ na ba lɔ makaerɔ.",0.027,0.0014
+107,Bététi Katɔti Bunyimi Adaka ɔmmɔ básiku Abinadab kaduli.,betika totoboyime adaka ọmọ baseku abinada kaduli,0.0938,0.0061
+108,Na béti adaka ɔmmɔ básia kɛɛkɛ ɔwɔdi ɔdi lɛlɔ.,Na beti adaka omo Basia keke owo di odile.,0.0864,0.0102
+109,Na Usa ku Ahio bákya báagyumana kɛɛkɛ ɔmmɔ.,Na usa koo ahyu bacha ba jumana ke ke o,0.125,0.0139
+110,"Na ulu lɛlɔ ni, Dawid ku Israelƒuɔ bammɔ bakɛ beemwi Katɔti ku agya.",na ululalo ni David koo Israeli fuo ba mo ba kebe mwi ka to ti koo ajoo,0.0947,0.0062
+111,Na beedie lɛnu na baatɔ́.,na bèlè lennu na bā,0.12,0.0277
+112,Bada lɛbentaa ku ebi ku enukpɛ agyala ku abambadi baagyá ku kɔkpɛɛ.,Badale benta ku ebi ku enukpe ajalakuh abambadi bajaku kokpe,0.0556,0.0043
+113,"Uwi ɔni bédu Kidon kakpa kesii kani beewiile edula ebi ni, Usa údie kɔnu ɔnii uunyene adaka ɔmmɔ ɔsika ebuo ɔni nti adaka ɔmmɔ ɔ́gbanta.","Oyi onyi bedu, kedon, kapakisi kani, be wile edula ebini. Usa udie konu, oni o nyine adaka omo. Osika ebuo oni inti adaka omo ogbanta.",0.0336,0.0024
+114,Amu na Unwoti ɔ́kɛ kɔnyi ɔ́kya Usa na ɔ́ƒiɛmi-nwu ɔ́va kalɔ ka útuku adaka ɔmmɔ ɔsu.,amo na umeti oke koyin oca usa na ofe ni um ofa kalo ka utuku ada ka omo oso,0.0586,0.0071
+115,Anwuɔsu úkpi na Unwoti anumi mmɔ.,Awo su upe na owo ti animi im.,0.1944,0.0151
+116,Dawid ɔ́kɛ kɔnyi na Unwoti kɔnyi kɔni na úti ɔ́kya Usa mmɔ ɔsu ɔ́si kɔnyi kɔni na Unwoti úti ɔ́kya Usa ɔsu.,Na wi okɔ kɔnyi. Na unwe ti kɔnyi. Kɔnyi na uti ocha usa ɛmɔ ɔsu. Ɔsi kɔnyi kɔnyi na unwe ti uti ocha usa ɔsu.,0.0289,0.0026
+117,"Anwuɔsu úti úbedu ɔmwi ni, kesii kammɔ baalɔ bani Peres-Usa Limeyi lɛmmɔ ni, Dawid ɔ́yia Katɔti geen na úye ɔnini, lɛlɔ ɔnini, “Dɛ na ndubɔbla na liti Bunyimi Adaka ɔmɛni lisienku mina kaduli?","Anusu oti ubedu omeni, kesei ka mobalobani Paris USA. Lima ele moni, Dawid oya ka totinge na uyelelo onini. Dena indibobla na liti bunyime adaka omeni, intesenge mina kaduli.",0.0239,0.0021
+118,Anwuɔsu Dawid úteti Bunyimi Adaka ɔmmɔ útesienku Yerusalem.,"Awo su, Dawidi oteti bonyemi adaka omo otesu ngu Yerusalemi.",0.1406,0.0058
+119,Mmomu ɔ́da-nwu úse ɔnana ɔdi baalɔ banii Obed-Edom kaduli na ɔdi Gatni.,"Mommo, Odamuse, Onana, Odiba, Loo. Bani, Obed Edom, Kaduli. Na Odica ni",0.0694,0.0051
+120,Na Unwoti Bunyimi Adaka ɔmmɔ úse Obed-Edom kaduli kammɔ abuli atɛ.,"na Ubetibonimi Adaka Omo, ose Ubet Edom, Kaduli Kamo, Abuli Atek.",0.0661,0.0051
+121,Na Unwoti úte Obed-Edom kaduli kusɛ kusɛ na lɛla biala baabla kemmo.,na um uti uti ube edom kaduli kusakuse na lela biala bablake mu,0.0694,0.0043
+122,ALA ALƐDI 1 14.,"Alali, udadi, lili levolenedi.",0.25,0.1488
+123,Dawid Kaduli Bekyuli Ku Nwuna Ɔtɔ Bekyuli.,na wì gadu lebe chuli kuma na oto be chuli,0.2041,0.0114
+124,"Na uwi ɔmmɔ kemmo ni, Ɔga Hiram ɔni mɔɔdi lɛga na Tiro ɔ́tala bekyuli badi úmene Dawid.",na o yi omo ke moni oga heria o ni moli le ga na tirio o ta la be chu le ba di umine da wi,0.083,0.005
+125,Na béti egyii kpakplaa etenku ku banwine ku bani ngyi kalɛ na baatú atabi lɛtɔ kalɛ na bátátu keliekɔ kabuni geen béte-nwu.,na beti eji papala etengu ko bawine ko bani inchikalena batu atabi oton kalena batatu kele ko kabuni ganyi beten,0.0372,0.0034
+126,Na ɔƒɛni Dawid ɔ́nu ɔ́ti ka Unwoti ɔ́ya na nwuna lɛga lɛni na ɔɔdi na Israel línye kpi.,"Na openi Dawuda, onu otika, unwe ti oya na una legadi. Leni na odi na Israel linye",0.0401,0.0048
+127,Na ɔ́kɔliku nwuna lɛgadi lɛmmɔ katɔ geen ɔsi Israelƒuɔ ɔsu.,"na, okoli ko una le ga di le mokato gë o si Israel osi",0.13,0.0082
+128,"Uwi ɔni na Dawid ɔɔdi lɛga na Yerusalem ni, úti beleku pii na ɔmmɔ ɔsu ɔ́kɛ bebi bananabi ku belekubi pii.","Owoe onina na weji. O dilega na Yerusalemi ni, oti belo kupi na omosu oke bebi banana bi, o belo kupi.",0.0385,0.0038
+129,"Na bebi bani na ɔ́wɔ na mmɔ ndi bamɛni, Samua ku Sobab ku Natan ku Salomo ku Yibhar ku Elisua ku Elpelet ku Noga ku Neƒeg ku Yaƒia ku Elisama ku Eliada ku Eliƒelet.","Nabebi banina owuo, na imoni babeni. Samuel, Kosobab, Konathan, Kosolomon, Koyiba, ko Elisua, ko Elpelet, konoga, konefek, koyafia, ko Elisama, ko Eliada, ko Elifelet.",0.0251,0.0019
+130,Dawid Úkpo Ɔ́di Ƒilistiƒuɔ Lɛlɔ.,Daudi Okpo ode felisi folele,0.2,0.0207
+131,"Uwi ɔni na Ƒilistiƒuɔ bénu ka bése Dawid lɛga ka utaadi Israelƒuɔ ƒui lɛlɔ ni, bana bekpone ƒui bátu akpagya ka batawia-nwu na bekpoku-nwu.","wɔ wi ɔnii na fili si fɔ bɛ nuka, bɛ seda wi dɛlɛga. Ka utade Isiraɛli fɔ fwi lɛlɔ ni, bana bɛ kponi fwi batɔ agbaja ka batia wi am na bɛ kpokun",0.0451,0.0028
+132,Nsu Dawid únu litemi lɛmmɔ na anwu lɛnɔ ɔ́ta ka utekpoku-ma.,e suda wi unole temila bon na awulen ota ka utepokoma,0.0826,0.0068
+133,"Ɔƒɛni ni, Ƒilistiƒuɔ bébo bakya Reƒaim Kɔwɛ kemmo na bakya beebile ala na mmɔ.","Open in me. Felicity, follow me for back cha refine. Go with camera. Now, catch a big belief, Allah. Now in",0.1071,0.0136
+134,"Ɔmmɔ ɔsu Dawid úye ɔ́siku Katɔti kudɔ ɔnini, “Nteesie ntékpoku Ƒilistiƒuɔ?",amao su David Uye ose ku ka tote ku do oni ni. nde se nde ku ko feliste fo,0.157,0.0072
+135,Adubɔnyonu-ma akya-mi enu kemmo?,Anụbụọ nyọ nụma achami enukeme.,0.3125,0.0148
+136,”.,Ọmọ ọdún 00:00.,3.0,11.0
+137,"Amu na Unwoti údie kenye ɔnini, “Teesie na ndubuti-ma lɛkya-a enu kemmo.","Amuna uneti udieke nye onini, tese, na indobuti malacha eno.",0.0764,0.0054
+138,Anwuɔsu Dawid ku nwuna bekpone báta bésie Baal-Perasim.,Awasu da widigo wuna beponi bata bese balperasi.,0.125,0.0061
+139,Na mmɔ na bátádi Ƒilistiƒuɔ lɛlɔ.,na imona. Bada difiristi folo lo,0.1389,0.0165
+140,"Na Dawid ɔ́su ɔnini, “Kalɛ na ntu bɔɔbwɛ taalɛ kesii kadi ni, lɛni na Katɔti ɔ́bwɛ ɔ́lɛ mina bekisine lɛlɔ na úti-ma ɔ́kya-mi enu kemmo.",na dawid osuni kalena into bɔbɔe ta let kesi kadini lenina katoti bɔbɔe ɔlɛ mina bɛ kesi nelɛ lɔ na utima ɔcha mi enuke,0.0352,0.0026
+141,” Ɔmmɔ ɔsu kesii kammɔ baalɔ bani Baal-Perasim.,Komo osu kese ikamo balobani balperasini.,0.1429,0.0088
+142,Na Ƒilistiƒuɔ báda bana baƒiɔ báva mmɔ.,"Na felise, le fo ba dabanabashobavua.",0.1224,0.0156
+143,Na Dawid ɔ́ya na bákyula-ma.,na david oya na bachula ma,0.16,0.0113
+144,"Limeyi lɛdi lɛnɔ ni, Ƒilistiƒuɔ básɔ báta bésie kɔwɛ kɔmmɔ kemmo.","Lemeila dilenoni, filisefo basobata, besekowe komokemo.",0.0909,0.0078
+145,Ɔmmɔ ɔsu Dawid ɔ́sɔ úye Katɔti únu lɛla lɛni na ɔbla.,"omo osun, David oso oye kato ti unu. Lelaleni na",0.0826,0.0101
+146,"Na Katɔti údie-nwu kenye ɔnini, “Bítesie siin.",Nakatoti udie mu kyenye onini. BTSS,0.1429,0.01
+147,Mmomu bɛka bɛmana-ma na bikpoku-ma na kugyii kubendi kɔmmɔ anumi mmɔ.,"I momo, bɛkɛ bɛma na ma, na bikpoku ma, na akujiku bɛni kɔmɔ anumi",0.0992,0.0041
+148,Na si bɛnya binu kɔku ka ɔbla aani bekyuli esie mɔɔví kugyii kubendi kɔmmɔ katɔ kakɛ na bikeli bitekpoku-ma.,"Nasí benyabi nu kokuka obla ani bechili e semovi kuji kubendi komokato, Kake, nabikeli bitepokuma.",0.0499,0.0027
+149,Ɔsika ɔmɛni ndubɔtina ka Katɔti ɔ́gyu ɔ́tɔ bina anumi útekpoku Ƒilistiƒuɔ bammɔ.,osika omene Indo botenaka katoti oju otoe bi na anu mi utepoku Felici foba,0.0972,0.006
+150,” Ɔmmɔ ɔsu Dawid ɔ́bla kalɛ kani na Unwoti úbo-nwu ɔda.,Omo osun. David Obla kale kanena onweti ugbowo oda.,0.1,0.0095
+151,Na békpo bádi Ƒilistiƒuɔ bekpone lɛlɔ.,"Na, beko ba di filiste fo, beko na le le.",0.25,0.0117
+152,Ɔsi Gibeon utédu Geser.,"Osi, gebia, utedo, gesa",0.25,0.0249
+153,Anwuɔsu Dawid ɔ́ƒɔ lɛnyi na kalɔ kammɔ ƒui lɛlɔ.,"Awo su dawid oponye ni, na kalo ka mofui le le",0.1111,0.0111
+154,Na Unwoti ɔ́ya kadi ƒui baayia-nwu.,Na o ti o ya ka di pue ba ya.,0.25,0.0151
+155,ALA ALƐDI 1 20.,"Ala aladi udidi, Leli avlanyo.",0.25,0.1405
+156,Israel Ku Amon Kekpo Kenye Káyɔ.,Izrayɛl ku Amon kɛbɔ kɛnyɛka,0.1111,0.0178
+157,"Na ɔtumawi bamba uwi ɔni na kɔlɔ baga baata lɛlɔ kekpo ni, Yoab ɔ́tɔnku Israel bekpone na bétékpo Amon kalɔ na bábwɛ bana lɛma bávi.",na otuma wi ba ma uwi oni na kalobaga ba talalokeponi yo abotongo Israeli beponi na bete poko amonu kalol na babwe banamabave,0.0368,0.0027
+158,Na békpoku Raba bana ɔma unengudi ɔmmɔ na bétu ala bábwɛ béwi.,Na bɛkɔkɔ raba bana ɔma ɔnɛnkudi ɔmɔ. Na batuo ala babuɛ bɛwɛ,0.0417,0.0056
+159,Nsu Dawid anwu ɔ́sɔ ɔ́kya Yerusalem.,yeso da wii amuo oṣọ ọcha Jerusalem,0.1944,0.0179
+160,"Kama ni, Dawid úbesie Raba ɔma unengudi ɔmmɔ kemmo anwu ɔlati na útáda kagabwa kani na kebi Molek baƒiɔ bani na bátu bényene mmɔ lili úbimi.","Kamani. Da wì ùbesè raba, òma unànkùdì òmo kemu. Anwù òlàtì. Na ùtàdakagbua kànìnà kèbì. Molèkba fìyòbanìnà batùbènyìnè ìmòlìlì ubì.",0.0355,0.0038
+161,Na úti ubi lili.,na uti obele,0.1875,0.0417
+162,Na úti ala bamba pii ani náƒɔ kuye lɛnɔ ɔ́tɔlɔku.,Na úti alá bà ma pì ánì ná fòkú yèlè nó otòlò.,0.1,0.0125
+163,Na únye Raba ɔma unengudi ɔmmɔ bekyuli lɛlɔ na béti abuala lidu ani na beebeyi kalɔ ku kɔdadi ku ligyii ekulola na bábla kabla kpakplaa.,"na unyeraba, oma unae engudi omo betu lele lo, na beti abwala lidu, ani na bebe yi kalo, kukodadi kuli ji, ekulo la, na babla kabla pakpla.",0.032,0.0019
+164,Na lɛni kani na ɔ́ya na bábla na lɛma libliidi kemmo lɛnɔ ƒui.,"Na leni kanina, oyana, babla nalema liblidi kemolenofule.",0.071,0.0048
+165,"Ɔmmɔ kama ni, Dawid ɔ́tɔnku Israel bekpone bammɔ na bénwini bésie Yerusalem.",o mo ka ma ni da we do to ngu Israel be ko ne ba mo na be wuni be se Yerusalem,0.125,0.0039
+166,Reƒaiƒuɔ Kaba Kemmo Bebi Lɛlɔ Kɔtɛ.,"Rai fa fo, ka bako mo bebile loko te.",0.25,0.0143
+167,"Na uwi ɔdi kama ni, Israel bekpone bésie bétékpoku Ƒilistiƒuɔ na kesii kani na baalɔ Gese.",na wi o di kamani Israel be kone be se be te ko kuo Filisiti fo na ke si ka ni na ba lo ge se,0.0859,0.0032
+168,"Na kekpo kammɔ kemmo ni, Sibekai ɔni nási Husa ɔ́du ɔnana ɔni baalɔ Sipai na ɔdi Reƒaim uwɔ na bádi Ƒilistiƒuɔ lɛlɔ.","Na kegboka mokemoni, sebe kae, one nase husa, odu onana one balo sipae, na odi refiem uwọ nabadi Feliste fọlọ",0.0393,0.0039
+169,"Na kekpo bamba kadi na Israelƒuɔ ku Ƒilistiƒuɔ békpo kemmo ni, Yair ubidi Elhanan ɔ́du Lami ɔni ndi Goliat ɔni nási Gat ɔma kemmo ɔnwani.",na ke po ba ma kadi na Israel fuo ko Philistifuo gbe po ke mo ni. Yael obidi Elhanan Odwulami o ni in di Goliath. O ni na si Gat omakemu o wa ni.,0.0448,0.0022
+170,Na Goliat ɔmɛni lɛtula lɛni na ɔda akpɛlɛ ani nlɛ-nwu lili ese aani lɛbuala lɛni lɛlɔ na adi bedine beebó kɔdi abuli taada.,"na go le omene le tula. le ni na oda a kpele. a ni in le un lili, e se a ni le bwalla, le ni le lo na. A di be di ne. Be bo kodi a bwalla ta.",0.0681,0.0033
+171,"Na Ƒilistiƒuɔ bekpone bamɛni akɔ ni, ukyuli bamba ɔni na ɔ́si Reƒaiƒuɔ kaba kemmo ɔ́kya na úbomo na ɔ́kuku geen.",Na felicite vo be pone ba mani akoni ochele ba ma. O ni na o si ra fa ifo ka bake mu ocha na ubomo na o koku gen.,0.0625,0.0041
+172,Na ubo animi aku na kɔnu biala lɛlɔ.,na ubo anomya kun na kono bialalelo,0.0781,0.0089
+173,Na lɛgba lɛnɔ ubo animi aku na ɔdi biala lɛlɔ.,na legbale na obo anomi akun na odibiyala lele,0.08,0.0077
+174,Na ana ƒui ebo aavlanyɔ-ine.,na anafue ebö avlanyɔ in,0.16,0.0103
+175,"Amu na kekpo bamba kadi na békpo na Gat kemmo ni, ɔnana ɔmɛni ɔkya ɔɔpii Israelƒuɔ bekpone.","Amonake pe obama, kade na be po, na gat ke moni, ona na omeni ocha o pi Israel, fo be po.",0.0657,0.0043
+176,Anwuɔsu Yonatan ɔni na ɔdi Dawid ɔnwani Simei ubidi ɔ́du-nwu.,"Onwaso Jonathan Onina Odi. Dawid Onwani, Samuel Obidi Odum.",0.09,0.0071
+177,Dawid ku nwuna bekpone bádu nkyuli ɛtɛ bani na bási Gat ɔma kemmo mɛni na badi Reƒaiƒuɔ kaba kemmo bekyuli.,"Da we ku na be ko ne, ba do inche li ete, ba ni na ba si gat o ma ke mo, ma ni na ba di ra fa e fo, ka ba ke mo be che li.",0.085,0.0037
+178,ALA ALƐDI 1 19.,Ala ala di udedi.,0.1875,0.0496
+179,Israel Úkpo Amon Ku Siria.,Israe upo amonku siria.,0.16,0.0068
+180,"Na uwi ɔdi kama ni, Amonƒuɔ ɔga úbekpi.",Na 00:00:02 am on 4 August obɛ,0.1094,0.0244
+181,Na ubidi ɔni baalɔ Hanun na béti bése-nwu kenye na únwini bana ɔga.,na obidi oni bano hanum na abetibese unkenyini na owuni bana ogu,0.0533,0.0071
+182,"Ka Dawid únu-nwu kukpi ni, ɔ́su ɔnini, “Ndubɔbla lɛla lɛbuni lɛdi lite Nahas ubidi Hanun ɔsika lɛni kani na ɔti Nahas ɔ́bla-mi lɛƒɔndia dii.","Kada wi unun ko pe ni. O su o ni ni, n du bo bla le la le bu ni le di lite. Nahas u bi di hanum. O si ka le ni ka ni na o ti nahas o bla mi le fo di adi.",0.0712,0.0019
+183,” Ɔmmɔ ɔsu Dawid ɔ́tala nwuna bekyuli badi ka batásia Hanun kɔnu na ɔti kukpi ɔsu.,Omo oso da wi otala una bechuli badi kabatasi ahanum konu na otikuku oso,0.0622,0.0046
+184,"Ka Dawid bekyuli bétéduo Amon kalɔ lɛlɔ ni, básu-ma Dawid kenye kani na badanku.",Kà dâwì bɛ̀ cʊ̀lì. Bɛ̀ tɛ́ dwò. Amɔ̀n kà lɔ̀lɛ́ lɔ̀ nì. Bàsʊ̀mâ dâwì kɛ́nyɛ́ kànì ná bàdá.,0.0918,0.0078
+185,"Nsu ka báwɔlɔ ni, Ɔga Hanun benengu bammɔ básu bana ɔga banini, “Aabu anii Ɔga Dawid ɔɔbu-ɔ na ɔɔyɔ́-ɔ ka ɔ́tala bekyuli bamɛni ɔnii babasia-a kɔnu ka ƒɔti úkpi ɔsu?",esɔ ka abawɔlɔ ni ɔga Hanum benɔ ngoba mobasɔ bana ɔga bani ni abua ni ɔga Dawid ɔbua na ɔyɔ ka ɔtarabetuli bamɛ ni ɔni babasia kɔnu kɔfɔti ɔkpe ɔsɔ,0.0233,0.0017
+186,Alati ka bubo na bekyuli bamɛni bébo aani batu na babasia bula kalɔ kammɔ anu kaduɛ na bebekpoku-bu na badi-bu lɛlɔ?,Alatika bubu na bechiriba mani bebu. Aani batu na baba siabola kaloka mo anu kadue na bebebokubu na badibulelo.,0.0317,0.002
+187,Anwuɔsu Hanun ɔ́ya na béƒie-ma na békpeyi-ma ukwi.,A o sɔhanum ɔyɛ na abɛhwe ma na abɛpɛɛ ma okui,0.1406,0.0125
+188,Lɛni kani na ɔ́ya na nwuna bekpone békulo lɛwu gyɔlɔɔ lɛni bakya mmɔ kalɔ bédie ɔ́si kavobi.,"Dɛni kani na o yã na nguna bɛkponi, bɛkolo lεwujɔlɔ lεnibacha immɔ, kalɔ bɛdie ɔsi kabɔ.",0.045,0.0038
+189,Ɔmmɔ kama ɔ́ya na bédie-ma ulu na bátɔlɔ bésie bana ɔma.,"Omo kaman. O y'enah be djem'a ulu. Na abatoro besen, bana",0.0744,0.0108
+190,"Ka ukyuli ɔdi úbo úbasu Dawid litemi lɛmmɔ ni, ɔ́tala batu badi na bátásiaku bekyuli bani na bábla kalala bákya-ma kɔƒa geen mmɔ na ulu lɛlɔ ɔnii batásu-ma ka ɔga ɔnini, “Bɛsɔ bɛkya Yeriko útédu ka bina likwi lɛ́sɔ lɛ́kwɛ linwini.",ka ucli oji ubo ubasu dawud le teme le moni o talabatu badi naba tasi akubeculi bani na ba blakalla ba cama kofa ge imu na olule lo oni bata suma ka oga onini besobecaya eriko utedu ka bina likwi leso lekwe lewin,0.0208,0.0016
+191,Na ɔmmɔ kama na binwini bibo.,na ɔmɔ kama na biwuni bi,0.0833,0.0095
+192,"Uwi ɔni na Amonƒuɔ bánu báti ka Dawid ɔ́kɛ kɔnyi geen na lɛla lɛni na bábla nwuna batu ɔsu ni, bátáƒɔ kayu bonwu kadi béte Mesopotamiaƒuɔ ɔni ndi sika ɔƒualadi antabi aƒo bonwu eti aku unu na báƒɔ bana bekpone bani muulie kɛɛkɛ kemmo.","Mewue onina amonpwo. Banu batikada-widokekonyi ngen nali-lalenina babla, wunabatu osuni. Batapokayu gboun kadibete Mesopotamia pwo. Oni indi. Seka ofoladi antabiapogboun eti akun unu. Naba fobana bepune, bani muli e ke kekemu.",0.0217,0.0016
+193,Na báƒɔ badi lɛnɔ básiku Siria lɛgakɔdikɔ kɔni na kɔkya Maaka ku Soba kalɛkɛ na kayu kenye.,Na bafoba di le no ba seku seria le gako di ko. Konin na kocha maka ku so baka leke na kayu keni.,0.0623,0.0038
+194,Na báƒɔ bekpone bani muulie kɛɛkɛ kemmo nkyuli mpim avlaatɛ-inyɔ úbunku bana Maaka ɔga ku nwuna bekpone na bábada keliekɔ na kesii kani baalɔ Medeba.,"Na bafo bɛ pɛ ni ba ni mulie kɛ kɛkɛ mu, intuli impim avula te inyɔ, obun ku ba na maka ogaku wuna bɛ pɛ ni. Na baba dakɛlɛ kɔ na kesi kaniba lɔ mɛdiba.",0.0496,0.0022
+195,Na Amonƒuɔ lɛnɔ báda bana lɛma bése na bábaklibi lɛlɔ béte ka bekpo.,na amon vole no badabana le mabese na ababakli bele lo bete kapele,0.0651,0.006
+196,"Ka Dawid únu ɔmɛni ni, ɔ́ya na nwuna bekpone ɔtɔnkune Yoab ɔ́tɔnku bekpone bammɔ ƒui ɔnii betékpoku-ma.","Kádà wɛ̀ unù ò mɛ̀ nì. Òyà nà wuná bɛ́ kpɔ̀ nì, ótɔ̀ ngbù nì Yòàbú, ótɔ̀ ngbù bɛ́ kpɔ̀ nì bà mɔ̀ fùì ò nì, bɛ́ tɛ̀ kpòkò mɔ̀.",0.1038,0.0068
+197,Na Amon bekpone bálɛ bébo ɔma unengudi ɔmmɔ ɔba kayakun na báklibi lɛlɔ béte kekpo.,na amon bepo ne bale be bo oma une nkudi oma obankaya kun naba klibi le lobi teke,0.0711,0.0039
+198,"Na uwi ɔmmɔ lɛlɔ ni, Siriaƒuɔ lɛnɔ báklibi lɛlɔ na béesie bakya alakpi akɔ na ɔma ɔmmɔ amadɔ.","na o wii omo le lo ni. Siri a wo le no, bakle bi le lo. Na bese bacha alaque ako. Na oma omo ama",0.0648,0.0053
+199,Amu na Yoab ɔ́nu úmene ka bekpone bekisine benye kuƒie na nwuna lɛƒɛnyi inyɔ bɔmmɔ ƒui lɛlɔ.,amuna yua onu umine kabe kone be kisi ne benyoko fie. Na wuna lefen inyo obo mo fui lele.,0.0623,0.0042
+200,Anwuɔsu ɔ́ƒuna nwuna Israelƒuɔ bekpone babuni ƒui ka betékpo Siriaƒuɔ bammɔ.,Amansuo opuna wuna Israel pɔbɛpɔne baabune kwi. Kaa bɛtɛpɔkɔ siria fɔbɛ,0.0909,0.0073
+201,Na ɔ́ya na ɔnwani Abisai ɔtɔnku bekpone bakladi na betékpoku Amonƒuɔ.,na oya na owani abisa ota ongu bepe ne bakladi na be te poku amonfo,0.0909,0.0046
+202,"Mmɔ na Yoab ɔ́su ɔnwani ɔnini, “Si ánu ka Siriaƒuɔ bammɔ baayu ɔkplu teetulo-mi ni, na ebo ebebunku-mi.","Na mọna yọ a sọ, ọwan ni ọninị, si Anukasi riafo bama, bayu ọkụrụ te tulomini, na ebo ebẹbụ nkụmi.",0.0556,0.0043
+203,"Na si ami lɛnɔ nánu ka Amonƒuɔ bammɔ baayu ɔkplu teetulo-ɔ ni, ndubo mbebunku-ɔ.",nasi amilenon lenoka amon poaba mo bayu okulu te tuloni ndubo emebunko,0.0663,0.0048
+204,” Nye kpakplaa na bukpo bute bula kadi bekyuli ku Katɔti lɛma linengudi lɛmmɔ.,"nyɛ papo la na bu gbo bu tɛ bu la ka di be culi, ko ka to ti lɛ ma, li nɔn ku di lɛ ma.",0.1479,0.004
+205,Na Unwoti ɔlati ɔdubo lɛla lɛni na ɔ́nu ka lɛ́manku bɔbla.,na 1:00 nti Ọla ti ọdugbọlẹla lẹni na ọnuka lẹmankobọ,0.0826,0.0084
+206,Yoab ku nwuna bekpone békpoku Siriaƒuɔ bamɛni kaduɛ ɔni na békulo bátɔlɔ-ma kudɔ.,"Ua pkuo na be pko ne, bpe pko si ra foba meni. Kadu ɛ, oni na be kolo ba tolo, makɔ do",0.1243,0.0056
+207,"Uwi ɔni na Amonƒuɔ bekpone bammɔ bánu ka Siriaƒuɔ bammɔ békeli ni, ama lɛnɔ békeli bátɔlɔ Abisai bekpone kudɔ na bénwini bétéduo bana ɔma unengudi ɔmmɔ kemmo.","Uwa onina amonfua bekponye bamo, banukasi riafua bamo, bekeli ni. Amalenoo bekeli batolo. Abisai bekponye kudo. Na benwini bete duo. Bana oma, ona enkudi omoke.",0.0329,0.0021
+208,Ɔmmɔ kama Yoab únwini úsie Yerusalem.,"Omo kama, you have own winnie, you say Jerusalem.",0.2222,0.0177
+209,"Na ka Siriaƒuɔ bammɔ bánu báti ka bádi-ma lɛlɔ na kekpokɔ ni, bátala bekyuli bákya bana bekpone bani na bakya Euƒrate Ketu kammɔ ɔvi unyɔdi.","Na kasi ya fo ba mo, ba no ba tika, ba di ma le lo, na ke po ko ni, ba ta la be chu le ba cha, ba na be po ni, ba ni na, ba cha if ra te, ke tu ka mo o vi o nye de.",0.0736,0.0027
+210,Na Soƒak ɔni ndi Hadadese bekpone unengu ɔ́tɔnku bekpone bammɔ úsienku Amon.,Nasofak oni inde hadadase beponi unengu otongu beponi bamo usengu amo.,0.0764,0.0045
+211,"Amu ka Dawid únu lɛla lɛni na Siriaƒuɔ bammɔ baabla ni, ɔ́sala Israelƒuɔ bekpone bammɔ ƒui na bávia Yordan Ketu na úbo-ma ɔda ka beténye kunyekɔ kɔbuni na benye basiaku Siriaƒuɔ bekpone bammɔ na bekpoku-ma.",Amukada wiji unulelani na siriafu bamobabani. Osala Israel fuobekponibamofuwi. Nabavyiodanketu na ubomo odakaabeteniyekuneyenkobobuni. Nabeniebasiku Filistifuobekponibamo nabepokuma.,0.0269,0.0018
+212,"Na ka kekpo kése kalɔ ni, uwi útetu asa na Siriaƒuɔ bammɔ békeli bátɔlɔ Israelƒuɔ bammɔ kudɔ.",Naka ke poke se ka loni. O witè tu asana seriali fo. Bamobe keli ba tsolo Israel fo bamoku,0.0657,0.0044
+213,Na Dawid ɔ́du bekpone bani muulie kɛɛkɛ kemmo nkyuli mpim maatɛ ku bekpone bani nkɛ lɛgba mpim aavlene.,"na Dawid odo be pe ne ba ni mu le ke ke mu, inchi li inpi mu ma te ku be pe ne ba ni in ke le gba in pi mu avle ni",0.0957,0.0041
+214,Na ɔ́du bana bekpone unengu ɔni ndi Soƒak lɛnɔ.,na ɔdɔba na abɛpɔnɛ unɛɛku ɔnɛ indii sofak lɔnɛ,0.0988,0.0102
+215,"Amu na uwi ɔni na baga bani nákya Hadadeser kalɔ mmɔ bánu ka Israelƒuɔ bádi-ma lɛlɔ ni, ama ku Dawid béwi kenye ntu na bábla unwi na bénu kalɔ na bakya-nwu kalɔ aani bana lɛlɔ ɔdine.","Amona, owi onina bagabani incha. Adadisa. Kalo emobenu ka Israel fuobadi maleloni. Amaku Dawid bewikenye intu na babla onwe, na benu kalo na bachawu kalo ani bana lelo odini.",0.0231,0.0018
+216,ALA ALƐDI 1 18.,"Ala ala de udedi, lilele vumane di.",0.375,0.1653
+217,Dawid Ɔ́di Kɔlɔ Kɔdi Lɛlɔ.,da wud odi kɔlɔ kɔdi lɔlɔ.,0.16,0.0075
+218,"Na uwi ɔdi kama ni, Dawid úsie útékpoku Ƒilistiƒuɔ na ɔ́di-ma lɛlɔ na úƒie bana ɔma ɔni baalɔ Gat ɔ́ƒɔ ku akpaklɔ ani na ede amadɔ mmɔ.","na uya di kamani Davidi use uteke poko felistifoe na odi malelo, na ushe bana oma, oni balo gat ofo. Ku apakoro ani na ede amado",0.0247,0.0034
+219,"Na ɔ́di Moabƒuɔ lɛnɔ lɛlɔ, anwuɔsu bénu kalɔ ka bataaƒɔ lɛlɔ bɔdi kayu teete-nwu aani ɔga ɔni mɔɔdi-ma lɛlɔ kalɛ.","na odemawu polenolelo. Awosu benuka lokabata polenolo bodi kayute teun. Ani oga, onimode malelokale.",0.0475,0.0045
+220,"Na kekpo bamba kemmo ni, Dawid ku nwuna bekpone békpoku Sobaƒuɔ bétédu kesii kani baalɔ banii Hamat.",nakekpo bam ma kemoni David ko na bepo ni bepo ko suba fo betedoke si kaniba loba ni amaka,0.0657,0.0039
+221,Na bana ɔga ndi Rehob ubidi ɔni ndi Hadadeser.,Nàbànà ògá indì réhòb. Òní obidi indì hadadesà.,0.1111,0.0131
+222,Na kekpo kammɔ kálɛ uwi ɔni na Hadadeser ku nwuna bekpone bátu akpagya na bási bésela betékpoku kadi kani bekyuli nli Euƒrate Ketu amadɔ.,na ke poko kama kale owi oni na hadadesa ku wuna be poney batu agbaja na basi besala betepoku kadi kani bechuri inle efrate keto amado,0.0347,0.0026
+223,Nsu Dawid ku nwuna bekpone bádi-ma lɛlɔ na béƒie bana bapɔnkɔ kɛɛkɛ apim unwi báƒɔ.,"Nso dãwi kwo onape pone badi male lo. Nãbe hweba nã, bapõ nkeke. Apim unwe bapo",0.0667,0.006
+224,Na bekpone mpim maatɛ bani mɔɔka kɛɛkɛ lɛnɔ béƒie-ma.,"Na, bepwo ne impin ma te, ba ni moka ke kele no be hwe ma.",0.1728,0.0087
+225,Na béƒie bekpone mpim aavlanyɔ bani nkɛ lɛgba.,"na bi nfe, be poni, impim avlanyo, ba ni inkele",0.1406,0.0097
+226,"Na bapɔnkɔ bani béƒie báƒɔ ni, bébo lɛna ƒui lɛgba báƒɛ na kébu eti anyɔ kani.",Naba pɔ̃nkɔɔ bani bɛhwɛ bafɔɔni bɛbɔlɛ na fui lɛgba bafɛ na kɛbɔ ɛti anyɔkani.,0.0508,0.0043
+227,"Amu ka Siriaƒuɔ bani na bási Damasko lɛnɔ bébo banii bebebunku Sobaƒuɔ Ɔga Hadadeser ni, Dawid ɔ́du bana mpim aavlanyɔ-inyɔ.",Amukase riapo bani na basieda Masco. Lenobe bo bani bebebu nku sobapo oga heredesani. Dawid odnu bana impim avlanyo inyo.,0.0425,0.0025
+228,Ɔmmɔ kama Dawid úle nwuna bekpone ɔ́kya Damasko na ɔ́kɛ ɔyikun na Siriaƒuɔ lɛlɔ.,"Omo kama, David Ule wuna be ponne ocha Damasco, na oken oyikun, na siria pole lo.",0.0663,0.0051
+229,Anwuɔsu Siriaƒuɔ lɛnɔ baaƒɔ lɛlɔ bɔdi kadikɔ kayu teete Dawid.,Amwa sosira pole noba fole lobodi ka di kokayu tetelawi.,0.1,0.0074
+230,"Na kesi kesii na Dawid úsie ni, Unwoti uubunku-nwu na ɔɔdi nwuna bekisine lɛlɔ.","Na, ke si ke si, na daa wit u seni. Unwe ti u bu unkun, na o de wuna bekisi ne le le.",0.102,0.004
+231,"Na kekpo kammɔ kama ni, Dawid úƒie Hadadeser benengu sika ugyiedi kayi agyumanala ɔ́ƒɔ na úti-nya úsienku Yerusalem.","na kepo ka mo kamani, David ofie Hadadessa benu kosi ka ujiedi, kayi ajumala opo na utinya usengu Yerusalem.",0.0463,0.0028
+232,"Na abuala egyiedi ani baakywɛɛ ala na Beta ku Berotai lɛma lɛni lɛlɔ na Ɔga Hadadeser útaadi mmɔ ni, úti ketulodikɔ ɔ́tɔlɔku.","Na abala e jedi, aniba chen, ala na abata, guberuta elema, leni leno na oga hadadisa, utadi imoni, uti keturo dikoro otoloko.",0.0393,0.0036
+233,"Kama ni, abuala amɛni na Salomo ɔ́ya na bakywɛne béti bétu lɛkyami bonwu lɛni na bátaalɔ banii ɛpu mmɔ béte-nwu.",kamani a gbala ameni na Solomon oya na ba chwene betibetu lechami bogboni na bata alobani epu imobete,0.0425,0.0037
+234,Na úti ɔdi ɔ́bla kakpakɔ kammɔ akpa ku ala bamba ani na béti bákya ɔtɔ ɔmmɔ bɔdia.,"na uti odi obla kakpoko kamo akpa, ko alaba ma ani na beti bacha oto omobode",0.045,0.0051
+235,"-Uwi ɔni na Hamat ɔma ɔga ɔni baalɔ Toi únu ka Dawid úkpoku Ɔga Hadadeser na ɔ́di-nwu lɛlɔ ni, ɔ́tala ubidi ɔnanabi Hadoram ka usie na utéte Dawid mmo na nwuna lɛlɔ bɔdi ɔsu.",o ni na Hamat Oma Oga o ni ba lo te o nu ka David o po ku Oga Ha da le sa na o di n u le lo ni o ta la u bi di o na na bi Ha do ram ka u si na u te te David i mo na u na le lo bo di o so,0.0476,0.002
+236,Na Hadoram ɔmɛni ɔdanku sika ugyiedi ku ɔƒualadi ku abuala egyiedi úsienku Dawid.,na ha doram omenii oodangu sika o jedii ku ofuradi ku agwala ejedii usiegu dawe,0.0651,0.0056
+237,Dawid úti etela ammɔ úte Unwoti úbunku sika ɔƒualadi ku ugyiedi ɔni na úƒie ɔ́ƒɔ Edom ku Moab ku Amon ku Ƒilisti ku Amalek kadi bekyuli kudɔ.,"Nə wə́ útí ètì lá ámɔ, útí ùwɔ̀tì ùgbɔ̀ nkùsìká ófɔ̀lá díkù ujìɛ̀dí. Ɔ̀ní ná òfìè òpɔ̀n, èdùm, kù Mwab, kù Amon, kù Filisiti, kù Amalik, kà dìbɛ̀cùlè kù.",0.0384,0.0049
+238,Ɔmmɔ kama Seruia ubidi Abisai útékpoku Edom kadi bekyuli na kesii kani na baalɔ Mma Kɔwɛ kemmo na ɔ́du nkyuli mpim leevu-maane.,kama serua obidi abisai otekoku edom kadibetuli na akesii kani na ba lo imma kowekemo na odo inchuri impim lebumani,0.031,0.0027
+239,Na ɔ́ya na bekpone badi básɔ bakya mmɔ na kadi kammɔ bekyuli baaƒɔ lɛlɔ bɔdi kayu teete Dawid aani ɔga ɔni mɔɔdi-ma lɛlɔ.,"Na oya na obeko ni badi, ba soba cha emo, na akadi ka mo be chuli, ba fo ma le lo. Bo di ka yu, te te da wid. A ni oga, o ni mo di ma le lo.",0.0662,0.0033
+240,"Na kesii biala na Dawid úsie útékpo ni, Unwoti uubunku-nwu na ɔɔdi lɛlɔ.","Na ka si bi Ala na Dawid, use ute Poni. Owe ti obun gum, na odi lero.",0.0769,0.0065
+241,Dawid Ubo Benengu Badi.,David ubobeno ngubadi,0.25,0.0055
+242,Dawid ɔ́di Israel lɛlɔ kaduɛ na ɔɔtɛ etemila siin.,Nɛ wɛɛ ↄdi Israelɛ lɔ kɛ aduɛ na ↄtɛɛ itɛmuna si.,0.1235,0.01
+243,"Na uwi ɔmmɔ kemmo ni, Seruia ubidi Yoab nádi bekpone unengu ƒui ɔni mɔɔdi bekpone bammɔ lɛlɔ.",na owuo omo kemoni sewura obidi yuab Na dibekpone onene nku fwei onimodi bekpone bamolelo,0.0519,0.0044
+244,Na Ahilud ubidi Yehosaƒat ndi ukyuli ɔni mɔɔda aban lɛku lɛni kemmo na ala alɛdi ƒui akya.,"Na ahelele Obidi Yehosafati inde utshili oni mɔdi abaleku, lene kemuna ala alede pui atshi",0.0519,0.0054
+245,Na Ahitub ubidi Sadok ku Abiatar ubidi Ahimelek ndi bakpane.,na ahitu obi di sadok go abiyata obi di ahimalek indi bapa,0.1,0.0048
+246,Na Sawsa ndi ɔku unwenine.,Na sau sa. Andi ọku owenine.,0.2,0.0113
+247,"Na Benaia, ɔni ndi Yehoiada ubidi, mɔɔnu Keretiƒuɔ ku Peletiƒuɔ lɛlɔ.","Nabe naya, onine inde. Ye hoada, obedi mono. Kere ti fua, ku pelete fua lele.",0.1157,0.0061
+248,Na Dawid bebi bananabi ndi benengu bani kunyekɔ nákɔ katɔ kutulo ƒui kabla bablane bammɔ akɔ.,"Na dade bɛbi banana bi i dibɛnɔŋku, bɛni kunyɛnkɔ na kɔkatɔku tulu pui kabla bɛblanɛ bamo akɔ.",0.0547,0.0032
+249,ALA ALƐDI 1 12.,"Ala alɛdi udɛdi, lilelevu unyɔdi.",0.1875,0.157
+250,Bekpone Bedeedi Bani Náka Dawid Kama Bɔsiaku.,"Bɛpɔnɛbɛdidi, bɛnɛnaka, Dawidikamabɔsya.",0.1429,0.0097
+251,Na banana bamɛni nébo Dawid kudɔ na Siklag uwi ɔni na úkeli Kis ubidi Saul.,nabana nabame ni nebo da wi ku do na si glad u wi oni na u ke li ku ubiri so,0.0844,0.0039
+252,Na bekpone bamɛni bebunku bekyuli bani nénye-ku Dawid na békpo kekpo.,"Na bepomene bameny, bebonko bechuri. Baninnye ku Dawit na bepoke",0.0744,0.0052
+253,"Bebo kɔtaminta, na baakana-ku bubo geen.","Bòbò kàn tàmìntà, nà bà kànà kòbò bòngèng.",0.2222,0.0186
+254,Na bagyi atabi lɛnɔ buƒwimi kaduɛ kɔmii ku kɔdianu.,"Nabaji atabie leno obu fu mi kadue, komi go kodia nu.",0.1358,0.0085
+255,Na badi Saul lɛlɔ bekyuli bani nási Benyamin kaba kemmo akɔ.,na badiso ole lobe tuli Bani naasi Benjamin kaba Kamo,0.0661,0.0062
+256,Bekyuli Badi Bási Gad Kaba Kemmo Na Básiaku Dawid Kama.,Wɛɛ kɛlɛ baa ni baa sɛɛ kaba kɛɛmɔ. Naa baa sɛɛ kɔda wɛɛ kaba.,0.13,0.0128
+257,Gadƒuɔ badi bámami lɛlɔ bétébunku Dawid na nwuna kagyumanakɔ kpakplaa kani na úsie ɔkya na ketele kalɔ kakwiidi kemmo.,ka vorba di ba mami de lo bete bun kwi David na una kajola kpo kpo ka ni na o se ocha na ketere ka lo ka kwi di ke,0.0748,0.004
+258,"Na badi bekpone bani mbo kayi na benye kagyumana bete kekpo, na bagyi atula ku kayi lɛgyumanala bɔda kaduɛ.","Na badibe kpone, bani imbokaye na benye ka jumna beteke kpo na baji atola, ko kayile jumnala, bodakadu",0.0416,0.002
+259,"Bekyuli bamɛni anumi álɛ bagyata anumi, na bebo ababla aani lɛku kemmo abi lɛlɔ bakwa.",bɛ́ tʃì lɩ̀ bà mɛ̀ ní à nú mɛ̀ à lɩ̀ bà dʒá tà à nú mɛ́ nà bèbò àbáblá àní lɛ́kʊ̀kɛ̀mɔ̀ àbɩ̀ lɛ́lɔ̀ bàkwà,0.1067,0.0076
+260,Eser ntɔ na Obadia ɔsia-nwu kama na Eliab ɔsia ɔtɛdi.,e-sa o-to na Obadia o-si-a-o-nka-ma na e-la o-si-a-o-te,0.07,0.0085
+261,Na Mismana ɔsia unedi na Yeremia ɔsia ɔlɔndi.,na Misimana Osea unedi na Yeremia Osea olode,0.0625,0.0066
+262,Na Atai ɔsia ɔkundi.,"Na atai, osia okundi.",0.125,0.0078
+263,Na Eliel ɔsia maatɛdi.,na Eliel o sia matted,0.1875,0.0123
+264,Na Yohanan ɔsia maanedi.,na yuhanan osia manne de,0.25,0.01
+265,Na Elsabad ɔsia yaalenwidi.,"Na esabat, o siaya lewundi.",0.25,0.0132
+266,Na Yeremia ɔsia leevudi.,"Na Yeremia, osia levu di",0.1875,0.005
+267,Na Makbanai ɔsia leevu-unwidi.,na magbenya posia levo,0.1875,0.0208
+268,Na Gadƒuɔ bekpone bamɛni badi bekpone batɔnkune.,na garfor be ponibamene bade be ponibatongune,0.1224,0.0077
+269,Na bani ndi bayikune geen baatɔnku bekpone apim na bani nsia baatɔnku eti anyɔ.,"na bani inde, bayikunde ge, batongube kpomi, apim na bani insiabatongu eti anyo",0.0408,0.0036
+270,Na ama ndi bekyuli bani na bávia bésie Yordan Ketu bésie ɔvi ɔni ngye uwi ɔni na ketu kammɔ kéyi ku atu na kɔbuli kedeedi kemmo bátábɔku bekyuli bani ƒui nli kɔwɛ kemmo ɔ́si ɔƒɛ katukɔ útédu kanukɔ.,na amaindi bechureba nina bafia bese yodan ketu bese ovio ni inje uwi onina ketu kamo keyii ku atu na koboluku dedike mu bataboku bechureba nifui ili kowekemu osi ofekatu ko utedukanoko,0.0215,0.002
+271,Benyamin Ku Yuda Kaba Bekyuli Badi Básiaku Dawid Kama.,Benjamin Kuyoda kababechuli badebasia koda widikam,0.1111,0.0044
+272,Benyamin ku Yuda kaba bekyuli badi lɛnɔ bébo Dawid kudɔ na nwuna kagyumanakɔ na kesii kani na ɔkya.,"Bɛ nyɛ amɛ ku yudɛ ka bɛ bɛtwɛli, bɛ di nɛ nɔ bɛ bɔ da wɛɛ gudɔ, na n’wuna ka jumu na kɔ, na kɛsi kani na ɔ.",0.0679,0.0038
+273,"Amu na Dawid úsie útásiaku-ma na ɔ́su-ma ɔnini, “Si atubɔyɔ kemmo na bɛkɛ bibo ka bibebunku-mi ni, nnye kagyumana ka lɛƒɔ-mii libunku lɛlɔ.","Amuna Dawid Use, utasi akuma na osoma onini si atubo yookemo na beka bibo ka bibebun kumini inye ka jumna, ka lefo mi lebu ku lelo.",0.0378,0.0021
+274,"Nsu si bubo na bíbo bɛnii bibedie-mi bite mina bekisine ɔni na mina enu ese sɛɛn na ńtabla likpidi lɛdi bɔdi ni, na muuvele bula bati Katɔti nnii, ɔtɛku-mii litemi lɛmmɔ.","O nuse, bubona bibo beni bibedimi bitemina bekisine, o nina mina enu esese, na intablalekide le bode ni, na muvule bulabati katoti ini otekumiletelim.",0.026,0.0019
+275,” Mmɔ na Katɔti kɔyu kɔ́ƒɔ Amasai bekpone avlaatɛ ɔtɔnkune kemmo na ɔ́su ɔnini.,Emona katwatiko yukofo amasia bekone avulate otuonkunekemu na osu onini.,0.071,0.0055
+276,“O Dawid!,o da wi,0.5,0.0278
+277,Bɔdi ƒula badi.,Odi fu la ba di,0.5556,0.0208
+278,O Yisai ubi!,"O, isa, u",0.2222,0.0494
+279,Bunye-ɔ kama.,Wu nya okan,0.75,0.05
+280,Keyi buɛɛ kasiaku-ɔ na kasɔ kasiaku-ɔ!,"Kye bue kasyakwo, na kasokasyakwo.",0.1389,0.0122
+281,Keyi buɛ kasiaku bekyuli bani muute-ɔ kebunku.,ke buwe kasa kubechri bani mutoke bung,0.1224,0.0097
+282,Ɔsika ƒula Katɔti ɔdubute-ɔ kebunku.,"O sikaka polaka toti, odoboto kebungu.",0.24,0.0133
+283,Anwuɔsu ɔ́ƒɔ-ma úbunku nwuna bekpone lɛlɔ.,Awo su òfòmà obòkò wona bè pè né lè.,0.25,0.0147
+284,Na ɔ́bla-ma bekpone batɔnkune.,na oblamà bepò nebatò ngu ne,0.3125,0.0104
+285,Manase Kaba Bekyuli Badi Básiaku Dawid Kama.,Manasseh Kablabe Tulib. Badibasse akodawit kama.,0.1224,0.008
+286,Bekpone badi bási Manase kaba kemmo na bébo bébenye Dawid kama uwi ɔni na ɔ́siaku Ƒilistiƒuɔ ka bétékpoku Ɔga Saul.,"Mɛkɔnɛba dɛbasɛi, Manasɛ kaba kɛmɔ. Na bɛgbɔbɛbɛnyɛ Davidikama, owiɔnina, ɔsɛakufɛlisti fɔ, ka bɛtɛkɔku Ɔgasɔ.",0.0425,0.0037
+287,"Nsu geen ni, bétebunku Ƒilistiƒuɔ kekpo kammɔ.",kisu geine bete buko felise fo kepoka,0.1429,0.0132
+288,"Ɔsika Ƒilistiƒuɔ batɔnkune básu banini, “Bɔdubɔyii udu si Dawid ɔ́sɔ ɔ́blaku Ɔga Saul unwi.","Osi ka, feleste fo batongone basu banini. Boduboyi udu, si da wid oso oblaku ogasol un.",0.0663,0.0043
+289,"” Uwi ɔni na Dawid úsie Siklag ni, Manase kɔdua bekyuli bani námami lɛlɔ bétébunku ndi Adna ku Yosabad ku Yediael ku Mikael ku Yosabad ku Elihu ku Siletai na badi bekpone bani nátɔnku bekpone apim apim Manase kɔdua bekpone akɔ.","We onina, Daudi use, Sigalani. Manase kodu ya, bejulebani, Namamilelo bete bunku, indi, Adina, ku, Yosabad, ku Yediel, ku, Mikayel, ku, Yosaband, ku Elihu, ku Silatai. Na badi bekponi, bani na tongu bekponi apim apim. Manase kodu ya, bekponi akpo.",0.0169,0.0011
+290,"Na bébunku Dawid na békpoku bekpone bamba bani mɔɔta kekpo teebile ala ɔsika bebo kayi na beekpó geen, na úti-ma ɔ́bla batɔnkune.","na be bongo dawid na be poku be pone bama, ba ni mota ke poku te bile ala osika, be bo kayi, na be poge na uti ma obla batongo ne",0.0496,0.0023
+291,"Na limeyi ndi limeyi ni, bekpone béebo teebebunku Dawid útédu ka ɔ́kɛ bekpone bayikune lisu bonwu lɛdi.",Na le me in di le me ni. Be kponé be bo te be bo ko da wed. U te du ka. Oke be kponé ba ye ku ne le su bo la de.,0.1073,0.0034
+292,Bekpone Badi Béti Lɛlɔ Bébunku Dawid Na Hebron.,Wekpo ne badi beti le lo bebu ku. David na Hebron.,0.125,0.0046
+293,Na bekpone bani nébo bébebunku Dawid na Hebron na bekpo baƒɔ Saul lɛgadi bete Dawid aani kalɛ na Unwoti ɔ́su úse bumomo ndi bamɛni.,"Na bekpo ne bani ne bo be be buku. Dawid na Hebron. Na bekpo Bafol. Saul le gadi be te Dawid, anikale na o weti oso o se, bumumo in di bome ni.",0.0417,0.0017
+294,Bekyuli bani nási Yuda kaba kemmo na báda agyumanala ku atula na báklibi lɛlɔ béte kekpo bumomo bɔdi mpim ɛku ku eti leevu-aku .,bétsulú banyí ná sí yúdá ká báké mú ná bádá ájùmuná lá kú átúlá ná báklé bílé ló bé téké kpó búmú mú bò dí ín pí é kú kú étí lé vú ákú.,0.051,0.0023
+295,Na bani nási Simeon kaba kemmo na báklibi lɛlɔ béte kekpo bumomo bɔdii mpim maatɛ ku eti anyɔ .,"na bɛni nasi, Simeon, kabakɛmu na bɛkɛlebile lobete kekpo bu momobodi, impimmaate ku eti anyo.",0.037,0.0024
+296,Na Eƒraim kaba bekyuli kakɛ bani na bálɛ ugyii ka bésie na mbo kayi na badi bekpone na báƒɔ lɛnyi bumomo bɔdi mpim aavlanyɔ ku eti leevu-aku .,"na Efraim kaba be chili, kake bani, na bale uji kabece, na bebokai, na badi bepone, na bafolenyi bumumu, bodi impim, avlanyo ku etilevu aku.",0.0261,0.0022
+297,Na Manase kaba kemodi kakɛ kenwi bani na básia lɛnyi ka besie na bétése Dawid lɛga bumomo bɔdi mpim leevu-mane .,Na mana se kabakemo kakekewi. Bani na bashi alanyika bese nabeteese dawidi lega. Bumu mobodi impim lebumani.,0.0425,0.0023
+298,Na Isakar kaba kemmo bekyuli bani nánu uwi ɔmmɔ kemmo ala báti na bagyi lɛla lɛni ndubɔlɛ kɔsia bebo batɔnkune bumomo eti ene ku bana lɛlɔ bekyuli bani na lɛlɔ na baadi.,"Na, Isaka kabakemo, becheri bani nan, nu uwi omokemo alabati, na abajile lala ni, indo bolekosia, be bobatonkune, bumomo etiene. Ko, banale lo becheri, baninle lo na badi.",0.0264,0.0019
+299,Na Sebulon bekpone bani na bagyi kekpo kɔkwɛ na baakana taada ekpola biala na básu ka Dawid kama kani badubunye na bebunku-nwu bumomo bɔdi mpim liti .,"Na ase blon, be kpɔ ne bani, na ba jike kpɔ o kɔkwe, na ba kana, ta da ekpɔ la, biala, na basuka Daudi kama, ka ni badu bu nye, na be bu nkun bumumọ, bodi impim liti.",0.0429,0.0013
