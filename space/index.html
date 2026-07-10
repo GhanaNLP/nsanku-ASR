@@ -188,29 +188,13 @@ td .pkg { color: var(--text-muted); font-size: 0.78rem; }
 
     <!-- ====== Tabs ====== -->
     <div class="tabs">
-      <div class="tab active" data-tab="overview">📊 Overview</div>
-      <div class="tab" data-tab="global">🏆 Global Leaderboard</div>
+      <div class="tab active" data-tab="global">🏆 Global Leaderboard</div>
       <div class="tab" data-tab="per-lang">🌐 Per-Language</div>
       <div class="tab" data-tab="model-status">📋 Model Status</div>
     </div>
 
-    <!-- ====== Tab: Overview ====== -->
-    <div class="tab-pane active" id="pane-overview">
-      <div class="stats-grid" id="stats-grid"></div>
-
-      <h3 style="margin-bottom:12px; color:var(--text-muted); font-size:1rem;">Pass / Fail by Model Type</h3>
-      <div class="table-wrap">
-        <table id="model-type-table">
-          <thead>
-            <tr><th>Model Type</th><th style="text-align:right">Pass</th><th style="text-align:right">Fail</th><th style="text-align:right">Total</th></tr>
-          </thead>
-          <tbody id="model-type-body"></tbody>
-        </table>
-      </div>
-    </div>
-
     <!-- ====== Tab: Global Leaderboard ====== -->
-    <div class="tab-pane" id="pane-global">
+    <div class="tab-pane active" id="pane-global">
       <p style="color:var(--text-muted); margin-bottom:14px;">Best model per language — sorted by WER (lower is better)</p>
       <div class="table-wrap">
         <table id="global-table">
@@ -718,7 +702,6 @@ async function main() {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('main').style.display = 'block';
 
-    renderOverview(data);
     renderGlobal(data);
     populatePerLangSelects(data);
     renderPerLanguage(data);
