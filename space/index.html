@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>nsanku-ASR Leaderboard</title>
+
+<style>
+/* ====== Reset & Base ====== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #0b0f1a;
+  --surface: #131826;
+  --surface-2: #1a2134;
+  --border: #252d44;
+  --text: #e2e8f0;
+  --text-muted: #94a3b8;
+  --accent: #4f46e5;
+  --accent-hover: #6366f1;
+  --success: #10b981;
+  --danger: #ef4444;
+  --warning: #f59e0b;
+  --table-stripe: rgba(255,255,255,0.02);
+  --radius: 12px;
+}
+html { font-size: 14px; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+a { color: var(--accent-hover); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ====== Layout ====== */
+.container { max-width: 1200px; margin: 0 auto; padding: 24px 20px 60px; }
+.header { text-align: center; margin-bottom: 32px; }
+.header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; }
+.header p { color: var(--text-muted); font-size: 0.95rem; }
+.header .links { margin-top: 10px; }
+
+/* ====== Tabs ====== */
+.tabs {
+  display: flex; gap: 4px; margin-bottom: 24px; flex-wrap: wrap;
+}
+.tab {
+  padding: 10px 20px; border-radius: 8px 8px 0 0; cursor: pointer;
+  border: 1px solid var(--border); background: var(--surface);
+  color: var(--text-muted); font-weight: 500; font-size: 0.95rem;
+  transition: all 0.15s; border-bottom: none;
+}
+.tab:hover { color: var(--text); }
+.tab.active {
+  background: var(--surface-2); color: var(--text);
+  border-bottom: 2px solid var(--accent);
+}
+.tab-pane { display: none; }
+.tab-pane.active { display: block; }
+
+/* ====== Cards ====== */
+.stats-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px; margin-bottom: 24px;
+}
+.stat-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 18px;
+}
+.stat-card .label { color: var(--text-muted); font-size: 0.8rem; margin-bottom: 6px; }
+.stat-card .value { font-size: 1.5rem; font-weight: 700; }
+
+/* ====== Filters ====== */
+.filters {
+  display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;
+}
+.filters label { color: var(--text-muted); font-size: 0.85rem; align-self: center; }
+.filters select, .filters input {
+  background: var(--surface-2); border: 1px solid var(--border);
+  color: var(--text); padding: 8px 12px; border-radius: 8px;
+  font-size: 0.9rem; min-width: 120px;
+}
+.filters input[type="text"] { min-width: 240px; }
+select:focus, input:focus { outline: none; border-color: var(--accent); }
+
+/* ====== Table ====== */
+.table-wrap {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow-x: auto;
+}
+table {
+  width: 100%; border-collapse: collapse; font-size: 0.88rem;
+}
+th, td { text-align: left; padding: 10px 16px; white-space: nowrap; }
+th {
+  background: var(--surface-2); color: var(--text-muted);
+  font-weight: 600; font-size: 0.8rem; text-transform: uppercase;
+  letter-spacing: 0.05em; border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; cursor: pointer;
+}
+th:hover { color: var(--text); }
+tbody tr { border-bottom: 1px solid var(--border); }
+tbody tr:nth-child(even) { background: var(--table-stripe); }
+tbody tr:hover { background: rgba(79, 70, 229, 0.1); }
+td .pkg { color: var(--text-muted); font-size: 0.78rem; }
+.empty-row { text-align: center; color: var(--text-muted); }
+
+/* ====== Badges ====== */
+.badge {
+  display: inline-block; padding: 2px 10px; border-radius: 20px;
+  font-size: 0.75rem; font-weight: 600;
+}
+.badge-pass { background: rgba(16, 185, 129, 0.15); color: var(--success); }
+.badge-fail { background: rgba(239, 68, 68, 0.15); color: var(--danger); }
+.badge-arch { background: rgba(99, 102, 241, 0.15); color: #818cf8; }
+.badge-gated { background: rgba(245, 158, 11, 0.15); color: var(--warning); }
+.badge-cudnn { background: rgba(236, 72, 153, 0.15); color: #f472b6; }
+.badge-outdated { background: rgba(34, 211, 238, 0.15); color: #22d3ee; }
+
+/* ====== Scrollbar ====== */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+/* ====== Info bar ====== */
+.info-bar {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 12px; color: var(--text-muted); font-size: 0.85rem;
+}
+.loading { text-align: center; padding: 80px 0; color: var(--text-muted); }
+.loading .spinner {
+  width: 40px; height: 40px; border: 3px solid var(--border);
+  border-top-color: var(--accent); border-radius: 50%;
+  animation: spin 0.8s linear infinite; margin: 0 auto 16px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.footer {
+  margin-top: 40px; text-align: center; color: var(--text-muted);
+  font-size: 0.8rem; padding-top: 20px; border-top: 1px solid var(--border);
+}
+.repo-link {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 0.85rem; margin-top: 8px;
+}
+.repo-link svg { width: 16px; height: 16px; }
+
+/* ====== Model type chips ====== */
+.mtype {
+  display: inline-block; padding: 1px 8px; border-radius: 4px;
+  font-size: 0.75rem; background: var(--surface-2); color: var(--text-muted);
+}
+
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.4rem; }
+  .filters { flex-direction: column; gap: 8px; }
+  .filters select, .filters input { min-width: 100%; }
+  th, td { padding: 8px 10px; font-size: 0.82rem; }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+  <!-- ====== Header ====== -->
+  <div class="header">
+    <h1>nsanku-ASR Leaderboard</h1>
+    <p>Benchmarking ASR models on <strong>41 Ghanaian language varieties</strong> using the
+       <a href="https://huggingface.co/datasets/ghananlpcommunity/ghana-speech" target="_blank">ghana-speech</a> dataset · 300 samples per language</p>
+    <div class="links">
+      <a href="https://github.com/GhanaNLP/nsanku-ASR" target="_blank" class="repo-link">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        GhanaNLP/nsanku-ASR
+      </a>
+    </div>
+  </div>
+
+  <!-- ====== Loading ====== -->
+  <div id="loading" class="loading">
+    <div class="spinner"></div>
+    <p>Loading benchmark data from GitHub…</p>
+  </div>
+
+  <!-- ====== Main content (hidden until data loads) ====== -->
+  <div id="main" style="display:none;">
+
+    <!-- ====== Tabs ====== -->
+    <div class="tabs">
+      <div class="tab active" data-tab="overview">📊 Overview</div>
+      <div class="tab" data-tab="global">🏆 Global Leaderboard</div>
+      <div class="tab" data-tab="per-lang">🌐 Per-Language</div>
+      <div class="tab" data-tab="model-status">📋 Model Status</div>
+    </div>
+
+    <!-- ====== Tab: Overview ====== -->
+    <div class="tab-pane active" id="pane-overview">
+      <div class="stats-grid" id="stats-grid"></div>
+
+      <h3 style="margin-bottom:12px; color:var(--text-muted); font-size:1rem;">Pass / Fail by Model Type</h3>
+      <div class="table-wrap">
+        <table id="model-type-table">
+          <thead>
+            <tr><th>Model Type</th><th style="text-align:right">Pass</th><th style="text-align:right">Fail</th><th style="text-align:right">Total</th></tr>
+          </thead>
+          <tbody id="model-type-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ====== Tab: Global Leaderboard ====== -->
+    <div class="tab-pane" id="pane-global">
+      <p style="color:var(--text-muted); margin-bottom:14px;">Best model per language — sorted by WER (lower is better)</p>
+      <div class="table-wrap">
+        <table id="global-table">
+          <thead>
+            <tr>
+              <th data-sort="rank">#</th>
+              <th data-sort="language">Language</th>
+              <th data-sort="model">Model</th>
+              <th data-sort="model_type">Type</th>
+              <th data-sort="params">Params</th>
+              <th data-sort="wer">WER (%)</th>
+              <th data-sort="cer">CER (%)</th>
+              <th data-sort="speed">Speed (s)</th>
+            </tr>
+          </thead>
+          <tbody id="global-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ====== Tab: Per-Language ====== -->
+    <div class="tab-pane" id="pane-per-lang">
+      <div class="filters">
+        <label>Language:</label>
+        <select id="per-lang-select"></select>
+        <label>Type:</label>
+        <select id="per-type-select"><option value="All">All</option></select>
+        <label>Sort:</label>
+        <select id="per-sort-select">
+          <option value="wer">WER (best first)</option>
+          <option value="cer">CER (best first)</option>
+          <option value="speed">Speed (fastest first)</option>
+        </select>
+      </div>
+
+      <h3 style="margin-bottom:10px; font-size:0.95rem; color:var(--success)">✅ Passed</h3>
+      <div class="table-wrap" style="margin-bottom:24px;">
+        <table id="per-lang-pass-table">
+          <thead><tr><th>#</th><th>Model</th><th>Type</th><th>Params</th><th>WER (%)</th><th>CER (%)</th><th>Speed (s)</th></tr></thead>
+          <tbody id="per-lang-pass-body"></tbody>
+        </table>
+      </div>
+
+      <h3 style="margin-bottom:10px; font-size:0.95rem; color:var(--danger)">❌ Failed</h3>
+      <div class="table-wrap">
+        <table id="per-lang-fail-table">
+          <thead><tr><th>#</th><th>Model</th><th>Type</th><th>Params</th><th>Reason</th></tr></thead>
+          <tbody id="per-lang-fail-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ====== Tab: Model Status ====== -->
+    <div class="tab-pane" id="pane-model-status">
+      <div class="filters">
+        <label>Status:</label>
+        <select id="ms-status-select">
+          <option value="All">All</option>
+          <option value="pass">Pass only</option>
+          <option value="fail">Fail only</option>
+        </select>
+        <label>Language:</label>
+        <select id="ms-lang-select"><option value="All">All</option></select>
+        <label>Search:</label>
+        <input type="text" id="ms-search" placeholder="model name, e.g. whisper, mms, gemini…">
+      </div>
+      <div class="info-bar">
+        <span id="ms-count">0 rows</span>
+      </div>
+      <div class="table-wrap">
+        <table id="ms-table">
+          <thead>
+            <tr><th data-sort="language">Language</th><th data-sort="model">Model</th><th data-sort="model_type">Type</th><th data-sort="params">Params</th><th data-sort="wer">WER (%)</th><th data-sort="cer">CER (%)</th><th data-sort="status">Status</th><th>Fail Reason</th></tr>
+          </thead>
+          <tbody id="ms-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ====== Footer ====== -->
+    <div class="footer">
+      <p>WER = Word Error Rate · CER = Character Error Rate · Lower is better</p>
+      <p>Some models failed due to: gated repos, cuDNN compatibility (H200 Hopper), outdated generation configs, or unsupported architectures.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+// ====== Configuration ======
+const REPO = 'GhanaNLP/nsanku-ASR';
+const BRANCH = 'main';
+const RAW = `https://raw.githubusercontent.com/${REPO}/${BRANCH}`;
+const API = `https://api.github.com/repos/${REPO}/contents`;
+
+const LANG_NAMES = {
+  twi:'Twi (Akuapem + Asante)',ewe:'Ewe',hau:'Hausa',kbp:'Kabiye',dag:'Dagbani',
+  dga:'Dagaare',fat:'Fante',nko:'Nkonya',any:'Anyin',avn:'Avatime',
+  bud:'Bassar Ntcham',bim:'Bimoba',biv:'Birifor Southern',bib:'Bissa',bwu:'Buli',
+  ncu:'Chumburung',ada:'Dangme',mzw:'Deg',ffm:'Fulfulde Maasina',acd:'Gikyode',
+  gjn:'Gonja',xsm:'Kasem',xon:'Konkomba',kma:'Konni',kus:'Kusaal',lef:'Lelemi',
+  maw:'Mampruli',naw:'Nawuri',gur:'Ninkare',ntr:'Ntrubo',nzi:'Nzema',
+  sig:'Paasaal',sfw:'Sehwi',lip:'Sekpele',snw:'Selee',sil:'Sisaala Tumulung',
+  akp:'Siwu',tpm:'Tampulma',kdh:'Tem',bov:'Tuwuli',vag:'Vagla',
+};
+
+// ====== State ======
+let ALL_DATA = [];
+let sortState = { tab: null, col: null, asc: true };
+
+// ====== Helpers ======
+function modelType(m) {
+  m = m.toLowerCase();
+  if (m.includes('gemini')) return 'Gemini API';
+  if (m.includes('whisper')) {
+    if (m.includes('faster-whisper')) return 'Faster-Whisper';
+    return 'Whisper';
+  }
+  if (m.includes('mms')) return 'MMS';
+  if (m.includes('wav2vec') || m.includes('w2v')) return 'wav2vec2';
+  if (m.includes('xls-r') || m.includes('xlsr')) return 'XLS-R';
+  if (m.includes('hubert')) return 'HuBERT';
+  if (m.includes('simba')) return 'SeamlessM4T (Simba)';
+  if (m.includes('seamless')) return 'SeamlessM4T';
+  if (m.includes('xeus') || m.includes('espnet')) return 'ESPnet';
+  if (m.includes('zeroswot')) return 'ZeroSwot';
+  if (m.includes('heep')) return 'HEEP';
+  return 'Other';
+}
+
+function classifyError(e) {
+  if (!e) return 'Unknown';
+  let l = e.toLowerCase();
+  if (l.includes('gated') || l.includes('403')) return 'Gated repo';
+  if (l.includes('cudnn')) return 'cuDNN error';
+  if (l.includes('outdated') && l.includes('generation')) return 'Outdated gen config';
+  if (l.includes('unsupported language')) return 'Language not supported';
+  if (l.includes('unrecognized') && l.includes('class')) return 'Unknown architecture';
+  if (l.includes('does not support') && l.includes('attention')) return 'Attn not supported';
+  if (l.includes('text input must be')) return 'Tokenizer error';
+  if (l.includes('failed to load')) return 'Load failed';
+  return e.substring(0,40);
+}
+
+function badgeClass(reason) {
+  if (!reason || reason === 'Unknown') return 'badge badge-fail';
+  let l = reason.toLowerCase();
+  if (l.includes('gated')) return 'badge badge-gated';
+  if (l.includes('cudnn')) return 'badge badge-cudnn';
+  if (l.includes('outdated')) return 'badge badge-outdated';
+  if (l.includes('arch') || l.includes('attn')) return 'badge badge-arch';
+  return 'badge badge-fail';
+}
+
+function fmt(v, decimals = 2) {
+  if (v === null || v === undefined || v === '') return '—';
+  return parseFloat(v).toFixed(decimals);
+}
+
+function modelLink(model, url) {
+  if (!url) url = `https://huggingface.co/${model}`;
+  return `<a href="${url}" target="_blank" title="${model}">${model}</a>`;
+}
+
+function escapeHtml(s) {
+  if (!s) return '';
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ====== CSV Parser ======
+function parseCSV(text) {
+  const lines = text.trim().split('\n');
+  const headers = lines[0].split(',').map(h => h.trim());
+  return lines.slice(1).map(line => {
+    const vals = line.split(',').map(v => v.trim());
+    const row = {};
+    headers.forEach((h, i) => row[h] = vals[i] || '');
+    return row;
+  });
+}
+
+// ====== YAML Parser (lightweight for our format) ======
+function parseYAML(text) {
+  const lines = text.split('\n');
+  const result = { benchmarks: [] };
+  let current = null;
+  let iso = null, numSamples = null;
+
+  for (let line of lines) {
+    if (line.startsWith('iso_639_3:')) iso = line.split(':')[1].trim();
+    if (line.startsWith('num_samples:')) numSamples = parseInt(line.split(':')[1].trim());
+    if (line.startsWith('- model:')) {
+      if (current) result.benchmarks.push(current);
+      current = { model: line.split('model:')[1].trim() };
+    }
+    if (current) {
+      if (line.includes('  model_url:')) current.model_url = line.split('model_url:')[1].trim();
+      const paramsM = line.match(/\s+params:\s*(.+)/); if (paramsM) current.params = paramsM[1].trim().replace(/['"]/g,'');
+      const werM = line.match(/\s+wer:\s*(.+)/); if (werM) {
+        let v = werM[1].trim();
+        current.wer = v === 'null' ? null : parseFloat(v);
+      }
+      const cerM = line.match(/\s+cer:\s*(.+)/); if (cerM) {
+        let v = cerM[1].trim();
+        current.cer = v === 'null' ? null : parseFloat(v);
+      }
+      const speedM = line.match(/\s+avg_seconds_per_sample:\s*(.+)/); if (speedM) current.avg_seconds_per_sample = parseFloat(speedM[1].trim());
+      const errM = line.match(/\s+error:\s*(.+)/); if (errM) {
+        let e = errM[1].trim().replace(/^'/,'').replace(/'$/,'');
+        current.error = e;
+      }
+    }
+  }
+  if (current) result.benchmarks.push(current);
+  result.iso_639_3 = iso;
+  result.num_samples = numSamples;
+  return result;
+}
+
+// ====== Data Loading ======
+async function loadCSV() {
+  try {
+    const r = await fetch(`${RAW}/model_status.csv`);
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const text = await r.text();
+    return parseCSV(text).map(row => {
+      const wer = row.wer ? parseFloat(row.wer) : null;
+      const cer = row.cer ? parseFloat(row.cer) : null;
+      return {
+        iso: row.language, model: row.model, model_type: modelType(row.model),
+        params: row.params, wer: wer, cer: cer,
+        status: row.status || (wer !== null ? 'pass' : 'fail'),
+        fail_reason: row.fail_reason || '',
+      };
+    });
+  } catch (e) { return null; }
+}
+
+async function loadYAMLs() {
+  try {
+    const r = await fetch(`${API}/benchmarks`);
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const files = await r.json();
+    const yamlFiles = files.filter(f => f.name.endsWith('.yaml') && !f.name.startsWith('_'));
+
+    const rows = [];
+    for (const f of yamlFiles) {
+      const iso = f.name.replace('.yaml','');
+      try {
+        const yr = await fetch(`${RAW}/benchmarks/${f.name}`);
+        if (!yr.ok) continue;
+        const text = await yr.text();
+        const data = parseYAML(text);
+        for (const b of data.benchmarks) {
+          rows.push({
+            iso, model: b.model, model_type: modelType(b.model),
+            params: b.params || '?',
+            wer: b.wer !== undefined ? b.wer : null,
+            cer: b.cer !== undefined ? b.cer : null,
+            speed: b.avg_seconds_per_sample || null,
+            status: b.wer !== null && b.wer !== undefined ? 'pass' : 'fail',
+            fail_reason: b.error || classifyError(b.error),
+            url: b.model_url || `https://huggingface.co/${b.model}`,
+          });
+        }
+      } catch (e) { console.error('YAML fetch failed:', f.name, e); }
+    }
+    return rows;
+  } catch (e) { return null; }
+}
+
+async function loadAll() {
+  // Try YAMLs first (has speed data)
+  let yamlData = await loadYAMLs();
+  if (yamlData && yamlData.length > 0) {
+    return yamlData;
+  }
+  // Fallback to CSV
+  let csvData = await loadCSV();
+  if (csvData && csvData.length > 0) return csvData;
+  throw new Error('Could not load data');
+}
+
+// ====== Rendering: Overview ======
+function renderOverview(data) {
+  const totalLangs = new Set(data.map(r => r.iso)).size;
+  const totalModels = new Set(data.map(r => r.model)).size;
+  const totalEvals = data.length;
+  const passed = data.filter(r => r.status === 'pass').length;
+  const failed = totalEvals - passed;
+  const passRate = totalEvals ? (passed / totalEvals * 100).toFixed(1) + '%' : '—';
+
+  // Best overall
+  const passedRows = data.filter(r => r.status === 'pass' && r.wer !== null);
+  passedRows.sort((a,b) => a.wer - b.wer);
+  const best = passedRows[0];
+  const bestStr = best ? `${best.model} (${LANG_NAMES[best.iso] || best.iso}) — ${(best.wer*100).toFixed(2)}%` : '—';
+
+  // Avg Gemini WER
+  const gemini = data.filter(r => r.model_type === 'Gemini API' && r.status === 'pass');
+  const avgGemini = gemini.length ? (gemini.reduce((s,r) => s + r.wer, 0) / gemini.length * 100).toFixed(2) + '%' : '—';
+
+  const stats = [
+    {label:'Languages',value:totalLangs},
+    {label:'Models tested',value:totalModels},
+    {label:'Total evaluations',value:totalEvals},
+    {label:'Passed',value:passed + ` (${passRate})`},
+    {label:'Failed',value:failed},
+    {label:'Avg Gemini WER',value:avgGemini},
+    {label:'Best overall',value:bestStr},
+  ];
+  document.getElementById('stats-grid').innerHTML = stats.map(s => `
+    <div class="stat-card"><div class="label">${s.label}</div><div class="value">${s.value}</div></div>
+  `).join('');
+
+  // Model type breakdown
+  const byType = {};
+  for (const r of data) {
+    if (!byType[r.model_type]) byType[r.model_type] = {pass:0, fail:0};
+    byType[r.model_type][r.status === 'pass' ? 'pass' : 'fail']++;
+  }
+  const typeRows = Object.entries(byType).sort((a,b) => (b[1].pass+b[1].fail) - (a[1].pass+a[1].fail));
+  document.getElementById('model-type-body').innerHTML = typeRows.map(([t,c]) => `
+    <tr><td><span class="mtype">${t}</span></td>
+    <td style="text-align:right;color:var(--success)">${c.pass}</td>
+    <td style="text-align:right;color:var(--danger)">${c.fail}</td>
+    <td style="text-align:right">${c.pass + c.fail}</td></tr>
+  `).join('');
+}
+
+// ====== Rendering: Global Leaderboard ======
+function renderGlobal(data) {
+  const passed = data.filter(r => r.status === 'pass' && r.wer !== null);
+  const byLang = {};
+  for (const r of passed) {
+    if (!byLang[r.iso] || r.wer < byLang[r.iso].wer) byLang[r.iso] = r;
+  }
+  let rows = Object.values(byLang).sort((a,b) => a.wer - b.wer);
+  const body = document.getElementById('global-body');
+  if (rows.length === 0) { body.innerHTML = '<tr class="empty-row"><td colspan="8">No data</td></tr>'; return; }
+  body.innerHTML = rows.map((r,i) => `
+    <tr>
+      <td>${i+1}</td>
+      <td>${LANG_NAMES[r.iso] || r.iso}</td>
+      <td>${modelLink(r.model, r.url)}</td>
+      <td><span class="mtype">${r.model_type}</span></td>
+      <td>${r.params || '—'}</td>
+      <td style="font-weight:600;color:${r.wer < 0.1 ? 'var(--success)' : r.wer < 0.3 ? 'var(--accent-hover)' : 'var(--warning)'}">${(r.wer*100).toFixed(2)}</td>
+      <td>${r.cer !== null ? (r.cer*100).toFixed(2) : '—'}</td>
+      <td>${r.speed !== null && r.speed !== undefined ? r.speed.toFixed(2) : '—'}</td>
+    </tr>
+  `).join('');
+}
+
+// ====== Rendering: Per-Language ======
+function populatePerLangSelects(data) {
+  const isos = [...new Set(data.map(r => r.iso))].sort();
+  const langSel = document.getElementById('per-lang-select');
+  langSel.innerHTML = isos.map(iso => `<option value="${iso}">${LANG_NAMES[iso] || iso}</option>`).join('');
+
+  const types = [...new Set(data.map(r => r.model_type))].sort();
+  const typeSel = document.getElementById('per-type-select');
+  typeSel.innerHTML = '<option value="All">All</option>' + types.map(t => `<option value="${t}">${t}</option>`).join('');
+
+  // Language filter on model status tab
+  const msLangSel = document.getElementById('ms-lang-select');
+  msLangSel.innerHTML = '<option value="All">All</option>' + isos.map(iso => `<option value="${iso}">${LANG_NAMES[iso] || iso}</option>`).join('');
+}
+
+function renderPerLanguage(data) {
+  const iso = document.getElementById('per-lang-select').value;
+  const typeFilter = document.getElementById('per-type-select').value;
+  const sortBy = document.getElementById('per-sort-select').value;
+
+  let sub = data.filter(r => r.iso === iso);
+  if (typeFilter !== 'All') sub = sub.filter(r => r.model_type === typeFilter);
+
+  // Sort passed and failed
+  let passed = sub.filter(r => r.status === 'pass');
+  let failed = sub.filter(r => r.status === 'fail');
+
+  if (sortBy === 'wer') passed.sort((a,b) => a.wer - b.wer);
+  else if (sortBy === 'cer') passed.sort((a,b) => (a.cer||1) - (b.cer||1));
+  else if (sortBy === 'speed') passed.sort((a,b) => (a.speed||999) - (b.speed||999));
+
+  // Render passed
+  const passBody = document.getElementById('per-lang-pass-body');
+  passBody.innerHTML = passed.length === 0
+    ? '<tr class="empty-row"><td colspan="7">No passed models</td></tr>'
+    : passed.map((r,i) => `
+      <tr>
+        <td>${i+1}</td>
+        <td>${modelLink(r.model, r.url)}</td>
+        <td><span class="mtype">${r.model_type}</span></td>
+        <td>${r.params || '—'}</td>
+        <td style="font-weight:600">${r.wer !== null ? (r.wer*100).toFixed(2) : '—'}</td>
+        <td>${r.cer !== null ? (r.cer*100).toFixed(2) : '—'}</td>
+        <td>${r.speed !== null && r.speed !== undefined ? r.speed.toFixed(2) : '—'}</td>
+      </tr>
+    `).join('');
+
+  // Render failed
+  const failBody = document.getElementById('per-lang-fail-body');
+  failBody.innerHTML = failed.length === 0
+    ? '<tr class="empty-row"><td colspan="5">No failed models</td></tr>'
+    : failed.map((r,i) => {
+        const reason = classifyError(r.fail_reason);
+        return `
+          <tr>
+            <td>${i+1}</td>
+            <td>${modelLink(r.model, r.url)}</td>
+            <td><span class="mtype">${r.model_type}</span></td>
+            <td>${r.params || '—'}</td>
+            <td><span class="${badgeClass(reason)}">${reason}</span></td>
+          </tr>
+        `;
+      }).join('');
+}
+
+// ====== Rendering: Model Status ======
+function renderModelStatus(data) {
+  const statusFilter = document.getElementById('ms-status-select').value;
+  const langFilter = document.getElementById('ms-lang-select').value;
+  const search = document.getElementById('ms-search').value.toLowerCase();
+
+  let sub = [...data];
+  if (statusFilter !== 'All') sub = sub.filter(r => r.status === statusFilter);
+  if (langFilter !== 'All') sub = sub.filter(r => r.iso === langFilter);
+  if (search) sub = sub.filter(r => r.model.toLowerCase().includes(search));
+
+  sub.sort((a,b) => {
+    if (a.iso !== b.iso) return a.iso.localeCompare(b.iso);
+    if (a.status !== b.status) return a.status === 'pass' ? -1 : 1;
+    return (a.wer || 1) - (b.wer || 1);
+  });
+
+  document.getElementById('ms-count').textContent = `${sub.length} rows`;
+  const body = document.getElementById('ms-body');
+  body.innerHTML = sub.length === 0
+    ? '<tr class="empty-row"><td colspan="8">No matching rows</td></tr>'
+    : sub.map(r => {
+        const reason = r.fail_reason ? classifyError(r.fail_reason) : '';
+        return `
+          <tr>
+            <td>${LANG_NAMES[r.iso] || r.iso}</td>
+            <td>${modelLink(r.model, r.url)}</td>
+            <td><span class="mtype">${r.model_type}</span></td>
+            <td>${r.params || '—'}</td>
+            <td>${r.wer !== null ? (r.wer*100).toFixed(2) : '—'}</td>
+            <td>${r.cer !== null ? (r.cer*100).toFixed(2) : '—'}</td>
+            <td><span class="badge badge-${r.status}">${r.status}</span></td>
+            <td>${r.status === 'fail' ? `<span class="${badgeClass(reason)}">${reason}</span>` : ''}</td>
+          </tr>
+        `;
+      }).join('');
+}
+
+// ====== Tab switching ======
+function setupTabs() {
+  document.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById('pane-' + tab.dataset.tab).classList.add('active');
+    });
+  });
+}
+
+// ====== WER values (as decimals from YAML). CSV has decimals too. Display as percentages ======
+function normalizeData(data) {
+  return data.map(r => ({
+    ...r,
+    wer: r.wer !== null && r.wer !== undefined && r.wer <= 1 ? r.wer : r.wer !== null ? r.wer / 100 : null,
+    cer: r.cer !== null && r.cer !== undefined && r.cer <= 1 ? r.cer : r.cer !== null ? r.cer / 100 : null,
+  }));
+}
+
+// ====== Sortable table headers ======
+function setupSortableHeaders(tableId, dataExtractor, renderer) {
+  document.querySelectorAll(`#${tableId} th[data-sort]`).forEach(th => {
+    th.addEventListener('click', () => {
+      const col = th.dataset.sort;
+      const asc = sortState.col === col ? !sortState.asc : true;
+      sortState.col = col; sortState.asc = asc;
+      const data = dataExtractor();
+      data.sort((a,b) => {
+        let av = a[col], bv = b[col];
+        if (av === null || av === undefined) av = asc ? 999 : -1;
+        if (bv === null || bv === undefined) bv = asc ? 999 : -1;
+        if (typeof av === 'string') return asc ? av.localeCompare(bv) : bv.localeCompare(av);
+        return asc ? av - bv : bv - av;
+      });
+      renderer(data);
+    });
+  });
+}
+
+// ====== Main ======
+async function main() {
+  try {
+    let data = await loadAll();
+    data = normalizeData(data);
+    ALL_DATA = data;
+
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('main').style.display = 'block';
+
+    renderOverview(data);
+    renderGlobal(data);
+    populatePerLangSelects(data);
+    renderPerLanguage(data);
+    renderModelStatus(data);
+
+    // Event listeners
+    document.getElementById('per-lang-select').addEventListener('change', () => renderPerLanguage(ALL_DATA));
+    document.getElementById('per-type-select').addEventListener('change', () => renderPerLanguage(ALL_DATA));
+    document.getElementById('per-sort-select').addEventListener('change', () => renderPerLanguage(ALL_DATA));
+    document.getElementById('ms-status-select').addEventListener('change', () => renderModelStatus(ALL_DATA));
+    document.getElementById('ms-lang-select').addEventListener('change', () => renderModelStatus(ALL_DATA));
+    document.getElementById('ms-search').addEventListener('input', () => renderModelStatus(ALL_DATA));
+
+    setupTabs();
+  } catch (e) {
+    console.error(e);
+    document.getElementById('loading').innerHTML = `
+      <div style="color:var(--danger)">
+        <p>Failed to load benchmark data.</p>
+        <p style="font-size:0.85rem; margin-top:8px">${escapeHtml(e.message)}</p>
+        <p style="margin-top:12px; font-size:0.85rem">Visit <a href="https://github.com/GhanaNLP/nsanku-ASR" target="_blank">GitHub repo</a> directly.</p>
+      </div>
+    `;
+  }
+}
+
+main();
+</script>
+</body>
+</html>
