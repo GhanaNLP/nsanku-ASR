@@ -1,0 +1,143 @@
+iso_639_3: gaa
+language: Ga
+num_samples_per_category: 300
+categories:
+- finance
+- jw
+benchmarks:
+- model: KhayaAI/w2v-bert-gaa
+  model_url: https://huggingface.co/KhayaAI/w2v-bert-gaa
+  owner: KhayaAI
+  params: 0.6B
+  wer: 0.6286
+  cer: 0.2323
+  per_category:
+    finance:
+      wer: 0.8025
+      cer: 0.2773
+      samples: 300
+      valid: 299
+      avg_seconds_per_sample: 0.08
+    jw:
+      wer: 0.4548
+      cer: 0.1874
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.07
+  source: evaluated
+- model: cdli/whisper-large-v3_finetuned_ghanian_ga_nonstandard_speech_v1.0
+  model_url: https://huggingface.co/cdli/whisper-large-v3_finetuned_ghanian_ga_nonstandard_speech_v1.0
+  owner: cdli
+  params: 2B
+  wer: 0.8651
+  cer: 0.3506
+  per_category:
+    finance:
+      wer: 0.9382
+      cer: 0.379
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.48
+    jw:
+      wer: 0.7921
+      cer: 0.3222
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.92
+  source: evaluated
+- model: cdli/whisper-large-v3_finetuned_ghanian_ga_standard_speech_v1.0
+  model_url: https://huggingface.co/cdli/whisper-large-v3_finetuned_ghanian_ga_standard_speech_v1.0
+  owner: cdli
+  params: 2B
+  wer: 0.8691
+  cer: 0.3582
+  per_category:
+    finance:
+      wer: 0.9594
+      cer: 0.4003
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.58
+    jw:
+      wer: 0.7788
+      cer: 0.316
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 1.02
+  source: evaluated
+- model: KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en
+  model_url: https://huggingface.co/KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en
+  owner: KhayaAI
+  params: 0.6B
+  wer: 0.9066
+  cer: 0.2782
+  per_category:
+    finance:
+      wer: 1.1621
+      cer: 0.3277
+      samples: 300
+      valid: 299
+      avg_seconds_per_sample: 0.07
+    jw:
+      wer: 0.6511
+      cer: 0.2288
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.06
+  source: evaluated
+- model: cdli/whisper-small_finetuned_ghanian_ga_nonstandard_speech_v1.0
+  model_url: https://huggingface.co/cdli/whisper-small_finetuned_ghanian_ga_nonstandard_speech_v1.0
+  owner: cdli
+  params: 0.2B
+  wer: 0.942
+  cer: 0.4012
+  per_category:
+    finance:
+      wer: 1.0209
+      cer: 0.4419
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.28
+    jw:
+      wer: 0.8632
+      cer: 0.3605
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.55
+  source: evaluated
+- model: cdli/whisper-small_finetuned_ghanian_ga_standard_speech_v1.0
+  model_url: https://huggingface.co/cdli/whisper-small_finetuned_ghanian_ga_standard_speech_v1.0
+  owner: cdli
+  params: 0.2B
+  wer: 1.1135
+  cer: 0.5299
+  per_category:
+    finance:
+      wer: 1.3541
+      cer: 0.7054
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.3
+    jw:
+      wer: 0.8729
+      cer: 0.3544
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.63
+  source: evaluated
+- model: Qlerqly/griot-nano-1
+  model_url: https://huggingface.co/Qlerqly/griot-nano-1
+  owner: Qlerqly
+  params: 0.2B
+  wer: null
+  cer: null
+  error: load_failed
+  source: evaluated
+- model: Qlerqly/griot-nano-1-onnx
+  model_url: https://huggingface.co/Qlerqly/griot-nano-1-onnx
+  owner: Qlerqly
+  params: '?'
+  wer: null
+  cer: null
+  error: unknown_architecture
+  source: evaluated

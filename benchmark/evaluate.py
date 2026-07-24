@@ -35,6 +35,13 @@ def language_categories(iso_code):
     return [(c["category"], c["config"]) for c in cfg["categories"]]
 
 
+# Extra language-tag tokens accepted as an explicit mention of a language.
+# Akan (macrolanguage `ak`/`aka`) covers Twi, so Akan-tagged models count for twi.
+LANG_TAG_ALIASES = {
+    "twi": {"ak", "aka", "akan"},
+}
+
+
 def _iso1_map():
     """iso_639_3 -> iso_639_1, from the language metadata (only where one exists)."""
     import yaml as _yaml
@@ -71,7 +78,7 @@ def get_language_models(iso_code):
     """
     universe = list(_all_org_asr_models().values())
     iso1 = _iso1_map().get(iso_code)
-    codes = {iso_code} | ({iso1} if iso1 else set())
+    codes = {iso_code} | ({iso1} if iso1 else set()) | LANG_TAG_ALIASES.get(iso_code, set())
     return filter_models(universe, iso_codes=codes)
 
 

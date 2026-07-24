@@ -1,0 +1,274 @@
+iso_639_3: hau
+language: Hausa
+num_samples_per_category: 300
+categories:
+- bible
+benchmarks:
+- model: KhayaAI/w2v-bert-hau
+  model_url: https://huggingface.co/KhayaAI/w2v-bert-hau
+  owner: KhayaAI
+  params: 0.6B
+  wer: 0.4967
+  cer: 0.3261
+  per_category:
+    bible:
+      wer: 0.4967
+      cer: 0.3261
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.09
+  source: evaluated
+- model: Sunbird/asr-whisper-51-african-languages
+  model_url: https://huggingface.co/Sunbird/asr-whisper-51-african-languages
+  owner: Sunbird
+  params: 2B
+  wer: 0.6036
+  cer: 0.357
+  per_category:
+    bible:
+      wer: 0.6036
+      cer: 0.357
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.97
+  source: evaluated
+- model: CLEAR-Global/w2v-bert-2.0-clearglobal-hausa-asr-1.0.0
+  model_url: https://huggingface.co/CLEAR-Global/w2v-bert-2.0-clearglobal-hausa-asr-1.0.0
+  owner: CLEAR-Global
+  params: 0.6B
+  wer: 0.6386
+  cer: 0.3558
+  per_category:
+    bible:
+      wer: 0.6386
+      cer: 0.3558
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.08
+  source: evaluated
+- model: UBC-NLP/Simba-M
+  model_url: https://huggingface.co/UBC-NLP/Simba-M
+  owner: UBC-NLP
+  params: '?'
+  wer: 0.6462
+  cer: 0.3418
+  per_category:
+    bible:
+      wer: 0.6462
+      cer: 0.3418
+      samples: 300
+      valid: 299
+      avg_seconds_per_sample: 0.04
+  source: evaluated
+- model: CLEAR-Global/whisper-small-clearglobal-hausa-asr-1.0.0
+  model_url: https://huggingface.co/CLEAR-Global/whisper-small-clearglobal-hausa-asr-1.0.0
+  owner: CLEAR-Global
+  params: 0.2B
+  wer: 0.7511
+  cer: 0.4201
+  per_category:
+    bible:
+      wer: 0.7511
+      cer: 0.4201
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.66
+  source: evaluated
+- model: UBC-NLP/Simba-H
+  model_url: https://huggingface.co/UBC-NLP/Simba-H
+  owner: UBC-NLP
+  params: '?'
+  wer: 0.773
+  cer: 0.3744
+  per_category:
+    bible:
+      wer: 0.773
+      cer: 0.3744
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.01
+  source: evaluated
+- model: UBC-NLP/Simba-X
+  model_url: https://huggingface.co/UBC-NLP/Simba-X
+  owner: UBC-NLP
+  params: '?'
+  wer: 0.9636
+  cer: 0.4809
+  per_category:
+    bible:
+      wer: 0.9636
+      cer: 0.4809
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.04
+  source: evaluated
+- model: alphaedge-ai/whisper-large-v3-turbo-hau-32768
+  model_url: https://huggingface.co/alphaedge-ai/whisper-large-v3-turbo-hau-32768
+  owner: alphaedge-ai
+  params: 0.8B
+  wer: 1.0755
+  cer: 0.7671
+  per_category:
+    bible:
+      wer: 1.0755
+      cer: 0.7671
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.61
+  source: evaluated
+- model: alphaedge-ai/whisper-large-v3-turbo-hau-16384
+  model_url: https://huggingface.co/alphaedge-ai/whisper-large-v3-turbo-hau-16384
+  owner: alphaedge-ai
+  params: 0.8B
+  wer: 1.076
+  cer: 0.6764
+  per_category:
+    bible:
+      wer: 1.076
+      cer: 0.6764
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.55
+  source: evaluated
+- model: UBC-NLP/Simba-W
+  model_url: https://huggingface.co/UBC-NLP/Simba-W
+  owner: UBC-NLP
+  params: 2B
+  wer: 1.0991
+  cer: 0.6232
+  per_category:
+    bible:
+      wer: 1.0991
+      cer: 0.6232
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 1.07
+  source: evaluated
+- model: alphaedge-ai/whisper-base-hau-32768
+  model_url: https://huggingface.co/alphaedge-ai/whisper-base-hau-32768
+  owner: alphaedge-ai
+  params: 62.8M
+  wer: 1.6061
+  cer: 1.3785
+  per_category:
+    bible:
+      wer: 1.6061
+      cer: 1.3785
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.9
+  source: evaluated
+- model: alphaedge-ai/whisper-medium-hau-16384
+  model_url: https://huggingface.co/alphaedge-ai/whisper-medium-hau-16384
+  owner: alphaedge-ai
+  params: 0.7B
+  wer: 1.6287
+  cer: 1.6828
+  per_category:
+    bible:
+      wer: 1.6287
+      cer: 1.6828
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 2.93
+  source: evaluated
+- model: alphaedge-ai/whisper-base-hau-16384
+  model_url: https://huggingface.co/alphaedge-ai/whisper-base-hau-16384
+  owner: alphaedge-ai
+  params: 54.4M
+  wer: 1.6735
+  cer: 1.5418
+  per_category:
+    bible:
+      wer: 1.6735
+      cer: 1.5418
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.94
+  source: evaluated
+- model: alphaedge-ai/whisper-tiny-hau-32768
+  model_url: https://huggingface.co/alphaedge-ai/whisper-tiny-hau-32768
+  owner: alphaedge-ai
+  params: 30.4M
+  wer: 1.7915
+  cer: 1.4614
+  per_category:
+    bible:
+      wer: 1.7915
+      cer: 1.4614
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.64
+  source: evaluated
+- model: alphaedge-ai/whisper-medium-hau-32768
+  model_url: https://huggingface.co/alphaedge-ai/whisper-medium-hau-32768
+  owner: alphaedge-ai
+  params: 0.7B
+  wer: 1.9512
+  cer: 1.8155
+  per_category:
+    bible:
+      wer: 1.9512
+      cer: 1.8155
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 2.9
+  source: evaluated
+- model: alphaedge-ai/whisper-tiny-hau-16384
+  model_url: https://huggingface.co/alphaedge-ai/whisper-tiny-hau-16384
+  owner: alphaedge-ai
+  params: 24.1M
+  wer: 2.4013
+  cer: 1.7407
+  per_category:
+    bible:
+      wer: 2.4013
+      cer: 1.7407
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 1.07
+  source: evaluated
+- model: alphaedge-ai/whisper-small-hau-32768
+  model_url: https://huggingface.co/alphaedge-ai/whisper-small-hau-32768
+  owner: alphaedge-ai
+  params: 0.2B
+  wer: 2.4778
+  cer: 1.9346
+  per_category:
+    bible:
+      wer: 2.4778
+      cer: 1.9346
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 2.35
+  source: evaluated
+- model: alphaedge-ai/whisper-small-hau-16384
+  model_url: https://huggingface.co/alphaedge-ai/whisper-small-hau-16384
+  owner: alphaedge-ai
+  params: 0.2B
+  wer: 3.0103
+  cer: 2.1559
+  per_category:
+    bible:
+      wer: 3.0103
+      cer: 2.1559
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 2.38
+  source: evaluated
+- model: UBC-NLP/Simba-S
+  model_url: https://huggingface.co/UBC-NLP/Simba-S
+  owner: UBC-NLP
+  params: 2B
+  wer: null
+  cer: null
+  error: architecture_not_supported
+  source: evaluated
+- model: ghananlpcommunity/Simba-S
+  model_url: https://huggingface.co/ghananlpcommunity/Simba-S
+  owner: ghananlpcommunity
+  params: 2B
+  wer: null
+  cer: null
+  error: architecture_not_supported
+  source: evaluated

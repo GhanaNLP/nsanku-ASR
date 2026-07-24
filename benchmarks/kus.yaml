@@ -1,0 +1,34 @@
+iso_639_3: kus
+language: Kusaal
+num_samples_per_category: 300
+categories:
+- bible
+benchmarks:
+- model: KhayaAI/w2v-bert-kus
+  model_url: https://huggingface.co/KhayaAI/w2v-bert-kus
+  owner: KhayaAI
+  params: 0.6B
+  wer: 0.3942
+  cer: 0.1979
+  per_category:
+    bible:
+      wer: 0.3942
+      cer: 0.1979
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.09
+  source: evaluated
+- model: KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en
+  model_url: https://huggingface.co/KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en
+  owner: KhayaAI
+  params: 0.6B
+  wer: 0.7319
+  cer: 0.3334
+  per_category:
+    bible:
+      wer: 0.7319
+      cer: 0.3334
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.08
+  source: evaluated

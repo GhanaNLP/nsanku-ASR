@@ -35,7 +35,36 @@ def resolve_batch_size(params_str=""):
     return BATCH_SIZE["tiny"]
 
 
+# CTC model_types (config.model_type) that AutoModelForCTC handles.
+CTC_MODEL_TYPES = {
+    "wav2vec2", "wav2vec2-bert", "wav2vec2-conformer", "hubert", "wavlm",
+    "unispeech", "unispeech-sat", "sew", "sew-d", "data2vec-audio", "mctct",
+}
+
+
+def _detect_arch(model_id):
+    """Return 'ctc' | 'whisper' | 'seq2seq' | 'unknown' from the HF config.
+
+    Falls back to the model name only if the config can't be read.
+    """
+    try:
+        from transformers import AutoConfig
+        cfg = AutoConfig.from_pretrained(model_id, trust_remote_code=True, **_hf_auth_kwargs())
+        archs = list(getattr(cfg, "architectures", None) or [])
+        mtype = (getattr(cfg, "model_type", "") or "").lower()
+        if any(a.endswith("ForCTC") for a in archs) or mtype in CTC_MODEL_TYPES:
+            return "ctc"
+        if mtype == "whisper" or any("Whisper" in a for a in archs):
+            return "whisper"
+        if mtype.startswith("seamless") or any("SeamlessM4T" in a for a in archs):
+            return "seamless"  # not supported as ASR here (no Ghanaian tgt_lang codes)
+        return "seq2seq"
+    except Exception:
+        return "name:" + model_id.lower()
+
+
 def is_ctc_model(model_id):
+    """Legacy name-based heuristic (fallback when config is unavailable)."""
     id_lower = model_id.lower()
     return any(kw in id_lower for kw in [
         "wav2vec", "w2v-bert", "w2v_bert", "wav2vec2-bert", "w2v2",
@@ -182,8 +211,13 @@ def load_asr_model(model_id, device="cuda:0"):
     """
     torch.backends.cudnn.enabled = False
     _hf_login()
+    arch = _detect_arch(model_id)
+    if arch == "seamless":
+        # SeamlessM4T speech-to-text: these repos ship only the base seamless
+        # language codes (no Ghanaian tgt_lang), so we can't transcribe reliably.
+        raise RuntimeError("ARCH_UNSUPPORTED: SeamlessM4T ASR (no target-language code)")
     try:
-        if is_ctc_model(model_id):
+        if arch == "ctc" or (arch.startswith("name:") and is_ctc_model(model_id)):
             return CTCModel(model_id, device=device)
         return WhisperModel(model_id, device=device)
     except Exception as e:

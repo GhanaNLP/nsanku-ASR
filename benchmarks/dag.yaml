@@ -1,0 +1,123 @@
+iso_639_3: dag
+language: Dagbani
+num_samples_per_category: 300
+categories:
+- bible
+- unicef
+benchmarks:
+- model: Sunbird/asr-whisper-51-african-languages
+  model_url: https://huggingface.co/Sunbird/asr-whisper-51-african-languages
+  owner: Sunbird
+  params: 2B
+  wer: 0.6499
+  cer: 0.3014
+  per_category:
+    bible:
+      wer: 0.7082
+      cer: 0.3379
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 1.0
+    unicef:
+      wer: 0.5916
+      cer: 0.265
+      samples: 195
+      valid: 195
+      avg_seconds_per_sample: 2.39
+  source: evaluated
+- model: waxal-benchmarking/mms-300m-waxal-dag
+  model_url: https://huggingface.co/waxal-benchmarking/mms-300m-waxal-dag
+  owner: waxal-benchmarking
+  params: 0.3B
+  wer: 0.6843
+  cer: 0.2631
+  per_category:
+    bible:
+      wer: 0.7118
+      cer: 0.2928
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.03
+    unicef:
+      wer: 0.6568
+      cer: 0.2335
+      samples: 195
+      valid: 195
+      avg_seconds_per_sample: 0.09
+  source: evaluated
+- model: waxal-benchmarking/whisper-small-waxal-dag
+  model_url: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-dag
+  owner: waxal-benchmarking
+  params: 0.2B
+  wer: 0.7258
+  cer: 0.3551
+  per_category:
+    bible:
+      wer: 0.7724
+      cer: 0.3649
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.85
+    unicef:
+      wer: 0.6792
+      cer: 0.3454
+      samples: 195
+      valid: 195
+      avg_seconds_per_sample: 1.76
+  source: evaluated
+- model: KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en
+  model_url: https://huggingface.co/KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en
+  owner: KhayaAI
+  params: 0.6B
+  wer: 0.7903
+  cer: 0.333
+  per_category:
+    bible:
+      wer: 0.7648
+      cer: 0.3297
+      samples: 300
+      valid: 299
+      avg_seconds_per_sample: 0.09
+    unicef:
+      wer: 0.8158
+      cer: 0.3363
+      samples: 195
+      valid: 195
+      avg_seconds_per_sample: 0.29
+  source: evaluated
+- model: waxal-benchmarking/whisper-tiny-waxal-dag
+  model_url: https://huggingface.co/waxal-benchmarking/whisper-tiny-waxal-dag
+  owner: waxal-benchmarking
+  params: 37.8M
+  wer: 0.8255
+  cer: 0.4603
+  per_category:
+    bible:
+      wer: 0.9071
+      cer: 0.4871
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.64
+    unicef:
+      wer: 0.744
+      cer: 0.4334
+      samples: 195
+      valid: 195
+      avg_seconds_per_sample: 1.43
+  source: evaluated
+- model: Qlerqly/griot-nano-1
+  model_url: https://huggingface.co/Qlerqly/griot-nano-1
+  owner: Qlerqly
+  params: 0.2B
+  wer: null
+  cer: null
+  error: load_failed
+  source: evaluated
+- model: Qlerqly/griot-nano-1-onnx
+  model_url: https://huggingface.co/Qlerqly/griot-nano-1-onnx
+  owner: Qlerqly
+  params: '?'
+  wer: null
+  cer: null
+  error: unknown_architecture
+  source: evaluated

@@ -1,0 +1,47 @@
+iso_639_3: nzi
+language: Nzema
+num_samples_per_category: 300
+categories:
+- bible
+- jw
+benchmarks:
+- model: KhayaAI/w2v-bert-nzi
+  model_url: https://huggingface.co/KhayaAI/w2v-bert-nzi
+  owner: KhayaAI
+  params: 0.6B
+  wer: 0.5382
+  cer: 0.3145
+  per_category:
+    bible:
+      wer: 0.5815
+      cer: 0.4132
+      samples: 300
+      valid: 299
+      avg_seconds_per_sample: 0.08
+    jw:
+      wer: 0.4948
+      cer: 0.2157
+      samples: 300
+      valid: 299
+      avg_seconds_per_sample: 0.07
+  source: evaluated
+- model: KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en
+  model_url: https://huggingface.co/KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en
+  owner: KhayaAI
+  params: 0.6B
+  wer: 0.7615
+  cer: 0.3546
+  per_category:
+    bible:
+      wer: 0.5971
+      cer: 0.3052
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.09
+    jw:
+      wer: 0.9258
+      cer: 0.4041
+      samples: 300
+      valid: 300
+      avg_seconds_per_sample: 0.08
+  source: evaluated
