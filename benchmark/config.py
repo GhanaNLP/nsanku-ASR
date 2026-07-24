@@ -13,13 +13,26 @@ if _env.exists():
                 _k, _v = _line.split("=", 1)
                 os.environ.setdefault(_k.strip(), _v.strip())
 
-# Dataset
+# Dataset — evaluation set with per-category configs ({category}_{Language}_{iso})
+GHANA_SPEECH_EVAL = "ghananlpcommunity/ghana-speech-eval"
+# Legacy dataset (kept for reference)
 GHANA_SPEECH = "ghananlpcommunity/ghana-speech"
-NUM_SAMPLES = 300
+NUM_SAMPLES = 300  # samples per category-config
 SAMPLE_RATE = 16000
 
-# HuggingFace authentication — set HF_TOKEN in .env or environment
+# HuggingFace authentication — set HF_TOKEN in .env or environment.
+# Used for authenticated (gated/org) model + dataset access.
 HF_TOKEN = os.environ.get("HF_TOKEN", "")
+
+# Only benchmark models owned by organizations (not personal accounts).
+ORG_ONLY = True
+
+# Exclude generic "supports all languages" base models. A model is kept only if it
+# explicitly targets a modest set of languages (HF language-tag count <= this).
+# This drops global base models (Whisper ~99, MMS ~158, SeamlessM4T ~96, XEUS ~4024,
+# faster-whisper ~100) while keeping language-specific and African-multilingual models
+# (e.g. UBC-NLP Simba = 39 African langs, Sunbird = 51 African langs).
+MAX_LANG_TAGS = 60
 
 # Paths
 ROOT = Path(__file__).parent.parent
@@ -28,6 +41,8 @@ BENCHMARK_DIR = ROOT / "benchmarks"
 TRANSCRIPTIONS_DIR = ROOT / "transcriptions"
 LANG_CONFIG = ROOT / "languages" / "ghana_languages.yaml"
 RESULTS_FILE = DATA_DIR / "ghana_asr_results.json"
+EVAL_CONFIGS_FILE = DATA_DIR / "eval_configs.json"   # iso -> {language, categories:[{category, config}]}
+OWNER_TYPES_FILE = DATA_DIR / "owner_types.json"     # cache: owner -> "org" | "user"
 
 # Language → dataset config mapping
 # The dataset uses "{LanguageName}_{iso}" naming

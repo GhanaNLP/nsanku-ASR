@@ -18,7 +18,11 @@ tags:
 
 # nsanku-ASR Leaderboard
 
-Benchmarking ASR models on 41 Ghanaian language varieties using the
-[ghana-speech](https://huggingface.co/datasets/ghananlpcommunity/ghana-speech) dataset.
+Benchmarking **organization-owned** ASR models on **43 Ghanaian languages** using the
+[ghana-speech-eval](https://huggingface.co/datasets/ghananlpcommunity/ghana-speech-eval) dataset.
+
+Each model is scored on every eval category a language appears in (Bible / JW / Finance /
+UNICEF); the reported WER/CER is the **average across categories**. Only models from
+organizations (not personal accounts) are included.
 
 Data source: [GhanaNLP/nsanku-ASR](https://github.com/GhanaNLP/nsanku-ASR)

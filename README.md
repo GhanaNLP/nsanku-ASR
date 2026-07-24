@@ -1,182 +1,154 @@
 # nsanku-ASR
 
-Benchmarking ASR models on Ghanaian languages — WER/CER evaluation across 41 Ghanaian language varieties using the [ghana-speech](https://huggingface.co/datasets/ghananlpcommunity/ghana-speech) dataset.
+Benchmarking **organization-owned** ASR models on Ghanaian languages — WER/CER evaluation
+across 43 Ghanaian language varieties using the
+[ghana-speech-eval](https://huggingface.co/datasets/ghananlpcommunity/ghana-speech-eval) dataset.
 
-## Languages
+## What's benchmarked
 
-42 Ghanaian language varieties across 41 unique ISO 639-3 codes (Twi Akuapem/Twi Asante share `twi`).
+- **Only models owned by organizations** (not personal HuggingFace accounts). Owner type is
+  detected via the HuggingFace API and cached in `data/owner_types.json`.
+- **Authenticated access** — models and the eval dataset are loaded with an `HF_TOKEN`, so
+  gated / org-restricted repos are reachable.
+- Obvious **non-ASR** org models are excluded (TTS, forced-aligners, spoken-language-ID).
 
-| Language | ISO | Utterances | Hours | ASR Models on HF |
-|---|---|---|---|---|
-| Akuapem_Twi / Asante_Twi | twi | 196,033 | 263.27h | 46 |
-| Hausa | hau | 92,082 | 152.77h | 43 |
-| Ewe | ewe | 108,240 | 160.87h | 30 |
-| Kabiye | kbp | 12,302 | 17.63h | 5 |
-| Dagbani | dag | 46,526 | 73.06h | 4 |
-| Dagaare | dga | 7,369 | 15.14h | 4 |
-| Fante | fat | 60,933 | 122.03h | 2 |
-| Nkonya | nko | 13,878 | 18.42h | 2 |
-| +33 more | | | | 1 each |
+## Per-category scoring
 
-Total HF ASR models found: **176**
+The eval dataset splits each language into **categories** — `bible`, `jw`, `finance`,
+`unicef` — as separate configs (`{category}_{Language}_{iso}`). A language appears in one or
+more categories.
+
+Each model is scored on **every category its language appears in**, and the reported
+**WER/CER is the average across those categories**. The mapping of language → categories lives
+in `data/eval_configs.json`.
+
+Example: Twi has all four categories, so a model's final WER for Twi is the mean of its Bible,
+JW, Finance, and UNICEF WERs.
+
+## Languages & models
+
+- **43 languages** in the eval set (adds Ga `gaa` and Ahanta `aha` beyond the original 41).
+- Model discovery scrapes HuggingFace for ASR models tagged with each language, then filters
+  to org-owned ASR models. Every language has at least one org model (multilingual models such
+  as Whisper, MMS and Wav2Vec2-BERT cover the long tail).
 
 ## Pipeline
 
-1. **Gemini 3.1 Flash Lite** — all 41 languages (API-based, no GPU needed)
-2. **HuggingFace ASR models** — 8 languages with dedicated models (GPU required)
+1. **Discover** — `search_asr.py` scrapes HF for ASR models per language → `data/ghana_asr_results.json`
+2. **Filter** — `benchmark/owners.py` keeps only org-owned ASR models
+3. **Evaluate** — for each language, each model is scored per category and averaged
 
 ### Results
 
-- `benchmarks/{iso}.yaml` — WER/CER scores per model, sorted best-to-worst
-- `transcriptions/{iso}_{model}.csv` — Per-sample reference vs hypothesis pairs with sample-level WER/CER
-- `model_status.csv` — Status table (pass/fail) for every model × language combination
+- `benchmarks/{iso}.yaml` — averaged WER/CER per model with a `per_category` breakdown, sorted best-to-worst
+- `transcriptions/{iso}_{category}_{model}.csv` — per-sample reference vs hypothesis with sample-level WER/CER
 
 ## Structure
 
 ```
 nsanku-ASR/
-├── benchmark/                   # Benchmarking pipeline
-│   ├── config.py                # Config: paths, batch sizes, language mapping, HF_TOKEN
-│   ├── dataset.py               # Ghana Speech dataset loader (streaming, decode=False + soundfile)
-│   ├── models.py                # ASR model wrappers (Whisper seq2seq, wav2vec2/MMS CTC)
-│   ├── gemini.py                # Gemini 3.1 Flash Lite evaluation
-│   ├── metrics.py               # WER / CER computation
-│   └── evaluate.py              # Orchestrator: load model → transcribe → metrics → save
-├── benchmarks/                  # Per-language YAML results
-├── transcriptions/             # Per-sample reference/hypothesis CSVs
-├── data/                        # HF search results, language metadata
-├── languages/                   # Language metadata + dataset stats
-├── scripts/                     # HF scraper, requirements
-├── pipeline.py                  # Master runner: Gemini → HF models
-├── run_benchmark.py             # CLI: run HF model benchmarks
-├── run_gemini.sh                # Shell wrapper for Gemini evaluation
-├── run_all.sh                   # Full pipeline script
-├── generate_model_status.py     # Generate model_status.csv
-├── results_summary.py           # Print benchmark results table
-├── search_asr.py                # Search HF for ASR models
-├── .env.example                 # Template for API keys
-└── README.md
+├── benchmark/
+│   ├── config.py       # Paths, dataset name, HF_TOKEN, ORG_ONLY, sample count
+│   ├── dataset.py      # ghana-speech-eval loader (streaming, decode=False + soundfile)
+│   ├── owners.py       # Org-vs-personal detection + org/non-ASR filtering (cached)
+│   ├── models.py       # ASR wrappers (Whisper seq2seq bf16; CTC/MMS/w2v-bert fp32)
+│   ├── metrics.py      # WER / CER (Levenshtein)
+│   └── evaluate.py     # Per-category scoring → averaged final WER/CER
+├── benchmarks/         # Per-language YAML results (per-category + averaged)
+├── transcriptions/     # Per-sample reference/hypothesis CSVs
+├── data/
+│   ├── ghana_asr_results.json  # HF model scrape
+│   ├── eval_configs.json       # iso -> {language, categories:[{category, config}]}
+│   └── owner_types.json        # owner -> "org" | "user" (cache)
+├── languages/          # Language metadata
+├── scripts/            # HF scraper + requirements
+├── space/              # HuggingFace Space leaderboard (Gradio app.py + static index.html)
+├── pipeline.py         # Runs the full benchmark over all eval languages
+├── run_benchmark.py    # CLI for targeted runs
+└── search_asr.py       # HF ASR model search
 ```
 
 ## Setup
 
 ```bash
-# Create virtualenv and install deps
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r scripts/requirements.txt
 
-# Copy and fill in environment variables
 cp .env.example .env
-# Edit .env: set GEMINI_API_KEY and HF_TOKEN
+# Edit .env: set HF_TOKEN
 ```
 
 ### Environment Variables
 
-| Variable | Purpose | Required for |
-|---|---|---|
-| `GEMINI_API_KEY` | Google Gemini API access | Gemini evaluation |
-| `HF_TOKEN` | HuggingFace authenticated access (gated models) | HF model evaluation |
+| Variable | Purpose |
+|---|---|
+| `HF_TOKEN` | Authenticated HuggingFace access (gated/org models + eval dataset) |
 
 ## Usage
 
-### Full pipeline (Gemini + HF models)
+GPU evaluations run on the Ghana NLP H200.
 
 ```bash
-# On H200 GPU — runs Gemini on all 41 langs, then HF models on 8 langs
+# Full benchmark — all eval languages (GPU)
 python3 -u pipeline.py 2>&1 | tee /tmp/nsanku_pipeline.log
-```
-
-### Gemini only
-
-```bash
-./run_gemini.sh twi ewe dag
-
-# Or via Python
-python3 -c "from benchmark.gemini import evaluate_gemini; evaluate_gemini('twi')"
-```
-
-### HF models only
-
-```bash
-# All languages with models
-python run_benchmark.py
 
 # Specific languages
 python run_benchmark.py --langs twi ewe dag
 
 # Filter by model name
-python run_benchmark.py --langs twi --models whisper
+python run_benchmark.py --langs hau --models whisper
 
-# Dry run (preview, no GPU needed)
+# Preview (no GPU): languages, categories, org model counts
 python run_benchmark.py --dry-run
 ```
 
-### View results
-
-```bash
-python results_summary.py           # Summary table
-python generate_model_status.py     # model_status.csv (pass/fail per model)
-```
-
-## Pipeline Details
+## Pipeline details
 
 ### Dataset
-- Source: `ghananlpcommunity/ghana-speech` (42 configs)
-- 300 samples per language (configurable in `benchmark/config.py`)
-- Audio decoded with `soundfile` (avoids torchcodec CUDA dependency)
-- Automatic resampling to 16kHz
-- Fields: `id`, `language`, `text` (reference transcript), `duration`, `audio`
+- Source: `ghananlpcommunity/ghana-speech-eval` (57 category-configs across 43 languages)
+- Up to 300 samples per category-config (configurable via `NUM_SAMPLES` in `benchmark/config.py`)
+- Audio decoded with `soundfile` (avoids torchcodec), resampled to 16 kHz
+- Fields: `audio`, `text`, `language`, `iso`, `country`, `length`, `subset`
 
 ### Models
-- **Whisper-based** (seq2seq): `transformers` AutoModelForSpeechSeq2Seq
-- **CTC-based** (wav2vec2/MMS/HuBERT): `transformers` AutoModelForCTC
-- **Gemini 3.1 Flash Lite**: Google GenAI API with base64-encoded WAV audio
+- **Whisper-based** (seq2seq): `AutoModelForSpeechSeq2Seq`, bf16
+- **CTC-based** (wav2vec2 / MMS / Wav2Vec2-BERT / HuBERT): `AutoModelForCTC`, **fp32**
+  (raw-waveform conv encoders hit a broken cuDNN path in bf16 on Hopper)
 
 ### Metrics
-- WER (Word Error Rate): tokenized on whitespace
-- CER (Character Error Rate): character-level
+- WER (Word Error Rate) — whitespace-tokenized Levenshtein
+- CER (Character Error Rate) — character-level Levenshtein
 - Both normalized (uppercase, strip punctuation)
 
-### GPU Config (H200)
+### GPU config (H200)
 - 140 GB VRAM, CUDA 12.8, compute capability 9.0 (Hopper)
-- BF16 + TF32 compute
-- cuDNN disabled (`torch.backends.cudnn.enabled = False`) due to Hopper compatibility issue
-- `attn_implementation="eager"` for all models
-- HF cache on large volume: `HF_HOME=/mnt/volume_d2wey28/hf_cache`
+- `torch.backends.cudnn.enabled = False`, `attn_implementation="eager"`
+- HF cache on the large volume: `HF_HOME=/mnt/volume_d2wey28/hf_cache`
 
-## Results Format
+## Results format
 
 ### benchmarks/{iso}.yaml
 ```yaml
-iso_639_3: twi
-num_samples: 300
+iso_639_3: dag
+language: Dagbani
+num_samples_per_category: 300
+categories: [bible, unicef]
 benchmarks:
-  - model: GiftMark/akan-whisper-model
-    model_url: https://huggingface.co/GiftMark/akan-whisper-model
-    params: 0.2B
-    wer: 0.1224
-    cer: 0.0393
-    avg_seconds_per_sample: 0.15
-    source: evaluated
-  - model: google/gemini-3.1-flash-lite
-    model_url: https://ai.google.dev/models/gemini-3.1-flash-lite
-    params: API
-    wer: 0.1761
-    cer: 0.0410
+  - model: Sunbird/asr-whisper-51-african-languages
+    model_url: https://huggingface.co/Sunbird/asr-whisper-51-african-languages
+    owner: Sunbird
+    params: 2B
+    wer: 0.6499        # average across categories
+    cer: 0.3014
+    per_category:
+      bible:  {wer: 0.7082, cer: 0.3379, samples: 300, valid: 300}
+      unicef: {wer: 0.5916, cer: 0.2650, samples: 195, valid: 195}
     source: evaluated
 ```
 
-### transcriptions/{iso}_{model}.csv
-```csv
-sample_id,reference,hypothesis,wer,cer
-0,BERESOSƐM 1.,[beresosɛm 1],0.0,0.0
-1,Efi Adam So Kosi Noa Mma So.,[efi adam so kosi noa mma so],0.0,0.0
-```
+## Leaderboard
 
-### model_status.csv
-```csv
-model,language,params,wer,cer,status,fail_reason
-GiftMark/akan-whisper-model,twi,0.2B,0.1224,0.0393,pass,
-Kennethdot/kasanoma_whisper,twi,?,,,fail,gated_repo
-```
+Interactive leaderboard (HuggingFace Space): reads `benchmarks/*.yaml` from this repo and shows
+the global best-per-language table, per-language breakdowns with per-category WER, and model
+status. See `space/`.

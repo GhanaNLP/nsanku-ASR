@@ -167,8 +167,9 @@ td .pkg { color: var(--text-muted); font-size: 0.78rem; }
   <!-- ====== Header ====== -->
   <div class="header">
     <h1>nsanku-ASR Leaderboard</h1>
-    <p>Benchmarking ASR models on <strong>41 Ghanaian language varieties</strong> using the
-       <a href="https://huggingface.co/datasets/ghananlpcommunity/ghana-speech" target="_blank">ghana-speech</a> dataset · 300 samples per language</p>
+    <p>Benchmarking <strong>organization-owned</strong> ASR models on <strong>Ghanaian languages</strong> using the
+       <a href="https://huggingface.co/datasets/ghananlpcommunity/ghana-speech-eval" target="_blank">ghana-speech-eval</a> dataset ·
+       scored per category (Bible / JW / Finance / UNICEF), averaged · 300 samples per category</p>
     <div class="links">
       <a href="https://github.com/GhanaNLP/nsanku-ASR" target="_blank" class="repo-link">
         <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -259,7 +260,7 @@ td .pkg { color: var(--text-muted); font-size: 0.78rem; }
         <label>Language:</label>
         <select id="ms-lang-select"><option value="All">All</option></select>
         <label>Search:</label>
-        <input type="text" id="ms-search" placeholder="model name, e.g. whisper, mms, gemini…">
+        <input type="text" id="ms-search" placeholder="model name, e.g. whisper, mms, w2v-bert…">
       </div>
       <div class="info-bar">
         <span id="ms-count">0 rows</span>
@@ -307,21 +308,26 @@ let sortState = { tab: null, col: null, asc: true };
 // ====== Helpers ======
 function modelType(m) {
   m = m.toLowerCase();
-  if (m.includes('gemini')) return 'Gemini API';
-  if (m.includes('whisper')) {
-    if (m.includes('faster-whisper')) return 'Faster-Whisper';
-    return 'Whisper';
-  }
+  if (m.includes('faster-whisper')) return 'Faster-Whisper';
+  if (m.includes('whisper')) return 'Whisper';
+  if (m.includes('w2v-bert') || m.includes('w2v_bert') || m.includes('wav2vec2-bert')) return 'Wav2Vec2-BERT';
   if (m.includes('mms')) return 'MMS';
-  if (m.includes('wav2vec') || m.includes('w2v')) return 'wav2vec2';
+  if (m.includes('wav2vec') || m.includes('w2v2') || m.includes('w2v-')) return 'wav2vec2';
   if (m.includes('xls-r') || m.includes('xlsr')) return 'XLS-R';
   if (m.includes('hubert')) return 'HuBERT';
-  if (m.includes('simba')) return 'SeamlessM4T (Simba)';
+  if (m.includes('simba')) return 'Simba';
   if (m.includes('seamless')) return 'SeamlessM4T';
   if (m.includes('xeus') || m.includes('espnet')) return 'ESPnet';
-  if (m.includes('zeroswot')) return 'ZeroSwot';
-  if (m.includes('heep')) return 'HEEP';
   return 'Other';
+}
+
+const CATEGORY_LABELS = { bible:'Bible', jw:'JW', finance:'Finance', unicef:'UNICEF' };
+function fmtCategories(pc) {
+  if (!pc) return '';
+  return Object.keys(pc).map(c => {
+    const w = pc[c] && pc[c].wer;
+    return `${CATEGORY_LABELS[c]||c} ${w!=null?(w*100).toFixed(1):'—'}`;
+  }).join('  |  ');
 }
 
 function classifyError(e) {
@@ -375,40 +381,74 @@ function parseCSV(text) {
   });
 }
 
-// ====== YAML Parser (lightweight for our format) ======
+// ====== YAML Parser (indent-aware for our benchmark schema) ======
+// Each benchmark is a list item ("- model:") whose scalar fields sit at a
+// 2-space indent. Nested per_category blocks (>=4-space indent) are parsed
+// separately so the top-level averaged wer/cer are never overwritten.
 function parseYAML(text) {
   const lines = text.split('\n');
   const result = { benchmarks: [] };
-  let current = null;
-  let iso = null, numSamples = null;
+  let current = null, iso = null, language = null, numSamples = null;
+  let categories = [];
+  let inCats = false, curCat = null;
 
-  for (let line of lines) {
-    if (line.startsWith('iso_639_3:')) iso = line.split(':')[1].trim();
-    if (line.startsWith('num_samples:')) numSamples = parseInt(line.split(':')[1].trim());
-    if (line.startsWith('- model:')) {
+  const scalar = (s) => {
+    s = s.trim().replace(/^['"]|['"]$/g, '');
+    return s === 'null' ? null : s;
+  };
+
+  for (const line of lines) {
+    // top-level file fields (no indent)
+    if (/^iso_639_3:/.test(line)) { iso = scalar(line.split(':')[1]); continue; }
+    if (/^language:/.test(line)) { language = scalar(line.split(':').slice(1).join(':')); continue; }
+    if (/^num_samples_per_category:/.test(line)) { numSamples = parseInt(line.split(':')[1]); continue; }
+    if (/^categories:/.test(line)) { inCats = true; categories = []; continue; }
+    if (inCats && /^- /.test(line)) { categories.push(scalar(line.slice(2))); continue; }
+    if (inCats && /^benchmarks:/.test(line)) { inCats = false; }
+
+    // new benchmark item
+    if (/^- model:/.test(line)) {
       if (current) result.benchmarks.push(current);
-      current = { model: line.split('model:')[1].trim() };
+      current = { model: scalar(line.split('model:')[1]), per_category: {} };
+      curCat = null;
+      continue;
     }
-    if (current) {
-      if (line.includes('  model_url:')) current.model_url = line.split('model_url:')[1].trim();
-      const paramsM = line.match(/\s+params:\s*(.+)/); if (paramsM) current.params = paramsM[1].trim().replace(/['"]/g,'');
-      const werM = line.match(/\s+wer:\s*(.+)/); if (werM) {
-        let v = werM[1].trim();
-        current.wer = v === 'null' ? null : parseFloat(v);
+    if (!current) continue;
+
+    const indent = line.length - line.trimStart().length;
+    const body = line.trim();
+
+    // depth 2: scalar fields of the benchmark item
+    if (indent === 2) {
+      if (body.startsWith('per_category:')) { curCat = null; continue; }
+      const m = body.match(/^(\w+):\s*(.*)$/);
+      if (m) {
+        const [, k, v] = m;
+        if (k === 'wer' || k === 'cer') current[k] = v === 'null' ? null : parseFloat(v);
+        else current[k] = scalar(v);
       }
-      const cerM = line.match(/\s+cer:\s*(.+)/); if (cerM) {
-        let v = cerM[1].trim();
-        current.cer = v === 'null' ? null : parseFloat(v);
-      }
-      const speedM = line.match(/\s+avg_seconds_per_sample:\s*(.+)/); if (speedM) current.avg_seconds_per_sample = parseFloat(speedM[1].trim());
-      const errM = line.match(/\s+error:\s*(.+)/); if (errM) {
-        let e = errM[1].trim().replace(/^'/,'').replace(/'$/,'');
-        current.error = e;
+      curCat = null;
+      continue;
+    }
+    // depth 4: category name (e.g. "bible:")
+    if (indent === 4) {
+      const cm = body.match(/^(\w+):$/);
+      if (cm) { curCat = cm[1]; current.per_category[curCat] = {}; }
+      continue;
+    }
+    // depth 6: category metrics
+    if (indent >= 6 && curCat) {
+      const mm = body.match(/^(\w+):\s*(.*)$/);
+      if (mm) {
+        const [, k, v] = mm;
+        current.per_category[curCat][k] = (v === 'null') ? null : parseFloat(v);
       }
     }
   }
   if (current) result.benchmarks.push(current);
   result.iso_639_3 = iso;
+  result.language = language;
+  result.categories = categories;
   result.num_samples = numSamples;
   return result;
 }
@@ -450,12 +490,15 @@ async function loadYAMLs() {
         for (const b of data.benchmarks) {
           rows.push({
             iso, model: b.model, model_type: modelType(b.model),
+            owner: b.owner || b.model.split('/')[0],
+            categories: (data.categories||[]).map(c=>CATEGORY_LABELS[c]||c).join(', '),
             params: b.params || '?',
             wer: b.wer !== undefined ? b.wer : null,
             cer: b.cer !== undefined ? b.cer : null,
-            speed: b.avg_seconds_per_sample || null,
+            per_category_wer: fmtCategories(b.per_category),
+            speed: null,
             status: b.wer !== null && b.wer !== undefined ? 'pass' : 'fail',
-            fail_reason: b.error || classifyError(b.error),
+            fail_reason: b.error ? classifyError(b.error) : '',
             url: b.model_url || `https://huggingface.co/${b.model}`,
           });
         }
@@ -466,14 +509,8 @@ async function loadYAMLs() {
 }
 
 async function loadAll() {
-  // Try YAMLs first (has speed data)
   let yamlData = await loadYAMLs();
-  if (yamlData && yamlData.length > 0) {
-    return yamlData;
-  }
-  // Fallback to CSV
-  let csvData = await loadCSV();
-  if (csvData && csvData.length > 0) return csvData;
+  if (yamlData && yamlData.length > 0) return yamlData;
   throw new Error('Could not load data');
 }
 
@@ -492,17 +529,12 @@ function renderOverview(data) {
   const best = passedRows[0];
   const bestStr = best ? `${best.model} (${LANG_NAMES[best.iso] || best.iso}) — ${(best.wer*100).toFixed(2)}%` : '—';
 
-  // Avg Gemini WER
-  const gemini = data.filter(r => r.model_type === 'Gemini API' && r.status === 'pass');
-  const avgGemini = gemini.length ? (gemini.reduce((s,r) => s + r.wer, 0) / gemini.length * 100).toFixed(2) + '%' : '—';
-
   const stats = [
     {label:'Languages',value:totalLangs},
-    {label:'Models tested',value:totalModels},
+    {label:'Org models tested',value:totalModels},
     {label:'Total evaluations',value:totalEvals},
     {label:'Passed',value:passed + ` (${passRate})`},
     {label:'Failed',value:failed},
-    {label:'Avg Gemini WER',value:avgGemini},
     {label:'Best overall',value:bestStr},
   ];
   document.getElementById('stats-grid').innerHTML = stats.map(s => `

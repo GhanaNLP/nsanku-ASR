@@ -1,8 +1,8 @@
 {
   "project": "nsanku-ASR",
-  "total_languages": 41,
-  "languages_with_asr_models": 41,
-  "total_asr_models": 176,
+  "total_languages": 43,
+  "languages_with_asr_models": 43,
+  "total_asr_models": 218,
   "languages": {
     "twi": {
       "language": "Akuapem_Twi",
@@ -10,300 +10,328 @@
       "utterances": 196033,
       "hours": 263.27,
       "total_asr_models": 52,
-      "models_found": 46,
+      "models_found": 49,
       "asr_models": [
-        {
-          "name": "UBC-NLP/Simba-S",
-          "url": "https://huggingface.co/UBC-NLP/Simba-S",
-          "downloads": 206,
-          "likes": 4,
-          "size": "2B"
-        },
-        {
-          "name": "GiftMark/akan-whisper-model",
-          "url": "https://huggingface.co/GiftMark/akan-whisper-model",
-          "downloads": 172,
-          "likes": 10,
-          "size": "0.2B"
-        },
         {
           "name": "UBC-NLP/Simba-TTS-twi-asanti",
           "url": "https://huggingface.co/UBC-NLP/Simba-TTS-twi-asanti",
-          "downloads": 87,
+          "downloads": 270,
           "likes": 1,
           "size": "36.3M"
         },
         {
-          "name": "teckedd/mms-akan-ani-kese-v1",
-          "url": "https://huggingface.co/teckedd/mms-akan-ani-kese-v1",
-          "downloads": 79,
-          "likes": 0,
-          "size": "1.0B"
-        },
-        {
-          "name": "teckedd/whisper-small-waxal-akan-continuation-v1",
-          "url": "https://huggingface.co/teckedd/whisper-small-waxal-akan-continuation-v1",
-          "downloads": 52,
-          "likes": 0,
+          "name": "GiftMark/akan-whisper-model",
+          "url": "https://huggingface.co/GiftMark/akan-whisper-model",
+          "downloads": 255,
+          "likes": 12,
           "size": "0.2B"
         },
         {
-          "name": "Kennethdot/kasanoma_whisper",
-          "url": "https://huggingface.co/Kennethdot/kasanoma_whisper",
-          "downloads": 42,
-          "likes": 0
-        },
-        {
-          "name": "UBC-NLP/Simba-W",
-          "url": "https://huggingface.co/UBC-NLP/Simba-W",
-          "downloads": 39,
-          "likes": 1,
+          "name": "UBC-NLP/Simba-S",
+          "url": "https://huggingface.co/UBC-NLP/Simba-S",
+          "downloads": 208,
+          "likes": 4,
           "size": "2B"
         },
         {
-          "name": "espnet/xeus",
-          "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
-          "likes": 150
+          "name": "UBC-NLP/Simba-SLID-49",
+          "url": "https://huggingface.co/UBC-NLP/Simba-SLID-49",
+          "downloads": 119,
+          "likes": 0,
+          "size": "94.6M"
+        },
+        {
+          "name": "azunre/wav2vec2large-xlsr-akan",
+          "url": "https://huggingface.co/azunre/wav2vec2large-xlsr-akan",
+          "downloads": 102,
+          "likes": 1
+        },
+        {
+          "name": "johntsi/ZeroSwot-Medium_asr-cv_en-to-200",
+          "url": "https://huggingface.co/johntsi/ZeroSwot-Medium_asr-cv_en-to-200",
+          "downloads": 79,
+          "likes": 1,
+          "size": "0.4B"
+        },
+        {
+          "name": "johntsi/ZeroSwot-Large_asr-cv_en-to-200",
+          "url": "https://huggingface.co/johntsi/ZeroSwot-Large_asr-cv_en-to-200",
+          "downloads": 74,
+          "likes": 1,
+          "size": "0.4B"
         },
         {
           "name": "teckedd/whisper-small-waxal-round2-specaug-v1",
           "url": "https://huggingface.co/teckedd/whisper-small-waxal-round2-specaug-v1",
-          "downloads": 31,
+          "downloads": 62,
           "likes": 0,
           "size": "0.2B"
         },
         {
-          "name": "UBC-NLP/Simba-M",
-          "url": "https://huggingface.co/UBC-NLP/Simba-M",
-          "downloads": 28,
-          "likes": 0
-        },
-        {
-          "name": "teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-replay-fullft-v0.1",
-          "url": "https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-replay-fullft-v0.1",
-          "downloads": 28,
-          "likes": 0,
-          "size": "0.2B"
+          "name": "UBC-NLP/Simba-W",
+          "url": "https://huggingface.co/UBC-NLP/Simba-W",
+          "downloads": 52,
+          "likes": 1,
+          "size": "2B"
         },
         {
           "name": "UBC-NLP/Simba-X",
           "url": "https://huggingface.co/UBC-NLP/Simba-X",
-          "downloads": 27,
+          "downloads": 47,
+          "likes": 0
+        },
+        {
+          "name": "johntsi/ZeroSwot-Medium_asr-mustc_en-to-200",
+          "url": "https://huggingface.co/johntsi/ZeroSwot-Medium_asr-mustc_en-to-200",
+          "downloads": 46,
+          "likes": 0,
+          "size": "0.4B"
+        },
+        {
+          "name": "johntsi/ZeroSwot-Large_asr-mustc_en-to-200",
+          "url": "https://huggingface.co/johntsi/ZeroSwot-Large_asr-mustc_en-to-200",
+          "downloads": 42,
+          "likes": 0,
+          "size": "0.4B"
+        },
+        {
+          "name": "teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-replay-fullft-v0.1",
+          "url": "https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-replay-fullft-v0.1",
+          "downloads": 42,
+          "likes": 0,
+          "size": "0.2B"
+        },
+        {
+          "name": "espnet/xeus",
+          "url": "https://huggingface.co/espnet/xeus",
+          "downloads": 41,
+          "likes": 150
+        },
+        {
+          "name": "Kennethdot/kasanoma_whisper",
+          "url": "https://huggingface.co/Kennethdot/kasanoma_whisper",
+          "downloads": 40,
           "likes": 0
         },
         {
           "name": "teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-broad-lowlr-freezeenc-fullft-v0.3",
           "url": "https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-broad-lowlr-freezeenc-fullft-v0.3",
-          "downloads": 26,
-          "likes": 0,
-          "size": "0.2B"
-        },
-        {
-          "name": "johntsi/ZeroSwot-Large_asr-cv_en-to-200",
-          "url": "https://huggingface.co/johntsi/ZeroSwot-Large_asr-cv_en-to-200",
-          "downloads": 21,
-          "likes": 1,
-          "size": "0.4B"
-        },
-        {
-          "name": "teckedd/serendepify-gsl-asr-ak-waxal-whisper-small-only-lowlr-freezeenc-fullft-v0.4",
-          "url": "https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-whisper-small-only-lowlr-freezeenc-fullft-v0.4",
-          "downloads": 19,
-          "likes": 0,
-          "size": "0.2B"
-        },
-        {
-          "name": "teckedd/serendepify-gsl-asr-ak-gnlp-whisper-small-only-lowlr-freezeenc-fullft-v0.5",
-          "url": "https://huggingface.co/teckedd/serendepify-gsl-asr-ak-gnlp-whisper-small-only-lowlr-freezeenc-fullft-v0.5",
-          "downloads": 17,
-          "likes": 0,
-          "size": "0.2B"
-        },
-        {
-          "name": "UBC-NLP/Simba-H",
-          "url": "https://huggingface.co/UBC-NLP/Simba-H",
-          "downloads": 16,
-          "likes": 0
-        },
-        {
-          "name": "azunre/wav2vec2large-xlsr-akan",
-          "url": "https://huggingface.co/azunre/wav2vec2large-xlsr-akan",
-          "downloads": 15,
-          "likes": 1
-        },
-        {
-          "name": "teckedd/whisper-small-serlabs-twi-asr",
-          "url": "https://huggingface.co/teckedd/whisper-small-serlabs-twi-asr",
-          "downloads": 14,
-          "likes": 1,
-          "size": "0.2B"
-        },
-        {
-          "name": "teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-balanced-fullft-v0.2",
-          "url": "https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-balanced-fullft-v0.2",
-          "downloads": 14,
-          "likes": 0,
-          "size": "0.2B"
-        },
-        {
-          "name": "johntsi/ZeroSwot-Medium_asr-cv_en-to-200",
-          "url": "https://huggingface.co/johntsi/ZeroSwot-Medium_asr-cv_en-to-200",
-          "downloads": 13,
-          "likes": 1,
-          "size": "0.4B"
-        },
-        {
-          "name": "samwell/medasr-ghana",
-          "url": "https://huggingface.co/samwell/medasr-ghana",
-          "downloads": 13,
-          "likes": 1,
-          "size": "0.1B"
-        },
-        {
-          "name": "UBC-NLP/Simba-TTS-twi-akuapem",
-          "url": "https://huggingface.co/UBC-NLP/Simba-TTS-twi-akuapem",
-          "downloads": 12,
-          "likes": 0,
-          "size": "36.3M"
-        },
-        {
-          "name": "jdapaah/whisper-small-twi-arxiv",
-          "url": "https://huggingface.co/jdapaah/whisper-small-twi-arxiv",
-          "downloads": 11,
+          "downloads": 40,
           "likes": 0,
           "size": "0.2B"
         },
         {
           "name": "bc7ec356/heep-universal",
           "url": "https://huggingface.co/bc7ec356/heep-universal",
-          "downloads": 10,
+          "downloads": 35,
           "likes": 1,
           "size": "0.8B"
         },
         {
-          "name": "tiffany101/whisper-small",
-          "url": "https://huggingface.co/tiffany101/whisper-small",
-          "downloads": 9,
+          "name": "UBC-NLP/Simba-H",
+          "url": "https://huggingface.co/UBC-NLP/Simba-H",
+          "downloads": 35,
+          "likes": 0
+        },
+        {
+          "name": "teckedd/serendepify-gsl-asr-ak-waxal-whisper-small-only-lowlr-freezeenc-fullft-v0.4",
+          "url": "https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-whisper-small-only-lowlr-freezeenc-fullft-v0.4",
+          "downloads": 32,
           "likes": 0,
           "size": "0.2B"
         },
         {
-          "name": "Lagyamfi/whisper-small-tw",
-          "url": "https://huggingface.co/Lagyamfi/whisper-small-tw",
-          "downloads": 8,
+          "name": "UBC-NLP/Simba-M",
+          "url": "https://huggingface.co/UBC-NLP/Simba-M",
+          "downloads": 30,
+          "likes": 0
+        },
+        {
+          "name": "KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en",
+          "downloads": 30,
+          "likes": 0,
+          "size": "0.6B"
+        },
+        {
+          "name": "teckedd/serendepify-gsl-asr-ak-gnlp-whisper-small-only-lowlr-freezeenc-fullft-v0.5",
+          "url": "https://huggingface.co/teckedd/serendepify-gsl-asr-ak-gnlp-whisper-small-only-lowlr-freezeenc-fullft-v0.5",
+          "downloads": 28,
           "likes": 0,
           "size": "0.2B"
         },
         {
-          "name": "dkt-py-bot/TG-Whisper-Small-FineTuned-DL-Twi",
-          "url": "https://huggingface.co/dkt-py-bot/TG-Whisper-Small-FineTuned-DL-Twi",
-          "downloads": 8,
+          "name": "teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-balanced-fullft-v0.2",
+          "url": "https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-balanced-fullft-v0.2",
+          "downloads": 23,
           "likes": 0,
-          "size": "37.8M"
+          "size": "0.2B"
+        },
+        {
+          "name": "samwell/medasr-ghana",
+          "url": "https://huggingface.co/samwell/medasr-ghana",
+          "downloads": 22,
+          "likes": 1,
+          "size": "0.1B"
+        },
+        {
+          "name": "teckedd/whisper-small-waxal-akan-continuation-v1",
+          "url": "https://huggingface.co/teckedd/whisper-small-waxal-akan-continuation-v1",
+          "downloads": 21,
+          "likes": 0,
+          "size": "0.2B"
+        },
+        {
+          "name": "teckedd/whisper-small-serlabs-twi-asr",
+          "url": "https://huggingface.co/teckedd/whisper-small-serlabs-twi-asr",
+          "downloads": 19,
+          "likes": 1,
+          "size": "0.2B"
         },
         {
           "name": "tiffany101/whisper-twi-v2",
           "url": "https://huggingface.co/tiffany101/whisper-twi-v2",
-          "downloads": 8,
+          "downloads": 18,
           "likes": 0,
           "size": "37.8M"
         },
         {
-          "name": "UBC-NLP/Simba-SLID-49",
-          "url": "https://huggingface.co/UBC-NLP/Simba-SLID-49",
-          "downloads": 7,
-          "likes": 0,
-          "size": "94.6M"
-        },
-        {
-          "name": "Zzzkay1/Whisper-medium-zh",
-          "url": "https://huggingface.co/Zzzkay1/Whisper-medium-zh",
-          "downloads": 6,
-          "likes": 0,
-          "size": "0.8B"
-        },
-        {
-          "name": "dkt-py-bot/whisper-small-DL-Twi",
-          "url": "https://huggingface.co/dkt-py-bot/whisper-small-DL-Twi",
-          "downloads": 5,
-          "likes": 0,
-          "size": "37.8M"
-        },
-        {
-          "name": "johntsi/ZeroSwot-Large_asr-mustc_en-to-200",
-          "url": "https://huggingface.co/johntsi/ZeroSwot-Large_asr-mustc_en-to-200",
-          "downloads": 4,
-          "likes": 0,
-          "size": "0.4B"
-        },
-        {
-          "name": "johntsi/ZeroSwot-Medium_asr-mustc_en-to-200",
-          "url": "https://huggingface.co/johntsi/ZeroSwot-Medium_asr-mustc_en-to-200",
-          "downloads": 4,
-          "likes": 0,
-          "size": "0.4B"
-        },
-        {
-          "name": "Zzzkay1/Whisper-medium-nan",
-          "url": "https://huggingface.co/Zzzkay1/Whisper-medium-nan",
-          "downloads": 4,
-          "likes": 0,
-          "size": "0.8B"
-        },
-        {
-          "name": "ghananlpcommunity/Simba-TTS-twi-akuapem",
-          "url": "https://huggingface.co/ghananlpcommunity/Simba-TTS-twi-akuapem",
-          "downloads": 4,
-          "likes": 0,
-          "size": "36.3M"
-        },
-        {
-          "name": "Raydox10/Raydox11-whisper-small",
-          "url": "https://huggingface.co/Raydox10/Raydox11-whisper-small",
-          "downloads": 3,
+          "name": "tiffany101/whisper-small",
+          "url": "https://huggingface.co/tiffany101/whisper-small",
+          "downloads": 17,
           "likes": 0,
           "size": "0.2B"
         },
         {
-          "name": "233-Yorozuya/dl_twi_asr",
-          "url": "https://huggingface.co/233-Yorozuya/dl_twi_asr",
-          "downloads": 3,
+          "name": "teckedd/whisper_small-waxal_akan-asr",
+          "url": "https://huggingface.co/teckedd/whisper_small-waxal_akan-asr",
+          "downloads": 14,
           "likes": 0,
-          "size": "0.3B"
+          "size": "0.2B"
         },
         {
-          "name": "dkt-py-bot/TG-Whisper-Tiny-FineTuned-DL-Twi",
-          "url": "https://huggingface.co/dkt-py-bot/TG-Whisper-Tiny-FineTuned-DL-Twi",
-          "downloads": 3,
+          "name": "teckedd/whisper_small-waxal_akan-asr-v1",
+          "url": "https://huggingface.co/teckedd/whisper_small-waxal_akan-asr-v1",
+          "downloads": 14,
+          "likes": 0,
+          "size": "0.2B"
+        },
+        {
+          "name": "teckedd/mms-akan-ani-kese-v1",
+          "url": "https://huggingface.co/teckedd/mms-akan-ani-kese-v1",
+          "downloads": 14,
+          "likes": 0,
+          "size": "1.0B"
+        },
+        {
+          "name": "dkt-py-bot/TG-Whisper-Small-FineTuned-DL-Twi",
+          "url": "https://huggingface.co/dkt-py-bot/TG-Whisper-Small-FineTuned-DL-Twi",
+          "downloads": 13,
           "likes": 0,
           "size": "37.8M"
         },
         {
           "name": "kennyzhu1/w2v-bert-2.0-zh-colab-CV16.0",
           "url": "https://huggingface.co/kennyzhu1/w2v-bert-2.0-zh-colab-CV16.0",
-          "downloads": 2,
+          "downloads": 12,
           "likes": 0,
           "size": "0.6B"
         },
         {
-          "name": "ghananlpcommunity/w2v-bert-2.0_twi_alpha_v1_farmerline-ct2",
-          "url": "https://huggingface.co/ghananlpcommunity/w2v-bert-2.0_twi_alpha_v1_farmerline-ct2",
-          "downloads": 2,
-          "likes": 0
+          "name": "Zzzkay1/Whisper-medium-zh",
+          "url": "https://huggingface.co/Zzzkay1/Whisper-medium-zh",
+          "downloads": 12,
+          "likes": 0,
+          "size": "0.8B"
         },
         {
-          "name": "ghananlpcommunity/FarmerlineWav2Vec-Twi-Demo",
-          "url": "https://huggingface.co/ghananlpcommunity/FarmerlineWav2Vec-Twi-Demo",
-          "downloads": 2,
-          "likes": 0
+          "name": "dkt-py-bot/whisper-small-DL-Twi",
+          "url": "https://huggingface.co/dkt-py-bot/whisper-small-DL-Twi",
+          "downloads": 12,
+          "likes": 0,
+          "size": "37.8M"
         },
         {
           "name": "ghananlpcommunity/Simba-S",
           "url": "https://huggingface.co/ghananlpcommunity/Simba-S",
-          "downloads": 1,
+          "downloads": 11,
           "likes": 0,
           "size": "2B"
+        },
+        {
+          "name": "Lagyamfi/whisper-small-tw",
+          "url": "https://huggingface.co/Lagyamfi/whisper-small-tw",
+          "downloads": 10,
+          "likes": 0,
+          "size": "0.2B"
+        },
+        {
+          "name": "jdapaah/whisper-small-twi-arxiv",
+          "url": "https://huggingface.co/jdapaah/whisper-small-twi-arxiv",
+          "downloads": 10,
+          "likes": 0,
+          "size": "0.2B"
+        },
+        {
+          "name": "Zzzkay1/Whisper-medium-nan",
+          "url": "https://huggingface.co/Zzzkay1/Whisper-medium-nan",
+          "downloads": 10,
+          "likes": 0,
+          "size": "0.8B"
+        },
+        {
+          "name": "233-Yorozuya/dl_twi_asr",
+          "url": "https://huggingface.co/233-Yorozuya/dl_twi_asr",
+          "downloads": 9,
+          "likes": 0,
+          "size": "0.3B"
+        },
+        {
+          "name": "UBC-NLP/Simba-TTS-twi-akuapem",
+          "url": "https://huggingface.co/UBC-NLP/Simba-TTS-twi-akuapem",
+          "downloads": 9,
+          "likes": 0,
+          "size": "36.3M"
+        },
+        {
+          "name": "dkt-py-bot/TG-Whisper-Tiny-FineTuned-DL-Twi",
+          "url": "https://huggingface.co/dkt-py-bot/TG-Whisper-Tiny-FineTuned-DL-Twi",
+          "downloads": 6,
+          "likes": 0,
+          "size": "37.8M"
+        },
+        {
+          "name": "teckedd/serendepify-gsl-asr-ak-waxal-gnlpclean-whisper-small-replay-fullft-v0.6",
+          "url": "https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-gnlpclean-whisper-small-replay-fullft-v0.6",
+          "downloads": 6,
+          "likes": 0,
+          "size": "0.2B"
+        },
+        {
+          "name": "Raydox10/Raydox11-whisper-small",
+          "url": "https://huggingface.co/Raydox10/Raydox11-whisper-small",
+          "downloads": 5,
+          "likes": 0,
+          "size": "0.2B"
+        },
+        {
+          "name": "ghananlpcommunity/w2v-bert-2.0_twi_alpha_v1_farmerline-ct2",
+          "url": "https://huggingface.co/ghananlpcommunity/w2v-bert-2.0_twi_alpha_v1_farmerline-ct2",
+          "downloads": 5,
+          "likes": 0
+        },
+        {
+          "name": "ghananlpcommunity/Simba-TTS-twi-akuapem",
+          "url": "https://huggingface.co/ghananlpcommunity/Simba-TTS-twi-akuapem",
+          "downloads": 5,
+          "likes": 0,
+          "size": "36.3M"
+        },
+        {
+          "name": "ghananlpcommunity/FarmerlineWav2Vec-Twi-Demo",
+          "url": "https://huggingface.co/ghananlpcommunity/FarmerlineWav2Vec-Twi-Demo",
+          "downloads": 4,
+          "likes": 0
         },
         {
           "name": "ghananlpcommunity/Simba-TTS-twi-asanti",
@@ -311,13 +339,6 @@
           "downloads": 1,
           "likes": 0,
           "size": "36.3M"
-        },
-        {
-          "name": "teckedd/serendepify-gsl-asr-ak-waxal-gnlpclean-whisper-small-replay-fullft-v0.6",
-          "url": "https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-gnlpclean-whisper-small-replay-fullft-v0.6",
-          "downloads": 1,
-          "likes": 0,
-          "size": "0.2B"
         },
         {
           "name": "Kennethdot/kasanoma_wav2vec2",
@@ -333,184 +354,211 @@
       "iso_639_3": "ewe",
       "utterances": 108240,
       "hours": 160.87,
-      "total_asr_models": 31,
-      "models_found": 30,
+      "total_asr_models": 33,
+      "models_found": 33,
       "asr_models": [
         {
           "name": "MahmoudAshraf/mms-300m-1130-forced-aligner",
           "url": "https://huggingface.co/MahmoudAshraf/mms-300m-1130-forced-aligner",
-          "downloads": 3060000,
-          "likes": 92,
+          "downloads": 2570000,
+          "likes": 94,
           "size": "0.3B"
         },
         {
           "name": "facebook/mms-1b-all",
           "url": "https://huggingface.co/facebook/mms-1b-all",
-          "downloads": 336000,
+          "downloads": 281000,
           "likes": 202,
           "size": "1.0B"
         },
         {
           "name": "facebook/mms-1b-fl102",
           "url": "https://huggingface.co/facebook/mms-1b-fl102",
-          "downloads": 16900,
+          "downloads": 12900,
           "likes": 32,
           "size": "1.0B"
         },
         {
           "name": "onnx-community/mms-300m-1130-forced-aligner-ONNX",
           "url": "https://huggingface.co/onnx-community/mms-300m-1130-forced-aligner-ONNX",
-          "downloads": 1470,
-          "likes": 3
+          "downloads": 3110,
+          "likes": 4
         },
         {
           "name": "facebook/mms-1b-l1107",
           "url": "https://huggingface.co/facebook/mms-1b-l1107",
-          "downloads": 328,
+          "downloads": 655,
           "likes": 13,
           "size": "1.0B"
         },
         {
+          "name": "Sunbird/asr-whisper-51-african-languages",
+          "url": "https://huggingface.co/Sunbird/asr-whisper-51-african-languages",
+          "downloads": 256,
+          "likes": 2,
+          "size": "2B"
+        },
+        {
           "name": "UBC-NLP/Simba-S",
           "url": "https://huggingface.co/UBC-NLP/Simba-S",
-          "downloads": 206,
+          "downloads": 208,
           "likes": 4,
           "size": "2B"
         },
         {
-          "name": "UBC-NLP/Simba-W",
-          "url": "https://huggingface.co/UBC-NLP/Simba-W",
-          "downloads": 39,
-          "likes": 1,
-          "size": "2B"
+          "name": "Qlerqly/griot-nano-1",
+          "url": "https://huggingface.co/Qlerqly/griot-nano-1",
+          "downloads": 150,
+          "likes": 2,
+          "size": "0.2B"
         },
         {
-          "name": "espnet/xeus",
-          "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
-          "likes": 150
-        },
-        {
-          "name": "UBC-NLP/Simba-M",
-          "url": "https://huggingface.co/UBC-NLP/Simba-M",
-          "downloads": 28,
-          "likes": 0
-        },
-        {
-          "name": "UBC-NLP/Simba-X",
-          "url": "https://huggingface.co/UBC-NLP/Simba-X",
-          "downloads": 27,
-          "likes": 0
-        },
-        {
-          "name": "huwenjie333/whisper-v3-ft-af51-0703",
-          "url": "https://huggingface.co/huwenjie333/whisper-v3-ft-af51-0703",
-          "downloads": 25,
+          "name": "UBC-NLP/Simba-SLID-49",
+          "url": "https://huggingface.co/UBC-NLP/Simba-SLID-49",
+          "downloads": 119,
           "likes": 0,
-          "size": "2B"
+          "size": "94.6M"
         },
         {
-          "name": "waxal-benchmarking/mms-300m-waxal-ewe",
-          "url": "https://huggingface.co/waxal-benchmarking/mms-300m-waxal-ewe",
-          "downloads": 23,
-          "likes": 0,
-          "size": "0.3B"
-        },
-        {
-          "name": "johntsi/ZeroSwot-Large_asr-cv_en-to-200",
-          "url": "https://huggingface.co/johntsi/ZeroSwot-Large_asr-cv_en-to-200",
-          "downloads": 21,
-          "likes": 1,
-          "size": "0.4B"
-        },
-        {
-          "name": "romara-labs/mms-300m-1130-forced-aligner-ONNX",
-          "url": "https://huggingface.co/romara-labs/mms-300m-1130-forced-aligner-ONNX",
-          "downloads": 19,
-          "likes": 0
-        },
-        {
-          "name": "UBC-NLP/Simba-H",
-          "url": "https://huggingface.co/UBC-NLP/Simba-H",
-          "downloads": 16,
+          "name": "Qlerqly/griot-nano-1-onnx",
+          "url": "https://huggingface.co/Qlerqly/griot-nano-1-onnx",
+          "downloads": 93,
           "likes": 0
         },
         {
           "name": "johntsi/ZeroSwot-Medium_asr-cv_en-to-200",
           "url": "https://huggingface.co/johntsi/ZeroSwot-Medium_asr-cv_en-to-200",
-          "downloads": 13,
+          "downloads": 79,
           "likes": 1,
           "size": "0.4B"
         },
         {
-          "name": "bc7ec356/heep-universal",
-          "url": "https://huggingface.co/bc7ec356/heep-universal",
-          "downloads": 10,
+          "name": "johntsi/ZeroSwot-Large_asr-cv_en-to-200",
+          "url": "https://huggingface.co/johntsi/ZeroSwot-Large_asr-cv_en-to-200",
+          "downloads": 74,
           "likes": 1,
-          "size": "0.8B"
-        },
-        {
-          "name": "waxal-benchmarking/whisper-tiny-waxal-ewe",
-          "url": "https://huggingface.co/waxal-benchmarking/whisper-tiny-waxal-ewe",
-          "downloads": 9,
-          "likes": 0,
-          "size": "37.8M"
-        },
-        {
-          "name": "UBC-NLP/Simba-SLID-49",
-          "url": "https://huggingface.co/UBC-NLP/Simba-SLID-49",
-          "downloads": 7,
-          "likes": 0,
-          "size": "94.6M"
-        },
-        {
-          "name": "johntsi/ZeroSwot-Large_asr-mustc_en-to-200",
-          "url": "https://huggingface.co/johntsi/ZeroSwot-Large_asr-mustc_en-to-200",
-          "downloads": 4,
-          "likes": 0,
           "size": "0.4B"
+        },
+        {
+          "name": "UBC-NLP/Simba-W",
+          "url": "https://huggingface.co/UBC-NLP/Simba-W",
+          "downloads": 52,
+          "likes": 1,
+          "size": "2B"
+        },
+        {
+          "name": "UBC-NLP/Simba-X",
+          "url": "https://huggingface.co/UBC-NLP/Simba-X",
+          "downloads": 47,
+          "likes": 0
         },
         {
           "name": "johntsi/ZeroSwot-Medium_asr-mustc_en-to-200",
           "url": "https://huggingface.co/johntsi/ZeroSwot-Medium_asr-mustc_en-to-200",
-          "downloads": 4,
+          "downloads": 46,
           "likes": 0,
           "size": "0.4B"
         },
         {
-          "name": "JosueG/whisper-ewe-adja-e4v4",
-          "url": "https://huggingface.co/JosueG/whisper-ewe-adja-e4v4",
-          "downloads": 4,
+          "name": "johntsi/ZeroSwot-Large_asr-mustc_en-to-200",
+          "url": "https://huggingface.co/johntsi/ZeroSwot-Large_asr-mustc_en-to-200",
+          "downloads": 42,
           "likes": 0,
-          "size": "0.2B"
+          "size": "0.4B"
         },
         {
-          "name": "waxal-benchmarking/whisper-small-waxal-ewe",
-          "url": "https://huggingface.co/waxal-benchmarking/whisper-small-waxal-ewe",
-          "downloads": 3,
+          "name": "espnet/xeus",
+          "url": "https://huggingface.co/espnet/xeus",
+          "downloads": 41,
+          "likes": 150
+        },
+        {
+          "name": "bc7ec356/heep-universal",
+          "url": "https://huggingface.co/bc7ec356/heep-universal",
+          "downloads": 35,
+          "likes": 1,
+          "size": "0.8B"
+        },
+        {
+          "name": "UBC-NLP/Simba-H",
+          "url": "https://huggingface.co/UBC-NLP/Simba-H",
+          "downloads": 35,
+          "likes": 0
+        },
+        {
+          "name": "UBC-NLP/Simba-M",
+          "url": "https://huggingface.co/UBC-NLP/Simba-M",
+          "downloads": 30,
+          "likes": 0
+        },
+        {
+          "name": "KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en",
+          "downloads": 30,
           "likes": 0,
-          "size": "0.2B"
+          "size": "0.6B"
+        },
+        {
+          "name": "waxal-benchmarking/mms-300m-waxal-ewe",
+          "url": "https://huggingface.co/waxal-benchmarking/mms-300m-waxal-ewe",
+          "downloads": 28,
+          "likes": 0,
+          "size": "0.3B"
         },
         {
           "name": "dodziraynard/whisper-small-ee",
           "url": "https://huggingface.co/dodziraynard/whisper-small-ee",
-          "downloads": 1,
+          "downloads": 25,
+          "likes": 0,
+          "size": "0.2B"
+        },
+        {
+          "name": "romara-labs/mms-300m-1130-forced-aligner-ONNX",
+          "url": "https://huggingface.co/romara-labs/mms-300m-1130-forced-aligner-ONNX",
+          "downloads": 24,
+          "likes": 0
+        },
+        {
+          "name": "waxal-benchmarking/whisper-tiny-waxal-ewe",
+          "url": "https://huggingface.co/waxal-benchmarking/whisper-tiny-waxal-ewe",
+          "downloads": 17,
+          "likes": 0,
+          "size": "37.8M"
+        },
+        {
+          "name": "JosueG/whisper-ewe-adja-e4v4",
+          "url": "https://huggingface.co/JosueG/whisper-ewe-adja-e4v4",
+          "downloads": 12,
           "likes": 0,
           "size": "0.2B"
         },
         {
           "name": "dodziraynard/Shona",
           "url": "https://huggingface.co/dodziraynard/Shona",
-          "downloads": 1,
+          "downloads": 11,
           "likes": 1,
           "size": "0.2B"
         },
         {
           "name": "ghananlpcommunity/Simba-S",
           "url": "https://huggingface.co/ghananlpcommunity/Simba-S",
-          "downloads": 1,
+          "downloads": 11,
           "likes": 0,
           "size": "2B"
+        },
+        {
+          "name": "waxal-benchmarking/whisper-small-waxal-ewe",
+          "url": "https://huggingface.co/waxal-benchmarking/whisper-small-waxal-ewe",
+          "downloads": 8,
+          "likes": 0,
+          "size": "0.2B"
+        },
+        {
+          "name": "dodziraynard/Shona2",
+          "url": "https://huggingface.co/dodziraynard/Shona2",
+          "downloads": 1,
+          "likes": 1,
+          "size": "0.2B"
         },
         {
           "name": "Umbaji/Yodi",
@@ -529,12 +577,6 @@
           "url": "https://huggingface.co/JosueG/whisper-large-v3-ewe-lora-s1-091126",
           "downloads": 0,
           "likes": 0
-        },
-        {
-          "name": "techsalomon/godai-african-asr",
-          "url": "https://huggingface.co/techsalomon/godai-african-asr",
-          "downloads": 0,
-          "likes": 0
         }
       ]
     },
@@ -543,214 +585,181 @@
       "iso_639_3": "hau",
       "utterances": 92082,
       "hours": 152.77,
-      "total_asr_models": 43,
-      "models_found": 43,
+      "total_asr_models": 45,
+      "models_found": 45,
       "asr_models": [
         {
           "name": "openai/whisper-large-v3-turbo",
           "url": "https://huggingface.co/openai/whisper-large-v3-turbo",
-          "downloads": 7680000,
-          "likes": 3150,
+          "downloads": 8420000,
+          "likes": 3180,
           "size": "0.8B"
         },
         {
           "name": "openai/whisper-base",
           "url": "https://huggingface.co/openai/whisper-base",
-          "downloads": 6760000,
-          "likes": 275,
+          "downloads": 6640000,
+          "likes": 278,
           "size": "72.6M"
         },
         {
           "name": "openai/whisper-large-v3",
           "url": "https://huggingface.co/openai/whisper-large-v3",
-          "downloads": 6070000,
-          "likes": 5930,
+          "downloads": 6190000,
+          "likes": 5980,
           "size": "2B"
         },
         {
           "name": "openai/whisper-small",
           "url": "https://huggingface.co/openai/whisper-small",
-          "downloads": 3420000,
-          "likes": 573,
+          "downloads": 3180000,
+          "likes": 575,
           "size": "0.2B"
+        },
+        {
+          "name": "MahmoudAshraf/mms-300m-1130-forced-aligner",
+          "url": "https://huggingface.co/MahmoudAshraf/mms-300m-1130-forced-aligner",
+          "downloads": 2570000,
+          "likes": 94,
+          "size": "0.3B"
         },
         {
           "name": "openai/whisper-tiny",
           "url": "https://huggingface.co/openai/whisper-tiny",
-          "downloads": 1790000,
-          "likes": 434,
+          "downloads": 1780000,
+          "likes": 436,
           "size": "37.8M"
-        },
-        {
-          "name": "Systran/faster-whisper-small",
-          "url": "https://huggingface.co/Systran/faster-whisper-small",
-          "downloads": 1490000,
-          "likes": 38
         },
         {
           "name": "Systran/faster-whisper-large-v3",
           "url": "https://huggingface.co/Systran/faster-whisper-large-v3",
-          "downloads": 1170000,
-          "likes": 614
-        },
-        {
-          "name": "Systran/faster-whisper-medium",
-          "url": "https://huggingface.co/Systran/faster-whisper-medium",
-          "downloads": 466000,
-          "likes": 56
+          "downloads": 1180000,
+          "likes": 623
         },
         {
           "name": "openai/whisper-medium",
           "url": "https://huggingface.co/openai/whisper-medium",
-          "downloads": 383000,
-          "likes": 287,
+          "downloads": 361000,
+          "likes": 289,
           "size": "0.8B"
         },
         {
           "name": "openai/whisper-large-v2",
           "url": "https://huggingface.co/openai/whisper-large-v2",
-          "downloads": 123000,
+          "downloads": 99900,
           "likes": 1800,
           "size": "2B"
         },
         {
-          "name": "facebook/seamless-m4t-v2-large",
-          "url": "https://huggingface.co/facebook/seamless-m4t-v2-large",
-          "downloads": 78400,
-          "likes": 992,
-          "size": "2B"
+          "name": "deepdml/faster-whisper-large-v3-turbo-ct2",
+          "url": "https://huggingface.co/deepdml/faster-whisper-large-v3-turbo-ct2",
+          "downloads": 93500,
+          "likes": 216
         },
         {
           "name": "openai/whisper-large",
           "url": "https://huggingface.co/openai/whisper-large",
-          "downloads": 37000,
+          "downloads": 33000,
           "likes": 549,
           "size": "2B"
         },
         {
-          "name": "guillaumekln/faster-whisper-base",
-          "url": "https://huggingface.co/guillaumekln/faster-whisper-base",
-          "downloads": 3590,
-          "likes": 11
+          "name": "unsloth/whisper-large-v3",
+          "url": "https://huggingface.co/unsloth/whisper-large-v3",
+          "downloads": 4430,
+          "likes": 20,
+          "size": "2B"
         },
         {
-          "name": "aufklarer/Nemotron-3.5-ASR-Streaming-0.6B-CoreML-INT8",
-          "url": "https://huggingface.co/aufklarer/Nemotron-3.5-ASR-Streaming-0.6B-CoreML-INT8",
-          "downloads": 3560,
-          "likes": 7
+          "name": "Sunbird/asr-whisper-51-african-languages",
+          "url": "https://huggingface.co/Sunbird/asr-whisper-51-african-languages",
+          "downloads": 256,
+          "likes": 2,
+          "size": "2B"
         },
         {
-          "name": "microsoft/paza-whisper-large-v3-turbo",
-          "url": "https://huggingface.co/microsoft/paza-whisper-large-v3-turbo",
-          "downloads": 360,
-          "likes": 10,
-          "size": "0.8B"
+          "name": "unsloth/whisper-tiny",
+          "url": "https://huggingface.co/unsloth/whisper-tiny",
+          "downloads": 210,
+          "likes": 3,
+          "size": "37.8M"
+        },
+        {
+          "name": "unsloth/whisper-base",
+          "url": "https://huggingface.co/unsloth/whisper-base",
+          "downloads": 198,
+          "likes": 3,
+          "size": "72.6M"
         },
         {
           "name": "CLEAR-Global/whisper-small-clearglobal-hausa-asr-1.0.0",
           "url": "https://huggingface.co/CLEAR-Global/whisper-small-clearglobal-hausa-asr-1.0.0",
-          "downloads": 67,
+          "downloads": 93,
           "likes": 0,
           "size": "0.2B"
         },
         {
-          "name": "Akashpb13/Hausa_xlsr",
-          "url": "https://huggingface.co/Akashpb13/Hausa_xlsr",
-          "downloads": 48,
+          "name": "ogunlao/SBPN_multilingual_base",
+          "url": "https://huggingface.co/ogunlao/SBPN_multilingual_base",
+          "downloads": 80,
           "likes": 5
         },
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         },
         {
-          "name": "Cdial/hausa-asr",
-          "url": "https://huggingface.co/Cdial/hausa-asr",
-          "downloads": 18,
-          "likes": 3
+          "name": "Akashpb13/Hausa_xlsr",
+          "url": "https://huggingface.co/Akashpb13/Hausa_xlsr",
+          "downloads": 27,
+          "likes": 5
         },
         {
-          "name": "CLEAR-Global/w2v-bert-2.0-clearglobal-hausa-asr-1.0.0",
-          "url": "https://huggingface.co/CLEAR-Global/w2v-bert-2.0-clearglobal-hausa-asr-1.0.0",
-          "downloads": 16,
+          "name": "KhayaAI/w2v-bert-hau",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-hau",
+          "downloads": 24,
           "likes": 0,
           "size": "0.6B"
         },
         {
-          "name": "alphaedge-ai/whisper-tiny-hau-16384",
-          "url": "https://huggingface.co/alphaedge-ai/whisper-tiny-hau-16384",
-          "downloads": 14,
+          "name": "CLEAR-Global/w2v-bert-2.0-clearglobal-hausa-asr-1.0.0",
+          "url": "https://huggingface.co/CLEAR-Global/w2v-bert-2.0-clearglobal-hausa-asr-1.0.0",
+          "downloads": 19,
           "likes": 0,
-          "size": "24.1M"
+          "size": "0.6B"
         },
         {
           "name": "Mofe/xls-r-hausa-40",
           "url": "https://huggingface.co/Mofe/xls-r-hausa-40",
-          "downloads": 12,
+          "downloads": 14,
           "likes": 1
         },
         {
-          "name": "Sangramsing/whisper-base",
-          "url": "https://huggingface.co/Sangramsing/whisper-base",
+          "name": "Cdial/hausa-asr",
+          "url": "https://huggingface.co/Cdial/hausa-asr",
           "downloads": 12,
-          "likes": 0
-        },
-        {
-          "name": "alphaedge-ai/whisper-base-hau-32768",
-          "url": "https://huggingface.co/alphaedge-ai/whisper-base-hau-32768",
-          "downloads": 12,
-          "likes": 0,
-          "size": "62.8M"
-        },
-        {
-          "name": "alphaedge-ai/whisper-small-hau-16384",
-          "url": "https://huggingface.co/alphaedge-ai/whisper-small-hau-16384",
-          "downloads": 12,
-          "likes": 0,
-          "size": "0.2B"
-        },
-        {
-          "name": "alphaedge-ai/whisper-tiny-hau-32768",
-          "url": "https://huggingface.co/alphaedge-ai/whisper-tiny-hau-32768",
-          "downloads": 11,
-          "likes": 0,
-          "size": "30.4M"
-        },
-        {
-          "name": "alphaedge-ai/whisper-small-hau-32768",
-          "url": "https://huggingface.co/alphaedge-ai/whisper-small-hau-32768",
-          "downloads": 11,
-          "likes": 0,
-          "size": "0.2B"
+          "likes": 3
         },
         {
           "name": "keess/whisper-model-internal",
           "url": "https://huggingface.co/keess/whisper-model-internal",
-          "downloads": 10,
+          "downloads": 12,
           "likes": 0
         },
         {
-          "name": "alphaedge-ai/whisper-medium-hau-16384",
-          "url": "https://huggingface.co/alphaedge-ai/whisper-medium-hau-16384",
-          "downloads": 10,
+          "name": "alphaedge-ai/whisper-tiny-hau-16384",
+          "url": "https://huggingface.co/alphaedge-ai/whisper-tiny-hau-16384",
+          "downloads": 12,
           "likes": 0,
-          "size": "0.7B"
+          "size": "24.1M"
         },
         {
-          "name": "alphaedge-ai/whisper-large-v3-turbo-hau-32768",
-          "url": "https://huggingface.co/alphaedge-ai/whisper-large-v3-turbo-hau-32768",
-          "downloads": 10,
-          "likes": 0,
-          "size": "0.8B"
-        },
-        {
-          "name": "alphaedge-ai/whisper-large-v3-turbo-hau-16384",
-          "url": "https://huggingface.co/alphaedge-ai/whisper-large-v3-turbo-hau-16384",
-          "downloads": 10,
-          "likes": 0,
-          "size": "0.8B"
+          "name": "ogunlao/SBPN_multilingual_large",
+          "url": "https://huggingface.co/ogunlao/SBPN_multilingual_large",
+          "downloads": 11,
+          "likes": 3
         },
         {
           "name": "anuragshas/whisper-large-v2-ha",
@@ -759,26 +768,8 @@
           "likes": 1
         },
         {
-          "name": "Sangramsing/whisper-small",
-          "url": "https://huggingface.co/Sangramsing/whisper-small",
-          "downloads": 9,
-          "likes": 0
-        },
-        {
-          "name": "Sangramsing/whisper-tiny",
-          "url": "https://huggingface.co/Sangramsing/whisper-tiny",
-          "downloads": 9,
-          "likes": 0
-        },
-        {
-          "name": "Sangramsing/whisper-medium",
-          "url": "https://huggingface.co/Sangramsing/whisper-medium",
-          "downloads": 9,
-          "likes": 0
-        },
-        {
-          "name": "anuragshas/wav2vec2-large-xls-r-300m-ha-cv8",
-          "url": "https://huggingface.co/anuragshas/wav2vec2-large-xls-r-300m-ha-cv8",
+          "name": "infinitejoy/wav2vec2-large-xls-r-300m-hausa",
+          "url": "https://huggingface.co/infinitejoy/wav2vec2-large-xls-r-300m-hausa",
           "downloads": 8,
           "likes": 1
         },
@@ -789,36 +780,103 @@
           "likes": 0
         },
         {
-          "name": "lesliejd/jt-whisper",
-          "url": "https://huggingface.co/lesliejd/jt-whisper",
-          "downloads": 8,
-          "likes": 0
-        },
-        {
-          "name": "alphaedge-ai/whisper-base-hau-16384",
-          "url": "https://huggingface.co/alphaedge-ai/whisper-base-hau-16384",
+          "name": "alphaedge-ai/whisper-tiny-hau-32768",
+          "url": "https://huggingface.co/alphaedge-ai/whisper-tiny-hau-32768",
           "downloads": 8,
           "likes": 0,
-          "size": "54.4M"
+          "size": "30.4M"
         },
         {
-          "name": "alphaedge-ai/whisper-medium-hau-32768",
-          "url": "https://huggingface.co/alphaedge-ai/whisper-medium-hau-32768",
+          "name": "alphaedge-ai/whisper-base-hau-32768",
+          "url": "https://huggingface.co/alphaedge-ai/whisper-base-hau-32768",
           "downloads": 8,
           "likes": 0,
-          "size": "0.7B"
+          "size": "62.8M"
         },
         {
-          "name": "infinitejoy/wav2vec2-large-xls-r-300m-hausa",
-          "url": "https://huggingface.co/infinitejoy/wav2vec2-large-xls-r-300m-hausa",
-          "downloads": 5,
+          "name": "anuragshas/wav2vec2-large-xls-r-300m-ha-cv8",
+          "url": "https://huggingface.co/anuragshas/wav2vec2-large-xls-r-300m-ha-cv8",
+          "downloads": 7,
           "likes": 1
         },
         {
           "name": "DrishtiSharma/whisper-large-v2-hausa",
           "url": "https://huggingface.co/DrishtiSharma/whisper-large-v2-hausa",
-          "downloads": 5,
+          "downloads": 7,
           "likes": 5
+        },
+        {
+          "name": "lesliejd/jt-whisper",
+          "url": "https://huggingface.co/lesliejd/jt-whisper",
+          "downloads": 7,
+          "likes": 0
+        },
+        {
+          "name": "alphaedge-ai/whisper-base-hau-16384",
+          "url": "https://huggingface.co/alphaedge-ai/whisper-base-hau-16384",
+          "downloads": 7,
+          "likes": 0,
+          "size": "54.4M"
+        },
+        {
+          "name": "alphaedge-ai/whisper-small-hau-16384",
+          "url": "https://huggingface.co/alphaedge-ai/whisper-small-hau-16384",
+          "downloads": 7,
+          "likes": 0,
+          "size": "0.2B"
+        },
+        {
+          "name": "alphaedge-ai/whisper-large-v3-turbo-hau-16384",
+          "url": "https://huggingface.co/alphaedge-ai/whisper-large-v3-turbo-hau-16384",
+          "downloads": 6,
+          "likes": 0,
+          "size": "0.8B"
+        },
+        {
+          "name": "alphaedge-ai/whisper-small-hau-32768",
+          "url": "https://huggingface.co/alphaedge-ai/whisper-small-hau-32768",
+          "downloads": 5,
+          "likes": 0,
+          "size": "0.2B"
+        },
+        {
+          "name": "alphaedge-ai/whisper-medium-hau-16384",
+          "url": "https://huggingface.co/alphaedge-ai/whisper-medium-hau-16384",
+          "downloads": 4,
+          "likes": 0,
+          "size": "0.7B"
+        },
+        {
+          "name": "alphaedge-ai/whisper-medium-hau-32768",
+          "url": "https://huggingface.co/alphaedge-ai/whisper-medium-hau-32768",
+          "downloads": 4,
+          "likes": 0,
+          "size": "0.7B"
+        },
+        {
+          "name": "alphaedge-ai/whisper-large-v3-turbo-hau-32768",
+          "url": "https://huggingface.co/alphaedge-ai/whisper-large-v3-turbo-hau-32768",
+          "downloads": 4,
+          "likes": 0,
+          "size": "0.8B"
+        },
+        {
+          "name": "facebook/seamless-m4t-medium",
+          "url": "https://huggingface.co/facebook/seamless-m4t-medium",
+          "downloads": 0,
+          "likes": 137
+        },
+        {
+          "name": "facebook/seamless-m4t-large",
+          "url": "https://huggingface.co/facebook/seamless-m4t-large",
+          "downloads": 0,
+          "likes": 514
+        },
+        {
+          "name": "11luna/faster-whisper-medium",
+          "url": "https://huggingface.co/11luna/faster-whisper-medium",
+          "downloads": 0,
+          "likes": 1
         },
         {
           "name": "jianboy/demo",
@@ -833,21 +891,35 @@
       "iso_639_3": "fat",
       "utterances": 60933,
       "hours": 122.03,
-      "total_asr_models": 2,
-      "models_found": 2,
+      "total_asr_models": 4,
+      "models_found": 4,
       "asr_models": [
-        {
-          "name": "espnet/xeus",
-          "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
-          "likes": 150
-        },
         {
           "name": "UBC-NLP/Simba-SLID-49",
           "url": "https://huggingface.co/UBC-NLP/Simba-SLID-49",
-          "downloads": 7,
+          "downloads": 119,
           "likes": 0,
           "size": "94.6M"
+        },
+        {
+          "name": "espnet/xeus",
+          "url": "https://huggingface.co/espnet/xeus",
+          "downloads": 41,
+          "likes": 150
+        },
+        {
+          "name": "KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en",
+          "downloads": 30,
+          "likes": 0,
+          "size": "0.6B"
+        },
+        {
+          "name": "KhayaAI/w2v-bert-fat",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-fat",
+          "downloads": 20,
+          "likes": 0,
+          "size": "0.6B"
         }
       ]
     },
@@ -856,14 +928,35 @@
       "iso_639_3": "xsm",
       "utterances": 74077,
       "hours": 97.77,
-      "total_asr_models": 1,
-      "models_found": 1,
+      "total_asr_models": 4,
+      "models_found": 4,
       "asr_models": [
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
+        },
+        {
+          "name": "KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en",
+          "downloads": 38,
+          "likes": 1,
+          "size": "0.6B"
+        },
+        {
+          "name": "KhayaAI/w2v-bert-xsm",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-xsm",
+          "downloads": 34,
+          "likes": 0,
+          "size": "0.6B"
+        },
+        {
+          "name": "ghananlpcommunity/w2v2-lg-xls-r-300m-kasem",
+          "url": "https://huggingface.co/ghananlpcommunity/w2v2-lg-xls-r-300m-kasem",
+          "downloads": 27,
+          "likes": 0,
+          "size": "0.3B"
         }
       ]
     },
@@ -878,7 +971,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -894,7 +987,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -904,14 +997,28 @@
       "iso_639_3": "gjn",
       "utterances": 53590,
       "hours": 86.28,
-      "total_asr_models": 1,
-      "models_found": 1,
+      "total_asr_models": 3,
+      "models_found": 3,
       "asr_models": [
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
+        },
+        {
+          "name": "KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en",
+          "downloads": 38,
+          "likes": 1,
+          "size": "0.6B"
+        },
+        {
+          "name": "KhayaAI/w2v-bert-gjn",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-gjn",
+          "downloads": 28,
+          "likes": 0,
+          "size": "0.6B"
         }
       ]
     },
@@ -926,7 +1033,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -936,14 +1043,28 @@
       "iso_639_3": "xon",
       "utterances": 50337,
       "hours": 81.21,
-      "total_asr_models": 1,
-      "models_found": 1,
+      "total_asr_models": 3,
+      "models_found": 3,
       "asr_models": [
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
+        },
+        {
+          "name": "KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en",
+          "downloads": 38,
+          "likes": 1,
+          "size": "0.6B"
+        },
+        {
+          "name": "KhayaAI/w2v-bert-xon",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-xon",
+          "downloads": 25,
+          "likes": 0,
+          "size": "0.6B"
         }
       ]
     },
@@ -958,7 +1079,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -974,7 +1095,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -990,7 +1111,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -1006,7 +1127,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -1022,7 +1143,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -1032,35 +1153,62 @@
       "iso_639_3": "dag",
       "utterances": 46526,
       "hours": 73.06,
-      "total_asr_models": 4,
-      "models_found": 4,
+      "total_asr_models": 8,
+      "models_found": 8,
       "asr_models": [
+        {
+          "name": "Sunbird/asr-whisper-51-african-languages",
+          "url": "https://huggingface.co/Sunbird/asr-whisper-51-african-languages",
+          "downloads": 256,
+          "likes": 2,
+          "size": "2B"
+        },
+        {
+          "name": "Qlerqly/griot-nano-1",
+          "url": "https://huggingface.co/Qlerqly/griot-nano-1",
+          "downloads": 150,
+          "likes": 2,
+          "size": "0.2B"
+        },
+        {
+          "name": "Qlerqly/griot-nano-1-onnx",
+          "url": "https://huggingface.co/Qlerqly/griot-nano-1-onnx",
+          "downloads": 93,
+          "likes": 0
+        },
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
+        },
+        {
+          "name": "KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en",
+          "downloads": 38,
+          "likes": 1,
+          "size": "0.6B"
         },
         {
           "name": "waxal-benchmarking/whisper-tiny-waxal-dag",
           "url": "https://huggingface.co/waxal-benchmarking/whisper-tiny-waxal-dag",
-          "downloads": 13,
+          "downloads": 25,
           "likes": 0,
           "size": "37.8M"
         },
         {
-          "name": "waxal-benchmarking/mms-300m-waxal-dag",
-          "url": "https://huggingface.co/waxal-benchmarking/mms-300m-waxal-dag",
-          "downloads": 7,
-          "likes": 0,
-          "size": "0.3B"
-        },
-        {
           "name": "waxal-benchmarking/whisper-small-waxal-dag",
           "url": "https://huggingface.co/waxal-benchmarking/whisper-small-waxal-dag",
-          "downloads": 4,
+          "downloads": 9,
           "likes": 0,
           "size": "0.2B"
+        },
+        {
+          "name": "waxal-benchmarking/mms-300m-waxal-dag",
+          "url": "https://huggingface.co/waxal-benchmarking/mms-300m-waxal-dag",
+          "downloads": 8,
+          "likes": 0,
+          "size": "0.3B"
         }
       ]
     },
@@ -1069,14 +1217,34 @@
       "iso_639_3": "kus",
       "utterances": 48590,
       "hours": 72.51,
-      "total_asr_models": 1,
-      "models_found": 1,
+      "total_asr_models": 4,
+      "models_found": 4,
       "asr_models": [
+        {
+          "name": "PrinceAlhassanNasamu/kusaal-whisper-small-lora",
+          "url": "https://huggingface.co/PrinceAlhassanNasamu/kusaal-whisper-small-lora",
+          "downloads": 64,
+          "likes": 0
+        },
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
+        },
+        {
+          "name": "KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en",
+          "downloads": 38,
+          "likes": 1,
+          "size": "0.6B"
+        },
+        {
+          "name": "KhayaAI/w2v-bert-kus",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-kus",
+          "downloads": 24,
+          "likes": 0,
+          "size": "0.6B"
         }
       ]
     },
@@ -1085,14 +1253,21 @@
       "iso_639_3": "gur",
       "utterances": 17149,
       "hours": 33.88,
-      "total_asr_models": 1,
-      "models_found": 1,
+      "total_asr_models": 2,
+      "models_found": 2,
       "asr_models": [
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
+        },
+        {
+          "name": "KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en",
+          "downloads": 38,
+          "likes": 1,
+          "size": "0.6B"
         }
       ]
     },
@@ -1107,7 +1282,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -1123,7 +1298,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -1139,7 +1314,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -1155,7 +1330,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -1171,7 +1346,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -1187,7 +1362,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -1203,7 +1378,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -1219,7 +1394,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -1235,7 +1410,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -1251,7 +1426,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -1267,7 +1442,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -1283,7 +1458,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -1299,7 +1474,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -1315,7 +1490,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         },
         {
@@ -1331,14 +1506,28 @@
       "iso_639_3": "maw",
       "utterances": 8651,
       "hours": 18.19,
-      "total_asr_models": 1,
-      "models_found": 1,
+      "total_asr_models": 3,
+      "models_found": 3,
       "asr_models": [
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
+        },
+        {
+          "name": "KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en",
+          "downloads": 38,
+          "likes": 1,
+          "size": "0.6B"
+        },
+        {
+          "name": "KhayaAI/w2v-bert-maw",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-maw",
+          "downloads": 23,
+          "likes": 0,
+          "size": "0.6B"
         }
       ]
     },
@@ -1353,7 +1542,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -1367,38 +1556,38 @@
       "models_found": 5,
       "asr_models": [
         {
-          "name": "espnet/xeus",
-          "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
-          "likes": 150
+          "name": "johntsi/ZeroSwot-Medium_asr-cv_en-to-200",
+          "url": "https://huggingface.co/johntsi/ZeroSwot-Medium_asr-cv_en-to-200",
+          "downloads": 79,
+          "likes": 1,
+          "size": "0.4B"
         },
         {
           "name": "johntsi/ZeroSwot-Large_asr-cv_en-to-200",
           "url": "https://huggingface.co/johntsi/ZeroSwot-Large_asr-cv_en-to-200",
-          "downloads": 21,
+          "downloads": 74,
           "likes": 1,
-          "size": "0.4B"
-        },
-        {
-          "name": "johntsi/ZeroSwot-Medium_asr-cv_en-to-200",
-          "url": "https://huggingface.co/johntsi/ZeroSwot-Medium_asr-cv_en-to-200",
-          "downloads": 13,
-          "likes": 1,
-          "size": "0.4B"
-        },
-        {
-          "name": "johntsi/ZeroSwot-Large_asr-mustc_en-to-200",
-          "url": "https://huggingface.co/johntsi/ZeroSwot-Large_asr-mustc_en-to-200",
-          "downloads": 4,
-          "likes": 0,
           "size": "0.4B"
         },
         {
           "name": "johntsi/ZeroSwot-Medium_asr-mustc_en-to-200",
           "url": "https://huggingface.co/johntsi/ZeroSwot-Medium_asr-mustc_en-to-200",
-          "downloads": 4,
+          "downloads": 46,
           "likes": 0,
           "size": "0.4B"
+        },
+        {
+          "name": "johntsi/ZeroSwot-Large_asr-mustc_en-to-200",
+          "url": "https://huggingface.co/johntsi/ZeroSwot-Large_asr-mustc_en-to-200",
+          "downloads": 42,
+          "likes": 0,
+          "size": "0.4B"
+        },
+        {
+          "name": "espnet/xeus",
+          "url": "https://huggingface.co/espnet/xeus",
+          "downloads": 41,
+          "likes": 150
         }
       ]
     },
@@ -1413,7 +1602,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -1423,14 +1612,28 @@
       "iso_639_3": "nzi",
       "utterances": 9617,
       "hours": 16.94,
-      "total_asr_models": 1,
-      "models_found": 1,
+      "total_asr_models": 3,
+      "models_found": 3,
       "asr_models": [
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
+        },
+        {
+          "name": "KhayaAI/w2v-bert-nzi",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-nzi",
+          "downloads": 37,
+          "likes": 0,
+          "size": "0.6B"
+        },
+        {
+          "name": "KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en",
+          "downloads": 30,
+          "likes": 0,
+          "size": "0.6B"
         }
       ]
     },
@@ -1445,7 +1648,7 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
         }
       ]
@@ -1455,14 +1658,28 @@
       "iso_639_3": "ada",
       "utterances": 10460,
       "hours": 15.94,
-      "total_asr_models": 1,
-      "models_found": 1,
+      "total_asr_models": 3,
+      "models_found": 3,
       "asr_models": [
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
+        },
+        {
+          "name": "KhayaAI/w2v-bert-ada",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-ada",
+          "downloads": 38,
+          "likes": 0,
+          "size": "0.6B"
+        },
+        {
+          "name": "KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en",
+          "downloads": 30,
+          "likes": 0,
+          "size": "0.6B"
         }
       ]
     },
@@ -1471,33 +1688,54 @@
       "iso_639_3": "dga",
       "utterances": 7369,
       "hours": 15.14,
-      "total_asr_models": 4,
-      "models_found": 4,
+      "total_asr_models": 7,
+      "models_found": 7,
       "asr_models": [
+        {
+          "name": "Sunbird/asr-whisper-51-african-languages",
+          "url": "https://huggingface.co/Sunbird/asr-whisper-51-african-languages",
+          "downloads": 256,
+          "likes": 2,
+          "size": "2B"
+        },
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
           "likes": 150
+        },
+        {
+          "name": "KhayaAI/w2v-bert-dga",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-dga",
+          "downloads": 41,
+          "likes": 0,
+          "size": "0.6B"
+        },
+        {
+          "name": "KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en",
+          "downloads": 38,
+          "likes": 1,
+          "size": "0.6B"
         },
         {
           "name": "waxal-benchmarking/mms-300m-waxal-dga",
           "url": "https://huggingface.co/waxal-benchmarking/mms-300m-waxal-dga",
-          "downloads": 6,
+          "downloads": 9,
           "likes": 0,
           "size": "0.3B"
         },
         {
           "name": "waxal-benchmarking/whisper-tiny-waxal-dga",
           "url": "https://huggingface.co/waxal-benchmarking/whisper-tiny-waxal-dga",
-          "downloads": 3,
+          "downloads": 9,
           "likes": 0,
           "size": "37.8M"
         },
         {
           "name": "waxal-benchmarking/whisper-small-waxal-dga",
           "url": "https://huggingface.co/waxal-benchmarking/whisper-small-waxal-dga",
-          "downloads": 2,
+          "downloads": 8,
           "likes": 0,
           "size": "0.2B"
         }
@@ -1514,7 +1752,108 @@
         {
           "name": "espnet/xeus",
           "url": "https://huggingface.co/espnet/xeus",
-          "downloads": 37,
+          "downloads": 41,
+          "likes": 150
+        }
+      ]
+    },
+    "gaa": {
+      "language": "Ga",
+      "iso_639_3": "gaa",
+      "utterances": 0,
+      "hours": 0.0,
+      "total_asr_models": 11,
+      "models_found": 11,
+      "asr_models": [
+        {
+          "name": "cdli/whisper-small_finetuned_ghanian_ga_standard_speech_v1.0",
+          "url": "https://huggingface.co/cdli/whisper-small_finetuned_ghanian_ga_standard_speech_v1.0",
+          "downloads": 1180,
+          "likes": 0,
+          "size": "0.2B"
+        },
+        {
+          "name": "Qlerqly/griot-nano-1",
+          "url": "https://huggingface.co/Qlerqly/griot-nano-1",
+          "downloads": 150,
+          "likes": 2,
+          "size": "0.2B"
+        },
+        {
+          "name": "UBC-NLP/Simba-SLID-49",
+          "url": "https://huggingface.co/UBC-NLP/Simba-SLID-49",
+          "downloads": 119,
+          "likes": 0,
+          "size": "94.6M"
+        },
+        {
+          "name": "Qlerqly/griot-nano-1-onnx",
+          "url": "https://huggingface.co/Qlerqly/griot-nano-1-onnx",
+          "downloads": 93,
+          "likes": 0
+        },
+        {
+          "name": "espnet/xeus",
+          "url": "https://huggingface.co/espnet/xeus",
+          "downloads": 41,
+          "likes": 150
+        },
+        {
+          "name": "KhayaAI/w2v-bert-gaa",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-gaa",
+          "downloads": 38,
+          "likes": 0,
+          "size": "0.6B"
+        },
+        {
+          "name": "KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en",
+          "url": "https://huggingface.co/KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en",
+          "downloads": 30,
+          "likes": 0,
+          "size": "0.6B"
+        },
+        {
+          "name": "cdli/whisper-large-v3_finetuned_ghanian_ga_standard_speech_v1.0",
+          "url": "https://huggingface.co/cdli/whisper-large-v3_finetuned_ghanian_ga_standard_speech_v1.0",
+          "downloads": 7,
+          "likes": 0,
+          "size": "2B"
+        },
+        {
+          "name": "AyikuBen/whisper-ga-finetuned-demo",
+          "url": "https://huggingface.co/AyikuBen/whisper-ga-finetuned-demo",
+          "downloads": 4,
+          "likes": 0,
+          "size": "37.8M"
+        },
+        {
+          "name": "cdli/whisper-small_finetuned_ghanian_ga_nonstandard_speech_v1.0",
+          "url": "https://huggingface.co/cdli/whisper-small_finetuned_ghanian_ga_nonstandard_speech_v1.0",
+          "downloads": 4,
+          "likes": 0,
+          "size": "0.2B"
+        },
+        {
+          "name": "cdli/whisper-large-v3_finetuned_ghanian_ga_nonstandard_speech_v1.0",
+          "url": "https://huggingface.co/cdli/whisper-large-v3_finetuned_ghanian_ga_nonstandard_speech_v1.0",
+          "downloads": 3,
+          "likes": 0,
+          "size": "2B"
+        }
+      ]
+    },
+    "aha": {
+      "language": "Ahanta",
+      "iso_639_3": "aha",
+      "utterances": 0,
+      "hours": 0.0,
+      "total_asr_models": 1,
+      "models_found": 1,
+      "asr_models": [
+        {
+          "name": "espnet/xeus",
+          "url": "https://huggingface.co/espnet/xeus",
+          "downloads": 41,
           "likes": 150
         }
       ]

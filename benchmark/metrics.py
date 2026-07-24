@@ -34,7 +34,7 @@ def compute_metrics(reference, hypothesis):
 
 
 def _edit_distance(ref_tokens, hyp_tokens):
-    """Levenshtein distance between two token lists."""
+    """Raw Levenshtein (edit) distance between two token lists."""
     n, m = len(ref_tokens), len(hyp_tokens)
     dp = list(range(m + 1))
     for i in range(1, n + 1):
@@ -47,4 +47,4 @@ def _edit_distance(ref_tokens, hyp_tokens):
             else:
                 dp[j] = 1 + min(prev, dp[j], dp[j - 1])
             prev = temp
-    return dp[m] / max(n, 1)
+    return dp[m]
