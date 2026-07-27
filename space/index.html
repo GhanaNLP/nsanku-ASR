@@ -117,6 +117,8 @@ td .pkg { color: var(--text-muted); font-size: 0.78rem; }
 .badge-gated { background: rgba(245, 158, 11, 0.15); color: var(--warning); }
 .badge-cudnn { background: rgba(236, 72, 153, 0.15); color: #f472b6; }
 .badge-outdated { background: rgba(34, 211, 238, 0.15); color: #22d3ee; }
+.badge-llm { background: rgba(168, 85, 247, 0.18); color: #c084fc; }
+.badge-nonllm { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
 
 /* ====== Scrollbar ====== */
 ::-webkit-scrollbar { width: 8px; height: 8px; }
@@ -167,9 +169,11 @@ td .pkg { color: var(--text-muted); font-size: 0.78rem; }
   <!-- ====== Header ====== -->
   <div class="header">
     <h1>nsanku-ASR Leaderboard</h1>
-    <p>Benchmarking <strong>organization-owned</strong> ASR models on <strong>Ghanaian languages</strong> using the
+    <p>Benchmarking ASR models on <strong>Ghanaian languages</strong> using the
        <a href="https://huggingface.co/datasets/ghananlpcommunity/ghana-speech-eval" target="_blank">ghana-speech-eval</a> dataset ·
-       scored per category (Bible / JW / Finance / UNICEF), averaged · 300 samples per category</p>
+       two tracks: <strong>Non-LLM</strong> (dedicated ASR models that explicitly target the language) and
+       <strong>LLM</strong> (Gemini, run on all languages) ·
+       scored per category (Bible / JW / Finance / UNICEF), averaged · up to 1000 samples per category</p>
     <div class="links">
       <a href="https://github.com/GhanaNLP/nsanku-ASR" target="_blank" class="repo-link">
         <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -196,6 +200,14 @@ td .pkg { color: var(--text-muted); font-size: 0.78rem; }
 
     <!-- ====== Tab: Global Leaderboard ====== -->
     <div class="tab-pane active" id="pane-global">
+      <div class="filters">
+        <label>Track:</label>
+        <select id="global-class-select">
+          <option value="All">All models</option>
+          <option value="non-llm">Non-LLM (dedicated ASR)</option>
+          <option value="llm">LLM (Gemini)</option>
+        </select>
+      </div>
       <p style="color:var(--text-muted); margin-bottom:14px;">Best model per language — sorted by WER (lower is better)</p>
       <div class="table-wrap">
         <table id="global-table">
@@ -205,10 +217,10 @@ td .pkg { color: var(--text-muted); font-size: 0.78rem; }
               <th data-sort="language">Language</th>
               <th data-sort="model">Model</th>
               <th data-sort="model_type">Type</th>
+              <th data-sort="model_class">Track</th>
               <th data-sort="params">Params</th>
               <th data-sort="wer">WER (%)</th>
               <th data-sort="cer">CER (%)</th>
-              <th data-sort="speed">Speed (s)</th>
             </tr>
           </thead>
           <tbody id="global-body"></tbody>
@@ -221,20 +233,25 @@ td .pkg { color: var(--text-muted); font-size: 0.78rem; }
       <div class="filters">
         <label>Language:</label>
         <select id="per-lang-select"></select>
+        <label>Track:</label>
+        <select id="per-class-select">
+          <option value="All">All</option>
+          <option value="non-llm">Non-LLM</option>
+          <option value="llm">LLM (Gemini)</option>
+        </select>
         <label>Type:</label>
         <select id="per-type-select"><option value="All">All</option></select>
         <label>Sort:</label>
         <select id="per-sort-select">
           <option value="wer">WER (best first)</option>
           <option value="cer">CER (best first)</option>
-          <option value="speed">Speed (fastest first)</option>
         </select>
       </div>
 
       <h3 style="margin-bottom:10px; font-size:0.95rem; color:var(--success)">✅ Passed</h3>
       <div class="table-wrap" style="margin-bottom:24px;">
         <table id="per-lang-pass-table">
-          <thead><tr><th>#</th><th>Model</th><th>Type</th><th>Params</th><th>WER (%)</th><th>CER (%)</th><th>Speed (s)</th></tr></thead>
+          <thead><tr><th>#</th><th>Model</th><th>Type</th><th>Track</th><th>Params</th><th>WER (%)</th><th>CER (%)</th><th>By category (WER %)</th></tr></thead>
           <tbody id="per-lang-pass-body"></tbody>
         </table>
       </div>
@@ -242,7 +259,7 @@ td .pkg { color: var(--text-muted); font-size: 0.78rem; }
       <h3 style="margin-bottom:10px; font-size:0.95rem; color:var(--danger)">❌ Failed</h3>
       <div class="table-wrap">
         <table id="per-lang-fail-table">
-          <thead><tr><th>#</th><th>Model</th><th>Type</th><th>Params</th><th>Reason</th></tr></thead>
+          <thead><tr><th>#</th><th>Model</th><th>Type</th><th>Track</th><th>Params</th><th>Reason</th></tr></thead>
           <tbody id="per-lang-fail-body"></tbody>
         </table>
       </div>
@@ -491,6 +508,7 @@ async function loadYAMLs() {
           rows.push({
             iso, model: b.model, model_type: modelType(b.model),
             owner: b.owner || b.model.split('/')[0],
+            model_class: b.model_class || (String(b.model).toLowerCase().includes('gemini') ? 'llm' : 'non-llm'),
             categories: (data.categories||[]).map(c=>CATEGORY_LABELS[c]||c).join(', '),
             params: b.params || '?',
             wer: b.wer !== undefined ? b.wer : null,
@@ -556,9 +574,18 @@ function renderOverview(data) {
   `).join('');
 }
 
+// ====== Track badge (LLM / Non-LLM) ======
+function trackBadge(cls) {
+  return cls === 'llm'
+    ? '<span class="badge badge-llm">LLM</span>'
+    : '<span class="badge badge-nonllm">Non-LLM</span>';
+}
+
 // ====== Rendering: Global Leaderboard ======
 function renderGlobal(data) {
-  const passed = data.filter(r => r.status === 'pass' && r.wer !== null);
+  const classFilter = (document.getElementById('global-class-select')||{}).value || 'All';
+  let passed = data.filter(r => r.status === 'pass' && r.wer !== null);
+  if (classFilter !== 'All') passed = passed.filter(r => r.model_class === classFilter);
   const byLang = {};
   for (const r of passed) {
     if (!byLang[r.iso] || r.wer < byLang[r.iso].wer) byLang[r.iso] = r;
@@ -572,10 +599,10 @@ function renderGlobal(data) {
       <td>${LANG_NAMES[r.iso] || r.iso}</td>
       <td>${modelLink(r.model, r.url)}</td>
       <td><span class="mtype">${r.model_type}</span></td>
+      <td>${trackBadge(r.model_class)}</td>
       <td>${r.params || '—'}</td>
       <td style="font-weight:600;color:${r.wer < 0.1 ? 'var(--success)' : r.wer < 0.3 ? 'var(--accent-hover)' : 'var(--warning)'}">${(r.wer*100).toFixed(2)}</td>
       <td>${r.cer !== null ? (r.cer*100).toFixed(2) : '—'}</td>
-      <td>${r.speed !== null && r.speed !== undefined ? r.speed.toFixed(2) : '—'}</td>
     </tr>
   `).join('');
 }
@@ -598,10 +625,12 @@ function populatePerLangSelects(data) {
 function renderPerLanguage(data) {
   const iso = document.getElementById('per-lang-select').value;
   const typeFilter = document.getElementById('per-type-select').value;
+  const classFilter = document.getElementById('per-class-select').value;
   const sortBy = document.getElementById('per-sort-select').value;
 
   let sub = data.filter(r => r.iso === iso);
   if (typeFilter !== 'All') sub = sub.filter(r => r.model_type === typeFilter);
+  if (classFilter !== 'All') sub = sub.filter(r => r.model_class === classFilter);
 
   // Sort passed and failed
   let passed = sub.filter(r => r.status === 'pass');
@@ -609,28 +638,28 @@ function renderPerLanguage(data) {
 
   if (sortBy === 'wer') passed.sort((a,b) => a.wer - b.wer);
   else if (sortBy === 'cer') passed.sort((a,b) => (a.cer||1) - (b.cer||1));
-  else if (sortBy === 'speed') passed.sort((a,b) => (a.speed||999) - (b.speed||999));
 
   // Render passed
   const passBody = document.getElementById('per-lang-pass-body');
   passBody.innerHTML = passed.length === 0
-    ? '<tr class="empty-row"><td colspan="7">No passed models</td></tr>'
+    ? '<tr class="empty-row"><td colspan="8">No passed models</td></tr>'
     : passed.map((r,i) => `
       <tr>
         <td>${i+1}</td>
         <td>${modelLink(r.model, r.url)}</td>
         <td><span class="mtype">${r.model_type}</span></td>
+        <td>${trackBadge(r.model_class)}</td>
         <td>${r.params || '—'}</td>
         <td style="font-weight:600">${r.wer !== null ? (r.wer*100).toFixed(2) : '—'}</td>
         <td>${r.cer !== null ? (r.cer*100).toFixed(2) : '—'}</td>
-        <td>${r.speed !== null && r.speed !== undefined ? r.speed.toFixed(2) : '—'}</td>
+        <td style="color:var(--text-muted);font-size:0.82rem">${r.per_category_wer || '—'}</td>
       </tr>
     `).join('');
 
   // Render failed
   const failBody = document.getElementById('per-lang-fail-body');
   failBody.innerHTML = failed.length === 0
-    ? '<tr class="empty-row"><td colspan="5">No failed models</td></tr>'
+    ? '<tr class="empty-row"><td colspan="6">No failed models</td></tr>'
     : failed.map((r,i) => {
         const reason = classifyError(r.fail_reason);
         return `
@@ -638,6 +667,7 @@ function renderPerLanguage(data) {
             <td>${i+1}</td>
             <td>${modelLink(r.model, r.url)}</td>
             <td><span class="mtype">${r.model_type}</span></td>
+            <td>${trackBadge(r.model_class)}</td>
             <td>${r.params || '—'}</td>
             <td><span class="${badgeClass(reason)}">${reason}</span></td>
           </tr>
@@ -732,7 +762,9 @@ async function main() {
     // Event listeners
     document.getElementById('per-lang-select').addEventListener('change', () => renderPerLanguage(ALL_DATA));
     document.getElementById('per-type-select').addEventListener('change', () => renderPerLanguage(ALL_DATA));
+    document.getElementById('per-class-select').addEventListener('change', () => renderPerLanguage(ALL_DATA));
     document.getElementById('per-sort-select').addEventListener('change', () => renderPerLanguage(ALL_DATA));
+    document.getElementById('global-class-select').addEventListener('change', () => renderGlobal(ALL_DATA));
     document.getElementById('ms-status-select').addEventListener('change', () => renderModelStatus(ALL_DATA));
     document.getElementById('ms-lang-select').addEventListener('change', () => renderModelStatus(ALL_DATA));
     document.getElementById('ms-search').addEventListener('input', () => renderModelStatus(ALL_DATA));

@@ -107,7 +107,7 @@ python run_benchmark.py --dry-run
 
 ### Dataset
 - Source: `ghananlpcommunity/ghana-speech-eval` (57 category-configs across 43 languages)
-- Up to 300 samples per category-config (configurable via `NUM_SAMPLES` in `benchmark/config.py`)
+- Up to 1000 samples per category-config (configurable via `NUM_SAMPLES` in `benchmark/config.py`)
 - Audio decoded with `soundfile` (avoids torchcodec), resampled to 16 kHz
 - Fields: `audio`, `text`, `language`, `iso`, `country`, `length`, `subset`
 

@@ -129,6 +129,7 @@ def load_all_data():
                 "categories": ", ".join(CATEGORY_LABELS.get(c, c) for c in categories),
                 "model": model,
                 "owner": b.get("owner", model.split("/")[0]),
+                "track": b.get("model_class") or ("llm" if "gemini" in model.lower() else "non-llm"),
                 "model_type": _categorize_model(model),
                 "params": b.get("params", "?"),
                 "wer": round(wer * 100, 2) if wer is not None else None,
@@ -150,7 +151,7 @@ def build_global_leaderboard(df):
         return pd.DataFrame()
     best = passed.loc[passed.groupby("iso")["wer"].idxmin()].sort_values("wer")
     best.insert(0, "rank", range(1, len(best) + 1))
-    cols = ["rank", "language", "categories", "model", "owner", "model_type",
+    cols = ["rank", "language", "categories", "model", "owner", "track", "model_type",
             "params", "wer", "cer"]
     return best[cols].reset_index(drop=True)
 
@@ -163,9 +164,9 @@ def build_per_language(df, iso, model_type_filter="All", sort_by="wer"):
     sub.insert(0, "rank", range(1, len(sub) + 1))
     passed = sub[sub["status"] == "pass"]
     failed = sub[sub["status"] == "fail"]
-    cols_pass = ["rank", "model", "owner", "model_type", "params", "wer", "cer",
+    cols_pass = ["rank", "model", "owner", "track", "model_type", "params", "wer", "cer",
                  "per_category_wer"]
-    cols_fail = ["rank", "model", "owner", "model_type", "fail_reason"]
+    cols_fail = ["rank", "model", "owner", "track", "model_type", "fail_reason"]
     return passed[cols_pass].reset_index(drop=True), failed[cols_fail].reset_index(drop=True)
 
 
@@ -177,7 +178,7 @@ def build_model_status(df, status_filter="All", lang_filter="All", search=""):
         sub = sub[sub["language"] == lang_filter]
     if search:
         sub = sub[sub["model"].str.contains(search, case=False, na=False)]
-    cols = ["language", "model", "owner", "model_type", "params", "wer", "cer",
+    cols = ["language", "model", "owner", "track", "model_type", "params", "wer", "cer",
             "status", "fail_reason"]
     return sub[cols].sort_values(["language", "wer"], na_position="last").reset_index(drop=True)
 
