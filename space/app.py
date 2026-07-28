@@ -110,6 +110,7 @@ def _fmt_categories(per_category):
 
 def load_all_data():
     rows = []
+    cat_set = set()
     for fname in sorted(_list_benchmark_files()):
         iso = fname.replace(".yaml", "")
         data = _fetch_yaml(f"benchmarks/{fname}")
@@ -123,7 +124,9 @@ def load_all_data():
             cer = b.get("cer")
             model = b.get("model", "?")
             per_cat = b.get("per_category", {})
-            rows.append({
+            if per_cat:
+                cat_set.update(per_cat.keys())
+            row = {
                 "iso": iso,
                 "language": lang_name,
                 "categories": ", ".join(CATEGORY_LABELS.get(c, c) for c in categories),
@@ -134,14 +137,26 @@ def load_all_data():
                 "params": b.get("params", "?"),
                 "wer": round(wer * 100, 2) if wer is not None else None,
                 "cer": round(cer * 100, 2) if cer is not None else None,
-                "per_category_wer": _fmt_categories(per_cat),
                 "n_categories": len(per_cat) if per_cat else 0,
                 "status": "pass" if wer is not None else "fail",
                 "fail_reason": _classify_error(b.get("error")),
                 "url": b.get("model_url", f"https://huggingface.co/{model}"),
                 "num_samples": n,
-            })
-    return pd.DataFrame(rows)
+            }
+            # Per-category WER columns (e.g. "bible_wer", "jw_wer", ...)
+            for cat, metrics in (per_cat.items() if per_cat else []):
+                w = metrics.get("wer")
+                row[f"{cat}_wer"] = round(w * 100, 2) if w is not None else None
+            rows.append(row)
+
+    df = pd.DataFrame(rows)
+    # Sort category columns for consistent ordering
+    _cat_cols = sorted(c for c in df.columns if c.endswith("_wer") and c not in ("wer",))
+    # Reorder: fixed cols, then category WER cols, then avg WER/CER, then rest
+    fixed = ["iso", "language", "categories", "model", "owner", "track", "model_type", "params"]
+    rest = [c for c in df.columns if c not in fixed and c not in _cat_cols and c not in ("wer", "cer")]
+    df = df[fixed + _cat_cols + ["wer", "cer"] + rest]
+    return df
 
 
 def build_global_leaderboard(df):
@@ -151,9 +166,10 @@ def build_global_leaderboard(df):
         return pd.DataFrame()
     best = passed.loc[passed.groupby("iso")["wer"].idxmin()].sort_values("wer")
     best.insert(0, "rank", range(1, len(best) + 1))
-    cols = ["rank", "language", "categories", "model", "owner", "track", "model_type",
-            "params", "wer", "cer"]
-    return best[cols].reset_index(drop=True)
+    cat_cols = sorted(c for c in df.columns if c.endswith("_wer") and c not in ("wer",))
+    cols = ["rank", "language", "model", "owner", "track", "model_type",
+            "params"] + cat_cols + ["wer", "cer"]
+    return best[[c for c in cols if c in best.columns]].reset_index(drop=True)
 
 
 def build_per_language(df, iso, model_type_filter="All", sort_by="wer"):
@@ -164,10 +180,13 @@ def build_per_language(df, iso, model_type_filter="All", sort_by="wer"):
     sub.insert(0, "rank", range(1, len(sub) + 1))
     passed = sub[sub["status"] == "pass"]
     failed = sub[sub["status"] == "fail"]
-    cols_pass = ["rank", "model", "owner", "track", "model_type", "params", "wer", "cer",
-                 "per_category_wer"]
+    cat_cols = sorted(c for c in df.columns if c.endswith("_wer") and c not in ("wer",))
+    # Only include category columns that have data for this language
+    active_cat_cols = [c for c in cat_cols if passed[c].notna().any()] if not passed.empty else []
+    cols_pass = ["rank", "model", "owner", "track", "model_type", "params"] + active_cat_cols + ["wer", "cer"]
     cols_fail = ["rank", "model", "owner", "track", "model_type", "fail_reason"]
-    return passed[cols_pass].reset_index(drop=True), failed[cols_fail].reset_index(drop=True)
+    return (passed[[c for c in cols_pass if c in passed.columns]].reset_index(drop=True),
+            failed[cols_fail].reset_index(drop=True))
 
 
 def build_model_status(df, status_filter="All", lang_filter="All", search=""):
