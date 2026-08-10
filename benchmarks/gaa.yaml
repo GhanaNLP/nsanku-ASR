@@ -1,6 +1,6 @@
 iso_639_3: gaa
 language: Ga
-num_samples_per_category: 300
+num_samples_per_category: 1000
 categories:
 - finance
 - jw
@@ -9,135 +9,125 @@ benchmarks:
   model_url: https://huggingface.co/KhayaAI/w2v-bert-gaa
   owner: KhayaAI
   params: 0.6B
-  wer: 0.6286
-  cer: 0.2323
+  wer: 0.6745
+  cer: 0.2664
   per_category:
     finance:
-      wer: 0.8025
-      cer: 0.2773
-      samples: 300
-      valid: 299
-      avg_seconds_per_sample: 0.08
+      wer: 0.8332
+      cer: 0.2861
+      samples: 1000
+      valid: 994
+      avg_seconds_per_sample: 0.05
     jw:
-      wer: 0.4548
-      cer: 0.1874
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.07
+      wer: 0.5158
+      cer: 0.2468
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.05
   source: evaluated
+  model_class: non-llm
 - model: cdli/whisper-large-v3_finetuned_ghanian_ga_nonstandard_speech_v1.0
   model_url: https://huggingface.co/cdli/whisper-large-v3_finetuned_ghanian_ga_nonstandard_speech_v1.0
   owner: cdli
   params: 2B
-  wer: 0.8651
-  cer: 0.3506
+  wer: 0.9139
+  cer: 0.4048
   per_category:
     finance:
-      wer: 0.9382
-      cer: 0.379
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.48
+      wer: 0.9843
+      cer: 0.429
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.26
     jw:
-      wer: 0.7921
-      cer: 0.3222
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.92
+      wer: 0.8434
+      cer: 0.3806
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.62
   source: evaluated
+  model_class: non-llm
 - model: cdli/whisper-large-v3_finetuned_ghanian_ga_standard_speech_v1.0
   model_url: https://huggingface.co/cdli/whisper-large-v3_finetuned_ghanian_ga_standard_speech_v1.0
   owner: cdli
   params: 2B
-  wer: 0.8691
-  cer: 0.3582
+  wer: 0.9257
+  cer: 0.431
   per_category:
     finance:
-      wer: 0.9594
-      cer: 0.4003
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.58
+      wer: 1.0084
+      cer: 0.4718
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.22
     jw:
-      wer: 0.7788
-      cer: 0.316
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 1.02
+      wer: 0.843
+      cer: 0.3902
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.52
   source: evaluated
-- model: KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en
-  model_url: https://huggingface.co/KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en
-  owner: KhayaAI
-  params: 0.6B
-  wer: 0.9066
-  cer: 0.2782
-  per_category:
-    finance:
-      wer: 1.1621
-      cer: 0.3277
-      samples: 300
-      valid: 299
-      avg_seconds_per_sample: 0.07
-    jw:
-      wer: 0.6511
-      cer: 0.2288
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.06
-  source: evaluated
+  model_class: non-llm
 - model: cdli/whisper-small_finetuned_ghanian_ga_nonstandard_speech_v1.0
   model_url: https://huggingface.co/cdli/whisper-small_finetuned_ghanian_ga_nonstandard_speech_v1.0
   owner: cdli
   params: 0.2B
-  wer: 0.942
-  cer: 0.4012
+  wer: 0.9674
+  cer: 0.4749
   per_category:
     finance:
-      wer: 1.0209
-      cer: 0.4419
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.28
+      wer: 1.0272
+      cer: 0.5289
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.13
     jw:
-      wer: 0.8632
-      cer: 0.3605
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.55
+      wer: 0.9075
+      cer: 0.4208
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.27
   source: evaluated
+  model_class: non-llm
 - model: cdli/whisper-small_finetuned_ghanian_ga_standard_speech_v1.0
   model_url: https://huggingface.co/cdli/whisper-small_finetuned_ghanian_ga_standard_speech_v1.0
   owner: cdli
   params: 0.2B
-  wer: 1.1135
-  cer: 0.5299
+  wer: 1.1158
+  cer: 0.5388
   per_category:
     finance:
-      wer: 1.3541
-      cer: 0.7054
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.3
+      wer: 1.2807
+      cer: 0.629
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.16
     jw:
-      wer: 0.8729
-      cer: 0.3544
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.63
+      wer: 0.9508
+      cer: 0.4486
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.24
   source: evaluated
-- model: Qlerqly/griot-nano-1
-  model_url: https://huggingface.co/Qlerqly/griot-nano-1
-  owner: Qlerqly
-  params: 0.2B
-  wer: null
-  cer: null
-  error: load_failed
+  model_class: non-llm
+- model: AyikuBen/whisper-ga-finetuned-demo
+  model_url: https://huggingface.co/AyikuBen/whisper-ga-finetuned-demo
+  owner: AyikuBen
+  params: 37.8M
+  wer: 1.3242
+  cer: 0.6383
+  per_category:
+    finance:
+      wer: 1.3527
+      cer: 0.6245
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.09
+    jw:
+      wer: 1.2957
+      cer: 0.652
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.22
   source: evaluated
-- model: Qlerqly/griot-nano-1-onnx
-  model_url: https://huggingface.co/Qlerqly/griot-nano-1-onnx
-  owner: Qlerqly
-  params: '?'
-  wer: null
-  cer: null
-  error: unknown_architecture
-  source: evaluated
+  model_class: non-llm

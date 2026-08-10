@@ -299,3 +299,703 @@ sample_id,reference,hypothesis,wer,cer
 297,hali laam pɛɛs nɛ Samaria nɛ Damaskus tɛɛns la.,ale la mpɛɛ nɛ samaria ni daabiku te la,0.6667,0.3421
 298,"“Maan la mɛ yaa anɛ bʋn-ianada ka o ye o maal nyuor maan, li sʋm ka li an sianadawan bɛɛ naadawan.",aan lameya ana buyinada ka u ye u maanl nyuor maan lisum ka li a siadaman beɛ naa daŋan,0.7619,0.2297
 299,"Bɔzugɔ daba ayɔpɔi la wʋsa ba da di taaba laasʋg maan la, ka wɔɔg Zugsɔb onɛ aan ba yaanam Winaam la.",bɔzugɔ daba ayɔpɔi la wosa ba da di taaba laasug maan la ka wɔɔg zugsɔb o na aan ba yaa na winaam la,0.2857,0.0506
+300,"O na kɔdig bʋnkɔnbʋg la maan daka la datiuŋ baba Zugsɔb la sanan, ka Aaron yaas banɛ an maanmaannib la na nɔk ziim la misi mis maan daka la gilig wʋsa.",akɔribinkɔnbu la maan daaka la datiŋ baaba zugsɔb la saan ka arɔn yaas ba ni a maanmaanib la na nɔk zeem la miisimiis maan dakala giligi usa,0.6452,0.1849
+301,"Naab Jotam da di naam la ka anɛ yʋma pisi nɛ anu, ka gɔs Israel hali ti paae yʋma pii nɛ ayuobʋ.",abjotam dadi naam la ka a ni yuupiisine anu ka gɔs israɛl hali ti paa yuumapii nɛ ayio bi,0.6364,0.1918
+302,“Li nyaŋi ba nɛ ka ba zi ban na lɛn lɛbisif siela; ba nɔɔr lɛbnɛ biaunkin.,liyaŋi ba ni ka ba zi bana le balsusela ba nɔɔ lɛbni biɛko,0.6875,0.3393
+303,hali ka ba kʋʋ ya paas banɛ kpi la zug.,hali ka ba koo yaa paa ba nikpiilaju,0.7,0.2759
+304,"Tʋʋm banɛ zug ka Zugsɔb la da kad buudbanɛ da bɛ teŋin la wʋsa nidib ka Israel dim lɛdig la, lin ka Manase da tʋm sanam Zugsɔb la sʋnf.",ombani zugkaa zugsɔb la da ka buud bani da bɛ teŋin la wusa nidib ka israɛl dim ladig la lenn ka manase da tom sam zugsɔb la suh,0.4828,0.1714
+305,Ka pʋʋs Filologus nɛ Julia nɛ Nereus nɛ o taʋn nɛ Olimpas nɛ Winaam nidib wʋsa banɛ bɛ nɛ ba la.,kapus filologus ni julia ni nerius ni utau ni olimpas ni winaam niib wusa ban ni e ni ba,0.8095,0.2533
+306,"“Amaa Zugsɔb la sadigim aan ti Winaam ka tinam pʋ kiis o la, maanmaannib banɛ tʋmmi tisid Zugsɔb la anɛ Aaron biis ka Levi dim la sʋŋidi ba.",maa zugsɔb la sarigi aan ti winaam ka ti nan po kɛlis u la maalmaan ni bani to mi tisi zugsɔb la anɛ aarɔnn biis ka lebi dim la suŋuiba,0.6071,0.1818
+307,Ka naazɔmnam yi nyɔɔs la nii sig dunia ni na.,anazɔmnam yii nyɔɔs la ni nsii dunia nin,0.7,0.1714
+308,"Li da kaanɛ ti yaanam ka Zugsɔb la naal nɔɔr nɛ ba, amaa li anɛ tinam banɛ wʋsa laasi zie kpɛla zina la.",li da kaani ti yaanam ka zugsɔb la naa nɔɔr ni ba amaa le a ni ti nan ba na wusa a laa si ie kpa la ʒina a,0.7826,0.1625
+309,Ka m lɛn tɛnɛs m sʋnfʋn ye Winaam na kad ninsʋma nɛ nimbɛɛdnam wʋsa saria.,m len tɛnɛsim sufun ye winaam nan kad ninsooma nɛ nimbiɛrnam wu sisariya,0.6667,0.2542
+310,"Zugsɔb la kad tɛɛns la dim, laan nɛ Amor dim banɛ da bɛ teŋin la.",zugsɔb la ka tɛɛns la dim laanɛ amodim ba ni dabɛteŋin la,0.6,0.0816
+311,Jerusalem teŋin la David da di puabi paas.,jerusalem teŋin la devid da de p ba,0.5,0.2353
+312,"Hebron biisin la Jeria da an kpɛɛm, ka Amaraya tiaal ayi, ka Jahaziel tiaal atan, ka Jekameam tiaal anaasi.",hibron bia sin la jeriya da a kpɛɛm ka amaraya tial ayi ka jehaaziɛl tialata ka jekamian tiaalanaa se,0.6316,0.1529
+313,"O da guri ti, ti suor la ken pʋʋgin, laan nɛ tinamɛ da dɔl teŋ sieba gaad la, ka yisi ti nidib la wʋsa nuusin.",daguri ti ti suor la ken poogin laam ni tinamida dɔl teŋ sebaagaad la ka yiisi ti nidib la wusa niu siŋ,0.56,0.1463
+314,Amaa m yɛtif ye fʋ ka bʋʋd nɛɛŋa nwa nii.,amaa m yati ye fo kaa bood nɛŋaanni,0.7,0.3226
+315,"Naab pianʋk mɔri paŋ, ka sɔ kʋ tune buos o ye, “Bɔ ka fʋ maan nɛɛŋa?",aa piank mɔi paŋ bi sɔ kutɔɔn booso ye bɔ ka fo maan nɛ nŋa,0.6875,0.2653
+316,"Bɔzugɔ, li sɔb Winaam gbauŋʋn ye, “Manɛ na yɔ tʋʋmbɛɛd sam.",li sɔb winaam gbauŋin ye zugsɔb na lɛbisi yoosaa,0.5455,0.5333
+317,Ti tʋʋmbɛɛd la zug ka teŋ zʋŋ naanam la kʋʋ ti nɛ ti naanam nɛ ti maanmaannib ka faaɛn ti laad ka gbane ti sieba maali ti yammis ka namisi ti sieba diisi ti nyan hali ti paae zina.,ti toombɛɛl la zu ka teŋzuŋ naanam la ku ti nɛ ti naanam nɛ ti maalmaanib ka faan ti laad ka gbaa ti seba maali ti yamis ka nam si tiseba di si ti yan hali ti paai sina,0.4615,0.1418
+318,Hanok tuŋ da anɛ Hanok dim ka Pallu dɔɔg an Pallu dim ka Heziron tuŋ an Heziron dim ka Karmi tuŋ an Karmi dim.,hanok tuŋda anɛ henok dem ka paalo dog a paalo dem ka hezron tuŋ a hezeron dem ka karimi tuŋ a karimi dem,0.7083,0.2093
+319,"Ka sumalisim na bɛ nɛ o, o tʋʋma zinigin, dabisban ka Winaam tis o dunia nwa pʋʋgin la.",ka sumalisim na bɛnin u tooma zinigin dabis ban ka winaam tisu duniya wa poogin la,0.6667,0.1493
+320,Linzug Ahazaya onɛ an Jehoram biig la da di naam la.,zuu isaya o na a jeroam biig la dadena a,0.9091,0.3902
+321,Bʋn yinne maaa ka m sɔs Zugsɔb la; man sɔs sieli nwa: m bɔɔd ye m bɛ Zugsɔb la yin.,buyinnimaa kam sɔb zugsɔb la man sɔ seelima m bɔɔdee m ba zusɔb la yin,0.65,0.1967
+322,O yaa ti buosim buosa m na niŋ wala gandigɛ?,yaa te buosim buosa n nan niŋ wala gand a,0.6,0.2059
+323,Ka o pʋ vurigi ya liel o tuon ye ya tʋm o Pʋʋsʋg Fuug Sʋgʋrin tʋʋma ka zien nidib la tuonnɛ tʋmmi tisidi ba la?,bpovurigi yaa lee lotoon ye ya tomu posopuusoktooma ka zeer niriba la toon ni tommi tisiri baa laa,0.88,0.3837
+324,"Ba zuu ba nɛ, ka ma ye li anɛ ba mɛŋ din.",bazuuba ni ka maa yel anɛ ba mɛŋdi,0.75,0.1429
+325,"Zugsɔb la yɛlim ye, “Ninsaal biiga, Zugsɔb onɛ an Paŋtitaar Sɔb la yɛt sieli nwa tisid Israel teŋ la ye, ‘Li bɛn paae ya!",ninsaal biiga zugsɔb on a paŋ titaar sɔb la ya see liwan ti sir israel teŋ la ye li ben paa ya,0.625,0.2717
+326,ka ti gɛn ka ba mɛ kʋ basi ti ka ti vʋʋsɛ.,ka ti ge ka ba mee kubasi tee ka ti fo usan,0.5833,0.4
+327,Kɛl ka agɔl maal sumalisim ka dunia maal sumpielim.,el ka gol maal sumaasim ka dunia maa supieliŋ,0.5556,0.2143
+328,"Teŋ la ɛɛnbir la, ba da zaŋ nɛ kugvɛnla nɛ li buudi wʋsa ɛɛnb ɛɛnbir la ka li vɛnl hali.",a buudi wusa n da be teŋ la eenbi kua la ni n ke ka bae,0.9,0.791
+329,“Tɔlʋŋ la nwa: ‘M mi ye yanamɛ bɛ siel la anɛ zinikanɛ ka Sʋntaana naam gbauŋ bɛ.,touŋ la wa mii ye yana mi be siil la ani ziin kan ka sutaana naam ngbɔ,0.8235,0.3279
+330,"Nidib la da lɛbis ye, “Win da kɛ ka ti bas Zugsɔb la dɔllim ka dɔl winsieba!",idiba wuyi da kɛ ki ti baa zugsɔb la dɔlim ka dɔli winse ba,0.7059,0.2982
+331,"Ya yaa ti tam Zugsɔb onɛ aan ya Winaam la ka dɔl winsieba iginid teŋin pʋʋsidi ba; m dit nɛ kasɛta tisidi ya zina ye, ya na sanam.",a yaa ti tam zugsɔb o ni aan ya winaam la ka dɔl winsieba ini teŋin poosiri ba n di nɛ kasett tisiri ya zi na ye ya nan saaŋ,0.4643,0.16
+332,"Jehosafat da nwɛ nidib la sɔɔra ka gaans dapsieba ye ba yʋʋm tis Zugsɔb la ka wɔɔg o naam pipilim linɛ paannɛ o kasi yɛla la, ka yii gaad tuongatib la tuonnɛ yɛt ye.",jehosafat dan wɛ nidiba la sɔra ka gaans dabseeba ye baa yiwum tis zugsɔb la ka wɔɔg u naam pipiilim linɛ paal ni u kasi yala la ka yii gaa toongatib la toon ni yɛt y,0.5294,0.1462
+333,Kpiim teŋ ka bugusnam pʋ lɛn tʋm bugisim tʋʋmaa.,emteŋ kabusnam po le tum bugusim teo maa,1.0,0.3333
+334,"Dabisir kanɛ an yiiga la, ya na laas taaba ka li an man Zugsɔb la laasʋg.",asi kani an yeiga la ya na laas taaba ka li a ma zugsɔb la laaso,0.375,0.1786
+335,"Ka Winaam onɛ vʋe ka ka naar la tis nɔɔr ka buudi wʋsa baŋi li, ye nidib bɛdegʋ siak Winaam ka niŋ o yadda.",a winaam oni voe kakaanaan la tis nɔɔr ka buudi wusa baŋi li ye nirib bedegu siɛk winaam ka niŋ u yada,0.5,0.1463
+336,"Dɔlli suokanɛ ka Zugsɔb onɛ aan ya Winaam zieli tisi ya la, ala ka ya na vʋe, ka siel wʋsa na an sʋʋŋa tisi ya, ka ya dabisa na yuug teŋ kanɛ ka ya na sʋʋg la ni.",a li suo kani ka zugsɔb onɛ aa ya winaam zieli tisi ya la ala kaya na voe ka seel wosa na a soŋa tisiya ka ya dabsa nayuug teŋ kani kaya nasook la ni,0.5789,0.1322
+337,"Laan nɛ bugisnamɛ tʋm bugisim bɛdegʋ ka mɔr nyɔvʋr wɔk la, li na an sʋm gat ala tis Winaam nimbanɛ zɔt o.",aa nɛ bugis na mi tom bugsim bɛdego ka mɔ nyunvu wɔb la li na a sum gaatalates winaam nimba n zɔ to,0.8636,0.2073
+338,"O yɛl ye, “Sidon teŋa, fʋ sumalisim la naae ya!",yyesidon teŋa ku sumalisim la naa a,0.7,0.2059
+339,Ba laas nɛ m datiuŋ baba gubigim; ba tunɛ bʋmbuadi m nɔba baba; ka gbane ye ba zab nɛ m.,ba laanɛɛ n datiŋ baaba gubigim ba tu ne bimbɔadi nnɔbababa ka gbaan ye ba zaab nm,0.7,0.197
+340,Ka o biig Hezekia lɛdigi di naam la.,ka o biig hezekaya larigedi naam la,0.375,0.1786
+341,Ba da duoe Elam teŋin la ka keŋ laasi diginɛ kpien nɛ Atɛuk Zɛnug la.,ba da doo alam teŋin la ka keŋ laasidigin kpie nɛɛ atk zug la,0.5333,0.1667
+342,-Benjamin yaas da yinɛ o biis Bela nɛ Asibɛl nɛ Ahiram nɛ Seufam nɛ Hufam ni.,ɛnjamin yasda yi nɛ obiibela nɛ ashibel nɛ ahiram nɛ sefam nɛ hufam ni,0.5625,0.1167
+343,Dɔlli Zugsɔb Winaam nɛ ya sʋnf wʋsa ka o sʋnpɛɛn na yii ya sanan.,dɔli zugsɔ buna nɛ ya sunfu wosa ka usupiɛl na yi ya saa,0.6429,0.3137
+344,Yaanɛ ka fʋ nam mi wʋm ye sida dim paam sanauŋɔ?,yanika fu na mii wom yisira dim paam saaŋ,0.8182,0.2703
+345,"M yaa buol, fʋn wʋmi m, m Zugsɔba.",n yaa bool funwomim m zug sɔb a,0.875,0.1667
+346,Ka o nindaa nyɛɛnnɛ nwɛnɛ kugvɛnla linɛ yʋʋri buon jaspa nɛ kanelian la.,u nindaa yeen wen ni ku  en la le n yuur bonn yaspa i ka na i,1.3077,0.5085
+347,"Amaa Winaam pʋ kɛ ka o dii li malisim, ka saan lɛɛ kena di li malisim.",maa winan po kɛ ka u dii limalisim ka saan le kena dii limalisim,0.625,0.1509
+348,"Zugsɔb onɛ an Paŋtitaar Sɔb la yɛl siem nwa tisid zuoya nɛ kʋkʋna la nɛ bɔnɔd la wʋsa: M bɔɔd ye m zab nɛ ya, ka sanam sanami ya teŋgbana la wʋsa.",ugsɔb o n a paŋtitaar sɔb la yel seem ŋaan tisid zuya ni kukona la ni bɔnd la wusa m bɔɔ yim zab niya ka saam saamiya teŋgbana la wusa,0.6875,0.1875
+349,"Naftali dɔɔg la, banɛ ka ba da kaal da anɛ tusa pisnaasi nɛ anu nɛ kɔbisnaasi .",atali dog la ban ni ka badakaal da an ni tusopiis naansi nɛ nu ni kɔbis naansi,0.875,0.2295
+350,"Dabiskanɛ paas atan la, nɔkimi naarapɔla pii nɛ ayi nɛ pɛraad ayi nɛ pɛribis pii nɛ anaasi banɛ an yʋʋm yinne ka ka dɛŋŋa maali maan.",abskaipaastaa la nɔkimi naarapɔla pii nɛ ayi ni paraadaayi ni paribisa pii nɛ anaase ban a yuwum yin ni ka kaa dɛ ŋa maali maa,0.6923,0.2075
+351,ka laan nɛ wala o zi suokanɛ waae tempʋʋginɛ.,la niwala u zi sukani wai tepuuun,0.8889,0.4444
+352,"” Ka ba tisi ba wʋsa fupiela, ka yɛli ba ye, “Vʋʋsimi biela ka guri ya tʋmtʋm taaba banɛ an yadda niŋidib ka kpɛlim dunia ni la, ka ba ti kʋʋ ba nwɛnɛ ban kʋ yanam siem la, ka ba kal la bɛn paae.",a ba tisi ba wusa fupielis ka yɛli ba ye vuosimi bie la ka guri ya tumtomn taaba ban n a yadda niŋiriba ka kpalim dunia ni la ka ba ti kuu ya wenni ban kuu yanam seim la ka ba kal ben ti paai,0.4651,0.2138
+353,"Ban da wʋm Zugsɔb la zab nɛ Israel dim dataas la siem la, Winaam dabiem da kpɛn naabanɛ bɛ tembama la ni.",n da wum zugsɔb la zab ni israɛl dim dataa la seem la winaam dabeem da kpɛ nimban ni bɛɛ tembama la ni,0.5,0.1707
+354,"Manase yaas da yinɛ o biig Makir ni, ka Makir biig da an Gilead.",manisayaas daa yine u biig makir ni kamakir biig da a jilee,0.6429,0.1837
+355,"Laan nɛ mam mɔr suor Kristo nii na tune tisif nɔɔr nɛ kpieuŋ ye fʋ niŋ linɛ nar la, tinamɛ nɔŋ taaba la zug ka m bɛlimif.",sos f nɔŋ su laam ni ma mɔr pee m natɔo tis uf nɔɔr la l,0.963,0.7742
+356,"Ka teŋ la nidib mɛ da kʋ nimbanɛ da naal nɔɔri kʋʋ o la wʋsa, ka diis o biig Josia naam la.",ateŋ la nidib meda ko nimbani da naal nɔɔr kowu la wosa ka deson biig josuya naam la,0.5909,0.2059
+357,"Nwadpaalig la daar o na tis naarapɔl, nɛ pɛbibis ayuobʋ nɛ pɛraug, ka ba wʋsa da mɔr dɛŋŋa.",apaa ligla daar u na tis na arapɔl nɛ paribsayuobu nɛ paraak ka ba wusa da mu dɛ ŋa,0.6667,0.2113
+358,Ban tis Levi dɔɔg la tempʋsieba yɛla.,atis lebidok la tepusheeba yala,0.8571,0.3667
+359,"Yanam banɛ an Zugsɔb nidib ka siak ye ya na lɛb Jerusalem dinɛ bɛ Juda mɛ Israel Winaam yir la, kemi ka ya Winaam la na bɛ nɛ ya.",a nan ba ni a zugsɔb nidib ka shak ye ya nan lɛb jerusalɛm di ni be juda mɛ israɛl winaam yira kemi kaaya winaam laa naa bɛ n ya,0.6552,0.1515
+360,"Onɛ mɔr tʋba na wʋm, on wʋm linɛ ka Winaam Siig Kasi la yɛt karindɔɔd la.",ni bɔɔr ye wum aalaa u kelisim lene ka winaam sii suŋ la ye winaam nidib la,0.8125,0.6429
+361,"O da mɔr nidib bɛdegʋ ka ba tʋmm o pɔɔdin nɛ tiwanna linɛ bɛ kʋkʋna zug la nɛ kʋʋlʋm zinis la, bɔzugɔ o nɔŋ nɛ kuob hali.",amnidib bɛdego ka ba tom mo pɔɔrin nɛ tewan na lenɛ bakukonazu la nɛ koulim ziins la bozugɔ u nɔŋnɛ kuwo hali,0.7407,0.2366
+362,Moses nɛ Aaron n da gaad Israel dim tuon ka ba yi Egipt teŋin gumm-gumm nwɛnɛ zabzabidib siem la nwa.,mosis ni aarɔnn ntan gaar israɛl dim toon ka ba yi ijipti teŋin gumgum wene zabzabidiba seem la ŋa,0.7,0.2625
+363,"Laabanɛ ka ti mɔri bʋʋd ki la, nɛ yɔksin daadi nwa, ka fʋ na zaŋi nyuoe bugum, ka kɛ ka ki la liebi li zʋʋd maan.",aam jerusalɛm la zugsɔb la sunf dasaam ni tɔga ka ni damaal la zu u yal malɛak ka ni kood nidib la ye,0.8846,0.7738
+364,"Ka mɛ nyɛ kpɛɛmnam la nɛ banɛ piebid naatana la da zie kpie Naab la, ka nidib la wʋsa maan sumalisim ka piebid naatana la.",ka me nyɛ kpeemnam la nɛ bana piebi naatana la da zie kpie naab la ka nidib la wosa maan tumalisim ka piebi natana la,0.32,0.0938
+365,"Levi dim banɛ tʋm la, dabisir wʋsa pʋʋgin nidiba ayuobʋ da zie ya-nyaaŋ zaanɔɔrin la, guud, ka anaasi zie ya-datiuŋ ka anaasi zie ya-dagɔbʋg la, ka ayi, yi tʋm laad dɔɔdin la.",lebidim ban ni tom la tabser wosa poogin nidiba ayio bu da zjie ya nyaaŋ zaanɔɔrin la guud kanaa si zie yada teŋ kanaasi zie yada gɔbig la ka ayiyi tom la dɔrin la,0.75,0.1704
+366,"O yʋʋr da tiig nɛ zinig wʋsa, bɔzugɔ o da paam nɛ sʋŋir hali ka nyaan ti kilim nintitaar.",ye u datiig ne ziig wosa bizugɔ u dapaab ni soŋir hali ka yaan ti kilim nintitaa,0.7895,0.2029
+367,Ka lɛɛ mɔri li keŋ Obededom onɛ an Gaf nid la yin.,l mori leken u bididom uni aa gaaf nit la yin,0.8333,0.3947
+368,Ba da mɔr zɔɔm nɛ tiis wala kɔnɔb-kɔnɔb nɛ daam nɛ kpaam nɛ niigi nɛ pɛɛs bɛdegʋ na.,bamɔsɔb nɛ tiis wala kɔbkɔb nɛ daam nɛ kpaam nɛ niigi nɛ piɛs bɛdego na,0.3889,0.1846
+369,Ba da naam Abirona keŋ digin Eziyon Geba teŋin.,danaamabirona kendigin eziyɔn jeba te,1.0,0.2105
+370,"“Nannanna, m biiga, Zugsɔb la na bɛ nɛf, fʋ na paam nyaŋir ka mɛ yiri tisi fʋ Zugsɔb Winaam la wʋʋ on pʋn yɛl ye fʋ na niŋ siem la.",anannan biiga zugsɔb la na benif fo na paam nyaaŋir ka mɛ yiri tisi fo zugsɔb winaam la woo m pun yɛl ye fo na niŋ sem la,0.4,0.1443
+371,Ka onɛ kis niim da yɛl onɛ pʋ kis siel la ye o niŋ linɛ ka sʋʋm; bɔzugɔ Winaam die o.,a u ni po kii seel la da yel u ni ki seel la ye u niŋ lene kaa sum bɔzugɔ winaam dii,0.8571,0.4127
+372,"Ban da yɛl David yɛl kaŋa yɛla la, o da tʋm o tʋmtʋmnib ka ba tʋʋsi ba, ban daa diisi ba nyan la zug.",ban daa yeli devid yalkaŋa yɛla la u da tom tuntomnib ka ba toosi ba ban daa dii si banyaan la zug,0.5417,0.1867
+373,Amaa gbanami linɛ ka ya mɔr la kiŋ-kiŋ hali nɛ mam na ti kena.,maa ya gbaam lenn ka ya mɔr la kin kin hali ni mam na ti keena,0.5714,0.234
+374,"“Nwadis ayɔpɔi la nyaaŋ, ba na bɔ dap ka ba maal teŋ la nyain, ba na kɛ ka dap sieba mɛ giligidi piisid banɛ kpii wɛɛl la mum.",asayɔpɔi la nyaaŋ ba na bo dap ka ba maal teŋ la nyaai ba na ka ka dapieba mi jiligir piisir ba ni kpii waɛ la mu,0.4643,0.1895
+375,Ka Winaam Siig sig Zakaria onɛ saamme an Jehoyada onɛ da an Maanmaan la zugin na.,winaam seesig zakareya o ni saa ma a jehoyada o ni da a maanmaan la zugu na,0.75,0.2308
+376,Yanamɛ na makid kpaam siem nwa tisid piini: ya na yis kpalaa yinne kpalaas piiga pʋʋgin tis.,ana mi nan maa ki kpaam seem ŋwa tisi piini ya na yiis kpalaa yin ni kpala spiiga poogu ti,0.8824,0.2162
+377,M kʋ zɔɔf nimbaanlig bɛɛ basi fɔ; m sid na yɔɔ fʋ zʋgbɛɛd nɛ tʋʋmkisa banɛ ka fʋ tʋm la lɛbis.,m ku zɔ f ninbaanlig beɛ basifɔ m sir na yaga fo zugbaɛ nɛɛ tuomkisa ba nin ka fo tom la lɛbis,0.7619,0.2639
+378,Ami.,ami,0.0,0.0
+379,ka mɛ an kʋdimin naanam la nyaandɔliba?,ami kormin naanam la nyaandɔl,0.7143,0.3125
+380,"Ka on nyɛ David n waad Zugsɔb la tuon siem la ka o nɛɛs o, o sʋʋnrin.",a on nyɛ david ti waa zugsɔb la ton sheem la ka u nɛɛ sa hu suunrin,0.5882,0.2549
+381,"Nannanna kɛl ka ba basi ba bada banɛ ka ba dɔl wʋʋ ba anɛ puagɔɔnda la, nɛ ba naanam bada banɛ pʋ mɔr gbin la, ka m na bɛɛ ba sʋʋgin saŋa wʋsa.",bannan na kal ka ba basi ba bada ba ni ka ba dɔl woo ba ani poyaagɔɔra la nɛ ba naanam bada ba ni po mɔr gbin la kam na biɛ ba soogun saaŋa wuso,0.5152,0.1852
+382,"Balak da yɛl o ye, “Ninsieba naam Egipt n yina pɛɛl nɛ zinig la wʋsa, ka zin kpie nɛ mam yammin-yammin.",balada yalu ye ninse ba naam ijipti yi na paɛl ni zinig la wusa ka zii kpee ne mam yaamin yaamin,0.8095,0.1923
+383,Linɛ tiaal atan la da gaŋnɛ Zaka ka on nɛ o yidim da laas pii nɛ ayi .,ini ti alata la da gaŋi zaka ka u nɛ u yidim dalias pii na yi,0.5882,0.2115
+384,"Mam onɛ aan ya Zugsɔb Winaam la, m anɛ nyuur sɔb, ka pʋ siak ye m pʋdigi m girima nɛ sɔɔɔ.",a o na aan ya zugsɔb winaam la m ani nnyuul sɔb ka pi siaak ye m pudigim jerima ni sɔ,0.5714,0.209
+385,Anwa ka fʋ ye fʋ mɔr tɔɔg linɛ ka fʋ lɔbi bas Jerusalem teŋ zug la sanam Israel nimbanɛ kpɛlim la wʋsaa?,we ka fo ye fo mutɔŋ lini ka fo lɔbibas jerusalɛm teŋzug la saam israɛl nimbaanikpalim la wusa,0.7727,0.2317
+386,"Zugsɔb la da kɛnɛs Naab Manase nɛ o nidib la, amaa ba da pʋ wʋm tis oo.",ugsɔb la da kees naab manase nɛ u nidib la amaa ba da po wom tisuo,0.4118,0.1509
+387,Amaa ya nimbanɛ kpi la na vʋʋg; ba niŋgbina la na vʋʋgi yi kumin.,amaa nanimbaanikpi la na voo ba nimgbin na la na voogi yi kuumin,0.5714,0.22
+388,yɛlimini o faangir kanɛ ka naar la yɛla daar wʋsa.,eliman u faagir kani kaa naan la yɛla daa wusa,0.8,0.275
+389,"Gɔsim maali yɛl la tɔɔtɔ ka da kɛ ka li yuugɛ, yaa ka alaa ba na duoe tʋm linɛ na kɛ ka m naam la nyɛ pɔɔgir.",si maali yal la tɔɔtɔ ka da kɛ ka li yuu ge yaa kaa la ba nan duori tum linu na kɛ kam naam la nyi pɔaga,0.5185,0.1852
+390,"” Li pʋ yuugɛ ka Winaam Siig Kasi la kpɛnɛm, ka m nyɛ ka naam gbauŋ dig arezana ni ka sɔ zin li zug.",ka yim mu ka winaam siib suŋ la mɔrim ka m nya ka naam gbaŋ dige arizana nii ka sɔ zii lizu,0.6087,0.3378
+391,"Ka bʋnvʋya la yinne wʋsa mɔr kpʋkpama ayuobʋ, ka mɔr nini zinig wʋsa, hali nɛ ba kpʋkpama lɛŋʋn.",a bunvooya la yinni wusamal kkpamayoobu ka ninipiɛli ba pugi ni yi,0.8889,0.5263
+392,Amaa fʋn kpɛlim kpɛla ka m tisif nɔziela nɛ wada dinɛ ka fʋ na paali ba ka ba na dɔlisi li teŋ kanɛ ka m tisi ba ka ba sʋʋg la ni.,maa fo kpalim kpala ka m tisibu noziela ni wada di ni ka fo naa paali ba ka ba na dɔl si li teŋ kan ni ka m naa tisi ba ka ba so gir la ni,0.5625,0.2245
+393,faanmi yis nimbama nuusin; ban banɛ diedi ba yɔɔd dunia kaŋa ni maaa la.,aami yi nibama nuusi ban ba nin deeri ba yau dunia kaŋa ni ma a a,0.7857,0.2456
+394,"Saŋkan la yaa ti paae, Israel na paas Egipt nɛ Asiria.",san kan la yaa ti paa israɛl na paas ijipt nɛ asiriya,0.5455,0.1429
+395,"Hezekia da tis nɔɔr ye ba maal laad dɔɔg Zugsɔb Pʋʋsim Yin la, ka ba sid niŋ ala.",ezekaya datis nɔɔn ye ba maal ladok zugsɔ poosim yin la kaa ba ser niiŋala,0.6667,0.2581
+396,"Kɛl ka Israel dim baŋ ye, nɛ yaa anɛ ti zanas nɛ Zugsɔb la nɔɔr bɛɛ ti tʋbiri zianasi tis Zugsɔb la, yanam da basi ti zinaa.",l ka israɛl dim baŋ ye naayaa ani ti zaan ni zugsɔb la nɔɔr beɛ ti tobri zina ti zugsɔb la yanam da basi ti ʒina,0.4444,0.1895
+397,"Ka linɛ paas anu la gaŋ Malkija, ka linɛ paas ayuobʋ la gaŋ Mijamin.",lenipaasanu la gaŋ malikija ka lenipaasayuobu la gaŋ mijami,0.6429,0.1698
+398,Saŋkan la ba na yis ziid la ya zugin.,akanla ba na yiziid la yazugu,0.6667,0.1786
+399,"Winaam mɛ da sʋŋ Juda dim ka ba niŋ nɔɔr yinne nɛ yaam yinne ye ba tʋm Naab la nɛ o naayikpɛm la yɛl siel la, ka li da anɛ wʋʋ Zugsɔb la pian siem la.",winaam meda soŋ juda dim ka ba niŋ nɔɔr yenni nɛ yaam yenni ye ba tom naab la nɛ unaayikpeem la yalseel la ka lida anɛ woo zugsɔb la pian sem la,0.3889,0.1327
+400,bɛɛ Zugsɔb onɛ gbane li yɛla ka li yʋma zulim la.,zusɔb u ni gbaan li yala ka li yooma zuulim la,0.6364,0.3158
+401,"Ka kɛ ka ba pʋni ba niŋgbiŋ kɔnbilʋg wʋsa ka piesi ba fuud, ka li kɛ ka ba lieb nyain.",ka kɛ ka ba pon ni ba niŋgbinkɔbilig wosa ka piesi ba fuud ka li kɛ ka ba liib nyan,0.35,0.1231
+402,Ba zɔya ka li anɛ banɛ bɔ sanauŋʋ tisi ba mɛŋ.,baoy ka li ani ba ni bɔsaaŋu tisi bam,0.7273,0.2857
+403,"Alaa, duom zien ka paali fʋ girima nɛ fʋ vɛnlim an siem.",a a doom zien ke paali fu girima ni fuvenlim asheem,0.8333,0.2558
+404,Da kɛ ka ti lɔɔŋ Joodan kɔldaug la.,a kɛ ka ti lɔgɔŋ jɔɔdan kodaagla mosis da buos ruben nɛ gad dim la,1.375,1.1111
+405,"O yaa mɛ bas ka li yuugi yuug ka o nyaan yɛl ye on pʋ siakɛ, li ye li ziil nɛ on zug.",amebas ka liyiugiyuu ka u nyaan yal ye u pushaka liye lijiil le u zu,0.8261,0.3115
+406,"” Ka m gɔsi nyɛ maan daka linɛ bɛ ya-dagɔbʋg zaanɔɔrin la, ka baar linɛ duod Zugsɔb sʋnf la zie ani.",am gɔsi nyɛ maan daka leni ba yada gɔbug zaanɔɔnin la ka baa leni duor zugsɔb suunf la zie anii,0.6,0.1711
+407,Ba na nɔk zinibama ka li aan ba kɔnbid kem zinig.,ba nan nɔk jiin bama ka li aa ba kɔbi kem in,0.5455,0.2632
+408,"O da yɛli ba ye, “Lɛmmini ya yaan nɛ arezak titaar linɛ an bʋnkɔbid bɛdegʋ nɛ anzurifa nɛ sanlima nɛ kʋntzɛnug nɛ kʋnt nɛ fuud bɛdegʋ ka ya faaɛn ya dataasin la.",bu da yɛl ba ye la mini yayaa nɛ arizak titaa len a binkɔbr bɛdego nɛ anzurifa nɛ salima nɛ kutzeug nɛ ku nɛ fuud bɛdego ka ya faan ya dataasen a,0.5625,0.2126
+409,Abisai onɛ an Zeruyia biig la da kʋ Edom nidib tusa pii nɛ anii Yaarim Bɔnɔgin la.,abisai on a zuriya biig la da ku edom nidib tuunsɔpiine anii yaari bɔɔgun a,0.5882,0.2154
+410,Pʋn da kɛ ka pua nɔk pʋʋg yʋʋŋ kanɛ; kɛl ka sɔ da wʋm sumalisim tʋkpiidʋgɔ.,bun da kɛ ka puadapoo yuun kane kel ka sɔ da wum sumalisim tikpee a,0.625,0.3621
+411,"Amaa onɛ di dikaŋa la, na vʋe saŋa wʋsa.",tisiadiib aamiŋa lini yii arizana ni la la ka di kani ka winaam tisi ya la ani ini yi arizana ni sik na ka li tisi dunia dim nyɔvur ka ba yel u ye zugsoba tisi bidiikaa sa,3.8889,3.7667
+412,ka ba dataas giligi ba zinig wʋsa ka ba kʋ nyaŋi yii.,a ba dataa giligiba jin wusa ka ba kunyaŋ i,0.75,0.2439
+413,ka banɛ tʋm ka ba yɔɔdi ba dabisir wʋsa la sʋnf na sanam.,ka bani tom ka ba yariba dabsir wosa la sufu na saam,0.6154,0.25
+414,Fʋn nɔŋ sieba la kɔɔm yaa zabid fʋ tisidi banɛ ka ba tigid.,tunnɔŋ seba la kɔm yaazabir fo tisir di ba ni ka ba tee,0.8462,0.2609
+415,"Ala nɔɔ ka ya na maal nɛ pɛribis ayɔpɔi la kuriba ayi, yi.",lanoo kayanan maa ni paribis ayopɔilakurbayi yi,0.9231,0.2273
+416,"Alazug, Zugsɔb la da kɛ ka Asiria zaba kpɛɛmnam kena zabi nyaŋ teŋ la, ka gbane Manase bɔ baŋi tʋʋ o nyɔnya ka lɔɔ o nɛ kʋntzɛnug bana mɔr o keŋ Babilon.",lazuzusɔb la da kɛ ka siriya zaabakpeɛmnam khena zaabnyaŋ teŋ la ka gbaa manase m bɔbaŋi ti u nyoya ka la u ne kuziig ban na m mar u keŋ babilɔn,0.75,0.2773
+417,Ka m nyɛ zaŋguom ka li mɛɛ gilig Winaam Pʋʋsim Yir la.,m nye zanguom ka le miɛ jil winanpoosi yiila,0.8333,0.3571
+418,Saŋkan la fʋ nuubanɛ daa mɔr paŋ la na kirid gba-gba.,sankan la funuu ban ni daa mɔr paŋ la nan ke gbaa ga,0.7273,0.2683
+419,"Ya na nɔk naaraug nɛ pɛraug nɛ pɛribis ayɔpɔi banɛ an yʋʋm yinne, ka ka dɛŋŋa, maal nyuor maan linɛ nyuugʋ malisi tis Zugsɔb la.",a nan nɔŋ naaraag nɛ peraag nɛ periibsi ayɔpɔi ban n a yoom yin ni yinni ka kaa dɛŋa maal nyoormaan lininyuugi maalsitis zugsɔb la,0.8,0.2673
+420,ka li kpɛnɛsim waad ka m niŋgbina wʋsa kpɛn waki.,ka li kpɛnɛsim waad ka m ningbina usaa kpɛnɛ waaki,0.4,0.1538
+421,Yiiga bʋgʋlʋm-bʋgʋlʋm da gaŋnɛ Josef onɛ yi Asaf tuŋʋn na.,iiga bugulimbogulim la da gaŋi josef on yi asabtuŋina,0.8,0.3191
+422,"Kɛlli ka Winaam tisi ya yaam paal, ka li na tiaki ya bɛllim.",le ka winaam tisi ya yaa paal ka li na tiak yabe li,0.3846,0.1957
+423,Yɛla nɛ lababɛɛd na taa-taa taaba kena.,yɛla nɛ lababɛt na taataa taaba kena,0.1429,0.0645
+424,Zʋmaaŋ yinne na paali fʋ yɛla tis zʋmaʋŋ yinne; ba na yɛli fʋ tʋʋm titada la an siem.,umaayinni na paali fu yɛla tee zumaanyin ni ba nan yali fo toom titarala a ee,0.7778,0.3182
+425,Ba da naam Harada keŋ digin Makɛlof teŋin.,harada kendiin makilof teŋ,0.875,0.3824
+426,"” Ka maliak la nɔk o gɔnɔg la yulig dunia la ni pɔn vain wala la, ka nɔki li niŋ zinig kanɛ ka ba nwiakid wala la kuom la.",kamalɛk la nɔk ubɔɔk la pɔɔ vain wee la dunia ni ka nɔk weɛla la niŋziinkan ka ba ŋmikiti wee la kuom la,0.6786,0.4835
+427,Sɔ ka sisiem paŋ ka na tune guoe li.,sɔ ka sishem paŋ ka nan tɔɔ gu ile,0.5556,0.2963
+428,Ka ba nɔk ligidi tis tanmɛɛdib nɛ kampintanam.,ba ba nɔk ligii tistameɛdib nɛ kampintana,0.625,0.1316
+429,"Ya na tisi ba ya zʋʋd linɛ an bʋmpaala ka ya ye ya di la yiiga, ala ka bareka na bɛ yanam nɛ ya yidim wʋsa zugin.",a nan tisi baa yazoor linɛ a bumpaara ka yaye ya de la yiega ala kabareka na bɛ yanam nɛ ya yidim wusa zuguŋ,0.5556,0.1647
+430,"Naab la yaa kpɛn, asɛɛ ka o dɔl zaambɛŋin zaanɔɔr la kpɛn, ka na lɛn dɔl zinikan la yi.",ab la yaa kpɛn ase ka u dɔl zaambɛŋin zaanɔɔra kpɛn kana len dɔl ziinkan la yi,0.4737,0.1364
+431,"Yɛlimi ba ye zʋʋd piini kanɛ ka ba na mɔri maan nyuor maana tisid Zugsɔb la anɛ pɛribis ayi banɛ na an yʋʋm yinne ka pʋ mɔr dɛŋŋa, ka li an daar wʋsa maan.",elima ibaa ye zuud piini kani ka ba nan mɔr maan nyoor maan na ti sir zugsɔb la anɛ paribsayi ba na na a yuum yeni ka po mɔ dɛŋa kaale a daare wusa maana,0.7647,0.25
+432,Nɔkimi naaraad la nɛ pɛraad la nɛ pɛribis la maal zʋʋd maan nɛ bʋnnuuda maan nwɛnɛ ban zieli li kal siem la.,ɔkmnaarad la nɛ perad la nɛ peribis la maazodman nɛ binuudaman ŋun ni ban zee lile kal seem laa,0.6364,0.2558
+433,M na kɛ ka fʋ nyaŋ Ai naab la nɛ o nidib nɛ o tempʋʋg la ka teŋgbauŋ la na liebi ya din.,m nan kɛ ka fo nyaŋ ayinaab la nɛ u nidib nɛ u tempoog la ka teŋgbɔŋ la nan lɛbi yadi,0.5217,0.2
+434,Ka maliak la nɔk tudaari laa la muoe bugum bimbim la zugʋ pɛɛl laa la lɔbigi li dunia ni.,ka malɛk la nɔk tidaarilaa la muon bugumbimbim la zuu mpeɛl laa la m lɔbigi li duniya ni,0.5263,0.1286
+435,"Nid na nɔk o yaam nɛ baŋir nɛ miilim tʋm o tʋʋma, ka di an tilas ye o bas on paam siel wʋsa la tis ninkanɛ pʋ namisi di yɛlaa.",id nanɔkuyaam nɛ baaŋir nɛ miilum to mo tooma ka di a talaa shee u bas n paam shel wosa la tisninkani ponamse le yɛla,0.7667,0.2421
+436,"Ba da pʋdigidi tisidi ba maanmaan taaba la wʋʋ lin nar siem, ninkʋda nɛ dasam wʋsa.",baporgi tisi di baa maanmaan taaba la woo li na seem ninkora ni da saambu sa,0.875,0.2879
+437,Ala ka li na kpɛm bɛ teŋgbauŋ la zug.,alaika li na kpenbe teŋgbɔŋ la zu,0.6667,0.25
+438,"Josua nɛ o nidib la da nyɛ ka o nidib la nyaŋi nyuoe teŋ la, ba da kpɛn fɛndignɛ gbane Ai nidib la kʋʋb.",josua nɛ u nidib la da nyɛ ka u nirib la nyaŋɛnnyuoi teŋ la ba da kpem fedigne gbaan aa nidib la koo,0.4167,0.2152
+439,"Dinzugɔ, Winaam kɛ ka ti an pʋpielim dim o tuon ka li yinɛ ti yadda niŋirin la, ti mɔr sumbʋgʋsʋm Winaam sanan, ka li anɛ ti Zugsɔb Yesu Kristo maasim la zug.",dinzugɔwinaam kɛ ka ti a popielim do mu toon ka li yii ni ti yada niŋir la zug ka linzug ka ti na naalim ni winaam ka li a ni ti zusɔb yesu kristo maasim la zugi,0.7188,0.3008
+440,Ka m gɔs ka nyɛ Pɛbil la zie Zion zuorin linɛ an Jerusalem la.,agoska peebil la jie zayn zuoren eruselem ni,0.9286,0.4583
+441,"Tɔ, ka m vʋʋg ye li an sʋm ka nar ye ninsaal dit ka nuud ka paam sumalisim o namisʋg tʋʋma la pʋʋgin dabisa biela banɛ ka Winaam tis o ka o vʋe la.",tɔ ka m vuo gee li a soom ka naari ye ninsaal dib ka nuu ka paa m sumalisim namisog tooma la poogin dabsa bie la bani ka winaam tis u ka u voe la,0.5882,0.1875
+442,Ba yʋda da anɛ: Adina nɛ Jozabad nɛ Jediael nɛ Maikel nɛ Jozabad sɔ nɛ Elihu nɛ Zilataae.,yuaan adina nɛ jozabat nɛ jedai nɛ maikel nɛ jozabat sɔ nɛ elihoud nɛ zilatai,0.5,0.2286
+443,"Linɛ lɛm paas la, ya na yis pɛɛsʋŋ yinne pɛɛs kɔbisyi wʋsa pʋʋgin, Israel teŋin zinimaasa la ni.",li ni len paar la ya na yiis pɛɛsoŋ yin ni pɛɛs kɔbus shi wosa poogin israɛl teŋin ziin maa sa la ni,0.8889,0.2105
+444,"Amaa nid yaa dig o kɔnɔkɔn, li na niŋ wala an wamm nɛ?",amaa nib yaa dig u kɔɔkɔnɔ le nan niŋ wala n waami na,0.6154,0.25
+445,Alazug ka m kisig dunia nwa bɛllim bɔzugɔ li anɛ namisʋg nɛ sʋnsaaŋi tisim.,lazuu kam kisig dunia nwa belim bozugɔ le anɛ namso na yi susaaŋi tisi,0.7857,0.2459
+446,Nidib la wʋsa da gbane ye ba na di malʋŋ la daba ayɔpɔi paas; alazug ba da lɛm maal sumalisim daba ayɔpɔi yaas.,idib la wosa dagbaa ye ba na di maaluŋ la daabayɔpɔ paas alaazug la ba da la maal sumalisim daabayɔpɔ yaa,0.5652,0.2069
+447,Dap bama ka Zugsɔb la da tisi ba nɔɔr ye ba pʋdig teŋ la tis Israel dim la Keenan teŋin la.,abama ka zugsɔb la da tisi ba nɔɔr ye ba pudug teŋ la tisi israɛl dim la kenan teŋin la,0.2857,0.1
+448,Ban daa an siem nwa: Banɛ banad widi la daa yɛnɛ zaba gbantiedis linɛ muoe nwɛnɛ bugum ka an sabilig nɛ dɔnbʋʋlim.,banas bani baar wiidi la daa ye ni zabafuur lini muen wonni bugum ka aa sabli ni tɔnpoo lo,0.8636,0.4505
+449,"” Ka m wʋm banɛ ka ba zanbili ba nɛ Winaam zanbina ba gbɛɛdin la kal, ka li an tusa kɔbiga nɛ tusa pisnaasi nɛ anaasi ka yi Israel dim dɔɔd la wʋsa ni na.",m wom ban ni ka ba daa zabi liba ni winaam zabin ni ba beɛr ni la kan li daa ani tusa kɔbuga ni tusa piisnaasi ni tusanaasi nidib ka yi israel dim dɔɔr wusa la ni,0.7647,0.3675
+450,"“Ieemi baans, bɔzugɔ teŋ la pɛɛli nɛ ninkʋʋr ka tempʋʋg la pɛɛl nɛ taawai.",yemi baans bozugɔ teŋ la paɛl le ni nikoor ka tenpuog la piɛl lee taa waa,0.7857,0.3103
+451,Ba waŋim nɛ kpɛlim kɔnba maaa.,waaŋi me kpelim kobama,1.0,0.375
+452,Zugsɔb la mɛ yʋʋn na mɔr yɛla kɛɛn fʋ zugin na.,zugsɔb la mayon na mɔr yɛla ke fo zuguna,0.5455,0.25
+453,"Amaa sɔ yaa tɛnɛs ye diib bɛɛ an dianad, li anɛ dianadi o sɔb sanan.",maa sɔ yaa tinɛs ye li di bee aadinad li ani dinasaan,0.7333,0.3462
+454,Ba da nɔknɛ kugvɛnla linɛ yʋʋri buon pɛɛl la maal kʋlis zaanɔya pii nɛ ayi la.,ani kuuenla lini yuur buon peel la piinayi kaa,0.875,0.5645
+455,Jehoyada saŋa la wʋsa nyuor maan da pʋ viigid Zugsɔb Pʋʋsim Dɔɔgin la.,e u yada saŋa la wosa nyooni maan dapa viigi zugsɔb puosom dɔgin la,0.7692,0.2281
+456,Gbauŋ la da sɔbnɛ nɛ Aram buudi pianad.,baŋ la da sɔb nɛ arabbudi pi,0.625,0.3226
+457,M nan kpɛn mɔr nɛ tiir: m na nyɛ Zugsɔb la tʋʋm sʋma.,n nan kpa mɔri nɛɛtiir na nyɛ zugsɔb la tiwom soma,0.6154,0.2564
+458,O da gaŋ o zabzabidib tuongatib sieba niŋ Aram dim sʋʋlimin linɛ bɛ Damaskus la.,dagaŋi u zabzabdib tuon gatib seeba nin aram dim soolimin lenee bɛ damaskos la,0.7333,0.1846
+459,Ya na nɔk naaraug kanɛ na maal tʋʋmbɛɛd maan la nyuoe li Pʋʋsim Yin la yiŋ zinikanɛ nar ye ba nyuoe li la.,ananɔk naaraa kanɛ na maal tiwombamaan la n nyuo li poosum yin la yeŋ ziinkan nin naar ye ba nyuu i a,0.6957,0.3012
+460,Ala ka yanam nɛ Winaam nidib wʋsa na paam Siig paŋi nyaŋi baŋ Yesu nɔŋilim waam ka labis ka dʋ ka zulim siem.,kye ka yanam laam ni winaam nirib wusa na paa paŋ m na nyaŋi baŋ yesu nɔŋlim waam kaa labis kaa do kazulm see,0.6957,0.2907
+461,"Amaa o sid la yaa wʋm ka pʋ siak kaanb kanɛ yii o nɔɔrin na laa, o kʋ yɔɔ, bɔzugɔ o sid la sanami li paŋ ka Zugsɔb la kʋ gbane pua la li yɛlaa.",maa u sir la yaa wom ka po sia kaan ka ni yiu u nɔɔrin na la u ku yau bozugɔ u sir la saami li paŋ ka zugsɔb la ku gban pua la le yala,0.6571,0.2264
+462,M dataas la wʋsa wʋmi m sʋnsaaŋ la yɛla; ba maannɛ sumalisim fʋn kɛ ka tɔɔg paam la zug.,dataas la wusa wuumim susaaŋ la yɛla ba maan ni sumalisim fon ke katɔɔg paam la zu,0.6316,0.1471
+463,Anɔɔnɛ na nyaŋi puns o nini ka gbane o?,n na nyaŋi pusu nini ka gbaa,0.5556,0.3333
+464,Merari biribis da anɛ: Mahli nɛ Musi: Jaazia biig da anɛ Beno.,araaribiribis da anɛ mahili nɛ mushi jaasia bii daanɛ ben,0.75,0.1667
+465,"Amaa ya yaa tɛnɛs ye Zugsɔb la dɔllim ka sʋʋm tisi ya, yanam on gaŋim zina onɛ ka ya na dɔl.",maa ya yaa tɛnɛs ye zugsɔb la dɔlim kaa soom tisi ya yanim un gaŋim zi na u ni ka ya nan dɔgɔ,0.5714,0.1714
+466,"Asida, ya sid na baŋ o nɔŋilim linɛ gat nidibi na tune baŋi li siem, laan nɛ din tɔi nɛ yanamɛ na nyaŋi baŋi li wʋsa ka li kɛ ka ya pɛɛl nɛ Winaam bɔɔdim la.",ka baŋ u nɔŋilim lini gar niribi na tuon baŋi li seem hali bun lini wusa yir winaam saan na la na paɛli ya,0.8333,0.563
+467,ka m bɛllim la pʋ mɔr gbaarɛ; m tisnɛ fʋn sida.,anbalim la pumɔr gbaarɛ m tisi ne fun sa,0.8182,0.2857
+468,"Bimbim banɛ ka ya maan maana ka nyɔɔd bʋnnyubisa la wʋsa m na nwaa ba, ka kʋʋ ya nidib la ya bada la tuon.",ibaikayamaanmaana ka nyɔr bunyuub sa la wusa m nan waa ba ka ku ya nirib la ya barda la twon,0.625,0.2346
+469,"Asɛɛ ninkʋʋd la bɛ suak zinig la, hali ka maanmaan kpɛɛm la ti kpi: li anɛ maanmaan kpɛɛm la yaa ti kpi ka o nyaan lɛb o mɛŋ yin.",saa ninkood la besuzinig la hali ka maalmaan kpɛɛm la ti kpi la ane maalmaan kpeɛm la yaa ti kpi ka u yaan lɛb u mingiin,0.5172,0.2041
+470,Aser na die pʋʋr yinne; li na tɔnd nɛ Dan teŋ la lin yi ya-nyaaŋi paae ya-tuona la.,sal na dee poor yinni li na tɔ ni daan teŋ la le yi ya nyaaŋi paai yaa toon na a,0.8333,0.2903
+471,Naab Jehosafat da anɛ yʋma pistan nɛ anu ka di Juda naam.,a josafattida ani yumapistaani anu ka di juda naa,0.6667,0.2667
+472,"Bama anɛ dap banɛ luaki ba mɛŋ nɛ puab ka an nyain, ka dɔl Pɛbil la ken on ken zinisia wʋsa, ka nyɛ faangir ninsaalib sʋʋgin, ka an yiiga dim wʋʋ waldɛɛnna banɛ ka ba zaŋi tis Winaam nɛ Pɛbil la.",ba ani dap ban ni lɔkk ba maŋ ni pɔɔb kaa nyain ka dɔl peebil la kiŋ zinin kan ka u kiŋ wusa ka nya faangir ninsaalib soogin ka aa yiigaboon wala ban ka ba zaŋi batis winaab ni peebi a,0.7561,0.3444
+473,"Ka m yɛli m sʋʋnrin sa ye, “Nɛ mɛ ka gbinnɛ.",m yɛlim suunrin sa ye nɛɛ mi kaa gina,0.7273,0.3226
+474,Ya yɛt ye ya anɛ kpanam dim ka mɔr dinɛ ka ya bɔɔd ka siel pʋ pansigi yaa.,anam ye ya ya ani kpaam dim ka mɔr dini ka ya bɔɔr wusa ka seel pu pasigi ya,0.6667,0.3214
+475,M mɛ kʋ lɛn zɔɔ ya nimbaanlig bɛɛ bas ka ya pɔnsɛ.,me ku len zɔɔ ya nimbaanlig beɛ baska ya pon son,0.75,0.2105
+476,Zaba la na kɛ ka ba zɔɔ widig.,abla na ke ka ba zo,0.625,0.4545
+477,Bama wʋsa da anɛ zabzabidib banɛ gbane nɛ ba sʋʋnr wʋsa ye ba keŋ Hebron teŋin diis David naam.,ama wusa daa ani zabzab di ban ni gbaa ni ba suunr wosa ye ba keŋ hibron teŋin dees devid naa,0.8421,0.25
+478,"Israel naab mɛ da nyaŋ o, ka kʋʋ o nidib la bɛdegʋ.",isal naab meda nyaaŋu ka koo u nidibilaberego,0.8333,0.3158
+479,"“O yaa kaanb ala naae bɛɛ o nɔɔri fan ka o gbane ye o na maal siel ka kul sid ka o sid la wʋm ka pʋ yɛl o siela, on kaanb ka gbane siel la asɛɛ ka o yɔɔ li.",yaa kaanbalaa naa baɛ u nɔɔri fa ka u gbaa ye u nan maal seel ka kul si ka u sir la wom ka pi yal u shee la un kaanb ka gbana seel la ase ka u yɔi li,0.6585,0.2478
+480,O da bɔ linɛ lusid nyɔɔg la nɛ kpana niŋ tɛɛns la wʋsa ni ka li kɛ ka tɛɛns la wʋsa kpiem.,udabɔ le ni lu sidinyoɔg la neekpana nintɛn la wusa ni ka li kɛ ka tan la wusa kpeeŋa,0.6364,0.2647
+481,"Hanania yaas yʋda da anɛ Pelataya nɛ Jesaya, nɛ Refaya nɛ o biribis nɛ Anan nɛ o biribis nɛ Obadia nɛ o biribis nɛ Siekania nɛ o biribis.",anania ye ashura daanɛ palataya nɛ jesaya nɛ refaya nɛ obilibis nɛ anan nɛ obilibis nɛ obadaya nɛ ubilibis nɛ siakenia nɛ ubilibis,0.5714,0.1481
+482,"Onɛ nyaŋ yɛlbɛɛd wʋsa na ti yɛ fupiela wʋʋ ban nɛ, m kʋ kpiis o yʋʋr nyɔvʋpaal dim gbauŋʋn laa, ka na yɛli m Ba nɛ o maliaknam la sanan nyain ye o anɛ man nid.",ni nya yalbee wusa la na ti ye fupeela woo ban ni ka m ku pii suyuur nyovur paal dim gbauŋin laa ka nan yeli mbaa ni u maleknam la saan yain ye u ane mam ni,0.8056,0.3223
+483,ka waad linɛ maad sim-sim la yit ya-datiuŋ na.,kawaa le ni maa siimsiim la yit yada teŋ na,0.7778,0.2286
+484,Ba da maal Levi dim la wʋʋ Zugsɔb la da yɛl Moses ye o niŋ siem la.,bada maal levi dem la woo zugsɔb la daa yel mosis ye u nim sem la,0.5882,0.18
+485,Juda dap la wʋsa nɛ ba puab nɛ dasam nɛ biis da zien ani Zugsɔb la tuon.,uda dap la wosa ne ba pɔab ni dasam ni bii da zie na ni zugsɔb la tuon,0.5882,0.1273
+486,Man Paul anɛ sanrega nid Kristo ni ka li anɛ yanam banɛ ka Jew dim la zug.,man pɔl be sarga ni yesu kristo zu ya nan buur bani ka juu dim a,0.8235,0.5088
+487,"Ka banɛ kpɛlim la wʋsa sid da sʋŋi ba nɛ sanlima nɛ anzurifa nɛ laasieba nɛ bʋnkɔnbid nɛ piinsʋma, laan nɛ ba yaamlɛog piini.",ban ni kpalim la wusa si dasuŋiba nɛɛ sanlima nɛ anzurfa nɛ laasheeba nɛ buŋkɔbir nɛ piinsoma laa nɛ ba yaam la kpiin,0.7083,0.22
+488,bɛɛ o mɔr nyɛlʋg nɛ ninsaalib nɔba kpiem siem; Zugsɔb la yaamlɛog bɛ nɛ nimbanɛ zɔt o.,ben u mɔr yaamlɛg ni ninsaalib nɔba kpeem seem zugsɔb la yaaml be ni nim ban n ɔ ti,0.8235,0.2794
+489,Daba anaasi daar la ba da laas taaba Beraka Bɔnɔgin zune Zugsɔb la.,aabanaasedaara ba dalaastaaba berɛka bugigin zuoi zugsɔb la,0.7692,0.1852
+490,"David da yii tʋʋsi ba, ka yɛli ba ye, “Ya yaa kennɛ m sanan na nɛ sumbʋgʋsʋm ye ya sʋŋim, m na siak ka mam nɛ yanam niŋ nɔɔr yinne.",devid dayii toosi ba ka yali ba ye ya yaa keni ana nɛ subogisim ye ya soŋim m na siak kama nɛ yanam ninɔɔr yinni,0.5333,0.1959
+491,"Tinam mɛ na dɔl Zugsɔb la, bɔzugɔ o anɛ ti Winaam.",tinamena dɔl zugsɔb la bozugɔ ani ti weenaa,0.6364,0.2105
+492,"nwaar saŋa bɛ nɛ, ka mɛɛb saŋa bɛ; kukuma saŋa bɛ nɛ, ka laab saŋa bɛ.",ŋaan saŋa be ni kameeb shaŋa be kikuma saŋa be ni kalaab saŋa ba,0.8125,0.2549
+493,"Man da kʋ bʋnkpɛŋ wʋsa Egipt teŋin la, m da bas ban nɛ ye ba an man din.",an da ko bikpeŋ wusa ijipt teŋin la ndabas ban nɛ ye ba aan manden,0.6111,0.2075
+494,"Zugsɔb la aan m paŋ nɛ m gbantiedʋg; on ka m tis sida, ka nyɛt sʋŋir.",zugsɔb la an paŋ nɛ m gbanteerig on kam ti sira ka nya soŋa,0.5625,0.2353
+495,Bama mɛ da an Levi tuŋ: Libni dim nɛ Hebron dim nɛ Mahli dim nɛ Musi dim nɛ Kora dim.,bama mɛda a levi tuŋ libni dem nɛ hibron dem nɛ mahili dem nɛ mushi dim nɛ kooda dim,0.5,0.1406
+496,"Daasierɛ, linɛ kɛ ka o daa yii fʋ sanan saŋa biela la, anɛ ye fʋ lɛn die o yaas ka o bɛɛ fʋ sanan saŋa wʋsa, ka lɛn ka fʋ yammʋga, amaa o gat yammʋg; o yʋʋn anɛ fʋ baabinɔŋir.",aseerlini ke ka u daa basi fu saan saŋa bie la la ani ye fu len die u yaas ka u be ni saŋa mikama yoos ka len kaa fu yamuk maan nee hali u ga yamuk ka yuuŋ aabaa binɔŋa,0.825,0.4462
+497,ka li namis saalibi ba tʋʋmbɛɛd zug.,kale namis saali be ba toombɛɛt zu,0.8571,0.2069
+498,"“Pʋkɔɔnr bɛɛ pua kanɛ ka o sid kad o yaa kaanb bɛɛ gbane ye o maal siel, asɛɛ ka o maali li.",bikɔɔr bɛɛ puya kan ni ka u si kadu yaa kaa baɛ gbaa ye u maal sheel asɛ ka u maal ele,0.7727,0.3088
+499,"Li na keŋ ala paae Zedad, ka mɔr ala ti paae Zifiron ka naae Hazarenan teŋin.",inaa keŋa laa paa zedak ka mɔr ala ti paa zifiron ka naan hazarenan ta,0.5625,0.1833
+500,Ba da naam Tera keŋ digin Mifika teŋin.,tera kendigin mifaka teŋ,0.875,0.3871
+501,"Zaba laaziid la da nyɛ ka Saul kpi la, ka on mɛ fuoe o sʋʋgʋ ba, ka mɛ bas o mɛŋi lii li zug, ka ba wʋsa laam kpi.",aabalazid la daa nyɛ ka sɔɔl kpi la ka u ma foo soogi baa ka meɛ basa u mɛŋ li li zubo ka ba usa laa ki,0.6552,0.3171
+502,"Ka laan nɛ on yuug siem la, o yaa kʋ dii o arezaas la malisim o vʋm saŋa ka kpi ka pʋ nyɛ kʋʋrɛ, bikpiiŋ sɔnoe o.",laan u yiu seem la u yaa ku di u arezaal la malisim u vom saaŋa ka kpi ka po nyɛ koorɛ bikpeŋ sɔŋ,0.6667,0.3095
+503,"Ka nwadis anu nwa saŋa, nimbama na ieed kum ka kʋ nyɛɛ lii, ka mɛ na bɔɔd kum, ka kum na zɔ ka basi ba.",ŋar sab nuwan saŋa niinbama nan eer kum ka kunyeen lee ka mi na bɔɔr kum ka kuum na okaba sab a,0.68,0.3333
+504,"Nɛ anɛ linɛ dɔl suori tis Israel dim wʋsa, wʋʋ Zugsɔb la tis Moses nɔɔr siem la.",ni a ni lini dɔl suori tisi israɛl dim wosa woo zugsɔb la tisi mosis nɔɔr seem a,0.7059,0.1935
+505,bɛɛ kɛ ka pʋkɔnya gɔsi m nini ni ti tadig ka pʋ nyɛ siela.,bɛ ke kapukonya gosib nini ni ti tarik ka po nyɛ shee la,0.7143,0.25
+506,banɛ waam hali la na li teŋin na.,an waam hal la na li teŋinna,0.5,0.12
+507,"Teŋ kanɛ ka ya bɛ la yaa an bɛɛd, yanam kem Zugsɔb la teŋin na, zinikanɛ ka o Fuug Sʋgʋr bɛ la, ka tinam nɛ yanam pʋdigi ti paalʋ la.",teŋ kani ka ya be la ya a bɛɛ yanam kim zugsɔb la teŋin na zii kani ka u fuusokur be la ka tinam nɛ yala pudigi ti paalo la,0.5,0.18
+508,"Dinzugɔ, Zugsɔb onɛ aan ya Winaam la ziel nɔɔri tisi ya ye, ya tɛnr Vʋʋsʋm dabisir la.",dizugɔ zugsɔb o ni aan ya winaam la zeel nɔɔri tisiya ye ya tenr voosim daara,0.5882,0.1791
+509,"Amaa Elihu onɛ an Barakɛl biig ka an Ram yir nid ka yi Buz na la da bɛɛ ani, ka o sʋʋnr da pɛlig nɛ Job hali, on tɛnɛs ye o anɛ pʋpiel ka nyɔn Winaam la zug.",amaa elihu o na a belekel bii ka a ram yirnitd ka yi bus na la dabee ni ka bu suun dapalig ni job hali on tan see anɛ popiel ka nyaŋ winaam la zu,0.6053,0.2393
+510,"Ka o yɛlim ye, “Ninsaal biiga, fʋ nyɛ ban maan sielaa?",u yɛlim ye ninsaal biiga fo nye ban maan sela,0.4545,0.175
+511,"Winaam nini na tig banɛ wʋsa dɔl Kristo anwa, ka saalib mɛ na dii ba kasɛt sʋŋ.",ka on mikama dɔl kristo anwa nan malis ni winaam ka nye naasi,0.8235,0.6066
+512,O da tʋm linɛ an sʋm ka nar ka an sida o Zugsɔb Winaam la nini ni.,daatum leni a som ka nar ka an sida u zugsɔb winaam la ninini,0.5294,0.1633
+513,Ka Zugsɔb naam pipilim la dɔl zaanɔɔr kanɛ kpa ya-nyaaŋ la kpɛn Pʋʋsim Yin la.,azugsɔb naam pipiilim la dɔl zaanɔɔr kan ni kpaa yayaaŋ la nkpɛɛn poosum yinila,0.7333,0.1935
+514,Ka Winaam na ɛɛns nintaam wʋsa ba nini ni.,winaam na siinto mbusɔba ninini,0.7778,0.3333
+515,"Zugsɔb la da tis nɔɔr ka Aaron onɛ da an maanmaan la dʋ Hor zuor la zug, zinikanɛ ka o da kpi nwadkanɛ paasid anu la pinilʋg daar, yʋʋm kanɛ paasid pisnaasi Israel dim la da yi Egipt na la.",zugsɔb la da tis nɔɔr ka aarɔnn oɔni da a maanmaan la do hɔr zuo la zu zii kani ka u da kpi warkanipaasi la nu la piilug daal yom kanipaasi piisinaasi israɛl dim la da yi ijipti na la,0.525,0.1973
+516,"Ani ka Zugsɔb la yɛlim ye, “Da daami Moab nidib la bɛɛ ya kɛ ka ba sʋnya duoe ka ba zab nɛ ya, ka m kʋ tisi yaa ba teŋ la zinisia baa bielaa.",ni ka zugsɔb la yalim ye dadaammi muab nidib la baɛ ya ka ka ba sunya duoi ka ba zab ni ya kam ku tisiya ba teŋ la zinsia baa bie la,0.5294,0.125
+517,"Li mɛ anɛ tilas ye o lɛm maligim pɛsig o mɛŋi tis Zugsɔb la saŋkanɛ ka o daa gbane ye o wɛlig o mɛŋ la, ka mɔr pɛbil kanɛ an yʋʋm yinne na maal taal maan.",i mi ane to laashee u le maligim pasig u mɛŋi ti zugsɔb la saŋkani ka u daa gbaan ye u wɛlig u maŋ la ka mɔr pɛbil kani a yuum yenni na maaltaal maan,0.6111,0.2222
+518,Zugsɔb pian Siebna nɛ Eliakim yɛla.,ugso pa sheeb na nɛ eliakim yaa,0.8333,0.3103
+519,"Labaar la da paae la, Israel buudi la da tisi ba bʋndɛɛnna laad nɛ ba zʋʋd nɛ ba danpaalig nɛ kpaam nɛ siind nɛ linɛ wʋsa aan ba pɔɔg zʋʋd.",labaaa da paai la israɛl buudi la da tisi ba bundena lad nɛ ba zoor nɛ ba danpaalig nɛ kpaab nɛ siind nɛ line wusa aa ba pɔɔb zoo,0.4333,0.1852
+520,” Ka o biig Jotam da lɛdigi di naam la.,a o bii jotam da lɛrigede naam la,0.4444,0.1786
+521,Ka ba siilima nwɛnɛ kuusa banɛ kpa gbane sʋʋŋa.,ba see le man wene kuusa ban ni kpa gbaa seuŋa,1.0,0.3421
+522,"Zugsɔb onɛ aan ya Winaam la gaŋi ya yis nidib bɛdegʋ sʋʋgin dunia nwa ni, ka ya aan o nyɔɔrin kɔnbʋg.",zugsɔb o ni aan ya winaam la gaŋa yaa yiis nidib bɛdego soogin dunia wa ni ka ya aa u nyɔɔriŋ kɔɔ bi,0.619,0.1772
+523,O bikanɛ paas atan la da anɛ Absalom ka o ma yʋʋr buon Maaka ka an Talimai onɛ an Gesur naab puayua la.,ikani paasata la daa ana absalom ka u maa yorbuomaaka ka a talimai o na a gezuu naab poayua la,0.7391,0.2125
+524,Jotam da paam paŋ hali bɔzugɔ o da dɔlli Zugsɔb Winaam la nɛ o sʋnf wʋsa.,otam dapaa paŋ hali bozugɔ u dadɔ li zugsɔb wenaam la nɛ u suf o s,0.75,0.2105
+525,"bɛɛ tɛnɛsi m pʋtɛnɛrin ye, ‘Sanlim sʋma ka man tie,’.",tesi potɛɛrin ye sanlim soma kaat,0.8,0.359
+526,Gaŋim dɔɔg wʋsa sʋʋgin dap tusir ka ba keŋ tanp la.,aŋim daɔ wusa sojanam dap tunsur ka ba keŋ tap la,0.5455,0.325
+527,"Job, an baanlimm ka wʋm; kɛlisimi m pianad la sʋʋŋa.",job a baalim ka wom kalsii pin la suŋa,0.7,0.325
+528,Amaa o da nɔk Jehoahas n zii o keŋ Egipt teŋin.,amaa udanɔk joas n ii u keŋ ijipt teŋin,0.6364,0.25
+529,“Albareka bɛ nɛ onɛ yalig Gad sʋʋlim.,ka mee yel josef yala ye zusɔb naniŋ,1.1429,0.8276
+530,Naab la na yi yiŋi dɔl zaanɔɔr la kpɛn dɔl zaanɔɔr linɛ bɛ zaambɛŋin la keŋ zien zaanɔɔr la baba.,ab la nan yi yi ŋidɔl zaanɔɔn la kpɛn dɔl zaanɔɔn lini be zambɛŋin la nti zeen zaanɔɔn labaa ba,0.7,0.1818
+531,"Maanmaan la da di siel linɛ an niiŋ bɛɛ bʋnkɔnbʋg kanɛ kpii digi, bɛɛ bʋnkɔnbsia na kʋʋ o tiraana.",maanmaan laa da di sheel lenɛ a niim bɛɛ benkɔb ka ni kpiidige bɛɛ beŋkɔbsea na koo u teraana,0.6842,0.2564
+532,"Zugsɔb la yaa ti tiɛn o nuug, onɛ sʋŋid la na tuug.",zugsɔb la yaa ti teen u nuu u ninsoŋi la na ti u,0.5833,0.2895
+533,"Solomon da bas nɛɛnam wʋsa ka pʋ maki li tɛbisim, bɔzugɔ li da zuonɛ galis.",tolomon dabas ne nam wusa ka po ma ke li tɛbsi bo zugɔ lidazone gaali,0.9333,0.2203
+534,"Onɛ mɔr tʋba na wʋm, on wʋm linɛ ka Winaam Siig Kasi la yɛt karindɔɔd la.",ni bɔɔr ye wum ala u kelisim leni ka winaam sisum la yet winaamnii,0.8125,0.625
+535,ka ba nɔk daadi kpa puug yir wʋsa zaanɔɔr.,ka banɔ daar kpa puug yir wosa zaanao,0.5556,0.2121
+536,Ya na nuu li bug ka ken biel nɛ nyan.,ananuulibuk kaken biel ni ya,0.9,0.1852
+537,"Lina kɛ ka ba buon zinikan la ye, Akor Bɔnɔg la.",li na a kɛ ka ba buon ziinkan la ye akɔr bɔɔg la,0.5455,0.1389
+538,Kugbanɛ ka ba da ɛɛnb yiiga la da anɛ jaspa.,ka yiiga een bil kuuga la daa a ni yaso,0.9,0.6471
+539,Moses da yɛl Israel dim Zugsɔb la tis o nɔsia la wʋsa.,mosis daa yeli israɛl dim zugsɔb la tees o nɔshia la wosha,0.5833,0.2381
+540,"Ka o duoe zien nidib la tuon ka yɛli ba ye, “Winaam buos ye, ‘Bɔ ka ya zanas Zugsɔb la nɔɔrɛ?",ka u duo zeen nirib la toon ka yali ba ye wiinaam boos ye bɔ ka ya zaa zugsɔb la nɔɔri,0.4762,0.1618
+541,"O mɛ da mɛ bada zinis linɛ bɛ Juda zuoya la zug, ka kɛ ka Jerusalem dim yʋʋn tʋm nwɛnɛ puagɔɔnda nɛ ka kɛ ka Juda kpɛn mɔɔg.",mɛ badazinins lini bɛ judassuoya la zu ka kɛ ka jerusalam dim yuun tom woni pɔagonda nɛ ka kɛ ka juda kpɛ maɔ,0.5714,0.2421
+542,"Gɔsim Zugsɔb la, Zugsɔb Paŋtitaar Sɔb la.",zugsɔb la zugsɔb paŋ kikaa sɔb la,0.4286,0.2424
+543,"Ti yɛt naab la nɛ ye, ba yaa mɛ tempʋkaŋa nɛ li zaŋguoma la wʋsa lɛbisi ziel, fʋ kʋ lɛn nyɛ siel Efiritis Kɔldaug Lɔm la yaasɛ.",ti yanaab la ni ye ba yaa ma timpokaaŋa nɛ li zanguoma la wusa lɛbsizeel fo ku lan nya sel efiretes koodaaga lɔbm la yaasan,0.6667,0.2551
+544,Ban sadigim fɔn ka zi ban na lɛbis o siem la.,ban sadga fɔ kazee ban na lɛbso seem la,0.6364,0.2353
+545,"Ka li anɛ ba pʋtɛnɛr linɛ ka sida kae la, kɛ ka ba fɛndig ka bas mam, wʋʋ sɔ na bas o pua ka bɔɔd pua sɔ, ba nini nyɛti ba bada la kɛ ka kʋkɔmaasim kpɛn ba.",a liani ba potɛɛr lin kasera kae la ke ka ba fedi ka baas mam u sɔ na basupɔa ka bɔɔr pɔa sɔ ba nini nya ti babada la ka ke kakkɔmaasim kpeɛ a,0.6316,0.2348
+546,"Yaa kpɛlim zaambɛŋ la lɛbisid ya-tuona la, nidiba anaasi da guud ka bɛ suorin la, ka ayi bɛ zaambɛŋin la.",a kpelim zaambɛŋ la lɛbisi ya tuo ya la nidibaanaasida guut ka be suorin la ka ayi bɛ zaambɛŋin la,0.5,0.0854
+547,Naab David da lɛn tis Israel kpɛɛmnam la wʋsa nɔɔr ye ba sʋŋ o biig Solomon.,ab david da lan tis israɛl kpeemnam la wusa nɔɔr ye ba suŋ u biig solomon,0.4375,0.15
+548,"Zugsɔb la da yɛl Moses ye, Elieza onɛ an maanmaan la nɛ Josua onɛ an Nun biig la na pʋdig teŋ la tisi ya.",zugsɔb la daa yeli mosis ye eliaza on a maanmaan la nɛ josuwa onɛ a nuun biig la na pudig teŋ la tisiya,0.5,0.125
+549,David da an naab Jerusalem teŋin nɛ yʋma atan.,dvid daaanaab jerusalɛm teŋin nɛ yoma ataa,0.7778,0.1351
+550,"Lɛmmini ya yaan, teŋ kanɛ ka Moses onɛ an Zugsɔb tʋmtʋm la da tisi ya, Joodan kɔldaug gbɛkaŋa la.",la minni ya yaan teŋ kani ka mosis o ni a winaam zugsɔb tumtum la  a tisi ya la jɔɔdan koɔdaa gbe kaŋa la,0.7895,0.3026
+551,O da mɛ bimbima ziel tempʋbanɛ wʋsa bɛ Juda ye ba maan bada ka li duoe Zugsɔb onɛ aan o yaanam Winaam la sʋnf.,udami bimbima ziel tempo bani wusa be juda ye ba maan bada ka li duoi zugsɔb o ni aan u yaa nam winaam la suŋi,0.5833,0.1395
+552,Ninkanɛ kis yɛlsida na tune an naaba?,ikani kis yelsera natɔ aaaa,0.8571,0.4
+553,Israel dim la da keŋi paae Moab zinikanɛ an sassi ka bɛ Joodan lɔm lɛbisid Jeriko tempʋʋg la baba.,isral dim la ke ŋipaa moab zikann a saasi ka be jɔɔdann lɔb n lɛbise jeriko tepoog labaaba,0.7895,0.2658
+554,"O ma yʋʋri da buon Maaka, onɛ an Uriel onɛ yi Gibea la puayua.",a ye o ni daa bon maaka o ni a uriel o ni yi gidia la pugaayuɔ,0.9286,0.3191
+555,"Kanania onɛ an Levi dim tuongat la da sʋoe yʋʋma yɛla, linɛ da aan o tʋʋm bɔzugɔ o da mi li nɛ hali.",kanaania o na a levi dim tiongaata la da so yooma yala leni da aa u toon mbozugɔ u daamii ilena hali,0.7826,0.3289
+556,Nimbanɛ gbanad pianad gbin la yɛl ya.,banin gbaad pinad gbin la yaa,0.7143,0.3333
+557,O da kpar Zugsɔb Pʋʋsim Dɔɔg la kɔlis ka maal maan bimbima gilig Jerusalem teŋ la wʋsa.,daa kpar zugsɔb poosum doɔg la kolus ka maal maan bimbima gilig jerusalem teŋ la iisa,0.3529,0.1429
+558,"Abija naam saŋa la Jeroboam da pʋ maligim nyɛ nyaŋirɛ, hali nɛ Zugsɔb la ti nwɛ o ka o kpi.",biijanaam saŋa la jeroboam dapu maliga nya nyaŋira hali nɛ zugsɔb la ti ŋwuɛn kaa u kpi,0.55,0.1714
+559,Asɛɛ ka ya maal bʋgʋlʋm-bʋgʋlʋm pʋ pʋʋr la zinis wʋsa tis dɔɔd banɛ zuoe nɛ banɛ pʋ zuoe la.,se ka ya maal bogulimbogulim popoo la zini wosa tisdor ban nin zoi nɛ ba ni po zue i la,0.7895,0.375
+560,M kʋ buoe ba maan kuom linɛ an ziim la.,ku bue ba maan kom lini a ziim la,0.6,0.2069
+561,Ka mɛɛb linɛ bɛ zanɔɔr la tuonnɛ kpa Pʋʋsim Yir la zulʋŋ an makir daug la yinne.,kamiɛb leni ba zaanɔɔn la toon ni kpaa poosom yir la zuluŋ an ma kedaag la yen ni,0.8235,0.2857
+562,"Dim dabisbanɛ ka gbin la wʋsa nɛ o, bɔzugɔ linɛ an namiskanɛ ka fʋ nyɛ dunia nwa ni.",im dabs ban i kaa gbin le wusa ni u bɔzugɔ len ni a namis ka ni ka fo nyɛ duniya ŋwa ni,1.0,0.2462
+563,"On yʋʋn da bɛ mugusʋgin la, o da sie o mɛŋi tis Zugsɔb onɛ aan o yaanam Winaam la.",n yuun da bamugusugin la u da see u mɛŋa ti zugsɔb on ni aa u yaa nan buinaa a,0.8947,0.3065
+564,Maanmaan la da nɔk ziim kanɛ ka Levi dim la tieli tis o la misig.,manman la danɔk ziim kanikaal lebidim la tieteeso lamii,0.8,0.24
+565,Ban sɔb gbauŋ sia tis o la yɛl siem nwa: “Naab Atazeesis.,ban sɔb gbaŋ chia tisu la yelsheemua t,0.75,0.4884
+566,yanam banɛ bɛ tɛɛns banɛ ka atɛuk gilig la ni la.,anan bani ba teens ba ni kaa ta gilig la ni la,0.7273,0.2632
+567,M na kɛ ka ya niŋgbina lieb diibi tis niis nɛ sianarin bʋnkɔnbid.,na kɛ ka yaningbiin na leeb die bitisniis nɛ seri binkɔbr,0.6923,0.2885
+568,Ba liebnɛ tuk dim ziim kanɛ ka ba yis la zug.,ba lieb nɛ tukdim zeem kani ka ba yiisi la zu,0.6364,0.1765
+569,"Dap bama da tʋmnɛ tisid Naab la, hali ka banɛ wʋsa ka o niŋi ba Juda teŋ kpiema ni la wʋsa la pʋ paasɛ.",a bamaa da tum ni tisi naab la hale ka ba ni wusa da niŋi beba juda teŋ kpeema ni la wosa la bu paasɛ,0.5833,0.2179
+570,Kɛl ka maanmaanniba ayɔpɔi mɔr naatana bɛ Nɔnaar Daka la tuon.,elka manma ni bayɔpɔi mo naatana beɛ nɔna da ka la toon,0.9091,0.2353
+571,"M ye m buosi ya ye, ya tɛnɛs ye Winaam bas o mɛŋ nidib nɛ bɛɛ?",e m boosi ya ye ya tɛnɛs ye winaam bas u mɛŋ nirib ni be,0.4375,0.1778
+572,"Nidib atan banɛ da an nidib pistan la kpɛɛmnam la da kɛn David sanan na, tampinyɔk dinɛ bɛ Adullam la.",idibataa ban ni da aa nidib pista la kpɛɛmnam la dake devid saanna tampiuk di ni bɛ adulam la,0.65,0.1852
+573,"Ka fʋ yaa sid anɛ m dɔllim taa, fʋn diem o wʋʋ fʋn naan dienim siem la.",afo yaa sir ani ndolim taa deemi woo fonaan ni denim seem na,0.8824,0.3774
+574,Ka linɛ lɛm paas anɛ ye ti maan sumalisim nɛ Winaam niŋ siel la ka li anɛ ti Zugsɔb Yesu Kristo onɛ naali ti nɛ Winaam la zug.,lini len paas ani ye ti maal sumalisim ni winaam niŋ seel la ka li a ni ti zugsɔb yesu kristo la zugu on kan ni yoon naan li,0.6071,0.3061
+575,"M tis o saŋa ye o tiak o tʋʋmbɛɛd, amaa o pʋ bɔɔd ye o bas o tʋʋmbɛɛd laa.",ntis u saŋa ye u tha kutoombɛɛd amaa upubɔɔr ye u pas toombiɛd la,0.7895,0.3148
+576,"Ya kis linɛ ka Nikolaitan nidib la niŋid, nwɛnɛ man kisi li siem la.",a kislin ka nikolatan nidib la niŋi wonni mani kisi li si,0.6429,0.2453
+577,’ Amaa nannanna dap nwa yit Ammon nɛ Moab nɛ Zuokanɛ buon Seir la kenna.,amaanannanna daabɔɔn yir ammon nɛ moab nɛ zuokanib buonsier la keŋ na,0.7143,0.1964
+578,"O da zaŋnɛ sanlima nɛ kugvɛnla tabili tabil dɔkpina la ka li vɛnl hali, ka sanlima la mɛ an sanlim sʋŋ buudi.",a zaa ŋa sanlima nɛ kuvenla tabiltabil dekpin la ka li venl hali ka sanlima la mi a salimsuŋ buudi,0.5455,0.1744
+579,"Nɔkimi bɛdegʋ yi banɛ mɔr bɛdegʋ ni, amaa ka lɛɛ nɔk biela yi banɛ mɔr biela la ni.",nɔkami byɛdego yi ba ni mɔr bɛdego ni amaa ka leɛ nɛ u biela ayi ba ni mɔr biela la ni,0.6111,0.1562
+580,banɛ lɔsid guos nɛ banɛ mɔr zulis nɛ asau.,anilasiguos nɛ banimɔ zulis nɛ saa,0.6667,0.2424
+581,Aaron biribis banɛ yʋda da buon Nadab nɛ Abihu la da zanas Zugsɔb la nɔɔr ka zaŋ laa dinɛ ka ba niŋid tudaar la nyuoe bugum la maal tudaar maan linɛ pʋ dɔl suorɛ.,rɔn birib sayi baa nin yudanaa bon nadab ni abihu la da zaa zugsɔb la nɔɔr ka zaŋ laa di ni ka ba niŋi tudaal la nyoo bugum la maal tudaa maan leni po dɔl suori a,0.5588,0.2188
+582,Ka siel ligili ba nyɔɔd la nwɛnɛ kʋnt zaba gbantiedʋg nɛ.,ba nyo daa ligilni seel ka li wenni ku zabafuu n,1.0,0.7391
+583,Ba da pianadi tisidi ba nɛ Israel Winaam onɛ sʋoe ba la yʋʋr zug.,da pina di tisiib ban ni israɛl winaam on ni soo ibala ye u zuo,1.0,0.3137
+584,Ka yʋʋŋ pʋdigir la yinne pʋdigir atan la ni mɛ kilim lik.,yuun peele pudugr a yinni pudugi tan i mi lim,1.0,0.5778
+585,"Ka m wʋm kʋkɔr ka li yi arezana ni na vuudi nwɛnɛ kuosusuud titaar nɛ satansʋg titaar nɛ, ka mɛ nwɛnɛ kɔnnwɛɛdibi nwɛɛdi ba kɔna siem la.",am wom kukɔr ka li yi arizana nii na fuu di wenni kuso titaar ni satasi titaar ni ka mi wenni konn ŋedi bi ŋmee ibakɔn sei l,0.8148,0.3578
+586,Kɛl ka o nidib la maal sumalisim ba nyaŋir la zug.,l ka niriba la maal sumaasim ba nyaŋɛ la zu,0.5455,0.2564
+587,Banɛ da naasid o la wʋsa yʋʋn gɔsid o nɛ yɔri.,ba ni dnaaslo la wusa yungɔs n yɔ,0.9091,0.3714
+588,Ka nwadbibis la yi saŋgbauŋin lit teŋin na nwɛnɛ kekama ka sisiem ɛɛnti daadi fanrid kekaŋ kansa ka li sʋʋgidi lit teŋin siem la.,a ŋwabibis la yi sangbɔŋ la ni iliteŋin na wenni kikama ka ti seem yi ti ŋwee ka kikaŋ la dam ka weel kan sa lu seem a,0.9583,0.5143
+589,"Yɛla yaa ti bɛ, o na gurim on bɛ siel la; o na suam o Fuug Sʋgʋrin la.",yɛla yaa ti bɛ u na gurim u ba sel la u na suam u fuugsogurin a,0.5,0.2
+590,"Zugsɔb la da yɛl Moses ye, “Maalim Midian dim la siel ka li yɔ Israel dim la sam, ban maal Israel dim siel la zug, ka lin nyaaŋ la fʋ na maal kaalim.",zusɔb la daa yɛli mosis ye maalimmiindia dim la seel ka li yɔ israel dim la sam ban maal israɛl dim sel la zug ka le nyaaŋ la fo naa maal kaa liŋ,0.4242,0.1339
+591,Nidib la da gaŋ Jehoahas onɛ an Josia biig la buoe malʋŋ kpaam niŋ o zugin ka diis o saam naam la.,idiba la daa gan jehoaas o na a josia biig la bu eimal nkpaam nniŋ u zugun ka dees o saam naam la,0.6364,0.2105
+592,Ka Yesu lɔɔŋ Galile bɛuŋ linɛ an Tiberias bɛuŋ la.,ka yesu lɔɔŋ galili biɛŋ leni a taiberias bɛŋ,0.7,0.25
+593,Ka paas bʋribig yinne maal tʋʋmbɛɛd maan ka li na sɔs suguru tisi ya.,a paas buribijeni maal toombɛɛ maan ka li na sos suguru tisia,0.5,0.2182
+594,Yaa ka ala m yɔɔd na an bɔ kimm Winaam sananɛ?,aakaala m yɔr na a bɔ kim winaam saann,0.6364,0.2
+595,"Ba da pʋdig zaanɔguudib la ka li dɔlli ba tuongatib la an siem, ba tʋʋm da anɛ ba tʋm Zugsɔb Pʋʋsim Yin la tʋʋma wʋʋ ban da gaŋi ba Levi taaba siem la.",zaanuguudib la ka li dɔli ba toongarteb la a sheem ba toomdaana ba tom zugsɔb puosum yin la tooma woo ban da gaŋi ba levi taaba sem la,0.4848,0.2479
+596,Anina mɛn ka banɛ da bɛ sanrega ni la mɔr yɔlisim ka bɛ baanlimm.,nia men ka ban ni dabɛ sariga ni la mɔr yɔlisim ka bi baanlim,0.5714,0.1765
+597,"Nwadig la daba ayɔpɔi daar asɛɛ ya niŋ ala tis onɛ wʋsa tʋm tʋʋmbɛɛd ka pʋ tʋmi li pɔnɔsim, ala ka ya na maali sɔs suguru tis Pʋʋsim Yir la ka li an kasi.",aadigla daaba ayɔpɔi daar aisaaya niŋ a la n tisi on wusa tom toombɛɛ ka po tom nɛ pɔnɔsom alaka ya na maali sos suguruu tis puusom yir la kaale a kaa se,0.7647,0.2521
+598,Winaam vʋʋsʋm kɛtnɛ ka kuom gaaŋ nwɛnɛ kugir nɛ.,inmboosim keni kakoom gaaŋ o ni sakur,0.8889,0.5128
+599,"Aram dim la da pualim Joram ka o lɛb Jezireel tempʋʋgin ye o tieb o mɛŋ pualʋŋ kanɛ ka Aram dim pualim o Ramot teŋin, on da zabid nɛ Hazael onɛ an Aram Naab la.",aram dim la da pual joram ka u lɛb jezriel tenpoogin ye u tieb u maŋ pu aluŋ ka ni ka aram dim puaalmu ramod teŋin la on dazab nɛ hasiel u ni an aram naab a,0.6,0.2097
+600,Ka li paal ye tinam faar la sieba linɛ ka ba pʋdigi tisi ti la na gaad.,li paalee ti nan faara seeba lenɛ ka ba purigi tisite la na gaa,0.7059,0.2037
+601,Labaar la yinɛ Saipuros teŋin na yɛli ba.,labala yi nɛ saiprus teŋin na n yaliba,0.75,0.1818
+602,"Li nɔɔr la teŋir ba da gʋl nɛ naaraadi tabili gilig, makir yinne wʋsa ka ba gʋli ba piiga tabil.",dinɔɔra teŋil badagolne nɛ araar taabiljili maker yinni wosa ka ba goli ba piiga taabl,0.75,0.24
+603,linɛ ka ba bʋn Nail kɔldaugin la yit na.,ka a bun nekoda laayina,0.8889,0.5484
+604,ka yaam dim mɛ siak man yɛt siel la ka ye.,ayaam di meshak man yat seel la ka ye,0.6364,0.1935
+605,"Saŋa bɛ nɛ ka nid sʋoe o taaba tʋmmi ba pitɔɔg, ka li mɛ an mugusʋgʋ tis o mɛŋ.",saŋa be nɛ ka nisooi u taaba to mi ba pitɔg ka leme a mugusugu tis uo,0.6842,0.2881
+606,"Man Paul n sɔb nɛɛŋa nɛ m mɛŋ nuug, ye m na yɔɔ li wʋsa.",man pɔɔl sɔb nɛɛŋaa ni mmɛŋ nuug yem na yo li usa,0.6667,0.225
+607,“Nidib banɛ bɛ teŋin la wʋsa na laas piinkaŋa mɔri keŋ Israel Naab la sanan.,idib bani ba teŋin la wusa na laapiinkaŋa morke israɛl naab la saan,0.6667,0.1667
+608,Ka mam na aan o Winaam ka on mɛ na aan m biig.,ma na aa uinaam ka  m,0.7692,0.5758
+609,Ba da naam Benejaakan keŋ digin Horihagidgad.,adanaa be ni jaakan chendegin ori hajida,1.0,0.2895
+610,Amaa o kɛtnɛ ka tʋʋmbɛɛd sɔb namisid ka laas arezaasi digili tis onɛ maae Winaam sʋnf la.,amaa u kɛt ni ka toombiɛd sɔb namisid ka laas arizaasi dige le tis u ni maa winaam sunf la,0.6471,0.1667
+611,"Ba da pʋ nyɛ suori na zɔɔ keŋ tuon bɛɛ lɛb nyaaŋa, bɔzugɔ Israel nimbanɛ da zɔɔ paae sianarin la da fɛndigi lɛb na zabid nɛ ba.",ba da po nyɛ suori nan zɔɔ keŋ toon baɛ lɛb nyaaŋa bezugo israɛl nimban ni da zɔɔ paa shiarin la ga fidgi lɛb nan zabir ni ba,0.5556,0.202
+612,"Levi dim la da zi Winaam Daka la nɛ li dapuuda la ba biankimpiind zug, wʋʋ Zugsɔb la da tis Moses nɔɔr ka paal siem la.",lebidim la da zi winaam daaka la n li dapuuda la ba binkem piid zug woo zugsɔb la da tisi mosis nɔɔr ka paal seem a,0.4231,0.1304
+613,Pʋʋsimi m zua sʋŋ Ampliatus onɛ ka m nɔŋ Kristo zug la.,osim nzɔsoŋ ampliatus oni ka b nuŋ kristo zugu l,0.75,0.3023
+614,Li na nwɛnɛ banɛ kuosi ba nyɔvʋri keŋ la ziim ka m nu.,tni mn bani kos ba yuok zem k,0.9231,0.6341
+615,Zugsɔb la sʋnf malis nɛ o nidib la; o tisid banɛ siedi ba mɛŋ la faangir.,zugsɔb la sunfumalis ni u nidib la u tesir ban ni seeri ba mɛŋ la faana,0.625,0.25
+616,"M na nɔki fʋ fuug la yɛɛl o, ka nɔki fʋ sɛnbidiŋ la lɔɔ o siaa, ka nɔki fʋ kpieuŋ la tis o.",nan nɔk kufufuug la yaalu ka nɔk kufusiɛbiriŋ la laushia ka nɔk kufukpeeŋ la tesu,0.7826,0.3939
+617,"‘M na kɛ ka bugum laaŋ Magog teŋ la nɛ banɛ bɛɛ atɛuk nɔɔrin ka yɛlsia pʋ daamidi ba la, ala ka ba na baŋ ye manɛ an Zugsɔb la.",na kɛ ka bugum laaŋ magɔk teŋ la nɛ banibetek nɔɔrin ka yalsea podaamirba la alak ka bi na baŋ iman n a zugsɔb la,0.4667,0.2105
+618,"Ka ba diis o naam ka o sʋoe Israel wʋsa, wʋʋ Zugsɔb la da kaanb siem tis Samuel ka o yɛl o la.",ka ba di su naam ka u so israɛl wosa woo zugsɔb la dakaab sheem te samuɛl ka u yɛl u la,0.6087,0.2429
+619,Ba da gaans Levi dim banɛ an yʋma pisi bɛɛ gaad ala ye ba an tʋʋma la kpɛɛmnam ka gɔs Zugsɔb Pʋʋsim Yir la mɛɛb yɛla.,baagaans levi dim ba ni a yuuma pisi beɛ gaardala ye ba a tooma laa kpɛɛmnam ka gɔ zugsɔb puosim yir la meɛb yɛl,0.6538,0.1758
+620,"Ka Zugsɔb la da yɛl Moses ye, “Maalim waafʋ nɔki tabil daugʋ sɛɛl sappi, ka onɛ wʋsa ka waaf dum o tune gɔsi li ka vʋʋg.",a zugsɔb la da yeli mosis ye maalim waa fu nɔkitaabil daa ku sɛ sape ka u ni wosa ka waa du mu tɔɔn gɔsi le ka fo,0.7308,0.2857
+621,Ninsaal mɔɔr wʋsa anɛ m di la yɛla.,ninmor wosa anɛ m di la yala,0.5,0.2963
+622,Ka Yesu dʋ zuor zugʋ zinin anina nɛ o nyaandɔlib la.,a yesu du zuol zu n ziin anina ni u yaandɔlib,0.9091,0.2683
+623,"Naab David da laas saam banɛ bɛ Israel teŋin la wʋsa, ka gaans nidibi ba teŋsʋk banɛ mi kuga kpieb ye ba kpie kugbanɛ ka ba na nɔki mɛ Winaam Pʋʋsim Yir la.",aab devid dar laasaam ba ni ba israɛl teŋen la wusa ka gaans niriba ba tenso ban ni mi kugakpeeb ye ba kpee kug ba ni ka ba nan nɔk mɛ winaam poosm yii i la,0.7576,0.2131
+624,Fʋ na paam nyaŋir fʋ yaa dɔl Zugsɔb la ziela nɛ o wada banɛ ka o da tis Moses ye o yɛl Israel la.,to nan paai nyaŋir fo yaa dɔl zugsɔb la ziela nɛ u waada bani ka u da tis mosis ye u yɛl israyel la,0.4583,0.1644
+625,Asɛɛ ka ya nɔk ligidi da diib linɛ ka ya na dit nɛ kuom linɛ ka ya na nuud la.,seɛ ka ya nɔk ligidi daadeeb di ni ka ya na di nɛ kom di ni ka ya nan nuu la,0.5,0.2241
+626,Lin nyaaŋ ka ba maal maana linɛ ka ba maan saŋa wʋsa la.,li yaaŋ ka ba maalmaana linɛ ka ba maann saŋa wusa la,0.4615,0.093
+627,Ba da pʋdig siel wʋsa zinis piiga ka yis yinne tis.,ba dapu seel wusa jiiniiga kayisee ne te,0.9091,0.375
+628,” Ka ba yi tuon na gbane banɛ kpi la fuud la mɔri ba yi ba laasʋg zinig la kpikpɛŋ nwɛnɛ Moses yɛli ba siem la.,a baayi tio na gbaa ban ni kpi la fuud la monibaa yi ba laasog tiigin la ki kpi ŋeen ni moses i ya libasem la,0.72,0.2976
+629,"Onɛ aan m Winaam kanɛ nɔŋim, nɛ m kpieuŋ zinig.",n aam bue nam ka ni nɔŋim ni m kpeem i,0.9,0.4444
+630,"O yaa mɔr bʋʋd bɛɛ o ka bʋʋdɛ, li anɛ o mɛŋ Zugsɔbi na yɛl o ye o di bʋʋd bɛɛ o luya.",yaa zie bee lu ne li an u ma zusɔb na yel u ye u dik boo bae u luia,0.8261,0.5738
+631,"Fʋ yaa niŋ ala li paal ye fʋ wɛlig Levi dɔɔg la nɛ zieli ba kɔn nɛ Israel dim la, ka Levi dim la na an man nidib.",aniŋala lipaal le fu walig levidok la nɛ zeelibakɔ nɛ israɛl dim la ka levi dim la na a ma nidiba,0.6429,0.1905
+632,"Ban da pinili kʋʋd la ka man kpɛlimmi m kɔn ani, ka m luu avanba ka kaas kuŋ ye, “Aa, Zugsɔb onɛ an Paŋtitaar Sɔba!",ban dapiili kood la kaman kpalim mi m kɔɔn ni ka m luu wavaba ka kaas kuŋ ye  zusɔb on a paŋ titaar sɔb a,0.64,0.1512
+633,"Laan nɛ bugisnam la pʋ zɔt Winaam la, li kʋ an sʋm tisi ba, ka ba dabisa kʋ waam nwɛnɛ winnigi ɛɛnti bik ka fʋ siig waam laa.",a nɛ bugusnam le po zɔr winaam la liko nsuum tisi ba ka ba dabsa kiwaam wonni winigi etibik ka fo seek waam laa,0.6429,0.2632
+634,"Kɛl ka fʋn niŋ yadda siem zaŋi ken bʋmbama ni, kpɛlim fʋn nɛ Winaam sanan maaa.",ɔri fun tans nee yɛla seem fu ni ni winaam saan maa,0.875,0.629
+635,"Ka Juda dim la wɔɔl tanp wɔɔlʋg, ka ban wɔɔli naae la ka Zugsɔb la kɛ ka Naab Abija nɛ Juda dim nyaŋ Jeroboam nɛ Israel dim la wʋsa.",ajuda dim la wɔɔl tawɔlug ka ban wɔɔlinaa la ka zugsɔb la kɛ kanaab abija nɛ juda dim nyaŋ jeroboam nɛ israɛl dim la wusa,0.3448,0.0784
+636,Zienim sʋʋŋa ka kpɛɛŋi fʋ sʋnf ka ti zabi ti nidib nɛ ti Winaam teŋ la yɛla.,beenim suoŋa ka kpiɛŋifu sunf ka ti zaa bi ti nidib ne ti winaam teŋ la ya,0.5294,0.1864
+637,"Ka m pʋ nyɛ Winaam Pʋʋsim Yir teŋ la nii, bɔzugɔ Zugsɔb Winaam onɛ an paŋ titaar Sɔb la nɛ Pɛbil la aan anina Pʋʋsim Yir.",daa pu nyɛ winaam poosum yir teŋ la nii bɔzugɔ zug sɔb winaam paŋtitaa daan la ni piɛbil la aan aniina poosim yiri,0.6154,0.2234
+638,Kis tuŋʋn la: Kis biig da anɛ Jerameel.,istuŋin la kisbiig da ani jeremia,0.75,0.2333
+639,"Ya-tuona baba la, Atɛuk Titaar la na aan li titɔndigi keŋ paae zinikanɛ kpa Lebo-Hamat teŋ la.",aa tuna baabala a tititaara na aa lititɔri keŋ paai ziin kan kpa lebohamad teŋ la,0.7647,0.2297
+640,"O yaa pʋ mɔr bipumisɛ, yanam nɔkim tis o pitib bɛɛ o bieya.",ya po mur bupums yanam nɔ kam tes u piitib biɛ u biɛ,1.0,0.3556
+641,“Pʋʋsimi Zugsɔb la bareka; bɔzugɔ o nɔŋilim la bɛ nɛ saŋa linɛ ka bɛnnɛ.,uosimin zugsɔb labarika bezugo nɔŋlim la be ni saŋa lini ka bɛn ni,0.7857,0.2143
+642,Basimi bada banɛ ka ya yaanam da dɔl kɔldaug la nyaaŋ nɛ Egipt teŋin la ka dɔl Zugsɔb la.,basimibada bani ka yayaanam da dɔl kodaag la nyaaŋ nɛ ijipti teŋin la ka dɔli zugsɔb la,0.4211,0.1143
+643,Keenan dim naab onɛ da sʋoe Arad teŋ linɛ bɛ Negef teŋin la da wʋm ye Israel dim la kenna.,enan dim naab unidaa sooi arad teŋ lini ba nekef teŋin la da wum ye israɛl dim la kenan,0.5,0.2
+644,"o na yis o nidib wʋsa nyan pɔɔgin, dunia ni wʋsa.",yisu nidib wusa yan poogin dunia ni usa,0.7273,0.2703
+645,"Li anɛ tɔlʋŋ kanɛ yi Winaam Biig onɛ nini nwɛnɛ bugum pielim, ka o nɔba nyɛɛnnɛ nwɛnɛ kʋntzɛnug ka ba duus la ni na.",ŋa ani tɔli kan ni yi winaambiig o nini wenni bugum peelim ni ka u nɔba nyeen wenni aanurfa leni ka ba sas ni,0.7917,0.4505
+646,” O da pʋ bɔɔd ye o siaki die Winaam Daka la ka li keŋ David Teŋin bɛɛ o sananɛ.,dapuba die u siak ki dee winaam daakala ka li ken devid teŋin beɛ u saaniŋ,0.7895,0.2712
+647,"Ka Moses yɛl Aaron ye, “Ala ka Zugsɔb la yɛl ye.",ka mosis yɛl aarɔn ye alaka zugsɔb la ya ii,0.5455,0.1714
+648,Ani ka o na sua ka ba kʋ kʋʋ o yɔ sam ka sariakatib la nam pʋ kad o saria.,niikaau na suya ka ba ko koo u yɔsam ka sariakaatib la nan pi kar sariya,0.75,0.2778
+649,"Ba nindaas da nwɛnɛ gbigima nindaas nɛ, ka ba tune zɔɔg hali wʋʋ walig kanɛ bɛ kʋkʋna ni nɛ.",ba nindaasda wonni gbig ma nindaa ni ka ba tɔɔn zɔɔg hali woo waali kan ni bi kukona niina,0.7368,0.2917
+650,” Ba sid da pinil nɛ kpɛɛmnam banɛ bɛ Pʋʋsim Dɔɔg la tuon la.,ba sedapiil le kpeɛm nan ban ni be poosim da la tuon a,0.7692,0.3478
+651,"Bɔzugɔ m mi ye banɛ ka fʋ niŋi ba albareka la, sid mɔr albareka, ka banɛ ka fʋ pɔ nɔɔri tisi ba la, li sid na dɔlli ba.",bɔzugɔ m nyin ye banikafu niŋiba alibarika la simo alibarika ka ban ka fu panɔɔr tesiba la lisid na dɔli ba,0.6786,0.2045
+652,Man bɔɔdin nɛ yanamɛ naan aan maasiga bɛɛ yanamɛ naan aan tʋʋliga.,bod ni yanmi na an maasiga beɛ yanami n aan tu lig,0.9167,0.3889
+653,"Zaŋimi naaf la maali zʋʋd maan linɛ an zɔmbaanligi gɛndig nɛ kpaam kuriba ayuobʋ, laan nɛ pɛraug la mɛn kuriba anaasi.",aŋimi naab la maa li zoodmaan leni a zɔmbaaŋli gigɛndig nɛɛkpaam kuriba a yoobu laam ni paraag la min kuriba nan si,0.9048,0.1875
+654,"Ba kʋ lieli m sanan na tʋm maanmaan tʋʋma, bɛɛ ba lieli m laabanɛ an kasi laa, bɛɛ m kasi zinig laa; yɛlkisa banɛ ka ba maan la, nyan na dii ba.",ba ku leelim m saan na tom maalmaan tooma beɛ ba leelim m laa ban ni a kasi laa beɛ m kasi zinig la yalikisa ban ni ka ba maan la yann na e a,0.625,0.2407
+655,Ba da naam Siefa zuorin la keŋ digin Harada teŋin.,adnam seefajoorin la ke digin harada te,0.7,0.25
+656,O saam yaa ka bieya bɛɛ pitiba yanam nɔkim faar la tisi onɛ kpin o tuŋ la ni ka o sʋoe li.,usaam yaa kaa biɛ bɛɛ piitiba yanam nɔkem faara ti o ni kpi nutuŋ la ni ka u so le,0.7273,0.2353
+657,"” David n da lɛb Ziklag la, nimbama da naam Manase dɔɔg sʋʋlim la ni buaki dɔl o.",vid tudalb ziklak la ninbama danaam manasedok solomin la ni bua kidɔ,0.8235,0.2787
+658,Li sʋm ye sɔ mɛkama mɔr taslaa makid sielnam wʋsa.,lisum ye sɔ mikama mɔ tarla ma kiteel la mosi,0.9,0.3
+659,"Bɔzugɔ, m naakinnimin sa, m gɔsi ba wʋʋ m mɛŋ-mɛŋ biis nɛ.",bozugɔ n naa ke niminsa n gɔsi ba woo men ŋmeŋbiisina,0.9167,0.2791
+660,"Winaam la nier pʋʋgin, o da nɔkimi keŋ Israel teŋinɛ zielim zuor kanɛ waam hali zugin, ka li bɛ ya-datiuŋ baba la ka m nyɛ mɛɛb ka li zie nwɛnɛ tempʋʋg.",winaam la nier poogin u danɔko min keŋ israɛl teŋin ni zeelim zuor ka ni waam hali zugun ka li bɛ yada teŋ baba la ka m nya meɛ ka li zie wenni teŋ pooga,0.5806,0.2034
+661,"Naab Ammon naayikpɛm la da yii o nyaaŋ ka kʋʋ o, o yir la pʋʋgin.",naab ammon naayiikpem la da yi u nyaaŋ ka koo u yiili la poogon,0.5333,0.2653
+662,Nɔkimi naaraad la nɛ pɛraad la nɛ pɛribis la maal zʋʋd maan nɛ bʋnnuuda maan nwɛnɛ ban zieli li kal siem la.,ɔkiminaaraad la ni perad la ni paribil la maa ni zoodmaan ni binuudamaan ŋon ni ban zeeli likal sem la,0.7727,0.2326
+663,Ka m nyɛ ka banɛ wʋsa vʋe ka bɛ dunia nwa ni la dɔl naapaal la.,a nyɛ ka bann wusa voe ka bɛ dunia wa ni la dɔl naapaa la,0.4375,0.1489
+664,"Linɛ tiaal pii nɛ ayɔpɔi la da gaŋnɛ Josbɛkasa, ka on nɛ o yidim da laas pii nɛ ayi .",eni tial piini ayɔpɔi la da gaŋɛ jose bekkasa ka un ni u yidim dalaas piina yi,0.7895,0.2031
+665,"Puasada da bɛ, ka an Zelofehad puayuos.",asada be kaan jelufhel poyayo,1.0,0.4516
+666,"Ban nɛ ba tuŋ dim la wʋsa da zamisi ban na yʋʋm siem tis Zugsɔb la, ba kal da duoe nɛ kɔbisyi nɛ pisnii nɛ anii .",ba nɛ ba tuŋ dim la wosa dazam se banan yoom sheem n ti zugsɔb la ba kal dadoo ne kobis yi nɛ pisini anii,0.5769,0.2235
+667,ala ka li na an nɛ zɔlʋgʋ na pianad pianayɛɛd.,lakali na a nɛ zɔlugu na pin a pianaya,0.8,0.25
+668,"O lɛm mak tusir nɛ kɔbisnu yaas, amaa li da anɛ kɔldaug ka m kʋ nyaŋi lɔɔŋɛ, bɔzugɔ kuom la da zuonɛ ka zulim ka li yaa ka lugibɔ, sɔ kʋ nyaŋi lɔɔŋɛ.",lan ma tuusur ni kɔb nu yaas amaa lida ane kodaag kam ku nyaŋɛ lagɔŋa bojugɔ kuom la da zuo na ka zulim ka le yaa kaa libuba sɔ ku nyaŋ lag ŋa,0.7576,0.2832
+669,"Ka Adam saŋa ti paae Moses saŋa, kum pʋn paae nidib wʋsa, hali nɛ banɛ tʋm tʋʋmbɛɛd ka li pʋ an wʋʋ Adam da zanas Winaam nɔɔr yɛlʋg siem la.",ka adam saŋa ti paa moses saŋa kum pun paai niriba wusa hali ni ba ni tum tumbɛɛd ka li po aa woo adam di zaas winaam nɔyelug seim la,0.6,0.213
+670,Ka li tuongatib dit saŋa dinɛ nar ye ba nyɛ paŋ.,li toongati di saŋa di ni na ye ba nye paŋ,0.6364,0.2162
+671,On ka ti niŋ yadda ye ti na sua o maasimin.,kti nin yada ye ti nasu umaa seemn,0.8182,0.3125
+672,Mam mi ye bʋnsʋŋ sia kae gat ninsaali na mɔr sumalisim ka mɛ tʋm sʋʋm o vʋm saŋaa.,an mi ye bunsuŋsi kai gat ninsaal le nan mɔr sumalisim ka mi tom som u voom saaŋa,0.7222,0.2812
+673,Linɛ wʋsa ka ba bʋdi dɔlis Nail kɔldaug la.,linin wusa kaba budidɔsnay kodaala,1.0,0.3529
+674,Lin yi zaanɔɔrin la keŋ paae zaambɛŋ la makir bɛn la anɛ nɔba makir pisyɔpɔi nɛ anu.,li n yii zaanɔɔnrin la ke paa zaambɛŋ la makir ben la a ninɔbamakir piisiyɔpɔi nɛ anu,0.6471,0.1194
+675,"O da yɛlim ye, ‘Solomon onɛ aan fʋ biig la na mɛɛ m yir la, bɔzugɔ manɛ gaŋ o ye o aan m biig ka mam na aan o saam.",da yɛlim ye solomon o ni aa fo biig la na meɛ m yira bojugɔl mani gaŋu ye u aa m biig kaman na aan u saa,0.6,0.1951
+676,” Zugsɔb la da wʋmi ba fabʋlʋg ka kɛ ka ba nyaŋ Keenan dim la.,ugsɔb la da wum b ba fablug ka ke ka ba yaan keenan dim l,0.5,0.2174
+677,"Ka Winaam naam paŋ pipilim nyɛɛn, ka teŋ la mɛ nyɛɛn wʋʋ kugvɛnla linɛ ka ba buon jaspa la ka li nyɛɛn wʋʋ gɔtiŋ la.",winaam naam la pak nyeen ni li ni ka tiŋ la mi nyeen wee kuuvɛnliŋ lini ka ba boon jaspa ka li nyen wee gɔtiŋ ni,0.72,0.3778
+678,Ka zaŋ banɛ kpɛlim la niŋ Abisai onɛ aan o pitʋ la nuugin ka kɛ ka ba gu Ammon dim la.,a zaŋ gbani kpalim la niiŋabisai on aa u piito la nuugin ka kɛ ka ba guu amon dim la,0.5238,0.1846
+679,bɛɛ on kɛt ka saa ianasidi li pʋʋgin siem laa?,b n ketka saa asir lipooin seem la,0.9,0.3889
+680,Zugsɔb la da tʋm o nɔdiesidib ye ba pian tis nidib la ka ba tiak.,zugsɔb la da tum u nɔdies ye ba pian tis nidib la ka ba tiaa,0.2667,0.14
+681,Aram dim la da zien nɛ maal siri ye ba tʋʋs David n zab nɛ o.,am dim la da jien nɛ maal siri ye ba toos devid ti zab na,0.4375,0.2222
+682,Bɔzug kimm ka m da pʋ lɛbi m duam daarɛ.,bozukim kam da punn lebim m duam daar,0.7,0.3
+683,Ya na pʋdigi li tisi ya mɛŋ ka li an faari tisi ya nɛ saam banɛ zin nɛ ya ka mɔr biis la.,nan pudigi le tisi ya min ka li a faare tisiya ni saam ba ni ziine ya ka mɔ,0.6957,0.2879
+684,Ba na bɛs bʋnkɔnbʋg la baanlʋg-baanlʋg ka maanmaan la na laasi li zug nɛ kpaam la wʋsa paal bugum linɛ bɛ daka la zug la.,ba nan baɛs binkɔmbug la baalubaanlug ka maalmaan la nan laasi li zu ni kpaam la wusa paal bugum lini b daaka la zu la,0.52,0.1895
+685,"Alazug Israel dim wʋsa da zi Zugsɔb Nɔnaar Daka la kena ka tansid agɔla gɔla ka piebid naatana nɛ wiis, ka nwɛɛd galana nɛ googinam nɛ siyaaris.",alazu israɛl dim wosa da ze zugsɔb ni onada ka la kena ka tanser a gɔla gɔla ka piebir naantana ni wees ka wɔɛr gala na ni gogina ni siaad,0.7778,0.2241
+686,"Ka Zugsɔb Nɔnaar Daka la ti kpɛnɛd David teŋin la, ka Mikal onɛ an Saul puayua la gɔsid takoro ni.",a zugsɔb noɔnaadaakala ti kpɛ david teŋin la kaamaikal ona a sɔɔl puayɔɔ la gobsir takoro ni,0.6,0.2338
+687,"Yim Pʋʋsim Dɔɔgin la, ka fʋ ka sida sɔba, ka Zugsɔb Winaam kʋ tisif girimaa.",impoosum doɔgin la ka fu kaa sera sɔba ka zugsɔb winaam ku tis ufu gerima,0.6667,0.2373
+688,Jotam da zab nɛ Ammon dim naanam la ka nyaŋi ba.,jotam dazaŋ nɛ ammon dim nɛ anam la ka yaŋɛ ba,0.4545,0.1081
+689,"Alazug ya tempʋʋgin la, saamnam na ɔnbi ba biis, ka biis ɔnbi ba saamnam.",lazu ya teŋ poogin la saamnam nɛ o bo babiis kabiis o bo ba saama,0.7857,0.2456
+690,"Yanam banɛ bɛ arezana ni, tisimi Zugsɔb la naasi!",a nan ba ni bɛ arazana ni tisimi zugsɔb lanaasi,0.7778,0.1026
+691,Ka ba nɔk kuga mɛɛ gilig zaas anaasi la ka danamis bɛɛ li pʋʋgin la kpie nɛ zaŋguom la.,ka ba nɔk kuga miɛ jili zaasa naanse la ka damis balipoogin la kpiene zaŋuom a,0.6316,0.2059
+692,Zugsɔb onɛ aan ya Winaam la kɛ ka o sʋnf digilim ka o zug kpɛɛŋ ye li kɛ ka o lii ya nuusin nwɛnɛ on niŋ siem la.,zugsɔb o na a ya winaam la kɛ ka u sunf diglim ka u zu kpɛɛŋ ye li kɛ ka u li ya nuusin wenne o niŋ seem la,0.4643,0.1765
+693,onɛ pɛmisid nidib nɛ onɛ bɔɔd pɛɛm na an yinne.,nipm si nirib ni unibɔpim naani yen,1.0,0.4595
+694,Sɔ yaa kpɛn Pʋʋsim Yin la yanam on kʋʋm o.,sɔ yaa kpɛ poosum yin la yanim nkoom,0.6,0.2812
+695,"Ba na kʋʋ ya nidib la ya teŋsʋk, ka li kɛ ka ya baŋ ye manɛ sid an Zugsɔb la.",ba na kooya nidib la yatensuk ka li kɛ ka ya baŋ ye manisi a zugsɔb la,0.35,0.125
+696,Ba da naam Moserof teŋin keŋ digin Benejaakan teŋin.,bamisirup teŋin chindigin beni ijaa kan teŋ,1.0,0.4186
+697,"Ka Zugsɔb la yɛlim ye, Ninsaal biiga, gɔsim ka kɛlis sʋʋŋa, ka tɛnɛs sʋʋŋa nɛ linɛ wʋsa ka m yɛti fʋ zaŋi ken ziela banɛ bɛ Zugsɔb Pʋʋsim Yir la yɛla la.",aa zugsɔb la yɛlim ye ninsaal biiga gɔsim ka kali soŋa ka tan soŋa ni linɛ wosa ka m yɛti fo zaŋi ke zie la ban i bɛ zugsɔb poosum yir la yela,0.5,0.178
+698,"Zugsɔb la pian, Zugsɔb onɛ an Paŋtitaar Sɔb la yɛl.",zusɔb la pin zugsɔb o na paŋ titaar sɔb la ye,0.7,0.15
+699,"M mi ye ya paŋ pʋ zuoe, laan nɛ wala, ya siaki m pianad la ka pʋ kiis ye ya zi ma.",mii ye ya mɔr paŋ beelaa ka laam ni la ya mi sikim yel u kaa po kees e ya zin a,0.8182,0.5345
+700,Ka Winaam na kɛ ka bʋn linɛ gaad la wʋsa lɛm maal yaas.,winaam nan kɛ ka bun lini gaad la wusa le maal yaa,0.5385,0.2143
+701,li gat siind linɛ siligi yi singbana ni na.,ligatiind leni selgi yi siigbana nina,0.8889,0.1765
+702,Israel nɛ Juda nimbanɛ da bɛ tempʋʋsin la da tisi ba niigi nɛ bʋnkɔnbid pʋʋr piiga nɛ bʋmbanɛ wʋsa ka ba pɛsigi tis Zugsɔb la.,israɛl nɛ juda nimbanida bɛ tempoorson la daa tisi ba niigi nɛ bikɔbpoor piiga nɛ bimbani wusa ka ba pesige ti zugsɔb la,0.44,0.198
+703,"Ka naam gbana pisi nɛ anaasi gilig naam gbauŋ la, ka kpɛɛmnam pisi nɛ anaasi yɛ fupiela ka pid sanlima zupibisi zin ba zug.",naam ngbana piisi nanaasi gilig naam gbauŋ la ka kpiɛmb nan piisinaanaasi ye fupiela kaa pii saalima zupii si zin ba ui,0.6667,0.1735
+704,Nwɛnɛ yɛl babigi na bɛ sɔ sʋnfʋn ka li kɛ ka o zaansim siem la.,on ni yal baabigna be sɔ sunfun ka li kɛ ka u zaasim seem a,0.6667,0.2917
+705,Joas da tʋm linɛ nar Zugsɔb la nini ni yʋʋm banɛ wʋsa ka Jehoyada da an Maanmaan la.,ɔas datum lenɛ na zugsɔb la nini ni yon bani wusa ka jehoyada daa maanmaan la,0.5556,0.1667
+706,Ya kaal Jerusalem dɔɔd nɛ ya la wʋsa baŋi li kal.,ya kaal jerusalɛm dɔɔd nɛ ya la wusa baŋi likaa,0.3636,0.0789
+707,"Dap sieba da kena yɛl Jehosafat ye, “Zabzabidib bɛdegʋ yi Edom nɛ Atɛuk la nyaaŋ baba kenna ye ba zab nɛf.",abseba daa kena yal jehosafat ye zabzabdi bɛdego yi edom nɛ atɛ la nyaa gbaa baa kenn na ye ba zaab n,0.6667,0.2048
+708,O na nɔk o nuugʋ paal bʋnkɔnbʋg la zugin ka Zugsɔb la die li ka li an suguru sɔsʋg maannɛ tis o.,unɔkunuug paal bunkɔnbug la zugun ka zugsɔb la die li ka li aan sugrusosu maan ni tisu,0.5909,0.2027
+709,” Zugsɔb la pian li.,zusɔb la pi le,0.75,0.2857
+710,ka banɛ dʋʋsi ba mɛŋ dunia zug la na tadig.,ka ba nin doose ba min dunia zug la na tar,0.5,0.303
+711,"O da karim albareka nɛ nɔpɔɔr yɛla, nwɛnɛ lin sɔbi niŋ ziela gbauŋʋn siem la.",albarika ninupɔgl yɛla ŋonni le sɔ bi ni zeela gbaŋin seem la,0.9333,0.3934
+712,"Zerubabɛl biribis da anɛ Mesulam nɛ Hanania, ka ba taʋn da an Sielomif.",erubabel digribis  da anɛ mesulam nɛ hanania kabata da a si lomi,0.6154,0.1579
+713,Josef yaas banɛ da yii o biis Manase nɛ Efiram la da an siem nwa.,josef yaas ba ni da yii ubii simaani san ni efreim la da a see mo,0.6667,0.32
+714,"Ban tʋʋm da anɛ ba nwɛ kɔna ka pieb wiis, Asaf tʋʋm da anɛ ye o nwɛɛd siyada.",ban toomda ana ban ŋwɛɛ kɔna ka pie wees asa toomda ana ye u ŋ se yada,0.8333,0.3276
+715,"Alazug, Moses da nɔki ba sɔsʋg la keŋ Zugsɔb la tuon, ka Zugsɔb la yɛl o ye, “Zelofehad biis la yɛt siel la anɛ sida.",la zugu mosis da nɔ kubasɔsig la keŋ zugsɔb la toon ka zugsɔb la yɛl u ye zeloofahat biil la yɛt feel la ani seda,0.52,0.1705
+716,Israel dim nyaŋ Keenan dim.,israɛl dim yaa keenan den,0.6,0.2273
+717,"Zugsɔba, niŋim tʋʋm kanɛ ka o mi la bareka.",ka kɛr ka israɛl dim ba ŋi fo waada la u maan maana len a bonyubsa nɛmaana le ni nyood fumaan daka la zug zugsɔba niŋim toom kani kaa u mii labaar kan,3.4444,2.7576
+718,"Ba na bɔɔd ye nɔdiesidib la yɛli ba linɛ na maal bɛog sa, amaa ba na mɔɔ gɛn; Zugsɔb wada linɛ ka maanmaannib la paan la kʋ lɛm bɛɛ, ka kpɛɛmnam saalʋg la mɛ kʋ lɛm bɛɛ.",ba na bɔɔd ye nɔdiesidiba la ye liba linɛ na maal beɛg sa amaa ba nan moɔ gen zugsɔb wada lene  ka maalmaanib la paan la kulɛn bɛɛ ka kpeɛmnamsaalug la mi ku len bɛ,0.4595,0.155
+719,Kɛl ka m nɔɔr pianad nɛ m sʋnf tɛnɛsa paae fʋ yaam.,l kam noɔl pianad nɛ m sutɛɛsa paah fo yaa,0.75,0.2821
+720,Onɛ paas anaasi la yʋʋri da buon Adonija ka o ma yʋʋr buon Haggif.,nipaasanaa see la yoori daboon adonija ka u ma yoor buon hagi,0.6429,0.2308
+721,"Ahaz da faaɛn laad bɛdegʋ Zugsɔb Pʋʋsim Dɔɔgin la nɛ naayin la nɛ kpɛɛmnam la sanan nɔki tis Asiria naab la, amaa li da pʋ sʋŋ oo.",ahatefan laad bɛdego zugsɔb puosum doɔgin la nɛ naayin la nɛ kpeɛmnam la saan nɔk ti sasiriya naab la amaa li da po soŋ ŋɔ,0.5185,0.1765
+722,"Sɔ yaa kʋʋ o tiraan ka kasɛtib bɛ, li sʋm ye ba kʋʋ o mɛn.",sɔ yaa ko tiran ka kasɛ ti ba li sum ye ba koo min,0.6667,0.2143
+723,"Izar tuŋʋn la, Kanania nɛ o biribis la tʋʋma da pʋ bɛ Pʋʋsim Yin la, ba da anɛ gbansɔbidib nɛ sariakatib Israel nidib la wʋsa ni.",izal tuuŋin la kananiya nɛ obiribis la tooma ka po bɛ puosom yin la bada ane gbaŋsɔbdib nɛ sariyakartib israel nidib a wusa i,0.6538,0.1881
+724,"Ka naam ani paae zien Iye Abarim, siananr kanɛ kpa Moab n lɛbisid nintaŋi yit zinisia na la.",anaamanii paa zien ayi abarim siarin kani kpa moab lebsit ni ntaŋi yi tiunsea na la,0.6667,0.2329
+725,"Ka m tʋm tʋʋm kpiema ka mɛ yaa tisim mɛŋ ka kua pɔɔd bɛdegʋ, ka maal lɔmbɔnɔdi sɛ tiwanna buudi wʋsa li pʋʋgin, ka ga mua mɔri dɔnɔsidi m tiis la.",m tom tuum kpema ka me yaa tisi mɛŋ ka kuo pɔgɔr bɛdego ka maa lambɔɔdisɛti waana buudi wosa li poogin ka ga mua moodidɔnsir dim teesila,0.6452,0.2389
+726,Bɛog yanam on yim tʋʋsi nɛ ba ka Zugsɔb la na bɛ nɛ ya.,bek yanam on yim toosinɛɛ ba kazugsɔb la naa beɛna ya,0.5714,0.2195
+727,"Fʋ baabiig sʋnf yaa sanam fʋn dit disia la zug, fʋ pʋ tʋm nɔŋilim tʋʋmaa.",bubaabiig suuf yaa saam fon di disia la zugu fo po len tum nɔŋlim toomaa,0.8667,0.2982
+728,O zʋʋr yibisidnɛ nwɛnɛ naaziinr nɛ.,zoo yibsine woninzi,1.0,0.5862
+729,Ka Winaam piini linɛ dɔl tʋʋmbɛɛd bɛdegʋ anɛ ye Winaam kɛ ka ti an pʋpielim dim o tuon.,winaam piin ni li ni dɔl tumbeer bidegu a ni ye winaam ke ka ti aa popielim da mu tun,0.8333,0.2609
+730,"Ka o yɛlim ye, “Kuokaŋa pʋbidnɛ lɛbid ya-nyaaŋi sigid Joodan bɔnɔgin la ken atɛukʋn, tiakidi atɛuk kuom linɛ an yaarim la ka li lieb kuosʋŋ.",u yalim ye kuwo kaŋa pobi ni lɛbi ya nyaaŋ asigi jɔɔdann bɔnɔgin la ke natikun n tiaki natak koom lenɛ a yaarim la ka liliebid kuo soŋ,0.92,0.2523
+731,"Li anɛ maan linɛ nyuod bugum, ka li nyuug malisi tis Zugsɔb la.",anamaan leni nyoor bugum ka linyuumalisiti zugsɔb a,0.7692,0.2041
+732,"Atɛuk la da sʋne nɛ ba zugin, ka ba nyaaŋ nɔba la bɛ teŋsʋk.",tla da suunɛ ba zugin ka ba nyaaŋ nɔba la bɛtaso,0.4286,0.2444
+733,"Naab Jehosafat da paam kpanam bɛdegʋ ka o yʋʋr dʋ, o da di Naab Ahab puayua tis o mɛŋ biig.",ab jehoshafat dapaam kpieŋ badego ka u yoo do udade naab ahabpuyua tis umanbii,0.85,0.3
+734,ka kɛ ka li kpiem ka ianad nwɛnɛ gɔtiŋɔɔ?,ka kɛ ka likpeem ka ianad wonni gotiŋɔ,0.4444,0.2188
+735,"Levi dim la on lɛɛ kʋ laas nɛ ya die pʋʋr ka li aan ba dinnɛ, bɔzugɔ, ban tʋm Zugsɔb maanmaannib tʋʋm la, linɛ aan ba pʋʋr.",lebidim la un la kulaasne yaadie poor ka li aa ba dinɛ bɔzugɔ ban tum zugsɔb maalmaanib toom la lene aan ba po,0.6296,0.2258
+736,ziel saŋkanɛ ka o na kad saalib sariaa.,saŋkan ka u na ka saalib sariya,0.625,0.2581
+737,Ba da bɛ nɛ mɔɔgin kaasid wʋʋ bʋnkɔnbid nɛ.,badbene mɔɔg ksioobuko,1.0,0.5882
+738,Juda dimi da zanas Zugsɔb onɛ aan ba yaanam Winaam la zug ka tɔɔg da paae Joas.,juda diimi dazaa zugsɔb o ni aa ba yaanam winaam la zug ka tɔɔg da paa joas,0.4118,0.0968
+739,"Bama wʋsa na naae zinig yinne: pʋpiel nɛ bugis, ninsʋŋ nɛ nimbɛog.",ba ma wusa na naai zinigee ni popiel nɛ bugus ninsuŋ nɛ ninbɛɛu,0.8333,0.2308
+740,"Banɛ vaae ba laad la, ba mɛ na vaae ba laad, ka banɛ faaɛn ba laad, ba na faaɛn ba mɛn.",ba ni vaa ba laad la ba me na vaa balaad ka ba ni faa ba laad ba na faaba,0.619,0.1905
+741,"Ka Naab la kʋ lɛm mugusi m nidib laa, amaa o na kɛ ka Israel dim sʋoe ba paalʋ wʋʋ ban pʋdig siem tis dɔɔg wʋsa la.",naabla ku len mugsi nidib laa amaa u na ka ka israɛl dim soe ba paalu woo ban purig seem tisdok usa la,0.6667,0.2529
+742,Abraham da dua biribis ayi ka ba yʋda an Isaak nɛ Isimael.,braham dad a biibisayi ka ba yor a aisik nɛ ismaɛl,0.75,0.2174
+743,"“Tisimi fʋ saam nɛ fʋ ma girima wʋʋ Zugsɔb onɛ aan fʋ Winaam la ziel siem tisif la, ka fʋ nyɔvʋr na yuug ka siel wʋsa na an sʋʋŋa tisif teŋ kanɛ ka fʋ Zugsɔb Winaam ye o tisif la.",isi bi fo saam ni fo magirima u zugsɔb on aa fo winaam la zeel seem tis uf la ka fo yɔvu na yuu ka sheel wosa na a sooŋa tis uf teŋ kani ka fo zugsɔb winaam ye u tis uf la,0.725,0.219
+744,"“Fʋn teŋ gura, yʋʋŋ la na gaad saŋkanɛ?",unteŋgura yuuŋ la nan gaa saŋkann,0.875,0.2414
+745,Tʋʋm kpieuŋ kanɛ ka dap atan banɛ an sʋnkpieuŋ dim la da tʋmm la.,mkpee kani ka daa patan bama an sukpeeŋ dem la datooma,0.7857,0.3529
+746,ba kadi ba yisi ba yaan nɛ ba mɛŋ teŋin.,ba kade baa yisiba yaan nɛ ba mɛŋ teŋen,0.5,0.1
+747,Li anɛ wʋʋ fʋn na kad pɛbisim ye fʋ gbane nɛ.,laana woo fun na kar pabsim ye fo gbaan ni,0.8182,0.3529
+748,O da sʋoe Jerusalem tempʋʋg la nɛ yʋma pisi nɛ anu.,jerusalɛm tenpook la ni yopiiin n,0.9091,0.5
+749,"Uzia onɛ da pʋn zanl linɛ nyuod bʋnnyubisa la, o sʋnf da duoya hali.",isaya u ni dapunzanl linin nyoor bunyubsala u sunfu dadooya hali,0.9286,0.3396
+750,"M dataa yaa daa namisid, m daa pʋ maan sumalisim.",dataa yaa daa namsid n daapomaan suma see,0.7,0.2105
+751,Midian biribis da anɛ: Efa nɛ Efer nɛ Hanok nɛ Abida nɛ Eldaa.,midian biibis da ana efa nɛ efer nɛ hanuk nɛ abida nɛ elda,0.3077,0.0833
+752,"O sʋʋnr mɛ da pɛlig nɛ Job zuanama atan la bɔzugɔ ban da pʋ nyaŋi paal o gbɛlʋŋʋ an siela, ka li kɛ ka li nwɛnɛ Winaam ka bʋʋd la.",suun meda pɛlig ni joob zu namata la bozugɔ ban da po nyaŋɛ paalu gbaluŋi a seel la ka li kɛ ka li won ni winaam kaa boodi la,0.6667,0.2828
+753,Ka onɛ paas ayuobʋ la yʋʋr da buon Itiram ka o ma an David pua kanɛ ka o yʋʋr buon Egla la.,u ni paasi yoob la yoor dabon itiram ka u ma an devid pua kani ka u yoor bon egla la,0.5909,0.2464
+754,"Dinzug Zugsɔb onɛ an Paŋtitaar Sɔb la yɛl sieli nwa: Mam mɛŋ kis yanam Jerusalem dim nɛ, ka na kɛ ka namisʋg paae ya ka dunia wʋsa nyɛ.",dinzu zugsɔb onaa paŋtitaar sɔb la yelseeli wa man me n chis yanam jerusalɛm dib ni kana kɛ kanamso paa ya ka dunia wusa nyi,0.6786,0.1905
+755,gbanad zimi Nail kɔldaugin la na kaasid ka nyɔn; banɛ lɔbid asau nɛ banɛ sigid kuomin nɛ zulis la na gɛn ka gaad.,imaayikdaagi la na kaansi kayɔn ba ni lɔbbadasau nɛ baa nin sigi kuomin nɛ zulus la na gɛ ka gaa,0.6957,0.3146
+756,"Manase dɔɔg la ni sieba mɛ da aaɛn kɛn David sanan na, saŋa kanɛ ka on nɛ Filistia dim da keŋ ye ba zab nɛ Saul la.",manasedok la nii sheba meda aan ke devid saan na saŋa kani kaa u nɛ filisi dima dakeŋ ye ba zab ni sɔɔl la,0.7037,0.2299
+757,Ban bɛ teŋ sia la ba kʋ nyaŋi yɛl ye ba mɛŋ teŋa.,ba be teŋsiaala ba kunyaŋɛ yel ye ba meŋ tŋa,0.7692,0.2222
+758,"Onɛ tʋm nɛɛŋa wʋsa, siel kae na daam o.",ni tom nɛ ŋa wosa feelkai na daa mu,0.8889,0.3103
+759,ka nwɛ tempʋkanɛ zie agɔla la sigis teŋin; o daae li bas ka li naalim nɛ titan.,a ŋmea tempo kani zie agolala sigi teŋin u daa le bas ka le naalim ni tita,0.7647,0.2459
+760,ka m niŋgbina mɛ mɔr laafi ka siel kʋ daami ma.,aningbina mi mɔ laafe ka seel kudaa,0.9091,0.3333
+761,Zugsɔb onɛ aan ya Winaam la na kad buudbanɛ bɛɛ ya tuon la biel-biel.,ugsɔb o ni aan ya winaam la nan ka buud ban ni beɛ ya toon la biel bie,0.8571,0.1667
+762,Maalimi maan linɛ nyuod nɛ bugum linɛ ka li nyuug malisi tis Zugsɔb la nɛ naapɔla pii nɛ atan nɛ pɛraad ayi nɛ pɛribis pii nɛ anaasi banɛ an yʋʋm yinne ka ka dɛŋŋa.,al memaa len nyod nɛ bugum linekaa linyuug malisi ti zugsɔb la nɛ naapoɔla piine ata nɛ paraarayi nɛ paribis piinɛ anaase ba na a yuum yeni ka kaa dɛŋa,0.7353,0.2077
+763,Alazug Zelofehad biis la da niŋ wʋʋ Zugsɔb la tis Moses nɔɔr siem la.,aazuzelofehat bii lataniŋ woo zugsɔb la tisi mosis nɔɔr sem l,0.7857,0.2
+764,Nɛɛŋa wʋsa da paannɛ Israel dim sʋnfʋ maae siem.,e ŋa wosa da paa ni israɛl dim sufu man seem,1.0,0.3333
+765,Elhanan onɛ an Jair biig la da kʋ Goliyaf onɛ an Gaf nid la baabiig ka o mɔr kpan ka li daug la mugum nwɛnɛ yuadir nɛ.,elhanan o nɛ a jaar bia la da ku goliyaf on a gafnit la baabil ka u mɔr kpann ka le daau la mugum wonn yu a nan,0.7037,0.2418
+766,"Fʋnɛ na baŋi li, ka ka manɛ; dinzug, yɛlim fʋn gbane siem.",bo ni na baŋi le ka kaa man ni dinzu yalim fu ngbaan seen,0.9167,0.3256
+767,"Ba da anɛ zabzabidib banɛ sʋnfʋ kpiem, alazug ba da gaad David zabzabidib la tuonnɛ zabid nɛ banɛ da ginnɛ faand la.",ba da ani zabzabidiba ban ni sufukpeem alazugu ba da gaa devid zabzadiba la too ni zabid ni baa ni da gii nifaanr la,0.7273,0.2473
+768,Zugsɔb na kɛ ka fʋ paam linɛ ka fʋ sɔs o la wʋsa.,zugsɔb nan kɛ ka fo paam lenɛ ka fo sos tu la wusa,0.5385,0.2222
+769,"Ka maliak onɛ paas ayi la dɔl yiiga daan la ka yɛl ye, “Babilon teŋ titaar la sanamya.",amalɛk oni pisayii dɔl yiigadaan la ye babilɔn tatitaar le saam ya,0.8333,0.2727
+770,"O da anɛ yʋma pisi nɛ anu ka di naam, ka da gɔs Jerusalem yʋma pii nɛ ayuobʋ.",ka ani yuumapiishi ne anu ka de naa ka daa gɔs jerusalem yuumapii n yuo,0.7222,0.2931
+771,"Ba da digin Moab teŋ kanɛ an sassi la Joodan kɔldaug gbɛog, lin naam Befijesimof ti paae Abɛl Sittim tɛɛns la bɛn.",moab teŋ kan a saasei la jɔɔdann kɔdaagbeg le naam bet jesimof ti paai abel sitim tens labe,0.8182,0.3516
+772,li anɛ bʋnsʋŋ ka mɔr nyɔɔdi tis banɛ bɛ dunia nwa ni la.,le ana bunsuŋ kamɔ nye di tis ba ni bɛ duniya wanii l,0.9231,0.2791
+773,"Ieeb saŋa bɛ nɛ, ka bɔdigir saŋa bɛ; mɔrim saŋa bɛ nɛ, ka basib saŋa bɛ.",eb saŋa be ni kabɔrgir saŋa be mɔnim saŋa be ni kabasub saŋa ba,0.75,0.2264
+774,Fʋ tʋʋmbɛɛd la namisidnɛ fʋ saal taaba maaa.,otoombɛɛd la namsi den fusaaltaaba maa,0.875,0.25
+775,Li na nwɛnɛ bunib saŋa ka ba fanr olif tiig wala.,inan wo neebuni faŋa ka ba far olifi teeg a,0.8182,0.3421
+776,"Li da anɛ ʋʋn, saŋa kanɛ ka naanam ken zaba la, Joab n da gaad zabzabidib la tuon ka ba keŋ sanam Ammon dim teŋ la, amaa David da kpɛlim Jerusalem.",i da anɛ uun saŋa kani kanaanam kenn zaaba la jɔab pi dagaar zabzabdiba la toon ka ba kiŋ sam ammon dim teŋ la amaa devid da kpalim jerusalɛm,0.5806,0.1681
+777,Ba da bas Pihahirot teŋ la ka lɔɔŋ atɛuk la kpɛn sianarin.,pihar herod teŋ la kaa lɔɔŋ atek la kpɛ shn arin,0.75,0.3478
+778,"Ka nɔdiesidib la sid yɛli ba ban tʋm siel ka li pʋ nar la, amaa ka ba pʋ kɛlisɛ.",a nɔdiesidib la sir ya liba ban tom sheel ka li po nar la amaa ba po kil sia,0.5789,0.2333
+779,"Zugsɔb la, Zugsɔb onɛ an Paŋtitaar Sɔb la.",zugsɔb la zusɔb o na a paŋtitaa sɔb la,0.625,0.1212
+780,"“Onɛ mɔr tʋba na wʋm, on wʋm linɛ ka Winaam Siig Kasi la yɛt karindɔɔd la.",ni bɔɔr ye wum alaau kelisim leni ka winaam siisuŋ la ye winaamnib a,0.8125,0.6429
+781,Ka paas bʋraug yinne ka li na an tʋʋmbɛɛd maannɛ paas daar wʋsa nyuor maan nɛ li zʋʋd maan nɛ li bʋnnuuda maan la zug.,ka paas buraag yinni ka le nan a toombɛɛd maan nɛ paas daar wusayuur maan nɛ lizoor maan nɛ li bunuuda maan la zug,0.52,0.172
+782,Ba da nɔk o zaba laad la niŋi ba bada la dɔɔgin ka nɔk o zug la yaal baar kanɛ buon Dagon la dɔɔgin.,anɔ kuzaabala la niŋi ba bada la daugin ka nɔk kuzugu la yaalbaar kani boon daagon la daa,0.625,0.2632
+783,"David da sʋʋg Israel wʋsa, ka tʋm dinɛ an sʋm nɛ sida tisid o nidib saŋa wʋsa.",devid da sok israɛl wosa ka tum di ni a sum nɛ sira tisir u nidib saŋa wusa,0.7647,0.2333
+784,O na namis waakanɛ yʋʋri buon Lɛviatan.,nanai waa ka ni yobo lata,1.0,0.4375
+785,Kuokanɛ mɔr nɔpɔɔri kenna la na kpɛn fʋ niŋgbina ni ka li kɛ ka fʋ pʋʋr pid ka fʋ gbɛr nwiilim.,ukanmo nɔpɔr chinn la nan kpɛɛ fo niŋgbin na ni ka li kɛ ka fo porpiik ka fo gbariŋwinlin,0.7143,0.3378
+786,ka dig nɛ ti puasada Juda teŋkpɛmisin wʋsa.,a dignitipuasada juda teŋ kpabmsin u sa,1.0,0.2
+787,"Ka zaanɔya atan bɛ ya-nyaaŋ, ka atan bɛ ya-datiuŋ, ka atan bɛ ya-dagɔbʋg ka atan bɛ ya-tuona.",a zaanɔya ataan la daa be zangooma anaasi la yinni yenni ni ka ataa bee yaa yaaŋ baba ka ataa bee yaa datiŋ baba kaataa bee yaa dagɔbig baba ka ataa mi be yaatoonba,1.7647,1.0714
+788,Winaam Siig la maal mam; Onɛ an Paŋtitaar sɔb la vʋʋsʋm kɛ ka m vʋe.,winaamsiig la maal mam u na a paŋtitaar sɔb la voosim kɛ kaa nvoe,0.6,0.1731
+789,"Joab n da nyɛ ka zabzabidib la gilig o tuon nɛ o nyaaŋ wʋsa la, o gaans Israel zabzabidib banɛ an ninkpiema ka mi zaba sʋʋŋa la zieli ba gu Aram dim la.",oa po daa nyɛ ka zabzabdiba la giligu toon nɛ u nyaaŋ wusa la u gaans israɛl zabzabdib ban a ninkpeema ka mii zabasooŋa la nzeel ibaaguu aram dim la,0.6364,0.1949
+790,"Bipuŋ kanɛ wʋsa die paalʋ faar Israel dɔsia wʋsa ni, asɛɛ ka o kul sɔ o saam dɔɔgin la, linɛ na kɛ ka Israel nid wʋsa paam o yaanam faari di.",bipun kani wusa die paalo faar israɛl dɔshia wusa ni asee ka u kul sɔ u saam doɔgin la le ni na kɛ ka israɛl nir wusa paa mu yaa nan faar i di,0.7097,0.1759
+791,-Tiɛnm Winaam onɛ maalif la fʋ dasannim saŋa.,mm unimaal la fo dasani s,0.875,0.5278
+792,“Pʋʋsim Yir la wada nwana: zinikanɛ gilig zuor la zug wʋsa na anɛ zinikanɛ an kasi la.,usum yil la waadawana ziikani gilik zuo la zug wosa na ana ziikani a kaasi la,0.7059,0.2537
+793,"Ka Moses yɛli ba ye, “Nɔziela bama ka Zugsɔb la dʋʋs o kʋkɔtitaari yit bugumini tisi ya, yanamɛ da laas taaba zuorin la ka saŋgbana nɛ lik da bɛ la.",amosis yɛli ba ye nɔjie la bama ka zugsɔb la doosi u kukɔrtitaare n yi bugumi ni tisi ya ya na mi da laa taaba zuorin la ka saŋgbana na lik da bi la,0.5667,0.1391
+794,ka ka paŋi na tʋmi m tʋʋmaa tisidi ma.,i kaa pa ŋa na too mi m tooma tisinima,1.0,0.3103
+795,"Amaa dau yinne onɛ an Yesu Kristo la tʋmm gaad ala, bɔzugɔ o kum zugʋ kɛ ka ti paam yɔlisim linɛ yit Winaam pʋpielimin na.",ali yidakaaka lini dɔl yesu kristo tooma la gaada la niriba bani wusa dier winaam popielim li ni zuo ni upiini dina  popielim la na yen na,0.96,0.6875
+796,"Ka o maki gilig dɔbanɛ ka ba dɔlli kpɛnɛd la ti paae zaambɛŋ la bɛn, ka li an nɔba makir piswai.",ka u ma ki gilig dɔ baan ni ka ba dɔl likpɛɛr la ti paa zaambɛŋ la ben ka le a nɔba maaki pi a,0.7143,0.2027
+797,"Dɔɔd la dɔkpina banɛ bɛ pʋʋgin nɛ yiŋ la da mɔr takorobibisi gilig, ka zaambɛŋ la mɛ da aan ala, ka takoronam la wʋsa kpa pʋʋgin.",ɔɔr la dokpina ba ni be poogin ni yiiŋ la daa ani takorbibi se jilig ka zaambɛŋ la mida a ala ka takornam la usa kpa pooguŋ,0.7308,0.2574
+798,"Banɛ gur la dɔɔd la da bɛ zaanɔɔrin la, ka zaanɔya la yalʋŋ an makir daug yinne ka li waalim an daug la makir yinne.",ban guur la dɔɔr la daa bɛ zaanɔɔrin la ka zaanoya la yaaluŋ aa makir daa yin ni kaa lewaalim a daagu la makir yini,0.6,0.2
+799,gbigimtitaar yaa gbane bʋnkɔnbʋg ye o ɔnb.,bigim titaariya gbaan binkobugeɔ,1.0,0.3714
+800,Ba pʋʋr la sʋʋlim la da bɛnɛ Juda nɛ Josef dim la teŋsʋk.,ba poor la suulim la da be nɛ juda nɛ josef dim la te so,0.4615,0.1818
+801,"Da zɔt dabiem, bɛɛ kɛ ka fʋ giinla siɛn.",aɔ dabeem beɛ ke ka fugiin la siy,0.8889,0.3
+802,"Aa tɔ, ti yinne-yinne na tuas o mɛŋ yɛla wʋsa tis Winaam.",tiyinni yin ni nan tɔɔs u maŋ yɛla wusa n tis winaa,0.9167,0.3256
+803,ka kɛt ka Israel dim baŋi fʋ wada la.,fo nonaar la maa paan jakɔb fosuya la ka ker ka israɛl dim baŋ ŋa fo waa la,1.5556,1.3214
+804,"Aram dim banɛ bɛ Damaskus la da wʋm, ka kena ye ba sʋŋ Hadadeze onɛ an Zoba naab la.",amdim ba ni bedamaskus la da wom ka kena ye ba suŋ herodezi on a zo bana,0.6842,0.25
+805,"“O Winaam, nyan mɔrim nɛ hali nɛ mam na gɔdigi m nindaa kpaaf, m Winaam, bɔzugɔ ti tʋʋmbɛɛd la zuoe nɛ hali limi ti zut ka ti nyan dʋʋ paae agɔla.",winaam nyann marim nɛ hali ne ma nagɔdigem nindaa kpaab n winaam bezugo ti toombiɛd la zue ni hali limitizut ke ti nyan do paay agɔla,0.6452,0.1712
+806,Teŋ la mɔr zaŋguom titada nɛ zaanɔya pii nɛ ayi ka zaanɔya nɛ kʋlis pii nɛ ayi la waam.,tiŋ la daa mɔr zanguom titara ka ba zuu waam ni zaanɔya ni kolis piinaayi,0.8947,0.4412
+807,O na dɔlli zaambɛŋ la ni kpɛn ka lɛn dɔlli ani yi.,u na dɔl le zaambɛŋ la nii nkpɛ ka len dɔl la anii ji,0.8333,0.2368
+808,nɛ man da zanasidi fʋ nɔɔr siem laa; fʋ nɔŋir la zugɔ tɛnri m yɛla.,nɛ manda zanaside fu nɔɔr seem la fo nɔɔŋir la zugɔ terim yala,0.7333,0.1765
+809,Balaam bʋŋ pian tis o.,mub naab la to miba ni la ba kaŋa na ye ninban yi ijipt na pal zini wosakpala la kem naa pɔɔ niŋmi ba tteseŋ,5.0,4.1765
+810,Ba tʋʋmbɛɛd la zug ka Zugsɔb la da kɛ ka tɔɔg sig Juda nɛ Jerusalem teŋin na.,ba toombɛɛd la zug ka zugsɔb la da kɛ ka tɔb si juda nɛ jerusalɛm teŋin na,0.2353,0.1
+811,"Moses da sɔb pʋpielim linɛ yi wada dɔllim ni la yɛla ye, “Onɛ siak wada nɔɔr yɛlʋg la na nyɛ nyɔvʋri li dɔllim pʋʋgin.",moses da sɔb popielim lina yi wadadɔlim ni la yɛla ye o ni siak wadanɔɔyaligu la na yi nyɔvul li dɔllim poogin,0.5,0.163
+812,"Banɛ zɔti dɔl winsieba la, na maligim paasi ba mɛŋ sʋnsaaŋ.",ni zɔti dɔl winsheba la naa maligam paasi ba mɛŋ susaa,0.4545,0.1915
+813,Daakan la ba na yʋʋm yʋʋm kaŋa Juda teŋin: Ti mɔr tempʋkanɛ kpiem!,kaa kan la ba nan yuom yoom kaa ŋa juda teŋin ti mɔtempo kani kpiem,0.6923,0.1923
+814,"Amazaya yʋʋn da baŋ ye teŋ la bɛ nɛ o nuugin la, o da kʋ kpɛɛm banɛ da kʋʋ o saam la.",masaya yuun da baŋ ye teŋ la bɛ ni u ni u gen la u daa ku kpɛɛn ban ni da ko usam la,0.7273,0.2903
+815,Ba da zaŋ kuga diinl o ka li dʋ dʋʋr hali ka nan kpɛm bɛ zina.,ba dan zaŋ kugaa diinlo ka li do door hali ka nan kpm ba ʒin,0.5625,0.1957
+816,nɛ ba wiedbanadib la ban mɔr paŋ la zug.,n bawee baadib laa ba mar paŋ la zuo,0.7778,0.2581
+817,"Ka Zugsɔb la lɛbisi yɛl Josua ye, “Duom zien!",ka zugsɔb la lɛbis yɛli josua ye duom zion,0.3333,0.0882
+818,"Zugsɔb la kɛ ka Joodan an titɔndig tinam nɛ yanam teŋsʋk yanam Reuben nɛ Gad dima, ya ka pʋʋr Zugsɔb la sananɛ!",zugsɔb la kɛ ka jɔɔdinn a titɔdig tinam nɛ yanam tensok yanam ruben ni gaad dima ya kaa poor zugsɔb la saan,0.4545,0.1818
+819,Amaa Naab Abija da kpɛn kennɛ tuon nɛ kpieuŋ.,maa naab abija dakpanchenni toon nɛ kpeeŋ,0.6667,0.2222
+820,O na namis Maliaksʋma nɛ Pɛbil la tuon ka kpɛn bugum linɛ nyɛligid nwɛnɛ kidibir la.,na naisa lee suma itepiib la tuɔ m kpee bigimi netaal li na nya e kai berigo a,1.0625,0.5882
+821,Tembama da maal nɛ ka li kpiem Juda nɛ Benjamin dɔɔd sʋʋlimin.,timbaamaada maa le ka li kpeem juda nɛ benjamin da suo mi,0.6667,0.28
+822,"Mam maal sieli nwa: Man daa nyɛ Babilon dim fuvɛnliŋ nɛ anzurifa gbila kɔbisyi nɛ sanlimgbila pisnu, ka m yaam kpɛn ba galis ka m zaŋi ba.",man daa nya babilɔn dim fuveenliŋ nɛ an zuur fagbila kɔbishie nɛ salingbii la pisinu m yaam kpɛ baagalis ka m zaŋ ba,0.6667,0.2936
+823,"Ba da mum o David tempʋʋgin, amaa ka naanam yaadin la.",ba damumu devid tenpookin amaa kaa naanm yaar din,0.8182,0.2619
+824,"Nimbama pʋ gbanad pianad gbinnɛ; alazug, onɛ maali ba la pʋ zɔti ba nimbaanlig.",ibaama po gbaa pana bin na alazu on maa li ba la bo zɔɔ tiba nibaae,1.0,0.3175
+825,Ka duoe Sin mɔɔgin la keŋ laasi digin Dofka teŋin.,adiosiin mɔɔgin la kenlaasidigin doka tŋa,0.8,0.225
+826,"Ka nɔk diibi pʋdig Israel dim la, puab nɛ dap wʋsa.",anudeebi podu isral dim la pub ni dapuu,0.8182,0.3846
+827,Ka fʋ na tune zɛrig Winaam Onɛ an Paŋtitaar sɔb.,kafunaa toŋ zerik winaam ona a paŋ titaar sa,1.0,0.2895
+828,Amaa ya pʋ gɔsi nyɛ Winaam onɛ maali li wʋsa kʋdimin sa la.,maa yapo gɔs nye winaam uninmaa lile usa kudumin saal a,0.9231,0.2826
+829,"M na lɛbisi yɔɔ ya, ka li dɔlnɛ ya bɛllim nɛ tʋʋmkisa banɛ ka ya tʋm la.",m nan lɛbisiyauya ka li dɔlni ya beilim ni tuum chisabanikal ya tom la,0.6471,0.2593
+830,Li an sʋm hali nɛ tinamɛ na yʋʋm zune ti Winaam la.,aaa som hali nɛ tinami na yo m zuo tiba winaam a,0.75,0.3077
+831,"Ba da giligi li, ka maal datti dʋ zaŋguoma la.",baagiiile kamaa daa ti do zaŋguomala,1.0,0.2
+832,ala mɛn ka zɔlim ɛɛn paas yaamin ka girima lɛn kae.,la min ka zɔlim ee paas yaamin ka girma le kaa,0.5455,0.225
+833,Nɔkimi naaraad la nɛ pɛraad la nɛ pɛribis la maal zʋʋd maan nɛ bʋnnuuda maan nwɛnɛ ban zieli li kal siem la.,ukumnaaraadla ni peraadla ni paribi la maal zoomaan ni bunuuda maan ŋon ni ban zee li likal see la,0.7727,0.2558
+834,"Jehoyada nɛ o biis la da yis Naab biig la paalʋ na, ka nɔk naam zupibig la pid o, ka nɔk wada gbauŋʋ tis o ka diis o naam.",eoyada nɛɛbiis la daa yiis naab biig la paalu na ka nɔk naam zugpii lapidu ka nɔk wadaagbaŋi tis u ka di su naam,0.5517,0.1758
+835,"Da mɔri yaamlɛog nɛ anzurifa nɛ sanlima linɛ bɛ wina la ni la, ka mɛ da nɔk ye ya sʋoe ya, ka li na an wʋʋ baŋi bɛndi ya, bɔzugɔ Zugsɔb onɛ aan ya Winaam la kisʋgʋ la.",a mo ni yaamlɛk ni azurifa ni salima linɛ bɛ wena la ni la ka me daa nɔk ye ya sooe ya kale na a woo baŋibendiya bizugɔ zugsɔb o na aan ya winaam la chisigo la,0.6053,0.1905
+836,"” Laan nɛ wala, David da nyaŋi ba kpieuŋ zinig dinɛ bɛ Zion, ka ba yʋʋn buonnɛ li ye, David Teŋ la.",an ni wala devid dan yaŋi ba kpeeŋzinig di ni bɛ zayɔnn kaa ba yuun buon ni li ye devid teŋ la,0.6667,0.2192
+837,"Ba pʋʋgin ka ba piesid laad linɛ an nyuor maan la ka li yit nyain, amaa Atɛuk la mɛ da anɛ maanmaannib la piesʋg zinig.",ba poogin ka ba piesir laak linɛ a nyuon maan la ka li yitiyai amaa atikp la mida ane maanmaanib la piesu zii,0.56,0.1935
+838,M pɔya ye man yɛl siel la wʋsa anɛ sida.,pɔya ye maŋ yel seel la wusa a ni sira,0.8,0.2333
+839,hali ka nɔŋ kɛ ka o kʋ nyaŋi paam fuugʋ lus o mɛŋ.,hale ka noŋ ke ka u kuyaaŋi paapuugu lusuumaŋ,0.8462,0.3514
+840,ka li anɛ onɛ kɛ ka ya zaanɔya la kpiem.,a li ani oni cha ka ya zaanɔya la ki,0.5,0.3
+841,"Li da anɛ Zugsɔb onɛ aan ti Winaam la mɛŋi yisi ti Egipt teŋin, zinikanɛ ka ti da an yammis la, ka maal tʋʋmnyalima ka ti nini nyɛ.",lda anɛ zugsɔb on aa ti winaam la meŋ yiisi to ijipti teŋin tiin kani ka ti daa a yamir la ka maal tom yalima ka ti niininya,0.6071,0.2178
+842,Ka paas bʋraug yinne ka li na an tʋʋmbɛɛd maannɛ paas daar wʋsa nyuor maan nɛ li zʋʋd maan nɛ li bʋnnuuda maan la zug.,a paas budaa gee ni ka le nan aa toombɛɛr maan nɛ paas daar wusa nyoonn maan nɛ li zoor maan nɛ li binuuda maan la zugo,0.6,0.2581
+843,"Ka yʋʋn kpɛn ieed Naab Ahazaya mɛŋ, on da suad Samaria tempʋʋgin la.",a yuu kpɛ yeed naab aizaya miŋ on daa suad samaria teŋpoogun la,0.6154,0.2593
+844,"Ka li makir an yinne nɛ bama la, nwɛnɛ banɛ gur dɔbama la an siem la, nɛ li dɔkpina nɛ li zaambɛŋ la, ka li mɔr takoronamɛ gilig.",a li maakir an yinni ni bama la woni baa ni gu dɔ bama la a seem la nɛ li dɔkpiina nɛ li zaambɛŋ la ka li mɔr takori na mi gili,0.6071,0.1633
+845,Winaam zaŋ nɛ o paŋ titaar la gbane m niŋgɔɔnri siank.,winaam zaŋe u paŋ titaara gbaam n ningoɔŋr si,0.8182,0.3256
+846,Li wʋsa paas nɛ tʋʋmbɛɛd suguru sɔsʋg maan nɛ daar wʋsa nyuor maan nɛ li zʋʋd maan nɛ li bʋnnuuda maan la.,usa paas ni tombal sugursosug maan ni daar wusa nyuor maan nɛ lizoor maan nɛ libunuuda maan la,0.5455,0.2381
+847,Ba wʋsa da mɔri ba tuŋ ka ba an Iiza dim nɛ Helek dim nɛ Asiriel dim nɛ Sekɛm dim nɛ Siamida dim nɛ Hifa dim.,wusa da mɔ li ba tuŋ ka ba anɛ iza dim nɛ helɛk dim nɛ ashiriɛl dim nɛ sekim dim nɛ shiamida dim nɛ hifa dim,0.3846,0.1205
+848,"Ani ka o dɔllimi yi zak kanɛ bɛ yiŋ la na dɔllimi giligi li lɔdis anaasi la, ka m nyɛ ka lɔdig wʋsa mɔr zak yaas.",nika u dɔlim yi zaka ni bayeeŋ la na dɔlimi giligi le lɔritanaase la ka m nyɛ ka lɔri wusa mor zakyaa,0.6538,0.2209
+849,O ma yʋʋri da buon Atalia onɛ da an Naab Omir yaaŋ.,a ye udi daa boon atalia u ni da anab umira,0.9167,0.3846
+850,Yɛlsʋm bɛ nɛ onɛ sʋŋiri yit Jakob Winaam sanan na.,sum be ni oni suŋi yi jakob winaam saana,0.8,0.325
+851,"On da ka wʋʋ o saam la, bɔzugɔ o da pʋ sie o mɛŋi tis Zugsɔb la, amaa ka keŋ tuonnɛ tʋm tʋʋmbɛɛd hali.",da kaa woo u saam la bozugɔ u da po sei u mɛŋi ti zugsɔb la amaa ka keŋ toon ni tom toombɛɛd hali,0.5833,0.2368
+852,"Ti Zugsɔb Yesu Kristo yɛlsʋm bɛ nɛ ya wʋsa, Ami.",tizuusɔb yesu kisto yelsum beni ya wusa,0.8,0.2703
+853,"O da yɛlim ye, “Ninsaal biiga, m naam gbauŋ la nɛ m nɔba zieg zinigi nwa.",daa yalim ye ninsaal biiga m naam gbaŋ la nɛ m nɔbazie ziini biŋɔ,0.5,0.1852
+854,O na gbilimif wʋʋ piennɛ lɔbigi bas.,ubiimi upe ni lɔbug,1.0,0.5862
+855,M da nɔk Seir dinɛ an kʋkʋna teŋ la tis Esau ye o sʋoe.,danɔksier di ni a kukona teŋ latis isau ye u soor,0.8571,0.2683
+856,"Manɛ an Winaam nidib la wʋsa kpaanr, laan nɛ wala, o tisim suor ye m mɔɔl labasʋŋ linɛ ka makir Yesu Kristo ni la tis buudbanɛ ka Jew dim la.",mam oni aa winaam nirib wusa kpaanr la dee piinkaŋa ye m mool labasoŋ la ti buudi ban nin kaa juu dim la piintitaar on aa yesu kristo la yɛla lenin kaa bi,1.0333,0.7064
+857,"Ba na tami ba nyan la yɛla, nɛ ban da pʋ tisidi m sida siem la.",ba na tami ba nyani la yala nɛ ban dapo tisidim sira seem la,0.5,0.1087
+858,Nɛ na an nwadig-nwadig maan linɛ ka ya na maan nwadpaalig wʋsa yʋʋm la pʋʋgin.,nɛɛ na a ŋwadŋadimaan leni kaya na maan ŋarpaalig wusa juum la poogin,0.7333,0.3065
+859,Anɔɔn na nyaŋi bɛɛ fʋ zuokanɛ an kasi la zugɔ?,n na yaŋɛ ba fu zugo kan a kasi la zuu,0.8,0.3889
+860,Asiria dim kpɛn Ayaf teŋin gaadi keŋ Migron.,asiria dim kpiɛ ayaf teŋen gaarikeŋ migro,0.625,0.1389
+861,"M da nɔk Edom teŋi tis Esau, zinikanɛ ka zuoya bɛ la, amaa Jakob nɛ o biis da keŋnɛ Egipt teŋin.",melanok edom teŋi tis isau ziinkani ka zoya be la amaa jekɔb nɛ u biis daa keŋɛ ijipt tɛŋɛn,0.619,0.2466
+862,"Ba maalimi li saŋa kanɛ nar, ka li anɛ nwadig nwa, li dabis pii nɛ anaasi daar, winnig yaa ti bɔɔd kpɛnɛb, ka li dɔl nɛ li suor nɛ li ziela wʋsa an siem nɔɔ.",amaali milee saŋa kanunar ka li ana wadig wa lidabpii nɛ anaasi daal wunigyaatibɔ kpɛɛn ka li dɔl nɛ lisuor nɛ lizeela wusa a sheem nɔɔ,0.6857,0.178
+863,Da kɛ ka tʋʋmbɛɛd lɛn sʋoe ya niŋgbina ye ya siak yaamlɛog bɛɛd banɛ ka ya niŋgbina bɔɔd la.,a che ka tumbɛɛd len soo ya ningbina ye ya siak yaamlee bɛɛd bani ka yiniŋbina bɔɔ la,0.5789,0.2329
+864,"Alazug Naab Joas da buol Jehoyada onɛ an maanmaan kpɛɛm la na buos o ye, “Bɔ ka fʋ nam pʋ kɛ ka Levi dim la laas Juda nɛ Jerusalem dim lampɔ ligidi la na?",elazunaab joash da bol joo yada une amaanmaankpɛɛm la naa boos o ye bɔ ka fo nan po kɛ ka levi dim la le a juda nɛɛ jerusalɛm dim lampɔ ligidi la na,0.5294,0.1525
+865,"Paasimi maan linɛ an zɔɔm baanligi gɛndig nɛ kpaam, naaraug wʋsa zug kuriba ayuobʋ, nɛ pɛraug la zug kuriba anaasi.",asi mimaan lena a zɔm baali jedigni kpaam naaraagusa zu kuribayoobu ni paraala zu kurba anaan si,0.95,0.2903
+866,"M na kɛ ka o sʋʋlim la zien saŋa linɛ ka bɛnnɛ, o yaa kpɛn siakidi m nɔzielʋg nɛ wada la wʋʋ lin an siem nannanna.",nna kɛ kusoolim la ʒien saŋa leni kaa bɛ nɛ u yaa kpen shakrem nɔseelug ni wada la woo len a sheem nannan na,0.8462,0.2989
+867,Saŋkan la ka zʋmaʋŋ kanɛ mɔr dap banɛ da an zabzabidib la da lɛn kae ba sʋʋgin nwɛnɛ Zugsɔb la pɔɔ zieli ba siem la.,sakann la kaa zumaam kan ni mu dap bani da a zabzaabdiba la daa len kae ba soogin ŋonni zugsɔb la pa zie li ba seem la,0.68,0.2857
+868,O bikanɛ da paas anu la yʋʋri da buon Sefatia ka o ma yʋʋr buon Abital.,bikani daa paa si nu la yoori da bonn seatia ka umayoor bon abita,0.8125,0.2545
+869,O da kɛ ka Mitredaf onɛ aan o ligidgur la mɔr laad la na kaali tis Siesibaza onɛ an Juda naabiig la.,ka mitridaf u ni aa u ligirigura mɔ laal la na a kaaletes shie shibaaza u ni aa juda ni a biig la,0.9545,0.3205
+870,Maanmaannibi niŋ nidib zug albareka la yɛla.,anmaani bini nizibzu albarika la yaa,0.8571,0.2432
+871,"M Zugsɔba, gɔsimi m sʋʋnri sanam yɔri-yɔri siem!",zusɔba gɔsimim suunri saam yaryar see,1.0,0.2895
+872,ba pʋ kenna ye ba pʋʋs ka diem malima saŋaa.,ba po kenna ye baa poos ka deem maalima saaŋaa,0.6,0.2059
+873,Tɔlʋŋ la nwa: ‘M mi yanamɛ tʋm siem nɛ yanamɛ kpɛɛŋidi ya mɛŋ siem.,toluŋ la wa man mii yanami niŋi seel ka mii yanami tum ni kpeem see,1.0,0.6078
+874,"Amaa ya yaa kena ye ya gbi mam tisim dataas, laan nɛ mam pʋ maal siel la, ti yaanam Winaam la na kadi ya saria.",maa ya yaa kenni ye ya gbii man tisim dataas laan ni man po maal sheel la ti yaa na muinam la nan kariya saria,0.56,0.1667
+875,"Onɛ mɛkama gɔs ka dabis-sia bɛɛ li kɔn, o sɔb niŋid ala ye o naas Zugsɔb la.",n mɛkama gɔsr ka dabsea a su niŋir le ye u naa zu sɔb la,0.8235,0.4035
+876,"Ka o kʋkɔr vuudi nwɛnɛ kuom linɛ bɛ susuudin nɛ, ka teŋ la nie nɛ o pipilim.",kakukɔr vuudi wennɛ kuom linɛ ba susuuduna kateŋ la nie nɛ piiliŋ,0.6471,0.2069
+877,Kuom la dɔl suosieba zɔt la na punoe nyuusid.,na dɔl susieba zɔd la na puun nyuusi,0.6667,0.3056
+878,Li waalim anɛ nɔba makir pisyɔpɔi nɛ anu ka li yalʋŋ an pistan nɛ ayɔpɔi nɛ pʋsʋk.,waalim a ni nɔbamakir piisayɔpɔi nɛ anu ka liyalugu a piistaani yɔpɔi ni posoo,0.7647,0.2615
+879,ka li anɛ tinamɛ bɛ likin biridi la yɛla.,kale anetuŋami balikinbidiila yaa,1.0,0.3125
+880,Ba na kisigi ba mɛŋ tʋʋmbɛɛd nɛ tʋʋmkisa banɛ ka ba tʋm la yɛla.,ba na kisigr ba min toombɛɛd nɛɛ toomkisa ban ni ka ba tom la yɛla,0.5714,0.22
+881,"On da sɔs Zugsɔb ka o nyɛ on sie o mɛŋi an siem la, o da wʋm o sɔsʋg ka zii o lɛb o mɛŋ sʋʋlimin Jerusalem na.",asɔ zugsɔb ka u nyɛ un see u maŋ ŋiasheem la u daa wom u sosug kaa zii ulɛb u maŋ soolimin jerusalem na,0.75,0.3086
+882,"Amaa yaa kpɛlimnɛ man nɛ m yidim, tinam na dɔl Zugsɔb la.",maa yaa kpelm mi mam nɛ m yidima tinam nan dɔl zusɔb la,0.5833,0.2045
+883,Anɔɔnɛ mi on na gaad ka dinɛ na lɛdigi tʋm?,nu ni mi u na gaad kadini na ladige too,0.7,0.3333
+884,"Ka man nyɛ sɔ la lɛn yɛlim ye, “Sɔm nɛɛŋa tis maliak onɛ bɛ Sardis karindɔɔgin la.",aman nyɛ sɔ la len yelim ye som ni ŋa nthiti malak oni be winaam nidib saan be saadseŋan na,1.0,0.5238
+885,Linɛ na kɛ ka ɛndʋg nɛ sʋnpɛɛn linɛ ka m gbane ba yɛla la niŋ lamm.,ini na kɛ kaal edi kpi supɛn linɛ kan gbaen ba yala la nilam,0.6875,0.3529
+886,Banɛ gur la dɔɔd nɛ li dɔkpina banɛ bɛŋ la nɛ li zaambɛŋ la makir anɛ yinne.,baniguuradoud nɛ li dɔkpiinabanibɛŋ la nɛ lizaambɛŋ la makel ani yen ni,0.7647,0.2034
+887,"Ayei, m pʋ mɔr sumbʋgʋsʋm, li ka m sʋʋm.",ye m pomɔ subosem lekaaso,0.8889,0.4828
+888,Li teŋsʋk la ka Zugsɔb Pʋʋsim Yir la na bɛ.,detensola ka zugsɔ poosum yilana ba,0.9,0.3333
+889,M da kɛ ka tangbɛɛnlnam sigi ba sʋʋgin na kadi ba ka ba zɔ ka ya nyaan paae.,dakɛkaa taŋgbeɛn lam sigi ba soogen na kadiba ka ba zɔ ka ya yaan paa,0.5556,0.1724
+890,tempʋbanɛ nidibi an bugusnam la na tisif girima.,tenpo ban ni niriba a bugunam la na tisib gerima,1.0,0.25
+891,Ka pɛɛsi ba tɛɛns pisnaasi nɛ ayi laam pɛɛs nɛ ba kɔnbid kem zinis la.,ka piɛ siba tens piisnaasi nɛ ayi lampa nɛ ba bunkɔbi kem zinis laa,0.5333,0.2545
+892,bɛɛ kɛ ka Onɛ an Kasi tisif la punoe.,beɛ ke ka o ni a kasitisif la puun,0.7778,0.25
+893,"Bela da kpi la, Zera biig Jobab onɛ yi Bozira la da di naam la o tempʋʋgin la.",la dakpila zerabi jobab o ni yi bozira a dadenaam la uteŋpooin la,0.7222,0.2034
+894,Banɛ kati ti la bɛ nɛ ti nyaaŋ yammin.,t,1.0,0.9655
+895,wʋʋ ya-nyaaŋ sisiem daae ba keŋ sa nɛ.,woo ya nyaŋ siseem daai baakeŋ sa ni,0.875,0.2414
+896,"Naab la da kɛ ka ba yaabi ba nɛ Joodan kɔldaug paalʋ la ni, linɛ bɛ Sukot nɛ Zaretan tɛɛns teŋsʋk la.",aa bila dakɛ ka baah yaa biba nɛ jɔɔdan kɔdaa paalu la ni le ni bɛ sekuut nɛ zeretan tens tensuku la,0.7273,0.2692
+897,Winaam da kɛ ka Nebukadnɛza kena gbane ba.,winaam da ka ka nebukanaza kinaa gbaaa,0.625,0.2353
+898,"ka o na gu ka yisi ti, ti dataas nuusin.",ka u na guu kaa yiisite tidata nuu se,0.8,0.3103
+899,"Mam Ninsaal Biig la na tisi ya dikaŋa, bɔzugɔ m Ba Winaam gaŋim ka li paal ye m paae o yaam.",ninsaal biig la na tisi yadi kaŋa bɔzugɔ mbaa winaam gaŋim ka li paal ye paa u yaa,0.4286,0.1143
+900,Zugsɔb la paŋ na bɛ zuokaŋa zug; amaa ba na nɔ Moab dim la lɛbis teŋin.,zugsɔb la paŋ na va zuokaŋa zug amaa ba na nɔmuab dim la labis taŋɛn,0.3125,0.1111
+901,"Linɛ tiaal pisi nɛ ayi la da gaŋnɛ Gidaliti, ka on nɛ o yidim da laas pii nɛ ayi .",ini tialpisi na yii la da gaŋi juda liti ka on ni yidim dalaah pii na yi,0.7368,0.2131
+902,"Ka sɔsid ye Kristo na bɛɛ ya sʋnya ni, yanamɛ niŋ o yadda la, ka o kɛ ka ya baa nyaa o nɔŋilimin la.",itaye kristo bae ya sunya ni ka ya yada niŋil zug ka ya nɔŋilim kpem ka,0.7917,0.5676
+903,Ba da paae Jerusalem kpɛn Zugsɔb Pʋʋsim Yin la pieb wiis nɛ kɔna nɛ naatana.,bpjerusalɛm kpɛ zugsɔ posim yin la pieb uis ni kɔna nɛ naataa,0.6667,0.2459
+904,Onɛ mɛkama tu bʋmbɔk zulʋŋ na luu li pʋʋgin.,ni mikama tu bumbɔk zulu na luli poou,0.7778,0.3429
+905,"Ka man nyɛ sɔ la lɛn yɛlim ye, “Sɔm nɛɛŋa tis maliak onɛ bɛ Winaam nimbanɛ bɛ Smirna teŋin la.",man nyɛ sɔ la len yelim ye som nee ŋa ti s maleak on be winaam nidib saan m be siina tiŋn na,0.9,0.2917
+906,Siesibaza da mɔr laabama dɔl nimbanɛ ka ba da gbane ba keŋ Babilon la lɛb Jerusalem na.,iesibaza damɔlaab ba maa dɔl ninbaani ka ba daa gbaai baa keŋ babilɔn la lɛb jerusalɛm na,0.5882,0.1857
+907,"Lin ka Solomon da di naam ka nɔki li maal kʋntzɛnug kuom latitaar ka li yʋʋr buon ye, Atɛuk, nɛ buos nɛ kʋntzɛnug laad kɔnɔb-kɔnɔb.",le ka solomonn dadi naam ka nɔkku le maal kuzinɛg koom laatitaar ka li yoor bon ye atik nɛ buos nɛ kuziɛg laakɔɔb kɔɔ,0.6,0.2718
+908,"“Nwadis ayɔpɔi ka Israel dim na nɔki mumi ba, ye li sʋŋ ka teŋ la an nyain.",asayɔpɔi la ka ijipt dim na nɔ ke mumi ba ye li suŋ kaa teŋ la a nyaa,0.5294,0.3036
+909,"On da kpii naae la, o pua Abija da dua Asur ka Asur mɛ dua Tekoa.",dakiiinaa la u poa abija dadua asuur ka asuur medua tekoa,0.75,0.1875
+910,Zugsɔb onɛ an Paŋtitaar Sɔb la na di naam.,busɔb unaa pa titaa sɔb la na di naa,0.5556,0.2424
+911,"On da nyɛ ka ba kʋ o biig Naab Ahazaya la, o da duoe gbane naam tuŋ la dim wʋsa kʋ.",da nyɛ ka ba ku u bii naab ahasaya la u da duoi gbaan naam tuŋ la di wusaaku,0.5238,0.2295
+912,"Uzia da mɛ zinibanɛ ka ba dʋti gur teŋ la Jerusalem Gɔnligir Zinig Zaanɔɔrin la, nɛ Bɔnɔg Zaanɔɔrin la nɛ zinikanɛ ka lɔdig bɛ la.",ze yada mi zii bani ka ba do ti gur teŋ la jerusalɛm golgir zinig zaanɔɔnin la nɛ bɔnɔg zaanɔɔnin la nɛ zii ka ni kalɔdug be la,0.6,0.1635
+913,-Reuben onɛ an Israel bikpɛŋ la yaas da anɛ Hanok nɛ Pallu nɛ Heziron nɛ Karmi.,uben ona a israɛl bikpeŋ la yaaza ana hanuk nɛ palu nɛ hezeron nɛ karam,0.75,0.2258
+914,O da zinin naam gbauŋ la zug Jerusalem tempʋʋgin yʋʋm pii nɛ yinne.,innaam gbauŋ le zu jerusalem oonoi,0.8462,0.537
+915,"Dabiskanɛ paas anu la, nɔkimi naarapɔla awai nɛ pɛraad ayi nɛ pɛribis pii nɛ anaasi banɛ an yʋʋm yinne ka ka dɛŋŋa maali maan.",bskanipaas anu la nkuminaarapɔla awai nɛ peraarayi nɛ palibis piine anaase ban na a yoom yinni kakaa dɛŋa maan maa,0.7917,0.2178
+916,"Filistia dim da zab nɛ Israel dim Giliboa zuorin la ka nyaŋ Israel dim la kʋʋ ba pamm, ka banɛ kpɛlim la zɔ.",galisia dim dazab ni israɛl dim ji libua zuorin la ka nyaŋ israɛl dim la kooba pam ka ba ni kpalim la zo,0.6522,0.1667
+917,Fʋ na kɛ ka sumbʋgʋsʋm bɛ nɛ onɛ yadda niŋiri zie kiŋ-kiŋ la.,fo nan kɛ ka subogsim be nɛ uni yada niŋri zee chinchiŋ la,0.6923,0.3617
+918,Banɛ aan m dataas nɛ m biemnam la yaa ti duoe ye ba zab nɛ mam.,ban a m dataas ni m bebnam la yaa te duo ye ba zab nimaa,0.5,0.2128
+919,"“‘Onɛ nyaŋ yɛlbɛɛd wʋsa, m na tis o suor ka o laasi zin nɛ mam, m naam gbauŋ la zug, nwɛnɛ man nyaŋ yɛlbɛɛd wʋsa ka laas nɛ m Ba Winaam zin o naam gbauŋ zug siem la.",u ni nyaŋ yalibie wusa la m na ti susuor ka u laasi ziin ni mam m naam gbaŋ la zug wee ni man nyaŋ yalibeer wusa ka laasi ziini mbaa winaam u naam gbaŋ zub seim la,0.6579,0.3197
+920,Ka paas bʋraug ka li na an tʋʋmbɛɛd maan.,a pas booro akale na a toon bemaan,0.8889,0.4688
+921,Li ni ka m paamid nimmua saalʋg; man kanɛ aan fʋ sankpanas la.,liniikam  paami ninmua saaluk ma kana aan fusakpaan la,0.8462,0.2292
+922,O nan zi maal nɛɛŋa tis teŋ sia; ba zi o wada la.,nan zi maal nɛɛŋatistensia ban ze wada la,0.6154,0.1429
+923,"Yɛlim Israel dim la ye, sɔ yaa kpi ka pʋ bas biribiŋ nyaaŋa yanam on nɔkimi o faari tis o bipumis.",alim israɛl dim la ye sɔ yaa kpi kapo bas buriibin yaa ŋa yanam u nɔk mu faa tisubipu u,0.6667,0.2368
+924,Paalimi ti tinamɛ na yɛl Winaam siel; bɔzugɔ ti nɔɔr kpari ka ti zi tinamɛ na yɛl o siela.,aali mi ti tinamina yal winaam shel bozugɔ ti nɔɔr kparin ka ti se tinamina yal sel la,0.7368,0.1857
+925,Laasimi ba wʋsa pin teŋin; ka kpari ba bas kpiim teŋ.,a si mi ba wusa pii teŋin ka kpar babas kpeem tea,0.9091,0.1951
+926,Zugsɔb onɛ aan ti Winaam la da naal nɔɔr nɛ ti Horeb zuorin la.,zugsɔb o na aan ti winaam la da naanɔɔl nite horib zuorini a,0.6429,0.1429
+927,"Ka ti mɛ mɔr sumalisim ti namisʋg la yɛla, bɔzugɔ ti mi ye namisʋg kɛt ka ti nyaŋi mɔdigid.",ti mi mɔr sumalisim ti namisug la zugu m mii ye namisug la kɛ ka ti nyaŋi mɔduk,0.5789,0.3099
+928,Ba wʋsa yinɛ tannin na ka tannin ka ba na lɛb.,ba wusa yiini taaninna kataanin kabana la,0.9091,0.2
+929,Gɔsimini m tɔɔg nɛ m namisʋg la an siem!,osiminim toɔgnɛ m namsula ashie,0.8889,0.2903
+930,Hali tune yɛl ye m sam dɔlli fʋ zaŋi keŋi fʋ mɛŋ-mɛŋ nyɔvʋr pʋʋgin.,li po narin ye m teen nifu ee fu maŋ aanisam mi dol mam,0.8571,0.7692
+931,"Ba mɛŋ ziesim an siem la, ala ka m ye m dɔlisi kadi ba saria.",ba maŋ ziesim a seem la alakam ye m dɔl sikar ba saria,0.5333,0.1333
+932,Naabi sʋoe siel la na bɛ nɛ Juda nɛ Benjamin n sʋoe siel la teŋsʋk.,aa be suusheel la na be nɛ juda nɛ bɛnjamin ni suusheel la teso,0.6,0.3462
+933,O tʋbir da ziank nɛ ka o zug kpiem ka o zanas ye o kʋ nɔk o mɛŋi lɛb Zugsɔb onɛ an Israel Winaam la sananɛ.,tda zinkni ka u zukpeem ka u zaasee u ko nɔk kumɛŋin lɛb zugsɔb u ni a israɛl winaam lasaani,0.8077,0.2963
+934,"Zugsɔb la tisim biribis bɛdegʋ, ka ba wʋsa sʋʋgin o gaŋi m biig Solomon ye o zinin naam gbauŋ la zugʋ sʋoe Zugsɔb sʋʋlim gɔsid Israel wʋsa.",ugsɔb la tisimbilibis bɛdego ka ba wosa soogin u gaŋi mbiig solomon ye u zi n naam gbauŋ la zugu soi zugsɔb soolim n gɔser israel usa,0.6667,0.1802
+935,Ya pʋ nɔŋim wʋʋ yanamɛ daa pinili dɔllim ka nɔŋim siem laa.,a pu noŋim woo yanami daanoŋim yanami daa piili dɔlim yiega seem la,1.0833,0.617
+936,"Ba da naam Hor zuorin la dɔl suokanɛ ken Atɛuk Zɛnugʋn la, ye ba dɛnɛn Edom teŋ baba.",ba nanam hɔɔr zuorin la n dɔl cuu kani ke nitɛk zinigin la ye ba diɛn edom teŋ gbaa a,0.6667,0.2576
+937,Ba da yʋʋmmi zunod Zugsɔb la ka pʋʋsid o bareka ye.,daa ye u bi zoo zugsɔb la ka poso u bareka y,0.7273,0.375
+938,"Aaron biis la yʋda nwana: Nadab ka o dua yiiga, ka onɛ tiaal la an Abihu nɛ Eleazar nɛ Itamar.",aron biit la yoodaaŋana nadab kaa u do ayeega ka u ni tiala a abihu nɛ eliaza nɛ itama,0.7,0.2639
+939,Ka David daa yɛl ye.,a leb tipumlidolle le daa sɔb winaam gbaaŋin ye hali ti paa zii na winaam ke ka ba yaam aayaagu ka ba niini pu nyata ka ba tu ba pu wom na kimi y,6.4,6.9333
+940,"Ka onɛ piini an ye o kpɛmis nidib, on kpɛmisimi ba sʋnya.",b o ni piini aa ye u kpɛms nidib o kpɛmisi ba sunya,0.75,0.2273
+941,Albareka bɛ nɛ banɛ wʋsa kɛɛn o sanan na sua la.,libarika be ni bani wusa ke u saan na sua la,0.7273,0.3243
+942,Amaa on nɛ o nidib la da pʋ sʋŋ Filistia dim la bɔzugɔ Filistia tuongatib la da nwɛ taab sɔɔra ka kadi ba ye ba lɛm kul.,amaa u nɛ u niriba la daa po soŋ filisi dim la buzugɔ filisi tuwongatib la daa wee taab sɔra ka kadiba ye ba len kul,0.5926,0.2151
+943,"Laan nɛ wala, Asiria dim la yaa ti nyaŋi gbane ya mɔri keŋ.",aani wala asiriya dim la yaa ti nyaŋi gbaan yaa mɔri ken,0.4615,0.1778
+944,Ya nidib la pʋdigir zinis atan yinne na kpi nɛ tɔɔg bɛɛ kɔɔm.,a nidiba la pudigir ziinsta yinni na kpiini tɔɔg beɛ kɔɔ,0.7692,0.25
+945,M sɔsid ye Winaam onɛ girima nɛ o mɔrim galis la na tisi ya paŋ kanɛ na kpɛmisi ya sʋnya ka yit o Siig Kasi la ni na.,sosir winaam ye usei suŋ la nan tisi ya paŋi ya sunya ni le ni dɔlli unaa,0.8214,0.618
+946,"‘Man da tʋm tʋʋmbɛɛd, ka niŋ linɛ pʋ nara.",aan datum toombɛɛd ka niŋ len punaara,0.7778,0.2581
+947,Ka mɛ lɛn niŋ ala nɔɔ nɛ pɛribis la mɛn nɛ li zʋʋd maan linɛ an zɔmbaanlig kuriba ayi gɛndig nɛ kpaam.,kami la niŋa la nɔɔ nɛ paribis la min nɛ lizodman lenn a zɔmbaanli kuriba ayi geri n kpaa,0.7273,0.225
+948,"Saul nɛ o biribis atan la nɛ onɛ ziid o zaba laad, nɛ o yidim la wʋsa da laam kpinɛ daar yinne.",sɔɔl nɛ u birib sitan la nɛ uni ziuzaabalaa nɛ u yidim la wusa da laa ki ni daar yinni,0.6818,0.25
+949,Ba na lɛb o sanan na ka o wʋmi ba sɔsʋg ka tisi ba yɔlisim.,na lɛb saan na kaa wobo basosibu ka tisi bayalsi,0.6667,0.3409
+950,"M bɔɔd ye ba zɔtim dabiem nɛ ba sʋnf wʋsa ka dɔlisi m nɔziela la saŋa wʋsa, ka siel wʋsa na an sʋʋŋa tisi ba biis saŋa dinɛ ka bɛnnɛ!",bɔ dye ba zɔtim dabiem nɛ ba sunfu wosa ka dɔlisi nɔziela la saŋa wosa ka seel wusa na a soŋa tisi ba bii saŋa dini kaa bɛɛni,0.5,0.1667
+951,"Ka m wʋm ka kʋkɔr yi arezana ni na ye, “Sɔm nɛɛŋa: Lin yi zina ken sa, albareka bɛ nɛ banɛ dɔl Zugsɔb la ka kpii o ni la.",am wom kukɔr ka li yi arzana ni na ye sɔb neeŋa ni ni yizi na kenn sa yelsum be ni ba ni dɔl ni zusɔb la ka kpi la,0.7586,0.375
+952,"Ka m na sɔbi m Winaam yʋʋri tabil o zugin, nɛ m Winaam teŋ Jerusalem Paal dinɛ na yi Winaam sanan arezana nii sig na la yʋʋr, ka mɛ na sɔbi m mɛŋ yʋʋpaali tabil o.",am na sɔb winaam yoor tabil u zubun ni winaam teŋ jerusalem paal di ni na yi winaam saan arizana nii m si na la yoor ka mi na sɔb mmiŋ your paal ntabil o,0.6111,0.2
+953,"Hali zɔlʋg yaa dɔl pal zug, o yaam kae.",al zɔlugiyaa dɔl pal zu u yaam ka,0.6667,0.2414
+954,"Linɛ nie ka m nyɛ la nwɛnɛ nier kanɛ ka m da nyɛ on da kena ye o sanam tempʋʋg la, ka lɛn nwɛnɛ nier kanɛ ka m da nyɛ Keba kɔldaug baba la.",iiiekam nya la woni nier kan ni ka m da nyɛ un daa kena ye u saam tenpoog la ka lee ŋenni nier kan ni ka m daa ny ke ba ko da gba ba a,0.7647,0.2981
+955,O da mɛɛ linɛ wʋʋ Moses onɛ da an Zugsɔb tʋmtʋm la da paal Israel biis la siem ka li bɛ Moses ziela gbauŋʋn la.,damee li nɛ woo mosis o ni da a zugsɔb tumtom le da paal israɛl bii la seem ka le be mosis jie la gbaŋn la,0.76,0.2326
+956,Ka Winaam kanɛ maal man la mɛ maali baa?,a winam kani maal ma la mi maali baa,0.5556,0.1613
+957,Ka lɛn naam Sukot n keŋ laasi digin Etam kpien siananr la nɔɔrin.,len naan soku n ken laasidigin etam kpeen saan la nɔɔn,0.7692,0.2692
+958,"Uzia da anɛ yʋma pii nɛ ayuobʋ ka di naam, ka da zinin naam gbauŋ la zug Jerusalem tempʋʋgin yʋma pisnu nɛ ayi.",saya daa ane yooma pii nɛ ayoobu ka di naam ka daa ʒi n naam gbauŋ la zu jerusalɛm tempoogin yooma piisnuu nɛ ay,0.6087,0.2414
+959,Daakan la ka ya yʋʋn pinili gɔsidi ya zaba laad.,daa kan la ka yayi piili gosii yazaaba laa,0.9,0.2105
+960,"Dinzug, Winaam nɔpɔɔr na kanb teŋgbauŋ la.",dizu winaam ni pɔɔl naa ka teŋgbɔŋ la,0.8571,0.2647
+961,Fʋ ye fʋ zaŋi ti tis Amor dim la nɛ ka ba sanami tii?,o ye fo zaŋe titis amɔdim la nɛ kaba saami t,0.7857,0.2308
+962,ka pɛbisim la pie uusʋg la ka li maligim nie nyain.,ka pabsum la pie usug la ka le maligi nie nyaan,0.4545,0.2
+963,bɔzugɔ sʋnsaaŋ an sʋm tisi fʋ sʋnr.,uosusŋna susaŋ a soom tisifo su,1.0,0.5714
+964,Onɛ da zaŋ Zugsɔb la laasieba ka li lieb o mɛŋ din ka li mɔr yɛla kɛn Israel dimin na la.,u ni daa zaŋ jugsɔb la laasheba ka li lieb u maŋ dinn ka li mɔr yala a kɛ israɛl dimin na la,0.5714,0.1765
+965,"Ka bɛog sa ya yaas kʋ nyaŋi yɛli ti yaas ye, ‘Ya ka kpinnim nɛ Zugsɔb laa!",abɛɛgsa ya yaas kuyaŋɛ yalitiyaa ye ya ka kpinim nɛ zugsɔb laa,0.5294,0.1455
+966,"Ka pʋʋs Urbanus, ti tʋmtʋm tiraan onɛ tʋm Kristo tʋʋma la, nɛ m zua sʋŋ Stakis.",kaps urbanus ti tum tum tiraan o ni tum kristo tooma la ni u zuɔsuŋ taki,0.8125,0.2295
+967,"Ya yaa yis saŋa wʋsa nyuor maan la nɛ li bʋnnuuda maan la, li lɛn anɛ ya paas bʋraugʋ tis Zugsɔb la ka li an tʋʋmbɛɛd maan.",ya yaa yi saŋa usanyuur maan la nɛɛ le benuuda maan la lilɛŋ ani ya paas buraagu ti zugsɔb la ka li a toombɛɛ maan,0.4815,0.1895
+968,Ka anɔɔnɛ na baŋ ye o sɔb na an yaam sɔb bɛɛ zɔlʋgɔ?,nɔɔni na baŋ ye u sɔb na a yaam sɔb beɛ zɔloga,0.4615,0.2308
+969,Nɛɛŋa an bʋmbɛɛd linɛ tʋm dunia nwa ni: Saal wʋsa ganal siem la linɛ diti ba.,eŋa a bombɛd li ni tum dunia wa ni saal wusa gaa cheem la li ni di ti a,0.9375,0.2667
+970,Amaa onɛ wʋsa vʋe lɛm mɔr tiir; hali bavʋt sɔnoe gbigim kpiiluŋ.,maa u ni wusaa voe le mo tiir hali ba vu soen gbigim kiiluŋ,0.9167,0.3137
+971,Ka Naab David zaŋ zabzabidib tuongatibi guul Edom teŋ la wʋsa.,naab david zaŋ zabzabidib tuun gatib guul edom teŋ la winsan,0.3636,0.1373
+972,ka basi fʋ widi tɛreko sʋma la; fʋn onɛ diisidi fʋ zugdaan yir la nyan la!,a baa si fo widiteriko sumala fon o ni dii siri fo zuguraan yil la nyan a,0.9375,0.2456
+973,"Da pɛsigi ya niŋgbina luosi tis tʋʋmbɛɛd ka li mɔri ba tʋm bɛɛdɛ, ka lɛɛ pɛsigi ya mɛŋi tis Winaam; ka ya anɛ nimbanɛ ka o mɔri ya yi kumin keŋ vʋmin.",aa pesigi ya ningbina luos wusa n tis tuombɛɛd ye tumbɛɛd mɔriba tombeed ka lee pesigi ya maŋa tis winaam ka ya ani ninbani ka u mɔri ya yikuumin nkiŋ vo min,0.6875,0.3103
+974,Winaam nɔdies Mikaya n zɛrig naab Ahab siem.,inaam nodies makaanzerik naab ahab se,0.75,0.2222
+975,Ti naabiis la daa pɛligi gaad sakuga.,ni la daalg ga sakuuga,0.8571,0.4667
+976,Ani ka baar linɛ duod Winaam sʋʋnr la da zie.,niikabaar le ni door winaam suun la ajie,0.8,0.3143
+977,"Alazug man Zugsɔb onɛ an Paŋtitaar Sɔb la pɔya ye yanamɛ diana mam Pʋʋsim Yir, nɛ ya bada banɛ ka ya yaab ka m kis la, m kʋ lɛn sʋŋi ya.",alazu ma zugsɔb u na paŋ titaa sɔb la pɔya ye yana mi diɛn man poosom yir neɛ ya bada ba ni kaa ya yaab kam ckis la m ku len suŋi ya,0.6774,0.1942
+978,"Ka dau la yɛlim ye, “Ninsaal biiga, gɔsim nɛ fʋ nini ka wʋm nɛ fʋ tʋba ka kɛlis linɛ wʋsa ka m ye m paalif la, ka lin yɛla ka ba mɔrif kpɛla na.",ka dau la yalim ye ninshaalbiiga gɔsib ni fo nini ka wom ni fo toba ka kili lini wushakam ye m paal uf la ka li yɛla ka ba mɔri f kpa la na,0.6471,0.1604
+979,Ba wʋsa da mɔri ba tuŋ ka ba an Seufila dim nɛ Bekɛr dim nɛ Tahan dim.,ba wusa da mɔni baa tuŋ ka ba a ni sefila dim nɛ baka dim ni tahan dim,0.4706,0.1698
+980,"Amaa bɛɛnna nɛ zinibanɛ ka kuom giisi digi dig la kʋ an kuosʋŋɔ, ziniban la na kpɛm bɛ ala an yaarim zinig.",amaa biɛnan ni zini ban ni kakom geesi digedeg la ku a kosuŋɔ ziniban la nan kpa mba ala a yaarim zii,0.7273,0.25
+981,"Maalimi nyuor maan linɛ an naaraad ayi nɛ pɛraug yinne nɛ pɛribis ayɔpɔi banɛ an yʋʋm yinne, ka li an maan linɛ nyuugʋ malisi tis Zugsɔb la.",a li miŋ nyuon maan lena a naaraadayi nɛ paragini nɛ paribisi ayɔpɔi ban a yoom yenni ka le na a maan lene nyuug malisiti zugsɔb la,0.8148,0.2411
+982,Dap banɛ ka ba da buoli ba yʋda anaasi la da gɔs laadin la gaans fuudi yɛɛl banɛ da ken zaalim la.,abanka ba daa booli ba yoda nnaansi la dagɔt laadin la gaans fuud yal bani da ken zaalim la,0.5455,0.1711
+983,"Amaa o yaa gbane ye o kʋ lɛbis siela, anɔɔnɛ na zɛrig o?",amaa u yaa gbaa ye u ko labiseela anɔɔ nazareo,0.7692,0.3095
+984,"Dau bɛɛ pua kʋ bɛɛ ya sʋʋgin ka kɔɔŋ biiga, ka ya bʋnkɔnbid wʋsa na dua biis.",au bee pɔa kubae ya soogin kakɔɔŋ biiga ka yabuku wusa na dɔ a bii,0.8235,0.322
+985,"Aanon da anɛ Moab teŋ titɔndig, ka bɛ Moab nɛ Amor dim tɛɛns la teŋsʋk.",anon da anɛ moab teŋ titɔrib ka be mɔab nɛ amon dimtens la tesoo,0.5333,0.2182
+986,"baabiis na zab nɛ taaba, ka kpies mɛ na zab nɛ taaba.",baabii na zab ni taaba ka kpees mi zab ni taaba,0.5,0.175
+987,"Din keŋ paae zina ti nam pʋ pie tʋʋmbɛɛd kanɛ, laan nɛ tinamɛ da namisi li yɛla la.",din ken paa zina tinam po pie tuumbɛɛ kane laa ni tinamida nam si li yala la,0.7222,0.1875
+988,"Li zaambɛŋ la da kpa nɛ zak kanɛ bɛ yiŋ la; ka ba gʋl kpʋkparis vaandi tabili li dɔkpina la li lʋga ayi wʋsa, ka ba maal dʋʋsa anii paae zaanɔɔr la bɛn.",lizaambɛŋ la daa kpaa ni zak ka ni bayeŋ la ka baa gol kukparbaanr taabil lidɔkpina la liloga a yi wosa ka ba maal doosa aniin paahia zaanɔɔra baŋ,0.7576,0.2393
+989,"Ka ninkanɛ ka ba gbane o ka o mɔr laabanɛ ka ba zaŋi pɛsig la, ba na nyuoe on nɛ o yidim nɛ on mɔr siel wʋsa bugum.",aninkani ka ba gbaan u ka u mɔr laa banni ka ba zaŋi pɛsig la ba nan nyi u nɛ u yidim nɛ un mɔr seel wosa bugim,0.5357,0.2209
+990,Ba da kpɛn na zienɛ kpien nɛ kʋntzɛnug maan daka la.,ba dakpɛ naa zieni kpee nɛ kuzee gmandaka a,0.8182,0.2927
+991,"O da guul zabzabidib tempʋbanɛ kpiem Juda teŋin la wʋsa, ka nɔk soogia banɛ guud la guul Juda tempʋʋsin nɛ tempʋbanɛ da bɛ Efiram dɔɔg sʋʋlimin ka o saam Naab Asa da zabi die la.",da guul zabzabdiba tempu bani kpeem juda teŋin la wusa ka nɔk soja bani guur la guul juda temposi nɛ tempu bani da ba efraim dog solomin la u saamnaab asa daazaabidie,0.6857,0.2183
+992,"Dinzugɔ, kɛlisimi sʋʋŋa yanam banɛ an yaam dim la.",dinzugo kal seminsoŋa yaa nan ba ni a yaamdi la,1.0,0.3
+993,"On da maal nyuor maan nɛ taaba laasʋg maan la naae la, o da kaanb, kaanb sʋŋʋ tis nidib la Winaam yʋʋr zug.",da maal nyoor maan ni taaba laasuu maan la naai la u dakaab kaabsuŋi tis nidiba la winaam yoo zu,0.5652,0.2073
+994,Naab Atazeesis tis nɔɔr ye ba basim Jerusalem mɛɛb.,naab atasisis tis nɔɔr ye ba basim jerusalem mɛ,0.2222,0.119
+995,Bɔ ka yanam maali ya mɛŋ kpɛɛmnamɛ dʋʋsi ya mɛŋ Zugsɔb nidib la wʋsa tuonnɛ?,b ka yaa nan maali ya miŋ kpeɛm na mi doo see ya miŋ jusɔb nidib le wusa tonni,0.9333,0.2787
+996,Dabiskanɛ paasid atan nɛ ayɔpɔi la daar ba na maali ba mɛŋ nɛ banɛ ka ba zabi gbane la nyain.,abiskadipaasi latan nɛ ayopɔi la daar ba nan maale ba miŋ nɛ ba ni kaba zaa bi gbaa la nyaan,0.7,0.1781
+997,ka sɔ kae na tune paae o sananɛ; asida o paŋ la gat siel wʋsa.,asɔ kaa na too paa u shaan ni a shira u paŋ la gaat si usa,0.9333,0.413
+998,"Imnah biig Kore onɛ an Levi dɔɔg nid ka da gur ya-nyaaŋ zaanɔɔr la, da sʋoe yaamlɛog piini linɛ ka ba tisid Winaam la, ka pʋdig ban laas piinsieba tis Zugsɔb la nɛ pɛsigir piini la wʋsa.",nabii kori ona a lebido ni kaa dagur ya yaaŋ saanɔɔra da so yaamlɛ piini lenɛ ka ba tisi winaam la kapurig ba laas piinsieba la ntis zugsɔb la ni pisigir pii la usa,0.7297,0.2329
+999,Li bɛn paae tis teŋgbauŋ la lʋga anaasi la wʋsa.,li ba paai tus tengbɔŋ la loganaan sii la uisi,0.7,0.3684

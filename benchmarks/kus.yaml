@@ -1,6 +1,6 @@
 iso_639_3: kus
 language: Kusaal
-num_samples_per_category: 300
+num_samples_per_category: 1000
 categories:
 - bible
 benchmarks:
@@ -8,27 +8,23 @@ benchmarks:
   model_url: https://huggingface.co/KhayaAI/w2v-bert-kus
   owner: KhayaAI
   params: 0.6B
-  wer: 0.3942
-  cer: 0.1979
+  wer: 0.379
+  cer: 0.1732
   per_category:
     bible:
-      wer: 0.3942
-      cer: 0.1979
-      samples: 300
-      valid: 300
+      wer: 0.379
+      cer: 0.1732
+      samples: 1000
+      valid: 1000
       avg_seconds_per_sample: 0.09
   source: evaluated
-- model: KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en
-  model_url: https://huggingface.co/KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en
-  owner: KhayaAI
-  params: 0.6B
-  wer: 0.7319
-  cer: 0.3334
-  per_category:
-    bible:
-      wer: 0.7319
-      cer: 0.3334
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.08
+  model_class: non-llm
+- model: PrinceAlhassanNasamu/kusaal-whisper-small-lora
+  model_url: https://huggingface.co/PrinceAlhassanNasamu/kusaal-whisper-small-lora
+  owner: PrinceAlhassanNasamu
+  params: '?'
+  wer: null
+  cer: null
+  error: load_failed
   source: evaluated
+  model_class: non-llm

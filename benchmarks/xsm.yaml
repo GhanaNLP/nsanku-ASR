@@ -1,6 +1,6 @@
 iso_639_3: xsm
 language: Kasem
-num_samples_per_category: 300
+num_samples_per_category: 1000
 categories:
 - bible
 benchmarks:
@@ -8,41 +8,29 @@ benchmarks:
   model_url: https://huggingface.co/KhayaAI/w2v-bert-xsm
   owner: KhayaAI
   params: 0.6B
-  wer: 0.2824
-  cer: 0.1138
+  wer: 0.3098
+  cer: 0.1325
   per_category:
     bible:
-      wer: 0.2824
-      cer: 0.1138
-      samples: 300
-      valid: 300
+      wer: 0.3098
+      cer: 0.1325
+      samples: 1000
+      valid: 1000
       avg_seconds_per_sample: 0.07
   source: evaluated
+  model_class: non-llm
 - model: ghananlpcommunity/w2v2-lg-xls-r-300m-kasem
   model_url: https://huggingface.co/ghananlpcommunity/w2v2-lg-xls-r-300m-kasem
   owner: ghananlpcommunity
   params: 0.3B
-  wer: 0.3859
+  wer: 0.3888
   cer: 0.2126
   per_category:
     bible:
-      wer: 0.3859
+      wer: 0.3888
       cer: 0.2126
-      samples: 300
-      valid: 300
+      samples: 1000
+      valid: 1000
       avg_seconds_per_sample: 0.03
   source: evaluated
-- model: KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en
-  model_url: https://huggingface.co/KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en
-  owner: KhayaAI
-  params: 0.6B
-  wer: 0.8315
-  cer: 0.3541
-  per_category:
-    bible:
-      wer: 0.8315
-      cer: 0.3541
-      samples: 300
-      valid: 299
-      avg_seconds_per_sample: 0.07
-  source: evaluated
+  model_class: non-llm

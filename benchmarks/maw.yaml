@@ -1,6 +1,6 @@
 iso_639_3: maw
 language: Mampruli
-num_samples_per_category: 300
+num_samples_per_category: 1000
 categories:
 - bible
 benchmarks:
@@ -8,27 +8,14 @@ benchmarks:
   model_url: https://huggingface.co/KhayaAI/w2v-bert-maw
   owner: KhayaAI
   params: 0.6B
-  wer: 0.1673
-  cer: 0.0568
+  wer: 0.1665
+  cer: 0.0583
   per_category:
     bible:
-      wer: 0.1673
-      cer: 0.0568
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.1
+      wer: 0.1665
+      cer: 0.0583
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.11
   source: evaluated
-- model: KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en
-  model_url: https://huggingface.co/KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en
-  owner: KhayaAI
-  params: 0.6B
-  wer: 0.5717
-  cer: 0.1925
-  per_category:
-    bible:
-      wer: 0.5717
-      cer: 0.1925
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.1
-  source: evaluated
+  model_class: non-llm

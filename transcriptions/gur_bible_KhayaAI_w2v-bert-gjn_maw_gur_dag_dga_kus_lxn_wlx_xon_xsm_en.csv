@@ -299,3 +299,703 @@ sample_id,reference,hypothesis,wer,cer
 297,"A daan tarɩ la pɔyɔɔsɩ banaasɩ n ka mi bʋraasɩ, ba daan toosrɩ la Nawẽnnɛ yetɔga tɔgra bɔɔra nẽrba.",tla poyɔ si banaasi nkami buraasi ba daa tooh le naani itɔb tɔgi b a,0.9474,0.4684
 298,"Tɩ sɛka n zĩ naam bĩmbĩnne zuo la yele yetɩ: «Bɩsɛ, mam ɩtɩ sɛla woo la paalsɩ.",ke ji naam binbinn na zuu le yeti bisa ma slu l paa,0.9412,0.5254
 299,"Dabeha anii en tole la, bia la buraanɛ ŋmaaɛ saŋa en bala, ti ba sigɛ ka yuurɛ Yezu, yuseere ti suŋera la yuum bo en gee ti ba baŋɛ nyɔkɛ ka puurɛ la.",dabeha anii daarɛ n daa paa ti ba yeti ba ŋma biliyala ba sege a yuuri la yesu yuuri dena te naayesoŋra la daa pun yeti ba sege in ge ti ama baŋ nyɔke a puuri la,0.9697,0.614
+300,"Ba daan sãn mi nɩ ẽ, ba kãn ka nɩ Zuudãana n tarɩ naam pãŋa wuu la dɔ-puurŋa zuo kʋ.",asa miinii ba kan ka ni zuuana ta naan pa ŋawuu la dɔpuur ŋauu,0.8,0.3226
+301,"Tõma ka ẽŋɛ nẽra baa ayɩla beem, tõma ka sãam nẽra yelle, la tõma ka zãm nẽra tooge a sɛla.",ma kaa eŋ nara baayi la bee ti ma kaa saam nara yele le ti ma kaa zam naratoogaa s la,1.0,0.2609
+302,"Nẽr-sɛka sãn sakɛ lɔɔ la wuu, dee sɩɩsɛ ayɩla tõm tõon-beego, a sɩɩsɛ la ba wuu.",aasasa loliu disieaayi le tontonbeeo aaele,1.0,0.6
+303,"seere n soe la, Nawẽnnɛ wʋn botɩ ba sũure mãagɛ.",sula naaabotu a,1.0,0.7297
+304,"Seere en sɔi la, tumam sɛba en sakɛ la, kɛ̃ voohego la puan mɛ wuu Yinɛ en yele seem yeti.",n de sɛba n wan nya boohseko ti naayinɛ yuunbiŋ a nɔɔra bo la wuo n yuŋ yel seem la naayenɛ,1.0,0.8507
+305,"La dagɩ gʋlsgɔ koom n gʋlsɛ, la de la Nawẽnnɛ n vɔa la Sɩa n gʋlsɛ.",a gol kikoo ngolse leee le naawo ni nɔas ngul s,1.0,0.52
+306,"Yelehum sebo n wan taam mɛ ya zeele, gee bo ya tɔtɛ la sɛba n pee ba mɛhi la.",a wan suŋ ya ti ya maa nyɛ paŋa a sori la poan gi bahe ya ti ya tar sɛla woo ti a bɔɔraa,1.2105,0.8772
+307,Doohe la Yezu wa zuo seem woo n nam wan nyɛ faarɛ a beem sebo woo puan.,inamiya poan ti see boo nsa ki bo yesu wan bo nafai ya li sia wo puu,0.9412,0.7778
+308,"Lan de seem dela, Daana la n de Faa Sia la, ti zian ti Daana la Sia bɔna, fai n boi bini.",la yeti ge ahaniken ti atɔgila daana la ani pilgitan la baha mɛ bala nanana wa tudaana naayi nɛ seem tito pur,0.9545,0.9375
+309,Yãma paalɛ mɛ sɛla woo pʋam tɩ yãma ka tarɩ taalɛ yel-ẽŋa pʋam.,paal m sila woo p tiyamaatartaal eu,0.9231,0.4694
+310,"La ani suŋa ti tu ŋmɛɛra nyuɔ, gee nyuurɔ ka boi bini tɔɔra.",ge n wankeli ŋmiira nnyɔɔ bii le bun ka tare fuur,0.9231,0.7391
+311,"Ya sãn pʋʋsra Nawẽnnɛ, ya da tɔgra yetɔga n ka tarɩ võorɛ kaana wʋ nẽr-sɛba n ka mi Nawẽnnɛ n ɩtɩ seem na, ba tẽesɛ tɩ bãma n tɔgrɩ zɔɔra la ĩyã, Nawẽnnɛ wʋn lerge bãma pʋʋsgɔ mɛ.",a sanpuuhira naa wɔn na ya la tɔgira yitɔga kata vɔɔnre kaa na we nɛrsɛba ka mii naa ŋa n iti see na ba tiɛn ti bama ntɔgir zɔɔra li ii aa naaŋɔ nan wee lerigbama poosugu ma,0.8947,0.3942
+312,"Mam waam na bɔna malema ana puan la, ti ba nyɛ mam Puuhegɔ yire la puan, ti n boi la peere malema la baahegɔ puan.",bala maalahala ti mam pin tum maalimatuu ni la baahima laantaŋ kɛ yiniyiri la poan baahi ma lana wawoo idigu puaŋ,0.96,0.7356
+313,A wʋn tara la kuto dasaarɛ sɔna ba wʋ ban wõtɩ lɔg-kɛgsɩ la.,ata le kuu ti dasaai sanabawoo ba mɔ ti la ksi,0.9231,0.5217
+314,"Bala ti mam yeti, Yinɛ bihɛ, mam waam na ti n tum la fum sumboolum Oo Yinɛ.",olihe mam yɛle ngɔŋ la poan mɛ mam yinni wa ma waa na te tom u suboolum la,1.0,0.7321
+315,"” Tu ka de tu dikɛ tu mɛhi kɛ̃ yaluntuuma puan wuu ba basɛba en yuum iŋɛ seem la, ti tuha pihiyi la a tã yuum ki daarɛ de yina puan la.",da baheya tutotona yalen tooma uwo bama besɛba n eŋi seen la dabar yi nɛ te ba tuha bihiyi la ata ki la kaso t,0.9032,0.68
+316,"” Ti mam bihɛ, ti yeeho pɛɛlega en ze, ti bu baara zãla tahɔ, ti ba dikɛ muŋa bo en, ti a yehe na, dɛna nyaŋera, ti a nini muɛ la nyaŋerɛ.",tem bihi nyɛ yehupiɛliga seem npa bu la daa zal la tahuu ti ba boo imuŋa a nya daa de na nyaŋra a yehu la yɛɛa,0.8387,0.5455
+317,"Seem ka boi sankana naduma wa puan bɔkɛ yele ana wa; Ba han bɔkɛ ni mɛ, ba kan kpa ni Tibehum Zaa Daana la.",yikyebaaseere nsɔ la bahaminibu ba daa kan kpa ni tudaana yesu seem n tar naahugɔ pupuu do l,0.9583,0.8025
+318,"Tɩ ba yõgɛ ba ka yʋ, guura tɩ beere wiige, seere n soe la, wẽnnɛ daan sobe mɛ.",ba nyi ba ka yuo guuda tibeer wiige seer n soo la uin daa soobima,0.6667,0.3684
+319,‘N wan bo fum tuulum yɛla la sum sebo ti n biŋe nuurɛ la Deviti ti n bo la.,dayiyinwanka kasua bo ho wuu ma biŋi n nuurɛ bɔ devid seem la,0.7895,0.6909
+320,"Tõma n gʋlsrɩ yãma sɛla wã, la dagɩ sɛla ayẽma, la de la yãma n karẽŋrɩ sɛla wõnna a võorɛ la.",aa in gul si yama sila wa le daa sla a nya ma le dile yama in kariŋ sɛla wɔɔ na a vɔɔn a,0.9048,0.3944
+321,Kiresta seem n de Yinɛ mɛŋa naanɛ la.,kistaseem nkɔn tara naayi ni wɔni yata la,0.875,0.7241
+322,"Mam n daan gʋlsɛ gõŋɔ la bɔ yãma la, mam daan boorɩ tɩ m bɩsɛ la ya sãn sakra mam sɛla woo pʋam.",an daan gol si gɔŋ la bɔyaama la man daan boor tim biisi la yasansakra man seɛla wuu puuwa,0.8261,0.2917
+323,"Ani en tari yɛm, tara bɔkerɛ ya puan?",yu,1.0,0.9286
+324,"N makɛ ya bihɛ, gee baŋɛ nyaa ya nane sɛla woo puan.",daa boti m bihi yaan ya wan nyaŋɛ eŋi sɛla te n yeli ya la geminana sɛlala sɛla,1.3333,1.1282
+325,"“Taari, Sum, la suŋa la yɛm.",taae pekelasuŋa la,0.8333,0.4211
+326,"Gee nyaa yi a daaba pia na, bo ba ligekɔba pia, gee yele ba yeti, ‘Tari ya tuna gura ti n ta lebena.",a daa yi la a yamhi pia naboba zaan ŋmari sitaa sita ge yɛli ba ti dkikia ligri la la ya tugiha ge ti n keŋɛ,0.8696,0.7534
+327,"Dũnia naadõma n tõnnɩ yalsɩ tõon-dẽgrɔ la tẽn-ẽŋa lɛ, dee yẽta nẽnnõm lɔgrɔ a zẽam na, sãn wa yẽ bugum n laŋɛ tẽŋa la dita tɩ zũusi gulla, ba wʋn kɛlla mɛ fabla a yelle.",nia naadima n tonn yaal toondiŋgro la teen iŋale die nyita ni nɔnlɔgir a zien na san waa nyi buwum nlaŋ teŋa la dita ti zuusi gu la ban wu ke li mi faailayi li,0.7714,0.3488
+328,"Ti nɛreba la zaa ni ihege bulika yuuŋɔ yuuŋɔ, kiŋɛ puuhegɔ yire la puan ti ba ta kelehe a yetɔgum la.",naŋ kan iŋe ge ti ba nyɔge ya namihi ya ba wan tare ya keŋɛ zamheg,0.9524,0.7089
+329,"Gee han dɛna mam, la dela yelepika bo mam, ti yamam gakɛ mam, bii saaleba tugum zian gakɛ mam.",e nanana wa la ka ba daana mam yɛhera la yamam han gakra mam bii ba gakre nɛra teŋa wa zuu se,0.9474,0.7083
+330,"» Tɩ Zuudãana la yele ba yetɩ: «Ya sãn bɔ mam sɩra fẽe wʋ sɔɔrɔ biire la, ya tã wʋn yele kẽnkãŋa wã tɩ a võogɛ sẽŋɛ ka sele mõgrɛ pʋam ke, la a wʋn sakɛ ya nõorɛ mɛ.",zuuraa na le yel ba yeti yasanbɔ man sira feen u sɔrbiil la ya ta uu yeli kinkaŋa wa ti a vɔɔŋn seɛŋa ka see limɔɔr pɔɔn kee laa u sak a nɔɔ,0.8158,0.3802
+331,"A sãn wa leme, a wʋn dɩkɛ sɛla n sʋgɛ lika pʋam yese peelem pʋam, dee botɩ bõn-sɛba wuu tɩ nẽrsaalba tẽesrɩ ba sũure pʋam puke.",sawa lee mi awoo di sila n sugi likapɔɔn yee sipeeli puɔn dabotibɔsb wuu tinasaal ba tinɛhir basuun puɔ puu ke,0.9231,0.449
+332,Tɩ Nawẽnnɛ malɛkadõma kʋʋŋ-kʋʋŋɔ darɛ waam wa naagɛ la ayɩla la.,naawen ni malakadimɔ ku nkoo ŋɔ darwaan wa naaklaayil,1.0,0.3846
+333,"Zekariya en nyɛ en la, a paleŋa ɛkɛ mɛ, ti dabeem kɛ̃ en paaɛ paaɛ.",sakariya n ye naa yi ni soŋda la balɔlaa la daan n mɛ ge ti dabeem tara in,1.0667,0.7347
+334,"“Mam n boi sore zuo kina ta pɔra Damasekuse la, wuu wuntɛɛŋa zuo tiŋasuka, ti mam ta yeti n bihɛ la, ti bugum kãtɛ n zeele saazuo ha nyakɛ kaaɛ mam zeele.",ɔŋ a yeɛha pɔra damasikus tiŋa poan la wontiɛ ŋa zuu teŋasuka maala ti bilam bilam ti buu nyake saŋgba ni zuo niemam,0.9375,0.6186
+335,"Bẽm ĩyã, zãaŋa ka tã wʋn wɔm tãama, la kẽkɔ ka tã wʋn wɔm kẽnkãma.",i  saaŋa kata u wɔ taama le ke kata u ɔ kikan,0.9333,0.449
+336,"» Dee yele Azezi yetɩ: «Fʋ sãn wa dita fʋ naam na, fʋ tẽegɛ m yelle.",ta ldu sinn nriba po,1.0,0.8958
+337,da kãbɛ ya suya wuu ya yaabeduma pobiriga puan la.,akaysuawuu yamaa yoo kperi to ba maki yinni pɔgɔn tii,1.0,0.75
+338,"Bɛla, sɛla n yʋʋn tollɩ la n tarɩ naam pãŋa la, sɛla n boe wakatɛ wuu la n tarɩ naam pãŋa zooge gãnna bɛla.",basila n yuutol la n tar naam paŋa la sila n boo wakati wuu la n tar naa paŋa zu gann a,0.5417,0.2716
+339,"Ti Pita kpa en biha zii, ti Yɔn me biha en bala, ta yele buraa la yeti, “Biha tu na.",ti ba zal bihi n zii ge ti pita yel n yeti bihɛ to na,0.8,0.5667
+340,"Tɩ kãabgɔ kẽma nẽŋadõma, la lɔɔ karẽnsãandõma, la tẽŋa la kẽma waam wa yele ẽ yetɩ: «Yele to, fõn yẽ nõorɛ la bɛ ɩta bõn-bãna, bɩɩ ãne n bɔ fõn nõorɛ tɩ fõn ɩta?",ikaa bu keema niŋaduma la labu kaa saanduma la teŋa la keema waan wo yel n yeti yelito fo ya nɔɔr la baa ita bunbaɔna bi i a ninbɔfo nɔɔra ti fu i,0.8824,0.3667
+341,” Ti Pɔɔl zɛkɛ a nuuhi pɔhɛ mageha gee tɔgera pɔɔra a mɛŋa.,ti pɔɔl ihigi po nuu pɔɔ giya tɔge ti yasu,0.8333,0.6444
+342,"Bala, mam yehe n mɛa gee wan kelum yehe n mɛa, kan le dikɛ n mɛa ziile ya sadɔseto woo puan.",uma n daa pun ka dike n maŋa delim ya seem yiɛla bala mi ti kelim ka dikera mmaŋa dalnaya baa bayat,1.0476,0.8406
+343,Bɛla mam sosrɩ fʋ mɛ tɩ fʋ mãagɛ fʋ mẽŋa selse m yetɔga wã.,sout,1.0,0.9333
+344,"Ya ŋmiberi mɛ la seem woo en dikɛ ya lɛbegera a daaberɛ, bii seem n yeti a obe ya, bii a bihɛ ya yoo, bii zɛkera a mɛŋa, bii lɔbera ya pɛgehi.",useem woo mboori ya nuɔre ti ya iŋisɛla bii a fanya mi bii a dikiyami ti yadena yamihi bii a lob la yasapɛka,0.8125,0.6792
+345,"Tɩ Apolɩ yele sʋda-kɛɛma, la sʋdaasɩ la yetɩ: «Nẽr-bãna wã sãn ka bɔna õorŋɔ wã pʋam, yãma wuu kãn yãŋɛ põsɛ.",a po l e lisor a kiɛ ma lisor aa li yeti niri ban na wa sa ka bɔ nan ɔn wa puɔ ya i uu kan ya pɔ,1.1905,0.4268
+346,Nɛre seem en ani ŋwana da tiiha ti a wan toe sɛla Daana la zian.,nɛra iŋadaana da tiɛha te a wa nya sɛla naayini ziŋ,0.8,0.4694
+347,Tɩ ba bãŋɛ tɩ la de la ẽŋa n ẽn zẽa Wẽnde-kãtɛ la nõ-sõŋɔm na sɔsra.,a  l i le i ŋa n zen u ndii kan tu la nɔ s na saara,0.9375,0.6
+348,Ku wa yee la tiŋa la en boi koom tiŋasuka la puan.,yiira de liiba baga geti ɔunriŋ wa bɔ na tiŋa wan puaŋ,1.0,0.8158
+349,"” Seere en sɔi la, beem kan taam makɛ Yinɛ bihɛ, Yinɛ mɛŋa me ka makerɛ seem la beem biha.",eere nsɔ la naayinɛ ka bo ti toombeero ge mi ka bɔta tia baa,0.8947,0.6567
+350,La de la bɛla ĩyã tɩ Nawẽnnɛ bĩŋe nõor-paalga ẽŋa ĩyã.,a dila bala nyaa ti naawan bii nɔɔrpaal a ŋnya,1.0,0.4286
+351,"Yãma ẽn lagsɛ taaba la, ya tẽesɛ tɩ ya diti la Zuudãana dia, la dagɩ bɛla.",ma n laasi taaba la ya teen ti ya diiti le zuu daana diha la daa ela,0.75,0.2679
+352,Tõma wen dɛna la Nawẽnnɛ tõntõnɩba n daan botɩ ya bɔ Azezi-krisi sɩra.,m ee n din na li naamun tntomniba ndaa bo ti ya bɔ azukri si,1.0,0.4107
+353,"Ti ba lagehɛ kiŋɛ zom timpaberɛ wa zuɔ la gɔbega, kiŋɛ ta kaaɛ nɛresunduma bɔŋa zian la, la tinkãtɛ la mum, gee bugum en zeele saazuo na di ba zaa filam.",ti ba yerige tiŋa wa zuo kaa yi ni nɛriba nlaahi zinan la tensaka ti yi ni nɔŋi la baahi tiŋa soka ge bugum zeeli saazuu ha na sagom ba,0.8387,0.6723
+354,"La sãn dɛna mam, mam wʋn dɩkɛ sɛla wuu tɩ mam tarɩ, la m mẽŋa wuu bɔ la yɛmleego yãma sõŋrɛ ĩyã.",a saanda na ma ma ou dik sila wuuu ti ma tari la m miŋa wuu bɔ la yaleegoo ya suŋr ya,0.7727,0.3333
+355,Ti Yɔn bɔna lagum suŋɛ ba.,jɔn mak mi labem bo na le ba su,1.3333,0.9
+356,dikɛ sɛla woo biŋe a nama tiŋa.,isl woo iŋaanuuhi la yeti n,0.8571,0.6667
+357,"Pebila la lakɛ la bõnɔ bayopɔɩ dãana n tabɛ la, tɩ la ãna yɩrɩrɩr Nawẽnnɛ yire wakatɛ fẽe paagɛ karf-ayɩla pʋsʋka.",ai bu ayo dana ta la laai yi naawin yi wakafeen paa kaara ayi u,0.9524,0.6154
+358,"La Amelkisedɛkɩ n dagɩ ba buuri la tooge pia pʋam wuu ayɩla mɛ Abraham zẽam, dee kã kãa-sõma bɔ Abraham n de sɛka tɩ Nawẽnnɛ bĩŋe nõorɛ bɔ ẽ na.",a mɛlikisedɛki n dagi babuuri la toogi pia pɔɔn wuu a yi la min abiraham zina di ka kasuma bo abiraham n di saka ti aawunn biiŋ nɔɔr bɔ n,0.8333,0.3214
+359,Ti tiŋa la nɛreba paalɛ tɔ ba itesuŋɔ en ka tari makerɛ.,alta nɛrba wa to o tuma suŋa suŋa etase,1.0,0.6364
+360,"Daana wa wan waam na ŋma en zɔra zɔra, gee dikɛ en paahɛ birekɔgenduma la puan ha.",aana waa ŋma n zɔnra zɔnra ge deke n ta laguŋ birikɔgɔnduma pu,0.9412,0.4375
+361,"Ya kom han duna, ni di ya yire, ti ya han ta lagehɛ taaba, la da dɛna sageŋɔ bo ya.",kom ha ni duna adi yire bala ti ya wa ni salagahi taaba ya kan nyɛ namihigu na a yi,0.8,0.5167
+362,"Mam ka tẽesɛ tɩ nẽr-bãma n paalɩ tɩ bãma de la Tõntõnɩba n gãnnɩ na, mam de poorʋm dãana ba zẽam.",n kaa tiɛsi ti nirbama n paal tibama dla tuntomnba n gann na man dee poodaana ba zia,0.8095,0.3108
+363,"La selse-ya, lɛɛlɛ wã de la wakatɛ tɩ Nawẽnnɛ ɩtɩ yel-sõnnɛ, lɛɛlɛ wã de la fãarɛ daarɛ la.",la seesia leelee wa dila wakarte ti naawan iti yelsɔnn ni leleewa dila faan daaa a,0.8889,0.4348
+364,"Ti a le puuhɛ, ti saazuo ha bo saa na, ti timpaberɛ wa zuo maalɛ dia.",tisaani ti kayudaani ti nɛrbayuuyade,0.875,0.6667
+365,"La de sira, yelehego wan baahum bɔna ya puan.",yelmiŋ tiyelegu an bɔna yati,0.8889,0.6286
+366,"Yɔn yɛ la yugenɛ kɔberɔ fuo, dikɛ sɛganɛ lu a sia, ti a dia dɛna sunwaara la seero.",jɔn lɔgru daa dela yugenɛ kɔnbru te a yaara dekela sagani lo asea adia mi daa dela sunwaara la seer,0.9444,0.5873
+367,"“Kabuna wa wan taam koohe lagekãtɛ, dikɛ bo naheduma.",ba ta de kenikaa wa kowol ligri kike ko ba tan dikeligri la bo naahuduma,1.4444,0.8571
+368,"La ba daan tẽesɛ tɩ pɔgsɩ la n yele ba seem na ka tarɩ võorɛ, tɩ ba ka sakɛ tɩ la de sɩra.",b daatiin tipɔgil la yel ba seik na ka tar vɔɔnre ti ba ka sak ti lii l siia,0.7391,0.4242
+369,"“Nananawa n suurɔ, mam mi ti ya daa tum la yɛmkaalum, wuu ya nɛhi duma la me n daa tum yɛmkaalum seem la.",n suoro maŋ mi ti yamam la ya kpiɛ nduma la n daa eŋ yesu seem la dala yada ka bo kala sɛla,0.8261,0.6835
+370,"N waam ya zian mɛ na la tɔregɔ, la dabeem la gbia zoe zoe.",bala mam n daa waana la ŋ ka tare paŋa ge ti dabee daa tare ma ti ŋ gbeera,1.2857,0.8605
+371,Ŋwana ti Yinɛ en yehe en ti a dɛna malema kiima doohe Mɛlekizɛdɛki.,sɔ la naayinɛ daa pon bah in mɛ ti adena la maalima nɛŋadaana woo mɛlkizedɛk,1.0769,0.6481
+372,"Paalɛ bɔ doohe fum vom sumɔ la puan, ti fum tuni fum tuuma la maa maa la yɛm.",aaaaibala ge sirih amia naayi ni zian ŋana wa wa paali ti a si ta ya,1.0,0.7931
+373,"Mam mi m sũure pʋam tɩ mam ka ẽŋɛ sɛla n ka ãn sõŋa, la, la dagɩ bɛla n paalɛ tɩ mam masɛ ya.",an miin suunr pɔɔ tima ka iŋ sila n ka ansuŋa la la daa bilan paal timamasia,0.7917,0.3433
+374,"La de la bɛla n soe tɩ tõma yẽ bʋraanɛ, la dagɩ bʋraanɛ na mãa tɩ tõma yẽ, tõma ken yẽ sũ-yẽlga zooge mɛ, tõma n yẽ tɩ Atiti tarɩ sũ-yẽlga, yãma n keŋe a sũure seem na.",di la bila soo ti tima nye buraa na la daa buraa na maa ti tu ma nya ti ma ke nye su nyaliga zoogi ma tima nye ti aa ti titar sunyaliga yama nkeŋ a suun see na,0.8947,0.2984
+375,"Bɛla, da gĩsra-ya, pʋʋsra-ya Nawẽnnɛ wakatɛ wuu, tɩ ya wʋn yẽ pãŋa tãagɛ põsɛ bõn-sɛba wuu n wʋn wa ẽŋɛ la, dee tãagɛ zeele Nẽrsaala Dayʋa la nẽŋam.",bla dajihiriya pɔɔhriya naa wo ni wa ka wuu cha wee nyi pa ŋa taag pɔse bu sɔb wu nu waa iŋ la di taan see nisaala da yɔɔ l nih ŋa,1.0714,0.4425
+376,"Lan dẽŋɛ a zẽkrɛ la, la gʋlsɛ a yelle yetɩ, a paagɛ Nawẽnnɛ yɛm mɛ.",ni aseik la laa gulsaa ye li yeti a paaga naawon y,0.8667,0.5
+377,"Kãa-beero, la kãa-sõma zeetɩ la nõ-ẽŋa ayɩla pʋam yɛsra.",le,1.0,0.9535
+378,"Mam ka waam tɩ m sãam ba, mam waam tɩ m paalɛ la ba võorɛ baasɛ, dee ẽŋɛ ban yele seem na.",n ka waan ti nsaan ba man waan ti mpaal la bi vɔnr baase dei ba yel see na,0.8182,0.3485
+379,"A tɔgɛ la keenkeem yetɩ: «A lui mɛ, a lui mɛ!",tɔ le keenken yeti luma,1.0,0.4839
+380,"La sãn dɛna pɔkõ-sɛba n ka kʋrgɛ la, da gʋlsɛ ba yʋʋra pɔkõpa la pʋam, seere n soe la, ba yɛm sãn wa bɔna bʋraasɩ pʋam, ba wʋn basɛ Krisi tõoma mɛ, dee bɔɔra tɩ ba ele.",sandana pakɔ sba nka korug la daa golsi ba yuur a pakɔnpala puɔ seer n su la ba yaan san waa bɔ na boras puɔ ba wo bas kristo ma ma di bɔr ti a i i,0.8649,0.384
+381,"Bihɛ ya, yamam tugum lagehɛ la lɔgerɔ biŋe baahegɔ dabeha wa puan?",eensɔ la ya kelim biŋraa la lɔgir bɔra ya mihi badaaa ua,0.9167,0.6792
+382,"Yãma sise sɛla tɩ Nikolayiti nẽrba ɩtɩ la mɛ, wʋ mam n mẽ sise ba tõoma seem na.",amasii sla niko la yitinirba iti la m uma miin siisibatooma i na,0.8889,0.3443
+383,"Mam yetɩ ya mɛ tɩ ya bãŋɛ tɩ sɛla tɩ bag-kãabrɩba kãabrɩ la, ba kãabrɩ bɔɔra la kʋlkãarsɩ, dagɩ Nawẽnnɛ.",a yeti ya man ti ya baŋa ti sila ti ba kaabir bakaanb la ba kaabr bɔɔra le kulkaa si daak naa wan,0.9,0.3333
+384,"Gee Kiresta puan, tumam tɔgeri mɛ yelemɛŋerɛ, wuu nɛreba ti Yinɛ tum tɔ, gee ti tu me zɛa a nɛŋan saŋa woo la.",to la zuo ti tɔgre la yalimaŋrɛ a nɛŋan bɔgra nɛriba woo tu ndi krista yamihi la,0.913,0.7262
+385,Tõon-bee-sɛba wuu tɩ nẽrsaala ɩtɩ la ka boe a ĩyã pʋam.,tisa   o,1.0,0.9048
+386,"Seere en gani bala dela, la dele sɛba en biheri Yinɛ lɔgerɔ la ti ba dɛna sɛba ti nɛreba wan nam ba.",eem ti ba dike tuoma eŋ anuuhi la dela a eŋɛsala nwan baha ti seem mboon tooma la yeti a de yelimaŋredaana,0.9545,0.8442
+387,"Sɛka n tarɩ nõŋlʋm ka ɩtɩ sɛla n ka masɛ, a ka eerɩ a mẽŋa sõŋrɛ mãa, a sũure ka isgri, nẽra sãn ẽŋɛ ẽ beem, a ka tẽrɩ ẽ a sũure pʋam.",te kan tar nɔŋnuŋ kaa yeti sɛla nka ma si aa ka eer a miŋa suŋrimaa a suunr kaa isigiri nɛra saanyiŋ m beeu aa ka tiri i a suur pua,0.8182,0.3711
+388,"Abɛlɩ n bɔ Nawẽnnɛ sɩra la ĩyã, tɩ a yʋʋn kãabɛ kãabgɔ n tarɩ yõorɔ gãnna Akãɩ kãabgɔ bɔ Nawẽnnɛ.",ba le mbɔ naa wonn sida la inyaa t ayuun kaabo kaabugɔ ntaar yoɔr gana a kan kaabg bɔnaawan,1.0,0.3553
+389,"Seere n soe la, nẽrba n yetɩ seem n wãna: «Apolɩ gõnnɔ na yetɔga kɛɛm mɛ, dee dɛna toogo.",eelisula niribaa ye see ŋa na a pol gon na yetɔga ki ma daato,0.8947,0.4394
+390,"› » La tõma n wõm bɛla la, tɩ tõma la nẽr-sɛba n boe bilam na, daan bɛlna Apolɩ yetɩ, a da sẽŋɛ Zerizalɛm.",a tuma nwon bala la ti tuma le nilsɛba bubiila na daan bi napoliti a da siŋ jerusalem,0.7727,0.3553
+391,Da kãbɛ ya suya.,nɛriatidabr kena ba waan suna ti banaa i di dela zina ge devid yuun golihi dena wa iŋiyinngɔŋa la poan ti layuu ma yeti zina u ha wom nkuŋkori da kaabya sunya,8.0,9.75
+392,"» Amoyisi yʋʋn ken dɩkɛ zɩɩm na mĩise fuu-deego la, la pʋʋsgɔ lɔgrɔ la wuu mɛ.",mu siun ken di izii na min si fuudeela lapuusuglɔ l uunmi,0.8667,0.4746
+393,"Tɩ mam bɔ nõorɛ yetɩ, ba guura ẽ tɩ m wa botɩ ba tarɩ ẽ sẽŋɛ na-keko la zẽam.",timam bɔnɔɔr yeti ba guuri  tn waabo ti ba tar n seŋ nan kekila sin,0.8947,0.3571
+394,"Fum seem woo en tɔgɛ beem bo fum tadaana, bii gakɛ fum tadaana, tɔgɛ la beem bahɛ zeelego la zuo, gee gakɛ zeelego la.",tbala n sɔ la ti naayin zagahi paali maŋaduma ge suuha sigihi maŋaduma bala silihi ya mah naayin zinen zagahiya sagam na la,0.9583,0.9231
+395,"N yele ya ti, Yinɛ kan guum, a wan kabelɛ bo ba buurɔ.",yetime te a wan ga kipoo ba a ma wan iŋtuto,0.9231,0.7949
+396,Tɩ ba yele ẽ yetɩ: «Tõma ka tooge gõnnɔ Zude tẽŋam n gʋlsɛ fʋ yelle.,ti ba yel n yeti ti ma kaa tooi gɔnnɔ zu datiŋ ŋan golsi fuyil,0.9333,0.3725
+397,"Tɩ Azezi sẽŋɛ ka paagɛ zẽe-ẽŋa, gorge bɩsɛ kẽnkãŋa la zuo yẽ ẽ, yele ẽ yetɩ: «Azase, sige tɔtɔ, seere n soe la, dẽnɩ tɩ mam gãarɛ fõn yire zĩna.",yeu se ka paage zenenŋa goorigibisikenkaŋa li zuu nyɛen yel n yeti azasee sig tɔtɔ seer nsu la din tima gaani on yi iin,0.9,0.3774
+398,"Seere n soe la, ba sõŋɛ mam wʋ yãma boe nɩ la mam zẽam na.",esula asuma unboni namaz,1.0,0.6429
+399,» La ba daan ka le saagɛ soke ẽ sɛla sɛla.,tia le tɔ a tuntɔn a yela bazin ti ba wan in di yaaln,1.4,1.0667
+400,"Aeli yʋʋn de la nẽrsaala wʋ tõma la, la a pʋʋsɛ mɛ sose Nawẽnnɛ la a sũure wuu tɩ saaga da ni, tɩ saaga ka tɔkɛ tẽŋa yʋʋma atã la wõr-sɩyoobɩ.",liiu di la nisaala woo tuma la laa poosi mi sus naawn laa suur wuu ti saaga da ni ti saaga ka tɔki tieŋa yuoma ataa la ma si yoo,0.7742,0.3333
+401,"Gee mam luti la nuurɛ sugum nuuren buyi dabeha ayopɔi woo puan, mam yɔɔri n pia pia boolum mɛ n sɛla woo puan.",i maŋ nti zagahe miŋa sugunuurin bu yi daba ayopɔ poan ge sala wee tiŋ nyɛ n nin po mɛ sugnuurin piya yehi a yi ma bo ho,1.1739,0.7442
+402,"» Ananiyasɩ n wõm yetɔg-ẽna la, a lui la tẽŋa ki.",nanias nwu yetɔb nna laa alu le ti,1.0,0.4
+403,La mam yẽ mɛ tɩ Pebila la lakɛ bõnɔ na n tabɛ zẽesɩ bayopɔɩ la ayɩla.,ma nye mi ti piibila la lak bɔ na ntaab zeinsi bayopɔ la a yi a,0.9375,0.3396
+404,"Nẽr-sɛka woo n tẽesrɩ tɩ ẽŋa de la nẽra n dolɩ Nawẽnnɛ, dee ka tãna a nõorɛ yõkra, a pãasrɩ la a mẽŋa, nẽr-ẽŋa Nawẽnnɛ doosgo la de la zãŋa.",ni sak woo n tɛɛhir tieŋir di la nara ndo naawin na dii ka ta na nɔɔr nyɔkira a paah la miŋa ni iŋa naawi doosugu la dili zaŋ ŋa,0.8,0.4286
+405,"Seere en gani zaa n suurɔ wa, da pɔti ya saazuo, bii timpaberɛ wa, bii pɔ yele seere.",tauoya han bata ti ya yeti aɛn ya yeti aen ke ya,0.9444,0.7656
+406,Kiresta kpaa muulegɔ.,la dela sala mpaali,1.3333,0.7778
+407,Mam daa sirum tuni seem Yerusalɛm puan n bala.,yesu yuurɛ dinamiya tin daa kiŋ jerusalɛm tiŋa poan la,1.1111,0.8108
+408,” Gee Yezu zahereba la pun ka bɔkɛ sɛla sɛla yetɔgebuna wa puan.,na dana la nayimzuudaana ayima nwasu ye,0.9167,0.74
+409,Sɛka n zĩ naam bĩmbĩnne zuo la n wʋn guura ba.,kan jii naambiimi na zuu le u buurba kɔɔ le ko nyuun ka le nyɔk ba ku tee ŋa le aatuol wuu ka le nɔɔŋ,2.1818,1.6571
+410,"Tɩ wõrbi-kãtɛ n diti bug-zɩlɩŋa zeele saazuum lui mõga, la kʋlsɩ koom pʋam, a lui la koom na zẽesɩ batã ayɩla pʋam.",udibi kati ndii ti bugi iliŋa zeeli saazuu lu mɔga le kolsikom pua aluu le koo na ziisi bata ayi le pu a,1.0,0.3371
+411,"La ban daan sõsrɩ la taaba la, tɩ Azezi lɛm ba, tɩ ba lagɩm sẽnna.",ban daa suŋ la taaba la taa izui le ba ti ba lagim sen,0.6,0.3469
+412,"Ti mam wum ti bunvua woo en boi tinsuŋan, timpaberɛ wa zuo, la tiŋa tiŋa ha, la ateko puan, la sɛla woo en boi ba puan, ti ba zaa yuuna yeti.",n le wum bun fowa woo mbo saazuu ha la tiŋa wa zuo la teŋa teŋa ha la kukanra poan la sala woo m bo ba poan kuŋkori ti ba yuu na yeti,0.6452,0.4857
+413,Tɩ ba lʋ ẽ tarɩ sẽŋɛ Apilatɩ n de gɔmna zẽam ka bɔ ẽ.,ba lo ntar seiŋa pilati n di gomena zinɛn kaa bɔ,0.7857,0.4359
+414,Ti ya bahɛ ti faarɛ paaɛ timpaberɛ wa zian woo.,aŋaati kapaa nɛra woo mboti paabir wa zuo,0.9,0.7027
+415,"Tɩ sãn ɩta bɛla, tɩ wʋn botɩ Zuudãana sũure n isge.",sata be la tuubo ti zuuaanasuu s,1.0,0.4359
+416,"Bii bihɛ ya uurenɔ, ban tibegɛ seem ti kusebego maa zaara ba kina la.",biya ourkara nbo koom puɔn saa,1.0,0.7407
+417,Bãma wuu looge la bõntarsõm sɛba tɩ ba tarɩ zooge la pʋam waam wa ẽŋɛ mĩ.,a wulook lebotasisba ti ba ta zoo le puɔ waan wan iŋmii,0.9375,0.4561
+418,"La a sãn sose ẽ, dẽnɩ tɩ a bɔ ẽ sɩra, da sẽena baa fẽfẽe.",asansosi di taa bɔɔn sia da sinabane,0.9333,0.475
+419,"La sãn dɛna tɩ sɔbia Apolɔsɩ, mam yele ẽ mɛ nõorɛ faa tɩ a doose la sɔbiisi basɛba la waam wa bɩsɛ ya.",saada nin ti sɔ bia apolosi man yel e ma nɔɔr faa ti adoosi la sɔ biisi basiba la waan waabiisia,0.8696,0.3077
+420,"Beni zuo, ani en nyɛ sɛla en boi la tɔka fum puan?",mbahaya ti yamam gana nɛrba basɛba lada,1.0,0.8378
+421,"Yãma n tarɩ taaba sẽnna sarɩyadia zẽam na, la põn paalɛ tɩ ya tuuge mɛ zozoe.",man taa taaba sein na sariya di zeen na la pnpaa tee tu u mi ooo,0.9375,0.35
+422,"Gee seem han ka sakɛ gee ŋmɛɛra nɔkpeene, tumam ka tari malema aŋa bii Yinɛ Lageŋɔ la.",iseeha bɔtati aŋmɛ nɔkpee ni yɛhera yeldinawa yel seere ti mam tara zaa zaa dela dena wa,1.0,0.7794
+423,"La dabsa zozoe daan tole mɛ, tɩ Zifdõma nõorɛ lʋa daarɛ tole.",aszoo zoo daa tooli ma tizianɔɔlu daatoo,1.0,0.5417
+424,Yezu Kiresta en de Yinɛ dayua la Faarɛ yelehum la pɔhega.,yesukrista seem ndeyi nɛ dayɔa la yelisun nɛ a,0.9091,0.4783
+425,"Tɩ sãn tẽesɛ tɩ mẽŋa bɩsɛ tɩ sãn masɛ, Nawẽnnɛ kãn sɩbgɛ tɔ.",satihi timiŋa bisa tisaan mas naawa kan s,0.9231,0.5435
+426,"Seere en sɔi la, tu iŋɛ ya gaafara, tumam zuto han ka tuna, la dela Yinɛ zuo, tu han le dɛna tu mɛhi la dela yamam zuo.",tsala baiige dag la ba suunri puan la ge to haŋ zala to ane balala naayi ni zuo ge tu mi haŋ ka le zala tu ane balala yama zuo,0.9259,0.6818
+427,"Seere en sɔi la, wuu saa n ni nyakɛ dapɔya bɔba ti la niiɛ paaɛ zanɔya bɔba seem la, bala mɛa ti Asaala Dayua lɛbega na la wan ta ana.",eaboyao yaa nya saazeeli dapaya bɔba nya kitoli nɛŋa seem la a saala dayɔɔ waa keni puan na,0.8667,0.6275
+428,Bãahi sina ba tara la dabeem.,a namiu waaanawa zuo,1.0,0.6957
+429,Mam gʋlsɛ gõŋɔ wã bɔɔra la Atimõtɩ n lebge mam mẽŋa bia Azezi-krisi doosgo la pʋam.,an golsigoŋ wa bɔɔra la timoti nlebig man miɛŋa biia azikrisdoosigu l pua,0.8125,0.3182
+430,"Mam n de ya sɔ Azezi-krisi doosgo la pʋam, mam n waam wa mõolɛ kõ-yẽlga la bɔ ya, tɩ ya yẽ vɔm na ĩyã.",maa n di yaa sɔ asikrisdoosib le puɔn maa n waan waa mɔɔl kɔn yeliga le bɔya ti ya nye vɔbna nya,0.8333,0.3649
+431,Mam nõŋɛ ya wuu mɛ Azezi-krisi doosgo pʋam.,a nɔŋ ye wuu ma a yesikrisdoosigu puɔn,0.875,0.4118
+432,"Ti naba Agiripa yele Pɔɔl yeti, “Sore boi ti fum tɔgɛ poe fum mɛŋa.",ti naba agripa nyaabo pɔɔl sori mi ti yaatɔgo adina,0.7143,0.4902
+433,"Mam wʋn ken basɛ tɩ a kɔma ki, tɩ Wẽndeto nẽrba la wuu wʋn bãŋɛ tɩ mam de la sɛka n mi nẽrba tẽesgɔ, la ban boorɩ seem.",u kee ba ti aa kɔ ma chii ti mee di ti nariba le wuu u baŋ tima de lasaka mmi narba teesiku le ban boor sei,0.9643,0.427
+434,"Tɩ Azezi la a nẽrba daan yese Zifdõma wẽndeem na, tɩ Azakɩ la Azã doose ba, tɩ ba sẽŋɛ ka kẽ Asimõ la Aãndre dõma yire.",ila a nariba daa yehe sinfirma wa dee na ti azaklaaliza doosi ba ti ba san kak a sim laa di yi,0.8846,0.4176
+435,"Seere en sɔi la, ya han ni lagehɛ taaba na, la ni dagena sum, gee la ni tum dɛna la sageŋɔ.",seere nsɔ la ya haŋ ni lagahi taaba ti ya yeti ya puohi ma ya ka tare yelsia nsoŋre ge ya tuntale yelsea nsaga nɛ,1.0,0.7463
+436,Gee zina daaŋɔ la pun seke zina mɛ.,da dik ya beeri yala lagin la zina wa yɛla,1.125,0.9259
+437,"Seere en sɔi la, sɛba woo en zɛkeri ba mɛhi, ba wan sigehe ba tiŋa.",eere nsɔ la nɛra seem woo nzɛkari a mia saazuo naayi niwan sirihi nteŋa,0.9333,0.64
+438,Ba baŋɛ ti buraa kaŋa n bala ni zia Puuhegɔ yire la nayansuŋa la nuuren suhera la.,ba baŋ ti a dela bu dan sa kan n ni zian la yaŋa nuura la,0.7647,0.5692
+439,"Bala, ye mini ya zina dabeherɛ wa yeti, Yinɛ faarɛ yelehum buna wa muulɛ bo Sɛba en dagi Yuda buuri la mɛ, ti ba me wan kelehe bu.",adati yamina tiyi ni daa bahi ti a nɛriba muɔla yesu yelisuma yaara la faanrɛ la puwan bo sɛba n daa yuuduma la mi ge ti ba wa namidɛ,0.9643,0.7172
+440,"Ayɛɩ, a wʋn yele ẽ yetɩ: ‹Dʋgɛ m dia, dee teege fuugo yɛ, tarɩ dia la waam wa bɔ ma tɩ m di.",yai o yel n yeti doi ndi die tee uu ya ta li die la waa abɔma,0.9565,0.4844
+441,"Timoti, gura sɛla en dikɛ iŋɛ fum puan la suŋa.",timoti bi hasela ti yi ni di kibo ho la datɔgra wuu nɛresɛba ŋka,1.2,0.8889
+442,"La tõma n daan põsɛ paagɛ doone na, tɩ tõma bãŋɛ tɩ tẽŋa la yʋʋrɛ de la Maltɩ.",tuma daa pɔnt paa doon na tituma baŋ titeŋal yuudla maa,0.9444,0.4068
+443,"Bɛla, la de la Azezi-krisi ĩyã tɩ tõma yɛta tɩ: «Amina!",la lar elai kia tituma yata ti ainaa,0.9091,0.45
+444,"Dina wa zaa zeele la Yinɛ zian, seem n dikɛ tu naaɛ la a mɛa doohe Kiresta puan, gee bo tumam naarɛ tuunɛ wa.",laaa woo zeli la yini ziin a iŋa ndoohi krista poan dik tu naa amaŋa tma aa,0.9167,0.5904
+445,» Abraham yʋʋn tarɩ la pʋtẽerɛ tɩ Nawẽnnɛ tã wʋn vooge Aizakɩ mɛ.,buraham uunta la po ti ti naa we tan u oo ga isaa,1.0833,0.5098
+446,La Nawẽnnɛ n wʋn duuse ba nintãm wuu.,peebii la le mboo naa bimbinn te ŋa so kalam u bisir ba yel le n ŋan utaar ba sa koo mbuu lee mbɔɔr vɔn zinan laa naŋman nin u duu si ba ni tan wuu,4.0,3.1379
+447,"Tɩ Azezi paagɛ, tɩ ba darɛ tɔgɛ pɔka la yelle bɔ ẽ.",,1.0,1.0
+448,Nyalema la kirehi la tuunkãra.,nyalima l yelkerii maŋ daa,1.0,0.6
+449,Ba baahegɔ wan doohe mɛ la ba tuuma la.,lbaah oba tatɔra la sɛla ti ba narat,0.8889,0.7
+450,"Tɩ kãabgɔ kẽma nẽŋadõma, la Zifdõma nẽŋadõma waam a zẽam wa dõrɛ Apolɩ.",kaa u keema niŋaduma la jiinpudma nŋaduma waan a zien wadonra po li,0.8462,0.4035
+451,"Dagi ya zoe zoe en wan dɛna paaleba n suurɔ, seere en sɔi la, ya mi ti tu sɛba en paalɛ la, ba wan gakɛ tu la nima nima.",datum boti ya ti ya paala seer nsɔ la ya mi ti tumam paali ba han ka paala nɛriba sila ndi maa tumam gankir nwan ganna a,0.9655,0.7273
+452,Lɔɔ la tɩ Nawẽnnɛ yʋʋn bɔ a nẽrba la ẽebɛ la Leviti dõma kãabgɔ tõoma la zuo.,,1.0,1.0
+453,"Bala nananawa, tugum di ya sugeri bo en, gee bugelɛ a suure, ti a susageŋɔ la da ba gaŋɛ en.",anaadia suwuran boya in ge suŋya in te a datara sunsaaŋɔ handagana bala a nyaa wan kɔɔ ta lu zaa zaa yesu so dɔla,1.15,1.0435
+454,"Bala, tuberɛ dɔlegerɛ seere ti ya zaa naaɛ nuurɛ dɔlege nɛre-ina taaba tuberɛ wa la seke ya.",wa ba la maŋ ka boti m ba daain la zuo gi ya zoo zooe m punboo nɛra inadaana na mi seku taaba la se ki a,1.4706,0.7671
+455,"Kãan ba yetɩ, ba ɩta sõŋa, ba dɛna nẽrba n tõnnɩ tõon-sõma zozoe, la ba dɛna nẽrba n bɔɔrɩ, dee pʋta sɛla tɩ ba tarɩ bɔɔra nẽrba la sũ-yẽlga.",a ba yeti ba itasuŋa ba dana nɛriba n toni tonsoma zoo zoo la ba dana nɛriba n bɔɔri die pu ta sila ti ba tari bɔɔra nɛriba le sun yli a,0.8276,0.2736
+456,"Ti a yi en na soke en yeti, ‘Beni en bala ti n wuna ti fum iti me wa?",yeli nti beni nmalati nwona yeli ana wa yehera u yeli wa,0.8947,0.7292
+457,"Tumam nyaa dela geto Kiresta zuo, gee ti yamam dɛna yɛm duma Kiresta puan.",ti krista zuo ti tumam dɛna gɔɔnu ge ya maŋ tundɛna la yenduma ya bɔŋa yesu sori dɔlga puwana,1.2857,0.9153
+458,"Bala ti ya boolum la wan sugɛ, ti ya Sɔ la en nyɛti sɛla en sugɛ la wan yɔ ya.",baa ti ya boolum ladana ya maa yeli ge ya sɔ nyɛ ya eŋ sɛla la maa la waan yɔ ya,0.6,0.4737
+459,"Tɩ Azezi botɩ nẽrba zozoe tɩ bãasɩ tootoore tarɩ ba yẽ ĩmãasʋm, dee dige kʋlkãarsɩ zozoe, tɩ ba yese.",asibot nɛriba zoo zoi ti baahi tootootariba nya imaasu diedii kolkaan zoo zoi ti ba ye i,1.0,0.4
+460,"Nasdõma boe la ya lɛ mɛ wakatɛ wuu, la mam kãn bɔna la ya wakatɛ wuu.",mibo le yale  ka tuu lamaebɔan lea  kt,1.0,0.5769
+461,"Ti mam wum kua tinsuŋan la, ti ka yeti, “Gulehɛ dina wa biŋe yeti, Yehe zina yɛa ha, Sum wan bɔna la sɛba woo en ki Daana la sore dɔlega puan.",om kinkɔr n tɔgɔre saazuu ha yeti golihi ya ti yahe zina yaɛha popeɛlim wanbɔ ni la sɛba n ki naayin tunuma puan,0.8065,0.5943
+462,"» Tɩ Apolɩ mẽsɛ a nuugo, tɩ bõnsɛla la lui bugum pʋam, dee tɩ sɛla ka ẽŋɛ ẽ.",poi misanuubo ti busil le lubuu pɔɔn de ti saaka,1.0,0.5091
+463,"Yãma sãn wa ẽŋɛ sɛla n paalɛ tɩ ya sakrɩ Nawẽnnɛ nõorɛ sõŋa, tõma mãasʋm mɛ tɩ tɩ sɩbgɛ sɛba n sɩɩsrɩ la wuu.",a saanwaa ŋ sila npaal tiyasa ki na wen nɔɔr suŋa tumamaas ma ti ti sibig saba nseeh la u,0.9583,0.3929
+464,“Fooe ya beem daana la ya puan bahɛ.,uo ya peem la ya poan,0.625,0.5185
+465,"La sãn dɛna mam, mam bɔ sugri mɛ, la bõn-sɛka sãn bɔna dɛna mam bɔ sugri, mam ɩtɩ bɛla la yãma ĩyã Krisi nifum, tɩ la da botɩ Asũtãana yãŋɛ tɔ.",la sanda na ma man bɔsugr ma la busika san bɔ na da na maan bɔsuuri man iti ba a la ya b ya kris nii fu la daboti sutaana nya t,0.9355,0.2897
+466,Sɛba n bẽerɩ n eerɩ tɩba.,kunkabaa la ki ya nye zoo ma taah nyaa zizii kaa ka duuma aiiin ŋa,2.5,2.4211
+467,"Yelemɛŋerɛ, sɛla woo dela yamam zuo, ti zuuhegɔ la, n paaherɛ seem la paaɛ nɛreba zoe zoe, ti pɛka malum zoe paahɛ ti Yinɛ yuurɛ nyɛ pɛka.",dina wa woo dela yaman zuo ge nɛriba zɔe zoi haan nyɛ naayi ni suŋ la ba wan naa ha yena lapɛka kaan bu gke kekeko ti dina meya zuo sala ka,1.0,0.7383
+468,"Sɛka n wõm yetɔga wã, a selse Nawẽnnɛ Sɩa n yetɩ a nẽrba seem na sõŋa sõŋa.",a ka ŋ yeta a  hel naun sen ta nr  se n,0.9412,0.6316
+469,"La ba gʋlsɛ bɛla, tɩ la dɛna la zãsŋɔ bɔ tõma sɛba n boe wakat-ẽna tɩ dũnia lɛm baasgɔ wã.",l ba gols bela la da na la zansi mɔnbɔr tuma siba n boo waakati enna ti dunia len baas,0.85,0.3676
+470,"N yeti ya la yelemɛŋerɛ, ti fum kan makɛ yehe na han dagena fum ta yɔ la hanɛ la zaa kpiniŋam.",yeti ho la yelimaŋni te hu haŋ ka yɔ sɛla woo baahi ho kan yihe ya wonti ba yeti da gaa,0.9524,0.6944
+471,"N wan ihege lebe n sɔ wa zian, ta yele en yeti, “N sɔ, mam tum la beem bo saazuo, la fum.",a ihigi ku le ka yeli n sɔ ti ma tom beem bo naayi nɛ la iŋa,0.8182,0.5968
+472,"Bala, tumam n mi tu zɔta Daana la vuurɛ n de sɛla la, tu tiregerɛ mɛ ti tu bahɛ ti basɛba me baŋɛ en.",tu mu mi tu zɔta tu daana naayi nɛ nde seem ma bala tu terigr ma ti tu bahe nɛriba basɛba mi ti ba mi saa,0.7917,0.5067
+473,Wakat-ẽŋa tɩ Azakari bia Azã daan boe mõom tɩ Nawẽnnɛ tɔgɛ bɔ ẽ.,akati iŋati aakaribi a zam daabo mu tinaain tɔbba,1.0,0.42
+474,"Zagehɛ yetɔge yooro, la zaba nɔkpɛɛma, la sɛla ti ba parum yiira miilum la.",doleyintɔr seem la zagahe paaleseko ti ba parim yiira yam la sa,0.7143,0.5424
+475,A yʋʋn yetɩ: «Nẽra n mõolɩ weem tɔgra keenkeem yetɩ: Malgɛ-ya sore sõŋa guura Zuudãana.,yynɛra m mɔol wee tɔra keenkee yeti malika yaa sore suŋa guuda zuunaana,0.9333,0.3235
+476,"“Faarɛ zeeti la tumam Yinɛ wa, seem en yage naam kuka kãtɛ wa zuo wa, la Pebila wa zian na.",tumam yi nɛ sem nzi na n gɔŋi la poan lala pebila la n wan fa tubaa,0.9,0.6471
+477,"Yelemɛŋerɛ, Kiresta Yezu puan, ti mam lebege ya sɔ, faarɛ yelehum wa zuo.",maama nde ya sɔ seere n sɔ la mam nwaana muɔli yelsuma la b,1.0769,0.7544
+478,Gee Yinɛ en tugum kan bo sɛba ti a mɛŋa looe la en kaahi bɔɔra en bulika la yuuŋɔ la?,ya tiɛ i tinaayi na ka ga kipoo amiya nɛriba saba n suhurii wuntee ŋa l yuuŋu,1.0,0.7846
+479,"La sɛla n de sɩra, a waam na nõorɛ ayɩla mãa dũnia baasgɔ wakatɛ wã, tɩ a yese tõon-beero, ẽn dɩkɛ a mẽŋa kãabɛ la ĩyã.",ba sa le n di siraa a waa nan nɔɔra ayiila maahn dunia ubaasuuwakaa tinwa ti a ye sitombeeruu in diki a miŋa kaanb la nyn,0.8077,0.3933
+480,"Gee da bahɛ ya ti ya paleŋa ɛgera, seere en sɔi la, yele ana woo wan ita, gee dagi baahegɔ saŋa la n bala.",ge da baahiya tiladanya ti yeli a nawaa eŋɛ ge daala teŋa baago mpaan,0.9167,0.6076
+481,Pɔka la tɩ fʋ yẽ la de la tẽn-kãtɛ n soe dũnia naadõma wuu.,kaa ti fu nyi la dela teŋ kate a yin so dunia naarima wuu,0.8571,0.3409
+482,"Ya sãn yẽ tɩ ba võorɔ pusra, ya mẽŋa mi tɩ sigre lɛm mɛ.",san ye ti bibɔ pu mimitsi,0.8571,0.6098
+483,"Bɛla, nẽr-sɛka woo n boorɩ tɩ a yõgɛ sɩtɔ la dũnia wã lɔgrɔ, a wʋn dɛna la Nawẽnnɛ bɛ.",ni sekeu nbooditaa nyɔki siti li dunia waa lɔgɔrɔ audin le naa,0.9474,0.5625
+484,"A yʋʋn boorɩ mɛ tɩ a lagɩm na Nawẽnnɛ nẽrba la po nãmsra, gãnna ẽŋa n ɩtɩ sũ-yẽlga la sɛla n de beem wakatɛ fẽfẽe.",uboor m taa lagum na nan won nar ba la po namsiraa gaa naa eŋa iti su yaliga la sila nde beem a ka fifɛ,0.88,0.3448
+485,"Ya kan taam nyu Daana wanɛ la puan, gee le nyu kulekpabɛɛhi wanɛ puan.",ya kan taan nyu tudaana yesu wani la poan m paale ti ya lagum min la in ge mi tuligi nyuura bumbɛɛhi wani la puan,1.4286,0.8364
+486,"La sãn dɛna mam n pẽgɛ yãma Atiti zẽam na, yãma ka ẽŋɛ mam yãnnɛ.",a saan da nan ma n pik nyama aa ti tiziɛn na nyama kaa ŋ ma yaan n,1.0667,0.3673
+487,"Saazuum la tẽŋa wʋn tole mɛ, la mam yetɔga la kãn malɩn tole.",aazuun la tiŋau toli m la ma yetɔa la a man to,0.7692,0.3404
+488,"Nẽra nẽra da pɔɔgɛ ẽ, sõŋɛ-ya ẽ tɩ a leme waam mam zẽam la sũ-mãasʋm.",a nradapɔɔ suŋyan tia le waaa zen na umaas,1.0,0.4314
+489,"Mam n daan weesɩ Masedʋanɩ dee yele fʋ seem na, ken weege Efɛɛzɩ tẽŋa yele nẽr-sɛba n zãsnɩ põmpɔrŋɔ zãsŋɔ la tɩ ba da zãsʋm.",daan wee si ma see dɔn dee yel fu sei na ke wee efes teŋa yel nɛrsɛba nzahnn punpɔrŋ zansiŋ la ti ba daa zansiŋ,0.84,0.3571
+490,"Dee zɛbɛ ba, ban daan ka bɔ sɩra, la ba sũure n kɛ la ĩyã.",lizabba ban daa ka bɔ sira la ba suunr nkili nyu,0.6667,0.3171
+491,"» Tɩ Apolɩ zẽkɛ a nuugo tɩ a tɔgɛ tooge a mẽŋa, yetɩ: «Naba Agripa, mam sũure ãn yẽlʋm, mam n boe fʋ nẽŋam zĩna wã tɩ m tɔgɛ tooge m mẽŋa la bõn-sɛba wuu tɩ Zifdõma dõrɛ mam na.",aapol sin kaanuugu taa tɔg toog a miŋa yeti naabaagirpa man suunr a nyilu mam bi fu nŋa zii na wa ti tɔg toog  miŋa la bɔ sba wuu ti ziifur a dɔnir a a,0.9231,0.3692
+492,"Bahɛ ya ti suuɔ seko en sigehe ku mɛŋa la, ŋmɛ a nyuɔ, la Yinɛ en zɛkɛ en la, ti buntata me sigehe a mɛŋa, beni zuo, tarega wan mɛlum wuu mɔpuuro la.",a ti suŋ seem n di naha yel nɛriba ti naayinn n suŋ in ge ti suŋ seem n di buntata yel nɛriba ti a kataa sasɛla,0.9394,0.7027
+493,Sɛla woo de la yãma bõnɔ.,bela naisa kada nwn yagɔɔ nasaa la nya sa la woo dilanyaban,1.8333,2.0
+494,"Bɛla, Krisi n tõm tõma tɩ tõma sɔɔgɛ a zẽam tɔgra la yãma wʋ Nawẽnnɛ mẽŋa n tɔgrɩ kãana ya tõma yetɔga la pʋam.",bla kirisii ntun toma titumasɔɔka a ziɛm tɔgɔra la yama u naa wenn miŋa ntɔr kaan na ya tuma yetɔga a pua,0.7917,0.2791
+495,"Azezi daan kẽ õorŋɔ lebe dooge la mõgrɛ la ke bɔba kule Kapɛrnaʋm, ẽn kẽerɩ zẽa la.",ken ɔɔnŋɔ lebdook la mɔ le ke baba kuli ka bna u nk zin,0.8824,0.5538
+496,"Bɛla, Nawẽnnɛ yʋʋn boorɩ tɩ a paalɛ la sɛba tɩ a bĩŋe nõorɛ la ba la, tɩ ẽŋa n bĩŋe a nõorɛ seem na ka viiri, bɛla tɩ a bĩŋe a nõorɛ dee pɔɩ paasɛ.",bala naahman yu ubo ti aa paalla sɛba ti a biiŋi nɔɔr la bala ti  ŋa nbiŋi aa nɔɔri sei nan ka viiri ba le ti aa biŋ a nɔɔr dii pɔpaai,0.8571,0.4037
+497,Yɔn koom sua la ti a daa sɔɔra la yehe la saazuo zea na bii asaala zian?,bo yɔn sore ti a bɔɔri nɛriba koon su wa la daa dela naayini bi asaala,0.8235,0.7273
+498,"Ba bɩsrɩ tõma wʋ nasdõma, dee tɩ tõma botɩ nẽrba zozoe tara bõntarsõm.",ba bi tuma uu nasidoma latituma bo ti nɛrba zoo zo ta butaa sa,1.0,0.4286
+499,"Moose yameŋa, Kiresta dayua.",ge tondeya sɛba nwan kaana taaba daara a,2.0,0.9565
+500,Bala ti ba bo ba nuurɛ ti ba yehe kiinduma la nɛŋan fɔregɛ gee ti bamam suhɛ yele la la taaba bihɛ.,ba ye pita a jɔlaburaa la ti ba yehe itɔgintɔgɔriba dee la poan gi nyaa piilin gagra la taaba,0.7727,0.7143
+501,"› Da kãn sẽŋɛ-ya, da doose-ya ba.",n de le samaria nɛra ti aa zu zui yeti l,1.8333,1.0455
+502,"Ba daan yõonɩ mɛ keenkeem yetɩ: «Pebila tɩ ba daan kʋ la n masɛ tɩ a tooge keeŋo, la bõntarsõm, la yɛm, la pãŋa, la nãasgɔ, la naam pãŋa, la pẽka.",ba daa nyoon ma kenken yeti idi sɔdaa nkuua ina saatoonkeemu naabotaasam nayem napana nanaasɔɔ nanaabana nasenka,0.9677,0.4112
+503,"Gee nyaa maahum aze nyɛ pumparenduma, ti ba yehe na yeti, “Buraa wa kan malum bahɛ ka tɔgera tuura tuulum zian wa la Zeelego la.",bilam ti ba nyaa tare buraah siseeh kena ti ba parmbo stiven ba kena la ba yeti daare woo bura kana wa tɔgri lasala n ka a ni soŋa bɔɔratuwul n zian la pa,1.12,0.86
+504,"Ti Yezu lerege ba yeti, bahɛ ya ti tu kiŋɛ ya tihi n boi ti kɔrɔmkɔrɔm wa ti n ta muulɛ yelehum la bilam me.",ti ya lebehe yel ba ti baaya te to keŋɛ tinseehi ŋ ka zaan la te nta muɔla yelsuma,0.92,0.561
+505,"Tɩ Zuudãana Azezi-krisi la ẽŋɛ mam a yel-sõnnɛ mɛ zozoe, botɩ mam bɔ ẽ sɩra, dee tara a nõŋlʋm.",zuudaana sukris la eŋ ma a yel sunn maa zoo zooh bo timan bɔɔ n sira di taar a nɔŋluŋ,0.8947,0.4028
+506,"Mam ka mi a dãana sãn sɩrɩ zẽkɛ mɛ zom sɩra sɩra, bɩɩ la sãn ãna wʋ zãasŋɔ la, Nawẽnnɛ mãa n mi.",bankami aaraana san se zeki ma zon siasira bii lasa ana u zaansi la naaannaa,0.8696,0.3944
+507,"Sãlma lɔkɔ tɩ mannɩ boe a pʋam, la Aarõ dasaarɛ n puse võorɔ la, la kug-palagsɩ sɛba tɩ Nawẽnnɛ n bɔ nõorɛ seem na gʋlsɛ ba zuto la n boe daka la pʋam.",talimɔlɔka ti maani bu a puɔ la a aaru dasaari npuu si vɔɔnri laa la kuupalaasabati aawa ni nbɔnɔr sei na golsi ba uut la mbodakal p,0.8485,0.4087
+508,Fõn yʋʋn botɩ tõma yaaba Adavidi n de fʋ tõntõnna la tɔgɛ la fʋ Sɩa pãŋa yetɩ: ‹Bẽm n ẽŋɛ tɩ dũnia buuri wuu sũure yĩige.,n yun bo tima yaaba dabiid n di futuntɔ na le tɔg la fusie pa yeti bin eŋa ti duniya buuriuusuun ni,0.8846,0.3871
+509,"Gee Yezu zahereba la n nyɛ ŋwana la, ba suya nyiie mɛ paaɛ paaɛ ti ba yeti, sageŋɔ kuna wa vuurɛ?",nnyɛdinawa ba sunsunya nyii mɛ ti ba so ki yeti bee nɛ ti ho saŋ,0.9048,0.6892
+510,"Tɩ tõma yãŋa wʋn mõolɛ kõ-yẽlga la soolʋm sɛba n boe ya nẽŋa la pʋam, tɩ la kãn dɛna tɩ tõma wẽera yõogɔ la tõon-sɛba tɩ nẽrba basɛba dẽŋɛ tõm ba tõoma zẽam.",tuma yaaŋa woo mɔɔl kɔn yeliga la soolim siba n boya nɛɛŋa la pu wa na a kan dan na ti tuma nwiera yoɔg  la too seba ti niribaba sba da tom ba touma in,0.8788,0.3719
+511,"Ti ba wum ti kua kɛɛŋa zeele saazuo na yele ba yeti, “ Zom ya kalam na!",yila daa wum ti kukori vooli saazuu a yeti zonya kalam na,0.6875,0.4423
+512,ẽŋa n looge mam bɔ mam pãŋa.,tati la golsi yeti naawn ni u tuŋ a malaka bi ma ti ba gu fo naah ba mu kɔ fu la ba nuusi t fo kaa ŋan f naan la kugure taa ze zuilerigi yeti naawan nigɔŋ yel ti daa maa ku zudaa na naa we i bise taa,7.1429,6.4762
+513,"Tɩ dũnia leebdõma mẽ wʋn kɛlla fabla a yelle, nẽra nẽra n ka le daara ba bõn-kɔɔsla la ĩyã.",idunia lebirmalam u ke lifabla yile nina nra ka le darabaabunkos a n,0.8947,0.4429
+514,"Yi mini ya suŋa, ti mam daa ka dikɛ n mɛŋa ziile ya.",ya wan sake ti la dela yelimaŋr timam daa ka waan na yata yata a,1.0,0.8684
+515,"Seere en sɔi la, hankaŋa namehegɔ la wan ba gaŋɛ mɛ, ka tabelɛ bɔna tiŋa wa piileŋo puan ta paaɛ zina na, aayi, gee me pun kan le makɛ waam na.",ti nɛriba wan ta nya namihegɔ dabaha aŋa poan ti la gana namiheseku ti ba nya teŋa wa piili ŋɔ puwan na waa paa zina sala bala mi po le male eŋa,1.0,0.6574
+516,Gõŋɔ la ken dɛna la sɛba wuu n boe zẽa woo pʋʋsra Azezi-krisi n de bãma la tõma Zuudãana la ĩyã.,ŋ la kena a le sɛba wuuu nbo ziɛn woo puohir a zikris ndi bama la tuma zuura y,0.7619,0.4054
+517,"Bɛla, yãma n mõrgɛ ɛɛra Nawẽnnɛ Sɩa bɔa la, ɛɛra-ya bɔa sɛba n wʋn sõŋɛ Nawẽnnɛ nẽrba tɩ ba sẽŋɛ nẽŋa Nawẽnnɛ doosgo pʋam.",bala yama n mɔrug eɛra naawonsi buɔ la eɛraya bɔɔ siba nwon suŋ naawa narba ti ba seŋ nɛɛŋa naawandoosi puaa,0.8333,0.3895
+518,"Zifdõma boorɩ tɩ ba yẽ la bõn-yãlma n paalɛ tɩ la de la sɩra, la Grɛkɩdõma eerɩ la yɛm.",bo tiba nya la boyaalima npaa tila ila se a,0.9474,0.6364
+519,"seere n soe la, Nawẽnnɛ wʋn bɔ ba dũnia tɩ ba sɔna.",ee nsola naah ŋoni ubaba dunia ti bisɔ a,0.9167,0.4211
+520,"Seere en sɔi la, fum seem woo en dole zeelego la zaa, gee tuue zian kayima, tuue zeelego la zaa mɛ.",pu han pu lee dɔla paalugu la woo ge koŋi diyi na u tuu paalgu la aa,0.9524,0.68
+521,Ti ba pɔhɛ ɛɛra bia la ba mabiihi la ba zɔduma zian.,basuuro la ba zɔɔdoma zi n,0.8333,0.65
+522,"Asɩra, bõndõma zozoe n boe tɩ nẽrsaalba wiiri tɩ wẽna, bɩɩ zuudãandõma.",asiabunduma zoo zoo n bon ti narsaar ba wii ti wen na bii zuudaandoma,1.0,0.2807
+523,"Ba wʋn yese mɛ dũnia wuu lagsɛ kaagɛ Nawẽnnɛ nẽrba n boe zẽe-sɛka, tẽn-sɛka tɩ Nawẽnnɛ nõŋɛ la.",u ye si ma dunia wuu laasikaaki naawan nriba bo zi ska te saka ti naawa nɔŋ la,0.8333,0.4324
+524,"La pɔkõorɛ la ẽn ken sẽnna sɔsra ẽ na, sarɩyadita la wa yele a pʋtẽerʋm mɛ yetɩ: ‹Baa mam ka zotɩ Nawẽnnɛ, dee ka nanna nẽrba la, pɔkõ-ẽna n sẽnnɩ dãana mam seem wã, mam wʋn isge mɛ sõŋɛ ẽ.",lapakɔɔnr la nken si na sɔir n na saduite la waa ye a potinrmi n yeti baa mam ka zo ti naaŋɔe na die ka na nan nɛrba la pakɔ ina nsidaan nim man se wa man uu isigi ma sɔŋŋa,0.825,0.4225
+525,» Tɩ a isge kule.,izige di kubun gaali likule tiayisule,1.5,2.3636
+526,"Wakat-sɛka tɩ ya ẽn yetɩ ya yũ ba, ɩta-ya wãna tẽra mam yelle.",ka t yetyu ba taaa,0.9231,0.6957
+527,"La sɛla tɩ Nawẽnnɛ ẽŋɛ tɩ nẽrsaalba tẽesɛ tɩ la ka tarɩ pãŋa la, tarɩ pãŋa mɛ gãnna nẽrsaalba pãŋa.",seela ti naa wenn ni iŋe ti niisaalba tiɛnh ti la ka tar paŋa la tar paŋa mi ga nan niisaal ba a,0.9,0.359
+528,"La bugum na sãn di nẽra tõoma, a dãana wʋn koŋe yɔɔrɔ.",u sadi nadatoma aaako,1.0,0.6098
+529,"M sɔbiisi, mam boorɩ tɩ ya tẽesɛ la tɩ yaabdõma n yʋʋn dolɩ Amoyisi la yelle.",aboo tiyatɛh le ti yaabuma udoa u a,1.0,0.6667
+530,"La fuugo la n beŋe deego bʋyi dãana la, ba wiiri bilam tɩ Nawẽnnɛ zẽe-sõŋɔ mẽŋa mẽŋa.",lafuug le mbeeŋ deg buyudaan na laa ba wiidi bina tinaawanni zansŋ mŋa mŋa,0.9412,0.3636
+531,"Bahɛ ti seem woo en tari tuba, a kɛleha sɛla ti Faa Sia la yɛta bɔɔra lageŋɔ la zaa la.",useem n tari tuba a keli sɛla ti yinisia yata bɔɔra lagaŋu a,0.7,0.4394
+532,"Nẽrba basɛba zagsɛ bɛla mɛ, tɩ bõn-ẽŋa basɛ tɩ ba ka le dɔla Azezi sore.",ba basab asi la m ti bo ŋabas ti ba ka le dɔa so,0.8,0.4364
+533,tiŋa wa zuo wuu lan tuni saazuo ha seem la.,ŋaazuu woo le ani see saazuu ha,0.9,0.5455
+534,"Azezi sãn boe nɩ na tẽŋa wã zuo, a ka de nɩ kãabgɔ kẽema.",iabo ni nat ŋa wa zuo a ka deni kaabk,0.7143,0.381
+535,"Zaanuurɛ dinɛ mɛa, yintule n ta ana viie la, ti nɛreba tari bãduma woo, la sɛba n tari Kulekpabɛɛhi la waam Yezu zian na.",yini n daa ta maa ti nɛriba tare baaduma le sɛba ti bembɛɛhedaana waan azian na,0.8333,0.5532
+536,"La wõr-sɩtã n tole, tɩ tõma yẽ õorŋɔ n zeele Alɛgsãndri waam bɔna Maltɩ tẽŋam, tɩ ɔɔrɔ la kʋseb-kãtɛ la wakatɛ tole.",tol tita yi ɔɔniŋi zee a lsandi waa bɔni ma heeŋa ti ɔɔ le kusebik le aakat too,1.0,0.5222
+537,"Nẽr-sɛka woo n selsrɩ yetɔga la, dee ka sakra ɩta lan yele seem na, a dãana ãn wʋ nẽra n bɩsɛ bɩsga pʋam yẽ a mẽŋa n ãn seem, la ẽn bɩsɛ a mẽŋa kɩɩlɩm dee fõrgɛ la, a darɛ yĩm ẽŋa n ãn seem na mɛ.",n saka woo selihi yitɔg la die kasakira ita len yel li seem a a raa na a woo nɛra mbisibisiga pɔɔn yi a miŋa n an sei la biis a miŋa kee n die fɔnrig la a daar yii nŋa an sei na i,0.766,0.4028
+538,A paalɛ la a paŋa la a nuo.,a lebi kul la a yire la daa wa waa na ti a pogɔ,1.125,1.2105
+539,"Yele dina wa zuo, ti mam suhɛ sore ti n nyɛ ya, la n tɔgɛ la ya, lan de Izirale beere putiirɛ wa zuo ti ba ba mam la bãhi wa.",bala zuu n sɔe ti mam bɔta ti n nyɛ ya ge tɔgla ya ge ti ba bama bahi wa la seendaana ti israɛlduma eŋ ba potiɛra gura wa zuo ti yuduma kpa,0.8387,0.8242
+540,"La nẽrba wʋn tẽesra la bõn-sɛka n wʋn ẽŋɛ dũnia wuu zuo la, tɩ dabeem wʋn botɩ ba palẽŋa ẽkɛ tɩ ba yɛm bɔɩ, seere n soe la, bõn-sɛba n boe saazuum wʋn mĩim mɛ.",nɛriba wee tiɛr le bonsika nwee iŋ dunia wuuzuu la ti dabeen wubu ba paliŋa i ke ti ba ya bɔi seer nsu la bɔ sba nbu saazun u miin mi,0.8857,0.3866
+541,"Borborɩ la n de ayɩla la, tõma mẽ de la ĩyã ayɩla, baa tõma n zooge la.",oboro laa n di ayi la la ti ma min dela ny a yil la baatuma n zo a,0.9412,0.3462
+542,"Tɩ wẽnnɛ wa lui sobe, tɩ ba tarɩ bãadõma wuu, la sɛba tɩ kʋlkãarsɩ tarɩ ba waam Azezi zẽam.",wani waa lu so be ti ba taar badima wuu lasaba ti kulo kaahil taar ba waab asizisi a,0.8421,0.3857
+543,"Tõma nõo mõolɩ la Krisi n ki kũm dɔ-puurŋa zuo la kõ-yẽlga, kõ-yẽlga ẽŋa tɩ Zifdõma dɩkɛ tɩ a dɛna pɔɔrɛ yetɔga, tɩ sɛba n dagɩ Zifdõma la dɩkɛ tɩ la dɛna yalnɛ.",ma nɔ mɔɔn la ki n ki kundopuur ŋa zuu la kɔn yaliga kɔn yliga eŋa ti ziifunima dik ti aadana pɔɔr yetɔgaa ti sba n daa jiifuma la di ke ti laadna yaal ni,0.8788,0.3902
+544,"La pɔg-sɛka n pʋʋsrɩ Nawẽnnɛ, bɩɩ n tooge Nawẽnnɛ yetɔga tɔgra bɔɔra nẽrba, dee ka vuge a zuugo, a pɔɔrɩ la a zuudãana.",la pagsikaa n puuhr naawann na bi yi tooki naawenni yetɔga tɔgira bɔɔra nɛriba die ka vu a zuugo a pɔɔl laa zu a,0.6957,0.337
+545,Soolʋm buuri wuu tõm na a yalsɩ tõoma wʋ dãam tɩ ba yũ la.,olbur utoona ayalsitooma udan tinul,1.0,0.4318
+546,"Ti mam bihɛ, ti pebila la en bala, zɛa Zaayɔn Zoore la zuo!",en la bihi nyɛ ti pebila la yaga ziyɔnn zoor zu,0.8462,0.4773
+547,"Yetɔg-sɛba tɩ Nawẽnnɛ botɩ a nõtɔɔsrɩba yʋʋn tɔgɛ la de la yãma ĩyã, la ẽn yʋʋn bĩŋe a nõorɛ la tɩ yaabdõma la ken dɛna la yãma ĩyã.",etɔbsaba tinaawann bo i anɔɔtɔisb ba yuun tɔgi la dela nya ma ya la an yuu biiŋan a nɔɔr le tiyaab dimala kee dan na l ya ma a,0.9286,0.3725
+548,"Tɩ la ẽŋɛ fẽe, tɩ ba le makɛ bɩsɛ tɩ la dɛna wʋ mẽtrɩ pisyi la anii.",la peen ti ba le maakibis lan ni u mit piii lani,0.8235,0.52
+549,"” “Bihɛ, n kini mɛ kalam kalam na!",wumgi nya yelanawawaa mti mam wu ge nyɛ a baahe la n lu suŋra la nɛŋa ti nnaahi in iŋa npaal mam yel ana wa la ge a yema y,4.1429,3.3913
+550,"La Nawẽnnɛ n looge sɛba la, sɛba n de Zifdõma, la sɛba n dagɩ Zifdõma la, mi tɩ Krisi de la pãŋa dãana la yɛm dãana n zeele Nawẽnnɛ zẽam.",naawenni i lo sɛba a sɛba n di ziifirima la sɛba n dagi ziifirma la mi ti kris de la paŋadaana la yindaana nzeir naawun iɛn,0.6333,0.2981
+551,"” Ŋwana ti Pɔɔl ihege zeele suŋa, gee pɔhɛ tugum yeti, “Yamam Izirale buuri, la yamam sɛba woo n zoti Yinɛ, kelehe ya.",ti pɔɔl ihigi saazuo yib ye anuu yeti n israɛl taaba la sɛba n dage yudima sɛba mbo kalam puoha yin wa kelehe ye,0.9091,0.6966
+552,"Krisi ka kẽ nõorɛ faa wʋ kãabgɔ kẽma nẽŋadãana la n kẽerɩ zẽe-sõŋɔ la yʋʋnɛ woo la zɩɩm n dagɩ a mẽŋa zɩɩm na, a kẽ la nõorɛ ayɩla mãa dɩkɛ a mẽŋa kãabɛ bɔ Nawẽnnɛ.",rist kaa kan naɔr faa woo kaab gu ke a nɛŋanaah na la nkɛɛr zensɔŋ la yooni woo la zii ndaga a maŋa ziin na a kan la nɔɔr ayi la maa dik a maŋa kaa bi bɔnawan,0.8056,0.3571
+553,"Fum iŋɛ en ti saŋa fii wa, a da zuna la suŋereba.",o naae te a taga lasua a,0.9167,0.6944
+554,"Daarɛ deyima ti ba bɔna Daana la naahegɔ puan la nɔlurɛ, ti Faa Sia la tɔgɛ yeti, “Yehe ya Banabase la Sɔɔl zeele bo tuunseere ti mam yi ba ti ba tum la.",aba daa ta zagahi ba mɛhi ge naahana ayen ni ti yinisia la yel ba yeti looya baanabas la sɔɔl bo mam te bahe ba ti ba tun tonsea te yi ba na ti ba toon a,0.9091,0.6496
+555,’ Kulekpabɛa wa han lebena nyɛ ti yire la maalɛ mɛ gãa filam.,an paa nɛr iŋasiin a wan nyɛ in ti a ana woo yi voori ti ba piihi suŋa suŋa seem la,1.5833,1.0426
+556,"Tɩ Zifdõma voosgo daarɛ paagɛ, tɩ Azezi kẽ ba wẽndeem zãsna nẽrba.",izifimavoosug daar paa naa zi kɛ ba wa dee zaana n,1.0,0.4151
+557,Pɔspɔsɩ de la sɛba tɩ Azezi mẽŋa daan looge tõm ba la.,sba tjijimŋa dalotoba,1.0,0.619
+558,"Tõma tarɩ ba sãana la tẽesgɔ sɛba wuu n de põmpɔrŋɔ, la bõn-sɛba wuu n zẽkrɩ ba mẽŋa botɩ nẽrba ka bãŋra Nawẽnnɛ pãŋa.",mataariba saan na le tɛɛsi siba wuu n di pupɔriŋu le busiba wuu n zenkir ba miŋa bu ti nɛriba kaa baŋira naa wonn paŋ,0.875,0.3696
+559,"Mini ya suŋa ti bumbeo la maahum mɛ ti a bahɛ ti ba pagɛ ya sɛba paka deto puan, ti la dɛna makerɛ bo ya, dabeha pia ti ba wan dikɛ pɔgelum ya.",bihi ya sagana la wan magahi ya yahera la yasɛba ti ba wa nyɔke iŋi pakadee yadaaŋa la wan bɔ na dabaha pia maa bala kelo na ya,0.8182,0.6481
+560,"Seem ti yamam yuum kpa, gee ti Yinɛ voe en a kum la puan la.",pupuudoo zuo ge ti yi ni daa ba en ti a leihige a kuum puan d,0.9333,0.8182
+561,"Tɩ Farisi dõma basɛba waam tɩ ba di a yɛm bɩsɛ, soke ẽ yetɩ: «Bʋraa tarɩ nõorɛ tɩ a lebse a pɔga mɛ bɩɩ?",ti farisiiduma basɛba waa ti ba dii a yambisa sok n yeti buraa tar nɔɔr tiib a lebsakpɔga mi,0.8333,0.3377
+562,"Faarɛ ka boi seem puan, seere n sɔi la, yuseere ka boi sagbanɛ wa tiŋa bo nɛresaaleba ti ba wan yi de nyɛ faarɛ.",manwantaanfa ya bahi ge yi ni daa ka baha ti nɛra ayima bɔ na tiŋa wa zuo ti nɛra wan yi a yuure ti afa,0.875,0.7326
+563,"M sɔbiisi, mam n dɩkɛ m mẽŋa la Apolɔsɩ makɛ bɛla wuu la, la de la yãma ĩyã, tɩ tõma n ẽŋɛ seem na wʋn dɛna zãsŋɔ bɔ ya.",sɔbiisi maa diki mmiŋa la polos maki beli wuu la ledela nya mi n nya ti tuma ya iŋ sei na un da nan zansuŋɔ bɔ ya,0.7931,0.3523
+564,"Tɩ Lasrɩ daarɛ bulika wẽnnɛ n doorɩ seem mãa la, tɩ ba wɛɛsa yɔɔm na, dee tɔgra la taaba sore yetɩ: «Ãne n wʋn bilge kugre la yɔɔgɔ la nõorʋm bɔ tɔ?",ti laa daar bulika wonn ndoori sei maa la ti ba wiɛsa yɔɔn na die tɔgri la taaba soore yeti ani u bil kuugi la yɔɔg la nɔɔr n bɔ tu,0.7188,0.2946
+565,"Yezu en ta tɔgɛ yele ana wa baahɛ la, la iŋɛ nɛrekuuŋɔ la la pakerɛ zoe zoe, la a paalegɔ la.",yesu n daa ta tɔg ti na ba baah la la eŋ narikooŋu la pakrɛ la a paalugu la,0.7143,0.4429
+566,"Bahɛ ti seem woo en tari tuberɛ, a kɛleha sɛla ti Faa Sia la tɔgera bɔɔra lageŋɔ la zaa la.",sem n tari tuba a kelih sala ti yinisia tɔgre bɔra lagaŋu la,0.8,0.4857
+567,"La fõn de Nawẽnnɛ nẽra la, zãagɛ fʋ mẽŋa la bõn-bãma, dee ɛ sɛla n masɛ, la Nawẽnnɛ sakrɛ, ken bɔ ẽ sɩra, ɛ nõŋlʋm, la sũ-mãarɛ, la sũ-bʋgsʋm.",fo di na wn nira la zaai fu miŋa le bun bama di i sala masi le naawennsakiri ke bɔɔn sira i nɔŋilum le suumaari le suunbuusun,0.9655,0.4175
+568,"Tɩ mam yẽ nẽr-sɛba n ki la, kɛɛndõma, la tarɩmdõma n ze naam bĩmbĩnne na nẽŋam.",ma nya nɛr sɛb nki la kenuma le taanuma ni naa bimbii n n a,0.9375,0.4333
+569,"“N mi ya bɔŋa zian, la dela zian ti Sagena la naam kuka la bɔna.",la ditala zinen na mmi nan bo,0.9333,0.6809
+570,Nawẽnnɛ n zoe tõma ninbãalga bɔ tõma tõon-ẽŋa la ĩyã n soe tɩ tõma bʋraanɛ ka bɔɔra.,wani n zo tuma nibaanliga bɔ tuma toɔn iŋa la nya n soo ti tuma buraan kabɔr,0.8235,0.3182
+571,"Mam tarɩ pʋtẽerɛ la Nawẽnnɛ wʋ bãma n tarɩ pʋtẽerɛ seem na, tɩ nẽrba wuu, nẽr-sõma la nẽr-bɛɛsɩ wʋn vooge mɛ.",a tar potiɛr le la naaween na ubama n tar potiɛr see na ti nariba wuu nersoma lan nir bee si u boo a,0.9048,0.4167
+572,"Ẽŋa n wʋn tẽegɛ ya mam n vɔa seem Krisi doosgo la pʋam, la de la bõn-bãma tɩ mam zãsnɩ Azezi nẽrba n lagsrɩ zẽa woo la.",ŋanwoteegiya ma nvɔ seim krisdoosi le pu leeela bo bama ti man zah ni aajijinrba nlaahr jee uu,1.0,0.4
+573,"Nẽra kɔm sãn dõnna, a di a yire dee waam, tɩ ya da kãn lagsɛ taaba ɛ sɩbgrɛ bɔ ya mẽŋa.",akonsadna a dii a yiride waa ti yada kaan lagas taaba  sibigre bɔ ya miŋa,0.7619,0.3281
+574,"Gee fum mɛŋa n wum seem la, la ka gaŋɛ dabeha pia la ayi n ŋwana, ti mam kiŋɛ zom Yerusalɛm ti n ta puuhɛ.",omla ka daŋ da fo pia laayi nŋana ti ma daa keŋ yinn yiri la m bo jerusalɛm tiŋa poan ti nta puuha,0.96,0.6582
+575,"“Sum boi mɛ la sɛba ti tuuntɔɔ vom kom, la konyuuro tara ba, Ba wan tigehɛ ba.",suŋwan bɔna la sɛbaduma nterɛɛra tentɔgɔbɔŋa wu nɛriba neridia la koon seen la yeiabat,0.9412,0.9138
+576,"Da zagehɛ ya tɔɔha saama, gee sɛba iŋɛ la bala ta toohe suŋereba gee ka baŋɛ.",tariya la yatɔhasaama suŋa suŋa yayiya poan tisɛba ŋ gbala ma ge laa tooei naayin suŋriba ba yiya poan ge ka baŋ,1.3125,0.95
+577,"Seere n soe tɩ a sẽŋɛ bilam na, a de la naba Adavidi buuri.",er nsoo taah si biila a adilanaaba daid buu,0.9286,0.4318
+578,” Bilam bilam ti a kunkom la bahɛ en ti a iŋa saalum.,nimbun nyɔke nti yesu tiŋ a nu kale n ge yeti maaŋ boti n wan tɛbho bilam bilam te kuŋkom la bah n ge ti a eŋsuŋ,2.0,1.6154
+579,"Mam daa belum la Taitusi ti a waam na, gee tum tu suuɔ la paahɛ a puan.",n daa belim taitus me ti a waana ti a daa paahi ti suŋ seem ndol yesu sori la doohi nna,1.0588,0.8302
+580,"La dagɩ la nẽrsaala yɛm tɩ tõma ɩtɩ bɛla, la de la Nawẽnnɛ yel-sõnnɛ ĩyã.",dala nɛrsaala yim ti tuma i ti bala lalee la naaŋan yesnn ny,0.9333,0.3929
+581,"Bala zuo, dia la en han sɔna ba lua, mam yi kan makɛ obe nɛŋɔ, la n da bahɛ ti ba ayima lu.",ti n haŋ yeti n dii la wan baha ti n sɔɔn tom beem maaŋ yi kan dii ka bala ten kan taan bahi te n sɔɔ tom beem,1.1304,0.8308
+582,"‘Bihɛ ya, Yamam sɛba duma n ka dikɛ Yinɛ yelehum yi sɛla wa.",yema saba nketi bi yis susua,1.0,0.6889
+583,"Da pɔɩ saazuum, bɩɩ tẽŋa, bɩɩ sɛla ayẽma.",psuu itŋ is,1.0,0.7742
+584,"Seere n soe la, mam ka eerɩ ya sɛla, la de la yãma mẽŋa tɩ mam eerɩ.",ee nso la a ka eei ya sla la de le nya mamtia,0.7059,0.4286
+585,Sum wan bɔna la daaberɛ sɛka ti a daana la ta paaɛ na nyɛ en ti a boi tuuma puan.,lawaan a nasoŋa bo ya ŋmakaŋa ti yaa daana la ha lebi kuli na a nyan ti a eta baala,0.75,0.6721
+586,"Seere en sɔi la, mam han sagum ya suya, ani n boi wan bo mam pupeelum, han dagi seem ti mam sagum a suure la?",a eŋyti yuani nyaawan le bɔna eŋi ma mi ti m puuri pɛɛra see n kan bɔna handagana la yaman sɛba te eŋ ti ya suunri sagam la,1.04,0.8889
+587,"Semiyɔn buuri puan, tuha pia la ayi.",simiɔn yizuo dela tua pia la tuaayi,0.7143,0.5
+588,"Tõma tã wʋn põn yetɩ naam pãn-sɛka n yʋʋn boe la lebge la zãŋa, seere n soe la, sɛka n boe lɛɛlɛ wã gãnnɩ ẽ mɛ zozoe.",mataa u pu yeti naan pa sika nyuu bon la lebig la zaŋa seer nsu la siɛka bulele wa gann min zoozoo,0.8148,0.3793
+589,"Ya yẽ tɩ la de la nẽra tõoma n botɩ Nawẽnnɛ yetɩ a masɛ ya, la dagɩ a bɔ sɩra mãa ĩyã.",n ye ti la e la nr tooma mbu ti nawin yetaamasiya la daa abɔsiiramaa ny,0.7727,0.3175
+590,"Bɛla ĩyã, mam kãanɩ ya mɛ tɩ ya da sãlma mẽŋa mẽŋa tɩ ba zuge bugum pʋam yese ba mam zẽam, tɩ ya wʋn sɩrɩ dɛna bõntatba.",b aa ma kaani ya ma i yadaa saanli ma miŋa miŋaa ti ba zuu bu pɔɔn yes ba man zina ti aa wu si danabu taa i,0.9259,0.4725
+591,"Naba Agripa, la de la pʋtẽe-ẽna wã ĩyã tɩ Zifdõma dõrɛ mam.",a lela pota wa i ti uu,0.9167,0.7111
+592,Sɛba en toohe kuba pun ka ita la bala?,ɛba n tooheri kɔɔba an labala,1.0,0.4483
+593,"Tɩ tõma wuu lui tẽŋa, tɩ mam wõm kõa n yele mam la Ebre yetɔga yetɩ: ‹Asolɩ, Asolɩ, bẽm tɩ fʋ nãmsra mam?",tma wuu lu teŋa tima wan ku a nyel ma le ibir yetɔba yeti a sol a sol bi ti u na  a,0.9565,0.3896
+594,"Yan boti sɛla gee kan nyɛ la zuo, ti ya kuura.",boi laseto eka nya lɔ ti ya botati yku,0.9091,0.6765
+595,"“Kulekpabɛa han yehe nɛra puan, ka ni ɛɛra la kpaahenɛ puan tuuna ɛɛra voohego zian, gee en kan nyɛ la, ka wan yeti, ‘N wan lebe n yikɛka la ti n zeele de puan na la puan.",bumbia haŋ yehe nɛra ziin ani keŋla pɔgtie poan ha ta vɔɔ ha te a han e zina koŋe a wan yeti maŋ lebir la nɛra seem ziin te n yehe na a,0.8378,0.6016
+596,Tu nyɛ namehegɔ mɛ bɔberɛ woo gee ku ka ku tɔ.,tuto ni yɛ le daaŋu ge balazaa la ka sagimto,0.9091,0.8286
+597,"Tɩ nẽrba zozoe le lagsɛ a zẽam, tɩ a zãsna ba wʋ ẽŋa n ẽn ɩta seem na.",i nɛriba zoo zoo le lagan sa azian ti azaanaba woo eŋa n e nta see na,0.8333,0.3333
+598,"Bɛla, la dagɩ diire tɩ a tõntõnɩba ɩta ba mẽŋa ãna wʋ sɛla n masɛ tõntõnɩba.",ladadiir ti aatuntonba itabamiŋa an u sela maa,1.0,0.4746
+599,"La saasaa la wʋn yõgɛ piisi la mɛ, botɩ ba wɩrgɛ.",s ypiihli ma,1.0,0.7838
+600,halɩ lan pɔsɛ la kɔm-pɩgsɩ ka paagɛ bõnkɛgsɩ.,hali la pɔ si le ka pisi ka paabo ksi,1.125,0.4167
+601,"M sɩr-nõŋrɩsɩ, baa tõma n tɔgrɩ wãna la, tõma mi tɩ sũure pʋam sɩra sɩra tɩ yãma boe la so-sõŋɔ n wʋn botɩ ya yẽ fãarɛ la zuo.",s nɔŋisiibaatuma n tɔgri wana laa tuma mii tisuur pɔɔn siira siira tinya mɔbo lo sosuŋɔ nwonbo ti yanyanfaan li zuu,0.9286,0.3936
+602,"Nẽra sãn botɩ sũ-sãaŋɔ waam, la dagɩ mam mãa sũure tɩ a sãam, la de la yãma wuu sũure tɩ a sãam.",ladamama suun ti aasaan leeleaisuun taaa,1.0,0.6338
+603,"Ẽŋa ka ãn wʋ kãabgɔ kẽma nẽŋadõma basɛba la, tɩ daarɛ woo la dɛna ba dẽŋɛ kãabɛ ba mẽŋa tõon-beero ĩyã, dee yãŋa kãabɛ nẽrba tõon-beero ĩyã la.",ŋa kaa han uu kaabkema nɛŋanduma basiba la ti daar woo ti ladana ba di kaah bi ba miŋa tɔnbeer nyaa dieyaŋa kaa ba niribatonbeer nna,0.8929,0.3333
+604,"Buraa wa n ta nyɛ ti Pita la Yɔn boi bini ti ba kɛ̃ puuhegɔ yire wa puan la, ti a suhɛ ba ti ba bo en sɛla.",ŋman daa nyɛ ti piita la jɔnn yakira la abeelm baa ti ba bo nsaala,0.75,0.5714
+605,"«Yãma wõm tɩ ba daan yele kʋrʋm dõma yetɩ: ‹Da kʋ nẽra, la nẽra sãn kʋ nẽra, ba di a sarɩya.",a ti ba da yeli kornduma yeti da ko nɛra la nea sa ku nra bi dii aaa,0.8571,0.4091
+606,"Gee tari ya sakerɛ ta paaɛ kum, gee ti n bo ya vom muŋa la.",la ya han pun diya ya ki ge ŋ ŋan bo ya von sebu kak,0.8667,0.6512
+607,"Tɩ ba zɛ yɛrɩ, bilam mẽŋa tɩ ba yẽ bʋraasɩ bayi n ze lɛm ba, yɛ futo tɩ ba yẽgra.",ti ba za yai biila miŋa ti ba nyi buraa si bayi nzi lmba ya uuto ti anya,0.9,0.3898
+608,"Da boni ya bunsɛka en wan tara daaŋɔ waam Yuuduma bii Girikiduma, bii Yinɛ lageŋɔ la puan na.",boniya bon saka taaba nkantara daaŋu waan yudduma bii giriikduma bii lagamseko ndoli yesu sori la tiŋaso ka na itisla tma,1.0,0.6757
+609,"» Wakat-sɛka woo tɩ ya obrɩ borborɩ wã, dee yũura bõn-yũula wã, ya paalɩ la Zuudãana la kũm yelle, halɩ tɩ a wʋn wa leme waam.",a kasi ka woo ti ya obiri boroboro waa di nyuura buyuun la wa ya paal le zuuaana le kuu ylee hali tiaau wale aa,0.96,0.3191
+610,"Da fabla-ya beere yelle, tɩ beere ya wʋn bãŋɛ ya wʋn ẽŋɛ seem, daarɛ woo n bɩsrɩ a mẽŋa yelle.",a faabil ya beeri yeli tiibeeri ya wu baŋi ya wu eŋ seim daar woo m beher a miŋa yeli,0.8,0.3662
+611,"Ti tu nyaa ɛ zahereba n boi zea bilam, kɛ̃ bilam dabeha ayopɔi.",titiapo ato nya yesu dɔli ba le basaba bini gi daa bɔ na le ba dabaha ayopɔ,1.3077,0.75
+612,"La tõma tarɩ pʋtẽerɛ tɩ yãma n bɔ Nawẽnnɛ sɩra la wʋn paasra mɛ, tɩ tõma tõonɛ na zɔɔra paasra yãma zẽam, tɩ la ken masɛ Nawẽnnɛ n bɔ tõma seem na beene.",tuma tar putiɛr e tiyama n bɔ naa wenn seiraa le u paahira ma ti tuma toɔn na zɔɔra paahira yama zien ti la kee ma se naa weni n b tuma see na be ni,0.8788,0.339
+613,"Tumam n nyɛ buraa wa, yelemɛŋerɛ, a dela nɛrebeo n de nyɔ̃pɔ̃hega bo tiŋa wa.",to nyɛ budaawa ti ya dialazabsaaha a dolisaahati yuduma ngbirgi tiŋa wa,0.8,0.7414
+614,-La de la pãn-sɛka tɩ mam tooge m Sɔ Nawẽnnɛ zẽam na tɩ mam wʋn bɔ ẽ.,l pa saa timam too nsa na ŋan zien a tima ubɔa,0.9412,0.52
+615,"’ Nɔtɔgeheba wa woo n zoe seem la, zeele Samuwɛle saŋa ta paaɛ sɛba n waam a pooren na la woo yuum purɛ dabeha wa yele mɛ.",tɔg basbanta puri azaa yuuntɔg di na wa mɛ layuu daa dela yine nyuun bahi ti ba soolim sala n eŋi nanana wa,0.9615,0.7957
+616,"Bõndõma n boe saazuum bɩɩ tẽŋa zuo, tɩ nẽrsaalba wiiri tɩ wẽna.",bɔndoma n bo saazuu betiŋazuo ti nɛ saal b wii ŋ,0.9167,0.36
+617,"La bɛla pʋam tɩ Nawẽnnɛ n yʋʋn põn dẽŋɛ botɩ a nõtɔɔsrɩba wuu tɔgɛ yetɩ, dẽnɩ tɩ Krisi wa nãmsɛ la, ẽŋɛ.",a ba la pun ti naŋanim yoon pɔɔn daŋ bo t a nɔɔtɔbasi b wuu tɔga yeti dan ni ti kristo wa namisi la,0.9545,0.475
+618,"La Azezi daan zeele zẽe-ẽŋa sẽŋɛ la Zude soolʋm, Zʋrdẽ doone ke bɔba.",azii daa zeelizen nŋasɛŋ la zuu desoolo zuu da dooni keeba,0.9231,0.3519
+619,"Kãabgɔ bĩmbĩnne n de sãlma tɩ ba yõorɩ tɩdarɛ a zuo n boe mĩ, paasɛ la nõor-bĩŋre daka tɩ ba dɩkɛ sãlma yũlge a wuu.",abug bimbin ni n di saalima ti ba nyɔɔri tidaar a zuu nbomin paasi la nɔɔr biŋi  daka ti ba di kisalima yuulig a wuu,0.76,0.3483
+620,"Ti ba ba en, tari en kiŋɛ ta bo timbihega nɛŋadaana Palete.",ma nyaa tare n tabo pailat seem nsɔ t,1.0,0.6957
+621,Ba looge nẽrba bayopɔɩ tõoma ĩyã.,agoŋɔ sapitirayoobi,1.0,0.7407
+622,"La de la ba tõn malɩn tõnna bɔɔra ba gãnna bɛla, seere n soe la, sɛba tɩ ya tõnnɩ bɔɔra la, de la nẽrba n bɔ Azezi sɩra dee tɩ Nawẽnnɛ nõŋɛ ba.",ela ba to ma to a bɔra ba gana ba la seer n soo la sibatiya ton bɔɔra la dila nɛribanbɔa jii sir a na ye ti na wa nɔŋ a,0.8788,0.3364
+623,Yetɔgebuna zeele la seem en de “Amɛn” la zian na.,itɔgibuna wa zeeli la seendaana yuurɛ n di taari la zinɛna,1.0,0.6486
+624,"Tɩ tãnsɩ wuu, la tẽn-sɛba tɩ koom gilge la wuu ka le bɔna ba zẽesɩ.",titaas wuu le tisbtikoon gili le wuu kale bɔnaba zen,0.8667,0.32
+625,"Yetɔga buuri zozoe n boe dũnia zuo, la ayɩla ka boe ka tara võorɛ.",itɔgabuur zoo zo bo dunia zuo laa yile kabo kata bu,0.8571,0.3333
+626,"Zaba la nɔkpɛɛma sɛa en boi ya puan wa, zeele la bɛha na?",be ni nsɔi ti ya ŋmiɛr anɔkpaama ge zabira,0.9231,0.7674
+627,"Ti ba kaahɛ la taaba zoe zoe, gee ti ba nyaa doohe kɔkɛ Pɔɔl kɔkɛ kɔkɛ, ti ba suya sagum mɛ yele yele woo en yele ba yeti ba pun kan le malum nyɛ en la niho le yɛɛha la.",ba bɔna bini ti ba bahi ba zinɛn la kala ge gi n kɔke n ma ti bala sunya sagem ma zoo zooi seere nsɔ la n yeli ba ti ba kale maa nya n la zuo,0.925,0.6772
+628,"Han dɛna miilum me, bu wan waam na baahɛ.",nansaala mii li mi kan bɔna bala wu,1.0,0.5806
+629,"Bõn-sɛka tɩ Nawẽnnɛ ẽŋɛ, tɩ nẽrsaalba dɩkɛ tɩ a dɛna yalnɛ na, tarɩ yɛm mɛ gãnna nẽrsaalba yɛm.",b  ke ti naawin ŋa ti ninsaalba di ti ah da na yaan na tar ya mi gana sabay,1.0,0.473
+630,"Seem daana woo en nyaŋɛ, n wan bo a daana zian ti a bɔna la mam, n naam kuka la zuo, wuu mam mɛŋa en nyaŋɛ, gee ta zia la n Sɔ a naam kuka la zuo seem la.",balasaba nyaŋɛ ŋ ŋman ba ba sori ti ba ziiri le mam n naam gɔŋ la zuo wuu mam nnyaŋɛ seem nyazian lam n sɔ naam gɔŋ la zuwu la,0.641,0.4955
+631,"Gurɛ ya yan tari sɛla la kankaŋi, ti seem da ta faaɛ ya muŋa la.",n toniya sala n a ni soŋa t semtaa asa,1.0,0.6458
+632,"La kan malum iŋɛ ti koom en tari yaarum, bule kosumɔ.",takosum bulisaka n ta yaaru ka pun,1.0,0.6341
+633,Seem ti ba daa yiira kundɔgerɛ la n bala.,nbilam ti ba baŋ te aya,0.7778,0.7812
+634,"Ya ka mi tɩ sɛka n lagɩm a mẽŋa la pɔg-sɛka n ɩtɩ yalsɩ, ẽŋa la pɔka la lebge la ĩyã ayɩla?",ka mii tisika n lagum a miŋa la pɔgsika n iti yaalisi nŋa la pɔg kala lebig la nyn a yi la,0.7727,0.2985
+635,"Sɛba n nyɛ faarɛ la me, nyuuŋo suŋɔ la han ŋmɛɛra bamam, ba malum vɔna mɛ.",n ye saguŋ poɔn la ge da na nyuun soŋɔ bosɛba nnyɛ faanri la,0.9375,0.7857
+636,"La Azezi-krisi n zeele Nazarɛtɩ yʋʋrɛ ĩyã, isge sẽnna.",a tn se nazarit yuur ny i sn,1.0,0.6512
+637,"» Dee bɔ sʋda-kɛɛma la n guuri Apolɩ la nõorɛ yetɩ, a bɩsra ẽ, la a bɔ ẽ yolsgo, la a sɩrdõma sãn tara sɛla bɔɔra tɩ ba bɔ ẽ, a basɛ tɩ ba bɔ ẽ.",bɔsubu aa ki a e nguur a pu li nɔɔr yiti aa biihiran laa bɔɔ n yolsugu laa siiduba sa ta a sila bɔɔr ti babon aa baaiɔ,0.9143,0.5
+638,"Tumam n waam na na kɛ̃ Arome puan la, ba bahɛ Pɔɔl mɛ ti a bɔna a maa, la pɛntiira sɛka en guri en la.",t daa paa arom tiŋa poan la arom tiŋa zuuduma la bo pɔɔl sore ti a bɔna mbo ti seem ge ti pti,0.88,0.7027
+639,"’ Gee sɔ la yi la a daaba la yeti, ‘Iŋɛ ya kalam tari fuo na, fuseko en ani suŋa gana futo la zaa la na yɛɛlɛ en.",ge a sɔ la yi a yamihi la yeli ba ti keŋiya tatariya fuuseku a ni suŋa na yain,0.7778,0.5802
+640,"Seere en sɔi la, tumam wum ti a yeti, Yezu n de Nazareti buraa la wan waam na sagum zekana wa, gee malum teehum tu malema sɛa ti Moose dikɛ bahɛ tu la.",tuma mum nti a yɛta ti nazaret buraa la yesu la yeti agbilaa yini yiri la bahi ge mi yeti a te mosis maalima a,0.9091,0.6435
+641,"Tõma n tɔgrɩ bɛla la, tõma mi sõŋa sõŋa tɩ bõn-ẽŋa de la sɩra Nawẽnnɛ zẽam, Azezi-krisi ĩyã.",maan tɔgir bala la ti ma mi suŋa suŋa ti bu ŋadla sera naa wenn zian a yesukrist ny,1.0,0.3571
+642,Sɩa la bɔɔrɩ nẽra woo la bɔa tootoore wʋ ẽŋa n boorɩ seem.,ɔn oo le buɔ tootori u ŋboo,1.0,0.6444
+643,Ti Simɔn la a taaba la me muɛ nini ɛɛra en.,simon la sɛba mbo la n la yehi ɛɛra,0.7273,0.5625
+644,"Kelehe ya, yamam buntateba wa, kele ya gee siina la nimbɔseko en ye ya zuo na la.",buntariba waa kelihiya pɔhiya fabiligɔ la kaahiga seeri nsɔ la la kee na ti ya wa taa nyɛ ni,1.0,0.9194
+645,Ti la iŋɛ ba pakerɛ ti ba zɛa yɛli la sɛla n iŋɛ buraa wa la.,la yiyia zia ti bayia,0.875,0.7556
+646,La de la nẽr-sɛka n bɔɔrɩ la sũ-yẽlga tɩ Nawẽnnɛ nõŋɛ.,la nɛrska  bɔɔr lesuy ti w nŋa,0.9091,0.5366
+647,"Mam n daan paagɛ Trʋasɩ tɩ m mõolɛ Krisi kõ-yẽlga la, mam daan yẽ tɩ Zuudãana la yooge sore bɔ mam mɛ, la mam pʋtẽerɛ daan ka gã zẽa ayɩla, mam n ka yẽ m sɔbia Atiti bilam na ĩyã.",an daa paa turoasi ti mɔɔl krist kanyeliga la man daa i yi ti uuraan na la yoo u soor bɔ ma ma la man potɛɛr daan kaa gaa zinin aye la man ka nya sɔbia atiti biila nan y,0.85,0.3704
+648,"Abalaam yʋʋn zãsʋm na Abalakɩ ẽn wʋn ẽŋɛ seem bẽrɛ Ɩsrayɛlɩ dõma botɩ ba obe baga nẽnnɔ, dee tõm yalsɩ tõoma.",balam yuun zaa a a balak n wan iŋ see bi israelduma bu be u baa nena dii toŋ yaani tuŋ,1.0,0.4828
+649,"A yele ba yeti, “Da sagum ya timpaberɛ la, bii ateko la, bii tiihi la, gura ti tu daalɛ tu Yinɛ yamehi la daalehum busebo ba gbɛɛra baahɛ.",a yeti da sagam ya teŋa wa zugo la kokat la la tiihi la na na bahiya ti to daanli eŋa yin yamhi la gbɛɛra ge tiya nyaa,0.7857,0.6
+650,"Bala, sakerɛ maa, han ka tara tuna ki mɛ.",a yeti ŋasabo nayi i ei ka itasala nnai,1.0,0.8
+651,"Ba laarɩ sɛba mɛ, wẽ ba la kafõbsɩ, ba ba sɛba mɛ la bãnsɩ kẽesɛ yʋa deem.",alasba ma wsba la kaa fɔbisii aasba maa laaasi ks,0.9412,0.5273
+652,"Bɛla, mõrgɛ-ya la sõŋrɛ tõon-ẽŋa mẽ tõonɛ.",mɔyaasoton ŋam t,1.0,0.5938
+653,Pɔɔl paaɛ Felikise Kasariya.,ba yeli tiŋbihira yelsi,1.0,0.8333
+654,"” Gee nananawa Yezu toe la tuunɛ en gani ŋwana, pun nyaa ta dɛna nupuŋmɛɛra nɔpuulegɔ en gani ŋwana paaɛ paaɛ la puan, nɔpuulegɔ en yage nɔbiŋere en gani ŋwana zuo.",anana wa yesu tooma la gani ba tooma la seere n sɔ la nobinkpaalga la a binɔɔra yara yelsia la n gani yelsea nobi keka ti ba pu bin,0.9333,0.6846
+655,"Gee nananawa mam ze la kalam ti ba gakɛ mam doohe la, mam tari beere putiirɛ la nɔbiŋere seere ti Yinɛ yuum biŋe la tu yaabeduma la zuo.",gi mam bala zia zina nanana wa ti ba gank ma seer nsɔ la maŋ gur genam yi ni n daa biŋ a nuurɛ botisɔyaabduma seem la na,0.9286,0.6916
+656,"La Nawẽnnɛ de la sɩra dãana, a kãn basɛ tɩ yel-sɛka n gãnnɩ ya pãŋa paagɛ ya.",naaŋmen dila siradaan na aa kan bas ti yelisiɛka n ganni ya paŋa paa ya,0.7059,0.2931
+657,"Suŋɛ ya en ti a kiŋɛ a sore la la sumaahum, ti a taam waam n zian na, seere en sɔi la, mam guri en mɛ la suurɔ tuseto la.",ti a keŋɛ a kenimiya le sumaaho la ataan lebi n zinn na seere n sɔ la n guri n ma te a lagɔndoohe sɔɔn besɛba lebe na,0.8333,0.6477
+658,Yele ana ti Yinɛ niiɛ paalɛ tumam doohe Sia la puan.,enaayi ni bahi ti tumam mi na de yɛhera la a,0.9091,0.6585
+659,"Nẽra sãn lɛnna Nawẽnnɛ zẽam, dẽnɩ tɩ a bɔ sɩra tɩ a boe mɛ, la a yɔɔrɩ sɛba n eerɩ ẽ mɛ.",dasanlan nan naa wan i siyaa dan ni ti a bɔ sira ti a bo man la a yɔɔr saba neer n,0.8636,0.4219
+660,"Mam yetɩ ya la sɩra sɩra, tɩ saazuum la tẽŋa n wʋn yuuge seem, sɛla sɛla kãn yese Nawẽnnɛ lɔɔ la pʋam baa fẽfẽe, halɩ tɩ sɛla woo wa ẽŋɛ baasɛ.",yeti li sira sira ti yisaazuum la teeŋaa nwo yuu seem sala sala kan ye sinaaŋeen lɔ la pɔɔ baafinfeɛn hal ti sɛla woo waa in baa i,0.8387,0.367
+661,La de wʋ lan gʋlsɛ Nawẽnnɛ gõŋɔ pʋam nẽra n masɛ la yelle yetɩ: «A pʋtɩ a bõntarsõm mɛ bɔɔra nasdõma.,ee ulan golisi naawei gɔŋ puɔ nara i masi la ye li yeti a pu ti a botaris ma bɔɔra nasi imu,0.9524,0.4231
+662,"La de la sɩra, sẽeŋɔ ka boe, sɛka n kã kãa-sõma bɔ nẽra n gãnnɩ sɛka tɩ a kã bɔ ẽ na.",a la seir siikaboe saka kaan kaa su mabɔ nra ngaani sakat a kaa bo na,0.8636,0.3833
+663,"Bala, ihege la fum zeele suŋa.",giihigi saazuo ti n ni mmia bo,1.1667,0.8696
+664,"N waam ya zian na la kpaaherɛ bii, nɔŋerɛ la sigehe mɛŋa?",waana lan kpaahir bii n waana la suunriseeri n tar nɔŋri la naahigu bɔɔra nɛra,1.0833,1.0
+665,"Mam mi ti ya tari paŋa fii wa, gee la bala zaa, ya tari mam yelehum la mɛ suŋa suŋa, ka zagehɛ mam yuurɛ la.",gebihiya yasaba bo la diima la laaŋu la poan gidana pu,0.92,0.725
+666,"Kɔm la koyũuro kãn le yõkɛ ba, wʋntɛɛŋa la a tʋʋlgɔ kãn le wõŋɛ ba.",ole koyuuri ka le nyɔki ba mu tee ŋa la aatuol wuo ka le ŋɔɔŋ ba seer n su la piebiila le mbu na bimbiin teŋa sukala u bisira ba yel le in ŋa utaar ba si koo mbuu le bɔɔr vɔ zina laa naaŋani u duu si,2.8,2.451
+667,"Yamam en tari mam yelehum la en de sugeri, la ŋmibega la zuo, n wan gu ya makerɛ seere en yeehe timpaberɛ wa zuo na ti de makɛ tiŋa wa zuo nɛreba zaa la puan.",andolimanuure disuuri la zuo n ŋan tɔɔ ya bahi daa seko n ye teŋa wa zuu na la te kumagahi la nɛriba tiŋa wa zuu bihe la kan yiwee lamaa,0.8857,0.7107
+668,"Bala, Mam fa lageŋɔ tuseto, doohe la mam sakɛ toe suŋɛ bamam zian ti n taam waam na tum bo yamam la.",tiyayomam saage n daa sirge m maŋa mi ti n tu zɛke yaman saazuo ma n daa iŋɛ yel ana wa woo la la daa dela tuure m balɔ tin ŋa,1.3182,0.8816
+669,"Seere en sɔi la, seem woo en mɔgeri biihum kelum dɛna la bilia, ka mina tuuma tuuntɔɔ vom yɛla puan.",iiu wubl a ti seem n kel mɔgra biihu maa wɔn ti a dela bilia ka mina sila nde maa la sɛla,0.9,0.5769
+670,"Ẽŋa tɩ ya daan yõkɛ sẽŋɛ ka ẽŋɛ sɛba n soe pãŋa la nuusum, tɩ baa gɔmna Apilatɩ n daan boorɩ tɩ a basɛ ẽ na, ya daan zagsɛ mɛ a nẽŋam.",ŋa ti yadaa nyɔk sen ka ŋ saba nsoo kpɔŋa la nuusuu ti baa gobna a pilat n daa boor ti aa baasin n naa yadaan sagas mie a n ŋa,0.9062,0.33
+671,"Bala ti mam keehe ba, gee kiŋɛ Masedoniya.",bala n daa kee i nɛriba la bini ge daa tole makɛdonia,1.375,0.7576
+672,"Yinɛ n wa yeti a tɔgɛ Naba Deviti yele la, a yeti, ‘Mam nyɛ Yesi dayua Deviti wa ti a dɛna la seem ti mam suure kɛ̃ paaɛ paaɛ, a wan taam tum mam sumboolum n de seem la.",naayini daa yeli devid yeti m maŋ nya ti yesi dayua devid dia budasaka n tare naayinɛ miŋa suuri a dela nɛra seem nwan toŋ sɛla woo ti maŋ yeliyin ti a,0.9487,0.688
+673,"gee ti timpaberɛ wa me zuo, sumaahum bɔna la saaleba ti a zuuhɛ ba la!",e ti sumaahimi wan bɔna la nɛresɛba ti naayi nitar popeelum la ba ti ba bɔna tiŋa wa zuu la,1.0667,1.0
+674,Gɔŋɔ wa gulehɛ bo la Tiyofilose.,luk azuu buyima,1.0,0.8077
+675,” Miilum boori la paalɛ mɛŋa gee nɔŋerɛ en mɛti.,iilim buna wa baari ti nɛra zenkra amia saazuo ge nɔŋri dela sɛla n tar somri kena na,2.0,1.3514
+676,"Mam daan boorɩ la m dẽŋɛ waam yãma zẽam, yãŋa zeele yãma zẽam tole Masedʋanɩ soolʋm, le zeele bilam leme waam yãma zẽam, tɩ ya sõŋɛ mam tɩ m sẽŋɛ Zude soolʋm.",daanbool la n diŋ waayamazina nyaŋa zeelinyama zi toli masedɔnn soolum le zeel bilam len waayama zina ti ya soŋ ma ta si judesuuluŋ,0.875,0.3415
+677,"” Gee ŋwana woo la, a putiirɛ dela Pɔɔl wan bo en ligeri.",elplwanage mi daa tiɛhi ti pɔɔl wan boon ligidi,0.8333,0.4762
+678,"› » Tɩ ba yɛm bɔɩ, tɩ ba ĩyã gõgra, tɩ ba yese yɔɔgɔ la pʋam zoe, la ba daan ka yele nẽra nẽra sɛla, seere n soe la, dabeem n tarɩ ba.",ti ba yan bɔ ti ba e gɔgira ti ba yehiya la pɔɔn zo la ba laa ke yi na nɛra sila seer nsuo la dabiin ntaar a,0.7742,0.4255
+679,"Sũ-yẽlga dãana Nawẽnnɛ ayɩla mãa n de na-kãtɛ, a de la naadõma Naba, la zuudãandõma Zuudãana.",n yeeligadaana naa wenni aayi la maa n di na kate a dee la naau ma naba la zuuaan nima zuu aan,1.0,0.2466
+680,"Lagsra-ya bõntarsõm bĩŋra Nawẽnnɛ yire, bilam tɩ mõka la tẽŋanzẽem kãn sãam ba, tɩ nayigba mẽ kãn kẽ zũ.",aira ye buntarsu biŋr naawenn yire biili ti mɔka le ti ŋan ziim kan saanba ti nan yii bimini ka cha u,1.0526,0.378
+681,"Ya han tiihɛ ti yamam en de yɛm duma buuri sankana wa puan, ya tugum lebege geto, la ya taam nyɛ yɛm.",ya poan a tɛɛhi ti eŋa dela yamdaana doohi la eŋa m mi sɛla teŋa wa zuu a daana tun lebegi gɔɔŋa la ataandena yam,1.0455,0.7013
+682,"La han dɛna bala, la yi dela ya bahɛ tiŋa wa zuo en bala.",ahan dɛ na la bama ti n yeti yada dike ya mɛhi lagem bɔ na la ba,1.0714,0.6429
+683,Daar-ẽŋa mẽŋa tɩ Azezi karẽnbiisi bayi wɛɛsa tẽŋa ayɩla yʋʋrɛ n de Emayusi.,a a ka bii si b yi  sa tŋa i le yuu d,1.0,0.6557
+684,"Yʋʋma tʋsrɛ la sãn wa tole, ba wʋn yese Asũtãana yʋa zẽa na basɛ mɛ.",utu la sa atol ba a ye sastana yu zin naba,0.8667,0.5
+685,"Beni zuo, Seem woo en soke wan toe, ti seem woo en ɛ wan nyɛ, ti seem woo en ŋmɛ, kuleŋa la wan yuɛ.",tihuŋ seem woo n suhi wan to i ge tihuŋ seem woo n eeri sɛla ku wa nyɛ dɛ hu mi seem woo nyi na ayi,0.9167,0.6111
+686,"Yãma tẽesɛ tɩ tõma n tɔgrɩ bɛla wuu la, tõma eerɩ la bʋʋrɔ yãma zẽam bɩɩ?",t titua  tail b wu la tia e leboo aa en,0.9375,0.6786
+687,Bɩɩ m waam na nõŋlʋm la sũ-bʋgsʋm?,ii nwaa nan nɔŋlim la su bugisom,1.0,0.4231
+688,"Zian ti sugeri dia bɔna bo yele ana, beem duuhego kaabegɔ ka le bɔna.",iŋbaabaeemabo nɛriba ba ka le suna ti ba ku duuhi babeem zuo,1.0,0.7593
+689,gee iŋa ti fum maahum bo mam.,bma  u ka talpopeela,1.0,0.8182
+690,Tɩ Pebila la paagɛ tooge gõŋɔ la sɛka n zĩ naam bĩmbĩnne zuo la zʋʋgɔ pʋam.,pebile lipaatoo igɔŋ la se ke n zin naan bimbinn zuu le zuopɔ,0.9375,0.4068
+691,"Tumam n yehe Taai tiŋa na daarɛ la, tu kelum kina la bala ta paaɛ Pitolemayese, puuhɛ suurɔ gee kɛ̃ la ba daanyinɛ.",zelitiri teŋa la poan keŋe tolimas tiŋa poan bilam te to paa puuhi yesu dɔliba la gi daa yee ba zinen daan yinn,1.0,0.7528
+692,"Yelemɛŋerɛ, la zina me, ba han kãalɛ Moose paalegɔ la, tanɛ la kelum pi ba putiira la bala.",la nanana wa ba han kaanle moziz paalug la tani la kelim pii ba yamma ti ba katare,0.7222,0.5143
+693,La de la sɛka n mõolɩ weem tɔgra keenkeem yetɩ: ‹Malgɛ-ya sore sõŋa guura Zuudãana.,la dilasiaka m mɔɔl wee ntɔkr kenken yeti maligiasu soŋa guura juudana,0.8,0.3385
+694,"Ban paagɛ la, ba yẽ tɩ kugre la tɩ ba dɩkɛ lige yɔɔgɔ nõorɛ la bilge mɛ gã kẽnkɛrŋa.",ban paa la ban ye ti kuu le ti ba di ki lii yɔɔnɔɔ le bilig man gaa kinkiɛr ŋa,0.8421,0.4219
+695,"Fum pɔga Elizabɛte wan dɔgɛ bibudibila bo fum, ti fum sigɛ ka yuurɛ Yɔn.",upɔga elizabet le mu waa nyɔ kupoora dɔgu budibula ahan dɔgi in busagi a yuur jɔnn,1.1429,0.6491
+696,"Ŋwana en tole la, ti mam biha, ti tinsuŋan ha, kuleŋa yuɛ bahɛ.",itiky saazuyeldina ntoli la n daa bihɛ,0.9231,0.7447
+697,Ba de la nẽrba tʋskɔbga la tʋspinaasɩ la anaasɩ .,di le nɛriba tukɔbia la tusipinaai laanaa,0.8889,0.3846
+698,› La de la nẽr-sɛba n ka mi Nawẽnnɛ n eerɩ bõn-bãma wuu.,itiuya bi lelee nia nkamiin naa ŋa nee ia,1.0,0.775
+699,Bala mɛa ti yamam basɛba me dɔla Nikolatan paalegɔ kankaŋi la.,bala meya ti ya tare nɛriba ya zinen ti ba dɔla nikolistanduma paaligu la,1.0,0.6667
+700,Tõma ka tã wʋn basɛ ka tɔgɛ sɛla tɩ tõma yẽ dee wõm na.,t a tɔ t  d,1.0,0.8537
+701,"La nẽrba la n yẽ bɛla la, ba wuu yõnnɩ mɛ yetɩ: «A sẽŋɛ ka kẽ tɩ a bɔna la tõon-beero dãana la yire.",niriba la n nye bala laa ba wuu nyɔɔnimi yeti a siŋi ka kenti a bɔɔna le tunbeeru daana li yiri,0.6667,0.3333
+702,"Bɩɩ yãma tẽesɛ tɩ mam n looge yɛm seem na de la nẽrsaala yɛm loore tɩ mam tãna wʋn yetɩ «ẽe», le yetɩ «ayɛɩ»?",i nyaba tin ti ma nloo yan sei na dila narsaala yan loori ti ma tanan wui yeti eɛn li ye ti a ya,1.0,0.4125
+703,Ya pun lebege la naduma ti tumam ka teele ya?,amam pun da nala naduma e tima daanaa,0.8,0.5714
+704,"Nɔbiŋere seere ti tumam Izirale buuri pia la ayi la muɛ nini naaha Yinɛ bulika la yuuŋɔ woo, gee tara putiirɛ ti tu beere wan toe la.",biŋ di ni nuu nbala ti ti yusuto  pia la ba yi totiŋa waa eŋe ba potiɛra gura la wuwu ba puo ye na wunteɛŋa la yuuŋa zana la,0.963,0.7333
+705,"Basɛba wan pun yehe yamam mɛŋa puan gɛ̃ta yelemɛŋerɛ la, ti ba taam pãahɛ zahereba la basɛba ti ba doohe ba poore.",bayapoan wan ta tɔgɔr pumpɔriŋm yɛla ti ba taan gelige yesu dɔli ba la ti ba dɔla ba ye se,0.8182,0.6444
+706,"Yelemɛŋerɛ, en yele ba sɛla la sugɛ mɛ bo ba, ti ba ka gurɛ sɛla ti a yele la.",kliage pun ka gorige saazuo edago,0.9474,0.807
+707,“Mini ya ti ya wan ita ya itesuŋɔ nɛreba nɛŋan ti ba nyɛta ya.,men yate yada ita isuŋka yala narakooŋa poan ti ba baŋɛ yan desɛba,0.8571,0.7234
+708,"Ba dẽŋɛ dɩkɛ la ba mẽŋa bɔ Zuudãana la, dee dɩkɛ ba mẽŋa bɔ tõma doose wʋ Nawẽnnɛ n boorɩ seem.",ba diŋ dikla ba maŋa bɔ zuuraa na la di diki ba miŋa bɔ tuma doo si unaa wae nan boo sei,0.8095,0.3151
+709,"«Da lagsrɩ-ya bõntarsõm bĩŋra dũnia wã zuo, zẽe-sɛka tɩ bõn-mõgla la tẽŋanzẽem wʋn sãam ba, tɩ nayigba mẽ kẽera zũura.",ba ye buntaarsu bila dunia wa juo ziinsaka ti bumɔgila le te ziin u saan ba nan yii ba mie kera u,0.95,0.4891
+710,"Mam tarɩ pãŋa mɛ wʋn dɩkɛ m vɔm bɔ, dee tara pãŋa wʋn le tooge ẽ.",ma tar paŋ m a di nvɔmbɔ di tar paŋulituu,0.9375,0.5
+711,"Ti budibela wa gihi tole nyaa ta zeele yitugema butã puan la, lu ta paaɛ tiŋa, ti ba ɔ̃begɛ en ti a ki mɛ.",ti n gihiri la anya kɔɔnzeel saazuo deseke to tu bɔna hala lu tiŋa na ti baa paa ti ban ɔbuge n la ti a po ki ma,0.9167,0.6582
+712,"Nẽr-sɛka n yãŋɛ wʋn wa yɛ la fu-pɛɛlsɩ bɛla, la mam kãn saam a yʋʋrɛ vɔm gõŋɔ la pʋam.",saka n nyaŋee wue wa ye la fuupee tiba la lamakan saa a yuur vɔbgɔŋ le pua,0.7368,0.4375
+713,Nuurɛ butã ti ba ŋmɛ mam la kuto kpaaha.,tti ba mi ŋmɛ mam la kafb,0.6667,0.5806
+714,"Baahegɔ zaa n suurɔ, nyɛɛni ya.",ge nanana wa n suŋr ɔ daa seere mbala kpeŋiya ya,1.5,1.2083
+715,"Dẽnɩ tɩ a bɔna Nawẽnnɛ yire halɩ ka paagɛ wakat-sɛka tɩ sɛla wuu wʋn teege lebge paalsɩ, wʋ Nawẽnnɛ n yʋʋn põn botɩ a nõtɔɔsrɩba tɔgɛ kʋrʋm kʋrʋm seem na.",ni ti aa b nan naa wonn yir hal ka paa wakar seka ti sa li uu wan tee lebig paali si uu na woni nyoon puo bo ti a nɔɔtɔasi ba tɔgi kuur kuur see na,1.1333,0.4262
+716,"Seere en sɔi la, Yuuduma boti ba nyɛ la kirehi, ti Girikiduma me bɔta yɛm ti ba taam nam.",ti lapaaliti adela yilmɛr giriik duma mi eeri la yam,0.9474,0.6618
+717,"Kõ-yẽlga ẽŋa zeele la sũ-yẽlga dãana Nawẽnnɛ n tarɩ naam pãŋa la zẽam, ẽŋa n dɩkɛ ẽ ẽŋɛ mam nuusum tɩ m mõolɛ.",yliga eŋa jele suyeligadaan nan naa wen na n tar naa paŋa la jie iŋa n di ka  iŋ ma nuusm ti mɔɔn a,0.8261,0.3929
+718,Tumam ka yakɛ tu beene la tumam n daa paaɛ yamam la Yinɛ yelehum la.,di ni poan tumam mi n daa waana ti timugle yelsuma la,0.8,0.6604
+719,"Tɩ tõma kẽ wɛɛsa, tɩ Aristarkɩ n zeele Tesaloniki n boe Masedʋanɩ soolʋm, waam wa doose tõma.",ituma kien we sa te alistarik n zil tesalonik nbu ma sidɔn soolim waan wee di,0.9412,0.4324
+720,"’ Yinɛ n wa looe a yameŋa wa la, a pɔhɛ tum en la yamam zian ti ya nyɛ sum, doohe la en wan bahɛ ti yamam ayima ayima tee ya suya gee yehe ya beem tuuma la puan la.",tiaaabala ti yi ni lo a bia toŋ nna la yaman ze n yia te a suŋ ya ti ya te ya yelbeeri tuuma poan,0.8462,0.6612
+721,Tumam en nam Yinɛ seem en bala Kiresta puan.,to maa tar potandi na wa mɛ ti bɔŋa yesu poan yi ninɛŋan,1.4444,0.9429
+722,"Tɩ-sõŋɔ ka tã wʋn wɔm biɛ beero, la tɩ-beego mẽ ka tã wʋn wɔm biɛ sõma.",isa kata uwa bi beeru le tibeemikata ua bs,1.0,0.5385
+723,"Yinɛ en dikɛ sɛla woo biŋe a nama tiŋa la, a ka gee sɛla bahɛ ti la ka bɔna a nuuhen.",ni dik sɛla woo eŋ la anuuhi ge sɛla ka boe ti asaala ka sɔna ai,0.7619,0.5714
+724,"Seere n soe la, mam yetɩ m dɩkɛ ya bɔ la Krisi mãa, mam boorɩ tɩ ya tara la ya mẽŋa sõŋa tɩ m dɩkɛ ya bɔ ẽ wʋ pugla n nãn ka mi bʋraaga tɩ ba dɩkɛ bɔ sɩra.",eer nsu la mam ye ti dik ya bɔ la krismaa man boori ti yatar la ya miŋa suŋa ti diki ya bɔ in u pugla n nan ka mi buraaga ti ba diki bɔ sera,0.6,0.2389
+725,ti n wan puulɛ nɔpaalɛ la Iziraleduma wa.,nɔbinkpaalga na israɛl,1.0,0.7273
+726,"Bɛla, bʋra-sɛka n pʋʋsrɩ Nawẽnnɛ, bɩɩ n tooge Nawẽnnɛ yetɔga tɔgra bɔɔra nẽrba, dee vuge a zuugo, a pɔɔrɩ la a zuudãana.",be la buraa se kaa i puuhir naawenn nan bii yi took naawenn ye tɔa tɔra bɔɔra nɛribaa di vuug aazuugo a pɔɔi la zuu na,1.0909,0.4086
+727,“Nɔpuulegɔ kuna ti n wan puulɛ la ba.,inteeri taaba te wanbiŋ la nn,0.875,0.75
+728,"Ɩrgɔ bãma de la ĩyã yɛla n de dũnia wã bõnɔ n yʋʋn boe tɩ nẽrba dɔla, halɩ wa paagɛ wakat-sɛka tɩ Nawẽnnɛ malɩn malgɛ sɛla woo sõŋa.",bama dela nnya yɛla n di dunia nwa bɔnɔ n yu u bo ti nɛriba dɔ la hal wan paa wakar skaa ti a wo nu al nmaliga sala woosu,0.9643,0.3529
+729,"La dela Aberaham Yinɛ la, Aziki Yinɛ la, la Yakɔbe Yinɛ la.",a dela yini seem ti abraham le azik le yekɔb a,0.9167,0.6667
+730,"Ti la iŋɛ ba zaa pakerɛ ti ba sɔkera taaba yeti, “Beni n ŋwana?",la eŋba pakre ti ba sɔkera taaba yeti beeni nwanna,0.5714,0.2553
+731,"Ti Pɔɔl me tɔgɛ a nuurɛ yeti, “Mam ka tuue Yuuduma zeelego la, bii Puuhegɔ yire la, bii Kaiza la fii me.",ti pɔɔl ihigi tɔge ti a paale ti a katare tuure yeti m maŋ ka nŋ yelseere ti u yuduma paalega la bee yini yiri yɛla la m mi ka la tuui keesa la,1.1818,0.8718
+732,"Seere en sɔi la, mam nam ya zaa ti, mam pupeelum wan dɛna ya zaa pupeelum.",sere nsɔ la maŋ mi suŋa suŋa ti mam puuri han pee yamam mi puur wan pee,0.9375,0.6071
+733,"Fõn ẽŋɛ la wãne yɛta fʋ sɔbia yetɩ, a basɛ tɩ fʋ yese sɔkɔ a nifum, dee tɩ dɔɔgɔ bɔna fõn mẽŋa nifum?",an iŋla nwaan ni yata fu sɔbie yeti abaa ti fu ye sɔku a niifu die ti da bɔ na fon i ŋani u,1.0,0.4079
+734,"Nẽra la sãn ken vɔa, a nõorɛ la tɩ a bɔ la de la yoogo.",saeu oaoo,1.0,0.8205
+735,La gʋlsɛ Nawẽnnɛ gõŋɔ pʋam yetɩ: «Mam bɔ sɩra mɛ n soe tɩ mam tɔgɛ.,ulo naa min nbɔnpɔn yeti man bosiera ma nsu ti man taɔ,1.0,0.6
+736,"Ya tarega la puɛ mɛ, ti bunmɔgela mɔgɛ ya fukãra la.",ya taliga la zaa waan sagum ge ti bumɔg la mi mag ya fuusunn a,1.0,0.65
+737,"La nẽra n tooge Nawẽnnɛ yetɔga tɔgɛ bɔ nẽrba la, n de sɛla n paalɩ sɛba n bɔ sɩra Nawẽnnɛ pãŋa, la dagɩ sɛba n ka bɔ sɩra la ĩyã.",la nɛra n toogi naawenni yetɔga tɔgi bɔ nɛriba la n di sɛla n paal sɛba m bɔ sira naawann paŋa la dasba ka bɔ sirala nya,0.5333,0.2062
+738,"Tõma de la nẽrsaalba, la tõma ka zɛbrɩ wʋ nẽrsaalba n ɩtɩ seem na.",a dla nrsaal le tuma ka zebiri u saaba n i ee n,0.8571,0.4706
+739,"Naa, Ti wuntɛɛn-sigelika ti mam bɔna sore zuo yɛa la, ti bugum zeele saazuo niiɛ gana wuntɛɛŋa la, nyakɛ kaaɛ mam la n nɛreba la mum .",ti wontea ŋa zuu tiŋasukamaa la naba ti n daa nyɛ ti bugum zeeli saŋgbani zuu na landaa zeeli bala na la budaa ko niima ma la nɛresɛba ndaadol imaan,1.0385,0.7184
+740,"Tumam nyɛɛni mɛ, tu han tara tɔregɔ gee ti yamam kpeem.",popeeli bo tuma tun pɔgtɔrigo e ti yama  kapɔ,0.9091,0.6279
+741,"Yinɛ en de seem en iŋɛ tumam ti tu dɛna tuntuneba a nɔpuulepaalɛ la puan, dagi la paalegɔ yoo puan, gee Sia la puan.",botitutona nobpal la tumnɔbiŋri paale la mi dage paalugu la n tar kum kena na la,0.9167,0.7222
+742,"Seere en sɔi la, tu zaa wan zeele Kiresta gakerɛ kuka la nɛŋan, ti nɛra woo toe a yɔɔrɛ en tum sɛla a inganɛ wa puan.",ere isɔ la tusa a wan baahum waan krista nɛŋamina ti a gake tɔ a han gak tu ba la naayin wan bo nɛra woo sala ti a nara ti a to i aan daa itla sa,1.2308,0.7978
+743,"Ti suŋera butã daana la peebe a tintanɛ la, ti ŋmarebili kãtɛ zeele saazuo lu timpaberɛ wa zuo na, nyagera la bugum.",ti suŋna seem m paahi buta la peebi a tintaŋ la mpee bibala la ŋmarbib kati nditi buwum zali la sabanu,0.8636,0.6522
+744,"Dee yɛta tãnsɩ, la tãmpĩisi la yetɩ: «Lui-ya tɩ zuto sʋgɛ tɔ, tɩ sɛka n zĩ naam bĩmbĩnne zuo la da yẽta tɔ, tɩ Pebila la sũ-isgre da paagɛ tɔ.",iyatatasi le tapiinsi le yiti lu ya ti zuu tisutɔ ti sakan zin nambiibini zuul le daa yatatɔ ti peebile e suu sida aa t,1.0,0.4095
+745,Ẽŋa mẽŋa n boorɩ tɩ a basɛ tɩ a sɩra yetɔga la bɔ tõma vɔm.,ŋamiŋa mbootabas taa sir yitɔl btim,1.0,0.4545
+746,Ya ha ŋmibera makerɛ puan tube-dɔlegerɛ zuo.,ba han yata namihigɔ la paali ma tnaa,1.1429,0.8056
+747,Lɛregera Sia puan yɛla paala sɛba en tari Sia la.,la bok bosɛbuti naayinɛ bo ba a se la gseem nka tare yi sala,1.4,0.7949
+748,"Yezu n voe a kum la puan la bulika maaherɛ maaherɛ, dabeha ayopɔi pɔhega daarɛ la, a niiɛ a mɛŋa paalɛ la Mɛɛri yia, Mɛɛri Magedalin seem ti a saahɛ Kulekpabɛɛhi siyopɔi a puan la.",seem te a daa sa bombɛɛhi siyopɔe tiseyehe aziya la a ke ta deg de yele a,0.8857,0.8028
+749,"Tɩ Zifdõma basɛba n daan de yamsɩ dee yãŋa tooge ba mẽŋa, tɩ ba wiira ba wẽndeego tɩ soe m mẽŋa dõma wẽndeego, n yese Sirɛnɩ, la Alɛgsãndri, la Zifdõma basɛba n yese Silisi, la Azi tẽnsɩ n wẽerɩ nõkeene la Aetɩɛnɩ.",zinfuu nabasba ndaa di yamsi di nyaŋa to u bamɛŋa babiida ba windir tisoo mmɛŋaduma widieg n ye siiran la a lɛgsann la zinfuunabasba nye siisili la a zi tensi nweɛnnɔkeen la iti,0.881,0.3653
+750,"Zebulun buuri puan, tuha pia la ayi.",zeulon yizuo dela tua pia latuaayi,0.8571,0.5
+751,"Tɩ ba wuu zɛ yɛrɩ, sɔkra taaba yetɩ: «Wãna de la bẽm?",ti ba wuzeyari sokrataabiti ŋan na di li beŋ,0.9167,0.3947
+752,"Azezi n de Adavidi yɩɩŋa, la Abraham yɩɩŋa yaabdõma n wãna: Abraham n dɔgɛ Aizakɩ.",zesu nde a david yeeŋa la aburaham yeeŋa yaabdima nwan na,0.9333,0.4154
+753,"Isaka buuri puan, tuha pia la ayi.",yiakayizuo dela tua pia latuaayi,0.8571,0.5385
+754,"La nẽr-sɛka n dolɩ zanõrɛ la kẽera, ẽŋa n de piisi la dũnsĩina.",n sa ka n do li zanɔb la kiɛra ŋa ndi piih le dun siin a,1.0769,0.3333
+755,"La Nawẽnnɛ basɛ mɛ tɩ a lebge wʋ tõon-beero dãana tõma ĩyã, tɩ tõma wʋn lebge nẽrba n masɛ Nawẽnnɛ zẽam ẽŋa ĩyã.",naaŋwann basi mi ti aa lebegi u tɔɔnbeedaan na tuma nya ti tuma wu lebig nɛriba n mase naa wann zien iŋa nnya,1.0,0.4368
+756,"La fʋ pãŋa, botɩ sɛba n bẽerɩ yẽ ĩmãasʋm, dee tɩ tõon-yãlma la yel-kɩrsɩ ẽŋɛ, Azezi n de fʋ tõntõn-sõŋɔ la yʋʋrɛ ĩyã.",le fubo ti siba m biɛnri nya iimaasuŋ de titɔnyaalima le yel keesi ŋa a ji jiin di futuntosɔŋ a yuu nya,1.0,0.5227
+757,Tɩ Zuudãana Azezi karẽnbiisi pia la ayi la yele ẽ yetɩ: «Botɩ tɩ bɔ fɔ sɩra zooge.,zuuraana zejikaabiis pielayi le yel n yeti botitbafusiazoo,1.0,0.3651
+758,"Tɩ la yuuge, tɩ ba ka yẽ tɩ sɛla ẽŋɛ ẽ, tɩ ba teege pʋtẽera yetɩ, a de la wẽnnɛ.",lyuuge ti ba kan nye ti sɛla iŋ en ti ba teegi potiɛr la yeti a dii le w,0.85,0.4211
+759,"Ka ni galum la inganɛ wa zaa, nyaa taaɛ asaala naaŋɔ la zaa di ta baahɛ gee nyaa taaɛ a mɛŋa dita, bugum timpaberɛ la puan.",taaawa na a uu bugum la tɔɔra ti bɔŋa zinan bugum bu na wa zeeli la sagaŋu zia la na asaata,0.9615,0.7474
+760,Sakerɛ zuo ti Yinɛ tee Enɔki kiŋɛ ti a ka makɛ lem kum.,ua ba eta zom saazuu ha ge ka ki n,0.9231,0.8571
+761,"Sẽŋɛ-ya ka yele Apɩyɛɛrɩ, la a karẽnbiisi basɛba la yetɩ: ‹A wʋn dẽŋɛ ya nẽŋa sẽŋɛ Galile.",saŋya kaa yelaapiri baa karmbiisi basaba la yeti a wan dŋya nŋan si ga li,0.8824,0.3478
+762,"» Tɩ Afɛstusi la a poorʋm dõma yẽ taaba, dee tɩ a lerge Apolɩ yetɩ: «Fõn yetɩ, fõn boorɩ tɩ Rom na-keko la n di fʋ sarɩya.",aafestusu la po wundoma nyɛ taaba dee taa lirig apoliti u yeti a bootiim na keeku la n dii fu saara,0.8077,0.427
+763,"“N mi ya pɔgeleŋɔ, la ya nɔŋɔ, la yan pun tara la zaa.",pn ya dela bun tatiba,0.9231,0.7368
+764,"Mam ka waam na ti en saalum ba bahɛ mɛ, gee mam waam na ti bu waam la asira na.",mam ka waa na te n saam ba bah ma ge maŋ waana te m baha te sɛla woo ti ba yeli la eŋsira,0.95,0.5517
+765,"Eŋa seem en de sum daana, la seem maa en gani zaa la, Naduma Naba, la Daanduma Daana la.",ti nɛriba pgira la geti a sɔ na sɛla woo la tu bahati a pur peera geti abihato la iŋa nde naba gana nadoma la,1.1579,0.9394
+766,Tɩ Azuda la a pɔga Atamaarɩ dɔgɛ Afarɛsɩ la Azara.,a zuuda la pɔg tamaa di dɔ far laza,0.9,0.425
+767,"Seere en sɔi la, a yele tu yeti, “N kan malum bahɛ ya, bii n zagehɛ ya.",eere nsɔ la naayen ni yeti n ka mali baa ɔ bii nzaa,0.7647,0.42
+768,"Yinɛ ka looe la naheduma timpaberɛ wa zuo ti ba dɛna buntateba sakerɛ puan, la ba ta sɔna sɔɔlum la ti Yinɛ biŋe nuurɛ bo sɛba en nɔŋɛ en la?",nɛriba basaba taandaana naaduma nanana wa ge ti yinni loo ba ti ba saki bo in le ba sunya zaa ge yeli ba ti a wan bo ba yir saazuu ha ba nɔna,0.9667,0.7455
+769,"Tõma tarɩ bʋraanɛ mɛ zooge, dee boorɩ nɩ tɩ tɩ basɛ dũnia ĩyã wã, dee sẽŋɛ ka bɔna Zuudãana la zẽam.",ma ta budaa ni ma zooi die boor ne ti ti ba sa duniya e wa die se ka bɔna zuu a a la i,1.0,0.3766
+770,"M sɔbiisi, mam sãn waam ya zẽam wa tɔgra yetɔg-zãŋsɩ, mam wʋn ẽŋɛ la wãne sõŋɛ ya?",sabiisi ma san waah ya ziɛn uwaa tɔgir yitɔ zaŋsi ma u eŋ la wa ni suŋa,0.8824,0.371
+771,"Tɩ pɔspɔsɩ dãana la yele ẽ yetɩ: ‹M zuudãana, mam dɩkɛ fʋ sãlma lag-kõbrɛ la leebe yẽ la yõorɔ sãlma lig-kõba pia paasɛ.",ipɔɔdaan na la yel n yeti n zuudaana man dii fusaanlimalaakɔnbir la lee bi nye lanyɔɔru saalma liikɔmb pii a in,0.913,0.4348
+772,"Ti seem han yeti a daam ba, bugum wan zeele ba nɔyan na di ba dinduma.",ti seem nzɛgri ti a tum besɛba kaa a ni soŋa bugum ni yehe ba nɔya poɔn na sagom ba,0.875,0.7358
+773,"Bɛla mẽ, ya sãn ẽŋɛ sɛla woo tɩ Nawẽnnɛ yele ya tɩ ya ẽŋɛ la, ya yetɩ: ‹Tõma wen dɛna la tõntõnɩba, tõma ka narɩ pʋʋsgɔ, seere n soe la, la de la tɩ tõoma, la masɛ mɛ tɩ tɩ tõm.",bala miɛ ya san eŋ sɛla woo ti naaŋenn n yeli ya ti yaa iŋ la ya yeti ti ma wee nan nin le tuntonniba ti ma ka nar puusigɔ seer nsu la la de le ti tooma la maa t,0.7805,0.3438
+774,"Mam zotɩ mɛ tɩ m wʋn wa paam ya zẽam yẽ tɩ ya ka ãn wʋ mam n boorɩ seem na, tɩ yãma mẽ yẽ tɩ mam ka ãn wʋ yãma n boorɩ seem na.",an zo ti ma teŋ wa paa ya zian ye ti ya kaa an u ma boo see na ti ya ma ma nya ti ma kaa an u ya ma boor see,0.8286,0.3846
+775,"Banabase, Simeyɔn seem ti ba yiira Naiga la, dikɛ Lusiyuse n yehe Saarin, Manayin n de Naba Hɛrɔd kiima ayima la, nyaa dikɛ Sɔɔl.",baanabas la simion sem nde sabga la lukius seem n zeeli kerin teŋa na la manian seem la naba herod n de a taaba waa zoi la sɔɔl,1.0417,0.6337
+776,"Nananawa, han dɛna la Sia yɛla la, n suurɔ, mam ka boti ya bɔna aliko.",ɛla woyɛhera boolsea ti yinsea bɔɔra nɛribala nanana wa n suunrɔ m botiyamina sɛla,1.0,0.9231
+777,"Tɩ Apolɩ tɔgɛ Nawẽnnɛ soolʋm yelle, la Azezi yelle n gʋlsɛ Amoyisi lɔɔ gõnnɔ pʋam, la Nawẽnnɛ nõtɔɔsrɩba gõnnɔ pʋam na, paalɛ ba bulika halɩ ka paagɛ zaanõorɛ, mõrgra tɩ a botɩ ba sakɛ.",apo tɔg naawin sool n yeli laaii yeli ngol sa muis la u go pɔ la aai nɔtɔbab siba gɔn pɔɔn na paal bi buli ka hal ka paa zaa nɔɔr e mɔr itaa bo tiba sa a,1.0294,0.4422
+778,"La mam wʋn nõŋɛ ẽŋa dãana, dee dɩkɛ m mẽŋa paalɛ ẽ.",li ma sala nbolo ma le la ntu natu,1.0,0.8158
+779,"Niifum la en boi fum puan la han dɛna lika, lika kaŋa wan ba sobege!",niɛhiseu n bo o ya pɔɔn la han dana lika lawa mali,0.8,0.5385
+780,"Tɩ sãn yetɩ tõma tarɩ lagɩmtaarɛ la Nawẽnnɛ, dee ken vɔa lika pʋam tõnna beem, tɩ parnɩ mɛ, tɩ ka ɩtɩ sɩra.",san yi ti tomataar lautaar la naa wini di ke boliikapɔɔtɔna beeu ti par ni m ti kaa yitisiera,0.9091,0.4512
+781,Yãma ka mi tɩ Nawẽnnɛ nẽrba n wʋn wa di dũnia dõma sarɩya?,i ii t naa w n nɛriba n u wa di dunya s a a,0.9231,0.5333
+782,"Bala zuo, wam ya wala sɛa en paalɛ ti ya tee mɛ.",aeŋya sɛla paali ti yeteeya,0.9167,0.5714
+783,"» Tɩ Azezi lebe yele ba yetɩ: «Asɩra, ya wʋn nãmsɛ nãmsgɔ sɛka tɩ mam nãmsrɩ wã halɩ ka ki.",siti nensɛka n ka saaka ti naawenn sɔ na in u biela a kan chan naa wenni souli puan a yel bala die toosi kama la ma di kaa nuu sipagil ba zu ti kaa ka su,1.8947,1.3731
+784,"Seere en sɔi la, Yinɛ bo zomwogero la ti la dɛna la sɛla en pi ka zuo la.",sere nsɔ la a zonti la dela sɛla mbooenti a pii a zuu la,0.8333,0.5556
+785,Ba tari Yezu kiŋɛ Palete zian.,azuila byop,1.0,0.7917
+786,Kãabgɔ kẽema ayẽma n ãn wʋ Amelkisedɛkɩ n waam na n basɛ tɩ yetɔga la tɩ tõma tɔgrɩ la dɛna vẽelga.,abukukema ayima n an wuo a melikiseeda ki n waa na nbas ti yetɔgi la ti tumatɔgi la da na biia,0.8571,0.3462
+787,"Seem woo en nyaŋɛ, N wan bo en sore ti a di vom tia la wala la en boi Yinɛ voohego zian la.",ezele dinaŋa  n ŋan bo n sore ti adivom tiala nbo yin ni vaan la puan la,0.7391,0.4478
+788,Aerɔdɩ mẽ daan boe la Zerizalɛm wakat-ẽŋa.,yfon di li zibtuu naba taa zuzuyu lerigi yeti na le li fon yel seem na taa pilat ye likaab keema nɛŋaduma la la nɛrkuoŋ le yeti a,3.8571,2.4706
+789,"Mam sakɛ mɛ tɩ ba lʋ ma, la dagɩ bɛla mãa, baa mam sãn wʋn ki Zerizalɛm Zuudãana Azezi yʋʋrɛ ĩyã, mam ken sakɛ mɛ.",mitimlada bla maa ba ma sa u ki yerusalem zuu aanaijiu ya ma ke,0.88,0.5349
+790,Tɩ mam yẽ pɔka n bã dũŋa n de mõlga tɩ yʋʋra n tʋʋrɩ Nawẽnnɛ gʋlsɛ a ĩyã wuu.,ma nya pɔka m ba duŋa n di mɔliga ti yuura ntoor naaŋwanni gulsa nye wui,0.7895,0.3966
+791,"Gee nananawa, mam dikɛ ya ita la Yinɛ nuuhen la a zuuhegɔ yelehum la puan.",e nanana wa n dikiya iŋa la yeni nuuhi la ayutɔgen la m paal a,0.8667,0.431
+792,"“Sum boi mɛ la yamam, ti nɛreba en tuuri ya, gee namehera ya, yiira ya yuyooro yima yima en dagi yelemɛŋerɛ, mam zuo.",abɔna la yasɛba ti nɛriba wan toora ge paa na ge tɔgra yetɔg beeru bɔɔraya man zuo tar ya popeelum la imaahu,0.9565,0.6742
+793,"Ba han yeti, ‘Bihɛ ya, a boi la bɔnɛŋan ha,’ da nam ya.",ba haŋ yeti nwa na yir wa pɔɛn daa,0.8462,0.5676
+794,"Bɛla n bɔɔrɩ tõma bʋraanɛ zozoe, tõma sɛba n basɛ sɛla woo, dee tara pʋtẽerɛ guura sɛla tɩ a yetɩ a ẽŋɛ bɔ tɔ la.",la nbɔɔr tuma bura nin sozo tumasba nbaa si sala woo di tar potɛ guua slat  yeti aaŋ bɔta,0.96,0.3605
+795,"Tɩ ba bɔ ẽ tɩdarɛ pãɩ, tɩ a dɩkɛ ba lagɩm na Nawẽnnɛ nẽrba wuu pʋʋsgɔ yõ sãlma kãabgɔ bĩmbĩnne n boe naam bĩmbĩnne na nẽŋam na zuo bɔ Nawẽnnɛ.",ba bɔ tidaar pan taah di kibalagam na naawenn nɛriba wuu puuzunyɔ saalimakaabig bibiin ni mbo naam bibin nan ni ŋa ni zuu ubɔr naaŋen,0.8667,0.3964
+796,Ba tarɩ Azezi ka bɔ Nawẽnnɛ.,astitisi bitila kbis sil,1.0,0.9091
+797,"La de la Nawẽnnɛ n ẽŋɛ bɛla wuu, ẽŋa n botɩ Krisi naagɛ tõma la ẽŋa, dee bɔ tõma tõon-ẽna tɩ tɩ botɩ nẽrba naagɛ la ẽŋa.",di le naaŋen nan n eŋ be la wuu inŋa n bu ti kristo naag tuma la ŋa bee bɔ tumatuŋn  na titibu ti nɛriba naagi la nŋa,0.8519,0.3556
+798,"Seere en sɔi la, nɛreba zoe zoe wan waam na dikɛ mam yuurɛ yɛta ti, ‘Mam n de Kiresta la.",sla nɛriba kike kiwaan de mam yuura waa na yeti man dela krista seem ti naayin lo la,0.9,0.7273
+799,"Tɩ Zuudãana, lɛɛlɛ wã bɩsɛ ban zɛbrɩ tõma n de fʋ tõntõnɩba la seem, bɛla ĩyã, bɔ tɩ pãŋa tɩ tɩ mõolɛ fʋ kõ-yẽlga la bʋraanɛ.",ti zuudaana leleewa bi sibansab le tuma n di futuntɔnba la seu bela nya bɔ ti paŋa ti mɔɔl fukɔnyal ai labor a na,0.8077,0.3895
+800,"Ban paaɛ bini la, ti Mɛɛri saŋa paaɛ ti a dɔgɛ a bia la.",ban daa ta bɔna bɛtlɛhɛm tiŋa poɔn laa ti meri virge dabar la,0.7857,0.7317
+801,"Tɩ Apolɩ kẽ a deem dɩkɛ nuusi paglɛ a zuo, pʋʋsɛ Nawẽnnɛ bɔ ẽ, tɩ a yẽ ĩmãasʋm.",a pu li kien a deem di kinuupale a zuo puu naawinn bɔɔn taa nyin imaan su,0.8333,0.4746
+802,"Abraham n bɔ Nawẽnnɛ sɩra la ĩyã, tɩ a yʋʋn sakɛ a wia, yese wɛɛsa tẽn-sɛka tɩ Nawẽnnɛ bĩŋe nõorɛ tɩ a bɔ ẽ na bɔbrɛ, dee ka mina ẽn weesɩ zẽe-sɛka la.",braham n bɔnaawanni sida le nyaa ti a yuun sak a wiia yesu wasatinsakaa ti naawann biiŋ nɔɔr tia bo nnabɔɔbire dee ka miina nweeh si sisak a,0.8485,0.3982
+803,"Azezi makɛ la makrɛ ẽna wã bɔ ba, la ba ka bãŋɛ ẽn tɔgɛ seem bɔ ba la võorɛ.",jijimakl mak na wa bɔba la ba ka baŋa ntɔ sei ba a bo,0.7368,0.3929
+804,"Nawẽnnɛ n ẽŋɛ sɛla la a yɛm na, nẽrsaalba ka tãagɛ bãŋɛ ẽ la ba mẽŋa yɛm.",wonan iŋ sla la aayi na nisaal ba ka ta uwun baŋ an le bamiŋa ya,0.8824,0.4182
+805,Nazarɛtɩ nẽrba ka bɔ Azezi sɩra.,a zo taŋa zoo paali duniya soon wuu ninkabisiku puɔ di yel n yeti ba na wuu dela ma soi daataa,3.5,2.3846
+806,Mam boorɩ la ya mãasʋm baasɛ wʋ mam n yele seem na.,boo la yamaasims uma yeseena,0.9167,0.4359
+807,"Bɩɩ yãma ka nannɩ la Nawẽnnɛ nẽrba la, dee ɩta nasdõma yãnnɛ?",iama ka na la naaw bala ta nasaaan,0.8333,0.5208
+808,"Bɛla, basɛ-ya tɩ tɩ yese pʋtẽe-beero, la tõon-beero wuu tɩ vɔm pʋam, dee dɛna pʋpeelem dõma, la sɩra dõma wʋ ba diti Zɔɔg-basɛ kibsa la borborɩ n ka tarɩ dãbɩllɛ la.",bela basie ti ti ye si potea beer u la toon beer wuu tivɔm puɔ da yeena popeelduma la siraduma u ba dii ti zobaskiibsa le boroboro nka ta daa ii,1.0,0.3571
+809,Ba dinɛ dela saazuo sɔɔlum la.,yi ni sɔ n la dela ba denɛ su,1.3333,0.75
+810,"Tumam dela tɔregɔ a puan, gee tumam han tuna la yamam, tu vɔi mɛ la en, Yinɛ paŋa la puan.",tmi lagom pɔtɔrgu m tibɔa ziin ge tumam la yamam bɔŋa poan ti wan ta bɔna la i yɛhera la naayini paŋa puan,1.0,0.7612
+811,"Bɛla, fʋ sãn yetɩ fʋ sõŋɛ nasa, da kãn mõolɛ nẽrba zẽam wʋ pʋlibsum dõma n ɩtɩ seem ba wẽndeto pʋam, la sorɔɔrɔ zuto tɩ nẽrba pẽgɛ ba la.",bela fo san yeti fu sɔŋ nna sa da ka mɔɔn nɛriba jia u puu libisinduma nir seem ba wan di puɔ la sadɔrɔ zuto ti nɛriba piɛba a,0.8621,0.4095
+812,"Tõma ken ka bɔɔra tɩ tɩ paalɛ ya tõma n ãn sõŋa seem, tõma boorɩ tɩ tɩ bɔ ya la folle tɩ ya tara yẽsõm tõma ĩyã.",ma keem kaa bɔɔra ti ti paala ya tuma an suŋa see ti ma boor ti ti bɔɔ yalaa foo lee ti yatada nyeɛsim tuma ina,0.8889,0.3214
+813,“Bahɛ ya ti seem en ŋmɛɛrɛ nyuɔ a ŋmɛɛra kɔ Daana la puan.,ge ba kule yinni gɔŋu la puan yeti hun seem woo n wan ŋmɛ hu yɔɔ a ŋmɛ ko ti nŋabo ke ge mina mam timam ndena a,2.0,1.3409
+814,"N ka boti n nyɛ ni ya nananawa n tɔlega wa puan, seere en sɔi la, n boti ni ti n kɛ̃ ni la ya dabeha ayi, Daana la han bo sore.",bihiya ge tɔltudaana naayinɛ han bu wa sori n tɛɛhi ti m bɔ na la ya dabaha zo zoi,0.8438,0.6813
+815,"Yamam zagehɛ la Faa la tuuntɔɔ daana la gee tugum soke ti ba bo ya nɛrekuura, ya tugum ku la vom daana la seem ti Yinɛ voe en kum puan la.",aya daa zagaha seem ndi faala nɛrsoŋɔ ge tom belim pailat ti a dikanɛrkuura bahaboya ya bahe ti ba ku vomdaana ge yi ni daa baa in ti ya ihige a kuum puwa,0.9677,0.7736
+816,"La Zuudãana la sãn sɩbgra tɔ, a paalɩ tɩ mɛ tɩ tɩ ɩta sõŋa, tɩ a da wa lagɩm tɩ la dũnia nẽrba di tɩ sarɩya sɩbgɛ tɔ.",zuudaa a la san sebigiratɔ a paal ti ma ti ti ita soŋa ti aa daawaa lakun ti le dunia nriba dii ti sariya sebigiti,0.8214,0.3448
+817,"Tisuŋa kan taam wam wala puuha, bii tibeo taam wam walesuma.",ŋa ka wani wala beeru bi ti woo n ka anisuŋa ka wani walɛsum,1.2727,0.6875
+818,"La dagɩ tɩ mam daan boorɩ tɩ m botɩ ya sũure n sãam, la de la tɩ ya bãŋɛ mam n nõŋɛ ya zooge paagɛ seem.",timandaan boor ti m boti ya suunri nsaam lai le ti ya baŋi ma n nuŋ ya zoogi paa see,0.8077,0.3247
+819,"Seere en sɔi la, pɔka han kan pi ka zuo, ka yi siie ku bahɛ, gee la han dɛna vi ti pɔka kɛ̃ bii siie ka zuo, ka yi vuge sɛla.",je pɔka haŋ ka di kesala vugi a zuwo a yi kɛ ku bii apom ko tum mi suŋa suŋa ti pɔka haŋ kɛ bii a pom a zuu ma ladela nyani,0.871,0.7416
+820,"Mam n ŋwana, maahum ti n waam ya zian na sugum nuuren butã wa.",la ya dela sugunuurin bota nba,0.9286,0.6809
+821,"Gee tumam kɔɔm tɔgera la yelehum la yelemɛŋerɛ, nɛrawoo nɛŋan la Yinɛ nɛŋan.",yɛɛasala woo poan ti kɔɔntɔgra la yelimaŋri bala naayi ni nɛŋan ti kpeŋi tu mahi baha ti nara woo ba ŋan tu a niseem,1.6923,1.0645
+822,"Tɩ Sɔ Nawẽnnɛ, la tɩ Zuudãana Azezi-krisi wʋn ẽŋɛ ya yel-sõnnɛ, dee bɔ ya sũ-mãasʋm.",tisɔnaawana datizuura na ji kis u u eŋ ya yelsɔ ni dibɔ yasuumasa,0.9333,0.4375
+823,Yinɛ sɔɔlum la kini na.,ayige adɔbli tiŋa yesu naŋa poohe in ge buraa kan nan wee dela samaria tiŋa buraa ti yesu yeti ba daa,4.2,3.9444
+824,A malgɛ mɛ ãna sõŋa wʋ pɔka n yɛ nẽnnõm futo mãasʋm a mẽŋa tɩ a ele a sɩra.,maligami a nasuŋa u pɔ ke n ye ni nu fuuto maasi a miŋa ti aa i aser,0.9474,0.4107
+825,"Tɩ mam wõm kõa ayẽma n zeele saazuum yetɩ: «M nẽrba, yese-ya a pʋam fõrgɛ, tɩ ya da kãn lagɩm na ẽ tõm a tõon-beero la, tɩ ya da lagɩm na ẽ yẽ tooro sɛba tɩ a wʋn yẽ la.",mawk yima e saazuun yt n niriba yesu yaa puɔ fɔnri ga ti yara kan lagum na yi to aatmbeel la ti yara lagam na yi nyi too sba i a u nye la,0.825,0.4344
+826,Asũtãana n de dũnia wã naba la n pĩ ba yɛm tɩ ba da bãŋɛ Krisi n de Nawẽnnɛ wõnnɛ na kõ-yẽlga naam pãŋa.,sutaana n di dunia wa na ba la n pii bayim tibadaban kris n di naawenn wɔn na kɔnyliga naan pa,0.75,0.2658
+827,"Tõma tõm na tɩ sɔbia ayɩla tɩ Wẽndeto nẽrba la wuu pẽgrɩ ẽ, ẽn tõnnɩ kõ-yẽlga la tõoma ĩyã, tɩ ẽŋa la Atiti waam.",imaton na ti sɔ bie ayii la ti ŋan di ti nariba le wuu pikir n ton kɔnyaliga la tooma ia ta la ti ti waa,1.0,0.3837
+828,"» La ban fõrgɛ la, ba mõolɛ bõn-ẽŋa mɛ tẽŋa la zẽa woo.",ladas sei mi ti ba u ye pa dii ti la bazia,0.9167,0.7179
+829,"La ban daan wõm tɩ Azezi vooge mɛ tɩ Amaari yẽ ẽ na, ba daan ka sakɛ.",aaa wan taa zi voo ma ti aamaari nye na ba daa ka sak,0.8235,0.3922
+830,Beni nuurɛ ti Yinɛ puuhegɔ yire la wan ku la baga zɔŋɔ?,aŋla wan ti yini yir le dena baa kaabus,0.9167,0.6977
+831,"Tɩ mam tɔgɛ kʋ yetɩ, mam wʋn botɩ a sẽŋɛ.",bee san u yiige foo unwom a yetɔga,0.9,0.9
+832,"Gee Pɔɔl sige mɛ, ta nyigele bia la zuo, ɔ̃begɛ en a nuuhen, gee yeti, “Da bahɛ ya ti la dɛna daaŋɔ gee a vom ka kiŋɛ zian.",e ti pɔɔl sigi na gbilim ameya paa buraa la zien o bige ngiyeti dafabileya ti a vooya ti pɔɔl nyaa le zom la kuda la ke e,0.9643,0.6966
+833,Zuudãana Nawẽnnɛ n de keeŋo wuu dãana n ãn sõŋa.,,1.0,1.0
+834,"La sɛba n wʋn bɔ mam sɩra la, wʋn ɩta la bõn-yãlma bãna paalɛ Nawẽnnɛ pãŋa: Ba wʋn dɩkɛ la mam yʋʋrɛ digra kʋlkãarsɩ, dee tɔgra yetɔg-zãŋsɩ.",la sibaa n wu bɔ man sra la woo itala bunyanima ba na paal naaŋen paŋa ba won di la ma yuur d diki  kulkaarisi di yi tɔila yitɔ za si,0.8889,0.3704
+835,La wʋn doose la bɛla tɩ ya yẽ folle tɔgɛ mam yelle paalɛ ba.,dool la a nyi ule ta ypaaa,0.9286,0.6522
+836,Ti bilam bilam ti Faa Sia la tari Yezu la paŋa kɛ̃ kpaahenɛ puan.,bilam bilam ti yi ni sia la tare ŋ keŋɛ pag ti ya poɔn,0.7143,0.48
+837,Leviti dõma kãabgɔ tõoma la yʋʋn ka tã wʋn basɛ tɩ sɛla woo masɛ ãna wʋ Nawẽnnɛ n boorɩ seem na.,evididuma kaabug tu mala yuu kaa taan u nbas ti sila woo maasin aana woo naa wan ni boor sei n,1.0,0.4133
+838,"Ya nẽra ayɩla sãn yetɩ: «Mam dolɩ la Apolɩ», tɩ ayɩla yetɩ: «Mam dolɩ la Apolɔsɩ», ya ka ɩtɩ wʋ dũnia nẽrba la?",nɛra ayi la sa yeti man dollapoli taa yi la yeti man dolla polosi ya kaa iiti u duniya nr baa,0.9565,0.3375
+839,"Tɩ sɔbi-nõŋrɩsɩ, tõma tɔgrɩ bɛla wuu tɩ la sõŋɛ la yãma, tɩ ya sẽŋɛ nẽŋa Nawẽnnɛ doosgo pʋam.",isɔbiinɔŋsi timatɔgirb be li wuu u ti lasoŋ lan yama ti ya seŋ nɛŋa n naa ŋandoosik pua,0.8889,0.3889
+840,"Gee ba wan dɛna malema duma bo Yinɛ, la a Kiresta la, gee dɛna kiinduma la en, yuuma tuhere la puan.",nkunsɛba m paahi yi ka li tara paŋa la ba ba wan dii aye ne la krista malimaduma ba wan lagla n sɔ na bihera taa,1.1429,0.8421
+841,"La baa tõma ĩyã n sãanɩ na, tõma sɩa lebgrɩ la paalga daarɛ woo.",lbatuma ia saan na ti masiya lebigi la paaliga daa o,0.8571,0.3469
+842,"Tɩ kẽma pisyi la anaasɩ, la bõn-vɔɔsɩ banaasɩ la ka dũma tẽŋa nãasra Nawẽnnɛ n zĩ a naam bĩmbĩnne zuo la yetɩ: «Amina.",tee mi piisi la anaasi la bun vɔsiba naasi a ka duuma teŋa naasara naa wen ni nzii a naam bi miin zuu la yiti,0.8261,0.2857
+843,Deni ya sɛba en biɛ kahegɛ woo ya Sɔ en boi saazuo ha biɛ kahegɛ seem la.,eni ya tuntɔ woo ya sɔ mbu saazu ha ndi tuntɔɔ seen la,0.6471,0.5357
+844,"Seere en sɔi la, tu tiŋa zuo sugerɛ wa ti tu bɔna de puan tu uheri mɛ la ninmuurɛ, kɔɔm boti ni ti tu yɛ ni tu saazuo fuo la.",yidenati dimuwanbɔna wuuha te nanana wa ladaana tuma ti tumi kugɔmbot ni titubo ni yir seere n bo saazuu ha la,0.9,0.7312
+845,"Yezu Kiresta n de Nazareti Buraa la yuurɛ puan, ihege la fum kina.",yesu kristo yuur poan n yeliho ti ho ihigi saazuo laa hu keŋ,1.0,0.7692
+846,"Gee bani ti Yinɛ yuum pɔ nuurɛ ti ba kan kɛ̃ eŋa voohego la puan la, han dagena sɛba en yuum ka nane la?",enɛribana yaaha ti naayinɛ yom kɔɔbiiŋa a nɔɔra yeti ba na yuuŋ ka nya voohig laa layondela sɛba nyuŋ ŋmɛrigi zabra la,0.875,0.7564
+847,"Lan gãnnɩ wuu, mam tarɩ sũ-yẽlga, fõn mi Zifdõma dɔgmike, la ba nõkɛɛma la yelle sõŋa sõŋa la ĩyã.",lan gann wuu ma tar suyaliga foo mii zifuma dɔgimi ke la ba nɔɔ kiɛ ma le yeel suŋasuŋa le nye,0.8947,0.28
+848,"Bulika, seem maa ti la nam ana biin la, ti Yezu ihege yehe kiŋɛ kɛ̃ muuen ha ta puuhɛ.",yesu daa ihigi la buli ka yuoŋiyuŋo yehuyir la poaŋ keŋɛ muɔ taso,0.9474,0.7812
+849,"Gee mɛɛ la han diŋɛ waam na, fii wa la kan le bɔna.",azaage sala woo han ta bɔ na yelseere ka letabɔa,0.8462,0.7838
+850,"» Tɩ da ɩta yalsɩ wʋ bãma basɛba n yʋʋn ẽŋɛ seem, tɩ ba nẽrba tʋspisyi la atã ki daarɛ ayɩla la.",an itan yaali si u bama basba n yu u eŋ seem ti ba nariba tusipiisi laata kiidaarayi a,0.8571,0.4028
+851,"Sɩa la bɔɔrɩ nẽra ayɩla la bɔa tɩ a tɔgra yɛm yetɔga, la Sɩa ẽŋa ayɩla n bɔɔrɩ nẽra ayẽma bɔa tɩ a tɔgra bãŋrɛ yetɔga.",ia la bɔɔri nɛra ayila la bua ti a tɔgɔra yan yetɔga la sie iŋa ayila n bɔɔr nɛra ayima bua ti a tɔgra bar yetɔa,0.6923,0.2418
+852,"Bɛla tɩ la gʋlsɛ Nawẽnnɛ gõŋɔ pʋam yetɩ: «Sɛka n boorɩ tɩ a wẽ yõogɔ, a wẽ yõogɔ la sɛla tɩ Zuudãana ẽŋɛ la.",ti a bibi si naawen gɔŋ pɔɔn yeti sia kaa boori te a wenyɔnɔgu a wenyoɔg la sila ti zuura nan iŋ la,0.875,0.4938
+853,"Dẽnɩ tɩ mam tarɩ ba waam, tɩ ba wõm mam kõa, lagɩm na bãna tɩ ba dɛna ayɩla, tɩ dũnsĩina ayɩla bɩsra ba.",ti man tar ba waa ti ba ŋɔɔ makua lagina ba na ti ba da na aa yela ti duu siin na a yela biba,1.0,0.359
+854,"Levi buuri puan, tuha pia la ayi.",levi yisuo delatua pialatuy,0.8571,0.48
+855,"Mam yetɩ fʋ yele ba bɛla, tɩ ba tara la pʋtẽerɛ n ãn sõŋa, dee bãŋɛ ba sũure pʋam tɩ ba ka tarɩ dõrga, dee bɔ Nawẽnnɛ sɩra la ba sũure wuu tɩ ba nõŋlʋm zooge.",ye ti fu yel ba bela ti ba tara le potiɛra n an suŋa die baŋ ba suunr pɔɔ ti bakatadɔnriga dee bɔrnaawenn sira la ba suunr wuuu ti ba nɔŋlu zooga,0.7222,0.3277
+856,"Zuudãana Azezi n daan tɔgɛ la ba kɩɩlɩm na, a zẽkɛ mɛ zom Nawẽnnɛ yire, ka zĩire Nawẽnnɛ zʋʋgɔ.",uanaaziindaan tɔ le ba keeli na aa zankmi zoo naawunn yiri ka zii naaunni o,0.8421,0.4459
+857,"Seere n sɔi la, la ka sugɛ nɛrawoo n boi Yerusalɛm wa ninin ti ba tum la daalehum n de yelemɛŋerɛ.",ynlaburaaala wanɛrisaba woo m boe jerusalɛm tiŋa poan mi ti bama mieŋ yelkir,0.9524,0.6316
+858,"La ba kãn malɩn doose sãana, ba wʋn zoe mɛ fõrgɛ dee basɛ ẽ, ban ka mi a kõa la ĩyã.",b ba kan man dooh saan na ba u zoo mifɔdi bas in ban ka mii a kuɔn in ni,0.7619,0.459
+859,"Bahɛ ti seem woo en tari tuberɛ, a kɛleha Sia la en yeti seem bɔɔra lageŋɔ la zaa la.",aba rbasee mi n tar tuba a kelihesa la ti yinisia la tɔgra bɔɔra lagaŋu la,0.8421,0.5538
+860,"Seere en sɔi la, wuntɛɛŋa zoni mɛ na la tuulega, kuura vatɔ la, ti bu puuro woo luta, ti bu suŋa la Sagena.",eere nsɔ la buntata la wan ki wuu wontiɛŋa nni woŋ mo ti ku ki seem la ti puuru ni zɔga ge ti kusuŋa la mi sagam,1.0,0.675
+861,"” Ti Pɔɔl le zom saazuo la ha, ti ban ta di Daana tuulum dia la baahɛ la, ti a le pɔhɛ suhega la ba tara tara ti beere ta yilegera, ti a nyaa bahɛ ba gee kiŋɛ.",pn paa la a giɛ la boroboro ti iŋa la yesu dɔli ba la o be pɔɔl le tɔg bo nɛrba la mi taratara ti suurin tazona ge ti a nyaa baai ba zien ba,0.7568,0.5983
+862,"Beere putiirɛ seere ti bamam mɛhi pun sakɛ ti, tuntɔɔduma la beem duma ihegere kum puan la wan tum.",nta i emti yinni wan baah ti nɛra woo sɛba n tuni sum la sɛba ntuni beem ihigi ba kum poan,1.0526,0.7722
+863,"Tɩ beere le wiige, tɩ ba mẽŋa yese õorŋɔ la mẽŋa lɔgrɔ lobe basɛ koom na pʋam.",ibee le yige ti ba miŋa ye s oɔruŋ limiŋa lɔgrɔ loo ba koo na poɔ,0.7647,0.3667
+864,"Tɩ mam yẽ sɩl-kãtɛ n ẽgrɩ saazuum-zuum, wõm ẽn tɔgrɩ keenkeem yetɩ: «Waɩ, waɩ!",ma nye silikanta n eɛgr saazuu zuu wɔɔn n tɔbr keenkee n yeti wai wa nitaba kataa wa zuom,1.2857,0.6207
+865,"La ya sãn tũusra nẽrba, ya tõm na tõon-beego, la lɔɔ la paalɛ ya tɩ ya tõm na tõon-beego.",i tuui niriba yato na tobeegu la laɔ la paa ti yat na tobee,0.7895,0.4242
+866,Yãma mẽ tarɩ la nẽrba basɛba n boe ya zẽam n dolɩ Nikolayiti dõma zãsŋɔ.,amami taa lan nariba basiba m bo ya zina m don nikoo la idua zaahŋa,1.0,0.4211
+867,"Ti yia kua sɛka ti mam pun wum ni ti ka tɔgera bɔɔra mam ana wuu tintanɛ en peeberi la, yele mam yeti, “Zom kalam na, ti n paalɛ hɔ sɛla en wan iŋɛ ŋwana wa pooren.",tkua yu u saazu ti nɛra seem nfooli wu tintani te m pun wom ti a tɔge bo mam yeti zom kalam na te m paale hu siɛla nŋa eŋi poori,0.8378,0.5691
+868,"Ti ateko la buyina puregerɛ butã puan, lebege ziim, ti bunvɔɔhi en boi koom la puan la buyina puregerɛ butã puan ki, ti uurenɔ en boi koom la zuo buyina puregerɛ butã puan, sagum.",logri diyina logata kokate la poan daa lebege ziim binvoohi n daa boo zakana baba la ma daa ki ma ge ti ɔurinseto m boe zakana mea la mi daa sagam,0.8824,0.6809
+869,"La daan de la toogo, la sũ-sãaŋɔ, la nintãm pʋam, tɩ mam daan gʋlsɛ gõŋɔ la bɔ ya.",daa nila toogo le susaaŋu le nintam puɔ tima daan gol sigɔŋ labɔ,0.8333,0.3
+870,Daalehum sebo n paali ti nɛra dela Yezu tuntuna yelemɛŋerɛ la daa tum ya puan mɛ la nyɔkɛ n mɛŋa.,aa di nsuure tuna na la yala  paali te n dela yesu tuntoniba la ayima d,0.95,0.7403
+871,"Tɩ ĩyã la wuu sãn de nɩ nifo, a yetɩ a ẽŋɛ la wãne wõm yetɔga?",le wuusann di ni nipo a yita ŋla ani  yetɔ,0.9375,0.4667
+872,"seem en daa de, gee kelum dɛna, gee wan waam na.",seem ndaa boe kelimbɔna gia aaana,0.9091,0.4
+873,Bii beni ti sakera tara la seem n dagi sakera?,be ni ti seem n doli yesu sori wan tara ti a lagum eŋi la seem ŋ ka doli yesu sori,1.7,1.0833
+874,"Mam gulehɛ mam gulehɛ seem wa la ti, la suŋɛ ti n han ta waam na n da nyɛ susageŋɔ sɛba n wan bo ni mam pupeelum la zian.",bala n sɔ ti n daa golihe goŋ kuna la boya na la n daa kabo te n waa na ti yama sɛba n eŋ mam te m pur peela to eŋ mam te n suuri sa,1.1034,0.8132
+875,"” Ŋwana ti Ananiya n de malema nɛŋadaana la kiima la, tahɛ sɛba n ze lɛm Pɔɔl ti ba ŋmɛ a nuurɛ la.",n daa yel wana wa la malima niŋadaana ananayas daa yeli nɛrsɛba nzaa zaduu pɔɔl ti ba ŋmɛ a nɔɔre,0.7727,0.5541
+876,Naaɛ la seem en zuuhe fum la kalam ti ya nam boi sore zuo yɛa naba yire la.,ynɛra han tara ho yi ya gankrba zian naa ya yetɔgen la kalam maale yade yan bo sori zuu la a,1.0556,0.9825
+877,"Tɩ ba daan gõŋɛ tõma sõŋa sõŋa, la tõma n daan fõrgrɩ la, ba bɔ tõma la bɔa n seke tõma sore la sẽnnɛ.",ba aa goŋ tima soŋsuŋa le tuma daa fɔr la ba bɔ tima le bua nseiki tuma suu le sen,0.8333,0.3684
+878,"M sɔbiisi, mam n daan waam ya zẽam wa mõolɛ Nawẽnnɛ kõ-yẽlga n sʋgɛ bɔ ya la, la dagɩ la yetɔg-miilum, bɩɩ nẽrsaalba yɛm tɩ mam mõolɛ bɔ ya.",sɔbiisiman daa waah ya zin wee mɔɔr naawonn kɔnyeliga nsu bɔya la la daa le ye tɔmiiluu biinisaal ba yab tima moo baya,0.8966,0.3585
+879,"Fʋ sãn lʋ nõorɛ, wire fʋ nẽŋa dee sãasɛ fʋ zuugo, tɩ nẽrba da bãŋɛ tɩ fʋ lʋ la nõorɛ.",bu san lu nɔɔr a wiir fu neɛŋa di saa fuzuugo ti nɛribada baŋa ti fulu la nɔɔ,0.9,0.4127
+880,"Tɩ ba wʋn yõkɛ Asũtãana n pãasrɩ dũnia nẽrba la lobe basɛ bugum mõgrɛ n diti kidibre pʋam, zẽe-sɛka tɩ ba daan põn lobe dũŋa, la põmpɔrŋɔ nõtɔɔsa la.",iba u nyab ke aa sutaana paah dunia nariba la lob basbikmɔkra di ti kiribi puɔn zansaka ti ba laa pun lob duŋa la pupɔru nɔtɔsa la,0.7931,0.3761
+881,Pɔge yaalega la bunsilemasio.,yini suŋrba bayopɔi la ayima seem min tar laasiyopɔi le waa nzi,2.75,1.6
+882,"” Ŋwana zuo la, tu wan taam yele gee ti dabeem ka tara tɔ yeti.",di ni poan naayenɛ n yeli dina waazuo to taa yati,1.0,0.6739
+883,"Bɛla, bõn-bãna batã n boe wakatɛ wuu: La de la bɔ sɩra, la tɩ tara pʋtẽerɛ guura sɛla tɩ tɩ bɔ sɩra la, la nõŋlʋm.",bila bu bana bata n boo wa kaa tu uu la di le bɔ seera la ti tar poteɛr guura sila ti ti bɔr seera la la nɔŋ laa,0.84,0.2976
+884,"Tɩ lampo-tɔɔsrɩba mẽ waam tɩ a mise ba koom pʋam, soke ẽ yetɩ: «Karẽnsãama, tɩ wʋn ẽŋɛ la wãne?",ilaputɔrmi waan ti amiisbakoom pɔɔn sok nyeti karsaamaa ti wa iŋ le ŋan,1.0,0.4366
+885,“Asaala dela beni ti fum ba tɛra ba yele bala.,asaala bela beni ti wu tɛɛha a yele n,0.6,0.3429
+886,"La de la bɛla tɩ a tãna wʋn fãagɛ sɛba wuu n doose la ẽŋa lɛnna Nawẽnnɛ zẽam na, wakatɛ wuu ĩyã.",a dela biɛla ti ata na wum faangi siba wuu ndoosi la inŋalan na naa wonni ziɛn na waa ka ti uu e,1.0,0.3288
+887,"” Bala, a saalum yia nɔpuulegɔ la bahɛ mɛ, ti a taam sɛ yii nɔpuulegɔ la.",bala naayin ni ka li eɛda yuuma yuuma duuhi kual la ti ayuun daa kuura,0.9333,0.8148
+888,Suure diihego namehegɔ puan.,tibakguy,1.0,0.8333
+889,"Ɩsrayɛlɩ dõma n bɔ Nawẽnnɛ sɩra la ĩyã, tɩ mõg-mõlga la koom yʋʋn welge dee basɛ tẽn-kɛɛŋa tɩ ba doose tole, tɩ Ezipti dõma mẽ paagɛ doose tɩ ba tole, tɩ koom di ba.",sraelduma n bɔnaa wonni sida lanyaa ti mɔg mɔliga la koon yuun weeligi dee bas ten kiɛŋa ti ba doosi to le ti eziitunɔ ma min paagi doosi tibato le ti kun diiba,0.9118,0.3254
+890,"Mam ka tɔgrɩ nẽr-sɛba wuu n boe dũnia pʋam ɩta yalsɩ, bɩɩ nõŋɛ bõnɔ, bɩɩ dɛna nayigba, bɩɩ bag-kãabrɩba n ka dolɩ Nawẽnnɛ na yelle.",n ka tɔgr ni saba wuu n bo duniya puɔ itayaalisi bii nɔŋ bɔnɔ bii da nan nan yiki ba biibaa kaanbir ba n ka dol naawin na ye li,0.96,0.4059
+891,"Daarɛ ayɩla zaanõorɛ karf-atã, tɩ Apɩyɛɛrɩ la Azã dɔla taaba wɛ Wẽnde-kãtʋm na, wakat-sɛka tɩ nẽrba ẽn sẽnna pʋʋsra la.",a ayile zaal nɔɔr kaaripatan cha piea la zan dɔla taaba wee windi kanto na waa ka tiki ti niriba n si n uhi a,1.05,0.5213
+892,"Tɩ Azezi kẽ õorŋɔ la pʋam, dee yele Asimõ yetɩ: «Mõm õorŋɔ la tɩ a sẽŋɛ nẽŋa fẽe.",a ii keɛn ɔɔriŋ la puɔn di yela simon yeti mɔ ɔɔnriŋ la tiaa si ninfeɛn,0.8889,0.5833
+893,"Bɛla tɩ Azã daan bɔna weem misra nẽrba koom pʋam, dee mõola yetɩ: «Teege-ya yɛm basɛ tõon-beero, dee botɩ ba mise ya koom pʋam, tɩ Nawẽnnɛ basɛ ya tõon-beero taalɛ.",bala ti aazandaambɔ na wee mihira nɛriba koom pɔɔ die mɔɔl la yeti te yayan basitoombeero dee bo ti ba miisyakoom pɔɔ ti naaŋan nbas yatoobeer ta la,0.9333,0.3254
+894,"Yele dina wa puan, mam kan pɛgɛ ya.",elidinawa po aai n kan taa m pɛŋ ya,1.0,0.4615
+895,"Seere en sɔi la, tumam mi ti, yamam n nameheri la tɔ wa, bala mɛa ti ya wan nyɛ tumam sumbugehum la tɔ.",ere nsɔ la tu mi ti ya ha lagam nyata namihigɔ seto ti to mam mi nyata la bala mi tiyami wan lagam nya soŋ seere woo,1.0435,0.7662
+896,"Sɛka n boe la mam, tɩ mam bɔna la ẽ, ẽŋa dãana tõnnɩ tõon-sõma zɔɔra mɛ, seere n soe la, ya ka tã wʋn ẽŋɛ sɛla sɛla, tɩ ya sãn ka bɔna la mam.",akan buu la ma ti mam bɔna la in nŋadaan na tontonsom zɔɔri mi seer n so la ya ka taa u iŋ shɛla sila ti ye san ka bɔn a,0.7059,0.3137
+897,"Bɛla nẽra nẽra kãn bãŋɛ tɩ fʋ sõŋɛ nasdõma, la fʋ Sɔ Nawẽnnɛ n yẽ fõn sʋgɛ ẽŋɛ la, a wʋn lebse fo.",laniranɛra kan baŋi ti fusuŋ nahirima la fu sɔ na ŋoen nye funsug iŋ la ali,0.8261,0.4384
+898,"Tɩ pʋʋsrɩ Nawẽnnɛ a yel-sõnnɛ, ẽŋa n ẽŋɛ yɛmloore ẽŋa Atiti sũure pʋam tɩ a bɔɔra tɩ a sõŋɛ ya wʋ tõma n boorɩ tɩ sõŋɛ yãma seem na.",puur naa ŋminaa yel sun ni inŋa yiiŋ yan loori inŋa a tiir suunr pɔɔ ti a bɔɔra ti aa suŋ ya u toma n boor ti suŋ yama e na,0.8276,0.4455
+899,"Mam Apolɩ n gʋlsɛ pʋʋsgɔ wã la m mẽŋa nuugo, mam pʋʋsrɩ ya.",l gol suuusgu wa lamnuuu,0.9231,0.6889
+900,"“N suurɔ la n sɔduma wa, kelehe ya nananawa, mam me buurɔ n de seem ti n yeti n dikɛ biŋe ya nɛŋan wa.",suui la nsɔ dima waa kelihelaya baŋɛ ti n ka tare tuure di yelseeri puan,0.875,0.6
+901,"» A daan tẽesrɩ tɩ Apolɩ naan wʋn bɔ ẽ na ligri, bɛla ĩyã tɩ a ẽn wiira ẽ sõsra la ẽ lɛ.",aatiɛn itapool naan u bɔ ni likiri ba li nye ta  wiid n sur le,0.9091,0.5397
+902,"La dabsa bãma, nẽrsaalba wʋn ɛɛra kũm, la ba kãn yẽ ẽ.",aa iaau aa,1.0,0.825
+903,"Amoyisi dɔgrɩba n bɔ Nawẽnnɛ sɩra la ĩyã, tɩ ba yʋʋn dɔgɛ ẽ, dɩkɛ ẽ sʋgɛ wõr-sɩtã.",mu yisudɔgirba n bɔ naa wonni sida la nyaa ti ba yuun dɔge in dik nsugu ŋɔrsia,0.8235,0.4355
+904,"Tɩ koom na zẽesɩ batã pʋam, zẽa ayɩla lebge zẽlõm.",iko na ziins batapu zin ayi llibig zin,0.9,0.5641
+905,"Nẽra sãn bɔna tɔrgɔ pʋam, la ãn wʋ mam mẽ boe la tɔrgɔ pʋam na.",sabona tɔ pu lamabta,1.0,0.6809
+906,"Mam n tɔgrɩ bɛla la, dagɩ tɩ mam boorɩ tɩ m mõŋɛ ya la bʋʋrɔ.",tɔ l la datimabotmɔle,0.9333,0.6667
+907,"A dela seem n baheri ti gbiregeri sigera Yuda buuri wa n boi timpaberɛ wa zuo zian woo, dɛna lageŋɔ seko ti ba yiira ba Nazarenduma la nɛŋadaana.",di sban doli nazarɛt buraa la nuuri la zuudaana a mi daa li keŋ yin yiri la poan ta baa ti zansaka ŋ ka tare dɛgiru yininɛŋan la tara dɛgru ba,1.0714,0.7845
+908,"» La ban paagɛ la, ba yẽ tɩ kugre la n ba ãna kãtɛ la põn bilge mɛ gã.",abn ala ba nyati kuula banakat la pubi a,0.8889,0.4694
+909,"Nawẽnnɛ n de naba wakatɛ wuu, n ka kiiri, tɩ nini ka yẽta ẽ, ẽŋa ayɩla mãa sɔna pẽka la nãasgɔ wakatɛ n ka baasrɩ.",n ni i di naba waa ka tu wu nkakiir ti nin ka nye tan inŋa ayi la maa sɔ na pienka la naasigɔ waa kati ka bahir,0.92,0.314
+910,"N suurɔ wa, da gɔgeni ya la taaba, bala ti ba kan gakɛ ya.",guni ya la taaba yala ya han e taba la naa,0.8571,0.619
+911,"A yʋʋrɛ la Ebre yetɔga de la «Abadõ», la Grɛkɩ yetɔga de la «Apoliyõ», n boorɩ tɩ la yetɩ «Sãama».",yuu le ibin yitɔg dila a badɔn la girek yitɔg dila apoliun m buuri ti le yeti saam,0.95,0.4286
+912,"Ya sãn basɛ nẽr-sɛba n ẽŋɛ ya beem na taalɛ, ya Sɔ Nawẽnnɛ mẽ wʋn basɛ ya tõon-beero taalɛ.",sabas nirsba neŋ ya bee na taa le ye sa na ŋon i uba tubii a,0.8947,0.5072
+913,"la fum nɛresunduma la, la sɛba woo en daa puuheri fum yuurɛ la.",o ma yɔ u nɛrsaba woo nnaahirhɔ bkuraa,0.9231,0.6327
+914,"Pɔkõorɛ sãn tara kɔma bɩɩ yɩɩsɩ, bãma n masɛ tɩ ba bɩsra ba mẽŋa yir-dõma yelle, ba bɩsra ba dɔgrɩba la yelle wʋ ba dɔgrɩba la n daan bɩsrɩ ba yelle seem na, bɛla n ãn Nawẽnnɛ sũure yẽlʋm.",bakɔɔnr santarakɔma bii yiisi bama maah ti ba bihira ba miiŋa yiduma ye li ba biira badɔgiriba la ye li u badɔgiriba la daa bihir ba yel see na ba la a naa wen suun y,0.8462,0.3724
+915,"’ Bilam, N wan yele ba yeti, ‘Mam ka tabelɛ mi ya, fɔregɛ ya mam zian ha, yelebeiteba wa.",ge n waa yeli ba yiti ma ka miya keŋya ma ziaŋ,0.8333,0.5781
+916,"Bɛla tɩ Nawẽnnɛ yel-sõnnɛ wʋn paara nẽrba zozoe, tɩ nẽrba wʋn pʋʋsra Nawẽnnɛ a yel-sõnnɛ zɔɔra paasra, tɩ la dɛna a nãasgɔ.",la ti naawann yelsunni uwupaara niriba zoe zoo ti nɛriba u puura naawanni aa yelsu ni zɔɔra paahira ti lana a naas,0.9545,0.3918
+917,"Ti nɛra ayima zeele nɛrekuuŋɔ la puan yele en yeti, “Paala, yele n suuɔ wa ti a tɔrɛ tu sɔ lɔgerɔ la mam la eŋa tiŋasuka.",buraa ayima nɛrkuoŋa la poan daa yeli n yeti paala yeli nkiima wa ti a bah tito purɛ lɔgseto tito sɔ ki,0.7692,0.5326
+918,Magehɛ ya mɛhi bihɛ nyaa ya vɔi sakerɛ la puan.,magahiya ya mɛhi biihinya ya si zeeli suŋa suŋa ya bɔŋa yesu sori dɔliga la puan,1.1,1.0
+919,"Sʋkɔbgɔ, la kɔm, la bãasɩ, la we-dũnsi n wʋn kʋ ba.",abasi dui,1.0,0.8056
+920,"La Afeligsi n daan põn mina kõ-yẽlga la sore yelle la, tɩ a viige yetɔga la, dee yele ba yetɩ: «Sʋda-kɛɛma Alisiasɩ sãn paam, mam wʋn kʋʋgɛ yetɔga la bɔ ya.",a elisi ndaa pun mi na kɔn yeliga a sor yellaa taa viig yetɔba la da yel ba yeti suu daa kiɛ ma alisa ssanpaab ma u kooi yutɔ la,0.9355,0.3559
+921,La de la ẽŋa tɩ dũnia naadõma tõm yalsɩ tõoma la ẽ zozoe.,ala ŋa ti dunianaarima ton yaalsitooma la  zoo zuu,0.9231,0.3182
+922,"La baa lɛɛlɛ wã, ya ken ka paagɛ ya tooge zãsŋɔ keeŋo, yãma n ken vɔa wʋ ya mẽŋa n boorɩ seem na ĩyã.",labaalelee wa yake ka paak yatook zasin cheeŋu nyama ke ɔ u yamiŋan bu u ei na y,0.875,0.4133
+923,"Nẽrba zozoe n wẽerɩ yõogɔ la dũnia yɛla la, mam mẽ wʋn wẽ m yõogɔ mɛ.",iba zoozoo neɛ nyoɔn le dunia yala la ma m a,0.8125,0.5577
+924,"” Bilam bilam ti puuhego la lika pi en ti a tuuna, ɛɛra nɛra gurɛ a nuo.",bilam bilam teteendaana elimas la fɔ giyan eera nɛr seem nwa,0.8125,0.6038
+925,"La Nawẽnnɛ yetɔga la daan saarɩ zẽesɩ mɛ paasra, tɩ karẽnbiisi la kãllɛ mẽ paasra Zerizalɛm pʋam zozoe.",aaŋmen le yitɔgɔ la daa saal zinisimi paahira ti kam biig la kanlimi paahira jerusalem puɔn zoo zoo,0.8889,0.4524
+926,"Yɔn kosɔɔra la wa niiɛ a mɛŋa la kpaahenɛ puan ha, muula suteere la yelebeero sugeri dia koom sua.",bɔɔra nɛriba konsua ge tɔɔra te ba tee ba potiɛra ge ti a sɔba ti la paa,1.0,0.7564
+927,"La Zuudãana doosgo la pʋam, pɔka boe la bʋraaga nuusum, tɩ bʋraaga mẽ bɔna pɔka nuusum.",zuudaanidoosugu la puɔ pɔka bo la buraa ga nuusum ti buraa ga min bɔna pɔ a nuusm,0.875,0.2319
+928,"Bɛla, fõn bãŋrɛ la wʋn basɛ tɩ nẽr-ẽŋa n ka tarɩ pãŋa Nawẽnnɛ sore doosgo pʋam na sãam mɛ, a de la fʋ sɔbia tɩ Krisi ki a ĩyã.",blafan baŋ le wuba sa ti nɛra iŋa katar paŋa naa wenn soor doosi puɔ na saam ma aa lee la fu sɔbi ti kriskii ai ya,0.8966,0.3404
+929,"Tuntɔɔ daana puuhegɔ tari la paŋa, gee tuna.",tuntɔdana puuhigɔ tar la tuulum,0.875,0.4
+930,"Bɔ-ya mam sɩra halɩ ka paagɛ ya kũm, tɩ mam wʋn bɔ ya bɔa n de vɔm.",bayamasira ha kapaa ya kuun te ma ubɔya bɔ nnɔ,0.8824,0.3958
+931,"Bɔna kinkɛleŋa ha, gee yi bahɛ na la kɔkɛɛŋa yeti, “Yezu, Daana, zɔ tu nimbuɔ.",bazelaziya n ka bazaa la in ge nyabigeti tu daana yesu zɔ to nimboɔ,0.9333,0.6379
+932,"Bɛla n soe tɩ mam gʋlsra ya bõn-bãma, mam n ka boe ya zẽam na, tɩ m sãn wa waam ya zẽam, m da dɩkɛ Zuudãana n bɔ mam nõor-sɛka la sɩbgɛ ya.",lan su ti man gui tara ya bo bama man ka bo ya zien na tim san waa waan ya zien an da di kizuuraan na a bo ma nɔɔr siakala sibigya,0.7879,0.3663
+933,"La ka boorɩ tɩ la yetɩ tõma tã wʋn tõm tõon-ẽŋa la tõma mẽŋa pãŋa, tõma pãŋa zeele la Nawẽnnɛ zẽam.",ka boor ti la yeti timatauwu tontoon eŋa le ti ma mɔŋa paŋa tima paŋa seer le naaŋnn si,0.8095,0.3289
+934,"Gee tumam n paaɛ doone suŋa baahɛ la, ti tu nyaa baŋɛ ti timbila la en boi koom tiŋasuka la yuurɛ en yiiri Malita.",ndaa pa doo ni suŋa suŋala tiŋa la nɛriba yeli tumam ti ba yiiri ba tiŋawa la maalta,0.875,0.6404
+935,"A de la sɛka tɩ tõma wõm a yetɔga, yẽ ẽ la tɩ nini, bɩsɛ ẽ sõŋa sõŋa, kalʋm ẽ na tɩ nuusi.",di li sa ke ti tumawɔ a yutɔga iin le ti nii ni bisi n sɔŋa sɔŋa kaal in na ti nu si,0.9565,0.4219
+936,"Bɛla tɩ tõma wʋn kẽ gãŋɛ fu-sɛka n beŋe Nawẽnnɛ zẽe-sõŋɔ la, paagɛ Nawẽnnɛ zẽam.",latituban won ken gaaŋ fuusaka beeŋi na wan ni sensɔŋ laa paagaa na wan s,1.0,0.5
+937,"La de la sɩra tɩ Aerɔdɩ, la Apõnsɩ-pilatɩ, la bu-zãŋsɩ, la Ɩsrayɛlɩ nẽrba lagsɛ taaba tẽn-ẽna wã pʋam zɛbɛ la fʋ tõntõn-sõŋɔ Azezi tɩ fʋ looge la.",dela siratia herodi la pɔns pilati la buzaŋsi la israyel nir ba lagsi taaba te ena wa puɔ zib la funtutɔsɔŋ a zii ti u oo,0.8519,0.3661
+938,"Bihɛ ya ban daa vɔi ba vom seem, la ya tɔgehɛ ba sakerɛ la.",bihiya yelisia ti ba daa nya ba baŋa pɔɔn gi daa wa ki la yatɔghi ban daa nam naayen seem wa,1.2857,1.1136
+939,"Ba yɔ toe ba mɛ saaleba woo puan ti ba dɛna wala diina bo Yinɛ, la Pebila la, ti pumpɔreŋɔ ka tabelɛ zeele ba nɔyan na, ba ka tari gbelegere zian.",duybeeopuan ti ba dee na yiyaduma boin la pebila la ba nan ka table parimpunpɔriŋɔ ba ma ka tare tuure,0.7419,0.5804
+940,Tɩ Rom sʋda-kɛɛma bɔna mĩ tara a tõntõnna tɩ a nõŋɛ.,m so aa ke ma bɔnimi tr atunton  n a,0.9091,0.475
+941,"Nẽra sãn ka bɔna la mam lɛ, ba wʋn lobe ẽ basɛ wʋ tɩa wille la, tɩ a kʋɩ.",dasankabna limale ba u lobi nbasuu te wila tiako,0.9474,0.4423
+942,"Bɛla, nẽra kãn tãagɛ yele yetɩ, ba daan mise ẽŋa koom pʋam la mam yʋʋrɛ.",naka taai yelyeti ba daamiisikoo pɔaa,0.9333,0.5273
+943,Bɛla tɩ Nawẽnnɛ ẽŋɛ nẽra woo a zẽam a nẽr-kʋʋŋɔ la pʋam.,lti naaenn eŋ nɛra woo ziɛn ankuuŋ l ua,0.9167,0.4884
+944,"La dagɩ tõma mẽŋa yelle tɩ tõma mõolɩ, la de la Azezi-krisi n de Zuudãana la kõa tɩ tõma mõolɩ.",da tuma mɛŋa yele ti tumɔmɔɔ li ladlasikris n di zuuraan na la kua ti tumɔmɔl l,0.95,0.3973
+945,"Ti bia la sɔ la ka ma yari zɛa yɛli, la ban tɔgeri bia la yele seem la.",dibobia la la a sɔ la ama le yitɔgsebt a tɔgi yaherabiiliya la yeli a,0.8333,0.6538
+946,"Sɛba ti konyuuro tara ba, n wan bo ba koom ti la dɛna boolum, zeele vom koom kulaa la puan na.",see ti kayuuri tara n ŋma bo n vo koon la te ayu ge kan yɔ sasɛla s,0.7619,0.6479
+947,"La tõma n sosrɩ Nawẽnnɛ sɛla tɩ pʋʋsgɔ pʋam, de la ya vɔm wuu wʋn masɛ ãna sõŋa.",la tuma n suhur naawenn sila tipuusig pɔɔn dele yavɔn uu uu masi ana su ŋa,0.8889,0.3934
+948,Apolɩ sõsɛ la kẽma Azakɩ yire.,a titumaa woe ka gaar a mi nan so di le sip nra a di a zizuukaan bia hal kukorm,3.3333,2.0417
+949,"“Da kãahera ya lɔgerɔ biŋera ya mɛhi timpaberɛ wa zuo, zian ti guŋa wan mɔgɛ, ti tiŋan-ziim di, bii nageyigehi kɔ kɛ̃ zu.",tiya lɔgr biŋi teŋa wa zuu boya mɛhi ti bi mɔgila le tiŋanziin waan saama bee na yigihimi waan kɔke su,1.0,0.7174
+950,"A pɩrɛ la yetɔg-beero tɔgra ka gɔɔra, a tarɩ la yabga n kʋʋrɩ.",i le yitɔgbeero tɔgikagoɔra ataa le yaabaku,1.0,0.4255
+951,Ti yuuŋɔ kan le bɔna.,wan nyɛ a nɛŋa yooŋukamaai bɔ,1.2,1.25
+952,"Tɩ tẽŋa la saazuum zoe fõrgɛ a nẽŋam, tɩ ba ka le yẽ ba.",titiŋa le saazuu zu fɔriga niŋa ti a ki le nyi ba,0.8571,0.3902
+953,"La ẽn yele la, bãa la basɛ ẽ mɛ, tɩ a isge tɔtɔ ẽŋɛ ba sãanɔ.",taa la kigɔ la yi sisati aa boula ya,0.875,0.7674
+954,"Seere en sɔi la, fum lɔgerɔ n boi zian la, fum suure boi la bilam.",ya lɔgɔre mbo zunya la ya potɛɛra mi boo labina,0.9333,0.7143
+955,"La sãn dɛna tõma, tõma kãn wẽ yõogɔ tɩ la yõsgɛ, tõma wʋn wẽ yõogɔ masɛ la tõon-sɛka tɩ Nawẽnnɛ bɔ tõma la beene.",sandan nan toma ti ma kaa n yɔɔg ti la nyɔɔsi ke ti ma woo wa nyɔɔg masi le toon siɛka ti naa wan ni bɔ tuma la beeni,1.0833,0.4186
+956,"’ Ti lɔgebehera kpɛɛma wa nyaa sɔkera a mɛŋa yeti, “N nyaa wan iŋɛ la ŋwani, n kpɛɛma wa en ku a putiirɛ ti a toe kpeeŋo wa n zian wa?",dipoorin ti seem m biher lɔgɔra la yel amia ti n nya ti n eŋ la wani n daana ndiŋi digi mam n tooma poan wa ny,0.9,0.6869
+957,"Bõntarsa mẽ ãn na bɛla, a wʋn ki mɛ a bõntarsõm na tõoma pʋam.",tn ba   k m butas n,1.0,0.766
+958,"Bala la, ba han yele ya yeti, ‘Bihɛ, a boi la muuen ha,’ da yehe ya kiŋɛ bini.",alaseem ha yeli ya yeti a waa pɔga ti yaha da yehi ya,0.7222,0.537
+959,"Seere n soe la, yan wʋn zɛrgɛ nẽrba seem na, Nawẽnnɛ mẽ wʋn zɛrgɛ ya la bɛla.",e nso la ya ziɛrig niriba seem na naahŋami u siri a a,0.8235,0.569
+960,"Tɩ mi tɩ Amoyisi lɔɔ ãn sõŋa, ba sãn dɩkɛ ẽ tõm wʋ lan masɛ seem.",timiti amoyis loɔ ansuŋa ba san dike  tɔ ula ma see,0.875,0.3125
+961,"“N suurɔ wa, Aberaham yireduma yaahi wa, la yamam sɛba n zoti Yinɛ wa, Yinɛ tum faarɛ yelehum buna wa bo la tumam na.",su wa n de abraham yaahi lasaba n daga yuuduma zana n bo kalam puuhayin wa la dela ti wuuha ti yin ni daa bo ti faa,1.0,0.7303
+962,"Tɩ Sɔ Nawẽnnɛ, la tɩ Zuudãana Azezi-krisi wʋn ẽŋɛ fʋ yel-sõnnɛ, dee zoe fʋ ninbãalga, dee bɔ fɔ sũ-mãasʋm.",ti sɔ naawien na le ti zuudaana jiu kis wu eŋ fu yelsu ni die zo fu ninbaanliga di bɔ pusu,1.0,0.4321
+963,"Tɩ tɩdarɛ la tɩ a yõ la bug-zũusi lagɩm na Nawẽnnɛ nẽrba la pʋʋsgɔ, zeele malɛka la n ze Nawẽnnɛ nẽŋam na nuusum zɔnna saazuum.",ti daar la ti a nyɔɔ libugizuunsi lagum na naawen nɛrba la poosigɔ zili malaka la n zi naan wen ni ŋa ni nuusum zɔna saazuu,0.8,0.33
+964,Yinɛ nɛreba tuha kɔbega la tuha pinaahi la anaahi en tari Yinɛ daalehum.,innisuŋra ayima mi kenimina la yini seem nfo la daaliho,0.9231,0.7288
+965,"Mam ẽŋɛ daarɛ ayɩla mɛ koom pʋam, wʋntɛɛŋa la yʋʋŋɔ.",daryi la m koom pu ta la,0.8,0.6098
+966,Ti a nyaa zia uureŋɔ la zuo gee paala nɛrekuuŋɔ la.,tabɔna la nwurŋ la poan ge paal nɛrkooŋla,0.9091,0.5
+967,"Tõma n tarɩ pʋtẽerɛ guura sɛla la botɩ tõma zɛ la kãŋkãŋɛ Nawẽnnɛ nẽŋam, wʋ kaaga n ka tẽŋa kẽ paagɛ pʋam pʋam yõkɛ kãŋkãŋɛ la.",ma tar poteɛr guura sila la bu ti tu masila kankaŋi na win ni neɛ ŋa u kaaga nkaah te ŋa kiɛn paa a pɔɔ npɔɔ nyɔ kikankaŋi,1.0,0.4
+968,"La de la yʋʋŋ-ẽna tɩ ba dɔgɛ ya Fãagra la Adavidi tẽŋa pʋam, ẽŋa n de Zuudãana Krisi la.",dela nyoɔn i na tiba dɔ yaafanra la aadaviib teiŋa puɔn iŋandizuudaana kii l,0.9474,0.3731
+969,Nẽr-sɛka tɩ Nawẽnnɛ Sɩa boe la ẽ lɛ mãa n mi Nawẽnnɛ Sɩa la yelle.,stinawens bo la nle maa mi nawa,0.8,0.56
+970,"Yetɔgebuna dela seem daana en zãli ŋmarebibehi siyopɔi a zuɔ nuo puan la, seem en eere salema butolehi siyopɔi zeelehi la tiŋasuka la yetɔgum.",itɔge wa zeella semdaana n gur ŋmar bibihi siyopɔi azuunuo ge kena kaara salima buto lela zeelehi siyopa la mmi sat,0.9583,0.4786
+971,"Ti Mɛɛri yee kɛ̃ la en wuu ŋmarehi sitã, gee lebe kule.",ɛti suŋra la waan pugla waa zennna wa yel n yeti sumaahi bɔ na la hɔ te naayi ni bo la fo mɛ ge mi ka kasu mu bo ho,2.4167,1.6829
+972,"Tõma mi mɛ tɩ Nawẽnnɛ n vooge tɩ Zuudãana Azezi la, a mẽ wʋn po vooge tõma mɛ la Azezi, la a wʋn lagɩm tarɩ tõma la yãma sẽŋɛ a zẽam.",ma mii mi ti naanweɛn nan en booki tizuura lasijii la a ma u po vook tuma ma laa sizii la a wo lagu tar tuma la yamaa seŋ a sina,0.7742,0.45
+973,“Mini ya nɔtɔgehe pumparenduma la en kini ya zian na wa yele.,mpaanite ba dela yinni nɔtɔɔhba la ba ausa,1.0,0.7292
+974,"Azezi-krisi dɔka daan ẽŋɛ la wãna: A ma Amaari daan yetɩ a ele la Azozɛfʋ, la ba daan nãn ka gãarɛ la taaba, dee tɩ a tara pʋʋrɛ, la de la Nawẽnnɛ Sɩa n botɩ a tara pʋʋrɛ la.",daa eŋ la wa na amaa amaarii daa yeti a lila zyoseu la ba daa nan ka gaan la taaba dee ti a tara poor  la de la naa wen sib bot a tar uur a,0.6154,0.3692
+975,"Tɩ Apɩyɛɛrɩ soke ẽ yetɩ: «Yele ma, yãma n koose ya vaam na, ligri la wuu n wãna bɩɩ?",asun yyelma yamaa n koos yaa vaan na lii le wuu ŋan na ii,0.8421,0.4918
+976,Yamam ka mi ti beemduma kan kɛ̃ Yinɛ sɔɔlum la puan?,amɛhi mi suŋa suŋa ti tun fɛɛnhaduma kan taan bɔna naayinɛ sɔɔloŋ la poan,1.0,0.875
+977,"Tɩ basɛba zozoe yetɩ: «Kʋlkãarga n dolɩ ẽ, a de la zɔlgɔ, bẽm tɩ ya sɛlsra ẽ?",tiaokulkaariga n doli in a di le zɔligɔ bin ti ya sil s a,0.8824,0.5
+978,Ya ka mi ti ya ihe la dela Kiresta dinɛ?,amahi mi te ya iinhi la dela krista iŋa,0.6,0.4333
+979,"La sãn dɛna mam, yãma bɩɩ dũnia wã sarɩyaditba sãn tɔgra mam yelle seem, la ka ɩtɩ mam seere.",a ada na ma yama bii dunya wa saria dii ti basantɔgira man yel see la kaama see,0.8947,0.3194
+980,"Nawẽnnɛ yʋʋn põn dẽŋɛ looge yɛm tɩ a ẽŋɛ la sɛla n ãn sõŋa gãnna bɔ tõma, bɛla tɩ a ka botɩ ba masɛ sɛla woo pʋam, tɩ tõma ka naagɛ la ba.",awon ni yuun pɔn dɛŋiloog yan ti a eŋ la sala nan suŋa gana bɔ tuma ba la ti a ka bo ti ba mar sɛla wee pua titum man ka naagi la ba,0.7576,0.301
+981,Kelehe ya mam yeti seere wa.,laiŋ ba pakere ti ba sɔkera taaba ti ŋana wa,1.5,1.1818
+982,"Dia la en dikɛ kaabɛ baga la en de sɛla bii, baga la en de sɛla.",isaka ti ba dikekaanbɛ bagre la tar la vuunrɛ bii baga la mahi n tar vuunrɛ a,0.875,0.7447
+983,Mam sose Zuudãana la nõorɛ bʋtã yetɩ a botɩ bõn-ẽŋa fõrgɛ dee basɛ mam.,n so zuuraa na la nɔr botaa itaaboti bu ŋafɔ  bas a,1.0,0.4821
+984,"Zoti ya seem en wan ku ya inganɛ la, gee tara paŋa ti a dikɛ ya sia bahɛ bugum puan la.",ela seendaana nwan taam baahi ti ya ki ge ti ya han ki baahi a tari pansaka nwan dik ya bahi namhiseko n ka tar baahigu puan,1.1429,1.0615
+985,"Tɩ beere wiige, tɩ tõma paagɛ Sidõ tẽŋam, tɩ Azuliyusi ẽŋɛ Apolɩ sõŋa bɔ ẽ nõorɛ tɩ a sẽŋɛ ka bɩsɛ a sɩrdõma, dee tɩ ba sõŋɛ ẽ.",ti beeri wiige ti tuma paag sidon teŋa ti azuliyus iŋa apolsuŋa bɔɔnɔɔ tasi ka bi sa siiduma dee ti ba sɔŋ,0.8571,0.3125
+986,"Beere n ta nyiie la, ti malema kiinduma la zaa, la yizuto kiinduma pun sɔhɛ mɛ la taaba ba wan iŋɛ seem ku Yezu.",likayooŋyooŋa ti maalima kiɛnduma la woo la kpiɛnduma la tɔgete ba ku yesu ba lo,0.7917,0.6395
+987,"Ẽŋa n bɔɔrɩ tõma bʋraanɛ tɩ tooro wuu pʋam, tɩ tõma n yẽtɩ bʋraanɛ na, tõma mẽ wʋn yãŋɛ sõŋra nẽr-sɛba wuu n boe tooro buuri wuu pʋam bɔ ba bʋraanɛ.",ŋaa bɔɔr tuma buraa na titooru wuu puɔ ti tuma ye ti buraa na ti ma mi oe nya ŋa sora nɛr sba wuu nbotoor buur wuu poɔ bɔ ba bura na,0.9032,0.307
+988,"Gee lan de seem la, a waam la buyina zaa zaa baahegɔ saŋa buuri wa puan, ti a fooe beem bahɛ, doohe a dikɛ a mɛŋa kaabɛ.",ge nanana wa a toondaa waan la buyina na bo nɛra woo ti a deka la amɛŋa bo buyi na ti,0.8519,0.7111
+989,"Ba zɔa la ãn wʋ bõnsɛɛdõma la, ba tarɩ la zuto bãma tɩ ba tarɩ ɩta nẽrba beem sãana ba.",ba zɔla aan woo busidima la ba ta le zutobama ti ba tari ita nɛrib biim saana a,0.75,0.3182
+990,Bala mɛa ti Asaala Dayua lɛbega na ta ana.,alabega daarɛ naa ta yeti laana la bala,1.0,0.6364
+991,Sia la kɔɔm bɔta mɛ gee inganɛ la la n tari tɔregɔ.,aayuu la yuu ni baah ba yehe keŋɛ oli zori zuo yesu nyaa yeli ba te yuuŋko na wa ya zaa a,1.75,1.4359
+992,"Ti a yeti, “N yeti ya la yelemɛŋerɛ wa, pɔkɔ-naha wa en bo gana ba zaa.",a yeti n yeti ya mi tipokɔɔnr wa bogana sɛba woo mbola,0.625,0.5882
+993,"La bõntarsa mẽ ẽŋɛ sũ-yẽlga Nawẽnnɛ n sikri ẽ na, seere n soe la, a bõntarsõm na wʋn tole wʋ mõ-puuro la.",abutisa mi iŋsuyaliga naawen nsikni na see nsu la aa butasa toomupuua,0.9091,0.4684
+994,"A sãn kẽera mĩ, dẽnɩ tɩ a tara dũnsi zɩɩm ka bɔ Nawẽnnɛ, a mẽŋa tuure, la nẽrba tuure ĩyã.",sankiɛnmi dan ti aa taar  duunsi i kaabɔ naawa na a miŋa tuur la nriba tuurinyi,0.9,0.4179
+995,"Amelkisedɛkɩ yʋʋrɛ la võorɛ de la: «Naba n ɩtɩ sɛla n masɛ», sɛla n paasɛ, a de la Salɛm naba, n boorɩ tɩ la yetɩ: «Sũ-mãasʋm naba».",melikisedek yi u lafɔɔnr dela a naa ba n i ti si la nma si sila mpaa si a dela salim naa ba m boo ti le yeti suumaasum na,1.037,0.3579
+996,"Ba yuum ka mi sɛla n yeti la iŋɛ, ta paaɛ seem maa ti koom la waam na di piiɛ ba zaa kiŋɛ.",ba ka mi ti sila waa eŋɛ ti koo la nyaa waa na di ba asa,0.6957,0.6061
+997,"Damasekuse tiŋa puan, Aretase en wa dɛna timbihega nɛŋa daana saŋa la, ba wa bahɛ ti gureba n gura Damasekuse tiŋa nayahi la zaa, ti ba taam nyɔkɛ mam.",damaskus tiŋa pnaba aritas bahe titibiherba daa di kenɛriba guu tiŋa la na yahe la ba taa nyɔki maa,0.8621,0.5294
+998,"“Tu bo fum fara fara, Gani zaa Yinɛ wa.",tuyin gaŋzaayinɛ u del,1.0,0.6786
+999,Tõma ĩyã tɩ tɩ tarɩ dũnia wã zuo ãn wʋ fuu-deego.,man iy ti ti tar dunia wa zuu u aa u fuudeeu,0.9091,0.3784

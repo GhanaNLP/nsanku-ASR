@@ -1,27 +1,7 @@
 iso_639_3: gur
 language: Ninkare
-num_samples_per_category: 300
+num_samples_per_category: 1000
 categories:
 - bible
 - jw
-benchmarks:
-- model: KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en
-  model_url: https://huggingface.co/KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en
-  owner: KhayaAI
-  params: 0.6B
-  wer: 1.0087
-  cer: 0.5562
-  per_category:
-    bible:
-      wer: 1.0263
-      cer: 0.6638
-      samples: 300
-      valid: 295
-      avg_seconds_per_sample: 0.1
-    jw:
-      wer: 0.9911
-      cer: 0.4486
-      samples: 300
-      valid: 298
-      avg_seconds_per_sample: 0.08
-  source: evaluated
+benchmarks: []

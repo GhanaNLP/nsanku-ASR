@@ -27,10 +27,17 @@ ORG_ONLY = False
 
 # Exclude generic "supports all languages" base models. A model is kept only if it
 # explicitly targets a modest set of languages (HF language-tag count <= this).
-# This drops global base models (Whisper ~99, MMS ~158, SeamlessM4T ~96, XEUS ~4024,
-# faster-whisper ~100) while keeping language-specific and African-multilingual models
-# (e.g. UBC-NLP Simba = 39 African langs, Sunbird = 51 African langs).
 MAX_LANG_TAGS = 60
+
+# Only benchmark models trained for a SINGLE language (drops multilingual models such
+# as Simba, Sunbird, Whisper/MMS bases, and multi-language fine-tunes). A model counts
+# as single-language when its HF config language tags resolve to exactly one distinct
+# language (iso 639-1/639-3 synonyms and Akan variants are collapsed).
+SINGLE_LANGUAGE_ONLY = True
+
+# When two eligible models share the same basename across different orgs, keep one:
+# drop the ghananlpcommunity copy if present, else keep the earliest-published repo.
+DEDUP_SAME_BASENAME = True
 
 # Paths
 ROOT = Path(__file__).parent.parent

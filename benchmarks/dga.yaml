@@ -1,6 +1,6 @@
 iso_639_3: dga
 language: Dagaare
-num_samples_per_category: 300
+num_samples_per_category: 1000
 categories:
 - bible
 - jw
@@ -9,119 +9,83 @@ benchmarks:
   model_url: https://huggingface.co/KhayaAI/w2v-bert-dga
   owner: KhayaAI
   params: 0.6B
-  wer: 0.3347
-  cer: 0.1757
+  wer: 0.3184
+  cer: 0.1632
   per_category:
     bible:
-      wer: 0.2255
-      cer: 0.1661
-      samples: 300
-      valid: 300
+      wer: 0.1741
+      cer: 0.1222
+      samples: 1000
+      valid: 1000
       avg_seconds_per_sample: 0.05
     jw:
-      wer: 0.4438
-      cer: 0.1853
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.04
+      wer: 0.4627
+      cer: 0.2042
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.05
   source: evaluated
+  model_class: non-llm
 - model: waxal-benchmarking/mms-300m-waxal-dga
   model_url: https://huggingface.co/waxal-benchmarking/mms-300m-waxal-dga
   owner: waxal-benchmarking
   params: 0.3B
-  wer: 0.5925
-  cer: 0.2493
+  wer: 0.585
+  cer: 0.2374
   per_category:
     bible:
-      wer: 0.5532
-      cer: 0.2464
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.03
+      wer: 0.526
+      cer: 0.2053
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.02
     jw:
-      wer: 0.6317
-      cer: 0.2521
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.03
+      wer: 0.6441
+      cer: 0.2696
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.01
   source: evaluated
+  model_class: non-llm
 - model: waxal-benchmarking/whisper-small-waxal-dga
   model_url: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-dga
   owner: waxal-benchmarking
   params: 0.2B
-  wer: 0.622
-  cer: 0.3102
+  wer: 0.5953
+  cer: 0.297
   per_category:
     bible:
-      wer: 0.5787
-      cer: 0.3187
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.93
+      wer: 0.522
+      cer: 0.2819
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.35
     jw:
-      wer: 0.6653
-      cer: 0.3016
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.64
+      wer: 0.6686
+      cer: 0.3121
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.23
   source: evaluated
-- model: Sunbird/asr-whisper-51-african-languages
-  model_url: https://huggingface.co/Sunbird/asr-whisper-51-african-languages
-  owner: Sunbird
-  params: 2B
-  wer: 0.6348
-  cer: 0.2941
-  per_category:
-    bible:
-      wer: 0.5129
-      cer: 0.2626
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 1.58
-    jw:
-      wer: 0.7567
-      cer: 0.3256
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 1.02
-  source: evaluated
+  model_class: non-llm
 - model: waxal-benchmarking/whisper-tiny-waxal-dga
   model_url: https://huggingface.co/waxal-benchmarking/whisper-tiny-waxal-dga
   owner: waxal-benchmarking
   params: 37.8M
-  wer: 0.8323
-  cer: 0.4792
+  wer: 0.7379
+  cer: 0.4032
   per_category:
     bible:
-      wer: 0.7845
-      cer: 0.4866
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.73
+      wer: 0.6537
+      cer: 0.363
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.17
     jw:
-      wer: 0.8801
-      cer: 0.4718
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.53
+      wer: 0.8222
+      cer: 0.4433
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.13
   source: evaluated
-- model: KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en
-  model_url: https://huggingface.co/KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en
-  owner: KhayaAI
-  params: 0.6B
-  wer: 0.8765
-  cer: 0.4179
-  per_category:
-    bible:
-      wer: 0.8503
-      cer: 0.451
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.09
-    jw:
-      wer: 0.9027
-      cer: 0.3847
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.08
-  source: evaluated
+  model_class: non-llm

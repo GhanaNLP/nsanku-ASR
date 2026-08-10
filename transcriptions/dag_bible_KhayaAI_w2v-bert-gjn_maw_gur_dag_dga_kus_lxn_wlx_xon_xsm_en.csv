@@ -299,3 +299,703 @@ sample_id,reference,hypothesis,wer,cer
 297,O chɛ ka buɣim sal’ nɛma mini chilibi buɣim kul luri ninvuɣ’ biɛri zuɣu; ka zaŋdi pɔhim tulli darigiri bɛ tibili.,ka bugim sal nɛma mini chilbi bugem ki lur ninvug biɛr zugu ka zaŋ ni pɔɔn tuuli darigri be tibil,0.8095,0.2472
 298,N ni kul di tiŋgban’ shɛli fali maa biɛhigu shee viɛla; n ni di fali shɛli maa viɛla.,n ni kul di tiŋgbaŋ shɛlfalimaa biɛhigu shee viɛla n ni di fa shɛli maa viɛla,0.2778,0.0615
 299,"Ka ti dimnim’ maa daa yɛli, “Bɛ ku baŋ bee n-nya binshɛli pɔi, ka ti kana ti liri ba ku ba, ka tuma maa zani tariga.",ti dimni maa daa yeli bi ku baŋ bee nnya binshɛl pɔi ka ti kana ti lara ba ku ba ka tuma maa zani tarega,0.2692,0.1071
+300,“Yiɣimi kaman nooŋa la n-chaŋ zoya zuɣu”?,igma ke maa noo ŋi la nchaŋ so ya zuu,1.1429,0.2903
+301,puuni yi nti chɛris’ a; o ni yih’ a dunia ŋɔ ni.,uuniyi nti chersa o ni yie a dunia ŋɔni,0.5833,0.1212
+302,Paɣimiya Yawɛ!,,1.0,1.0
+303,Dimbɔŋɔ nyaaŋa ka niriba mini bɛ paɣiba daa ti piligi kumdi pampam niŋdi bɛ dɔɣiriba bɛn nyɛ Yɛhudianim’ la.,dimbɔŋɔ nnyaaŋa ka niriba mun be pagiba daa ti pilige kumdi pampam niŋdi bidɔgriba baŋ nyɛ yehudianim la,0.4737,0.1364
+304,sara maligu shee din be Yawɛ jɛmbu duu din be Jɛrusalɛm la.,a aldin be yaa wee jembu duu din be jerusalɛm la,0.6667,0.3404
+305,"Ka o yi zaŋ o nini sɔɣi, ninvuɣ’ so beni ŋun ni tooi nya o?",oyi siŋ o ninisɔge ninfisobeeni ŋa ni too nye u,0.8667,0.3571
+306,"Lɛvinim’ ni gbibi bɛ bidibbina bɛ nuhi ni n-zani gili naa, ka ŋunkam kpe nayili maa na, bɛn’ kum’ o.",levinim ni gbibi babidobena be nuh ni nzan gele naa kaŋunkan kpen na yil maa na ba ku ma,0.7,0.2162
+307,O yaannim’ shɛba n-daa lan nyɛ Amaria mini Shɛfatia ni Mahalalɛl bɛn daa nyɛ Pɛrɛz daŋ ni niriba la.,byanim sheb daa lan nye amariya min sefatiya ni mahalalel ban daa nyɛ peres daŋnɛ niriba a,0.7368,0.2405
+308,M birimmi zaa n dimnim’ ni yɔri vu’ shɛli zaŋ.,m berem ma zaa ndimnim ni yɔr vushali zaŋ,0.7,0.1471
+309,"A bɔhiya, ‘Ŋuni n-lee beni n-sɔɣiri yɛm yɛtɔɣa, ka bi mi di gbinni ŋɔ?",a bɔhi ya ŋuni n lee beini n sɔari yam yetɔga ka bu mi di gbin ni ŋɔ,0.8571,0.1373
+310,Yisa wuhi Pita ni yɛn chihi ni o bi mi ŋun’ Yisa shɛm.,isa min u nyaandoliba maa nira ʒiyadir bindirgu maa ka o zaŋ borobo niŋ alibarika niŋ di ni ka ŋmaa ŋmaa li zaŋ ti ba ka yali n niŋgboŋ bala zaŋmiya le ŋu ba,2.5385,2.575
+311,"N yi nyɛla ninvuɣ’ biɛɣu, mbusim be n zuɣu!",yi nyila ninvu bigo nbusum beno,0.8889,0.375
+312,so ti ku lan be nimaani.,sotiku lan bee nimaani amaa tin ti kpalim le dabari ŋun kab ti gari babilɔnn di ni,2.6667,2.6667
+313,"ka dabiɛm din galisi nyaŋ ma; ka n yɛli, n di bi zaɣisi ka m mali kpiŋkpama kaman ŋmani la.",ka dabiem din galsi nyaŋ ma kan yali n di bi zagise kan mal kpaŋkpama kamaa ŋmani laŋ,0.6,0.1449
+314,"N ni daa nam dunia ŋɔ saha shɛli, a daa beni?",ni daa nam dunia ŋosaha shele a daa beeni,0.4545,0.1515
+315,” Di saha ka bɛ daa silim bɛ zuɣuri tiŋa n-jɛmdi Naawuni.,disaha ka be daa silim be zuuri tiŋa njamdi naawuni,0.5455,0.093
+316,"Yidaampaɣiba, zaŋmiya yimaŋ’ ti yi yidaannima ka di be kaman yi zaŋ yimaŋ’ tila ti Duuma la.",yidaan pagba  zaŋmiya yimaŋ ti iyidaannima kadi bee kaman yi zaŋ yimaŋ tila ti duuma la,0.4118,0.0694
+317,bee a yuma bemi kaman daadam yuma ni be shɛm.,bee ayuma bemi kaman daadam yuma ni be hɛŋ,0.3,0.0571
+318,"Bɛ bɔhira, “Bɔ n-niŋ ka ti lɔri noli ka a bi nyara?",babɔ niŋ kati lɔr nole kaa ba nar,1.0,0.3333
+319,"O daa lan bo salima laa din tibisim nyɛ giram kɔbiga ni pia, ka tulaale zim pal’ li.",daa la bo salima la din temsim nyɛ gram kɔbiga ni pia ka turalzem pal la,0.4444,0.1875
+320,Di nyaaŋa ka bɛ daa lab’ kuli Jɛrusalɛm.,dinya a ka bi daa lab kul jerusalɛm,0.625,0.1613
+321,"O daa lan bo salima laa din tibisim nyɛ giram kɔbiga ni pia, ka tulaale zim pal’ li.",daa lan bo salima la dan temsim nyɛ graam kɔbiga ni piya ka tur alase pa,0.5556,0.2812
+322,"Yɛlimaŋli, a duhi ma ka n gari n dimnima; ka yihi ma duŋtaariba nuu ni.",yelimaŋli a duh ma kan gariŋ ndimnima kyii madutaarbnuu ni,0.8,0.1481
+323,"Ka Gomna Pailɛt daa lan yi nti yɛli Yɛhudianim’ maa, “Nyamiya, n yɛn zaŋ o mi yina nti wuhi ya ka yi baŋ ni m bi nya o taali baabiɛla.",gɔnlpaali daa lan yi nti ye yeudianim maa nyamiya yee zɔŋ mi n yi na nti wuhi ya kiibaani b nyoor taal baabiɛl,0.7,0.28
+324,"Bɛ tɛha din ni chɛ ka bɛ baŋ nyɛla din be zibisim ni; ka bɛ nuu ka Naawuni ni ti nyɛvil’ shɛl’ la ni, dama bɛ nyɛla bɛn be ʒilinsi ni ka nyɛ suhutunanima.",be tia di niche ka bi baŋ nyala den be zibsim ni ka bi nuu ka naawuni ni tinyɛvel shel la ni dama binya la baŋ be jilinso ni ka nyɛ su tu na ni ma,0.6471,0.1724
+325,"Yɛlimaŋli ka n yɛr’ a, a ku tooi yi nimaani faashee a ti yo bɛ ni zal’ a san’ shɛli zaa, ka di laɣifu ku guui.",elimaŋli kan yɛra a ku too yi nimaan ni paashee a tu yoo benɛzalal sam shɛl zaa kadi la fu ku guu,0.8077,0.1899
+326,"Bɛ daa yɛlila tɔbbihi maa, “Miriya ka yi zaŋ yi ni gbahi shɛb’ maa kpe yaŋɔ na, dama yi bɔri ni ti lan tumla taali Yawɛ sani m-pahi ti ni pun tum taal’ shɛli mini alahichi shɛli la zuɣu.",b daa yel la tɔbbee maa mariya ka yi zan yi ni gbaa shɛb maa kpe yaŋɔ na dama yibɔr ni ti lan tum la taali yaa wee sani m paa ti ni pun tum taali shal min aalaachi shɛl la zuɣɔ,0.5385,0.1702
+327,Masia zuɣu ka tinim’ bɛn nyɛ Yɛhudianim’ mini bɛn pa Yɛhudianim’ zaa ni tooi chaŋ ti Ba Naawuni sani o Shi’ yino la zuɣu.,masiya zugu ka ti nin ba nyɛ yehudianim mini bam pa yehudianim zaa ni too chaŋ ti ba na a wosani o shi yilo la zuɣɔ,0.5833,0.1613
+328,"Ka Yisa garigi bɔhi, “Yinim’ bɛn ka yɛda mini ʒiɛman’ golimanim’ ŋɔ, daba ala ka m mini ya yɛn tooi laɣim be bee daba ala ka n yɛn tooi din ya suɣilo?",ka yisa garige bohi yinim ban ka yɛda mini ʒiɛman golimanim ŋɔ daba la kan miniya yan too lagim bee bee daba la kan yan too din ya sugulu,0.5625,0.1339
+329,"So yi mali piɛri kɔbiga, ka bɛ ni yino ti bɔrigi, o ku chɛ kɔbigayinika la zoya zuɣu bɛ mɔri ŋubbu shee ka gbaai ŋun bɔrigi maa shee bɔbu?",e mai pirkɔbga ka bi ni yino ti barigi u kucha piɛrkɔbiga yin kala zuya zɔgɔ bimɔriŋbbushee kaa gbaa ŋunbarigi maa hee bɔ b,0.8621,0.2523
+330,ka biŋkɔbiri zaa bɛn gɔri ginda nyɛla n dini.,abiŋkɔbir zaa ban be gɔr ginde nyɛ na din,1.0,0.2778
+331,ka yi ni zaŋ shɛli taɣi yimaŋ’ nyɛla yaɣiri.,yini zaŋ shele taayimaŋ nyɛla yaar,0.7778,0.2647
+332,"Ka bɛ kuhi pam yɛl’ o, “Kpahim’ o tabili dapulli zuɣu!",a beko pam yelo kpa mutabile dapulli zugu ka gomna palt bɔɔ ba bozuɣu kuun bee bokoo le tum ka b maam mɔvur pam yeli kpa mutabl dapuli zu,2.5455,2.1795
+333,“Ti Duuma Shia Kasi be n zuɣu.,nnibɔrodinzugu a yi ni jam ma di zaa ni lee gaa di ni ka yisa garige yel o di sabya salkulni jam le o duuma nawun,3.7143,3.2727
+334,Ka yi ni bi mi ninvuɣ’ shɛba ni ti di yi puri ni bindira ni yi tuma zaa daanfaani.,yini b mi ninvug shɛb ni ti di yi pura nɛ bi dira ni yi tuma zaa daan faani,0.6316,0.129
+335,"Dama Yawɛ ŋun nyɛ yi Naawuni ŋɔ nyɛla Naawuni ŋun zɔri nambɔɣu, o ku chɛn ya bahi bee n-kun ya; o mi ku tam o ni daa po pɔri lo yi yaannim’ alikauli shɛl’ la yɛla.",ma yaa wee ŋun nye yi naawun ŋɔn nya la naawoni ŋun zɔr nan bɔgu u ku cheen ya bahi bee nkun ya u mu kutam o ni daa po pɔr loo yiyaannim alikawuli shɛl le yɛla,0.6667,0.1803
+336,"Ka di niŋ ba alahiziba pam, ka dabiɛm kpe ba ka bɛ bɔhiri taba, “Bɔtaa nira n-lee bɔŋɔ hal ka sanʒiɛɣu mini kɔgbana ti wumd’ o noli?",adi niŋ ba alahaziba pam ka dabim kpɛ ba ka bi bɔhɔr taba bo taa nira nlee boŋo hale kasanʒɛgu min kogbana ti wum doonole,0.6667,0.17
+337,"O daa chaŋ ti kpɛla Naawuni jɛmbu duu nti ŋub’ sara maligu bɔrɔbɔro shɛŋa din daa chihiri ni so ŋubi naɣila maligumaaniba kɔŋko la, hal ka daa pii li ti ti bɛn daa be o sani maa.",daa chaŋ ti kpela nnaawun jambu duu nti ŋub sara maliga boroboro shaŋa den daa chihir ni so ŋubi nagla maligumaaniba koŋko la hal ka daa piili titi ban daa be u san maa,0.4865,0.1295
+338,"Dama ti kul nyɛla sɔhila niriba, ka bi mi shɛli; ti biɛhigu dunia ŋɔ ni ŋmanila mahim din vuura.",amatikul nyɛla sɔhula niriba ka bu mi sheli ti biɛgu dunia ŋɔ ni ŋmanila mahim din vuura,0.3684,0.08
+339,"Lala zuɣu ka Yɛhudianim’ daa suhi Gomna Pailɛt ni o bahim’ tɔbbihi noli ka bɛ kab’ bɛ ni kpahi shɛba n-tabili dapula zuɣu maa gbaya, ka di chɛ ka bɛ kpi ka bɛ siɣisi ba na ti sɔɣi.",lala zuɣu ka yehudianim daa suhi gomna pailate ni o bahŋ tɔb bee nɔle ka bi ka be ni kpaa shɛb tabeli dapulo zugo maa gbaya ka di che ka bi kpi ka bisasiba na ti sɔa,0.5263,0.2117
+340,Kɔŋ maa daa kul malila naa Uzia hal ni o nyɛvili tariga.,ŋmaa daa kul malla na ayuuziya hal nɛ u nyɛvil tarega,0.75,0.2273
+341,Ka bɛ daa zaŋ kpam ŋmiri zim viɛlli m-pali bina ayi maa ni bɛ zaŋ mali chi sara.,a bi daa zaŋ kpam ŋmir zum viɛlli m pal binaayima nɛ b zaŋ malichisaara,0.7222,0.1475
+342,"Jɔn daa yɛrila laakum kɔbiri binyɛrigu, ka mali gbaŋ lɔr’ o shee ni, ka o bindirigu daa nyɛla toli mini shiri.",ɔnn daa yaa laakumkɔbrbinyarigu ka mali gbaŋ looroshee ni ka u bindirigu daa nyala tɔli mini shii,0.5714,0.1744
+343,Izraɛl zuɣulaannim’ mali sara.,israe zoo laanim mal sa,1.25,0.4
+344,"Ka tuumba maa daa ti labina nti yɛli Yisa bɛ ni daa niŋ shɛlikam zaa, ka o daa zaŋ ba yi kpaŋa n-chaŋ tin’ shɛli din yuli booni Bɛtisaida.",atuumbu maa daa ti lab na nto yel yisa be ni daa niŋ shɛlikam zaa ka u daa zaŋ ba yikpaŋa nchaŋ tiŋpan shɛli din yuli booni betsaada,0.4138,0.1321
+345,Bɛ ŋmanila mɔri din be mɔɣu ni bee mɔ’ shɛŋa din bili mɔpilli zuɣu ka na bi zooi ka wuntaŋ’ ŋme n-ku li.,ŋma le mɔr din be mɔɔa ni bee mɔshaŋa din bil mopilli zugu kana bi zooi ka wunta nyɛŋ kuli,0.6522,0.2179
+346,"” Ka dabiɛm daa gbaai Jɛhɔshafat, ka o niŋ nimmoo suhi Yawɛ, ka moli molo ni sokam lom noli Juda tiŋgbani maa ni zaa.",debiɛn daa gbaa jehoshafat ka u naŋ nimosuuyaa we kamoli molo ni sokam lɔb nole juda tiŋgbana maa ni zaa,0.6087,0.2111
+347,O lan nyɛla kɔribiɛrilana ŋun suhu kul yɛla bɔhigu chɔɣima mini yɛtɔɣ’ yoya tɔɣisibu zuɣu.,lan nye le kor biɛrla na ŋun su kul yela bɔu chɔgi ma mini yetɔb yoe yatɔsib zuga,1.0,0.2838
+348,O lan ka kpe; o neei kum ni kaman o ni daa pun yɛli shɛm la.,la ka kpee unee kum ni kaman wan ni daapun yel sɛm la,0.625,0.2558
+349,Ka Hɛzɛkia daa zali ni bɛ pirigim’ maligumaaniba mini Lɛvinim’ maa.,ahezekaya daa zale ni buperge malugumaaniba min lebinimma,0.8182,0.2963
+350,"Yɛlli ŋɔ ni daa niŋ saha shɛli maa, n daa ka Jɛrusalɛm, dama di daa nyɛla Naa Atazɛrikisɛs ni daa nyɛ Babilɔn naa yuun’ pihitanaayi saha ka n daa lab’ o sani.",ele ŋɔ ni daa niŋ saha sheli maa n daa ka jerusalɛm dama di daa nyi la naa ataizases ni daa nya babilɔn naa yuun pita na ayi saha kan daa leb u san,0.4688,0.1557
+351,"Binshɛli daa ka Alikauli Adaka maa puuni, naɣila Musa ni daa zaŋ kuɣ’ parilana ayi shɛŋa niŋ di puuni Sinai Zoli zuɣu luɣ’ shɛli Yawɛ ni daa lo Izraɛlnim’ alikauli bɛ ni daa yi Ijipti tiŋgbɔŋ ni na nyaaŋa la.",i shɛl daa kaa alikaul a dakam aa puu ni naala muusa ni daa zaŋ kɔɔpa la na ayi shaŋa niŋ di puun ni siinaa zol zugu lu shɛli yaa wee ni daa lo israɛlnim alikauli bi ni daa yi ijipti tiŋgbɔŋ ni na nyaaŋa la,0.625,0.1463
+352,"Bɛ ni daa booi kpam bahi sara maligu bimbini maa zuɣu ka zaŋ li ti Naawuni maa nyaaŋa, ka bɛ daa maan di sara shɛli m-bala.",b ni daa boe kpambahi sara maligu bimben maa zɔ ka zaŋ li ti naawunni maa nyaaŋga ka bidaa maa di sara shɛl mbala,0.4615,0.1368
+353,ka tin ya yaa; ka chɛ ka yi be kaman pu’ shɛli din puuni mali kom; ka lan chɛ ka yi be kaman kɔbil’ nini.,katin yayaaka che ka yi be kaman pushel di puuni ma kom ka lan che ka yi be kaman kɔbil nini,0.44,0.0921
+354,"Ka Yisa daa naai ŋahili ŋɔ ka ŋmaligi yɛli, “Ŋun mali tibili, ŋun’ wumma!",yisa daa naa ŋaha li ŋɔ ka ŋmalige yeli ŋu mali tibile ŋu,0.7143,0.2545
+355,"Ka o daa be bɛ sani hal ni yuma ayɔbu n-kul sɔɣila Naawuni jɛmbu duu maa ni, ka Atalia daa leei naa su tiŋgbɔŋ maa.",u daa be be sani hal ni yuma ayɔbu nkpel sua la naawun jambu duu maa ni kaatalea daa lee naa su tiŋgbann maa,0.48,0.1818
+356,O yaannim’ shɛba n-daa lan nyɛ Zadok mini Mɛrayɔt ni Ahitub ŋun daa nyɛ maligumaaniba zuɣulan’ la.,yaanim shɛba n daa lan nye zadɔk min marayɔt ni ahitub ŋun daa nya maligumaaniba zuulan a,0.6471,0.1154
+357,"Ninvuɣ’ biɛri yi paŋ liɣiri so sani, bɛ je ni bɛ yo li.",invu bir yipaŋ liri sosani beje nɛ byoli,1.0,0.225
+358,Jɛmmiya Yawɛ ni dabiɛm mini ni sɔhibu.,ema yaa ni dab mi,0.8571,0.6452
+359,N ku pahi bɛ ni n-kɔrigi binyara ʒim vie buɣa maa; m mi kul ku yaai n noli boli di yuya.,n ku pa bi ni n korige bin yara ʒim ve buga maa m mi kul kuyaan nɔle bol di yua,0.6667,0.1846
+360,kaman kɔzɔrim la; ka chɛ ka bɛ no n-taai ba.,kama ko zorim la ka che kaa benɔn taab,0.9,0.2812
+361,Di ku niŋ a lala!,kuo ŋmalgi baa ba ke mi yeliya ni nyala ŋu ni kasamɔn pitagaa,2.6,3.4167
+362,ka suhupiɛl’ maŋli kul be a sani; ka nyaɣisim kul be a nudirigu ni sahakam.,ka sufupelmaŋle kulbia a sani kanyagisim kul bi a nudirigu ni sahakam,0.4667,0.1379
+363,Ka kpamba gba daa ti ba naɣilahi tuhili mini piɛri tuhi’ pia.,akpambagbadaa tibanaalatuulin min pir tuupie,1.0,0.2917
+364,Ka bɛ daa zaŋ bɛ ni tuhi tɔbu n-di biŋkɔb’ shɛb’ la naɣilahi kɔbisiyopɔin mini piɛri tusaayopɔin m-mali sara ti Yawɛ dindali maa.,bi daa zaŋ ba ni tutɔb n di biŋkɔb shɛb la na alahi kɔbs ayopɔin mini pirtusa ayopɔin mmal satati yaa wee dindalima,0.7826,0.1863
+365,"Bɛ daa yɛlimi, “Pa Musa kɔŋko ka Yawɛ daa zaŋ o yɛtɔɣa tɔɣisi.",bi daa yɛlimi paamuusakoomko ka yaa wee daa za u yatuba taasi,0.7692,0.3617
+366,Di yi pa lala Naawuni ni ŋme a luh’ a dimnim’ maa tooni.,iipa lala naa wu ni nyeaa lu atim ni maa tooni,0.7692,0.2195
+367,Dama Juda Naa Hɛzɛkia daa ti la niriba maa naɣilahi tuhili mini piɛri tusaayopɔin ni bɛ kɔri.,amajuda naa hezekaya daa tila niriba maa naa lahatuulin mini piɛr tusa ayopɔɛn ni b koɔri,0.7059,0.1974
+368,"Bɛ ni daa bu tɔb’ zambu maa, ka Naawuni daa nyaŋ Jɛrɔbɔam mini Izraɛlnim’ zaa bɛn daa be Abija mini Judanim’ tooni maa.",bi ni daa butɔbzambumaa ka naawuni daa nyaŋ chɛrbom minni israɛlnima zaa ban daa bee abija mini judanima toonimaa,0.5652,0.1304
+369,Ka Taainim’ shɛb’ bɛn daa be tiŋ’ maa ni daa ʒi zahim mini nɛma balibu kam na ti kɔhi Judanim’ zuɣu ka kɔhi li Jɛrusalɛm puuni Vuhim Dabisili dali maa.,kataayinim shɛb ban daa be tiŋ maa ni daa ʒi zahimmini nema balibukam na ti kɔhe judanim zuu ka kɔh li jerusalɛm puun ni vuhim dabsel dalimaa,0.5667,0.094
+370,Bɛ ni ti teei gili ya yi fɔntinsi zaa ni Yawɛ ŋun nyɛ Naawuni ŋɔ ni zaŋ tiŋgbɔn shɛli tin ya maa ni.,b nito tee gilya ifan tin so zaani yaa wee ŋun nya yi naawona ŋɔ ni zaŋ tiŋgbaŋ se tin yamani,0.8261,0.2857
+371,Ŋun daa lan pahi n-nyɛ Baruk bia Maasɛya ŋun daa nyɛ Kolihɔze yaaŋa la.,un daa lan pahi nnye barok bii masaya ŋun daa nya kolihosi yaaŋa la,0.5,0.1786
+372,Man’ Yawɛ n-yɛli lala maa.,man yaa we n yal lela maa,1.0,0.2632
+373,Musa daa nyɛla tarima n-gari ninvuɣ’ shɛb’ bɛn zaa daa be dunia ŋɔ ni.,bwusa daa nyɛ la tarima n gari ninfɔ shɛb binsaa daa be dunia ŋɔn,0.7143,0.1509
+374,"Bɛ yi to kpani ka o wum di damli, o lari li mi.",toaka u womdedam le u lal,1.0,0.5455
+375,Di bi simdi ni tinzun’ nir’ ŋun niŋ Yawɛ yɛda ti yɛli.,di bi simdi nɛ tenzu nira ŋin niŋ yaawee yda ti yele,0.5833,0.275
+376,Di saha ka o nyaandoliba ayi maa daa ŋmaligi kuli bɛ yinsi.,saaka o nyaandoliba ayima daa ŋmaligi kul biyinsi,0.6667,0.1277
+377,"O gba daa dolila Naa Ɛhab daŋ niriba naba, dama o ma n-daa nyɛ o saawaralana n-wuhir’ o ka o tumdi tuumbiɛri.",a daa dla na ahab daŋ niribanabadama uma daa nyi u saawara lan n wuhir o ka u tum ni tuun biɛr,0.9091,0.1928
+378,Dinzuɣu di pala m Ba Naawuni ŋun be alizanda ni ŋɔ yubu ni bibihi ŋɔ ni yino gba bahi yoli.,dizugɔ di pala m ba naawon mo bie alizanda ni ŋɔ jubu ni biha ŋɔ ni ni yino gba baa yɔl,0.45,0.2676
+379,Biŋkɔb’ shɛb’ zaa bɛ ni daa zaŋ mali suhudoo sara la daa nyɛla naɣilahi pisinaanahi mini piɛlahi pihiyɔbu ni bulahi pihiyɔbu ni yuun’ yini piɛlabihi pihiyɔbu.,bikɔb shɛb zaa bi ni daa zaŋ mal sufudoosara la daa nyar anaa lai kpiisinaanai min pielai pihiyɔb ni bulai pihyɔb ni yuu yini pela bahe piyɔb,0.6923,0.2093
+380,Dama Naawuni mali yiko din ni sɔŋ nira bee n-ŋme o luhi.,dama naa wo mayiko di ni sɔg nira bee nnyau lu,0.6667,0.3023
+381,"Tuhimi yɛda tɔbu la tuhiri suŋ; gbib’ nyɛvili din ka bahigu shɛli zuɣu Naawuni ni daa bol’ a, ka a niŋ shɛhira suŋ ka kahigi di yɛla wuhi shɛhiranim’ pam san’ la.",umi yada tob la tui suŋ gbibi nyevil di ka bahagu sel zugu naawu ni daa bo la kaah niŋ shɛhara suŋ ka kahagiri yɛla wu sɛhira nim pam san la,0.6562,0.2177
+382,amaa ka n daa ti lan gariti nimaani ka bɛ kani; ka n lihi bo ba ka bi nya ba.,amaa kan daa ti la garti nimaani ka bi kani kan lihi bo ba ka bi nya ba,0.35,0.0536
+383,"Ka o bɔhi ba, “Ka yi yɛda niŋbu maa lee bela ya?",koo bɔh ba kiyi yedaniŋbu maa le be la,0.8333,0.2059
+384,"O suh’ a nyɛvili, ka a ti o li; ka di nyɛ nyɛvil’ wɔɣinli din ka bahigu.",osu nyɛvili kaa too o le ka d nya nyɛvil wɔgale din ka bahegu,0.6471,0.2353
+385,"Itiɔpia ni Siiba, ka tiligi ya.",itiopia nɛ siiba ka tilge e,0.6667,0.25
+386,"O daa lan bo salima laa din tibisim nyɛ giram kɔbiga ni pia, ka tulaale zim pal’ li.",daa la bo salima la din tebsi nyɛ graam kɔbaga ni pia ka tur alizim pal i,0.5,0.2031
+387,Man’ ŋun nyɛ dansarika n ni tumdi n Duuma tuma la zuɣu kpamdi ya jaande ni yi mali biɛhigu din doli Naawuni ni daa zali ya biɛhigu so’ shɛl’ o ni daa boli ya boligu shɛl’ la puuni.,man ŋun nye dan sarega n ni tum di n duuma tuma la zugu kpamdi ya jaande ni ya mali biɛhegu din doli naawoni ni daa zali ya biɛhegu so sheli o ni daa boli ya bolugu shɛl la puu ni,0.3684,0.0797
+388,Ka ŋuni n-lee dɔɣi ko’ shɛli din kilim yiri alizanda ni na ŋɔ?,aŋuna le dɔge kusheli dinkelim yir alisanda ni naŋ,0.9231,0.2553
+389,"Ka dabiɛm daa kpe bɛn guli siliga maa pam, ka bɛ ni sɔhira, ka bɛ be kaman kpiimba la.",dibiɛm daa kpee ban gul silga maa pam ka bi ni sɔara ka bu bie kiman kpii bi la,0.6842,0.2308
+390,"Bɛ ni daa piɛbiri kikahi maa, ka ŋmɛri guŋgombihi din mali chaɣisa mini biŋkumda shɛŋa din pahi m-paɣiri Yawɛ maa bɛ daa yɛrimi, “O ni nyɛ Naawuni suŋ ka o yurilim bi naari zuɣu.",ni daa piɛb kikam maa ka nyar kugɔŋ bee di ma chaasa min ni bikumdi shaŋa din pa paar iyaa wee maa b daa yarmi o ni nya naawunsuŋ ka yurilim bi naare zuɔ,0.7353,0.3143
+391,"Di nyɛla din zilim gari kpiimba biɛhigu shee, ka bɔ ka yɛn tooi baŋ?",nyi le di zilim gar kpiim bu biɛhgushee ke bu kaa yan teou baŋ,0.8571,0.2642
+392,"Yisa nyaandoliba maa ni daa wum lala maa ka dabiɛm kpe ba, ka bɛ gbani n-zaŋ bɛ nini kpa tiŋa.",sa nyaandoliba maa niraawom lala maa ka dabiem che ba ka bi gbani n zaŋ be ni na kpa tiŋ,0.65,0.1528
+393,Ka ŋun pa o zuɣu daa nyɛ Zikiri bia Amasia ŋun daa saɣi n-zaŋ omaŋ’ niŋ Yawɛ tuma ni la.,mupoozul daa nye zikirbii amasiya ŋun daa sagi n zaŋ umaŋniŋ yaawee tumani la,0.8,0.2424
+394,N yɛri ya mi ni yɛl’ shɛli din gari Naawuni jɛmbu duu be kpe.,n yariyami ni ya hl din gar naa wujan bu duu becha,0.7857,0.3043
+395,Luɣ’ shɛli din nyɛ liɣa ka so bi lan mi o yɛla soli.,lusele dunya lega ka sobi la mii u yɛla solen,0.8462,0.3684
+396,"O daa bi siɣis’ omaŋa Yawɛ tooni kaman o ba Manaasa ni daa siɣis’ omaŋ’ shɛm la, amaa Amɔn ŋɔ ŋun’ daa kul tumdila tuumbiɛri pahira.",daa bi sasa umaŋ yaa wee tooni kaman bu ba manasa ni daa sasa umaŋ shɛm la amaa amon ŋɔ ŋun daa kul tumdi la tuun biɛr paar a,0.6154,0.2277
+397,"Dahin shɛli ka malaikanim’ daa ti laɣimna ni bɛ ti zaŋ bɛmaŋ’ wuhi Yawɛ, ka Sintani gba daa kana ti pahi bɛ zuɣu.",ka malaikanem daa ti laam na nɛ b ti zaŋ bima nwuhe yaawee kasentani gba daa kana nti pah bizuɔ,0.6957,0.3103
+398,"Suhimiya Naawuni tiri n gba, ka Naawuni ti ma n ni yɛn tɔɣisi yɛtɔɣ’ shɛŋa ka n tooi tɔɣisiri li ni suhukpeeni n-kahigiri lahibal’ suŋ la ashili gbinni ni nyɛ shɛm wuhiri niriba.",omiya naawuntiri gba ka naawontima n ni yan tɔgasir yetɔshaŋa kan ni too tɔgasir le ni sukpeeni n kaigir lahabalsoŋ la a shil gbin ni ni nya shɛm wuiri nɛriba,0.8182,0.227
+399,"Yisa daa lan yɛli yaha, “A mabia yi tum a taali, nyin’ cham’ ti wuh’ o o taali maa a min’ o kɔŋko.",isa daa lan yɛli yaha a maabia yi tuma taali nyin cham ti wee utaali maa aaminnokɔku,0.5217,0.1471
+400,"Jɔn Baptaizira ni daa ti be mɔɣu ni Judia tiŋgbɔŋ ni saha shɛl’ la ka o daa yihiri waazu yɛra, “Niŋmiya tuuba, dama alizanda nam mirina.",n babtaa isral ni daa ti be mɔa ni judiya tiŋgbaŋ ni sahashɛl la ka daa yihiri waazu yɛra niŋmiya tuuba dama alɛzanda nab mari na,0.5,0.1415
+401,"Bɛ ni ti zaŋ yi piɛri ti yi dimnima, ka so kani ŋun ni sɔŋ ya.",ni ti zaŋ yi piɛr tiyudimnima kasokane ŋun ni sɔŋ ya,0.5,0.1111
+402,Ka o bia Ɛsarihadɔn daa di nam zan’ o zaani.,kao bii esteri hadon daa di nam zono o zaani,0.5,0.2121
+403,"Yɛlim’ ba ni bɛ tummi din viɛla, ka nyɛ bundaannim’ tuun’ suma tumbu ni; ka lan nyɛ bɛn tiri pini ni suhupiɛlli, ka yu ni bɛ zaŋ bɛ ni mali shɛli n-sɔŋdi bɛ taba.",yelm baa ni bi tum mi din vila ka nye bundaannim tuunsuma tum bu ni ka lan nye ban tir piini ni suhupil le ka yuu ni bi zaŋ bi ni mal she le nsɔŋ ni bitab a,0.7647,0.1653
+404,Dinzuɣu lala ka Naawuni ni gbaɣiri ŋunkam zaɣisi ni o ku niŋ yi ni lo alikauli ni yi ni niŋ shɛm maa yiya min’ o ni su shɛlikam bahi.,dinzugu lala ka naawuni gbare ŋunkam zaasi ni o ko niŋ yi ni lo alikawuli ni yi ni niŋ sham maa yiya mini uni su sheli kan bahi,0.4138,0.1456
+405,Dimbɔŋɔ nyaaŋa ka Mɔabnim’ mini Ammɔnnim’ ni Miunnim’ shɛb’ daa ti lo tɔb’ na ni bɛ ti tuhi Jɛhɔshafat.,timbɔgɔ nyaaŋa ka mɔanu min ni ammonima ni muimnim shɛb daattu lotɔb na ni batatoohi jehoshafat,0.7368,0.2532
+406,"O daa niŋ li wuhi ya ni di chɛ ka yi baŋ ni Yawɛ n-nyɛ Naawuni, ka so lan kani pah’ o zuɣu.",daa niŋ li wuhi ya ni di cha ke yibaŋ ni yaa wu nya nnaa woni ka solan kan paa u zuɔ,0.6957,0.2154
+407,Di daa yi nyɛla kikapiɛbiriba mini baansi tuma ni bɛ laɣim duhi bɛ yɛhi n-tibigi ka paɣi Yawɛ ka sokam wum bɛ damli.,daa yi nyala kika piɛbir u minni bansi tuma nɛ bilagam du bi yahi tib ki ka paa yaa wee kasoka wom bidamili,0.913,0.3043
+408,"Zuŋɔ dabisili ŋɔ, labisimiya bɛ puri mini bɛ wain tihi puri ni bɛ olivi tihi puri ni bɛ yiya ti ba.",absilabisimiya be pore man be wain ti pore ni be ɔliviti pore nɛ b yia tiba,0.9048,0.3766
+409,"A nyu bara yɛli ni a gbi kɔbilisi tinzun’ tinsi ni n-nyu di kom, ka a tɔbbihi siɣi Nail Mɔɣili ni n-no n-gili ka di kom nyuui.",yu bara yal naa ji kobilso tinzontiŋso ni n nyuuri kom kaatɔ bee sibe naay mɔal nɛ n nooŋgele kadi kom nnyuun,0.8519,0.3511
+410,Ka Judanim’ daa laɣim ni bɛ suhi Yawɛ ka o sɔŋ ba.,judanim daa lagam ni basuhuyaa wee koo sɔŋ ba,0.5833,0.2703
+411,ka chɛ ka ʒiinim’ nyabu kpɛhiri ma dabiɛm; hal ka n ti paɣi ni bɛ mirisi n nyiŋgol ni.,kache kasiinim nyabu pɛsirma dabiɛm ha kan ti page nɛ b marse nnyuŋgɔn ni,0.7895,0.2462
+412,"Di ku yuui ka ninvuɣ’ biɛri vuui; hal a yi lihi viɛnyɛliŋga m-bo ba, bɛ ku beni.",di kuyuui ka ninvug biɛr vuui hale a yi liviɛnyaleŋga m bo ba be kubeeni,0.6471,0.1525
+413,"Di chɛliya ka yɛtɔɣ’ yoya yiri yi noya ni na naɣila din kpaŋsiri niriba suhuri, ka di ni niŋ bɛnkam zaa wum li anfaani.",ti chɛliya ka yetɔgyoya yir yinoye ni na nagla di kpaŋsir niriba suhore kadi na niŋ binkam zaa wum la an faanɛ,0.7083,0.1613
+414,"O yi kpɛhi so duu, so ku tooi yooi dilan’ bahi.",soduu sokutoo yoodi lan baa,1.0,0.3529
+415,"Bɛ yi ti niŋdi ya lala, yin’ chɛliya ka di niŋ ya nyaɣisim ka yi mali suhupiɛlli, dama yi laara galisiya alizanda ni.",b yiti niŋdiɛla la yin chaliya keesu ka ti niŋ ya nyaasim ke yi mali suupiɛl le dama yilaara gasiya alizanda ni,0.6957,0.1868
+416,Ti Ba Naawuni mini ti Duuma Yisa Masia chɛ ka suhudoo mini yurilim ni yɛda be ti mabihi la zaa ni.,ti banaawuni mini ti duuma yisa masiya cheka sufudoo mini yurlim ni yedabie ti mabira la zaa ni,0.4762,0.1039
+417,Aduna bidibisi n-nyɛ ti maligumaaniba bɛn maani sara tiri Yawɛ ka Lɛvinim’ nyɛ bɛn sɔŋdi ba.,dunaabiidibisi nya ti maligumaaniba ban maan ni saratii yaa wee ka levinim nye ban sɔŋ i tiba,0.9375,0.2162
+418,Harim ni Mɛrɛmɔt ni Obadia ni.,hariim nɛ merimɔt nɛ obadaya nɛ,1.0,0.3333
+419,"Di daa ti lu Vuhim Dabisili dali, ka Yisa min’ o nyaandoliba tim so puu ni garita, ka o nyaandoliba maa piligi kabisiri chi ŋmɛmdi bɛ nuhi ni ŋubira.",adaati luvum dabisel dale ka yisa mann u nyaandoliba tim sopuu ni garta ka u nyaandoliba maa pilgi kabsulchinyɔm di bi nuu ni ŋŋubura,0.6897,0.2137
+420,n-chɛ ka kom kpe n-lim’ a?,te kakɔm kpee n li ma a a ni totim saa naasibu a,2.0,1.5294
+421,"O ni daa nya ka Farisiinim’ mini Sadusiinim’ pam gba kanna ni o ti baptaizi ba ka o bɔhi ba, “Yinim’ garinsi zuliya ŋɔ, ŋuni n-lee saɣisi yi mi ni yi zo n-yi mbusim shɛli din ti yɛn kana ŋɔ ni?",aa nya ka farisii ni mina sadusinin paŋ gba kana ni  ti baptaizi ba ka u bɔ ba yinim gari si zuleya ŋɔ ŋun le saasi yimi ni yi zɔn yimbusim shɛl le din t yan kana ŋɔn ni,0.6585,0.1875
+422,bee n-nya ka bɛ bihi chani maani bara bɔri bindirigu.,bee nya ka ba be chann maa ni bara bɔbindi,0.8,0.2857
+423,Ninvuɣ’ so ŋun zo yi o nyaaŋa wunsuhigu.,iuo ŋun zo yeo nyaaŋa osue,0.625,0.4194
+424,Lala ka di simdi ni yidaannim’ gba yuri bɛ paɣiba kaman bɛ ni yuri bɛmaŋmaŋ’ niŋgbuŋ shɛm la.,lala ka di simdi ni yidaanim gba yur be pagiba kaman ba ni yur bimaŋmaŋ niŋgboŋ shɛm la,0.4444,0.1096
+425,O sara daa nyɛla anzinfa parante yini din tibisim nyɛ kilɔgiram yini ni biɛla ni anzinfa tahi’ yini din tibisim nyɛ giram kɔbisinii kaman Naawuni jɛmbu duu liɣiri tibisim zahimbu ni nyɛ shɛm.,usar daa nyɛ la an zinfa parantee yin ni den timsim nya kilogram yinni ni bela naan zinfa taa yini din timsim nya gram kɔbsi nii kaman naawuni jambu duu lagira timsim zaambu ni nya sɛb,0.8788,0.2038
+426,"A yi di saɣi, n naan ti suɣa ata: A zaɣ’ yini; Anabi Musa zaɣ’ yini, Anabi Ilaija gba zaɣ’ yini.",adisai n naanti sɔ ata a zaayi ni ana musa zaayi ni anab ilaija gba zaa yini,0.6667,0.1765
+427,o nyɛla biŋkɔbiri zaa naa.,nyi le biŋkɔbir zaannaa,1.0,0.2381
+428,"Ka Yisa bɔhi ba, “Yi na ʒi n-karim Naa Dauda ni daa niŋ shɛm kum ni daa ti wum o mini bɛn be o san’ la yɛla?",ka yisa bɔhi ba yina sin kareŋ naadaawuda ni daa niŋ shɛm kum ni daa ti wom o min ban be o san la yɛla,0.3333,0.1039
+429,"Yɛlimaŋli ka n yɛri ya, zaadali Sɔdomnim’ mini Gomɔranim’ azaaba nyabu ni ti so tiŋ’ maa nim’ dini.",elmaŋli kan yari ya zaadali sodɔnim min gomɔran lazaaba nyibo ni tisor tiŋmaanim din,0.8333,0.1842
+430,"Ka n suhu daa yiɣisi pam, ka n kahi Tɔbaya nɛma m-bahi samban’ ni.",ansu daa yesi pam kan kah tobaya nema m ba samban ni,0.7143,0.2245
+431,Dimbɔŋɔ nyaaŋa ka di daa lu Jɔash suhu ni ni o lan malimali Yawɛ jɛmbu duu la.,dimbɔŋɔ nyaaŋa ka taa lu jɔa suuni ni o la ma ma yaa wee jambuduu la,0.6471,0.2459
+432,Ɛzra ŋun daa nyɛ zaligubaŋda maa daa du n-tamla dari bimbin’ shɛli zuɣu bɛ ni daa mali zali di daliri maa zuɣu la.,zra ŋun daa nyɛ zalgubaŋdi maa daa duntam la dari bimben shel zugu bi ni daa mali zal di daliri maa zuɣu,0.4348,0.1236
+433,zaŋdi nyɔri buɣim la; di nyaaŋa ka bɛ ni lan zaŋ.,aŋninyr buimadinyaaŋa ka bi ni lan zaŋ,0.6364,0.1892
+434,"Ka maligumaana Jɛhɔiada daa zaŋ sapashin’ kpamba bɛn daa su tɔbbihi zaa la yi nti yɛli ba, “Gbaamiy’ o tim tɔbbihi maa sunsuuni chaŋ, ka so yi dol’ o na, yin’ zaŋmiya takɔbi ku dilana.",maligumaan jɔhi ida daa zaŋ sapashen kpambe ban daa so tɔbbe zaaga ayi nti yeli ba gbaamiyo tim tɔbimaa sunsuuni chaŋ ka so idolo na ji zamyatakɔb kudulana,0.6857,0.1844
+435,"Dinzuɣu kpahimmiya yi ni be shɛm viɛnyɛliŋga, ka di benya kaman bɛn be ʒilinsi ni, amaa ka lee bemi kaman yɛnnima.",dinzugu kpahimmiye yini beshem vienyeliŋga kadi beenya kaman ba be silinsi ni amaa ka lee be mi kaman yennim,0.7143,0.1209
+436,ni bɛ taba Shɛbania ni Hɔdia ni Kɛlita ni Pɛlaya ni Hanan ni.,ɛ btaba shebania nɛ hodaya nɛ kelita nɛ pelaya nɛ hanan nɛ,0.9231,0.2917
+437,"Ka daa kari alizin’ biɛri pam niriba zuɣu bahi, ka zaŋ kpam ʒe barinim’ pam gbiɛri n-chɛ ka bɛ kpaŋ.",daa kar alizen biɛri kpam niriba zubu bahi ka zaŋ kpam nzie barnin pam biri n che ka bi kpaŋ,0.55,0.1974
+438,"Bɛ daa tim na nti yɛli ma la zilin yini maa siɣimsiɣim bunahi, ka n gba daa labisi garigibu yini maa ti ba.",b daa tim na nto yeli ma la zuln yini maa sum sɔgm bunahi kan gba daa labisi gargibu yin maa tib,0.5217,0.1687
+439,Ŋuna n-tumdi tuun’ kara ka so ku tooi baŋ di ni nyɛ shɛm.,una n tumdi tuun kara kaso kutoo baŋ di ni nya shɛm,0.6154,0.0714
+440,"Yɛlimaŋli, ninvuɣ biɛri firila kpiya.",yelmaŋli ninfu biɛri fir la kpie,1.0,0.2258
+441,"Yimaŋmaŋ’ daa nya Yawɛ ni niŋ shɛm zaŋ chaŋ Pɛɔr Baal polo la, Yawɛ ŋun nyɛ yi Naawuni ŋɔ daa ku yi ni ninvuɣ’ shɛb’ bɛn daa doli Pɛɔr Baal maa.",imaŋmaŋ daa nyɛ yaawee ni nniŋ shɛm zaŋ chaŋ piar baal polo la yaa wee ŋin nyɛ yinaawona ŋɔ daa ku ini ni nvug shɛb ban daa doli piar baal maa,0.4516,0.1743
+442,"Yawɛ, nyin’ ŋun nyɛ n tampiŋ ŋɔ ka n kuhiri niŋda.",yaw nyin ŋunnya ntampiŋɔ kan kurinniŋa,0.9091,0.1892
+443,Maika ni Rɛhɔb ni Hashabia ni.,maika nɛ rehɔb nɛ hashebia nɛ,0.8333,0.2083
+444,"Nyamiya, o ni ku ma; n lan ka tahima yaha.",nyamya o ni ku ma n le ka tama y,0.4,0.2667
+445,Ka Yawɛ daa niŋ alibarika pam niŋ Ayuba ni dabisa shɛŋa din daa bahindi nyaaŋa maa ni n-gari o ni daa pun niŋ alibarika niŋ o ni shɛm piligu ni la.,yaawu daa niŋ alibarika pam niŋ ayuba ni dabisa shɛŋa din daa bahin dinyaaŋ maa ni ngerugi daa pu niŋ alibarka niŋ o ni sheŋ pilugu ni la,0.3548,0.113
+446,min’ a nam dariza din galisi pam ŋɔ yɛla.,mini anam dariza din galsi pam ŋɔ yɛla,0.4444,0.0645
+447,"O ni daa kpi, o niriba daa bi mali buɣim n-ti o jilima kaman bɛ ni daa mali buɣim ti o yaannim’ jilima shɛm la.",aatikpiuniib daa bi mali bubim ti o jilima kaman bi ni daa mali buim ti u yaanim jilima shɛm la,0.48,0.1807
+448,"Ka Hanani bia Jɛhu ŋun daa nyɛ anabi la daa yi n-chaŋ ti tuhi Naa Jɛhɔshafat soli n-yɛl’ o, “A tɛhiya ni di simdi ni a sɔŋdi ninvuɣ’ biɛri ka yuri bɛn je Yawɛ?",ahananiya bii jehu ŋun daa nya anab la daa yi nchaŋ titun naah jehoshafat soli yel o a ti ni da simdi naa sɔŋdi ninvu biɛr ka ka yuur ban je yaab wi,0.6471,0.2437
+449,Yisa lan yɛli o kum yɛla yaha.,yelba zaŋmiy o na ka bi zaŋ o na alezin beregu maa ni daa nya yisa koori yirsa bia maa kawo lumbilin da kanito fa fuŋ ŋɛr o nuala,4.0,3.6957
+450,"Ka bɛ yɛl’ o, “Diba ayopɔin.",aye dibaayopɔɛn,1.0,0.3684
+451,"Ka n daa yɛli nanim’ mini zuɣulaannim’ ni niriba bɛn pahi, “Tuma maa galisiya ka di shɛhi wɔɣ’ ni taba, ka ti woliwoli taba gooni maa gbini.",n daa ye na nim min zuulaannuma ni niriba ban pahi tuma maa gasiya kadi shaha waani taba kati wee wee tabgoon maa gben,0.7037,0.243
+452,Bɛ tɛhiri ni wuntia soli dolibu nyɛla din ni chɛ ka nir’ nya azichi.,bi tir ni wunti so doli bunye la di ni cheka nirnya asic,0.9286,0.2453
+453,"n yi yɛli gballi, ‘M ba n-nyɛ a,’.",n yi yeligbal le m ba nya a ka yezunzuli m man nya,1.0,1.0
+454,"O daa lan bo salima laa din tibisim nyɛ giram kɔbiga ni pia, ka tulaale zim pal’ li.",daa lan bo salima laadi timsibnyɛ gram kɔbiga ni pia katuraalizin pal la,0.5556,0.1562
+455,Bɛ daa yila Juda fɔntinsi zaa ni n-laɣimna ni bɛ ti niŋ nimmoo suhi Yawɛ.,daa yi la juda fan tisuzaani n lagam na ni be ti naŋ nimosu yaa wo,0.8667,0.2632
+456,"Amaa ka Jɛhɔshafat daa lan yɛli Izraɛl naa maa, “Daŋ bɔhi baŋ Yawɛ ni yɛn yɛli shɛm pɔi.",maa ka joshafat daa lan yeli izraenaamaa dan pɔ baŋ yaa wee nia yan yel sham pɔi di saha ka israelnaama daa tim boli anabinim,1.2222,0.8235
+457,Dama yi bi tɔɣisi n yɛla ka di nyɛ yɛlimaŋli kaman n dabili Ayuba ni tɔɣisi li shɛm maa.,a yibu tɔgasi n yɛla ka di nyɛ yelimaŋli kaman dabile ayuba ni tɔgasi l shɛm aa,0.5263,0.1884
+458,N ni bɔri nolɔbo shɛli n-nyɛ: Yi lɔrigi yi ni nahindi shɛb’ la mihi.,n ni borno lub sheli nnyɛ ilarigi yini nahndi sɛb la mihi,0.6429,0.1765
+459,Dimbɔŋɔ daa niŋmi ni di chɛ ka anab’ so ni daa yɛli shɛm la niŋ pali.,imbɔŋɔ daa niŋ mi ni di che ka anabsoni daa yel shɛm la naŋ pal,0.625,0.1154
+460,"Ninvuɣ’ so ŋun bɔri ni o niŋ din tiɣi Naawuni nini ni yi o yɛla ni, amaa alahichilan’ ni lu o zana maa ni.",ninvuso ŋun bor ni o niŋ den tige naawun nini na yi o yɛla ni amaa alachila ni luo zana maa ni,0.4167,0.1392
+461,"Ka o yɛli ba, “Sagbana yi ti mɔhi zaawun’ mahili, yi yɛrimi ni di sa ni neei biɛɣu ni.",kuu yel ba sagbana yiti mɔha zaa wum mahale yi yarmi ni lsan ni nee biani,0.7368,0.2698
+462,"dama o kul bela n nudirigu polo, ka shɛli ku tooi dam ma.",ama u kul bela nnudiru polo kashel kutoo dama,0.7692,0.186
+463,Ka Hɛzɛkia daa tɔɣisi Lɛvinim’ maa zaa suhukpaŋsibo yɛtɔɣa bɛ ni daa zaŋ yɛm shɛli tum Yawɛ tuma maa zuɣu.,a heekaya daa tɔgisi lebinimaa zaa zugukpansibu yetɔga ba ni daa zaŋ yam shɛ tum yaa wee tuma maa zuɔ,0.65,0.2941
+464,"Amaa ka Yisa yɛli, “So n-shiri shihi ma, dama m baŋya ni yiko shɛli yi n ni.",m mana bo ni nyenn yisa zal la kudura naabia n suhura dna,1.0,0.7636
+465,Amaa n kul ni guhi n ni tumdi tuma dabisi’ shɛŋa ŋɔ ni zaa.,maa kul ni gue n ni tum ni tuma dabisishaŋa ŋɔni zaa,0.6429,0.1364
+466,O daa maani maligunima ka tuɣindi tulaale zim buɣa jɛmbu shee mini zoya zuɣu ni ti’ mahili kam gbini.,daa maani maligunima ka tun nditulaalizim bɔa jambushee mini zoe zugu ni timaalika gbenn,0.6842,0.1852
+467,"O ni daa tɔɣisi yɛtɔɣa ŋɔ naai ka o tuhi nintɔri bahi tiŋa n-niŋ taŋkpaɣu garigari di ni n-zaŋ ʒe zom’ maa nina; ka yɛl’ o, “Cham’ Sailom biaŋ ni ti paɣ’ a nina maa.",ni daa tɔasi yetɔaŋi nnaa kuu tuu nitɔrbaa tiŋa nniŋ tankpaa gargadi ni n zaŋ ʒe zom maa anina ka yel o cham salam biŋ ni n ta paa anina maa,0.6571,0.2479
+468,Niriba Zuɣulaannim’ n-daa nyɛ: Parɔsh mini Pahatimɔab ni Ɛlam ni Zatu ni Bani so mi ni.,iriba zugulannim n daa nya parɔsh me pahatimɔb nɛ elam nɛ zetu nɛ banisomi nɛ,1.0,0.2059
+469,dina n-ni chɛ ka yi kul be tiŋgbɔŋ maa ni sahakam.,dinni che ka i kul bɛ tiŋgbɔŋ maa ni sahaka,0.5455,0.1579
+470,m mi ni bɛ ni wuhi ni n ka galimi.,minɛ beniwue nɛ ŋ ka galeŋ,0.9,0.4167
+471,"‘N nyɛla alahichilana, amaa n ku lan tum lala yaha.",n nyɛ la alahachilana amaa ku lan tum lala ya,0.5,0.1026
+472,Dama di saha a ti ku lan kaani n napɔna yaabu.,asa atakula kaani nne po na yaa,1.0,0.3714
+473,A nyarila binyɛra kaman ninsalinim’ ni nyari shɛm?,nyarla bin yɛra kama ninsalnim ni nyar shɛm,0.75,0.122
+474,"Yɛlimaŋli, n lan ka yaburiga n niŋgbuŋ ni.",yelmaŋle n naŋ ka ye burga n niŋgboŋ ni,0.625,0.2424
+475,"Leem’ bɛ gula, ka lihiri ba sahakam kaman piɛgul’ ni lihir’ o piɛri shɛm la.",leem be gula ka liri be sahakam kaman pigol ni liir o piɛr shɛm la,0.4,0.1404
+476,"Di saha ka Yawɛ malaika daa chaŋ Asirianim’ maa sansan’ ni nti ku ninvuɣ’ tuhi’ kɔbiga ni tuhi’ pihinii ni tusaanu, ka biɛɣu daa neei ka kpiimba kul yɛrigi luɣilikam.",di saha kayaab i malaeka daa chaŋ asiriya nimmaa san san ni nti ko ninvu tukɔbiga ni tupihinie ni tusaanu kabia daa nee kacpiim bi kulyarga luli kaŋ,0.7,0.1846
+477,Uzia yuma daa nyɛla yuun’ pinaayɔbu saha shɛl’ o ni daa di nam maa.,siayuma daa nyɛ la yuu piinaayɔb saa shɛli o ni daa di nan maa,0.6429,0.1569
+478,"Amaa ka ti daa suhi ti Naawuni maa, ka bo niriba zali gu ba wuntaŋ’ ni ni yuŋ zaa.",maa ka ti daa suhi ti naawunn maa ka boo niriba zel guba wuntaŋ ni ni yoŋ zaa,0.3684,0.0984
+479,"Yawɛ ni ti zaŋ yi mini yi ni pii yi na’ so ka o sun ya maa n-tahi yi mini yi yaannim’ ni daa bi mi zuliya shɛb’ sani, ka yi ti jɛmdi buɣa din nyɛ dari mini kuɣa.",awee ni ti zaŋ yi min yini peya yin na so ka u sun yamaa n ta yi mini yiyaannim ni daa bu mi zuliya shɛb sani ka yi ti jemdi bɔa di nye dare min kɔɔa,0.5128,0.1795
+480,"Ka o daa saɣi, ka piligi bɔri so’ shɛli o ni yɛn doli yi Yisa nyaaŋa n-chɛ ka bɛ sɔɣi gbaag’ o salo ni ka o sani saha shɛli.",ao a sageka pilgi bɔr so shɛle ona yaŋ doli n yi yisa nyaaŋa n che ka bi sɔ gbaago salo ni ka u sani saha shɛl,0.6897,0.1978
+481,Ka anzinfa binyara maa zaa tibisim daa nyɛla kilɔgiram pisinaayopɔin ni biɛla kaman Naawuni jɛmbu duu liɣiri tibisim zahimbu ni nyɛ shɛm.,aansin fa bin yarama zaatimisim daa nyɛ la kilogram piinaayopɔin ni bila kaman naawuni jabu duu labiratimsim zaambu ni nyɛ shɛm,0.6818,0.1478
+482,"Yawɛ, guli ma ka yihi ma ninvuɣ’ biɛri nuu ni.",y gulma ka ye ma ninvu birnuu nin,0.8,0.3235
+483,"Amaa lee tɔɣisimiyala taba yɛlimaŋli yurilim puuni, ka zooi Masia ŋun nyɛ zuɣu la ni binshɛɣukam puuni.",amaa lee tɔgasimiya tab yelimaŋle yurlim puu ni ka zoo masiya ŋun nye zugu la ni binshagukam puuni,0.6471,0.1647
+484,Gol’ so ŋun pahir’ ayi ni ka niriba pam daa laɣim Jɛrusalɛm ni bɛ ti puhi Bɔrɔbɔro Din ka Dabindi Chuɣu la.,sɔŋɔ paarayi ni ka niriba pam daa lagam jerusalɛm nɛ bitapui gorbo din ka da bin di chun a,0.7727,0.2771
+485,Ŋuni n-daa lee gbi kɔsoli n-ti sa’ titali.,una n daa lee gbii kosole ntisatitale,1.0,0.1935
+486,"Amaa pumpɔŋɔ yi mini Masia ni laɣim nyɛ zaɣ’ yin’ la zuɣu, yinim’ bɛn daa be katiŋ’ la yipa vu m-miri Naawuni Masia ʒim zuɣu.",amaa pumpɔŋɔ yi mini masiya ni laga nye zayin la zugu yinim ban daa be katiŋ yipa vuu mir naawoni masiya sim zuɣɔ,0.56,0.1702
+487,Di saha ka Naa Ahaz daa tim Asiria naa sani ti yɛl’ o ni o zo o kuŋa.,disaha kana ahazaa tim asiriya naa san ti yelo niozuokuŋa,0.8333,0.12
+488,Ka bɛ daa yiɣisi asiba nolɔɣu kukoli saha n-yi n-chaŋ Tɛkɔa tiŋgban’ nɛli ni.,b kana ne ti karti a ni zaŋ tiŋgbaŋ shetito ni tisumaani ti naawuni a kudarge be tibila t tu i dama ti ka yiko di nitoɔ tu silo pam baŋ kan na n bt u,2.5714,1.4667
+489,O yuma daa nyɛla yuun’ pihitanaayi saha shɛl’ o ni daa di nam.,yuma daa nyiɛla yuum pehetanaayisa shɛle o ni daa di nana,0.5385,0.2128
+490,"Di nyɛla din du n-gari sagbana, ka bɔ ka a lee ni tooi niŋ?",nyi la tin du n gar sagbana kapokaa leeni too niŋ,0.8571,0.186
+491,A mi ku saɣi n-chɛ a ni yuri so niŋ kpiimba biɛhigu shee.,mikusa chaa ni yurso nniŋkpiim bi biɛegush,0.9231,0.2791
+492,Dama ninvuɣ’ biɛri bɔɣiri ni ti kabi.,nyinvubir bɔgiri nitika,1.0,0.3793
+493,ka chɛ ka niriba lih’ a ka mal’ a ansarisi.,ka che ka niriba leeha ka mala ansarsi,0.6,0.129
+494,"Amɔn yuma daa nyɛla yuun’ pisinaayi saha shɛl’ o ni daa di nam, o daa di nam maa ʒini Jɛrusalɛm la yuma ayi.",yuma daa nyɛ la yuun piisinaayisa shɛli o ni daa di nam u daa di nam maa sin jerusalɛm la yumaayi,0.4783,0.1463
+495,Nyini n-nyɛ ŋun fa ma duŋtaariba nuu ni.,innye ŋunfama dontaarbnuu ni,0.875,0.2903
+496,"La’ shɛli daa ʒe nimaani ka komihigu pali li, ka bɛ daa zaŋ gumdi tim di ni n-zaŋ taaŋkɔro gbab’ li n-zaŋ tiri ha n-niŋ o nol’ ni.",sha daa ʒe nimaani kakɔmeega pal le ka bi daa zaŋ gumna temdin ni n zaŋ taankur gbab le nsaŋtalha nniŋ ɔo noni,0.7143,0.2842
+497,Bɛ dɔɣibu saha ka bɛ pun birigi; ka nyɛ ʒiŋmariba.,bedogisaa ka bipun berge ka n i ŋmaa,0.9,0.4103
+498,"Ka bɛ yɛl’ o, “Bɔrɔbɔro kpila anu mini zahim ayi kɔŋko n-kul be ti sani kpe.",ka b yeboroboro kpil a nu mini zaam ayikɔŋko nkul be tisan,0.75,0.25
+499,“Namɔɣili so ŋun gbibi n vuhim dabisa.,myman nyi la ti ku dima yaawo yeli ya na mɔale so ŋun gbibe nvum dabsa ka,2.1429,1.2333
+500,wumdi n ni yɛri shɛm; ka deeri n suhigu shɛli.,mlini yes kdeerinsuhogu sa,1.0,0.4571
+501,Di saha ka Yisa gba daa yi Galili n-chaŋ Jɔɔdɛn mɔɣili ni ni Jɔn ti baptaiz’ o.,isaha ka yisa gba daa yi galilii nchaŋ jɔdenn mɔɔli ni ni jɔnn to baptaiz,0.4706,0.1667
+502,"“Ka Yawɛ yi ti zaŋ ya tahi Keenannim’ tiŋgbɔŋ maa ni nti zaŋ li tin ya kaman o ni daa lo yi mini yi yaannim’ alikauli shɛm la, yin’ ti zaŋmiya bɛ ni tuui dɔɣi bi’ shɛba zaa ti Yawɛ.",yaa wee yiti zaŋ ya ta keenan tiŋgbɔŋ maa ni n ti zaŋ li tin ya kaman o ni daa lo yiimini yiyaani alikauli shɛm la yin ti zaŋmiya bi ni tuu dɔɔ bishɛb zaa ti yaa we,0.475,0.1407
+503,Ŋuna n-nyɛ ŋun gbibi duu maa zaa ka chɛ ka di mɛri zoori hal ti leeri jɛmbu du’ kasi ti Duuma ni.,wuna n nyɛ ŋun gbib duu ma zaa ka che kadi miɛri zore hale tileeri jembu du kasi ti duuma ni,0.6364,0.1233
+504,"Pɔhim ʒiɛri kparila di yubu polo, ka a wumdi di damli, amaa ka bi mi di ni yiri shɛli polo na bee di ni kpari shɛli polo; lala mi ka Naawuni Shia ni dɔɣ’ sokam be.",ɔn ʒerkpar la diyoopolo kaah wumni didam le amaa ka bu mi di ni yir sha polo na bee di nikpar sh polo lala mika naa wu sii ni dɔasugu kan bii,0.6667,0.2764
+505,amaa ka tiri ninvuɣ’ shɛb’ bɛn zɔri Yawɛ jilima.,maa kati ninvu shɛb ban zɔr yaa wee jelim,1.0,0.2973
+506,"Dinzuɣu pumpɔŋɔ, Yawɛ ŋun nyɛ ti Naawuni ŋɔ, tiligim’ ti Asiria naa maa nuu ni, ka dunia ŋɔ nama zaa niriba baŋ ni a kɔŋko n-shiri nyɛ Yawɛ.",dizugu pumpɔŋɔ yaa we ŋun nye ti naawon ŋɔ tiligim ti asuria naama anuu ni ka dunia ŋɔ nama saa niriba baŋ naa koŋkoŋ shirinyayaa uwe,0.5714,0.1495
+507,"Ka di sabi yɛli, ‘Daliri ŋɔ zuɣu ka doo ŋmaligir’ o ba min’ o ma sani n-zaŋd’ omaŋ’ tabind’ o paɣa, ka bɛ niriba ayi maa be kaman ninvuɣ’ yino la.",atisab yle dalirŋɔ zugu kadoo ŋmaligir u bamini u ma san ni n zaŋ d umaŋ tabndoo paga ka bi niriba ayi maa bee kaman ninvuɣ yino la,0.7419,0.1619
+508,"Daanya kɔniŋdi bini maa daa tamla naɣilahi maa yaansi zuɣu, ka bɛ nyaaŋa gbaya daa be kɔniŋdi bini maa lɔŋni.",ah nya koniŋni kben maa daatam la naalaa maa yaan si zubu ka bi nyaaŋɛ gbai daa bee koniŋdibin maa lɔŋ ni,0.9,0.2159
+509,"Ka lan yɛli ba, ‘Dama Daadam Bia n-su Vuhim Dabisili dali gba.",kalan yeliba dama daadam bii sufu dabisil daa ba,0.8333,0.234
+510,Ka a bihi ti galisi kaman mɔri ni galisi shɛm ŋɔ.,a bii ti gelsi kaman mɔr ni galsi sɛmŋ,0.6364,0.2368
+511,"Amaa bɛ daa bi ti Kɔhat bihi la shɛli, dama bɛna n-daa su ni bɛ zaŋ neen’ shɛŋa din be kasi la buɣi bɛ bɔɣusapima zuɣu.",maa b daa ba ti kohad bee la shɛli dama biindaa su ni b zaŋ ni shiŋa dim be kasi la boi bibuasapiimazɔgɔ,0.5769,0.3
+512,Ahazia yuma daa nyɛla yuun’ pihinahinaayi saha shɛl’ o ni daa di nam maa.,hazaya yuma daa nyala yuunpennaanaayi saa shɛli o ni daa di nam maa,0.4286,0.193
+513,"” Ka bɛ daa yi nti kpe ŋariŋ chaŋ, amaa dindali maa yuŋ maa bɛ daa bi gbaai shɛli.",ka bi yel o tigba ni do la chaŋ ka bi daa yi nti te ŋaraŋ chaŋ amaa dindanamaa yuŋ maa bidaa gbaai shal,1.0,0.5574
+514,Dama nyini n-ti ma kpiɔŋ ni n tuhi tɔbu; nyini n-chɛ ka n dimnim’ lu n naba ni.,ama nyinin tima kpiɔŋ ni n tuur tɔbu nyin cha kandimnim lu nnabaan,0.7222,0.1404
+515,"Ka n daa kpahi bɛ zuɣu ni yɛli, “Bɔzuɣu ka yi gbɛri gooni maa gbini?",n daa kpaah bi zubo ni yali bosugu ka yi gbɛr goon maagben,0.6667,0.2941
+516,"” Ka di saha maa zaŋ chana, bɛ daa bi lan labina Vuhim Dabisili dali yaha.",a di saha maa zaŋ chana bi daa bi lan lab na vub dabisil dali yaha,0.4,0.125
+517,"Ninvuɣ’ shɛb’ bɛn zaa mɛri wuna pa shɛli, ka bɛ suhuri ni yuri binshɛŋa bi kuri ba buchi.",infusheb baŋ zaa meɛre wunapa sheli ka bi suhuri ni yuri bi shaŋa bekurba bucha,0.6667,0.2206
+518,ka bɛ zuliya kul ni beni hal ni saha din ka bahigu.,a bi uliya kul ni beeni hal ni sahadika baa,0.6667,0.2308
+519,"” Ka o chaŋ ti paɣ’ o nina maa, ka di dii neei, ka o labina.",u cha tapɔgnyin na maa kadidiginee kuo labna,0.9333,0.35
+520,"Lɛvinim’ tuma kpɛm’ ŋun daa be Jɛrusalɛm n-daa nyɛ Bani bia Uzi, ŋun daa nyɛ Hashabia yaaŋa la.",levi nim tuma kpema ŋun daa be jerusalɛm daa nya baanabii uzi ŋun daa nya ashabia yaaŋa a,0.6111,0.1644
+521,ka chɛ ka di tahi bɔɣi; liɣimi di tahibu maa.,a chɛ ka di ta bɔgi lig mi titab uma,0.7,0.2941
+522,"Hal ninvuɣ’ shɛb’ bɛn daa kahiri tandi nɛma n-tiri daa zaŋla bɛ nu’ yiniyini tumdi tuma, ka zaŋ nu’ yiniyini mi gbib’ bidibbina.",al ninvug sib ban daa kahire tandi nɛma n tir daa zaŋ la be nuyin yinni tumde tuma ka zaŋ nuuyin yi ni mi gbib bi dibina,0.7826,0.1429
+523,"Ka sokam daa kuhi yɛli, “Naawuni dolimi naa ŋɔ nyɛvili.",a sokam daa ku yɛli naa wu do mi naa ŋɔ nyɛvel,0.7,0.2093
+524,O ni daa di nam ti paai yuma anahi ni gol’ so ŋun pahir’ ayi daba ayi dali ka o daa piligi duu maa mɛbu.,nani daa di nam tapaa yuumaanahi ni gosɔŋi pahiri ayidaba ayi dali ka u daa piligi duu maa mia b,0.6,0.1818
+525,"Dama bɛ tuma ni nyɛ shɛm, di laara ka Naawuni yɛn ti ba.",ma be tuma ni nye shɛm di laarakanaawun yan tia,0.6923,0.1667
+526,"ka vuri daa fo, di saha ka n daa wum kukol’ shɛli ni yɛli.",vu daafo disaha kan daa wo kuko shel nɛ yelɛn,0.9286,0.3095
+527,"Ka Izraɛlnim’ maa daa ŋmaligi guui ka chɛ Judanima, ka Naawuni daa chɛ ka Judanim’ maa nyaŋ ba.",a isaanib maa daa ŋmaligi guui ka che judanima ka naawun daa chee ka judanima maa nyaŋ ban,0.3889,0.1622
+528,"Ka tɔbbihi maa daa ʒe fɔntinsi maa zaa nɛma chaŋ, dama nɛma daa be tinsi maa ni.",tɔbbihi maa daa ʒe fan tansi maa zaa nima chaŋ dama nima daa be tansi maani,0.4706,0.1129
+529,Dama o kul pala nina lihiri ninsalinim’ biɛhigu.,au kul pala nina nlihiri nisanim bo,0.625,0.359
+530,"Di yi pa lala ti mini ti dimnim’ yi ti yɛn tuhi, bɛ ni pahi ti dimnim’ maa zuɣu tuhi ti ka nya soli zo n-yi ti tiŋgbɔŋ ŋɔ ni.",iipa lala ti man tidimnim yi to yen tuhi bini pah tidimnim maa zugɔ tuhite ka nya soli nzo n yiti tiŋgbaŋ ŋɔni,0.7333,0.1429
+531,Yisa tizɔbihi min’ o ma yɛla.,limaŋli nasaredika zuliya shɛb ban pa yehudianim mali taama o yuli zuu yisa min alizon birna basebul ya,2.8333,3.2273
+532,"Yawɛ, gbilisim’ a tibili wum, ka neeg’ a nina nya, ka wum Sɛnachɛrib ni tɔɣisi yɛtɔɣ’ shɛŋa zaa ti na tu nyin’ Naawuni ŋun be ŋɔ.",agbisimaa teble wom ka neeg anina nnya ka wom sinaserib ni tɔgɔsi yetɔshaŋa zaa ti na n tu nyin naawuni ŋun beŋu,0.6154,0.2396
+533,"Amaa bɛ ni daa kul niŋdi ba fitiina shɛm, lala ka bɛ zuliya maa daa kul nabiri ka yɛligiri pahira.",amaa be ni daa kpul niŋdi bafitiina shɛm lala ka bi zuliya maa daa kul nabira ka yeligir pahara,0.4,0.0909
+534,"Ka o chɛ ka bɛ zaŋ salima alali, din tibisim gari mɛtiriki tɔn pisi n-dooi pa di zuɣu.",uche ka bi zaŋ sal maa lale din timse n gare mitikritoŋ jisi n doo parizuɔ,0.8889,0.3485
+535,"Ka zaŋ chaŋ shɛb’ ni tumdi shɛm polo, n nyɛla ŋun dol’ a zaligu.",kazaŋ chaŋ shɛb nɛ tumdi shem polo n nyɛ la ŋun dolaa zaliu,0.6429,0.0851
+536,Ka o nyaandoliba pinaayi la daa be o sani m-pahi paɣ’ shɛb’ o ni daa chɛ ka bɛ dɔriti naai min’ o ni daa kari alizin’ biɛri paɣ’ shɛb’ zuɣu bahi la.,u nyaandoliba piinaayi le daa bei u sani mpahi paashab wo daa che ka bu dɔr tinaa minn o n daa kare alizin biɛr paashab zugu bahi la,0.6562,0.211
+537,"Di saha ka Taai Naa Hiram daa sabi gbaŋ ti Sulemaana n-garigi yɛl’ o, “Yawɛ ni yur’ o niriba maa zuɣu n-chɛ ka o zaŋ a leei bɛ naa maa.",disaka tayinaa hiram daa sab gbaŋ ti sulemana garige yel o yaa wee ni yir o niriba maazuo che kao zaŋalee benaamaa,0.7667,0.1818
+538,amaa ka lee lo tɔbu o suhu ni; o yɛtɔɣa bali gari kpam.,amaa ka lee lo tɔb u suhu ni o yetɔga balgari ka,0.4615,0.1463
+539,"Ka Izraɛl kpamba maa daa kana, ka Lɛvinim’ daa kpuɣi Alikauli Adaka maa.",ka israelkpamb maa daa kana ka levinim daa kpae alikabil a dakamaa,0.5385,0.1754
+540,n dabili bee n tumo yɛli shɛli.,dindina ni dii mɔa tampilgimdiso o su nɛ tɛhim birig o maa ka o kutoo tilig umaŋa bee ye,2.7143,2.4167
+541,bɛ bi yɛri dilana ni o niŋm’ ba nyɔri di yɔbu ni.,be beyadi la na nɛ u niŋ mbanyɔri di yɔbu n,0.8333,0.2222
+542,Ka Yisa daa yi nimaani chaŋ ti kpe Yɛhudianim’ jɛmbu duu.,yisa daa yi nimaani chaŋ ti kpee yehudiyanim jambu duu ka bɔakpeeŋa a so daa be nimaani ka niriba maani,1.2727,1.0
+543,"Yɛlimaŋli, zaɣ’ viɛlli mini yurilim din galisi.",yelimaŋli zagviɛlli min yurlim di gals,1.0,0.1842
+544,ka bɛ dunia ŋɔ ni yuusim pirigili na bi paai gba.,a bi dunia ŋɔ ni yuu sim pergeli na bi paa ga,0.6364,0.1842
+545,"Ka di shɛŋa lu gɔhi ni, ka di mini li laɣim zooi ka gɔhi maa girimgirim li.",di shɛŋa lu gɔhi ni ka di mil li labm zooi ka gɔŋ maa girim gerim li,0.3529,0.1579
+546,Ka Halɔhɛshi bia Shallum ŋun gba daa nyɛ Jɛrusalɛm yaɣili pirigili polo naa la min’ o bipuɣinsi daa mali me m-pan’ o zuɣu.,ahalo hashi bii shelum ŋun gba daa nya jerusalɛm yaali pirgila polo naa la min o jipɔɔnso daa ma mɛ pan o zuɣɔ,0.5652,0.2292
+547,"Miri ka a bɔhi, “Bɔ n-lee chɛ ka yuun’ shɛŋa din gari la so pumpɔŋɔ ŋɔ?",bon le che kayuun shɛŋa din gar le so pumpɔŋ,0.8125,0.3725
+548,Di saha maa ka Anabi Jɛrimia ni daa yɛli shɛm la niŋ pali.,disahamaa kaanab jeramaaya ni daa yel shɛm la niŋ pali,0.5385,0.1778
+549,Dimbɔŋɔ n-yɛn nyɛ n tiliginsim; dina n-nyɛ ni ninvuɣ’ biɛɣu ku paag’ o sanna.,imbuŋɔ ya nye ntiligensim dinɛ n nye nɛ ninvu bigu kupaagi o sannaŋ,0.9286,0.2586
+550,Ka Jɛhɔiada daa bo paɣiba ayi ti o ka o zaŋ ba dɔɣi bidibisi mini bipuɣinsi.,jɔa yida daa bo paaba ayitoo ka u zam ba tɔa bidibisi min bipunsi,0.6875,0.2833
+551,Ti ku zaŋ ti bipuɣinsi ti tiŋgbɔŋ maa ni niriba bee n-kpuɣi bɛ bipuɣinsi ti ti bidibisi.,ti kusaŋ ti bipɔɔnse ti tiŋgbɔŋ maa ni niriba bee kpa bebipuanse ti ti bi debse,0.4706,0.2286
+552,Yawɛ ni lan chɛ ka dɔro balibu kam mini alaka balibu kam din yɛla bi sabi zaligu kundi ŋɔ ni lu yi zuɣu hal ti naai yi balibu.,awan ni ti laa che kadoro balbukam min alabka balibokam din yala be sabzalgu kundi ŋɔn ni luyi zugu hal ti naa yi balib,0.75,0.2041
+553,"O ni doli so’ shɛli kana, dina ka o lan yɛn doli labi; o ku kpe tiŋ’ ŋɔ puuni.",ni dol soshe kana din ka o laa yen dol lab u ku kpetuŋɔpuuni,0.7368,0.2364
+554,Di simdi ni yi zaŋ biɛhigu pal’ shɛli Naawuni ni daa nam ka di ŋmani ŋun’ Naawuni maŋmaŋ’ biɛhigu ka nyɛ din tuhi ka be kasi n-ye kaman binyɛrigu la.,di simni ni yu zaŋ biɛsegu pal shali naawun ni daa nam kadi ŋmani ŋun naawun maŋmaŋ bihegu ka nya din tuhi ka bɛ kasi n ye kaman bi yargu a,0.5333,0.1304
+555,O lan yɛli ma ni a loya ni a zaŋla amaŋ’ leei naa.,la yelma na a loya ni a zaŋla amaŋleenaa,0.6154,0.1667
+556,"Ka bɛn be ŋariŋ maa ni daa jɛm o ka yɛli, Yɛlimaŋli, Naawuni Bia n-shiri nyɛ a.",ban bie ŋaruŋ maa ni daa ji mu ka yel yelimaŋle naawo biin sirinya,0.7647,0.2881
+557,"Yisa daa lan yɛli, “Yi pun wum ka di sab’ yɛli kurimbuni ha, ‘Miri ka a ku ninsala, ka ŋunkam ku ninsala ni ti be yɛla ni saria karibu shee.",isa daa lan yeli yipuukar sab yal kurn buna ha mmiri kaa kpu ninsal a kaŋunkam kpu ninsal ni ti be yɛla ni sariakarbusee,0.7333,0.1731
+558,Bɛnkam zaa sɔɣ’ o sani mali alibarika.,benkam zaa sɔg o sani ma la alibarika,0.5714,0.1
+559,Ŋuni n-lee chɛ ka mɔɣu ni buŋ’ gɔr’ o yubu?,ni le ceka mɔni bu gorayu,1.0,0.4333
+560,Dama naa maa niŋla Yawɛ naani; ka Zallakudura Naa yurilim maŋli la zuɣu.,manaa maa niŋ le yaawee naan ni ka za la kadur naayurlim maŋli la zuɣɔ,0.9231,0.2069
+561,Pool ŋun nyɛ Masia tumo wunsuhigu.,l ŋun nye masia tumo wonsohogo,0.5,0.2857
+562,"” Ka n daa yɛli, “N-nyɛ ma; timmi ma.",ka o daa yeli ma chamto yen nidiba,0.75,0.6957
+563,"Dinzuɣu n-chɛ ka di niŋ ma nyaɣisim, ka m mali suhupiɛlli; ka n niŋgbuŋ gba tiligi; dama a yihi ma kum ni.",dinsugunche kadi niŋ ma nyagesim ka mal sufupiɛl le ka niŋgboŋ gba telge dama o yii ma kum ni,0.5909,0.2
+564,"Yisa daa lan yɛli yaha, “Yi pun wum ka di sab’ yɛli, ‘Miri ka a niŋ zina.",isa daa lan yel yaha yipuukar sab yale mirkaa niŋ zn n,0.7647,0.2549
+565,"” Ka Pita garigi yɛl’ o, “A nyɛla Masia, Naawuni ni tim so na.",a pita garige yel o a nya la masiya naa woni timsu,0.7692,0.2558
+566,"Ka bɛ garigi yɛl’ o, “O yi di pala ŋun tum taali, ti naan ku tah’ o a sanna.",ilimaani bipɔso ŋun daa gul dundol maa sa ni n zaŋ piita kpi ka yilimaani bipɔbm ga ŋun daa gul dundol maa bɔa piita a pala doo ŋɔ nyaandoli ni yino kai,1.6316,1.8077
+567,bee a na mi n-nya zibisim titali dunoya?,bee ana men nya zibsem tita dunɔya,0.875,0.1935
+568,a tɛhiya ni a ni tooi chɛ ka o niŋ a ni bɔri shɛli?,a tahiya naan too che ka o niŋ ani bɔr shl,0.7143,0.2162
+569,O daa lan bo naɣilabil’ yino mini piɛla’ yino ni yuun’ yini piɛlabil’ yino mali sara shɛli bɛ ni zaŋdi nyɔri buɣim la.,daa la m bo naala bilyino minni piɛla yino ni yuun yinni piɛla bilyino ma sara shɛle ba ni zaŋ ni nyɔr bɔɔm la,0.6957,0.1648
+570,"Ka Yisa yɛli ba, “Di pala doo ŋɔ daalahichi bee o laamba daalahichi zuɣu, amaa di niŋmi ni Naawuni tumtumsa yi palo o ni.",ka yisa yɛli ba di pa la dooŋu daalaachi bee u lamb daalaachɛ zugɔ amaa di niŋmi ni naawun tuntumsa yi polo uni,0.5417,0.1596
+571,"Ka Hanun mini Zanɔanim’ daa mali me Vinvamli ni Dunɔdal’ la, ka mali pununim’ kpɛhi di dunoya ka niŋ di dunokparita mini kurimulima niŋ li.",kahanun min zenoa nim daa mali mee vunvamli ni dunuodal la ka male pununi kpɛhi di dunoya ka niŋ ti duno kparta maŋ kur muli ma niŋ l,0.68,0.1455
+572,ka bɛ ni tooi no n-ku ba kaman zunzuli ŋɔ?,b ni too no ŋkuba ka ma zunzulŋa,0.8,0.2581
+573,O daa gbibila tulaale zim laa o nuu ni ni o tuɣili tulaale zim maa.,daa gbil la tulaalzimlaa o nuu ni nootuɣi tulalezimmaa,0.7333,0.1538
+574,O sara daa nyɛla anzinfa parante yini din tibisim nyɛ kilɔgiram yini ni biɛla ni anzinfa tahi’ yini din tibisim nyɛ giram kɔbisinii kaman Naawuni jɛmbu duu liɣiri tibisim zahimbu ni nyɛ shɛm.,sara daa nyɛ la n zinfaparantee yini din temsim nya kilograam yin ni ni biɛla naa zinfataayi ni din temsim nya gram kɔbsinii kaman naawuni jambu duu laire temsim zaan bo ni nya shɛm,0.7273,0.2102
+575,"Ka Tɛkɔanim’ daa mali me m-pani bɛ zuɣu, amaa ka bɛ nabihi bɛn’ daa zaɣisi ni bɛ ku zaŋ bɛ nyɔɣu yo bɛ kpamba tuma.",katekuwɔnim daa mal me pan bi zugu amaa kabinabih ban daa zagase ni b ku zaŋ benyɔgu yɔ bekpamba tu ma,0.72,0.2326
+576,Ninvuɣ’ shɛb’ bɛn zaa daa yi dabitim ni n-labina maa zaa daa tila suɣa n-kpe m-be di ni.,invug sheb ban saa daa yi dabtim ni n labina maa zaa daa ti la sɔga nkpem be di ni,0.6667,0.1231
+577,"Bɛ ni daa chani maa ka o ʒeei gom, ka sanʒiɛɣu ti yiɣisi teeku maa ni n-ʒiɛri kom niŋdi bɛ ŋariŋ maa ni hal ka di ti yɛn tum ba barina.",bn daa channi maa ka u jee gom kasanjautiyigisi teeku maa ni nʒɛr kom n niŋdi biŋaroŋ maa ni hal kadi ti yan tum babar na,0.5806,0.1765
+578,"Ŋuna n-ŋmɛri tiri dansi, amaa ka o nuu tibiri dansi maa.",uni nŋmɛrtr danse amaa koo nuu tebir dansimaa,0.8182,0.2093
+579,"Chɛrubinim’ ayi maa kpiŋkpama zaŋ tuɣi taba wɔɣilim daa nyɛla kaman mita awɛi, ka bɛ daa ʒe bɛ naba zuɣu, ka bɛ nina kpa dunoli.",apunimaayi maa kpaŋkpama zanturtab waali daa nya la kaman mita awoe ka bi daa he be nabazulɔ ka bi ni na kpatunɔɔli,0.76,0.28
+580,O ni ti lan chɛ ka yi ni daa zɔri Ijipti dɔr’ shɛŋa la zaa labina ti gbahi ya n-kul be yi ni.,ni ti laa che kayi ni daa zɔr ijipt dɔr shaŋa la zaa labina ti gbahi ya ŋkul be yini,0.4783,0.1029
+581,"Di saha maa ha yi daa dolila dunia ŋɔ tuumbiɛri soli, ka deei Sintani ŋun su sagbana tiŋli ŋɔ na yiko la noli.",desaamaahayi daa doli la dunia ŋɔ toombiɛr soli ka die shintani ŋun su sagbana tiŋli ŋɔ na yikola nɔ la,0.5652,0.1163
+582,"Machɛle yi zaŋ kurigu she buɣim ni, o zaŋdila o nuu din mali kpiɔŋ n-kpuɣi zali ŋ-ŋme li hal ti mal’ li ka di niŋ o ni bɔri li shɛm.",a che yi zaŋ kurgshe buom ni o zaŋni la o nuu din mal kpiɔŋ ŋ kpa zali nŋmeli hal ti ŋmal le kad niŋ oni bɔrle shaŋ,0.7,0.2143
+583,"Ka niŋmiya tab’ nirilim, ka mali nambɔzɔbo biɛhigu, ka chɛri yi tab’ taali paŋdi ba kaman Naawuni ni daa chɛ m-paŋ yi gba Masia zuɣu shɛm la.",a niŋmiya tab nirilim ka mali nanbozɔb biɛhegu ka cher yitabtaali paŋ niba kaman naawuni ni daa cha mpaŋ yi gba masiya zugu shɛm la,0.4444,0.1009
+584,"Di saha ka bɛ ni boli ninvuɣ’ shɛb’ yuya ŋɔ daa yiɣisi n-zaŋ bɛ ni gbahi ninvuɣ’ shɛb’ na maa, ka zaŋ bɛ ni daa di neen’ shɛŋa na maa puuni situra ti bɛ ni bɛn zaa daa ka situra.",disaa ka be ni boi ninvul shɛb yuya ŋɔ daa yisi n zaŋ be ni gbahi ninvur shɛb na maa ka saŋ be ni daa di nianshaŋana maa puuni sitira ti bi ni ban zaa daa ka sitira,0.475,0.1298
+585,"Dama yi yi yurila bɛn yuri ya kɔŋko, laara bɔ ka yi lee yɛn nya?",tiza a niŋgbaŋ zaa chaa buom ni kaa nudirugi mi yi che kaa yen birige tum alaachi nyin ŋmaam li bai daa ay,1.4667,1.4167
+586,"Yawɛ, zaŋmi a nuu tiligi ma ninsalinim’ ŋɔ nuu ni.",yawe zaŋmaa tuu teligema ninsalnim ŋɔnuuni,1.0,0.1579
+587,zuliya kam zaa wunsuhigu duu.,adee be ni zaŋdi sara sheli nyɔr bɔim la min be ni maa ni sara sheaŋa n sara maligu bimben zuu la dama ba ni booni n jembu duu la zuliyakam zaa,6.2,4.0
+588,Di saha maa ha so daa yi yɛn chaŋ shɛli polo ka labina o suhu bi doya; dama tinsi maa nim’ daa kul zabirimi.,ti sahamaa ha so daa ye chaŋ shɛl polo ka labna u su bi doya dama tansimaanim daa kul zaberimi,0.5417,0.1463
+589,"O daa dolila Izraɛl nanim’ naba, ka daa tumdi kaman Ɛhab daŋ niriba ni daa tumdi shɛm, dama Ɛhab bipuɣiŋga n-daa nyɛ o paɣa.",daa dolla yisa nanim naba ka daa tumdi kaman ahab danib ni daa tumdi sham dama ahab bipuɔke n daa nyi o paa,0.5417,0.2188
+590,"Ka o daa ka kɔbo din ni yo, ka naa maa yɛli ni bɛ zaŋm’ sandira maa min’ o paɣa ni o bihi n-tabil’ o ni mali shɛlikam zaa ti kɔhi na nti yo o samli maa.",udaa ka kubodi niyo ka naa maa yali nɛ b zaŋ ma sandiir maaminowe paga ni u bihe tabilo u ni mali shalikam saa ti kɔha na nti yoo samli ma,0.7027,0.2
+591,"Kɔnania ŋun daa nyɛ Lɛvi zuliya ni nir’ la n-daa nyɛ bɛ kpɛma, ka o tizo Shimɛi pa o zuɣu.",konania ŋu daa nya levi zuriya nɛ niɛla daa nya bekpɛma wotozo shimia p zu,0.95,0.2687
+592,"Ka doo maa bɔh’ o, “Di nyɛla din’ ni dini?",di bi simdi ni nirkpapaa amaa ka yisa yel ba kpasɔkam zaa ni tooi doli dimbɔŋɔ naa la naawun n,1.9,2.1786
+593,Yi ni daa bi jɛm Yawɛ ŋun nyɛ yi Naawuni ŋɔ ni suhupiɛlli yi ni mali binshɛɣukam pam la zuɣu.,ini daa bijam yaa wee ŋun nya inaawun ŋɔ nin suhupiɛle yi ni ma binshagukan pam le zuɔ,0.7,0.2603
+594,O daa lan bo bula’ yino so bɛ ni zaŋdi maani alahichi sanyoo sara la ni naɣilah’ ayi mini piɛlah’ anu ni bulah’ anu ni yuun’ yini piɛlabih’ anu shɛb’ bɛ ni zaŋdi maani biɛrisuŋ sara la.,daa lan bo bu la yilo so bu ni zaŋ ni maana alaachisanyoo sara la ni naalaayi mini pela anu ni bulaanu ni yuun yil peelabiha anu shɛb be ni za ni maa ni bilsoŋ sara la,0.5946,0.1844
+595,Ka kum ni mali ninvuɣ’ shɛb’ diri bɛ puri bindira.,kakum ni ma ninvuɣ shɛb diri be pur bindira,0.5,0.1053
+596,"Yi yi chana, yin’ yihimiya waazu yɛra, ‘Alizanda nam mirina.",iyi cha na yin yihimiya waazu yara alɛzanda nan mar na,0.8,0.1304
+597,"Pu’ shɛli daa do m-miri bɛ ni daa kpahi Yisa tabili dapulli zuɣu luɣ’ shɛli maa, ka sil’ pal’ shɛli bɛ ni daa na ʒi n-sɔɣ’ so di ni do puu maa ni.",bushɛl daa do mmiri be ni daa kpaa yisa tabi dapo li zo lu shɛla maa ka silpa shɛli be ni daa na jin sɔgɔso dopuwu maani,0.6667,0.2286
+598,Di simdi ni yi puhiri di chuɣu maa di puhibu saha yuuni kam.,di simdi ni yipuori di chɔ maa dipu bi sahayuuni kaa,0.6154,0.1915
+599,” Di saha ka sagbani daa yi zuɣusaa sirigina ti pali Naawuni jɛmbu duu maa zaa.,disaha ka sagban daa yi zuɣusaa sarga na ti pali naa wo jambu duu maa zaa,0.5333,0.129
+600,Di nyɛla binshɛŋa Yawɛ ŋun nyɛ yi Naawuni ŋɔ ni zaŋ ti ninvuɣ’ shɛb’ bɛn be dunia ŋɔ ni zaa.,nyɛ le binshɛŋa yaa wee ŋin nyɛ yinaawon ŋɔ ni zaŋ ti ninvuɣ shɛb ban bei duniya ŋɔ ni zaa,0.5,0.1714
+601,"O yi deeg’ o galimi, a zaŋ o labisi yi mabiligu maa puuni yaha m-bala.",ideego galimmi a zaŋ o labisi yi mabeelugo puuni yaha bala,0.5333,0.2115
+602,Ka n daa laɣim salo pam na ni ti ti baŋ ti ni yɛn niŋ yɛlli maa shɛm.,n daa laam salo pam na ni ti to baŋ tini ya niŋ yali maashɛa,0.5,0.1961
+603,Ka Yawɛ daa yiɣis’ o suhu bahi bɛ zuɣu pam ka ŋmaligi chaŋ.,yaa wee daa ya soosub bahi be zoo pam ka ŋmalibi chaŋ,0.6154,0.3333
+604,"Anzinfa parante yini kam tibisim daa nyɛla kilɔgiram yini ni biɛla, ka tahi’ yini kam tibisim daa nyɛ giram kɔbisinii.",n sifa parante yinnikam temsim daa nyɛ la kilogram yinni ni biɛla ka taa yinikam temsim daa nyɛ kilogram kpɔbsini,0.75,0.2292
+605,amaa ka n yɛli noli niŋ bɛ biɛhigu shee maa libigi ba.,amaa kan yeli nol niŋ be biɛegusheemaa libigi ba,0.6667,0.119
+606,"Ka Yisa daa yɛli bɛ zaa, “Ŋunkam bɔri ni o doli ma, ŋun zaɣisim’ omaŋa ka kpuɣ’ o dapulli buɣi doli ma dabisili kam.",ayisa daa yel be zaa ŋunkan bɔr ni o dolima ŋun zagasim umaŋa ka kpag u dapulli buge dolima dabsil ka,0.7083,0.1954
+607,Yihimiya putɔɣu mini suhuyiɣisili ni sujee ni zabili ni nyaanzubo ni biɛr’ biɛɣu zaa yi bebu ni.,iimia putɔg mini suuyigisil ni sujie ni zabili ni nyamzubo ni birbiguzaa yibebi ni,0.5882,0.1923
+608,Dinzuɣu pumpɔŋɔ zaŋmiya naɣilahi ayopɔin mini piɛlahi ayopɔin n-chaŋ n dabili Ayuba sani ti mali bɛ ni zaŋdi sara shɛli nyɔri buɣim la yimaŋmaŋ’ zuɣu.,iupupuzaŋmiya naala ayopɔɛn man kpela ayopɔɛn n chaŋ ndabel ayuba san ti mali ba ni zaŋ ni sarase nyɔr buim la yimaŋmaŋ zuɔ,0.76,0.2764
+609,dabiɛm gbaai ma; ka wahala mini suhusaɣiŋgu.,dabiem gbama ka waa la mini suhsaa,0.8571,0.2778
+610,Bɛ ni daa niŋ kpam ŋmiri zim viɛl’ shɛli ni bɛ zaŋ mali chi sara daa palila bina ayi maa.,b ni daa nan kpam ŋmir zunvi shɛli ni bi zaŋ machi sara daa pal le bina ayi maa,0.5,0.1912
+611,hal ni saha din ka bahigu.,al ni saha diŋ ka bahegu,0.5,0.15
+612,Ka n kul mali mmaŋ’ wolisiri hal ka biɛɣu ti miri neebu.,kpul m male mmaŋ weesir hale ka bti mir neeb,0.8333,0.3721
+613,Ka zuliya shɛb’ bɛn pa Yɛhudianim’.,b daa bɔr ni bunya yisa taale kafies kabo di lun ni nii cha aso kpaŋ,2.6667,1.5926
+614,Chɛ ka n wum suhupiɛlli yɛtɔɣa; ka chɛ ka a ni daa kabisi.,e ka wum sufupilli yetɔga kache kaa ni daa kabs,0.6923,0.25
+615,"Ka Rabishake maa daa wum ni Asiria naa yiɣisi Lakishi, ka o daa labi ti nya ka ŋun’ naa tuhirila Libinanima.",adabiishekima daa wom nɛ asiria naa yisi lekish ka o daa lab ti nya kaŋun naa tusir la lab unanima,0.6667,0.2
+616,n gba naan tooi yɛli kaman yi ni yɛri shɛm ŋɔ.,gba naa too yele kama yin ye s ŋa,0.9091,0.4
+617,Amaa o daa bi baŋ o ni paɣitali hal ka o ti dɔɣ’ o paɣisar’ dɔɣim bidibiga; ka Yisifu daa bol’ o yuli Yisa.,n che ka bi kul so naamaa u daa bibaŋ u ni paatal hal ko to dɔa u paasaldɔambidib ga ka yisifu daa bol o yule yisa,0.8333,0.3924
+618,"Di saha a yi tɔɣisi ma yɛtɔɣa, n ni garig’ a.",besaha a yi tɔɔsima yetɔga n ni gare ga,0.6364,0.2188
+619,"ti buɣisi ma viɛnyɛliŋga, a ni nya ka ninvuɣ’ biɛtali ka n ni; ka m mi noli bi tumd’ alahichi.",tibugisima viɛnyeliŋga a na nya ka ninvu bietal kan ni ka ma nol be tumdi alaachi,0.75,0.1857
+620,kaman buɣim ni yi tahi yiɣi zuɣusaa shɛm la.,aman buim ni i tahi yige zuɣusaa shɛm la,0.4444,0.1429
+621,Yi tihi mini yi puri atam zaa ni ti leei toli bindirigu.,itiimin yipuur atam zaa ni tilee tol bindrgo,0.75,0.2273
+622,"Bɛ ni ti zaŋdi binyɛra paŋdi ya, amaa yinim’ ti ku zaŋ shɛli paŋ ba.",b ni ti zaŋdi bin yara paŋdi ya amaa yinim ti kutoo zaŋ sheli paŋ ba,0.3333,0.1176
+623,"Dinzuɣu baŋmiya zuŋɔ dabisili ŋɔ, ka zaŋ li niŋ yi suhuri ni ni Yawɛ n-nyɛ zuɣusaa mini dunia ŋɔ Naawuni, ka so lan kani pah’ o zuɣu.",inzugu baŋmiya zuŋɔ dabsila ŋɔ ka zaŋ li nniŋ yi suhuri ni ni yaa wee nye zuɣusaa min ni dunia ŋɔ naawoni ka so lan kan pa u zuɔ,0.4815,0.1569
+624,“N ni guli tiŋ’ ŋɔ ka tiligi li mmaŋmaŋ’ zuɣu ni n dabili Dauda zuɣu.,ni g ti ŋɔ ka tilgi li mmamaŋ zuɔ ni dali daawara,0.6667,0.3529
+625,mini tarimba ni azichilaannim’.,mini tarimba nɛ asichilanim,0.5,0.1538
+626,Nɛhimia nyaŋ sɔguriba o tuma ni.,niɛhmaa ya nyaŋ soguriba o tumana,0.8333,0.2692
+627,Ya polo ka n lee yɛn nya bɛn ni maag’ a suhu ti a?,apolo kan lee ye nya ba ni maa a suuta,0.7143,0.2286
+628,"Ka n daa lan nya ka bɛ bi lan tiri Lɛvinim’ bɛ dihili ni nyɛ shɛli, dinzuɣu ka Lɛvinim’ mini yiliyiiniba bɛn daa tumdi Naawuni jɛmbu tuma maa daa chɛ li ka chaŋ bɛ puri ni.",a n daa lan nya ka bu bila tir levi ni bi di li ni nya sheli dinzugu ka levi nim minni yilyiiniba ban daa tum ni naawuni jembu tuma maa daa chele ka chaŋ b puur ni,0.6667,0.1729
+629,Maɣipiash ni Mɛshulam so mi ni Hɛzir ni.,mayapiyash nɛ meshulam somi nɛ hezel nɛ,1.0,0.3125
+630,"Ka vi daa gbahi maligumaaniba mini Lɛvinima, ka bɛ daa mali bɛmaŋ’ kasi, ka zaŋ bɛ ni nyɔri sara shɛli buɣim la kpe Yawɛ jɛmbu duu.",bii daa gbaai maligumaaniba mini lebinima ka bi daa mali bima kasi ka saŋ bi ni nyɔr sara shɛl bɔen la kpee yaa wee jambu duu,0.5769,0.2157
+631,Bɛ maŋmaŋ’ niŋgbuna biɛrim kɔŋko n-naɣi mali ba.,bmaŋmaŋ niŋgbuna berim koŋkon nae mal ba,0.75,0.1842
+632,"Nyamiya, bɛn bɔbiri bela nanim’ yinsi.",gbingbaan shel pɔɔ ni zɛraa ka bozugu ke i daa chaŋ nira ŋimbɔb ke yi daa chaŋ ni yi ti nya a nyamiya ban bɔrl bie la nanim yin si,4.6667,2.5333
+633,Lala ka Hiram daa niŋ tum Naa Sulemaana ni daa puh’ o Naawuni jɛmbu duu tuun’ shɛŋa maa zaa naai.,la ka hiram daa niŋ tum naahsulemaana ni dapoo naa wu jambu duu tuun shaŋa maazaa naa,0.6,0.1467
+634,Ka bɛ daa mali me li lala hal ti paai mita kɔbisinahi ni pihinahi wɔɣilim tariga n-zaŋ li ti zal Saɣiri Dunɔdal’ la shee.,b daa mal mee le lala hal ti paamita kɔbsinahi ni pihinahi wɔalim tariga n zaŋ li ti zali saare dunua dal la shee,0.625,0.1684
+635,A ni galim ŋun nyɛ Wuntialana ka nyɛ Kpiɔŋlana?,na galimŋinnye wuntilana ka nyɛ kpeŋ lan,0.8889,0.2105
+636,Di ni yɛli shɛm maa m-bɔŋɔ: “Bɛ pirigi m binyɛra ti taba.,ni ya sham maam bɔɔ be perkam bi yara tita a,0.9167,0.3571
+637,"O ni daa ti miri tiŋ’ maa ni kpɛbu, ka tiŋ’ maa ni nachimbil’ so kpi ka bɛ ʒir’ o yirina, ka tiŋ’ maa niriba kabiri doli.",n daa ti mar tiŋ maa ni kpibu katiŋ maa ni nachimbil so kpi ka bi ziro yir na katiŋ maa ni niriba kabre dole,0.5556,0.1494
+638,"Ka Yisa yɛli ba, “Naawuni zaŋ alizanda mini dunia ŋɔ yiko zaa niŋ n nuu ni.",ke yisa yali ba naa won zaga alizan da min dnia ŋɔ jikozaa niŋ nuu ni,0.75,0.1754
+639,Chɛ ka m baŋ m biriginsim mini n daalahichi.,kabaŋ mbergen simmini ndaalaach,1.0,0.2857
+640,"Dama nandaamba kul ni be yi sani sahakam, ka yi yi bɔri ba din viɛli niŋbu, yi ni tooi niŋ ba saha shɛlikam; amaa man’ kul ku be yi sani sahakam.",min nan daa mi kul ni bee sansaa kam ka yiibɔriba din viɛl ni bu yili toonibasaa shalikam amaa man kulku bee sansaa ka,0.8387,0.2091
+641,Kum zana n-daa kul gili ma; ka kpiimba biɛhigu shee.,umsana n daa kul gilim ma kacpiiba bs,0.8,0.35
+642,"Ka Gomna Pailɛt bɔhi ba, “N kpahimi yi Naa maa tabili dapulli zuɣu?",a bi do beyee yɛli kumo kumo gbaɔtabl dapulu zugu ka gona pilate bɔh ba nkpaan yinaa maatabl dapuul,1.4615,1.0769
+643,yilli ŋɔ puuni yɛtɔɣa ŋɔ zaa yɛli niriba maa ka bɛ wum li.,yiluŋɔpuuni yetɔa ŋɔ zaa yeli niriba maa kabwol,0.6923,0.2
+644,"Dama n ni kpi tiŋgbɔŋ ŋɔ ni; n ku du Jɔɔdɛn mɔɣili, amaa yinim’ ni du li chaŋ ti deei tiŋgbɔn viɛlli maa su.",dama n ni kpi tiŋgbaŋ ŋɔn ni ŋ ku di jɔɔji mɔgɔ le amaa yenim ni du le chaŋ ti dee tiŋgbaŋ viɛlle maa su,0.5,0.1975
+645,Ŋuna n-fuɣiri maligumaaniba situra ka mali ba chana.,ŋunan fugri maligumaaniba situra ka mal ba chiɛna,0.5,0.1163
+646,Daadam ŋun nyɛ paɣ’ ni dɔɣi so ŋɔ dabisa bi yaɣi lala.,adam ŋun nye paga ni dɔasoŋo dabisa bi yaa lala,0.5833,0.2439
+647,"Ka bɛ daa boli din sa nudirigu polo maa Jachin, ka boli din sa nuzaa polo maa mi Bɔaz.",b daa bol dinsanuudirikupolo maa jachin ka bol din sanuuzaapolo maa mii boaz,0.6842,0.1515
+648,Dinzuɣu di chɛliya ka yi mini niriba lala tatabo be.,dinzugo di chaliya ka yi minni niriba lalatataboobi,0.6,0.1429
+649,"Ka Yisa daa dii chirigi ba soli maa ni puhi ba; ka bɛ chaŋ ti gban’ o tooni m-bɔbil’ o naba, ka jɛm o.",yisa daa di cherig ba soli maa ni m poo ba ka bi chaŋ ti gben u tooni m bɔbil u naba ka jimu,0.5417,0.2055
+650,Ka ŋuni n-lee gaai mɔɣu ni bun’ so ŋun zɔri pam naba ni tanachi?,ŋul ni ye gaai mɔa ni binso ŋun zɔr pam naba nitanachi,0.6429,0.2083
+651,Ammishadai bia Ahiɛza sara n-daa bala.,misadabi ayaza saandaabala,1.0,0.2903
+652,"Yisa ni daa kul yɛli ba, “Mani m-bɔŋɔ maa, ka bɛ tiŋsi lab’ nyaaŋa ti lu tiŋa.",isa ni daa kul yeli ba mann bɔŋɔ maa ka bi tiŋsi lab nyaaŋati lu tiŋa,0.4118,0.0893
+653,Bɛ ni daa niŋ kpam ŋmiri zim viɛl’ shɛli ni bɛ mali chi sara daa palila bina ayi maa.,b ni daa nan kpamir zinvi shɛli ni bi machisara daa pa la binaayima,0.7368,0.2308
+654,"Ka o mini ba daa ti di daa, ka bɛ saɣi ni o yom’ ba tumtumda dabisi’ munimuni yɔri; ka o chɛ ka bɛ chaŋ o puu maa ni.",u min ba daa ti di daa ka bi saa nooyomba tumtumnib dabisi munmun ni jɔri ka o daa chɛ kaa bi chaŋ bupuu maanin,0.6897,0.2619
+655,"Di saha ka Ɛzra daa yɛli, “Paɣimiya Yawɛ ŋun nyɛ Naawuni ŋun galisi ŋɔ!",di saha ka esra daa yɛli paamiya yaa wee ŋunya naawuni ŋun galisiŋu,0.5,0.1818
+656,mini tiŋgban’ nɛli ni din nyɛ daadamnim’ ni ka luɣ’ shɛli?,maŋ tiŋgban neel ni di nye daadamnim ni ka lu shɛl,0.5455,0.2273
+657,Ka Harihaya bia Uziɛl ŋun daa nyɛ machɛli ŋun doori salima la daa mali me m-pani bɛ zuɣu.,aharihaya bia yuze ŋun daa nyɛ ma cheluŋin doori salima la daa mal me pann bi zuɔ,0.5,0.2
+658,"tiligira la ni yɛli shɛm m-bɔŋɔ: “Yi zuɣu, n ni tim Babilɔn.",tiligre la ni yelshem mbɔŋɔ yizugu n ni tiŋ babilɔn,0.5,0.1591
+659,"” Ka Jona daa deei Yawɛ noli, ka yiɣisi chaŋ Ninive.",a jona daa dee yaa wee noli ka yigisi cha nin,0.7,0.2564
+660,amaa o ni kari o ni yɛli noli ti ninvuɣ’ shɛb’ la bahi.,amaa wɔ ni kare o ni yel noli cti ninvu sheb la baa,0.5385,0.25
+661,ka bɛ ni daa be luɣ’ shɛli maa nim’ ku lan baŋ ba yaha.,be ni daa be lub shel maa nimukulan baŋ ba yaha,0.5,0.1795
+662,"Ka salo daa wum o chandi maa damli, ka yi tinsi ni n-chaŋ bɛ naba zuɣu kar’ o naba.",asio daa wu mo u chani maadam le ka yi tinsi ni chaŋ binabazu ker u naba,0.7368,0.1967
+663,ka di nyɛ tiliginsim din ku naai; ka bɛ kul ku lan di vi yaha.,dnya tiliginsim din ku naahe ka bi kul kula ti i aa,0.6667,0.2609
+664,"Nyama, yi yi lo noli yi ŋmɛrila tab’ naŋgbankpeeni.",yiylo noli yi ŋmela tabnagbakpeen,0.7778,0.3
+665,ha la du pam ka viɛla; di nyɛla na’ titali tiŋa.,ala du pam ka vila di nyɛ la natital teŋa,0.6364,0.1143
+666,Ka n daa zaŋ mmaŋmaŋ’ tumtumdiba ti zali dunoya maa ni ni di chɛ ka so ku ʒi binshɛli kpe tiŋ’ maa puuni na Vuhim Dabisili dali.,n daa zaŋ mmaŋmaŋ tuntumdiba ti zadunee maa ni ni ni che kasoku ʒi binsa kpeteŋ maa puuni na vum dabsol dale,0.5556,0.2121
+667,Ka Sulemaana daa chɛ ka bɛ kali tinzunnim’ bɛn be Izraɛl tiŋgbɔŋ maa ni kaman o ba Dauda ni daa chɛ ka bɛ kali ba shɛm la.,a sulemaan na daa chee ka bi kale tinzuunim ban be israɛl tiŋgbaŋ maa ni kaman o ba daawuda ni daa chee ka bi kale ba shɛm la,0.5185,0.1702
+668,"Bɛ daa kuhiya bɔri sɔŋsim, amaa ka so kani ŋun ni tiligi ba; ka bɛ daa kuhi boli Yawɛ, amaa ka o bi garigi ba.",b daa kuye bɔrsɔŋsim amaa kaso kani ŋunditelgeba ka be daa ku bɔlyaa we amaa kaw bi garige ba,0.68,0.2195
+669,"Ka o daa gbaai Ahazia shee bɔbu, ka bɛ ti nya o ka o sɔɣila Samaria, ka bɛ gbaag’ o tahi Jɛhu sani nti ku o.",u daa gbaa azia ashe bɔgu ka bi nyao kuu sua la samariya ka bi gbaa wutaa ja usan ti kuu,0.8846,0.3418
+670,Amaa ni o kul yɛlim’ yɛtɔɣ’ shɛli o ni yɛn yɛli ka o dabili maa kpaŋ.,maa nɔkul yelim yetɔ sheli on yen yɛle kao dabeli maa kpaŋ,0.875,0.2157
+671,"” Ka Nikɔdimus bɔh’ o, “Wula ka dimbɔŋɔ ni tooi nani?",ka yisa garigi bo a nyala yehudia nim karimbanim ni yino kashi dimbɔŋɔ a chikatim yalimaŋle kan yara tinim taasir latin,1.9,2.0
+672,A niŋ alibarika niŋ o ni sahakam; a chɛ ka o mali suhupiɛlli din yi a sanna.,a niŋ alibarika niŋ u ni sahakam a chɛ ku wo mal sufupiɛl le din yiasana,0.5294,0.1207
+673,"Ka o ni tooi yɛli bɛ ni yino ni o cham’ luɣ’ shɛli, ka o chaŋ; ka ni tooi yɛli bɛ ni yino ni o kamina, ka o kana; ka mi ni tooi yɛl’ o dabili ni o niŋmi ŋ-ŋɔ, ka o niŋ li.",o na too yɛli be niyino nɛ o cham lu shali kao chaŋ ka na too yali be niyino nɛ o kamna ko kana ka man ni too yali o dabele nɛ o niŋ ma nŋɔ kao niŋ li,0.6818,0.2119
+674,Di simdi ni bɛ paɣi Yawɛ yuli; dama o noli ni yɛligu.,di simdi nɛ b pagyaa wee yuli dama wanol nɛ yeligu,0.6667,0.3
+675,"Ka n nyari sɔŋsim, ka n suhu piɛla; ka n yiini yila paɣir’ o.",ka nyar sɔŋsim kan so piɛla kan yiini yi la pagar,0.7143,0.1818
+676,Ka Izraɛlnim’ maa zaa daa yiɣisi Sin tiŋgban’ nɛli ni m-piri taba gbilligbilli n-chani kaman Yawɛ ni daa zali ba shɛm.,a isranim maa daa yil si sin tigban nial ni m per tab gbelligbelle n chann kaman yaa wa ni daa zali ba shɛm,0.7143,0.2366
+677,Salima kpahi tibisim daa nyɛla kilɔgiram giram kɔbisinu ni pisopɔin ni biɛla.,n maa kpaatimsom daa nyɛ la kilogram gram kɔbsunu ni pisopɔɛ ni biɛla,0.75,0.2615
+678,"Bɛ daa kul tumdila din chihiri kam kaman zuliya shɛb’ ni tumdi shɛm, ka ta Yawɛ ni pun mal’ o jɛmbu du’ kasi shɛli zali Jɛrusalɛm la daɣiri.",daa kpal tum la din chihir kam kaman zulea shɛb ni tum ni sham ka ta yaa wee mupomaligujambu duu kasi shali zal jerusalɛm la daari,0.7143,0.2593
+679,Yi bi kari Yawɛ maligumaaniba bɛn nyɛ Aduna bihi la mini Lɛvinim’ zaa ka zalila yimaŋmaŋ’ maligumaaniba kaman tiŋgban’ shɛŋanim’ ni niŋ shɛm la?,ibikaryaa wee maligumaaniba ban nyɛ aduna been la mini levininzaa ka zaŋ la yumamaŋ malugumaaniba kaman tiŋgban shaŋanima ni niŋdi shɛm la,0.5833,0.1724
+680,"O daa lan mali bintamdisi, ka mali taha tam di zuɣu, ka daa lan mali kɔniŋdi bini ni naɣilahi pinaayi shɛb’ zuɣu di ni daa tamya la.",aa lan ma bintamdisi ka mali tahatam di zugu ka daa lan mali koniŋdibini ni naalai pinaayi shɛb zuɣu di ni daa tam yala,0.4074,0.0882
+681,Sulemaana ni daa sɔŋ Yawɛ jɛmbu duu maa tampuɣili dahin’ shɛli ka tum tuun’ shɛŋa m-mali hal ti me Yawɛ jɛmbu duu maa naai zaa shɛm m-bala.,lemana ni daa sɔŋ yaa wee jambu duu maa tampɔɔli dahn shɛla ka tum tuun shaŋa m mali hal ti mi yaa wee jambu duu maa naa zaa shɛm bala,0.5926,0.1852
+682,Bɛ ŋmanila gbuɣin’ polli ŋun sɔɣi doya.,bi ŋmani la gbogim pɔli ŋun sɔ doa,1.0,0.2903
+683,dama a yuli maa viɛla.,maa yuli maa vila,0.6,0.1765
+684,"Ka Yisa bɔhi ba, “Yinim’ bɛn ka yɛda ʒiɛmannim’ ŋɔ, daba ala ka m mini ya lee yɛn tooi laɣim be bee daba ala ka n yɛn tooi din ya suɣilo?",ka yisa bɔha ba yinim ban ka yada ʒieman ŋɔ daba ala ka miniya le yan too laam bi bee dabaala ka yan too dunya suul,0.6452,0.2079
+685,O sara daa nyɛla anzinfa parante yini din tibisim nyɛ kilɔgiram yini ni biɛla ni anzinfa tahi’ yini din tibisim nyɛ giram kɔbisinii kaman Naawuni jɛmbu duu liɣiri tibisim zahimbu ni nyɛ shɛm.,sara daa nyɛ la ansinfa parante yi ni den temsib nyɛ kilograam yini ni biɛla naansinfa taayini din temsib nyɛ graam kɔbsi niin kaman naawuni jambu duu lagira temsim zaanbu ni nya shɛm,0.6667,0.2102
+686,Tiligim’ ma ninvuɣ’ shɛb’ bɛn tarili kul bela dunia ŋɔ ni kɔŋko la nuu ni.,ilgi ma ninvu seb be tar ni kul bela dunia ŋɔni koŋko la nuu ni,0.6,0.1964
+687,"Tulim yi ti kana, a ku lan nya li di biɛhigu maa shee.",tulim yiti kana a kula nya le di biɛegu maase,0.6154,0.15
+688,"Noli ŋɔ zaa ni ti doli ya n-din ya hal ti kun ya, yi ni zaɣisi ni yi ku doli Yawɛ ŋun nyɛ yi Naawuni ŋɔ ni zali ya fukumsi zaligu shɛŋa min’ o zaligu shɛŋa din pahi la zuɣu.",laŋɔ zaa ni ti doli ya n din ya hal ti kun ya yin ni zagase nia kido yaa we ŋun nye yi naawona ŋɔ na zali ye fukumsi zaligu siaŋa min o zaligu shaŋa dim pahe la zuɔ,0.5,0.2
+689,O daa lan bo bula’ yino so bɛ ni zaŋdi maani alahichi sanyoo sara la ni naɣilah’ ayi mini piɛlah’ anu ni bulah’ anu ni yuun’ yini piɛlabih’ anu shɛb’ bɛ ni zaŋdi maani biɛrisuŋ sara la.,daa la bo bulaayuno so be ni zaŋ nimaana alaachi san yoo sara la ni naala ayi mini peela anu ni bulaanu ni yuwunyini peela bie anu sɛb beni zaŋnimaa birsoŋ sarala,0.6757,0.1986
+690,"Niriba maa ni daa wum zaligu maa ni wuhi shɛm maa, ka bɛ daa yihi tinzunnim’ zaa bɛn be Izraɛlnim’ ni.",diba maa ni daa wom zeligu maa ni wuhe shɛm maa ka b daa yee tensunnim zaa ban be israelnim niŋ,0.4762,0.2051
+691,"Ka so’ shɛli din kuni nyɛvili shee dolibu mi to, ka di dunoli nyɛ duno’ muɣiliŋga, ka niriba bɛn mi dol’ li bi yaɣ’ lala.",kasoshe dinku nyɛvilsee doli bumitu ka dundundo nyi dundo mɔɔlin ga ka niriba ba mi do le bi yaala a,0.8,0.2778
+692,"Ka shɛŋa lu gɔhi ni, ka gɔhi maa zooi lim li n-girimgirim li.",shaŋa lu gɔa ni kagɔa maa zoolim le n gerim gerem le,0.8462,0.2826
+693,"Dama Yawɛ ŋun nyɛ yi Naawuni ŋɔ nyɛla buɣim din dira, o nyɛla Naawuni ŋun zabiri nyuli.",ma yaa wee ŋun nyɛ yi naawun ŋun nye la buim din dira u nyɛ la naawun ŋun zabr nyu le,0.8824,0.2174
+694,“Pukpar’ so n-daa chaŋ nti kɔr’ o puu ka yaɣind’ o bimbira.,bkpsoncha ntekopuu ka yaan dobib,0.9167,0.4048
+695,Ka Hur bia Rɛfaya ŋun daa nyɛ Jɛrusalɛm yaɣili pirigili polo naa la daa mali me m-pani bɛ zuɣu.,ahuurbii rafaya ŋun daa nya jerusalɛm yaa le pirgili polo naa la daa ma me pan bi zuɔ,0.6842,0.2267
+696,Ka so yi zaŋ omaŋ’ dalim kpatinariga yili di ni lu.,kaso yi zaŋ umaŋ dalin kotinariŋi yile di na lu,0.6364,0.2051
+697,Bɛ daa zanila bɛ zaashɛhi kaman Musa ŋun nyɛ Naawuni nir’ la zaligu ni daa wuhi shɛm la.,b daa zan la bezaashai kaman mu saŋu nyeɛ naa wu nir la zaugu ni daa wu shɛm la,0.6111,0.1884
+698,"O daa lan bo salima laa din tibisim nyɛ giram kɔbiga ni pia, ka tulaale zim pal’ li.",daa la bo salima la din tibsim nya graukɔbiga ni pia ka tur alizim pa a,0.6111,0.2031
+699,Ka o binyɛrigu mi paligi paratɛte kaman gol’ la; ka chib’ shɛli ka dunia ŋɔ ni din ni tooi paɣ’ li ka di piɛl’ lala.,u binyarugmi pagpara tite kaman gol la ka chub shel daa ka dunia ŋa ni ni ni too paali kadi piɛl lala,0.64,0.2326
+700,Ka dimbɔŋɔ tahirila nyuli zabbu mini woligibu ni turi ni tab’ zilisibu ni naŋgbankpeeni ŋmɛbu ninvuɣ’ shɛb’ bɛn tɛha bie ka lan nyɛ bɛn bi doli yɛlimaŋli la sanna.,a dimbɔŋɔ tar la nnyuli zabu mi ni woligibu ni turi ni tabzilisibu ni nangbankpeeni nmibu ninvu sheb ban tiha bee ka lan nye ban bi doli yelimaŋli la sanna,0.6552,0.1298
+701,"Ka ŋun pa o zuɣu daa nyɛ Jɛhɔzabad, o mi daa sula tɔbbihi tuhi’ kɔbiga ni tuhi’ pihinu bɛn daa gbibi bidibbina m-mali shili gu tɔbu.",amupoosol daa nyi jehosabat o mi daa su la tɔbitukɔbiga ni topienu kban daa gbibe kidi be na mma shil gutɔba,0.8077,0.3235
+702,"Ka Musa daa yɛli Izraɛlnima, ka bɛ kpamba zaa daa bo jaaŋgbɛhi na ti ti o.",ma wusa daa yali isiraɛlnimaa ka ba kpambu zaa daa boo jaanbin atotoo,0.75,0.2632
+703,"Yɛlimaŋli, Naawuni ku tum tuumbiɛɣu; Kpiɔŋlan’ Naa ku ti nimmira yɛlimaŋli.",yelimaŋle naa woŋ kutumtuun biɛgu poŋla naakuti nimara yelimaŋle,1.0,0.2459
+704,"O yɛli ma, “A nyɛla m bia; zuŋɔ dabisili ŋɔ ka n dɔɣ’ a.",o yelma a nyɛla m bia zuŋɔ dabsel ŋɔ kan dɔ,0.5,0.1842
+705,Ka salindooriba mini kɔhigɔriba daa mali me zuɣusaa duu din be gɔŋbu shee la mini Piɛri Dunɔdali sunsuuni la.,asalim dooriba mini kɔhgɔriba daa mal mee zuɣusaa duu din be gɔŋbushee la mun piɛri dino dal sunsuuni la,0.5263,0.1111
+706,"“Miriya anab’ ʒirinim’ bɛn kani yi sanna m-be kaman piɛri n-nyɛ ba, amaa ka lee nyɛ kunduna bɛ suhuri ni la.",yaa anab jernim ban kan yisan na bee kaman piɛr nnya ba amaa ka lee nyi kunduna bi sur b n a,0.7143,0.2593
+707,Ka o daa lan zaŋ salima alali mali tipuma kɔtomsi mini firilanima ni gbabɔnima ni bɛ ni mali binshɛŋa kpihiri firilanima ni taha ni chɛrisi.,u daa la zaŋ salimaa lali ma tipuma kɔtomsi mini firlanima ni gbabonima nim ni mali binshaŋa kpiiri firlanima ni taa ni charsi,0.6,0.1391
+708,"Anabi Musa mini Anabi Ilaija n-daa puhi zani o sani ni jilima, ka bɛ min’ o tɔɣisiri ŋun’ Yisa ni ti yɛn niŋ shɛlikam Jɛrusalɛm ka naanyi kpi la yɛla.",anab musa minn anabi elaija n daa puu zani o sanni jilima ka bi mino tɔgsir ŋun yisa ni yan niŋ shelikam jerusalɛm kanaanyi kpia la yale,0.6667,0.1552
+709,O daa lan bo naɣilabil’ yino mini piɛla’ yino ni yuun’ yini piɛlabil’ yino mali sara shɛli bɛ ni zaŋdi nyɔri buɣim la.,daa la bo nnaalabil yino min pilabil yino ni yuun yini pilabil yino malesara shɛl ba ni zaŋ di nyoɔr bugim la,0.6087,0.1868
+710,"Amaa ka bɛ daa naɣ’ bula Balaam paa ni o yɛli nol’ ti Izraɛlnima, amaa ka Naawuni daa chɛ ka nol’ yɛlibu maa ŋmaligi leela alibarika.",amaa ka bi daa naa buu la baalam paa ni o yel noli ti israɛlnima amaa ka naawuni daa che ka noi yel maa ŋmaligi leela alibarika,0.4231,0.1456
+711,"Bɛ yi niŋ lala, bɛ ni zaŋ bɛ daazichi maa zali tanza’ kpeeni n-gu dahin’ shɛli; ka di chɛ ka bɛ tooi vili n-gbib’ nyɛvili din nyɛ nyɛvili maŋli la.",bi yi niŋ lala bi ni zaŋ bidaasichibazali kan za kpeen ni n gu da shali ka di cha ke bi tooi vil gbibi nyɛvili din nye nyɛvil maŋl a,0.6667,0.2
+712,"ka tɛhi a min’ o ni yɛn va shɛm, a ku lan niŋ lala yaha.",kete a min o nienva shɛm a ku lan niŋ lala yeha,0.4,0.1795
+713,O daa yɛlimi: “Ninvuɣ’ so ni ti be mɔɣu ni mooni molo yɛra.,aa yelmi ni fa son ti bi mɔan ni m mon  ya,0.8462,0.4651
+714,"Dinzuɣu ka Yawɛ ŋun nyɛ o Naawuni ŋɔ daa zaŋ o niŋ Siria naa nuu ni, ka bɛ daa tuhi nyaŋ o, ka gbah’ o niriba pam n-zaŋ ba kuli Damaskus.",dizɔɔ ka yaa wee ŋun nyɛ o naawunni ŋɔ daa zaŋ o nniŋ siriya na anuu ni ka b daa tuui nyaŋ o ka gbaŋ o niriba pam nzaŋ ba kul damaskus,0.3871,0.1373
+715,Ka salo maa daa vu m-miri Gomna Pailɛt nti yɛl’ o ni o niŋmi ka o ni yi pun niŋdi ba shɛm la.,asolo maa daa vu mir gomna pailɛte yel o ni o niŋmi kamaroo ni yi puniŋib hɛm la,0.5217,0.2353
+716,Bɛ daa nyɛla dɔbba mini paɣiba ni bɛnkam ni tooi wum ka baŋ di gbinni.,daa nyi le dɔbbe min pagba ni ban kam ni too wum ka baŋ di gbenn,0.6667,0.2182
+717,Ka Asa daa boli Judanim’ mini Bɛnjamin zuliya niriba n-tabili bɛn zaa daa nyɛ saamba ka be bɛ sani maa.,a sa daa boe judani min bɛnjamin zuliya niriba  ntabil ban saa daa nyɛ saanba ka bee be sanma,0.65,0.1728
+718,"Abija ʒiɛmani maa ni Jɛrɔbɔam daa bi lan nya yaa, ka Yawɛ daa ti ŋme o luhi ka o kpi.",biijashimanni maa ni jerobon daa bi laa nye yaa kayaa wee daa ti nye o luku kao kpe,0.6,0.3281
+719,Maluk ni Harim ni Baana.,lu nɛ harim nɛ baana,0.6,0.2632
+720,Mani ŋun nyɛ Izraɛlnim’ Naawuni ŋun be kasi ŋɔ ka a niŋ karimbaani lihi ʒiɛm maa.,n ŋin nyɛ israɛlnim nnaawoni ŋun be kasi ŋɔ kaan niŋ karimbaani lihisiam maa,0.5,0.1562
+721,” Ka n daa laɣim ba na nti zaŋ ba zali bɛ zaashɛhi.,n daa lagam ba na nti zaŋ ba zale bi zaashahe,0.4167,0.2162
+722,Dabisili din pah’ anii dali Pɛdazu bia Gamaliɛl ŋun daa nyɛ Manaasa zuliya zuɣulan’ la n-daa mali sara.,absel dan paa ani da le pedazu bii garmalil ŋuna n daa nye manasazulia zɔlanna n daa mal sar,1.0556,0.2805
+723,"Miligim’ ka chɛ ma, dama n dabisa kul nyɛla vuhim.",igi ka ma dama n dabsa kul nyɛ la vuhom,0.6,0.2368
+724,"Miriya ka yi be kaman yi yaannim’ mini yi mabihi bɛn daa bi ʒe Yawɛ ŋun nyɛ bɛ yaannim’ Naawuni ŋɔ yim, ka o chɛ ka bɛ nya naŋgbantom yi zaa ninni la.",maria ka yi bee kamaan yiyaanim minni yi mabia ban daa bi ʒe yaa wee ŋin nyɛ yiyaanim naawuni ŋɔ yim ka wu chee ka bi nya nan gbantɔm yi saa nin ni la,0.6364,0.2105
+725,"Di saha ka Yisa tizɔbihi min’ o ma daa ka o sanna, amaa ka salo galisim zuɣu daa chɛ ka bɛ kɔŋ o sani paabu.",di saha ka yisa tizɔbia min o ma daa ka o san na amaa ka salo galisim zugu daa che ka bi kɔŋ o san paa,0.32,0.0988
+726,"Kpahimmi Naawuni tuma; o yi niŋ shɛli ka di gbiligi, ŋuni n-lee ni tooi mal’ li zali dɛde?",ammin naawu tumao yiniŋ shali kari gbilge ŋun lee ni too ma li zal dede,0.8889,0.25
+727,"Yawɛ, ti garigim’ a muɣisigu nyabu dali!",yaawee tigarigi ma ausiuyada,1.0,0.3871
+728,Ti ni lan zaŋdi ti tiŋgban’ ni bindira pirigibu bupia puuni zaɣi yiniyini na nti tiri Lɛvinima; dama Lɛvinim’ maa n-deeri ti tiŋkpansi zaa binyɛra pirigibu bupia puuni zaɣ’ yiniyini.,n naŋ zaŋli titiŋgban ni bindira pergibu bupia puuni zaayinyen na nti tir levinima nama levi nim maa ndeeri titeŋkpansi zaa bi yara pergibu bupia puuni zaayin yinn,0.7,0.1701
+729,Amaa bɔhimi biŋkɔbiri ka bɛ wuh’ a; ka bɔhi noonsi ka bɛ yɛl’ a; bɔhim’ dunia ni tihi ka di wuh’ a; ka teeku ni zahim ni yɛl’ a.,maa bɔhim biŋkubr ka bi waha ka bɔhi noonsi ka bi yɛla bɔhim dunia ni tihe ka di waha ka teeku ni zam ni yɛla,0.5172,0.1319
+730,Bɔzuɣu ka zuliya kam lɔri duŋ taabo nia.,bzugu ka sulyaka loi duŋ taabon,0.75,0.2812
+731,Hamat mini Aripad ni Sɛfarivaim ni Hɛna ni Iva nanim’ la lee kpalim ya?,amaa ti mini aripad nɛ sefarivem nɛ hena nɛ iva nanim la lee kpalm ya,0.5714,0.1964
+732,ka yi mini niriba tɔɣisi gbaai yi zɔsimo daa ni yɛn nyɛ shɛm.,yimi niriba tɔgasi gbaa yizosimu daa niya nye ɛŋ,0.8462,0.3125
+733,Ninvuɣ’ biɛri ŋmanila mɔri din zoori wuntaŋ’ nyeebu ni.,infu br ŋman la mɔr di zooruntaŋ nyeebun,1.0,0.2727
+734,"Ka biɛɣu daa neei, ka Musa kpe suɣili maa ni nti nya ka Aduna jaaŋgbee din daa nyɛ Lɛvinim’ din’ la puhila vari, ka daai pum n-wali alimɔnd wal’ moma.",a biga daa nee kamu wusa kpee sooli maa ni n ti nya kaa zuna jaa n bee din daa nya levenim din la pu la vari ka daai pum nwe amɔ wee mu,0.7333,0.2719
+735,Yiko shɛli din be ti ni ŋɔ mini Naawuni ni daa zaŋ yiko shɛli din galisi neei Masia kum ni n-zaŋ o ʒili o nudirigu polo alizanda ni la nyɛla yim.,ikoshel din be ti niŋɔmini naawum ni daa zaŋ yiko sheli din galisi nee masiya kum ni n zaŋ o ʒili o nudirko polo alizanda ni la nyala yaa,0.4516,0.1239
+736,Ka bɛ dabisa bi ŋmanila bɛ ni bu so paa dabisa?,abudabsa biŋmana bini busopaa dabsa,1.0,0.1944
+737,Ka Musa daa zaŋ jaaŋgbɛhi maa sɔŋ Yawɛ tooni alikauli suɣili maa ni.,amuusa daa zaŋ jaangbi maa sɔŋ yaa wee tooni alikawuli suɣilimaani,0.6923,0.1636
+738,Ninvuɣ’ shɛb’ bɛn zaa tam Naawuni yɛla ŋmanila lala.,infusheb ban zaa tam naawunn yɛla ŋmani la lala,0.6667,0.1463
+739,"Ninsalinim’ mi lee nyɛla bɔ, ka a tibigi ba pam.",isen ni mi le nyala bo kaa tebgbapa,1.0,0.3611
+740,Bɛ ni ti nyɛla zuliya shɛb’ bɛn mali ninkuunsi ka ku tiri ninkura jilima bee n-niŋ bipola nirilim.,ni to nyɛ la zuliya shɛb ban male ninkuunsi ka petir ninkura jilima bee nniŋ bipola neri la,0.5556,0.141
+741,"Ka di mi pala yi ni tum shɛli zuɣu ka yi tiligi, dinzuɣu shɛli kani ka yi ni nyu bara di zuɣu.",kade ba pala yi ni tum tuunshel zugu ka yi telige dinzu shel kani ka yi ni nyu bara di zuɔ,0.4091,0.2535
+742,"Ka zom’ maa ʒiʒiinitab’ mini bɛn daa pun mi ka o nyɛ barimaana la ti bɔhira, “Pa doo ŋɔ n-yi ʒiya maani bara la?",zuba maa shijiini tabmin ni ban daa pu mii o ka u nya barmaan la ti bɔɔra ba doo ŋan yi ziɛm maani ba la,0.75,0.3133
+743,ka o ʒiɛyimtali mi kul ni be ʒiɛmani kam ni.,u ʒe yimtali ma kul ni be ʒeman kam ni,0.5,0.2647
+744,"Ka Naa Hɛrɔd daa yɛli, “N daa ŋma Jɔn zuɣu; ka ŋuni mi yɛla ka n lee lan wumdi ŋɔ?",ka naa hɛrɔd daa yɛli n daa ŋma jɔnn zugu ka ŋun mi yɛla kan leelan wum di ŋ,0.45,0.0678
+745,"Ti min’ a bɔ ni, nyin’ Yisa Nazarɛt nira ŋɔ?",dama mann su li kan ni too zaŋ li ti n ni bɔ,1.2,0.7742
+746,"Bɛ yi kul be luɣ’ shɛlikam, dabiɛm m-mali ba.",kul be luskam  dabi mala,0.7778,0.4242
+747,"Yɛlimaŋli, bɛ dɔɣ’ ma mi ni tuumbiɛri.",yelimaŋle b dɔge ma mi ni tuwum biɛri,0.7143,0.2069
+748,Alibarika ni ti be yi piɛri mini yi ziŋŋɔriti ŋmana ni.,alibarika ni ti be yipre min yizi ŋɔr ti ŋmanani,0.6364,0.1364
+749,Di nyɛla din ni tooi sɔŋ nira kaman liɣiri ni sɔŋdi nir’ shɛm.,di nyɛla din ni too sɔŋ nira kaman ligiri ni sɔni nir he,0.3077,0.1458
+750,ninvuɣ’ biɛri suhuyubu niŋ; di chɛ ka bɛ di nasara.,ninvubiɛri suyubuni di che kaa bi dinasara,0.9,0.1795
+751,ka kuhiri boon’ a n nandahima saha maa.,ku boona n nan dma sahamaa,0.875,0.3
+752,"Pita ni daa na kul yɛri lala maa, ka sagbani dii sirigina ti lim ba, ka dabiɛm daa gbahi ba pam bɛ ni kpe sagbani maa ni maa zuɣu.",ita dadaa na kul yɛr lala maa ka sagbandii sirga na ti len ba ka dabiɛm daa gbaa ba pam be ni kpe sagban maan ni maa zuɔ,0.4483,0.1616
+753,"Di saha ka o daa zaŋ nabia maa na nti zaŋ nam zuɣupiligu pil’ o, ka zaŋ nam fukumsi litaafi ti o, ka bɛ leeg’ o nam.",disaa ka u daazan na bii maa na nti zaŋ nam zipelgepelo ka zaŋ nan fukumsil litaafitoo ka bilego naaŋ,0.6667,0.2118
+754,"Ka niriba maa zaa daa kpuɣi bɛ nuhi zuɣusaa ka yɛra, “Ami!",a niriba maa zaa daa kpuɣ be nuhi zuɣusaa ka yɛra ami,0.25,0.0682
+755,Gbibi ma kaman nimbil’ biɛlim la; ka zaŋm’ ma sɔɣ’ a kpiŋkpama mahim ni.,bibma kama nimbil biɛlim la ka zaŋ ma sɔgi a kpaŋkpama maham ni,0.5,0.1481
+756,"Yisa daa lan yɛli, “Alizanda nam ŋmanila yil’ yidan’ so ŋun daa daŋ yibu asiba n-chaŋ ni o ti bu padiriba paa niŋ o puu ni.",isa daa lan yeli alizanda nan ŋmanni la yil yidaan soo ŋun daa daŋ yiwasiba n chaŋ ni u tibu padirbapaa nniŋ apuu ni,0.6923,0.1304
+757,A mi n ni be muɣisigu shɛl’ ni; zaŋmi n nintam niŋ a luɣuluɣu ni.,ami n ni bee mugusi kushel ni zaŋma n nintem niŋ a lugolugon ni,0.5333,0.25
+758,tiligi ba kum ni; bɛ ni bahi kpi kaman biŋkɔbiri.,tile bakumni beniba kpi kama biko,0.9,0.3421
+759,"Di saha ka n daa yɛli, “Yi ni niŋdi shɛm maa bi viɛla.",disaha kan daa yɛli ini niŋdi shem maa bi vɛla,0.6154,0.0769
+760,ka kopaliga ʒi tiŋgbani taŋkpaɣu chaŋ shɛm.,akopaligi i tiŋgboni teŋ kpaa chaŋ shem,0.8571,0.2222
+761,ni laɣim zuliya shɛb’ na.,an ŋin nagim israɛl nim ban daa be yɔɔ la na ni lagam zuliya shɛb na,2.4,1.8421
+762,O daa lan bo naɣilabil’ yino mini piɛla’ yino ni yuun’ yini piɛlabil’ yino mali bɛ ni zaŋdi sara shɛli nyɔri buɣim la.,daa la mbo naalabil yino mini pila yino ni yuun yini piɛbil yino mali bi ni zaŋ ni sara hɛle nyɔr buɣim la,0.4783,0.1319
+763,"Dinzuɣu Lɛvinim’ n-daa kɔriti bɛnkam bi be kasi maa Yaɣigari chuɣu piɛbihi, ni di chɛ ka sara maa be kasi Yawɛ sani.",dansɔ levinim daa kɔr ti ban kam be bee kasi maa yaagar chɔɔ pe bi ni di che kasara maa be kasi yaa wee sann,0.8182,0.2857
+764,ŋuna n-su ŋun yɔhindi niriba min’ o ni yɔhindi shɛb’ zaa.,muna su ŋun yɔhndi niriba mini o ni yɔhindi shɛb zaa,0.3636,0.093
+765,"Ka Judanim’ maa daa nya ka tɔb’ maa be n-gili ba tooni ni nyaaŋa zaa, ka bɛ suhi Yawɛ ka maligumaaniba daa piɛbi bɛ kikahi.",juda ni maa daa nya ka tɔbmaa biɛngilba too ni ni nyaaŋa zaa ka bi su yaa wee ka maligmaaniba daa peb bu kikaa,0.64,0.2021
+766,"Bɛ daa nyo Naawuni jɛmbu duu maa buɣim, ka daai Jɛrusalɛm goondaa la luhi, ka nyo nayili zaa buɣim, ka saɣim duɣuri mini la’ viɛl’ shɛŋa din daa be nayili maa zaa.",daa nyun naawun jambu duu maa bubim  ka daa jerusalɛm goondaa la lun ka nyɔ nayel zaa bubim ka sagam dɔɔri mini la viɛlshaŋa dindaa be nayil maa zaa,0.5625,0.1746
+767,Daniɛl ni Ginnɛtɔn ni Baruk ni.,danɛl nɛ gineton nɛ baruk nɛ,0.8333,0.28
+768,ni saha din ka bahigu.,iaad kabago,1.0,0.4706
+769,"Ka Yisa daa ti bol’ o nyaandoliba pinaayi la na nti niŋ ba yiko ni bɛ kariti alizin’ biɛri niriba zuɣu bahira, ka tibiri dɔro balibu kam mini dɔr’ biɛri balibu kam ni mali ninvuɣ’ shɛba.",yisa daa ti bol u nyaandoliba pin ayi lan na nto naŋ ba yiko ni b karti alizin biɛ niriba zubu baara ka tibir doro babukam mini dɔrbia babukam ni male nivug shɛba,0.6111,0.1793
+770,"Ka o yɛli ba, “Yɛlimaŋli ka n yɛri ya, ninvuɣ’ shɛb’ be kpe ka ku kpi hal ka bɛ nini ti nya ka Naawuni nam kana ni yiko.",ao yali ba yelimaŋle kan yari ya ninvu shɛb bikpekakukpi hale ka bi ni ti nya kanaawu nam kanaa ni yiku,0.7143,0.1609
+771,"Bɛ yɛliya, ‘Neesim maa mirila zibisim.",yneesin maa mir la zibisim,0.8333,0.3
+772,"Ka o daa lan me luɣ’ kasi zaa kasi shee, ka di wɔɣilim mini duu maa yɛliŋ nyɛ yim.",u daa la mɛ lo kasi zaa kasishee kari waali min duu maa yaluŋ nyɛ yim,0.6316,0.2459
+773,Pa a nimmaŋtali zuɣu n-chɛ ka a mali tahima?,aanimaŋtale zugɔ n che kaa ma tahm a,1.0,0.2647
+774,"Sulemaana ni daa buɣisi Naawuni jɛmbu duu maa mɛbu shɛm m-bɔŋɔ: Di wɔɣilim daa nyɛla mita pisinaayopɔin, ka di yɛliŋ nyɛ mita awɛi kaman kurimbuni ha binyɛra buɣisibu ni daa nyɛ shɛm.",uleman na ni daa buɣsi naawujambu duu maa meebu sham mbɔŋɔ di waalim daa nye la mita piisi naaayopɔɛn ka di yaliga nyɛ mitaawee kaman kurimbu na ha bi yara buosibu ni daa nyɛ shɛŋ,0.6562,0.1824
+775,Hatush ni Shɛbania ni Maluk ni.,hatush nɛ shebania nɛ maluk nɛ,0.6667,0.16
+776,Din bahindi nyaaŋa nyɛla ŋ-ŋɔ: Maliya yaa ti Duuma min’ o kpiɔŋ ni o yiko ni.,in bahini nyaaŋa n nyala nŋu ma lyayaa ti duuma min n o kpiaŋ ni o yikoni,0.6875,0.1552
+777,"Ka Saimɔn Pita yɛli ba, “Man’ ni chaŋ kulipaligu.",kasaimon pita yel ba ma ni cha kulpa,0.6667,0.2703
+778,"Ka chɛrubinim’ maa daa teei bɛ kpiŋkpama pɔbi Alikauli Adaka maa zaashee maa, ka di daa chɛ ka bɛ kpiŋkpama pɔbi Alikauli Adaka mini di dapuhi.",chariponim maa daa tee be kpaŋkpama pɔbi alikabulu a daka maa zaashee maa ka di daa che ka bikpaŋkpama pɔbi alikabul a dakamini di dapuin,0.5769,0.1565
+779,” Di daa sabila Hiburuli ni mini Latinli ni ni Giriikili ni.,idaa sab la hiburu ni mini laitinle ni griikle,0.7273,0.2766
+780,"Yawɛ, a nyari paɣibu a kpiɔŋ zuɣu!",yaawe a nyar pagibu a kpŋ zugɔ,0.7143,0.3077
+781,Di nyɛla vi ni nir’ tɔɣisi niriba ni niŋdi binshɛŋa ashilɔni yɛla.,di nyelavi nɛ nir tɔgɔsi niriba niniŋdi binshaŋa ashiloni yala,0.75,0.1321
+782,"Ka n chaŋ ti paɣi, ka n nina maa dii neei.",o yeli ba ba ni booni zoso yisa la n gataŋkpaazan ʒen nina maa ka yeli man ni cham salom biɛŋ la ni n ta paa nina maa kan chaŋ ti paai ka nina maadiinee,2.7273,3.0667
+783,"Jɔtam ni daa lan tum tuun’ shɛŋa zaa min’ o ni daa tuhi tɔb’ shɛŋa zaa ni o biɛhigu ni daa nyɛ shɛm zaa, bɛ sab’ li niŋ Izraɛl mini Juda nanim’ litaafi ni.",ɔtam ni daa lan tum tuun shaŋa zaa mino ni daa tuhi tɔb shaŋa zaa ni u biɛgbu ni daa nyɛ shɛm zaa bi sab li niŋ israel mini juda nanim litaa piini,0.3235,0.1043
+784,Ŋuna n-nyɛ ŋun yɛn no n-taai ti dimnim’ maa ti ti.,una n nye ŋun ye non taa tidim ni maa ti te,0.8182,0.1944
+785,A na mi n-kpe bɛ ni zaŋ saa ŋun noli maai pam zali du’ shɛŋa ni.,na mi kpe be ni zaŋ saaŋum nole maa pam zal dushɛŋani,0.6875,0.1522
+786,"Dimbɔŋɔ nyaaŋa ka Musa daa yihi fɔntinsi ata Jɔɔdɛn mɔɣili duli wulimpuhili polo, ka di nyɛ nir’ ni yɛn ku daadam ka zo n-kuli luɣ’ shɛli.",dimbɔŋɔ nyaaŋa ka mu sa daa yihi fon tinsoata jɔɔdin mɔa li du le wulin puh li polo ka di nyɛ nir ni ya kudu adam ka zɔ kul luɣ sɛl,0.6923,0.1481
+787,"Ka salo maa ni shɛb’ daa yɛl’ o, “A tizɔbihi min’ a ma be samban’ ni bɔri ni bɛ nya a.",asalomaa ni shɔb daa yel o a tizɔbia man a mabisamban ni bɔr ni binya,0.6667,0.1695
+788,"Ka bɛ daa ka Jɛrusalɛm na nti ŋme mɔɣilɔnim’ mini goonjɛnima, ka piɛbi kikahi ti kpe Yawɛ duu.",ti naawuni a kudarige be tebelat tuyi dama ti kaa yiko di nitoɔ tu salopam baŋ ka na nɛ ti tuu tiŋɔ,1.1667,0.8649
+789,ka chɛ ka so ku lan teei bɛ yɛla; amaa n zɔrila bɛ dimnim’.,ache kasoku lan tee bi yɛla amaa n sɔr la bidimni,0.7143,0.186
+790,bɛ suhuri ni tibigim’ o.,b soore ni tebeg mo,0.8,0.4444
+791,"Pa lala n-nyɛ li n dabili Musa sani, n zaŋla n niriba zaa fukumsi niŋ o nuu ni.",l la nya li ndabilim muusasanni n zaŋ na niriba zaa fukumsi nin a nu ni,0.6667,0.2203
+792,"O yɛligu maa mi nyɛla yɛlimaŋli, ka o mi ni di shiri nyɛla yɛlimaŋli.",yɛli ŋaa mi nyeɛ la yelimaŋl kao mi ni di shir nya la yelimaŋli,0.7857,0.1852
+793,Yisa lan yɛli o kum yɛla yaha.,yisa taha alizin bigu maa zugu  ka che kabia maa kpaŋ ka o zaŋ o labisitoob ba maa ka naawu yikotuuni ŋɔ daa niŋ niriba maa zaa alahasiba pam,3.8571,4.1739
+794,Ka Lɛvinim’ mini Judanim’ zaa daa niŋ maligumaana Jɛhɔiada ni zali ba shɛm maa zaa.,alevinim mini judanim zaa daa niŋ maligumaani johada ni zɛlba sham maasa,0.6,0.1667
+795,"Ka kpiŋkpaŋ’ din’ la, din’ gba wɔɣilim daa nyɛ mita ayi ni biɛla maa mi daa chaŋ ti shih’ o kpee la kpiŋkpaŋa.",kakpaŋkpaŋdina la din gba waalin daa nyɛ mi taa yi ni biɛla maa mi daa chaŋ ti seokpeela kpaŋkpa,0.5217,0.1463
+796,O daa di nam maa ʒini Jɛrusalɛm la yuun’ piniyini.,daa di nan maa ʒinn jerusalɛm la yuun piinyenin,0.5,0.2051
+797,"Yawɛ, wummi n suhigu shɛli din bɔri ni a niŋ din tuhi ti ma ŋɔ.",yaawum min sukusele dbɔrnaaniŋ di to timaaa,1.0,0.383
+798,Maika bia Matania daa nyɛla Zabidi ŋun daa yi Asaf daŋ ni na la yaaŋa.,maika bia mataniya daa nyɛ la zebedi ŋun daa yi asaf daŋ ni na la yaaŋ a,0.4,0.0545
+799,Pɛlatia ni Hanan ni Anaya ni.,paletia nɛ hanan nɛ anaya nɛ,0.6667,0.2174
+800,"Yisa ni daa pun mi binshɛɣukam zaa din yɛn niŋ o maa zuɣu ka o daa chaŋ ti tuhi ba soli bɔhi ba, “Ŋuni ka yi bɔra?",sa naapu mibishagakam zaa dulnya ni u maazuu ka u daa chaŋ te ntu ba soli bɔha ba ŋun kaayi bɔra,0.7037,0.2824
+801,Gbilisimiya tibili viɛnyɛliŋga n-wum n yɛtɔɣa.,ulsimye tibil inyelinga n wum n yetuaa,1.0,0.359
+802,"Ka di daa niŋ naa maa yoli nti yaɣi, amaa ka o pɔri la mini saamba la zuɣu chɛ ka o bahi noli ni bɛ niŋmi lala, ka daa tim ni bɛ cham’ sarika ni nti ŋma Jɔn zuɣu na.",ade daa naŋ naamaayo to yaai amaa kuwu pɔr la mini saambila zuu chee kao baa noli nɛ b niŋ ma lala ka daa tim nɛ b cham sareka ni nti ŋma jɔnn zuu na,0.675,0.2131
+803,hal ni saha din ka bahigu.,al ni saa daŋ kabaago,0.8333,0.35
+804,teemiya dimbɔŋɔ; yi nyɛla n-daba.,titooni jmdi le ka suhur le yara teligim ma dima nyin,2.2,1.3462
+805,Bɛ mabihi bɛn daa nyɛ tɔbutuhiri’ biinsi ninvuɣ’ kɔbiga ni pihitaayika n-daa be bɛ daŋ maa ni.,bi mabia ban daa nye tɔbtuur biinso ninfukubiga ni pihitaayika n daa be bu daŋ maani,0.7647,0.1892
+806,"biɛri nuu ni bahi; guli ma, ka duŋtaariba.",uu ni bahiguli ma kadtaa,0.75,0.375
+807,"” Bɛ daa baŋya ni o yila Yawɛ sani zɔra, dama omaŋmaŋa n-daa pun yɛli ba lala.",bi ykatuunbo kaa lee tum ŋɔ b daa baŋya ni o yi la yaa wee sann zɔra dama umammaŋ n da pun yeli ba lala,1.0,0.5345
+808,Bɛ kpahi Yisa tabili dapulli zuɣu.,kaonazɔŋɔ teba nɛ batakpog tabl dapull,1.0,0.9643
+809,Ka tulaale zim ni daa pali salima lahi pinaayi shɛŋa la zaɣ’ yini kam tibisim nyɛ giram kɔbiga ni pia kaman Naawuni jɛmbu duu liɣiri tibisim zahimbu ni nyɛ shɛm.,tul alizem ni daa pali salimalai pinaayi shɛŋa la zaayinikam timsim nyɛ gram kɔbiga ni piya kaman naawunnɛ jambu duu laa temsim zaambu ni nyɛ shɛm,0.5333,0.1846
+810,Yawɛ gbibi bɛnkam zaa yɛn lu; ka yiɣisiri bɛnkam zaa pun lu.,yaawe gbi beŋkam zaa yen lu ka yigisir baŋkam zaa pon lu,0.5833,0.2553
+811,Yi ni ŋubi bɔrɔbɔro din ka dabindi daba ayopɔin di dabisa maa ni.,ini ŋu boroboro di ka dabin di daba ayopɔi di dabsa maaniŋ,0.8462,0.1923
+812,bɛ ninvuɣ’ biɛtali zuɣu; dama bɛ ŋmaligiya ka chɛ o dolibu.,bninfubitlzu da ma be ŋmaligiya ka cheu dole bi,0.8182,0.2826
+813,"Ŋuna n-chɛ ka zuliya niŋdi yaa, di nyaaŋa ka o bahi ba yoli.",uniche kazuliya niŋdiyaa dinyaaŋga ka u baa ba yɔli,0.8462,0.2
+814,"Yɛlimaŋli, a ni tooi kpuɣ’ a zuɣu ka galimi kani.",yelimaŋle a nɛ too kpaa a zugɔ ka galimi kann,0.6,0.2432
+815,"” Naa Hɛrɔd daa tim ti gbaai Jɔn na ti kpɛhi duu, ŋun’ Hɛrɔd ni daa fa omaŋmaŋ’ tizo Filip paɣ’ Hɛrɔdias niŋ o paɣa la zuɣu, dama Jɔn daa yɛl’ o ni di chihiri ni o fa o tizo Filip paɣa.",a herod daa tim ti gbaa jɔnn na nti kcpiaduu ŋun herod ni daa foo mammaŋ tizoo filip paa herodias ni o paa la zuu dama jɔnn daa yl u ni li chir ni u fo tizo filip paa,0.6098,0.2353
+816,Ka n daa zaŋ nɛma duri maa lihibu fukumsi niŋ Shɛlɛmia ŋun daa nyɛ maligumaana la mini Zadok ŋun daa nyɛ zaligubaŋda la ni Pɛdaya ŋun mi daa nyɛ Lɛvi la nuu ni.,n daa zaŋ nimaduri maa lihibu fukumse niŋ shelemia ŋun daa nya malegumaani la man zedɔk ŋun daa nya zalgubaŋdi la ni pedaya ŋun mi daa nyɛ levi la nu ni,0.4242,0.1496
+817,"Yisa ni daa wum yɛlli ŋɔ bahi, o daa yiɣisila nimaani n-kpe ŋariŋ yi kpaŋa.",isa ni daa wom yɛlni ŋɔ bahi u daa ya silanimaan ni keŋaruŋ nyi kpaŋa,0.6,0.2069
+818,O daa tum alahichi pam Yawɛ ŋun nyɛ o Naawuni la sani.,daatibaalaachi pam yaa wee ŋin nyo u aawunn lan san,1.0,0.3571
+819,Jɛhɔahaz yuma daa nyɛla yuun’ pisinaata saha shɛl’ o ni di nam maa.,gaas yuma daa nyɛ la yuun piishinaata saashe u ni daa din nan maa,0.7692,0.3269
+820,Ka maligumaaniba kpamba zaa mini salo zaa daa bi lan ʒe yim hal ti yaɣi.,malugumaaniba kpamba zaa min silo zaa daabilan she yim hal ti yaa,0.6,0.1579
+821,Dinzuɣu ŋunkam po sara maligu bimbini pola di mini binshɛɣukam din pa di zuɣu.,dinzɔ ŋunkan posara maligubimbem pɔla di min dim bin shaakam din parzu,0.9286,0.2656
+822,Ka niriba ti wuhi ni yinima n-nyɛ bɛn lab’ me goma maa.,a niriba ti wuhe nɛ yinim nye ba labnye gomnmaa,0.8333,0.2683
+823,Amaa ka ŋuni n-lee ni tooi chɛ yɛtɔɣa tɔɣisibu?,amaa ka ŋuni n lee ni too che yetuatɔas,0.6667,0.2703
+824,"Ka Yisa daa dii teeg’ o nuu na n-gbaag’ o ka bɔh’ o, “Nyin’ ŋun yɛda pɔri ŋɔ, bɔ n-niŋ ka a biɛhinda?",yisa daa dii teegoo nuu na n gbag ka bo o nyi ŋun yada pɔrgu bɔ ni kaa,0.6087,0.3188
+825,Jɛshua ŋun daa nyɛ maligumaaniba zuɣulan’ la daŋ.,joshuwa ŋun daa nyɛ maligumaanib zuulan la daa,0.5,0.125
+826,Ka Pasɛa bia Joyada mini Bɛsɔdɛya bia Mɛshulam daa mali me Dunɔdal’ Kurili la.,kapersiya bii joyada min besodaya bii meshulam daa mal mee dino da kuui la,0.8571,0.3016
+827,"O ni daa kumdi maa ka o ti vɔbisi lihi siliga maa puuni n-nya malaikanim’ ayi ka bɛ ye binyɛr’ piɛla n-ʒi Yisa ni daa do luɣ’ shɛl’ la: Yino o zuɣu polo, ŋun’ la mi o naba polo.",daakumnima koote vɔbseleen silga maa puuni nnya malaika ni maayi ka bi ye bin yar pila jee yisa ni daa dol lu shal la yinao zugɔpolo ŋun aa mie o na ba polo,0.7692,0.2171
+828,Ka Bɛrɛkia bia Mɛshulam daa mali me o ni daa be luɣ’ shɛli la tooni.,abarikiya bia mashulam daa ma mee u ni daa be luɣ shɛl la tooni,0.4667,0.1923
+829,ka chɛ ka o nini tiɣ’ a sar’ shɛŋa zaa a ni zaŋdi nyɔri buɣim.,che kao nintege asarshaŋa zaa a ni zaŋni nyɔr buo,0.8,0.2889
+830,Maligumaaniba n-daa nyɛ: Joyarib bia Jɛdaya mini Jachin ni Hilikia bia Sɛraya ŋun daa nyɛ Mɛshulam yaaŋa la.,alugumaaniba n daa nya joyarib bii jedaya mini jachin ni hikiya bii seraya ŋon daa nya mesulam yaaŋi la,0.7222,0.1705
+831,Ka Pita mini nyaandol’ ŋun’ maa daa yina n-zaŋ kpa siliga maa polo.,pita min nyaandoliŋun maa daa yi na nzaŋ kpasibiga maa polo,0.6154,0.098
+832,"Dinzuɣu ka naa daa bɔhi ma, “Bɔ n-niŋ ka a ninni ti lihiri suhugarigu lihigu lala?",dizugu kanaa daa bɔhi ma bɔ niŋ kaani ni ti lihiri sufugaregu lihigu lala,0.5,0.0952
+833,Atalia ŋun daa nyɛ paɣ’ so ŋun di Juda nam.,talia ŋun daa nyɛ na paasoo ŋun di juda naaŋa,0.4,0.25
+834,Mani n-su Giliad; mani n lan su Manaasa; ka Ifriim nyɛ.,man nin su giliad man la su manasa ka efreim ni,0.8182,0.2195
+835,"Ka bɛ maan mɔhi vuri pam yɛli, “Kpahim’ o tabili dapulli zuɣu!",u maam mɔhvur pam yɛli kpa mu tabeli dapuli zuɣu gbapa le nira bɔr ni u niŋ nirib maa su yubu zuɣa,1.75,1.0426
+836,N yɛri ya la dimbɔŋɔnim’ ni di saha ti paai ka yi teei ni n daa pun yɛli ya di yɛla.,yɛli ya la dimbɔŋɔ nib ni taa tipaa katee ni m daa pun yɛli ya di yala,0.619,0.2097
+837,Di nyaaŋa ka Yisa daa yi nimaani chani gindi tiŋkpansi wuhiri niriba.,tnyaaŋa ka yisa daa yi nimaani cha n genni tiŋkpal si wuhir nr,0.75,0.193
+838,ka lan nyɛ din tiri ninvuɣ’ shɛb’ bɛn ʒi shɛli baŋsim.,la nye tin tir ninvub shɛb ban ʒi sheli baŋsam,0.8182,0.2439
+839,Pɛdazu bia Gamaliɛl sara n-daa bala.,dzubi gamalisandabaa,1.0,0.3448
+840,Ninvuɣ’ shɛb’ bɛn suhuri kul ye ni bɛ niŋ bundaannim’ zaŋ bɛmaŋ’ kpɛhi zahimbu ni ka jɛritali mini barina kɔre zana din saɣindi daadamnim’ ka bahiri ba yoli zaa kahikahi la gbahi ba.,invu shab ban suhur kul ye ni bi niŋ bundaanim zaŋ bimaŋ kpihi zambu ni ka jitali min ni barinakore zana di sagindidaadamnim kaa bahir ba yol zaa kaa kaa laa gbaa a,0.7273,0.1944
+841,Yawɛ ni chɛ ka alɔbo ŋɔ kul ku miligi ka chɛn ya hal ka di ti naai yi balibu zaa yi ni kpɛri tiŋgbɔn shɛl’ ni ni yi ti deei li su maa.,awa ni che ka alobo ŋɔ kul ku milgi ka chanya hal kadi tinaayi balbu zaa yi ni tir tiŋgbaŋ shal ni ni yiti dee li sumaa,0.6061,0.16
+842,"Ka din pahi nyɛla, n daa dihirila Yɛhudianim’ mini zuɣulaannim’ ninvuɣ’ kɔbiga ni pihinu m-pahi ninvuɣ’ shɛb’ bɛn daa yi tinzun tinsi din gili ti ni n-ka ti sanna.",ka pa nyala n daa dihir la yehudianim mini zuɔlaannima ninvukɔbga nɛ pihenu m paha ninvu sɛb ban daa yi tinzuntinse din gel ti ni ŋ ka ti san na,0.7586,0.1825
+843,O daa tum alahichi Yawɛ ŋun nyɛ o Naawuni la sani.,aatumlaahi yaa wee ŋinye u naawun la sanni,0.9091,0.3846
+844,"Ka o yɛli ba, ‘Yi gba chamiya m puu ŋɔ ni ha ti tum tuma, ka n ti yɔn ya din niŋ kamaata.",au yel ba digbachamyaa puu ŋɔ ni ha nti tum tuma kanta yon ya diniŋ kamaata,0.6087,0.1746
+845,"Daanya kɔniŋdi bini maa yaɣimɛri mii barilim daa nyɛla sɛntimita ayopɔin ni pirigili, ka di noli daa be kaman pipia nol’ la, ka be kaman paɣiviɛligakushihikom pum la.",nyɛ kɔ nan dibi maa yaa miɛr mii barlaam daa nya la san timita ayopoen ni pergeli ka di nol daa be kaman pipia nol la ka bi kaman baaviɛl kuse kɔn pum la,0.6429,0.2667
+846,ka chɛ ka n leei niriba naa; ka n ni ʒi ninvuɣ’ shɛb’ leei bɛn jɛmdi ma.,a che kan lee niribannaa kan ni si ninfug sɛb lee be jem dima,0.9412,0.2308
+847,"Sanbalat ni daa wum ni ti lan piligi mɛri gooni maa, o suhu daa yiɣisiya pam, ka o puuni zaa diri buɣim ka o piligi maani Yɛhudianim’ ansarisi.",abala ni daa wom ni ti lan piligi mɛr goonima aa o suu daa yiisiya pam ka o puu ni saadir buɔm ka o pilgi maa ni yehudianim an sar si,0.6429,0.1339
+848,"Yɛlimaŋli, ansarisi maaniba ʒiɛla n sani.",yelmaŋlan sarsimaanibu jelan sann,1.0,0.2647
+849,n ni doli soli chaŋ ka ku lan labina.,ni do so chaŋ ka kpu lan lab na,0.6667,0.25
+850,"Dimbɔŋɔ nyaaŋa ka Yisifu ŋun daa nyɛ Arimatia tiŋbia ka nyɛ Yisa nyaandola ashilɔni Yɛhudianim’ zɔbu zuɣu la daa chaŋ Gomna Pailɛt sani nti suh’ o soli ni o chɛ ka o zaŋ Yisa ti sɔɣi, ka Gomna Pailɛt daa saɣi.",dimbɔŋɔ nyaaŋa ka yisipo ŋun daa ya ar masiya tiŋbia ka nya yisa nyaandola ashiloni yɛhudianim zɔb zuola daa chaŋ gomnapaali san ni nti suh soli ni u che ka u zaŋ yisa tisɔi ka gomnapaal daas,0.5366,0.1636
+851,O daa lan bo bula’ yino so bɛ ni zaŋdi maani alahichi sanyoo sara la ni naɣilah’ ayi mini piɛlah’ anu ni bulah’ anu ni yuun’ yini piɛlabih’ anu shɛb’ bɛ ni zaŋdi maani biɛrisuŋ sara la.,daa lan bo bu la yino so be ni zaŋde maani alaachisanyoo salala ni naa la ayi mani pila anu ni bula anu ni yuun yini piɛbi anu shab be ni daa zaŋdi maani biɛrso sala la,0.5405,0.1773
+852,Ka Naa Sulemaana mini Izraɛl niriba bɛn zaa daa laɣim o sani maa daa be Alikauli Adaka maa tooni.,naasulee maa na mini israɛl nyiriba ban zaa daa lagim mi u san na maa daa bee alikablo a daka maa tooni,0.7895,0.1923
+853,“Kikahi maa n-yɛn nyɛ yi kali soli bini yi ʒiɛmani kam ni.,kikaa maa n ye nye yi kalisoli bi ni yi jimaikam n,0.8333,0.2045
+854,Ka sapashini ŋun pa o zuɣu n-daa nyɛ Jɛhɔhanan.,asapasheŋ ŋunpoo zuo daa nyɛ johana,0.8889,0.3243
+855,"Yaa tiŋgbani, miri ka a pi n ʒim; di chɛ ka n kuhigu zani soli.",aa tiŋgbani mirkaapinʒim deche kakuhugu zan sɔli,0.9333,0.1739
+856,Kaɣili ni tooi zooi viɛnyɛliŋga ka pa ni kom ni be luɣ’ shɛli?,a too zoo vinyelenga kepa ni kom ni be lu shal,0.6923,0.3542
+857,"Zikiri bia Joɛl la n-daa nyɛ bɛ zuɣulana, ka Hasɛnua bia Juda mi nyɛ zuɣulaan’ so ŋun pah’ ayi n-su tiŋ’ maa fukumsi.",zikri bia jowɛl lan daa nye be zuula kahesenua bii juda mi nye zuulan so ŋunpahaayi n su tiŋmaa fu kum sim,0.8261,0.1705
+858,ni o chɛ ka binshɛɣukam mali zani dɛde daadam mini Naawuni sani.,n o che ka bishagkam mal zan deedee daadam mini naawo san,0.6667,0.2885
+859,"Di saha ka Aduna daa yɛli Musa, “N dana, di darigi ti tibili, ti ni tum jɛrilim ka tum alahichi shɛli maa zuɣu.",disaa kaadona daa yɛl muwusa n dana di darigatiteble ti na tum jarlim ka tu maalaahi shɛli maa zɔɔ,0.6087,0.2262
+860,Yawɛ kukoli vuri kabirila sida tihi luhira.,aa wee kukol vur kabir la sidati lu,1.1429,0.3333
+861,"O daa lan mali salima firilatamdisi pia kaman di ni daa wuhi shɛm n-zaŋ li zali Naawuni jɛmbu duu maa ni, diba anu nudirigu polo, diba anu din’ la mi nuzaa polo.",daa lan mali salima birlatamdi sipii kaman di ni daa wuh shɛm n zaŋ li sal naawun jambu duumaa ni di baanu nidiriga polo dibaanu din la mii nuzaa polo,0.5312,0.096
+862,"O ma yuli n-daa booni Jɛrusha, o daa nyɛla Zadok bipuɣiŋga.",ma yunn daa booni jerusha u daa nya zadok bipurŋ a,0.7273,0.2174
+863,Ti saɣindi naŋgbankpeeni mini binshɛɣukam din duhiri dimaŋa ka nyɛ din guri Naawuni baŋsim sol’ la; ka gbahiri tɛha kam n-niŋdi li fukumsi ni ti chɛ ka di deei Masia noli.,ti sagimdi naŋgbankpeeni min binshagkam den duhiri dimaŋa ka nya den gur naawun baŋsem sol la ka gbairi tɛhakam nniŋdi li fukumso nɛ ti che ka di die masia nɔli,0.5484,0.1387
+864,"Amaa ka Yisa daa baŋ bɛ tɛha maa ka yɛli bɔɣukpiŋlan’ maa, “Mirimina ti zani kpe.",maa ka yisa daa baŋ be tiɛha maa ka yel bɔɔkpiŋlann maa mir mi na ti zan ki,0.625,0.1935
+865,Ka yi banim’ bee yi yaannim’ daa na ʒi n-nya lala tatabo bɛ ni daa dɔɣi ba saha shɛli zaŋ kana zuŋɔ.,ayibanim bee yi yaannima daa na ʒin nnye lala tatabo be ni daa dɔge ba saha sheli zaŋ kana zuŋɔ,0.4091,0.1067
+866,Ka binshɛli ku tooi sɔɣi ka di biisim ku paa’ li.,bi shelkutoo sɔge kadibiisim kupaal,1.0,0.2432
+867,Naa Asa taɣ’ o biɛhigu.,,1.0,1.0
+868,Lala ka Daadam bia gba yɛn di wahala bɛ nuu ni.,kaka bi daa lee bi baŋ o ka daa niŋ o be suho ni yuu sham lala ka daadam bia gbaa yandii waa la be nuu ni n,2.0,1.3333
+869,M bi bɔri ni di be kaman n sabirila gbana ni n kpɛhi ya dabiɛm.,m babɔr ni di be kaman n sabr la gbana nɛ n kpɛhi ya dabiɛm,0.3333,0.1042
+870,Kul suhimiya Naawuni sahakam kaman Naawuni Shia Kasi ni wuhiri ya shɛm.,kul somiya naawun sahakam kaman naawun shia kasi ni wuhiri ya shɛm,0.25,0.0847
+871,"O nini nyari daadamnima, ka kpahindi ba.",ninyardaadamnima ka kpanna,0.8571,0.2812
+872,"Ka Pita yɛli Yisa, “Karimba, di viɛli ni ti be kpe.",kapita yel yisa karemba difil ni to bec,0.8182,0.2703
+873,"Chɛ ka bɛ zaŋ matarika ŋ-ŋmɛnŋme li mal’ li; ka yi mal’ li piɛbiri laɣindi niriba, ka mal’ li piɛbiri ka bɛ yiɣisira chana.",e ka bi zaŋ matarika ŋmeŋŋmi le mmal le kayamal le piɛbra laande niriba ka mal le piɛbra ka ba ya sir cha na,0.7917,0.2796
+874,"Zaŋmiya tiliginsim kaman tɔbutuhir’ zuɣupila la pili, ka zaŋ Naawuni yɛligu din nyɛ Shia Kasi takɔb’ la gbibi.",aŋmiya teligensim kaman tɔbtoori zupilgu la pele ka zaŋ naawun yeligu dulinya shia kasi takɔb la gbab,0.5556,0.2472
+875,Ti zali timaŋ’ zaligu ni ti ni zaŋdi ti tiŋgban’ ni bindir’ daŋda mini ti tia kam wala din daŋdi moobu zaa n-tahiri Yawɛ jɛmbu duu na yuuni kam.,ti za timaŋzalgu ni tini zaŋni ti tiŋgbani ni bindir daŋda maŋ ti tikam wala dindaŋni moobu zaa ntahere yaawee jembu duu na yuuni kaa,0.5517,0.1532
+876,Amaa naa ni mali suhupiɛlli Naawuni sani.,amaa naa ni mal supiɛlli naawun san,0.5714,0.1471
+877,Ka Uzia daa chɛ ka bɛ kuri nyɔtaɣirisi mini kpana ni kuriti woliɣisi ni kuriti gbaɣinɔnima ni tɔbiri ni kuɣilɔŋ kuɣa n-ti tɔbbihi maa zaa.,yuziya daa che ka be kur nyɔtaarse mini kbana ni kurti waawalagase ni kurti gbaanonima ni tɔbri nɛ kɔlon kuga nti tɔbbi maa za,0.68,0.3125
+878,"Zuliya pam nanim’ ni so daa bi ŋman’ o, ka o Naawuni daa yur’ o ka zaŋ o leei Izraɛlnim’ zaa naa, amaa tinzun paɣiba n-daa ti chɛ ka o tum alahichi.",ilye pam nanim ni so daa bi ŋman o ka o naawuni daa yur o kasaŋ o lee israɛlnim zaa naa amaa tenzun pagiba n daa ti che ka o tuma alaachi,0.375,0.1193
+879,"Ka n daa galim ba ka yɛli noli ti ba, ka bu bɛ ni shɛba ka dari sibi bɛ zabiri.",n daa galin ba ka yie nɔya tiba ka bu be nisheba ka dar sibi be zabar,0.6,0.2586
+880,"Ka bɛnkam ti lan gariti du’ shɛli din yuli du pam ŋɔ gbini, di ni gari ba, ka bɛ bɔhira, ‘Ka bɔ n-niŋ ka Yawɛ niŋ tiŋgbani ŋɔ mini jɛmbu duu ŋɔ lala?",ban kam ti laa gar ti du shɛli din yul du pam ŋɔn gbin ni di nigariba ka bi bɔhira ka bɔ n na kaa yaa wee niŋ tiŋgbɔŋ ŋɔ min jambu du ŋɔ la la,0.697,0.1909
+881,"Yawɛ, a kpiɔŋ zuɣu ka naa mali suhupiɛlli; a sɔŋsim zuɣu ka o mali suhupiɛlli pam maa.",yaawee a kpiɔŋ zugu ka naa mali sufupiɛlle a sɔŋsim zugu ka o mali sufupiɛlle pam maa,0.2941,0.1343
+882,"Ka shɛŋa lu tɛriŋ zuɣu luɣ’ shɛli tam ni bi zilim pam n-dii bilina yomyom, nimaani tam ni bi zilim zuɣu ka wuntaŋ’ ti kpe li ka di zaɣi kpi, di ni dii bi ba jila viɛnyɛliŋga zuɣu.",shaŋa lu tea zɔ lu shɛl tam ni bizelim pam n dii bin la yomyom nimaa ni tam ni bi zelim zɔɔ ka wuntaŋ ti kpee li ka di zaa cpi dini dii bi ba jila ben yanan ga zɔɔ,0.6579,0.25
+883,” Ka Juda Naa Hɛzɛkia yɛtɔɣa maa daa kpaŋsi niriba maa suhuri pam.,a juda naa hesekaya yetɔga maa daa kpaŋsim niriba maa suuripaŋ,0.5,0.2115
+884,Bɛ ni ti pali a min’ a niriba ni Ijiptinim’ zaa yinsi.,ni ti palamin a niriba nɛ ijiptinim zaa yin sin,0.5833,0.125
+885,Sɔŋmi ti ka ti nyaŋ ti dimnima; dama ninsal’ sɔŋsim ka buchi.,sɔŋ mi te kati nyaŋtedimnima dama ninsal sɔŋsim kabuch,0.75,0.0638
+886,Ka zuliya tital’ dini n-lee beni m-mali zalikpana mini zaligunim’ din pahi ka wuntizɔbo be di ni kaman n ni zaŋ zaligu shɛŋa zaa zali ya zuŋɔ dabisili ŋɔ?,azuliyatitari di ni n le be ni m mali zalkpana mun ni zaligunim din pahi ka wontozɔbo be di ni kaman n ni zaŋ zalgu shaŋa zaa zaliya zuŋɔ dabsil ŋu,0.6552,0.1157
+887,"O daa lan lab’ me Naa Hiram ni daa zaŋ fɔntin’ shɛŋa ti o la, ka chɛ ka Izraɛlnim’ ʒini nimaani.",aa lan labu mi na ahiram ni daa san fan tinshaŋa too la ka chɛ ka israelnim sin nimaani,0.619,0.1831
+888,yuntisuɣu saha; dama nyini m-pun nyɛ n sɔŋda.,dama nyinpo nyen sɔŋ da,0.875,0.5143
+889,Ka o bia Jɛhoyakin daa di nam zan’ o zaani.,biidaacin daa dinabsa zaan,0.9,0.4688
+890,Di saha maa ka n daa lan nya ka Yɛhudianim’ kpuɣila Ashidɔdnim’ mini Ammɔnnim’ ni Mɔabnim’ bipuɣinsi n-niŋ bɛ paɣiba.,di saha maa kan daa lan nya ka jehudiyanim kpa la ashidor nim mini ammonnima ni mɔbnim bi pɔɔnsi nniŋ b paa ba,0.7,0.1848
+891,talima samli bee n-yo Naawuni.,kalma sam le bee n yo naawunni,1.2,0.1667
+892,Ka maligumaaniba pam daa mali bɛmaŋa m-be kasi.,maligumaaniba pam daa mali bimaŋ m be kasi,0.5,0.1053
+893,"Manaasa ni daa tum tuun’ shɛŋa pahi min’ o ni daa suhi Naawuni shɛm ni anab’ shɛb’ bɛn daa zaŋ Yawɛ ŋun nyɛ Izraɛlnim’ Naawuni yuli tɔɣis’ o yɛtɔɣa la zaa, bɛ sab’ li niŋ Izraɛl nanim’ yɛlikura litaafi ni.",asa ni naa tum tuu shaŋa pahi min o ni daa suohi naawun shɛm nin anab shab ban daa zaŋ yaa wee ŋu nya israelnim naawunni yultɔgasu yetɔa la zaa bi sab le nan israel nanim yɛli kura litaa piini,0.65,0.2179
+894,Asiba wunsuhigu din tiri sɔŋsim.,asiba wunsuhogo den tiri sɔŋ sa,0.8,0.1852
+895,"” Dinzuɣu ka bɛ daa zaŋ Miriam yihi kpaŋ’ daba ayopɔin, ka niriba maa daa bi yiɣisi chaŋ hal ka bɛ daa ti lan zaŋ Miriam labina.",dinzoo ka be daa zaŋ miriam ye kpaŋ daba ayopɔin ka niriba maa daa be yigesi chaŋ hale ka bi daa ti lan zaŋ miriam labina,0.2692,0.1224
+896,"Saha shɛli din gari la ha puuni, yi daa nyɛla kpiimba yi nɔzaɣisibo mini yi daalahichi tumbu zuɣu.",saha shel di gar la ha puuni yi daa nyɛ la kpiimba yi nozagisibu mini yidaalaachi tum bu zugɔ,0.5556,0.1392
+897,"Wuntizɔriba kpiri bɛ wuntitali tuma puuni, ka ninvuɣ’ biɛri kul tumdi tuumbiɛri ka mali nyɛvili wɔɣila.",ntisɔr be kpiri be wuntital tuma puu ni ka ninvu biɛri kul tum ni tuum biɛri ka mal nyevil wagali,0.875,0.1882
+898,O yaannim’ shɛba n-daa nyɛ Amizi mini Zakaria so mi ni Pashihur ni Malikija.,yaannim sheb n daaŋ nya amizi meen zakariya somi nɛ pashihool nɛ melkija,0.9286,0.2667
+899,hal a ni kul mi ni n ka taali.,hal ana kul mi nɛ ŋ ka taa le,0.6667,0.1905
+900,"Di niŋ kamaata ni ti tum ŋun tim ma na maa tuma ni nyɛ shɛli wuntaŋ’ ni na be ŋɔ, dama yuŋ ni zibi ka so ku lan tooi tum tuma yaha.",dininkamaata nɛ ti tubŋun tim tuma na tuma ni nyia shale wuntaŋ ni na bee ŋɔ dama yuŋ nɛ ti zibe ka so ku lan too tum tuma yiha,0.5,0.1856
+901,"N ni daa ŋmahi bɔrɔbɔro kpila anu n-dihi niriba tusaanu la, yi bi teei yi ni daa laɣisi li pali piɛ’ shɛŋa tariga la yɛla?",ni daa ŋmaa boroborokpal anu n di niriba tusaanu la yibitee yi ni daa laase lipal pee shaŋatariga la yɛla,0.6,0.1915
+902,"“Ti Naawuni, wumma, bɛ ʒiɛm ti; chɛ ka bɛ daansarisi maa ŋmaligi lu bɛ zuɣu, ka chɛ ka bɛ gbahi ba kuli tinzun tiŋgbɔn shɛli kaman bɛ ni ŋme tɔbu di neen’ shɛŋa.",tinaawoni wom ma bi ʒiɛm ti che ka be daansarsmaa ŋmalge lu be zugu ka che ka bi gbahi ba kuli tinzun tiŋgbaŋ sheli kaman be ninnyme tɔbu di neyinseŋa,0.6061,0.1967
+903,"Juda zuliya ni sapashin’ kpamba bɛn daa su tɔbbihi tusatusa fukumsi puuni, Adina daa sula tɔbutuhiri’ biinsi tuhi’ kɔbisita.",udazulya ni sapashen kpamba ban daa su tɔb bee tusatusa pukumsa puuni adina daa su la tɔbtuurbiinsi to kɔbsi ta,0.6842,0.1683
+904,ka sakuɣa lu n-sabigi ŋari di kɔsoya la.,kasakua lu n sabge ŋar di kusoe la,0.75,0.2258
+905,"O nyaandoliba maa ni daa nya o ka o tam kom zuɣu chani maa, ka dabiɛm gbahi ba pam, ka bɛ yɛri ni alizini m-bala, ka kuhi dabiɛm kuhigu.",naandolba maa naraa nyeo ka u tamkom zuu cha ni maa ka dabiɛm gbaa ba pam ka bi yar ni alii ibala ka,0.6552,0.3107
+906,"” Ka shɛb’ mi yɛli, “Aai, o ŋman’ o mi.",kapopo wula kaa lee na kaa nina maa nee ka u yel ba ba ni boo ni dɔso yisa la n gataŋ kpaazanʒen nina maa ka yel man ni cham saaloma,3.3333,3.7826
+907,"Yisa daa lan yɛli, “N yɛri ya la dimbɔŋɔnim’ zaa ni yi di ti birigi.",isa daa lan yeli n yeli yala dimbɔŋɔnim zaa nidtiberga,0.6667,0.2
+908,Bunni ni Azigad ni Bɛbai ni.,ninɛ asiga nɛ bebai nɛ,1.0,0.4091
+909,Dinzuɣu chɛliya ka ti chɛ ti ni bɔri ni bɛ labisi nyɔri shɛli n-yo ti la ti ba.,insugucheleya kati che tini bɔr ni be labsinyɔr shele n yoo ti la ti ba,0.7222,0.2167
+910,"Ninsalinima m-be o sani maa, amaa Yawɛ ŋun nyɛ ti Naawuni ŋɔ m-be ti sani ni o sɔŋ ti ka tuhi ti tɔb’ kam ti ti.",insalim be o san maa amaa yaa wee ŋun nya ti naawona ŋɔ m be ti sani ni o sɔŋ ti ka tuk ti tɔbkam t,0.5385,0.2073
+911,"Sagbani maa ni daa kul vuui suɣili maa zuɣusaa saha shɛli, nyama, ka niŋgbuŋ dɔr’ biɛɣu dii gbaai Miriam, ka o niŋgbuŋ paligi zaa kaman gumbɔrigu la.",agbeni maa ni daa ku li vuui sɔɔl la maa zɔɔsaa saha shɛli nyama ka niŋgboŋ dɔr biu dii gbaa miriam ka u niŋgboŋ paliga zaa kaman guŋ bɔrigo a,0.5556,0.1695
+912,Ninvuɣ’ shɛb’ bɛn nya vuhim ʒiɛmdila bɛn nya yɛl’ biɛri.,infashe ba nya vuhim simdi la ba nya yelba,0.8,0.3953
+913,Yawɛ kukoli vuri chɛ ka mɔɣu ni damda.,aee kukol u che kmɔni da,1.0,0.4667
+914,"ka alizanda ni malaikanim’ zaa yɔri suhupiɛlli vuri la, a daa beni?",alizenda ni malaikanim zaa yɔr sufupiɛl livir la a daa beɛni,0.5,0.1509
+915,"O daa lan bo salima laa din tibisim nyɛ giram kɔbiga ni pia, ka tulaale zim pal’ li.",daa la bo salima la din temsi nya gran kɔbiga ni pia ka tɔr alisen pali i,0.5556,0.2812
+916,"Ka bɛ daa ti paai Mara nti kɔŋ di kom nyubu, dama di daa tomi, di zuɣu ka bɛ daa boli nimaani yuli Mara.",b daa ti paan mara nti kɔŋ dikɔm nyubo dima diraa tɔmi dizugu ka bu daa bole nimaanan yuln mara,0.6667,0.1923
+917,Ti tiligimi kaman nooŋa.,totilgimi kamale nɔɔ ŋa,1.0,0.3
+918,Bɛ jɛmdi ma la yoli.,daa nyi shɛl usan ni u pu zaŋ li tinaawoni kade bi laa kpa nu,3.0,2.6667
+919,Bɛ ni bi lihi nya Yawɛ ni pun tum tuun’ shɛŋa.,b ni bi le nya yaawee ni putum kun shaŋa,0.6364,0.3235
+920,Ka bɛ daa wurim maligu bimbina din daa be Jɛrusalɛm la mini bɛ ni daa tuɣindi tulaale zim bimbin’ shɛŋa zuɣu la zaa n-va li ti bahi Kidirɔn Vinvamli ni.,bb daa wurim malugu bimbena dindaa be jerusalɛm la min ni be ni daa tuɔn di tula alezim bimben shaŋazuo la zaa n val ti bai kidrom binvamli ni,0.7,0.1667
+921,Izraɛl zuliya zaa ni ti di nasara man’ Yawɛ zuɣu.,israɛl zuliya zaa ni ti di nasara man yaawe zo,0.3,0.1579
+922,Bɛnjamin daŋ ni; Ɛliada ŋun daa nyɛ tɔbutuhiri’ biiŋa la daa sula tɔbbihi tuhi’ kɔbisiyi bɛn nyɛ peentɔriba ka gbibi nyɔtaɣirisi la.,amneliada ŋun daa nyɛ tɔbterb biiŋa la daa su la tɔbbietu kɔbsiyi ba nyɛ beentɔriba kagbi nyɔtaasn a,0.6818,0.2991
+923,"O ni daa ti yi ŋariŋ maa ni na n-nya salo maa ka bɛ yɛla daa niŋ o nambɔɣu pam, ka o daa chɛ ka barinim’ bɛn be bɛ ni kpaŋ.",ni daatim yi ŋaruŋ maa ni na n nya salo maa ka bi yali daa niŋ u nan bɔɔ pam ka u daa che kabarnim ban be bin ni kpaŋ,0.5484,0.1798
+924,Dabili maa yuli n-daa booni Malikus.,apu yel shɛm la niŋ pale ka ni daa ye shɛm maa mbɔŋɔ m ba a ni daa zaŋ ninfur shb timi,3.5,1.6897
+925,Chɛrubinim’ maa kpiŋkpama zaŋ tuɣi tab’ wɔɣilim daa nyɛla mita awɛi.,ɛr bunimaa kpinkpama zaŋ tuoli tab waalim daa nya la mitaa woe,0.8182,0.2545
+926,Kpim’ maa ma daa nyɛla pakoli; o mi kɔŋko n-daa nyɛ pakoli maa bia.,imaa ma daa nyɛ la pakoli u mi koŋkon daa nyɛ pakol maa biɛn,0.6429,0.16
+927,Ka Izraɛlnim’ maa daa laɣim naa sani chu’ shɛli din daa puhiri chira ayopɔin ni la dali.,aisal ni ma daa lagim na asani chuushee din daa puhuri chir ayopɔin ni laa dal,0.7059,0.2174
+928,Bɛ ŋmanila gbuɣinli ŋun sɔɣ’ do n-gu m-bɔri ni o dari tɔhi ma.,bi ŋmanla gbugin le ŋun sɔdo guu mbor ni o dar tɔham a,0.8462,0.2391
+929,"Ka o daa yi ti dam li ka ŋunkam daŋ di ni siɣibu, dɔr’ shɛlikam din mal’ o bahir’ o mi.",u daa yi tidab le kaŋukam daŋ di ni sɛbu dɔlshɛkam di mel u baharomi,0.7619,0.2581
+930,ka Shiiba sochandiba mali tahima ni bɛ gba ni nya kom.,ashibasochandibe ma tahima ni be gbane n nyɛ kuɔŋ,0.8182,0.2791
+931,O ba Dauda ni daa wuhi ni bɛ mɛm’ li luɣ’ shɛli din nyɛ Yawɛ ni daa yi ŋun Naa Dauda zuɣu la.,aauda ni daa wuhe ni bimɛm ni lu sha le di nye yaa wee ni daa yi ŋun na daada zuɔl,0.7391,0.2794
+932,O sara daa nyɛla anzinfa parante yini din tibisim nyɛ kilɔgiram yini ni biɛla ni anzinfa tahi’ yini din tibisim nyɛ giram kɔbisinii kaman Naawuni jɛmbu duu liɣiri tibisim zahimbu ni nyɛ shɛm.,saba daa nyɛ la n zinfaparante yini din temsim nya kilograam yini ni biɛla naa n zinfataa yini din temsim nya gram kɔbsa nii kaman naawuni jambu duu lagre temsim zaambu ni nya shɛm,0.6667,0.1975
+933,Teeku Ʒiɛɣu daa nyaya ka zo; ka Jɔɔdɛn Mɔɣili ŋmaligi lab’ di nyaaŋa.,eekusigu daanyaa ka zo ka jɔɔdan mɔgili ŋmalige labi dulnyaaŋa,0.7692,0.2037
+934,"Ka Yawɛ daa yɛli Musa, “Zaŋm’ anzinfa mali kikah’ ayi.",yaab wee daa yal musa zamaan si fama kika,0.8,0.425
+935,Bɛ daa sabi maligumaaniba maa yuya dolila bɛ daŋ ni nyɛ shɛm.,b daa sab maligumaaniba maayuya dol la bi daŋ ni nyɛ shaŋ,0.5833,0.1224
+936,ni bɛ tumd’ o tuma.,nni too yu sheli ti kul ni beena sahakam ka ku kpi katenzo nim baa zaŋ bemaŋ table yaawee ni b tumo tuma ka yuur,4.6,6.0
+937,Bee wula ka a ni tooi yɛl’ a mabia ni o chɛ ka a yihi bimburigin’ shɛli din be o ninni ka daantaliga lee sa amaŋmaŋ’ ninni?,bee wula kaah ni too yɛla a mabia ni u che kaah yi bimburigilin shɛl din bee u nini ni ki dan tagi le yisa maa nii,0.8148,0.2903
+938,"Dimbɔŋɔ nyaaŋa, ka Ayuba daa lan niŋ yuun’ kɔbiga ni pihinahi pahi.",dimbɔŋɔ nyaaŋa kaayuba daa lan niŋ yuunkɔbiga ni pihinahipaa,0.5,0.0377
+939,Ka n daa paai Jɛrusalɛm m-be nimaani dabisi’ muna ata.,a niŋ man ŋun nye a dabeli ŋɔ nirilim n suhura na,1.2,0.7143
+940,ka lo kpara ni bɛ tuhi Kpiɔŋlan’ Naa; ka niŋ tipawumli n-gbibi nyɔtaɣirisi.,a lo kparanɛ b tu kpeŋlan naa ka niŋ tikpawum le n gbibi ytagare si,0.9231,0.2373
+941,"“Yinim’ yɛnnim’ ŋɔ, wummiya n ni yɛn yɛli shɛm ŋɔ.",enyenimŋɔ wumiya n ni yan yel sem ŋa,0.8,0.3611
+942,"Duumanima, yi gba niŋmiya yi daba lala, ka chɛ ba dabiɛm kpɛhibu, dama yi mi ni yi mini ba zaa Duuma be alizanda ni, ka o mi bi yaai so yuri ka chɛ so.",uumaiyi gba niŋmiya yi daba lala kachɛba dabeem kpɛhibu dama yi mi ni yi min ba zaa duuma bi alizanda ni koo mi be yaa so n yur ka che so,0.4412,0.1239
+943,"Ka yi nɔdeebo yi ti niŋ pali, ti mali shili ni ti darigi bɛn tumdi nɔzaɣisibo tuma la tibili.",ayɛ nɔdiebo yi tiniŋ pale ti mali shile nɛ ti darige ban tum ni nɔzagasibo tuma la tebilɛ,0.7368,0.1781
+944,"Di zaa yoli, Asa daa kul ʒiɛla yim o biɛhigu ni zaa.",di zaa yoli asa daa kul ʒiɛlayim u biɛsegu ni zaa,0.3333,0.0769
+945,"Ka Uzia daa ti faai siɣ’ o yaannim’ sani, ka bɛ sɔɣ’ o nanim’ gbala ni m-baɣil’ o yaannima, dama bɛ daa yɛlimi ni o nyɛla kɔŋlana.",yuziya daa ti paa sige u yaanim san ni ka bi sɔg nanim gbarali m baal u yaannima dama bi daa yalimi ni u nya la koŋ lan na,0.8519,0.2526
+946,"Amaa ka Yawɛ daa bɔhi Musa, “O ba yi di tuhi nintɔri vie o ninni, vi naan ku gbaag’ o paai daba ayopɔin?",amaa kayaa wee daa bɔhim wusa uba yi di tuhi nintɔr ve u nin ni vinaa kugbaag u paai dabayopɔn,0.7391,0.1558
+947,"” Di saha maa zaŋ chana, ka nyaandola maa daa zaŋ Yisa ma maa mali kul’ o yiŋa.",isaamaa zaŋ chana ka nyaandoliba maa daa zaŋ yisa ma maa malikulooyiŋa,0.4706,0.0862
+948,Lɛvinima: Jɛshua mini Binnui ni Kadimiɛl ni Shɛrɛbia ni Juda ni Matania ŋun min’ o tab’ daa su wumpaɣibo yila yilibu fukumsi la.,ijoshuwa man ni bee nue nɛ kadimiɛl nɛ serebia nɛ juda nɛ matania ŋun mano taba daa sub won paaba yila yilbu fukumso la,0.7826,0.3039
+949,"Yim ka tiŋgbani daa ti dam pam, dama ti Duuma malaika n-daa yi alizanda ni siɣina nti biligi siliga maa nol’ ni kuɣili la n-du n-ʒi di zuɣu.",yim ka tiŋgbani daa ti dam pam dama ti duguma malaikan daa yaali zanda ni n sigu na ti bilge silgi maa nole kuu lila ndun jiri zuɔ,0.6429,0.1682
+950,Ka zuɣulaannim’ maa daa lan zaŋ bɛ pina ka sara maligu bimbini gbinna bɛ ni daa zaŋ sara maligu bimbini maa ti Naawuni ka booi kpam bahi di zuɣu saha shɛl’ la.,kazolannim maa daa lan zaŋ be pi na ka sara mali be bimben gbenn na be ni daa zaŋ sara mal bi bimben maati naawoni kaboe kpam baa di zuo saha shɛl la,0.625,0.192
+951,Yɛhudianim’ kpeen’ so daa beni ka o yuli booni Nikɔdimus.,odianim kpeen so daabeeni ka u yul boo ni nikodimos,0.8,0.2
+952,Ka n daa kpahi bɛ zuɣu ni di saha maa ni bɛ miri ka bɛ kɔhi bindiri’ shɛli Vuhim Dabisili maa dali.,n daa kpahi be zuo ni di saha maa nɛ b mar ka bi kɔhe bindir sheli vuhm dabsel maa dal,0.5909,0.2368
+953,Di ni ti zaŋ yi napɔnvari ni hal ni yi zuɣutalisi ni.,nin ti zaŋ yinaponvarni hali zuutal sen ni,0.75,0.2683
+954,Ka Harim bia Malikija mini Pahatimɔab bia Hashub daa mali me yaɣ’ shɛli mini Bɔrɔbɔro Shɛbu Duri Shee Pia la.,kaharimbii malekija men paha timɔb dui hashub daa maa mee yaasheŋ minn boroboro shɛb durshee ti yu la,0.85,0.2727
+955,Di saha ka naa daa wum ni Itiɔpia naa Tirihaka mini Ijipti tɔbbihi kanna ni bɛ ti tuh’ o.,desaha kanaadaawom nɛ itiopia naa tiri haka min ijipt tobihe kan na ni btu,0.9474,0.2029
+956,"Ka o ma daa wuh’ o o ni yɛn suhi shɛli; ka bipuɣiŋga maa daa yɛli Naa Hɛrɔd, “Ŋmam’ Jɔn Baptaizira zuɣu n-niŋ pɔŋ ni na ti ti ma.",ou ma daa woh o o ni yan suh shli ka pipɔŋa maa daa yɛli naa herod  ŋmam jɔn baptaiz da zɔ niŋ ma pɔŋ ni na nti ti ma,0.4828,0.2447
+957,ka mi kul ku chɛ o ninvuɣ’ shɛb’ bɛn ʒe o yim.,a mi kul ku choo ninvu sbi ba je o yi,0.6667,0.3125
+958,"N dimnim’ zaa ni di vi, ka dabiɛm gbahi ba pam; di ku yuui ka bɛ di vi maa, ka ŋmaligi zo.",dimnim zaa nɛ di vi ka dabiɛm gbaa ba pam di kiyuui ka b dii vi maa ka ŋmalige zo,0.3636,0.125
+959,nyɛ din tiɣi a nini.,ye di tag anini,1.0,0.4
+960,Bɛ zuɣulana n-daa nyɛ Zabidiɛl ŋun daa nyɛ Hagɛdolim bia la.,bezula nan d nye zebidiil ŋun daa nye hegedolim bii la,0.7273,0.25
+961,Ka Rubin zuliya daa yiɣisi zaŋ bɛ tuuta doli tab’ gbilligbilli pa bɛ zuɣu.,robin zuliya daa ya si zaŋ batuuitaa doliitaba gbellegbelle pa ba zɔɔ,0.7857,0.322
+962,n ku zo shɛli dabiɛm; dama a be n sani.,kuso shel dabiɛm dama a bee nsanɛ,0.7,0.2143
+963,Di daa kpalim doya maa vuhirila di vuhim dabisa hal ti paai yuun’ pisopɔin.,idaa kpalim doemaa vuhur la ti vum dabsa ha ti paa yuunpiisopɔn,0.8571,0.2167
+964,"” Ka daa lan yɛli ba yaha, “Miriya Farisiinim’ mini Sadusiinim’ dabindi la.",di saakab daa baŋ ni o bi yarba mi nɛ u mar be boroboro dabinde amaa nɛ farisiini mini saadus,1.5833,0.8772
+965,"Bɛ daa lan mali taha pia, din nyɛ bɛ ni paɣiri binyɛra tah’ shɛŋa puuni.",bdaa la mal tahapia di nye bi ni pagar bin yaata shaŋa puuni,0.8667,0.2364
+966,saha shɛli bɛ napɔna yi ti sarigi; dama bɛ zaɣ’ biɛɣu nyabu dabisili saha miriya.,ahashel bi na po na yiti sarge dama be zabinyabu dabisil saha mir a,0.9333,0.2344
+967,"Bɛ ni ku binyara luɣ’ shɛli, nimaani ka o be.",n ku ben yara lu shele nimaani kuu be,0.8,0.2727
+968,"Bɛ daa kurila naɣilaa mini piɛ’ suma ayɔbu ni nɔhi dabisili kam n-duɣiri bindirigu tiri ma, ka daa tiri ma wain kola pam mi biɛɣu pia kam dali.",daa kur la naalaa min pesuma a yɔbu ni nɔhi dabisilkam n dɔɔr bindirga tirma ke daa tir ma wain kola pammi bigupiikam da le,0.7857,0.1964
+969,"Ka yi yi ti kpe yil’ shɛli, yin’ di lan taɣiya yilikpɛrili hal nti yi tiŋ’ maa ni.",yi yiti kpe yil sheli jindi lan tageya yilkpɛrli hale nti yi tiŋ maani,0.6111,0.15
+970,Ka a ti baŋ ni barina shɛli ka a yiŋa.,aati baŋ ni bana shele kaa yiŋa,0.7,0.1786
+971,"N yɛli Yawɛ, “Nyini n-nyɛ n Duuma; n ka bin’ sun’ shɛli pahila nyini.",n yali yaa wee nyininyan duuma n ka bi sun shale pahila nyɛnn,0.5714,0.2245
+972,Bee yi na ʒi n-karim zaligu ni ni maligumaaniba tumdi tuun’ shɛŋa Naawuni jɛmbu duu Vuhim Dabisili dali ka ka galimi di zuɣu?,e yi na sin karim zaligu ni nɛ maligumaaniba tum ni tuun shaŋa naawuni jambu duu vum dabisil dale ka ka galim mi di zuɣɔ,0.6087,0.13
+973,"Naawuni daa niŋ lala ni o kahigila o daanfaani din galisi pam la wuhi palɔni ʒiɛman’ shɛŋa din kanna ni, ka di yila o ni wuhi ti yurilim shɛli Yisa Masia zuɣu la ni na.",aawo daan niŋ lala no o kaage odaanfaa ni din galisa pam la n wuhi palo ni heman shaŋa din kan na ni kadi yi le o ni wuhi ti yurilim sheli yisa masiya zugu la ni na,0.5714,0.1679
+974,A lee tɛhiya ni ŋuni ka a turi ka maani ansarisi maa?,lee tɛhiya nɛ ŋun kaa turi tamaani an sarsomaa,0.75,0.1463
+975,Ka Harumaf bia Jɛdaya daa mali me o yiŋ’ tooni m-pani bɛ zuɣu.,kaharomaf dbii jedaya daa maa mee o yiŋ tooni mpan bi zugɔ,0.6923,0.234
+976,"Amaa ka bɛ daa maani o tuumba maa ansarisi, ka zaɣis’ o yɛligu wumbu, ka lar’ o daanabinima, ka Yawɛ suhu ti yiɣisi bah’ o niriba maa zuɣu pam hal ka di ti kɔŋ tim.",maa ka be daa maan o tuumba maa asasi ka zagas u yɛlgu wumbu ka lar u daanabinim maa ka yaa wee suu daa yasa pah niriba maa zuɔ pam ha kadi tikɔŋ tii,0.6571,0.2439
+977,"di yi nyɛla n tumla tuumbiɛri, n ku lan tum lala yaha’?",in nye la n tum la tuumbiɛri n ku lan tum lala yah a,0.5833,0.0976
+978,Bini bahigu so di piligu; ka suɣilo so karimbaani.,inaso dpil kasulo so ka aa,0.8889,0.475
+979,Adɔnija ni Biɣivai ni Adin ni.,adonija nɛ bigvai nɛ aden nɛ,1.0,0.2917
+980,"Yawɛ kɔŋko ka m mali, ka a tiri ma n ni bɔri shɛlikam.",yaawee koŋko ka mali kaa tirma n ni bɔr shɛl kaŋa,0.7692,0.25
+981,"Mɔɣu ni buŋ’ yi ti ŋubiri mɔri, o lan kumda?",mɔɔni buŋ yitiŋubr mɔɔr o lan kum a,0.8,0.2188
+982,Ziɔn Zoli din be nuzaa polo katiŋ’.,sayɔnn zole de be nuza polokat,0.8571,0.3704
+983,"Ka yi yi lihi zuɣusaa nya wuntaŋa mini goli ni saŋmarisi ni zuɣusaa binyara zaa, yin’ miriya ka yi damdi tiŋa n-jɛm li ka di chɛ ka yi birigi.",yi yi li zuɣusaa nya wuntaŋa min goli ni saŋmarse ni zuɣusaa binyara zaa yi mariya kayidamda tiŋa n jam li kadi chɛ kayi berga,0.5517,0.1273
+984,Shammua bia Abida daa nyɛla Galal yaaŋa ka nyɛ Jɛdutun yaantibichee.,semua bia abida daa nyɛ la gala yaaŋa ka nyɛ jedutun yaantibche,0.5455,0.1228
+985,O daa bi siɣis’ omaŋ’ anab’ Jɛrimia ŋun daa zaŋ Yawɛ yɛtɔɣa tɔɣis’ o la sani.,daa be sirsm maa anabijaramaya ŋun daa saŋ yaa wee yetɔa tɔgas o la sani,0.6875,0.3333
+986,"Di sɔɣi bɛ taali maa, a mi di kpihim bɛ daalahichi maa a sani, dama bɛ yɛli zilima pam tammɛriba maa ninni.",tisɔgebu taali maa a mili kpiim be daalahachi maa a sani dama b ye zilima pam tamɛriba maa nin ni,0.5909,0.1566
+987,Musa daa zaŋla o paɣa Zipɔra labisi ka o deemba Jɛtro daa deeg’ o min’ o bidibis’ ayi la ʒili.,so daa zaŋ le o paa zipoora labsi koodeembi jetro daa deeg o mini u biidibsaayi la jen,0.75,0.2817
+988,"Ka bɛ daa kɔri Yaɣigari chuɣu piɛbihi, ka maligumaaniba maa daa taɣi bɛ ʒim n-zaŋ li mihi sara maligu bimbini maa, ka Lɛvinim’ mi shiri biŋkɔbiri maa.",b daa kɔr yaagar chɔpe be ka maligumaaniba maa daa taae be ʒim nzaŋ le mihi sada maligu bimben maa ka le vini mi shir bi kɔbir maa,0.5926,0.2269
+989,Ka bɛ ti bahi ŋubi sakuɣa la ni daa chɛ bindir’ shɛŋa zali ya la mini yi tihi din be mɔɣu ni.,bet bah ŋubi sakɔɔ le ni daa che bindir sheŋa zali yɛla mani yiteh din be mɔa ni,0.6364,0.2429
+990,ka deemiya nandaamba bɛn ka kpɛhili shee niŋmi yi yinsi; ka timiya bɛn chani gbinfini situra; ka di zaɣisiya yi dɔɣiriba sɔŋbu.,ka deemiya nandaamba ban ka pialishee niŋ ma i yense ka timiya baa chani gben fanisitura ka di zaasiya yi dɔari ba sɔ bu,0.6364,0.1748
+991,"Noli ni ti din ya yi fɔntinsi ni, ka din ya yi puri ni.",oilito dinya yifa teŋso ne ka din ya yipuur ni,0.7143,0.3
+992,Ka o daa piligi bɔri so’ shɛli o ni yɛn doli yi Yisa nyaaŋa chɛ ka bɛ gbaag’ o.,u daa piligi bɔs sham nia n doli n yi yisa nyaaŋa che ka bi gbaa,0.6842,0.2931
+993,"Dinzuɣu yi ni nyɛ Naawuni biyurisi la zuɣu, di simdi ni yi chɛ ka yi bebu be kaman o bebu.",dinzugu yini nya naawun biyurso la zugu di simdi ni yiche kayubi be kama n o beɛ bu,0.8,0.1739
+994,Ka bɛ niriba pirigibu balibu buyi bɛn daa paɣiri Naawuni maa zaa daa mali hal ti kpe Naawuni jɛmbu duu maa ni.,ba niriba pirgibu baliba buyi ban daa pagr naawun maa zaa daa mali hal ti kpe naa wn jambu duumaniŋ,0.5455,0.1705
+995,O daa lan dɔɣi bidibis’ ayopɔin mini bipuɣins’ ata.,aa len dɔ bidibisa ayopun min bipunsata,1.0,0.275
+996,"Ka Yawɛ daa bɔhi Sintani, “Ya polo ka a lee yina?",yaawu daa bɔn sintani yepolo kaa le yina,0.7273,0.1944
+997,Wuntizɔriba yi ti nya ka Naawuni bɔhi biɛri.,tiɔ yitinya kadwobɔbr,1.0,0.5278
+998,Ti Duuma Bindirigu dibu gbinni.,tiddiyaa mahal bii daa bi dɔgi u gba di naa soo u zugu um,2.8,1.1538
+999,Dina n-ni chɛ ka o lan zaŋ o zaɣa niŋ yinim’ bɛn kpalim ka daa zo n-tiligi Asiria nanim’ nuu ni la ni.,bi ni che ka u lan zaŋ o zaa nniŋ yi ni ba kpalim ka daa zo teligi asiriya nanim nuu ni la n,0.5217,0.2

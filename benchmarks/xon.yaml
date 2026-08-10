@@ -1,6 +1,6 @@
 iso_639_3: xon
 language: Konkomba
-num_samples_per_category: 300
+num_samples_per_category: 1000
 categories:
 - bible
 benchmarks:
@@ -8,27 +8,14 @@ benchmarks:
   model_url: https://huggingface.co/KhayaAI/w2v-bert-xon
   owner: KhayaAI
   params: 0.6B
-  wer: 0.4451
-  cer: 0.2215
+  wer: 0.4586
+  cer: 0.2494
   per_category:
     bible:
-      wer: 0.4451
-      cer: 0.2215
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.09
+      wer: 0.4586
+      cer: 0.2494
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.08
   source: evaluated
-- model: KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en
-  model_url: https://huggingface.co/KhayaAI/w2v-bert-gjn_maw_gur_dag_dga_kus_lxn_wlx_xon_xsm_en
-  owner: KhayaAI
-  params: 0.6B
-  wer: 0.6085
-  cer: 0.3012
-  per_category:
-    bible:
-      wer: 0.6085
-      cer: 0.3012
-      samples: 300
-      valid: 296
-      avg_seconds_per_sample: 0.09
-  source: evaluated
+  model_class: non-llm

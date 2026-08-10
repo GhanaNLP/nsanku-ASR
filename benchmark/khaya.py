@@ -1,0 +1,164 @@
+"""Hosted-API ASR track — Khaya (GhanaNLP).
+
+Transcribes the ghana-speech-eval audio with the Khaya ASR API
+(POST https://translation-api.ghananlp.org/asr/v3/transcribe?language=<code>,
+header Ocp-Apim-Subscription-Key, body audio/wav -> {"text": ...}).
+
+Khaya is a hosted multilingual API and is included explicitly (exempt from the
+single-language model filter). It is scored per category and averaged, like the
+other tracks. Results go to benchmarks_api/{iso}.yaml and are merged into
+benchmarks/ tagged model_class="non-llm".
+"""
+
+import os
+import time
+import threading
+from io import BytesIO
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+import requests
+import yaml
+
+from .config import NUM_SAMPLES, ROOT
+from .dataset import load_eval_samples
+from .evaluate import load_eval_configs, language_categories, save_transcriptions, _score
+
+# Load .env for KHAYA_API_KEY
+_env = ROOT / ".env"
+if _env.exists():
+    for _line in open(_env):
+        _line = _line.strip()
+        if _line and not _line.startswith("#") and "=" in _line:
+            _k, _v = _line.split("=", 1)
+            os.environ.setdefault(_k.strip(), _v.strip())
+
+API_URL = "https://translation-api.ghananlp.org/asr/v3/transcribe"
+MODEL_ID = "GhanaNLP/khaya-asr-v3"
+MODEL_URL = "https://translation-api.ghananlp.org/"
+MAX_WORKERS = 8
+MAX_RETRIES = 3
+
+# eval iso_639_3 -> Khaya API language code (only Ghanaian languages Khaya supports)
+EVAL_TO_KHAYA = {
+    "twi": "atw",   # Akuapem Twi
+    "ada": "ada", "bwu": "bwu", "dag": "dag", "dga": "dga", "ewe": "ewe",
+    "fat": "fat", "gaa": "gaa", "gjn": "gjn", "gur": "gur", "hau": "hau",
+    "kus": "kus", "maw": "maw", "nzi": "nzi", "xsm": "xsm",
+    "xon": "xon_likpakpaanl",   # Konkomba (main variant)
+}
+
+API_BENCHMARK_DIR = ROOT / "benchmarks_api"
+
+
+def _encode_wav(audio_array, sample_rate=16000):
+    import soundfile as sf
+    buf = BytesIO()
+    sf.write(buf, audio_array, sample_rate, format="WAV", subtype="PCM_16")
+    return buf.getvalue()
+
+
+def _transcribe(wav_bytes, khaya_code, key):
+    headers = {"Ocp-Apim-Subscription-Key": key, "Content-Type": "audio/wav"}
+    for attempt in range(MAX_RETRIES):
+        try:
+            r = requests.post(f"{API_URL}?language={khaya_code}", headers=headers,
+                              data=wav_bytes, timeout=120)
+            if r.status_code == 200:
+                return (r.json().get("text") or "").strip()
+            if r.status_code in (429, 500, 503) and attempt < MAX_RETRIES - 1:
+                time.sleep(2 * (attempt + 1)); continue
+            return ""
+        except Exception:
+            if attempt < MAX_RETRIES - 1:
+                time.sleep(1.5 * (attempt + 1))
+    return ""
+
+
+def _has_result(iso_code):
+    path = API_BENCHMARK_DIR / f"{iso_code}.yaml"
+    if not path.exists():
+        return False
+    d = yaml.safe_load(open(path)) or {}
+    return any(b.get("wer") is not None for b in d.get("benchmarks", []))
+
+
+def _save(iso_code, language, category_names, result):
+    API_BENCHMARK_DIR.mkdir(parents=True, exist_ok=True)
+    out = {
+        "iso_639_3": iso_code,
+        "language": language,
+        "num_samples_per_category": NUM_SAMPLES,
+        "categories": category_names,
+        "benchmarks": [result],
+    }
+    with open(API_BENCHMARK_DIR / f"{iso_code}.yaml", "w") as f:
+        yaml.dump(out, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+
+
+def evaluate_khaya(iso_code):
+    """Evaluate the Khaya ASR API on one language across its eval categories."""
+    key = os.environ.get("KHAYA_API_KEY")
+    if not key:
+        raise ValueError("KHAYA_API_KEY required (set in .env).")
+    khaya_code = EVAL_TO_KHAYA.get(iso_code)
+    if not khaya_code:
+        print(f"  {iso_code}: not supported by Khaya API - skipping")
+        return
+    cats = language_categories(iso_code)
+    if not cats:
+        return
+    if _has_result(iso_code):
+        print(f"  Khaya already done for {iso_code} - skipping")
+        return
+
+    meta = load_eval_configs()[iso_code]
+    language = meta["language"]
+    category_names = [c for c, _ in cats]
+    print(f"\n{'='*60}\n  Khaya API ({khaya_code}) - {iso_code} ({language})  categories={category_names}\n{'='*60}", flush=True)
+
+    per_category = {}
+    cat_wers, cat_cers = [], []
+    for category, config in cats:
+        samples = load_eval_samples(config, NUM_SAMPLES)
+        if not samples:
+            continue
+        refs = [s["text"] for s in samples]
+        print(f"  Category '{category}' ({len(samples)} samples, {MAX_WORKERS} workers)...", flush=True)
+        hyps = [""] * len(samples)
+        t0 = time.time()
+        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
+            fut = {pool.submit(_transcribe, _encode_wav(s["audio"], s["sample_rate"]), khaya_code, key): i
+                   for i, s in enumerate(samples)}
+            done = 0
+            for f in as_completed(fut):
+                hyps[fut[f]] = f.result()
+                done += 1
+                if done % 100 == 0 or done == len(samples):
+                    rate = done / (time.time() - t0)
+                    print(f"      {done}/{len(samples)}  ({rate:.1f}/s)", flush=True)
+        elapsed = time.time() - t0
+        wer, cer, valid = _score(refs, hyps)
+        save_transcriptions(iso_code, MODEL_ID, category, refs, hyps)
+        per_category[category] = {
+            "wer": round(wer, 4) if wer is not None else None,
+            "cer": round(cer, 4) if cer is not None else None,
+            "samples": len(samples), "valid": valid,
+            "avg_seconds_per_sample": round(elapsed / max(len(samples), 1), 2),
+        }
+        if wer is not None:
+            cat_wers.append(wer); cat_cers.append(cer)
+            print(f"    WER {wer:.2%}  CER {cer:.2%}  (valid {valid}/{len(samples)})", flush=True)
+
+    avg_wer = round(sum(cat_wers) / len(cat_wers), 4) if cat_wers else None
+    avg_cer = round(sum(cat_cers) / len(cat_cers), 4) if cat_cers else None
+    result = {
+        "model": MODEL_ID, "model_url": MODEL_URL, "owner": "GhanaNLP",
+        "model_class": "non-llm", "params": "API",
+        "wer": avg_wer, "cer": avg_cer, "per_category": per_category, "source": "evaluated",
+    }
+    if avg_wer is None:
+        result["error"] = "no_valid_output"
+    _save(iso_code, language, category_names, result)
+    if avg_wer is not None:
+        print(f"  FINAL (avg of {len(cat_wers)} categories): WER {avg_wer:.2%}  CER {avg_cer:.2%}", flush=True)
+    return result

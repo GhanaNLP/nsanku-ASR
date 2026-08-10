@@ -12,9 +12,50 @@ import requests
 
 from .config import (
     OWNER_TYPES_FILE, HF_TOKEN, ORG_ONLY, MAX_LANG_TAGS, DATA_DIR,
+    SINGLE_LANGUAGE_ONLY, DEDUP_SAME_BASENAME, LANG_CONFIG,
 )
 
 LANGTAG_COUNTS_FILE = DATA_DIR / "model_lang_tags.json"  # cache: model_id -> [lang codes]
+MODEL_CREATED_FILE = DATA_DIR / "model_created.json"     # cache: model_id -> ISO created date
+
+# Collapse language-code synonyms to a single canonical language when counting how many
+# distinct languages a model targets. iso 639-1 <-> 639-3 pairs are read from the language
+# metadata; Akan variants (Twi/Akuapem/Asante) collapse together.
+_ISO_SYNONYMS = None
+
+
+def _canon_map():
+    global _ISO_SYNONYMS
+    if _ISO_SYNONYMS is not None:
+        return _ISO_SYNONYMS
+    import yaml
+    m = {}
+    try:
+        meta = yaml.safe_load(open(LANG_CONFIG))
+        for l in meta.get("languages", []):
+            iso3 = l.get("iso_639_3"); iso1 = l.get("iso_639_1")
+            if iso3:
+                m.setdefault(iso3, iso3)
+                if iso1:
+                    m[iso1] = iso3
+    except Exception:
+        pass
+    # Akan variants (Twi/Akuapem/Asante) collapse to one language — applied LAST so
+    # they win over any iso 639-1/639-3 default (e.g. tw -> twi) from the metadata.
+    for t in ("ak", "aka", "twi", "tw", "akan", "atw", "ak-gh"):
+        m[t] = "aka"
+    _ISO_SYNONYMS = m
+    return m
+
+
+def canon_lang(tag):
+    return _canon_map().get(tag.lower(), tag.lower())
+
+
+def distinct_language_count(model_id, cache=None):
+    """Number of distinct languages a model's config targets (synonyms collapsed)."""
+    tags = lang_tags(model_id, cache)
+    return len({canon_lang(t) for t in tags})
 
 # Keywords marking a model as NOT automatic-speech-recognition.
 # These org models exist but cannot transcribe (TTS, aligners, language-ID).
@@ -147,7 +188,63 @@ def filter_models(models, iso_codes=None):
             continue
         if is_general_model(name, ltags):
             continue
+        if SINGLE_LANGUAGE_ONLY and distinct_language_count(name, ltags) > 1:
+            continue
         if iso_codes is not None and not targets_language(name, iso_codes, ltags):
             continue
         kept.append(m)
+    if DEDUP_SAME_BASENAME:
+        kept = dedupe_by_basename(kept)
     return kept
+
+
+def _load_created_cache():
+    if MODEL_CREATED_FILE.exists():
+        try:
+            return json.load(open(MODEL_CREATED_FILE))
+        except Exception:
+            return {}
+    return {}
+
+
+def model_created_at(model_id, cache=None):
+    """ISO creation timestamp of a model repo (cached); '' on failure."""
+    cache = _load_created_cache() if cache is None else cache
+    if model_id in cache:
+        return cache[model_id]
+    try:
+        r = requests.get(f"https://huggingface.co/api/models/{model_id}",
+                         headers=_headers(), timeout=15)
+        created = r.json().get("createdAt", "") if r.status_code == 200 else ""
+    except Exception:
+        created = ""
+    cache[model_id] = created
+    MODEL_CREATED_FILE.parent.mkdir(parents=True, exist_ok=True)
+    json.dump(cache, open(MODEL_CREATED_FILE, "w"), indent=2, sort_keys=True)
+    return created
+
+
+def dedupe_by_basename(models):
+    """Collapse models that share a basename across different orgs.
+
+    Rule: if one copy is owned by ghananlpcommunity, drop that copy (keep the other);
+    otherwise keep the earliest-published repo.
+    """
+    from collections import defaultdict
+    groups = defaultdict(list)
+    for m in models:
+        groups[m["name"].split("/")[-1]].append(m)
+    kept = []
+    for base, group in groups.items():
+        if len(group) == 1:
+            kept.append(group[0])
+            continue
+        non_gnlp = [m for m in group if m["name"].split("/")[0] != "ghananlpcommunity"]
+        pool = non_gnlp if non_gnlp else group
+        if len(pool) == 1:
+            kept.append(pool[0])
+        else:
+            kept.append(min(pool, key=lambda m: model_created_at(m["name"]) or "9999"))
+    # preserve original order
+    order = {id(m): i for i, m in enumerate(models)}
+    return sorted(kept, key=lambda m: order[id(m)])

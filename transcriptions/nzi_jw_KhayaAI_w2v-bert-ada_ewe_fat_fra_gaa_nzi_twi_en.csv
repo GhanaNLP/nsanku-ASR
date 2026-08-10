@@ -299,3 +299,703 @@ sample_id,reference,hypothesis,wer,cer
 297,Nyamenle ɛtanefakyɛ ne anwo debie boni a yɛsukoa yɛfi kɛzi ɔ nee Devidi lile la anu a?,nyamlɛ tanɛ fatsɛ ni ahu debie bueni a yesu kɔ yifi kezi ɔni devid lili lɛ enua,0.9412,0.3333
 298,Die Di Kɛ Gyihova Kulo Wɔ,die di kɛ jehovɛ kulu ɔ,0.5,0.3
 299,NYIANU NE MƆ MAANLE BƐ KOYƐLƐ NE ANU MIANLE,nye nunumɔ malɛ bɛ kwɛyɛlɛ ni enu mialɛ,0.8889,0.3429
+300,SUBANE BONI MƆ A ƆWƆ KƐ MENYIA A?,subani boni mɔa ɔwɔ kɛ minyaa,0.625,0.12
+301,Pɔɔlo folɛdulɛ boni a bahola aboa adiema kpavolɛ bie yeamaa yeanyi sunsum nu a?,pɔlo fuludulu boni a bahoraboa dii makpavolɛ bie yami yɛ nyi fumfunua,0.7857,0.2615
+302,Menzukoale ninyɛne dɔɔnwo menvile Dorothée ɛkɛ (bɛne zo),yɛnwu merean nee doreti wo nvoninli ne anu nvonini ne anwo edwɛkɛ ne kɛnga kɛɛ mezukɔle ne hiɛnu dɔɔnwo me vile dɔreti ɛkɛ bɛne zo,2.625,1.5532
+303,Me nee Heinz yɛɛ Tetjana (ɔgyi yɛ avinli),mvonninli ne awo edwɛkɛ ne kɛnga kɛ menle hese ye tatiana ɔgyi yɛ evinli,1.5,1.125
+304,Yɛbazukoa kɛzi ɛkpɔnedeɛ ne maa yɛnwu subane ngɛnlɛma mɔɔ Gyihova Nyamenle nee Gyisɛse Kelaese lɛ la anwo debie.,yibezikwakezia kpanɛdia nemaye ŋu subanagalama modzi ehova nya amli ni jises krais le la ŋu debie,0.8889,0.4574
+305,Duzu ati a ɔwɔ kɛ yɛkɔ zo yɛmaa yɛ nye da ɛkɛ a?,ɖuzu etia ɔwɔ ke yɛkwɔ zo yɛme yɛnye dae kaa,0.8462,0.2286
+306,Ɔbaboa yɛ yeamaa yɛanwu kɛzi ɔhyia kɛ yɛnea boɛ amaa yɛanyɛ ɛtane nee mɔɔ ɔwɔ kɛ yɛyɛ amaa yɛahwe yɛ nwo yɛavi ninyɛne mɔɔ yɛyɛ a ɔbamaa yɛayɛ ɛtane la anwo la.,ɔbabua y ɛya me yɛ ŋmu ke zi osia kɛ yɛniabɔe ameayaanyɛ etan ne mɔwɔ kɛ yɛyɛ ame yaswe yɛ ŋu yɛve ninye nɛ mɔ yɛyaa ɔbame yayɛ tã la awu la,0.8438,0.3359
+307,Duzu a baboa wɔ yeamaa wɔahola wɔadɛnla asafo fofolɛ nu a?,ɖuzuu ababowawɔ ya m woaxɔla woadna asafo fofolee nue,0.9091,0.3191
+308,Ɛzukoalɛdeɛ mɔɔ wɔ Hibuluma kɛlata ne anu la baboa yɛ yeamaa yɛava nɔhalɛlilɛ yɛagyinla kpundii yɛahɔdwu ewiade ɛhye awieleɛ.,ezukwale ɖie mɔ wo hebri klata ni enu la babua yɛ yeama yeava nɔhalelili yɛ dzinlekpundiŋ yehudzo ewiade ese ewieliɛ,0.8947,0.3491
+309,Fa “Fofolɛ Mɔɔ Ɛra La” Foa Ne Di Gyima Kpalɛ,fa foflɛmia la fã ni di jima kpalɛ,0.6,0.303
+310,Duzu ati a nrɛlɛbɛ wɔ nu kɛ ɛbagua ɛ nye aze wɔanlea awie kolaa na bɛabɔ ɔ bo kɛ bɛtu a?,duzu etia aŋle be wono kɛɛ ebe gɔe nyi azi woalĩ ewie kora nababɔ obokebetua,0.9524,0.3881
+311,KƐZI NGYEGYELƐ ƐHYE MƆ HANLE DWUUMA MƆƆ ZIALE LA,kezi ngyegyelɛ ɛhye mɔ hanle dwuuma moozalɛ la,0.3333,0.125
+312,Nyilalɛ boni mɔ a ɛkpɔnedeɛ ne maa yɛnyia ye kɛkala a?,nyilale bo nimɔe kpɔnediani maye nyae kaakla,1.0,0.3256
+313,Duzu Ati A Gyihova Menli Nwo Hyia Ye A?,duzu ati a dwouwobɛmɛlene nwu siaye a,0.5556,0.4667
+314,Debie Mɔɔ Ɛbahola Wɔazukoa La,ɖebi muebahol wozukua la,0.8,0.36
+315,KƐ ƆKƐYƐ NA YƐ NEE YƐ MEDIEMA AVINLI ANZƐKYE Ɛ?,kɔ kɛ ye na yɛ niye mediema evli ansɛtsiɛe,0.7,0.3514
+316,Duzu a nane afɔle ngakyile mɔɔ Mɛla ne maanle bɛbɔle la gyi ɛkɛ ne maa a?,ɖuzua nane afɔli ŋgetsile mɔ mɛla ni ma li be bɔle la dzi ekɛ ne mea,0.875,0.2982
+317,Ɛlɔlɛ mɔɔ yɛlɛ yɛmaa menli la,elɔle mɔyɛ le yɛmemɛ ne la,0.8333,0.375
+318,bɛamaa yeanyia ɛbulɛ yeamaa ɛbɛlabɔlɛ nwo ngyinlazo mɔɔ wɔ Baebolo ne anu la ɛ?,bameye nyɛ ibule yɛ amɛ ebɛlɛbɔlɛ ŋu ji nɛ azo mɔɔ wɔ bae bo ni enu lɛɛ,1.0714,0.3846
+319,Saa Ɛ Nee Awie Ɛnyɛ Adwenle A,mɔ doa zo la le ŋulɛ edweke bieko sɛi ewiɛnya dwelea,1.5714,1.1739
+320,Kɛ ɔkɛyɛ na yɛava anyunlunyia mɔɔ fɛta Gyihova la yɛamaa ye ɛ?,kɔkɛɛ ni yave nyulunya mɔ feta dzeova la yama yɛɛ,0.9167,0.34
+321,Duzu ati a wɔkpa kɛ ɛbazonle Gyihova a?,tiawɔkpa kɛɛ ebazɔne yehova,1.0,0.3548
+322,Mediema Mrenyia​—Bɛlɛbɔ Mɔdenle Kɛ Bɛbayɛ Asafo Nu Azonvolɛ Ɔ?,mediememienya belebɔ mo adeneke bebayi asafonu azomvolɔ,1.0,0.2549
+323,YƐHƆLE MAANLE MƆƆ WƆ ADUDULEƐ NEHANE LA ANU,yɛhɔle manle mɔ waadudulu yɛ neha ne la anu,0.75,0.1389
+324,"John noko hanle kɛ: “Mesɛlɛ wɔ o, Egya, . . . saa ɛkile yɛ debie na yɛnde ninyɛne bie mɔ abo a, yɛmbiza wɔ nwolɛ kpuya ɔ?”",zon nɔ kɔ hãle kɛ ye mesa le wɔ o woedzaa seyeklee debie ni yɛndi ni nya n bio mabɔ a ye miza ŋulokpuinya mɔ,0.9583,0.4535
+325,DEBIE MƆƆ ƐBAHOLA WƆAZUKOA LA,dibi mu ebaholɔ w ezu kua la,1.2,0.36
+326,Kɛzi Gyihova Bua Yɛ Asɔneyɛlɛ La,kezi jehova bua yasɔ n yɛlɛ la,0.8333,0.2222
+327,George Naish,yɛnwu dworgye neshe wo nvoninli ne anu,3.5,2.3636
+328,KƐZI ƐBAYE ADWENLE NU KESEEYƐLƐ WƆAVI Ɛ TI ANU LA,kezia bayi adzulunu ke se yale wɔ vi ti enɔ la,0.9,0.35
+329,BIKYE WƆ NYAMENLE NE MƆƆ LƐ ƐLƆLƐ LA,bitse wɔ nya mli nɛ mɔ le lɔlela,0.875,0.3448
+330,"YƐHƆLE ƐLEKA BIALA MƆƆ BƐHYIA MOALƐ LA, ƆMAANLE YƐNYIANLE NYILALƐ",ye xɔleeleke biala mɔ beshĩa mualɛ la ɔmaleye nyale nylalɛ,0.8,0.2909
+331,‘Duzu a mebahola meayɛ ye kɛkala amaa meanyia anwodozo kpole wɔ Gyihova anu ɛnɛ nee kenle bie ɛ?’,duzu amɛ bahola mayɛ eyi kaakala amɛ menya nludɔzukpole woje hovɛ nu enɛ ne kli biɛɛ,0.9444,0.3506
+332,Nyamenle Ɛlɔlɛ Ne Wɔ Ɛkɛ Dahuu,nyamenle ɛlolɛ ne wɔ ɛkɛ dahuu,0.1667,0.04
+333,Duzu a yɛsukoa yɛfi Mosisi edwɛkɛ mɔɔ li awieleɛ la anu a?,ɖi zua yesu kwayi fi moses juake moli ewieli la nua,0.9167,0.3913
+334,Ninyɛne boni mɔ ati a ɔwɔ kɛ yɛkulo yɛ mediema a?,ni nya nu bonu mu etia kiyi kulu yi medie ma,1.0,0.3421
+335,Ɛnee Baebolo Sukoavoma ne ɛtɛfale duma Gyihova Alasevolɛ ɛtɛtole bɛ nwo zo wɔ ɛvolɛ dɔɔnwo anu. Noko ɛnee bɛbɔ ɔ bo bɛnwu kɛzi ɔhyia kpole kɛ bɛbayɛ ye alasevolɛ la.,ɛnee baeblu sukoavomaa ne ɛtɛfale duma dwuva la asevolɛ ɛtɛtolo bɛ nwo zo wuvolɛ dɔɔnwo anu nokan bɛbɔ wɔ bo bɛnwu kɛzu hyia kpole kɛ bɛbayɛ yala asevolɛ la,0.5,0.1642
+336,KƐZI BƐZIEZIELE ADENLE NE ANU LA,kezi bɛzieziele adenle ne anu la,0.1667,0.037
+337,NYIA ASƆNEYƐLƐ NWO ADWENLE KPALƐ,nyaa sɔ ni yɛlɛ nwu adwɛl kpalɛ,1.2,0.2143
+338,Duzu ati a ɛnva ɛnyɛ wɔ ngyehyɛleɛ kɛ ɛbayɛ ndelebɛbo fofolɛ bie mɔɔ yɛnyia ye kenlensa ye nee Ngɛlɛlera mɔɔ bɛgyinlanle zo bɛyɛle nzenzaleɛ ne la anwo neɛnleanu wɔ ɛ ti anwo debiezukoalɛ bo ɛ?,duzu ati ɛnvɛ nyɛɔ ngye hyɛleɛ kɛ ɛbayɛ ndelebɛ wo fofolɛ bie moyɛnyia ye kenle nsaye nee ngɛlɛla mɔɔ bɛgyinlanle azo bɛle nzenzanleɛ ne la nwo neɛnle anu wɔɛtia nwo debie zukoalɛbɔ ɛ,0.6571,0.0886
+339,Kɛ ɔkɛyɛ na wɔazukoa Timote wɔ kɛzi ɛ nee awie mɔ di la anu ɛ?,kaɔ kɛ yɛ nu woezi ko timote wo keviɛ ni yɛweremu di la anui,0.8667,0.3404
+340,Gyihova a le Bɔvolɛ ne a,jehova ale bɔvolɛ ne a,0.5,0.1579
+341,Yɛbazukoa kɛzi daselɛlilɛ ekpunli ngyehyɛleɛ ne boa yɛ la anwo debie.,ye bɛzukua kezi daseele ekpule jeshɛleɛ nɛ bua yɛ la anwu debie,0.8182,0.3276
+342,GYIHOVA DUA SUNSUM NWUANZANWUANZA NE AZO KYEKYE YƐ RƐLE,zehova ɖu wa sunsum ŋunzeŋwundze ni azɔ tsetse ye ɣelɛ,1.0,0.4894
+343,ADESOA MƆƆ ƆWƆ KƐ YƐSOA LA,adefuwa mɔ ɔ keye fowa la,0.8333,0.4762
+344,KƐ ƆKƐYƐ NA WƆAKPA AGƆNWOLƐ MƆƆ Ɔ NEE WƆ BADƐNLA DAHUU LA,kɔ kɛ yɛnɔ wakpɔ gɔŋlɔɛ mɔnɔ wɔba dnle ɖe hu la,0.9167,0.3913
+345,Duzu a Gyihova kpondɛ kɛ bɛdabɛ mɔɔ bɛle nyɛvolɛ wɔ ye ɛdanlɛsua ne anu la yɛ a?,ɖuzu dzivova kpendekɛ bɛda bɛmɔ bali nya vlɔ wɔ yedali sue ni enu la yaa,0.8824,0.3175
+346,KƆ ZO TU FOLƐ NA TIE FOLƐDULƐ,kɔzo tu folɛ na tie folɛdulɛ,0.2857,0.0
+347,Kɛlata Bie Mɔɔ Baboa Yɛ Yeamaa Yɛagyinla Kpundii Yɛahɔ Awieleɛ La,klatebi mɔ babua yɛ ya me yedzlẽ kundiŋ yahɔ wieliyɛ la,0.9091,0.3818
+348,Kɛzi yɛkola yɛnwu kɛ Gyihova kulo kɛ ɔyɛ yɛ Gɔnwo ɛ?,ke vi yokrɔ ye ŋu kɛɛ dzehove klokɔa yeye gɔŋɔe,1.0,0.561
+349,Ɛbahola wɔadwenle mekɛ gyɛne mɔɔ Gyihova maanle ye ɛwɔkɛ ngakyile rale nu la anwo ɔ?,ebaxola wɔadwɛnle mɛ ke zenɛ mo dzovɛ mali hewɔ kɛŋgetsile yalenu la aŋɔɔ yese yaho edwɛkɛ ni azɔ,1.2,0.6667
+350,Deɛmɔti Ɛnee Ɔzɔho Kɛ Ɔnrɛyɛ Boɛ La,de mote ne ozu hɔ kɛ ngɔyɛ buɛ la,1.0,0.4138
+351,Duzu a ɛsukoa ɛfi mɔɔ Gyisɛse limoale yɛle kolaa na yeamaa bɛahyɛ paano ne nee fɛlɛ ne bɛamaa menli dɔɔnwo ne la anu a?,duzu a esuka efi mɔ jisɛse l muale yɛle kulaa na ya mabashɛ paa no ne ne fɛlɛ ne bama meli dɔnwo ne la enua,0.7083,0.2105
+352,Kɛzi yɛdwenledwenle Ayezaya buluku ne anwo a ɔbahola yeakyekye yɛ rɛle wɔ mekɛ mɔɔ yɛlɛdi alɔbɔlɛ anzɛɛ yɛ rɛle babɔ la.,kezi yɛdwenedwɛnle ayesaya buluku ni anwo a ɔbahɔlɛ yɛakyehye yɛ rɛle wɔmokɛ mɔ yele diale bɔlɛ ɛ anzɛɛ yɛ rɛlɛba bɔ la,0.6667,0.1616
+353,Si pi. Kenga Baebolo ne na dwenledwenle nwo dahuu. Sukoa kɛzi ɛbagyinla Baebolo ngyinlazo zo wɔasisi kpɔkɛ la.,si pi keŋga baebɔ nena dzeẽdzrɔ ɖehuu sukɔekezie be edzina baebɔlɔ ŋdzinaazozo woesi si pɔaka la,0.8333,0.4111
+354,Kɛzi mgbanyima bɔ mɔdenle kɛ bɛboa asafo ne anu amra mɔɔ bɛyɛ ɛtane kpole la.,kisimgbɛyi ma bɔ mɔdɛ kɛɛ bɛboa asafoni enu ma mɔbɛyɛ etanukpe lɛ la,0.8,0.2903
+355,"Kɛzi ɛkpɔnedeɛ ne maa yɛnyia ɛtanefakyɛ, anyelazo kɛ yɛbali munli kenle bie na ɔsiezie yɛ nee Gyihova avinli la.",kizi ekpɔne deɛ ni maye nyɛ tanufatsɛ anyɛlazo kɛ yebeli mli klĩ bie na osi ezie yɛ ni jehovavĩli la,0.8421,0.2935
+356,Bɛtianwo Debiezukoalɛ Nee Abusua Ɛzonlenlɛ Nwo Nzuzulɛ,betiahu debie sikalɛ ni abusuɔ zɔlɛ nwu zuzulie,1.1429,0.4167
+357,“Gyihova Alasevolɛ kyi menli mɔɔ bɛ awodeɛ le ko mɔɔ bɛ nee bɛ nwo da la.”,yehova alasovolɛ kyi menli mɔɔ bɛ awɔdeɛlo ko mɔɔ bɛ nee bɛ nwɔ da la,0.3125,0.1071
+358,Kɛzi yɛbali yɛ adwenle nu mɔɔ yɛ yɛ kesee kɛ Gyihova anye ɛnlie yɛ nwo azo la.,kiziyebeli yadzrunumɔ yɛyɛ ke sɛi kɛ dziwovanyiene yɛŋu azɔ la,0.8824,0.3934
+359,FEDEFEDE BAEBOLO NU NƆHALƐ MƆƆ ANU LE KULOONWU LA ANU,fedefede baibo nu nɔhalɛ mɔ enuli kulou la enu,0.6,0.2273
+360,MEDIEMA BOALE ME MAANLE MENYƐLE DƆƆNWO,medie mapua le mɛmalɛ minye le dɔŋu,1.1667,0.3636
+361,NYAMENLE NE MƆƆ KA NƆHALƐ LA MAA YE BODANE BA NU,nyamneni mɔwɔkã nɔ hã la maye boɖane benu,0.9091,0.2895
+362,"Saa yɛkɔ ngyegyelɛ nu a, duzu a yɛbahola yɛayɛ a?",sayakɔndzidzilenu a duzua bahɔla yayaa,0.9,0.3684
+363,Kɛ ɔkɛyɛ na yɛahɔ zo ‘yɛabikye Nyamenle’ ɛ?,kɛ ɔ kɛ yɛ nɛ a hɔzo yɛ bite nyamli ɛ,1.125,0.2424
+364,‘Afɔle boni mɔ a mebahola meabɔ amaa meahola meazonle Gyihova kpalɛ a?’,afɔlugbonu mua a mebaƒla mabɔ ama baƒla mazu jehova kpala,0.9167,0.3684
+365,FA WƆ ADWENLE SIE ƐLƆLƐ MƆƆ ƐLƐ ƐMAA GYIHOVA NEE MENLI LA AZO,fawɔ adzuen sielɔlemɔ ele eme yehova ni melɛ la azɔ,0.9231,0.3878
+366,"Saa yɛannyia yɛ tɛnlabelɛ ne anwo adwenle kpalɛ a, kɛzi ɔbahola yeagyegye yɛ ɛ?",sãyenya yetɛnablɛniawɔ adzorɔ kpalaa kii bahwla yadzedzee,1.0,0.4688
+367,BƐNYIA MEKƐ BƐMAA BƐ NWO,be nyamɛ kɛ bɛ ma bɛ wɔ,1.2,0.3
+368,Duzu ati a ɔhyia kɛ yɛnyia mediema ɛlɔlɛ na yɛdie nyɛvolɛ kɛkala a?,oshĩa kɛ ye nya mi di mɛlɔ lɛ ni ye die nyavolɛ kaklae jn,1.0769,0.4444
+369,Gyekɔbo Ewule Ɛkpa Zo Ngapezo Ne,delɛka nɛ ele kle jakob ewuloɛ kpazɔ gapɛzɔ nɛ,1.5,0.8148
+370,DUZU A GYIHOVA ƐVA ƐBƆ ƐWƆKƐ A?,ɖuzue jehova ɛva ɛbɔ wakaa,0.7143,0.3333
+371,MƆƆ ƆVALE ƆMAANLE LA: ƐKPƆNEDEƐ NE,mɔ valewɔ male la ekpɔne ɖienɛ,0.8333,0.3571
+372,Deɛmɔti ɔhyia kɛ yɛdie yɛdi kɛ Gyihova ɛva yɛ ɛtane ɛhyɛ yɛ nee kɛzi Baebolo ne maa yɛnyia anwodozo kɛ ɔfa ɛtanevolɛma mɔɔ bɛnlu bɛ nwo la ɛtane ɔkyɛ bɛ la.,die mutohyiakee yɛdii yɛdi kɛ duluvɛva yɛ ɛtane yɛhyɛɛ nee kezi baebɔ ne maa yɛnya nɔ dozu kɛɛ ɔfa ɛtanvolɛma mu bɛnlu bɛ nwo la ɛtane ɔkyɛ bɛ la,0.5161,0.232
+373,DEƐMƆTI YƐBAHOLA YƐAVA YƐ NWO YƐADO NYAMENLE NE MƆƆ KA NƆHALƐ LA ANWO ZO LA,ɖie moti baxola yaveya mu yado nya mle nɛ mɔka nɔ hã la amuzɔ la,0.9333,0.4098
+374,Bɛnlea vidio bie wɔ jw.org na bɛ nee awie mɔ ɛzuzu nwo anzɛɛ bɛhɛlɛ mɔɔ bɛ nye liele nwolɛ wɔ vidio ne anu la.,beliye viɖeo bii wo je dɔblyu dot org na bene ewiɔmɔ ezuzomu anzai behelemɔ benyilie le ŋɔla wo viɖeo ni enu la,0.9583,0.5176
+375,"Saa ɛsuzu Samɛleama, Sɔɔlo mɔɔ vi Taasɛse, Kɔnileɛse nee Kɔlentema neazo ne anwo a, ɔbaboa wɔ yeamaa wɔanyia anyuhɔlɛ na bɛazɔne wɔ.",esuzu sameria ma saulo moo vi taesese kornelius ne kolintima nee azo ne anwo a ɔbaboa wɔyama wonyɛ nyuhuɔlɛ na bazuane wɔ,0.7273,0.3271
+376,"Atɔfolɛlielɛ nee ɛzɛne le mekɛ mɔɔ mbusua ta bɔ nu yɛ ninyɛne a. Kolaa na wɔazi kpɔkɛ kɛ ɛbahɔ atɔfolɛlielɛ anzɛɛ ɛzɛne bie la, ɔwɔ kɛ ɛsuzu Baebolo ngyinlazo ɛhye mɔ anwo.",atɔfoeliɛlɛ ne ɛzɛne ɛle mekɛ mɔ mbusuata bɔ nu ye ninyɛne a kolaa na wɔazi kpɛkɛ kɛ ɛbahɔ atɔfoeliɛlɛ anzɛɛ ɛzɛ ne bie la ɔwɔ kɛ ɛsuzubaabɔngyinlazoɛ ɛhye mɔ awom,0.4688,0.1304
+377,KƐZI GYIHOVA MAA ƆWIE WƆ BOƐ LA,kevi jehova ma owie wabɔe la,0.8571,0.4
+378,MƆƆ ƐKPƆNEDEƐ NE KILEHILE YƐ WƆ GYIHOVA ANWO LA,mɔɔ ekpanidiɛ ni klexlɛ yɛ wo ji fova ŋu la,0.7778,0.4359
+379,ADENLE MƆƆ ƐBALUA ZO WƆABIKYE GYIHOVA LA,adremu  ebe loazuwoe bitse zehova la,0.8571,0.4706
+380,Wɔgenga Ɛzinzalɛ Arane mɔɔ ɛra ɛvolɛ ɛhye anu la kpalɛ ɔ? Nea saa ɛbahola wɔabua kpuya ɛhye mɔ a:,wɔgiŋga ezizala rane mɔ rɛ evolɛ she enu la kpalɔɔ ni asabahulo bu ekunyɛshemaa,0.9474,0.3636
+381,Kpondɛ ɛzukoalɛdeɛ mɔɔ wɔ nu la. Biza ɛ nwo kɛ:,kpenɖezukuale ɖemo wò nu la biza ŋɔ kɛ,0.6,0.4167
+382,"MƆƆ me le kakula la, saa menwu kɛ alopile lua anwuma a, me kunlu anu a anrɛɛ mebavo bie meahɔ maanle gyɛne nu. Me afoa nu, ɛnee mesuzu kɛ ɛhye ɛnrɛra nu ɛlɛ.",mɔ mli ke kula la semuluke ɣlo peleloe ŋumea miklua ŋɛ mabu bie mahɔ malĩdzeni nu miafɔ nu eni misuzu kɛɛ esi eŋe ɣe nuelɛ,0.8788,0.475
+383,KƐZI GYIHOVA ƐTANEFAKYƐ NE KA YƐ LA,kezi dzehovel tanefatsenɛ kã ye la,0.8571,0.4138
+384,"Saa yɛ nee awie bɔ Baebolo ɛzukoalɛ bo a, nzuzulɛ boni mɔ a yɛbahola yɛava yɛayɛ gyima a?",saa yɛnee awiebɔ bae buzukoalɛbo a nzuzulebuo nomu a yɛba ahola yɛavɛ yeayɛ gyima a,0.7778,0.1571
+385,MEMBƆLE DAHUU ƐZONLENLƐ GYIMA NE ABO,memɔ le dehuezulle dzi ma ni abo,1.0,0.3871
+386,"“‘Ɔluakɛ bɛsisi mɔɔ nyane ɛha ye la,",olua kɛɛ be si simɔnyane hãe la,0.8571,0.2593
+387,Duzu a wɔbɔ kpɔkɛ kɛ ɛbayɛ wɔ wɔ asɔneyɛlɛ nwo a?,duzu wɔbɔ kpɔkɛ kɛɛ ɛbayɛ wɔ wɔ asɔ neeyɛ la nwo a,0.4545,0.1053
+388,"Saa yɛ rɛle bɔ a, duzu a yɛbahola yɛayɛ a?",sɛ rerɛlɛ bɔ a duzu e ebahola yeaye a,0.6,0.3226
+389,ƆHƆLE ZO ƆNYIANLE ADWENLE KPALƐ,ɔhɔlo zu onyiane ajɔlu kpalɛɛ,1.0,0.3704
+390,Kɛ ɔkɛyɛ na yɛala diedi nee mɛlɛbɛnwoaze ali kɛ Gebɛyɔnoma ne ɛ?,ke ɔ kɛ yɛ nɛ ya lɛ diedi nɛ mɛlɛ bɛ nwa azieli ke gibeon ma nɛɛ,1.25,0.3077
+391,"Saa yɛdie “nɔhalɛ nrɛlɛbɛ” ɛsalɛdolɛ ne yɛto nu a, nvasoɛ boni mɔ a yɛbanyia a?",sã yeɖie nɔ hale ŋle be esaledole ni yetu nuua mva sue bonimɔa yebe nye a,1.0,0.3934
+392,NYAMENLEZULOLƐ BƆ YƐ NWO BANE,nyɛ amlizlelɛ bɔ yɛ ŋu banɛ,0.8,0.4
+393,DEƐMƆTI BƐKPƆ YƐ LA,die moti be kpɔ ye la,1.25,0.3125
+394,“BƐMAA YƐBƆ MƆDENLE YƐNYI SUNSUM NU”,bɛma yebɔ mɔdeyi nye sunsum loo,0.8333,0.3448
+395,SUKOA GYIHOVA AHUNLUYELƐYELALƐ NE NEE YE ANWUNVƆNEZELƐ NE,e bbɔnɔ ko ya ŋgã kɛ bemebizay ashe mugbãnu bɔbɔ,1.25,0.86
+396,Duzu ati a ɛnee Hibulu Kilisienema ne edwɛkɛ gyegye ɛzoanvolɛ Pɔɔlo a?,ɖuzu etia a enɛ hebri kristiɛma nɛ edzekɛ dzedze ezɔavolɛ paulo a,0.8333,0.4828
+397,SAA WƆ ADWENLE NU YƐ WƆ KESEE KƐ WƆANZI KPƆKƐ KPALƐ WƆ DƐBA NE A,sa wɔ adzweneni yɔɔ kesɛ kɛɛ wɔazikpekekpa le wɔ ɖebanea,0.8667,0.3
+398,DUZU A LE BƐNWOZOYILALƐ?,ɖo zu a le be wozo yilalɛ,1.25,0.2
+399,GYIHOVA YE ƐTANE FI ƐKƐ,jehova yi etane fi akɛ,0.8,0.3158
+400,Duzu a yɛbahola yɛazukoa yɛavi mɔɔ Samesɛn yɛle wɔ mekɛ mɔɔ ɔyɛle nvonleɛ la anu a?,duzui bahula ezukpɛyevi mɔɔ samson yɛle wɔ mekɛ mɔ yɛli nvonli nɛ enu ano,0.75,0.3433
+401,Gyihova pɛlepɛlelilɛ ne anwo a?,wodziehova pelepɛlelile ni aŋwua,1.0,0.3846
+402,Sukoa Anwumabɔvolɛ Nɔhavoma Ne,sukwa anwuma bɔvolɛ nɔhavo ma ne,1.25,0.037
+403,duzu a yɛbahola yɛayɛ wɔ mekɛ mɔɔ yɛnlɛ ɛhulolɛ ne la ɛ?,ɖuzu a yɛbahola yayɛ wɔ mekɛ mɔ yɛnɛ ehulolɛ nɛ lɛɛ,0.6667,0.1591
+404,DUZU A GYIHOVA BAYƐ YE KENLE BIE A?,ɖuzua jehova bayae klĩbia,1.0,0.3704
+405,"Kunlima, Bɛli Bɛ Ye Mɔ Eni",kule ma beli be yimɔenɛ,1.0,0.3
+406,Kɛzi Ɔfale Yɛ Nwo La,vɔnyili ŋgetsile ne mɔ mɔlumuala ele kile mili mɔ vi leka ŋgetsire la wɔmɔ tɔzunyɔle nu ye ŋu jises mɔ zɔi yi amanieŋle baka ne la kezi ofal ya ŋɔ la,6.0,6.75
+407,Duzu ati a bie a ɔbahyia kɛ yɛyɛ debie gyɛne nwo asɔne a?,ɖuzetia bie a wɔbesĩa ke ye ɖebie dzɛ nɔ hu asɔnea,0.8462,0.4318
+408,"Duzu a ɔnle kɛ yɛbu yɛ nye yɛgua zo ɛlɛ a, yɛɛ duzu a ɔnle kɛ yɛmaa yɛ rɛle fi ye ɛlɛ a?",ɖuzuao neke yigbu yenyi yeguazo elaa yeɖuzuaɔ neke yema yeɣeli fie elaa,1.0,0.3906
+409,Nea ninyɛne mɔɔ maa Gyisɛse yɛ “Nwanwane Folɛtuvolɛ” la bie mɔ na suzu kɛzi yɛbahola yɛazukoa ye neazo ne la anwo.,niɛ ninyɛne mɔ maa gyisɛse yɛ nwanwa ne foletuvolɛlɛ bie mɔ na susu keziɛ bahole y azukoaye nea azo ne la nwo,0.619,0.1319
+410,Duzu ati a ɔwɔ kɛ Baebolo sukoavo bie nwu Gyihova kpalɛ a?,ɖuzu etie wɔ ke baibus kuavubii nu jzehova kpalaa,1.0,0.3913
+411,Sukoa Gyihova Mɛlɛbɛnwoaze Ne,sukɔe jehova mɛlɛ bɛ ŋwaze nɛ,1.5,0.3077
+412,"Edwɛkɛ ɛhye baboa yɛ yeamaa yɛahile ngoanelielɛ ahyɛlɛdeɛ ne, nwolɛ adenle mɔɔ yɛnyia yɛlɛsonle Gyihova yɛɛ edwɛkɛhanlɛ gyima ne mɔɔ bɛva bɛmaa yɛ la anwo anyezɔlɛ.",edzwɛkɛ she baboa yɛ yɛmiehile ŋguanilie la sɛlɛ diɛ nɛ ŋladli mienya yɛ le suli yehova yedzwɛkɛ hãle ji ma nɛ mɔbɛva bɛma yɛ la aŋɔ anyɛŋzɔlɛ,0.8846,0.3796
+413,Kpuya Mɔɔ Vi Kengavolɛma Ɛkɛ,munya mo ovi kɛ ngavolɛma ɛkɛ,1.0,0.25
+414,Deɛmɔti ɔhyia kɛ yɛdie yɛdi kɛ Gyihova kulo yɛ nee kɛzi yɛbamia anwodozo mɔɔ yɛlɛ kɛ ɔkulo yɛ la anu la.,die muto shinya ke ye die ye di kɛɛ yehova kulo yɛ ni kezie be mia ahudo zo hmu yɛ lɛ ke wo kuloe la enu la,1.0952,0.3735
+415,"“Egya, me kilehilevolɛ kpanyinli ne se mengɛlɛ kɛlata memkpa wɔ kyɛlɛ na meziezie me nwo kɛ saa ɛdie ɛto nu kɛ mɔɔ ɛkilehile la le adalɛ ɛdeɛ a, yemɔ mebahɛlɛ.”",edzaa miklihilevule kponyili ni se miŋgele klata meŋukpawɔtselɛ na mizi ezi ye mɔmɔ kɛ sĩ ɖietu no kɛɛ moklihle la le ɖa lɛ ɖea yemɔmbahelɛ,0.8667,0.381
+416,"Saa yɛngola yɛnnwu ye saa yɛ nwo tɛkyia Gyihova a, duzu a ɔwɔ kɛ yɛyɛ a?",sã yeŋgula yoŋui sã ye ŋu te tsie zehova ɖuzua ɔwɔ ke eyaa,0.9375,0.5455
+417,Jacob Rumph nee ɔ ye Inga,de hu jekop ramf ni ɔyi inge huwɛnili ni anu,1.6667,1.3
+418,Kɛzi ngyegyelɛ bahola aha ɛzonlenlɛ mɔɔ yɛfa yɛmaa Gyihova la ɛ?,kezidzedzele bahula ahã ezulɛ moyefe yɛ medzuu valɛɛ,1.0,0.5094
+419,Mekakye kɛ ɛnee yɛ nzo nu dwo yɛ wɔ yɛ namule ne azo. Ɛnee yɛde yɛbikye me papa amediema bie mɔ nee ye awovolɛ. Yɛangyia aleɛ nwo yɛɛ ɛnee yɛ nwo tɔ yɛ.,mɛkatse kɛɛ enɛ yɛnzunudzo yɛ wɔ yɛ namle ni azo enɛ yede yebitse mepaa emediema biemɔ nɛ ye awovolɛ yɛ ŋdzĩa ali yɛ wɔ yɛ enɛ yɛmɔtɔyɛ,0.7879,0.3162
+420,Duzu a yɛbahola yɛayɛ amaa yɛanyia Gyihova moalɛ ne azo nvasoɛ a?,duzu yebarahe yaye ameyelinye dzehova muale ni azu va suaa,0.9167,0.4717
+421,Kɛzi ɛkpɔnedeɛ ne baboa yɛ kenle bie ɛ?,kezi kpɔne denɛ babua yɛ klĩ bie,0.75,0.2903
+422,FA DWOBU BULUKU NE BOA AWIE MƆ,fa dwob ubulukune boa wumɔ,0.7143,0.125
+423,KƐ ƆKƐYƐ NA YƐAZUKOA ANWUMABƆVOLƐ NE MƆ . . .,kɛ ɔ kɛ yɛ ne yesu kɔɔ nwuma bɔvolɛ ne mɔ,1.1429,0.2121
+424,Ndenle nna mɔɔ Gyihova dua zo nea yɛ la.,duw azɔ niiayɛ la edinde kpuluku ni nyu,1.0,0.9032
+425,ASAFO NU AZONVOLƐ ‘BOA AWIE MƆ’,asafonu azonvo lɛ boa ewiemɔm,0.8333,0.0833
+426,Kɛzi Gyihova hilele Yizilayɛ maanle ne adenle ɛ?,kevi jehove xile li israel malẽnye adelĩe,1.0,0.525
+427,"“Mendele nganeɛ kɛ me nyunlu ɛgua aze, me nwo ɛnyɛ fɛ yɛɛ nvasoɛ ɛnle me nwo zo.”",mendele ŋganiɛ ke minyulu egu aze mi ŋɔe nyɛ fɛ yemvasua enumɔwɔzɔ,0.8235,0.3934
+428,Duzu a le sunsum nu paladaese ne?,do zuali solosum nu paradais nɛ,0.8571,0.3462
+429,DUZU ATI A ƆWƆ KƐ BƐWULA GYIHOVA ANYUNLUNYIA A?,duzu etiaa ɔwɔ kɛ bewula jehoval nwuinyɛa,0.6667,0.3421
+430,Fa wɔ adwenle sie ɛ nee Gyihova agɔnwolɛvalɛ ne azo,wò ŋvɔnili ni enu adi mɛwale ni ele kinga baebɔ ŋvɔnili ni aŋu dwekene kega kɛɛ fawadzili sia nidi wuva go heva ale ni azɔ,2.5,1.7381
+431,"Mɔɔ limoa, duzu ngyehyɛleɛ a Gyihova yɛle amaa yeaboa alesama yeamaa baho bɛatia ɛtane a?",moli mua duzu nzi selia yehova yelɛ ama yabɔ alasa ma yamabaŋu be tia tanea,0.9333,0.3699
+432,BƐZƆNENLE SAMƐLEAMA,nsamelea maa,1.0,0.5556
+433,“NWUANZANWUANZA ADENLE”—TETE NE YƐƐ ƐNƐ,nwuanzanwuanza adɛnle tete ne yɛɛ nnɛ,0.6,0.0625
+434,Kɛ ɔkɛyɛ na ‘yɛahɔ zo yɛazɔ yɛ nwo yɛanlea’ ɛ?,kɛ ɔkɛyɛ na yeahɔzo yɛazɔ yɛ nwo yɛanle hɛɛ ɛdwɛne ɛya ko ɛbolɛnwiɔ ne nwiɔ bɛ gyinla kpundii bɛ zi pii edwɛkɛ ne ewie,1.9,1.8235
+435,NYIA ABOTANE NEE ANYELAZO DAHUU,nyaa abotane nee anyelazo dahuuu,0.4,0.0741
+436,Edwɛkɛ Mɔɔ Maa Yɛnwu Kɛ Gyihova Kulo Yɛ Kpole La,edzueke mɔ ma yeŋlu ke dzihove kloe ye kpele la,0.9,0.4359
+437,SUKOA DEVIDI—MAA GYIHOVA ƐBƆ Ɛ NWO BANE,sukwa david majiwova ɛbuawɔ ba ni,1.0,0.375
+438,DUZU ATI A ƐLƆLƐ A LE DEBIE TITILI MƆƆ MAA BƐNWU GYISƐSE NƆHALƐ ƐDOAVOLƐMA A?,duzu ati a ɛlɔlɛ le debie titile mɔɔ maa bɛnwu gyisɛse nɔhalɛ ɛdoavolɛma,0.2,0.0484
+439,Duzu a Gyisɛse yɛle amaa yealie alesama yeavi ɛtane nu a?,ɖuzue jises yele ame yelie alasameyevi etaninua,1.0,0.3261
+440,Melɛyɛ gyima wɔ Cameroon Bɛtɛle,nvonli ni lekle andreu mɔ deyakpɔlɔ ŋu wɔ kamerun la nvonlini eŋu ejekɛ nɛke gakɛ mle yi dzima wɔ kamerun betel,4.0,2.7037
+441,Duzu a Pɔɔlo hanle hilele Kɔlente asafo ne kɛ bɛyɛ wɔ ɛtanevolɛ ne mɔɔ ɛtɛnunle ɔ nwo la anwo a?,duzuel paulo hali hileli kɔli ntaasafo ni kɛ bɛyɛ wɔ eta nuvlɛ ni mɔ ete nulu wɔŋɔ la aŋɔa,0.85,0.3421
+442,DEƐMƆTI ABOTANE HYIA KPALƐ LA,die moti abetani sĩa kpale la,1.0,0.36
+443,Wɔziezie Ɛ Nwo Wɔmaa Anwongyelelɛ Kpole Ne Ɔ?,wozizie ŋu wɔmã ahɔdzrekpele neɔɔ,1.0,0.5405
+444,"Noko bɛta bɛfa edwɛkɛ fofolɛ bɛgua ɛkɛ, ɔti kɛ ɔkɛyɛ na wɔanwu edwɛkɛ mɔɔ ɔnvinde mɔlebɛbo ɛkɛ ne bieko la ɛ?",nokɔ bɛta bɛfa ewɛkɛ fofolɛ bɛgua akɛ oti kɔ kɛ nɛ wɔanu edwɛkɛ mo ovine mɔɔ le bɛbo ɛkɛ ni bikɔlɛɛ,0.7619,0.2184
+445,MEKƐ MƆƆ YƐLƐYIA EZUKOA NWO NGYEGYELƐ,mika mɔyeleyi yesu koa ndzedzle,1.0,0.5
+446,NYIA AHENLE ANWO ADWENLE KPALƐ,nya ahlia ŋɔ adwen kpa lɛ yeŋu eɖimaɣale nɛ ni wohu mɔɔ be munyuɔ benyi eli la wɔ mvɔnilini enu,4.0,2.2308
+447,Saa Ɛlɛnwu Amaneɛ A Dwobu Buluku Ne Bahola Aboa Wɔ,sɛlɛnmuu amane a jo bubluu ko ne bafla boa o,0.9,0.3659
+448,Sukoa kɛzi sunsum nu paladaese ne boa yɛ nee kɛzi yɛbahola yɛamaa awie mɔ noko araboka nwo la anwo debie.,sukwe kezi sunsum nu paradis nɛ boa yɛ ni kezi ye bahula ya ame ewiemɔnu kwãa abɔkaa ŋɔ la aŋu debie,0.75,0.3294
+449,Maa Ɛ Nye Ɛlie Wɔ Mekɛ Mɔɔ Ɛlɛsi Abotane Wɔahendɛ Gyihova La,ma enyihelie wɔ mikamoele sia abotanu waahi ɖe jehova la,0.8333,0.4286
+450,"‘Nwane a ɔ nye balie edwɛkɛtile ɛhye anwo a, na mekɛ boni a mebahola meaha nwolɛ edwɛkɛ meahile ye a?’",nwuane a ɔ nye bɛlie edwɛkɛ se anwu a na meke bo ni a mebahola maha nwole edwɛkɛ mahile ye aa,0.6,0.1899
+451,KƐZI ANYELAZO YƐ KPOLE LA,kezi anyina azi ye kpele la,1.0,0.3333
+452,Fa Sunsum Nu Moalɛ Maa Awie Mɔ,fa sunsum no mo ale mɛ wiemɔ,0.7143,0.2083
+453,Gyihova dwenle bɛdabɛ mɔɔ bɛlɛdi nyane kpole la anwo kpalɛ. Edwɛkɛ ɛhye bamaa yɛanwu kɛzi ɔkyekye yɛ rɛle wɔ mekɛ mɔɔ yɛlɛdi nyane la na yeaboa yɛ yeamaa yɛakyekye awie mɔ arɛle.,ziwova dzwɛlibadabɛmɔɔ bele dinyianu kpele la ŋɔ kpa lɛ edzɛkɛ ese ba miyɛŋukizɔ tsetse yɛ rɛ lɛ wɔmikemɔyele dii nyane la na yaboa yɛ yamɛyatsetse yomɔa ɛlɛ,0.8125,0.3724
+454,DEBIE MƆƆ ƐBAHOLA WƆAZUKOA LA,ɖebie mɔ ebahere woezikɔa la,0.8,0.4
+455,(Fema zo) Mekɛ mɔɔ mede kpɔkɛmile ne anu la,wɔmɔɔ tɔzu nwɛla nu ye ehwu stefan landon mgbavole nu,1.1111,1.1212
+456,Mekɛ Boni A Bɛliele Nrenyia Ne Mɔɔ Wɔ Kɔlente La Bieko A?,mike bo nia belieli ŋenyani mɔ wɔkɔle ntele bi kua,1.0,0.2667
+457,MƐLƐBƐNWOAZE NWO ƐZUKOALƐDEƐ,melɛbɛ nwo aze nwo esukoalɛ deɛ,1.6667,0.1154
+458,Ɔ MUALA ZILE K.Y.M.,omulẽzile kula yemkɛe,1.0,0.7692
+459,KƆ ZO FA MƆƆ ƐSUKOA LA DI GYIMA,kɔzo fa mo esukwala di gyima,0.625,0.1667
+460,Onɛsemɛse neazo ne anu a?,duzua wɔzu kwawovi onesemes ne azo ne enua,1.4,1.0
+461,MEKƐ MƆƆ AHYEHYƐDEƐ NE BAVA ADEHILELƐ BIE AMAA YƐ LA,meke mɔ asisedie ni bava di helebie ama yɛ la,0.7,0.3953
+462,"Saa Gyihova fa yɛ ɛtane ne mɔ kyɛ yɛ a, duzu a ɔmaa yɛnyia a?",sã yehova fa yɛ etanene mɔ tsɛyaa a duzua oma yenyaa,0.7333,0.2889
+463,mɔdenle mɔɔ bɛbɔ kɛ bɛmaa asafo ne anwo ade la ɛ?,mɔdenle mɔɔ bɛbɔ kɛ bɛmasafo ne anwo ade laɛ,0.3636,0.0526
+464,Sukoa kɛzi Kilisienenli mɔɔ ɛnyi sunsum nu la dwenle na ɔyɛ ye ninyɛne ɔmaa ɔ nee Nyamenle ɛhulolɛdeɛ yia na ɔsisi kpɔkɛ kpalɛ la anwo debie.,sukwakɛzi krisiali mɔe nyi sunsum la dzɛle na oyeyi ninye ni ɔmea ɔnɛ nyamli huleie ya na osisi gbɔke kpala la aŋu debie,0.7692,0.3478
+465,MƆƆ YƐBAHOLA YƐAYƐ WƆ MEKƐ MƆƆ YƐHƆ NGYEGYELƐ BIE ANU LA,mɔ yebaxla yaye wɔmɛke meye hɔ ndzedzelibi enu la,0.9091,0.3696
+466,Nvoninli dɔɔnwo mɔɔ kilehile yɛ ninyɛne mɔɔ anwo hyia la wɔ yɛ mbuluku nee ninyɛne ngakyile nu. Kɛ ɔkɛyɛ na wɔanyia nvoninli ɛhye mɔ azo nvasoɛ kpalɛ ɛ?,vɔninu dɔŋumɔ kehele yɛ ninyɛnɛ mɔ aŋusĩa la woye mluku ni ninyɛni getsire nu kɔkɛɛ nɛ wenye vɔnyinu yeshiemɔ azum va suekpalɛ,0.8929,0.4228
+467,SUKOA DANEƐLE NƆHALƐLILƐ NE,sukua daniel nɔ haleli lɛ nɛ,1.5,0.25
+468,Mɔɔ Ɛyɛ A Ɔbamaa Wɔahakye Ngɛlɛlera Bie La,ma ɛya a bama wahatsengalalerɛ biaala,0.875,0.3714
+469,Gyisɛse Ɛzɔnenlɛ Ne Nee Ye Ɛdoavolɛma Ɛzɔnenlɛ Ne—Ngakyile Mɔɔ Wɔ Nu La,gisɛse ezɔnelɛ nɛ nɛ e doa volɛma ezɔnelɛ nɛ ngatsiremuɔ wo nu la,0.9167,0.2712
+470,Duzu Ati A Ɔhyia Kɛ Yɛkpondɛ Folɛdulɛ Ɛ?,duzu etia wosia keya kpundɛ fule ɖulɛɛ,0.875,0.3125
+471,Sia nea nvoninli ne mɔ mɔɔ wɔ Ɛzinzalɛ Arane ɛhye anu la na nea saa ɛbahola wɔahakye ninyɛne mɔɔ ɛzukoale la a.,saniavɔininu mɔ mɔ wo nzala arani eshi enu la nani asã ebɔhlɔ waha tsi ninyɛnu mɔ ezuku alaa,0.9091,0.382
+472,YƐKAKYE MENLI MƆƆ YƐLE GYIMA ƐSESEBƐ LA,yɛkatsimɛi nimɔɔ yɛli zimete sebɛ la,0.8571,0.3636
+473,ƐZUKOALƐDEƐ BONI A YƐNYIA YƐFI BAEBOLO NU MƆLEBƐBO NGILEHILELƐ ƐHYE MƆ ANU A?,ezukoalɛ deɛ boni yɛnya yɛ fi baeboo nu mɔɔ lebabo ngilehilelɛ hsyɛ mu anu a,0.7692,0.1562
+474,DUZU A YƐBAHOLA YƐAZUKOA YƐAVI . . .,ɖozua yeabahlɔ yeezu kɔya vi mɔane ne mɔ ŋtseŋu ɖɔŋu ni enu e,2.6,1.3462
+475,DA AHUNLUYELƐYELALƐ ALI,da ehluyɔylale eli,0.6667,0.4286
+476,KƐZI BAEBOLO NE MAA YƐNWU GYIHOVA . . .,kezi baibonɛ ma yenu jehova,1.0,0.3929
+477,‘Nyamenle Mɔɔ Yɛbikye Ye La Le Kpalɛ Maa Yɛ’!,nyaminli mo ye bitsɛye la lɛ kpalɛ ma he,0.7778,0.3529
+478,Kpondɛ Baebolo Nu Ndelebɛbo Mɔɔ Ɛbahola Wɔava Wɔali Gyima La,gbondababonundilibabuma bahxlɔ wavo woeli jima la,0.9,0.4118
+479,KƐZI GYISƐSE BOALE AWIE MƆ ƆMAANLE BƐNWUNLE KƐ BƐSONLE BOLƐ LA,kezi gyisɛse boale awie mɔ ɔmanle bɛnwunle kɛbɛsonle bɔlɛ la,0.4545,0.0577
+480,MAA Ɛ NYE ƐBOLO SUNSUM NU NINYƐNE NWO,ma ɛnye abur sunsum no ne nyano nwo,0.875,0.3
+481,Ɛbahola Wɔali Atiakunluwɔzo Ɛtane Zo Konim,ɛbahola wɔ elia atiakonlowɔzo ɛtane zo konim,0.5,0.1081
+482,ƐNEE ME NGOMEKYE NA MENYIALE NGYEGYELƐ DƆƆNWO,ani miŋgumtse na minyaale ndzedzere dɔŋŋ,0.8571,0.5385
+483,KƐ ƆKƐYƐ NA YƐAHƆ ZO YƐANYIA ƐLƆLƐ KPOLE YƐAMAA YƐ NWO Ɛ?,kaokɛ yɛ nɛ yeaxɔ vienyalɔle kpele yeama yɛ ŋɔe,0.9167,0.4444
+484,KƐ ƆKƐYƐ NA YƐAMMAA NINYƐNE ANDWEHWE YƐ ADWENLE Ɛ?,kɔ kɛyɛ ni ame ninyɛ nɛ andwo hwɛ adwɛleeɛ,1.0,0.3415
+485,Me nee Miwako ɛlɛkɔ daselɛlilɛ wɔ Okinawa,ye wu kɛn ni mɛ wau ko ma bɛlɛ yɛ bɛ adekpatsetisili ji ma nɛ la wo nvɔhili ni enu vɔhili ni anwu ejwɛkɛ a nɛkɛ gakɛɛ mɛni mɛwau ko ɛlɔkɔdase le wɔ okina wa,4.8571,2.6571
+486,ƐLIELƐ: Mɔɔ vi mgbɔdalɛ nwo ngyehyɛleɛ ne anu ɛra la; kɛzi Gyihova nee Gyisɛse ɛlie yɛ anzɛɛ ɛmaa yɛnyia yɛ ti amaa bɛandwe yɛ nzo wɔ yɛ ɛtane ne mɔ anwo la,elielɛ mo vi ŋgbɔɖalaŋɔndzesɛlia ni enu eɣa la kezi dzihova ni zises elieyɛ anzɛɛ ema yenia yeti amaba aŋdzoe yazɔ wɔ yɛ eta nenemɔ aŋɔ la,0.8125,0.3659
+487,Ninyɛne Mɔɔ Yɛyɛ A Ɔnrɛzɛkye Yɛ Nee Yɛ Mediema Avinli La,ninyɛno mɔ yɛya a ɔ nrɛzɛtsi yɛ ne yɛ mediema evinli la,0.6364,0.1739
+488,Awovolɛ​—Bɛboa Bɛ Ra Bɛmaa Ɔmia Ye Diedi Ne Anu,awovolɛ bɛbua bɛɣa bɛmɛ omiia yidie dini enu,1.0,0.2432
+489,KƐZI DWOBU AGƆNWO MƆ NSA NE DULE YE FOLƐ LA,kesi joba gowumɔn sane dule e fɔlɛ la,0.8,0.2941
+490,Duzu ati a ɛbahola wɔanyia anwodozo kɛ Gyihova kulo wɔ kpole a?,ɖozɔti ebablɛ wɔenya wɔ ɖozikɛ edwuevɔ kulo wo kpo laa,0.9167,0.4706
+491,Sukoa Debie Fi Baebolo Ngapezo Nu,sukɔɛ debie fi babongapezu nu,0.5,0.2143
+492,NINYƐNE MƆƆ ƐYƐ A Ɛ NYE BALIE WƆ MEKƐ MƆƆ ƐLƐKENDƐ LA,ni nyanu mɔ eya a enyi be eli wamikamɔi la kendala,1.0,0.4048
+493,Kpɔkɛ Mɔɔ Awie Mɔ Sisi La,bɔka mɔɔ awie mu esisi la,0.5,0.25
+494,BƐVALE BƐ ADWENLE BƐZIELE MƆƆ LA BƐ NYUNLU LA AZO,beval ba adwini beziel mɔ la benyilu la zo,0.8,0.325
+495,GYIHOVA MAA YƐ SA KA MƆƆ YƐHYIA NWO LA,kpolis,1.0,0.9333
+496,Melɛkile asafo nu mgbanyima debie,yeŋu dzoo el adams mɔ ele kli asafonugbenyi meɖebie la wonvɔenle ni enu,2.6,1.3448
+497,"Sɔ wɔ adwenle nea. Bɔ mɔdenle kɛ ɛbahakye edwɛkɛ ne mɔɔ ɛnrɛnlea kɛlata anzɛɛ debie biala azo a, akee ɛwie a, nea kɛzi ɛbɔle mɔdenle la.",sɔwadnna bɔ muɔdɛnlɛ kɛ ebahatsi ejwɛkɛ nɛ mɔ eŋɛ lia klata anzɛi ebie bia la azoaa ake ewia a nia kezihebɔle mɔdɛlɛ la,0.8846,0.3178
+498,"Mɔɔ ɛzɔnenlɛ kile, kɛzi nwolɛ hyia nee kɛzi bɛsɔne menli la.",kumazɔnulikele keziŋuli sĩa ni kese be sɔene mlli la,0.9091,0.5208
+499,Bɛmaa Bɛ Nwo Anwosesebɛ Wɔ Debiezukoalɛ Bo,bɛma bɛ nwu anwo sesebɛ ho debie zukualɛbo,1.0,0.1389
+500,KAKYE KƐ GYIHOVA ƐLƆLƐ NE LE BAEBOLO NU MƆLEBƐBO NGILEHILELƐ,ka tsɛ kɛɛ jehova elɔlɛ nɛ lɛ bae bo nu mɛlɛ ba bu nglehlelɛ lɛ,1.4,0.3725
+501,"“EGYA, WULA WƆ DUMA ANYUNLUNYIA”",agya wula wɔ duma ne anunlunya,0.6,0.2
+502,"Saa ɛnyia mekɛ a, bɔ mɔdenle kɛ ɛbagenga maanlema Ɛzinzalɛ Arane ne, Awake!, wɔanlea vidio nee ninyɛne ngakyile mɔɔ wɔ jw.org la.",se nya meka a bɔ muɔdɛni kɛ banga mane meziza laranɛ ne awoek wanlɛ video ninyɛni ngɛtsilemɛ wɔ jedɔbieodɔ sɛɔ gi la,0.7727,0.4608
+503,ƐKPƆNEDEƐ: Debie mɔɔ Gyisɛse vale maanle—ye mogya ne mɔɔ ɔhwinle ɔguale—amaa bɛali yɛ ɛtane ne mɔ anwo mgbɔdalɛ la,ekpɔneɖea ɖebie mɔ zises vale male yemumodzane mɔ wotsiwo guale ame abe li ye etanenemɔ aŋugbɔdale la,0.8947,0.3548
+504,BƐVALE BƐ AHONLE MUALA BƐHULOLE GYIHOVA,bevale baahulu ŋualã behula li jehovag,1.0,0.4118
+505,MƆƆ YƐSUKOA YƐFI FAELIMƆN NEAZO NE ANU LA,mɔɔ yesu koe fi fale m niazo nie anu la,0.875,0.2941
+506,Duzu a yɛbahola yɛazukoa yɛavi Mosisi nee Yizilayɛma anwubielɛ ne anu a?,ɖuzua yebahola yesu kɔye vi moses nɛyi israel ma eŋubiala ni enua,1.0,0.4167
+507,MENZUKOALE GYIHOVA ANWO DEBIE WƆ NYIANU BO,mizu kwa jeova hu debie wonye nobɔ,1.0,0.4722
+508,Tɛ yemɔ a le yɛ sunsum nu paladaese ne—anzodwolɛ nee koyɛlɛ mɔɔ yɛ nee yɛ mediema lɛ ɔluakɛ yɛsonle Gyihova wɔ ye sunsum nu ɛzonlenlɛsua ne anu la ati.,teyimɔ ale sunsum nu paradiis nɛ azu ŋdzole ne kɔe yɛle mɔ yɛ niye mediema le oluake yɛle sru iova wɔyi sunsum nu ezunlesua ni enu la eti,0.8276,0.3388
+509,NYIA NWUNU NA MMAMAA ƆFI Ɛ SA,nye ŋu nu na mamo fia esa,1.0,0.4348
+510,"ALƆBƆLƐLILƐ, ANWOKOONWOYƐLƐ NEE ANYELIELƐ FOFOLƐ",alɔgbɔlelilɛ aŋu koŋyɛlɛ nianyilielɛ foflɔe,1.0,0.3488
+511,MƆƆ GYIHOVA HILEHILELE YIZILAYƐMA WƆ ANLUBƐNWO NWO LA,mɔ dzihovehelehleli israel ma wɔ elũubeŋɔŋɔ la,0.75,0.5
+512,Kɛzi yɛkola yɛnwu kɛ Gyihova anye die yɛ nwo ɛ?,kezi yɛkolɔ yeŋu kɛɛ jehova anyi die yɛ ŋɔe,0.8,0.3514
+513,Kɛzi Gyisɛse hilele kɛ asɔneyɛlɛ nwo hyia ye kpalɛ ɛ?,kezi gyisese hilele kɛ asɔ ne yɛlɛ nwu shiae kpalɛɛ,0.8,0.1395
+514,YƐBAHOLA YƐAVA YƐ NWO YƐADO BAEBOLO NGAPEZO ZO,yɛbahla yɛava yɛ ŋɔnyado baibol ŋapezozo,0.75,0.2308
+515,Yɛbanwu deɛmɔti ɛlɛsonle Gyihova na bɛlɛkpɔ wɔ a ɛ nye bahola alie la.,ye be mudiemotia le sɔli jehova na be le kpɔwɔ a enye bahwlɔ elie la,1.0,0.3684
+516,Fa Ɛ Nwo To Gyihova Anwo Zo Kɛ Mɔɔ Samesɛn Yɛle La,fa aŋo tu jehova nwo zo kemɔ samson yɛle la,0.6667,0.3077
+517,Kɛzi anwubielɛ mɔɔ Gyisɛse nyianle ye wɔ azɛlɛ ye azo la boale ye maanle ɔfɛtale kɛ yɛ Ɛsɔfo Kpanyinli ɛ?,ke sahu biɛ lɛ mo jisese nyalɛ wazɛlɛ yazɔ la bua ali malɔ fɛ talekia esɔfo kpɛnyilɛɛ,0.95,0.4
+518,"YƐLƐBƆ MƆDENLE YƐADWU YƐ SUNSUM NU BODANE BIE ANWO A, . . .",yɛlɛbɔ mɔdenle yɛadwie sunsum no bodane bie anwoa a,0.4,0.1163
+519,KƐZI TƐKESE ƐHYE MƆ BOA MAA YƐDIE ADWENLE MƆƆ AWIE MƆ LƐ NEE BƐ KPƆKƐZILƐ YƐTO NU Ɛ?,kezi teks ɛshi mɔ bo a mɛye dia ajulumɔ ewiemɔ lɛ ni bɛ kpo kezile yɛ tunuɛ,0.8333,0.3636
+520,"Kɛzi Gyisɛse vale ɔ nwo dole Gyihova anwo zo ɛ, na kɛ ɔkɛyɛ na yɛazukoa ye ɛ?",kezi jisɛse vale wɔ nwu dole jehova nwɔzuɛ na a kɛ ɔ kɛ yɛ nɛ yɛzu kuayɛɛ,0.8824,0.2712
+521,BOA Ɛ RA MAA Ɔ NYE ƐLIE BAEBOLO NU NGYINLAZO NWO,boa ɛɣa me onyi elie baebo nu ŋdzina azɔna,0.8182,0.3947
+522,Mediema mɔɔ ɛlɛyɛ suazilɛ gyima wɔ Staten Island la,vonyi ni ele kle mediema mɔɔ elɛ yesu ezilejima wɔ stetin alan la edzkɛni ewie,1.2222,0.814
+523,Kɛ ɔkɛyɛ na yɛaboa yɛ Baebolo sukoavo bie yɛamaa yeanwu Gyihova subane ne mɔ ɛ?,kɔ kɛyɛ na yabɔ ye su kuavubii yame ye eŋu dzoo be suba nenemɔe,0.9333,0.4219
+524,Edwɛkɛ ɛhye kilehile ninyɛne mɔɔ yɛbahola yɛayɛ amaa yɛanyia anyelielɛ kpole wɔ edwɛkɛhanlɛ gyima ne anu la anu.,edzɔɛkɛ eshi kilehile ninye ne mɔ yebaxula yaye amayenyanyilielekpele wodzɔkɛ hãle dzi ma nɛ enu la enu,0.8889,0.3511
+525,Sukoa Debie Fi Mrenyia Nɔhavoma Edwɛkɛ Mɔɔ Li Awieleɛ La Anu,sukweɖebi fi mee nya nohav ma edjuke mooli awieli la enu,0.9091,0.32
+526,Mediema Mgbavolɛ​—Bɛzukoa Maake Nee Timote,meduemamgbavolɛ bɛzukwa marke ne timote,0.8,0.1111
+527,TƐNLABELƐ NGAKYILE MƆƆ HYIA DIEDI KPOLE,tlã blemgatsire mo shi adiedbi kpele,1.0,0.4118
+528,Kɔ Zo Di Wɔ Baebolo Ɛgengalɛ Nwo Ngyehyɛleɛ Ne Azo,kɔzudu wɔ baibolekŋgalɛ ŋu njeshɛliɛ ni azo,0.8,0.4146
+529,NƆHALƐ NE HƆLE ZO DALE,nɔ hãle nɛ xolezu dale,0.8,0.3333
+530,NEAZO MƆƆ ME AWOVOLƐ YƐLE LA,ni azu mɔ mi awovo lɛ yɛlila,1.1667,0.2174
+531,KA NƆHALƐ WƆ WƆ AHONLE NU,ka nɔ hale wòwaohlu nu,0.6667,0.3
+532,"Kɛzi ɛbaboa wɔ Baebolo sukoavoma wɔamaa bɛanwu Gyihova, ye subane ne mɔ yɛɛ ɛbɛla mɔɔ sɔ ɔ nye nee mɔɔ ɔnzɔ ɔ nye la.",kezia bavɔɔ baebusukuavoma wɔme be ŋu dze wuvaa yisubanenemɔ ya bla mɔɔ sɔ nye ne mɔ nzɔ nye la,0.7917,0.3587
+533,Maa ndenle mɔɔ Gyihova dua zo bua yɛ asɔneyɛlɛ la anwo neazo bie mɔ.,mandɛlɛ mo joovɛ du azu buae asɔ neyɛlɛ la awɔ ni azu biɛ mɔ,0.9286,0.3519
+534,DUZU A GYIHOVA ƐLƐYƐ YE ƐNƐ A?,ɖuzrua dzo vɛ lɛ yayinaa,1.0,0.4783
+535,"Saa awie nee yɛ anli ye boɛ a, kɛ ɔkɛyɛ na yɛazukoa Gebɛyɔnoma ne ɛ?",sã awie ni yɛɛ enii buaa kɛɔ kɛ yɛ ni yɛzukuɛ gibeon ma nɛɛ,0.8667,0.4038
+536,Gyihova Ɛtanefakyɛ Ne​—Kɛzi Ɔbaboa Wɔ La,zehova etanefa tsenɛ kezia babua wɔ la,0.8333,0.3333
+537,Kɛzi Mgbanyima Baboa Bɛdabɛ Mɔɔ Bɛye Bɛ Bɛvi Asafo Ne Anu La,kezim gbeyi ma babua bɛdabɛ mɔ bɛyi bebe vi asafoni nu la,0.9167,0.2041
+538,TO Ɛ NYE NEA ANWUMA LƆ,to enye nea eŋumalɔ,0.6667,0.2353
+539,"SIE Ɛ NWO DII, MMAFA ƐYA",si eŋu di mafɛ ya,1.0,0.3889
+540,KILEHILE YE GYIHOVA SUBANE NE MƆ,klihle yi dzeweve subanɛne mɔ,0.8333,0.4074
+541,Dolɔdolɔ Nvoninli Mɔɔ Bamaa Wɔahakye Edwɛkɛ La,drɔ drɔ ŋvɔnlini mɔbama woaha tse dzeke la,1.0,0.425
+542,Kɛ Ɔkɛyɛ Na Yɛaboa Yɛ Mbusuafoɔ Mɔɔ Bɛnle Diedima La,kɔ kɛ yɛ ne abua yi musu afoɔ mɔɔ bɛni dii dima la,1.0,0.2326
+543,"ƆDWU mekɛ ne bie a, Baebolo kɛlɛvoma ka ɛdendɛsinli bie mɔ mɔɔ bɛha ye dɛba la bieko pɛpɛɛpɛ. Suzu ninyɛne nsa mɔɔ bie a ɔmaa bɛyɛ zɔ la anwo:",odzu mi keni bii a bae bowo kle vu ma ke ɖiɖe sini biemɔ mɔ behayi ɖebala bieko pɛpɛɛpɛ suzu ni yɛn sã mobia a ɔma be ye zɔ la ŋu,0.8276,0.3333
+544,NYIA GYIHOVA ANWO ƐLƆLƐ KPOLE,nye dzehogwa aŋɔelele kpele,1.0,0.56
+545,Kɛ ɔkɛyɛ na yɛanyia Gyihova anu anwodozo wɔ anwongyelelɛ mekɛ nu ɛ?,ke wɔkɛɛ nienye dzoo ve nu aŋuɖozo wohawudze le mike nue,1.0,0.5636
+546,Mɔɔ Maa Agyalɛ Sɔ La vidio ne mɔ,mɔ mejalesɔ le video ne mɔ,0.75,0.36
+547,Duzu a Gyisɛse ɛdoavolɛma ne zukoale ye wɔ anlubɛnwo nwo a?,ɖozue gises eɖuavulɛma ni zukwale wɔ elũ be ŋɔŋɔa,0.9091,0.4792
+548,MARCEL GILLET ANLOA EDWƐKƐ,masel gelet alu edzwɛkɛ mvɔnili ni ele kle masel gelet mɔ ɖe yeofe snɛ wɔ bedrom betel ekɛ la,4.75,2.6087
+549,"Saa yɛlɛ ndelebɛbo a, kɛzi yɛ tɛnlabelɛ ne kakyi a ɔbaboa yɛ ɛ?",sã yɛle ndrebɛbua a kezi yɛtna bɛni kɛtsi a ɔbabua yɛɛ,0.8462,0.3469
+550,ME ANWUMA SELƐ NE YILALE ME KPOLE,mi ewu maslɛ ni yilale mi kpole,0.7143,0.2222
+551,Kɛ ɔkɛyɛ na Dwobu edwɛkɛ ne aboa yɛ yeamaa yɛagyinla sɔnea ngakyile nloa ɛ?,kɔ kɛyɛ nɛ job jwɛkɛ nɛ abuayɛ yɛmɛ yɛjina sɔnyɛ ngatsile nɔi,1.0,0.4098
+552,Duzu a bahola aboa agyalɛma yeamaa bɛabɔ nu bɛadɛnla wɔ mekɛ mɔɔ ngyegyelɛ bara bɛ agyalɛ ne anu la ɛ?,duzua baxola abu edzalema yama babu nu badãla wɔ mekemɔŋndzedzra bea ɣabe dzaleni enu lɛ,0.9,0.4024
+553,Duzu a ɔwɔ kɛ yɛyɛ amaa yɛanyia dahuu ngoane a?,ɖuzua ɔwɔ ke eye ameyenye ɖehu guanɛa,0.9,0.4595
+554,MENGYAKYILE YUNIVƐSITI ƐHƆLƐ NA MENYƐLE ADEKPAKYELƐNLI,mijɛ tsi universiti ɛhɔlɛ nɛ mɛnyali adɛkpatslɛ ni,1.1667,0.4286
+555,DUZU A MEYƐ A ƆBAHILE KƐ AMGBA MEKULO KƐ BƐTU ME FOLƐ A?,ɖuzua meyaa obehela kɛ amgba mikulɔ ke beto mi fɔlaa,0.8462,0.3256
+556,KƐZI ƐBAYE Ɔ NLOA Ɛ?,kɛzi ɛbaye wɔ loe,0.6,0.2667
+557,Asoo ye kpɔkɛzilɛ ne tia Baebolo mɛla bie ɔ?,asu yekpekezileni tia babo malebi ɔ,0.7778,0.3429
+558,ɛfa ɛ nwo ɛto Nyamenle Edwɛkɛ ne azo ɛ?,ke ɔkae ne woehile ekɛɛ efa eŋɔ eto nyamli edzɛkɛ ni azɔe,1.3333,0.9333
+559,Die Di Kɛ Nyamenle ‘Edwɛkɛ Ne Le Nɔhalɛ’,di e di kɛɛ nyamli ejwɛkɛne le nɔhalɛ,0.75,0.1613
+560,"Noko ɛnɛ, medie medi kɛ Bɔvolɛ bie wɔ ɛkɛ yɛɛ ɔdwenle me nwo ɔnva nwo kɛ metɔ sinli la. Maa menga deɛmɔti mengakyile me adwenle nee kɛzi yehakyi me ɛbɛlabɔlɛ la anwo edwɛkɛ mengile wɔ.",nɔ kuɛi nɛ mi die mi de kɛ bɔvole biɛ w kɛɛ yɔɔ jwɛlɛ mɛ hwu ɔnva wu kɛ mi to sɛli la ma mɛngadie moti mingɛtsili mi adwɛnɛ nɛ kezii hɛtsi mi ɛbɛlɛbɔlɛ la hu jɛkɛ mi nglɛ ɔ,1.0,0.4082
+561,GELEADE NEE ANYELAZO NGAKYILE MƆƆ HYƐLE,gilead ni anyilazuŋgetsirimuɔ sele,1.0,0.4706
+562,MEMBƆLE Ɔ BO KƐ MEFA ME NWO MEADO GYIHOVA ANWO ZO,mi mɔlɔ ɔbo kɛɛ mefã me ŋɔ madu jehova ŋɔzo,0.9091,0.4359
+563,Me mbusuafoɔ anzɛɛ me gɔnwo mɔ ɛha kɛzi bɛ nye ɛnlie me kale ɛhanlɛ nwo la ɔ?,mi musuafo anzɛɛ mi gɔu mɔ ɛha kezi bɛnyi inie mi kali ɛhã lɛ nwɔ la o,0.7647,0.2833
+564,"Saa Bɛlɛsuzu Awie Mɔ Anwo A, Bɛla Ndelebɛbo Ali",sa belefiviw ewemɔaŋɔa belandribebueli,1.0,0.5263
+565,Duzu a baboa yɛ yeamaa yɛanyia edwɛkɛ anzɛɛ bagua nu ɛdendɛlɛ bie azo nvasoɛ a?,duzua a babuayɛ yɛamɛ yɛnyɛ edwɛkɛ azɛ bɛgua nu edindɛli bi hazɔm la soa,0.8,0.2969
+566,SAMESƐN VALE Ɔ NWO DOLE GYIHOVA ANWO ZO,samson vale ɔnwo duli jehova ŋwuzo,0.875,0.3125
+567,WƆ DIEDI NE BAHOLA ADUDU AWOKA,ɛdi ne baahola ɛdudu awɔka,0.8333,0.32
+568,Ɛbahola Wɔadwu Wɔ Sunsum Nu Bodane Ne Mɔ Anwo,ɛbahora wɔadwu wɔ sunsum no bodaane ne mɔ anwo,0.3333,0.0811
+569,Kɛzi Dwobu buluku ne kilehile yɛ ɔmaa yɛnwu kɛzi yɛbadu folɛ kpalɛ la.,kezi wobu bulu kune kilekileyɛ ɔmaa ye nwu kezie bɛdu folɛ kpalɛ la,0.7692,0.1404
+570,"John buale ye kɛ, “Ɛhɛe, menyɛle ye zɔ.”",dzɔn bualeye kɛɛ ehɛi minyɛlezɔ,1.0,0.2857
+571,GYIHOVA MAANLE YƐ ANWOSESEBƐ ƆMAANLE YƐGYINLANLE NGYEGYELƐ GYƐNE NLOA,yehova mali yeanwɔ sesebɛɛ wɔmale ye jilanli njejerejɛ nɛnwale,1.0,0.459
+572,YƐLƐ ANYELAZO KƐ YƐBALI MUNLI KENLE BIE,yɛlɛ anyilazo kɛɛ yebeli mli klibie,0.8571,0.2727
+573,Kɛzi Ɔwɔ Kɛ Yɛbu Yɛ Nee Yɛ Hu Anzɛɛ Yɛ Ye Agɔnwolɛvalɛ Ne Ɛ?,mɔ ɖowazɔ la le ŋulo edzeke bia kɔ keziwwɔ ke ye bu yɛ niye hu anzɛ yɛye egɔŋlɔ evale niɛ,1.3571,0.9348
+574,ƐKULO NƆHALƐ NEE TENLENEYƐLƐ,ekulo nɔhalɛ nɛ tɛlɛne yɛlɛ,1.0,0.24
+575,YƐHƆLE MAANLE MƆƆ KONLE TA SI ƐKƐ LA ANU,yɛ hɔle malumɔɔ kulɛ tɛ si ɛkɛ la enu,0.6667,0.25
+576,BƐHAKYILE ME GYIMALILƐ NOKO MEMAANLE ME NYE LIELE DAHUU,behetsire mi ji melile nɔkmale minyiliele dehuu,1.0,0.4043
+577,"Saa yɛte adalɛ edwɛkɛ bie a, duzu a ɔwɔ kɛ yɛyɛ a?",sayatia da edzɛke biaa duzuɔ kɛ yeya,0.9167,0.3514
+578,"Yɛ daselɛlilɛ ayia ne sikalɛ, mmamaa ɔbo mitini nsuu amaa nolobɔlɛma ne abɔ daselɛlilɛ bo ndɛndɛ.",yɛ daseile ɛya ni sika lɛ mama ɔbu mitni suu ama nolobɔlɛ ma nɛ abɔ daseilɛ bɔ nu dɛndɛ,1.0625,0.2375
+579,"AMAA NINYƐNE ANDWEHWE YƐ ADWENLE LA, DUZU ATI A ƆWƆ KƐ . . .",ame ninyɛ nɛ andwothwe adwɛlɛ la duzu etia ɔwɔ kɛɛ,0.7273,0.2791
+580,AFƆLEMOKYEA NEE AFƆLEBƆLƐ NE MƆ,afɔlemutsia ne afɔlebɔlɛ ne mɔ,0.4,0.1852
+581,Nɔhavoma Di Bɛ Ɛwɔkɛ Zo,nɔ haʋuma di be wɔ kezo,1.0,0.2632
+582,KƐZI ƐNEE ƐBƐLABƆLƐ DE WƆ KONLE NE ANU LA,kezi eni ebelebɔlede wɔ kwɔne ni enu la,0.7778,0.3636
+583,Gyihova Kulo Kɛ Awie Biala Nu Ɔ Nwo,yehova kulo ke ewie bia le nuwɔ ŋu,0.875,0.3214
+584,bɔ yɛ nwo bane na ɔkyekye yɛ rɛle a?,tstsirelia ejuɛni eya kɔ,1.0,0.8889
+585,Nyia Wɔ Ngyegyelɛ Ne Mɔ Anwo Adwenle Kpalɛ,nya wɔndzedzele ne ma wɔ adwene kpale,0.875,0.3143
+586,Kɛzi yɛbahola yɛaboa Baebolo sukoavoma yɛamaa bɛanyia diedi nee akɛnrasesebɛ mɔɔ bɛhyia amaa bɛahola bɛazi kpɔkɛ kɛ bɛbazonle Gyihova la.,kiziebaha yeaboa babosukuama yɛmaa banyia diedi nee akɛ sesebɛ mɔɔ bɛhyia amaa bɛhɔlɛ bɛzi kpɛɛ kɛ bɛbazo dweova la,0.7,0.2479
+587,"Sukoa Pita, Mmamaa Ɛ Sa Nu To",sukwe pita mame senuto,0.8571,0.3182
+588,"Saa yɛ adwenle nu yɛ yɛ kesee wɔ kpɔkɛ mɔɔ yɛsisile ye dɛba la anwo a, duzu a ɔwɔ kɛ yɛyɛ a?",sa yɛ adwɛlenu yɛyɛ ke sɛ wɔ kpɔkɛ moye sisilei deba la awɔa duzua wɔkɛ eyaa,0.8182,0.2464
+589,"Yɛbazukoa mɔɔ Gyihova mɔɔ yɛnwu ye la abo kile, deɛmɔti ɔwɔ kɛ yɛnyia ɛhulolɛ kɛ yɛbanwu ye kpalɛ nee mɔɔ yɛyɛ a ɔbamaa yɛanwu ye kpalɛ la anwo debie.",yebezu kuamɔ zo wova moyi ŋui lã bu kle di motiwɔkeyi nye huleleke be ŋwui kpa lɛ ne ma yeyaa ɔbema ye ŋui kpa le la ŋu debie,0.931,0.4583
+590,NYIA NGYEGYELƐ NWO ADWENLE KPALƐ,nya ŋdzedzele ŋu adwene kpalɛ,0.8,0.3929
+591,Me Bɔvolɛ Kpole Ne Nwunle Me,me bɔvolɛ kpule ne nwunle me,0.1667,0.0435
+592,Fema zo: Milahyinli mɔɔ bɛvale ­bɛlile gyima wɔ riledio ­siteehyɛn ɛkɛ ne la,wo vɔnli mɔɔ fema azo le enu yi wumlɛsri mɔ bvale belili zimawo radio stasin eke ne la,1.1538,0.6557
+593,NGYEGYELƐ MƆƆ ƆWƆ KƐ BƐKOATI NEE MƆƆ ƆWƆ KƐ BƐDI ZOLƐ LA,njeyele mo wɔ ke be kua ti nɛ m wɔ ke bedi zolɛ la,1.0,0.3778
+594,NYIA NƆHAVOMA EDWƐKƐ MƆƆ LI AWIELEƐ LA AZO NVASOƐ,nya nɔhavome edweke mo li ewielia la azum va sue,0.8889,0.3171
+595,"ƐBAYIA NGYEGYELƐ NEE SƆNEA, NOKO ‘KƆ ZO TOA’ GYISƐSE",mebe yiaŋdzedzelɛ nɛ sɔnia nɔ kɔ kɔzo toe jises,0.8889,0.439
+596,Duzu ati a yɛkulo kɛ yɛkyɛ debie a?,ɖuzu etiaa yekulo kɛɛ yetse ɖebiaa,1.0,0.4074
+597,Ninyɛne boni mɔ a yɛbahola yɛazukoa yɛavi Pita neazo ne anu a?,ni nyɛ ni bo ni mɔa yebaholɔ yɛzukwɛ yeve pita ni azoni enua,1.0833,0.24
+598,"Saa bɛka kɛ ‘twi bɛ nyunlu wɔ menli mɔɔ wɔ ɛkɛ ne la kɔsɔɔti anyunlu’ a, ɔkile duzu?",sã bekãa kɛɛ tsui be nyunu wome ni mowɔe ke ni lekosowo te enyunuoa wokle ɖuzu,1.0,0.4603
+599,YƐGYINLANLE EDWƐKPA NE ANZI YƐƐ YƐVALE YƐZIELE ƐKƐ NE WƆ MƐLA ADENLE ZO,yɛgyinlanle edwɛkpa ne anzi yeɛvale yɛziyele ɛkɛ ne womɛla adɛnle zo,0.4615,0.1017
+600,Ninyɛne Mɔɔ Ɛbanwu Bɛ Wɔ Wɛbsaete Ne Azo La,ninyɛne mɔɔ ɛbanwu bɛwɔ websaete ne azɔ la,0.4444,0.0571
+601,Mɔɔ Ɛzɔnenlɛ Kile Nee Deɛmɔti Ɔhyia La,mazɔnilikle ni die muto sĩa lã,1.0,0.5625
+602,Kɛzi bɛdabɛ mɔɔ bɛnea wuliravolɛma anzɛɛ mrelera la bahola agyinla ngyegyelɛ mɔɔ bɛyia la anloa na bɛ nye alie dahuu la.,kezi bɛdabɛ bɛ mɔɔ bɛneɛ wole ravolɛma anzɛɛ mɛlɛra la bahola gyilangyegyelɛ mɔɔ bɛyia la anloa na bɛnye alie dahuu la,0.4762,0.1111
+603,MMAMAA Ɛ RƐLE FI MƆƆ GYIHOVA KAKYE LA,mama ɛrele fi mɔ jehova kakye la,0.625,0.2333
+604,Mmafi Sunsum Nu Paladaese Ne Anu Ɛlɛ,mefi sunsum nu paradis ni enu elɛ,0.7143,0.3
+605,YƐNYIANLE ƐZUKOALƐDEƐ BIE MƆƆ HYIA,yenyale zukwale diebie mu shĩa,1.0,0.4
+606,“Duzu ati a Gyihova Alasevolɛ tinlitinli awie mɔ anwo zo kɛ bɛhakyi bɛ ɛzonlenlɛ ɛ?”,duzuati a dwehova alasovolɛ titinli awiɔmɔ anwɔ zo kɛ bɛhakyi bɛ ɛzonlɛɛ,0.6667,0.1791
+607,FA BAEBOLO NE KILEHILE AWIE MƆ,fa baebo ni klehle ewemɔ,0.8333,0.28
+608,"Wɔ edwɛkɛ ɛhye anu, awovolɛ banwu kɛzi bɛbahola bɛ nee bɛ ra ali adwelie kpalɛ na bɛaboa ye bɛamaa yeanyia diedi kpole wɔ Nyamenle nee Baebolo ne anu la.",wo djwɛkɛ shi enu awovole be ŋukezi babaa holabani baɣa eli edjwɛliakpa lɛ na babɔa yebamɛ ye nye diedikpo lɛ wɔ nya mlinɛ baebo nɛ enu la,0.8966,0.3333
+609,Yɛbazukoa kɛzi yɛbabu yɛ mediema diedima wɔ mekɛ bɔbɔ mɔɔ bɛ kpɔkɛzilɛ nee yɛ ɛdeɛ ne ɛnle ko la.,yɛ bazukua kezie babu yɛ mediema diedima wɔ me kɛ bɔbɔ mɔɔ bɛ kpokezile nee yɛ deɛ ne ɛno kwa la,0.5263,0.1538
+610,hilehilele awie mɔ maanle bɛdwenledwenlenle Ngɛlɛlera ne anwo ɛ?,glegleli ewiɔmɔ malɛ bɛ dwunlidwɛl gelɛa ni anwɔɛ,1.0,0.4545
+611,Edwɛkɛ ɛhye baboa menli mɔɔ bɛte nganeɛ kɛ bɛ nwo ɛngyia la yeamaa bɛanwu kɛ bɛsonle bolɛ kpalɛ wɔ Gyihova anye zo.,edwɛkɛ ɛhye baboɔ menli ne mɔɔ bɛte nganeɛ kɛ bɛnwu ngyia la emaa bɛnwu ye kɛɛ bɛsonlobolɛ kpalɛ wɔdwuuvanyi zo,0.5909,0.2043
+612,"SAA BƐKA KƐ YƐZULO NYAMENLE A, ƆKILE DUZU?",saa bɛkaa kɛ ye zulo nyamenle a okle duzu,0.5,0.1212
+613,Kɛzi meka me kale la ati kpolisinli bie ɛhye me ɛlɛ ɔ?,kezi meka mekare la ati polisi lui die ɛshye me ɛlɛ ɔ,0.5833,0.1667
+614,KƐZI NGƐLƐLERA ƐHYE MƆ KYEKYE Ɛ RƐLE Ɛ?,kezi ngɛrɛ ɛhye mɔ kyekye ɛrɛle ɛ,0.5,0.1935
+615,DUZU ATI A ƆWƆ KƐ YƐFƐLƐ MGBANYIMA NE MƆ A?,duzu ati a ɔwɔ kɛ yɛ fɛlɛ mgbanyima ne mɔ a,0.2,0.0
+616,ROBERT LANDIS ANLOA EDWƐKƐ,robert landis aluejwɛkɛ,0.5,0.1739
+617,"Wɔ Baebolo ne anu, duzu a edwɛkɛkpɔkɛ “arɛlekyekyelɛ” abo kile a?",wɔabaeboniyenu ɖuzua edwɛkɛ kpakɛ aretsitsilɛ abukila,1.0,0.3333
+618,"Yɛbazuzu kɛzi ɛzoanvolɛ Pɔɔlo, Faelimɔn yɛɛ Onɛsemɛse neazo ne baboa yɛ yeamaa yɛakpondɛ anzodwolɛ wɔ asafo ne anu la anwo.",yɛbasuzu kisies oanvolɛ pɔɔ falemon yɛ ɔnesemes niazo ne baboa yɛ yɛame yɛakponda azondwole wɔ asafo ni anu la anwo,0.6,0.2353
+619,FA BAEBOLO NGYINLAZO DI GYIMA,fa baebo yina zo di jima,0.8,0.28
+620,Gyihova a si mɔɔ ɔwɔ kɛ yɛnyia la anwo kpɔkɛ a. Suzu neazo bie mɔ anwo.,yehova si mɔwɔ keyaya la ŋu kpɔ kaa suzu niazu bie m awu,0.75,0.3519
+621,SUKOA TIMOTE—KILE KƐ ƐDWENLE AWIE MƆ ANWO,sukwɛ timote kili kɛ adwenleɛwoma anwo,0.8571,0.2353
+622,SAA YƐ SUBANE LE NGAKYILE A,sa ye subane lin ngɛ tsile a,0.8333,0.3182
+623,Ɛbahola wɔayɛ ngyehyɛleɛ wɔazukoa edwɛkɛ adile ɛhye mɔ anwo debie wɔ ɛ ti anwo debiezukoalɛ nu:,ebahula woayaŋdzesɛ le woezu koa edzwɛkɛ edile eshe mɔ au ɖebie wo etia aŋu ɖebie suko ale nu,1.0,0.3671
+624,Kilehilevolɛ ne hanle kɛ: “Yɛbaye wɔ ali. Ɛdie ɛdi kɛ ɛbahola wɔadendɛ wɔatia ɛsɔfo ne mɔɔ la arane asɔne ne anloa na wɔahɔ zo wɔadɛnla arane sukulu ne anu ɔ?”,klihilivlɛ na hale kɛe yebayi woli eɖiei kɛ bawohla woadene wetia osɔfo nɛ mɔ laɣa ni asɔneni alɔa na woahɔ azu woadna ani sklu ni enuo,0.9333,0.368
+625,wɔ mekɛ mɔɔ yɛlɛkpondɛ awie mɔ yɛbagya ye la ɛ?,wɔ mi ke mɔyele kpende ewie muye be zae lɛ,0.9,0.4054
+626,MƆƆ ASAFO NE BAHOLA AYƐ LA,ɔbu dzɔeke niwe,1.0,0.9048
+627,mbɛlɛra badwema nee ahoasea ne mɔ ndonwo ne anu a?,mlɔɣa ba dzoma ni ahoasia ne mawuɖo ŋu ni enue,1.0,0.475
+628,"MƆƆ FALE KƐZI GYIHOVA BABUA NDƐNE KENLE BIE LA ANWO, . . .",mɔ fali kezi dzihoeve be bua nɖene klĩm bie la aŋu,0.9,0.4048
+629,nwolɛ adenle boni a Gyisɛse ɛkpɔnedeɛ ne ɛmaa yɛnyia a?,ngwɔla adeli bonia gyisɛse akpandeɛ ne yɛma yɛnya a,0.7,0.2444
+630,“Menli mɔɔ ɛnze nwoma la ala a die Nyamenle di a.”,mili mɔ ɛnzenwoma la ala a die nyamenle di a,0.3636,0.0811
+631,Bɔ mɔdenle kɛ ɛbanwu ahenle kɛ mɔɔ Gyihova nwu ye la.,bɔ moadlɛ ka ebe ŋu ahlɛ ke mɔ dziho ve ŋuyi la,0.9091,0.5
+632,Melɛsonle wɔ Quebec,wo nvonli ni enu yi ŋuaɖieme andreu mɔ le ɖe wastawo amagazin ibi wɔse nu la nvuli ni aŋu edzwekea nɛkɛ gake mla sɔlɔe we kwebek,8.6667,5.2941
+633,Ndenle nna boni mɔ a Gyihova dua zo boa yɛ wɔ ngyegyelɛ mekɛ nu a?,ndre nabonumɔa dzoveɖu azo boa yɛ wɔŋdzedzre mikenuaa,0.8667,0.4314
+634,Duzu ati a yɛlɛyia ngyegyelɛ bɔbɔ a ɔwɔ kɛ yɛfa yɛ adwenle yɛsie Nyamenle ɛhulolɛdeɛyɛlɛ zo a?,duzu eti a yɛyilɛyi angyegyelɛ bɔbɔ a ɔwɔkeyɛ fa ye adwenle yɛsie nyamenle ɛhulolɛ deɛyɛlɛ zo a,0.5294,0.0649
+635,ƐKPƆNEDEƐ NE MAA YƐNYIA ƐTANEFAKYƐ,ekpɔni diɛnɛ maye nya etanufatsɛ,1.0,0.3667
+636,‘Fɛlɛ Asafo Nu Mgbanyima’ Ne Mɔ,fɛlɛ asafo numgbayi ma ne mɔ,0.3333,0.0417
+637,‘KƆ ZO SƆ Ɛ NWO NEA;  KƆ ZO NEƐNLEA WƆ NU’,kɔzo sɔe ŋɔ nɛa kɔzo nelia wò nu,0.9091,0.3214
+638,Ɛkulo kɛ ɛnyia ɛ ti anwo debiezukoalɛ ne azo nvasoɛ kpole ɔ? Ɛfa nzuzulɛ ɛhye mɔ ɛdi gyima a ɔbaboa wɔ yeamaa wɔanyia ɛleka kpalɛ mɔɔ ɛbadɛnla wɔazukoa debie la:,ekule ke i nye etiawu ebie ezukwale ni azɔ mva sokpelɔ efa ŋuzuzulo esemu edi dzima a obabua wɔyama wɔnyeeleka kpa lɛ mɔa ebana woezukwɛ ɖebie la,0.9333,0.3692
+639,MMAMAA Ɛ RƐLE FI MƆƆ GYIHOVA ƐYƐ ƐMAA WƆ LA,mamereli fi mo jehova eyɛ ma wɔla,0.9,0.4118
+640,DUZU ATI A ƆWƆ KƐ YƐKƆ ZO YƐNWU GYIHOVA KPALƐ A?,duzu etia wɔ kɛ yekɔ zo yenu jehova kpala,0.7273,0.2432
+641,GYIHOVA DI BƐLƐVOMA ENI,jehovat di bɛlavɔmɛnii,0.75,0.45
+642,"Kɛzi ɛnee Gyisɛse bu ɛzonlenlɛ gyima ne ɛ, na kɛ ɔkɛyɛ na yɛazukoa ye mɔdenlebɔlɛ ne ɛ?",ke zi ɛne gyisɛse bu ɛzonlɛ gyima neɛ ɛ na akɛ ɔ kɛyɛ ne yazu kuae mɔdenle bɔlɛ neɛ,0.8235,0.1594
+643,Kɛzi awovolɛ bahola aziezie bɛ mra bɛamaa bɛavi mɛlɛbɛnwoaze nu bɛahilehile bɛ diedi ne anu ɛ?,kezi a wovolɛ bɛ aholɛ zi zie bɛ ma bɛmaa bɛ avi mɛlabɛwa azi nu bɛhilehile bɛ diedi ne anue,1.0,0.1667
+644,SIERRA LEONE​—BƐDI EHYIA NOKO BƐLƐ DIEDI,seralion bidi hyia noko bɛlɛ diidi,0.6667,0.2121
+645,Kɛzi Gyihova kyekyele Devidi arɛle ɛ?,kezi zehova tsetsrli david aɣelie,1.0,0.5161
+646,"Sua mɔɔ yɛhayele ye wɔ Karttula, Finland la",ŋuvonili ni aŋu edzweke neke gake suwa mɔɔ yɛ xayeleye wɔɔ ketula feland la,1.5,1.0286
+647,JOEL ADAMS ANLOA EDWƐKƐ,zoel adams alɔ edzɛkɛ ŋvonile neyelekle ke zi joel adams de kakla la,2.75,2.05
+648,"Adwenle boni a ɛnee Gyisɛse lɛ wɔ ɛzonlenlɛ gyima ne anwo a, na duzu a yɛsukoa yɛfi ye ɛkɛ a?",ajwelu buoni a nɛ jisese lɛ wɔ ezlle jimania ngɔa na duzu a yesukwɛye fii yi ɛka a,0.65,0.3889
+649,Ngakyile boni a wɔ ngyinlazo nee mɛla avinli a?,ngakyire bɔni awɔ ngyin azɔ ne mɛla ezinli a,0.7778,0.1842
+650,Kɛ ɔkɛyɛ na yɛaboa “bɛdabɛ mɔɔ bɛ subane kile kɛ bɛfɛta” la wɔ mekɛ mɔɔ limoa mɔɔ yɛ nee bɛ babɔ adawu la anu ɛ?,kɔɔ kɛyɛ nɛ yabua bɛdabɛ mɔ be subanu klie kɛ bɛfɛta la wɔ mɛkɛ moli mua mɔ yɛ nɛ bɛbabɔ edewu la enuɛ,0.72,0.2235
+651,KƐ ƆKƐYƐ NA AWOVOLƐ ABOA BƐ RA . . .,kaka na awovla abua bɛɣa,0.8571,0.375
+652,Yɛbazukoa deɛmɔti ɔhyia kɛ yɛkɔ debiezukoalɛ nee nyianu ngakyile a yɛtie edwɛkɛ mɔɔ bɛlɛka la kpalɛ nee kɛzi yɛbahola yɛayɛ zɔ la anwo debie.,yebesua di muto shiake yɛ kue debie skualɛ ni nyɛ nu gɛ tsilɛ a ji tie jwɛkɛ mɔ bɛlɛka la kpa lɛ ni kezi yɛ baholɔ ya yɛ zɔ la ahu debie,1.0833,0.3333
+653,medame mumua ne mesisi me kpɔkɛ a?,amɛ menya afoledule kpalɛzɔm va suɛɛ la duzu etia ɔwɔ kɛ mida mi mumua nɛ misisi mikpɔkaa,2.4286,1.8519
+654,SUBANE MƆƆ ƆBAMAA YƐANWU NƆHALƐ NE LA,su banemɔwɔba me yeŋu nɔ ale ne la,0.8571,0.2903
+655,Bɛkpa Mediema Nwiɔ Bɛboka Neazo Eku Ne Anu Amra Anwo,bekpe medieme nyɔ bebokaniazu kuni enuameaŋu,1.0,0.3721
+656,DI SONLA NWO ƐZULOLƐ ZO,di sɔnlaŋu ezruelɛ zo,0.6,0.4211
+657,Kɛzi Samɛleama lile ngyegyelɛ mɔɔ ɛnee ɔsi bɛ adenle kɛ bɛbafɛta kɛ bɛsɔne bɛ la azo ɛ?,amelɛmlileyeelɛ mɔɔ ɛnee ɔsi bɛ adɛlɛ kɛɛ bɛbaafɛta kɛ bɛsoane bɛ la azoɛ,0.5882,0.2857
+658,DEƐMƆTI YƐKPA KƐ YƐBAZONLE GYIHOVA LA,ti yekpa kɛɛ yɛbazni jehova la,0.8333,0.4062
+659,NYAMENLE MAANLE ADENLE MAANLE DWOBU NWUNLE AMANEƐ,nyamenle manle adenle manle dwobu nwunle amaneɛ,0.2857,0.0465
+660,NGOANE PAANO NE NEE YE NWONANE NE,ŋguanpãnɔ nɛ niye wunanenɛ,1.0,0.4444
+661,"ADIEMA BIE YƐ DEBIE MƆƆ GYEGYE WƆ A, KƆ ZO SONLE GYIHOVA",edieme bieye ɖebie mɔwɔ dzedze waa kɔzo srɔe yehova,1.0,0.3409
+662,Duzu a yɛsukoa yɛfi Dwɔn edwɛkɛ mɔɔ li awieleɛ la anu a?,ɖuzu ye sukuievi jɔn edzɔke moli ewielɛ le enua,1.0,0.4318
+663,Kale ne mɔɔ me diema ne vale maanle yɛ la,vonili ni aŋu edzwɛke nɛke gakɛ kale nɛ mɔɔ midiema nɛ va le malĩ yɛ la,1.2,1.0
+664,Ayezaya Buluku Ne Bahola Akyekye Ɛ Rɛle,haezal buluku ne baholola kyekye ɛrɛle,0.7143,0.1818
+665,Wɔziezie Ɛ Nwo Wɔmaa Kenle Mɔɔ Hyia Kpalɛ Wɔ Ɛvolɛ Ne Anu La Ɔ?,wozizi ŋɔ wɔma klẽ mosĩa kpale woevolɛni enu lawo,1.0,0.4694
+666,Mɔɔ Yɛsukoa Yɛfi Gyekɔbo Ngapezo Ne Anu La​—Foa Mɔɔ Limoa,mɔ ye sukuaye fi gyakob ngapezo ne anu la famolu mmua,0.8,0.2826
+667,Kɛzi bɛda ndelebɛbo ali la anwo debie boni a yɛsukoa yɛfi Gyihova nee Gyisɛse ɛkɛ a?,kisi bedan dribegbɔ eli la aŋu ɖebie bɔni a yesu kayefi jzehova nɛ jises sekaa,0.875,0.4265
+668,Asafo ne ɛrayɛ me abusua mɔɔ bɛdwenle me nwo a,yi ŋuaŋdze luto no gɔŋmɔ mobeledielie bɛnyɛy tsii wɔ aliemu la wo nvɔnilini enu ŋvɔlini ahu dzekɛna nkɛ ngakɛ asaf nɛ ɣa ye mi ebu sua mɔbadzem ŋua,2.8,2.7568
+669,Kɛ ɔkɛyɛ na yɛahola yɛayɛ ninyɛne fɔɔnwo bie anwo asɔne yɛamaa menli ngoko bie mɔ ɛ?,kakɛ yani ahwerɛ ninyɛ nu fɔu bi anwasɔne yama melu ngoku biɔ mui,1.0,0.4118
+670,Kɛzi belekese nee adenle mɔɔ bɛdua zo bɛyɛ ye la anwo ninyɛne mɔɔ bɛnwu ye wɔ tete Babelɔn la maa yɛnwu kɛ Baebolo ne le nɔhalɛ ɛ?,kizi bleks ne yadlemɔ beɖua zu be yɛyi la ahu ni nyɛnimɔ bieŋuyi w tete babilon la maye ŋu ke babɔnele nɔ ahale,0.8889,0.3592
+671,Kɔ Zo Di Gyihova Adehilelɛ Zo,kovid di yehova de hlele zo,0.8333,0.375
+672,Edwɛkɛ ɛhye baboa yɛ yeamaa yɛanwu kɛzi Gyihova kile ye menli adenle ɛnɛ nee nyilalɛ mɔɔ yɛdi ye adehilelɛ zo a yɛbanyia la.,edzwɛkɛ shebaboayɛ yamiyeŋu kevi zehova kle melĩ adele yɛ nɛ ni nyilalemuyedii adihlele zɔa yebe nya la,0.9565,0.3663
+673,Yɛ nee yɛ ra raalɛ ne nee ɔ hu wɔ nyianu bie abo,nvɔhinyahu jwɛkɛ nɛ kinga kɛɛ yɛ ni yɛra ra lɛ nɛ nɛ ohu wɔhianu biaabɔ,1.1538,0.9722
+674,Mennwu sɛkɛlɛneɛ mɔɔ wɔ adenle zo la kpalɛ anzɛɛ aleɛ dwo a mennwu debie kpalɛ ɔ?,mi hu sekrenie mɔ wɔ adɛnlɛzo la pa lɛ anzɛɛ aleye jwaa mi hu debie kpalɔ ɔ,0.8125,0.3538
+675,John Blankson,guvoninelekle zɔn blaŋsn,1.5,1.4167
+676,SAA AWIE KA KƐ YƐDU YE FOLƐ A,saa awie ka keye duyi folɛ a,0.375,0.1364
+677,ƐKPƆLALƐ BIE MƆƆ HAKYILE ME ƐBƐLABƆLƐ,ekpale ale bie mo hetsile mi ebelebɔlɛ,1.0,0.4062
+678,MEMBƆLE KPƆKƐ KƐ MEBALI NƆHALƐ DAHUU,memɔle kpɔ kɛkɛɛ mibeli nɔ hale deuu,1.1667,0.2258
+679,KƐZI GYISƐSE BOA YƐ MAA YƐDIE YƐDI KƐ GYIHOVA KULO YƐ LA,kɛzi gyisɛse boa yɛ ma ye die yɛdi kɛ dwuuvɛ kulo ye la,0.4167,0.2
+680,KƆ ZO YƐ WƆ SINLIDƆLƐ NE MƆ ANWO GYIMA,kɔzo yɛ wɔ siludɔle no mo ahu jima,0.7778,0.3333
+681,Baka Bie Mɔɔ Bɔ Ndotolo Ndɛ,bakɛ bie mɔ bondoto lɛ ndɛ,0.6667,0.1818
+682,Duzu ati a Gyihova hulole Daneɛle a?,duzu etia dzihovovlele daniel la,0.8571,0.3448
+683,Yɛbanwu kɛzi ɛzoanvolɛ Pita zukoale kɛzi Gyisɛse dwenle ninyɛne nwo nee kɛzi yɛdayɛ noko yɛbahola yɛazukoa ye la.,yebe ŋu kezi zɔanvole pite ezukuali kezi jises dwule ninya neŋɔ ni kezie ɖae no kebahole ezu kae la,1.0,0.4211
+684,Tɔ Alagye Sukoa Debie Kpalɛ Amaa Ɛ Nye Ala Ɛkɛ,tɔ aladzi sukwɛ ɖebiekpa lɛ ama enye ala ekɛ,0.8,0.2432
+685,Duzu ati a ɔwɔ kɛ yɛmia anwodozo mɔɔ yɛlɛ wɔ Gyihova anu la anu ɛnɛ a?,keyɛ mi anwodozo mo yɛ lɛ ɛwɔ jeoa anu la anu ɛnaa,0.8125,0.4074
+686,"Ɛzukoalɛdeɛ ne: Saa bɔbɔ ɔwɔ kɛ yɛtu awie folɛ wɔ debie ko ne ala anwo fane dɔɔnwo a, ɔhyia kɛ yɛtendɛ bɛtɛɛ nee ɛbulɛ nu amaa nvasoɛ ara zo.",ezukoalɛ deɛ ne sae bɔbɔ ɔwɔke yɛtu awiɛfolɛ wo debiɛ kone ara la anwofanle dɔɔnwo a ohia keyɛtendɛ bɛtɛɛ ne yɛbule nu amanva soale azo,0.7931,0.1636
+687,Ɛzukoalɛdeɛ Titili Mɔɔ Yɛnyia Yɛfi Yizilayɛ Arelemgbunli Ne Mɔ Ɛkɛ La,ezuka di titiri mɔ yenyaye fi israel aweremgblɔnɛ ma eka la,0.9091,0.4407
+688,BAEBOLO NE MAA YƐNWU NYAMENLE PƐLEPƐLELILƐ NE,baebo ne maa yɛnwu nyamenle pɛlɛpɛ ilɛ ne,0.4286,0.1538
+689,SUKOA DANEƐLE AKƐNRASESEBƐ NE,sukwa daniel ake ŋe sesebɛne,1.25,0.3077
+690,Kɛ ɔkɛyɛ na mediema mrenyia mɔɔ bɛkilehile wɔ debiezukoalɛ bo la aboa awie mɔ bɛamaa bɛadie edwɛkɛ ɛ?,kɛ ɔkɛɛ na medi ma menya mobɛkehile wɔ debie sukaalɛ bo la aboa awie m ɔ bamaa badie edwɛkɛ ɛ,0.6111,0.1446
+691,Wɔ Monle Sonle Bolɛ Maa Gyihova,wɔmɔle sɔlobrama yehova,1.0,0.4231
+692,NWANE MƆ A ‘BƐBAVA BƐ BƐAHƆ’ A?,ŋuanemɔa bɛbava bɛbaxɔa,0.8571,0.1818
+693,“GYIHOVA LƐ AHUNLUYELƐYELALƐ YƐƐ ƆSE ANWUNVƆNE”,dzi ƒova le ehlu yayra lɛ ye oseŋuvɔ nɛ,1.5,0.5
+694,"SAA YƐ RƐLE BƆ A, DUZU A YƐBAHOLA YƐAYƐ A?",sɛ yɛrelɛ bɔ a duzue ebahole yayɛ a,0.7,0.2903
+695,menli ekyi bie ala a maa mualɛ la ɛ?,mɛ ni etsii bie alaa ma mualɛ lɛ he,0.8889,0.3333
+696,Duzu ati a nyɛvolɛ rabokale Belemgbunli Devidi sogyama ne anwo a?,ɖezu eti a nyevlɛ ɣabo kale bliŋmli david sodzama ni awɔa,0.9091,0.3704
+697,ƆVALE Ɔ NWO ƆDOLE GYIHOVA ANWO ZO,ɔvalo ɔ ngu ɔdule jehova ngɔzɔ,0.8571,0.4074
+698,"Yɛbahola yɛalie yɛali kɛ wɔ kenle bie ndɛnebualɛ ne anu, Gyihova bali pɛlepɛle na yeabua ndɛne fɔɔnwo.",yebahula yɛeli eli kɛɛ wɔklĩ bie ndenibuale ni enu dzihove beli pɛlepɛle ni yebua ndɛne fɔŋŋ,0.8235,0.2976
+699,Me Sinlidɔlɛ Ne Mɔ Ɛmaa Nyamenle Tumi Ne Ɛla Ali,misili dɔle ne mɔ ema nye amli tumei ne ele eli,0.8,0.3333
+700,"Saa bɛka kɛ yɛwula Gyihova anyunlunyia a, ɔkile duzu?",sabeka ke yewula dzobenyulunyaa wokle ɖuzo,1.0,0.4186
+701,Nyamenle a maanle bɛhɛlɛle Baebolo ne a,nyamenle amane bɛhelɛl bae bɔnea,0.8571,0.2121
+702,yɛlɛsiezie yɛ mualɛ ne mɔ la ɛ?,yele siezie ye muale ne mɔlɛi,1.0,0.25
+703,KƐ ƆKƐYƐ NA YƐAKPO ANGOMEDI SUBANE ANZƐƐ YƐANDE NGANEƐ KƐ YƐ NWO HYIA TƐLA AWIE MƆ LA,ke okɛyɛ na yeakpo aŋumidi subanɛ azɛɛ yeane ŋgani ekɛɛ yeŋu sĩa te le wimɔ la,0.8824,0.3623
+704,duzu ati a ɔnle kɛ ɛbu ɛ nye ɛgua wɔ nganeɛdelɛ zo a?,ɖuzuatia nɛke ebu enyi egua wɔ gania delɛ zoaa,0.9231,0.325
+705,NWUANZANWUANZA NEE NWUANZANWUANZA NU NWUANZAANWU ƐLEKA NE,ŋɔenzeŋwuezã ni ŋɔenzeŋɔezenuŋenzeu ele kanɛ,1.0,0.6275
+706,"Ɔmaa yɛanwu mɔɔ anlubɛnwo kile, deɛmɔti nwolɛ hyia nee kɛzi Gyihova ɛboa menli ngakyile yemaa bɛnlu bɛ nwo la.",wɔmeya ŋumɔ nu be ŋu kle ɖie motiŋule shĩa ni kez jehova ebɔ meni ge tsire yi mebe lu bɛŋɔ la,1.0526,0.5444
+707,Duzu a ɛyɛ a ɔbaboa wɔ yeamaa wɔadie edwɛkɛ kpalɛ a?,dizu a ɛyɛ a ɔbaboa wɔ yɛmboa die edwɛkɛ kpalɛ a,0.2727,0.1707
+708,Kendɛ Sua Ne Mɔɔ Badɛnla Ɛkɛ Dahuu La,nɛ mɔ obadla kɛ dehuu la ejk t,1.0,0.5667
+709,"Mebadwazo meayɛ nwolɛ debie,’ Gyihova a se a.",mibe dzɔazo maye ɔmle ɖebie dobo be esaa,1.0,0.5429
+710,BOA WƆ SUKOAVO NE MAA ƆLI YE NGYEGYELƐ ZO,bua osukuavo ne maa ɔli yɛ ngyegyelɛ zo,0.4444,0.1515
+711,Duzu Ati A Baebolo Ngyinlazo Nwo Hyia A?,duzu etia baebungyinlazo nwu hyiia,0.875,0.1875
+712,DUZU A BABOA YƐ YEAMAA YƐALIE YƐALI KƐ GYIHOVA KULO YƐ A?,duzuɔ baboayɛ yɛmee yɛalie yɛali kɛ dwewova kulo yɛ a,0.5,0.2
+713,YƐKA EDWƐKƐ NE ƆLUAKƐ YƐKULO GYIHOVA NEE YE DUMA NE,yɛkã edjwɛkɛ nɛ oluakɛɛ yekulo yehova niyi ɖumanɛ,1.0,0.3095
+714,MƆƆ BOA PƆƆLO WƆ MEKƐ MƆƆ Ɔ RƐLE BABƆ LA,mɔɔ bua pɔɔlo wɔ me kɛ mɔ ɔrelɛba bɔ la,0.6,0.129
+715,KƐZI ƐBADU FOLƐ WƆ MEKƐ KPALƐ NU NEE ADENLE KPALƐ ZO LA,kizi ebɛdu folɛ wɔ mekɛ kpalɛ nu ne adenle kpalɛ zɔ la,0.3333,0.1136
+716,‘NYAMENLE MƆƆ YƐBIKYE YE LA’ MAA YƐ NYE DIE,nyamenle mo yɛbikyɛ ye la ma yɛ nye die,0.3333,0.1212
+717,Fa ɛ nwo wula gyimalilɛ ngakyile nu,wo ŋvonyli ni enu ye ŋu meɖiemamenye nyɔ mɔ ele tsitsi belemgblila saulo nɛmvezre ni enu la ŋvonyli nɛ aŋu edzekenɛkeŋgakɛ fa eŋu wu le dzimelileŋetsiri nu,3.7143,3.7586
+718,"Kɛzi asafo nu azonvolɛ, mgbanyima nee maangyebakyi zo neavolɛma boa yɛ, nee kɛzi yɛbahola yɛahile mɔɔ mrenyia nɔhavoma ɛhye mɔ yɛ la anwo anyezɔlɛ la.",kezi se fu nu azɔŋvolɛ ŋugbenyimanɛɛ mɛŋdze betsi zo niavolɛ maboa yɛ nɛ kezi yebahlɔ yexiliemɔ menyanɔhavo ma eshe mɔ yɛ la ahɔ ahiɔnzɔla la,0.76,0.3577
+719,Kɛ Ɔkɛyɛ Na Wɔahakye Ndelebɛbo Fofolɛ Mɔɔ Yɛnyia La,kɛ ɔ kɛyɛ na wahakye n delɛbabo fofolɛ mu ye nya la,0.8889,0.1628
+720,Edwɛkɛ ɛhye bamaa yɛanwu debie mɔɔ ɔka yɛ ɔmaa yɛfa nwolɛ adenle biala mɔɔ yɛbanyia la yɛye Gyihova duma nwuanzanwuanza ne ayɛlɛ la.,edzeke shi ba mia ŋu ɖebie mo ka yawo me yefa ŋladli biala mo ye be nya la yeyi dzowo be ɖumeŋguoezewzeani ayelela,0.9565,0.5229
+721,KƐZI GYIHOVA DA YE ƐLƆLƐ NE ALI LA,kesidzumwova ɖa yi elɔle ni eli la,0.875,0.4815
+722,yɛahɔ zo yɛava yɛ ahonle muala yɛazonle Gyihova ɛ?,yahu zi yavee ahulu ŋuana yazu nu jewovɛ,1.0,0.5122
+723,Sukoa Gyisɛse Wɔ Mekɛ Mɔɔ Ɛlɛtu Folɛ La,sukoɛ gyisɛse wɔ me kɛ moletu fɔlɛɛ la,0.625,0.2188
+724,KƐZI NINYƐNE ƐHYE MƆ BAHOLA AMAA YƐ DIEDI NU AMIA Ɛ?,kezi ninyɛne ɛhye mɔ bahola ama yɛ diedi no ɛmiɛ,0.4545,0.122
+725,DWENLE NVASOƐ MƆƆ WƆ ƐTANEFAKYƐ ZO LA ANWO,dulimvasu mɔɔ wɔ etanefatse zu la aŋɔ,0.625,0.4286
+726,Nea ninyɛne nwiɔ mɔɔ bɛnwunle ye wɔ adenle zɔhane anwo la:,ni ɛniɛ ninyɛɔ mɔ bɛwul e wɔ adɛnlɛ zɔhani anwɔla,0.9091,0.3404
+727,NYIA AKƐNRASESEBƐ KƐ OBADAYA,nya akɛ ngɛ sesebɛ kɛ obadaia,1.25,0.16
+728,Kilehilevolɛ ne hanle kɛ: “Bɛbiza kpuya.”,gigilevolɛ ne hanikɛe bebize kpinye,0.8333,0.375
+729,Mɔɔ Gyihova Ɛyɛ Amaa Yealie Alesama Yeavi Ɛtane Nee Ewule Nu La,mo dzi ƒo vɛ yɛ ameyɛlii alasameyevi etani ni ewulo no la,0.9167,0.3846
+730,Kile Kɛ Ɛ Nye Sɔ ‘Menli Mɔɔ Bɛva Bɛ Bɛmaa Kɛ Ahyɛlɛdeɛ’ La,kile ke enye sɔ mei ni mɔɔ bava bamaa kɛ asheladia la,0.6923,0.3182
+731,"Kɛzi yɛbalua deɛnwunlɛ, ndelebɛbo nee adwenlenunwunlɛ zo yɛasisi kpɔkɛ kpalɛ la.",keziebeluia ɖie ŋule ndlebebo ne adzro nu ŋulezo yesu si kpekekpa le la,1.0909,0.4412
+732,Yɛbazukoa deɛmɔti Nyamenle maa amaneɛnwunlɛ nwo adenle la anwo debie wɔ Dwobu buluku ne anu yɛɛ kɛzi yɛlɛnwu amaneɛ a yɛbahola yɛagyinla ɔ nloa la.,yɛbazukoadeɛmɔti nyamenle mamaneyɛ nwunlɛ nwadɛnla la anwo debie wɔ dwobu buluku ne anu yɛkɛsi yɛlɛ nwuu amane a yɛbɔholɛ yɛgenleɔ nloanla,0.6,0.1393
+733,MGBƆDALƐ: Ngyehyɛleɛ mɔɔ Gyihova ɛyɛ kɛ ɔfa alesama mɔɔ ɛnli munli la ɛtane yeahyɛ bɛ la,baalɛŋziseliɛ mɔ ziehova yɛyɛ kɛɛ ɔfa alasamamɔyi nimlĩla etani yasɛ bɛ la,0.8125,0.4167
+734,KƐZI YƐMIA ANWODOZO MƆƆ YƐLƐ WƆ GYIHOVA ƐWƆKƐ NE ANU LA,kezi yemia aŋodozo moyɛ lɛ wo jehova ewɔ kɛ ni enu la,1.0,0.2889
+735,Boa Wɔ Baebolo Sukoavoma Maa Bɛzi Kpɔkɛ Kɛ Bɛbazonle Gyihova,boɔ babusukavoma ma bezikpɔ kɛkɛ bazlu jehova,1.0,0.3333
+736,"Ɔbamaa Nyamenle azonvolɛ mɔɔ wɔ azɛlɛ ye azo la anyia anwodozo kɛ, saa bɛfa Kilisienema mɔɔ bɛkpokpa bɛ la mɔhama ne amuala bɛkɔ anwuma a, Nyamenle ɛnrɛkpo bɛ.",ɔba ma nyamli azɔnvolɛmɔ wɔ azidayi azɔ la enya ŋudo zo kɛɛ sã bɛfa kristiama mɔ bɛkpokpa bɛ la mɔ hama ni emuu alabekua ŋumaa nyamnli eŋekpo bɛ,0.7857,0.3101
+737,MƆƆ YƐBAHOLA YƐAYƐ YƐABOA AWIE MƆ LA,mɔɔ yɛbahɔla yayɛ yeaboa awiemala,0.8571,0.1333
+738,“Ɛle Sonla Mɔɔ Ɛsonle Bolɛ Kpalɛ”!,ɛle sonla mɔɛsonle bɔlɛ kpalɛ,0.5,0.0769
+739,Duzu ati a ɔwɔ kɛ yɛtie edwɛkɛ wɔ debiezukoalɛ bo a?,duzu etie a ɔwɔkii tie dwɛkɛ wo debie esukualɛ boaa,0.8182,0.2683
+740,ANYELIELƐ EDWƐKƐ BIEKO​—YƐHƆLE AZƐLƐ FOFOLƐ ZO,anyiyeli dweke bie kɔ yehxɔle azle fofole zo,1.1667,0.3333
+741,Ninyɛne boni mɔ bieko a yɛbahola yɛazukoa yɛavi abɔdeɛ nu a?,ninyane bo ne mu bieko a yɛbahwe yezukoyevi abɔdee nu a,0.7273,0.2449
+742,Sukoa deɛmɔti bɛfɛlɛ Gyihova bodane nee kɛzi yɛbahola yɛazukoa ye subane ne mɔ mɔɔ le kɛ bodane la.,su kwɔɖie mɔti befle yehova bɔ ɖanɛ nɛ kezi yabaholɔ yesu kuayi subã ne mɔ mɔɔ le kɛɛ bɔdanɛ la,0.8333,0.358
+743,Belemgbunli Dwosaya ɛbɛlabɔlɛ nu a?,bilemgbunli dwosaya ɛbɛlɛgbɔlɛ nu a,0.4,0.1
+744,Duzu A Ɛnee Dwuudu Ɛlɛkile A?,k gises wuli la,1.0,0.6957
+745,ninyɛne boni mɔ a yɛnze a?,ni nyɛ ni boni mua yɛ nzia,1.1667,0.15
+746,SAA MENLI MƆƆ BƐLE FOFOLƐ LA BA DEBIEZUKOALƐ A,sa meniwɔ bɛlɛ fofo lɛ la ba dabiyesu kuala a,0.7778,0.2632
+747,Edwɛkɛ fɛlɛko dɔɔnwo mɔɔ maa yɛnwu kɛ Gyihova nwu yɛ nye anwo monle na ɔbaboa yɛ la wɔ Baebolo ne anu. Suzu neazo bie mɔ anwo:,ne deke fle ko dɔu mɔama yeŋu kɛɛ dzuwova ŋu yɛnye aŋu mle na obabua yɛ la ewɔ baiblini enu suzu ni azu biyemɔ aŋu,0.8462,0.4141
+748,Megyinla Ɛlɔlɛ Zo Meazɛlɛ Wɔ,mijila ɛlɔlɛ zo mazɛlɛ wɔ,0.4,0.2083
+749,Adesoa boni mɔ a ɔwɔ kɛ ‘yɛfuandi bɛ yɛgua bɛ lɔ’ a?,adefe bonumɔa wɔ kiyo fe nibi eguabe lɔa,1.0,0.3684
+750,"Mɔɔ Pɔɔlo hɛlɛle kɛ “bɛdua diedi zo a bɛbu sonla tenlenenli a, na tɛ mɛla gyima zo ɔ” la, duzu a ɛnee ɔlɛkile a?",mɔplɔlehelɛlekɛ beɖu ediedi zoa bebu slɔatelilia na te mele dzime azɔ la duzua ene wole kilaa,0.9167,0.3333
+751,Ecclesiastics Indicted ­trate ne bie,nvonli ne le klee eklesiastik indaited tratn bie,1.4,0.6774
+752,Bu Nyamenle Ngoane Ahyɛlɛdeɛ Ne,bu nyiamenle ngoane ahyɛlɛ deɛ ne,0.6,0.037
+753,Duzu ati a ɔfɛta kɛ yɛsonle Gyihova a?,eti ofɛtakɛɛ yɛsunli jehova,1.0,0.4667
+754,"Kpuya boni mɔ a bɛbiza bɛdabɛ mɔɔ bɛkazɔne bɛ la a, na duzu ati ɔ?",kpunye bɔnu ma bebe biza beɖabe mɔ bekazɔnibɛ la naɖizɔ etiɔ,0.9333,0.38
+755,Duzu ati a ɔwɔ kɛ bɛdabɛ mɔɔ bɛlɛgya la wula Gyihova anyunlunyia wɔ bɛ atɔfolɛlielɛ ne abo a?,duzu etiaa ɔwɔ kɛ bɛdam beleja la wu lɛ yehovel nyuinya wɔ be hatofelielɛ ni aboa,0.7778,0.3467
+756,Mɔɔ Gyihova ɛlɛyɛ aboa yɛ yeamaa yɛaho yɛatia ɛtane nee kɛzi yemaa yeyɛ boɛ kɛ yɛbadɛnla aze dahuu mɔɔ yɛnrɛyɛ ɛtane bieko la.,mo dzi hovɛ ele yɛ aboa yɛ yeama yeahue yɛtia etanɛ ni kezi yema yeya bɔ kɛɛ yabadanazi de kuu bɔhɛyɛ etane biɔkwãla,0.9565,0.3786
+757,Kɛ ɔkɛyɛ na yɛanyi sunsum nu ɛ?,kɔkɛe na yenyi sunsu nue,0.8571,0.2917
+758,DUZU GYIMA A ASAFO NU SONVOLƐ YƐ A?,du vi jimu afafunufɛmuvolɛya,1.0,0.4815
+759,Kɛzi yɛkola yɛdua yɛ gyima zo yɛda yɛ diedi ali ɛ?,kezi yeklɔe ye ɖu eyi dzimazo yeda ye ɖieɖi eli edzɔenɛ egblɔ nyɔnemɔtse awe mɔ dyehowa fay egɔŋlɔ,1.6364,1.4872
+760,Nyia Anyelazo Mɔɔ Ɛnrɛye Ɛ Rɛle Ɛnrɛdo Ɛ Sa Nu La,nyanyila zo mɔ enyi ɣe le ɖuese nu la,0.8182,0.4872
+761,Duzu A Yɛsukoa Yɛfi Gyisɛse Nwanwane Ninyɛne Ne Mɔ Anu A?,duzu a yɛsukɔye fi gyiɛse nwanwan ninyɛne ne mɔ anu a,0.3636,0.1087
+762,Yɛde “mekɛ mɔɔ li awieleɛ” la anu,yɛde mekɛ mɔɔ li awieleɛ la ɛno,0.1429,0.08
+763,Gyihova Asa Ɛnle Ezinra Somaa,dzehova sa eni zi ŋa asuma,1.2,0.48
+764,Kɛzi ɛbaye adwenle nu keseeyɛlɛ mɔɔ bahola aha ɛzonlenlɛ mɔɔ yɛfa yɛmaa Gyihova la yɛavi yɛ ti anu la.,kizi ebayi adzunnu kisi yalɛ mɔ bahula ahã ezɔlɔlɛ mɔ yefa yɛma jehova la yaviyeti enu la,0.8947,0.3373
+765,GYIHOVA MAA YƐNYIA ANWODOZO KƐ YE ƐWƆKƐ NE BARA NU,jehova mayenya aŋɔdɔzɔ kɛɛ ye ewɔ kɛni baɣe nu,0.8,0.3902
+766,Duzu ati a ɔwɔ kɛ yɛnyia mekɛ yɛnea abɔdeɛ a?,duveti ɔ ke ye nya amɛ ke yɛ nɛ abɔdea,1.0,0.4
+767,Debie Mɔɔ Ɛbahola Wɔazukoa La,debie mɔɔ ebaholɔ wɔzukua la,0.4,0.16
+768,KƐZI DWOBU EDWƐKƐ NE BOA YƐ MAA YƐGYINLA KPUNDII LA,kezi dwob edwɛkɛ ne boae maa yegyinla kpunde la,0.6,0.1667
+769,KƐ ƆKƐYƐ NA YƐAVA ANYUNLUNYIA MƆƆ FƐTA GYIHOVA LA YƐAMAA YE Ɛ?,kɔ kɛ yɛ ni yava nyulunyamɔ fɛteziwova la yama yɛɛ,0.9167,0.28
+770,KƐZI MGBANYIMA NE MƆ BOA AWIE MƆƆ BƐYE YE BƐVI ASAFO NE ANU LA,kezi ŋugbeimanumɔ bua awiemo bɛ,1.0,0.6122
+771,BAEBOLO NU FOLƐDULƐ ƐLƐBOA MENLI MGBE DƆƆNWO,baibu nu fuledule elɛbu meni bɛ dɔŋu,0.8571,0.4737
+772,Gyihova Nyamenle anwo ɛlɔlɛ,jehova nyamlɛ aŋɔlɔ lɛ,1.0,0.4167
+773,Kɛzi Ɛlaehu lale nrɛlɛbɛ ali wɔ mekɛ mɔɔ ɛnee ɔlɛtu Dwobu folɛ la ɛ?,kesilai hulalɛ nlɛbeli wɔ mɛkɛ ma no le tu job fɔlɛlɛe,0.9286,0.4259
+774,SUKOA GYIHOVA SUBANE NE MƆ MƆƆ LE KƐ BODANE LA,sukwedzihove subã nɛ mɔmɔɔ le kɛ bɔɖanɛ la,0.7,0.3243
+775,KƐ ƆKƐYƐ NA WƆANYIA MƐLƐBƐNWOAZE SUBANE LA,kɛ ɔkɛyɛ na wanya mbelɛbɛnwa azesu ba ne la,0.7143,0.1389
+776,"Saa yɛlɛkpondɛ yɛ asɔneyɛlɛ ne mɔ anwo mualɛ a, kɛ ɔkɛyɛ na yɛahile kɛ yɛlɛ diedi ɛ?",sãyɛlɛ kpɔndɛ yɛasɔ nɛ yɛlɛ nɛ anwu muala a kɔ kɛyɛ ni yɛehileyɛ kɛ yɛle diedieɛ,0.8824,0.2424
+777,Duzu ati a ɔwɔ kɛ yɛfɛlɛ mgbanyima ne mɔ a?,dizu ati a ɔwɔ kɛyɛ fɛlɛm mgbanyima ne mɔ ha,0.4,0.0909
+778,ƐZULOLƐ HANLE YƐ NOKO GYIHOVA MAANLE YƐ ANWOSESEBƐ,ne ezullɛ hãli yɛ nɔ ko dzi wova maliya ahɔ sese bɛ,1.375,0.4186
+779,Kɛzi Gyihova ɛzulolɛ bahola abɔ yɛ ahonle nwo bane ɛ?,kezi dzehova ezuloelɛ bahola bɔ yɛ ahlɔ ŋu baniɛ,0.8,0.3256
+780,Ɔbamaa yɛanwu kɛzi Baebolo ngyinlazo bahola aboa yɛ yeamaa yɛatete yɛ adwenle ne amaa yeahile yɛ adenle kpalɛ la.,ɔba mi yenwu kezibabujilaazɔ bahweaa boa yɛ yamiyatete yaadwɛlɛ ne ama yeehile yaadɛlɛ kpalɛ la,0.7895,0.3298
+781,duzu ati a yɛbahola yɛalie yɛali kɛ Gyihova babua ndɛne fɔɔnwo a?,edzwɛ nɛ eblolu nɛ suu yaka edzɔɛkpa ni y krɛ,1.0,0.8113
+782,Ɛbɛlabɔlɛ Mɔɔ Yɛ Anyelielɛ Wɔ Gyihova Ɛzonlenlɛ Nu,ablabɔlemɔ ya anyilielɛ wodzu wo bɛ zuli nu,0.875,0.4419
+783,kɛzi ɔwɔ kɛ yɛbu ninyɛne mɔɔ kola si yɛ adenle la ɛ?,kezi ɔ keyɛ bu nenyɛne mɔɔ kola si yɛ adɛnle lɛ ɛ,0.5833,0.175
+784,Ndenle boni mɔ azo a Nyamenle menli di Gyisɛse neazo ne anzi a?,demigbonimu azo a nyamemeli di jises ni azɔnia zĩaa,0.7692,0.38
+785,Mgbanyima​—Bɛzukoa Gedɛyɔn Neazo Ne,gbɛnyima bezukwa gideon ni azɔ nɛ,1.5,0.3667
+786,"Saa agyalɛma nee Gyihova nyia agɔnwolɛvalɛ kpalɛ a, kɛzi ɔmaa anyelielɛ ba bɛ agyalɛ nu ɛ?",sɛɛ gyalɛma nee dwoovɛ nya gɔnwolɛ valɛ kpalɛ a kɛzi ɔmaa anyelielɛ ba bɛ agyalɛ nu ɛ,0.375,0.137
+787,Sisi Kpɔkɛ Mɔɔ Sɔ Gyihova Anye La,sisi kpɔkɛ mɔso dzo ovaa nye lã m,0.8571,0.2963
+788,NINYNE MƆƆ ƐNEE ƆMAA PƆƆLO ARƐLE BƆ LA,nenyano mɔɔ ɛnee ɔma pɔɔlo aralaboa la,0.5,0.2581
+789,ANYEZƆLƐ MAA YƐDI GYISƐSE ANZI,anyinzɔlemaye di jises seŋzi,1.0,0.4231
+790,Me nee Hutcheson abusua ne wɔ Divine Will International Assembly ne abo,mivɔnule ne mɔ wɔke la eli kli mekemɔɔ rasel le kekula kpavle la ɔnɛ xɔtsna busua ni dzi kalibi amu,1.6667,1.0667
+791,JAPAN BƐTƐLE YƐƐ ADEKPAKYELƐ GYIMA,japan betelo ya adekpatsle jima,0.8,0.3667
+792,Devidi nee Abegɛle ɛ?,kɔ kɛ nɛ yale ŋunueli kee david nyi bigelɛ,2.25,1.5294
+793,NYAMENLE DUA ABƆDEƐ ZO KILEHILE YƐ Ɔ NWO DEBIE,nyamnli du abɔdiazi klehle yɛ ɔnwu debie,0.7778,0.2368
+794,DUZU A GYIHOVA KULO KƐ YƐYƐ A?,duzuua johova kulo ke yeyaa,0.8571,0.3043
+795,DUZU A ƐBAHOLA WƆAZUKOA WƆAVI . . .,duzu a bahole wazuko wɔ avi belemgbunli gyɛhoahye ɛbɛlɛbɔlɛ nu a,1.8,1.44
+796,Duzu ati a bie mɔ kyɛ ɛzɔnenlɛ nwo a?,duzutɛbia mɔkyɛ zonela nwo a,0.7778,0.2857
+797,FA WƆ ADWENLE SIE NYAMENLE ƐHULOLƐDEƐYƐLƐ ZO,fa wadwele sie nyamle hulolɛ deɛ yɛlɛ zo,0.8571,0.1316
+798,Deɛmɔti Ɛnee Ɔzɔho Kɛ Ɔnrɛyɛ Boɛ La,die motue na ozi nwa kɛ nwa yɛ boɛ la,1.0,0.5172
+799,KƐZI BƐLILE ƐTANE KPOLE BIE ANWO GYIMA WƆ ƐVOYA MƆƆ LIMOA LA ANU LA,kezi belili etanukpelebii aŋu dzima wɔ evɔya moli muala enu la,0.8571,0.3333
+800,Duzu a ɛzukoale ɛvile Dwobu agɔnwo mɔ nsa ne ɛkɛ wɔ ninyɛne mɔɔ ɔnle kɛ yɛyɛ wɔ mekɛ mɔɔ yɛlɛtu folɛ la ɛ?,duzu ezukoalɛ vili dwoba gɔnwo mɔ nsaneɛ ɛkɛ woninyɛne mɔ nekeɛ yɛ hɔmekemelutu folɛ lɛ ye,0.8261,0.2651
+801,MƆƆ YƐBAZUKOA a,mueba zu kwa ejɛkɛ shi be hihile die motia bahle nyanwu dɔzo kɛɛ dehu jehova babua asɔni yɛlɛ wɔlɔlenu ni adlɛ mɔlo kpala la azo la enu,9.0,7.6923
+802,Gyihova Baboa Wɔ Wɔ Mekɛ Mɔɔ Anu Yɛ Se La Anu,jehova babua ɔ wɔm kemon yesle nu,1.0,0.4286
+803,Duzu ati a bɛlɛkpɔ yɛ a yɛ nye bahola alie a?,ɖuzu etia bekpɔya a ye nyi ba hlɔ elia,0.9091,0.3529
+804,MMAYƐ NINYƐNE MƆƆ KILE KƐ ƐNLI Ɛ YE ƐNLI LA,maye ninyɛ ni moklɛ kɛɛ eni eye ni la,0.9,0.3529
+805,MENLI MƆƆ BƐNWU GYIHOVA KPALƐ LA NYIA NYILALƐ,me ni mobeŋudzu wova kpalɔ la nye nyilale,0.875,0.3684
+806,Kɛzi Daneɛle lale akɛnrasesebɛ ali ɛ?,kezi daniel laliaka ŋgɛsese bɛ eliyɛɛ,1.0,0.3871
+807,DUZU A KA YƐ MAA YƐWULA GYIHOVA ANYUNLUNYIA A?,ɖuzu aka yɛ maye wule zehova nyulua,0.8889,0.3514
+808,Gyihova bu kpɔkɛ mɔɔ ɛzile kɛ ɛbazonle ye la kɛ ɔsonle bolɛ,jewove bu kpekɛ mɔ ezilikɛɛ ebazɔla yɛ la kɛ ɔsɔlɔbɔlɛ,0.75,0.375
+809,Nzuzulɛ Mɔɔ Baboa Ekpunli Zo Neavolɛ,mɔdoa zo la lɛ ngul ejwɛkɛ biako zuzule mɔ ba bua e kplizɔ ni avolɛ,2.5,1.0323
+810,Kɛzi anyezɔlɛ boa awie maa ɔyila ɔ nwo zo ɔmaa Gyihova ɛ?,kezia nyenzɔlebu ewie ma woyilo w ŋɔzɔ me dzoxo vɛ,1.0,0.4667
+811,Me nee Mary ɛlɛyɛ maangyebakyi zo neavolɛ gyima,yeŋu joel adams ni mere mɔ elɛyemedzebetsi zo nia avre zimani bie la wovonle ni enu,1.875,1.275
+812,ANWUMABƆVOLƐ NE MƆ BƐLƐ BƐ NWO AZE,anwumɔbɔvolɛ ne mɔɔ bɛlɛbɛ nwo aze,0.5714,0.0714
+813,BƐMAA BƐ NWO ANWOSESEBƐ WƆ ASAFO MƆƆ BƐ NWO ANZO LA ANU,bɛma bɛnu anwu sese bɛwɔ asafo mɔɔ bɛnwu anzɔ la anu,0.6667,0.1364
+814,KƐZI YƐBAHOLA YƐABOA AWIE MƆ YƐAMAA BƐARA SUNSUM NU PALADAESE NE ANU LA,kiziel bafla yaabuɔ ewiemɔ yame abaɣe sunsum nu paaɖaesni enu la,0.7692,0.322
+815,yɛaboa bɛdabɛ mɔɔ bɛgyakyi debiezukoalɛ nee daselɛlilɛ ɛhɔlɛ la ɛ?,ya bua bɛda bɛ mɔ bedzetsi debie sukwaalɛ neda sei le xɔlɛ lɛe,1.3,0.375
+816,BƐDABƐ MƆƆ BƐVI ASAFO NE ANU LA,bɛɖabemɔ bevi asafo ni enu la,0.7143,0.24
+817,Duzu a bahola amaa menli mɔɔ ɛlɛnea awie mɔ la anyelielɛ aha aze a?,dozu a bahola mɛɛmɛ ni ma ɛlɛ niɛwie mɔ la ka nyiliɛlɛ ahã ze a,0.7143,0.3019
+818,Kɛzi daselɛlilɛ ekpunli ngyehyɛleɛ ne boa yɛ ɛ?,kezi dasele ekpunlijehyɛleɛ ne buayɛɛ,0.875,0.2564
+819,Kɔ Zo Di Wɔ “Sunsum Nu Ngyianlɛ” Nwo Gyima,kɔzo di wɔ sunsum nu yianlɛnwu nji ma edwoke pile teke,0.8889,0.5938
+820,Gyihova Ɛlɛboa Wɔ Yeamaa Yeawie Wɔ Boɛ,jehovael boa wɔ yame yewie wɔ bɔe,0.7143,0.3438
+821,ƐSONLE AWIE MƆ A ƐNYIA NYILALƐ,esɔli ewiomɔ a enyɛ nyilalɛ,0.6667,0.36
+822,Kɛ ɔkɛyɛ na wɔamia ɛlɔlɛ mɔɔ ɛlɛ ɛmaa ɛ mediema la anu ɛ?,kɔkɛɛ na wɔmii lɔlaŋmɔ elɛ ema emediema la enue,0.8462,0.3182
+823,ƐKPƆNEDEƐ NE SIEZIE YƐ NEE GYIHOVA AVINLI,ekpɔ nidiɛ ni siezie yɛ ni jiho vevli,0.8571,0.3429
+824,Bɛmaa mediema mrenyia mɔɔ bɛzɔne bɛ la anwosesebɛ amaa bɛanyia ɛhulolɛ ne na bɛabɔ mɔdenle bɛafɛta kɛ asafo nu azonvolɛ.,be me midi meminya mɔ bezɔnubɛ la wo sesebɛ ame be nye ehwulelɛ nɛ nebabɔ mɔdenu bafɛ taka asafonu azɔvɔlɛ,0.95,0.33
+825,(Bɛne zo) Yɛ atɔfolɛlielɛ kenle ne,wɔ nvoninli ngakyile mlumua la anu yenwu stefan ne klɔd ne atɔfolililɛ kalɛ ne,2.1667,1.8519
+826,Józef Krett,nvɔnlini lekile josef kurɛte,2.0,1.9
+827,Gyekɔbo Ewule Ɛkpa Zo Ngapezo Ne,ɛlɛka nɛ ele kile jakob ewule kpazo ngapɛzɔ nɛ,1.5,0.7407
+828,Me diema Elisabeth (bɛne zo),nvonili ne elek kle menimidiyeɛ ma elizabet bɛ ne zo,1.8,1.0909
+829,Ninyɛne mɔɔ maa yɛ diedi nu mia la boni a yɛsukoa yɛfi Gyisɛse nwanwane ninyɛne ne mɔ anu a?,ninyɛne mɔ ɔmaa yɛdiedi no miala boni a yɛsukɔyɛfi gyisɛse nwanwan ninyɛne ne mɔ anu a,0.5263,0.0548
+830,YƐNYIANLE YƐ DIEDI NE ANWO NDELEBƐBO FOFOLƐ,yɛnyanle yɛ diedini a wɔ ndele ba bo fofolɛ,1.0,0.1351
+831,Yɛbazukoa kɛzi Gyihova nwunle Yizilayɛ arelemgbunli ne mɔ la amaa yɛade mɔɔ ɔkpondɛ yeavi yɛ ɛkɛ ɛnɛ la abo.,yibe zu kekezi dzehova ŋuli israel awlemgblinumɔ la amayade mɔ ɔkpende yevi ekɛ ene la abo,0.8421,0.382
+832,KƐZI ƐBABƆ Ɔ BO KƐ Ɛ NEE AWIE TU LA,kezie babɔ bokɛe enieyetula,1.0,0.3462
+833,YƐZUKOALE ANEƐ FOFOLƐ YƐƐ YƐHAKYILE YƐ ADWENLE,yesu kwalea ani fofolɛ yeye hetsili adzwɔlɛ,1.0,0.475
+834,“Kelaese Ɛlɔlɛ Ne Ka Yɛ”,klais elɔlɛni kã yɛ,0.8,0.2778
+835,Kpuya Mɔɔ Vi Kengavolɛma Ɛkɛ,pinelmo vi keŋgãvlɛmaikel,0.8,0.5417
+836,Deɛmɔti Yɛhyia Ɛkpɔnedeɛ Ne La,deɛ mote yɛhyia ɛpɔnedeɛ na la,0.8,0.1538
+837,GYINLA NƆHALƐ ƐZONLENLƐ NZI KPUNDII,jina nɔhalɛ zu lenzi kpindii,0.8,0.3226
+838,Mediema Mrenyia​—Bɛlɛbɔ Mɔdenle Kɛ Bɛbayɛ Asafo Nu Mgbanyima Ɔ?,mediememienya bela bɔmɔ deneke beba yi asaf numugbenyimawɔ,1.0,0.25
+839,Bɔ Ɛ Nwo Bane Fi “Ɛtane Mɛlɛbɛla Ne” Anwo,bɔ ɛnwoba ne fi ɛtane melɛbɛla ne anwo,0.4444,0.0323
+840,Kɛ ɔkɛyɛ na yɛanriandi yɛali konim ɛ?,kɔ kɛyɛ ni yeŋe di yelukunumɛe,1.0,0.5
+841,KƐZI SUNSUM NU ALEƐ MƆƆ ANU YƐ ƐLOMBOƐ LA BOA YƐ LA,kezi sunsum nu alrie mɔenuyarumɔe la buaye la,0.6667,0.375
+842,Sukoa Kɛzi Ɛbadu Awie Mɔ Folɛ La,sukoa kize bɛdu awiembɔfɔlɛ la,0.7143,0.2308
+843,Bɛhɔ Zo Bɛmia Bɛ Agɔnwolɛvalɛ Ne Anu,be hɔ zo bemia be gɔŋɔ evale ni enu,1.1429,0.4
+844,"Ɛnrɛhola ɛnrɛzi debie biala mɔɔ ɛ hu bayɛ la adenle ɛdeɛ, noko ɛbahola wɔayɛ debie wɔade nyane mɔɔ ɛbali la azo na wɔanyia anzodwolɛ kpole. Suzu ɛhye mɔ anwo.",eewule ŋezi debi bia mie hu baye la adli deɛ nɔ kwaba hlu waye debie woade nya nimeledi la azɔ no wuenya azunudzɔle kpele suzu esemɔawu,0.8621,0.4331
+845,George Young nee Sarah Ferguson (fema zo) yɛɛ ɔ diema raalɛ ne,nvonyi ni ele kli diɛ ma jorje yung ni sarafegerson fɛma zo yɛ odie ma alɛ ni,1.3333,0.6735
+846,YƐ AHYEHYƐDEƐ NE DI GYISƐSE NEAZO NE ANZI,yease ɖe ndi jises ni azu ni yezi,1.0,0.5294
+847,“AZƐLƐ YE KƆSƆƆTI NDƐNEBUAVOLƐ NE” BAYƐ “MƆƆ TENRƐ LA”,eɖede kplublo ne su kpuyia,0.8889,0.8333
+848,“Bɛhakyi Bɛ Subane Na Bɛnyia Adwenle Fofolɛ”,bɛ hetsi be subanɛ na be nya adwurlɔ fofolɛ,1.0,0.2778
+849,"Ɛnee Mese Nyiane Ɛdeɛ, Noko Membanyɛle Edwɛkpatɛlɛvolɛ",enimise nyɛ anɛ nɔkomɛ ma nyɛli ejakpa tɛlɛvolɛ,1.1429,0.3404
+850,Belekese bie mɔɔ bɛdo mɔɔ Nɛbukadenɛza duma wɔ zo,nvɔneleniele klie bleksibi mobedon mo nebukadenezar ɖumawɔ zɔ la,1.0,0.7317
+851,FA ANWODOZO NEA KENLE BIE ADE,fawɔdezɔniia klibii ade,0.8333,0.4583
+852,KƐZI MENWUNLE ME ZE NE MƆƆ Ɔ TI AKUNLU LE KƐNLƐMA LA,kɛzi menwunle me ze ne mɔɔ ti akunlulɛ kɛla ma la,0.3333,0.0976
+853,Yɛ Gyihova Ɛyɛvolɛ Dahuu!,yiye dzehova eyavule dehuhu,1.0,0.5714
+854,DEƐMƆTI BIE MƆ TE NGANEƐ KƐ GYIHOVA ANYE ƐNLIE BƐ NWO LA,diemoti biemɔtiŋaniɛ kɛɛ dzuwovanyie nie bɛ ŋɔ la,0.8333,0.4222
+855,Ɛkɔ zo ɛnyia Gyihova anwo ɛlɔlɛ a,ɛkɔzo nya gyehova nwo ɛlɔ la a,0.8571,0.1852
+856,FA WƆ ADWENLE SIE GYIHOVA ƐHULOLƐDEƐYƐLƐ ZO NA BƐLƐ Ɛ NWO AZE DAHUU,fa wadu i see jehove ehulelɛ deɛ yɛlɛ zo na bɛlɛ nwɔ aze dahuu,0.6923,0.2727
+857,"BƐLƐ Ɛ NWO AZE, MMAMEMAA Ɛ NWO ZO",belɛ ŋuaze mamimɛ ŋu zo,0.875,0.48
+858,PITA NGYEGYELƐ NEE YE NYILALƐ,pita ŋdzidzelɛ niyinyilalɛ,0.8,0.36
+859,BƐTO BƐ SA BƐFƐLƐ MENLI BƐMAA BƐBA NGAKYELƐLILƐ NE ABO,bɛto bɛ sa bɛ flem mli bɛ mabɛ baŋgatsrelɛ ni abo,0.7,0.3111
+860,DUZU ATI A ƆWƆ KƐ YƐYƐ ASƆNE YƐMAA AWIE MƆ A?,duzu ɛti ɔ kee ɛya asɔneyɛ ma ewioma a,0.8182,0.3235
+861,ninyɛne boni mɔ a yɛze a?,ni nyɛ ni boni mɔa yeazia,1.0,0.2105
+862,Kɛ ɔkɛyɛ na yɛanyia mɛlɛbɛnwoaze subane ɛ?,kɛ ɔkɛyɛ na yɛnya melɛbɔwo azesu bane ɛ,0.5714,0.1429
+863,Mɔɔ yɛsukoa yɛfi kɛzi bɛlile ɛtane kpole bie mɔɔ awie yɛle wɔ ɛvoya mɔɔ limoa Kɔlente asafo ne anu anwo gyima la anu la.,mɔ yesu kɔye fi kezibelili etanukpele bie mɔ ewieyale wɔ evɔia moli mua kɔlentasafoni enu aŋu dzi ma la enu la,0.8333,0.3021
+864,Menzukoale debie titili bie wɔ mekɛ mɔɔ memaanle ɛdendɛlɛ bie wɔ Fenlanze nu menwiele la,yi wu andreu mele mea dendele la wo mvonili ni enu vonili ni aŋu edjeka nɛkɛgakɛ mizu kpali ɖebie titilibii wɔme ke mu mimalia dedelibie waflã nzlinu minyiele la,1.8667,1.1757
+865,MƆƆ VI NU RALE LA: BƐLIE YƐ NA BƐBU YƐ TENLENEMA,mo vili nu ɣale la belie yɛ na bebu yɛ tenenema,0.5455,0.2162
+866,KƐ ƆKƆYƐ NA YƐANWU YƐ NWO KƐ MƆƆ GYIHOVA NWU YƐ LA,kɛɔ kɛ e nɛ yɛnwu yɛ hu kɛ mo juu mɛ nwu yɛ la,0.6667,0.4359
+867,Yɛ atɔfolɛlielɛ kenle ne,nvonili ni ele kle mɛnɛmɛ ye atɔflelialɛ klɛ ni,2.25,1.381
+868,William R. Brown nee ye abusua ne,nvɔnyinli ne ele kilea adiema wilam albran nee ye abusua ne,1.0,1.0769
+869,yɛko yɛtia nganeɛ mɔɔ yɛte kɛ nvasoɛ ɛnle yɛ nwo zo la ɛ?,yeku yetia ŋganemɔ yɛ tekɛɛ nvasuɔ ni yɛ ŋu zɔlɛɛ,0.9231,0.3864
+870,MMABU Ɛ NYE ƐGUA KƐZI ƐTE NGANEƐ LA AZO,mabu enyi eguakezi eteŋganyɛ la azo ye ŋua ɖiemaɣale bie mɔ ɔɣɛle ebɔ la kɛɛ ɔle ni amvɛnzeebi enu wɔ vɔnini ni enu,2.4444,2.2903
+871,“Ɛlɔlɛ mɔɔ anu yɛ se” mɔɔ yɛnyia yɛamaa yɛ mediema,elɔalɛ mo enu yɛ se moye nyay ama yɛ mediema,0.6,0.2821
+872,Pɛ Edwɛkɛ Mɔɔ Wɔ Baebolo Ne Anu La Anwo Nvoninli,pe jwɛkɛ maa ɔ bae bo ni anu la huvoninli,0.9,0.3333
+873,Kɛzi Yɛbali Adwenle Nu Keseeyɛlɛ Zo La,keziyebeli ajule nu ke see yalɛzɔ la,0.8571,0.2812
+874,duzu ati a yɛbahola yɛanyia anwodozo kɛ Gyihova banlea ye menli a?,duzu etiaa yebahula yɛnyaa ŋɔndozo kɛɛ yehova baleai melia,0.9167,0.2778
+875,Duzu a bahola aboa yɛ yeamaa yɛanwu yɛ nwo kɛ mɔɔ Gyihova nwu yɛ la ɛ?,duzu a bahɔlo aboa yɛ yɛma yɛnwu yɛ nwo tɛ mudwuu wbanwuyɛ lɛɛ,0.625,0.2963
+876,asafo nu mgbanyima yɛ la a?,asafonuŋgbenyi ma ya laa,1.0,0.1429
+877,BƐLUALE RILEDIO ZO BƐHANLE EDWƐKƐ NE,beluwale redeo zo be hanli edwɛkɛ ni,0.8333,0.2581
+878,Kpuya Mɔɔ Vi Kengavolɛma Ɛkɛ,kpinyam mo ve kɛka vrɛma kɛɛ,1.2,0.5
+879,Gyihova Yila Mɔdenle Mɔɔ Yɛbɔ Yɛkɔ Ngakyelɛlilɛ Ne La Azo,tsehove yila mɔdɛlɛmɔ yɛ bɔ yɛkɔ ŋgatsilelene la azo,0.6,0.3333
+880,Yɛ kenle bie nwo edwɛkɛ boni a Baebolo ne ka kile yɛ a?,yɛ klĩ bie ŋɔ edweke bo nia baebo nɛ kãklie yaa,0.8462,0.3571
+881,Bɛziezie bɛ nwo bɛmaa asafo debiezukoalɛ ne mɔ. Eza bɛbahola bɛazukoa edwɛne ne mɔ na bɛaboa abusua ne anu amra amuala bɛamaa bɛaziezie mualɛ mɔɔ bɛbamaa la.,bezezie baŋu be ma asafu debie sukale nemɔ eze abe baholɔ be zu koa edzanenemɔ nababoa abusuoni enu ame emluala bamea be zezie muale mɔ bebama la,0.963,0.2791
+882,Kɛ Ɔkɛyɛ Na Wɔanyia Awie Mɔɔ Ɛbahola Wɔagya Ye La,kɔɔ kɛyɛ ne wonye ewiemɔ ɔ ebahlɔ wodzae la,0.9,0.375
+883,“Ɔbamaa Bɛayɛ Se”—Adenle Boni Azo?,ɔbamabaye se adano boni azo,0.6,0.2308
+884,Kɛ ɔkɛyɛ na wɔaboa menli mɔɔ ɛlɛnea awie mɔ mɔɔ bɛwɔ wɔ asafo ne anu la ɛ?,ke ɔ kɛ nɛ wabuɛ mɛnima ɛlɛ niɛewie mɔ mɔ bɛ wɔ asafo ni ɛnu lɛɛ,0.8235,0.3509
+885,Asoo Ɛnee Dwɔn Nee Pɔɔlo Ɛlɛka Ɛtane Ko Ne Ala Anwo Edwɛkɛ?,aŋzɛ yɛŋɛvlɛi kɛ oaɣla ɖebiezukuale,1.0,0.8085
+886,Kɛ ɔkɛyɛ na wɔanyia Gyihova anwo ɛlɔlɛ kpole ɛ?,ke ɔkɛyɛ ne wonye jehova aŋɔelele kpelɔe,0.8889,0.4737
+887,"Ninyɛne Ɛngɔ Boɛ Bɔbɔ A, Ɛbahola Wɔahɔ Zo Wɔazonle Gyihova",ni nyɛ ne eŋgbɔbuɔ bɔbɔ a ebahwla woahwɔzo woazlu yehova,0.9,0.3125
+888,GYIHOVA BAMAA Ɛ NWO AGYINLA WƆ,yehova bama elu edzlɔ o,1.0,0.6
+889,Duzu ati a ɔbahyia kɛ yɛyɛ tieyɛ wɔ “anwongyelelɛ kpole” ne anu a?,wobɛshĩa kɛ yɛyi tiɛ yɛ wahujele kpele ni anua,0.9231,0.5098
+890,GYIHOVA MAA YƐNYIA ‘ƐHULOLƐ NE YƐƐ ANWOSESEBƐ NE NA YƐKOLA YƐYƐ’,dzehova ma ye nya eƒulelɛ nɛ ya aŋɔ sesebenɛ na yakola yɛyɛ,0.9091,0.3462
+891,Edwɛkɛ Nsa Mɔɔ Maa Yɛnyia Gyihova Ɛwɔkɛ Ne Anu Anwodozo La,ejwɛkɛ nsã mɔ ma ye nyɛ jehova ɛwɔ kɛni enu ahudɔzɔ la,1.0,0.3542
+892,TƐNLABELƐ MƆƆ BAHOLA AMAA YƐADENDƐ YƐATIA AWIE MƆ KPƆKƐZILƐ LA,tɛnla ablɛmɔ ba hola mɛ ya didiyetia wimɔ kpokezilela,1.0,0.3208
+893,“Bɛdabɛ Mɔɔ Bɛ Subane Kile Kɛ Bɛfɛta” La Badie,bɛda bɛ mɔbesubelukli ke bɛ fɛta la be die,0.8889,0.25
+894,Ngyinlazo mɔɔ Gyisɛse hilehilele wɔ Boka Zo Ɛdendɛlɛ ne anu la bie mɔ a le boni?,ngyinazo mu gyisɛse hilahilale wɔ bokazadendɛlɛ ne anu la bie mu ale bɔ ni,0.625,0.1406
+895,MENZUKOALE NINYƐNE DƆƆNWO WƆ BƐTƐLE,menzukɔle niyɛne dɔɔnwo wɔ bɛtel,0.6,0.1613
+896,KƆ ZO KILE YƐ AHYEHYƐDEƐ NE ANWO ANYEZƆLƐ,kɔzu kuile yaasɛ die ney aŋu anyɛ zɔlɛ,1.0,0.4412
+897,Kulo Menli—Maa Bɛyɛ Ɛdoavolɛma,kulo mɛni mabe ye eɖuavolɛma,1.0,0.3077
+898,Kɛzi Mgbanyima Da Ɛlɔlɛ Nee Anwunvɔnezelɛ Ali Kile Ɛtanevolɛma La,kezim gbeyi mada elɔ lɛ ni ewuŋvɛnizeleli kle etanuvlɛma la,0.9,0.2857
+899,DUZU A WƆZUKOA WƆVI NGƐLƐLERA ƐHYE MƆ ANU A?,ɖizu ezu kpawo veŋgelereshimɔ enoa,1.0,0.5143
+900,Meno ayile bie mɔɔ ɔbamaa yeayɛ se kɛ mebaha kale la ɔ?,mɛnlu ayile bie mɔɔ ɔbama yayɛ se kɛɛ mebaha kale la ɔ,0.3333,0.1395
+901,tetele mrenyia maanle bɛfɛtale kɛ bɛbayɛ gyima dɔɔnwo ɛ?,tetli minya malɛ befetali kɛ bebaye dzima dɔwɔ,0.8889,0.4043
+902,Deɛmɔti Ɛnee Ɔzɔho Kɛ Ɔnrɛyɛ Boɛ La,demotie na ozɔ wɔ ka onrɛyɛ bo la,1.0,0.3793
+903,Kpuya Mɔɔ Vi Kengavolɛma Ɛkɛ,kunya mo vi keŋãavlɛma kɛ,0.8,0.3333
+904,MƆƆ ƆWƆ KƐ ƆKYIA YƐ KPALƐ LA,mɔ ɔwɔ ke otsĩa yɛ kpa lɛ la,0.7143,0.2727
+905,DEƐMƆTI YƐHYIA ƐLƆLƐ NWO TITILI ƐNƐ LA,die motie shialɔla nwu titili ɛnɛ la,0.5714,0.2812
+906,DAVID SPLANE ANLOA EDWƐKƐ,david splain aŋu edwɛkɛ mvonli nɛ ele kie ediema devid splain mɔ ɔdɔe epɔ ɔlɛ ye dzimala,3.75,2.5
+907,Duzu a ɛnee ɔyɛ a ɔmaa ɛzoanvolɛ Pɔɔlo arɛle bɔ a?,duzu a ɛnee ɔye a ɔma eɛzoanvolɛ pɔɔlo aralebɔ a,0.4545,0.0769
+908,Gyihova Yɛ “Mɔɔ Ye Ahonle Ɛbubu La Ayile”,jehova ye mɔyeahlɔ bubui la ayile,0.625,0.3125
+909,DUZU A YƐYƐ A ƆBAMAA YƐANYI SUNSUM NU A?,ɖuzua yeyaa abe meyenyi sunsum nua,0.8889,0.2903
+910,Kɛzi Ɛbanyia Anyelielɛ Kpole Wɔ Daselɛlilɛ Nu La,kezie be nyanyiliele kpele wɔɖasele no la,0.875,0.3659
+911,“Meangola meanga nwolɛ edwɛkɛ meangile awie biala. Menvale menveale me nwo.”,maŋwola maŋgã ŋu edzoke megla wi biyala meval mimviale me ŋɔ,0.9091,0.4516
+912,Saa yɛ nee bɛ adwenle ɛnyia a,sã yɛ nɛ bɛ ajunli enya a,0.5714,0.4348
+913,KƐ ƆKƐYƐ NA WƆAHOLA WƆAYƐ ASƆNE KPALƐ LA,kɛ ɔkɛɛ na wahela wayɛ asɔne kpalɛ la,0.375,0.1212
+914,Mmakyɛ Wɔ Ɛzɔnenlɛ Nwo,w ɛzɔnelɛ h,1.0,0.5789
+915,YƐNYIANLE GYIMALILƐ FOFOLƐ WƆ ASIA,ye nyalidzimelele fofo lɛ wɔ asia,0.8,0.3
+916,Duzu ati a ɔwɔ kɛ yɛkɔ zo yɛnwu Gyihova kpalɛ a?,dizu etieɔ ke yɛkɔ zo yenu diwo va kpala,0.8182,0.3243
+917,Deɛmɔti ɔwɔ kɛ bɛye menli bie mɔ bɛfi asafo ne anu nee mɔɔ asafo nu mgbanyima bahola ayɛ aboa bɛ bɛamaa bɛanlu bɛ nwo na bɛabikye Gyihova bieko la.,ɖie moti ewɔ ke ba yi menibie mu be fia asafo ni enu ne mɔ asafo numugbeyi mabaxla ye aboa bɛ bamebelum baŋɔ ne be ebitse dzehovabia kuãla,0.931,0.3814
+918,Yɛnyia mekɛ yɛsiezie yɛ nwo kpalɛ a,yenya mɛ ke yesize yaŋɔkpalaa,1.0,0.4138
+919,duzu a yɛze a?,ɛliyli kɛɛ yehova babua ndɛnefɔɔwan,1.25,2.6
+920,Me nee me abusua ne ɛlɛyɛ gyima wɔ yɛ ɛya nu,nvonili ni ele kle masalgelet mɔ niy ebu sua ni elɛ ye jima wɔ bɛ ya nu la,1.4545,1.0294
+921,“ƆWƆ KƐ ƐSUKOA JAPANESE!”,ɔwɔ kɛ esukua japanesi,0.5,0.1579
+922,Fi Wɔ Ahonle Nu Sukoa ‘Sunsum Nu Edwɛne’,fi wahulu nu su kwɛ sunsum no dwɛne,0.75,0.2581
+923,DEBIE MƆƆ ƐBAHOLA WƆAZUKOA LA,ɖebie mu ebaxlɔ wo ezukwa la,1.0,0.4
+924,Kɛzi ɛbahola wɔava ninyɛne mɔɔ ɛlimoale ɛzukoale ye wɔ Baebolo ne anu la wɔali gyima ɛnɛ la.,kezi ɛbahola woava ninyɛne mɔɔ elumuanle ezukuale wɔ baebo ne anu la wɔli gyima ɛnɛ la,0.4118,0.1733
+925,mebɛlɛ me nwo aze na medie meto nu kɛ tɛ debie biala a meze a?,ame menya fuledule kpalezɔm va soea la duzu etia ɔwɔ kɛɛ mebele meŋɔaze ne miɖie mitu nu kɛɛ te ɖebie biara mezea,1.4667,1.2766
+926,yɛnyia arɛlekyekyelɛ yɛfi yɛ mediema diedima ɛkɛ ɛ?,yenyaa rɛtsetsere yefii ye mediem madie dimkɛɛ,1.0,0.3721
+927,“What’s New” foa ne mɔɔ wɔ JW Library ® nee “Fofolɛ Mɔɔ Ɛra La” mɔɔ wɔ jw.org azo la maa yɛnwu ninyɛne mɔɔ bɔ zo mɔɔ bɛyɛ la. Kɛzi ɛbalua foa ɛhye azo wɔakpondɛ ninyɛne fofolɛ mɔɔ ɛra la ɛ?,hotniu fã nu ma wɔ jeedobi la ibreri nɛ fofolɛmɔ ɣa la ma wɔ jeedobi dot org azɔ la maye ŋu ninyɛ ne mɔbɔzumɔ bɛyɛ la kezebelua fɛ shi azo wakpunɛ ninyɛ nɛ fofolɔmɔ ralɛɛ,0.8462,0.4255
+928,KƐ ƆKƐYƐ NA YƐAZUKOA GYISƐSE NEAZO NE Ɛ?,ke ɔkɛɛ nɛ yesu kuɛ jises niazo niɛ,1.0,0.4375
+929,TUMI MƆƆ WƆ ASƆNEYƐLƐ NU LA,tu mimɔ wɔ asɔ ne eyele nu la,0.8333,0.1818
+930,Kɛzi Daselɛlilɛ Ekpunli Ngyehyɛleɛ Ne Boa Yɛ La,kezi daselele kpilije shɛleɛ nɛ bua yɛ la,0.75,0.35
+931,Kɛ ɔkɛyɛ na yɛanwu Gyihova kpalɛ ɛ?,kɔɔ kɛyɛ ni yeŋu juwuva kpalɛɛ,1.0,0.3929
+932,DUZU A YƐSUKOA YƐFI NGƐLƐLERA ƐHYE MƆ ANU A?,duzu eye sukwaye fiŋgaalehe sumɔ enua,0.8889,0.4286
+933,MƆƆ “PAANO NE ANWO EDWƐKƐ NE ABO” KILE LA,mɔ pa nɔ nɛ ahu edzwɛkɛ nɛ abo kile la,0.7778,0.2903
+934,KƆ ZO KO TIA ATIAKUNLUWƆZO ƐTANE,kɔzo ku tietiakuwɔzo etane,1.0,0.2593
+935,Yɛfa yɛ adwenle yɛsie ɛlɔlɛ mɔɔ yɛlɛ yɛmaa Gyihova nee menli la azo a,yefa ye adzoene yesie elɔleme yele yeme yehova ni melĩ la azɔa,0.9286,0.3929
+936,Sukoa Mɔdenle Mɔɔ Gyisɛse Bɔle Hanle Edwɛkpa Ne La,sukua mɔdelɛ muɔ gjisɛse bɔle hali jɔkpa nɛ la,0.7778,0.2857
+937,ANYUHƆLƐ MƆƆ YƐNYIANLE YE WƆ EWIADE AMUALA,enyuhɔlɛ mɔ yenyalɛ ewɔ ewiade amuala,0.7143,0.1944
+938,"MƆƆ FALE BƐDABƐ MƆƆ BƐNLE TENLENEMA EWUDWAZO NE ANWO LA, . . .",uzu yɛ zea duzua yɛ zea,1.0,0.8478
+939,ƆVALE YE ADWENLE ƆZIELE BAEBOLO NGAPEZO ZO,ɔvale ye adwenle ɔziele baiblu ngapezozo,0.4286,0.0833
+940,DUZU ATI A ƆWƆ KƐ YƐKULO YƐ NWO NGOKO A?,duzetia kio kulo ya wɔ ngo kua,1.0,0.4
+941,Mɔɔ yɛbahola yɛazukoa yɛavi anwumabɔvolɛ nɔhavoma ne neazo ne anu la.,mɔ yɛbahla yesu kɔyɛevi oŋma bɔvolɛ nɛ ɔhavumani ni azoni enu la,1.0,0.3103
+942,Duzu a Baebolo ne ka ye wɔ kɛzi Gyihova ye ɛtane fi ɛkɛ la anwo a?,duzua babilon ka wɔ kezi jehova yi ɛtane fi ɛkɛ la nwɔham,0.625,0.28
+943,"Mɔɔ bɛbizale mediema bie mɔ mɔɔ bɛzonle Gyihova bɛhyɛ la kɛ, “Duzu a boa bɛ ɔmaa bɛtie edwɛkɛ kpalɛ wɔ debiezukoalɛ bo la,” edwɛkɛ mɔɔ bɛhanle la bie mɔ ɛne:",mɔɔ bɛbizale medima bie mɔ moobɛzonle dwehova bɛhyɛ la kɛ duzu a boa bɛ ɔmɔa bɛtie ewiɛkɛ kpalɛ ɔ debisukoalɛ bo la a edwɛkɛ mɔɔ bɛhanlee la bie mɔ ɛni,0.3667,0.122
+944,KƆ ZO KILE GYIHOVA NGAKYELƐ NE MƆ ANWO ANYEZƆLƐ,kɔzo kile gyehova ngatelɛ nee mɔ anwoa anyennzɔlɛ,0.7778,0.1795
+945,"Bɛbahilehile mɔɔ Ngɛlɛlera ne ka ye wɔ Nyamenle ɛlɔlɛ ne anwo la anu, na ɔbaboa yɛ amaa saa yɛyia sɔnea a yɛ sa nu ando.",bɛbahilehile mɔ ngɛnlɛɛa ne kane wɔ nyamenle ɛlɔlɛ ne anwo la anu na ɔbaboa ye amrasae yi asɔne a yɛsɛ nu ando,0.44,0.1383
+946,Edwɛkɛ gyɛne mɔɔ boka nwo la kile kɛ ngyɛnu ɛhye ɛlɛka menli nwo edwɛkɛ.,ejɔke dzɛ nɛ mɔ bɔkaa ŋɔ la klie kɛɛ ŋdzenu eshe elɛ kamelni ŋu edoɛkɛ,1.0,0.5
+947,"Edwɛkɛ, “ Moalɛ Maa Abusua ”",ejwekɛ muarema busua,1.0,0.35
+948,Duzu a Baebolo ne ka ye wɔ tumi mɔɔ Gyihova lɛ ka mɔɔ ɔbazi kenle bie la anwo a?,duzu abe abone kai wotumi mɔ dzehova lɛ kamwobe zi klibie la aŋɔa,0.8421,0.3443
+949,BOA BAEBOLO SUKOAVO NE MAA ƆNWU GYIHOVA KPALƐ,boa baibu sukwavɔnɛ mo ŋu dzi wova kpalɛ,0.75,0.3947
+950,YƐKA EDWƐKƐ NE ƆLUAKƐ YƐKULO NƆHALƐ NE,yɛka ejwɛkɛ nɛ olu kɛɛ yekulo nɔ hale nɛ,1.1429,0.25
+951,Ɔbaboa yɛ yeamaa yɛanyia anwodozo kɛ Gyihova bamaa yɛ sa aha mɔɔ yɛhyia nwo na yɛamia anwodozo mɔɔ yɛlɛ wɔ ye nu dɛba la anu.,obabua yeyamɛ yenya ŋɔdozo kɛɛ yehova bamɛ yesã hã moye sĩa mɔ ne yemia awɔɖozomɔ yele woye no deba la enu,0.96,0.43
+952,YƐNZE MEKƐ MƆƆ AWIELEƐ NE BARA LA,yɛnze mekɛ moa awielɛ ne bara la a,0.4286,0.1481
+953,Ɛleka mɔɔ bɛtetele ye la a ɛmaa yezi kpɔkɛ zɔhane a?,eleka mɔ bɛtetele la a ema yizi kpɔkɛ zɔhane a,0.4545,0.1707
+954,“NEA! MELƐYƐ NINYƐNE KƆSƆƆTI FOFOLƐ”,nia mlɛye ninyɛ ni kosoo ti fofo lɛ,1.6,0.2414
+955,"Saa yɛnyia yɛ sɔnea ne mɔ anwo adwenle kpalɛ a, ɔbaboa yɛ yeamaa yɛagyinla bɛ nloa kpalɛ.",sã yinya yɛ sɔniane muanwɔ adwonu kpalɛa ɔbaboae yɛmɛ yɛjina bɛlua kpale,0.9412,0.3239
+956,DI KƐZI ƐTE NGANEƐ LA ANWO GYIMA,di kezi eteŋganie la aŋu dzuma,0.7143,0.4231
+957,Kɛzi Kɔlentema lile ngyegyelɛ mɔɔ ɛnee ɔsi bɛ ɛzɔnenlɛ nwo adenle la azo ɛ?,kolenti mɛlili njejelɛmɔɔ ɛne osi bɛ ɛzɔne la nu adɛnla la azoɛ n,0.9286,0.3443
+958,Kɛ ɔkɛyɛ na yɛahɔ zo yɛalua diedi nu wɔ mekɛ mɔɔ yɛlɛsisi kpɔkɛ mɔɔ anwo hyia la.,kɔ kɛ nɛ yahozi yeruwa die dunu wɔ mika mɔyeli si si kpɔkɛ mawu sĩa la,0.8824,0.375
+959,NYAMENLE ARA NE MƆƆ ƆKULO YE LA RALE AZƐLƐ YE AZO,nyamenla arano mo kulo ye la ranye anzɛnlɛ ye azo,0.6364,0.2308
+960,Duzu a Gyihova yɛle boale Belemgbunli Hɛzikaya a?,duzu a gyehova yɛle boale belemgbunli hezekaa,0.375,0.122
+961,GYISƐSE DELE AWIE MƆ NYANE BO,gyisɛse dele ewiɛ mɔnyane bo,0.5,0.0833
+962,STÉPHANE LANDEROIN ANLOA EDWƐKƐ,stefan landon alu edwɛkɛ yeewu kezi stefan landon de kaakala la womvunili ni enu,3.25,1.8929
+963,"YƐYE GYIHOVA DUMA NE AYƐLƐ A, ƆMAA GYISƐSE ANYE DIE",yeyi dzoo be ɖumani ayela a ome dzises anyi die,0.8,0.4878
+964,MMAYƐ EZUKOA NWO ANYEBOLO,maye evi kwaŋwuanye bolo,1.0,0.3182
+965,MMAYƐ NINYƐNE MƆƆ BAHOLA ABODA WƆ LA,ma yɛ nyinyane mɔbahora aboda wɔ la,0.5714,0.1667
+966,YƐNZE KƐZI GYIHOVA BALI NINYƐNE NWO GYIMA LA,yɛnzi kezi joovɛ bɛli ninyɛn nwu ji ma la,1.0,0.3243
+967,"Saa agyalɛma anye balie a, ɔgyi agɔnwolɛvalɛ kpalɛ mɔɔ wɔ bɛ avinli yɛɛ ɛlɔlɛ mɔɔ bɛ mu nwiɔ bɛlɛ bɛmaa Gyihova la azo.",se dzaramanyibeliaa wodziã gbɔŋmɔ va la kpale mɔwɔ be evli yɛ elɔlɛ mɔ be munyuɔ bele beme ziehova la azɔ,0.9565,0.4632
+968,Mekɛ boni a ɔwɔ kɛ ‘yɛfɛlɛ mgbanyima’ ne mɔ yɛmaa bɛboa yɛ a?,mekɛ boni a ɔwɔ kɛ yɛfɛlɛ mgbanyima ne mɔ yɛɛ ma bɛboa yaam,0.3077,0.087
+969,Duzu a Gyihova hilehilele Yizilayɛma wɔ anlubɛnwo nwo a?,ɖu zue dziƒovehelexleli israel mawu elubaŋuŋua,1.0,0.5532
+970,“Gyihova Maanle Yɛ Sa Hanle Mɔɔ Yɛhyia Nwolɛ La”,gyehova manle yɛ sa hanlemu yɛhyia nwonlɛ la,0.5556,0.1316
+971,MEBƆ KPƆKƐ KƐ MEBAMAA GYIHOVA AHƆ ZO ATETE ME,mɛ bɔ kpɔkɛ kɛ mɛba mɛ jehova hɔzoa tete me,0.7778,0.2162
+972,KELAESE ANWO ƐLƆLƐ MAA YƐDA AKƐNRASESEBƐ ALI,klais aŋuelɔlɛ ma yɛ dak ŋasisibeli,1.0,0.4211
+973,Duzu a ekpunli zo neavolɛ nee ye boavolɛ yɛ boa mediema mɔɔ wɔ bɛ daselɛlilɛ ekpunli ne anu la ɛ?,duzua ekplizu ni avolɛ nɛ ye buavolɛ yɛ bua midi ma mɔ wɔ bɛ daselee kpli ni enulɛɛ,0.85,0.2727
+974,ɔfɛta kɛ yɛtu awie folɛ wɔ mekɛ mɔɔ ɔ nye ɛnla la ɛ?,duzu a ɔwɔkeyɛkatse wɔ me kɛ mɔɔ ɔfɛtakeye tuu awiefolɛ wɔ mekɛ mɔɔ ɔ nyɛ nalɛe,1.0,0.8462
+975,duzu a yɛbahola yɛayɛ amaa yɛanyia ɛhulolɛ kpole a?,duzu a yɛbahola yɛayɛ ame yɛnya ehulole kpolaa,0.5556,0.1667
+976,Duzu ati a ɔnle kɛ yɛdie yɛ nwo yɛdi somaa a?,ɖuzu etiao ne ke yedie ye ŋu yedee somaa,0.9091,0.4118
+977,"Melɛyɛ adekpakyelɛ titili gyima wɔ Niamey, Niger",wo mvɔnli ni enu yeŋu israelɛ mɔlɛ suɔnekadenkpatse tetre wɔni a mi ni dzɛe la,2.1429,1.1951
+978,KƐZI AWIE MƆ BAHOLA ABOA WƆ LA,kezi awie mɔ baherla boa wa la,0.5714,0.2083
+979,ahyɛlɛdeɛ mɔɔ sonle bolɛ la boni a Gyihova ɛva ɛmaa yɛ a?,ashɛlɛgie mɔ slɔbɔlɛla bonie jehova ɛvɛ maya,1.0,0.3778
+980,"YƐKILE AWIE MƆ ANWO ANYELIELƐ A, ƆFA NYILALƐ ƆBA DAHUU",yi kli ewiemɔ aŋuanyiliela a ɔfe nyilalɔ beɖehuu,0.9,0.3182
+981,Gyihova Ɛboa Me Yemaa Menyia Subane Kpalɛ,jehova bu amɛ ye maminyɔ subanɔkpalɛ,1.0,0.3143
+982,yɛmaa ninyɛne mɔɔ hyia la kɔ zo tɛnla yɛ adwenle nu a?,ame ninyɛ ne yandwe hwɛ yadwenle la duzu etia ɔwɔ kɛɛ yemeninyɛno mɔ sĩa la kɔzu tɛna yaadwɛnunua,1.4167,1.2619
+983,DEƐMƆTI ƆBAHOLA YEAYƐ SE KƐ Ɛ NYE BALIE DAHUU LA,deɛ moti ɔba hola yayɛ se kɛ ɛnyebalie dahuu la,0.8,0.0513
+984,Deɛmɔti yɛkola yɛka kɛ kɛmɔ Gyisɛse se anwunvɔne na ɔlɛ ahunluyelɛyelalɛ la ati ɔle Ɛsɔfo Kpanyinli mɔɔ tɛla biala nee kɛzi ɔboa yɛ wɔ ndenle ngakyile zo ɛnɛ la.,die moti kule ekãi kɛɛ kemɔ jises sɛhu vɔne nɔ le hu yayelale lɛ ti ɔli sɔfo kpɔyili mɔ tɛlɛ biala ni kesɔ bua wandɛle ngetsilɔzɔ enɛ la,0.9655,0.4394
+985,Deɛmɔti Ɛnee Ɔzɔho Kɛ Ɔnrɛyɛ Boɛ La,di moti ɛnyi ɔzi ɔ hwɔ kɛ ɔ ngɛyɛ bwɔ la,1.2857,0.3793
+986,Kɛ ɔkɛyɛ na ‘yɛahɔ zo yɛabɔ yɛ ɛbɛla kɛ wienyi nu mralɛ’ ɛ?,kɔkɛyɛ nɛ yahɔ zo yabɔ yabelake wie no ma lɛe,0.9231,0.3182
+987,Duzu A Yɛze Wɔ Kɛzi Gyihova Babua Ndɛne Kenle Bie La Anwo A?,ɖuzu ayɛze wo kezi dzi wove be gbua ndene klibiel la aŋɔ,0.9231,0.383
+988,Kɔ Zo Sukoa Debie Fi Baebolo Nu Mɔlebɛbo Ngilehilelɛ Ne Anu?,kɔzu su kwɛ debie fi bae bu numɔlebɛbo ngilehilelɛ ne anu,0.5455,0.1224
+989,SAA WƆ ADWENLE NU YƐ WƆ KESEE KƐ SAA Ɛ NWO TƐKYIA GYIHOVA A,sa wɔ adjone ni yɔ kesɛɛ kɛɛ sa ehu te tsĩa yehova,0.9286,0.4783
+990,Nyia “Azɛlɛ Ye Kɔsɔɔti Ndɛnebuavolɛ Ne” Mɔɔ Se Anwunvɔne La Anu Anwodozo!,nya azraɣi kosoo tiŋ ɖenibuavolɛni mo se eŋuvɔenɛ la enua ŋu ɖozɔ,0.9167,0.4746
+991,Kɛzi Gyihova bahola aboa wɔ yeamaa yeawie wɔ boɛ ɛ?,kezi jehova ba hura boa wɔ yamliyewie wɔbɔe,0.9,0.3415
+992,GYIHOVA ƐLƐBOA YE MENLI NE ƐNƐ,gyehova ɛlɛboa ye menli ne ɛndɛ,0.3333,0.08
+993,Fa Yɛ Wɔ Bodane Kɛ Ɛbamaa Bɛazɔne Wɔ,fayawo bodani kɛbama bazɔ noo,1.0,0.3103
+994,Kɛzi yɛkola yɛnwu kɛ bɛtɛkakyile Baebolo ne anu edwɛkɛ ne ɛ?,keziɛ kula yenwu kɛɛ bedekɛtsire baibo ni enu ejwɛkɛ niɛ,1.0,0.3878
+995,YƐHYIA DIEDI AMAA BƐABU YƐ KƐ YƐLE TENLENEMA,yesĩa die di ame begbu yɛ kɛɛ yeretenanema,1.0,0.3514
+996,Duzu a agyalɛma bahola ayɛ amaa bɛanyia mekɛ bɛamaa bɛ nwo a?,duzu hagyalɛ mabahola ayɛ amaa bɛanyia me kɛba ma bɛ nwo a,0.5,0.0612
+997,"Amaa wɔamia anwodozo mɔɔ ɛlɛ kɛ Gyihova a le Selɛ ne mɔɔ ɛhyia nwo la anu la, duzu ati a ɛnva buluku ɛhye ɛnyɛ ɛ ti anwo debiezukoalɛ anzɛɛ ɛnyɛ ngyehyɛleɛ ɛngenga ye bieko a?",amaa wɔamianwo do zo mɔɔ ɛlɛkɛ yehova lɛ selɛ ne mɔɔ ɛhyianwo la anu la duzu ɛti a ɛnva buluko ɛhye ɛnyɛ tianwo debie ezukoalɛ anzɛɛ ɛnyɛ gyehyɛleɛ ɛhenkɛe bieko a,0.5429,0.1079
+998,Mɔɔ Baebolo Ne Maa Yɛnwu Ye Wɔ Ye Kɛlɛvolɛ Ne Anwo La,mɔɔ baebo ne maa yɛnwu ye wɔ ye kɛlɛvolɛ ne anwo la,0.0833,0.0476
+999,DEBIE MƆƆ ƐBAHOLA WƆAZUKOA LA,ɖebie mɔ ebahwlɔ woezugua la,0.8,0.36

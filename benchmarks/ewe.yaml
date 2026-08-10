@@ -1,6 +1,6 @@
 iso_639_3: ewe
 language: Ewe
-num_samples_per_category: 300
+num_samples_per_category: 1000
 categories:
 - bible
 - jw
@@ -10,273 +10,179 @@ benchmarks:
   model_url: https://huggingface.co/waxal-benchmarking/mms-300m-waxal-ewe
   owner: waxal-benchmarking
   params: 0.3B
-  wer: 0.6194
-  cer: 0.1823
+  wer: 0.6186
+  cer: 0.1719
   per_category:
     bible:
-      wer: 0.5199
-      cer: 0.1327
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.03
+      wer: 0.5058
+      cer: 0.1293
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.02
     jw:
-      wer: 0.7696
-      cer: 0.3016
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.03
+      wer: 0.7814
+      cer: 0.2737
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.01
     unicef:
       wer: 0.5685
       cer: 0.1127
       samples: 199
       valid: 199
-      avg_seconds_per_sample: 0.1
+      avg_seconds_per_sample: 0.05
   source: evaluated
-- model: KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en
-  model_url: https://huggingface.co/KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en
-  owner: KhayaAI
-  params: 0.6B
-  wer: 0.6441
-  cer: 0.2554
-  per_category:
-    bible:
-      wer: 0.584
-      cer: 0.2435
-      samples: 300
-      valid: 299
-      avg_seconds_per_sample: 0.08
-    jw:
-      wer: 0.5946
-      cer: 0.2807
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.07
-    unicef:
-      wer: 0.7536
-      cer: 0.2419
-      samples: 199
-      valid: 199
-      avg_seconds_per_sample: 0.32
-  source: evaluated
-- model: Sunbird/asr-whisper-51-african-languages
-  model_url: https://huggingface.co/Sunbird/asr-whisper-51-african-languages
-  owner: Sunbird
-  params: 2B
-  wer: 0.6974
-  cer: 0.2596
-  per_category:
-    bible:
-      wer: 0.5747
-      cer: 0.1846
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 1.17
-    jw:
-      wer: 0.9163
-      cer: 0.406
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.8
-    unicef:
-      wer: 0.6011
-      cer: 0.1881
-      samples: 199
-      valid: 199
-      avg_seconds_per_sample: 2.57
-  source: evaluated
+  model_class: non-llm
 - model: waxal-benchmarking/whisper-small-waxal-ewe
   model_url: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-ewe
   owner: waxal-benchmarking
   params: 0.2B
-  wer: 0.7364
-  cer: 0.2775
+  wer: 0.7308
+  cer: 0.2647
   per_category:
     bible:
-      wer: 0.6032
-      cer: 0.1777
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.73
+      wer: 0.5845
+      cer: 0.1691
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.44
     jw:
-      wer: 0.8607
-      cer: 0.3463
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.58
+      wer: 0.8627
+      cer: 0.3164
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.27
     unicef:
       wer: 0.7452
       cer: 0.3085
       samples: 199
       valid: 199
-      avg_seconds_per_sample: 2.24
+      avg_seconds_per_sample: 0.89
   source: evaluated
-- model: UBC-NLP/Simba-M
-  model_url: https://huggingface.co/UBC-NLP/Simba-M
-  owner: UBC-NLP
-  params: '?'
-  wer: 0.9631
-  cer: 0.5179
+  model_class: non-llm
+- model: dodziraynard/Shona2
+  model_url: https://huggingface.co/dodziraynard/Shona2
+  owner: dodziraynard
+  params: 0.2B
+  wer: 0.7564
+  cer: 0.2962
   per_category:
     bible:
-      wer: 0.9195
-      cer: 0.5224
-      samples: 300
-      valid: 255
-      avg_seconds_per_sample: 0.04
+      wer: 0.6102
+      cer: 0.2097
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.34
     jw:
-      wer: 1.0411
-      cer: 0.4876
-      samples: 300
-      valid: 295
-      avg_seconds_per_sample: 0.04
+      wer: 0.8618
+      cer: 0.3303
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.28
     unicef:
-      wer: 0.9288
-      cer: 0.5435
+      wer: 0.7971
+      cer: 0.3485
       samples: 199
-      valid: 184
-      avg_seconds_per_sample: 0.13
+      valid: 199
+      avg_seconds_per_sample: 1.23
   source: evaluated
+  model_class: non-llm
+- model: dodziraynard/Shona
+  model_url: https://huggingface.co/dodziraynard/Shona
+  owner: dodziraynard
+  params: 0.2B
+  wer: 0.7579
+  cer: 0.2855
+  per_category:
+    bible:
+      wer: 0.6128
+      cer: 0.2013
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.33
+    jw:
+      wer: 0.8854
+      cer: 0.3362
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.25
+    unicef:
+      wer: 0.7754
+      cer: 0.3192
+      samples: 199
+      valid: 199
+      avg_seconds_per_sample: 0.97
+  source: evaluated
+  model_class: non-llm
+- model: dodziraynard/whisper-small-ee
+  model_url: https://huggingface.co/dodziraynard/whisper-small-ee
+  owner: dodziraynard
+  params: 0.2B
+  wer: 0.7712
+  cer: 0.2802
+  per_category:
+    bible:
+      wer: 0.6828
+      cer: 0.2273
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.41
+    jw:
+      wer: 0.9031
+      cer: 0.3371
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.25
+    unicef:
+      wer: 0.7278
+      cer: 0.2761
+      samples: 199
+      valid: 199
+      avg_seconds_per_sample: 0.92
+  source: evaluated
+  model_class: non-llm
 - model: waxal-benchmarking/whisper-tiny-waxal-ewe
   model_url: https://huggingface.co/waxal-benchmarking/whisper-tiny-waxal-ewe
   owner: waxal-benchmarking
   params: 37.8M
-  wer: 0.9702
-  cer: 0.4374
+  wer: 0.9699
+  cer: 0.4465
   per_category:
     bible:
-      wer: 0.8329
-      cer: 0.3116
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.6
+      wer: 0.8144
+      cer: 0.3456
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.19
     jw:
-      wer: 1.0219
-      cer: 0.4523
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.46
+      wer: 1.0394
+      cer: 0.4457
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.15
     unicef:
       wer: 1.0558
       cer: 0.5482
       samples: 199
       valid: 199
-      avg_seconds_per_sample: 1.79
+      avg_seconds_per_sample: 0.67
   source: evaluated
-- model: UBC-NLP/Simba-X
-  model_url: https://huggingface.co/UBC-NLP/Simba-X
-  owner: UBC-NLP
-  params: '?'
-  wer: 1.0133
-  cer: 0.5698
-  per_category:
-    bible:
-      wer: 0.9818
-      cer: 0.4608
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.08
-    jw:
-      wer: 1.0738
-      cer: 0.537
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.07
-    unicef:
-      wer: 0.9842
-      cer: 0.7116
-      samples: 199
-      valid: 199
-      avg_seconds_per_sample: 0.24
-  source: evaluated
-- model: UBC-NLP/Simba-H
-  model_url: https://huggingface.co/UBC-NLP/Simba-H
-  owner: UBC-NLP
-  params: '?'
-  wer: 1.068
-  cer: 0.5498
-  per_category:
-    bible:
-      wer: 1.0245
-      cer: 0.4493
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.01
-    jw:
-      wer: 1.1993
-      cer: 0.5507
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 0.01
-    unicef:
-      wer: 0.9801
-      cer: 0.6493
-      samples: 199
-      valid: 199
-      avg_seconds_per_sample: 0.03
-  source: evaluated
-- model: UBC-NLP/Simba-W
-  model_url: https://huggingface.co/UBC-NLP/Simba-W
-  owner: UBC-NLP
-  params: 2B
-  wer: 1.2438
-  cer: 0.6243
-  per_category:
-    bible:
-      wer: 1.2743
-      cer: 0.5656
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 1.22
-    jw:
-      wer: 1.4311
-      cer: 0.7716
-      samples: 300
-      valid: 300
-      avg_seconds_per_sample: 1.44
-    unicef:
-      wer: 1.0261
-      cer: 0.5357
-      samples: 199
-      valid: 199
-      avg_seconds_per_sample: 4.54
-  source: evaluated
-- model: UBC-NLP/Simba-S
-  model_url: https://huggingface.co/UBC-NLP/Simba-S
-  owner: UBC-NLP
-  params: 2B
-  wer: null
-  cer: null
-  error: architecture_not_supported
-  source: evaluated
-- model: ghananlpcommunity/Simba-S
-  model_url: https://huggingface.co/ghananlpcommunity/Simba-S
-  owner: ghananlpcommunity
-  params: 2B
-  wer: null
-  cer: null
-  error: architecture_not_supported
-  source: evaluated
-- model: Qlerqly/griot-nano-1
-  model_url: https://huggingface.co/Qlerqly/griot-nano-1
-  owner: Qlerqly
-  params: 0.2B
-  wer: null
-  cer: null
-  error: load_failed
-  source: evaluated
-- model: Qlerqly/griot-nano-1-onnx
-  model_url: https://huggingface.co/Qlerqly/griot-nano-1-onnx
-  owner: Qlerqly
+  model_class: non-llm
+- model: Mimi1782/KMEANS
+  model_url: https://huggingface.co/Mimi1782/KMEANS
+  owner: Mimi1782
   params: '?'
   wer: null
   cer: null
   error: unknown_architecture
   source: evaluated
-- model: Umbaji/Yodi
-  model_url: https://huggingface.co/Umbaji/Yodi
-  owner: Umbaji
+  model_class: non-llm
+- model: JosueG/whisper-large-v3-ewe-lora-s1-091126
+  model_url: https://huggingface.co/JosueG/whisper-large-v3-ewe-lora-s1-091126
+  owner: JosueG
   params: '?'
   wer: null
   cer: null
-  error: gated_repo
+  error: unknown_architecture
   source: evaluated
+  model_class: non-llm

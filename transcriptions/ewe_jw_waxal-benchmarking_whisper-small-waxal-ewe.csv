@@ -299,3 +299,703 @@ sample_id,reference,hypothesis,wer,cer
 297,Claude Brown,klaud brown etɔ̃lia,1.0,0.7273
 298,Aleke Yehowa kple Yesu tua mí ɖo le lɔlɔ̃ me?,aleke yewoa kple ye susu ami ɖo le lɔlɔ me,0.4,0.1176
 299,‘TE ÐE MAWU ŊU’ ÐAA,dedemawo ŋu ɖaa,0.8,0.3077
+300,Nu Kae Nye Ablɔɖeƒe La?,nukae nye ablɔɖeƒe la,0.4,0.0
+301,Dzidzɔ Kple Yayra Siwo Mekpɔ Le Yehowa Subɔsubɔ Me,dzidzɔ kple yayiɖe yiwo me kpɔ le yevua sugbɔsugbɔ me,0.6667,0.2143
+302,Aleke dzilawo ate ŋu amla wo viwo le Yehowa ƒe amehehe me?,aleke dzilawo ateŋu amlɔ̃lawo le yewo le yewo ƒe ame hehe me,0.6667,0.1957
+303,Nu kae nàwɔ be nàyi edzi anɔ dɔa wɔm kple dzidzɔ?,ŋuke na wo bena yiɖiã nɔ doa wɔm kple dzidzɔ,0.7273,0.2632
+304,Nu kae vɔ siwo wosana le Mose ƒe Sea te nɔ mɔ dzi dzram ɖo na?,ŋu kae vɔ si wosa na le moseƒe sia te nɔ mɔ dzi dzram ɖo na,0.4375,0.087
+305,"Hafi Yesu nana woama abolo kple tɔmelãwo na amehaa la, nu kae wòwɔ eye nu kae nèsrɔ̃ tso eme?",ale te na ɖe wo nyuie afi yi si nunana woama bolo kple tɔmelãwo na ameha nukae wɔwɔ eye nukae nesrɔ̃tsiɔe me,1.1053,0.375
+306,Biblia zã nya “nu vɔ̃” wòfia nu vovovowo. Ate ŋu afia:,bibli azanya nufia nufia nu vovovowo ate ŋu afi ya,0.7273,0.1795
+307,Míeke Ðe “Dzonu Xɔasi” La Ŋu,mieke ɖe dzonuxɔasilawo ŋu,0.8333,0.1905
+308,ÐE NÈKANA ÐE ÐOKUIWÒ DZI AKPA?,ɖe ene ta nane ɖokuiwo dzia kpã,1.1667,0.3333
+309,NU SI NÀTE ŊU AKPƆ MƆ NA,nu si nàteŋu akpɔ mɔna,0.5714,0.0
+310,NU KAE MÍATE ŊU ASRƆ̃ TSO ALE SI YEHOWA WƆ NU AMEŊUBUBUTƆE . . .,nukae míateŋu asrɔ̃tso alesi eŋua wɔ nu ameŋbu,0.8333,0.2174
+311,Nuteƒewɔlawo Wɔa Woƒe Adzɔgbeɖeɖewo Dzi,nuteƒewɔlawo ʋuawo ƒe adzɔgbe ɖe ɖewo dzi,1.0,0.0571
+312,NYA NYUIA TA ƲIƲLI KPLE EÐOÐO ANYI LE SE NU,nyanuita vivli kple eɖoɖo anyi le senu,0.7,0.1765
+313,SATANA TSƆ TRƆ̃SUBƆSUBƆ TE ISRAEL-VIWO KPƆ,sata na tsɔ trɔ̃ɔ subɔsubɔ de isrewo kpɔ,1.0,0.1714
+314,Nu ka tae wòle vevie be nàka ɖe edzi be Yehowa lɔ̃ wò?,nukatɛwo le vevie be naka ɖe dzi be yewoaɖo,0.6923,0.275
+315,Nu kae ɖee fia be Kristo ƒe se la dea dzi ƒo na amewo be woawɔ nu dzɔdzɔe?,nukaeɖi fia be krista ƒe se la dea dziƒona amewo be woawɔ nudzɔdzɔe,0.5,0.0536
+316,ÐE NÈDA SƆ LE ALE SI NÈBUA ÐIÐIÐEMEE MEA?,ɖe nedasɔ le alesi ne ɖe ʋua ɖiɖi ɖe mee ma,1.2222,0.3125
+317,Mɔ kawo nue Yehowa kpɔa mía ta eye wòfaa akɔ na mí le?,mɔkawo nyuie yevu akpɔa mia ƒe nye yevu akpɔ nami le mɔkawo nyuie yevua kpɔa mia ta eye wò fa akɔ na míle,1.4615,1.1463
+318,"Nya Siwo Hawòtiwo Gblɔ—Gbɔdɔnuwɔnawo Tsɔtsɔ Ðe Fu Na Ame , video sia le jw.org nyatakakadzraɖoƒea (Àkpɔe le BIBLIA ƑE NUFIAFIAWO > SƆHƐWO.)",nyasiwo ha wotiwo gblɔ gbadɔnuwɔnawo tsɔtsɔ ɖe fu na ame videawo sia le dzedɔ blu dɔ gbadzraɖɔƒea akpɔe le bible ƒe nufiafiawo sɔhɛwo,0.65,0.1982
+319,Nu ka tae ɣletivimefakaka kple afakaka menye mɔ siwo dzi míato anya etsɔme o?,nu katɛ le tv nɔ fɔkaka kple afɔkaka menye mɔ siwo dim nye ya to anya etsɔ me o,0.8571,0.2222
+320,Mɔ bubu kawo dzie Yehowa gatona kpɔa mía ta?,mɔ bubu ka wodzi yevuwo agatonakpɔ amia ta,0.6667,0.1429
+321,"“Ƒle Nyateƒe, Eye Mègatsɔe Dzra Gbeɖe O”",ƒle nyateƒe eye mega tsɔe dzragbe ɖe o mawo nya kpikui si dzi woti nusasrɔ̃a ɖo,1.7143,1.0645
+322,"‘DUKƆ LA GBLƆ BE, AMEN! EYE WOKAFU YEHOWA’",dukɔla gblɔ be ame eye wokafu yi xɔa,0.625,0.1613
+323,WOBU MÍ AME DZƆDZƆEWOE: Avuléle ƒe ɖoɖoa me tsonu bubue nye be woatutu míaƒe nu vɔ̃wo ɖa keŋkeŋ,wobɔbunu ame dzɔdzɔewoe avu lele ƒe ɖoɖoa me tsɔ nu bubu ye nye be woakutu míaƒe nu vɔ ɖa keŋkeŋ,0.5556,0.1316
+324,"Le Biblia-ŋlɔɣiwo la, dɔ kae aƒedzikpɔla wɔna?",le bibleŋlɔ̃ yiwo la dɔka ƒe dzikpɔla wɔna,0.7143,0.1351
+325,Nu kae Yesu fia eyomedzelawo tso dzimetɔtrɔ ŋu?,nukae ye susɔe yomedzelawo tso dzimetɔtɔnɔnu,0.875,0.1538
+326,Nu si mía nɔviawo wɔ le esia megbe la ta mɔ na ale si Yehowa Ðasefowo wɔa gbeƒãɖeɖedɔae va de asi na egbe.,nu si nye nɔviawo wɔ le esia megbea ta mɔna alesi yevu ɖe seƒo wɔ agba ɖoɖe va de asi na egbe,0.4783,0.253
+327,Aleke Gbegbee Nènya Yehowae?,aleke gbegbe nenye yewo woae,1.0,0.2083
+328,"Ne míele mɔfiame dim ku ɖe ale si míawɔ anɔ te ɖe kuxi aɖe koŋ nu la, nu kae wòle be míawɔ?",nɔnɔmetata si ku ɖe mɔdede liaŋulaŋu nyaxlẽbe nenye le mɔ fiame dzim ku ɖe alesi miawo anɔ te ɖe kuxi aɖe ko nu nu la nukae wole be miawo,0.9545,0.7059
+329,"Míakpɔ ale si míaɖe ŋudzedzekpɔkpɔ afia geɖe wu be Yehowa tsɔa míaƒe nu vɔ̃wo kea mí. Be míate ŋu awɔ esia la, ele be míase nu si dzi Yehowa nɔa te ɖo tsɔa míaƒe nu vɔ̃wo kea mí la gɔme.",mía kpɔla yi mia ɖem dzedze kpɔkpɔ afi ya geɖewo be yewoatsɔ miaƒe nu vɔ ŋu kea mi be mia teŋu awɔ ya ele be mia se nu yi dzi ye woanɔ ate ɖo tsɔ miaƒe nu vɔ ŋu kea mi ya gɔme,0.8,0.2183
+330,"Ne míexɔ nyɔnyrɔ la, yayra kawoe míekpɔna?",ne miexɔ nyɔnu nɔ la dzadzrakawoe mie kpɔna,0.8571,0.2353
+331,Aleke míaɖee afia be míekpɔ ŋudzedze ɖe tafea ŋu?,alekemi eya ɖe asi abe nye kpɔ dzedze ɖe tafia ŋu o,1.1111,0.275
+332,ALEKE GBEGBEE SATANA KPƆ ŊUSẼE?,aleke gbegbee sata na kpɔŋusẽ,0.6,0.0385
+333,AGBEMEŊUTINYA,agbemeŋuti nye,2.0,0.0769
+334,Nu kae nye “dziƒo etɔ̃lia” si Paulo kpɔ?,nu kae nye dziƒo etɔ̃lia si paolo kpɔ,0.125,0.0345
+335,Nu ka tae wòle vevie be míanya ale si míasrɔ̃ nui?,nu katã wole vivi be míanya le esi míasrɔ̃nui,0.7273,0.1842
+336,Nu kae wòfia be ‘woaka mo le amewo katã ŋkume’?,ŋuke wò fia be woakamewo le amewo katã ŋkume,0.5,0.1143
+337,Yehowa Akpɔ Tawò,eƒe ta nyee nye yevua akpɔtawo,2.0,1.0714
+338,KORINTOTƆWO XƆ NYƆNYRƆ,xɔɖetutɔwo xɔ nane nɔnɔnɔ,1.0,0.6
+339,Nɔ ŋku lém ɖe eŋu kpɔ be ɖe didia le eme be yeasubɔ Yehowa hã,nɔŋku lém ɖe ŋu kpɔ be ɖe didiã le me be yesubɔ ye xɔa hã,0.5333,0.1489
+340,NA ŊUGBE SIWO YEHOWA DO KU ÐE ETSƆME ŊU NAFA AKƆ NA WÒ,nyigbɛ yiwo ye hoa do ku ɖe tsɔmenu ne afi akɔ na wo,0.6923,0.2857
+341,Dziɖuɖu kae va nye dziehefia la egbea?,ɖiɖuɖu ke va nye dzie hesi ale gbea,0.8571,0.1613
+342,Yehowa ‘Na Nye Mɔwo Dzɔ’,ye xɔa na nyem wo dzɔ,0.8,0.2222
+343,MÍEKPƆ YAYRA GEÐE LE ETHIOPIA,míekpɔ ya yi ɖe geɖe le etiwo pia,1.2,0.24
+344,Na míakpɔ nu eve siwo ɖe dzesi le tsitoƒe ma ŋu ɖa:,nanyakpɔnu eve siwo ɖe dzesi le tsitre ƒe maŋu ɖa,0.5,0.1026
+345,ALEKE YEHOWA AKƆ EƑE ŊKƆA ŊU LE ETSƆME?,aleke ye ho akɔ ƒe nukpanu le dzɔ me,0.875,0.3226
+346,Nu kae tanyenye fia?,nukata nye nye fia,0.75,0.0625
+347,MÍEZU DUTANYANYUIGBLƆLAWO,enanyiblɔlawo dzɛ̃ dzɔm,1.5,0.75
+348,Yehowa Yra Ame Siwo Trɔ Yi Wo De,yewoayi ɖe ame siwo trɔ yiwo de,0.5,0.2
+349,AGBEMEŊUTINYA,agbemenutin ya,2.0,0.0769
+350,“MINA MÍAYI ŊGƆ AÐO TSITSINYENYE GBƆ”,mi namia yi ŋgɔ aɖo tsitsi nenye gbɔ,1.0,0.1
+351,BU ALE SI TSƆTSƆKE ÐEA VII ŊU,ŋu ale yi tsɔtsɔ ke ɖevi yi ŋu,0.8571,0.2174
+352,ALE SI DƆMENYONYO NA AMEWO ÐEA VII,ale si dɔme nyɔnu na amewo ɖe avi yi,0.7143,0.1786
+353,Nu kae míate ŋu asrɔ̃ tso ale si Yesu wɔ nui esi wowɔ nu madzɔmadzɔ ɖe eŋu la me?,aleke na ɖo nyuie nu ke yevuia tɔwo nye esrɔ̃tsɔ ale si esi esi wɔ nu madzɔdzɔ ɖe ŋula me,0.8421,0.623
+354,ÐETUGBUI DZEAÐAŊUWO KPLE ÐETUGBUI TSIBOMEWO,ɖetugbi dzadamewo kple ɖetugbi tsibomewo,0.6,0.2051
+355,ALEKE NÀÐO WO ŊUI?,aleke na ɖo nyuie,0.75,0.4286
+356,NU KAE WÒFIA BE MÍATSƆ ŊUTIKƆKƆE ANA YEHOWA?,ŋu ka wɔ fia be míatsɔ ŋuti kɔkɔe anayi yehoa,1.0,0.1667
+357,NU NYUI SIWO LE MÍAƑE NUDZRAÐOƑE,nu nye siwo le míaƒe nudzraɖoƒe,0.3333,0.1111
+358,“Mina Miaƒe Kekeli Naklẽ” Hena Yehowa Ƒe Kafukafu,minyamia ƒe kekeli na klẽ hena yewoa ƒe kaƒukafo mawo nyakpukui si dzi wotu nusasrɔ̃a ɖo,1.625,0.9
+359,ALEKE MOSE ƑE SEA KPE ÐE MÍA ŊU MÍEKPƆ:,ale ke mu si ƒe sa kpe ɖe mia nu mie kpɔ,1.1111,0.2333
+360,Aleke nàte ŋu anye nuteƒewɔla abe Aristarko ene?,aleke mateŋua nye nu teƒe wɔla abe aris tako ene,0.875,0.075
+361,Nɔnɔme nyui kawoe akpe ɖe mía ŋu míakpɔ dzidzɔ?,nɔnɔme nyui kawoe akpe ɖe mía nu nyakpɔ dzidzɔ,0.2222,0.0789
+362,Ðo To Yehowa Ƒe Gbe,ɖoto yevua ƒe gbe,0.6,0.2667
+363,NU SI NÀWƆ BE NÀDO ŊUSẼ WÒ XƆSE,nu si na wɔ be nɔ doŋusẽwɔxɔ se,0.75,0.125
+364,"Le nyati sia mea, míakpɔ mɔ ene siwo nu míate ŋu asrɔ̃ Yesu ƒe dzonɔameme le ne míele gbeƒã ɖem.",le nyati sia mee ya míakpɔm wo ene siwo nu míate ŋu asrɔ̃e yi si woƒe dzonua me le nenye le gbeƒã ɖem,0.6,0.1892
+365,Nu ka tae míate ŋu agblɔ nu siwo ŋu míetsi dzi ɖo la na Yehowa?,nu katã míate ŋu agblɔnu siwo ŋu míetsi dziɖola na yewo woa,0.6,0.0833
+366,ALEKE MÍATE ŊU AKPƆ MÍA ÐOKUI TA BE NU SIAWO NAGAGBLẼ NU LE MÍAƑE XƆSE ŊU O?,aleke míate ŋu akpɔ mía ɖokui ta be nu siawo naga agble nu le míaƒe xɔ seŋŋŋŋ,0.3529,0.1017
+367,"Be nàte ŋu aka ɖe edzi bliboe be Yehowa nye Fofo si nèhiã la, ɖe manyo be nàɖoe ɖokuiwò dzi agaxlẽ agbalẽ sia oa?",benatɔwo akaɖe dzi bliboe be yewoa nye fofo yi ne heea ɖem anyiwo be nanoe ɖokuiwo dzi hegaxlãgbalẽ ya oa,0.7083,0.2614
+368,Esiwo Ŋu Wotrɔ Asi Le Na Sɔhɛwo,esiwo nu wotrɔ asi le na sɔhewo,0.2857,0.08
+369,TAÐODZINUA,taɖudzinu si le nusɔsrɔ̃aŋue nye be woakpe ɖe nyanu mia,10.0,3.7
+370,"NE AME SIWO ÐUA KPƆÐEŊUNUAWO ƑE XEXLẼME LE DZIDZIM ÐE EDZI LA, ÐE WÒLE BE ESIA NAÐE FU NA MÍA?",ne ame siwo ɖo akpɔ ɖe nu nuwo ƒe xexleme le dzidzim ɖe dzi la ɖewo lebe sia na ɖe fu na mie,0.7,0.1918
+371,Mawunyakpukpui siawo ana nàka ɖe edzi be Yehowa dea asixɔxɔ ŋuwò:,mawunya kpukpuiawo hã nana akaɖe dzi be yewoƒoade asiwɔ ƒe nuwo,0.9091,0.2963
+372,“MITU MIA ÐOKUIWO ÐO ÐE MIAƑE XƆSE KƆKƆETƆ LA DZI”,mitumiaɖokuiwo ɖo ɖe míaƒe xɔ se kɔkɔe tɔ la dzi,0.8,0.1026
+373,DZI NƆ WO ƑO WOÐE GBEƑÃ LE DUKƆ BUBUWO ME,dzinɔwo ƒo wo ɖe gbeƒe le dukɔ bubuwo me,0.5,0.0625
+374,Èle Be Lém Na Wò “Xɔse Ƒe Akpoxɔnu Gã” La?,ele be lém na wo xɔ seƒe akpoxɔnu gã la,0.4,0.0667
+375,NU SI TA YEHOWAE DZE BE MÍASUBƆ,nutayi xɔadze be mia sugbɔ,1.0,0.36
+376,Gblɔ ame siwo wɔ ɖe nu siwo srɔ̃m wole dzi la ƒe kpɔɖeŋuwo nɛ,gblɔ ame siwo wɔ ɖe nu siwo srɔ̃m wole dzila ƒe kpɔɖeŋuwo nɛ,0.1429,0.0
+377,"Ne nu te ɖe mía dzi la, afɔ kawoe míate ŋu aɖe ale be míate ŋu ado dzi?",nenute ɖe mia dzi la afɔkawoe mia teŋu aɖe alebe mia teŋu adodzi,0.7778,0.0577
+378,"“Ne Mienya Nu Siawo La, Ekema Dzidzɔtɔwoe Mianye Ne Miewɔa Wo Dzi”",mɛ nyanu siawo la ekɛ ma dzidzɔtɔwoe mɛa nye mɛa woawo dzi mawo nyakpɛ kple si dzi woti nusɔsrɔ̃a ɖo,1.4167,0.8269
+379,MISRƆ̃ NUA KWASIÐA SIA KWASIÐA,misrɔ̃nua kɔ asi ɖe sia kɔ asi ɖe,1.4,0.24
+380,ÐE LƆLƆ̃ VAVÃ FIA XƆ̃WÒWO,ɖe nɔnɔ va va fia xɔwo,1.0,0.3158
+381,"Nu bubu si míegasrɔ̃ ye nye esi: Hafi míate ŋu akpɔ dzidzedze le subɔsubɔdɔa wɔwɔ me le dutadukɔ aɖe me la, ele vevie be míasrɔ̃ ale si míalɔ̃ nɔviawo aleke kee woƒe dekɔnuwo ɖato vovo na mía tɔe o.",nu bubu si mie gasɔe nye esi xaƒi míateŋu akpɔ dzidzi yi le subɔsubɔ do awɔwɔ me le tuta dukɔ aɖe me la ele vevie be mia srɔ̃m ale si mie lɔ nɔnɔviawo aleke ke woƒe dekɔnuwo ɖa to vuvu na míatɔe o,0.5897,0.1299
+382,YEHOWA KPƆA NUBLANUI NA MÍ,yevu akpɔ anublanui na mí,0.6,0.1364
+383,Nana be amewo naganya ame si tututu Yehowa nye o,nana be amewo na ganye ame si tsotsotso yevua nye ewo,0.5,0.3077
+384,MIDE BUBU MIA NƆEWO ŊU,mide bubu mia nɔewo ŋu,0.0,0.0
+385,ALEKE NÀÐO WO ŊUI?,aleke nanewo nyuie,0.75,0.4286
+386,"Sɔhɛwo, Miate Ŋu Akpɔ Dzidzedze Le Agbe Me",sɔhɛwo míateŋu akpɔ dzidzedze le agbe me mawo nye kpekpe si dzi wotu nusɔsrɔ̃a ɖo,1.25,0.9706
+387,Nu ka tae míedina be míawɔ nyui na amewo?,aleke na ɖo nyuie nu katã ye dzi na be mia wɔ nyuie na ameawo,1.3333,0.6875
+388,ENANA SUSU NYUI NƆA MÍA SI LE MÍA ÐOKUI ŊU,enana susu nyuie nɔ amea si le miaɖokui ŋu,0.5,0.1212
+389,Nu ka tae dzi ate ŋu aɖe le mía ƒo ne míele gbeƒã ɖem le anyigbamama siwo me amewo melɔ̃a toɖoɖo nya nyuia le o me?,nu katã dziateŋu aɖe le mieƒo nenye le gbeƒã ɖem le anyigba mama siwo me amewo mele oatoɖoɖo nye nyuie le wome,0.6538,0.125
+390,"Yehowa, Mía Fofo La, Lɔ̃ Mí Vevie Ŋutɔ",ye xɔ amea fofo la lɔm vevie ŋutɔ,0.625,0.1786
+391,AME SIWO ÐE ŊUDZEDZEKPƆKPƆ FIA,ame siwo ɖe nudzedze kpɔkpɔ fia,0.6,0.0769
+392,NYATAKAKA SIWO MEDE TUTUTU O,nyakaka siwo mede tututu o,0.2,0.0833
+393,WOƑO NU TSO ŊUTIFAFA ŊU LE XEXEA ME GODOO,woƒo nu tsiɔ ŋuti fafa ŋu le xexea me go ɖo,0.5556,0.1212
+394,Esime menɔ subɔsubɔm le Quebec,eyime menɔsubɔsubɔ le kiyugbe,0.8,0.2692
+395,ALE SI DZILAWO AFIA NU WO VIWO BE WOALƆ̃ YEHOWA,ale si dzilawo afi ya nuwo viwo be woanɔ yewoakɔa,0.5,0.1622
+396,Nu ka dzi wòle be míaɖo ŋkui ne míedo dziku?,lukadzi wolebe mia ɖo ŋkui ne mie ɖo dzi koo,1.0,0.2059
+397,"Aleke Mose wɔ va nya Yehowa, eye nufiame kawoe le eƒe kpɔɖeŋua me na mí?",aleke mushi wɔva nye yewoa eye nufia me kawoe le eƒe kpɔ ɖe nua me na mí,0.6667,0.125
+398,“XƆSE ƑE AKPOXƆNU GÃ” LA,xɔ seƒe akpoxɔnu gã la,0.4,0.0
+399,tsɔ kpe ɖe amewo ŋu wose Ŋɔŋlɔawo gɔme nyuie wu?,aleke yezuza ƒe ŋkeke bla ne mamleawo le anyigbadzi tsɔ kpe ɖe amewo ŋu wose ŋɔŋlɔawo gɔme nyuie wu o,1.0,1.1579
+400,KPE ÐE BIBLIA NUSRƆ̃VIWO ŊU BE LƆLƆ̃ SI LE WO SI NA MAWU LA NADE TO ÐE EDZI,nyasiwo gbɔna nye nya bubu siwo do ƒome kple nyati sia kpe ɖe biblia nusrɔ̃viwo ŋu be lɔlɔsi le wosi namawo la na ɖe to ɖe dzi de dziƒo na wo be woaxle biblia,1.5556,1.2857
+401,Nyati sia akpe ɖe mía ŋu míakpɔ nu si tae míate ŋu akpɔ dzidzɔ ne amewo lé fu mí le Yehowa subɔsubɔ ta gɔ̃ hã.,nyati ye akpe ɖe mia nu mia kpɔ nu yi tae mia te nu akpɔ dzidzɔ ne amewo le fimi le yi woa sugbɔsugbɔta gɔ hã,0.6,0.2024
+402,De dzesi nu si fiam Biblia le tso Yehowa ŋu,ɖe dzesinusi fiam bible le tso yehoanu,0.7,0.1471
+403,"Ne míewɔ nyui na amewo eye womekpɔ ŋudzedze ɖe eŋu o hã, nu ka tae míate ŋu akpɔ dzidzɔ?",mɛnye wɔ nyuie nam wo yiwo mekpɔ dzedze ɖe ŋuwo hã nu katã nye ateŋua kpɔ dzidzɔ,0.7895,0.25
+404,ALEKE MÍAWƆ ADE DZESI BIBLIA ME GƆMEÐOSEWO?,aleke miawoade dzesibi blamagɔmedosewo,0.8571,0.1389
+405,ALEKE NÀÐO WO ŊUI?,do wo nyuie nukae ne sɔ…,1.5,1.1429
+406,“Ame Siwo Ðoa To Wò” La Akpɔ Agbe,ame siwo ɖo ato la akpɔ agbe,0.375,0.125
+407,KPE ÐE WÒ NUSRƆ̃VIA ŊU WÒAÐU MƆXENUWO DZI,kpe ɖe wo nusrɔ̃viawo woaɖu mɔxɛnuwo dzi,0.75,0.2121
+408,Nazãbubu kawo dzie wòhiã be Yesu ƒe nusrɔ̃la gbãtɔwo naɖu?,nazabɔbokawo dzi wònye abe nusrɔ̃lagbatɔwo na du,1.0,0.2979
+409,Nyati sia akpe ɖe mía ŋu míakpɔ ale si míate ŋu azã Biblia me gɔmeɖosewo atsɔ ana hehe míaƒe dzitsinya be wòafia mɔ mí nyuie.,nyati ya kpe ɖe mia nu nyakpɔ ale míateŋu azã bi blame gɔme ɖe siawo atsɔna ɖevia ƒe dzidzi nye be woasi mɔmi nyuie,0.8,0.26
+410,ALE SI MÍEBUA NUWO ŊUI LA KPƆA ŊUSẼ ÐE MÍAƑE NUWƆNAWO DZI,ale si mie gboa nuwo nyuie la kpɔa ŋusẽ ɖe míaƒe nuwɔnawo dzi,0.3333,0.1522
+411,NU SIWO DAVID WƆ TU XƆSE SẼŊU ÐO,nu siwo david wɔ tu xɔ sesẽnu ɖo,0.375,0.08
+412,“DUKƆ BLIBO LA KATÃ NAGBLƆ BE: ‘AMEN!’”,dukɔ blibo la katɔna gblɔ be ame,0.4286,0.0741
+413,SRƆ̃ NU TSO AME BUBU SIWO ŊU BIBLIA ƑO NU TSOE LA GBƆ,srɔ̃nutso ame bubu siwo ŋu bible le aƒo nutsoe la gbɔ,0.5385,0.075
+414,Kɔɖiɖi na amegbetɔ ƒe didi siwo le dzɔdzɔme nu,kɔɖiɖina amegbetɔ ƒe dzidzi siwo le dzɔdzɔmenu,0.5556,0.0526
+415,Akpa Si Dɔdzikpɔhaa Wɔna,nya si wogbɔna nye nya bubu siwo do ƒome kple nya afi sia akpa si dɔdzikpɔ hã wɔna,3.75,2.2381
+416,ALEKE NÀÐO WO ŊUI?,aleke na ɖo nyuie,0.75,0.4286
+417,‘DZRA NU NYUI SIA ÐO NYUIE’,dzranu nyuie sia ɖo nyuie,0.6667,0.1
+418,Mɔ siwo nu Kristotɔ tsitsiwo ate ŋu akpe ɖe ame bubuwo ŋu le la dometɔ aɖewo ɖe?,mɔ si enu krisitɔ tsitsiwo ate ŋu akpe ɖe ame bubuwo ŋu le la dometɔ aɖewo ɖe,0.1765,0.0635
+419,Aleke míaƒe dzitsinya kpena ɖe mía ŋu míetsina le gbɔgbɔ me?,aleke miaƒe dzitsi nyakpɔna ɖe mia ŋu mie tsi na le gbɔgbɔ me,0.6364,0.0816
+420,Mi ame evea siaa mieva lɔ̃ subɔsubɔdɔ si wode asi na mi le ƒukpoawo dzi la vevie. Miadi be yewoaƒo nu tso nu ɖedzesi aɖe si dzi mieɖoa ŋkui vevie la ŋu na mía?,miami evea sia mie va lɔ̃sɔsɔdɔ si wode asi na míle ƒokpɔwo dzi la vevie mia di be yewoaƒonu tso nuɖedzesi aɖe si dzi mie ɖoa ŋkuievevie la nu namia,0.6176,0.1057
+421,Gɔmesese kawo nue ‘míevaa Yesu gbɔ’ le?,gɔmesesekawo nyuie nye va yi sugbɔ le,0.8571,0.2
+422,NƆ ŊUTIFAFA ME ÐAA,nɔ ŋuti fafa me ɖaa,0.75,0.0667
+423,Yehowa Tɔ Míenye,yahoa tɔmee enye mawo nya kple si dzi wotu nusɔsrɔ̃a ɖo,3.6667,2.4286
+424,LƆLƆ̃ SI LE MÍA SI NA MÍAƑE FUTƆWO KPENA ÐE MÍA ŊU MÍEDOA DZI NE WOLÉ FU MÍ,lɔlɔsi le miasi na míaƒe ƒutɔ kpe na ɖe mía ŋu míe dó adzi ne wóle ƒomí,0.7778,0.1754
+425,Lɔlɔ̃ Ka Ƒomevie Nana Ame Kpɔa Dzidzɔ Vavãtɔ?,lɔlɔ kaƒomevi nename kpɔ dzidzɔ va va ŋutɔ mawo nye kpui si dzi wotu nuzɔsrɔ̃a ɖo,1.875,1.0278
+426,Do gbe ɖa na Yehowa be wòakpe ɖe ŋuwò.,dugbe ɖana yevu abe woakpe ɖe nuwo,0.8889,0.2414
+427,ENYO BE MÍEÐO ŊU ÐE YEHOWA ŊU,enyo be mieɛ ɖoŋu ɖe yehoaŋu,0.7143,0.2174
+428,"Srɔ̃ Noa, Daniel Kple Hiob Ƒe Xɔse Kple Woƒe Toɖoɖo",srɔ̃nowa ɖe nye eya kple xɔse kple woƒe toɖoɖo,0.6,0.325
+429,Gbɔdɔdɔ ƒe dzodzro vɔ̃wo dodo ɖe ŋgɔ,gbadɔdɔƒe dzodzrovɔwo dodo ɖe ŋgɔ,0.5714,0.0345
+430,DZIKULÉLEÐEDƆME,dzikula le ɖe dɔ me,5.0,0.1333
+431,NYATEƑE ƑE KEKELI LA ME GAKƆ ÐE EDZI,nyateƒe ƒe kekeli lãmega kɔ ɖe edzi,0.5,0.069
+432,Aleke míate ŋu akpe asi ɖe nɔvi siwo xɔ dɔdeasi yeye la ŋu?,aleke miaƒe nua kpe asi ɖe nɔvi siwo xɔ dɔ ɖe asi ye ye la ŋu,0.6154,0.087
+433,NU SI TAE WÒLE VEVIE BE NÀKA ÐE EDZI BE YEHOWA LƆ̃ WÒ,nɛte wole vevie be nakaɖe dzi be yewoaklɔ̃,0.7692,0.325
+434,FƆBUBUAMEÐOKUI FŨU AKPA,ƒe bubu ame ɖokui fũu akpa,1.3333,0.1429
+435,ALEKE MAWUNYAKPUKPUI SIWO GBƆNA ATE ŊU AKPE ÐE MÍA ŊU MÍAÐU DZIÐELEAMEƑO DZI?,aleke mawo nyakpui si wogbɔna ate ŋu akpe ɖe mia nu miaɖu dzi ɖe la me ƒo dzi,1.0,0.1719
+436,WOKLO NU LE NU MADZƆMADZƆ WƆWƆ AÐE DZI,woklo nu le numadzɔdzɔwɔwɔ aɖe dzi,0.5,0.0968
+437,ALEKE DZILAWO ATE ŊU AWƆ MAWUNYAKPUKPUI SIAWO ŊU DƆ ATSƆ AKPE ÐE WO VIWO ŊU BE WOAWƆ ŊGƆYIYI AVA XƆ NYƆNYRƆ?,aleke dzilawo ateŋu wɔm wo nye kpukpi siawo ŋudɔ atsɔ akpe ɖe woviwo ŋu be woawɔ ŋgɔ yi avaxɔ nyanyinɔ,0.6667,0.1264
+438,Aleke gbegbee wòle be nyateƒea nanɔ vevie na mí?,aleke gbegbe wole be nye teƒea nane vevie nami,0.7778,0.1282
+439,SRƆ̃ YESU ƑE DƆMETƆTRƆ,srɔ̃yɛsu ƒe dometɔ trɔ,1.0,0.1111
+440,YEHOWA LƆ̃A ESUBƆLA WƆNUTEƑEWO,ye ho wɔanɔa subɔla wɔ nuteƒewo,1.5,0.1154
+441,SRƆ̃ NU TSO YEREMIYA ƑE KPƆÐEŊUA ME,srɔ̃nu tso yiɖe mia ƒe kpɔɖeŋuwoame,0.8571,0.2143
+442,Nu ka tae wòle be míanɔ ŋugble dem le viɖe siwo kpɔm míele le Yehowa subɔsubɔ me ŋu?,nu katã wolebe nye nye nuŋgbledem le vi ɖe yiwo kpɔm ye le yevua subɔsubɔ ŋu,0.7222,0.303
+443,ALEKE YESU ƑO ASA NA NUDEDE DUNYAHEHE ME?,aleke yi susu ƒoase na nudede dunyahehe me,0.375,0.1212
+444,Aleke gbɔgbɔ kɔkɔea ate ŋu akpe ɖe mía ŋu míaɖu ŋubiabiã dzi?,aleke gbɔgbɔ kɔkɔe ateŋu akpe ɖe mia nu miaɖiŋu biafia dzi,0.5833,0.1429
+445,Tsɔ Yehowa subɔsubɔ ɖo nɔƒe gbãtɔ le agbe me.,tsɔ yevuɔ subɔsubɔ ɖo nɔƒe gbatɔ le agbe me,0.2222,0.1389
+446,Nu kae nye Kristotɔwo ƒe susu le ŋutasẽnuwɔwɔ ŋu?,nu ka nye klisetɔwo ƒe susu le nutase nua wɔnu,0.5556,0.225
+447,Nɔnɔme siwo me míedzro fifia la gana míekpɔ nu si tae míaƒe “amen” la le vevie na Yehowa.,nɔnɔme siwo mem nye dzrofi sia la ghana nye kpɔnusi te nye aƒe ame ɖevi na yewoa nyatsiawoe nu,0.8889,0.4203
+448,TEƑE SIWO MÍEZƆ MƆ YI,teƒe siwo mie zɔ mɔ yi,0.4,0.0588
+449,ŋutifafa nɔa mía dome eye míesubɔa Yehowa ɖe ɖoɖo nu?,ŋutiƒeƒe nɔa mia dome eye mie sugbɔ yewoa ɖe ɖoɖonu,0.7,0.2326
+450,MAWU ÐƆA AME ÐO LE LƆLƆ̃ ME,mawudo ame ɖewo le lɔlɔ me,0.4286,0.3
+451,Kpe ɖe eŋu be wòade dzesi Yehowa ƒe nɔnɔme nyuiawo eye wòakpɔ ŋudzedze ɖe wo ŋu,kpeɖeŋu be woade dzinsi yevuwo ƒe nɔnɔme nyiawo eye woakpɔ nudzedze ɖe wo ŋu,0.5625,0.1562
+452,Ðe nàte ŋu ade ŋugble le Yehowa ƒe ŋugbedodo bubu siwo va eme ŋua?,ɖe nateŋua de ŋgble le yevuwo akɔ nugbedzɔ bubu yiwo va me nua,0.7857,0.2885
+453,Nu kae akpe ɖe mía ŋu míakpɔ dzidzedze le Yehowa subɔsubɔ me?,nukae akpeɖe miaŋu mia kpɔ dzidzedze le yevua subɔsubɔ me,0.6667,0.102
+454,Nyabiabia Siwo Tso Exlẽlawo Gbɔ,nyadada si wotsɔ xlẽlawo gbɔ,0.8,0.2222
+455,Aleke míate ŋu ‘aɖɔ ŋu ɖo’?,etɔ̃ adɔnu ɖo hadzidzi,1.0,0.9474
+456,Ame kawoe kpɔa gome le nusrɔ̃lawɔwɔdɔa me?,amekawoe kpɔ gu mele nusrɔ̃lawo doa me,0.8571,0.1765
+457,Nɔviŋutsuwo​—Ðe Miele Subɔsubɔdɔwɔlawo Ƒe Dɔa Minyama?,ɖevi ŋutsu ɖe mia subɔsubɔdɔwɔlawo ƒe doa mi nyama,1.1667,0.1957
+458,Ðe wòda le Biblia ƒe se aɖe dzia?,ɖewo da le bible ƒe sia ɖe dzia,0.625,0.2
+459,ALEKE YEHOWA ÐENƐ FIANA BE YEDEA ASIXƆXƆ MÍA ŊU . . .,aleke yixɔ aɖe nɔ nye nye afi ya na be yi de asi xoxo miaŋu,1.4444,0.4872
+460,Meɖoe Kplikpaa Be Nyemana Nye Asiwo Nado Agblɔ O,medoe kplikpa be ye ma nane siwo na doa gblɔwo ma zi ɖanilé ku ƒe agbemenutinya,1.6667,0.825
+461,WÒ SUSU NENƆ XEXE YEYEA DZI!,wó susu nenɔ xexe yɛ yɛ dzi,0.5,0.1818
+462,Nu ka tae wòle vevie be míado gbɔgbɔmeʋawɔnuawo dometɔ ɖe sia ɖe?,nu katã wolebe mia do gbɔgbeme eveawo nuawo dometɔ ɖe sia ɖe,0.5833,0.2642
+463,"HANA, DAVID, KPLE “ASAF” SIAA ÐO ŊU ÐE YEHOWA ŊU",hanadavi kple asafi sia ɖo nu ɖe yewoa nu,0.9,0.2571
+464,MƆ SIWO NU MÍA DOMETƆ ÐE SIA ÐE ATE ŊU ADO ÐEKAWƆWƆ ÐE ŊGƆ LE,mosiwo nu mia dometɔ ɖe sia ɖe ate ŋu ado ɖekawɔ ɖe ŋgɔ le,0.4667,0.1702
+465,Se Veve Ðe Ame Nu,se veve ɖe ame nu,0.2,0.0769
+466,YEHOWA ÐEA MÍAƑE NU VƆ̃WO ÐA,yiho adea miaƒe nu vɔwo ɖa,0.6667,0.2273
+467,Gbɔ dzi ɖi na ɖokuiwò be ɣeyiɣi aɖe sinu nava yi.,gbɔdziɖinadokuiwo be ʋeɣi aɖe si nunava yi,0.7273,0.1316
+468,ALEKE NU SIAWO SIWO YEHOWA NA MÍ KPENA ÐE MÍA ŊU MÍEDOA DZI?,ya woyiwo yeho anami kpe na ɖe mia nu mie doa dzi gbe ɖe…,1.0,0.4468
+469,Tsitretsitsia Ava Eme Godoo!,tsitsre tsitsia ava me godoo,0.75,0.0833
+470,DE ASIXƆXƆ ABLƆÐE SI MAWU NA WÒ LA ŊU,de asixɔxɔ ablɔ ɖe si ma wonɔ wo la ŋu,0.5556,0.1379
+471,‘Yehowa Xɔna Na Ame Siwo Ƒo Dzi Ðe Le’,ye xɔwɔaxɔna na ame siwo ƒo dzi ɖe le,0.3333,0.1429
+472,ÐE WÒLE BE NÀDZUDZƆ NUSƆSRƆ̃ KPLE AMEA?,ɖewo lebe nàdzudzɔnusɔsrɔ̃ kple amea,0.7143,0.0645
+473,Nu ka tae wòle be míatu ɖokuibɔbɔ ɖo?,nu katã wolebe mia tuɖokui bɔbɔ ɖo,0.75,0.1379
+474,"Sɔhɛwo, Mia Wɔla Di Be Miakpɔ Dzidzɔ",sɔhewo miawɔla di be mia kpɔ dzidzɔm mawo nyakpɔe si dzi wotu nusɔsrɔ̃a ɖo,1.8571,1.1034
+475,Ale Si Nàkpɔ Ðokuiwò Ta Be Satana Ƒe Mɔ̃ Vɔ̃ɖi Aɖe Nagaɖe Wò O,ale tsi na kpɔ ɖokuiwo ta abe sata naƒe mɔvɔ̃ɖi aɖe naga ɖe wo o,0.8571,0.1277
+476,Bu Nuwo Ŋu Nyuie Hafi Nàtso Nya Me Be Yeagade Suku Akpee,eƒe ta nye nye eŋu nyɔnu nyuie hafi nàtsɔ nyame be yeada ɖe sukua kpi,1.0833,0.4667
+477,"Nu kae míenya tso ale si Yehowa adrɔ̃ ʋɔnu Fia Salomo kple ame siwo ku le Sodom kple Gomora kpakple Tsiɖɔɖɔa me ŋu, eye nu kae mímenya tso eŋu o?",nukae mee nyatso ale si yevu adzro ƒo nufiasa lome o kple ame siwo ku le sodom kple gomroɖa kpakple tsiɖɔɖɔ ame ŋu eye nukae mee menyatso enu o,0.6,0.1327
+478,Ŋutifafa—Aleke Nàwɔ Be Wòasu Asiwò?,ŋuti fafa aleke na wo be woasɔ asiwo,1.4,0.1724
+479,MEÐIÐI VIE HAFI GALI KE,meɖiɖie hafi ga li ke,0.8,0.2105
+480,MÍELE “ŊKEKE MAMLƐAWO” ME,míelɛŋkeke mamlɛawo me,0.5,0.05
+481,Nu kae ate ŋu akpe ɖe mía ŋu be míayi edzi anɔ míaƒe ŋutete katã wɔm le Yehowa subɔsubɔ me?,nukae ateŋu akpe ɖe mia nu be mia yi edzi anɔ nutete katã wɔm le yevua subɔsubɔ me,0.55,0.169
+482,Ƒo nu na Yehowa gbe sia gbe to gbedodoɖa dzi,ƒonunayi xɔ agbe sia gbetɔ gbedodo ɖe dzi,0.8,0.1714
+483,Vovototo kae le ŋusẽ si le ƒome ƒe tawo kple hamemetsitsiwo si dome?,votototo kay le ŋusẽ si le ƒome ƒe tawo kple haƒe ame metsitsiwo si dome,0.3846,0.0909
+484,NYE AME SI DZI WOATE ŊU AKA ÐO ABE TIKIKO ENE,nye ame si dzi woate ŋu akaɖi abe tsi kɔ ene,0.3636,0.1429
+485,SRƆ̃ NU TSO FIA ASA GBƆ,srɔ̃nutsofia asa gbɔ ŋu,0.8333,0.1176
+486,ÐO TO YEHOWA NÀTSƆ AÐEE AFIA BE YELƆ̃E,ɖo to yevu wɔna atsɔ aɖe afi ya be ye nɔe,1.125,0.3333
+487,ABE ALE SI ANDRÉ RAMSEYER GBLƆE ENE,abe aɖe yi adre ɖamseye gblɔ ene,0.7143,0.2414
+488,ALE SI MÍAWƆ BE MÍAYI EDZI ANƆ YEHOWA SUBƆM NE MÍEDO GO KUXIWO HÃ,ale si mie wɔbe mia yi edzi anɔ yexɔa sugbɔm ne mie do go kukuiwo hã,0.6429,0.1923
+489,ENANA SUSU NYUI NƆA MÍA SI ÐE AGBEA ŊU,enana susu nyuie nɔ ame si ɖe agbea ŋu,0.4444,0.1333
+490,ele be míanɔ gbe dom ɖa na Yehowa edziedzi?,elabe mia nɔ gbe dom ɖana yewoa edzi edzi,0.7778,0.1176
+491,Aleke nàwɔ ado ŋusẽ ɖokuiwò ale be nàyi edzi alé wò fɔmaɖimaɖi me ɖe asi?,aleke na woado ŋusẽ ɖokuiwo alebe na yiɛ dzi ale wofɔ mɖi mɖi me ɖe asi,0.7333,0.1552
+492,ɖokuitɔmadimadi ƒe gbɔgbɔ si Epafra ɖe fia?,aleke nateŋu asrɔ̃ ɖukuitɔmadzi ƒe gbogboa si eƒe aflɔ aɖe fia,1.1429,0.7222
+493,Yehowa Di Be Amewo Katã Natrɔ Dzi Me,ye ho adiba amewo katã na trɔ dzime,0.75,0.069
+494,Nɔviŋutsu Sɔhɛwo—Nu Kae Miawɔ Be Woaka Ðe Mia Dzi?,eƒe ta nyayinyee nɔvi ŋutsu sɔhewo nukae mia wɔbe woaka ɖe mia dzi,1.1111,0.4
+495,"Ðe nèxlẽ Gbetakpɔxɔ ƒe tata siwo do le ƒe sia me la beléletɔea? Ekema, kpɔe ɖa be àte ŋu aɖo biabia siwo gbɔna ŋu hã:",ɖe exlẽgbetaxɔ ƒe tata si wodo leƒe sia me la be le letria akpɛɛm akpɔe ɖe abe ata ŋu ɖo babi si wogbɔnawo hã,0.8,0.2333
+496,MÍEDOA YEHOWA ÐE DZI,miedoayi xɔ aɖe dzi,0.75,0.3529
+497,Ðe nètrɔ dzi me tso wò nu vɔ̃wo me eye nètsɔ ɖokuiwò ɖe adzɔgbe na Yehowa helɔ̃ ɖe ɖeɖekpɔkpɔ ƒe ɖoɖo si wòwɔ to Yesu Kristo dzi la dzia?,gbe ɖe netrɔ dzimetsi wɔ nu vɔ me eye netɔ ɖokuiwo ɖe adzɔgbe na yewoa he lɔ ɖe ɖeɖe kpɔkpɔ ƒe ɖoɖo si woyi sukuito dzi la dzia,0.6207,0.1981
+498,Gɔmesese ka nue wotsɔ Yehowa ƒe ŋkɔa na Yesu le?,gɔmesesekanue wotsɔ yewo aƒe ŋkɔ na yevu le,0.7,0.1053
+499,Nu ka tae míate ŋu anɔ dzidzɔ kpɔm ne amewo lé fu mí gɔ̃ hã?,nukatae míateŋu woanɔ dzidzɔ kpɔm ne amewo le fimi gɔ hã,0.6,0.1136
+500,KRISTO GAKPƆTƆ LE EƑE HAMEA KPLƆM,ristogakpɔtɔ le eƒe hamea kplɔm,0.3333,0.0357
+501,DZE AGBAGBA NÀNYA YEHOWA ƑE SUSU LE NYAA ŊU,dze agbagbana nye yewo woƒe susu le nya ŋu,0.5556,0.1429
+502,MƆNUKPƆKPƆ KAWOE LE ƲUƲU ÐI NA WÒ BE NÀWƆ DƆ KPLE YEHOWA . . .,mɔnukpɔkpɔkawoe le ŋu ʋu ɖi na wo be yewoakpe ɖe yewoakpe ɖe woƒe ma kple haŋɔsetɔwo ŋu,1.1667,0.8222
+503,Nu ka tae nuwo ŋu bubu abe ale si Yehowa bua woe ene ɖea vi na mí?,nu katã nuwo nu bubu abe alesi xɔ aboawoe ne ɖevi na mee,0.7059,0.2653
+504,Ale Si Nànye Xɔlɔ̃ Nyui,ale yi nanye xɔ nɔ nyuie,1.0,0.2222
+505,YESU TSƆ SUSU ÐO NU SI YEHOWA DI TSO ESI ŊU,yevu tsɔsusudoŋu si yewoaditso esi ŋu,0.7273,0.1515
+506,Mɔ kawo nue Yehowa ɖenɛ fiana mí le be yelɔ̃ mí eye yeléa be na mí?,mɔkawo nɔe yevu aɖe ne fia na mí lebe ye lɔ mí eye ye le abe na mí,0.8125,0.12
+507,ELIYA—“AMEGBETƆ SI ƑE SESELELÃMEWO SƆ KPLE MÍA TƆWO”,eli ya amegbetɔ si ƒe sesele amewo sɔ kple mia tɔwo,0.75,0.0714
+508,ne míele dɔ si míawɔ tiam?,aleke nye ateŋua zɔm le xɔ se me nenyee le dɔ yim nye awɔtiãm,2.1667,1.6
+509,Mawu Toa Nyateƒe Ɣesiaɣi,aɖaka yi le axasik lia yi ku ɖe mɔ me ma akpɔ lia ŋu yi ƒe ta nye anye mawutɔ anya teƒe ɖe sia yi menya wɔ xlẽ be,7.25,3.1905
+510,Ale Si Míakpe Ðe Biblia-nusrɔ̃viwo Ŋu Woayi Ŋgɔ Ava Xɔ Nyɔnyrɔ—Akpa Gbãtɔ,eƒe ta nya nyee ale si míakpe ɖevi blanusrɔ̃viwo va yi ŋgɔ ava xɔ nyɔnylɔ akpa gbatɔ,0.9167,0.3559
+511,"Eyae Nye Ŋusẽkatãtɔ La, Ke Hã Ebua Ame Ŋu",eyae nye ŋusẽ katãtɔ la ke hã eŋua me ŋu mawo nya kpikpi si dzi wotu nusɔsrɔ̃a ɖo,1.3333,1.0625
+512,Nu kae akpe ɖe mía ŋu be míato nyateƒe na mía nɔewo?,nukae akpe ɖe mia nu be mia to nya teƒe na mia nɔewo,0.75,0.1
+513,NU KAWOE SATANA MATE ŊU AWƆ O?,nukawoe sata na mateŋuwo awɔwo,1.0,0.1304
+514,ALEKE NÀTE ŊU ASRƆ̃ . . .,aleke nateŋu asrɔ̃pawo le kple bana ƒe ɖokui bɔbɔɔ,2.0,1.8
+515,"Hafi míate ŋu adzɔ míaƒe dzi ŋu la, nu kawoe mele be míaɖe mɔ woage ɖe míaƒe dzi me o, eye nu kawoe wòle be míaɖe mɔ na be woage ɖe míaƒe dzi me?",hafi miateŋu adzɔ miaƒe dzi nu la nukawoe melebe miaɖemɔ woage ɖe míaƒe dzimewo eye nukawoe wolebe miaɖemɔ na be woage ɖe míaƒe dzime,0.6176,0.0642
+516,"Ðe eƒe nyametsotsoa agblẽ nu le eŋu nyateƒea, alo nyee le ekpɔm nenema?",ɖe eƒe nyamedzodzɔ agble nu le nu nyadzeƒe ya alo nye le kpɔm nenema,0.6154,0.2632
+517,NE MÍEFA AVI LE ESI AME AÐE TRƆ MÍ TO EME TA,nenye fa vi le yame aɖe trɔm do eme dũaa,0.8333,0.3636
+518,Yehowa Do Ŋusẽ Mí Le Aʋawɔɣi Kple Ŋutifafaɣi Siaa,yiho adɔŋusẽmi le avɔ yi kple ŋuti fafa yi shia,1.1111,0.2683
+519,"Ðe ame aɖe ate ŋu agblɔ be yenye Kristotɔ vavã, evɔ manya Mawu ƒe ŋkɔa anɔ ezãm oa?",ɖe ame aɖe ate ŋu agblɔ be yeklisitɔ vava avɔ ma nyamawo ƒe ŋkua nɔe zam wɔa,0.6111,0.2344
+520,"John ɖo eŋu be: “Ɛ̃, Aƒetɔ. Nu si mate ŋu aŋlɔ katãe nye ema.”",dzɔnu ɖo ŋu ɖe eya ƒe tɔ nu yi mateŋɔŋlɔ katã nye eya ma,0.9286,0.3333
+521,Nu kae Paulo gblɔ na hame si nɔ Korinto be woawɔ na ŋutsu si metrɔ dzi me o?,nu ke ƒe aŋlɔbona ha mee nɔ kɔɖeŋu dom be woawɔna ŋutsu yi me trɔ dzimewo,0.8333,0.3276
+522,ALE SI WÒDZƆE BE MEVA DZE ƔEYIƔIAWO KATÃ ƑE SUBƆSUBƆDƆA GƆME,ale si wòdzɔe be me va dze ʋi yawo katã ƒe subɔsubɔ doa gɔme,0.5455,0.12
+523,"Le nyati sia mea, míakpɔ nu vevi siwo apostolo Petro srɔ̃ ku ɖe ale si Yesu bua nuwoe ŋu kple nu si míawo hã míate ŋu asrɔ̃ tso eme.",amea mía ƒɔnu vevi yiwo aƒɔsro pɛtro srɔ ku ɖe ale yi esugboa nuwoe ŋu kple nu yi miawo hã míate ŋu asrɔ tso eme,0.4828,0.24
+524,Nu ka tae nu siwo míetsɔ ɖea modzakae la ɖea ale si gbegbe míetsɔ mía ɖokui na Mawui la fiana?,nu katãe nu siwo míetsɔ ɖea modzakae la ɖea le esi gbegbe míetsɔ míea ɖokui namawui le afi ya na,0.5,0.0811
+525,"Nu ka tae wòle be míaɖɔ ŋu ɖo le nyatakaka siwo míexlẽna kple esiwo míeɖona ɖe amewo to e-mail, asitelefon alo mɔnu bubuwo dzi la ŋu?",nukatae wolebe mia ɖɔŋuwo ɖo le nye kaka siwo mie xlẽna kple esiwo meɖona ɖe amewo to emil asitɛ le foni alo mɔnu bubuwo dzi la ŋu,0.6154,0.1143
+526,nu kae akpe ɖe ŋuwò be nàɖe asi le dziku ŋu?,nukaya kpeɖeŋu bena ɖe asi le dzikuŋl,0.7273,0.1515
+527,ALE SI MÍA NƆVI KRISTOTƆWO KPENA ÐE MÍA ŊU,ale si mie nɔvi kristotɔwo kpe naɖe mia ŋu,0.4444,0.1176
+528,Ðusime: Mɔ̃ siwo wozã le radiodɔwɔƒea,le ɖusi mea mɔ yiwo wozã le ɖadziudɔwɔƒe,0.8333,0.3
+529,Taɖodzinu Siwo Akpe Ðe Ŋunye Mawɔ Nye Subɔsubɔdɔa Bliboe,taɖo dzi nu siwo akpe ɖe nunye mawɔ nye esugbɔsɔe do abliboe,0.8889,0.1667
+530,NU KAWOE ADZƆ DO ŊGƆ TETI NA ARMAGEDON?,nukawoe adzɔdoŋgɔtɛti na ame geɖeɔnu,1.0,0.2258
+531,YEHOWA TOA MÍA NƆVIWO DZI FAA AKƆ NA MÍ,yehoatoa mie nɔviawo dzi fa kɔna mie,0.8889,0.2581
+532,"John gblɔ be: “Gake Aƒetɔ, . . . ne èfia nu mí eye míese nya aɖewo gɔme oa, ɖe míekpɔ mɔ abia nya tso eŋu oa?”",dzɔnu gblɔbe gaƒe aƒetɔ ne sia nom mí eye míesɛ nya aɖewo gɔme ŋua ɖeviɛ kpɔm hafi anyatso nu ŋugoe,0.6957,0.2763
+533,ÐO ŊU ÐE YEHOWA ŊU BLIBOE,ɖoŋu ɖe yewoaŋu bliboe,0.8333,0.2
+534,"Ðe wòle “afɔ baɖa” aɖe ɖema, alo ɖeko afɔ si ɖem wòle la to vovo na esi maɖea?",ɖewo le afɔgba ɖe aɖe ɖe me alo ɖeko afɔe dem wolea to vovo na eyime adea,0.7222,0.2281
+535,EDA VO LE GƆMEDZEDZEA ME,eda avɔ le gɔmedzedzia me,0.4,0.15
+536,KUXI SESẼ KAWO ME WÒHIÃ BE KRISTOTƆ SIWO NƆ ANYI LE ƑE ALAFA GBÃTƆ ME NADO DZI LE?,kuxisesekewo me wɔye abe krɛsitɔtɔ si wonɔ anyi le alɔƒagbatɔwo me na to dzi le,0.7222,0.2656
+537,ƑOMEGBANƆAMEDZIWO KPLE GBEƑÃÐEÐEDƆA,ƒomegbanɔnɔnɔdziwo kple beƒe aɖe ɖe dɔa,1.6667,0.2727
+538,Srɔ̃ Manaen Nàtsɔ Mawusubɔsubɔ Aɖo Nɔƒe Gbãtɔ,srɔ̃maniawo nàtsɔ mawo subɔsubɔ alo nɔƒe gbatɔ,0.8571,0.1579
+539,Nu ka tae woléa fu Yesu yomedzelawo?,nu katã wole fũu ye su eyomedzelawo,0.8571,0.2069
+540,NƆNƆME KAWOE WÒLE BE WÒANƆ ASINYE?,nɔnɔme kawoe wole be woanɔ asi nye,0.6667,0.0714
+541,"‘Ame kawoe atsɔ ɖe le nya sia me, eye aleke mawɔ azãe atsɔ akpe ɖe wo ŋu?’",amekawoe atsɔ ɖe le nya sia me eya aleke mawɔ azɛ̃e atsɔ akpe ɖe wo ŋu,0.2353,0.037
+542,"Da akpe na wo. Àte ŋu agblɔ na nɔvinyɔnu siawo be, “Akpe na wò be ètsɔ srɔ̃wò na wòle kpekpem ɖe hamea ŋu.” Esia ade dzi ƒo nɛ ŋutɔ.",da akpɛnawo ateŋu agblɔna nɔvi nyɔnu ya wobe akpɛnawo be tsɔ srɔ̃wo na wole kpekpem ɖe hame ya ŋu eya hã de dziƒo ne ŋutɔ,0.7931,0.1546
+543,ALEKE NÀÐO WO ŊUI?,aleke nàɖo wó nyuie,0.75,0.3571
+544,ALE SI WÒLE BE HAMEA NAWƆ NU ÐE NU VƆ̃ WƆLA SI TRƆ DZI ME LA ŊU,ale yi wolebe amea na wɔ nu ɖe nu vɔlawo la yi trɔ dzimea ŋu,0.7059,0.1957
+545,‘Enyo Na Mí Be Míate Ðe Mawu Ŋu’!,enyiwo nami be míate ɖe mawo ŋu,0.625,0.2174
+546,Aleke ƒuƒoƒodzikpɔla kple eƒe kpeɖeŋutɔ léa be na nɔvi siwo le woƒe gbeadziƒuƒoƒoa me?,aleke ƒuƒoƒo dzikpɔla kple eƒe kpeɖeŋutɔ lé abena nɔvi siwo le woƒe gbadziƒoƒoame,0.5,0.0417
+547,Hana,alike ye woawɔ nu ɖe sugbɔ la ya wo ŋu eye wolé blanui vevi hefavi ghana,16.0,13.25
+548,"Amedzrowɔwɔ—Ehea Dzidzɔ Vɛ, Eye Ehiã Vevie Ŋutɔ!",amedzro wɔwɔ ehe adzidzɔ vɛ eye ehea vevie ŋutɔ mawo nyakpɛ kpli si dzi wotu nusɔsrɔ̃a ɖo,1.8571,0.8974
+549,Nya si wozã le Hebrigbea me la ɖe mɔ ɖe gɔmesese evea siaa nu. Esiawoe nye susu siwo tae gɔmeɖeɖea trɔ le tata yeyea me:,nyasiwo zã le hegbigbia me la ɖemɔ ɖe gɔmesesẽ evea sia nu esiawoe nye susu siwo tae gɔme ɖeɖea trɔ le tata ye ya me,0.48,0.0638
+550,ALEKE NÀÐO WO ŊUI?,aleke na ɖo nyuie,0.75,0.4286
+551,Enyo Be Mía Kple Mía Nɔviwo Dome Nanɔ Kplikplikpli!,enyo be mia kple nye nye nɔviawo dome na nɔ kpli kpli kpli,1.0,0.1905
+552,Abe ale si Jean-Marie Bockaert gblɔe ene,aba ale si dzemari bɔkae ene,0.5714,0.4545
+553,Nu ka tae míadze agbagba be míawɔ míaƒe subɔsubɔdɔa bliboe?,nukata mia dzi agbagba be mia wɔm miaƒe subɔsubɔ do abliboe,1.0,0.1429
+554,“YI EDZI NÀTSƆ NU NYUI ANƆ NU VƆ̃ÐI DZI ÐUM”,yi edzi na tsɔnu nyui anɔ novɔɖi dzi ɖom,0.5,0.1562
+555,Afi kae nunɔla siwo nɔ anyi le ƒe alafa gbãtɔ me la kɔa vɔsalãwo ƒe ʋu ɖo?,afi ka nunɔnashinɔ nɔ anyi ɖe ƒe lɔƒe gbatɔ mee kura avɔ salɔnwo ƒe ŋu ɖo,0.6471,0.3333
+556,Mawu ƒe gbɔgbɔ kɔkɔeae ʋã amewo woŋlɔ Biblia,mɔwo ƒe gbogbo kɔkɔe yevuwo woŋlɔ ɖi bla,0.875,0.3243
+557,Aɖaŋuɖoɖo Siwo Akpe Ðe Ŋuwò Nàɖo To Nyuie,aɖaka yi le axabla vevɔ ɖe xlẽbe aɖaŋuɖoɖo yiwo akpe ɖe ŋu ena ɖo to nyuie,1.5,0.9118
+558,Ame kawoe nye Yudatɔwo ƒe gbedoxɔmekpovitɔwo? Dɔ kawoe wowɔna?,amekawo nye eyi ɖe atɔwo ƒe gbedoxɔnu kpovitɔwo awu dɔkawoe wo wɔna,1.2222,0.1923
+559,Nu kawoe míate ŋu asrɔ̃ tso ame siwo nye gbɔgbɔmeme siwo ɖo kpɔɖeŋu nyui la gbɔ?,nukawɔe mee ate ŋu asrɔ̃tsɔ ame siwo nye gbɔgbɔme me siwo ɖo kpɔ ɖe nu la gbɔ,0.625,0.127
+560,Aleke Nàte Ŋu Ade Dzi Ƒo Na Ame Siwo Le Subɔsubɔm Le Afi Si Hiahiã Geɖe Wu Le?,aleke nàteŋu ade dziƒona ame siwo le subɔsubɔm le afi si haŋea geɖewo le,0.4444,0.0833
+561,NU KA TAE WÒLE VEVIE BE MÍAKA ÐE EDZI BE YEHOWA TSƆA MÍAƑE NU VƆ̃WO KEA MÍ?,nu katã wole vevie be mia kaɖi be yewoatse wɔmia ƒe nuwo kple ami,0.7647,0.3509
+562,Yi Edzi Nàwɔ Nuteƒe Le “Xaxa Gã” La Me,yedzi na wɔnutɔƒe le haxa gã la me,0.5556,0.1429
+563,ALE SI AMEWO WƆ NU ÐE AGBALẼ SI NYE WOÐE NYA ƔAƔLA LA ÐE GO ŊU,ale sia me wɔ nu ɖe agbalẽ si nye woɖe nya ʋe lala ɖe go ŋu,0.4375,0.1702
+564,Ka Ðe Edzi Be Yehowa Tsɔ Wò Nu Vɔ̃wo Ke Wò,kaɖe dzi be yewoatse wɔ nu vɔwo kewo,0.7273,0.2258
+565,alẽwo kple gbɔ̃wo ƒe lododoa me?,nukae mie srɔ̃tsɔ alewo kple gbɔwo ƒe lododoa me,0.6667,0.6
+566,Na Ale Si Nèsrɔ̃a Nui La Nanyo Ðe Edzi!,na alesi nesrɔ̃a nyuie la nɔ nyiwo ɖe edzi mawo nya kpukpui si dzi wotɔ nusɔsrɔ̃a,1.5556,1.3103
+567,"Subɔ Yehowa, Ablɔɖe Ƒe Mawu La",subɔ yehoa ablɔɖeƒemawula mawɔ nyakpukui si dzi wotu nusɔsrɔ̃a ɖo,1.5,1.375
+568,DZITSINYA SI WOTSƆ BIBLIA NA HEHEE LA HEA YAYRAWO VANƐ,ɖi tsɔ be blana hehe la heayayiɔrawo va nɛ,0.9,0.3778
+569,NU KAE AKPE ÐE ŊUWÒ NÀKA ÐE EDZI BE YEHOWA LƆ̃ WÒ?,ŋu ke akpeɖeŋu wɔ naka ɖe edzi be yewoa lɔwo,0.8333,0.2432
+570,Nu kae nye ablɔɖe si seɖoƒe li na?,nuga nye ablɔdesi seɖoƒe li na,0.5,0.1154
+571,"Nu ka tae wòle be míanyo dɔme na mía nɔvi Kristotɔwo, awɔ amedzro na wo, ana nu wo faa, eye míatsɔ ake wo faa?",nu katã wolebe mia nyuie dɔme na mia nɔvi klristotɔwo awɔ amedzo na wo ananɔewo fã eye mia tsɔ akɛwo fã,0.6667,0.2169
+572,KPE ÐE NƆVI SIWO DZUDZƆ GBEADZIDEDE LA ŊU BE WOAGADZE GBEADZIDEDE GƆME,kpe ɖe nɔvi siwo dzidzɔgbadzi dede la ŋu be woagadze gbadzi dede gɔme,0.4167,0.0678
+573,Aleke ŋugbledede le Mawu ƒe susuwo ŋu akpe ɖe mía ŋu míawɔ nyametsotso siwo me nunya le le etsɔme?,aleke ŋgbedede le mawo ƒe susuwo ŋu akpe ɖe mia nu mia wɔ nyametsotsotsiwo si womenunya le le etsɔ me,0.5789,0.1392
+574,Miezɔ mɔ yi ɖaɖe gbeƒã le anyigbamama siwo sa ɖe aga la me zi geɖe. Ðe mieɖo ŋku nu ɖedzesi aɖe si yi edzi le mɔzɔzɔ siawo tɔgbi me la dzia?,mizɔmɔ yi ɖaɖe gbeƒala anyigba yiwo saɖagamezi ge ɖe ɖe mɛ ɖo ŋkunu ɖe dzesi aɖe yi edzi le mɔzɔzɔ ya wotɔgbɛna dzia,0.7097,0.2037
+575,Nu ka tae xexea ƒe nuŋububu le gbɔdɔnyawo ŋu nye bometsitsi le Mawu gbɔ?,nu katã xexea ƒe nu bubu le gbɔdɔnyawo ŋu nye bo metsitsi le mawo gbɔ,0.5,0.0862
+576,Nu ka tae míehiã dzigbɔɖi le nusrɔ̃lawɔwɔdɔa me?,nukatae mie hɛa dzi gbɔ ɖi le nusrɔ̃lawɔwɔdɔa me,0.75,0.0769
+577,Nu kae nàwɔ atsɔ akpe asi ɖe eŋu be nuwo nayi edzi nyuie le wò gbeadziƒuƒoƒoa me?,nukayinawo atsɔ akpa si ɖe ŋu be ne wona yi dzi nyuie le wogbadziƒoƒoame,0.7647,0.1875
+578,Ŋɔŋlɔawo me kpeɖodzi kae ɖee fia be Mawu sea veve ɖe mía nu?,ŋɔŋlɔme kpe ɖo dzi kaɖiɖi fia be mawusia veve ɖe mia nu,0.6154,0.1915
+579,Nyabiabia Siwo Tso Exlẽlawo Gbɔ,nyabia bia yi wotsɔ fli le awu gbɔ,1.4,0.2593
+580,Nu ka tae wòle be míagblɔ nya nyuia na ame sia ame si míedoa goe le gbeadzi?,nu katã wolebe mia gblɔ nyanuia na ame si nye doa goe legbea dzi,0.7647,0.2203
+581,ABE ALE SI FRANCO DAGOSTINI GBLƆE ENE,kɔdago sini gblɔ ene le nye esrɔ̃,1.0,0.7419
+582,YEHOWA ƑE GBƆGBƆ KƆKƆEAE ƲÃ AMEWO WOŊLƆ BIBLIA,yevua ƒe gbɔgbɔ kɔkɔe ʋe amewo ŋlɔ bibla,0.625,0.2308
+583,NYA VEVIAWO *,ny aveviawo,1.0,0.0
+584,Nɔviŋutsu Sɔhɛwo​—Misrɔ̃ Marko Kple Timoteo,nɔvi ŋutsu sɔhewo nye esrɔ̃m maɖriklo kple timotiwo,1.4,0.3056
+585,ALEKE YEHOWA SENA LE EÐOKUI ME TSO NYA SIWO MÍEGBLƆNA ŊU?,aleke yewo asi na le eɖokui me tso nya siwo nye gblɔ na wo,0.7273,0.1739
+586,MÍEDI BE MÍAWU DƆ SI YESU DE ASI NA MÍ LA NU,míedzi be miawu dɔ si ye sodasi na milanu,0.6667,0.1515
+587,Aleke Nàwɔ Aɖo Aɖaŋu Nyuiwo?,aleke na wo hã do aɖe nyuie wo,1.4,0.3913
+588,NU KAE MÍAWƆ BE NANEKE NAGAHE MÍAƑE SUSU ÐA LE YEHOWA ŊU O?,nokae nye ya wɔ abe nane ke naga hemia ƒe susu ɖa le yehoaŋuwo,1.0769,0.2174
+589,Di Teƒe Si Sɔ Nàte Ŋu Asrɔ̃ Nu Le,dzi teƒe si wɔna dɔ asrɔ̃nu le,0.6667,0.2917
+590,Yehowa Dea Asixɔxɔ Esubɔla Siwo Bɔbɔ Wo Ðokuiwo La Ŋu,ye ho ade asi xoxo sugbɔ ɖe asiwo bɔbɔwo ɖo kiwola ŋu,1.1,0.2273
+591,‘Nɔnɔme kawo mee wòahiã be dzi nanɔ ƒonye?’,nɔnɔmetawo mee wɔayi abe dzina nɔ ƒo nye,1.0,0.1212
+592,NƆNƆME KAWOE ATE ŊU ADO MÍAƑE ÐOKUIBƆBƆ KPƆ?,nɔnɔme kawoe ateŋua dom nye eƒe ɖokui bɔbɔ kpɔ,0.75,0.1389
+593,le ale si wòse veve ɖe Lot nui la me?,le ale si wuse veve ɖe lɔti nyuie la me,0.3,0.1852
+594,Hamemetsitsiwo Kple Subɔsubɔdɔwɔlawo—Misrɔ̃ Timoteo,ame metsitsiwo kple sugɔsubɔdɔwɔlawo misɔtiŋuti o,1.25,0.1304
+595,AMEHEHE LE HAMEA ME,ame hehe le ha mee ya me,1.25,0.125
+596,NYA VEVIAWO *,nya veviewo,0.5,0.1
+597,Ðe nènya be wò nyɔnyrɔxɔxɔ aɖee afia be èva zu Yehowa Ðasefo kple Yehowa ƒe habɔbɔa me tɔa?,evelia ɖi nenye be wo nyɔnua ƒe xoxo aɖea fia be eva zu yiŋua ɖe asi ƒom kple yiŋua ƒe habɔboa me tɔa nyatia dzi yi,1.0556,0.589
+598,ɖea lɔlɔ̃ si le mía si la fiana?,ɖiɔ lɔ̃lɔ̃ si le nya si le afi ya na,0.75,0.2609
+599,“MÍENYE . . . AME SIWO SI XƆSE LE SI ANA WOAXƆ MÍ ÐE AGBE”,míe nye ame yiwo si xɔ se le ya na woaxɔmidea gbe,0.9167,0.1282
+600,MÍAƑE DZIDZIÐEDZI NA MEKPƆ DZIDZƆ GEÐE,míaƒe didi ɖe dzi na me kpɔ dzidzɔ ge ɖe,1.1667,0.1212
+601,Aleke wòle be míawɔ nu ɖe amesiaminawo ŋu?,aleke wolebe mia wɔ nu ɖe ame sia mí na wo ŋu o,1.125,0.1176
+602,"Hananiya, Misael kple Azariya?",hanania misa kple azaria,0.75,0.16
+603,ALEKE NÀÐO WO ŊUI?,aleke na ɖo nyuie,0.75,0.4286
+604,Na nusrɔ̃via nakpɔe be ate ŋu ava nye Yehowa xɔlɔ̃,nanusrɔ̃via nakpɔe be ateŋu avanye yewoaxɔlɔ,0.8,0.0513
+605,Nu Siwo Míate Ŋu Asrɔ̃ Tso Mose Ƒe Agbalẽ Etɔ̃lia Me,nu siwo mete ŋu asrɔ̃ tso mose ƒe agbalẽtɔlia me,0.2727,0.075
+606,"Mègahe Ðe Megbe O, Xɔ Nyɔnyrɔ",mega xe ɖe megbewo xɔ nɔnɔnɔnɔ ɖo,1.0,0.4348
+607,EVA WƆ NU VƆ̃ EYE WÒTRƆ DZI ME,evea wɔ nu vɔ eye wòtrɔ dzime,0.375,0.0455
+608,Nu ene kawoe míate ŋu awɔ ale be ale si míedzia hae la naganyo ɖe edzi?,nu ene ka wɔe mee atonu awɔɔ alebe alesi nye dziahe la na ga nyo ɖe edzi,0.8125,0.1636
+609,YEHOWA ƑE AMEHEHE ÐE VI NƐ,ye howɔƒe ame hehe ɖevi nɛ,0.8333,0.0952
+610,Wotsɔ Wo Ðokuiwo Na Faa—Le Myanmar,wotsɛ wɔ ɖokuiwo na faa le mia mea,1.1667,0.25
+611,NYUIWƆWƆ ÐEA VI NA MÍ,nyuwɔwɔ ɖe avi na mee,0.8,0.2353
+612,“MINƆ MIA ÐOKUI DOM KPƆ”,mi nɔ mía ɖokui dom kpɔ,0.8,0.1111
+613,"Yehowa Mawu do ŋugbe be ne míeɖo to ye la, yeayra mí fifia eye míakpɔ agbe mavɔ hã le etsɔme.",yahuamawo dom gbebe nenye ɖo to yea yea yiɔɔ misifia eye míakpɔ agbemavɔ hã le tsɔ me,0.8,0.2083
+614,Aleke ŋugbe si Mawu do na Abraham la ɖee fia be paradiso aɖe ava le etsɔme?,aleke nugbesimawo dona abe la ɖe fia be praɖadi sod aɖea va le tsɔ me,0.8125,0.2034
+615,ALE SI MÍAWƆ BE MÍALÉ BIBLIA ME NYATEƑEA ME ÐE ASI SESĨE,ale si mie wɔbe mia le bible le nya teƒea me de asi sesɛ̃e,0.8333,0.2
+616,Nu kae ŋkɔnya “dzi” ate ŋu afia?,nukae nukɔ nye dzi ate ŋua fia,0.7143,0.1304
+617,AME KAE LE WÒ MLAM FIFIA?,ame kae le wó mlamsifia,0.5,0.1053
+618,le hamea me?,mɔkawo nyuie wolebe miaɖe ame bubu afi ya le le hama me,3.3333,4.0
+619,ŊUSẼ LE YEHOWA SI BE WÒAÐO SEÐOƑE NA AMEWO,ŋusẽ le wo asi be wɔa ɖo seɖoƒe na amewo,0.5556,0.2059
+620,ele be míaƒo nu tso mía Fofo si le dziƒo la ŋu na ame bubuwo?,elabe miaƒonu tso miaƒoƒo si le dziƒolaŋu na ame bubuwo,0.6,0.1087
+621,ALE SI YEHOWA KPENA ÐE NU VƆ̃ WƆLAWO ŊU BE WOATRƆ DZI ME,ale si woakpena ɖe nɔvɔlɔnu be woatrɔ dzime,0.6923,0.2791
+622,“MEYI EDZI LE DZI DOM LE NU SIA NU ME”,me yiɛ dzi le dzi dom le nu sia nu me,0.3,0.037
+623,ESI MÍELƆ̃ YEHOWA EYE MÍEDI BE MÍADA AKPE NƐ TAE MÍESUBƆNƐ ÐO,esi mie lɔ ye xɔ wɔa eye mie di be míada kpe ne tae nye esibɔ ne ɖo,1.0833,0.2653
+624,MÍETSƆ MÍA ÐOKUI ÐE ADZƆGBE NA YEHOWA,míetsɔ miaɖokui ɖe adzɔgbe na yevua,0.5714,0.1935
+625,Kpeɖodzi kawoe ɖee fia be Yehowa le ameha gã aɖe nu ƒom ƒu tso dukɔ siwo katã le anyigba dzi la me?,kpeɖodikawoe ɖe fia be yewo alameha gã aɖe nu ƒom ƒu tso dukɔ si wo katã le anyigbadzila me,0.5,0.0649
+626,Àte Ŋu Aɖu Satana Kple Gbɔgbɔ Vɔ̃wo Dzi!,eƒe ta nyee nye ateŋu addusa ta na kple gbɔgbɔwo dzi,1.25,0.5484
+627,LÉ WÒ NYAMETSOTSOA ME ÐE ASI SESĨE,le wɔ nyametsotso woame ɖe asi sesiẽ,0.8571,0.25
+628,Nu atɔ̃ kawoe wòate ŋu ahiã be míatsɔ asa vɔe be míasrɔ̃ Biblia me nyateƒea?,nu atɔ̃ kawoe woate ŋu avi ya be míatsɔsa avɔe be mia srɔ̃abi ble be blam nya teƒea,0.8667,0.2373
+629,LÉ TO ÐE NƆVIWÒWO ŊU NYUIE,le to ɖe nɔviwo nu nyuie,0.6667,0.2381
+630,KPE ÐE NUSRƆ̃VIA ŊU WÒATSI LE XƆSE ME EYE WÒAWƆ ŊGƆYIYI,kpe ɖe nusrɔ̃via ŋu wɔati le xɔ se me eye wɔawɔ ŋgɔ ʋi,0.6364,0.1591
+631,"Gbãtɔ, ɖoɖo kae Yehowa wɔ tsɔ le kpekpem ɖe mí amegbetɔwo ŋu be míate ŋu aɖu nu vɔ̃ dzi eye míaƒe nu nadze ye ŋu?",gbatɔ du ɖo ka yi xɔa wɔ tsɔ le kpekpem ɖe mi amegbetɔ ŋu be míateŋu adu nu vɔ dzi eye míaƒe nunadze yi ŋu,0.56,0.1512
+632,Nu ka tae wòhiã vevie be míada asɔ le ale si míebua ɖiɖiɖeme kple dɔwɔwɔe me?,nu katã wòya vevie be mia daa sɔle alesi mie buaɖiɖi ɖe me kple dɔwɔwɔe me,0.6875,0.1148
+633,Kpe ɖe eŋu be wòakpɔe be kpekpeawo dede le vevie tsɔ kpe ɖe Biblia-nusɔsrɔ̃a ŋu,kpeɖeŋu be wòakpɔe eve kpekpeawo dede le vevie tsɔ kpe ɖe bibllanusɔsrɔ̃a ŋu,0.3333,0.0635
+634,ALE SI MÍAWƆ ADA ASƆ LE ALE SI MÍEBUA DƆWƆWƆ KPLE ÐIÐIÐEME GOME,ale si mie woadaa sɔ le ale si mie ŋua dɔwɔwɔ kple didi ɖe megome,0.6154,0.1569
+635,WƆ NU SI ANA YEHOWA NAYRA WÒ,wɔnu si anayi ye ho anayi ɖe wo,1.1429,0.3182
+636,Aleke Satana dzea agbagba be yeagblẽ nu le míaƒe dzia ŋu?,aleke sata na dze agbagba be yeagblenu le míaƒe dziaŋ,0.6364,0.0652
+637,DA TIATIA VOVOVO SIWO LI LA KPƆ NYUIE,ɖatatia vovovo yiwo lia kpɔ nyuie,0.625,0.1333
+638,SATANA DZEA AGBAGBA BE YEADE MAMA MÍA ME,atana dzi agbagba be yeade mamleamia me,0.5,0.1818
+639,ŊUSẼ YEYE AÐO AME SIWO KPƆA MƆ NA YEHOWA ŊU,ŋusẽ yeye ya do ame siwo kpɔ amewo na yewo woanɔ,0.6,0.2647
+640,NU SI TUTUTU NANA MÍEKPƆA DZIDZƆ,nu si tututu nana mie kpɔ dzidzɔ,0.3333,0.0741
+641,ENYE SE SI DEA DZI ƑO NA AMEWO BE WOAWƆ NU DZƆDZƆE,enye esi dea dziƒona amewo be woawɔ nudzɔdzɔe,0.5833,0.0256
+642,WODE DƆ ASI NA MÍ LE NUTO BUBU ME,wó de dó asi na mí le nutso bubu me,0.4444,0.12
+643,“Ɣeyiɣi Li Na” Dɔwɔwɔ Kple Ðiɖiɖeme,ʋe yi yi li na dɔwɔwɔ kple didi ɖe me,1.0,0.1429
+644,Fia Hizkiya,fia yi zikia,1.0,0.3
+645,BIBLIA NUSRƆ̃VIWO ÐU WOƑE TSITRETSIÐEŊULAWO DZI,bibllanusrɔ̃viwo ɖu woƒe tsitre tsi ɖe ŋulawo dzi,1.1667,0.0732
+646,LƆ̃ MÍA FOFO LA EYE ÀKPƆ DZIDZƆ,lɔmiaƒoƒola eye akpɔ dzidzɔ,0.7143,0.1667
+647,"Nu kawoe míate ŋu awɔ be míayi agbedua ƒuƒu dzi ne nu siwo míele mɔ kpɔm na meva eme o, ne tsitsimekuxiwo le fu ɖem na mí, alo míaƒe xɔse ƒe dodokpɔwo nu gbe tsotso gɔ̃ hã?",nukawoe míate ŋu awɔbe yeya gbedoxɔ dzi nenusiwo mie le mɔ kpɔm na ame va me o ne tsitsime kuxiwo le fu ɖem na mí alo míaƒe xɔ se ƒe dodokpɔ nugbedzodzogɔ hã,0.6216,0.1439
+648,Nu ka tae wòle be Biblia- nufiala naɖu eɖokui dzi ne ele Biblia srɔ̃m kple nusrɔ̃vi aɖe?,nu katɛ wolebe biblia nufiala na du eɖokui dzi ne le biblia srɔ̃m kple nusrɔ̃vi aɖe,0.4118,0.0735
+649,NYAMETSOTSO SESẼ AÐE DZE ŊGƆ MÍ,nyametsotso sesiẽ aɖe dze ŋgɔ mí,0.3333,0.0769
+650,"Ne afɔ si ɖem wòle tsi tre ɖe Biblia ƒe se ŋu la, ke bia ɖokuiwò be: ‘Nyee dze aɖɔe ɖoa?",nafɔe ɖem wole tsi tsitre ɖevi glaƒe senwo hã ke bia ɖokuiwo be nye dzaa ɖoe ɖoa,0.7143,0.2969
+651,Nu kae amehehe le mía dzram ɖo na?,nukae ame hehe le mia dzram ɖo na,0.5,0.0385
+652,“NUFIAME SI LE ABOLO SIWO WÒNA ME”,ƒle fiamesi le abo si wɔwɔ na me,0.8571,0.2692
+653,"Pam, aleke agbea nɔ le ƒukpoawo dzi, ne ètsɔe sɔ kple ale si agbea nɔ le Australia?",kpam aleke agbea nɔ le ƒokpoawo dzi ne tsɔe sɔkple ale agbea nɔ le srɛ lia,0.4706,0.1406
+654,Aleke wò dzitsinya ate ŋu anye mɔfianu nyui aɖe na wò le agbe nyui nɔnɔ gome?,aleke wò dzitsi nye ate ŋua nye mɔƒe anɔ nyuie aɖe na wo le agbɛnu nɔnɔgo me,0.75,0.1475
+655,"Nu kae kpe ɖe Fia David ŋu be ƒomedodo kplikplikpli va nɔ eya kple Yehowa dome, eye nufiame kawoe le eƒe kpɔɖeŋua me na mí?",nukae kpe ɖe fia davi nu be ƒome dodo kpekli va nɔ ya kple yi wo dome eye nufia me kawoe le eƒe kpɔ ɖe nua me na mí,0.6,0.1546
+656,"Yehowa léa be na ame siwo ƒe dzi gbã la vevie. Nyati sia akpe ɖe mía ŋu míakpɔ nu siwo Yehowa wɔna be yeatsɔ afa akɔ na mí, kple ale si míawo ŋutɔwo hã míate ŋu afa akɔ na ame bubuwo.",yeho ale abe na ame siwo ƒe dzi gbalẽ vevie nyati akpe ɖe miawo míakpɔe nyuie yehoa wɔna be yeatso afakɔna mi kpla le miawo ŋutɔwo hã míate ŋu afakɔna ame bubuwo,0.5854,0.1714
+657,Nu Si Tanyenye Fia Le Hamea Me,eƒe ta nyae nye nu si ta nenye fia le hamea me,0.8571,0.5417
+658,ÐE VINYEA TSI AXƆ NYƆNYRƆ FIFIA?,ɖevi nye atsi axɔ nɔ nɔnɔ fifia,0.8333,0.1538
+659,Nu kawoe nàwɔ be nànɔ to ɖom nyuie le kpekpeawo me?,nukawoe na wo be nanɔtodo nyee le kpekpeawo me,0.6364,0.175
+660,Nyabiabia Siwo Tso Exlẽlawo Gbɔ,nyababiasi yiwo tso exlẽlawo gbɔ,0.4,0.1111
+661,Nyati sia akpe ɖe mía ŋu míakpɔ ale si míana Yehowa nafia mɔ mí ne míele nya me tsom.,nyati ya kpe ɖe mia nu nyakpɔ ale yi míana yewoana sia mɔ mí nenye le nane dzom,0.6842,0.2576
+662,Dze Agbagba Mia Kple Nɔviwò Kristotɔwo Dome Nanɔ Kplikplikpli Hafi Nuwuwua Nava,dzeagbagba mia kple nɔviwo klitsotɔwo dome na nɔ kpli kpli hafi nu wɔna va,0.9167,0.1765
+663,ABE ALE SI LÉONCE CRÉPEAULT GBLƆE ENE,abe alesi liaŋu sikriƒɔd gblɔ ene,0.7143,0.4839
+664,KPƆÐEŊU SI YESU ÐO ÐI NA MÍ LE ÐETSƆTSƆ LE EME NA AMEWO ME,kpɔɖeŋu si ye sudoɖi na mí le detsɔtsɔ le eme na amewo me,0.3571,0.0889
+665,Srɔ̃ Gibeontɔwo Ƒe Kpɔɖeŋu,eƒe ta nye anyi nye sɔgbɛɔtɔwɔƒe kpɔ ɖe ŋu,2.25,0.9091
+666,"Ne míewɔa geɖe le gbeƒãɖeɖedɔa me la, nu ka tae esia ana míakpɔ dzidzɔ?",mɛnye wɔa geɖe le gbeƒaɖiɖe doa me la nukatae sia namia kpɔ dzidzɔ,0.7143,0.1786
+667,Nu Si Tae Mawu Ƒe Ŋkɔa Le Vevie Na Yesu,nutayamawo ƒe ŋkɔ le vevie na yevu esi o,0.8,0.3667
+668,ƔEKAƔIE WÒLE BE MÍAZI ÐOÐOE?,ɣe ka ye wolebe miaziɖoɖoe,1.0,0.2609
+669,ALE SI NÀKE ÐE BIBLIA ME GƆMEÐOSE SIWO ŊU DƆ NÀWƆ LA ŊU,ale yi nake ɖevi blamɛ gɔmedusɛ yiwo ŋudɔna wɔaŋu,0.9231,0.2791
+670,c Yesu ƒe kua hã ʋu mɔ na ameƒomea be woakpɔ agbe mavɔ.,yisɔƒe ku hã ŋu mɔna me ƒome abe woakpɔ agbemavɔ,0.8462,0.1429
+671,"Nu Ka Tae Nàlɔ̃ Faa Abɔbɔ Ðokuiwò Na Yehowa, Eye Aleke Nàwɔe?",nu katã yina lɔ fã abɔbɔ ɖokuiwo na yewo woa eye aleke na woe,0.75,0.2553
+672,"Na kpekpe na gbeadziyiyi nanɔ kpuie, megawu miniti adre o, ale be gbeƒãɖelawo nate ŋu adze dɔa gɔme kaba.",batɔ nàkpekpe nàgbiadzi yina lɔ kpui mega wu miniti adrɛn o alebe gbeƒãɖelawo nàte ŋu adze doa gɔme kaba,0.6842,0.1786
+673,MÍEWƆA DƆ TSO FƆŊLI VA SE ÐE ƔETRƆ,mewɔdɔtsofɔŋli va se ɖe dzedrɔ,0.75,0.2222
+674,NUTOME SUE DZIKPƆLAWO DOA ŊUSẼ HAMEAWO,nuto mesue dzi kpɔnawo doa ŋusẽ hamawo,0.8333,0.0606
+675,WOGBUGBƆ WƆ ÐOÐO ÐE DƆA ŊU LE EUROPE,wogbugbɔ wɔ ɖoɖo ɖe dɔaŋu le eɖo,0.625,0.2414
+676,ALE SI YEHOWA KPE ÐE MÍA ŊU,ale si ke xɔ akpe ɖe miawo,0.7143,0.381
+677,AYEMƆ ETƆ̃ SIWO ŊU DƆ SATANA WƆ TSƆ ÐE ABOYO ISRAEL-VIWO WOZU EƑE KLUVIWO,ayimɔ etɔ̃ siwo ŋudɔ sata na wɔ tsɔ ɖe abo yi isreviwo woziɔe ƒe klɔviwo,0.7857,0.1379
+678,"Fifia, nɔviŋutsu enyi siwo nye amesiaminawoe le Dɔdzikpɔhaa me:",fifia nɔvi ŋutsu enyi siwo nye ame sia mi na woe le dɔdzikpɔxam,1.0,0.0566
+679,WƆ NU SIWO ANA FOFOWÒ SI LE DZIƑO LA NAKPƆ DZIDZƆ ÐE ŊUWÒ,wɔnu siwo ana fofo si le dziƒo la nakpɔ dzidzɔ ɖe ŋuwo,0.3846,0.0889
+680,Dzidzɔ​—Nɔnɔme Nyui Si Tso Mawu Gbɔ,dzidzɔ nɔnɔme nyuie si tso mawu gbɔ,0.5,0.0357
+681,NU VEVI AÐE SI MESRƆ̃ SI NYEMAŊLƆ BE O,nu vevi aɖe yi me srɔ̃ yi nye maŋlɔbewo,0.7778,0.1379
+682,Vevesesea akpɔtɔ anɔ anyi ne mèwɔ naneke tso eŋu o.,vevisesɛ sia akpɔtɔ nɔ anyi ne mewɔ naneke tsɔe ŋu o,0.6,0.1707
+683,ALE SI MÍAWƆ BE MÍANYE DƆMENYOLAWO,ale si mia wɔbe mia nye dɔmenyolawo,0.6667,0.069
+684,"Ðo Ŋu Ðe Kristo, Míaƒe Kplɔla La, Ŋu",ɖonu ɖe klista miaƒe kplɔ̃ lala ŋu mawo nyakpɛ kpli si dzi wɔtɔ nusɔsrɔ̃a ɖo,1.75,1.4444
+685,Nu kae míawɔ be Yehowa ƒe nublanuikpɔkpɔ kple tsɔtsɔke naɖe vi na mí?,nukae mia wɔbe yevuwo ƒe nublanikpɔkple tsɔtsɔkɔ na ɖevi na mee,0.8462,0.1964
+686,Aleke nàɖee afia be yetsɔ ɖe le eme na amewo le gbeƒãɖeɖedɔa me?,aleke nane ɖe afi ya be ye tsɔ ɖe le eme na amewo le gbe kpɔm ɖe ɖe doa me,0.8462,0.1765
+687,Aleke Nèbua Ame Siwo Le Wò Anyigbamama Me?,aleke ne bu ame siwo le wɔ anyigba woame ameame,0.75,0.2353
+688,DZIEHEFIA KPLE ANYIEHEFIA LE WO NƆEWO TUTUM,dze hefia kple anye hefia le wo nɔewo tutum,0.5714,0.0541
+689,NYE AME SI LƆ̃NA FAA BE YEASUBƆ AME BUBUWO ABE MARKO ENE,ye ame si le nɔna fa ɖe ya ya subɔ ame bubuwo abe maɖko ene,0.75,0.1818
+690,“MAMA NAGANƆ MIA DOME O”,mama naga nɔ mía dome o,0.6,0.0556
+691,NU KAWOE ATE ŊU AWƆE BE MÍABIÃ ŊU AME BUBUWO?,nukawoe ateŋu awɔe be mia bia nu ame bubuwo,0.7,0.0857
+692,DZE AGBAGBA NÀNYA NƆVIWÒŊUTSUWO KPLE NƆVIWÒNYƆNUWO NYUIE,dze agbagbã nanya nɔviwo ŋutsuwo kple nyɔnuwo nyuie,0.7143,0.18
+693,Aleke nàte ŋu akpe ɖe Biblia nusrɔ̃viwo ŋu woalɔ̃ Yehowa geɖe wu?,aleke nàta kpe ɖevi blanusrɔ̃viwo woale yi xɔa geɖe wu,0.75,0.2353
+694,"Ne míaƒe subɔsubɔ dɔdeasi trɔ la, nu kae ate ŋu akpe ɖe mía ŋu be míatrɔ ɖe míaƒe nɔnɔme yeyea ŋu nyuie?",nɛ míaƒe subɔsubɔdɔ de asi trɔ la nukae ateŋu akpe ɖe mía ŋu be míatrɔ ɖe míaƒe nɔnɔme yeyea ŋu nyuie,0.3636,0.0123
+695,"“GBƆGBƆ LA ƑE YI,” SI NYE MAWU ƑE NYAA",gbɔgbɔ la ƒe ʋi si nye mawo ƒe nya,0.3333,0.1111
+696,ÐOE KPLIKPAA BE YEADZE YEHOWA ŊU,ɖrikplikpa be yeadze yewoanɔe,0.6667,0.3333
+697,NA BIBLIA ME GƆMEÐOSEWO NAFIA MƆ WÒ,na bi blamegɔmedosewo na fiam wo,0.8571,0.1379
+698,Dzra Ðo Ðe Kpekpeawo Ŋu Be Wò Nyaŋuɖoɖowo Natu Ame Ðo,ale yina wɔm wonya nuɖoɖo natua me ɖo,1.0,0.5116
+699,WƆ BIBLIA ME GƆMEÐOSEWO ŊU DƆ LE WÒ AGBE ME,wɔbɛ blamegɔmedosɔŋudɔ le wɔagbe me,0.8,0.2059
+700,Aleke míewɔ nya be Yehowa tutua míaƒe nu vɔ̃wo ɖa?,aleke mie wɔ nya be yewoatutu wɔmia ƒe nuvɔwo ɖaa,0.8,0.1795
+701,ALE SI MÍALƆ̃ ŊUTIFAFA,ale tsi mia lɔ ŋuti fafa,1.25,0.1111
+702,“MIÐE MƆ NA DZIKU LA”,mi demɔna dzikula,1.0,0.0667
+703,"Nu kae nye nu vevitɔ si wòle be wòaʋã wò be nàsubɔ Yehowa, eye nu ka tae nèɖo eŋu nenema?",ŋuke nye nu vevitɔ si wolebe wɔ avɔwo be nasugbɔ yewoawoa eye nu katã ne ɖo nu nenema,0.6,0.25
+704,"Le nyati sia me la, míade dzesi nu siwo Satana wɔna kple susu be yeaflu mí ne míagaka ɖe Yehowa Mawu kple Yesu Kristo dzi o.",le nyati ya mee nye ya de dzesi nyuie wo katana wɔna kple susu be yeaflo mi nɖemia gaka ɖe yeho ameawo kple ye sukuli stɔdziwo,0.6923,0.2268
+705,ALEKE NÀÐO WO ŊUI?,aleke na ɖo wɔ nyuie,1.0,0.4286
+706,Ŋlɔ ŋuɖoɖoa,wɔtsɔna be míetɛ ŋu doa dzi dziɖiɖu…,3.5,2.4
+707,Nu kae na nèka ɖe edzi be Yehowa kple Yesu li kpli wò?,nukae nane ka ɖe dzi be yewoaƒle ye solikpliwo,0.8462,0.1951
+708,DZINYELAWO KPLE NƆVINYEWO,zinelawo kple nɔvi nyɔnuwo,1.0,0.2174
+709,Nu kae míate ŋu awɔ be nusɔsrɔ̃ tso Biblia me nyati aɖe ŋu nadzro mí?,nu kae nye adiŋua wɔ abe nusɔsrɔ̃tso bi blam nyati aɖe ŋu na dzromii,0.6667,0.1887
+710,Nyagblɔɖia Yehowa dɔ eƒe “dɔla” ɖa be “wòadzra mɔ dzi ɖo” na Mesia Fiaɖuƒea. “Dɔla” la te ‘nya nyuia gbɔgblɔ na ame fafawo.’,nyagblɔɖia ye ho wɔdɔ eƒe dɔlala be woadzrɔ̃a mɔ dzi ɖo na ame sia ɖuƒea dɔlala te nye anyi agbɔgblɔna me fafa wo,0.6957,0.1196
+711,ANUKWAREÐIÐI KPLE DƆ SESẼ WƆWƆ,anuku aɖeɖiɖi kple dɔ sesẽwɔwɔ,0.8,0.1538
+712,Aleke wòle be míabu míaƒe xaxawoe?,aleke wole be miawu miaƒe haxawoe,0.6667,0.1786
+713,Sɔhɛwo—Minɔ Te Sesĩe Ðe Abosam Nu,sɔhewo minɔte sesɛ̃e ɖe agbɔnusẽ̃aŋu mawo nyakpui kpli si dzi wotu nuzɔsrɔ̃a ɖo,2.1667,1.5185
+714,MEDI VEVIE BE MAWƆ DƆ LE BETEL,ameɖi vevie be mawɔdɔ legbete,0.7143,0.1667
+715,Nu ka tae mele be míahe ɖe megbe be míade dzi ƒo na Biblia-nusrɔ̃vi be wòatsɔ eɖokui aɖe adzɔgbe na Yehowa eye wòaxɔ nyɔnyrɔ o?,nukatae mele be mia he ɖe megbe be mia de dziƒona bible nusrɔ̃vi be woatsɔ ɖokui aɖe adzɔgbe na yewoa eye woaxɔ nyɔnua wo,0.64,0.12
+716,Mieva srɔ̃ gbe vovovowo hã dodo. Gbesɔsrɔ̃ ƒe ŋutete tɔxɛ aɖee le mia sia?,míe va srɔ̃gbe vovovowo hã dodo gbe sɔsrɔ̃ƒe ŋudede tɔxɛ aɖe le miasi ya,0.6429,0.0877
+717,NU SI TAE “AME SIWO DZA LE DZI ME” LA KPƆA DZIDZƆ,nu si tae ame siwo dza le dzim la kpɔ dzidzɔ,0.25,0.0556
+718,Do Vevie Nu Le Wò Dɔdeasia Me!,ɖo vivi nu le wo dɔ ɖe asia me,0.8571,0.2174
+719,MÍEKPE AKƆ KPLE VOVOTOTODEDE YEVUWO KPLE AMEYIBƆWO DOME ƑE KUXIA,míekpe akɔ kple vototɔdede yevuwo kple ameyibɔwo dome ƒe kuxia,0.1,0.0545
+720,NE MÍA NƆVIWO LE NƆNƆME SESẼWO ME TOM,mɛmɛa nɔviwo le nɔnɔmesesɔ me tom,0.5,0.2
+721,Aleke wòle na ame siwo le ŋusẽnɔƒewo la be woawɔ nu ɖe amewo ŋu?,aleke wole na ame si wole ŋusē nɔƒewo la be woawɔnu ɖe amewo ŋu,0.5,0.04
+722,NU SI NÀTE ŊU AWƆ BE DZI NANƆ ƑOWÒ GEÐE WU,nusrɛ̃na teŋu awɔ abe dzi na nɔƒo geɖe wu nu,0.8182,0.2812
+723,SATANA HÃ LE WO DOME VA,setana hã le wo dome va,0.1667,0.0556
+724,Na hehe nɔviŋutsuwo be woadze agbagba ɖe sia ɖe ayi ŋgɔ axɔ agbanɔamedziwo le hamea me.,enelia na hehe nɔvi ŋutsuwo be woadze agbagba ɖe sia ɖe ayi ŋgɔaxɔ agbanɔame dziwo le hamea me,0.375,0.0845
+725,NU SIWO MÍESRƆ̃ TSO FIA DAVID GBƆ,nu siwo míesrɔ̃tse fia daviɖ gbɔ,0.4286,0.0769
+726,Ðe Biblia Ƒe Mɔfiamewo Gaɖea Vi Egbea?,ɖe blibo la ƒe mɔ fiam woga ɖevia gbea,1.1429,0.2258
+727,Nu kawoe kpena ɖe mía ŋu míeyia edzi ɖea gbeƒã?,nukawoe kpe na ɖe mia nu ye ya dziɖe agbeƒea,0.9,0.2162
+728,ALEKE SATANA WƆA AYEMƆ SIAWO ŊU DƆ TSƆ ÐEA ABOYO AMEWOE?,aleke sata na wɔa eyemɔ siawo ŋudɔ tsɔ ɖe abo yɔ amewoe,0.7273,0.0889
+729,"Le ɣleti ɖe sia ɖe me la, masrɔ̃ kpɔɖeŋudzeɖonya yeye si do le Kristotɔwo Ƒe Agbenɔnɔ Kple Subɔsubɔdɔ—Kpekpea Ƒe Nusrɔ̃gbalẽa me",le ʋleti ɖe sia ɖe me la masrɔ̃kpɔ ɖe nu dze ɖo nya ye yi si do le klisotɔwo ƒe agbenɔnɔ kple subɔsubɔ ƒe nusrɔ̃gbalẽa me,0.5238,0.1346
+730,Nu Si Akpe Ðe Ŋuwò Nàwɔ Avu Kple Susuhenuwo,eƒe ta nye nye nusi akpe ɖe ŋu o na wo avu kple susu ʋe nuwo,1.4444,0.4857
+731,ale si Yehowa bua wɔnamanɔŋutɔwoe?,ale esi xɔ abo wɔna ame nɔnutɔwoe,1.2,0.3793
+732,Gbugbɔ To Nya Veviawo Me,wogbɔtɔ nye veviawo me,0.6,0.25
+733,Nu kae Satana wɔna be yeatsɔ ade mama mía kple mía nɔvi Kristotɔwo dome?,nuka esatana wɔna be yeatsɔ ade mamamia kple mía nɔvi krisotɔwo dome,0.4286,0.0345
+734,Nu kae lé ɣletinyigbawo abe míaƒe anyigba ene ɖe yame?,ŋuke leletinigbawo abe mia ƒe anyigba ene ɖe yame,0.6,0.1364
+735,‘MÍELƆ̃A MÍA NƆEWO VEVIE’,míanɔa mia nɔewo vevie,0.5,0.1579
+736,MÍA NƆVIWO ƑE LƆLƆ̃ DO ŊUSẼ MÍ,nya nɔviwo ƒe lɔlɔ̃ do ŋusẽmi,0.4286,0.1304
+737,NU SI TAE AME AÐEWO ‘DZRAA’ NYATEƑEA KPLE ALE SI ESIA DZƆNA,nusita ame aɖewo dzra nye teƒea kple alesi esia dzɔna,0.75,0.087
+738,AMEWO KATÃ ANƆ ANYI LE ŊUTIFAFA ME,amewo katã anyi le nusi fafa me,0.4286,0.1786
+739,Yuda,tsiawu enu,2.0,2.0
+740,KPE ÐE WÒ ƑOMEA KPLE HAXƆSETƆWO ŊU,kpe ɖe woƒe mee kple haxɔsetɔwo ŋu,0.4286,0.1429
+741,YI EDZI NÀÐO AÐAŊU EYE NÀLƆ̃ WOAÐO AÐAŊU NA WÒ,yi edzi yina ɖo aɖe ŋu eye nanewo hã woa ɖo aɖe ŋu na wo,1.1,0.4722
+742,WOTSƆ DZIDZƆ LE MƆ KPƆM NA DƆ GEÐE,wotsɔ dzidzɔ le mɔ kpɔm na dɔ geɖe,0.125,0.037
+743,NU KAWOE MÍATE ŊU AWƆ BE MÍAYI EDZI AWƆ NUTEƑE ESIME NUWUWUA LE AƑE TUM?,nukawɔe miateŋu wɔwɔ abe mia yi edzea wɔ nuteƒe esime nuwala ƒe tum,0.8,0.193
+744,Nu ka tae wòle be wòadze na amewo kɔtɛ be Yehowa subɔlawoe míenye?,nu katã wolebe woadzena amewo kɔtɔe be yevua subɔlawoe mie nye,0.7692,0.1887
+745,Mɔ kawo nue wòle be ƒome ƒe ta nakpɔ eƒe ƒomea ƒe nuhiahiãwo gbɔ le?,mɔkawo nyuie wole be ƒome ƒe ta nàkpɔe ƒe ƒomea ƒe nuyahiawo gbɔ le,0.4667,0.1321
+746,YEHOWA KPƆA MÍAƑE NUHIAHIÃWO GBƆ NA MÍ,yevua kpɔ amea ƒe nu ye hã wogbɔna mí,1.1429,0.25
+747,NU SI WÒLE BE WÒANƆ VEVIE NA MÍ,nu yi wole be wɔa nɔ vevi na mí,0.625,0.1667
+748,NE AME AÐE BIA BE NÀÐO AÐAŊU NA YE,na ame aɖe dia be nadoa ɖaŋu na ye,0.5556,0.2308
+749,"Marie-Line: Dzoɖagbewo la, míeɖina ɖe eme hedzraa ɖo ɖe kpekpeawo ŋu. Tso Braɖagbe tsɔ yi la, míeyia gbeadzi.",maɖelɛn dzɔɖagbewo mieɖi na ɖe me hedzra ɖo ɖe kpekpea ŋu tsɔ bladagbe tsɔ yia mie yiagbea dzi,0.7222,0.1977
+750,Nu ka tae “ŋutifafa kple dedienɔnɔ” ƒe gbeƒãɖeɖea anye alakpanya vɔ̃ɖi?,nu katã ŋuti fafa kple dedienɔnɔƒe gbeƒãɖeɖea anyi alakpanya vɔ ɖii,0.7273,0.0702
+751,Nu ka tae wòle vevie be nàzã Mawu ƒe Nyaa ne èle nu fiam amewo?,nu katã wole vevie be nazamawo ƒe nya ne le nu fiam amewo,0.4667,0.1667
+752,Nu Si Tae Biblia Me Gɔmeɖosewo Le Vevie,eƒe ta nyee nye nu yi tiɖi blamegɔmedosewo le vevie,1.0,0.5625
+753,Nu kawoe ate ŋu akpe ɖe ŋuwò be nàlɔ̃ Yehowa?,nukawoe ateŋ akpeɖeŋuwo be nane nɔ yexɔa,1.0,0.2647
+754,"Ka Ðe Yehowa, Xexea Katã Ƒe Dziɖulagã La Dzi",eƒe ta nye anye kaɖi yevua xexe katã ƒe dziɖula gã la dzi,1.0,0.4857
+755,"Le nyati sia me la, míakpɔ ɖoɖo siwo Yehowa wɔ tsɔ le kpekpem ɖe mía ŋu be míado dzi kple ale si míana ɖoɖo nyui siawo naɖe vi na mí.",…amea míakpɔ ɖoɖo yiwo yewo yewoa wɔ tsɔ le kpekpem ɖe mia ŋu be mia do dzi kple ale yi mia na ɖoɖo nyui ya o na ɖevi na mí,0.6,0.2157
+756,TƆTRƆ SIWO ŊU MAWU ÐE MƆ ÐO LE SRƆ̃ÐEÐE ME LE BLEMA,tɔtrɔ siwo ŋu mawu ɖem ɖo le srɔ̃ɖeɖe me le ble ma,0.5,0.1282
+757,Ɣekaɣie Wogbugbɔ Xɔ Ŋutsu Si Nɔ Korinto La Ðe Hamea Me?,ɣe tayewo gbugbɔ xɔ ŋlotsi nɔ kɔri ŋutɔ la ɖe ha ma me eme nyawo xlẽ be,1.2727,0.5682
+758,Aleke Yehowa na mɔkpɔkpɔ mí amegbetɔ nuvɔ̃mewo?,aleke na ɖo nyuie aleke yewo woana kpɔkpɔmi amegbetɔ nu vɔ me o,1.5714,0.5128
+759,Nu ka tae wòle be nàka ɖe edzi kple dzi blibo ɣesiaɣi be Yehowa tsɔ wò nu vɔ̃wo ke wò?,nukatae wole be naka ɖe dzi kple dzi blibo ʋe sia yi be yewoatsɔ wɔ nu vɔwo kewo,0.7,0.1385
+760,FIA WO BE WOAWƆ ÐE SE SI YESU DE LA DZI,fiawo be woawɔwɔ ɖe sesii sodela dzi,0.8182,0.2069
+761,Aleke nàkpe ɖe wò Biblia nusrɔ̃vi ŋu be wòanya Yehowa nyuie?,aleke nàkpe ɖe wòbi bla nusrɔ̃vi ŋu be woanya yewo woanyee,0.4545,0.125
+762,Nya Siwo Yakob Gblɔ Ði Le Eƒe Kuba Dzi,gblɔɖi le eƒe kubadzi via zebelɔn,0.8889,0.7667
+763,Dzigbɔgbɔ Blewu—Enye Dzidodo Si Ŋu Taɖodzinu Le,dzi gbɔgbɔ blewo enye dzidodo si ŋutarodzi ŋu le,0.8571,0.075
+764,Madi mɔnukpɔkpɔwo be matsɔ ahe amewo ƒe susu ayi jw.org ® dzi alo aɖe video afia wo,mɔnu kpɔkpɔ be matsɔxem woƒe susu ayi dzɛ wɔdɔkɔdzi alo aɖevi ɖiɔ afiãwo,0.75,0.3385
+765,Aleke gbedodoɖa ate ŋu akpe ɖe mía ŋu ne wowɔ nu madzɔmadzɔ ɖe mía ŋu?,aleke gbedodo ɖe ate ŋua kpe ɖe mia ŋu ne wowɔ nu madzɔdzɔ ɖe mia ŋu,0.4667,0.0909
+766,Aleke wòle be míado gbe ɖa abia gbɔgbɔ kɔkɔea?,aleke wolebe mia do gbe ɖa abia gbɔgbɔ kɔkɔea,0.3333,0.0541
+767,KU ÐE EYA AMEA ŊU,ku ɖe eya ameaŋu,0.6,0.0769
+768,Ðe nusrɔ̃via fia nɔvi siwo akpe ɖe eŋu be wòagate ɖe Yehowa ŋu wu,ɖe nusrɔvia fia nɔvi siwo akpe ɖe ŋu be wɔagate ɖe yewoaŋuwo,0.4286,0.1176
+769,FIA WO ALE SI WOADE ŊUGBLE,fiawo ale si woade ŋu ble,0.6667,0.0476
+770,MEƲU YI HABƆBƆA ƑE DƆWƆƑEGÃ,ŋu yi habobo ƒe dɔwɔƒe gã,0.8,0.2609
+771,ÐE WÒLE BE NÀGBLƆ “AMEN” ƔESIAƔIA?,nyasiwo gbɔna nye nya bubu siwo do ƒome kple nyati sia ɖewo le be na gblɔ ame ʋe sia yea,3.1667,1.9615
+772,NE ÈLE TSITSIMEKUXIWO ME TOM,ne ele tsitsime kuxiwo mete ŋu,1.0,0.1667
+773,tsɔ de dzi ƒo na amewo?,aleke yi susu za ƒe ŋkeke bla nu mamlɛawo le anyigbadzi tsɔ de dziƒona amewo,2.3333,2.6471
+774,NA AÐAŊU SI PAULO ÐO NAÐE VI NA WÒ,ne aɖewo yi paolo ɖo na ɖevi na wo,0.8889,0.3846
+775,“MITSƆ NYE KƆKUTI LA ÐO MIA ÐOKUI DZI”,mitsɔ nye kɔkutsi la ɖo míaɖokui dzi,0.5,0.1379
+776,ALE SI NYE KPLE YEHOWA DOME ƑOMEDODOA ME GAVA SẼ,ale si nye kple yewoadome ƒome dodo amegava se,0.6,0.0769
+777,ALE SI TAFEA LE VI ÐEM NA MÍ FIFIA,ale shi teƒea le vi ɖem na ame si sia,0.6667,0.3077
+778,Nu kae wòfia be míaƒe dzi naku ɖe nu ɖeka kolia ŋu?,wofia be miaƒe dzina ku ɖe nu ɖeka kɔ lia ŋu hadidi,0.75,0.359
+779,ALEKE NÀTE ŊU AÐE NƆNƆME NYUI SIAWO AFIA WÒ ƑOMETƆWO NE ÈLE NU WƆM KPLI WO?,aleke nateŋua ɖe nɔnɔme nyuie siawo fia wɔƒometɔ ne le nu wɔm kpli wo,0.5,0.1356
+780,"Ne míenaa nu siwo le mía si la dzea mía ŋu eye míebɔbɔa mía ɖokui la, aleke esia ate ŋu akpe ɖe mía ŋu míaɖu ŋubiabiã dzi?",ɖem yina nu siwo le miasi la dzea miaŋu eye mí bɔbɔ miaɖokui la aleke esi ate ŋu akpe ɖe miaŋu miaɖokui la dzi,0.5185,0.2021
+781,Nu kae nèsrɔ̃ tso nya siwo Yakob gblɔ na Yosef kple Benyamin me?,tunyasi ya kɔ gblɔna yusẽ kple be nyami me hadzidzala f,1.0,0.62
+782,YEHOWA DO ŊUSẼ MÍ MÍEDO DZI LE KUXI BUBUWO ME,yihoadoŋusẽmi ye ɖo du le kukui bubuwo me,0.7,0.2778
+783,ALE SI WOKPƆ NU GBEGBLẼ WƆWƆ AÐE GBƆ LE BLEMA,ale yiwo kpɔ nu be gblẽmewɔwɔ aɖe gblẽ me,0.8,0.3056
+784,NYA SI BIBLIA GBLƆ TSO NYƆNYRƆXƆXƆ ŊU,nyasigbibla gblɔ tso nyɔnua xɔxɔnu,0.7143,0.1935
+785,ABE ALE SI STEPHEN HARDY GBLƆE ENE,abe ale si stɛvɛn haɖi gblɔ ene,0.4286,0.2857
+786,De Bubu “Nu Si Mawu Bla Ðekae La” Ŋu,de bubɔnu si mawo bla ɖekae la ŋu mawo nya kple kpli si dzi wotu nusɔsrɔ̃a,1.3333,1.3462
+787,wòade dzesi nu siwo le mɔ xem na eƒe ŋgɔyiyi?,wɔadede si nu yiwo le mɔ xem ne ƒe ŋgɔ ʋi,0.7,0.2
+788,ALEKE NÀÐO WO ŊUI?,aleke na ɖo nyuie,0.75,0.4286
+789,"“FOFO, DO WÒ ŊKƆ ÐE DZI”",fofo do wo ŋkɔ ɖe dzi,0.3333,0.125
+790,AME SIWO “WOAGBƆ AGBE”,ame siwo woagbɔ agbe,0.0,0.0
+791,Ðe Biblia Me Nyawo Do Xoxo Alo Wodo Ŋgɔ Na Dzɔdzɔmeŋutinunyaa?,ɖevi blemenyawo do ŋuŋu alo wodo ŋgɔ na dzɔdzɔmewutinunya,0.5455,0.1961
+792,ÀKPƆ YAYRA GEÐE NE ÈTSƆ ÐOKUIWÒ NA SUBƆ NƆVIAWO,akpɔ yadzra geɖe ne tsɔ ɖokuiwo nasɔbɔ nɔviawo,0.7778,0.2051
+793,"NE ‘MÍETE ÐE MAWU ŊU’ LA, MÍAKPƆ DZIDZƆ",le mía te ɖe mawo ŋu la míakpɔ dzidzɔ,0.625,0.1379
+794,Ɣekaɣie nya nyui gbeƒãɖeɖedɔ si wɔm míele fifia awu enu?,ɖeka ye nyanuie kɔpɔe ɖe dɔ yi wɔm ye le teƒea awu enu,1.0,0.3696
+795,Aleke nàte ŋu asubɔ ame bubuwo faa abe Marko ene?,aleke nate ŋu asubɔ ame bubuwo fãa abe maɖeko ene,0.3,0.1026
+796,"EMETSONUAWO: WOAKPƆ ÐEÐE, WOABU WO BE WOLE DZƆDZƆE",emetsonuawo woakpɔ ɖeɖe woabuwo be wole dzɔdzɔe,0.375,0.0488
+797,Mawu le wò nuxaxa kple wò aɖatsiwo kpɔm.,mawo le wò nuxaxa kple wò aɖatsiwo kpɔm,0.125,0.0312
+798,NU KA TAE WÒLE BE MÍAÐO TO NYUIE LE KPEKPEAWO ME?,nukatɛ wolebe miaɖo to nyuie le kpekpeawo me,0.5455,0.1316
+799,Amehehe—Mawu Ƒe Lɔlɔ̃ɖeɖefia Ye Wònye,ame hehe mawo ƒe lɔlɔ ɖeɖefia ye wonye mawo nyakpɛkpɛ si dzi wotu nusɔsrɔ̃a ɖo,2.6,1.0968
+800,NE MÍETRƆ KPƆ MEGBE,lemi trɔkpɔ megbe,0.75,0.1875
+801,SRƆ̃ YEHOWA ƑE DƆMENYONYO,srɔ̃yaxɔa ƒe dɔmenyunyo,0.75,0.2381
+802,KPƆ YEHOWA SINU NE WOWƆ NU MADZƆMADZƆ ÐE ŊUWÒ,kpɔ yi ho asi nu ne wowɔ nu madzɔmedzɔ ɖe ŋu o,0.8889,0.1622
+803,NU KAE TANYENYE FIA?,nukata nye nye fia,0.75,0.0625
+804,Nu ka tae wòle vevie be nu si tae míeɖea gbeƒã ɖo nanɔ susu me na mí?,nu katã wole vevie be nusi ta mie ɖe agbe ƒe nanɔsusume na mie,0.7647,0.1923
+805,Nu kae míate ŋu asrɔ̃ tso Mose kple Israel-viwo ƒe ŋutinyaa me?,nokae míate ŋu asrafo nosi kple israɖeviwo ƒe ŋuti nyame,0.6667,0.1837
+806,Nu kae Yehowa wɔ tsɔ kpe ɖe nu vɔ̃ wɔlawo ŋu be woatrɔ dzi me?,nukae woawɔe tsɔ kpe ɖe nu vɔ wolawo ŋu be woatrɔ dzime,0.4667,0.1304
+807,Nɔnɔme vovovo kawoe ate ŋu ado míaƒe ɖokuibɔbɔ kpɔ?,nɔnɔme vovovokawoe ateŋua domiã ƒe ɖokui bɔbɔ kpɔ,0.7778,0.0476
+808,YEHOWA TOA GBƆGBƆ KƆKƆEA DZI FAA AKƆ NA MÍ,yehoa toa gbɔgbɔ kɔkɔea dzi fain kɔ na mí,0.3333,0.0882
+809,e NU SI LE EDZI YIM LE FOTOA ME: Nɔvinyɔnu aɖe si le nu srɔ̃m le eɖokui si de dzesii be míele ŋkeke mamlɛawo me. Esia ʋãe wòyɔ eƒe ƒometɔ aɖe le gbeƒã ɖem nɛ.,nɔvi nyɔnu aɖe yi le nusrɔ̃mɛ ɖokui si ɖe dzesi yi be nye le ŋkeke mamleawo me esia eve woyɔe eƒe ƒometɔ aɖe le gbeƒa ɖem nɛ,0.6857,0.3083
+810,DANIEL ÐE MAWUMENUNYA FIA LE BABILONTƆ TRƆ̃SUBƆLAWO DOME,ɖania ɖemawo nunya fia le babelɔŋutɔ trɔsubɔlawo dome,0.5,0.2292
+811,YI EDZI NÀSUBƆ YEHOWA NUTEƑEWƆWƆTƆE,yɛ dzi na sugbɔ yiwo wɔa nuteƒe wɔtɔe,1.6,0.2903
+812,ŊKƆ NYUITƆ KEKEAKE SI MÍATE ŊU AWƆ NA MÍA ÐOKUI,ŋkɔ nyuitɔ keke si míateŋu wɔna mie ɖokui,0.7,0.1842
+813,“MIGANA WOAFLU MI O”,mikanawo fli mie wo ŋu,1.25,0.4667
+814,NU KAWOE MÍATE ŊU AWƆ BE MÍAKPE ÐE MÍAƑE ƑOMETƆWO ŊU?,nukawoe miaɖeŋua wɔbe mia kpe ɖe míaƒe ƒometɔwo ŋu,0.7273,0.0952
+815,"Ne míeyi edzi bɔbɔ mía ɖokui na Yehowa la, viɖe kawoe ado tso eme?",nɛmie yiɛ dzi bɔbɔ mia ɖokui na yewoala vi ɖeka woe adotsoɔe me,0.7857,0.1373
+816,KPƆÐEŊU SIWO MÍADI BE MÍASRƆ̃,kpɔɖeŋu siwo mia di be mia srɔ̃,1.0,0.125
+817,YEHOWA FAA AKƆ NA MÍ,ye ho fã kɔ nane,1.0,0.4375
+818,NU SI TAE MAWU ÐE MƆ FUKPEKPE LI,noyi tayemawo ɖem fɔkpekpe le,1.0,0.32
+819,NU SIWO WÒLE BE NÀWƆ HAFI AXƆ NYƆNYRƆ,ŋutsu wole be na wo hafiaxɔ nyɔnua,0.875,0.3333
+820,Afɔ kawoe míaɖe be míayi edzi ‘anɔ tetem ɖe Mawu ŋu’?,afɔkawoe nye eya ɖe be mia yi edzi anɔ tetem ɖe mawo ŋu,0.6364,0.175
+821,MÈGANA AMEWO ƑE NUWƆNA NANA WÒ ŊKU NADZO LE YEHOWA DZI O,meghanawo ƒe nuwo nana na wo ŋkuna dzo le yehoa dziwo,0.8333,0.2
+822,Mose,nukaɛmi esrɔ̃tsoŋutɔƒeɔla tsitsi yawo ƒe nyama bla wo me mose,9.0,11.75
+823,Yi JW Library® ƒe gɔmedzeƒea eye nàzi “Nudzɔdzɔwo” ƒe kadodoa dzi,yi dzɛ ɖɛwliwo library ƒe gɔmedzeƒea eye nazi nudzɔdzɔwo ƒe kadodoa dzi,0.2727,0.1923
+824,Àgate Ŋu Asrɔ̃ Nu Geɖe Tso Biblia Ƒe Gɔmedzenufiafiawo Me,agatɔ srɔ̃nu geɖe tso bible ƒe gɔmedzenufiafiawo me,0.5,0.1489
+825,DZIÐUÐU KAE VA NYE DZIEHEFIA?,dziɖuɖu ka va nye dzi hefia,0.8,0.1667
+826,Aleke wòle be amesiaminawo nabu wo ɖokuiwoe?,aleke wolebe ame sia mi na wo na buwo ɖokuiwoe,1.0,0.027
+827,"“Míenya ale si amewo wɔa nu kple ale si wobua nuwo ŋu le mía de xoxo. Amewo mebua mí be míenye amedzrowo o, eye míetea ŋu ɖoa dze kpli wo bɔbɔe.”— Alain",míe nye alesi amewo wɔ nu kple alesi wó wó wɔ nu le mía de xoxo ame mebe míe nye amedzrowo eye míe keŋ dó adze kpliwo bɔboe alesi,0.7188,0.2348
+828,SUSU ÐEKA PƐ SI TAE WOATE ŊU AGBE SRƆ̃ ÐO,susu ɖeka ƒe sitae woate ŋu agbesrɔ̃ ɖo,0.7,0.129
+829,ALE SI GBƆGBƆ VƆ̃WO KPLƆA AMEWO TRANAE,ale si gbɔgbɔvowo kplɔ amewo trɔnae,0.5714,0.0968
+830,ÐO ŊU ÐE YEHOWA ŊU BLIBOE,ɖonu ɖe yewoa nu bliboe,0.8333,0.3
+831,Aleke wòdzɔe be ablɔɖe vavãtɔ megava li o?,aleke wodzo abe ablɔ ɖe va va ŋutɔ mega va lio,1.25,0.1765
+832,ale si Paulo bu ame siwo wòɖe gbeƒã na la be woate ŋu ava zu Yesu ƒe nusrɔ̃lawo?,ale si paologo ame si wòɖe gbeƒɔna ale be woate ŋu ava zu ʋi si ƒe nusrɔ̃lawo,0.4444,0.1803
+833,“MITSƆ DZADZRAÐO ÐE ŊUTIFAFA NYA NYUIA GBƆGBLƆ ŊU DO ÐE MIAƑE AFƆWO”,mitsɔ dzadzra ɖo ɖe ŋuti fafia nye nyui agbɔgblɔnu do ɖe míaƒe afɔwo,0.8333,0.1273
+834,NU KAE ATE ŊU ANA MÍAVA NƆ FƆ BUM AME BUBUWO ÐE WOƑE NYAMETSOTSOWO TA?,nukae ateŋua namia va nɔ fɔgbɔm ame bubuwo ɖewo ƒe nyamedzodzowo ta,0.7333,0.1455
+835,Àte Ŋu Ase Vivi Na Agbea Fifia Gɔ̃ Hã,ateŋu asie vivi na agbea fifia gɔ hã,0.3333,0.0714
+836,NU KAE TAFEA FIA WÒ TSO . . .,luka eta fafia wu tso yexɔa ƒe dzɔdzɔe nye nye ŋu,1.8333,1.3889
+837,Nu ka tae wòle vevie be míalala akpɔ Yehowa sinu?,nu katã wole vevie be mia lala la kpɔ yevu asi nu,1.0,0.2051
+838,ne míexɔ teokrasimɔfiamewo?,nami exɔtiwo kple asimɔ̃ fiamewo,1.6667,0.2917
+839,ÐO ŊU ÐE YEHOWA ŊU BE NÀTE ŊU ADO DZI LE XAXAWO ME,ɖonu ɖe yewoaŋu be nate ŋu ado dzi le axawo me,0.5385,0.1842
+840,Alakpanya kawo ŋue wòle be míanɔ ŋudzɔ ɖo?,ala panel kawo wɔe wolebe mia nɔnudzɔ ɖo wu o,1.125,0.3235
+841,Aleke gbegbee alakpanya siwo Satana gblɔ tso ku ŋu la gblẽ nui?,aleke gbegbe ale akpa nyasiwo se te na gblɔ tso kuŋlɔ la gblɔe,0.9167,0.1961
+842,YI EDZI NÀNƆ HEHE NAM WÒ DZITSINYA BE WÒAWƆ DƆ NYUIE,ye dzi nanɔ xexem nam wo dzidzi na be woawɔ dɔ nyuie,0.7273,0.2381
+843,MÍATE ŊU AKPƆ DZIDZƆ NE MÍELE KUXIWO ME TOM GƆ̃ HÃ,míaateŋua kpɔ dzidzɔ nenye le kuxiwo me tom gɔ hã,0.4545,0.0769
+844,MEDZE ƔEYIƔIAWO KATÃ ƑE SUBƆSUBƆDƆA GƆME,medze eyɔ katã ƒe sugbɔsugbɔ doa gɔme,0.5,0.2857
+845,KPƆ ŊUDZEDZE ÐE YEHOWA ƑE LƆLƆ̃ GÃ LA ŊU,kpɔn dzedze ɖe yi xɔa ƒe lɔlɔ gã la ŋu,0.5556,0.2258
+846,ÐE YESU DE DUNYAHEHA AÐE DZIA?,ɖe yi su de dunyaheha aɖe dzia,0.6667,0.125
+847,"TOGBƆ BE MENYE ATIKEŊUTINUNYA GBALẼE BIBLIA NYE O HÃ, EƑO NUTSO MƆFIAME SIWO KU ÐE LÃMESẼNYAWO ŊU LA ŊU XOXOXO.",tɔgbɔ be menye atikeŋutinu nye agbalẽ ebi blanye yewo hã eƒe nu tso mɔ fiame siwo ku ɖe lãmesewo ŋu la ŋu xoxo,0.75,0.1556
+848,Nu kae akpe ɖe mía ŋu míayi edzi anɔ ku tsem le dzidodo me?,nukaya kpe ɖe miawo nye yi edzea nɔ ku tse le dzidodo me,0.6429,0.2
+849,NU SI TA YESU TIAE BE YEASUBƆ YEHOWA,le tayi si tse be ye sugbɔ yewoa,1.0,0.4138
+850,Aleke mawɔ aʋu nye dzi kple susu be aɖaŋuɖoɖo naɖe vi nam?,aleke ma wɔ avu nye dzi kple susu vaɖaŋuɖoɖo na ɖevi nam,0.5833,0.0652
+851,Nyati sia akpe ɖe mía ŋu míaka ɖe edzi be Yehowa awɔ eƒe ŋugbedodowo katã dzi eye eteƒe madidi o eƒe Fiaɖuƒea atsi Satana ƒe alakpanyawo katã nu.,nyati ye akpe ɖe mia ŋu mia ka ɖe dzi be yewoawɔe ƒe ŋbedodo katã dzi eye teƒe ma didiwo eƒe fiaɖoƒe ati sata na ƒe alakpanyakawo katã ŋu,0.6429,0.1795
+852,MÍEDZE ƔEYIƔIAWO KATÃ ƑE SUBƆSUBƆDƆA GƆME,wó katã kple subɔsubɔ dó agɔme le ƒakpe ɖeka,1.5,0.8056
+853,nutome sue dzikpɔlawo wɔna ŋu?,dɔ si wò nutome sɔe dzikpɔlawo wɔna nu,1.0,0.32
+854,NA ALE SI NÈFIAA NUI NANƆ NYONYOM ÐE EDZI,na ale si le fia nyuie nanɔ nyo nyɔm ɖe dzi,0.7778,0.2424
+855,Taɖodzinu Kawoe Miate Ŋu Aɖo?,taroni nukawoe mia teŋu aɖewo ŋu,1.2,0.2917
+856,"Nya kae Yesu gblɔ tso adzɔxexe ŋu, eye nu ka tae esia sɔ?",nyakae sugblɔ tso adzɔxexeŋu eye nu katã ya esi asɔ,0.7692,0.1163
+857,ƔEKAƔI MAWU AWƆ NANE?,ɖekayimawu awɔ nane,0.5,0.1176
+858,KA ÐE WÒ NUSRƆ̃VIA DZI,kaɖewo nusrɔ̃via dzi,0.6,0.1176
+859,Bu ale si nu si srɔ̃m miele la ate ŋu aɖe vi na nusrɔ̃viawo ŋu,ŋu ale si nu si srɔ̃m yi le la ateŋu aɖevi nanusrɔ̃viawo ŋu,0.6,0.0652
+860,MÈGAGBLẼ YEHOWA ÐI GBEÐE O,megagblẽ ye xɔa ɖi gbe ɖewo,1.2,0.3182
+861,KRISTOTƆWO ƑE NƆNƆME NYUIWO AKPE ÐE MÍA ŊU MÍANYE XƆLƆ̃WO ÐAA,krisetɔwo ƒe nɔnɔme nyuiwo akpe ɖe mia nu mia dzaxɔlɔwo ɖaa,0.6364,0.2
+862,Nu kae ava dzɔ le etsɔme?,ŋuke ava dzɔ le tsɔ me,0.6667,0.1579
+863,ALEKE WÒLE BE AMESIAMINAWO NABU WO ÐOKUIWOE?,aleke wolebe ame sia mee na wo na buwo ɖokuiwoe,1.1429,0.1081
+864,ALE SI GBEƑÃÐELAWO AKPE ASI ÐE WOƑE GBEADZIƑUƑOƑO ŊU,ale si gbekɔɖelawo akpa si ɖe woƒe gbadziƒoƒo nu,0.6667,0.2045
+865,Ne míeléa fɔ ɖe Yehowa subɔsubɔ ŋu,memielia fɔ ɖe yewoa subɔsubɔnu,0.7143,0.2143
+866,SUBƆ YEHOWA LE ‘ÐOKUIBƆBƆ BLIBO ME’,subɔ yi xɔa le dukui bɔbɔ bli gbo me,1.0,0.25
+867,“MESE LE ÐOKUINYE ME BE YEHOWA MELƆ̃M O”,mesẽ le ɖokui nye me be yewo ame lɔm o,0.75,0.1333
+868,Nu Ka Tae Wòle Be Míaɖe Ŋudzedzekpɔkpɔ Afia?,miasrɔ̃nyati sia le apron bla veva seɖe bla vevɔ nyi lia ƒe kɔ asi ɖaa me nukatae wolebe mia ɖe ŋudzedze kpɔkpɔa fiaa,2.875,1.6667
+869,ALEKE NÀÐO WO ŊUI?,aleke na ɖo nyuie,0.75,0.4286
+870,ALEKE YEHOWA ƑE HABƆBƆA KPENA ÐE MÍA ŊU . . .,aleke yevua ƒe habɔbɔa kpe nane miaŋu,0.625,0.1562
+871,NU SI TA NÀTE ŊU AKA ÐE BIBLIA DZI,nusita nàtɔmaka ɖe biblelia dzi,0.8889,0.2308
+872,NU KAE AMEGBETƆ NUVƆ̃ME AÐEWO WƆ BE WOƑE NU DZE YEHOWA ŊU?,ŋu kae amegbetɔ nu vɔma aɖewo wɔ be woƒe nu dzɛ̃e xɔa nu,0.5833,0.2
+873,NU KAE AKPE ÐE MÍA ŊU BE . . .,nukaya kpe ɖe mia nu be,0.8571,0.2222
+874,NU SIWO NÀGATE ŊU ASRƆ̃,nu yiwo le gateŋua srɔ̃m,0.8,0.2222
+875,"Nɔ ŋugble dem le ŋugbe siwo Mawu do ku ɖe etsɔme ŋu la ŋu, esia ana mɔkpɔkpɔ si ado ŋusẽ wò be nàdo dzi la wò.",nɔŋugble dem le nugbesiwo ma wodo ku ɖe etsɔmenula ŋu esi anamɔkpɔkpɔ si ado ŋusẽwo bena do dzilawo,0.7308,0.0843
+876,ne míenye ŋutifafawɔlawo?,ɖem yi nye ŋuti va fawɔlawo,2.0,0.1818
+877,Aleke Yesu kple mawudɔlawo kpena ɖe mía ŋu?,aleke yi esu kple mawudɔlawo kpe nane mia ŋu o,0.75,0.1143
+878,"Esime Yesu nɔ anyigba dzi la, ewɔ nukunu geɖe tsɔ ɖee fia be ne yeva le Fia ɖum la, yeana agbea nadze edzi na amegbetɔwo wu ale si wòle fifia.",esime yevu nɔ anyigbadzi la ewɔ nukunu geɖe tsɔ ɖe fiã be ne yeva le fiã ɖom la dzena agbiana dze edzi na amegbetɔwu alesi wɔle fiã,0.5333,0.1364
+879,AÐE DƆLÉLE KPLE KU ÐA,aɖe dɔlele kple ku ɖa,0.6,0.1765
+880,ÐU ÐOKUIWÒ DZI NE WOWƆ NU MADZƆMADZƆ ÐE ŊUWÒ,ɖu ɖokuiwo dzi na wo wɔ nomadzɔdzɔ ɖe ŋuwo,0.8889,0.25
+881,ALEKE MÍAWƆ ATSE KU?,aleke nye ya wɔ atsɛ ku,1.0,0.3125
+882,"Kpenyigba: Ame si anyigba sia le tsitre ɖi na la ɖea mɔ hatiwo alo ƒometɔwo ƒe nyaƒoɖeamenu kple tsitretsiɖeŋu wɔnɛ be meɖoa to Yehowa o, eye mewɔa Yehowa ƒe seawo dzi o.",ƒe nyigbe ame sia nyigba sia le tsitreɖinala dzramɔ hatsiwo alo ƒometɔwo ƒe nyaƒoɖemenu kple tsitsitsi ɖeŋu woanɔe be medoato yexɔwoa o eye mewɔa yexɔwo aƒe siawo dzi o,0.6562,0.1618
+883,Nyabiabia Siwo Tso Exlẽlawo Gbɔ,nyagabia si wotsɔe xlẽlawo gbɔ,0.8,0.1111
+884,Xlẽ Mawu ƒe Nyaa nàde ŋugble le eŋu.,xlẽmɔwo ƒe nya na deŋugble le eŋu,0.625,0.1429
+885,Mɔ kawo nue Yehowa fiaa ame ɖokui mamla mí dziegbɔɖitɔe le?,mɔkawo nyuie ye ho afi ya ame ɖokui mamlɛ dzi gbɔɖitɔe le,0.8182,0.1667
+886,"MÈGAVƆ̃ O, ÐO ŊU ÐE YEHOWA ŊU",megavɔwo dzonu ɖe yewoa ŋu,0.8571,0.381
+887,Aleke Mose kple Aron wɔ mɔnukpɔkpɔ si ʋu ɖi na wo la ŋu dɔ tsɔ ɖee fia be yewole Yehowa ƒe akpa dzi?,aleke mosi kple aɖɔn wɔm nukpɔkpɔ si ŋu ɖi na wo la ŋudɔ tsɔ ɖe fia be yewo le yeho ƒe akpa dzi,0.4783,0.1039
+888,PAULO ÐƆ SUSU MANYOMANYOWO ÐO,kpawo lɔ ɖɔ susu manyo manyo wo ɖo ŋu,1.6,0.32
+889,MIMLA MIA VIWO LE YEHOWA ƑE AMEHEHE ME,mimlɔ̃miaviwo le yexɔ ƒe ame hehe me,0.75,0.1613
+890,YI EDZI NÀLÉ FƆ ÐE WÒ SUBƆSUBƆDƆA ŊU,yɛ dzi na lé fɔ ɖe wó subɔsubɔ dɔaŋu,1.0,0.1724
+891,FIA EVEAWO TI MAWU ƑE AMEWO YOME,fia eveawo ti mawo ƒe amewo yome,0.1429,0.0385
+892,YEHOWA NA XƆLƆ̃ VAVÃ GEÐEWO WÒ,yevu anaxɔlɔ̃ vava geɖe wowɔ,1.0,0.25
+893,WƆ DƆ KPLE XƆ̃WÒWO ÐEKAE,wɔdɔ kple xɔnuwo ɖekae,0.8,0.1579
+894,Afɔɖeɖe siawo ke ate ŋu akpe ɖe ŋuwò nàkpɔ ŋuɖoɖo na biabia siwo le vevie wu le agbe me. Le mɔ ka nu?,afɔɖeɖe siawo ate ŋu akpe ɖe ŋu wonɔ akpɔnu ɖoɖona babi siwo le vevie wu le agbe me le mɔkanu,0.3913,0.1039
+895,"Togbɔ be adze abe wò nuxaxa nu gbe tsotso hã la, nya siwo gbɔna ate ŋu afa akɔ na wò:",togbɔ be adze abe wò nuxaxa xa nugbe tsotso hã la nyasi wogbɔna ate ŋu afakɔnawo,0.45,0.0625
+896,"Nyati sia akpe ɖe mía ŋu míanya nu si dzimetɔtrɔ fia, nu si tae wòle vevie, kple ale si Yehowa kpena ɖe amewo ŋu be woatrɔ dzi me.",nyatsi sia kpe ɖe nye yevu nye ya nye nu si dzimetɔtrɔfia nu si ta wole vevie kpla alesi wo akpena ɖe amewo ŋu be woatrɔ dzime,0.6429,0.2
+897,GBƆGBƆ KƆKƆEA NAA ŊUSẼ MÍ,gbɔgbɔ kɔkɔe na ŋusẽmi,0.8,0.1429
+898,"Nu ka tae wòle vevie be míakpe ɖe míaƒe Biblia nusrɔ̃viwo ŋu be woalɔ̃ Yehowa, eye aleke míate ŋu awɔ esiae?",nu katã wole vevie be mia kpe ɖe míaƒe bibllanusrɔ̃viwo ŋu be woakɔ yi xoxo wɔa eye aleke mia teŋu awɔ esi,0.6667,0.1667
+899,YI EDZI NÀLÉ YEHOWA SUBƆSUBƆ ME ÐE ASI,yɛdzi na lé yɛxɔa suposugɔ me ɖe asi,0.75,0.3548
+900,MEDZUDZƆ YUNIVƐSITI VA WƆ MƆÐEÐEDƆA,me dzidzɔ yi vivisiti va wɔ mɔ ɖe ɖe doa,1.6,0.2258
+901,ALEKE NÀÐO WO ŊUI?,aleke na ɖo wo nyuie,0.75,0.3571
+902,Nu kawoe míate ŋu awɔ be ɖekawɔwɔ si le Mawu ƒe amewo dome la me nagasẽ ɖe edzi?,nukawoe míateŋu awɔ be ɖeka woawɔ si le mawo ƒe amewo dome la me na gaze ɖe edzi yim,0.5556,0.129
+903,"Ne míenya nyateƒea la, ate ŋu ana agbe mí. Le kpɔɖeŋu me, esi míekpɔ ŋuɖoɖo na biabia si nye, Aleke dɔlékuiwo wɔna kakana? la, bu ale si esia ɖe vi na mí le agbe me ŋu kpɔ.",ne mía nya nya teƒea la ate ŋu anagbemi le kpɔɖeŋu me esi míekpɔ nudodona biabia si nye aleke dɔleku yiwo wɔna kaka na la ŋua le esi sia ɖevi na míle agbemenu kpɔ,0.6486,0.093
+904,NOA ZƆ KPLE MAWU LE XEXE VƆ̃ÐI AÐE ME,nɔ azɔ kple maw le xixevɔni aɖe me,0.6667,0.1786
+905,Nu vevi etɔ̃ kawoe ate ŋu akpe ɖe mía ŋu be míaɖoe kplikpaa wu tsã be míayi edzi azɔ le nyateƒea me?,nu vevietɔ̃ kawoe ate ŋu akpe ɖe mía nu be miaɖoe kpli kpa wotsa be mia yi edzi azɔ le nyateƒea me,0.4091,0.0779
+906,‘Nu kawoe mate ŋu atsɔ asa vɔe ale be masubɔ Yehowa geɖe wu?’,va se ɖe abe ke ɖe mim ke ale wòbɔbɔnɔetɔwo ɖe anyi le,1.0,0.8043
+907,nànɔ te ɖe kuxi siwo ŋu màte ŋu awɔ naneke le o la nu.,etɔ̃lia nanɔ te ɖe kuxi siwo ŋu mateŋu awɔ naneke le o la nu,0.2857,0.2
+908,‘Ðe wowɔ kpɔɖeŋu aɖe si nye hã mate ŋu azã ne mele nyateƒenya sia fiam ame aɖea?’,ɖewo wɔ kpɔ ɖe ŋu aɖe yi nye eya mate ŋua za ne mele nya teƒe nya sia fiam amea amea ɖea,0.8824,0.1613
+909,“Míawoe Nye Esi! Midɔ Mí!”,miawoe nye esi mi dɔmi,0.6,0.1111
+910,YI EDZI NÀBƆBƆ ÐOKUIWÒ NA YEHOWA,yɛdzi na bɔbɔ ɖokuiwo na yewo wɔa,1.0,0.2593
+911,Nu ka tae wòle be míaɖo to nyuie le kpekpeawo me?,nu katã wolebe miaɖo to nyuie le kpekpeawo me,0.4545,0.1053
+912,"Pam, ɣeaɖewoɣi la, ehiãna be wò ŋutɔ nàɖadi tsi eye wò ŋutɔ nàɖa nu le nɔnɔme siwo mema wò kura o me. Aleke nèwɔnɛ?",pɔm ya ɖo yi ya enye nane wɔ ŋutɔ nane aditsi eye wɔ ŋutɔ nanea nu le nɔnɔme siwo me ma wokura o me aleke ne wɔ ne,0.75,0.25
+913,NU KAE NYE WÒ SUSU?,nukae nye wɔ susu,0.6,0.0714
+914,AKPA KAE NU ETƆ̃ SIAWO WƆNA BE MÍEYIA EDZI NƆA ŊUTIFAFA ME?,akpakaenu etɔ̃ siawo wɔna be ye yea dzi nɔ aŋuti fafa me,0.75,0.087
+915,Yi Edzi Nànɔ Tsitsim Le Gbɔgbɔ Me!,yɛ dzi nanɔ tsitsim le gbɔgbɔ me,0.4286,0.1111
+916,Ðe Nèkpɔa Ŋudzedze Ðe Nu Siwo Mawu Na Mí La Ŋua?,ɖe kpɔa nudzedze ɖe nu siwo mawu na mí la ŋua,0.3636,0.1351
+917,"Winston, ɖe nu siwo teƒe nèkpɔ le South Pacific Ƒukpoawo dzi la ɖe vi na wò esi nèva zu Australasia Alɔdzekɔmitia me tɔa?",wisintin ɖe nu siwo teƒe nɔ ekpɔ le south basifikpokpoawo dzi la ɖevi na wo esi neva zu osrɔ̃le sia alo dze kɔmitia metɔa,0.6522,0.1959
+918,AÐE VI NA WÒ NE ÈDZRA ÐO FIFIA,a ɖevi na wo ne dzraɖoƒifia,0.75,0.2174
+919,SRƆ̃ NU TSO FIA YEHOSAFAT GBƆ,srɔ̃nutsofia ye xoxo safatgbawo,1.0,0.2609
+920,"Ame miliɔn geɖe kpɔ biabia siawo ƒe ŋuɖoɖowo eye esia na woƒe agbe nyo ɖe edzi. Ne èva nya ŋuɖoɖoawo la, aɖe vi na wò hã.",ame milion geɖe kpɔ babiasiawo ƒe nuɖoɖo eye esia na wo ƒe agbɛ nyu ɖe dzi ne evea nye nuɖoɖoawo la a ɖevi na wo hã,0.5769,0.1398
+921,le ale si wòkpe ɖe Samuel ɖevi la ŋui me?,botɔe le alesi wokpe ɖe sa me ɖevi la ŋue me nukae míateŋu asrɔ̃tso alesi yehoa wɔ nu ame bubu,1.6,1.5484
+922,Nu kae akpe ɖe ŋuwò be nàka ɖe edzi be Yehowa lɔ̃ wò?,ŋu ke akpe ɖe wo nɔ be naka ɖe dzi be yewo alo,0.6923,0.3333
+923,NU SIWO NÀWƆ BE NÀKPƆ GBƆDZƆE ÐAA LE YESU ƑE KƆKUTIA TE,nu siwo na wɔ bena kpɔ gbɔdzi ɖaa le yevu ƒe kɔkutsi te,0.6667,0.1818
+924,NU KA TAE NÈSE LE ÐOKUIWÒ ME BE . . .,nu katãe nese le eɖokuiwo me be,0.5,0.2083
+925,MEKE ÐE NYATEƑEA ŊU,meke ɖe nyateƒea ŋu,0.25,0.0625
+926,ABE ALE SI PHILIP BRUMLEY GBLƆE ENE,abe aleifile brown le gli ene,0.7143,0.4138
+927,Mitsɔ Bubu Si Yehowa Dze Na La Nɛ,mi tsɔ bubu yewo adzɛ na ne,0.875,0.3077
+928,Aleke míate ŋu ayi edzi asubɔ Yehowa nuteƒewɔwɔtɔe abe Gibeontɔwo ene?,aleke nyateŋua yi edzi subɔ yiwo anuteƒe wɔtɔe abe bibinutɔwo ene,0.7273,0.2034
+929,ALE SI NU VƆ̃ SI DOME MÍENYI NANA MÍESENA LE MÍA ÐOKUI ME,ale ye nu vɔ yi dome nyi nyi nana misena le míaɖokui me,0.5385,0.2045
+930,BU WÒ SUBƆSUBƆMƆNUKPƆKPƆA NU XƆASII,ŋuwo sugbɔsubɔ mɔnukpɔkpɔa nu xɔasi,0.8,0.129
+931,ALEKE WÒLE BE MÍABU NƆVINYƆNUWOE?,aleke wolebe mia bu nɔvi nyɔnuwoe,1.0,0.0714
+932,"NE NUWO le yiyim nyuie la, agbea vivina. Ke ne nɔnɔmeawo wɔe be agbea wu tsɔtsɔ na wò ya ɖe?",nenuwo le yiyim nyuie la agba vivina ke nenɔnɔmawo wɔe be agba wotsɔtsɔ na wɔe aɖe,0.55,0.0857
+933,FA AKƆ NA AME SIWO LE NU XAM LA EYE NÀDO ŊUSẼ WO,fa kɔna ame siwo le nu xam la heyina do ŋusẽwo,0.4615,0.1111
+934,ALE SI MOSE DZE AGLÃ ÐE YEHOWA ƑE ÐOÐOWO ŊU,ale shimusidzagla ɖe yehoa ƒe ɖoɖoŋu,0.8,0.3235
+935,NU SIWO NÀWƆ BE NÀDZE ASUBƆ,ne yewo na wɔ bena dzea sugbɔ,1.1667,0.2727
+936,GBUGBƆGAÐOANYI,gbugbɔ ga ɖo anyi,4.0,0.0714
+937,"Eya ta, togbɔ be gaƒoɖokui siwo míezãna egbea tsɔ nyaa gamea menɔ anyi le Biblia ŋlɔɣiwo o hã la, wotoa mɔ aɖe dzi nyaa gamea le ŋkeke me alo le zã me.",eyata tɔgbɔ be gaƒoɖokui siom ye zã na egbea tsɔ nye ga mɛa menɔ anyi le du blaŋlɔn yiwo hã la wotɔ amɔ aɖe dzi nye ga mɛa le keke me,0.6875,0.2222
+938,AME KAE “WOAKPLƆ” ADZOE?,ame kaye woakplɔ adzɔe,0.5,0.1111
+939,‘Makɔ Nye Gbɔgbɔ Ðe Nye Subɔlawo Dzi’,makɔ nye gbogbo ɖe nye subɔlawo dzi,0.2857,0.1034
+940,Tiae Be Yeade Mawu Fiaɖuƒea Dzi Fifia!,tsɛ be yeade mawufiaɖuƒea dzififia,0.7143,0.0968
+941,Aleke míawɔ be míalé nyateƒe si ku ɖe ku ŋu la me ɖe asi sesĩe?,aleke mia wɔbe mia le nya teƒe si ku ɖe kuŋlɔa me ɖe asi sesɛ̃e,0.6667,0.125
+942,"Abe ale si wònɔ le Paulo gome ene la, nu etɔ̃ kawoe míate ŋu awɔ be míaxɔ ŋusẽdodo tso Yehowa gbɔ?",abe ale si wònɔ le paolo go me ene la nu etɔ̃ kawoe míate ŋu woawɔ be miaxɔ ŋusẽdodo tso yewo gbɔ,0.2857,0.0933
+943,MÍENA HEHE NƆVIŊUTSUWO LE WO DEGBE ME,miena hehe nɔvi ŋutsuwo le wode gbe me,0.7143,0.0323
+944,DZINYELAWO ÐO KPƆÐEŊU NYUI NAM,wɔɖonu nyuie nam le kpakpe ɖeka,1.2,0.9231
+945,ÐE MÍELƆ̃ YEHOWA LOO ALO DZIDZƆKPƆKPƆ?,ɖem nɔ yeho alo dzidzɔkpɔkpɔ,0.6667,0.2903
+946,NU SI YEHOWA KPE ÐE ŊUTSUWO ŊU WOWƆ,nu si yewo akpe ɖe ŋutsuwo ŋu wowɔ,0.375,0.1071
+947,KPE ÐE WO ŊU WOADZE SI YEHOWA,kpe ɖe wo ŋu wo adzesi yewo xɔa,0.7143,0.1739
+948,ALE SI DZILAWO AWƆ AKPƆ WO VIWO TA,ale si dzilawo wɔ akpɔ woviwo ta,0.375,0.037
+949,"Esi Mawu tea ŋu yɔa ɣletivi ɖe sia ɖe ƒe ŋkɔ ta la, ate ŋu aɖo ŋku ame siwo wòafɔ ɖe tsitre la dzi bɔbɔe.",esi mawo tse nu yiwoa ʋleti ɖe sia ɖe ƒe ŋkɔtaa la ate ŋu adɔ ŋku ame siwo wɔwɔ afɔm ɖe tsitre la dzi bɔbɔ,0.44,0.2278
+950,ALE SI MÍAWƆ AKPƆ DZIDZƆ,ale si mia wɔ akpɔ dzidzɔ,0.4,0.05
+951,NU KA TAE YEHOWA WƆ TANYENYE ƑE ÐOÐOA?,nu katã yi woawɔe ta nye nye eƒe ɖoɖoa,1.0,0.3
+952,ANYIGBA DZI NYA KPƆ EYE EDOA DZIDZƆ NA MÍ,anyigbadzi nyakpɔ eye edo adzidzɔ na mí,0.6667,0.0
+953,ALE SI “MAWU ƑE ŊUTIFAFA” KPENA ÐE MÍA ŊU,ale si mawo ƒe ŋuti fafa kpe naɖe miawo ŋu,0.6667,0.1613
+954,"Evelia, nu kae wòle be ame si wɔ nu gbegblẽ nawɔ atsɔ aɖee afia be yetrɔ dzi me vavã, eye aleke Yehowa le kpekpem ɖe nu vɔ̃ wɔlawo ŋu be woatrɔ dzi me?",evelia nu kae wolebe ame yi wɔ nugbegblẽ na wɔ atsɔ ɖe fia be ye trɔ dzime vava eye aleke ye wole kpekpem ɖe nu vɔwɔla ŋu be woatrɔ dzime,0.5455,0.0957
+955,c NU SI LE EDZI YIM LE FOTOA ME: Nɔvinyɔnu aɖe le kpekpem ɖe eƒe Biblia nusrɔ̃vi ŋu be wòate ŋu aɖe gbeƒã.,akpɔe be nɔvi nyɔnu aɖe le kpekpem ɖe eƒe biblia nusrɔ̃vi ŋu be woate ŋu ade gbeƒã,0.5217,0.284
+956,Aleke Yehowa ɖee fia be yesea veve ɖe ame nu?,aleke ye woaɖi fia be ye sa veve ɖe ame nu ŋu,0.5,0.2
+957,Ale Si Biblia Ate Ŋu Ana Wò Etsɔme Nanyo,ale si bibl la te ŋu wɔna wòtsɔme na nyo,0.7778,0.1562
+958,ALE SI YESU KPLE MAWUDƆLAWO KPENA ÐE MÍA ŊU,ale si ye su kple maŋudɔlawo kpe nane mia ŋu,0.6667,0.0857
+959,AME KAE KPLƆ MAWU ƑE AMEWO YI ŊUGBEDODONYIGBAA DZI?,amekaekplɔmawo ƒe amewo yiŋgbedodo nyigbadzi yi,0.7778,0.119
+960,BƆBƆ ÐOKUIWÒ EYE NÀWƆ NU LE XƆSE ME,bɔbɔ ɖokuiwo eye na wo nu le xɔ se me,0.625,0.1429
+961,NU SI BIBLIA FIA MÍ TSO MAWU ƑE VEVESESEÐEAMENU ŊU,nu si bible le afi ya mísomawo ƒe vevesese ɖe amenu,0.8,0.2195
+962,"NE LƆLƆ̃ NU LE SESẼM LA, NAZÃBUBU NU YINA",nelɔlɔnu le sesem la naza bubunu yina,0.6667,0.0645
+963,YEHOWA ÐO ETEƑE NA ÐETUGBUI ÐOKUIBƆBƆLA AÐE LE MƆ SI MENƆ MƆ KPƆM NA O LA NU,yevu adrɔ teƒe na ɖetugbi ɖokui bɔbɔla aɖe le mɔ si me nɔ mɔ kpɔm na o la nu,0.5294,0.1667
+964,Tsɔ ɖokuiwò ɖe adzɔgbe na Mawu,tsɔ ɖokuiwo ɖe adzɔgbe na mawu,0.1667,0.04
+965,“MENA WONYA WÒ ŊKƆ LA”,me na wo ne wo ŋkɔ la,1.0,0.1875
+966,DZIEHEFIA LA VA “ATSYƆ̃NYIGBA” LA DZI,dze hefia la va atsɔ anyigba la dzi,0.6667,0.1034
+967,Nu kae nye dzitsinya?,nutae nye dzidzi na,1.0,0.2353
+968,NE MÍEFA AVI LE ESI MÍELÉ BLANUI VEVIE TA,memi fa vi le yi mie le blanui vevie ta o,0.7778,0.2727
+969,YI EDZI NÀNƆ NU SIWO ANA NÀKA ÐE EDZI BE YEHOWA LƆ̃ WÒ LA WƆM,ye dzi le nɔnu yiwo anana ka ɖe edzi be yewo alo alo woa wɔm,0.8,0.2826
+970,Gbɔdɔnuwɔnawo Kpɔkpɔ; Amamaɖeɖenuwɔnawo Kpɔkpɔ,gbadɔnuwɔnawo kpɔkpɔ ame ame ame aɖe ɖe nuwɔnawo kpɔkpɔ,1.75,0.1429
+971,YEHOWA GALE KPEKPEM ÐE ŊUNYE,yi ho wɔa ga le kpekpem ɖe nu nye,1.6,0.1667
+972,Gbetakpɔxɔ sia akpe ɖe ŋuwò nàkpɔ biabia siwo gbɔna ƒe ŋuɖoɖowo:,gbetaxɔ sia kpe ɖe nuwo nakpɔ biabia siwo gbɔna ƒe nuɖoɖowo,0.4545,0.1509
+973,Nuxlẽla Lɔlɔ̃a,nuvelia lɔnua,1.0,0.5
+974,ALE SI MÍAWƆ ATSI LE GBƆGBƆ ME,ale si miewa wɔ ati le gbɔgbɔ me,0.4286,0.1667
+975,EWƆ NU ÐE MOSE ŊU AMEŊUBUBUTƆE,awɔnu ɖe mosinu ame nu bubu tɔe,1.1667,0.2
+976,TƆTRƆ BUBU SIWO GAVA LE NYE AGBE ME,tɔtɔɔ bubu siwo gava le nyagbe me,0.375,0.0714
+977,‘Mikpɔ Nyuie Be Ame Aɖeke Nagaɖe Aboyo Mi O’!,mikpɔ nyuie be ame aɖeke na gaɖe aboyomiwo,0.4444,0.0294
+978,Nu kawoe wòle be nàwɔ hafi axɔ nyɔnyrɔ?,nukawo wole be na wo hafiaxɔ nyɔnua,0.875,0.2258
+979,ALEKE NÀƲU WÒ DZI KPLE SUSU BE AÐAŊUÐOÐO NYUIWO NAÐE VI NA WÒ?,aleke na ƒuwo dzi kple susu va ɖaɖonuɖoɖo nyiwo na ɖevi na wo,0.6154,0.2857
+980,Ðe nèxlẽ Gbetakpɔxɔ ƒe tata siwo do le ƒe sia me la beléletɔea? Ekema kpɔe ɖa be àte ŋu aɖo biabia siwo gbɔna ŋu hã:,ɖe ne xlẽgbetaxɔ ƒe tata si wodo le xexiame akpe ɖe le etria eke ma akpui ɖe abe ate ŋu addo biã si wogbɔna nu hã,0.84,0.3
+981,ABE ALE SI MARK HERMAN GBLƆE ENE,abe ali yimak he maŋgblɔe ene,0.7143,0.1923
+982,Ðe Gbeƒã Dzonɔamemetɔe Abe Ale Si Yesu Wɔe Ene,ɖegbeƒadzronɔnɔmetɔ ye abe alesi esi esi woe ne,0.8889,0.3421
+983,ALE SI MÍAWƆ AKPƆ ABLƆÐE VAVÃTƆ,ale si mie akpɔ ablɔ ɖe va va ŋutɔ,1.0,0.3077
+984,Ðe wowɔa gɔmeɖose siwo le Mose ƒe Sea me la ŋu dɔ le ʋɔnu tsɔ kpɔa nyaʋiʋli siwo ɖo amewo dome le blema Israel la gbɔa?,ɖewo wɔ agɔme ɖo siwo le moseƒe sia me la ŋudɔ le ŋɔnu tsɔ kpɔ nya vivli siwo ɖo amewo dome le ble me isrɛ la gboa,0.6538,0.1398
+985,De dzesi nufiameawo. Bia ɖokuiwò be:,de dzesinufiam wo bi aɖokuiwo be,0.6667,0.1034
+986,Aleke míana hehe míaƒe dzitsinya?,aleke mia na hehe mia ƒe dzidzi nye,1.2,0.1786
+987,Míele “ŋkeke mamlɛawo me”,mie le ŋkeke mamleawo me,0.75,0.1
+988,MAWU NA ABLƆÐE VAVÃTƆ WÒ,mawuna blɔ ɖe va va tɔwo,1.2,0.2
+989,Nu Si Wòle Be Mawɔ Lae Mewɔ,nu si wole be mawɔlae me wɔm,0.5714,0.0952
+990,NU KAE NANA KRISTOTƆ NƆA DZIDZƆ KPƆM?,nukae nana kristotɔ nɔ adzidzɔ kpɔm,0.5714,0.0
+991,NU KAE NYE “KRISTO LA ƑE SE LA”?,nukae nye kristola ƒe se la,0.5,0.0
+992,Na Biblia Ƒe Titinanuŋɔŋlɔwo Naɖe Vi Na Wò,nabibla ƒe titina nuŋɔŋlɔwo na ɖevi na wo,0.875,0.0571
+993,NU SI TAFEA FIA MÍ TSO YESU ŊU,nusita ƒea fi mi tso ye sɔŋ,0.875,0.2174
+994,MÍEWƆ MƆNUKPƆKPƆA ŊU DƆ KEKE MÍAƑE SUBƆSUBƆDƆA ÐE ENU,mye wɔmenukpɔkpaŋudɔ keke míaƒe subɔsubɔdɔ aɖe nu,0.7778,0.1111
+995,Lɔ̃ faa nàxɔ kpekpeɖeŋu tso ame bubuwo gbɔ,lɔ fa na xɔ kpekpe ɖe ŋutsu ame bubuwo gbɔ nyatiwo enu,1.0,0.3824
+996,Nu kae míate ŋu awɔ atsɔ ado ŋusẽ ame bubuwo?,nu ke mie ade nua wɔatsoa do ŋusẽ ame bubuwo,0.6,0.1714
+997,Aɖaŋuɖoɖo vevi kawoe ate ŋu akpe ɖe mía ŋu míaɖo nya ŋu wòade dzi ƒo na amewo?,aɖaŋuɖoɖo ƒe fika woyi ate ŋu akpe ɖe mia nu mia ɖo nyanu wɔade dziƒona amewo,0.7059,0.1475
+998,NU KAWOE MÍATE ŊU AWƆ ATSƆ AKPE ÐE BIBLIA NUSRƆ̃VIWO ŊU WOAYI ŊGƆ AVA XƆ NYƆNYRƆ . . .,nukawɔe mete ŋu wɔm wɔ atsɔ kpe ɖe bible nusrɔviwo ŋu va yi ŋgoa va xɔ nɔnyrɔ,0.8125,0.2188
+999,ne míesena le mía ɖokui me be viɖe aɖeke mele mía ŋu o?,aleke ye xɔ akpe na ɖe mia ŋu nenye sena le mia ɖokui me be vida ɖe te mele mia ŋu o,1.1538,0.6667

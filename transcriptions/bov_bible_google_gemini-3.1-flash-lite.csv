@@ -1,0 +1,1001 @@
+sample_id,reference,hypothesis,wer,cer
+0,"Yasum ndɛ ɔsɔfɔnɔkɔɛ̃ aye nɛ Kakɔ Kpalɛwa Flee a kĩ kɛnyɛ lima patampa wĩ a kamɛ, kĩ nnɛ́ otidziwa lɛbɔa de, mbom boe Ɔlate a lɛbɔa de.","Ya sum ndo sa fono ku ya e, neka ko kpale wa fllia, kike nye limak pa tampa wunya kame. Ki nne o ti ji wa le bodi, mbum boyo la te a le bodi.",1.2593,0.3462
+1,"Fɔtsa flee kawũna lɔkɔ fuã, foesũ mipi mi akũ kapi wĩ, mina nɛ kukũmanɛ kamɛ, ayekĩ míapuli mibɔa mpaɛ.","Fada flicka una lo cofo a, fu su mi pimia ku capi wi. Minane kuku ma ne kame. Ahe ki miapli mi bwa, mpa",1.2105,0.3457
+2,"Badi bɛma be basaɛ, babɛbã bati lɛkɛna be basaɛ, ade badi lɛmɛ lákɔã batsɔ̃ nɛ ode lɛgãkanyakɔ̃ a sũ.","bade bambe basae. babebaa batinkibasae, adebade leme lakua bachon ne odelga kanya koaso.",1.0,0.3846
+3,"Kitonɛkĩ ntɛ mideĩ bati mpim ewua kĩ batsa mi fɔtsa nɛ Kristo akũ malo ni, ɔlɛga mɔapɛ mideĩ.","Kittene ki, iten mi denbati pimmewua, ki bacca mi foca ne Kristo akumalo ni. Olega mape miedi.",0.8333,0.3378
+4,"Lɛmɛ ntɛ mi kamɛ badi deĩ adzuni bɛbã ni, Baguma aakpalɛ foe malo kamɛ ɛtsa mi.",Le mente mikame badi deni ajuni bebani. Baguma akpale fuma lokame chame.,0.875,0.3065
+5,"“Odi nyɛ odi kĩ yaakɛna sɛmɛ kalɛ ɛkpa obisɛ̃ kĩĩ odu nɛ yĩ dĩ akũ ni, yĩ ɛkɛna ɛkpa.",Odi nyo diki yaa kɛna sɛmɛ kalɛ ekpo obi sɛkinyodu na yi di akuni yi ekɛna ekpo,0.8421,0.2381
+6,"Ntɛ bɔnya lɔtɔ bɔnaa boe tɔwɔlɛ kamɛ ni, Baguma lɛláadzɛmɔ boe.",Nke bonyalo te bonna bu te wule kameni. Bagumale lajemo.,1.0,0.4118
+7,Ade oti a kĩ ye kamɛ hũhũ a deĩ a wo nɛ be akũ ebo be a!,Kibɛnnyi kibɛ danyi tole kabi. Ade ibi bɛ kibɛte utia kiyaya nɛ yeye hanɛ siliti abidu. Ade utia nyɛ Yesua. Kibi nufolɛ caki ya. Bɛ fɔ Paul kɛna bɛ mwi kawala manye nɛ bweola te Yesu diya.,2.1176,3.1282
+8,"Kĩ boe kadzakũ wo ɔtɔ a, batɛ badonɛ a mɔ batsɔ̃ mɔ babi flee yi boe osi bɛnawo mpo abuĩ.","Yibuɛ kàjàku wo toa, bàte bàdonia mobacun maba bifiile, yibuɛ osi bena wo mpuɛ.",0.9,0.4478
+9,"Ade be lɛtásum ɔyaɛ kpa ĩye ye kutidu a kĩ bɛmɛ a, ĩye bɛtɛ ye sɔkpɔ̃na nɛ be nnyɛ ĩye nɛ awɛ a.","Adibɛlɛtasum ɔyɛ ɛpa, yɛ yɛku ti dua, kibe mia, yɛ bɛtɛi sɔpɔna ne bɛ inyɛ, yɛɛ ne awɛɛ.",1.0,0.338
+10,"Lɛtsa a kĩ mi mɔawɛ bati a kĩ bitomɔ mi akɛna a, aakɔ mi kɔtɔ.",Lɛ caakɛ ŋmuma wɛ bɛtiaki bitumomi akɛnaa akɔmikɔtɔ,1.0,0.2391
+11,Lɛmɛ ode fɔtsa a mɔawɛ kɔ̃ afɔliɛ kĩ ɛnɛnɛ ɛbɛ̃ tite akũ ade bɛkɔa bɛkpalɛ foe akũ.,"Le me de fo tcha mowe kon, afolye ki ennene betiti akwadi, be kwa be kwale fu ya.",1.0588,0.5156
+12,"Ɔsa Onesimo dzakũ nɛ nɔ sɛkɛ̃ nɛ lɔkɔ lukũ kamɛ, ayekĩ yaabuki emuniki ɛya nɛ nɔ sɛkɛ̃ ɛyaadzi flee.",wasa onese mu jakuneno seke nelokolukugame. Ayi kiyabuki imunikie anenoseke eyajifle,1.0,0.4103
+13,"Nɛ mi mɔa awɛ kamɛ malo ni, bavãlɛvã aanɛ, lɔkɔa bɛkpã batɛ badonɛ pii bɛtsãmɛna fɔvã fɔtsa katsa a osi akũ.","Ne mi bɔ wɛ a kɛ mɛ maloni, ba vala vɛ a nɛ, lɔ kaba kpa, ba tɛ ba dɔ nɛ pi bɛ tya mɛ na fɔ 20 fɔ caka cak, osia ku",1.5238,0.2941
+14,"“Mbi mi fɔlɛtsa kĩĩ ayekĩ kawɔlɛ a kĩ kideĩ nɛ yĩ kamɛ a odu kɛna nɛ mi kamɛ, lɔkɔa mi kawɔlɛ a kɛkpɔla.","m bi mmi fula kyaki aye kikawula kikidi ne ikamea odukikadane mikamei, loko minkawulaya ke kwela",1.0,0.4304
+15,"Ye babɔanɛ a akpalɛ boe tɔwɔlɛ kamɛ, ɛnyɛ boe tɛmaniɛ kĩ tɛlá nfasɔ ayekĩ bɔ́apuli busum Baguma a kĩ edzi nkpã a.","Yibagwa ne a akpa legbeto wleka me, enye gbetemanya kete la nfaso, ayikigba ablibu sumba gumaaki eji npa.",0.9545,0.3708
+16,Ɛvɛ Barnaba mɔ Saulo bɛnaa ye awã kitonɛkĩ ɛwɛ kĩ yatse Baguma fɔlɛtsa a.,Ẹvẹ bẹna ba Ọmọsaulu bẹna ya ọnwa kito nẹki ẹwẹki ya chẹba guma flẹ cha,1.0714,0.4407
+17,"Romafɔ a dzɛmɔ yĩ, ade ke bɛwɛ kĩ bafɔnɛ yĩ awɛ kufɛ a, kitonɛkĩ bɛtámɔ lɛtsa a kĩ de akũ baadza bɛkɔ yĩ wuda kɔtɔ.",rimafo ajemoyi adeke bewekiba fune yiawekufian kitone kibetamo lechaki de akuba bajabe ko-in wdakota,0.96,0.4205
+18,"Lɛmɛ nnɛ́ boe Ɔlate kalɛ kĩĩ odi lɛgba kito mi sɛkɛ̃ kɛnaa Makedonia mɔ Akaia flee, mbom mi Baguma katɛkado lɛmɛ gba nɛ kakɔ nyɛ kakɔ.","Mɛ nɛ bue la tɛ ka le kyi nyo di lɛgba ki to mi sɛ kɛ kɛ na ama kɛ do ni amo a kɛ ya flee, mbum mi gba mi ka tɛ ka do le me gba, ne ka konyɛ ka ko",1.4615,0.2381
+19,"Ade kĩ bɛyaa a, ebi be kĩ, “Nwaɛ̃ amɛ, mi a flee minyina ayekĩ ndzi nɛ mi sɛkɛ̃, kito lɔkɔ a kĩ ĩya nɛ Asia tite akũ a kɛyawo nviã kĩĩ a.","Adu ki beyi a, ebi be ki mwayame mi afle min na ayekyi nji na mi seke kito lɔ kwayi ya ne asia titia kwan ke yawu vwi ki",0.7812,0.3571
+20,"Mitɛ kɔbɛ̃ kĩĩ kɔa, foesũ mikɔa mikpa faa.","mite kobe kin kor, fesu mikwa mikwafa",1.0,0.375
+21,"Lɛmɛ ntɛ bɛtátɛ mi ni, mifɔ̃ mi lukudɔ kawɔ̃na a kimuniki kɛya nɛ mi sɛkɛ̃.","zɛmɛ ɛntɛ bɛta tɛ mini, mɛ fɔmi lɔ kudɔ kɔɔna, kɛmunɛki kɛɛnɛ misɛɛ",1.0,0.2321
+22,"Bɛtalɛ badi boe, bɛbɛ̃ badi nɛ kayite mɔ ɔsaɛ, bɛkɔ badi mɔ apã.","Bɛ̀ tálɛ̀ bádìbúì, bè bè bádìní kàitímò ósáí. Bɛ̀ kò bádìmò ákpá",1.0,0.5
+23,"Lɛtsa a kĩ lɛya nyɛ kĩ Yohanes Mui Ɔwɔlanɛ a bi Herodes kĩ, “Mose mbla a tákpa osi kĩ akɔã Herodia.","Djakila anyaki, Johane mo olanya bi he disi ki. Moti mla takpo si ki akwa helo di.",1.0,0.4474
+24,"Mitakɛna adzuma nɛ kɔtɔkase sũ, mbom mifɔ̃ futo mi ɔwɔlɛ faa kamɛ.",Mitakna ajumane kotokasesu. Mbo mi fwafuto mi owalefa kame,0.9167,0.2885
+25,"Ade kakɔ nyɛ kakɔ kĩ ntsã mmini ni, ndɛ Yudafɔ mɔ Helafɔ flee mɔ ɔsĩ mɔ ɔsĩ kĩ bɛdani be tɔwɔlɛ kamɛ bɛya nɛ Baguma sɛkɛ̃, lɔkɔa bɛtɛ boe Ɔlate Yesu bido.",Adekakonyekakokwinchamminini ndeyudafo mohilafofole mosimosing kibedanibetoorekammebeyanibagumaseke lokwabetebuolatesu,1.0,0.4118
+26,"Lɛmɛ kĩ fɔnyɛ fɔlɛtsa kamɛ kanyɛ nɛ buĩ mɔ mi tɛmaniɛ akũ sũ ni, mi mɔawɛ minaasa foe kamɛ mimanɛ foe.","Lɛmɛkifɔnyɛflɛchaka mɛkanyɛ, nɛ bwimo mimtɛmanya ya kusu ni. Mimawɛminya sa fɔkɛmɛ mimanya fɔ",0.9048,0.275
+27,"Fɔfɔ̃ badi lána kanya, ade badi lɛmɛ awuga bavɛ.","Fofon bɔdi la nna kanya, a dɛ bɔdi le me a wu gaba vɛ.",1.4444,0.2703
+28,"Fɔlɔ evũkɔnɔ a nyɛ kɔtɔbii evũkɔnɔ, awã kĩ otsole a adzi a.",fɔ̀lɔ̀ ɛ̀ vʊ̀ kʊ́nànyɛ̀ kɔ̀tɔ̀ bí è vʊ̀ kʊ́nɔ̀ àwákíòcùlɛ̀ àjìà,0.9167,0.5217
+29,"Kristo kɔa ye nkpã ɛbɔa afɔliɛ nɛ boe lɔlɔ, foesũ kɛnɛ kĩ boe malo bɔkɔa boe nkpã bɔbɔa afɔliɛ nɛ boe bawaɛ̃ lɔlɔ.","Kristo kwá yi npa gbófo le ne gbe lo lo, fi suke ne ki gbe mo lo boko gbe npa bo gbófo le ne gbe ba wa e lo lo",1.2609,0.5169
+30,"” Foesũ bɛnawo nɛ ɔkɔlɔ kamɛ bɛnaa, lɛmɛ lɛnyɛ a flee bɛtányɛ lɛtsama.","Fɔ su bɛn na wone ɔkɔlɔka mɛ bɛn na, lɛ mɛ lɛnnya flɛ bɛtɛ nyɛlɛ chamɛ.",1.3333,0.2545
+31,"Finyaakĩĩ Baguma boe Ɔlɛga, mɔ boe Ɔlate Yesu bibinya osi bɛkpa boe lɔkɔa bɔya nɛ mi sɛkɛ̃.","Vinya kin, ba guma bue lega, mobue la te Yesu bibinya osibepabue, lokwabo yana mise.",1.0,0.2778
+32,Kɔkɔɛ a ɛnyɛ anɛ nɛ batidziwa flee akũ ɛfɔ̃ bɛkakɛna lɛtsa a kĩ bawɛ a.,"Kɔkwa ɛnyanɛnɛ batijua flɛyakun, ɛfɔbɛ kaknalɛ chakibawɛ",1.0,0.3091
+33,"Ndɛ ayekĩ Baguma Katsɛlɛ Kpalɛwa lɛ a, “Baguma api anyansãfɔ nɛ be mɔawɛ kadikanyi kamɛ.",Nɛke baguma kɛlɛpala wale a. Baguma api anyasafo na bemwawe kadi kanyi ka,0.7333,0.2676
+34,Bɛpau bati nviã kĩ batɛ badonɛ a akpa be obu paa.,Be pao batin via ki ba te ba dunee a kabi o bu pa,1.1818,0.2895
+35,"Lɛmɛ otsole kĩ yabɔa mpaɛ ĩye yalɛ Baguma fɔlɛtsa nɛ asɔli kɔla kamɛ, tásui duku nɛ lɔlɔ ni, edo ɔnyɔ kɔnyɔã.","le mẹ ntɛ ɔchulɛ kịa bwanpae. Yɛ ya leba gmaflɛ channe asɔlikola kame. Ta sui dukunu loloni, eduu onyokonyo",1.0,0.4186
+36,Kɔkɔɛ a Baguma tálɔ fubo ɛkpa bikĩ bidzina basɔfɔ a.,"Kɔ kɔe ya, bagu matɔ lɔ fu bwe kpa biki, bi jina basɔfɔ.",1.3,0.2143
+37,Yesu Lɛ Kɔdzɛla Lɛlalɛde Nɛ Ye Wuda Akũ.,"Nna bi malo, bete si ka o fuè somua somua, ki bete si ka bi uwa, bena ka lokpa, be ka kena hunhun hunhun.",3.0,2.0938
+38,Bɔna nɛ awã fuwi fudi ade foe kamɛ a Baguma onukpɛ̃ ɔnyɛnɛ a kĩ bavɛ Agabo to Yudea ɛya a.,"bʊ́nɔ̀nɪ́ɛ̀ wà fʊ̀ wɪ́ fʊ̀dí. Àdè fɔ̀ kà mɛ̀à, bá gʊ̀mɛ̀ wònù pɛ́ wònjɛ̀ní àkìbà vɛ̀ àgàbò tò yʊ̀ dé àɛ̀.",1.05,0.5652
+39,"Kĩ bɛtsã mpo akũ bɛnawo Pafo ɔmatɔ a kamɛ a, bɛtsɛlamɔ Yudani odi kĩ yaveli tɔɔta.",kibɛcɛmpuo kubɛ na upafu omato akamia. Bɛcɛlamo Yudani odiki ye vɛlito.,0.9375,0.3538
+40,"Finyaakĩĩ ntsɛ́la kɔlaa ntɛ miadzɛmɔ yĩ, ĩye odi bɛbã adzɛmɔ yĩ.",Sin ya king ince lakla ante mia jemoi ye odibama ajemoi,1.0,0.5294
+41,-Kitonɛkĩ fɔnyɛ́ yĩ adzuma kĩ madzɛmɔ bikĩ bɛláa asɔli a kamɛ.,"Itɛ nɛ ki, fɔ nyɛnya ji maki majɛ mɔbiki bɛla asɛli aka.",1.0909,0.3265
+42,"Bɛmɔ apaafɔ a bɛnya kɔya, etunɔ kĩ yaase be sika ovoe sɔmɔa sɔmɔa kĩ fɔnyɛ luwi mɔa kɔtɔkase, ade edo be nɛ ye waĩ kɔba a kamɛ a.","Bɛmɔɔ apaawa bɛnyakɔ yaa, itimnɔ ki ya sɔ bɛsika ɔwɛɛ sɔmɔɔ sɔmɔɔ. Ki fɔ nyɛɛ luuma kɔ tɔkasii. Adi ɛdɔ bɛi nɛ yɛɛ wan kɔba kaamɛɛ.",0.9286,0.3535
+43,"Lɛtsa a kĩ mabi mi nɛ ɔtũ kamɛ a, milɛ de nɛ suwa ketee, ade lɛtsa a kĩ minu nɛ kabɛla kamɛ a, mide ke lɛtsã nɛ kanade.","Lɛcakí má mí nɛ ɔtukamiɛ. Mbilɛ dɛnɛsuwɛkɛtɛ, adɛlɛcakí mínúnɛ kaba laka miɛ, midɛkɛ lɛcaɛnɛ kanadi.",0.9643,0.375
+44,"Ade be nyɛ Sopater, Piro obi kĩ eto Beroia, Aristarko mɔ Sekundo kĩ bito Tesalonika.",Adibenyɛ sopata piru obikito bɛroya arisita ku mwasɛkundo kibito Tesalonika,0.9333,0.2239
+45,"Hũhũ kpa nɛ́ nɛ bati pii kamɛ mɔ fɔwɔla kabɔa kĩ, “Nɔ nyɛ Baguma obi a!",Nungbá nɛ́né bà tí pì ká mɛ́ mɔ́ fɔ́wɔ́lá kà bá kì.,0.9375,0.6346
+46,"Ntɛ bɔlɛ kĩ tɔkpa lɛláa boe akũ ni, kakɛ bɔakɛ boe akũ, ade ɔnɔkɔali a lɛláa boe kamɛ a.",Te buo le kito pale la bue ku ni. Kake bua ke bue ku a do no kuali ale la bue ka me.,1.1579,0.4179
+47,” Lɛmɛ nnɛ́ lɛtsa nyɛ lɛtsa deĩ nfasɔ lɛkpa boe.,le me ne le chene le cha nene le kpa bui. Be kpa bui o si ki bo na le chene le cha. Le me ne le chene le cha di n fa so le kpa bui.,4.1111,2.0
+48,"Yesu dzakũ nɛ awã ɛnaa Yudafɔ katsɛnakɔ̃ kadi, awã kĩ onyole odi kĩ ye kɔkpɔ ku lɛmɛ na.","Yɛsu da ku ne awana ɛna yuda fo kakina ko ka di, awana kɛn oyulodi ki kopa oku lemɛna",1.0556,0.4265
+49,"Ɛtátsa ntsitsemu adima nɛ bɔmɔ́ be kayite, kitonɛkĩ ɛtɛ be nɛ ayekĩ bɛtɛ bido sũ, ade ɛkɔa be tɔkpa ete be ndɛ boe aye a.","Ɛtɛtɛ nkɛkɛɛ muadi mɛ, nɛ bɔmɔ bɛkayite, kito nɛ ki ɛtɛbɛ, nɛ ayikɛ bɛtɛbɛ dosun, adɛa kwa bɛtɛkwa ɛtɛbɛ, ndɛbɔ yaayɛ.",0.92,0.3441
+50,ade foe pɛpɛɛpɛ Baguma manɛ eyi ɛkpa bati a kĩ bawɛ ye a.,adefe peperepe bagume mane eyi. Epebati aki baweye,0.9231,0.3182
+51,"Kĩ Yesu nu Yohanes fɔlɛtsa kĩĩ a, ewo nɛ ɔkɔlɔ kamɛ ɛdzaku ɛnaa kakɔ kadi kĩ bati lɛláa.","Kye sunu Yohanes, o le chakiya, ewo na o kolo kame, e je kun e na aka koka di ki, bati le la.",1.1667,0.3333
+52,"Mitana ndɛ Kain aye kĩ ɛnya oti kpa a ode, ɛkɔ ye mɔawɛ ɔwaɛ̃ Abel a.",Mitanan dekan yeye ki enye oti pa ode. Ekoyi moye wonyia abela,0.875,0.3922
+53,"Yuda a kĩ ɛnyɛ ye ɛkpa a, nyina awã, kitonɛkĩ lɔkɔlɔkɔ Yesu mɔ ye fɔtsa bakɔlɛnɛ a awɛ katsɛna nɛ awã.","Yu dakia nye yi yapa, nyi na wa kite ne ki lo ko lo ko, Yesu mo yi focha ba kule ne a, a wa ka chi na ne awon",1.3333,0.4051
+54,Bati pii deĩ kĩ be nkpã kadzi kamɛ a fɔ̃ bɛdani bakesĩnɛ bɛkpa Kristo wuda nɛ asendua akũ a.,"bati pidi, kiba npa kadika mia fon, be dani bake sine, be npa Kristo wudane asinduaku.",0.8947,0.2917
+55,"“Finyaakĩĩ ĩnyina kĩ mi a flee kĩ minu kĩ ntsa mi fɔtsa nɛ Baguma lɛgãkanyakɔ̃ akũ, bɔmɔ́ mi bɔlaabuki bɔmɔ́ akũ dadaada.","Sinya ki nina ki, miaflee ki minu, kincha mi fofochane bagumale gaka nyakwaku. Bomomi bolabu ki bomwaku dadada.",0.9091,0.3085
+56,Ade Petro mɔ fɔtsa ɔkɔlɛnɛ kĩ a yidza bɛnaa linikɛ a ɔwɛ̃.,"Nde Petro mo fɔ chao kule nɛ kian yi ja bɛna, linikɛ ɔwɔ",1.0,0.3111
+57,“Foesũ ɛdzakũ nɛ Kaldea tite akũ ɛnadzi nɛ Haram kɛnawo lɔkɔ a kĩ ɔlɛga ku.,"fɛsɛɛ̀ jàkù nè kàdìà tì tìàkù. Ɛ̀ nà jìnè háràmù, kènà wòlɔ̀kwà kì òlègà",1.0,0.5932
+58,"Nkpã a kĩ midzi tɔ̃ a nyɛ kɔkɔbato kpa kabɔa, sukɛna fɔwɛtsa kpa liti katomɛna, bavɛ kawuga, anya kpa kanya, futo kpa kato, mɔ baviɔ̃ kasum kĩ fɔláa mbla adima kayɔ.",npa ki mi ji toa nye koko ba to pa ka bo a su ki na fo we cha pa li ti ka to mi na ba ve ka u ga a nya pa ka nya fu to pa ka to mo ba vyo ka sum ki fo la mbla a di ma ka ya,1.7097,0.2283
+59,"Kĩ Paulo lɛ kɔdzɛla gɛlɛɛlɛ sũ tida bɔɛ Eutiko, opopo kĩ ede edzi nɛ nfansili.","Kipakulo lɔkɔji la gɛlɛlɛ, suti dɔgbɛɛ ŋu tiku. Ɔpɔpɔkiɛ dɛɛ dzinɛn fantsi.",1.0,0.371
+60,"“Finyaakĩĩ, nkɔa mi mado nɛ Baguma awɛ kĩ ɛdãmɛna mi akũ mɔ ye fɔlɛtsa a kĩ fɔabumɛna bati a, fudo mi katɛkado kɔbɛ̃ ayekĩ fɔ́akɛna mi ode fɔtsa banyanɛ ndɛ bikĩ ɛpau ɛkpa ye akũ a aye.","sinyaki, unkwami madonibaguma we ki edamnamiaku, mwoyifule chaki fabuna batia. Fudumikate kadukobe, ayiki faknamio difotchabanyane, ndebiki epau ekpayi akuwa ayi",1.0,0.3287
+61,"Fɔnyɛ boe mbla kĩ odima lɛlá osi kĩ yanya foe, mbɔɛntɛ basɔfɔ odi keĩ.","Fonyɛ bwɛ̃ blaki ʊdʊmɛ lalaʊ sʊkʊ yɛ nyafʊi, ʊmbʊantɛ bʊsɔfɔ ʊdʊkɛi.",1.0,0.4364
+62,"Fɔgã ewua kĩĩ flee deĩ botaɛ mɔapɛ, ade baakɔa be kɔbɛ̃ mɔ otumi bɛkpa ɔyaɛ kpa a.",Fogai waki fle de mbotaye mwa pe adebakua bekobe mwo otumi bekpa oya ekpa,0.9412,0.3492
+63,Mabi mi kĩ lɛtsa a kĩ lɛtɛ kɔya lɛba Asɔli Kɔla a deĩ nɛ awĩ.,"Mabibi ki, lachaki letekwo yaleba solikola dene amwe.",1.0,0.4348
+64,Batɛ badonɛ a kĩ bideĩ nɛ awã a kpã Paulo mɔatsɛ mɔatsɛ bɛnamɛna mpo abuĩ.,"Ba te ba du ne akibidin ne a wa, ba mpa o lo mwa chemwa che. Be na mna mpo a bu.",1.3333,0.3898
+65,Batɛ badonɛ a kĩ bideĩ nɛ Asia kamɛkamɛ a awɔ̃na mi.,"Mate Badu ne akibideni Asia, kame kamea awuna mi.",0.8182,0.25
+66,"Titɔ kĩ boe ndɛ Kristo fɔtɔ banyanɛ aye budeĩ osi kĩ bɔavia fɔtsa butomɛna mi sɛkɛ̃ malo ni, bupi boe akũ nɛ mi kamɛ ndɛ obima kĩ yadãmɛna ye babi akũ aye.",Tiktok gba ndɛ Kristo fɔtɔ banyane ayɛ gbudɛn osiki gba bia fɔtɔ chabu tumna miseke maloni. Bu pigbu ya kun nɛ mi kamɛ ndɛ o dimaki ya dam na yiba biakui.,0.7812,0.2893
+67,"Bɔtɛ budo kĩ boe tɔwɔlɛ kamɛ kpalɛ, kitonɛkĩ bɔawɛ kĩ bɔakɛna fɔtsa wĩ lɔkɔ nyɛ lɔkɔ.",wátɛbùdókìbútɔ́lɛkámɛkpálɛ̀ kítúnìkìbúwɔkìbúákìna fɔ́já wí lókɔ̀ ɲɔlɔ̀,1.0,0.4706
+68,"Nwaɛ̃ amɛ, miawɛ minyina kĩ boe kaya nɛ mi sɛkɛ̃ a tánya kɔa.","Mme me wue minyina ki bwe kaya ne misekean, tanya",0.8462,0.4444
+69,"Ntɛ mi kamɛ odi amɔ lubo ni, fɔtanya kĩ ɛnyɛ owudini, ĩye oyekpanɛ, ĩye fɔtsa kpa ɔkɛnanɛ ĩye kĩ edo onukpɛ̃ nɛ bati bɛbã fɔlɛtsa kĩ fɔtsɛ́la ye akũ a kamɛ.","ntɛmɛka mɛɛdi amoluboni, fɔtanyaki ɛnyɛ owudini iye oyɛpanɛ, iyɛ fɔchakpa ɔkɛnanɛ, iyɛki edonupɛn nebatibɛbafulɛchaki fɔchilayi akuwa kamɛ",0.871,0.2417
+70,"Ade evia be kĩ, “Bapopo, mbɔɛɛ mitányɛ kɔfɔabi kudima?",Abe debiaki bapopo umbe metaye kofa biakudi,0.8889,0.4524
+71,"Odi nyɛ odi kĩ ɛnyɛ Baguma obi ni, yaádzi kakɛna tɔkpa, kitonɛkĩ Baguma kutidu a deĩ nɛ ye kamɛ.",Kudinyo diki enye bagu mobini. Ya jikanakanatopa kito neki baguma kutidua denye eka me.,0.9474,0.28
+72,"Kaplɛ mɔapɛ miakɔa kaya funitataɛ nviã, lɛmɛ koe kamɛ kamɔapɛ malo látɔ nɛ tite kĩ fɔnyɛ́ mi Ɔlɛga nɛ ode a kawɛ.",kaple mwa pe niakwaka ya funi ntate in vien. Leme ko ge kame ka mwa pe malo la toneteki fonyen mi olagane ude ako,1.0909,0.3596
+73,"Lɛmɛ Baguma Hũhũ kpa Stefano nyansã mɔ kadikanyi paa foesũ ntɛ ɛlɛ kɔdzɛla ni, be kamɛ odima lápuli katɛ ye atsindze.",leme baguma huuhu pa ste fa nu nya nsa mo kadikanyi pa fwesun tele ko jelani beka me udima la plicate ye ya cinye,1.0476,0.3158
+74,"Baatomɔ boe bawaɛ̃ nviã Barnaba mɔ Paulo, kĩ bɛkɔa be nkpã bɛkpa boe Ɔlate Yesu Kristo ɔsum a.","Ba tumu bu, ba nwen yi, bana ba mo pawulo, kin be ko be nko be kpabo lati Yesu Kristo sun mo.",1.0556,0.3649
+75,"Kĩ ɛkanyɛ fɔlɛtsa kamɛ nɛ kadzi wĩ, akũ kapi, mɔ Baguma kadzɛ a kĩ kaaya nɛ kunya kamɛ a akũ ni, libe wo Felike paa.","kí è kànyìn flèchà kà mènè kà jìn wì, à kù kà pì, mò bà gùmà kà jè à kà kà à yànè kù nyà kà mènè à kùnì, lì bè wò fèlì kè pà",1.4,0.6023
+76,"Boe kawɛ mɔ ɔsĩ nyɛ kĩ mi kamɛ odi nyɛ odi epi ye mbɔdi kabɔa kamɛ lɔmɔ kɛnaawo kawũna, ayekĩ mi awɛ aata lɛtsa a kĩ de akũ miate anɛ a.","Bugawe mwa siŋe ki, mika me diŋo di epi, mbo di ka bwa kamelomo ke na wo kanuna, ayiki mi awe a tale ca aki diaku miatiana.",0.9355,0.375
+77,"Kito lɔkɔ a na, ntomɔ batɛ badonɛ a kĩ bɛtsɛ̃ osi vɔɛ̃ a liti, nwɛ kĩ bɛkɔ be.","kítú lókwána, nte mɔ́ bá-túbá dú-niá, kí-bɛ̀-tʃè ósí-vwɛ́ á-lìtí, ŋwɛ́ kí-bɛ̀-kɔ̀bɔ́",1.0,0.4286
+78,"Ade lɛgã a via ye kĩ, ‘Ɔkɔba, nde ɔkɛna owo nɛ awĩ kĩ ɔtádo obolitsɔ̃ kapi atadiɛ?","Hɔ dɛ́lɛ́gɛ́ víɛ́kí ɔkɔ́bá, ńdɛ́ɔkʋná wúnɛ́wúnkí ɔtádʋ́ ɔbɔlɛ́cɔ́kápíátádɛ́.",1.0,0.5246
+79,"Ɔyaɛ kpa kĩĩ hɛ bati flee, babisɛ̃ mɔ banɔkɔɛ̃, asikafɔ mɔ ahiãfɔ, basate mɔ akũ akũ badzinɛ, kĩ bite sɔkpɔ̃na nɛ be sɔmɔna kɔkpɔ ĩye nɛ be nnyɛ.","Oya ekpakpi he bati fle, babisemo banokwi asikafoma hienfo, baseti mwakua kubajine. Kibitesokuna ne besomona kopɔ, ye ne benye.",0.9643,0.3364
+80,"Ade ye mɔ kɔbã onyukpɛ̃ ɔdzɔlɛnɛ a abinya kakpa ye, ade baveli a anu ye odo a.","Adeya mo kobo onyupoju lane abinyaka paye, adebabeli anuye odo",0.9412,0.2881
+81,"Ntɛ babi a yɔɔlɛ a banɛna be, kitonɛkĩ kɔba funitsã kakpɔta lɔkɔ wo ɔtɔ.",te ba bi a yole banenabi kito na ki koba funicha kakpata loko uo,1.0,0.3684
+82,"Ayekĩ Kristo mɔ́ lubo ndɛ otidziwa aye a ni, mi malo miakɔa adzuni mɔapɛ a mido mi akũ kɔbɛ̃, kitonɛkĩ odi nyɛ odi kĩ ɛmɔ lubo nɛ sukɛna kamɛ ni, yafɔ̃ tɔkpa kakɛna.",Ayeke Kristo molubo nde otijiwa ayani mimanomikwa ajunimwapea midomi akukobe kitoneki odinye odiki emolubonesukuna kameni yafotokwa kakana.,0.9697,0.2302
+83,Grikifɔ batsole pii kĩ obu deĩ nɛ be akũ mɔ banyole pii lɛmɛ tɛ bido.,Greeki for bacle pi ki obude ne biakung. Moba nule pi le me tebido.,1.0,0.4074
+84,"Ɛkɛna fukĩĩ nɛ Herodia, ɔwaɛ̃ Filipo ɔtsɔ̃ sũ.",Okanabugine erodia onue filipo otuoce,0.875,0.4857
+85,"“Nda, Oti Kpĩĩ, katinya kamɛ bati linyína nɔ lɛmɛ yĩ kɔ̃ ĩnyina nɔ, ade bati kĩĩ lɛmɛ nyina kĩ nɔ lido yĩ a.","Gonda utikping, katinyakamabati linano, lamayiko ininano, ade batiki lamanyinakin no lido yie",0.913,0.3375
+86,"Foesũ nwaɛ̃ amɛ, fɔnya mi kawɛ mɔ ɔsĩ mɔ ɔsĩ kĩ mianyɛ Baguma onukpɛ̃, lɛmɛ mitasua bikĩ balɛ kɔdzɛla nɛ tide ahɔlɔ ahɔlɔ kamɛ a osi.","Fɔsɔ nuŋ wɛ́ɛmɛ, fɔnyamika wɛmɔ simɔsi, kɛmi anyɛ bagɔnuŋpɛ, lɛmi mita cɔabi kibalɛ kɔjɛla nɛti dɛ ahɔlɔhɔlɔ kamɛa usi.",1.0,0.2524
+87,Owei aapuli ɛnya katinya akũ kɛba oti a kĩ ɛtɛ edo kĩ Yesu nyɛ Baguma Obi a?,"O we a pule nya katinyaku, ke ba o ti a ki, e te do ki Yesu nya bagume obi.",1.0588,0.2373
+88,"Lɛmɛ Yerusalem nɛ awĩ bɛdɔɔla yĩ, nkɔlɛ fɔtsa nɛ Gamaliel kayɔ.","Lɛmɛ Yerusalemu nya wui bɛdɔla yi, nkɔlɛfɔca nɛ Gamalieli kɛ",0.8182,0.2353
+89,"Banɛkunɛ mɔ́ fɔkɔ, bikĩ biveliveli yidza bɛtsɛ̃, bikĩ basɔ fɔsɔ ngbã akũ kpalɛ, batɔsĩnɛ anu fɔkɔ, bɛdzɛla banɔkpa bidzi nkpã, ade bɛlamɛna ahiãfɔ Kalɛ Wĩ a kabi a.",ba ne kunyɛ mɔ fɔ kɔ bi kibi vɛlɛ vɛlɛ ya bɛcɛn bi ki ba sɔ fɔ sɔn gba aku palɛ bɛ tɔ sunɛ a nu fɔ kɔ bɛ jila bɛ na kpa bi ji n pan a de bɛ lamna a hya fɔ kalɛ muya ka bi,1.6071,0.2791
+90,"Kĩ Pentekoste luwi a wo ɔtɔ a, batɛ badonɛ a flee natsɛna nɛ kakɔ mɔapɛ.",e Pentekoste luui awo otoo ba teba donia fle nache nanen kamo,0.9333,0.3571
+91,Kɔa fɔtsa a kĩ onu kĩ ntsa nɛ adansifɔ pii anɛ kamɛ a kado nɛ bikĩ ɔtɛ odo kĩ baapuli bɛtsa bati bɛbã lɛmɛ a awɛ.,Kɔfɔkyakyi ɔnu kɛnkyane adanse fɔpiana kɛme aka dunae bɛkyi otewudo kibaapli bɛkyap bɛkyibɛba lɛmɛa,1.0,0.4368
+92,"Odi nyɛ odi kĩ Hũhũ a lɛláa ye kamɛ ni, ɛláapuli ɛtɛ futetsa a kĩ futo Baguma Hũhũ a sɛkɛ̃.",Odi no dikyi kùhùwua lae kameni. E la pli etefe tye tya aki fute bagu manhuwua seke.,0.95,0.4203
+93,Lɛmɛ kĩ buwo Mileto a Paulo do batɔ nɛ Efeso batɛ badonɛ banɔkɔɛ̃ a sɛkɛ̃ kĩ bɛyaatsɛlamɔ ye nɛ awã.,Lemeke buo miletua Paolo do batone Efeso bateba done bano kweaseke ki be ya tlamoyi neawo,0.9,0.3077
+94,Ye bati abɔɛ ye kanaayi nɛ awã luwi daa ayekĩ yaakawã sika katomɛna bikĩ batɛ̃ nɛ awã a sɛkɛ̃.,"Nye batii abwɛɛ ka na yi nɛ awu wida, ayɛkɛ yi aka wa si ka, kɛ tuma bi ki batii nɛ awu seki",1.1579,0.3288
+95,"Awã naa, bɔmɔ́ batɛ badonɛ badi, ade bike boe aduli kĩ budzi nɛ be sɛkɛ̃ ɛkwansieda mɔa.","Oana bomobate badunebadi, adebikebuya duliki bujine besecekwasadamu.",1.0,0.3582
+96,"Ntɛ miawɛ kĩ miatɛ be fɔlɛtsa mido kɔ̃ ni, minyi kĩ Yohanes nyɛ Eliya a kĩ bɛlɛ biyi kĩ yaanya lɔtɔ ɛya a.",nde mi oki mi a te bi flecha mi dokoni mi yiki Yohannes ye elia ki bale bi iki ya jalo to eya,1.0,0.3951
+97,"Odi nyɛ odi kĩ yakɛna tuwĩ ni, ɛnyɛ oti kpĩĩ ndɛ ayekĩ Kristo lɛmɛ nyɛ oti kpĩĩ a.",Odi nyodi ki ya kanatuwini enu eti pin de e ki Kristo le me nye oti pin,0.8889,0.3492
+98,"Awã naa, Abraham kɔa kawũ kamɛ fɔtsa a kĩ ɛna a flee katsu kawuade a ɛkpa ye.",Abraham kwa ka unka me fochaki enna feli kachuka wadia ekwa,0.9412,0.4746
+99,Adansifɔ nviã kĩĩ nyɛ kugua futse nviã mɔ ɔsɛdza titse nviã a kĩ tɛdzɛ̃ nɛ tite Ɔlate a anɛ kamɛ a.,"A dãnsi fɔɔnvi a kiinye kuguu vu kyeenvia, mɔɔ sagya ti kyeenvia ki, te gyeene tite, o latia a ne ka me.",0.9524,0.4026
+100,"Ye lɔlɔ tɔlɔ voe fitaa ndɛ kuveli tɛtsã ĩye ndɛ lɛdãglɛglɛ aye, ade ye banebi ata ndɛ fi luwotu aye a.","Nyɛ́ lɔ́lɔ́ tɔ́lɔ́ fwe fitaa, ǹdɛ́kuvɛli tècã̀, nyɛ́ ǹdɛ̀lé dàgblègblè ayí. Adí bɛ́ nɛ̀ bí atá, ǹdɛ́ sìlɔ́ wotú ayɛ.",0.8095,0.35
+101,"Yĩ bawɛnɛ, mitafɔ̃ ayekĩ bɛlamɔ mi kasɔ kadã, milamɔ lubo kamɔ mɔ kalɔɛ lɛkɛna mi wãwã ndɛ lɛtsa vɔɛ̃ kĩ miádã anɛ kɔlaa.",nba o ne me ta fo ye ki be la mo mi ka so ka da me la mo bu ka mo mo ka lo e le ke na mi wa wa n de le cha vo ye ki mi a da ne ko la,1.8696,0.4149
+102,"Minyína kĩ ntɛ mibɔɛ katinya kamɛ tɔkɔba ni, mikɛna mi akũ Baguma bakesĩnɛ?",Min ne kun te ne bwe kanyi ne ka me togobani mine ne miya kun baguma bake si ni,1.3846,0.4098
+103,"Nwaɛ̃ amɛ, nɛ mi kalɛ sũ, nkɔa bɔmɔ Apolo fɔlɛtsa kĩĩ nkpa nfantuhũ nɛ lɛtsa a kĩ matsa a akũ, ayekĩ míanu fɔlɛtsa a kĩ balɛ a kayɔ kĩ, “Mitsã nɛ osi kpĩĩ a akũ.",Wama ne mi ka le sun un ka bo mo a polo fle ca ki un ka mfan tu ne le ca ki ma ca ku a yi ki mi a nu fle ca ki ba le a ka yo ki mi cha ne u si kwi a,1.2857,0.4667
+104,"Ɔdetɔ́ kamɛ kamɔanɛ, ɔplala kakpɛnɛ, mɔ fɔwɔla kɔɔba kanɛ kato lɛgãkpo a kamɛ.",odito kamae kamwanene opla la kapene mofola ko bakane katule gakuaka,1.0,0.4355
+105,"Ntɛ kutitse a flee nyɛ linebi odi ni, kɔláapuli kunu fɔkɔ.",kuti den akufacha pi maloni fui fle fokan a otimwa ade aye Kristo le mela bue badi banye yudafo ade badi lemenye biki banye,2.0909,1.7609
+106,"Ye mɔawɛ aflimu kĩ ɛnɔnɛ lɛ kɔdzɛla mɔ oti odo, ade esua onukpɛ̃ ɔnyɛnɛ a fɔbɔdamtsa kakɛna osi a.",I mo we aflimu ki nɔnɛ lɛkɔdʒilamɔ otioodo adɛ esua onu kpɛ onyenɛɛ fɔbɔ damtʃa kakɛ na osiɛ,1.0,0.2078
+107,"Lɛmɛ ntɛ budeĩ nɛ ɔhaĩ kamɛ ndɛ ayekĩ ye malo edeĩ nɛ ɔhaĩ a kamɛ ni, kekɔ̃ bɔakɛna ɔmɔa mɔ boe akũ akũ, ade ye Obi Yesu babɔanɛ a vɔlɛ tɔkpa tidi nyɛ tidi nɛ boe akũ a.","Leme te bu dine oha inkame. Nde he kiye male dene oha yakameni, ke ko bwaka na ouma mo bu ya kuwaku. Ade yobi Jesu ba gbwa ne afolè tokwa ti di nye ti dine guya ku.",0.9737,0.3906
+108,Odima tápuli ewo nɛ Asɔli Kɔla a kamɛ kɛnawo kĩ lubo kamɔ evũkɔnɔ a kĩ ode fɔtɔ banyanɛ evũkɔnɔ a yamɛna a onukpɛ̃ tsua.,di mɔ̀tápìlì èwòní à sɔlì kɔlá à kàmè. Kɛ̀nà wò kìlùbù kà mɔ̀yìvùkùnà. Kìyò dé fòtòbá nyɛ̀né vùkùnà yàmè nà ònùpɛ̀tɕwà.,1.0,0.5158
+109,"Ade foesũ boe baviɔ̃ lɛláafɔ̃ edzi nkpã a, titɔ kĩ elo nɛ wuda awɛ kamɛ nɛ mpo kamɛ malo.",a de fu subu ba viona la fu ji npa te toke lo newu da we ka me na mpoka me ma lu,1.2105,0.3731
+110,"Odo a lɛ kĩ, “Tsɛlɛ lɛtsa a kĩ ɔmɔ́ a kayi, lɔkɔa kakɔa ovoli a kamɛna tɛsɔli a kĩ tideĩ nɛ tɛmatɔ tɛkpale tɛkpale evũkɔnɔ kĩĩ kamɛ.","Oduo aleki, chala le chaki omuakayi, lokwa kakua uvule akamina, tosola akyiti dena itamato takwalete pwale ivu kunoki nkana.",1.0,0.4356
+111,"Finyaa budeĩ kɔnɛte kĩ kɔnɛnɛ kɔbɛ̃, kĩ bɔtsɛ̃ koe akũ bɔafuã Baguma.","Senya, buden koneti ki konene kobin kibokiyakung bwafung bagum.",1.0,0.5185
+112,"Kutukpabi, banantsue babɔanɛ mɔ ɔnantsue obi kĩ bipila ye batɔ bakɔa kasã nɛ oti a kĩ efĩĩ deĩ nɛ ye akũ, lɔkɔa ye akũ akpalɛ.",kudugbabi bananche babuane mo onanchiobi ke bi plai bator ba kwagasane uti aki efini deneyaku okwayaku akplaba,1.0,0.4141
+113,Bɛtsɛlɛ mbusuo dĩ kĩ lasupa Baguma bite nɛ lɔlɔ lidi nyɛ lidi akũ.,bɛ́tlɛ̀ ŋwù síyò dínkí là sùpɛ̀ bágúmà bítɛ̀nɛ́ lɔ́lɔ̀ lìdín'yɛ̀lìdì á,0.9231,0.4906
+114,"Ɛnyɛ oti kpalɛwa kĩ nfumusu adima lɛláa ye akũ, ade tɔkpa tidima lɛláa ye akũ a.","Enye otipa lewa, ke nfumu su adimale layaku, aditokpati dimale layaku.",1.0,0.254
+115,"Ade ɛbɔa fɔwɔla kɔɔba ɛlɛ kĩ, “Yesu, Baguma Nɛ Ode Flee Obi!",Adekwa fo la koba eleki. Yɛ duma kumanɔ o de flebo.,1.0,0.4222
+116,Do bati bɛnaa Yopa bɛnaakpã odi kĩ bavɛ Simon Petro.,o le due o buki e le ki la chaki ba guma pale de a kuni ta buki e fini de ne de a kuni e na kanji ka chaki titi ele le a de be vele fo cha be na mu na wudi ye lo kwa na kame fo le chaki ka kena pete,5.5,2.881
+117,"Ade ke bɛbɔa fɔwɔla kɔɔba kĩ, “Bɔtámɔ lɛtsa kpa lidima nɛ ye akũ!",ade kee bebua fola koobake. Wotamuale chakwali dimaneya,0.9231,0.44
+118,Yĩ malo maawɛ ye kalɛ ade maanyɛ yĩ akũ ntsa ye a.,"Malo denɛi kame, fula chaki bimia fula tato nsɛkɛ, umbo ndaɛi denɛi kame, lam na yajimakene.",1.3333,1.5263
+119,"Otsole a lo ɛnaa kɔsa kamɛ, awã kĩ Baguma manɛ eyi ɛkpa ye kĩ bɛdã ye akũ fuwi apim mɔa, ɔha nviã mɔ aduesia.",O chu la lo e na a kosaka me. A wa ki bagu ma ma ne e yi e kpa e ki be da e a kun fu wi a pim moa. O ha n vyan moa du e si a.,1.6667,0.2892
+120,"Ntɛ mi kamɛ odi kɔna kĩ enyina kadi nɛ katinya kĩĩ kamɛ kamɔ onukpɛ̃ ni, kɛfɛta kĩ ɛdani ɛkɛna odzimbifɔ mbom ayekĩ yaakɛna ɔnyansãni nɛ Baguma anɛ.","teme came odi kona kin eni na kadi ne kati ya kin kame kamo onupeni, kefetaki edani ekina odi mi fomo. Ayi ki ya akina onyansani ne bagumani",1.0,0.3025
+121,"Ade evia be kĩ, “Kĩ mitɛ mido a ni, mitɛ Hũhũ Kpalɛwa a?","A dévi a békí. Kimi té mi doani, mi té hu un kpalé wa.",1.0769,0.3
+122,"Kĩ ɛlɛ fukĩĩ eyua a nɛ be anɛ kamɛ naa, Baguma bɔɛ ye ɛnamɛna ode, ade ɛyɛla nɛ luflututu kamɛ a.",Kyele fuking e yuna be anyeka mena begumagboyi namuna ude adee ela ne flu tutukame.,0.9524,0.3919
+123,"Lɛmɛ kĩ mawɛ nɔ kalɛ sũ ni, nkɔa kudulike makpa nɔ mbom.","Lɛɛmɛ kɛmɛɔ nɔ kalesuni, unkwaku du le kee makpanombo.",0.9167,0.3023
+124,Matsã osi nyɛ osi akũ kakɛna ɔmɔa mɔ odi nyɛ odi ayekĩ maavɛlɛ be kamɛ badi nkpa boe Ɔlate.,"Macha osi yotsi akũ, kakana omaamo odino odi. Aiki ma vlibekame badin pabuyo lati.",0.8421,0.3333
+125,"Minu ayekĩ Hiob do ɔwɔlɛ, mɔ lɛtsa a kĩ Baguma kɛna ɛkpa ye nɛ kawũna kamɛ a.","Menno aeki hio do owolo, mole chia kiba guma kena ekpa ye nekanu naka me.",0.8824,0.3729
+126,"Ntɛ bɛkpã mi bɛnamɛna fɔlɛtsa kadzɛkɔ̃ ni, mitaha akũ nɛ lɛtsa a kĩ míalɛ mɔ ayekĩ míadzɛla a akũ.",Be pa mi be nina fle cha ka jekoni mita ha akun ne le cha ki mi ale mo aeki mi a jila akun,1.1579,0.4935
+127,Maabɔa mpaɛ nɛ hũhũ kamɛ ade maabɔa mpaɛ lɛmɛ nɛ fɔlɛtsa kĩ manu foe kayɔ kamɛ a.,Ma bwanpa ne nu kamme. Adimaba bwanpa ne me ne fale cha ki ma nu fe kayo kamme.,1.0588,0.4531
+128,Mɔ be kanɛ nɛ ɔkɔlɔ a kamɛ pɛ bati mɔ Yesu biyi ɔsũ.,Ka tene chensi aku ka kpa fini fini kin fukini wole ga herodes kalo pa leme elapli edani,1.3846,1.5128
+129,"Kĩ Yesu yidza nɛ mpaɛbɔ kamɛ a, emuniki ɛnaa ye fɔtsa bakɔlɛnɛ a sɛkɛ̃, ɛnamɔ be kĩ bɛwaa tida nɛ ayɔlɔhɔ a kĩ epi be a sũ.",Ba ku ma ki ke yi ya. La me bo bo e ba kpa. O wu la ki ya nye yi e kpan. Ne a wa bi yi ya ku ka bi ye.,1.1852,0.7849
+130,"Stefano kĩ Baguma kɔbɛ̃ mɔ sɛmɛ kalɛ yi ye kamɛ a, kɛna awãwã mɔ nsɛntsɛlɛni fɔtsa pii nɛ bati a kamɛ.",Stefano Kiba guma koben mose mekaleyi ekamea. Kena wonwan mosen treni fochapi nebatia kamea.,0.9524,0.3797
+131,"Nɛ kɔkɔ lɔkɔ lidi kamɛ ni, Baguma támɔ mi kɔnya, lɛmɛ finyaa ɛmɔ mi kɔnya.","Nɛlɔ kɔllidi kamɛni, bagumata mɔmikɔnya, lɛmɛfinyɛ ɛmɔmikɔnya.",1.0,0.1228
+132,"Bati a kĩ bite be ɔyaɛ kpa sɔkpɔ̃na a, mɔ be a kĩ bisum ye kutidu mɛwa a nɛ́ fɔɔkpa kĩ fɔawo, kĩ fɔakũ lɛmɛ nɛ akũ.",bati à kibi tebe oyae kpasokpɔna mobi akibi su yekutidu meoa nefokpakifawo kifakun leme neakuku,0.963,0.3333
+133,"Ntɛ mipi yĩ tɛbla a midomɔ akũ ni, míana nɛ yĩ ɔdɔ a kamɛ ndɛ ayekĩ yĩ malo mpi Nda mbla ndomɔ akũ fɔfɔ̃ ye ɔdɔ deĩ nɛ yĩ kamɛ a.","Tè mi pìntè blà m̀lɔ̀ m̀kùnì m̀yànánnè yì yɔ̀dɔ̀ à kà mɛ̀, ńdá è kì ìmàlɔ̀mpììndà m̀blà m̀dɔ̀ m̀kùnì fɔ̀fɔ̀yɔ̀dɔ̀ à dìnàyì kà mɛ̀",1.0,0.5417
+134,"Lɛmɛ ntɛ yabɔa mpaɛ ni, kɛnɛ kĩ ɛtɛ edo, kĩ ɛtatɛ atsindze nɛ ye kamɛ.","Gɛ́mɛntɛ́ yɛ̀ á bɔ̀ ànpàní, gɛ́ nɛ́ kɪ̀ ɛ́tɛ́ɛdù, kí ɛ́tátɛ́ àkɪnyɛ́néè kàmà",1.0,0.4906
+135,Lɛmɛ Baguma amɔ mfumsu nɛ ye bati akũ kĩ ɛlɛ kĩ.,Lɛ mɛ̀ bágù má àmɔ̀ fúnsú ná yɛ̀ bà tì àkùn kí è lè,1.2727,0.5405
+136,Ade bati a dza bɛkadã anɛ kĩ yaawumi ĩye yaaka ɛtɔ deedimɔapɛ eku.,Ani bɛtɛ a jaba kà dáné ki yà wumi. Ìnyé yà ka etɔ̀lédí mwa pe ku.,1.1538,0.4906
+137,"Lɛmɛ mɔ ye kalɛ nkaɛ kawũna pɛ, be flee bɔbɔa fɔwɔla kɔɔba kĩ, “Aa!",kɛ nɛ́ kɪ́ ákwá ólɛ́dʊ́ kɪ́ ó nɛ́ mɛ́ ná kákonyɛ́kákɔ. ó bɪ́ batí flɛ́ lɛ́ cákɪ́ ómɔ́. mɔ́lɛ́ cákɪ́ ónúɑ́. fɛ́nyɛ́kɪ́ lícá ájɔ́lɛ́ íjá lɔ́kwá ká tɛ́mʊ́ ká ówɔ́lɑ́ ámáníɛ́.,2.2143,1.66
+138,” Abraham kɔna kĩ Baguma aapuli ɛdzɛla Isak etomɛna kanɔkpa malo.,Abraham konaki baguma apeli egila isa tumana kanokpa malo,0.7,0.2453
+139,Mbi bikĩ bɛbɔɛ kalɛ nɛ ye akũ a ku kĩ bɛkɔa ke bɛma nɔ.,Mɛ́ kɩ́ bɛ́kɩ́ bɛ́ bɔɔ kɛ́ lɛ́nɛ́ yɛ́ ákúá kí. Bɛ́ kwá kɛ́ bɛ́ mánu,1.0714,0.4634
+140,"Ntɛ ɔpaani kĩ ɛnyɛ́ baveli ɔkpãnɛ, ade ɛnyɛ́ baveli a ɔlate lɛmɛ mɔ́ kalikii kaya ni, yalo kafɔnɛ baveli a.","n te o pa ni, ki ɛnyɛ ba fɛɛ le o pa ni? A de ɛnyɛ ba fɛɛ le o la ti le mɛ. Mɔ ka li ki ka ya ni, ya lɔ ka fɔ nɛ ba fɛɛ le.",1.75,0.3293
+141,Kĩ fɔtɔ banyanɛ a nu foe a bilo bɛnaa Likaonia tɛmatɔ a kĩ tɛnyɛ Listra mɔ Derbe mɔ tikĩ tideĩ nɛ kayite a kamɛ.,"kí fótó bányá nì nùfùyá. bìlò bènà lìkáwù nyà, tè mátwà kí tè nyɛ́ lìstrà mò dérbé. mò tìkìtì dɛ́yì nè káì téyákà",1.0,0.5682
+142,"Mite anɛ nɛ kalɛ a kĩ mbi mi akũ a kĩ, ‘Ɔsumunɛ lɛbɛ́ ye ɔlate.",Mɛ tɛɛnɛ nɛɛ kɛlɛɛ ki ibimii akuakin usumunɛ labei yola.,1.0,0.4444
+143,"Kĩ Petro mɔ Yohanes atɛ̃ a, ɛwã be sika.","Kipe tumo yuhannes ate, ewua bisi",1.0,0.4828
+144,Bɛbɔa mbɔdi bɛwɛ osi kĩ batsã biwo nɛ kɔla a kamɛ bɛkɔa oti a biyi nɛ Yesu anɛ kamɛ.,"Bɛ́bɔ́mbɔ́ɖí bɛ́wɔ́sɛ́kí-bàcá bìwɔ́nɛ́, kwɔ́láákámɛ́ bɛ́kwɔ́ òtí-àbíyínɛ́ Yésù ànɛ́kámɛ́.",1.0,0.4308
+145,"“Foesũ nɛ yĩ, Yakobo, kakɔna onukpɛ̃ ni, kɛtánɛ kĩ bɔaha bikĩ bɛnyɛ́ Yudafɔ a kĩ bɛkɔa be akũ bakpa Baguma a.","fui sunɛ yi Yakubu kakunɔnu kɛni, kɛtani ki wahabi ki bɛnyɛ yi da fua ki, bɛkwa biɛkumbuɛ kumba guma",0.9524,0.3537
+146,"Nnɛ́ Beelzebul kɔbɛ̃ nnɛɛ, mbom Baguma Hũhũ kɔbɛ̃ nnɛɛ mablɔmɛna hũhũ kpa, kĩ fɔatsa kĩ Baguma lɛgãkanya a ya nɛ mi akũ kɔkɔɛ.","Nebe subur kɔbɛnɛ, uŋ bombakuma huhuŋ kɔbɛnɛ, mablɔm na huhuŋ kpa, kifa ca kibaakuma laka kanya, yana mi aku kɔkɔ.",0.913,0.3469
+147,"Ntɛ sɛmɛ pi otsole ni, yawo ɔblɔ kitonɛkĩ ye lubo kamɔ ɔdɔũ a bɔa.","Kittone ki manna ndaseke. Flecha ki eleki. Kitte suukulo a kayo nyelicha, bwanu lecha ki yale a kayo. Yese mwa ki ifo",1.5,1.4902
+148,Kɛnɛ kĩ boe flee a kĩ bubo anɛ nɛ Baguma Hũhũ kamɛ a bɔna adzuni kĩĩ odu.,"kɛnɛkɛ bɛɛ fɛli, akɛɛ bɛɛ buu anɛ nɛ bɛguma nhuu kɛmɛɛ agbo na ajuni kɛɛ u du",0.9412,0.4643
+149,Be kasui nyɛ kĩ baadzi ye osi lɔkɔa ntɛ yatɛ̃ a bɛkɔ ye.,beka fwinyeki bayosi lokwa teyaten bekoi,1.0,0.4524
+150,"Nuwĩ yaapuli ɛkɛna fɔtsa ɛba yĩ fude a, kitonɛkĩ manaa Nda sɛkɛ̃.","Emon da lemi inde su buku afya gini, chabuo le ge. Felipo, umbo ta teo dokin inde ne nda kamen. Adeki yemalo inde na ikamen. Fulachi akindibe miamifule ta to in seke, umbo umda.",2.75,2.1765
+151,"Ade finyaa ntɛ Levifɔ tɔsɔfɔ kanya a kakpɔla kɛkpɔla ni, kufɛ fɔtásĩ kĩ ɔsɔfɔ bɛbã ndɛ Melkizedek aye ebuki ɛnɛ, kĩ nnɛ́ Aron kasinu a kamɛ eto.","Adze finyã nte le bi fotosafo gã nyã kã pla, ke kplani ku fe fota si, ke osofo beba nte nbel ki zede aye ebuke ne, ki ne aron ka sinua kame e",1.1481,0.3684
+152,"Kĩ kade sila kɛdɔ pɛ, batɛ badonɛ a kpã Paulo mɔ Sila bilo bɛnaa Beroia.",Ké kɛdɛ́ɛ̀ sí lá kɛɛdɔɔ̀ pɛ́ɛ̀ bɛ̀tɛ̀ɛ̀ bɛ̀dɔ̀ɔ̀ní àkpámpáúlló mòɔ́ sílá bílòòbɛ̀ɛ̀ nàá bɛ̀ɛ̀rùɛ̀.,1.0,0.625
+153,” Ade aye bɛtsɛlɛ nɛ Baguma Onukpɛ̃ Ɔnyɛnɛ Yesaya ovoli a kamɛ kĩ.,Abia be chelani bagumuno kpe onye ne Isaiah ovola kameki,1.0,0.4706
+154,"Odi nyɛ odi kĩ yakɛna nɛ Nda nɛ ode kawɛ akũ ni, ade ye nyɛ nwaɛ̃nyole, mɔ nwaɛ̃tsole mɔ mma a.","Bòdìnyò dì kìn, yà kànà nèn dà nì ò dèkàwèkù nì. À dè yèn nyè, ònwà nyulè, mọ̀ ònwàn chulè, mọ̀ mma.",1.0476,0.5857
+155,Ade ye aanyɛ ɔtũ kamɛ fɔtsa bɛlawa mɔ bati kakɔna a kĩ bɛkɔa bɛkɔla a kanya a.,"Aree anye otumi kabe focha belawa. Mobati kakunaki, bekwa bekola kanya.",0.9412,0.3934
+156,"” Hũhũ a bɔɛ oti a emuni nɛ tite nɛ bati a anɛ kamɛ na, ɛnɛ nɛ ye kamɛ, ade lɛtsama tákɛna ye a.",Ẹ nuwɔ bɔ ẹtiɛ ẹmu ni nɛtiti nɛ batiɛ anɛka mɛna ẹnnɛnɛyɛ kamɛ Adɛlɛ chamatakɛ nayɛ,0.913,0.2899
+157,"Foe kayɔ lɛmɛ atsa kĩ bikĩ bɛtɛ Kristo bido fɔmɔ biku ni, bɛtána katɛ.",Fukaya lemia chaki bikibette krisobidofomobikuni betanakate,1.0,0.3273
+158,Katɛkado ɛkɔa ɛnanya ɔnɔvɔɛ̃ nɛ tite a kĩ Baguma lɛ eyi yaakpa ye a akũ.,katikado ekwa enanya onovwene titia ki bagumale ekia kwaiya,1.0,0.375
+159,Baguma Adzuma Bakɛnanɛ Bɔanɛ.,o to nya di folo e la le,2.0,0.88
+160,"Nɛ Kawɛya Luwi akũ a, ɛnaa Yudafɔ katsɛnakɔ̃ ndɛ ayekĩ yawɛ kakɛna a.","Ne kawea luwii akuna, ena yuda fo kachana ko, nde aye ki yawe kakena.",1.0769,0.3333
+161,Nviã kĩĩ badzɛmɔ yĩ kitonɛkĩ ntɛ banɔkpa kabuki kayidza kadzi nkpã a ndo sũ!,Nwiɛki ni imbajɛ mwɛi kintunɛki ntiɛbanokwa kabukikaji ja kajinpan ndosu.,1.0,0.4355
+162,"Ade ke ɛkpa be mbuayɛ kĩ, “Nɔ a kĩ odeĩ tɛtadiɛ tiwo te nviã ni, kɔa amɔa kakpa odi kĩ ɛlá adima.","adɛ kɛyɛ pa bi mbua eki, no aki oden tɛtɛdɛ ti wo tɛ inviani kɔ amua ka pa odiki ɛla adima. Adɛ kɛnua ki oden ifluɛtiani sɛ fwɛ mɔ bika",1.3636,0.7778
+163,Yudafɔ basɔfɔnɔkɔɛ̃ a kpa yĩ kɔbɛ̃ kĩ mpili bati kpalɛwa pii ndo nɛ kɔla kamɛ nɛ Yerusalem.,Yudafoɔ baasɔfɔ no kwan aka ayin kɔbɛn k'implibati pɛlɛwa pii ndɔnɛ kɔlakamɛ na Yerusalem.,0.8824,0.2222
+164,"Nɛ kĩ Baguma mɔ yĩ kɔnya sũ ni, nkɛna adzuma ndɛ kɔla okenɛ wĩ.",Nekèba gma mwoe nko nyasuni? Nkena jima ndekò la okenu.,1.0,0.3958
+165,Bɔawɛ Baguma kalɛ kitonɛkĩ ye lɛnya lɔtɔ ɛwɛ boe kalɛ.,Bò wɛ̀bè kù mà kà lɛ̀. Kìtɛ̀ nɛ̀kì yɛ̀ lɛ nyà lòtò è wɛ̀bè kà lɛ̀.,1.6,0.4091
+166,Bavɛ ye Apolo ade bɛma ye nɛ Aleksandria a.,"Ba vɛyɛ a polɔ, a de be mayɛnɛ alɛksandriya",1.0,0.1765
+167,Mpi mbla a ndo mɔ akũ mɔ ɔsĩ mɔ ɔsĩ ade foesũ ĩyidza ndza nɛ asɔli a akũ a.,mbi mblan du mwakumwosi mwosi. Ari feeswi njanja ne asoɔli aku,1.0,0.4643
+168,"Fɔtsa a kĩ fudeĩ nɛ awã nyɛ sika ngbã atɛnyɛ a kĩ ye akũ bate lifii ɔnyɔ, apam adakã kĩ bidue mɔ sika ngbã.","fɔ̀ cáákí fú dènè wá nyè sí kà ngbá, àtènyè àkí yà kù bàtèlí sí ónyɔ̀, àpàm àdèkàn, kì bì dwè mò sí kà ngbá.",1.0417,0.5366
+169,Ɛfɔ̃ fi malo nɛ futo ode fɔyatɔ nɛ tite akũ nɛ bati anɛ.,"Ɛfɔm fiamalɔn nɛ fɔtɛ odɛ. Fɔ ya tɔnɛti tiakum, nɛ batian.",0.8462,0.2619
+170,"Ye onukpɛ̃ katsua kĩĩ fɔ̃ bati a, banɔkɔɛ̃ a, mɔ mbla batsanɛ a na kalɔkpa paa, ade Yudafɔ mbla batsanɛ a yapi Stefano bɛnamɛna Ɔmaĩ banɔkɔɛ̃ katsɛnakɔ̃ a.",Ye nu kwε ka chua kε fo ba tiɛn ba nu kwi an mo mbɛ la ba cha ni an na ka lo pa pa a di e Yuda fo mbɛ la ba cha ni an ya pi Stefano benam na o man ba nu kwi ka che na ko,1.6786,0.3529
+171,Fusĩ kĩ kasɛ̃ kɛna nɛ mi kamɛ ayekĩ bɔ́amɔ yededeede bikĩ badi ɔnɔkɔali nɛ mi kamɛ.,"fufúi, fiká sínke nànne mí kamé, aèki búá mò yédédé, bikíba díó nò kwarí né mí kamé.",1.0625,0.5538
+172,"Lɛmɛ nɛ fuwi lukũ kamɛ ni, Baguma aakɔa Hũhũ Kpalɛwa ɛwɔla mi.",lɛmɛnɛ fuu lukukamanɛ baguma akwa huhu pala wa ewula mi,0.9167,0.2653
+173,"Yaakɔa kɔbɛ̃ a kĩ kɔfɔ̃ yapuli kanya lɛtsa nyɛ lɛtsa akũ a, ɛdani boe sukɛna kĩ sɛlá kɔbɛ̃ kĩĩ siketi mɔ ye sukɛna kpalɛwa a.","Ika kobe, Ika fo, ya plika nya lechanya lechaakun. Edani besu kuna kiselako bekin si ketimoyi sukuna kpale wa.",1.0,0.375
+174,"Ntɛ mi malo mikpa boe katinya kamɛ fɔtsa a ni, miyɛla osi?",Ntimi málɔ mi kwadwɛ katinya akɛmɛfɔchani miyɛlɛ usi,0.9167,0.3111
+175,"” Nɛ kĩ ɛkɔna kĩ Paulo aakpa ye litsedi sũ ni, yado bavɛ ye mɔatsɛ mɔatsɛ bɛmɔ ye balɔmɛna.","Nɛki ɛkɔ nɛki Paolu apaa elɛcɛdisuni, yadu ba vɛɛi mwatimwati bɛmwa ibalɔmna.",1.0,0.3714
+176,"Ndã be akũ kĩ be kamɛ odima táyɛla, mbɔɛntɛ oti a kĩ kɛnɛ kĩ ɛyɛla a, ayekĩ Katsɛlɛ Kpalɛwa fɔlɛtsa a aaya nɛ foe kamɛ.","nə biakoo, kibe kamo di mtaayɛ la, umbɔntɛ utia ki kɛnɛ ki ayɛ la. Aɛi kikacɛlɛkpalɛ wa fulɛ caa, aɛi nɛ fukamo.",0.92,0.337
+177,"Foesũ mitavila, kitonɛkĩ mitɛ kɔya miba funitataɛ beblebee.","Fu su mi tafi la, kide na ki mi tawa mi ba funi ta ta ba beble be.",2.25,0.3
+178,"Yesu lɛmɛ via be kĩ, “Nde sũ mi malo miafum Baguma mbla mɔ miakɛna nɛ miawɛ fɔtsa katsa a akũ?",yɛ̀ fú lá mé bɛ́ kí. Ìndɛ̀ sù mí málómì à fú nùgbàgbó mà mblà mwɔ́ m̀yɛ̀ kànànɛ́ m̀yàwɛ́ fɔ̀càkàcàà.,1.0,0.625
+179,Maasã tɔnɔ nɛ hũhũ kamɛ ade maasã tɔnɔ lɛmɛ mɔ fɔlɛtsa kĩ manu foe kayɔ a kamɛ.,"Masatonu ne ukame, ale masatone le me, mo foleca ki ma nu fekayo akame.",1.0,0.4194
+180,Ade awã ɛkatɛ bati a flee kĩ bɛkaya nɛ ye sɛkɛ̃ a.,Adiyanwa ekatebati afiliki bekaya niseke,1.0,0.4595
+181,"Nɛ fuwi fudi liti ni, Paulo bi Barnaba kĩ, “Fɔ̃ bumuniki bɔnaasɛla boe bawaɛ̃ nɛ tɛmatɔ a kĩ bɔtsã te kamɛ bude lɛtsã nɛ boe Ɔlate kalɛ a akũ a, lɔkɔa bɔdã ni nde bidzi.","Fufu wifudilitini, Paolo bi banaba ki, fobu munike bo na silaba ba wai, nete ma to akibo chante kame, budile chane bo olate kale a akuo, loka bo Dani ndebeji.",0.9429,0.3203
+182,Biyi ye osi bɛnawo ɔkɔlɔ a ɔwɛ̃ nɛ ɔwɔ abuĩ.,yio sibena okura oweni owoabi,1.0,0.5152
+183,Mɔ nde fɔya mɔ bɔanu kĩ bɛlamɛna kɔdzɛla kalɛ nɛ boe tide kamɛ?,"Mɔnde fo ya mɔ, bwanu kiibila mɛ na kwa jila kale nɛ buɛ ti de, kaman",1.0769,0.28
+184,Lɛmɛ Baguma kã ye anɛ nɛ ye tɔkpa a sũ.,"Lɛmɛbɛg mɛkɛ ɛɛ ənɛ, nɛɛ tɔkpá a",0.9,0.4138
+185,Awã na bidzi ɔkɔlɔ binyina bɛnaa Kipro tite kĩ mui tsua bisinya te a akũ.,Awoona bidi okolo binina bena Kipruti te kidi mwicua bisinya tiyago.,0.9333,0.3448
+186,"Fɔmɔ baabɔa katinya ni, Baguma Kalɛ a deĩ kɔkɔɛ.",fɔmɔba bwa katinya ni laguma kala adei kɔkɔɛ,0.6667,0.1316
+187,"Baguma fɔlɛtsa a nɛ Kristo akũ a sipi nɛ mi kamɛ paa, kĩ foesũ mitɛ hũhũ kamɛ futetsa fudi nyɛ fudi kĩ fusĩ mi, nɛ kĩ midzi miadzɔlɛ boe Ɔlate Yesu Kristo kaya a.","Bakuma flechana Kristu wakuasi pi na mikamepa, kifosu mitehuhu kame futecha fudi nya fudi kifusimi. Na kimiji ni ajo lebola te Yesu Kristu kayayi.",0.9118,0.3095
+188,"Ɔyaɛ kpa a kĩ edzi tɔ̃, lɛmɛ ebuki ɛláa a nyɛ lɛgã lɛlɛ̃de, kĩ lɛnyɛ fɔgã evũkɔnɔ a kamɛ ɔmɔa kĩ laanaa bɛwɔla de.",Ɔ ya ɛpa akye ejitɔɔ lεmɛɛ ebu ki ɛla nyɛlɛga lɛlɛde kile nyɛfɔga ebu kunu akamɛɔmɔa kilana bɛwɔlade,0.9583,0.2326
+189,Foesũ ade lɛtsa a kĩ mabi mi nɛ funitsã kĩ bɛkɔa bɛbɔa afɔliɛ bɛkpa baviɔ̃ akũ a.,fɛsu adelekyɛ akɛ ma biminɛ fɛni kyɛ akɛ bɛkwaba boa afoliɛ bɛkwaba viɔkuɔ,1.0,0.3492
+190,"Lɛmɛ takɔna ablanda nɛ Asɔli Kɔla akũ a, kitonɛkĩ bɛkɔa awã bɛkpa amamufɔ.","le me ta ko na blandanya soli ko la akwa, ki to ni ki ba ko a be kwa a ma mu fu",1.6923,0.3
+191,"Paulo nyɛ onukpɛ̃ ɛlɛ kĩ, “Ntáfum Yudafɔ mbla ĩye Yudafɔ Asɔli Kɔla a ĩye Lɛgãnɔkɔɛ̃ Kaisare.",Paolu nya onu pe le ki n ta fu nu Juda fun la ye ye Juda fu asoli ko la ye le gan ku kaiza,1.5625,0.4247
+192,Ɛláapuli edzi ɛkakɛna tɔkpa kitonɛkĩ Baguma nyɛ ye Ɔlɛga.,"Apledi ekakɛna tokpa, kitoni ki bɛgu mannyɛ, i yɔlɛga",1.0,0.2917
+193,Paulo Buki Ɛlɛ Kɔdzɛla Nɛ Hũhũ Kpalɛwa Futetsa a Akũ.,oto nya di folo yuana,1.0,0.8605
+194,"” Adeke Yesu te awɛ nɛ be akũ ehila be, ade ɛdzakũ nɛ awã a.","Adé kɛ́ yɛsu tì awɛnɛ́bì akùn ɛ̀ hìlabì, adé ɛ̀ jǎkùn nɛ́ awan.",0.9286,0.4186
+195,"” Nnɛ́ kĩ ɛtsɛla ahiãfɔ akũ sũ ɛlɛ fukĩĩ, mbom oyekpanɛ yanɛ.",neki echila nyafo akusun elefu kin ngebom oyepanya,1.0,0.5652
+196,"Fɔlɛtsa kĩĩ dani kavɛlɛ nɛ be kamɛ, ade bɛsɛ̃ be akũ a.",Feleciaki danika velene bekame ade be sembi aku,0.8333,0.3902
+197,"Ke liti a, kĩ fɔtsa bakɔlɛnɛ a lidede lamɛna kapɔ kabu a, ɔdzɛ yawo nɛ Yudafɔ a kĩ balɛ Tigriki mɔ Yudafɔ mɔawɛ a kayite.","Ke li tia, ke fo chia ba ko le ne ni de de la ma na ka po ka bu nga. O je ya o ne yu da fo a ki ba le ti gri ki, mo yu da fo ma we a ka yi te.",1.72,0.2872
+198,"Ɛnyɛ lubo a kĩ bɛlɛ biyi kĩ Kristo aayamɔ, mɔ ayekĩ yaabuki eyidza edzi nkpã ɛtsa.",ɛ nyɛ lubuɛkì bɛlɛ bì kì krísto ayamu mwayɛ kì yabuki ɛyijaɛji ŋpɛ ɛcɛ,0.9375,0.4
+199,"Ye mui a kamɛ kpalɛ ndɛ ahuhɔɛ aye, ade bɛkanɛ kato Baguma mɔ Kavelibi a lɛgãkpo a kamɛ, ade batɛ̃ nɛ ɔmatɔ a ɔblɔnu kayite a.","Yɛmmeɛ akame pɛɛlɛnde ahunhuɛ ayi. Adibɛka nɛɛ ka tu, bagumamo ka vɛlɛ bia lɛga ku akame, adibɛtɛnɛ ɔmatua ɔblɔnuka itɛ.",1.0,0.2887
+200,"Bɛtsã bɛkamini ndɛ bati kĩ bilo kawũ nɛ kɔsa kamɛ, bidzi nɛ tɔtɔ akũ, bɛbɛla nɛ tɔtɔ tɛkɛ mɔ tite fɔkɛ kamɛ.","bɛ́ca bɛ́ka amì nìnì bɛ́tyì kí bǐlù kaù nɛkɔ̀sákamɛ́, bǐjì nɛ́tɔ́tɔ̀ akù bɛ̀blanɛ́tɔ́tɔ̀ tɛ̀kɛ̀mɔ̀ tìtìfɔ̀kɛ̀ka",1.0,0.3214
+201,"Foesũ Yuda naa Yudafɔ basɔfɔnɔkɔɛ̃ mɔ Yudafɔ mɔ banɔkɔɛ̃ a kĩ badãmɛna Asɔli Kɔla akũ a sɛkɛ̃, ade bipi adzuni nɛ osi wĩ a kĩ ye akũ yaatsã ɛnyɛ Yesu ɛkpa a.","Fwɛ suya daa na, yudaa fɔba se fɔ no kwei mɔɔ nbanu kwei akiba damuna sɔli kɔ laa kun asɛkɛ, adɛ bi pia juninɛ osi nwie akieyɛ aku yaa chanɛ enyɛ Yesu yɛkpa.",1.0312,0.3802
+202,"Nde sũ nɔ fɔtsa bakɔlɛnɛ anya, kamɔa?",Nɛ́ kɪ̀ ɪ̀ jɛ́ kà bɔ̀ nɔ́ kɛ́ nɛ́ kanɔ́ kɔ́la. Lɛ́ta lɛ́ta ó nyʊ̀ lɛ́ kɪ́ ta í jɛ̀ nɛ́ bɛ́tì á fʊlɪ́ á nɛ́ kamɛ́. Ɛ̀gbéyɔ́ kɛ́ nɛ́ kɪ́ yɛ́ akʊ̀ ɛ́wa.,4.7143,2.2759
+203,"Kitonɛkĩ ntɛ bɛvɛmɛna tɔsɔfɔ kanya a ni, kɛnɛ kĩ kavɛmɛna kɛya nɛ tɔsɔfɔ kanya mbla a lɛmɛ kamɛ.","Itɛ nɛ kintɛ bɛ vɛmɛnɛ to sofokanyani. Kɛ nɛ kɛ vɛmɛnɛ kɛ yanɛ to sofokanya mblalɛmɛ, kɛ mɛ",1.0,0.2208
+204,Bɔɛ foe kĩ oti kĩ ɛtábo anɛ nɛ ye katɛkado kamɛ mɔ́ kĩ nɔ a kĩ onyina kadi a odzi anya nɛ kuviɔ̃la.,O bufe ki o ti ke tabuo nɛnɛ yi katɛka doka mɛn mɔ ki nɔ aki o nyinaka di an oji anya nɛ ku violu,0.913,0.2568
+205,"Ade ayea Marko, Barnaba ɔwaɛ̃nyole lɛmɛ awɔ̃na mi a.",Àdèàyà Màrkù bànà bà òwà-ènyùlìlèmè àwùnàmì.,1.0,0.575
+206,"Ntɛ ɔdzɛ wo nɛ mi kamɛ odi mɔ ɔkɔba ɔtɛ odonɛ kayite ni, nde sũ yakɔa kalɛ a ɛma amamufɔ fɔlɛtsa badzɛnɛ, mɔ yaáfɔ̃ Baguma bati lɛdzɛ kalɛ a?",Teɔyɛu nɛ mɛ kamɛ dimɔ ɔkɔba ɔtɛɔ dɛnɛ ka itɛni. Ndɛ su ya kwakaleɛ ɛmɛ amamɛ fofolɛ cɛba jɛnɛ mɔyafu baguma bati lɛ jɛkale.,0.8276,0.2936
+207,"Lɛmɛ nɛ ɔmatɔ odi nyɛ odi kamɛ kĩ ntsã ni, Hũhũ Kpalɛwa a fɔ̃ ĩnyi kĩ maawa kɔla nɛ lubo kamɔ kamɛ.","Lɛmɛ neomatɔɔ di nyɔdi ka mɛki nchani, huhu palee wa fɔnyiki ma wakɔla nɛlubu kamɔka mɛ",0.9545,0.2533
+208,"Odi nyɛ odi kĩ bihihiɛ biyi kĩ bipi ye ndom ni, baapi ye ndom, ade odi nyɛ odi kĩ bihihiɛ biyi kĩ yaatɔ nɛ kɔpã onukpɛ̃ ni, yaatɔ nɛ kɔpã onukpɛ̃ kokooko.","Odinyodikibigihibiki bipindomni, baapindom. Ade odinyodikibigihibiki yaatonek ko panunukweni, yaatonek ko panunukwe kokoko.",0.9688,0.3162
+209,"Yesu kpa ye mbuayɛ kĩ, “Finyaa ɔláanu lɛtsa a kĩ makɛna a kayɔ, lɛmɛ ke liti aanu foe kayɔ.","Yesu kwae nboɛke, fïɛɔ Ɔlɛnlɛ cakïɛ mbanɛɛ kayɔ lɔmɛkɛliti anɔfɛɛ",0.8947,0.5072
+210,"Nɛ yĩ sɛkɛ̃ kɔ̃ ni, Kristo ndzi nkpã nkpa, lɛmɛ ntɛ maaku ni, maana foe akũ nfasɔ mba.","Nɛ́ nsekɛ kɔ́ ni, krisiduŋ ji npa npa, lɛ́ mɛnte maaku ni, ma nnafɔ ya ku nfa sɔ́nba.",0.7778,0.2698
+211,Bati nviã ĩye be ɛlalɛ bɛnyɛ Baguma onukpɛ̃ lɔkɔa bati nkaɛ a bɛsa fɔlɛtsa a kĩ baalɛ a kamɛ.,"bati vià yi bela lèbè nyé bagnon kpè, okwè bati nka yè bèsa flèchaki bawalé akame.",0.8947,0.3973
+212,Bati a kĩ bakɛna tɔkpa a kĩ taávɛlɛ wuda kayamɛna a fɔlɛtsa malɛ.,"Battí àkí, bákànátòkpà àkì tà vèlèwú dàkà yàmànà fòlèchà mánà.",1.0,0.5769
+213,"Kĩ ndeĩ nɛ katinya kamɛ kĩĩ ni, yĩ nyɛ katinya kamɛ ɔhaĩ a.","I nya ka ti nya, ka me ki ni. I nya ka ti nya, ka me o ha ni.",1.3846,0.3778
+214,"Ntɛ bɛtávɔ̃ ĩye bɛbɔa foe nɛ osi odi akũ ni, ndɛ baakɛna biyi odo a ɔsũ?","Ntebeta von, yede bofunne, o si yodia kuni. Nde bakna bi oduaso.",1.0,0.4074
+215,"Lɔkɔ kĩĩ, Lɛgã Herodes kanu lɛkɛnawa wĩ a flee kitonɛkĩ Yesu dĩ gba nɛ kakɔ nyɛ kakɔ.",Na ke le gan re de kanu le ke na wa wuya fle ki tu ne ki Yesu di gba ne ka ko nye ka ko,1.3529,0.3731
+216,Ntsitsemu lɛláa bɛmɔ otsole kĩ ɛkpa lɔlɔ tsɔlitsɔli kayite.,"M gbè m'lɛ̀ la, bɛ̀ m'ɔ̀cù l'ɛkì èkpalɔlɔ̀, cɔ̀lìcɔ̀lì kàì.",1.1111,0.52
+217,"Kĩ Priskila mɔ Akwila tse ye fɔlɛtsa a, bɛkpã ye bɛnamɛna be awã ade bɛnanyɛ Baguma osi a bɛtsa ye yededeede a.",ki prisikila mwakwila cyele fole ca bepaye bena muna beyawa ade bena nyibagumo siyan becaye ye dedede,0.9091,0.3182
+218,"Nwaɛ̃ amɛ, mi a flee midã yĩ ɔbla mibɔa ye odu, midã bikĩ bidzi nkpã nɛ osi wĩ akũ ndɛ ayekĩ budzi bɔtsa mi a.",N'wamɛɛ mi afli mi daanyi ɔ blami bwayɔdu. Mi dabi kibi jii n'kpanɛɛ osi n'wiyakun n'ɛki buji bɔcha mi.,0.88,0.3902
+219,"Foesũ Yesu binya ebi be pefee kĩ, “Lazaro ku.",Posu yesu binyã ebbi bee pe fe kĩ. La zaroko le mɛnɛ misunĩ k’awula dĩ.,1.4444,0.7941
+220,"Nɛ lɔkɔ a na kamɛ a, Yesu to Galilea ɛya nɛ Yohanes sɛkɛ̃ nɛ Yordan ɔwɔ a abuĩ kĩ ɛwɔla ye mui.",nɛɛ kuwanɛ kɛmɛɛ Yesu to Galili aya nɛ Yohane sekeɛne yɔda owo a abui ki ɛwɔla yimu,0.7727,0.3099
+221,Ebi Abraham kĩ fɔ́atsã ye ɔwa akũ yaakɔa nhila ɛkpa katinya kamɛ bati flee.,"Abi Abraham ki faa chaa yi o wa ku, ya kwan hi la e pakati nya ka me ba ti fule.",1.4286,0.3
+222,Mmanɛ akũ nkpa nnɛ́ kĩ bisuli yĩ nɛ Yerusalem odi lɛmɛ kĩ maaku nɛ awã nɛ boe Ɔlate Yesu sũ.,"Ma nɛkɔ kuŋpɔ, nɛkɛ bi sulu yi nɛ Yerusalɛmu di, nɛ mɛ kimaa kunɛa wa nɛ buɛla te Yesu su.",0.85,0.2817
+223,"Baguma apam a kĩ ɛkɛna mɔ mi bawanyɔ ɛtsãmɛna ye onukpɛ̃ banyɛnɛ akũ a nyɛ mi fude, ade mi aanya tsɛfã nɛ apam kĩĩ fɔtsa akũ a.","Bagma apam waki, ekana mimi banyo, echa mna yunupe banye ni akua, nyemi fude. Ade mi anyache fa, ne apam ki fochaku.",0.8148,0.3673
+224,"Lɛmɛ boe sɔtɔ kavɛlɛ a fɛta boe, kitonɛkĩ lɛtsa a kĩ bɔkɛna a, ade de sɔtɔ kavɛlɛ bɔtɛ a.","To kpatin ma nyɛ fo ka ma kini a kɔ ɛkɔtɔ, lɛga hɛlɛ de",0.8947,0.75
+225,"“Ade kĩ ɔsumunɛ kĩĩ nɛ́ ɛdzakũ a, ɛnamɔ ɔkɔba ɔsumunɛ bɛbã odi kĩ edzimɔ ye sika ovoe ɔha mɔa kɔtɔ.","Adeɛ kyi osomunɛ kiinɛ ɛja kwan. Ɛna mɔ kɔba osomunɛ bɛba odin kiɛ juma yi su ka ofɔi, ohama kɔto.",1.0,0.3947
+226,"Ntɛ buhila kayei a na, bɔmɔa bavɛ a ni, bɔmɔ Kristo bɔkɛna ɔmɔa.","Bò te buhila ka yaya na, bòmá baveani, bòmá Kristi bokanom.",0.9231,0.3673
+227,"Lɛmɛ Baguma lɛkɛna funitsã a na bamɛ, kĩ bikĩ bɛtɛ bido mɔ binyi ɔnɔkɔali a, bɛbɔa mpaɛ nɛ foe akũ bɛnya.","Le me bagumale kenefiniana bame. Ki dikibetebidomo binyono kwalia, le bwampaenefu yabenyono.",1.0,0.4024
+228,"Minyina lɛgbã a kĩ, “Oyila kabii nɛ bodobodo mawɛ kamɛ afɔ̃ ye flee yavuya.",Minni na legbaaki oyile ka bii na bodobodo ma we ka me a fo yefle ya vo.,1.1429,0.2241
+229,"Ade bɛta Abonsam a kĩ ɛkɛ be a bido nɛ fi lutubu mɔ fukpokpo gɛĩgɛĩ a kamɛ, nɛ awã kĩ bɛnya lɔtɔ bɛta ɔyaɛ kpa mɔ fɔvã onukpɛ̃ ɔnyɛnɛ a bido a.",Adebenta abosom akye ekebia bi do ne filutubu mofupopogengenge akame. Ne awaki benya loto beta oya epamo fofon ounupe onyenyi abidua.,1.0,0.3945
+230,Baguma ka ɛya kĩ yayaanyɛ ye bati!,"Ba gumaké ya, kiyanya nyeye bat",1.0,0.2593
+231,"-Lɛmɛ Hũhũ Kpalɛwa a kɔbɛ̃ tɛ Saulo kĩ babuki kavɛ Paulo kamɛ ade eke anɛ nɛ ɔwanɛ a akũ fɛɛ ɛlɛ kĩ, “Nɔ Abonsam obi!","Nɛ mɛ́ŋu ʊ́palɛwa kɔ̀ bɛ́ tɛ́ saolo, kíbabu kíkavɛ́, Pɔ́lɔ kámɛ. Adɛ́ èkɛ́ anɛ́ ɛ́nɛ́ owannɛ́ akúm fɛ́ ɛ̀lɛ́ki. Nɔ́ abɔnsam obɛ",0.88,0.3068
+232,"Bati kɔdabu kɔdabu pii ya nɛ Yohanes sɛkɛ̃ kĩ ɛkɛna be mui kawɔla amaniɛ, ade ebi be kĩ, “Mi bati kĩ mila ndɛ bɔɛ kpa!","bati kodabu kodabu pi, yane Yohannes Seke, ki ekna bemwi kawora maniye. Ade bi beki, mi batiki milanda gbo",0.88,0.2921
+233,"Kĩ boe flee bunu fɔlɛtsa kĩĩ a, bɔmɔ́ bati a kĩ bideĩ nɛ awã flee a buke Paulo aduli kĩ ɛtanaa Yerusalem.",kibuye fula ebunu fula chakya bomo batia ki bidene awa fulaa buke paula aduli ki etana a yerusalem,0.9091,0.284
+234,"Kalɛ ɔnɔkɔali a nyɛ kĩ nɛ ayekĩ miti miakɔa fɔlɛtsa kanamɛna fɔlɛtsa kadzɛkɔ̃ a atsa kĩ, obu salɛ nɛ mi akũ.",ka lo nɔ kuali anyaki na ayiki miti nyakua flecaka nanna flecaka jekua na ayiki miti nyakua flecaka nanna flecaka jekua achaki obusale ni mia,1.1429,0.8
+235,"Foesũ ntɛ mikpa be obu ni, baakɛna ye mɔ kawɔlɛ, lɛmɛ ntɛ nnɛ́ aye ni, baakɛna ye mɔ tuko kabe kĩ fɔláanya libi fɔkpa mi.","Fɔsi nte mɛkpa diegbu ni bɛɛkɛna yi mɛkawalɛ. Lɛmɛnte ni ayɛni bɛɛkɛna yi mɔtuku kabe, ki fɔla nyali bi fɔkpa ni",0.88,0.2609
+236,Foesũ sodzafɔ a kadzɔlɛ ye akũ kadzɔlɛ wĩ nɛ kɔla a kamɛ.,Fɛɛ sɔŋ sɔja fuwa kajo le yi akuku kajo le wi nɛ kɔɔla kanu.,1.1667,0.5778
+237,"Mi a flee midɔla akũ mikpa mi akũ, misum akũ nɛ mi lɛkɛnana lidi nyɛ lidi kamɛ.","Miafli midola aku mekwa miaku, misum aku na milekena nalidinya lidika",0.9412,0.2295
+238,Fukĩ fubu nyɛ kĩ Baguma lɔ fubo nɛ tɔsɔfɔ kanya kĩĩ akũ.,Fɛkɛ fufu bunya ki baguma love bunɛ toso foka nyaki ya,0.9167,0.3864
+239,"Oti a kĩ ɛnyɛ ɔnɔkɔɛ̃ nɛ mi kamɛ ni, ɛnya mi ɔsumunɛ.",Utiya kenye onokwane mikamene enyami osu,1.0,0.4615
+240,"Oti fɔlɛtsa api boe Ɔlate a nɛ sɛmɛ, ade yamɔ oti kɔnya a.","Oti foɔla kɛ pibɔla tɛ ani sɛ mɛ, adɛ ya mɔ Oti kɔ nya.",0.9231,0.2727
+241,"Nɛ fukĩĩ sũ mado ɔwɔlɛ kamɔ lubo nɛ lɛtsa nyɛ lɛtsa kamɛ nɛ Baguma bati a kĩ ɛpau a sũ, ayekĩ nɛ Kristo Yesu akũ be malo baana katɛ mɔ kawɔlɛ nkpã a kĩ ɛla kawũna a.","Na fukɛnsɛma duola kamoɛlebo, na ele chanɛle cha kame. Na baguma batia ki epawasu. Aiki na Krestu Yesu aku, bemalu baana kate, mokawola nkpa, ki elakwuna.",0.9189,0.3543
+242,"Fɔmɔ boe ɔwanyɔ Abraham aatu ɛnaadzi nɛ Haram tite akũ a, Baguma Kpalɛwa a nyɛ ye akũ ɛtsa ye nɛ Mesopotamia tite akũ.",Fomo boyo wanyo Abraham a tu ɛ na gine haram tite akuwa. Baguma kpalɛ wa nyɛ yaku ɛ chayi na mesopotamia tite akuwa.,0.7826,0.234
+243,Lɛnya be lɔtɔ tĩĩ lɛnafɔ̃ lɛdza nɛ kakɔ a kĩ obisɛ̃ a deĩ a lɔlɔ nyangɛ.,Lɛ̀nyàbɛ̀lɛ̀ tòtìì lènà fò lègà nɛ̀ kàkwàkì obisì àdèè yà lɔ̀rɔ̀nyàngbɛ̀,0.9375,0.4815
+244,"Yĩ malo ĩnyɛ oti kĩ ndeĩ nɛ banɔkɔɛ̃ kĩ bɛbɛ̃ yĩ lɔnɔkɔɛ̃ kayɔ, ade ndeĩ sodzafɔ nɛ yĩ kayɔ a.",nyɛɛ má ló ònyɛwò tí kí ndɛɛnɛ bánɔ̀kwɛ́ kí bè bɛnyĩ lò nɔkwɛ́ káyɔ̀ Adɛ ndɛɛnɛ sõ̀jafɔ̀ nɛnyĩ káyɔ̀,1.0,0.4429
+245,"Kristo tsã daa Hũhũ Kpalɛwa a kɔbɛ̃ akũ, ɛkɔa ye a kĩ efĩĩ adima lɛláa ye akũ a, ɛbɔa afɔliɛ ɛkpa Baguma.","Kristo chada hu palawa ko benaku. Ekwaya ki efin adimale layaku a, eboafoli e paba guma.",0.9091,0.3875
+246,"Ovoli kĩĩ to boe fɔtɔ banyanɛ, banɔkɔɛ̃, mɔ batɛ badonɛ a kĩ bideĩ nɛ Yerusalem sɛkɛ̃.",Obolikito bu foto banya ni. Banokwe moba teba doniya kibi dene irusalemu seke.,1.0,0.3485
+247,"” Kĩ binu kĩ Yudafɔ tide kamɛ ɛlɛ kɔdzɛla a, bɛkɛna fɔwɔla kabɔa nɛ kayɔ bibu.",Ki binu ki yu da fotide kame ele kojla. Be kena fola kabo a ne kayo bi,1.0667,0.35
+248,"Ɔdɔ lámɔ kawɔlɛ nɛ tɔkpa akũ, mbom yamɔ kawɔlɛ nɛ ɔnɔkɔali kalɛ kamɛ.","O dola mɔ kaulɛ nɛtɔ kwa ku, mbum ya mɔ kaulɛ nɛ ono kwalikalɛ mɛ",1.0769,0.2909
+249,"Nwaɛ̃ amɛ, ndzɛ̃ nɛ boe Ɔlate Yesu Kristo otumi akũ make mi a flee aduli kĩ mikɛna ɔmɔa nɛ lɛtsa a kĩ mialɛ a akũ ayekĩ kasɛ̃ lɛláaya nɛ mi kayite.","Ɔwua me, nkyɛnɛbɔlati Yesu Kristo tumiaku, makyɛ me afiri aduli. Kimekena ɔmua, nɛlɛkyaki myaleaku. A yɛkikasa, nɛlaya nemikaiti.",0.871,0.3304
+250,Katɛkado akũ fɔtsã mɔ Baguma mɔ́ kawɔlɛ nɛ boe atitifɔ bawanyɔ a akũ a.,Katakadua kufocha mobagma mokawoli nebuya titi fo bawa nyoa akun.,1.0,0.3393
+251,"Ntɛ suwa de sɛta kɔɔba ni, sapila tuwĩ tavɛ, te fɔgbangbã a akpalɛ katɔ lɔkɔa tuwĩ a kalɛ ayɛla flefle.",kɛsʊwa desɛtakɔbani sapilɛtuiǹtavɛ kefɔgbangba akpɛlɛ kɛtɔ lɔkɔatuǹyakalɛ ayɛla flɛflɛ,0.95,0.1852
+252,"Finyaa kĩ mitɛ ɔnɔkɔali kalɛ a, mitsã ke kamɛ mikpalɛ mi akũ, ade miawɛ mi bawaɛ̃ Kristofɔ kalɛ nɛ ɔnɔkɔali kamɛ a, kɛnɛ kĩ miakɔa mi tɔwɔlɛ flee miwɛ akũ kalɛ papaapa.",fenya kime o no kwalekalea michake kame mikwale mi aku adi miawe mibawae kristofokale ne ono kwalekamea kene kimiya kwami towulefle miwe akukale papap,0.9688,0.3258
+253,Mose nya lɔtɔ ede lɛtsã nɛ tɛbla flee a kĩ tideĩ nɛ mbla ovoli kamɛ a ɛkpa bati a.,"Mo se nyala to, e de le chenetɛ bla fli a ki ti dene, mbla o voli ki n kamea, ekpa batie.",1.0526,0.2857
+254,"Wuda ayade a lɛlá kɔbɛ̃ nɛ be akũ, baanya Baguma mɔ Kristo basɔfɔ, ade baanya fɔgã mɔ ye futeli apim mɔa a.",Uda adia elɛko bɛnɛbiaku. Banya baguma mo Kristo basofɔ adi banya foga moyi futeli apimo.,0.8636,0.2805
+255,"Ĩnyɛ Hebrini kpanunuunu, ade ke nɛ Yudafɔ mbla a onukpɛ̃ ni, Farisini manɛ.",Nyehe brini pa nununu adeke ne Yudafu amblao nukpɛni farisi nimani,1.0,0.1525
+256,"Ade Yudafɔ badi to Antiokia nɛ Pisidia, mɔ Ikonio bɛyadani bati a adzuni a.",ade juda fodi to Antioquia ne pisidia mo ikoniu beya danibati a junia,0.7143,0.2167
+257,"Badi tɔ nɛ lɛkpakpalabode akũ, kĩ tite lɛláa pii.",Badi tone lepo plabode akun ki te tela pi.,0.8889,0.3846
+258,"Foesũ ntɛ katsu mɔa kadi nɛ Abonsam lɛgãkanyakɔ̃ anɔ mɔ kabɛbã ni, fɔatsa kĩ ye lɛgãkanyakɔ̃ a sɛ̃ kutsu kutsu kɔkɔɛ, ade kɔ́ayalɛ a.",Fesunte kancuma kadine abonsam legakanyakwo ano mokabe bani. Facheki yega lekakanyako se kuchukuchu kokwo adekwayale.,0.9583,0.3689
+259,"Kĩ bivũna ye a, ɛtávũna odima ese kɔtɔ.",pi buvu na ya eta vuna odi maise ko,1.125,0.4
+260,Lɛmɛ batɛ badonɛ a kabɔa mpaɛ nɛ ye lɔlɔ kakpa Baguma mɔ ɔsĩ mɔ ɔsĩ.,le me baté badou ni ako bampai ne lollo ka pa bagouma mosso mosso,1.0,0.3962
+261,"Ntɛ ɛkpã be ɛnɛmɛna a, yanya be lɔtɔ, ade baveli a atomɔ ye, kitonɛkĩ binyina ye odo.","Gbèntè ekpé bɛ́ɛ né mé nɛ́, yányábé lòtó álé báblé á tó móyí, kétó nɛkí? bínyí náyí ódó",0.9412,0.3538
+262,‘Bɔbɔɛ bɔbɔɛ bɔakpa ɔmatɔ kpale kĩĩ!,Mo bwe mo bwe mo kpe o ma to pa le gi,2.0,0.6207
+263,"Foesũ ntɛ odi nya boe Ɔlate abodoo, ɛmɔa kɔɔpu kĩĩ nɛ osi kpa akũ ni, baakɔ ye kɔtɔ kĩ efum nɛ boe Ɔlate sukɛna mɔ ye babɔanɛ akũ.","Fɛɛ sún te o di nya, buɛ ɔlaa ti abodú, ɛma kɔpu kĩi, nɛ ɔsi pa akuni, baa kɔe kɔtɔ kiɛɛ fumu nɛ buɛ ɔlaa ti su kɛna mɔyi ba bwa na ya.",1.0714,0.3
+264,"Ɛlɛ kĩ, “Ade apam a kĩ Baguma kɛna mɔ mi a kĩ mikɛna nɛ ye akũ a babɔanɛ nɛ awĩ a.","Alé ki adi apame aki bakumake namomi, kimi kena ne e aku a, baboane ne e awua.",0.9524,0.339
+265,"Odi nyɛ odi kĩ yakɛna tɔkpa ni, Abonsam ode yanɛ, kitonɛkĩ Abonsam kɛna tɔkpa kito anɛ kayɔkayi a.","Odiniodiki yakanato pani, abonsamode ane, kitoniki abonsam kinato pa kituwe nekayo kaye.",0.9444,0.2564
+266,"Ade ke kĩ Paulo yawo fɔlɛtsa kadzɛkɔ̃ a, Yudafɔ a kĩ bito Yerusalem a yadza bisinya ye.",kɛkɛ Paulo yawo fɛlɛca kɛ jɛkwa. Yuda fɔɔ ki bi to Yerusalɛm aya jɛbisi nya,0.8824,0.2941
+267,Kitonɛkĩ Yohanes akũ mɔ Katsɛlɛ Kpalɛwa a lɛ kĩ.,Kito na khi yo na se akumo kachile palo wa leke.,1.2222,0.4359
+268,"Bɔlá osi kĩ bakpã boe batsɔ̃ batɛ badonɛ bɔnamɛna osi akũ ndɛ ayekĩ fɔtɔ banyanɛ bɛbã, Petro mɔ boe Ɔlate bawaɛ̃ a akɛna mbɔɛɛ?","Bolo siiki bakpa mgbɛ ba cɔŋ, ba tɛ ba dɔnɛ bɔ namna ɔsiaku, ndeɛ yɛɛ kɛ fɔtɔ banyɛnɛ bɛba, Pɛturu, mɔbɔyɔ lati ba wanya a, akɛna mbwɛ.",1.0,0.34
+269,"Bɛkɔa yĩ bɛnadzina nɛ tite nɛ mui kayite a kĩ bavɛ Patmos a akũ, kitonɛkĩ nde lɛtsã nɛ Baguma kalɛ a, mɔ ɔnɔkɔali a kĩ Yesu nyɛ ɛtsa a akũ sũ.","Bɛ kwanye bɛna jina titi nɛmu ka iti akibɛve pat musa aku, ketɛ nɛki ndɛlɛkyanɛ baguma kalea, mɔɔnɔ kwaliaki Yesu nyeɛ echa akusu.",0.9355,0.2936
+270,"Odi nyɛ odi kĩ ɛtɛ edo kĩ Yesu nyɛ Kristo a ni, Baguma obi yanɛ.",Odi nyo odiki etedo ki Yesu nye Kristo ani bagume obi ani,0.7333,0.1875
+271,Ade be aasumini Ɔmatɔ Kpalɛwa a nɛ tidetɔ tɛna-nviã kamɛ a.,Adaba sumini omato palewa ne tire to tenamviaka me,1.0,0.3404
+272,"Baguma boe Ɔlɛga mɔ boe Ɔlate bɛmɔ mi kɔnya, bɛkpa mi lukudɔ lɛmɛ.","Ba guma boyolega, mobwo lati bemomikoya bepamulukudoleme.",1.0,0.3462
+273,"Foesũ midã kadã wĩ, lɔkɔa mite anɛ ayekĩ nkɔa anɛ mɔ babe ntsa mi fɔtsa lɛnyɛ mɔ suwa flee nɛ futeli ɛlalɛ a kĩ nna nɛ mi kamɛ a.","Fu sun mi daka da wi, lo kwa mi tiane, ayi kwi kwa ane mo babee ncha mi focha, lenye mo sua flee ne fu teli elale a kin nane mi kame.",1.0345,0.3434
+274,"Mitafɔ̃ buyidza bɔdza nɛ Baguma akũ ndɛ ayekĩ be kamɛ badi kɛna, nɛ foesũ Wuda Ode fɔtɔ ɔnyanɛ yawɔla be.",Metàfò buì dàbògànè bàgùmákùn. Ndɛ̀ kíbè kàmèbàdìk̀nà nɛfèsuwuda odèfòtòonyànè yà wòlàbì.,0.95,0.506
+275,"wuda, fɔsɔ, kɔnya kabe mɔ kɔlɛ aaya nɛ ye akũ.",muda foso konyakabẹi mọkọlẹ aya nẹ ya,1.0,0.4118
+276,"Míate anɛ kĩ lɔkɔ a kĩ bɔna nɛ mi sɛkɛ̃ a, bɔkpa kanyi bɔnyamɛna lɔtɔ kĩ bati liti katomɛna aaya.","mia tiani ki lokwa ki buana ni mi sekea. Bo paka nyi bwa nyam na loto, ki ba titi ka tum la a ya.",1.2,0.3467
+277,"Ntɛ oti kakɛna nɛ mbla a akũ pɛpɛɛpɛ akɛna ye oti kpĩĩ nɛ Baguma anɛ ni, maapuli nlɛ kĩ nfumusu adima tána nɛ yĩ akũ.","tɛ o tì kà kɛna, nɛmblá kumpɛpɛɛ kɛna i uti pii nɛ ba gu manɛni. Ma plin lɛki, mfumsua di ma tanna nɛ i a",0.96,0.3187
+278,"Lɔkɔ lidi, Yesu na nɛ ɔmatɔ odi kamɛ awã kĩ onyole odi kĩ ɛkasɔ fɔsɔ ngbã na.",Yesu na ne oma todika me awaki onyolodi ki eka sofosongba na.,0.8235,0.3559
+279,Oti Deĩ Akũ Fɔtsa Kĩ Fɔakɛna Fɔtsa Futefute.,00:00:00,1.0,1.0
+280,"Ke liti a, nsɛntsɛlɛni kpale adi nɛ́ nɛ odetɔ́ kamɛ.",kɛlɛ tii a in sɛŋkilɛni kwaleɛ di nɛ nɛ o dɛtɔka,0.8,0.3333
+281,Oti kĩĩ deĩ otumi mɔ kɔbɛ̃ yawũni nɛ hũhũ kpa akũ ade batse a.,"oti kini o tumi, moko be ya wuni ne, wuhu pakun ade bace",0.8571,0.4255
+282,"Nɛ foesũ basɔfɔnɔkɔɛ̃ a pi adzuni kĩ baakɔ Lazaro lɛmɛ, kitonɛkĩ ye sũ Yudafɔ a pii kasĩ be kanaatɛ Yesu kado.","ne bəsu bəsa fono kuə pia Juni, ki bəko Lazaru lɛmɛ, kitɛnɛ ki Yesu Yudafoa pi kasi, bɛkana tɛ Yesu kasi.",0.9524,0.3333
+283,"Foesũ eyidza nɛ opunu a akũ, ɛnyɛ ye atadiɛ wulaa eyi nɛ ɔɔwɛ̃, ade ɛkɔa ɔsa efili nɛ kate a.","fɛɛ yia nɛ opunaku ɛnyɛ yi atadewulaa yii nɛ ɔnwɛi, adɛɛ kwa osayɛ fɛnɛ katiɛ.",0.85,0.3857
+284,Bike kasɔã kɔkɔɛ nɛ futse tɔbɔlɛ akũ kĩ baatsua.,Biké kasua kwo kwɛ nɛ fuchi tɔ bolɛ aku ki ba chu,1.2222,0.4103
+285,"Ntɛ ntayaabi be fɔlɛtsa ni, kufɛ bɛtáku tɔkpa kɔtɔ.",tɛn tɛɛ bi bi flɛni kuffɛ bɛtɛ ku tɔpka,1.0,0.4146
+286,Bunu lɛmɛ kĩ ɛlɛ kĩ Yesu Nazaretni a aaveli Asɔli kɔla kĩĩ lɔkɔa ɛdani tɛmaniɛ flee a kĩ Mose yi ɛkpa boe a.,"Bunu lèmè ki, èlè ki yè sunanarè tìnniyan. Avèlè asòlìkòlakì, lakwa èddanitèmanniyèflè akì mosèyi èkpaboya.",0.9565,0.4
+287,"Lɛmɛ ntɛ odi kɛna tɔkpa ni, budeĩ odi kĩ yawãnɛ boe lɔlɔ nɛ Ɔlɛga a sɛkɛ̃.","le mɛntɔ di kɛnɑtɔkɔnɛ, budɛo di kiyawɑnebwɛ lɔlɔnɛ olɛgɑ sekɛ.",1.0,0.3214
+288,"Bɔtsɛlɛ ye bɔama nɔ, Filemon boe ɔkɔba adzuma ɔkɛnanɛ kĩ bɔawɛ kalɛ paa.",Bo kɛlɛɛ bwa mmanɔ. Filimon bwa kɔba ajima ɔkɛna nɛ ki bwa wɛ kalɛ pa.,1.0769,0.2931
+289,Kɛnɛ kĩ miakɛna lɛtsa a kĩ fɔado asɔli bati a flee kɔbɛ̃.,Kenekimya kanalekyaki faddu asolubatyiafeli koba,1.0,0.4773
+290,"Yesu bi be kĩ, “Mbɔɛɛ mi malo bati kĩ baánu fɔlɛtsa kayɔ mibuki mianɛ?","Yesu ni de ki, mwe mi ma le bati ki ba nu flashakayo, mi buki mian.",0.9286,0.2963
+291,"Ade ebi be kĩ, “Fɔnyɛ yĩ kawɛ kɔkɔɛ kĩ bɔmɔ mi bɔnya Wuda Katɛ̃ Funitsã kĩĩ fɔmɔ maamɔ lubo.","A de be be ki. Fọ nyẹnyi ka wẹ kọkọẹ, ki bọmọ mi bọnyẹ udakate fun i cha ki, fọmọ mamo lolo.",1.0526,0.4143
+292,"Baguma fɔlɛtsa a, tomɔ foe liti pintii, kadzi nkpã wĩ ndɛ ɔtɛ odonɛ aye.",Bagma fole ca tumo fole ti pinti ka jin kpa nwin de ote odene wayi.,1.0714,0.4107
+293,"Edeĩ tɛlɛ nviã ndɛ kavelibi aye, ade yalɛ kɔdzɛla ndɛ kɔɛ kpale a.","De ntele nvia, n deka velye ba yi, ade aleko jila de kwo ekwale.",1.0769,0.4423
+294,"Ntɛ miabɔa mpaɛ ni, mi adzuni ɛdza nɛ lɛtsa mɔa akũ, mikaanyɛ Baguma kɔlɛ luwi daa.","Tɛmíà bwa m̀pàní, m̀yà jùní èjà nɛ́lɛ̀cà m̀wákú, m̀kànyɛ̀ mbágùmà kólè lúwídà",1.0,0.5692
+295,Bɛya nɛ Felike sɛkɛ̃ kĩ bayaanyɛ Paulo nfumusu bɛtsa ye.,"Bayana feliki, sekeni ki bayanye Paulo, mfu musi be chai.",1.0,0.3778
+296,"Baguma hila bati a kĩ bɛna tsɛfã nɛ banɔkpa kayidza katɔnyade kĩĩ kamɛ a, kĩ ɛkpalɛ be akũ lɛmɛ a.",ma kɔ ŋma hi la baa ti a ki be naa cɛ fã nɛ baa nɔkpa ka i ja ka tɔ nyadi kiŋ ka mea ki ɛ kpale baa ku le mɛ,1.5,0.2987
+297,Lɛmɛ bɛbɔɛ kabisɛ̃ɛ̃ a lɛtalɛta bɛnamɛna Baguma mɔ ye lɛgãkpo a sɛkɛ̃.,"Lɛmɛ bɛbɛ kabi sɛ a, lɛtalɛta bɛnamuna baguma mɔi, ligan kuasɛ",0.75,0.2182
+298,Bati pii wula atsɛ bɛnaa be sɛkɛ̃ nɛ awã kĩ bavɛ Lɛgã Salomo Mblada nɛ Asɔli kɔla kamɛ a.,bati pi wula chebena bisake ne wa kiba ve legasalo mumbula deniya soli kola ka miye,0.8947,0.3913
+299,"” Filipo nabi Andrea, ade be nviã a bɛnabi Yesu a.","Be ate a ne ki ka cile pa le wa, lele ca ki be ke na be pa yi.",1.8,0.8378
+300,Kɔkɔa koe ɔkã kɔlɔ fusibii kasɛ̃ kamɛ katsu kalalɛde a kutomɛna odetɔ́ kamɛ kɔta kuwula nɛ tite akũ.,"Kòkòakwiyɔkan, kɔlɔfɔsibi kasɛŋamɛ kacchiù kalalɛdiya kuttɔmɛna odɛttɔkamɛ, kɔttakuwulani titiiya.",1.0,0.3375
+301,"Ntɛ odima lɛláa kĩ yaanyɛ foe kayɔ ni, kekɔ̃ oti a kĩ yalɛ kɔdzɛla nɛ tide bɛbã kamɛ a ɛkɛna dĩĩ ɛlɛ kɔdzɛla ɛkpa ye akũ mɔ Baguma.","Ntè ú dí mà lé láa kí yá nyì fú ká ni. Kẹ kɔɔ̀ ó tí yá kí yá lẹ kɔ̀ jlà né tí dè bè bákà mè à, ẹ kɛ̀ nà dín, ẹ lé kɔ̀ jlà àyì kpà yí à kú, mɔ̀ bá gumù",1.5,0.3663
+302,Yesu Dɛ Bati Nɛ Mbla Batsanɛ Mɔ Farisifɔ Akũ.,Forote alale,1.0,0.9167
+303,Bati a flee lápuli kapi ye kado nɛ nkɔsɔnkɔsɔ kamɛ.,ba tia fle la plika pi e ka dona nkosa nkosa ka,1.2,0.2683
+304,"Ke liti a, mmɔ́ ode fɔtɔ ɔnyanɛ mɔ kɔbɛ̃ bɛbã odi kĩ eto ode yaka.","kɛlɛ tì a mɔ̀ ̀dɪfɔtɔ̀ ɲa nɛ̀ mɔ̀kɔ̀ bɛ́mbɛ̀bàn, ʊ̀ dɪkì ètù ʊ̀dɛ́akà.",0.9333,0.4375
+305,"Bɔtsɛlɛ ovoli kĩĩ bɔamɛna mi nɛ Baguma kalɛ a kĩ kakpa nkpã, kĩ kideĩ anɛ kayɔkayi a akũ.","o che lo wule ki o ba muna mi ne ba guma kale a ki ka pampan, ki ki de ya ni ka we ka yi a",1.3889,0.4143
+306,"Bɛnɛɛ kɔfɔabi kubii kudi lɛmɛ nɛ awã, ade Yesu bɔɛ koe lɛmɛ ɛnyɛ kɔlɛ a.",bɛ̀nnɛkɔ̀ faibìkù bìì kùdìlɛ̀mɛ̀ nɛ̀ àwá àdɛ̀ Yésù bwɛ̀kwɛ̀lɛ̀mɛ̀ ɛ̀nyɛ̀kɔ̀lɛ̀,0.9333,0.3393
+307,"Lɛmɛ ntɛ odi nyɛ Baguma onukpɛ̃ ni, yabi bati kalɛ ade yabumɔ be, yado be kɔbɛ̃, kadɔla be tɔwɔlɛ lɛmɛ.","Lɛmɛn tɔdinya bagbɔ mɔn kpeɛni, yabi bati kale adɛy agbɔmɔ be, yadɔ bɛkɔbɛ kadɔla bɛtɔ lɛmɛn.",0.8,0.2692
+308,"Luwi a lɛnyɛ ni, Paulo na kanyɛkatsa, ade boe Ɔlate bi ye kĩ, “Tavila.","Luwi alenyeni, Paulo nakaniekacha. Adibwe ulate bi eki. Tani",0.7857,0.2692
+309,"Oti mɔa naa ye kɔba, ɔbɛbã naa kɔyaatɔ, bati nkaɛ a pili basumunɛ a bɛkɛna be tɛnya ade bɛkɔ be a.","Uti mana e kwa ba, obe bana kwa ya to, ba tinke ya plibasu ne ya, bekena bitanya ade be kobe.",0.9524,0.3733
+310,Ade fukĩĩ atsa kĩ lɔkɔ wĩ a kĩ Baguma lɛ eyi kĩ yaatɛ katinya kamɛ bati flee a wo ɔtɔ a.,Alefu kin acha kin. Lo ko wiya ki ba guma le e yi ki a teka ti nyaka me ba ti fle a wo to.,1.1429,0.3284
+311,Kitonɛkĩ bɛtákɛna nɛ apam a kĩ nkɛna mɔ be a akũ.,Kitu ne ki betakna ne apa wa ki nkana mobea,1.0,0.3684
+312,Lɛmɛ Baguma lɛ eyi anɛ kɔkɔɛ ɛtsãmɛna ye onukpɛ̃ banyɛnɛ flee akũ kĩ ye Kristo a aatsã lubo kamɔ kamɛ.,"Lɛmɛ bag mɛlɛ ɛyi anɛ kɔkɔɛ. Ɛcham na yonukwɛ banyɛnɛ flɛ aku, kiyɛ Kristo a achamlu bukammɔkamɛ.",0.7,0.2469
+313,Ade ayekĩ Yesu Kristo kama fɔlɛtsa a ya nɛ foe kamɛ a nɛ awĩ a.,ade a yɛ kye Yesu Kristo kama pɔre cha ayanɛpe kamin i anyɛ wi,0.8667,0.3542
+314,"“Odi nyɛ odi kĩ yaabɔa yĩ dĩ nɛ bati anɛ kĩ ye ode manɛ ni, yĩ malo maakɛna foe lɔmɔ nkpa ye nɛ Nda nɛ ode a anɛ.",Odi nyo di ki ya bo yi di ni ba ti ya ne ki yi o de ma na ni yi ma lo ma k na fwe lo mo n kwa yi ne i da ne o de a ni,1.3214,0.3133
+315,"Minyína kĩ Baguma Asɔli Kɔla mianɛ, kĩ Baguma Hũhũ a dzi nɛ mi kamɛ?","Niŋ nina, ki baguma soli kolami anɛ, ki baguma hũhũa jina mikamɛ.",0.9286,0.2264
+316,"Foesũ kito Abraham mɔapɛ a kĩ eku eyua malo a kamɛ babi mɔ bawa kĩ bɛnɛ lidede ndɛ fusibii, mɔ mpo abuĩ dã kĩ bɛláapuli bɛkã a nɛ́ bito a.",fɔsu kito Abraham mapeaki ekue yu amalu akame babiŋo bawa kibeneli dede ndefusi bi mompo agbwi da kibela pli bekana nebito,0.9,0.2736
+317,"Mi mɔawɛ a miáwo, ade miákpa bikĩ bɛbɔa mbɔdi kĩ bawo a osi biwo a.","nyumɔwe miɔwo, adɛ miɔkpa bikiibɔbɔdi kibawo osibiwo",1.0,0.3333
+318,"Ntɛ bati bɛbã támɔ yĩ biyi ɔsũ ndɛ fɔtɔ ɔnyanɛ aye ni, mi kɔ̃ mitɛ yĩ.",Entebatibeda mo yi bi yosun nde fotonya ne aini mi komite,0.9375,0.4615
+319,Mbom okunawa odi kĩ ɛna nɛ Zarepta ɔmatɔ kĩ edeĩ nɛ Sidon tite akũ a sɛkɛ̃ edo ye.,Ungbomo okuna wodiki enanesarepta omato kiedene sidomuti yakuwa seke edoe,1.0,0.3651
+320,"Fɔmɔ Paulo aadzakũ nɛ Kenkrea a, ɛfɔ̃ bɛkpa ye lɔlɔ tsɔlitsɔli nɛ fubo a kĩ ɛlɔ nɛ Yudafɔ amaniɛ osi sũ.",Pomopaulo ajakune kenkria efoobepa ye lolo choli choli nefubuwa ke elo ne yudafo amanie osi,0.9048,0.4198
+321,’ Fɔtsa kĩĩ kɛna lɔmɔ titi ɛlalɛ flee.,waa ki ke naa lo ma titi a la le fle,1.4286,0.4483
+322,"Ntɛ nuwĩ ɔlamɛna fɔtsa kĩĩ bamɛ flee kakɛna ni, nyɛ nɔ akũ katsa katinya kamɛ bati flee!","Nte nwi olamina fo takyi bamefle kakana ni. Nye no aku kacha, katinyaka meba tifle.",0.9412,0.2714
+323,"Ɔlɛga Kpalɛwa, kɔa nɔ dĩ akũ kɔbɛ̃ a kĩ ɔkpa yĩ a kadãmɛna be akũ ayekĩ baakɛna ɔmɔa ndɛ ayekĩ bɔmɔ nɔ bɔnyɛ ɔmɔa a.","Alegba kwale wa kwano dinya ku kobi. Ki okpanyi a kadam na biakun, ai kibak na omon, indai kibamono, bonye omon.",0.96,0.5056
+324,"Lɛmɛ ndɛ ayekĩ fɔla a, kateli nyɛ kateli afɔlibɔ afɔ̃ bati akai be tɔkpa kɛkɛ, kitonɛkĩ banantsue mɔ kutukpabi babɔanɛ lɛláapuli bɛnyɛ tɔkpa da.","Lɛmɛndɛ ayi kɛfɔla, kɛtɛlɛnyɛ kɛtɛlɛ afɔlɛbɔ, afɔmbati akayi bɛtɔkpakekɛ. Kɛtɛnɛ ki bananchwi, mɔkɔtu kpebiba bwanɛlɛ laapli bɛnyɛɛ tɔkpada.",1.0,0.2308
+325,"Minyina kĩ Stefana mɔ ye tɔtɔ kamɛ bati a nyɛ bati batɔnyade kĩ bɛdani tɔwɔlɛ kamɛ nɛ Akaia, kĩ bɛkɔa be akũ bɛkpa Baguma adzuma kakɛna.","Ni nina, kisti fana, moyi toto ka me batiya, nye bati batonyadi. Kibedani toole kame ne akaya, kibekwa biaku bekwa baguma ajuma kakina",0.9231,0.2936
+326,"Fɔyaya kĩ bati nɛ ɔmatɔ a kamɛ sɛ̃ nɛ kutsu nviã kamɛ, badi tomɔ Yudafɔ a ade badi lɛmɛ tomɔ fɔtɔ banyanɛ a.","Fwɛyɛɛkyi batinɛ o matu akamesɛnɛ kucuun viagame, batiitomo yuda fua, adibati lemetomo fotobanyane.",1.0,0.3373
+327,"Ɔnɔkɔali ni, minyɛ boe obu mɔ kawɔlɛ a.","Anɔ kwalini minyɛgbue ogbu, mɔ ka wole a.",0.875,0.2333
+328,"Ade foesũ ntɛ fɔtsã mbla kĩĩ akũ ni, bɛláapuli bɛkɛna bati a kĩ baya nɛ Baguma sɛkɛ̃ a bɛkpɔla da a.",Are pusun te fo chan mblaki yaku ni. Bela pli be kena ba ti yaki ba yane ba guma se ke ya be plada.,1.0952,0.3766
+329,Mila ndɛ luflututu kĩ laka kako nɛ lɔkɔ lukũ kamɛ kabuki kayɛla.,milla nelipritutu kilakakakunalokolunuku kame kabukikayela,1.0,0.3269
+330,Fukĩĩ flee ya nɛ ndɛ futeli ɔha ɛna mɔ aduenum kamɛ.,Fukii n'fleyɛ ne ndɛ futeli o ha Ɛnna mo adwenu nu ka,1.0,0.3415
+331,Kalɛ a mɔ Baguma deĩ anɛ kayɔkayi a fɔmɔ bɛbɔa katinya.,"Kale amobe agumade, aneka yoka yia, fomo bɛ bwa ka ti...",1.0,0.2727
+332,Míadani mikɛna onuvoe lɔbɔ vɔɛ̃ kĩ oyila lɛláa ye kamɛ ndɛ ayekĩ ĩnyina kĩ mila a.,Mya adani miki na onu vule lobo vue ki oyi la le lai ke me de aiki inyi na ke mila,1.3125,0.3692
+333,"Ke liti a, ode fɔtɔ banyanɛ a kĩ bɛlɛ tɔkɔɔpu evũkɔnɔ a kamɛ ɔmɔa ya nɛ yĩ sɛkɛ̃ ebi yĩ kĩ, “Ya, ntsa nɔ ayekĩ bɛvɛlɛ adɔpaani a kĩ ɛtɛ dĩ, kĩ edzi nɛ tɔwɔ pii akũ a sɔtɔ.","Eletia ode fota banyan e aki be le to kpu ebvu ku noa kame o mwa ya ne in seken e binki. Yancha no, aiki be vodo pa ni a ki e te di ki e ji ne to o pi a ku asoto.",1.0513,0.4365
+334,"Lɔkɔ a kĩ ɛkamanɛ akũ kĩ yadzakũ ɛnaa Siria tite akũ, ɛyamɔ kĩ Yudafɔ a sui nɛ ye akũ.",Lo kua ki e kamane a ku ki e jaku e na siri a titi a ku a. Eya mwa ki yu da fu a suina e ya ku.,1.4211,0.3939
+335,” Ade awã mɔ fɔtsa bakɔlɛnɛ a nu foe kayɔ kĩ Yohanes Mui Ɔwɔlanɛ a akũ kɔdzɛla ɛkalɛ.,ade awamu foca bakore ni anu fekayoki lohanesimi owolania akunko jela ekale,0.9412,0.3939
+336,"Kĩ bɛfɔnɛ Petro mɔ Yohanes awɛ bɛnaa be bati sɛkɛ̃ a, bɛbɔa be amandiɛ nɛ lɛtsa a kĩ basɔfɔnɔkɔɛ̃ mɔ ɔmaĩ banɔkɔɛ̃ a bi be a akũ.","be frento troma yo hani sawe bena bi ba tise ke a. Be bwa bi a manie, ne le cha ki ba so fo no kwe, mu maimba no kwe a bi be a",1.0741,0.4286
+337,Ɔyaɛ kpa a kĩ ɔmɔ́ a dzi nkpã tɔ̃ lɛmɛ finyaa eku.,"O ya e pa, ki o mu n jin pa tan lene fi nya e",1.25,0.5556
+338,"Mi babisɛ̃, mi nlamɛna ovoli kĩĩ katsɛlɛ kama, kitonɛkĩ minyina Ɔlɛga a.","Mibebe se, milomlo boliki nka chelekama, kuti ne ki minyina wole ga.",0.9167,0.4035
+339,Matɛ kado nɛ boe Ɔlate dĩ akũ kĩ yĩ mɔawɛ a maapuli ĩya nɛ mi sɛkɛ̃ mɔatsɛ.,"Matè kadu na buo lati diakukye, imwawe ama pli injia na miseke mwachie.",1.0,0.4912
+340,"Sɛmɛ nyɛ lɛtsa kpa kĩ odima lápuli kadɔla, ade otsonu kĩ yakɔ bati yi sɛ kamɛ tɛtɛɛtɛ a.","semeŋɛle kyakwa ki ɔduɔ lapli ka dola, ade ɔcɔnu ki yakɔbati yise kamɛtɛ teete",0.9444,0.3768
+341,"Yesu kpa be mbuayɛ kĩ, “Mitákã nɛ Katsɛlɛ Kpalɛwa a kamɛ kĩ nɛ kayɔkayi a, otsole mɔ onyole Ɔbɔanɛ bɔa?","yɛɛ se u kpa bɛɛ mwɛɛ kɛɛ, mitakane ka tɛlɛɛ pala wa ka mɛɛ kɛɛ, nɛɛ ka yoo ka yɛɛ, o tulɛɛ mo onulee o bwana o bɔ.",1.35,0.4875
+342,"Nɛ foesũ Yesu buki ɛlɛ kĩ, “Mabi mi ɔnɔkɔali a kĩ yĩ nyɛ baveli a kɔbã onyukpɛ̃ a.","Nɛvɔsu Yɛsu bukya lɛki. Mabe mi ɔnɔ kɔli lɛki, inyɛ bavɛliakɔbɔnyu kwe.",0.9444,0.3443
+343,"Ntɛ yĩ mɔawɛ kawɛ onukpɛ̃ makɛna adzuma kĩĩ ni, maadã kĩ bise yĩ foe kɔtɔ.",M tii maawɛ ka wɛɛ ɔnupɛɛ ma kɛna ajuma kiini. Ma daaki bisɛɛn fuɛkɔto.,1.0,0.4035
+344,"Mifɔ̃ mi kamɛmɛ kɛdani ayɔlɔhɔ kabe, mi kawɔlɛkamɔ lɛmɛ kɛdani ɔblɔ kawo.","Nipommi kame me keda ni ayo ro ka bi, mi ka o le ka mo, le me keda ni obodo ka o",1.75,0.4237
+345,"Ade awĩ Yesu nya lɔtɔ ewo ndɛ boe lɔtɔ ɔnyanɛ aye, ɛdani daa Ɔsɔfɔnɔkɔɛ̃ Flee nɛ Melkizedek osi a akũ a.","Adaya we yesunyan lo to, e wunde bɛ lo to nyanya yi. E dani da osɔfɔ no kwan flɛni Mɛlkisɛdɛk Osia akuan.",1.0476,0.3827
+346,Mbɔɛɛ kĩ bɔmɔ Barnaba odi pɛ kɛnɛ kĩ bɔkɛna adzuma bɔkɔa bɔdãmɛna boe akũ?,u buɛɛki bɔmɔ banaba odipɛ kɛnɛɛki bɔkɛna ajumaba kwa bɔdamina buya,0.8571,0.2667
+347,Bati nviã kĩĩ vɛlɛ fɔlɛtsa a mɔ ɔsĩ mɔ ɔsĩ ade fɔfɔ̃ bɛyalɛ a.,Ba tim bia ki bele bele cha mosimosi adi fofon be ya le,1.0,0.5745
+348,"Bivia be kĩ, “Osi ɔwɔdabe akũ mikɛna fukĩĩ?",Me bia be kin,1.0,0.7576
+349,"Ade awã na kĩ eto ode ɛtɔ a, ye lupu tui lɛbɛ̃, ade ke ye fɔmɛtsa flee nɛ fuko nɛ tite a.","Ade awuna kietode eto'a yeluputu ilebe, ade ke efome chafle nefu konetete",0.8636,0.2656
+350,"Ade foesũ kĩ Mose aabɔa Lima Patampa Kpalɛwa a ni, Baguma bi ye kĩ, “Dã kĩ ɔkɛna nɛ lɛtsa nyɛ lɛtsa a kĩ bɛtsa nɔ nɛ ɔtɔ akũ a onukpɛ̃.",adefuso kimosi abwali mapatapa kpalewani baguma bieki daki okonane lecanyelecaki bacyano neotokua onuku,0.9667,0.3663
+351,"Ade fɔtsa kĩĩ bamɛ ado oti efĩĩ a, lɛmɛ kĩ ɔkɔa awɛ kĩ ɔtávɔlɛ anya ndɛ ayekĩ Farisifɔ atsa a, ládo oti efĩĩ.","Ado fɔ cha ki bi ma mɛ Ado tiɛ fiɛn, lamɛ ki o kwa awoɛ ki o tafulɛ, anyan de a i ki farisi fɔ acha, la dɔ tiɛ fiɛn.",1.2609,0.4286
+352,"Nɛ ode fɔtɔ banyanɛ sũ ni, kɛnɛ kĩ otsole esui duku nɛ lɔlɔ ɛkɔa ɛtsa kĩ edeĩ nɛ ɔnyɔ kɔbɛ̃ kayɔ.","nɛ́ u-dɩ̀-fɔ̀tɔ̀-bàɲànɛ̀-sùní, kɛ́nɛ̀ kɩ́-ò-cùlɛ̀-ì-sù-dùkù-nɛ̀-lɔ̀lɔ̀, ɛ̀-kwà-ɛ̀-càkɩ̀-ɛ̀-ì-dɛ́ɲ-nɛ̀-ɔ̀ɲɔ̀ kɔ̀-bɛ́-kà-ɛ̀",0.9048,0.4324
+353,"Otsole a bi Yesu kĩ, “Nde fɔya mɔ nɔ Yudani avia yĩ Samaria otsole kĩ nkpa nɔ mui kamɔa?",Ochule bi Yesu ki nde foya monoyi dani avia in samaruwa ochule ki npanomu ikamuwa,0.7895,0.3134
+354,"Ye fɔtsa bakɔlɛnɛ a nadzɛla ye ade bibi ye kĩ, “Fɔtsa Ɔtsanɛ, fɔtsɛ́la nɔ kĩ bɔwɔ buyua?",ye fo cha ba ko le ne na ji lai a de bi bi ki o o fo cho cha ne fo cha no ki bo wa bu yo,1.5882,0.5224
+355,Bɛtsɛlɛ fɔtsa nɛ ye kamɛ mɔ liti ade bɛkɔa kɔma fɔtsa evũkɔnɔ bɛtalɛ ye onukpɛ̃ a.,"Bekyɛlɛ fɔ kyanɛ yɛ kamɛɛ, mɔlitin, adɛbɛkwa kɔma fɔkyɛ yibu kɔnɔ, bɛtaalɛ yɛ wunu kwɛ",1.0,0.3538
+356,Nɛ ye kɔnyakamɔ beblebee a sũ ɛkpa boe nkpã vɔɛ̃ ɛtsãmɛna Yesu Kristo kadzɛla katomɛna kanɔkpa kamɛ.,Nɛ kɔnyaka mɔ bɛblɛ bi asu ɛkpa bɔɛkpa vɛɛ ɛcɛmi na Yesu Kristo ka jila ka tu mɛ na ka nɔkpa ka mɛ,1.1176,0.2439
+357,"“Ntɛ tite akũ fɔgã a kĩ bɛbɔa adɔpaa mɔ ɔmatɔ a, bɛnya nkpã mɔ ye a, mɔ́ fi a kĩ fɔapila ye ɔnyɔ a yade ni, baabɔa fɔwɔla bibe ye.","Ɛntɛ titi aku fɔ ga, kɛ bɛ gwa adɔ pamɔ ɔmatɔa. Bɛ nya n'pamɔ yɛ a. Mɔ fiɛ kifu apɛlɛ ɔnyɔ ayadɛni. Baa bwa furabi bɛɛ.",0.9,0.2842
+358,"Mitakɔna kĩ minyɛ Abraham bawa sũ, míapuli milo sɔtɔ kavɛlɛ a.","Mɛta kɔna kinyɛ Abraham baɔsu, mi aple minyɔ sɔtɔkɔ vlɛ.",0.9091,0.3
+359,"Bibinya be futetsa a kĩ fɔnyɛ sika ngbã, lifii mɔ klubɔũ bɛkpa ye.","Bɛ́ dínnyá bɛ́ fú tékyà, àkí fònyè, sèkà ŋgbà, lífíyùmó kúlúbɔ́ŋ bɛ̀pà",1.0,0.5962
+360,"Budzi nkpã nɛ ɔnɔkɔali Baguma a kamɛ, budzi nkpã nɛ Obi Yesu Kristo lɛmɛ kamɛ.","Bujin panu onu kwalibaguma amme, bujin panu obi Yesu Kristo leme kame.",0.8,0.3065
+361,"Fɔtɔ banyanɛ a te ye dĩ kĩ Barnaba, dĩ a kayɔ nyɛ Ekĩ yado Bati Ɔwɔlɛ.",foto bania te yidi ki banana ba diya kayonye eki ya dubati owole,0.9375,0.3774
+362,"Ade ntɛ nnaa nnamanɛ kadzikɔ̃ ĩyi mi ĩyua ni, maamuniki ĩyaakpã mi nnamɛna yĩ sɛkɛ̃, ayekĩ awã kĩ ndeĩ a mi malo míana nɛ awã.","adentenna, inamane kadiko imi yuani, mamuniki yakuami inamna yiseke, aikiyan kindi ya mimanu mianani.",1.0,0.3608
+363,"Ntɛ odi alɛ Baguma fɔlɛtsa ni, ɛlɛ foe ndɛ Baguma fɔlɛtsa aye.",Toodiya le baguma flechani. Ele fwen de baguma flecha ai.,0.8333,0.3673
+364,"Bati flee a kĩ bɛkɛna fukĩĩ odu a, Baguma aamɔna be lubo nɛ fi mɔ fukpokpo gɛĩgɛĩ kamɛ nɛ ode fɔtɔ banyanɛ kpalɛwa a mɔ Kavelibi a anɛ kamɛ.","Bàtìflè à, kí bɛɛ kɪnàfùkìn ó dù à, bàgmà àmònabɛlùbò, nè fìmòfùkpògè ngɛngɛn kámɛ, nè òdɛ́fòtòbànyánɛ, bàlɛwá, mòkàbɛlì bìà ànèkámɛ.",1.0,0.5182
+365,"Fɔtsa ɛna a kĩ fudzi nkpã a sã kamu, obu, mɔ kɔlɛkanyɛ tɔnɔ kakpa oti a kĩ edzi nɛ lɛgãkpo akũ, kĩ edzi nkpã daa daa a.",bɛkayɛ na kifu jinkpa sa kamu obuu mɔ kɔlɛ kayɛ tɔ nɔ bɛkpa oti aki ɛji nɛlɛ gakwa kun kii ɛjinkpa daadaa,0.9259,0.3371
+366,"Fukĩĩ aafɔ̃ kĩ ntɛ mbuki ĩya nɛ mi sɛkɛ̃ ni, míapuli mipia nɛ yĩ akũ kĩ mikɛna ɔmɔa mɔ Kristo Yesu.","Fọ́ kí n a fọ́ kí n tẹ́ m bọ́ kí n yán n mí sẹkẹ́ ni, mọ a plẹ́ mọ́ píà, nẹ̀ yá kún kí m’kna ọmọ̀ mọ́ Kristi Yésù.",1.4286,0.48
+367,"Kitonɛkĩ Kristo táwo ɛnaa Patampa Kpalɛwa a kĩ batidziwa like, kĩ ɛnyɛ ode fude a odi kuyo a kamɛ.","Kitɛnɛɛ ki Kristo taɔ ɛnaa pa tɛmpa kpalɛwaa ki batidju aliki, ki ɛnyɛ udefudia odikuyua kamo.",0.8947,0.2179
+368,Lɛmɛ boe kɔ̃ bɔamanɛ akũ ayekĩ bɔ́ana lɛgãbɔɛ a kĩ lɛláawɔ da.,"Nemaboi kɔɔ, bɔmɛnakun, ayɛkiboa nnalɛgabɔyakyi, lalawoɔ.",1.0,0.4792
+369,"Oti kĩ ɛbɛ̃ flee nɛ ode lɛgãkanyakɔ̃ a nyɛ oti a kĩ ɛdɔla ye akũ, ɛdani ɛkɛna ndɛ obisɛ̃ kĩĩ aye.",uti ke ebe fle ne ode legal kanye kwanye uti aki edola yeakun edane eknande obese ki aing,0.9524,0.4167
+370,"Nɛ foesũ mabi mi paa nviã kĩĩ, kĩ ntɛ odi yɛla ye nkpã ni, nnɛ́ yĩ nfumusu fɔanɛ.","Nɛ́ fɔ́ sʊ́ m̀ bɛ̀ mì pá ǹvjà kí, kìn tɛ̀wɔ́ dì yɛ̀là yɛ̀ ń kpànì, nɛ́ yì ìn fʊ̀m sʊ́ fànè.",1.1667,0.5
+371,"Ade odi nyɛ odi kĩ bɛtámɔ ye dĩ nɛ nkpã ovoli a kamɛ ni, bɛta ye bido nɛ fi lutubu baũ a kamɛ.",na de odi nyina odi kibeta moedi ne npa ovuli a kamenibe tae bi do ne filiti bu bawanwa kame,0.913,0.3571
+372,” Ade awã ebuki eke Yesu aduli mɔ ɔsĩ mɔ ɔsĩ kĩ ɛtablɔmɛna be ɛnɛmɛna nɛ tite a na kamɛ a.,ade awu ebuki ek Yesu adule mosimose ki etaborama be enemin na neti tiana ka mia,0.8,0.3382
+373,"Petro tomɛna nɛ liti flee, ɛyawo nɛ Ɔsɔfɔnɔkɔɛ̃ Flee a lɔwabe.","Yesu be kin mi a feli mi a lo mi fo na yi, keti na kin, bele ne ka chi le kwale wa ka me kin, ma ko ba feli a ku o dam na ne, ade yi ba feli a feli a pansama le me te be je le",4.4545,2.0408
+374,"Kĩ Yesu lɛ fɔlɛtsa kĩĩ eyua a, ɛdzakũ nɛ Galilea ɛnaa Yudea amantam nɛ Yordan ɔwɔ liti a.","kɩyɛsɩlɛfɛlɛcakiɛyua, ajakune Galili ɛna Yudaya amantamu nɛyɔdɑnɔwɔlitɩ",1.0,0.3571
+375,Petro lɛmɛ tomɔ be ɛna nɛ liti flee.,mɛ̃ dɛ̃nɛmɛkɛ mɛ̃ ɪ̃ dɛ ɔsʊmɛ̃nɛ́ ɛjɛ mɪ̃nɛ nɛ̃ jɛkʊ̃ nɛ̃ sɔfɛ flɛ,1.5,1.25
+376,"Luwi nyɛ luwi, babo anɛ kanɛ lɔlɔ kawũ babi beblebee.",Luñe luwi babo ane ganalolo kanu babi beblebe,0.7,0.3095
+377,"Foesũ kĩ Yesu nu fɔlɛtsa kĩĩ a, ɛdzakũ nɛ Yudea emuniki ɛnaa Galilea tite akũ.","Fusu kyeesuno fleyaki ya, ejyakune yudea emuniki ena galea titea ku",0.8667,0.3548
+378,"Nɛ ke kawũna a, ɛnyɛ ye akũ ɛtsa yĩ malo, titɔ kĩ nkɛna ndɛ oti kĩ bɛtáma ye nɛ lɔkɔ wĩ kamɛ.",Nege kanuna enyia kuacha imalo titoki inkanande utiki betamayi neloko nuikame,1.0,0.4638
+379,"” Ke liti a, etu eboomu babisɛ̃ a, ade ete awɛ nɛ be akũ ehila be a.","Kele tiɛ, Ɛtu e bomu babisɛ, a de etɛ a wɛnne bi aku echila be.",0.8125,0.2553
+380,Ade lɔkɔ a na Baguma aakɔa kamu ɛkpa odi nyɛ odi kĩ ɛfɛta ɛkpa kamu a.,Adelokwana baguma akwa kamu ekwadinodin ki efata ekwakamu,0.875,0.2963
+381,"Finyaa kɔɛ kpale a yidza kɔdza nɛ ɔmatsɔ̃ a kĩ sɛmɛ pi ye a anɛ kamɛ, kĩ ntɛ esila ɛma pɛ kɔ́abɔɛ obisɛ̃ a kɔmɛna.","Sinyɛ kpeɛ kwale a iyɛ kwagyanɛ, o machon a kyi sɛmɛ piɛɛ anɛkamɛ ki ntɛ esɛlɛ mmapɛ kwagbɛɛ ubisinyɛ akɔmɛna.",0.84,0.4118
+382,Yudafɔ Abodoo Kĩ Ɛtáyila Luwi a kĩ bavɛ Wuda Katɛ̃ Luwi a kanya wo ɔtɔ.,yudafɔ abodo ki etayi la lwiya kibave wudakate lwiya kanya woto,0.8667,0.2364
+383,"Yohanes Mui Ɔwɔlanɛ a ya, ɛkasui onukpɛ̃, ɛtámɔa waĩ, lɛmɛ milɛ kĩ, ‘Hũhũ kpa deĩ nɛ ye kamɛ!",Johannes mu ola ne aya eka sunu kpe etamowun le me milikin hun hun pa di ne eka me,1.0556,0.4493
+384,"Mifɔ̃ bumu Baguma, boe Ɔlate Yesu Kristo Ɔlɛga a!","mefuobumubaguma, bueolate, Yesu Kristo olega",0.7778,0.2105
+385,"Kĩ ewo nɛ ɔmatɔ a koletia a, ɛtsɛlamɔ bati kɔdza kĩ bɛnɔnɛ ɔnɔkpa banaabila.",kí wò òmá twà kùlìtí à ècè lá mò bà tí kwò jà kí bè nwò nè ònò kpàbàná bì,1.4286,0.6557
+386,"Ntɛ bɔakɛna nɛ Baguma mbla a akũ ni, fɔ́afɔ̃ bɔmɔ́ buyi ɔsũ kĩ bunyina ye.",ntɛ wɛkɛ nɛ ba kuman blakuni. fofobɔ mɔbu yɔsu ki bu nyina i,0.8667,0.3273
+387,"Ade Yesu bi otsole a kĩ, “Nɔ katɛkado tɛ nɔ.",Bava omone ki. Enyetogole bateneo motokoba kinae okoba. Leme batifeli akibati,1.1,1.5938
+388,"Ɔsa maana nɛ mi sɛkɛ̃ sukuloo nɛ osili lɔkɔ flee a, lɔkɔa ntɛ madzakũ ni, míapuli mibumɔ yĩ nɛ yĩ osi akũ kanaa kamɛ nɛ kakɔ nyɛ kakɔ.","A sà mànnà nɛ̀ mɛ̀ sà kɛ̀ɛ sù kù lɔ̀ nɛ́, òsìlì lɔ̀ kɔ̀fù lì à. Lɔ̀ kwàn tɛ̀ mɛ̀ jàkù nì. Mɛ̀ à pì mɛ̀ bù mɔ̀ ì. Nɛ̀ nì òsìlì à kù n-kànnà, kà mɛ̀ nɛ̀, kà kɔnyɛ̀ kà",1.3214,0.5146
+389,"Ade Abonsam wo nɛ Yuda kĩ bavɛ Iskariot, kĩ ɛnyɛ fɔtsa bakɔlɛnɛ ewua-nviã a kamɛ ɔmɔa kamɛ a.",A bɔnsɛmɔ ŋɔ ne Yuda ki ba ve Iscariot. Ke nye fo chaba kɔ le ne 1 vi a ka me o ma ka me.,1.2778,0.411
+390,"Bɛtákpa be osi kĩ balɛ kɔdzɛla, ade Yudafɔ mbla lɛmɛ tsa kĩ bɛtanya lɔtɔ nɛ adzuma adima kamɛ a.",betakpa biosi ki balle kojala ade yu dafo mlaleme chaki betanya lotone ajumadima kamie,0.9474,0.3421
+391,"Nɛ lɔkɔ a naa kamɛ a, Yudafɔ ɔnɔkɔɛ̃ mɔa na kĩ ɛnyɛ Farisini, kĩ bavɛ Nikodemo.","Nɛ lɔ kwana ka mɛɛ, yida fɔ ɔnɔ kɔ mwa naki ɛnyɛ fariisini, kibaze Nikodemo.",0.8125,0.1833
+392,"Bati flee aakesĩ mi nɛ yĩ sũ, lɛmɛ oti a kĩ yaadza pintii kɛnaawo kawũna ni, Baguma aakpa ye nkpã.",bati fle akesimi nanyi su. Leme oti akiya pin tii kenao kaomunani. Baguma akpayi.,0.85,0.3421
+393,"Ade Yesu bi ye fɔtsa bakɔlɛnɛ a kĩ, “Mifɔ̃ bati a bidzi nɛ kutsukutsu kamɛ.",A di yɛ bi bɛ fɛ cɛ ba kɔlɛ nɛ a kɛ. Me fɔ bɛ cɛ bɛ bi ji nɛ a kɔ cu ku cu ka mɛ,1.6,0.4386
+394,"Nɛ nhihiɛ kĩĩ onukpɛ̃ ni, Hũhũ Kpalɛwa a nyɛ ɛtsa kĩ, nɛ ayekĩ patampa atɔnyade a buki ɛdzɛ̃ sũ ni, osi tábinya kĩ bati biwo nɛ Kakɔ Kpalɛwa Flee a kamɛ.","N'ehie ki' unukpenni, huunkpale wa' nye echa. Kini' aye ki' patampa ato' nya'diabuki ejiensoni, osita binya, kibatibi wone kakokpale wa' fule akame.",0.9677,0.3248
+395,"Yesu kpa be mbuayɛ kĩ, “Nnɛ́ odi nyɛ odi aapuli enu fɔlɛtsa kĩĩ kayɔ, mbɔɛntɛ bikĩ Baguma kpa be foe a.","Yɛ su kpa bi mua e ki, ne o di nyodi a pule nu fula cha ki nkayo, umba te bi ki ba ku ma kpa bi fwe",1.2857,0.359
+396,"Aristarko, kĩ bɔmɔ ye waa kɔla a, awɔ̃na mi.","aristaku, ke bo mo ye wa ko la awuna",1.0,0.3438
+397,Ndia aatomɛna mui a kĩ bakpa nkpã a?,ndia tomɛna mui akibakpaŋpa,0.75,0.2143
+398,"“Ntɛ odi nu yĩ fɔlɛtsa a mɔ́ ɛtákɛna nɛ foe akũ ni, nláadzɛmɔ ye.","Odi-ki-awaki-asumini, kenekietomoi kitonaki-awaki-ndea, adawai-osumine-leme-ana, ad-i-inda-adobu-ne-odinyo-di-ki-asumini-aku. Mhm, yowa-le",1.0,1.8958
+399,"Yĩ Paulo, Silvano mɔ Timoteo, bɔtsɛlɛ ovoli kĩĩ bɔama mi a kĩ minyɛ Baguma boe Ɔlɛga mɔ boe Ɔlate Yesu Kristo bade a nɛ Tesalonika a.","nye Paulo, Silvano, Moti-Motio, bɔtɛlɛvɔlɛkɛyi n̄wa Mami akiminyɛ baguma, bɔwɔlɛgamo bɔwɔlatɛ Yesu Kristo badɛa nɛ Tesalonika.",0.7308,0.2095
+400,"Baavɛ ye Imanuel,” kĩ de kayɔ nyɛ, “Baguma deĩ mɔ boe.",ba veye Emmanuel kidi kayo nye ba guma demo,1.0,0.3077
+401,"Lɛmɛ ntɛ mikɛna tuwĩ mɔ mido ɔwɔlɛ mimɔ́ lubo nɛ foe kamɛ ni, Baguma aahila mi.","Lɛ mɛn tɛ mɛkɛnɛ tuwimomido owolo, mimwalu bonɛ fɛ kamɛnɛ. Baguma ahilami.",0.9375,0.2131
+402,"Pilato via ye kĩ, “Nɔ nyɛ Yudafɔ Lɛgã a?",pilato biayeki nanya itafo legan Yesu kwambuaeki o falende ayeki ole adepilato biyu dafo basu fonokwin mobati kodabua,1.8889,2.7586
+403,"Foesũ mimɔ fɔlɛtsa badzɛnɛ a mibi sodzafɔ lɔtɔ ɔnyanɛ a kĩ, ebuki ɛkɔa Paulo ɛyamɛna nɛ katsɛnakɔ̃ nɛ awĩ.",Fɔ́ sú mí mɔ̀ flɛ̀-chá bá jɛ́ nɛ̀. Mí bɪ́sɔ́-já fɔ̀lɔ̀ tɔ̀-nyá nɛ̀ kɪ́. Ɛbʊkɪ́ɛ̀ kɔ̀ páwɔ̀ yɛ́ mɛ́ nɛ̀. Nɛ̀ kachɪ́ná kɔ̀ nɛ̀-á wʊ́.,1.2632,0.3765
+404,"Awã kĩ adzapadiɛ akũ ovoli deĩ ni, baákɛna ye akũ adzuma ntɛ bɛtámɔ́ foe kamɛ kĩ ovoli a ɔkɔnanɛ ku, kitonɛkĩ adzapadiɛ akũ ovoli lɛnyɛ́ lɛtsama ntɛ oti a kĩ ɛkɛna ye a dzi nkpã.",awo ki ajaba die aku voli deni bakuna yakua juma ntebeta mofu kame ki ovulia okuna neku ketu neki ajaba die aku voli lenyere chamante otia ki ekuna e yajin,1.0,0.3885
+405,"Nɛ Yesu Kristo Nazaretni dĩ akũ ni, mabi nɔ kĩ yidza kadza, katsã!",Na Yesu Kristo Nazareti ni diaku ni ma binoki i jakaja ka,0.7692,0.2745
+406,"Lɛmɛ yaabuki ɛtɛ kɔya ɛkpa nɔ ɛba ndɛ ɔsate aye, ade yaabuki ɛnya ɔwaɛ̃nyole nɛ boe Ɔlate dĩ akũ a.",Na mɛ yabukyi etɛkoya ekpanɔŋ ebba ndɛ osatiayi. Adɛ yabukyi ɛnya owa ɛnyulɛ ne bue. Olati diɛ kɔ.,0.9,0.3506
+407,"Lɛmɛ kĩ bati kɔdabu a nu foe a, bitomɔ ye bɛnaa awã.","le me ki bɛ ti kwo da bua nu feɛ, bi to mɔ ye bɛ na a",1.25,0.2821
+408,"Owi tábuna ɔwɛ kpale odi do kavũ awɛ, ɛbɔa mui eko nɛ ɔkɔlɔ a kamɛ.",O wi ta buna o we kali o de duka fua awe. E bo mi ekone o koro aka mi.,1.3333,0.4118
+409,Bakɔa fumakɛ kĩ fɔsa a kĩ bɛtsɛlɛ Baguma fɔlɛtsa bite kabɔa nɛ nnyɛ mɔ akpɔ.,"Bawo o fu ma kee ki fosə, ki bɛɛchere ba guma fɔla chɛɛbite, ka bwa ne nyɛɛ mo ako",1.2667,0.459
+410,"Kĩ ɛkã ovoli a eyua a, evia Paulo amantam a kĩ eto.","Di e ka o volia e u a, e via paula mantamwa gieto.",1.0833,0.2632
+411,“Yudafɔ flee nyina ayekĩ ndzi nkpã kito yĩ tibisɛ̃ kamɛ nɛ boe ɔtɔ mɔ Yerusalem lɛmɛ.,Nyi da fofole nyina eyi ki nji npan ki to yi nti bi se keme ne gbe otoo mo Yerusalem le me.,1.25,0.403
+412,Kɛnɛ kĩ ekĩ yadu mɔ ekĩ yakpɔta a flee bakɛna adzuma a mɔ kɔnɛte kĩ baana be tsɛfã nɛ funitsã a kĩ fɔ́anɛ a kamɛ.,kɛnɛki ɛkɛ yadu mwekɛ yapa ta flɛɛ bɛkɛna ajima mɔkɔ nɛ tɛɛ kiba na bɛkyɛ fɛnɛ furi nɛkyɛ kifa nɛ akami,0.96,0.3678
+413,"Odi nyɛ odi kĩ yaalɛ kɔdzɛla etia Otidziwa Obi a ni, baakɔa bite ye, lɛmɛ odi nyɛ odi kĩ yaalɛ kɔdzɛla etia Hũhũ Kpalɛwa a ni, bɛláakɔa bite ye finyaa ĩye nɛ lɔkɔ a kĩ laya a kamɛ.",Odin yodiki yala kojla etia oti jua obiani bakwa biteye. Leme odin yodiki yala kojla etia huku kwalewani bakwa biteye finye ye ne lakwa kila ya kami.,0.9211,0.3094
+414,"Ɛbɔa afɔliɛ deedimɔapɛ ɛkpa fɔkɔ a flee, nɛ lɔkɔ a kĩ ɛkɔa ye akũ ɛbɔa afɔliɛ a.",Ebo afọlẹ dedi mape ekwa fọ kọ afli nelọ kọ aki ekwa yaku ebo afọlẹ,1.0,0.4839
+415,"Foesũ bɔáwɛ kĩ bɔalɛ bati limu boe, mbom kĩ boe kɔdzɛla kalɛ aawo Baguma a kĩ enyina bati ɔwɔlɛ kamɛ a anɛ.",kɔsuŋɔwaa ɛkɛ balɛ bati lumu gbe. mboŋ kiba kɔjɛlɛka lɛ a wu ba gumaa ki ɛ nyi na bati owalɛ ka mi a,1.0,0.3571
+416,"Titɔ kĩ bɛtámɔ tɔkpa tidima nɛ ye akũ malo ni, bɛkɔ ye kɔtɔ ade bɛfɔ̃ Pilato kpa osi bɛkɔ ye a.",nìtɔ́kɛ́bɛ́ tàmɔ́ tòpátìdìmánèyàkúmálónì bɛ́kɔ́yèkɔ́tɔ́ àdɛ́bɛ́fɔ́npìlàtòpàɔ́sìbɛ́kɔ́yè,1.0,0.4167
+417,"Boe Ɔlate, kĩ ntsɛ̃ nɛ osi manaa mɔ suwa ketee a, mmɔ́ ɔhaĩ odi kĩ ɛkpalɛ ɛba suwa, kĩ ɛmɔanɛ eto ode ɛyako nɛ bɔmɔ́ bikĩ bɔtsɛ̃ bɔanaa akũ.",Wɔ la ti kiiŋ cɛ nɔɔsi ma naamo suwa kiti ya mɔɔ haŋ yi diki ɛkpale ba suwa kii ɛmwaani ɛtɔɔ di ɛɛku ne bɔmɔ biki bɔ cɛŋ bwa na,0.931,0.4135
+418,"Edeĩ fɔlɔ evũkɔnɔ mɔ tɛlɛ ewua, ade lɛgãbɔɛ tsanɛ nɛ ɔlɛ odi nyɛ odi akũ a.","Ede m folo evu kunu motela ewuwa, ade le gambo echanene ole odinyodi akwo.",1.0,0.4138
+419,"Ade nɛ lɔkɔ a na kamɛ a, Yudafɔ kĩ bavila Baguma kĩ bito fude kumɛkumɛ nɛ katinya kamɛ flee a ya bideĩ nɛ Yerusalem.",Adeenelo kwana kame. Yuda foki ba vila baguma kibitufu de kume kume na katinya kame fele ayabide na Yerusalemi.,0.9167,0.2088
+420,Mui wĩ mɔ lɛdɛmɛ mui aapuli bɛnɛ nɛ lɔwɔkɛ mɔa kamɛ?,Mú wíimó léde me múi a puli bènènè ló kẹ múo kà.,1.0909,0.5366
+421,Midɔla mi akũ mikpa Lɛgãnɔkɔɛ̃ Flefle a kĩ lideĩ otumi lɛbɛ̃ flee a.,"Mi dola mi aku, mi pale ga no kwe fle fle a, kli de o tumile be fle a.",1.2308,0.2453
+422,Ntɛ binu pɛ lɔkɔa Abonsam yanyɛ foe nɛ be fɔlɔ kamɛ.,"Tɛbɛnu pɛ, lo kwo abunsam, ya nyɛ foni bɛ fɔ lo kamma",1.0909,0.2927
+423,"Mite anɛ kĩ nɛ lɔkɔ na kamɛ a, mina mɔ lugo nɛ Kristo sɛkɛ̃.","Mi tiene chi ne lo quana canmea, minnamolgu ne Cristo se che.",1.0,0.5455
+424,"Kĩ bɛkadã ye a, Yesu akũ dani nɛ be anɛ kamɛ.",Kede kada ni ye. Yesu aku da ni ne be aneka mu.,0.9091,0.3333
+425,"Hũhũ adi nyɛ adi kĩ yalɛ kĩ Yesu Kristo ya nɛ katinya kamɛ ndɛ otidziwa aye ni, eto Baguma sɛkɛ̃.",Wuo adinya dikialeki Yesu Kristo yani katinya game ndo tijiwa ayeni etu bagumaseke,0.85,0.24
+426,Luwi daa manyɛ yĩ Baguma kɔlɛ nɛ mi lɔlɔ kĩ ɛtsã Yesu Kristo akũ ɛmɔ mi kɔnya.,"Luida manyɛ inba gmakolɛ ne milolo, ki ɛtsa Yesu Kristo akun ɛmomi konyɛ.",0.8235,0.2623
+427,"Ade Yesu bi be kĩ, “Mikɔa foe mima yĩ nɛ awĩ.",Adé yɛsɛ bí bɛ kĩ me kɔ fɛ mema i nã ã.,1.0,0.5
+428,"Ke liti a, ɛnyɛ ye akũ ɛtsa bikĩ bitomɔ ye kĩ bɛbɛ̃ bati ɔha elo nɛ lɔkɔ mɔa kamɛ, ade be kamɛ badi pii dzi nkpã kɛyawo nviã kĩĩ lɛmɛ be pii tɛ̃ kuwa liti.",Kelitinia ɛnyɛ ya kuɛchiabikibitɔmɔi kebɛ bɛbati ohailu nɛlɔkɔmɔakamɛ adɛbɛkamɛ badi pi jinpa keyawɔnviaki lɛmɛbɛpi tɛku aliti,0.9429,0.2586
+429,"Lɛmɛ Paulo tátunɔ kɔlaa kitonɛkĩ, kĩ bɛnaa Pamfilia a, Yohanes Marko dzakũ ɛfɔnɛ be nɛ awã ade ɛtábumɔ be biyua adzuma a.","Lɛ mɛ paulu ta tunu nkwala kitone ki kiba na pamfilya, yohannes mako jakun ɛfɔnɛ bɛnɛ nwa adɛ tabu mɔ bɛbi yuwa ajuma.",1.0455,0.3093
+430,” Ade ke ɛkpa sodzafɔ a kĩ bɛdza nɛ awã a kɔbɛ̃ kĩ bɛkɔa Paulo bido nɛ kɔla a kĩ Lɛgã Herodes ke a kamɛ lɔkɔa bɛkaadã ye akũ.,"ɛde keɛ kɔ sɔjafɔ a kyi bɛja ni awa akɔbɛ, kibe kɔ Pawulo bido nɛ kɔla a kyi lɛga Hɛrɔdisi kyi akamɛ lɔkɔ abɛka dayɛku.",0.8214,0.3191
+431,"” -Nɛ ayekĩ ye ɔtɔ bati tátɛ ye bido sũ ni, fɔlɛtsa a nyɛnɛ Yesu akũ.","Na aikiye o ba ti ta te bi dosu ni, fole ca nyene Yesu a",0.8667,0.4
+432,"Ɛwɛ bikĩ bɛnyɛ ye bade nɛ katinya kamɛ a kalɛ, ade ɛwɛ be kalɛ kɛnawo kawũnakɔ̃ a.",Ewa beki benyi ibadi nekati nya kame akale ade ewa be kale kena wuka unakwan,0.8824,0.3333
+433,ade bati a kĩ bɛtsɔɛ ye lɔtsɔɛ nɛ sɛklabi a lɛmɛ aamɔ ye.,Adi bati yaki beche oyi lo che nesekle bi ame amo ye.,0.8462,0.5
+434,"Ntsɛlɛ ovoli kĩĩ mamɛna nɔ, ade matɛ kado kĩ aakɛna nɛ lɛtsa a kĩ mavia nɔ a akũ a.",n kilɛ ovulikyi mamenano. Adimata kadukyi aakana lɛkyaki maviano akuna,1.0,0.381
+435,"Ayekĩ bati kɔdabu a kĩ kɔtsɛna nɛ ye akũ a tɛ́nɛ kapɔ sũ ni, ewo edzi nɛ ɔkɔlɔ kamɛ ade kɔdabu a dza nɛ ɔwɔ abuĩ a.","Ɛkye bɛti kɔdɛ buakyi, kwɛkɛ na nɛi yakua tɛnɛi kapɔsuni. Ɛwɔ ɛgi na ɔkɔlɔkamɛ adɛ kɔdɛ buajano, ɔwɔ abunya.",0.963,0.3372
+436,Kavelibi a deĩ tɛlɛ evũkɔnɔ mɔ banebi evũkɔnɔ kĩ fɔnyɛ Baguma hũhũ evũkɔnɔ a kĩ edo nɛ tite flee akũ a.,"kɛ bɛlɛ bɪ ya dɛ ntɛ lɛ vukono, mɛ ba nɛ bɪɛ vukono kɛ fɔ nyɛn ba gu mɛ hu hu, ɛ vukono a kɛ ɛ dɔ nɛ ti ti flɛ ɛ kuɔ",1.4762,0.4512
+437,Ɛkɛna foe nɛ Abodoo Kĩ Ɛtáyila Fuwi Kanya a kamɛ.,Kena na fwe ne abodo ki e tayi la fu wi ka nya ka,1.4,0.3333
+438,"Ntɛ bati vũna mi kĩ mi nɛ ayekĩ mitomɔ Kristo sũ ni, kawɔlɛ kide mi, kitonɛkĩ kukũkpalɛ Hũhũ a, kĩ ɛnyɛ Baguma Hũhũ a tomɔ mi.","Nyɛ́bà tɛ́vú nà mì, nɛ́ àyɛ́ kìmìtò mwa Kristo sù nì, kàwʊ̀lɛ́ kìmì, kìtò nɛ́ kì kúkù pálɛ́ hùnhuà, kì ɛ́nyɛ́ bàgùmà hùnhuà tòmwa mì.",0.9615,0.4948
+439,"Nɛ fukĩĩ sũ, yĩ ndɛ awaɛ̃ nɛ Kristo kamɛ aye a, maapuli nkɔa otumi mbi nɔ kĩ kɛna lɛtsa a kĩ kɛnɛ kĩ kɛna.","Nfokisoo yinde amwanyi ne Kristo kameyaye, mapi nkwuo otumi, mbinoki kinalechia kikene kikena.",0.9167,0.4304
+440,Kitonɛkĩ fude flee mɔa ye adɔpaa akũ kalɔkpa bavɛ a.,Kittɛ nɛ kifu dɛfɛɛ mwayɛ adɔpɛ akun kalɔpɛ abave.,1.0,0.4048
+441,"Oti a kĩ eyi lɛgãkanyakɔ̃ ɛkpa boe kĩ bɔnya basɔfɔ busum ye Baguma mɔ Ɔlɛga a, ade ye mɔ mikɔa kukũkpalɛ mɔ kɔbɛ̃ mikpa daa daa!","O ti a ki e i la ganga nya ko o ekpa gbe, ki bo nya ba so fo bu su mi e. Bangu ma mo o le ga, adi ye mo mi kwa ku ku pa le. Mo ko be mi pa da da.",1.6538,0.3333
+442,"Odi nyɛ odi kĩ yakɛna tɔkpa ni, efum Baguma mbla a, kitonɛkĩ tɔkpa nyɛ Baguma mbla kafum.",odinyodiki yaki na topani efun bagumambla kitoneki topani bagumambla kafu,1.0,0.2
+443,"Kĩ Paulo mɔ́ be a, ɛnyɛ Baguma kɔlɛ ade ke ebuki ɛna ɔwɔlɛ kado a.",kpaulu mobea enyebagumakole adeke gwikie enna owole kadu,1.0,0.3673
+444,"Katɛkado lɛfɔ̃ kĩ Mose bo anɛ a, esĩ kĩ bɛtavɛ ye kĩ Egipte Lɛgã obitsole obi.","katɛka do le fòkì mɔ́ sɛ́ bwánià, ɛsí kí bɛ́ta vɛ́ɛ kí èdì tɛlɛ́gàn òbìtìlɛòbì.",1.0,0.4667
+445,"Oti wĩ anyɛ fɔtsa wĩ kanya katomɛna ye fɔtsa wĩ kakɔlakɔ̃, ade oti kpa lɛmɛ anyɛ fɔtsa kpa kanya katomɛna ye fɔtsa kpa kakɔlakɔ̃ a.",Ute mwi anya focha mwi kanya ka tom na yi focha mwi kakulako. Ado ti palamin anya focha pa kanya ka tom na yi focha pa kakulako.,1.0,0.3689
+446,"Foesũ kĩ bɛya nɛ awĩ a, ntátɛ̃ ndzi nɛ kalɛ kĩĩ akũ.",Fuɛ́tsú kiíbèéyanéé ʊ́yà. Ŋ̀tátèèŋgí né kàlèkíŋa.,1.0,0.6316
+447,"Bɛláabuki binu tɔwɛ̃ tɛsankuo, tifluti mɔ kugbulɛɛ tido.",bɛla bʊkɛbɪ nʊtɔwɛ tɛsãŋkʊ tɪ flʊtɪ mɔkʊblɛ tɪ,1.0,0.413
+448,Litsedi kĩ ladã ndɛ mpo kĩ bɛkɔa ahuhɔɛ bɛkɛna deĩ nɛ awã nɛ lɛgãkpo a anɛ kamɛ.,"Li kedi ki la dande mpu, kebe kwa an hu ebe kena deyi ne awa, ne le gapu a aneka",1.1765,0.4286
+449,"Bɔmɔ́ ye lisibii kĩ lide nɛ suwa kadekɔ̃, ade bɔya kĩ bɔ́asum ye a.",Wamo ele si bi ki li de ne su akade ko. Ade boya ki ba su mu ye,1.2143,0.3061
+450,Ɛkɔa koe ɛkpa ye fɔtsa bakɔlɛnɛ a kĩ bɛsɛ̃ koe lɛmɛ bɛkpa be.,"Kaflenyabiewi Batia liedede awo mpim ena, kibenya bi yua yefochabakolena, fla fowuluwa kifutiɛ",1.0,1.4043
+451,"Kĩ ɔnɔkɔɛ̃ kĩĩ nu Yesu nkã a, edo Yudafɔ banɔkɔɛ̃ badi kĩ bɛnaabi ye ɛyaatsa ye ɔsumunɛ a.","Ki ono kpe ki nu Yesu nkan, e do yuda fo bano kpe ba di ki be na biye e a cha yo sumu ne.",1.2222,0.3623
+452,"Kitonɛkĩ ntɛ bide lɛtsã nɛ ɔnɔkɔali kamɛ ĩye nɛ fɔvã kama osi akũ malo ni, kĩ Kristo akũ bide lɛtsã a sũ ni, kawɔlɛ de yĩ.",kete kete bidile kyane o no kwadikame yi ne fovanke ma osi a kumalo ni? Ke Kristo a bidile kyan soni ka wule di,0.8846,0.4362
+453,Bɛkpã Yesu Bɛnamɛna Pilato Sɛkɛ̃.,Gele tiya roman se jafofo mo bebana kwe moyu dafo asoli kole akubadamuna ne a pe Jesu ade bisu yia. Benyala to be paye bena miahana se,5.4,3.3704
+454,"Ade bakɛna be tɛtadiɛ wulaa atɔ tɛsa, tɛvanɛ mɔ mpɛsɛmpɛsɛ gɛlɛɛlɛgɛlɛɛlɛ a!",Adebokna beatataria wula atotasa tebanemom pasam pasa glele glele,1.0,0.4127
+455,"Ke liti a, ode fɔtɔ ɔnyanɛ mɔ kɔbɛ̃ odi bɔɛ de kĩ lɔpɔnɛ lububu ndɛ kɔwɔlɛ ade ɛta edo nɛ mpo kamɛ, ɛlɛ kĩ.",ke le tia ode foton ya ne moko ben odi bwe de kile pone bu bunde ko ole a de tay done puga me ele,0.875,0.4125
+456,"Maátsɛlɛ mi fukĩĩ kĩ mado mi kɔnyɔã, mbom makɔa foe ndɛ mi ndɛ yĩ babi kĩ mawɛ be kalɛ aye.","Ma tyele mi fuking ki ma domikonywa, mbo makwa fwen demi, ndeyi mbabi, ki ma webekale ahi.",0.95,0.3286
+457,"Nwaɛ̃ amɛ, ndɛ bati kĩ bɛtɛ boe Ɔlate Yesu Kristo, kĩ ɛnyɛ kukũkpalɛ Ɔlate a bido sũ ni, mitadã bati anɛ nɛ mi fɔtsa kakɛna kamɛ.","Wura me ne ba kiki be te bue olati Yesu Kristo, ki enye kuku kpara olati abido suni, mi ta da niba tye ne ne mi fo cha kake na ka me.",1.1154,0.3434
+458,"Babɔa lɛgbã kĩ, “Bɛkpa boe osi kĩ bɔkɛna lɛtsa nyɛ lɛtsa.","baba ole gban ki, bepabo si ki bo ke na le chena le.",1.1818,0.5227
+459,Bɔláayɛla lɛtsama ntɛ bɔtánya ade ayea bɔláana nfasɔ adima ntɛ bɔnya lɛmɛ a.,"Bɔla ɛlɛlɛɛsama, ntɛpɔtanya, adɛɛya bɔla nanfaso adimɔ, ntɛbɔnyalɛ mɛ",1.0,0.2063
+460,"Nɛ foesũ bisui onukpɛ̃ bɛbɔa mpaɛ, bite awɛ nɛ be akũ ade bɛnyɛ be osi a.",Nɔ fɛɛ subisueɛ o nupɛɛ bɛ gba n pa ɛ. Bitiɛɛ wɛɛ ne biɛɛ ku. Adɛ bɛnyɛɛ biɛɛ o si.,1.25,0.4727
+461,"Paulo mɔ Sila tsã bito Amfipoli mɔ Apolonia bɛyawo Tesalonika, awã kĩ Yudafɔ katsɛnakɔ̃ kadi na.","Paulo munsila chabito anfi poli, mo Apolonia, beawu Tesalonica, anwaki yuda foka chenakokadini.",0.875,0.2564
+462,"Ntɛ nkɔa yĩ akũ fɔtsa flee nte ahiãfɔ, ĩye ntɛ nkɔa yĩ akũ mbɔa afɔliɛ kĩ bipila mɔ ntɛ bati kawɛ lɛláa yĩ kamɛ ni, nlá nfasɔ adima.","Tɛnkwayaku fɔcha flɛnti hya fɔ. Yɛɛ tɛnkwayaku, mgbɔafɔliɛkibibla. Mɔntɛbati kawɛlɛ lahi kɛmɛni. Lãnfɔsɔadi",1.0,0.3137
+463,"Nɛ foesũ mibinya mi tɔkpa kamɛ mitsa mi akũ akũ, mibɔa mpaɛ mikpa akũ, ayekĩ míana kasaɛ.","na fɔɔ su mi bi, ami to kpa ka me mi tsha mi a ku a ku, ni gba npa mi pa ku, ayi ki mi a na ka sa",1.6471,0.3286
+464,"Otsole a bi Yesu kĩ, “Ɔnɔkɔɛ̃, kpa yĩ mui a na badi ayekĩ ɔmɔado lɛláabuki ɛkɔ yĩ da, ĩye mbuki ĩya nɛ awĩ kĩ maanu mui.",Otu le abi esu ki. Ono kwe Gba yi mu ya na ba di yi aye ki omo adole la bu ki eko yi da. Iye bu ki ya ne awu ki ma nu.,1.2308,0.3596
+465,Yesu kĩĩ nyɛ be mɔ boe flee Ɔlate.,Yesu kinge nye bemo bwe fle ole,0.875,0.4231
+466,"Lɛmɛ kĩ bɔmɔ sodzafɔ buwo awã a, nnu kĩ Romani yanɛ sũ ni, nfɔ̃ sodzafɔ a tɛ ye nɛ be awɛ.",Lɛnɛki bomɔsɔ jafɔbuo awa. Nuki rɔmani ya nɛ suni. Nfɔsɔjafɔ atɛye nɛbɛawo,1.0,0.2576
+467,Ade awã mɔ Abonsam sɔ ye ɛdã fuwi tɛna flee a.,nadi amwa abunsomsaye edafuwe tena fili,1.0,0.4857
+468,"Lɛmɛ nɛ boe katsɛna kamɛ ni, mawɛ kĩ malɛ fɔlɛtsa sukuloo kĩ bati aanu foe kayɔ bɛkɔa bɛkɔlɛ fɔtsa, kɛba kĩ maalɛ fɔlɛtsa pii nɛ tide bɛbã kamɛ.",lɛmɛ lɛbue kɛcɛna kɛ mɛni mawakimɛ lɛfɔlɛ cɛasu kulu kibaati aanu fukayo bɛkwa bɛkole fɔcɛ kɛbakimɛ lɛfɔlɛ cɛ pii nɛti dɛ bɛbankamɛ,0.8929,0.2895
+469,Bati a kĩ bɛtɛ Kristo bido fɔmɔ biku a aanya lɔtɔ biyidza.,Batia ke betɛ Kristo bido fon bi ku a anyalo to bi.,0.8333,0.2826
+470,Yesu na nɛ Betania ɔmatɔ kamɛ nɛ Simon kĩ ɛsɔ tɔ̃ fɔsɔ ngbã a awã.,Yɛ sunana Betanya omatoka mene simoki ɛ sɔ tɔn fɔsɔngba.,1.0,0.28
+471,"Ovoli kĩĩ kamɛ fɔlɛtsa nyɛ Yesu Kristo kanyɛ katsa a kĩ Baguma kpa ye, kĩ ɛnyɛ ɛtsa ye basumunɛ nɛ fɔtsa a kĩ kɛnɛ kĩ fɔya nɛ lɔkɔ lukũ kamɛ a akũ.","kɔ́ woleɛ kɛɛ mɛ fɔlɛ cɛɛ nyɛ Yesu Klisto kɛɛ nyɛ kà cɛɛ akibɛ guma kpa yi, ki ɛnyɛɛ ɛcɛɛ ibasum nɛɛ fɔcaakɛ kɛnɛ ki fɔyane lo kɔglɔkun kɛɛ mɛ a",0.9375,0.3947
+472,"Odima lɛláatɛ ye nɛ yĩ awɛ, mbom yĩ mɔawɛ lɛkɔa ye nkpa.",kudima lala tayi na nyawe unbomu nyima wela kwa ye,0.9167,0.5349
+473,"Lɛmɛ ntɛ fu mɔ tuwĩ kpa mɛ nɛ te akũ ni, nfasɔ adima lɛláa te akũ.","Lɛ mɛnte fu, mɔtumi pa mɛnete akuni. Mfa so adi mala la ti akuni.",0.9375,0.2857
+474,"Ntɛ mipi fɔlɛtsa a kĩ minu a midomɔ akũ ni, míapuli mina nɛ ɔmɔa kakɛna kamɛ mɔ Obi a mɔ Ɔlɛga a.",n tene pì fɔlɛ cɛ à kìmì nùà mì dò mwà kù nì. Mì à fùlì mì nànè òmwà kàkɛnà kà mè mwò ò bìa mwò lè gà,1.2727,0.5676
+475,Yesu Mɔ Ye Fɔtsa Bakɔlɛnɛ a Se Asɔli Kɔla Ɔgɔlɛ.,"tɛmɛ bɛɛ biɔ sũ fɔsu bɛ kɛnɛ la caki bɛ wɛnɛ yɛɛ ku, adɛ yɛɛ a bɛɛ kɛnɛ o ti juwɔ biɛ lɛmɛ awɔ da. Ha dɛ a wamɔ fɔ ca bɛ kɔrɛ ni anufɛ kayo ki, yohane",3.7,2.4211
+476,"Bati kĩĩ flee katsɛna lɔkɔ nyɛ lɔkɔ mɔ kakɔna mɔa, kabɔa mpaɛ kakpa Baguma.","Ba ti ki fle ka ce na lo kwanje lo ko moka kwan na mwa, ka bwa mpae ka kpe ba gu",1.5714,0.3833
+477,"Nláabuki nvɛ mi kĩ basumunɛ, kitonɛkĩ ɔsumunɛ linyína lɛtsa a kĩ ye ɔlate akɛna.","laa bukii ɩvamɛki basumunɛ, kiitɛnɛki osumunɛli nyinalɛcaki yoo olatɛ akani",0.9286,0.3385
+478,"Ade foesũ mabi mi kĩ baakɔa tɔkpa nyɛ tɔkpa mɔ fubusuotsa fudi nyɛ fudi kĩ bati alɛ a bite be, lɛmɛ odi nyɛ odi kĩ yaalɛ fubusuotsa nɛ Hũhũ Kpalɛwa a kɔ̃ akũ ni, bɛláakɔa bite ye.",Aleh fose ma bemiking bakwo to kwanya takwa mofubuso che afudi nye fudi. Nibati aleh abitebe. Leme odinye odiki yaleh fubuso chane huhung kwale wako akuning belakwa bitebe.,0.973,0.3741
+479,"Nwaɛ̃ amɛ kĩ maátunɔ kalɛ, mite anɛ nɛ fɔlɛtsa kĩĩ akũ!",wɛ mɛkɛ matunu kalɛ mitiɛnɛ nɛ fɔlɛ cɛkɛnya,0.8182,0.381
+480,"Ntɛ lɔkɔ a wo ɔtɔ a, Baguma aakpa mi fɔlɛtsa a kĩ míalɛ a, kitonɛkĩ nnɛ́ mi aalɛ kɔdzɛla, mbom mi Ɔlɛga Hũhũ a aalɛ kɔdzɛla ɛtsãmɛna mi akũ.","Tɛn lo kɔ wuo ɔtɔ a, bɛkuma a kɔ mii fuɛ ca akɩ mi a lɛ a. Kide nɛ kin nɛ mii a lɛ kɔjɩla, umbum mii ɔlɛ ga hũhũ a a lɛ kɔjɩla, ɛca mna mii a",1.1034,0.3551
+481,"Lɛmɛ ɛlɛ eyi kĩ yaakɔa tite a na ɛkpa ye tɛnya ye mɔ ye babi mɔ bawa tide, titɔ kĩ nɛ lɔkɔ a na kamɛ malo ɛtáma obi odima!","Lemɛ lɛyɛki ya koti tiana ɛpae, tɛnyɛɛi mɔi babimɔ bawati de. Titoo kinɛlɔkwaana ka mɛmalɔ ɛtama ubi ɔdima.",1.0,0.2717
+482,"Oti a kĩ ɛkɛna ɔmɔa mɔ yĩ, mɔ yĩ malo nkɛna ɔmɔa mɔ ye ni, ade ye aawũ babi pii, kitonɛkĩ ntɛ nláa mi kamɛ ni, miláapuli mikɛna lɛtsama.","Kuti aki ekena omomoi, momoi malo kena omomoi ni. Adeye awu babipi, kitenekin, intei la mikameni, mela plenikena lacamani.",0.931,0.4466
+483,"Ntɛ mi kamɛ odi kɔna kĩ ɛnyɛ Baguma onukpɛ̃ ɔnyɛnɛ, ĩye edeĩ hũhũ kamɛ futetsa ni, enyi kĩ lɛtsa a kĩ ntsɛlɛ mamɛna mi a nyɛ boe Ɔlate mbla kĩ ɛkpa.","n'tɛmɛ ka mɔdi kɔnaki ɛnyɛbaguma ɔnukpo ɔnyɛnɛ, nyɛ ɛdɛn huhu kamɛ foti cani, ɛnyiki lɛcakinyɛlɛ ma mmana mia nyɛbwi ɔlate mbalakiyɛ",0.9032,0.307
+484,"Bike mi malo mite nɛ seebi sɛyɔde a kĩ fɔtɔ banyanɛ mɔ Baguma onukpɛ̃ banyɛnɛ a ke a akũ, ade Kristo Yesu mɔawɛ nyɛ́ kɔla a akũ de titiliwu a.","Wí kɛ̀ mɛ lù bí tɛ̀ nɛ̀ sé bísɛ̀ yɔ̀dé à kĩ̀ fɔ̀tɔ̀ bànìa nɛ́mù bàgùmà ò nùpɛ̀ bànìa nɛ́ à kĩ̀ àkùm, àdɛ̀ Krìstò Yèèsù mù ò ènyɛ̀ kòlà àkùm dɛ̀ tìtìlù",1.0,0.5229
+485,"Titɔ kĩ bati alɛ kĩ baviɔ̃ deĩ nɛ ode mɔ tite akũ, kĩ baviɔ̃ kumɛkumɛ kĩĩ mɔ be balate deĩ malo ni, boe kɔ̃ bunyina kĩ Baguma mɔapɛ deĩ.",Kí tɔ̀ kí bà tì àlɛ̀ kí bà víɔ̀ dɛ́ìnɛ́ ɔ̀ dì mɔ̀ tìtìakú. Kí bà víɔ̀ kùmɛ̀ kùmɛ̀ kīì mɔ̀ bɛ̀ bà lá tɛ̀ dɛ́nɛ̀ malɔní. Bwɛ̀ɛ̀ kɔ̀ bwinyɛ̀ kí bàgú ma mɔ̀ pɛ̀ dɛ́nɛ̀.,1.1379,0.4608
+486,"Hũhũ a mɔ Obolitsɔ̃ a lɛ kĩ, “Ya!",Awo ame baguma o nupen bane nyo ba tiaki bakena ne ovoliking kames felecha akwan bwane. Sum bagumodi. A de biyi nkin. Takwa felecha ki bela,3.125,4.5
+487,Amɔ oti a nɛ awĩ!,"Ma kame, plate o bi bati aki, midan amoti am.",2.0,2.1667
+488,"’ Ntɛ kanu minu fɔlɛtsa kĩĩ kayɔ ni, kufɛ miláakɔ bikĩ bɛtáfum a kɔtɔ, kitonɛkĩ Otidziwa Obi a nyɛ Kawɛya Luwi a Ɔlate.","Ɛtekanumunu folachakikayani, kufemlakobikibatafumukoto. Kitinaki otijiwa obiyanye kawayaliwiyawolatu.",1.0,0.3548
+489,"Yaadɔla ye akũ emu Baguma ɛlɛ kĩ, “Ɔnɔkɔali, Baguma deĩ nɛ boe kamɛ nɛ awĩ.","ya dola iyaku, emu baguma eleki ono kwali baguma deina bwekame ne yawo.",0.8,0.3158
+490,"Foesũ ndɛ Baguma futetsa futefute kĩĩ akũ badãmɛnanɛ ni, mikɛna foe akũ adzuma kakɛna wĩ, ayekĩ fɔ́ana libi fɔkpa mi akũ akũ.","fɔɔ suun dɛɛ bɔgɔma foti ca foti foti kii, aaku badam na nɛɛni, mikɛɛ na fɔɔ aaku ajuma, ka kɛɛ na wii. Aii kii fɔɔ na libi, fɔɔ kpaamii aaku aaku.",1.3636,0.44
+491,"Fukĩĩ nɛnɛ, fɔade Baguma boe Ɔtɛnɛ a kawɔlɛ, kitonɛkĩ yawɛ kĩ odi nyɛ odi ɛna katɛ lɔkɔa enu ɔnɔkɔali a kayɔ.","Feki ne nne fade baguma buo teni akawule, itoniki yawe ki odinodi enna katé, lokwa enu ono kwale aka.",0.9524,0.3721
+492,Bati atani fɔtsa kavɛ lɛtsa a kĩ lɛbɛ̃ be a kakɔa katsua fɔlɛtsa kavɛlɛ a kamɛ.,"Batyatɛnɛ fɔ cha, kabeletɛkile bɛɛbiya, kakwa kachua fɔlɛcha kabeletɛkɛ",1.0,0.4516
+493,"Sodzafɔ badi lɛmɛ yavia ye kĩ, “Boe malo litsa kɛnɛ kĩ bɔkɛna?","Oja ya cane, lica kene ki bokra. Yohanes bi be ki. Mitatte ogbole fo babo ki aba tua e ki mitea. Soja fo badi leme ya vi ayeki, we malo licakene ki bokra.",2.6667,1.8125
+494,"” Kĩ Anania, Yudafɔ Ɔsɔfɔnɔkɔɛ̃ Flee a kĩ ɛna nɛ awã nu ayekĩ Paulo kpa mbuayɛ a, ebi bikĩ bɛdza bifuãmɔ Paulo kĩ bɛbɔa ye nɛ onukpɛ̃.","Ki anania yi da fosa fono kwɛn filɛ a. Ki anania wa nu ayɛ ki Paulo pa mbuɛ a. Ebibi ki bɛ ja bi fua mo Paulo a, ki bɛ bɔ yi no nu",1.1154,0.3333
+495,Baguma fɔ̃ bɛkɛna lɛtsa nyɛ lɛtsa nɛ ye kawɛ mɔ nhihiɛ onukpɛ̃.,bɛguma fɔ bɛkɛna lɛ cɛnyɛlɛ cɛ nɛyi ka wɛ mɔngi hiyɛ unuku,0.8333,0.2653
+496,"Yesu kpa mbuayɛ kĩ, “Katsɛlɛ Kpalɛwa a lɛmɛ lɛ kĩ, ‘Tasɔ boe Ɔlate nɔ Baguma a ɔdã.",Jesu pambua e ki kachere pala wa leme le ki ta sobua la te na baguma,1.0,0.4194
+497,"Mabi mi nɛ ɔnɔkɔali kamɛ kĩ kakɔ nyɛ kakɔ kĩ baade Kalɛ Wĩ a lɛtsã nɛ katinya kamɛ flee ni, baalɛ kɔdzɛla nɛ lɛtsa kĩ otsole kĩĩ kɛna a akũ bɛkɔa bite ye anɛ.","Mabi ni na onokali kamaking kakonyi kakokibade kalewuila chane katinga ka mefeleni, bale kojila nelachaki oyulekin kena akun bekwa bite",0.9412,0.4309
+498,"“Tɛlɛ ewua a kĩ ɔmɔ́ a nyɛ fɔgã ewua kĩ bɛtádo tɔ̃ fɔgã kanya awɛ, lɛmɛ bɛkpa be kɔbɛ̃ kĩ baanya fɔgã dɔũhuilɛ mɔa mɔ ɔyaɛ kpa a.","Telewaki omua, nyefogai waki betadoto fogakanyawe leme bekpabe koben kiba nyafoga donhulemu mo oyaikpa.",1.0,0.4167
+499,"“Foesũ ntɛ nɔ awɛ ĩye nɔ kɔbɔa aafɔ̃ ɔkɛna tɔkpa ni, tsua koe kata kamuni!","Bo sun intendon awe, yino kobo afo okena tokoni, shokwi katekamo",1.0,0.5714
+500,"Kitonɛkĩ ntɛ odi deĩ kɔbɛ̃ kĩ yalɛ kɔdzɛla nɛ tide ahɔlɔ ahɔlɔ kamɛ ni bɛmɔ Baguma odi alɛ kɔdzɛla, lɛmɛ nnɛ́ bɛmɔ bati kitonɛkĩ bɛláanu foe kayɔ.","ketene ki teo ri denko be ki ala ko jalanetide a holo holo ka meni be mobagu mo di ale ko jala. Leme ne be mo bati, ketene ki bela nufe ka",1.1481,0.4052
+501,"Ntɛ mikɛna nɛ yĩ mbla a kĩ nkpa mi a akũ a ni, lɔkɔa minyɛ yĩ bakɔba.",dannu kune nayin blackin pania kune lokua minyanyi bakoba,1.0,0.4706
+502,"Epafra, kĩ bɔmɔ ye waa kɔla nɛ Kristo sũ a bo yawɔ̃na nɔ!","Pa fa, ki bo moyi wa kola ne Kristo suwa, bo yan wona",0.9231,0.3571
+503,Fɔtsa bakɔlɛnɛ nɛ Yerusalem danɛ kapɔ ade Yudafɔ basɔfɔ a pii lɛmɛ dani bɛtɛ Yesu bido a.,"Wɔ̀ tsɛ́bàkʊ̀lɛ́ nɛ́nɛ̀ Yerusalɛmù wà dánɛ̀ kàpɔ̀, àdɛ́ Yudá fɔ̀básɔ̀fɔ̀ àpìlɛ̀ mɛ̀dánì bɛ́tɛ̀ Yésù bì dò.",0.9412,0.3333
+504,"Nɛ foesũ fɔákɔ Baguma kɔnyɔã kĩ bavɛ ye kĩ be Baguma, kitonɛkĩ ɛlɔla ɔmatɔ kpale odi eyi be.",ne fuɛ su fuako baguma konyua ki bawe eki be baguma kite ne ki elola oma tokpa le odi ebi,1.0,0.3425
+505,Lɛmɛ fɔkɔ fudi Yesu adzakũ kanaa kakɔ kĩ kɛkɛna dĩĩ kanaabɔa mpaɛ.,le me fokofudi Yesu ajaku kana akokikeke nadi kanaboa,0.9167,0.3889
+506,"Ade kĩ boe kadzakũ wo ɔtɔ a, bɛma boe fɔtsa a kĩ bɔ́akɔa bɔtsã osi.",Adikibueka jaku woto bema bwe faca kibuakobo chause.,1.0,0.5
+507,"Ntɛ odi aalɛ kɔdzɛla nɛ tide bɛbã kamɛ ni, bati nviã ĩye be ɛlalɛ bɛlɛ bitomɔ akũ, lɛmɛ kɛnɛ kĩ oti bɛbã anyɛ lɛtsa a kĩ bɛlɛ a kayɔ.","O di al ko je nni de be ba ka mi ni, ba tin vien nyebbe le, be le bi tumu akon, le meke ne ki o ti be ban, a nye le chaki be le a ka yo",1.2069,0.4608
+508,“Ebuki ɛnɛ nɛ tɔdɔũ ewua-nviã mɔ olobe tɔdɔũ ɛlalɛ kamɛ ɛnakɛna ndɛ fɔtɔnyade a.,ebuki nena to don ewa avia mo olube to don la lekame ena kende foto nyade,1.0714,0.3906
+509,"Kĩ Yesu odi na nɛ kakɔ mɔa a, bati a kĩ binu ye lɛgbã a mɔ ye fɔtsa bakɔlɛnɛ mɔ ye fɔtɔ banyanɛ a ya kĩ ɛnyɛ de kayɔ ɛtsa be.","Ke Yesu odi nani kakoma, bati aki binui le gba, moyi fo chaba ko leni, moyi fo to ba nyanya, ya ki enye di kayo e chabi.",0.871,0.3441
+510,"Ɛna nɛ Hũhũ a kamɛ, ade ɛnalɛ Baguma fɔlɛtsa ɛkpa hũhũ a kĩ ɛwaa kɔla a.","Enna ne huhua kame, adee enna le baguma flecha epa huhua, ki ewa kola",0.9375,0.4182
+511,Bɛbɔa mbɔdi kĩ basua boe osi kĩ bɔtabi bikĩ bɛnyɛ́ Yudafɔ a kalɛ wĩ a kĩ kaafɔ̃ bɛna nkpã a kĩ ɛlá kawũna a.,"Ba ban bodii ke ba so ya bo si, ke bo ta bibi ke benye yu da fo a kale wiya. Ki ka fo be nan kwa ki e la ka wu na.",1.3333,0.3659
+512,Ɛtáya nɛ mui odi kamɛ mbom ɛya nɛ mui mɔ babɔanɛ kamɛ.,Itɛ ya nɛ mwɔ di ka mɛ. Mbɔ ŋwɛ ya nɛ mwɔ mɔ bgbɔnɛ ka mɛ.,1.0833,0.2857
+513,Baguma mɔ Kavelibi a lɛgãkpo aana nɛ ɔmatɔ a kamɛ ade ye basumunɛ aasum ye a.,Bagumamokabelibi aleganpu anane omato akame adeye basumne asumye,1.0,0.2459
+514,"Baguma buki ɛnyɛ foe ɛtsa ye nɛ kɔda kamɛ kĩ ɛtanaa awã, foesũ ɛdzakũ ɛnaa Galilea amantam kamɛ, ade ɛnadzi nɛ ɔmatɔ a kĩ bavɛ Nazaret a kamɛ a.",Bagma bukyi yẹ fẹ chaye nna ko daka miki Ẹtana awa. Fẹsun ẹ jẹ kun ẹ nna galili a ama ntam u kami. Ade ẹna gi ni amatoa ki ba be Nazaret a kami.,1.1034,0.3805
+515,"Yuda tunɔ nɛ foe akũ, foesũ ɛkawɛ lɔkɔ wĩ kĩ yaanyɛ Yesu ɛkpa nɛ bati kɔdabu a katanyi kamɛ.",yuda tunonifoya ku vesu eka weloko winki ya nye yesu yepa nebetikodabu akata nyiga me,0.8947,0.3194
+516,"Bati a ke ye aduli kĩ edzi nɛ be sɛkɛ̃ sukuloo a, lɛmɛ ɛtátunɔ.",Batya ki aduli ki jina beseke sukulu le me tauto,0.9286,0.4468
+517,"Foesũ ɔdɔ ɛnya fɔtsa a kĩ foe liti míatomɛna mɔ ɔsĩ mɔ ɔsĩ, lɛmɛ miwɛ hũhũ kamɛ futetsa liti osi, titiliwu Baguma onukpɛ̃ kanyɛ.","Kòsù ọ̀dá ànyá fò cákì fùwèlìtì mí àtòmì ná mósì mósì. Lɛ̀ mɛ̀ mí wɛ̀ hùhù kàmɛ̀ fùtɛ́ cákì yósì, tìtìlìú bàgúmá ònùpɛ̀ kànyá.",1.0,0.5644
+518,"Tite akũ fɔgã, abãã banɔkɔɛ̃, sodzafɔ banɔkɔɛ̃, asikafɔ, otumifɔ, bati flee, basate mɔ bikĩ bidzi be akũ akũ a, bɛla nɛ tite tɛkɛ mɔ tɔtɔ akũ boe tɛkɛ kamɛ.","Titi akụ fɔga, abaa abanɔkwe, so ya fɔbanɔkwe, asika fɔ, otimi fɔ, bati flɛ, basati mobikibigibi akua akua. Bɛla nɛ titi, tɛkɛmɔ tɔtɔ akubwɛ tɛkɛ ka",0.8621,0.2542
+519,"Kĩ biwo ɔwɔ lutubu baũ a sɛkɛ sitide a, biduma nɛ Genezaret.",Johannes mu owo la ni alolo ka tene chensi aku ka panyi finya finya ki fukin wo le ga he ro de scalo e pa le me elapli e dani ye semeni fubuaki elo ne,2.9167,2.0638
+520,"Kĩ Yudafɔ a tátunɔ nɛ foe akũ sũ ni, fɔyasĩ kĩ nkɔa yĩ kalɛ mma Lɛgãnɔkɔɛ̃ Kaisare, titɔ kĩ ntábɔɛ fɔlɛtsa nɛ yĩ kade bati akũ malo.","ti da fwa tati na ne fwa ku suni. Fwa ya si, ke nkwanyi kale, mma legba no kwe ka izari, ti toki nta bofolẹ na inka dibatia ku malum.",1.0741,0.451
+521,"Kĩ Baguma lɛ kĩ apam vɔɛ̃ a, fɔatsa kĩ ɛkɛna atɔnyade a akɔɛ.",Kibakuma leki apan voe. Fwaki ekina atonyade a koo,0.9231,0.413
+522,Kavelibi a naa kɛnatɛ ovoli a etomɛna oti a kĩ edzi nɛ lɛgãkpo a akũ a sɔmɔna awɛ.,Kabe bii ana kinate ovuliia itumna utiaki ejinlegabua akua somona,1.0,0.4219
+523,Ade mmɔ́ litsedi ndɛ mpo kĩ ladã ndɛ ahuhɔɛ kĩ fi tsɛka mɔ ye.,"Aremu moli ki din dempo, ki la dande awuwe ki fi che ka mui.",0.9286,0.4468
+524,"Eke otse lɛmɛ kĩ ntɛ fɔ́ana ye sɔwa ni, yaana nɛ Yerusalem nɛ Pentekoste luwi a akũ.",yɛ̀ kùwùlé me kî ńtɛ̀fwà ńa yɛ̀sɔ̀wà nì. Yà nà nɛ̀ Yɛrusalɛ̀m nɛ Pɛntɛkɔ̀stɛ́ lùwìyà a,0.8235,0.4615
+525,"Nɛ ɔnɔkɔali kamɛ ni, Baguma mɔapɛ deĩ, ade ayea lɛmɛ lɛma ɔkplanɛ mɔapɛ deĩ nɛ Baguma mɔ batidziwa kayite a.","Nɛ́ nò kuálì kà mɛ̀ni, bá gùmà muà pɛ̀ dɪ̀ŋ. Àdè àyà lémɛ̀. Lɛ̀ma òplànɛ̀ muà pɛ̀ dɪ̀ŋ. Nè bá gùmà muà bàtì júwà kàì tì.",1.2,0.5
+526,Kɛfɛta kĩ bɛkpa adzuma ɔkɛnanɛ lɛtsa a kĩ esĩ a.,Kafutaki bakpa ajuma okuna le chakin esi,1.0,0.4737
+527,"Eyi kayɔ mɔ Baguma, mɔ ye dĩ, mɔ awã kĩ edzi, mɔ bati flee a kĩ bideĩ nɛ ode a kadumu.",Ei kae mo baguma mo e di? Mo awa ke di mo bati fela ki bi de nne o de aka du mu.,1.0,0.2742
+528,"Lɛmɛ kĩ batɛ badonɛ a yatsɛna nɛ ye akũ a, eyidza ɛdza ade emuniki ɛnaa ɔmatɔ a kamɛ a.","Lɛmɛ kii batɛ badunɛ ya cenɛ nii yɛ akua. Ee jɛɛja, adɛɛ munii kɛɛ na ɔmatwa kamɛ",0.8421,0.3881
+529,"Kɛtánɛ kĩ miamɔa mui nɛ boe Ɔlate kɔɔpu kamɛ lɔkɔa mibuki minaamɔa nɛ hũhũ kpa kɔɔpu lɛmɛ kamɛ, ĩye minya nɛ boe Ɔlate opunu akũ lɔkɔa minaanya nɛ hũhũ kpa opunu akũ lɛmɛ.",Kɛtɛnɛ kɛ mi ya mwa mwinɛ bɛ olate kɔɔpu kamɛ. Lɔkɔ mi buku mi na mwa nɛ huhu kpa kɔɔpu lɛ mɛ kamɛ. Iye mi nya nɛ bɛ olate opunu akwu. Lɔkɔ mi na nya nɛ huhu kpa opunu akwu lɛ mɛ.,0.9394,0.1898
+530,"Baawɛya bitomɛna be lubo kamɔ kamɛ, kitonɛkĩ be tudzuma kakɛna tomɔ be!","Atè tu noki. Nuwii pagu ma kilebe, ba oya bito mu la bee lu buu ka mokame, ke tu noki betu juma ka kena tu.",2.0833,0.7931
+531,Ndo be nɛ katinya kamɛ ndɛ ayekĩ nɔ malo odo yĩ nɛ katinya kamɛ a.,Inde benekatinya kame indaiki nomalo odoyine katinya kame.,0.9333,0.2745
+532,Ade kɔɛ kpale a nɛ́ kɔnadza nɛ mpo abuĩ a.,adiko epeli aneko na jani mpuabunya,1.0,0.4516
+533,"Nɛ ɔnɔkɔali kamɛ ni, boe kamɛ bati kĩĩ nɛ́ bito, lɛmɛ bɛláa boe kamɛ.","Nono kwalikameni, bwekamebatikin ebeto, lemebelagwekame",1.0,0.3462
+534,"“Ade nvia ye kĩ, ‘Boe Ɔlate, litsa kɛnɛ kĩ nkɛna?","na mɔɔ hã ya. nɛ bɛɛtɛ nu otiɛ ki bɔ mɔ ĩ. lɛ kɛlɛ kɔ jɛlɛ udu. adɛn biɛɛ ki, bɔ yɔ la tɛ, li jɛkɛnɛ ki kɛna.",2.8,1.6286
+535,"Lɛmɛ kĩ Yesu yanya ɔsɔfɔ a, Baguma lɔ fubo ɛkpa ye ɛlɛ kĩ.",lɛmɛkɛ yɛsuyanya osɔfɔ a baguma lɔfɔgbo ɛkpaɛ lɛkɛ,0.8462,0.1818
+536,"Petro kpa ye mbuayɛ kĩ, “Boe Ɔlate, ntɛ aye kɔ̃ ni, tavɔlɛ yĩ abɔa odi, mbom vɔlɛ yĩ awɛ mɔ lɔlɔ lɛmɛ!","Petro, kwa nbuoeki, nwolati, ntiayekoni tablenyabodi, mbon volenyawemololo",0.9545,0.473
+537,"Bɔmɔ́ batɛ badonɛ badi nɛ awã, ade bɔna nɛ be sɛkɛ̃ ɛkwansieda mɔa a, kitonɛkĩ Hũhũ Kpalɛwa a tsã be akũ bibi Paulo kĩ ɛtanaa Yerusalem.","Bomo bate badone badinyi awa, adebonane bese ke ekwa nseda mwa kitone ke hwuwu pale wa cha bi aku Bibi Paulo kiye ta na Yerusalɛɛm",0.9615,0.3208
+538,Bavɛlɛ bati kĩ be katɛkado lɛdzɛ́ pintii kado nɛ tɔkpa kamɛ.,Vavlebatiki Bekatekadoleje pinti kadone topakame,1.0,0.2917
+539,"Ntomɔ nɔ, odima lɛláapuli ɛkɛna nɔ lɛtsakpa lidima, kitonɛkĩ bati pii kĩ bɛnyɛ yĩ bade lɛmɛ deĩ nɛ ɔmatɔ kĩĩ kamɛ.",Domono odimale lele apli akana no lachakwali dima. Kitona kibati pi kibanya ibade lamadene omato kika me.,1.0,0.3626
+540,Adeke fɔtsa bakɔlɛnɛ ɛlalɛ a mɔ́ Mose mɔ Eliya kĩ bɛkalɛ kɔdzɛla mɔ Yesu a.,Alekepo chabakole ne eleli amomo semo eliya ki bekale kojamo yesu,0.8667,0.3898
+541,"Mitse lɛtsa a kĩ mianu a katse wĩ, kitonɛkĩ okĩ edeĩ fɔlɛtsa kayɔkanu ni, baakpa ye kayɔkanu bibu, lɛmɛ okĩ ɛla kayɔkanu kadima ni, baatɛ sukuloo a kĩ ɛkɔna kĩ edeĩ a malo nɛ ye awɛ.","Mmi chɛlɛɛ chaaki mmiɛnɔɔ ka chɛɛ mmi. Ki tɛnɛ ki okiɛdɛn fola cha kayo kannuni, bakpaɛ kayo kannu bi bu. Lɛmɛ okiɛɛ la kayo kannu ka dimanni. Bafɛɛ sɔkula kiɛɛ ku nakiɛɛ diɛɛ ama lonɛɛ.",1.0,0.4155
+542,” Ade ayea Mose lɛmɛ akɔa babɔanɛ kasã nɛ Patampa Kpalɛwa a mɔ fɔtsa a kĩ foe akũ adzuma bakɛna nɛ kasum kamɛ a flee akũ a.,Adiyaya mɔ́slɛ̀ mè à kwàbàgbwànɛ̀ kà sà nɛ̀ pátàmpákpálɛ̀ wá. Mɔ́ fɔ̀cà àkìfùyàkù àjùmà bà kànà nɛ̀ kàsùm kàmì àfìlí àkù.,0.8846,0.5158
+543,"Salomo ma Rehoboam, Rehoboam ma Abiya, Abyia ma Asa.","kalo ma rihuam, rihuam ma abiya, abiya ma asa",0.4444,0.3171
+544,"Be adzɔlɛ mi tɛkla akũ daa, ndɛ bati kĩ baakɛna akunta bɛkpa Baguma nɛ be adzuma kakɛna a akũ.","Be agyole mi tekla kuda, nde batiki ba akna akunta be kwa baguma, ne be agyuma kakna",0.7895,0.2838
+545,"” Abraham na ɔwɔlɛ bɔɛɛ, foesũ ye awɛ ta lɛtsa a kĩ Baguma ke otse kĩ yaakpa ye a.","Abraham Nowolebu, fu si yaa bɛtɛ alɛ chaki ba gma kyui chiki yaa kwai.",0.9444,0.4754
+546,"Nɛ Kristo Luwi a akũ ni, maapuli mpia nɛ mi akũ kĩ yĩ mbɔdibɔ mɔ adzuma tákɛna pupulidza.","Nɛ kristo lu wi akuni, ma plim pia ne miakuni, kenyi mbodimbɔ mwajumata kena pupulija",0.8889,0.2857
+547,Adɔpaafɔ mɔ tite akũ fubusuotsa flee ɔma.,Ado pa fo mo tite aku fu bu so cha fle o ma,1.7143,0.2941
+548,"Ke liti a, bati badi kpã oti odi kĩ hũhũ kpa deĩ nɛ ye kamɛ, kĩ ɛnyɛ ɔnɛkunɛ mɔ omumu bɛma Yesu.",Ke le ti a ba ti ba di kpa o ti o di ki hu kpa di ne ye ka me. Ke e nyo na ku ne mo o mu mu be ma ye su.,1.4091,0.25
+549,"Ke liti a, Yesu mɔ ye fɔtsa bakɔlɛnɛ a naa Galilea lutubu baũ sɛkɛ kĩ a nɛ Gerasefɔ tite akũ.",Alitïn Yesu muëfëcha bako lëni ana Galiliya lëtubu baa sekë kïan në Gëra se foti të,0.95,0.4028
+550,"Ke liti a, fɔtɔ banyanɛ kĩĩ dzakũ nɛ Kugua Futse Ɔtɔ akũ a bɛnaa Yerusalem ɔmatɔ kamɛ.","Ɛlitiɛ̃, fotɔbanɛki, jakunɛ kugwafu cɛ otɔ akwɛ. Bɛna Yerusalem omotɔkamɛ.",0.9412,0.3235
+551,"Foesũ finyaa, yĩ babi, midzi nɛ Kristo kamɛ, ayekĩ ntɛ ɛyanɛ ɛta nɛ Luwi akũ ni, bɔ́ado ɔwɔlɛ, kĩ kɔnyɔã lɛmɛ lɛláakɔ boe nɛ ye anɛ.","Wɛsu fɛ nya ŋi babi, mijinɛ Kristo kame, ayɛki nteɛnɛ tani lewuiyakuni. Boaduowɔle, kikonyaale mɛ lela akɔbwenɛ yɛnɛ.",0.9615,0.36
+552,"Maatsɛlɛ yĩ Baguma dĩ, mɔ yĩ Baguma ɔmatɔ dĩ kĩ lɛnyɛ Yerusalem vɔɛ̃ a kĩ ɛka eto ode a nte nɛ ye akũ.","mɔkɛlɛnyibaku mɛdiinyi, mɔnyibaku mɔɔmɛtɔdiinyi, kile nyɛ Yerusalɛm fɔyɛakii ɛka ɛtɔdiɛɛ tɛnɛyɛko",0.9565,0.5195
+553,"Ntɛ odi lɛ kĩ, “Mawɛ Baguma kalɛ” lɛmɛ yakesĩ ɔwaɛ̃ ni, ɔvãlɛvã yanɛ.",Nte odileki mawebaguma kale leme a kesioo wani obalivanya.,1.0,0.3922
+554,"Baguma a kĩ ɛnyɛ Abraham, Isak mɔ Yakob mɔ boe bawanyɔ Baguma a do ye Ɔsumunɛ Yesu obu.","Baguma kyenyi Abraham, Isaac, mwa Jacob mwabwibwanya baguma. Doyie osumu na Yesu",0.7778,0.3382
+555,Babi a badi tɔ nɛ apibɔ akũ awã kĩ tite lɛpɔ́nɛ nɛ boe a anɛ.,Mabie abadi tone apibo aku onkiti teleponi nebuya ane,1.0,0.3778
+556,"Mate anɛ nɛ mi akũ nɛ yĩ mpaɛbɔ kamɛ, ade mawã Baguma, boe Ɔlate Yesu Kristo Ɔlɛga, kĩ ɛnyɛ kukũkpalɛ flee a, kĩ ɛkpa mi Hũhũ a kĩ yaakpa mi nyansã, ɛnyɛ Baguma ɛtsa mi ayekĩ míanyi ye kanyi wĩ.","Mati ane ne miaku, ne yin paeboka me. Ade mawu ba guma bwala te Yesu Kristo alaga, kyi enye ku kupale feliya, kyi epami hunhuna kyi ya epami nyansan, enye ba guma echa mi ayeki mian yie kanyi mu.",0.9,0.3289
+557,Boe Ɔlate Yesu Kristo ɛmɔ mi hũhũ flee kɔnya.,Pola te Yesu Kristu emomi hunhu fli kwanya.,0.8889,0.3611
+558,Lɛmɛ finyaakĩĩ fɔtsã Kristo Yesu wuda kamɛ bɛkpã mi a kĩ mina mɔ lugo a mifuã miyakɛna ɔmɔa mɔ Kristo.,"Lɛmɛ fĩ nyĩ a kĩ, fɔ chaa Kɨrĩsto Yɛsu da kamɛ, bɛ pa mĩ a kĩ, mĩ na mɔ lu gu a, mĩ fwa mĩ ya kɛ na ɔmwamɔ Kɨrĩsto.",1.2,0.2927
+559,"Kĩ nna nɛ be sɛkɛ̃ a, nkɔa nɔ dĩ akũ kɔbɛ̃ a kĩ ɔkpa yĩ a ndãmɛna be akũ.",Kei ina na bɛkɛ. Unuwanɔ diya kuko bɛkɛ o kpa yɛ. Indam na bɛkɛ.,1.0,0.451
+560,"Odi nyɛ odi kĩ yatse kalɛ a lɛmɛ yaákɛna nɛ ke akũ ni, ɛla ndɛ oti kĩ ɛdã ahuhɔɛ kamɛ ɛmɔ́ ye akũ ndɛ ayekĩ ɛla a.","odinyodi kiye ke kalia leme yakananikikuni, elande otikiki eda ahuhuekame emoye akunde aiki ela",0.963,0.3882
+561,"” Adeke banɔkɔɛ̃ tɛya-ana a kĩ bidzi nɛ be fɔgãkpo akũ nɛ Baguma anɛ kamɛ a, ka bɛtsa anɛ nɛ tite bisum Baguma, bɛlɛ kĩ.","Aleke banu kunte anna, ke bigine befo gakua kun, ne baguma ne kamea, kabe cha anene tete, bisuma baguma beleke.",0.9167,0.3556
+562,Ɛnyɛ boe ɔkɔba ɔsumunɛ kĩ yadi ɔnɔkɔali nɛ boe Ɔlate adzuma a kamɛ.,Nye buyo koba osum ne ki ye adio no kwa li ne buyo la ti Ajuma kan,1.3077,0.4444
+563,"“Ndeĩ fɔlɛtsa pii kĩ maabi mi, lɛmɛ fɔ́aba mi kalɔ finyaa.","Ndeí nfu la japi, ki ma bi mi, le me fa ba mi ka lo fi.",1.2727,0.3864
+564,"Ade lɔkɔ a kĩ manaa Damasko a ni, bɛkpa yĩ tuvoli kĩ nkɔa mma Yudafɔ nɛ awã ndza nɛ foe akũ mpili batɛ badonɛ a nsuli be nkɔa ĩyamɛna nɛ Yerusalem bɛvɛlɛ be sɔtɔ.","Adelokua ke manada maskuani, be payi tuvoli ke nkua ma yuda foni awa, njane fua ku mpili bate badune nsuli be nkua yamla ne Jerusalem be bele be soto.",0.8824,0.2835
+565,"Nwaɛ̃ amɛ, finyaa ni mawɛ kĩ minu Hũhũ kamɛ futetsa a kĩ mitsɛlɛ mivia akũ fɔlɛtsa kayɔ a yededeede.",Wame si nyani maweki minhu kamefuti chaki michilemi via akufuleti chakayo ayi dede,1.0,0.4177
+566,"Lɛmɛ odi nyɛ odi kĩ yakɛna nɛ ye kalɛ a akũ ni, ade ye ɔdɔ a kĩ edeĩ ɛkpa Baguma a lɛkpɔla a.","Lẹ mẹ̀ ódinyòdí kí à kànà nɛ́ yé kà lé à kùní, àdè ó dɔ̀ àkíèdɛ́ìn ɛ̀kpa bá gùmàlèkpolo",0.913,0.5362
+567,"Mifɔ̃ fɔvã kama mɔ anɛ kamɛ kɛkɛ fɔtsa kakɛna, mɔ anɛngbã mɔ bati buĩ kanyɛ.","Mè fua fua vaka mɛmɔ ane kamɛ kɛkɛ, fɔtcha ka kɛna, mɔ ane ngba, mɔbati bui kanya",0.9333,0.2373
+568,Kĩ bɔadzakũ a budzi ɔkɔlɔ kĩ bavɛ Nta Baviɔ̃ kĩ eto Aleksandria ɛyadza nɛ kasekɔ̃ a nɛ osili lɔkɔ.,"Kiba jakuwa, bujiokolo kiba ventabavion. Kietu Alexandria ejanikasikuani usi",1.0,0.4545
+569,"Ade aye mi banyɔ lɛmɛ midzi mɔ mi batsɔ̃ nɛ akũ kayɔkanu kamɛ, kitonɛkĩ mi batsɔ̃ lɛlá kɔbɛ̃ ndɛ mi aye.","a de a miba nyole me, miji mo miba chon ne aku kayo kanuka me. Kito ne ki miba chole lako bendemi ai.",1.0952,0.3544
+570,ade nláabuki nte anɛ nɛ be tɔkpa akũ kɔlaa a.,a dè ŋà búkì ntéyané né bètòkwà ákù kɔlà,1.0,0.3143
+571,Baakɔa Otidziwa Obi a bido nɛ bati awɛ.,O ti di u o bi ɛ in te ya ne in ku ku ku pa le mo,2.25,0.9032
+572,"Ntɛ edi nfumusu adi nɛ nɔ akũ, ĩye edzimɔ nɔ kɔtɔ kudi malo ni, bu foe akũ akunta kakɔa kakpa yĩ.",Nte edim funuswa dinena kun ye eji monokoto kudimaloni bufu akua konta kakwa kakpan.,1.0,0.2838
+573,"Fɔnyɛ ɔhɛ fɔkpa yĩ kĩ ndɛ lɛtsã a, ade Baguma aavɛlɛ yĩ sɔtɔ mɔ ɔsĩ mɔ ɔsĩ ntɛ ntálɛ Kalɛ Wĩ a lɛmɛ.",Fua nyɛo hɛ fɔ kpeyi kin ndɛ leɛ chaa. Adɛ baguma a vɛlɛ nsotoɔ mɔ simɔsi. Ntɛntɛlɛ kalɛ wu yalamɛ.,0.8696,0.3289
+574,Ɛkɔa ye sɔmɔna kɔbɔa eke nɛ mpo akũ ade ɛkɔa sɛba kɔbɔa lɛmɛ eke nɛ tite akũ a.,E kwae sonom na koboae ekine mpua kun ade ekwae seba koboae leme ekine titia kun,0.9444,0.4754
+575,Foesũ mikɛna lɛtsa nyɛ lɛtsa kĩ bibi mi kĩ mikɛna a mipi foe midomɔ akũ.,"Fui mi kïn a le cha nyi le cha chi bi bi mi kï mi kï na, mi pi fui mi domo a ko",1.5333,0.386
+576,Fɔadã yĩ ndɛ Baguma kɔa boe fɔtɔ banyanɛ a ɛdzɛla nɛ kadzakɔ̃ nkaɛ.,"Fada in nɛ bagmakwɛi fotobanyanɛ, ejɛlanɛ kaja ko nka",1.0,0.3962
+577,"Bɔtɛ otidziwa adansiɛ kadi a budo, lɛmɛ Baguma adansiɛ kadi a deĩ kɔbɛ̃ kɛbɛ̃, kitonɛkĩ ye lidi adansiɛ nɛ ye Obi akũ.",Botee u ti yu a dansee ka di a budo. Le me baguma dansee ka di a de in koben keben. Kito ne ki yeli di a dansee ne yobio.,1.1818,0.3587
+578,"Fɔmɔ Yesu aayi ye adzuma kayɔ a, Yohanes mui ɔwɔlanɛ a de lɛtsã ebi bati Israelfɔ flee kĩ bɛdani tɔwɔlɛ kamɛ lɔkɔa bɛtɛ mui kawɔla amaniɛ.",Fuma Yesu ayi agema kaya wa Yohana muo wulani adele can ebi Israyeli fofoli ke be dani to wole kame loka be te mwu ka wula amani,1.0,0.3964
+579,Ye nyɛ bati flee a kĩ titiliwu bikĩ bɛtɛ bido a Ɔtɛnɛ.,"Yɛ́nyɛ́ bátifílɛ́, títilíbikíbɛ́tébídùa òtɛ̀nɛ̀.",1.0,0.3095
+580,"bikĩ bideĩ nɛ ɔhau mɔ lubo kamɔ kamɛ a, aana kawɛya.","Biki bi dene ohao, molubuka mo kamia, a nanka we.",0.9091,0.35
+581,Lɛmɛ Baguma dzɛla ye etomɛna kanɔkpa ebuki edzi nkpã.,Lɛmɛ bagumadjila ɛ tumura kano kpa ɛbukiyeji.,0.8889,0.3864
+582,"Mbe paa, kitonɛkĩ bɛtámɔ odima kĩ ɛkpɔla kĩ yabinya ovoli a, ĩye ɛdã ye kamɛ.",Ǹbɛ̀ pa kí tɛ̀nɛ̀ kì bɛ̀ taa mùdímà kí è plà kí ya bìnà ovùlìà. Ǹdɛ̀ èdà èkà,1.2,0.5667
+583,“Tsɛlɛ fɔlɛtsa kĩĩ kama Filadelfia Asɔli a ode fɔtɔ ɔnyanɛ a.,"Dzelefu le tsɛkini kama Philadelphia, osɔli owofoto nyane.",0.9091,0.4694
+584,Hũhũ Kpalɛwa kĩĩ nyɛ kasipi kĩ bɔ́atɛ lɛtsa a kĩ Baguma lɛ eyi ɛkpa ye bati a.,Hunhun pala wa ki nyi ekasipi ki. Bwa tele chaki ba guma le e yi ekpa yi ba ti.,1.1176,0.35
+585,"Bawɛ kĩ badzi nɛ banɔkɔɛ̃ fudzikɔ̃ nɛ kanyakɔ̃, mɔ banɔkɔɛ̃ fudzikɔ̃ nɛ Yudafɔ fɔtsɛnakɔ̃.",Mba wuliki ba kyineye ba na kwa fujiko na kanya ko. Mwa bana kwa fujiko ne yuda fo fo chi na.,1.5,0.4928
+586,"Nɔ tide nyɛ tite a fɔmɔ ɔnɔ te, sika a kĩ ɔtɛ a lɛmɛ nɔ side sanɛ.",nɔti dɛ nyɛ ti ti fɔmɔ ɔ nɔti sikaki ɔ ti alɛmɛ nɔ sidɛ sanɛ,0.7647,0.1667
+587,"Lɛmɛ ntɛ fɔtsa a kĩ fɔkpɔla yawo ɔtɔ ni, futetsa kĩĩ flee aatɛ̃.","Nne ntè fùtìàkì fùò plàyà wò tɔ̀ nì, fùtè chàkì fìè àtè",1.0,0.6327
+588,"Ntɛ mfumsu adima ɛtana nɛ apam atɔnyade a akũ ni, kufɛ fɔláabuki fusĩ kĩ bakɛna ayade.",Tɛɛn fɔm su adi ma ɛtɛn annɛ a pam atɔ nya de akuni. Kufɛ fɔlabu ki fo si ki bakuna aya di.,1.25,0.2029
+589,"“Nɛ lɔkɔ kĩĩ kamɛ a, obinyolenɔkɔɛ̃ a na nɛ kɔba.","Nɛ lɛ kɔkini kàmɛ́ɛ, obinyulɛ́dɛ nɛ kɔyɛ́n nɛ nɛ kɔba.",0.7,0.3889
+590,"Badi aakɔa sika ngbã ĩye sika ovoe ĩye boe kĩ bɛtɛ kɔya bike bite nɛ litekũ a akũ, babɛbã aakɔa titse ĩye tuwĩ, ĩye lipili bike bite.","ba di a kwa si ka ngba, i ye si ke o vwe, i ye gbe ki be te ko ya, bi ke bi te ne, le te ku wa ku, ba be ba a kwa ti che i ye tu wi, i ye li pli, bi ke bi te",1.8148,0.2596
+591,Ntomɔ be nkakɛna be tɛnya flee kɛnawo tɛmatɔ bɛbã kĩ tideĩ mɔ lugo a malo kamɛ.,mɔ nti ɔbɛ nka kɛna bɛtɛ nya fli kɛna ɔ tɛma tɔ bɛba kɛti deimɔ lɔguamɔ lɔka,1.0625,0.3016
+592,Yesu sua be osi kĩ bɛtabi odima lɛtsa a kĩ binyi nɛ ye akũ nɛ awĩ a.,"Me chakki bekaa lea, adeh ebia beki, inde sumiale abodo kataboa flache, fosukaya olokokia, mitayi osun, yemi tanufekaya",1.0588,1.4706
+593,Ade Yesu kĩĩ odi aapuli ɛnyɛ boe etomɛna kalɔkpa a kĩ Baguma aana nɛ tɔkpa bakɛnanɛ flee akũ a kamɛ a.,"Adé yɛ zùkù ní òdì à plì è nyɛ̀ bwè tòmè ná kalà kwà kì bà gúmà à ná, nɛ̀ tòkwa bà kìnà nɛ̀ flì à kù à kà mìà.",1.381,0.5432
+594,"” Fɔlɛtsa a kĩ foe kayɔ ɛnyɛ ɛtsa nɛ awĩ fɔ̃ bati a badi dani be adzuni, ade bɛtɛ bido bitomɔ Paulo mɔ Sila a.",Fɛlɛɛcɛ akii fɛ kɛ yɔ ɛ nyɛɛ canɛ ya nwui. Fɔɔ bɛɛtii aa bɛɛdi dani bɛɛ ajuni. Adi bɛɛtɛɛ bidoo bitɔmɔ Paalo mwasila.,1.0,0.4268
+595,"Lɛtsa a kĩ Baguma bi ye nyɛ kĩ, ‘Nɔ bawa aanya banɔvɔɛ̃ nɛ tite bɛbã akũ, bɛnya abawa bɛkɛna be tɛnya futeli ɔha ɛna kpɔũ.","lɛ̀càkì bàgùmàbìè nyɛ̀ɛkì, nɔ̀bàwà ànyàbà nòfɔ̀nɛ̀ tìtìbèbàkù, bɛ̀nyààbàwà, bɛ̀kɛ̀nàbèè tɛ̀nyà fùtɛ̀lì ɔ̀hà ènà kpɔ̀ɔ̃",1.0,0.4624
+596,"Nɛ sukɛna akũ fɔtsa a flee kamɛ ni, sɛmɛ ado oti mɔa a flee tuduli, kado fi nɛ bati kadzi kamɛ mɔ kĩ futo Abonsam fi luwotu kamɛ a.","Nɛ su ke na akɔ fɔ caa fule ka mɛ ni, sɛ mɛ adɔ oti mɔa fule tu du li. Ka do fi nɛ ba ti ka ji ka mɛ, mɔ fi ki fu tu abɔ saŋ fili tu ka mɛ.",1.1724,0.23
+597,"Lɛmɛ oti kĩ ɛkɔa ye akũ ɛkpa nɛ yĩ mɔ Kalɛ Wĩ a sũ ni, yaana nkpã daa.","Abo dua lima sumo ele fu kia. Leme Yesu nyile chia kibe ka lea ade evia be kin. Inde sumi ale abodu kataboe folo chia, fosu ka ya olo ko kin ya, metayi",1.8333,1.8039
+598,"Kawɔlɛ deĩ yĩ kĩ Stefana, Fortunato mɔ Akaiko ya bideĩ nɛ awĩ nɛ mi kadokɔ̃.","Ka wule din ki Stefana, focinate mo akaiku, yabi din na wui na mi kaduko.",0.8667,0.3559
+599,"Ɔtɔnyade, Simon kĩ bibuki bavɛ Petro, mɔ ɔwaɛ̃ Andrea.","Simom, kii kibuukiba ve, Petru mo owae Andrea",0.8889,0.4286
+600,"Fuwi elo liti a, Ɔsɔfɔnɔkɔɛ̃ Flee Anania, Yudafɔ lɔtɔ banyanɛ mɔ fɔlɛtsa ɔdzɛnɛ kĩ bavɛ Tertulo naa Kaisarea.",Fu we lo litia osofo no kofle anani. Yu da folo tobanya ne mo fletsa o jene ki ba vetetilo na Kaiser.,1.2222,0.3295
+601,Kitonɛkĩ ɔkpa ye otumi nɛ batidziwa flee akũ ayekĩ yaakpa bati a kĩ ɔkɔa odo nɛ ye awɛ a nkpã kĩ ɛlá kawũna a.,kıtɛnɛ kiɛ o pahi otumi nebatujwa fliakun ayɛki ya kpa bɛtia kiɛ okoa odone yawoya npa kiɛ la kamuna,1.0,0.3953
+602,"Bɛnakpɔta batɛ badonɛ a flee nɛ be katsɛnakɔ̃ a, ade bɛkɔa ovoli a bɛkpa be a.",bɛnɔ kɔta batɛ ba dwenɛ afli nɛ bɛka cɛnɛkwa. Adɛ bɛkwa ovo li bɛkwa bi,0.9375,0.2833
+603,"“Nda, mawɛ kĩ bati a kĩ ɔkɔa ɔkpa yĩ a bɛna nɛ awã kĩ ndeĩ a, ayekĩ baamɔ yĩ kukũkpalɛ a kĩ ɔkpa yĩ a, kitonɛkĩ ɔwɛ yĩ kalɛ fɔmɔ biyi katinya kayɔ.","kúndà má kí bákí àkí ó kò kwànyà, bènànè àwákí dènyà, àyí kù bà mòyì kùkùpwálèkí ó kwànyà, kìtònèkí ó wà yìn kàlè fómò bǐ kátìnyà káyè",1.0,0.6636
+604,"Yesu kpa ye mbuayɛ kĩ, “Oowo, nnɛ́ titi evũkɔnɔ, mbom aduesɔũ titi evũkɔnɔ.","Yɛsu kpa yɛn mbuo ɛkin, o wuoo, 1980 fokun, umbon adueson, 1980 fokun.",0.9231,0.5614
+605,Kayade nyɛ Salem lɛgã kĩ fɔatsa kĩ Lukudɔ Lɛgã.,ka de ne sa le me ga ke fo cha ki lu ku do le,1.6667,0.4474
+606,"Fɔtsɛ̃ foe akũ sũ ɛtápuli ɛkɛna awãwã fɔtsa pii nɛ awã, kɛba kĩ ete awɛ nɛ basɔnɛ badi akũ, ade be fɔsɔ a dɔ be a.","fòché fúyà kúsún, ètàpùlí è kɛ̀ nà àwàwà fòchéà pí ní àwà. Kɛ̀ bákì èté àwɛ̀ nɛ̀ bàsònɛ̀ bàdíàkún, à dɛ̀bé fòsò à dòbɛ̀",0.8846,0.3647
+607,"Yohanes tásĩ be mbuayɛ kakpa, mbom ɛkpalɛ fɔlɛtsa kamɛ yededeede ɛlɛ kĩ, “Nnɛ́ yĩ nyɛ Kristo a.","Yohane ata se bɛmbwe ka kpa, mbom ɛkpale fletsa ka mɛ ɛdede eleki ne inyɛ Kristo",0.9412,0.3108
+608,"Ade ayea Kristo lɛmɛ kɔa ye akũ ɛbɔa afɔliɛ deedimɔapɛ, ɛnyɛ bati pii tɔkpa a ɛnamɛna a.",Adee yaya kristo leme kwaya kun ebwa folle dedi ma pe enye bati pi tokpa ena mena,0.9412,0.3714
+609,"Finyaakĩĩ, O boe Ɔlate, dã ɔhau a kĩ ye kamɛ bido boe, lɔkɔa kado boe nɔ adzuma bakɛnanɛ a ɔwɔlɛ, ayekĩ bɔ́apuli bɔlɛ nɔ kalɛ wĩ a nɛ katavila kamɛ.",Fanyaki o bula te da o ha wu a kye ka me bi do bue lokuaka do bue no ajuma ba ke na ne a o wole aiki gba apili bo le no ka le nwi a ne ka ta vila ka me,1.3,0.3363
+610,"Kɔdɛ a kĩ bɔakpa mi a táto bati kakɛ, adzuni kpa ĩye tɛdake tisi kamɛ, mbom bubi mi kalɛ lɔkɔ nyɛ lɔkɔ ndɛ ayekĩ Baguma wɛ kĩ bɔlɛ, kitonɛkĩ ye mɔawɛ a ɛsɔ boe ɛdã, ɛmɔ́ kĩ bɔfɛta bɔkpa ye Kalɛ Wĩ a kalɛ.","Kɔdɛɛ ki bɛkɛ bami ata toba ti kake, ajunipaa iyɛtɛ da ki ti sikame. Mbom bubimi kale lokɔnyolokɔ, ndɛɛ ki baguma wɛɛ ki bɔlɛ. Ke tɔnɛ ki iyɛ mwa we a ɛsɔbɔe da, ɛmɔ ki bɔ fɛta bɔkpa iyɛ kale winya kale.",0.9318,0.2839
+611,"Baguma hihiɛ kĩ otidziwa eku deedimɔapɛ, ade nɛ wuda liti a, yaadzɛmɔ ye.",Bagumaji nheki otijiwa ekudedi mape adine udalitiya yajemo,1.0,0.3621
+612,"Ɛya nɛ ye mɔawɛ bati sɛkɛ̃, lɛmɛ ye bati a tátɛ ye.","Mɛ́ yɛ́ nɛ̀ yɛ́, mwa wɛ̀ batì sɛ̀kɛ́ɛ. Lɛ̀ mɛ́ yɛ̀ batì à tá tɛ́ɛ.",1.1667,0.2973
+613,Minyina pefee kĩ tɔkpa bakɛnanɛ tɔkpa a na odu lɛláana kanyakɔ̃ nɛ Baguma lɛgãkanyakɔ̃ a kamɛ.,Mina pe fe ki ta kwa bakana ne to kwa na o du le la na ka nyako ne ba guma le ga ka nyako akame,1.5625,0.2632
+614,"Mi mɔawɛ mikɔna midã ntɛ fɔnɛnɛ kĩ otsole abɔa mpaɛ ɛkpa Baguma nɛ kanade, kĩ ɛtásui duku nɛ lɔlɔ.","Mma wɛɛ mikonamida, ntefoneneki otule abua mpaɛ ekpabagu mani kanadi, ki etasui dukulu nelɔlɔ.",0.9474,0.2821
+615,"“Midã kadã wĩ, ayekĩ miláasupa babisɛ̃ kĩĩ kamɛ odima.","Mida ka damu, aiki mela, sopa babu sai kinga kamo din nan.",1.3333,0.5
+616,Ade fukĩĩ sũ Baguma do yĩ ndɛ fɔtɔ ɔnyanɛ mɔ fɔtsa ɔtsanɛ nɛ bikĩ bɛnyɛ́ Yudafɔ sɛkɛ̃ kĩ nde lɛtsã nɛ katɛkado mɔ ɔnɔkɔali kalɛ a akũ.,A de fukii su baguma do in de fo tonya ni. Mo fo cho chane ne bi ki be nye yu da fo se ke. Ki inde le chan ne ka te ka du. Mo no kwalika le a,1.3704,0.419
+617,"Asa ma Yosafat, Yosafat ma Yoram, Yoram ma Uziya.",Asa ma yusa fat yusa fat ma yuramu yuramu ma uzil,0.7778,0.2105
+618,"Fɔmɔ Baguma bɔɛ ye bɛnamɛna ode a, Yesu tsã Hũhũ Kpalɛwa kɔbɛ̃ akũ ɛtsa ye fɔtɔ banyanɛ a kĩ ɛpau a fɔtsa.","fomobogoma bwaye enamu no dia Yesu chahunu kwale wa akobia ku, echaye fotobanya ni aki epawu afoche",0.9545,0.439
+619,Make Ewodia mɔ Sinteke aduli kĩ bɛbɔa mbɔdi binu akũ kayɔ ndɛ bawaɛ̃tsole aye nɛ boe Ɔlate dĩ akũ.,ma ke e wodua mo sinte ke adoli ke be gwa ambo bi nu akukayo ne ba wa echule aye ne bo lati dia,1.2632,0.3333
+620,"Odi nyɛ odi kĩ ɛwɛ kĩ yapili ye nkpã ni, yaayɛla ye, lɛmɛ odi nyɛ odi kĩ yaayɛla ye nkpã nɛ yĩ sũ ni, yaana nkpã kĩ ɛlá kawũna a.","Odiñi odeki ewo ki aplie kpanin yayelayi, leme odiñi odeki yayelayi kpanin suni yana npa ki elakawuna.",1.0,0.4271
+621,"Kĩ bɔkla akũ buyua a, budzi ɔkɔlɔ bɔtsã kpĩĩ bunyina bɔnaa Kos.",Kibuo kɔla kubuyuwa bujio kɔla bwa chapin bu nyina bɔna kɔsi,1.0,0.42
+622,"Ntɛ mitsɛna ni, maana nɛ mi kamɛ nɛ hũhũ kamɛ nɛ boe Ɔlate Yesu kɔbɛ̃ a kĩ kɔana nɛ boe kamɛ a sũ, mikɔa oti a mido nɛ Abonsam awɛ lɔkɔa ɛwɔla ye sukɛna a, ayekĩ ye hũhũ a aapuli ɛna katɛ nɛ boe Ɔlate Luwi a akũ.",Nteme kinani. Ma nane mi kame ne hu hu kame ne bole te Yesu kobia. Ki kwa nane bu kame ya sun. Mi kwa otia mi done a bo nsam awe loka e wula Yesu kina. Ayiki ye hu hu a apli enaka te ne bu olate lu wiya.,0.9792,0.3187
+623,"Miakpa Baguma tuwĩ kĩ bakɔa kado funitsã ɔlɛ̃ te kamɛ kasɛ̃ katsu kawuade a pɛpɛɛpɛ, lɛmɛ mifɔnɛ mbla fɔtsa katsa sĩwa, kĩ fɔnyɛ fɔlɛtsa kadzɛ nɛ osi kpĩĩ, kɔnyakamɔ mɔ ɔnɔkɔali kadi awɛ.","nyɛ kpa ba ku ma tu wĩ kĩ ba kwa ka do funi cha o lɛ, tɛ ka mɛ ka sɛ ka chu ka wa de a pɛ pɛ pɛ, la mɛ mi fo na n bɛ la fo cha ka cha si wa, ki fo nyɛ fo lo cha ka jɛ nɛ o si kwi nyɛ ku, kɔ nyɛ ka mɔ, mɔ ɔ nɔ kwa li ka di a wa.",2.0303,0.2886
+624,Ɛnyɛ babumɛnanɛ evũkɔnɔ a kĩ bɛpau nɛ Yerusalem a kamɛ ɔmɔa.,tɛɲɛ babu mɛna nɛvu kunu akibɛ pawo nɛ Yerusalɛmu akami omu,1.0,0.3265
+625,"Lutubu lidi deĩ nɛ Yerusalem kakɔ a kĩ bavɛ Baveli Onyukpɛ̃ a ɔwɛ̃, kĩ bavɛ nɛ Hebri tide kamɛ kĩ Betesda.",Lɛ́ tú bólídí déné yɛ́ Úrúsálɛ́mɛ ká kwá kíbávɛ́. Bávɛ́ lé ónyúpíɛ́ áwóónyí. Kíbávɛ́ né Heb́rétí dé ká mɛ́kí Bɛtɛɛ́sdá.,1.0,0.3293
+626,"Bideĩ anɛ kĩ yamɔ batsole adɔpaafɔ, ade anɛ a kakɔa kakɛna tɔkpa láplo be a.",Bede aneki yamo bachelor adapafo ade anea kakwa kakena topa lapolo be,0.8667,0.35
+627,Tafɔ̃ oti odima lɛdã nɔ ndɛ obisɛ̃ nɛ ayekĩ ɔnyɛ opopo sũ.,Tafwoot yedi maredanonde obise ne ayiki onyeo pupusu.,1.0,0.4091
+628,"Ntɛ bɛsã te lɔmɔ a, banɔkɔɛ̃ tɛya-ana a atsa anɛ nɛ tite nɛ oti a kĩ edzi nɛ lɛgãkpo akũ a anɛ kamɛ, kasum ye a kĩ edzi nkpã daa a.",Mbeba sa te lo mwa. Bano kete ya na achana ne ti ti. Ne utia ki eji nele gakua kuwa aneka me. Ka sumi ya ki eji mwa da.,0.9677,0.4583
+629,"Ntɛ kawɔlɛ de mi kamɛ odi ni, ɛsã tɔnɔ emu Baguma.","Integurede mikame odini, esantono emubaguma.",1.0,0.3684
+630,"Nnɛ́ be odi bade bɛmɔ́, mbom mɔ bati a kĩ bɛkɔ nɛ tite akũ a.","nɛ bɩodɩ ba dɩ bɛ mɔ, mbo mɔ da tɩakɩ bɛ kɔnɛtɩ tɩ akʋ",0.9333,0.2791
+631,"Bɛvɛlɛ Babilonia sɔtɔ, kitonɛkĩ ye kamɛ bɛmɔ́ Baguma onukpɛ̃ banyɛnɛ mɔ Baguma bade a babɔanɛ.","Bɛvɛlɛ Babilonia sɔtɔ, kitɔnɛ kiyɛ kamɛ bɛmɔ bagbɛmɔ nu kpa banyɛnɛ, mɔbaguma badiya abagbwana.",0.6667,0.1842
+632,"Baguma mbla akũ kakɛna lɛlá ɔsĩ ɛkpa boe, kitonɛkĩ odi nyɛ odi kĩ ɛnyɛ Baguma obi anya katinya kamɛ akũ.",Bagumam balaku kakanalelawu siye kpagbe. Kitene gi odinyodi ki enye bagumobi anyakatinyakamia.,1.0,0.3012
+633,"Foesũ Kristo yade lɛtsã nɛ Kalɛ Wĩ a lukudɔ akũ ɛkpa bati flee, bikĩ bɛnyɛ́ Yudafɔ a kĩ bɛna mɔ lugo nɛ Baguma sɛkɛ̃ a, mɔ Yudafɔ a kĩ bifuã Baguma a.","fɔ́ɔ si Kristo yaa dèlɛ cà nɛ̀ kà lé wún yà, lúkù dɔ̀àkún, ɛ̀gbà bátífílɛ. Bíkì bɛ̀ nyɛ́ yúdàfwá, kì bɛ̀ ná mɔ̀lɔ̀gù nɛ̀ bàgùmà sèkè yà. Mɔ̀ yúdàfwá kì bí fúwà bàgùmà",0.875,0.2807
+634,"Lɛmɛ bati badi muniki nɛ fɔtsa kĩĩ liti, foesũ bɛyɛla osi wĩ a, ade bɛkɔa be lɔkɔ bɛkpa fɔlɛtsa kavɛlɛ mɔ fɔkɔasiatsa kalɛ a.","Nɛ́ mɛ́ bá tí bá dì múnìkí nɛ́ fɔ́ cákí lí tí. Fɔ́ súbɛ̀ yɛ́là ɔ́sí wúyá, á dɛ́ bɛ́ kwá bɛ́ lɔ́kɔ́ bɛ́ kpá fɔ́lɛ́ cákávlɛ́, mɔ́ fɔ́kwá sí á cákálɛ.",1.0833,0.2323
+635,"” Ade bibuki bɛtsɛlɛ nɛ Katsɛlɛ Kpalɛwa kamɛ kĩ, “Boe Ɔlate nyina kĩ, bikĩ binyina kadi a be adzuni nyɛ fɔtsa pupulidza.","Fusu ke te neki u di ma a pia ne le cha ke ba ti a puli ke na ku, ke te neki le cha ne",1.1905,0.7872
+636,"Bɔawɔ̃na mi, boe bawaɛ̃ kĩ minyɛ́ Yudafɔ a kĩ mito Antiokia, Siria mɔ Kilikia.","Owa na mi, Bwanwe ki mi nye, ida fu a ki mi to a ntokia Syria mo kilikia.",1.0714,0.322
+637,"Lɛgã a na kalɔkpa paa, foesũ edo ye sodzafɔ bɛnakɔ awudifɔ a, bipila be ɔmatɔ a lɛmɛ.","dega na kalo papa, fu su de i, su jafɔ, bena kɔ awudi fɔa. bi pila be oma tu alɛ.",1.1176,0.3182
+638,"’ Ntɛ tɔtɔ a kamɛ bati a tɛ mi mɔ kawɔlɛ ni, mifɔ̃ mi lukudɔ kawɔ̃na a kɛkahɔ nɛ be akũ.",Te to toa kame batia teme moka olene mifo mi lukudo kaona kekaho namba a,0.95,0.381
+639,"Nɛ fukĩĩ sũ, kito anɛ kĩ nnu kĩ mitɛ boe Ɔlate Yesu mido, miawɛ Baguma bati a flee kalɛ a, ntáfɔ̃ Baguma kɔlɛ kanyɛ nɛ mi lɔlɔ.","Nafukinsu, kitoani kinu kimite buola te Yesu mido. Miowe baguma bati ya fli kalea, ntafubaguma kwalekanyene milolo.",0.8519,0.2812
+640,Kanɛ kɛnɛ kĩ ayɔlɔhɔ api mi lɔkɔa minyɛ oti a kĩ ɛkɛna fɔtsa kpa kĩĩ odu a nɛ mi asɔli katsu a kamɛ.,"Kanakene ki ayɛrɔ wa pimi, lokomi nyɛ otiyan, ki ɛknɛfo caa kpa kii oduwa nɛmi asɔlika chua kamɛ.",0.913,0.3117
+641,"Kĩ sodza ɔnɔkɔɛ̃ a vila kĩ baavɛlɛ ye bɛpããpãã sũ ni, ebi ye sodzafɔ a kĩ bɛka bɛnaatɛ ye bɛnaado nɛ kɔla.",kisɔja ɔnɔkʋɛ a villa kiba vɛlɛ bɛ pampan sʋnɛ ɛbiɛ sɔja fɔa kiba bɛka bɛnateyɛ bɛnadɔnɛ kɔla,0.8636,0.3659
+642,"Ade ayea Marko, mɔ Aristarko, mɔ Dema, mɔ Luka, yĩ bakɔba kĩ babumɔ yĩ adzuma kĩĩ kakɛna a, awɔ̃na nɔ.",Aya aya Marco mo Arisita ku mo Dema mo Luka in bakobaki bagbumo yin ajimaki kakana awo na.,0.95,0.3684
+643,ade yaakɛna sɛmɛ kalɛ ɛkpa bikĩ bɛlá kabumɛna a.,"Adu ya kɛ na səmɛ kalɛ, ɛ pabi ki, bɛ la kabumɛna.",1.2222,0.1795
+644,"Kĩ bɛtsɛna a, ebi be kĩ, “Nwaɛ̃ amɛ, bipi yĩ nɛ Yerusalem bɛkɔa bɛma Roma abãã kĩ ɛdzɛmɔ yĩ, titɔ kĩ ntáfum odima, ĩye nfum boe bawanyɔ amaniɛ adima malo.","Ki bɛɛ chɛɛ na, ɛ bi bɛɛ ki? Wɔɛ amɛ, bi piina Yerusalem. Bɛ kwɛ bɛ ma Roma aba kiɛ jɛmɔyin, ti tɔɔ ki nta fumm odima. Ye infun gbɔ ba wanyɔ amaniyaadima mɔ.",1.0333,0.3333
+645,Mimɔ́ ayekĩ bupi boe akũ nɛ mi kamɛ kĩ fɔnya kabumɛna fɔkpa mi.,Mimo ayeki bu pibu yako neme kami ki fo nyaka bumi na fopani,1.0,0.2857
+646,Baguma aawɔla be ndɛ ayekĩ batidziwa awɔla tuwĩ kamɛ bayaɛ.,Bakuma awalabe nde aiki bati juwa awala tuwi kame baye,1.0,0.3061
+647,"Odi nyɛ odi kĩ yaáwɛ oti kalɛ ni, ɛkahɔ nɛ wuda kamɛ.",Odi nyo di ki ya nwayi o ti kaleni. E ka wo ne wu daka me.,1.25,0.3
+648,"Bɛma ye ndɛ otidziwa aye, ade ɛya nɛ oti kutidu kamɛ a.","ɛ ma nde uti ji wa yi, a de e ya ni uti ku ti du ka me",1.5,0.3333
+649,"” Ade eyo awɛ ɛtsa ye fɔtsa bakɔlɛnɛ a ɛlɛ kĩ, “Midã, ade mma mɔ nwaɛ̃ amɛ nɛ awĩ a!",Ade ewo awuye chaepo chabakolo ni aeleki midan adema mo onwo yamene owuye,0.9474,0.5085
+650,"Lɛtsa a kĩ Yesu kɛna a, kɛna bati kɔdabu a flee a saa, ade bivia kĩ, “Mbɔɛɛ nnɛ́ Dawid Obi a nɛ awĩ a?","Le caca est tu que na ? Tu na battu quoi de boire Flessa ? A des 18 ans. Mwen, na da wewe biya, na we",1.0,0.6438
+651,"Otsole a bi ye kĩ, “Ɔnɔkɔɛ̃, ɔnɛ́ɛ bokiti kĩ bakɔa kanu mui, ade lɔwɔkɛ a lɛmɛ dzũ a.","O no kpe, o ne boki ti ki ba kwa kanu mwi. A de lo ke ale me juo.",1.0,0.5246
+652,‘Maakɔa nhila kpalɛwa a kĩ nlɛ ĩyi nkpa Dawid a nkpa nɔ.,Manya ni na lewa ki le yi mpa dawida nmpano.,1.0,0.4186
+653,"Kalɛ a na nɛ katinya kamɛ, lɛmɛ titɔ kĩ Baguma bɔa katinya ɛtsãmɛna ye akũ malo ni, batidziwa támɔ ye biyi ɔsũ.","Kaya nna ne katinya kamme, le metito ki be guma bua katinya echamene ye aku maloni. Pati yuo ata moye bi yo soro",0.9545,0.3563
+654,"Nikodemo via ye kĩ, “Nde baapuli bibuki bɛma oti kĩ ebo anɛ?",Nicodemo via e kin neba ple bi bu ki be ma oti ki e bu a ni,1.25,0.2391
+655,Baguma hila bati a kĩ bakɛna nɛ ovoli kĩĩ kamɛ fɔlɛtsa a kĩ bɛlɛ biyi a akũ!,"Baguma hila bachi aki bakina bofoli ki kamo fulachi aki bele bi yiaku. Nye, Yohannes nye otyi",0.8824,0.6271
+656,Nnɛ́ kɔbɛ̃ ado ye kĩ ɛnya funitsã kĩ bɛkɔa bɛbɔa afɔliɛ bɛkpa baviɔ̃?,Nɛ ko biado yi kenyafu nchakibekwe bwa afoliya bekwa ba vi.,1.0,0.434
+657,Yabi be kĩ bɛtate ɔgɔlɛ bɛkpa Romafɔ Lɛgãnɔkɔɛ̃.,"Ya bi be ki, be da to gbele be pa Roman fo le gano ko",1.75,0.4359
+658,"” Lɛmɛ odima lɛláa nɛ ode, nɛ tite akũ, ĩye nɛ tite ɔda kĩ yaapuli ebinya ovoli a, ĩye ɛdã ye kamɛ.","De me u di ma le la ne u di, ne ti ti ya ku, ye ne ti te o da, ke ya pli e bi nya u vo li ya. Nje e da e ka me",1.7619,0.3699
+659,"Nɛ ɛkwansieda luwi lɛtɔnyade akũ a, bɔtsɛna kĩ bɔa nya boe Ɔlate funitsã a.","kɔnsida luwi letɔnyadia kuɔ, bɔchi na ki bwa nya bwa latifu ni ncha",0.8571,0.3667
+660,"Kĩ Yesu lɛ fɔlɛtsa kĩĩ eyua a, ebuki ɛlɛ kĩ, “Boe ɔkɔba Lazaro wa tida, lɛmɛ maanaadzɛla ye.",Kyi yesi ula flecha kyi e yua e bu kyi e le kyi gbo ko ba lazaro wati da le me manaj e laye,1.2778,0.3857
+661,"Ɛtsa fɔtsa nɛ Yudafɔ fɔtsɛnakɔ̃ a, ade odi nyɛ odi mu ye fɔtsa katsa a.","Akyemfo chan na yuda fo fo chan na ko, adeyo din yo di muye fo cha ka cha.",1.2,0.4815
+662,"Kɛnɛ kĩ Kristo ɛnya lɛgã kɛnawo kĩ Baguma nya bakesĩnɛ flee akũ, ɛkɔa ye abɔa ete nɛ be akũ.",Kɛnɛ kɛ Kristo ɛnyalɛga kɛna wuki baguma nyaba kisinɛ filyaku ɛkwayaɛbwa ɛtɛnɛbiaku.,0.8421,0.25
+663,Foesũ mifɔ̃ yĩ ɔdɔ a ɛna nkɔsu nɛ mi kamɛ lɔmɔ.,Fo si mi fa yo do e na nko su ne mi ka me lo.,1.2727,0.4
+664,"Ɔnɔkpa a nyɛ otsole odi kĩ ɛnyɛ okunawa obinyole mɔapɛ, ade ke ɔmatɔ a kamɛ bati pii lɛmɛ tomɔ okunawa a.",Ono kpa nye ochi le di ki enye okuna wa obinye le mwa pe. Ade ke o ma twa kame ba ti pi le me tumo okuna wa,1.2381,0.2771
+665,Yesu dzakũ nɛ awã ɛnaa kayite a kĩ kifuã Tiro mɔ Sidon tɛmatɔ kpale a kamɛ.,"E si diɛ kɔ ni ãwa ɛna ka eke ti a ki, ki fu a kiro mo sidɔ, te ma to pɛlɛ a ka mi.",1.4375,0.4237
+666,"Ɛlɛ kĩ, “Maahila nɔ ade maakpa nɔ babi mɔ bawa beblebee lɛmɛ a.",elekin makilano ademakano badimo bawabili,1.0,0.4792
+667,"Ndɛ ayekĩ bɔtɛ budo kĩ boe a flee bɔna katɛ fɔtsã boe Ɔlate Yesu kɔnyakamɔ kamɛ a, ade ayea be malo bɛna katɛ a.",ndeɛkɛ botɛbudoki bweaflebonakate focabwelate Yesu kwanyakamokamea adɛayia bemalobena-kate,0.9583,0.2989
+668,"Lɛmɛ lɛkpati katsua nyɛ sukɛna katsua kɛkɛ, kĩ otidziwa lɛkɔa awɛ ɛkɛna foe.",lɛmɛ lɛkwa tì kàtɕù àɲɛ̀ sù k͡pà nà kàtɕù àkɛ̀kɛ̀ kì ʊ́tì ɟì wà lɛkwa àwɛ̀ ɛk͡pànɔ̀ fù,1.3077,0.4839
+669,"Ntɛ fɔ́asĩ kĩ yĩ malo nnaa ni, bɔmɔ be bɔ́atsã kɔbɔa mɔa.","Nte fo asi kii nimalo nani, bomo bi bwaa chanko boma",1.0,0.5238
+670,"Bitomɛna mbla kumɛkumɛ lɛmɛ kĩ bibo anɛ bɛyamɔ a, ndɛ kuyei, fɔtɔtsa mɔ fugumi kavɔlɛ.",Bí tɔmna tebɛ kume kume le makyi bibua ne beya mua indɛkuiye fotɔ chamo fugumi kavole.,1.0,0.3768
+671,"Farisifɔ a nu kĩ Yesu kawɔla bati mui, kĩ ye fɔtsa bakɔlɛnɛ a kapɔ kaba Yohanes bade.","Farasi fo anuki, yesu ka o la bati mwi, kye fo cha bakulenia kapo kaba, Yohanes bati.",0.8824,0.2388
+672,"Foesũ nnɛ́ batidziwa kadikanyi kĩ batsa bɔnɛɛ bɔalɛ kalɛ, mbom bɔnɛɛ fɔlɛtsa a kĩ Hũhũ a tsa boe a bɔkɔa bɔanyɛ hũhũ kamɛ ɔnɔkɔali fɔtsa a katsa bikĩ Hũhũ deĩ nɛ be kamɛ a.",fui sun ne badi ju akadi ganyi ki bacha bo ne bwalekale. Mbo mbo ne fole chaki hunhuna cha buya. Bokwa bwanye hunhum kame ono kwali fo cha kacha biki hunhu de na be kame.,1.0294,0.4559
+673,"Odenyinawi a, Yesu dzakũ nɛ ɔmatɔ a kamɛ ɛnaa kakɔ dĩĩ kadi, ade bati a do ye kawɛ awɛ a.","di ni na wia, Yesu jakunema twakame ena ka kodin kadi. A ribatye aduye ka wea wea",0.9,0.3284
+674,"Ovoli kĩĩ to yĩ, Paulo, mɔ Timoteo kĩ bɔnyɛ Kristo Yesu basumunɛ sɛkɛ̃.",ovolo kintu i Paulu moti motiu ki bonye Kristo Yesu basume seke,0.8462,0.3273
+675,"Lɛmɛ bɛmɔ́ foe mɔ lugo, bɛtɛ foe mɔ kawɔlɛ ade bitunɔ nɛ foe akũ kĩ banɔvɔɛ̃ mɔ basitsãnɛ banɛ nɛ tite kĩĩ akũ a.","Le mbe ba mma fu mo lugo, be te fu mo kawo le. Ade bi to na ne fu ya ku kii. Ba no vo mo ba si cha ne, ba ne ne ti ti kii ya ku.",1.5,0.4651
+676,"Ade Hũhũ Kpalɛwa tɛ be kamɛ flee, ade bido kɔdzɛla kalɛ awɛ nɛ tide futefute kamɛ, ndɛ ayekĩ Hũhũ a kpa be a.","Ade hunhun pale wa tebi ka me fi le ade bi doko jala kale a wete ti de fute fute ka me, ne a eki hunhun akpabi ya",1.087,0.3452
+677,“Ade aye baabɔɛ Babilonia ɔmatɔ kpale a bibo mɔ fɔkɔ.,"Adia yae bawe, babiloni oma topalean, bigbomofoka.",1.0,0.3571
+678,Lɛmɛ Kristo ya kɔkɔɛ ndɛ Ɔsɔfɔnɔkɔɛ̃ Flee ɛkpa fɔtsa wĩ a kĩ fɔya kɔkɔɛ a.,Lɛmɛ Kristi ya kɔkwɛ ndɛ ɔsɔfɔnɔkwe fli ɛkpafɔcha ngwi aki fɔ ya kɔkwɛ,0.8,0.2414
+679,"Yĩ babi, nlamɛna fɔlɛtsa kĩĩ katsɛlɛ kamɛna mi ayekĩ miláakɛna tɔkpa.",ni mbi lam na fole cha kyi ka chele ka manami aye ki milaka na toko,1.4545,0.4035
+680,Kutse kĩĩ yapɔ kɔkɛna futse baũ a kamɛ kɔmɔa nɛ kɔba kamɛ.,"Ku jeki yepo kokina fuche bamba wa kameko mwa, ne kobakame",1.0,0.4348
+681,"Ntɛ nɔ kɔlɛkanyɛ mpaɛbɔ a nɛnɛ malo ni, fɔtábumɛna oti bɛbã nɛ osi odima akũ.","n te nɔ kɔlɛ kaɲɛn paɛ bwa nɛnɛ maluli, fɔ ta bu mɛnɛ uti bɛ ba nɛ usi odimaku",1.1333,0.2295
+682,"Ye fɔtsa bakɔlɛnɛ a nake ye aduli bɛlɛ kĩ, “Blɔmɛna ye ɛdzakũ, kitonɛkĩ etomɔ boe mɔ fɔwɔla!",Yɛ́ɛ́fúchɛ̀ bà kòlɛ̀ɛ́nɛ̀ɛ́ nákíì aduùlì bɛ̀ɛ̀kí. Blɔ́mɛ̀nàyɛ́ɛ́ èjaku kítòonàkí ètɔ̀ɔ̀bɛ̀ɛ̀ mɔ̀ fɔ̀wòlà. Yɛ́ɛ́sùpààmúwàɛ̀ɛ́ kiì bàfɛ̀lɛ̀,1.0,0.7917
+683,Ade ye nyɛ oti a kĩ yalɛ kĩ nnɛ́ Yesu nyɛ Kristo a.,A ni nyo o ti a ki a le ki na Yesu nye Kristo.,0.9231,0.3514
+684,Mabi mi nɛ ɔnɔkɔali kamɛ kĩ sɔtɔ kavɛlɛ nɛ wuda kĩĩ flee akũ aaya nɛ mi nviã babi akũ!,"Mbi mini ono kwalika mekini sotoka vule, neudaki infli yaku, ayanami inziababi aku.",1.0,0.403
+685,"Maado yĩ adansifɔ nviã kĩ bidzi nɛ tikpekpe tilima kamɛ, bɛyaade lɛtsã nɛ Baguma fɔlɛtsa akũ nɛ fuwi apim mɔa mɔ ɔha nviã mɔ aduesia kamɛ.","Ma do ya da se fo via, ba na ne ti pe pe ti li ma ka me, ba ya de le cha ne ba gma fe cha ku. Ne fu wi a pi moa, mo han via moa du i si ya ka me.",1.7308,0.3784
+686,Ɛnya lɔtɔ ɛtsɛla yĩ sukɛna kugua kĩ yamanɛ yĩ eyi ɛkpa yĩ kabila.,Anya lotu esu la yin su kena ku gwa ki amane nyi eyi ekwa yin kabele.,1.1538,0.4038
+687,"Adansiɛ kadi a nyɛ kĩ, Baguma kpa boe nkpã kĩ ɛlá kawũna a, ade nkpã kĩĩ lɛmɛ deĩ nɛ ye Obi kamɛ a.","Adanse ka di anyeki baguma kpabwen kpa ki elaka wuna, adenkpa ki ileme de ine yi obikame.",0.9565,0.2838
+688,"Fɔtsa kĩĩ mɛna Baguma fɔlɛtsa a, foesũ fɔáwũ babi.","fɔ̀ ʧàkì mè nà bà ɡú mà fùlè ʧà, fɔ̀ sú fǎùn bɛ̀",1.4444,0.675
+689,"Midzi nkpã ndɛ bati kĩ bidzi be akũ akũ aye, lɛmɛ mitakɔa akũ akũ kadzi a mikɛna ndɛ tɔkpa kakɛna osi kana, mbom midzi nkpã ndɛ Baguma basate aye.",Meji npa nde batikibijibe akuakuae. Lame mita kwa akuakua kajiya. Mekena nde tokpa kake na osi kana mbu meji npa nde baguma basate aye.,0.8276,0.2957
+690,"Edeĩ bayitsɔ̃ ɛna kĩ bidzí fɔnyɔ, ade bɛnyɛ Baguma onukpɛ̃ banyɛnɛ lɛmɛ a.",kɛdɛn ba i tsoina ki bi ji fonyo. adi benye ba guma onu pɛ ba nyɛnlɛ mi.,1.3077,0.3448
+691,Ɛnɛɛ sika ngbã kɔɔpu kĩ eyi mɔ efĩĩ mɔ kɔwɛ̃ fɔtsa a kĩ ɛna etomɛna ye adɔpaa kabɔa kamɛ a nɛ awɛ.,Enɛ sɛ kɛn bako pu kɛ ɛyimo ɛfi mɔkɔn wɛ fɔca. Ki ɛnna ɛtɔmna yadɔ paka bwa ka mɛa nɛ awa,0.9545,0.36
+692,"Kitonɛkĩ Baguma lɛ nɛ Katsɛlɛ Kpalɛwa a lɛ kĩ, “Minya bati kpalɛwa, kitonɛkĩ oti kpalɛwa manɛ.","Kítúna kíbaagú málénê káchálékpáléwá kámékí. Mínya bátiípáléwá, kítúnúkí ótiípáléwáma.",1.0,0.52
+693,Kɛnɛ Kĩ Batɛ Badonɛ Bɛlɔla Be Mɔawɛ Kayite.,"o toña di, follow-yivu",1.0,0.7714
+694,-Nɛ foesũ bɔtsa fɔlɔ buke otse kĩ bɔado batɔ nviã nɛ mi sɛkɛ̃.,"Nɛfuɛsu, bɔcha folo bɔkɛ ochɛki, bɔadobato biɛnɛ misɛkɛ",1.0,0.3617
+695,Kɛnɛ kĩ miakɛna lɛtsa nyɛ lɛtsa nɛ de osi akũ mɔ obu kamɛ.,Keneeki miakanalè chènyèlècha nediwusiakù moobukame.,1.0,0.4444
+696,Nɛ foesũ nkɔa kudulike makpa nɔ nɛ Onesimo lɔlɔ.,ne fo su kwa ku du le ke ma kwa no ne o ne si mo lo lo,2.0,0.2821
+697,"Mifɔ̃ bɔbɔɛ foe kĩ osikani sua lima wĩ akũ, edo sika lipetia, ɛya nɛ mi katsɛnakɔ̃, ade ohiãni odi lɛmɛ do tɛtadiɛ kpeliwa ɛya nɛ awã a.","Nifun boba fuɛɛki osetani sualimawiyɛku, ɛdosi kalipɛtia ayanɛ mi kakɛnaku, adɛ ohiɛni odilɛmɛ do tɛtadɛɛ pɛliwa ayanɛ awa.",0.9259,0.2788
+698,"Bɔtɛ budo kĩ budeĩ nɛ Baguma kamɛ, ade ye malo edeĩ nɛ boe kamɛ a, kitonɛkĩ ɛkɔa ye mɔawɛ Hũhũ ɛkpa boe.","wutɛbu doki budɛnɛ bakumakame, adɛyɛmalodɛnɛbɛkameya, kitonɛkiɛkuayemowehuhuɛkpabɛ",1.0,0.3125
+699,Lɛmɛ Baguma aadzɛla odi nyɛ odi nɛ ye nhihiɛ a kĩ ɛkɛna eyi akũ.,le me ba guma ajila odi nyo odi ne yen sise a ki e kena e yi a,1.0714,0.34
+700,Mbom be fɔtsakɛlawa fɔnya fɔtsa wĩ ndɛ batsole kĩ bɛkɔa be akũ bɛkpa Baguma.,"m̀bùmù bɪ̀fɔ̀kyàklà̀vàfɔ̀ɲà̀fɔ̀kyàŋwɪ̀, ǹɛ̀bàcùlìkìbɛ̀kwàbìyàkùbɛ̀kwàbàgù",1.0,0.5806
+701,"Kĩ bɛka ɔtɔ a baya a, Yesu si be mbla kĩ, “Mitabi odima lɛtsa a kĩ bɛnyɛ bɛtsa mi nɛ awĩ a, kɛnaawo kĩ bɛdzɛla Otidziwa Obi a bitomɛna kanɔkpa.",Kube ka o to abaya yesu sibim laki. Mi ta bi odima nla chakibanya bachamina amoya. Kena oki bajilautijiwa obia bitominakano,0.9333,0.3578
+702,"Kɛtánɛ kĩ bɔasɔ boe Ɔlate bɔdã ndɛ ayekĩ be kamɛ badi kɛna a, nɛ foesũ bɔɛ dɔ̃ be biku.","Kɛ tɛne ki ba so wuo la te bo dande ayi ki beka me badi kena, ne fwe su, bue do bebi ku.",1.1579,0.3485
+703,Manyɛ Baguma kɔlɛ kĩ ntákɛna mi kamɛ odima mui kawɔla amaniɛ kɛba Krispo mɔ Gayo odi pɛ.,"manyabak makole ki ntakkena mikame odima mika wula manie, keba Krispu mogayi odipe. Fesun odima lapli eleki bekena ye mika wula amanie ne yidiyakun, nuwe matiyane, kin kena Stafan",1.6471,1.3521
+704,"Luwi a lɛnyɛ, ɛya nɛ Yesu sɛkɛ̃ ɛyabi ye kĩ, “Fɔtsa Ɔtsanɛ, bunyina kĩ Baguma sɛkɛ̃ oto ɔya, kitonɛkĩ odima lɛláapuli ɛkɛna nsɛntsɛlɛni a kĩ akɛna a, ntɛ Baguma lítomɔ ye.","Nyu ya lennie, eya ne Yesu seke eya bi ekin. Fo chawo chani, bunyina ki baguma seke wuto oya, ketene ki odimale lapple akena ninchere ni aki akena, nte baguma litomu ye.",0.871,0.4015
+705,Ade ye nyɛ ɔnɔkɔali Baguma mɔ nkpã kĩ ɛlá kawũna a.,Adiyenyonokwa li bagumamonpaki elaka nguna,1.0,0.375
+706,"Nɛ Kawɛya Luwi bɛbã akũ ni, Yesu naa Yudafɔ katsɛnakɔ̃ a ɛnaatsa fɔtsa.",Nekawe ali wibebaa akuni Yesu naa Yudafɔ kachenakua ena chafɔcha onyuledi kiye kɔkpɔku naneawua. Yudafɔ mblabachani mɔfarisifɔ badika weu sie,1.4615,1.4286
+707,Nɔ nyɛ Baguma Oti Kpalɛwa Kĩ Bido a!,Onye ba guma odi pale waki,1.0,0.3929
+708,"Yesu yo awɛ ɛta ye ade ebi ye kĩ, “Mawɛ lɔmɔ.",yio aue taye adebiyeki mawalome,1.0,0.375
+709,"Tihiko, boe ɔwaɛ̃ kĩ bɔátunɔ kalɛ, aayabi mi yĩ akũ fɔlɛtsa flee.","Tihiku, bwuoakyibu tunakale, aya bimi inyaku flecha fle.",1.0,0.44
+710,"Nɛ kĩ bati a flee kamu Baguma nɛ lɛtsa a kĩ lɛya a akũ sũ ni, bɛtápuli bɛna osi a kĩ ye akũ baatsã bɛvɛlɛ be sɔtɔ.",Nɛ kii bɛ ti afli kamʊ baaguma nɛlɛ caaki layaa kusuni bɛta pli bɛ nawusi aki yaaku ba caa bɛ vlɛ bɛ soto,0.963,0.3372
+711,"Odi nyɛ odi kĩ yalɛ fɔlɛtsa kĩ fɔtáfɛta nɛ ye ɔwaɛ̃ okristoni akũ, ĩye yadzɛmɔ ɔwaɛ̃ ni, yalɛ fɔlɛtsa kĩ fɔtáfɛta nɛ mbla a akũ, ade yadzɛ mɔ mbla a.","o di ni o di kia le pole chaki fota feta ne ye owen o krisirei akun, ye ye ajemo owen ni, ya le fole chaki fota feta ne mblakun, a de ye ajemo mblak",1.1,0.4474
+712,Baakɛna nɔ nɛ kayɔ flee ɔnaawo kanɔkpade!,"Ke na yii a oo ma po chai bii a, kame ba ti ta dani to we le kame? Peesu eka te ma towa anee",3.5714,1.5882
+713,ade ɔkɔa nɔ kanɔkɔnɛ kadã ɔkɛ katinya kamɛ bati flee a.,"Ado ko anokano kena kada, oke kati nyakame batifule",1.0,0.3182
+714,"Yesu nɛ́ nɛ ɔkɔlɔ a kamɛ, ade kĩ ɛmɔ bati kɔdabu a, be akũ kɔ ye kɔnya, ade ɛtsa be kamɛ basɔnɛ a.","Yesi unne no kolo akame, ade ki emoba ti kodabua, biaku koye konya ade echabi kame basonne.",0.913,0.338
+715,"Lɛmɛ baánu be mɔawɛ fɔlɛtsa a kĩ balɛ, ĩye fukĩ bɛtɛ bido mɔ ɔsĩ mɔ ɔsĩ a kayɔ malo.",Lɛmɛ bɛn bɛma wa fɛlɛkyaki balɛ. Ɛ fukibɛ tɛ bi domo simɔ siaka yɛ o malɛ.,0.8947,0.3594
+716,"Yesu nyi lɛtsa a kĩ bɛkakɔna a, foesũ ebi be kĩ, “Ɔmaĩ odi nyɛ odi kĩ ɛsɛ̃ ye akũ nɛ kutsu kutsu kamɛ, mɔ tɛdzɛ deĩ nɛ ye kamɛ ni, ɛláadzi gɛlɛɛlɛ.","yɛ̀ sù ní lɛ̀ tɕákì bɛ̀ ká kònà, fúsù ɛ̀bì bɛ̀kì, òmái òdìnyòdì kí, ɛ̀sɛ́ yákù nɛ̀ kùtɕùkùtɕù kàmé, mɔ̀tɛ̀ tɕɛ̀dè nɛ̀ yí kàménì, ɛ̀là tɕìglɛ̀lɛ̀",0.9062,0.2936
+717,"Lɛmɛ kĩ ɔhaĩ kamɛ bati bɔanɛ sũ ni, mifɔ̃ bɔkɔa boe katɛkado mɔ ɔdɔ bɔkɛna ɔwɔlɛ libĩĩ katɛ sɔbɔtsaɛ, mɔ boe kɔnɛte nɛ boe nkpã akũ bɔkɛna sɔbɔtsaɛ lɔbɔɛ.","Lɛmɛ ki oha inka mɛ bati bwanɛ suni mɛfɔbɔ kwayɛ katɛkadu, mɔ ɔdɔ bɔ kɛna ɔwɔlɛ libin katɛ sɔbɔcɛ, mɔ bɔi konɛti nɛ bɔi nkpakun bɔ kɛna sɔbɔcɛ lɔ bɔ",0.8276,0.2459
+718,"Nɛ kĩ Paulo aadzakũ ntɛ kade nyina sũ ni, ɛlɛ kɔdzɛla flee kɛnawo lɛnyɛ kayite.","Mɛkɛ Paul a jukun nteka de nyina suni, ele kɔ jɛlɛfili kɛna wulɛ nyɛn kɛyi.",0.9333,0.381
+719,"Bɛtsɛlɛ mbusuo buĩ kĩ basupa Baguma bite nɛ ɔyaɛ a akũ flee, ade edeĩ fɔlɔ evũkɔnɔ mɔ tɛlɛ ewua a.","Bɛɛtɛɛlɛɛ musioo bwi, kibaasu pabagunma bitene ɔyaya kufree, adee edɛn foleevu kunɔ mɔtɛlɛɛ evua.",1.0,0.3377
+720,"Owi tábuna mɔ banyole badi kĩ bɛkɔlɛ fɔtsa nɛ fusibii kadã akũ to suwa kadekɔ̃ bɛya nɛ Yerusalem, ade bɛyavia kĩ, “Ndia bɛma obisɛ̃ a kĩ yaanya Yudafɔ lɛgã a?","Uta buna mua bange badi ki beko le po chane. Fusi bi kadan aku to sua ka de kan be ya ni e Jerusalem, ade be ya bia ki, India be na obisa ki ya ya yu da fole gan.",1.2333,0.3496
+721,Banyole batɛ badonɛ a kĩ bɛtɛ bido a pɔ biwo ndɛ mpim elo.,banyili batibadune akibetebidua pobiwonde mpimwelo,1.0,0.2667
+722,"Adeke kĩ bibi yĩ kĩ bɛlamɔ nhihiɛ kakɛna kĩ baakɔ ye sũ ni, nkɔna kĩ makɔa ye mma nɔ.",Adekę ki bi bę ki bę la mon si si eka kę na ki ba kę esuni nko na ki ba kę ayę ma,1.2632,0.3846
+723,"Nɛ fuwi kĩĩ kamɛ a, batɛ badonɛ a flee kɛna ɔmɔa nɛ be fɔkɛnatsa mɔ adzuni kamɛ.",ne fu wi ki kan mi a ba te ba do ne a fle ke no o ma ne be fo ke na cha o ma ju ni kan,1.5294,0.371
+724,"Kitonɛkĩ ntɛ fɔnyɛ Baguma kawɛ ni, fɔnɛnɛ kĩ miamɔ lubo ndɛ tuwĩ bakɛnanɛ, kɛba kĩ míamɔ lubo ndɛ tɔkpa bakɛnanɛ.",ke to ne kin ta fua ne ba makaweni fua ne ne ki miamolubo ndeto wi bakinane ke ba ki miamolubo ndetopa bakinane,1.15,0.3407
+725,"Ke liti a, bɛta wuda mɔ kanɔkpade biwula nɛ fi lutubu baũ a kamɛ.",elitia betau da mokanokpade biulane filu tububan wa akam,1.0,0.22
+726,"Mi botaɛ fɔnya kĩ miadzi nkpã nɛ akũ kadɔla kamɛ, odi nyɛ odi ɛdã ye adzuma.",Mi buuta e fo nya kime a jipane a ku ka dola ka mi. O di nyo di eda e ayu ma.,1.3125,0.3559
+727,"Luwi daa kĩ yawa kayidza, ade babi a amɛ kabo anɛ.","Luida ke yakaija, adebabiye amekabo ane.",1.0,0.3158
+728,"Mabɔa mpaɛ kĩ ɔmɔa a kĩ bɔakɛna ndɛ batɛ badonɛ aye a ɛna ɔsĩ ebu, ayekĩ bɔ́apuli bunu fɔtsa wĩ flee a kĩ fudeĩ nɛ ɔmɔa kakɛna mɔ Kristo kayɔ a dzununuunu.","Abɔ n ba a ki omo a ki gba kana n de bɔ tɛ ba dɔ ne ayɛ a, ɛnɔ o si ɛbu. A ki gba pli bu nu fa cha wi fle a ki fu deɛ ne omo a ka kana mɔ Kristo, ka yɔ a dunu nu.",1.3438,0.3554
+729,"Ɛnɛɛ fusibii evũkɔnɔ nɛ ye sɔmɔna awɛ, ade atugbe mɔ ɔbɔ̃ lɛmɛ nɛ eto ye onukpɛ̃ kamɛ a, ade anɛ kamɛ amɔanɛ ndɛ suwa ketee aye a.","Ɛnɛ fosi biɛ vu kunɔnɛ yɛ somɔna wɛ. Adɛ atugbɛ mɔ bɔlɛ mɛ, ɛnɛ ɛtɔ yɛ nu kpekɛ kamɛa. Adɛ yɛnɛ kamɛ, amwanɛ ndɛ sua kɛtɛɛ yɛ",0.9259,0.303
+730,Nɔ mɔawɛ onukpɛ̃ kamɛ fɔlɛtsa baakɔa bɛdzɛmɔ nɔ bɛkpa nɔ ɔtɔbɛ ĩye bɛkɔ nɔ kɔtɔ.,"No mowe onupwe kame fula cha, bakwa bejen mono, bekwanotobe, ye bekonu",1.0,0.5312
+731,"Petro bi ye kĩ, “Owoo, ɔláavɔlɛ yĩ abɔa da.",petro bi ekin owo olafure,0.7778,0.5484
+732,"Lɛmɛ boe kɔ̃ ni, boe ɔtɔ nyɛ ode, ade budzi bɔadã boe Ɔtɛnɛ kĩ ɛnyɛ boe Ɔlate Yesu Kristo anɛ kĩ eto ode ɛya a.","Lɛ mɛ bue kɔni, bue o tɔ nye u de, ade bue ji bwa da bue o tɛne, ke nye bue la te Yesu Kristo ane ke etu u de ɛya.",1.12,0.2651
+733,” Atenefɔ mɔ banɔvɔɛ̃ a kĩ bideĩ nɛ awã awɛ be lɔkɔ flee kakpa fɔlɛtsa vɔɛ̃ katse mɔ foe akũ kɔlɔmɛna.,"Ateni fɔmɔbano fuyɛ kibi denɛ awa, awɛbɛlɔ kɔ fɔle, kapa fɔle chavuyɛ kachi, mɔ fuyɛ ku kɔlɔmɔ.",0.95,0.359
+734,Mafɔ̃ fukpeni awo yĩ akũ ayekĩ yĩ sukɛna aapuli sɛdza sɛkpa lubo kamɔ.,ma fo fo pe ni awo yia kun ai ki yii su ke na a puli se ja se kpa lu bo ka mo,1.7692,0.3214
+735,"Ndɛ ayekĩ minu kĩ Kristo okesĩnɛ a aaya a, finyaakĩĩ malo Kristo bakesĩnɛ pii nɛ́ kɔkɔɛ, nɛ foesũ bunyina kĩ katinya kawũna a fuã.",Nya yi ki minnu ki Kristi ke sine a aya. Finya ki malo Kristi ba kesine pi ne kokwe ne fwe suu bunyi na ki kati nya ka wuna fu.,1.1667,0.301
+736,"Kito katinya kayɔkayi a, onyole mɔ otsole Baguma kɛna.",kitokatinya kayokaya onglemo ochule bagumana,1.0,0.2273
+737,"Nnɛ́ lɛtsa kĩ lawo nɛ oti onukpɛ̃ kamɛ a ado ye efĩĩ, mbom lɛtsa a kĩ lanɛ kato ye onukpɛ̃ kamɛ a, ado ye efĩĩ.",ne le cakii la wo ne oti o nu kpe kame a doye efi. U bom le cakii la ne ka to yo nu kpe kame a doye efi.,1.08,0.3333
+738,"Bɔmɔ́ Kipro tite a nɛ lɔtɔ, ade bɔtsã te kayɔ kayɔ a bɔnaduma nɛ Tiro, nɛ Siria tite akũ, awã kĩ baanyɛ fɔtsa flee a kĩ ɔkɔlɔ a nɔnɛ a.","Bomo ki protiti aneloto. Adebo chante kayo kayo, bonaduman tiru, ne siria titiakun, awa ki banye fo chafule, a ki okolo anone.",0.9333,0.3663
+739,"Yakɛna foe titiliwu nɛ bati a kĩ bitomɔ sukɛna fɔwɛtsa kpa kĩ fɔakɔ odo liti, kĩ foesũ baábu Baguma otumi kĩ yanya be akũ a kado nɛ lɛtsama kamɛ.","Yakuna fu titili une ba tiaki bi tumu suki na fo echa kpa, ki fua ko o doliti, ki fu e su babu baguma o tumi, ki ya nya biakua ka do nlecha maka me",1.1379,0.2522
+740,Lɛmɛ mawɛ kĩ minyi kĩ Kristo nyɛ lɔlɔ ɛkpa odi nyɛ odi.,Leme ma we ki mini ki Kristi nyelo lo ekpa odi nye odi.,0.9167,0.2791
+741,"Kĩ mmɔ́ ye a, nnɛ́ ntɔ nɛ ye abɔa kamɛ ndɛ oti kĩ eku, ade ɛkɔa ye sɔmɔna awɛ ete nɛ yĩ akũ ɛlɛ kĩ, “Tavila!",Ki moya ntoniya boka mende otiki yeku adiye ekwoya somina we etininyakun eleki,1.0,0.5263
+742,"Lɛmɛ ndɛ ayekĩ Katsɛlɛ Kpalɛwa a lɛ kĩ, “Ntɛ odi awɛ epia ni, kɛnɛ kĩ epia nɛ lɛtsa a kĩ boe Ɔlate kɛna a akũ.","Lɛmɛndɛi kɛkɛlɛ palɛ walɛ ki, ntudyawe epiani, kɛnɛki epianɛlɛ chaakibwɛlɛ tikanɛ.",1.0,0.3537
+743,"Onyole nyɛ onyole enyi ɔtsɔ̃ kapi wĩ nɛ kukũkpalɛ mɔ obu kamɛ, ɛtatomɔ sukɛna fɔwɛtsa ɔmɛnɛ liti ndɛ bikĩ binyína Baguma aye.","O nyulẽ o nyulẽ ẽnyi otyokapiiwi na kuku pala mo ubuka me. E tatomasu knafo ocha omini, litin dabiiki bi nyina baguma.",1.0,0.3762
+744,"Lɛmɛ ntɛ bɔlɛ kĩ bɔtákɛna tɔkpa ni, bute Baguma fɔvã, ade ke ye kalɛ a lɛmɛ lɛláa boe kamɛ a.","Lɛmɛntɛ́ bɔ̀lɛ̀kí bɔ̀tákínà tòkpánì, bʊ̀tɛ́bà gʊ̀mɛ̀ fɔ̀và. Àdèkèyèe kàlɛ́ àlɛ̀mɛ̀lɛ̀ làbʊ̀ɛkàmɛ̀.",1.0,0.338
+745,"Foesũ luwi a na lɛtayaafuta mi ndɛ oyekpanɛ aye, kitonɛkĩ mi flee minyɛ ɔhaĩ bati.","Fu si luwi anale tea futamine de wekpania i, ki tone ki mi fle minye onhainbati.",1.0,0.3333
+746,Lɛmɛ boe kɔ̃ Kristo kakɔna a deĩ nɛ boe kamɛ.,La mɛ̀ bɛ̀ kɔ̀ Kɛ́rìstò kà kɔ̀ nà dɛ̀yì nè bɛ̀ kà mɛ̀.,1.2,0.4706
+747,Kitonɛkĩ bɔbɔɛ foe kĩ yĩ obi kĩĩ ku lɛmɛ finyaakĩĩ edzi nkpã.,kítɛ̀nɛ́ kín bóbó fɛ́ɛ́ kín nyó bì kín kú lámɛ́ fìɛ́ɛ́ kín ɛ̀jín,1.0833,0.6735
+748,"” Kitonɛkĩ nnɛ́ oti a kĩ yamu ye mɔawɛ akũ a nyɛ oti wĩ, mbom oti a kĩ boe Ɔlate amu nyɛ oti wĩ.","Ete ne ki, n'oti eki a amuu, mwae akwaa, nye oti mui, mboomu oti eki bwo olate a amuu, nye oti mui.",0.8696,0.4928
+749,Nɛ foesũ eke otse kĩ yabuki ɛdani ɛtsã Makedonia kamɛ a.,"Nifwesewekeoche, kiyabukiyadaniya chamakedonia kame.",1.0,0.3556
+750,Bati ɛlalɛ kĩĩ odi nyɛ Yudafɔ kĩ bɛdani Kristofɔ bakɛna mɔ yĩ adzuma a bɔkpa Baguma lɛgãkanyakɔ̃ a.,ba ti a le ki u din nye yu da fo ke be da ni kristi fo ba kene mo yi ajuma bo kpa ba gu ma re ga ka nya ko,1.7778,0.325
+751,Ntɛ kanyi binyi ke kufɛ bɛtábɔa boe Ɔlate kpalɛwa a nɛ asendua akũ.,O te kani bi niki ku fe mta gbagbue o lati pala wa ne asindu,1.1538,0.4444
+752,"” Fɔlɛtsa kĩĩ sũ Herodes wɛ kĩ yakɔ Yohanes, lɛmɛ evila Yudafɔ a kitonɛkĩ babu ye ndɛ Baguma onukpɛ̃ ɔnyɛnɛ aye.","Bɛ̀ɛ̀ kyá kísùn hɛ̀rɛ̀ dɛ̀ suwɛ́ɛ̀kì à kɔ̀yɔ̀hànèsì, lèmè èbìlà yúdà pɔ̀ɔ̀ kítónìkì bàbùyɛ̀ɛ̀ndɛ̀ bàgúmòònu kóò nyɛ̀ni àyí.",1.0,0.5568
+753,"Bɛkpa oti a kĩ edzi nɛ ye akũ a kɔbɛ̃ kĩ ɛnyɛ lukudɔ nɛ tite akũ, lɔkɔa bati bɛkɔ be akũ akũ.","Mɛ̀g͡bá-ò-tì-yà-kí-è-gì-nɛ́-yà-kù-à-kò-bɛ́, kɛ̀-ɛ́-nyɛ̀-lù-kù-dò-nɛ́-tì-tì-yà-kùn. Lò-kù-à-bá-tì-bɛ́-kò-bì-yà-kù.",1.0,0.5797
+754,"Fuwi ɛlalɛ liti a, Paulo vɛ Yudafɔ banɔkɔɛ̃ a kĩ bideĩ nɛ awã a ɛkpɔta.","Huu èlè lèlìtìa, Paolò vèè yudàfobànòkwia, kibi dèè nià wua ẹkwa",1.0,0.5185
+755,"Bɔado ɔpɔnkɔ sɔbɔtsaɛ nɛ onukpɛ̃ kamɛ kĩ ɛkɛna nɛ boe kawɛ akũ, kapuli kafɔ̃ yanaa awã kĩ bɔawɛ a.","wado opanko sobɔ chaɛ. Noni pɛka mɛɛki ɛkɛnaniɛbɛkawɛaku, kapuli ka fɔnya na awɔkibɔwɛa.",0.9474,0.2895
+756,"Ntɛ bati liti katomɛna yawo nɛ kalɛ kĩĩ akũ pɛ, baamuniki nɛ ke liti.","Tebati lituikato muna, ya o nekale kupe, bamuniki na kili.",1.0,0.3333
+757,Ɛwɛ kĩ yadani ɔnɔkɔɛ̃ a adzuni nɛ lɛtsa a kĩ Saulo mɔ Barnaba lɛ a akũ.,"Ayí wɛ́ ki adani ónɔ́ kpé ayuní, nɛ̀lɛ́ cɛ̀ akí Sáwúlú mɔ́ banaballɛ́ɛ́ akɔ̀.",0.9375,0.4444
+758,"Ɔmɔa dzi nɛ ye lɔlɔ nyangɛ, ɔbɛbã dzi nɛ ye abɔa kayɔ.",Ọmụ àjí nêyí lòlọ nyangẹ ọbẹbàjí nêyí abakaye,1.0,0.5122
+759,"Ade Yesu do be kamɛ bati nviã, mɔ ɔlɛdo kĩ, “Minaa ɔmatɔ a kamɛ, oti odi kĩ ɛnɔnɛ kugumi aatsɛlamɔ mi.",A de yasu do bekame bati i viam mɔ le doki. Mina o mato akame otio di ki ɛ nɔnɛ kugumi a tʃɛla mumi.,1.0,0.1948
+760,Hũhũ Kpalɛwa a lɛfɔ̃ Dawid lɛ eyi kĩ.,"Bɛ̀ ta mma ɔ̀bìyɛ̀dɛ̀ma, Ɔ̀wàè ɔ̀lɔ̀rɛ̀dɛ̀ à lɛ̀ mɛ̀ kɔ̀ a òcùlì à, àdɛ̀ yì málì èyàkù kɛ̀ bɛ̀ ta mma ɔ̀bìyɛ̀dɛ̀ma. Àdɛ̀ àyì àbɛ̀vù kù nà kɔ̀a, òcùlì à, lɛ̀ mɛ̀ bɛ̀ fùlì à bìkù, kɛ̀ bɛ̀ mɔ̀ òcùlì, à bɛ̀ ta mma bábì. Nɛ̀ fù kà nù nà òcùlì à lɛ̀ mɛ̀",6.5,5.1071
+761,"Ade ayea ntɛ nɔ linebi aafɔ̃ ɔkɛna tɔkpa ni, bɔlɛ de kanyɛ kata kamuni!","Aya, n’tɛ́ nɔ línɛ́bí, áfɔ́ ɔ́kaná tɔkpàní, bɔ̀lɛ́díkányɛ̀ katakámú",0.8571,0.3455
+762,"Kĩ bɛmɔna ye lubo a, ɛtáhũnahũna odima, mbom ɛkɔa anɛ ete nɛ Baguma a kĩ yadzɛ fɔlɛtsa nɛ osi kpĩĩ akũ a akũ.","Kibemona elubua, etahunauna odima. Mbom ekwa nente. Nebagumaki yajefulecha neosikwi akua ako",0.913,0.369
+763,Awãwã fɔtsa a kĩ baanyɛ bɛtsa mi nyɛ Baguma Onukpɛ̃ Ɔnyɛnɛ Yona fude a.,O wo focha ki banye bacha minye bagumo ni pon onyene yo na fode,1.0,0.4464
+764,Foesũ biko anɛ bɛdã flee ntɛ yaatsa fɔsɔ nɛ Kawɛya Luwi akũ.,fwe suu bi kuo ne be daa flee n te ya chaa fo so ne ka weya lu we ya,1.5833,0.4375
+765,Mui kayili kĩĩ ketimɔ mui kawɔla amaniɛ a kĩ finyaa bɛkɔa bɛtɛ mi nkpã.,"Mui ka iliki, ketimu amui kaula amani, kifi nya bekwa betemi mbe.",0.9286,0.3333
+766,Fɔláalɛ fɔba ntɛ mifɔnɛ be awɛ bisisi mi mbom?,"Folade fo bante mi fone biawe, bisisi mimbo.",0.8889,0.2973
+767,Mabu ye ndɛ ɔkɔba okristoni kĩ yadi ɔnɔkɔali.,"Mabuyeende okoba okristoni, kyi adi ono kwale",1.0,0.2703
+768,"Katsɛlɛ Kpalɛwa a lɛ kĩ, “Bati a dzi banya luwi, lɛmɛ be kanya mɔ kamɔa dani fɔkɛna bavɛ kawuga, mɔ litsolewɛ mɔ linyolewɛ kakɛna.",kacele pala walesi batiya ji banyaluwi lemebe kanyamo kamwa danifokena bavekawuga moluculuwe molunyuluwe kake na,1.0,0.3235
+769,"Mi kalɛkadã kɛtana nɛ sukɛna kalɔla ndɛ tɔlɔ kasui, sika ngbã fɔtsa kado, mɔ tilima kĩ tɛtɛ kɔya kadzi kamɛ.",me kale kada ketanane sukina kalola nde tolokasu si kangba focha kadu mortelimaki tete koyakajikame,1.0,0.3023
+770,"“Lɔkɔ a kĩ ntsɛ̃ manaa, kĩ kite sukuloo mawo Damasko, ndɛ suwa tɔdɔũ ewua-nviã kamɛ a ni, deedimɔapɛ ɔhaĩ mɔ ɔsĩ odi to ode ɛka eko nɛ yĩ akũ!","Lo ku a kince ma na, kiki tii sku mau Damasko ndesu a to do e wu amvya kameani. De di mo ape o haimo sio di to de eka i ku ne ya ku",1.1034,0.3738
+771,"” Ke liti a, bɛta be tɔkɔlɔ bɛnadzɛla nɛ ɔwɔ abuĩ, bɛfɔnɛ lɛtsa nyɛ lɛtsa awɛ biyi ade bitomɔ Yesu nɛ liti a.","Kɛlɛti ya, bɛtɛ bɛtɔkɔlɔ bɛnɛ jɛlɛnɛ ɔwɔ abwi, bɛfɔnɛ lɛchanyɛ lɛchaa wɛbiyi, adɛ bitumɔ Yesu nɛliti.",0.8636,0.2169
+772,"Yuda mɔ Sila kĩ bɛnyɛ Baguma onukpɛ̃ banyɛnɛ nyɛ fɔlɛtsa pii kayɔ bɛtsa be nɛ lɔkɔ gɛlɛɛlɛ kamɛ, bido be kɔbɛ̃ lɛmɛ.",Yuda mosi la kibenyebaguma onu pebanye ne nye fole chapi ka wechabe. Ne lokogbe le kame bidobe kobeleme,0.9545,0.3626
+773,"Odi nyɛ odi kĩ edeĩ kɔbɛ̃ kĩ yalɛ kɔdzɛla nɛ tide ahɔlɔ ahɔlɔ kamɛ ni, eke Baguma aduli ɛkpa ye foe kayɔkanyɛ kɔbɛ̃ lɛmɛ, lɔkɔa ɛnyɛ lɛtsa a kĩ de ɛlɛ a kayɔ yededeede.","O di nyo di ki e den ko be ki yala ko jela ne ti de a kholo kholo ka meni e ke ba gu ma duli e kpa e fo, ka yo ka nye ko bele me. Lo kwa e nyele ca ki de e le a ka yo ye de de",1.5,0.3385
+774,"Yesu ɔma na nɛ awã, ade bɛvɛ Yesu mɔ ye fɔtsa bakɔlɛnɛ a lɛmɛ bɛya nɛ obolitsɔ̃ kapikɔ̃ a.","Yesu amang na ne awua, adebeve Yesu moye focha bakula ne lemebeyane obuluchoka pikon.",0.8421,0.3971
+775,Futetsa a mbɔɛɛ kĩ afɔlibɔ atɛnyɛ a kĩ ye lɛkpalɛ futetsa a akũ a?,"Futi tε a mboeki a fɔli bo tɛ nyɛ a kyi, yɛlɛ pwaale futi tɛ a aku.",1.0714,0.4038
+776,"Ntɛ kanyi kĩĩ bɛtanyi lɛtsama nɛ kadzi nɛ osi kpĩĩ akũ ni, kufɛ fɔnɛnɛ kɔlaa fɔkpa be kɛba kĩ binyi osi wĩ kĩĩ lɛmɛ bibuki bimuniki nɛ mbla kpalɛwa a kĩ Baguma kpa be a liti.","n teka gni betagni, lechi amane kagji ne osi kpe ki aku ni. Ku fe fona ne kla fopabe, ke baki binyi osi nwi ki leme bi bu ki bi muni ki, ne mbla pale wa, ke bagu me kpe bi aliti.",1.0278,0.3285
+777,"Anɛ ayɔɔla mi mɔ ɔsĩ mɔ ɔsĩ nɛ fɔtsa akũ, lɛmɛ mi awɛ tata foe, nɛ foesũ miawɛ sɔwã kanɔ kawũ.","anyaayo le mi mosi mosi ne po chakun, le me mi are taata fui, ne fesu mi awe sonwa kanu kanu",0.9524,0.507
+778,"Ade kĩ bɔnɛ nɛ mbɛtahu kamɛ a, bɔyamɔ kĩ tite a kĩ mui tsua bisinya te a bavɛ Malta.",Adekì bɔ̀nɛnɛ̀n bɛ̀tàhú kàmìà. Bwɛ̀yámwàkì tìtìɛkì mùìchwìà bísìnyàtìà bàvɛ̀ mɔ̀lè.,1.0,0.5156
+779,"Ade ke bikĩ bɛdzɛ nɛ Paulo ɔwɛ̃ a via ye kĩ, “Ɔsɔfɔnɔkɔɛ̃ Flee ovũna lɔmɔ?",adi ke biki be jene polo owia yi ki a sefo nako feli ovuna,0.9333,0.5273
+780,"Fukĩĩ liti a, Paulo dzakũ nɛ Atene ɛnaa Korinto.","fɔkɛ̃lɛtiã, paʊlɔ dʒakɔnɛ atɛnɛ ɛna akɔrɛ̃",1.0,0.4211
+781,Luwi a Petro mɔ Yohanes naa Asɔli Kɔla kamɛ nɛ lɔkɔ a kĩ Yudafɔ abɔa mpaɛ a kamɛ.,"Nluyi a petru moyoranesi na a seleko la kame, nelokua ki yuda fo abuan pa aka me.",0.9444,0.3175
+782,"Awã na Yesu via be kĩ, “Abodoo eni minɛɛ?",Owuna Yesu vɛbɛ ki abodo ɛni,0.8889,0.4333
+783,"Nɛ boe Ɔlate a sũ ni, kawɔlɛ de yĩ paa kĩ nɛ lɔkɔ gɛlɛɛlɛ liti a, mibuki mina osi miatsa kĩ miakɔna yĩ akũ.","Ne bu o latti a suni ka wo le diimpa ke ne lo ko gbele li tiin, ne bu ke mi na o si, mi a cha ki, mi a ko na hi a.",1.3333,0.4321
+784,"Yudafɔ a kĩ bɛnyɛ be nɛ awɔba kamɛ a kĩ bito Kirene mɔ Aleksandria bibumɔ bikĩ bito Kilikia mɔ Asia yidza nɛ Stefano akũ, bɛkavɛlɛ fɔlɛtsa mɔ ye.",U dafua ki benye bi ni wo baka miakidi to kirine mo Alexandria dibumobi kidi to kili kia mo Asia yi Jane Stephane waku bekavelefele cha mwo.,0.9643,0.3362
+785,Fɔnyɛ kɔnyɔã fɔkpa otsole kĩ yalɛ kɔdzɛla nɛ batɛ badonɛ katsɛnakɔ̃ a.,"Fo nyɛ kɔnywɛ, fɔ kpɔ kileke yi alɛ kɔ jɛlɛnɛ, bɛ tɛ bɛ dunɛ kachɛna kɔ.",1.3333,0.3333
+786,"Kitonɛkĩ Baguma lɛgãkanya a lɛnyɛ́ onukpɛ̃ kamɛ fɔlɛtsa kalɛ kɛkɛ, mbom fɔnyɛ kɔbɛ̃ fɔlɛtsa.",Kétènekì bágùmálè kà nyá. Lényé ónùkèkámè flècà kà lékéké. Ńbùm fónyè kò bènfècè.,1.0,0.5811
+787,Ntɛ fɔlɛtsa a kĩ bɛtsɛlɛ nɛ Mose mbla a mɔ Baguma onukpɛ̃ banyɛnɛ tuvoli a kamɛ a ndo.,"ntɛ flɛɛ chaa kibe tila nɛ mu si mblaa, mu baguma onuku ba nyɛnɛ tu vuliya kɛmɛɛ nɛ",0.8333,0.2985
+788,Baabɔɛ nɔ malo bɛnaabila.,"Yaa nu nyu kpe nyaa ki, babua no ma lo bena bile",3.0,1.0952
+789,"Kĩ fɔkɔ ka a, bati kpã be bakɔba a kĩ basɔ fɔsɔ kumɛkumɛ a bɛma Yesu.","ki fu ko ka, bɛ ti kpa be bako ba, ki ba so fo so ku me ku mi a, bɛ ma yi so.",1.3125,0.3077
+790,"Be tɔlɔ la ndɛ batsole tide, ade be adɔ̃ la ndɛ dzata ade a.","bɛtɔ lɔlɛndɛ batliti de, adɛbya dɔlɛndɛ jatadɛ",1.0,0.2955
+791,"Baguma lisĩ, kitonɛkĩ ade ye lɛfɔ̃ kutse a bo anɛ a.",Bago malisin kite ne kyi adeyele fon ku tiya buwane.,1.0,0.4103
+792,"Mifɔ̃ bɔnyɛ Baguma boe Ɔlate Yesu Kristo Ɔlɛga a kɔlɛ, kitonɛkĩ nɛ ayekĩ bɔkɛna ɔmɔa mɔ Kristo sũ ni, ɛkpa boe hũhũ kamɛ nhila adi nyɛ adi kĩ edeĩ nɛ ode katinya a kamɛ a.",obanya bakma bualate yesu kristo le ga akole etoniki ne ayiki boka na omomo kristo suni ekpa gbewu nkanme ihila adina adi ki edin ne ode katinya akame,0.8286,0.3534
+793,"Kĩ binu kĩ batɛ badonɛ kĩĩ kalɛ kɔdzɛla nɛ be kamɛ odi nyɛ odi tide kamɛ a, fɔkɛna be wãwã.",Kibi nuki bate ba done ki ka le kojolene be kame udin yo di tide kamea. Fokene be wan,0.85,0.3286
+794,Bati aakɛna fukĩĩ nɛ mi akũ kitonɛkĩ bɛtányi Ɔlɛga a ĩye yĩ.,"Bati a kena fuki na miakun, keta na kini batayi olaga iye nye",1.0,0.4583
+795,"Odi nyɛ odi etse fɔlɛtsa mɔatsɛ, lɛmɛ ɛtawɛ sɔwa ɛlɛ kɔdzɛla mɔatsɛ mɔatsɛ ĩye ɛna kalɔkpa mɔatsɛ mɔatsɛ.",o di o di e che fo e cha mache le me e ta we so wa e le ko gye la mache mache ye e na ka lo kwa mache mache,1.7778,0.5233
+796,"Ade be nyɛ Simon Petro, Toma kĩ bavɛ Ata obi, mɔ Nataniel kĩ eto Kana nɛ Galilea tite akũ, mɔ Zebedeo babi mɔ Yesu fɔtsa bakɔlɛnɛ bɛbã nviã.",Abènyè si mwa Petro to maki ba ve atawubi mwanatanyeke to Kanan ne Galile ti te ya ku. Mo zèbèdiu babi mwa Yesu focha ba kulu nɛbè bami.,0.9286,0.3394
+797,"Ke liti a, Yesu nyɛ bati a flee osi ade bɛdzakũ a.",Keli ti a Yesu nyebeti afli yosi adɛ bɛjakua Yesu moɛfɔ,0.8333,0.4595
+798,"Odi nyɛ odi kĩ yawɛ bati kalɛ ni, Baguma obi yanɛ ade enyina Baguma a.","Odinyodi ki ya we batikaleni, bagumobi ya ne, ade eyina baguma.",0.8667,0.1481
+799,"Bite Paulo lɛmɛ kĩ Herme, kitonɛkĩ ade ye lɛdza ɛkalɛ kɔdzɛla a.","Bite Paulo le me ki helme, kito ne ki adee le ja ekale kojala.",1.0,0.3333
+800,Foesũ finyaa minaa ɔmatɔ a tɔblɔnu kpale akũ minaavɛ odi nyɛ odi kĩ míamɔ ɛya nɛ kanyakɔ̃ a.,"Fu so finya minya oma to wa to blonu pale akungu, minave odinyo de kimya mon, ene kanyakou.",1.0,0.3836
+801,"Lɛmɛ kalɛ ɔnɔkɔali a nyɛ kĩ Baguma dzɛla Kristo etomɛna kanɔkpa ade fɔnyɛ kasipi kĩ bikĩ biku a ni, yaadzɛla be malo.","Nɛmɛ kalaonokwali anyɛkɛ bɛguma jɛla, Kristi ɛtumlakano kpa. Adɛfɔnyɛ kasipi, kɛbikibikuani yajɛla bɛmalu.",0.9545,0.2447
+802,"’ Ade baabi kɔtɔbii kĩ, ‘Mikɔla boe!",pilatu be yuda foba sofono kwin oman ba nokwin mo ba ti e pota ade bibeki ni pa ti kini nanyi ade ni le ke lama ba ti adunika daniya finya ni,5.1667,3.5769
+803,"Kitonɛkĩ ndɛ ayekĩ wuda tsã oti akũ ɛya nɛ katinya kamɛ a, ade aye bati kayidza kato kanɔkpa lɛmɛ tsã oti akũ a.",Itɛnɛki nɛɛki wuda chan otia ku eyanɛkati nyaka mea. Adai bati kaija katu kanokpalamɛ chan otia ku.,0.913,0.3409
+804,"Nɛ mbla a onukpɛ̃ ni, Levi babi mɔ bawa kĩ banya basɔfɔ a deĩ osi kĩ batɛ fɔtsa kasɛ̃ kamɛ katsu kawuade nɛ Israelfɔ awɛ, titɔ kĩ be malo bɛnyɛ Abraham kasinu kamɛ babi malo.","Nɛn blao nɛ kpe ni, le vi babi, mɔ bawa ki banya ba sɔ fɔ a deŋi o si. Ki ba tɛ fɔ caka seŋ kame ka tʃuka wu a de nɛ, izira fɔawe. Ti tɔ ki be maru be nyɛ Abraham kasi nu kame babi maru",1.0571,0.1926
+805,"Yesu via ye fɔtsa bakɔlɛnɛ a kĩ, “Nde sũ libe wo mi lɔmɔ?","Yesu via fo caba kole ne aki. Inde su libewu milomo, mitate imido. Neli bi aki, libuku liwobia suni. Beka viabia ku ki, owekonyoti gi.",1.7692,1.8333
+806,Bɔabu bati kĩ bado ɔwɔlɛ nɛ lubo kamɔ kamɛ kĩ kawɔlɛ bati.,wɔ̀búbàkìkìŋ bádòòwòlɛ̀ nèlìbúkámòkàmèkì kàwòlèbàtì,1.0,0.5435
+807,Ade lɔkɔ a na kamɛ lɛmɛ mɔ Baguma ɔlɛdo ya ɛkpa Yohanes kĩ ɛnyɛ Zakaria obi a kĩ ɛna nɛ kɔsa kamɛ a.,"Adiloko anaka meleme mo, bagumo leduya Ekpa Yohannes kienne Zakaria ubiaki enani kosakame",0.9565,0.3117
+808,Nwaɛ̃ amɛ flee a kĩ bideĩ nɛ awĩ bo nwɔ̃na mi nkpa be tsoo!,"Onya meflee akibi dini anya bo, uno na me npa becho.",0.9286,0.4651
+809,"Ade obisɛ̃de a bi ɔlɛga kĩ, ‘Papa, kɔa adzapadiɛ a kĩ yaanya yĩ kanyakɔ̃ a kakpa yĩ finyaa.","a de wube se de a bi o le ga ki papa, kwa a jaba de a ki ya nyai ka nya kwa ka kwa yi finya",1.2778,0.3088
+810,"Oti odi nake foe, ɛdani ɛkɔla foe.",Odindin odin kianu odin lagakanyakwo folicha lameyanu fa,1.1429,1.3846
+811,"“Nwaɛ̃ amɛ, finyaakĩĩ ĩnyina kĩ mi mɔ mi banɔkɔɛ̃ mikɛna fukĩĩ nɛ Yesu akũ nɛ katanyi kamɛ.","o ame, si ni aki, ni na aki mi mo mi ba no kwin miken a fu ki ne Yesu a ku ne ka ta nyi ka mi",1.4706,0.3714
+812,"“Ebi yĩ kĩ, ‘Yidza kanaa Damasko ɔmatɔ a kamɛ.","Ebi nking, ili yakanada masiku omato akame. Awanama chano lechaki nweki kena. Ohainking koyane. Fosubachi",1.5556,1.9412
+813,"Mbom kɔ́ana nɛ awã kĩ Baguma yi ɛkpa nɛ boe adzuma kakɛna kamɛ, ade boe adzuma nɛ mi kamɛ lɛmɛ bu a.","Mboo ko annania wakibaguma yiepa. Ebo ajuma kakena kame, adebo ajuma ne mikameleme, buu",1.0,0.3026
+814,"Nkavila kĩ ɔsa okesĩnɛ a yasɔ mi ɛdã, lɔkɔa boe adzuma kakɛna a flee kɛna pupulidza.","nka vla kyi osa, o kyi ni aya somi edan, okwa gbo ya juma kaka na flea kana pupli",1.1875,0.3881
+815,"Ndani anɛ kĩ madã oti a kĩ ɛlamɛna yĩ kalɛ kabi a, ade mmɔ́ sika ngbã ɔsɛdza titse evũkɔnɔ a.","Danyaane kemada utiaki elamna inkale kabia, ade emwosikangba osejatichi ibukuna.",0.95,0.4085
+816,"Ntɛ odi kɔna kĩ enyina fɔtsa nɛ litsedi akũ paa ni, ɛtámɔ foe kamɔ wĩ ndɛ ayekĩ kɛnɛ kĩ fɔna a.","Nte odi konaki enyina fochanel cheri akupaani, etamofe kamoowi, nde ayiki kene ki fona.",0.9048,0.3699
+817,Ade kawũ banɔnɛ banɔkɔɛ̃ mɔ ɔmatɔ a kamɛ banɔkɔɛ̃ a tomɔ be bɛya a.,"Aleka o nuba ne banu kwe. Mo mato akame banu kwe, atomo be be ya.",1.0,0.3922
+818,"Nɛ foesũ midɔla akũ mido nɛ Baguma kɔbɛ̃ awɛ a kayɔ, ayekĩ yaadɛla mi nɛ ode nɛ ye mɔawɛ lɔkɔ wĩ a kamɛ.","nɛ fɔ su mi dɔlɔ ku mi dɔ nɛ ba ku mɛ kɔ bɛ awɛ ka yɔ, aiki yɛ dɛ la minɛ o dɛ nɛ yi mwa wɛ lɔ kɔ wu ya ka mɛ",1.3043,0.2532
+819,"” Ntɛ mikɛna foe lɔmɔ a, lɔkɔa fɔátsa kĩ adzuni kpa mikɔa miadzɛ mi fɔlɛtsa, kĩ miado ntsitsemu lɛmɛ nɛ mi kamɛ?","Nteme kena felo mo a, lo kwo fa ke ki adju ni kpa mi, kwa mi ajemi, fo le cha ki mi ado chi che mu le me ne mi ka me? Ngo a me ki matun o ka le, mi si ka che wi, ne ka po ba guma pa o ka chi nya ki ka me.",2.5714,1.0345
+820,Nɛ foesũ mitɛ ye mɔ kawɔlɛ ndɛ ɔwaɛ̃ nɛ boe Ɔlate dĩ akũ.,nefo sumitei mo ka wolende owain nebuwole tide,1.0,0.5349
+821,Foesũ ɛfɔ̃ bɛnatsua Yohanes lɔlɔ nɛ kɔla a kamɛ.,fósù ɛ̀fɔ̀ bɛ̀nà tɕɛ́fɔ̀nì sɔ̀lɔ̀nì ɛ̀kɔ̀lɔ̀kàmì,0.8889,0.3947
+822,"Oyitsɔ̃ kĩĩ tomɔ boe mɔ Paulo mɔ fɔwɔla kabɔa kĩ, “Baguma Kpale basumunɛ bati kĩĩ anɛ, ade bɛya nɛ awĩ kĩ bayaatsa mi nkpã kana osi a!",wui chokii tu mobwe mo Paulo mofowola ka bwoki baguma pale basumne bati kiane adebe yiane awinki ba chami mpaka na osi,0.8519,0.3689
+823,Ade ayea mi bapopo lɛmɛ midɔla mi akũ mikpa mi banɔkɔɛ̃ a.,A dɛ aya mi ba pɔpɔlɛɛ mɛ mi dɔlami a kɔ mi pa mi banɔ kɔ,1.0833,0.2
+824,Yesu dzakũ nɛ awã ade bɛmɔ ye fɔtsa bakɔlɛnɛ a bɛnaa ɔmatɔ a kĩ ye kamɛ bɛdɔɔla ye a.,Yesu ja kune amwa ade bemo ifo chaba kole nea bena omato akiye kame bedola ye,0.8421,0.3939
+825,"Nɛ foesũ sodzafɔ a kĩ badzɔlɛ lɛgã tɔtɔ akũ a flee, mɔ bati bɛbã a kĩ bideĩ nɛ awĩ a mɔ́ biyi ɔsũ kĩ Kristo sũ mɔ nwaa kɔla.","Nɛ fɔ̀ɔ̀ sʊ́ùn, sɔ̀ɔ̀ yà fɔ̀ɔ̀ àkìbà jɔ̀lɛ̀lɛ̀gàn tɔ̀ tɔ̀ɔ̀ kùù n fìlì. Mɔ̀ bà tì bɛ̀ bà àkìbì dììnɛ̀ àwùyà m, mɔ̀ bì yɔ̀ɔ̀ sʊ́ùn kɛ̀ Krìstò sʊ́ mɔ̀ ńwáakòlà.",0.9655,0.5376
+826,"Yesu ku nɛ boe lɔlɔ, kĩ ntɛ budzi o-o, ĩye ntɛ buku o-o, bɔ́adzimɔ ye nɛ ye kabuki kaya kamɛ.","yɛsɛkuna bololo, kɛntɛbu jio, yɛntɛbu kuo, gbaji mɔyi nɛikabuki kayaka",1.0,0.3134
+827,Bidzi nɛ batɛ badonɛ nɛ Antiokia sɛkɛ̃ owi buna kɔlaa.,Mì jì nè bà tè bà dù nè nà Antiyòkì à sà kìn ò wì bù nà kòlà.,1.8,0.6047
+828,"Nfɔ̃ bɛvɛlɛ be sɔtɔ nɛ Yudafɔ fɔlɛtsa kadzɛkɔ̃ flee, ndza nɛ be akũ kĩ bɛlɛ fubusuotsa nɛ Yesu akũ.","fɔ be vʋlɛ besɔtɔ, nɛ yida fɔfɔlɛ kyaga jɛkɔfili, njane biakʋn, ki bɛlɛ fʋbʋsʋ cha, nɛ Yesua.",0.8947,0.3506
+829,"Ntɛ bunyina kĩ yatse lɛtsa nyɛ lɛtsa a kĩ bɔavia ye ni, kekɔ̃ bunyina lɛmɛ kĩ lɛtsa nyɛ lɛtsa kĩ bɔavia ni, bɔatɛ katomɛna ye sɛkɛ̃.",te bunyina ki ya chele chanye le chaki bwaviyeni. Ke ko bunyina le me ki le chanye le chaki bwaviyeni. Bwatika tumu na yese.,0.9231,0.3725
+830,Kitonɛkĩ kayɔkanyɛ futefute deĩ kĩ foe sũ banyole lɛláapuli bɛkɔã batsɔ̃.,"Kede nekinge, kayeo kanya futefute den, kifu esu banye lele laple bekwabacho.",1.0909,0.4262
+831,"Nɛ kĩ fɔlɛtsa kĩ fɔtagba sũ ni, mifɔ̃ budo be libe kĩ bɛtabi odima kalɛ nɛ Yesu dĩ akũ.","Na ki fole cha ki, fota gbasuni, ni fowo dumeli be, ki beta bi o duma ka le ne Yesu di a ku.",1.0526,0.3333
+832,"Midɔla mi akũ mikpa Baguma, ayekĩ míapuli mitɛ ye kalɛ a kĩ edu nɛ mi tɔwɔlɛ kamɛ a, kĩ kaafɔ̃ mina nkpã katɛ a.","Mɛdɔlɛ miakunu mpaaguma ayɛki miapli mitɛyɛ kalɛaki, edu nɛmitɔlɛkamia ki kafoɔ mena nkatɛ",0.9583,0.2824
+833,"Kĩ biwo Asɔli Kɔla onyukpɛ̃ a kĩ bavɛ Onyukpɛ̃ Mɔ Kalɛ a, bɛmɔ́ onyole odi kĩ eveliveli kito ye lɛmawi, kĩ ɛwaa nɛ awã.","Kibiwu asolẹ kọla onyupin akibave onyupin mwokalea. Bẹ mọ onyu lo di ki eveluvelu kito yẹlẹ mawi, kiẹwua nẹa u",0.9583,0.3444
+834,"Kĩ Apolo yake otse kĩ yaanaa Akaia, batɛ badonɛ nɛ Efeso a yado ye kɔbɛ̃.","Kɛ apulo ya kɛwuchi kɛyana Akaya, batɛ badu nɛnɛ ɛfɛsu aya dɔyɛ kɔbɛ.",0.8667,0.3214
+835,"Ye katɛkado kamɛ ɛtsã ɛna Baguma adansiɛ nɛ ye akũ kĩ ɛnyɛ oti kpĩĩ, kitonɛkĩ Baguma mɔawɛ lɛtɛ ye futetsa a.","e kɛ̀ tɛ̀ kà dù kà mɛ́, è ċá è nàmà gbú mà à dànsì è nɛ́ì yǎ kù kì, è ɲɛ̀ ʊ̀ tì kwi, kítùnɛ̀ kìgbú mà mwǎ wɛ̀lɛ̀ tɛ̀ì fùtì ċá.",1.5714,0.5862
+836,"Yesu sua ovoli a emunikimɔ ye ɛkpa fɔtsa akũ ɔdãmɛnanɛ a, ade ɛkɛna akũ edzi a.","De sú sú avoli a, emunike muoye pa focaraku odamunania, adeke nakuyeji.",1.0,0.4194
+837,"Kĩ bido ye atadiɛ ngbã biyua a, bifuã ye bibi ye kĩ, “Yiiduu!","Kibi doye atajengabbi yu a, bifwaye bibbi ekin. I du",0.9231,0.3333
+838,Ade ayea fɔkɛna ye adzuma bakɔba Yakobo mɔ Yohanes kĩ bɛnyɛ Zebedeo babi a lɛmɛ wãwã a.,adia ya fokenayi ajumaba koba yakubu moyuhani kibenye sebedio babia leme wanwan,1.0,0.3571
+839,"Ntɛ epuli ɛnya sɔhuiɛ a akũ ni, Baguma aakpa ye nkpã a kĩ ɛlɛ eyi ɛkpa bati a kĩ bawɛ ye kalɛ a.",nteple nyaa to hwi akuni baguma a ape npaa kele ei epaba tya ki bawaye kala,0.913,0.3611
+840,Fɔtsa katsa a na la ndɛ kaakpa kĩ kasa kaba sukɛna.,Faca caca na lande kapa ki casaca ba sukena,0.9091,0.35
+841,"Bite oti lɔlɔ a nɛ tsensi akũ bɛyamɛna, ade bɛkɔa bɛkpa oyitsɔ̃ a, ade ye malo ɛkɔa de ɛma ɔma a.","bi tío tì lɔ̀lɔ̀ nɛ̀ tʃɛ́nsɛ̀ àkʊ̀ bɛ̀ jɛ̀ mɛ̀nɛ̀, àdɛ̀ bɛ̀ kʋ́à bɛ̀ ṕà ɔ̀tʃʊ̀á, àdɛ̀ yì m̀àlɔ̀ ɛ̀ kʋ́à dè ɛ̀mà ɔ̀mà",1.0,0.3014
+842,“Ntɛ fudeĩ ɔsĩ fɔmɔ Baguma aatɛ bati kpĩĩ bɛna nkpã ni.,Entɛfode ɔsi fɔmɔ bagma aate bati pi bena npa ni,0.7273,0.2791
+843,Bɛkpa nɔ foe bɛtsãmɛna Baguma onukpɛ̃ banyɛnɛ akũ nɛ fɔlɛtsa a kĩ bɛlɛ biyi a kamɛ nɛ lɔkɔ a kĩ asɔli banɔkɔɛ̃ te awɛ nɛ nɔ akũ a.,"Mɛ́ kpánɔ́ fwi, bɛ́ cámna bágbɛ́má ɔnukpɛ́ bá nyɛ́nɛ́ akú, nɛ́ fɔlɛ́ cákí bɛ́ lé bíí akame, nɛ́ lɔkɔkí asɔlɛ́ bánúkpɛ́ tíá wɛ́nɛ́ nɔ́ akú.",0.9643,0.34
+844,Dɔũhuilɛ mɔapɛ kamɛ bɛkɔ nɔ kɔtɔ!,"Don't put on my backbone. Go, get out of the way.",1.8333,1.1111
+845,Finyaa yĩ fɔlɛtsa a kĩ mbi mi a kpalɛ mi akũ kɔkɔɛ.,"fiã, i fola caki ibimi a pala mi akukoko",0.8333,0.4872
+846,"Nɛ fɔlɛtsa kĩĩ akũ ni, odima ɛtakɛna tɔkpa nɛ ɔkɔba akũ ĩye esisi ye.","Nɛfɔlɛ kyakii nya kʊnɪ, ɔdɪmɛtakɛnɛ tɔkpà nɛ ɔkɔbàkʊn, yɛɛ esisii",0.9286,0.3889
+847,"Lɛmɛ makɛna foe ndɛ lɛtsa a kĩ bihihiɛ bɛkpa yĩ kĩ nkɛna, kitonɛkĩ fɔnyɛ adzuma kĩ Baguma hihiɛ ɛkpa yĩ.","La mɛ̀ mɛ̀ kɛ̀ nà fùì, ǹ dɛ̀ lɛ̀ caa kɪ̀ bɪ̀ hɪ̀ hɪɛ̀ bɛ̀ kpànì kɪ̀ ǹ kɪ̀ nà. Kɪ̀ tɔ̀ nɛ̀ kɪ̀ fɔ̀ nɲì ɑ̀ jʊ̀ mà kɪ̀ bà gʊ̀ mà hɪ̀ hɪɛ̀ ɛ̀ kpànì.",1.85,0.4578
+848,Bɛmɔ́ litsedi ndɛ fi fɔmɛ kĩ fɔka fudzi nɛ odi nyɛ odi akũ.,"Memuleti ndi ndeffi fo mi, kifo kafujine odi nyodie.",0.9231,0.4222
+849,Nɛ awã a ɛmɔ Yudani odi kĩ bavɛ Akwila kĩ eto Ponto.,ne o wa e mo yu da nyo di ki ba ve a kuila ki e to po,1.5,0.325
+850,"Lɛmɛ boe a kĩ butomɔ ye a budzi ɔkɔlɔ bɔnya ye lɔtɔ kĩ bɔ́anatsɛlamɔ akũ nɛ awã, lɔkɔa bɔbɔɛ ye ndɛ ayekĩ ɛtsa a.",Mle mbuɛ ki butomo ye abuji o krobɔ nyalɔ to ki bɔna celɛm na kunia wa. Lɔkɔ abɔ bue yɛ ndɛ ayiki e ca.,0.9583,0.4138
+851,Nláapuli ĩnyɛ boe Ɔlate Yesu Kristo kɔlɛ nɛ kɔbɛ̃ a kĩ ɛkpa yĩ nnɛɛ makɛna adzuma wĩ kĩĩ akũ.,na pli nye bo la ti Yesu Kristo ko le. Neko benki ekpanyi nne ma kena ajuma nwiki ya.,1.0,0.3973
+852,"Ntɛ ntakɛna fɔtsa kĩ odima tákɛna tɔ̃ nɛ be kamɛ ni, kufɛ bɛtákɛna tɔkpa, lɛmɛ kĩ finyaa bɛmɔ́ fɔtsa a kĩ nkɛna a malo ni, bakesĩ bɔmɔ Nda.",Tɛɛn tɛkɛna fɔcaki odima tɛkɛn a tɔ. Nɛɛ bɛkɛmɛni kufɛbɛ tɛkɛn a tɔɔpɛ. Lɛmɛ kifi yɛ bɛmɔ fɔcaki kɛna malɔni. Bakɛɛsi bɔmɔɔ.,0.8929,0.283
+853,"Takɔ oti, tanɛ kɔnyɔ ĩye kɔtsɔ̃ liti, taye, tama fɔvã ote nɛ oti akũ, tasisi oti, mɔ bu aga mɔ ama.","Takoli tin, tanekoyo iyekochi tin, ta ye, tamafofotino tiakwu, tasisiotin. Mo bu agamowa",0.9524,0.375
+854,"Ntɛ bide lɛtsã nɛ Baguma fɔlɛtsa a akũ biyua a, ɔyaɛ kpa a kĩ eto lɛkɛ dzununuunu kamɛ ɛnɛ a, aanɔ kawũ mɔ be.",n'te bi de le tʃane baguma fu le tʃa ku bi u a o ya a pakie to le ke dʒununu nu ka me ne a a no ka umɔ,1.0833,0.369
+855,Foesũ lɛ kalɛ mɔapɛ lɔkɔa yĩ ɔsumunɛ a aasaɛ.,Fwe se le kale mo pe la kwa nyo si mo ne a a sa.,1.5556,0.4722
+856,"Fɔlɛtsa badzɛnɛ a fɔ̃ bɛyɛlɛ tɛtadiɛ nɛ be akũ, ade bɛkpa kɔbɛ̃ kĩ bibo be mɔ kutse a.",fɔ̀lé tʃá bɛ́ɛ̀ dʒínìá fɔ́ɔ̀ bɛ́ɛ̀ yɛ̀lɛ̀ tètà dʒíɛ̀nɛ̀ bìá kù. Àdì bɛ̀ pá àkɔ̀ bɛ̀ kì bí gbòbɛ̀ mɔ̀ kú tʃɛ́ yìɛ̀,1.2222,0.3692
+857,Nlámɔ kalɛ kĩ yĩ awɛ tá lɛtsa a kĩ mawɛ ĩye kĩ nkpɔla kɔkɔɛ.,Lamo kaleki ŋyawo etale caaki mawe ŋyeki ŋpla kɔkɔ,1.0,0.4565
+858,Kitonɛkĩ bɛkɔ Kristo kĩ ɛnyɛ boe Wuda Katɛ̃ kavelibi bɛkɔa bɛbɔa afɔliɛ nɛ boe lɔlɔ.,"Kietone kibe ko Kristu, ken yebu da katen kabele bi, beko bebo afoli nebulolo.",1.0,0.4265
+859,"Ade mialɛ kĩ, ‘Ntɛ budzi nkpã nɛ boe bawanyɔ lɔkɔ a ni, kufɛ bɔtákɛna ɔmɔa mɔ be bɔkɔ Baguma onukpɛ̃ banyɛnɛ a.","Adem ya leki, ntabujin kpanɛ, buba onyoloko ani. Ku fe bota ki na omomobe boko baguma onupke banye ne.",0.9545,0.3529
+860,"Lɛmɛ Baguma mɔ́ yĩ kɔnya, kitonɛkĩ nɛ lɔkɔ a na kamɛ ni, ntátɛ ye ndo ade ntányi lɛtsa a kĩ de nkakɛna a.","ɛ mɛ́ bɛ́g̀mɛ̀ mɔ́yì̀ kɔ́ɲà, kɛ́tɛ̀nɛ́ kìnɛ́ lɔ̀ kɔ̀wà ná kàmɛ̀nì, ntátɛ́ yíì ndù, àdɛ̀ntɛ́ nyìlɛ́ cà àkì dè ŋkákŋà.",0.9565,0.443
+861,"Awã naa, ebi be fɔlɛtsa nɛ Baguma lɛgãkanyakɔ̃ a akũ.",ɔ wanta ɛbibɛfolɛcɛnɛ bagumale gakan yakwa,1.0,0.3659
+862,"Kito kɛyawo nviã lɔkɔ kĩĩ malo budzi kɔlɛ mɔ ɔmɔado, budeĩ nɛ tɛtadiɛ kpeliwa kamɛ, babo boe, ade bɔtsɛ̃ bɔato katɛ̃ kĩ bɔlá kadzikɔ̃.",Kiti ke awo di a lokokyi malo bujiko a lemo amadu budi inete tadi a kpelu akame. Babobue are bo chen bua tukate ki bo la ka ji.,1.125,0.4231
+863,Lɛtsa a kĩ Kristo mɔawɛ lɛ eyi kĩ yaakpa boe nyɛ nkpã kĩ ɛlá kawũna a.,Lɛcha ki Kristo mwa elee ti akpa gbe nyɛɛ nkpa ki elaka nwuna,0.9375,0.4259
+864,"Ntsɛlɛ ye mamɛna bati a kĩ Baguma pau, kĩ bɛgba biko ndɛ banɔvɔɛ̃ aye nɛ Ponto, Galatia, Kapadokia, Asia mɔ Bitinia amantam kamɛ a.","Nchi laye mamana batia ki bagu mapao ki begwa beko ndebanuve ayine ponto Galatia, Kapadokia, Asia mo Bitinia amantamu kame.",0.7917,0.2059
+865,"Lɛnyɛ a na, ɛkpã be ɛnasu be fɔkpa, ade ye mɔ ye tɔtɔ kamɛ bati bɛtɛ mui kawɔla amaniɛ a.",Lɛ́ɲɛ́nɛ̀ ɛ̀kwàm̀bɛ̀ɛ̀ ná sùbɛ́ fɔ̀kwà. Àdè̀ mɔ̀-ɛ̀ tɔ̀ntɔ̀kà mɛ̀ bàtìbɛ̀tɛ̀ mwì kà wòlà àmànìɛ̀.,0.95,0.4179
+866,"Nɛ lɔkɔa na kamɛ ni, Yudani odi ya nɛ Efeso.","Nɛlɔ kwan akamɛni, yuda ni odi aniɛ fɛsɛ",0.8,0.1818
+867,"Yudafɔ mbla a lɛnyɛ́ fɔtsa wĩ a kutidu, mbom ɛla ndɛ fɔtsa wĩ a kĩ fɔ́aya a kuyo kɛkɛ.","Yuu da fɔmbla lɛnɛ fɔ ca nwuya ku tidu, mbum ɛlandɛ fɔ ca nwuya ki fa ya ku yu kɛkɛ.",1.0,0.2812
+868,"” Kĩ be bakesĩnɛ a dza bɛkadã a, bide bɛnaa ode nɛ luflututu kamɛ.",kibɛbɛ kɛ sɪnya jɛ bɛkarda bɪdɛbɛna udɛnɛlufututuga,1.0,0.4
+869,"Lɛmɛ Yesu kpa mbuayɛ kĩ, “Katsɛlɛ Kpalɛwa a lɛ kĩ, ‘Nnɛ́ funitsã odi sũ oti adzi nkpã, mbom edzi nkpã nɛ kalɛ nyɛ kalɛ kĩ kanɛ kato Baguma onukpɛ̃ kamɛ a akũ.","Lɛnɛ yɛsu kpan mu ayɛkin, kɛchalɛ kpalɛ wa lɛkin, nɛfuntie odusu oti ajinpan. Ngbom ejinpanɛ kalɛyɛ kalɛ kikanɛ katu, baguma onu pɛɛ kameyɛ akon.",0.9062,0.3193
+870,Bɛkpa ɔyaɛ kpa a osi kĩ ɛlɛ kukũpia mɔ fubusuotsa pii ɛnya akũ tidetɔ tɛna-nviã.,"Mbɛ́ pa oyaɛpa oci kɛlɛkuku pia, mofubuso ca pi ɛnya kutilitɔ tɛ na vi",1.0,0.2969
+871,"Kitonɛkĩ ntɛ mbɔa mpaɛ nɛ tide ahɔlɔ ahɔlɔ kamɛ ni, yĩ hũhũ kɔ̃ bɔa mpaɛ lɛmɛ yĩ adzuni lɛláa foe kamɛ.","Kɛtɛnɛkɛ, ntɛ bwanpɛ nɛ ti dɛa hɔlɔhɔlɔ kamɛni. Ɩhuhu kɔ bwanpɛ, nɛ mɛ ya juni lɛ lafu ika",0.8571,0.3125
+872,Ade ode fɔtɔ ɔnyanɛ ɔyade a naa ɛnatsokui ye kɔɔpu kamɛ fɔtsa a eko nɛ mpo kamɛ a.,Adedufotonyane oyadia na enachokui kopukame fochaa ekunem pukame,1.0,0.3906
+873,"Awã naa, Romafɔ sodzafɔ ɔnɔkɔɛ̃ odi nɛ awã na ɔsumunɛ kĩ yaátunɔ kalɛ.",a wa na na omo fo soja fo no queen odi ne awa na o som ne kii a to no kale,1.5385,0.4909
+874,Yuda mɔ ɔtsɔ̃ Tamai ma Perez mɔ Zera.,yu da mocho ta ma ima Peres mo ze,1.0,0.3214
+875,"Bɛtábɔa onyole bɛkpa otsole nɛ ye otsole a kalɛ sũ, lɛmɛ bɛkɛna otsole bɛkpa nɛ onyole a kalɛ sũ.",Bɛtɛbwa onyule bɛkpa ochuli nɛɛ yi ochuli akalɛ sun. Lɛmɛ bɛkɛna ochuli bɛkpa nɛɛ onyule akalɛ sun.,0.7895,0.2987
+876,"Ade nnɛ́ Adam Abonsam kɛ, mbom otsole a ɛkɛ ade ɛfɔ̃ efum Baguma mbla a.","Ade ne Adam abunsam ke mbom ochule ke, ade fo efum baguma mla.",0.6,0.2593
+877,Foesũ bɛnyɛ bati nviã ade be nyɛ Matias mɔ Yosef kĩ bavɛ Barsaba kĩ babuki kavɛ Yusto a.,"Besu benye batimbia, ade benye Mathias Monyosef ki ba ve basaba ki ba bu kika ve Youstou.",0.9444,0.2714
+878,"Ade ke Farisifɔ a badi via be kĩ, “Nde sũ miakɛna lɛtsa a kĩ boe mbla tákpa osi kĩ bɛkɛna nɛ Kawɛya Luwi akũ?","a dɛke farasi fo abadi via beki, ndɛ su miyakɛna lɛ caki gben mlata kosi, kibɛkɛna nɛ kawo yaluya",0.9167,0.2892
+879,"Lɛmɛ nɛ ɔnɔkɔali kamɛ ni, Yesu mɔawɛ táwɔla odima mui, mbom ye fɔtsa bakɔlɛnɛ a odi lɛwɔla bati mui.","La mene o no kwale ka meni, Yesu ma ota wola o di na mwi. Mbon yi fo chaba kwo le ne a o di lo wola ba ti mwi",1.4737,0.3418
+880,"Elihud ma Eleazar, Eleazar ma Matan, ade Matan ma Yakob.","Alehuduma Eleaza, Eleaza ma matan, ade matan ma yako.",0.5,0.1364
+881,"Nɛ kĩ oni kako osili lɛmɛ na sũ ni, bɛkpɔta fi kpale nɛ mpo abuĩ a bɛkpa boe.",Nɛɛkɛ ɔnikakɔ ɔsɛlɛlɛmɛ na suni bɛpɔtɛ afi kpalɛ nɛɛ mbua abuiya bɛpawu,0.9444,0.3621
+882,"Onesimo, boe ɔwaɛ̃ kĩ yadi ɔnɔkɔali, kĩ ɛnyɛ mi kamɛ ɔmɔa a, aatomɔ ye bɛya nɛ mi sɛkɛ̃.",O nɛɛ si mu gbe ɔnwaɛ kii ya dɛ onɔ kɔli kii ɛnyɛ mi kamɛ ɔnwaa a tu mɔ yi bɛ ya ne mi sɛ kɛ,1.1667,0.2923
+883,"Titɔ kĩ edeĩ nɛ Baguma kutidu kamɛ malo ni, ɛtákɔna kĩ yakɔa ye kɔbɛ̃ ɛtsa kĩ bɛmɔ Baguma biketi.","Titi ki ni ne nna baguma ku ti du kamem ma loni. E ta kona ki ya kwa ye ko be, e chaki be mo baguma biki te.",1.3158,0.3158
+884,"Kɔawũ babi titi ewua-nviã nɛ kateli mɔa kamɛ, nɛ odetɔ mɔa kamɛ deedi.",kua o mbabitiiti ua mbia ne kateli moa kame ne odeto moa kame de,1.0,0.3455
+885,"Odi nyɛ odi kĩ ɛtɛ Baguma onukpɛ̃ ɔnyɛnɛ nɛ kĩ ɛnyɛ Baguma onukpɛ̃ ɔnyɛnɛ sũ ni, yaana kɔtɔkase a kĩ Baguma aakpa ye a kamɛ.","Odi nyo niki ete bagumo nu pwe oyene, naki enye bagumo onu pwe oyene suni, ya na kotoka si aki, bagumo akwa ya kuli.",0.96,0.375
+886,"Lɛmɛ Baguma nyɛ Lot, oti kpĩĩ kĩ bati ɔbla kpa kabɔa kaha ye ɔwɔlɛ.","Lɛmɛ baguman yɛ lot, oti piŋki bati oblakpa ka bwa, kahayi owolɛ.",0.7143,0.1731
+887,"Mi babisɛ̃, mi nlamɛna ovoli kĩĩ katsɛlɛ kama, kitonɛkĩ bɛkɔa mi tɔkpa bite mi nɛ Kristo sũ.",Mi ba bi sen. Mi la me no boli ki nka cele ka ma. Ki tu ne ki be kwa mi topa bi te mi ne Kristus.,1.4118,0.3056
+888,"Deedimɔapɛ ye abɔa mɔ anya flee de ɔsĩ, ade ɛvɛnya ɛdza nɛ abɔa akũ, edo katokatɛ̃ awɛ a.",dedi moi payé à boire moi nya flé dé aussi à dé veni éja ni à boire un coup é du ka to ka té à oué,1.5,0.6912
+889,"Yesu buki ɛlɛ kĩ, “Lɛmɛ mabi mi kĩ Baguma onukpɛ̃ ɔnyɛnɛ odima látɛ dĩ wĩ nɛ ye mɔawɛ ɔmatɔ.","Nyɛsùbùkì ẹ̀lẹ̀kì. Lɛ̀ mɛ̀ mǎbìmììkìì, bàgòmɔ̀ nùkpɛ̀ ònɛ̀nɛ̀ òdì mà, làtɛ̀dìwùnnɛ̀, yìmɔ̀wɔ̀ màtɔ̀",1.0,0.4571
+890,Ade foe nyɛ lɛtsa a kĩ lanɛ kato bikĩ babɔa ye dĩ ndɛ boe Ɔlate ayea tunukpɛ̃ a.,a de fuwenye le cha ki la ne ka tu bi ki ba bwa ye di. Nde bwe o la ti a ye a tu nu pe,1.3889,0.3279
+891,"Baguma boe Ɔlɛga mɔ boe Ɔlate Yesu Kristo bɛmɔ mi kɔnya, bɛkpa mi lukudɔ lɛmɛ.",Bagumabuoyale ga Mobuyola ti Yesu Kristo bemomikonya bepamuluku dole,0.8667,0.3065
+892,"Nɛ tidetɔ elo a na kamɛ ni, bati aawɛ wuda, lɛmɛ bɛláana ye, baawɛ kĩ baku lɛmɛ wuda aalo be.","Nɛ ti di tɔ ɛ lu a na kamɛni, ba ti a we uda, lɛ mɛ bɛla a gnai, ba we ki ba ku lɛ mɛ uda a lobi.",1.3,0.2286
+893,"“Odi nyɛ odi kĩ ɛtɛ mi ni, ɛtɛ yĩ malo, ade odi nyɛ odi kĩ ɛtɛ yĩ ni, ɛtɛ oti a kĩ edo yĩ a.","Odinio de ki eteni, eteni malo, ode Odinio de ki eteni, eteni oteaki edoyene.",0.96,0.4762
+894,Ade aye kɛnɛ kĩ midza pintii nɛ mi nkpã kadzi kamɛ nɛ boe Ɔlate a dĩ akũ a.,"Adaya kene ke mi ja pin ti, ne mi n pa ka ji ka me. Ne bo la ti adi a ku.",1.1111,0.3684
+895,Midã kadã wĩ nɛ bakpete a kĩ bɛdzɛ̃ nɛ mi akũ kĩ mitsua mi sukɛna a.,Mida kada winnɛ bakwetiɛ kibejenɛ miaku kimi chwa misu kana.,1.0,0.3725
+896,"Lɛmɛ ntɛ míamɔ lubo malo nɛ tuwĩ a kĩ miakɛna sũ ni, Baguma ahila mi!","Lɛmɛntɛmɛ a mɔlɔbɔmalɔ nɛtɛwunya kimiyakinasuni, baguma ahilami",0.8667,0.2264
+897,"Baguma nyɛ ɛtsa be nɛ kɔda kamɛ kĩ bɛtabuki bɛnaa Herodes sɛkɛ̃, foesũ bimuniki bɛtsã osi bɛbã bɛdzakũ bɛnaa ɔtɔ.","Bàgú mán yɛ̀ɛ chà bɛ́ɛnɔ̀ kɔ̀dàkà mí kìní, bɛ̀ tà bùkì bɛ̀ nàà hìrì sɛ̀kɛ̀n fɔ́ sìn bɛ̀ mùlìkì bɛ̀ chà òsì bɛ̀ bààn bɛ̀ chàkù bɛ̀ nàà òtò",1.45,0.5604
+898,"Bɔmɔ́ ye kukũkpalɛ a, kukũkpalɛ a kĩ ɛtɛ ndɛ Ɔlɛga a Obi mɔapɛ a aye.","Boma ye ku kupale a, ku kupale a, ki etende o legba obi mwape a.",0.8,0.3846
+899,"Manyɛ ye kɔlɛ kĩ ɛmɔ́ kĩ nkpɔla sũ ɛpau yĩ kĩ nkɛna ye adzuma, titɔ kĩ nɛ lɔkɔ lidi kamɛ ni, nsupa ye, ntomɔ ye liti, nvũna ye malo.","Manya e koleki, emwo ki nplasu epawi nki nkanayi ajuma. Titoki nelo koli dikameni, nsupai, ntomoe liti, mvunayi malo",0.931,0.3469
+900,"Nyansã kĩĩ odu táto ode, mbom katinya kamɛ ade yanɛ, ɛnyɛ́ hũhũ kamɛ ade, hũhũ kpa kamɛ eto.","nya sa ki o du tato di , mu o ka ki nya ka me adeya ne , enye hun hun ka me adee , hun pwa ka me",1.4444,0.3857
+901,Lɛmɛ nkɔna kĩ fusĩ kĩ mado boe ɔwaɛ̃ Epafrodito nɛ mi sɛkɛ̃.,"Lɛmɛn kunaki, fʋsinki ma dɔgbɛ wowe, ɛpafrodito, nɛmise",1.0,0.3478
+902,Ke kɔ̃ nviã nɛ awĩ!,"kɛ kɔn vi anɛ wi, fɔbɛ mɔ wɛ bɛ anɛgbwɛ. Alɛ kɛ fɔ tɔ bɛ nyani a, munikibɛ na bi flɛ tʃa bɛ jɛnɛ.",4.8,4.6154
+903,"Ade ayea mi batsɔ̃ midɔla mi akũ mikpa mi banyɔ, ayekĩ ntɛ be kamɛ badi tátɛ Baguma kalɛ a bido malo ni, mi ɔbla wĩ aafɔ̃ bɛtɛ bido.","A di a ya mi ba cho, mi do la mi aku mi pa mi ba nyo, ayekinte be kame ba di ta te bagu maka le a, bi do ma lo ni, mi o blawin a fo be te bi do.",1.25,0.21
+904,"Lɛmɛ nɛ kĩ Baguma mɔ yĩ kɔnya sũ ni, ɛkɛna yĩ oti a kĩ ye manɛ finyaakĩĩ.",Lɛmɛ nɛkibɛ guma mwayin kwayasuni ekɛnayi utiyakiye manɛ finyaki,0.8824,0.3091
+905,"Badi na nɛ baveli ĩye kutukpã tuvoli kamɛ bɛtsã bɛkamini nɛ ohiã kamɛ, bitomɔ be liti ade bɛkɛna be awɔda a.","ba dinna ne ba veli, i ye ku tu kwantu vulikame be chi a be ka minine o hya ka me bi tomu beliti ade be kena be awoda",1.2857,0.2674
+906,"Kĩ nnaa Yerusalem a, basɔfɔnɔkɔɛ̃ mɔ be banɔkɔɛ̃ a tsua ye onukpɛ̃ bɛkpa yĩ ade bɛwɛ kĩ nkɔ ye kɔtɔ a.","Ké ná Yèrùsàlémà, bà sɔ́fɔ̀ nɔ̀ kwí, mɔ́ bè bà nɔ̀ kwí àtwá yì ònúkpè, bèkpá yìí, ádè bèwé kí nkòyé kɔ̀tɔ̀.",0.9524,0.2468
+907,"Simon Petro bi boe ayekĩ Baguma nya lɔtɔ ɛnyɛ ye kawɛ ɛtsa bikĩ bɛnyɛ́ Yudafɔ a, ade ɛpau be badi kĩ bɛnya ye bade a.",Simoa petroli buo ayekini bagumanye loto. Enyei kawe echabikibeyei idafuo. Ade palobibadi kini benyei ayebade,0.96,0.4111
+908,"Perez ma Hezron, Hezron lɛmɛ ma Aram.",Pèerèsè ma hèɛzrɔn hèɛzrɔn ì mè ma àra,0.8571,0.5172
+909,Kitonɛkĩ kito anɛ kɔkɔɛ a bakã Mose mbla a kĩ ɛtsɛlɛ eyi a nɛ Kawɛya Luwi lidi nyɛ lidi akũ nɛ Yudafɔ katsɛnakɔ̃ ade bade lɛtsã nɛ ye fɔlɛtsa akũ nɛ ɔmatɔ nyɛ ɔmatɔ kamɛ a.,kito ne ki kito ne kowe ba ka mose mla ki akile iyanne ka oya luy lidinya lidi aku ne yuda fo ka kinaku ade ba de le chani e fleki aku ne oma tonto oma toka me,0.9722,0.4074
+910,"Ade Abonsam kpã Yesu ɛnamɛna Yerusalem, Ɔmatɔ Kpalɛwa a kamɛ a.",adi abosa kpanye su ena m na Yerusalemu oma tokpa lewa ka me,1.1818,0.2745
+911,"Nɛ foesũ ntɛ odi sĩ nhihiɛ kĩĩ akũ kakɛna ni, nnɛ́ otidziwa esĩ, mbom eyidza ɛdza nɛ Baguma kĩ yakɔa ye Hũhũ Kpalɛwa kakpa mi a akũ.","nɛfɔsùn, ntɛdèsìn, inyìyìakin àkùkàkànì, nɛ̀tìdùwàìsìn, mbòmèìjèjànèbàgùmá, kiyàkwàìhùhùmpàlàwàkàkpàmìyà.",1.0,0.6373
+912,"Yesu bi ye kĩ, “Luwi a onyole odi te opunu ɛvɛ bati beblebee.",yesubiiyeki looyaa oyinoditeyopu nu eba batibibelebey,1.0,0.3696
+913,"Katɛkado lɛfɔ̃ Sara lɛmɛ na kɔbɛ̃ epuli ɛtsãmɔ kɔma, titɔ kĩ ɛkɛna katsɔkpa malo, kitonɛkĩ ebu Baguma a kĩ ɛkpa ye bɔhɛ a ɔnɔkɔalini.",katɛkadulɛfon saral men nakobɛ ɛpliyɛ chamokɔ mɛɛ. Tiitoki ɛkɛnakachɔkpamalu. Kitiiniki ɛbuubaguma aki ɛkpaa i bɔhɛɛ onokwalii,1.0,0.3429
+914,Ade edo yĩ kĩ nde lɛtsã kĩ bikĩ bideĩ nɛ awɔba kamɛ.,Àdè ìdè yìnkìn ìdè lècè kìn bíkìbì dè ná òbàkàn.,0.9167,0.475
+915,"Bɛtɛ bido nɛ lɔkɔ lukũ odi kamɛ, ade ntɛ sɔhuiɛ adi ya ni, bamuniki liti.",Bɛɛtɛbi dɔnlɔ kɔlu ku odikami. Alɛntɛsɔfiɛdi yani bɛmɛnɛki,1.0,0.3036
+916,"Budeĩ kɔnɛte kĩĩ bɔkpa boe akũ nɛ boe kadzi kamɛ, ndɛ ayekĩ kutse tunu api koe kadzɛla kpli a.","wuden connecte klin, wopa gbowe ya ko ne, boka jigame, ndaye kikuche tuna apikwe kagila klin",1.0,0.4459
+917,"Lɛmɛ nɛ bati lidede sũ ni, bɛtána osi biwomɔ ye.","Lɛmɛnɛ bɛ ti lide desuni, bɛ tana osi biwomoyi.",0.9,0.1351
+918,"Ɔgɔabi láwũ akutu, ade ɔtatsuɛ láwũ asãã babi a.","Ogua bila un akutu ade otachue, la un asa babie.",0.8889,0.3947
+919,"Ntɛ ĩya ni, maadɛ mi nɛ fɔlɛtsa bɛbã a kĩ fute a akũ.",Nti enyani mademine flecha be ba ki futia aku,1.0,0.3846
+920,"Edeĩ kɔbɛ̃ kɔlaa ɛbɛ̃ yĩ, ade ntáfɛta kĩ mawũnya mpabua nɛ ye abɔa malo a.","A de nko be kura e be yi, a de nta fata ki ma wu nyan pabua ne yi, abua malo",1.4,0.3393
+921,"Te awɛ nɛ nɔ bati akũ bɛna kasaɛ, kafɔ̃ awãwã fɔtsa mɔ nsɛntsɛlɛni pii fɔya nɛ nɔ Ɔsumunɛ Kpalɛwa Yesu dĩ akũ.",Te no na no bati akubɛ na kasɛ ka fo ahonwafo chammo nsɛnkyerɛni pii fɔ ya no no ɔsu mu ne pɛlewa Yesu di akɔ.,0.9545,0.3372
+922,"Baguma ahila tite a, kĩ tamɔa oni mui kafɔ̃ futse amɛ nɛ te akũ kana nfasɔ kakpa bikĩ be sũ banɛ fɔba nɛ te akũ a.",Bàguma àhìlà tì tiya kɛ tà mwà ònyì mwì kà fɔnfɔ chiya mɛ̀ nɛ̀ tiyaku kànan fɔ sɔ̀ kà kwàbìkì bè sún bànɛ̀ fɔ bànɛ̀ tiyaku.,1.0,0.4884
+923,"Oti a kĩ edeĩ atɔ ni, etse fɔlɛtsa a kĩ Hũhũ a lamɛna tɛsɔli a kabi!","O tiakyi, edee atoni, ecefleyaki humu a lemai to sale a cabi.",0.875,0.451
+924,-Foesũ fusĩ kĩ oti bɛbã ɛyaawo nɛ boe kamɛ ndɛ ɔdansini ɛkpa boe Ɔlate Yesu kayidza kato kanɔkpa a.,"Wɔ fɔ fusi ki, ɔti bɛba ɛya wone gbuɛ ka mɛndɛ. Ɔdansini ɛgbagbɔ yɔla tɛ Yesu, ka ija katɔ kanɔpɛ. Adɛ fusi lɛ mɛ ki, ɛnya ɔti kɛ ɛnyagbɛ batɛ.",1.4737,0.7089
+925,"Ke liti a, fɔtsa ɔkɔlɛnɛ bɛbã a kĩ ɛnya lɔtɔ ewo linikɛ a ɔwɛ̃ a, lɛmɛ wo nɛ de kamɛ.","kɛlɛ tiã fa jɔkɔlɛ nyɛbɛn, kiɛ nyalɛ tɛ woli ni kiɛ ɔnyɛa. Lɛmɛ woniɛ dɛ kɛmɛ.",0.95,0.3548
+926,"Nɛ foesũ ni, kawɔlɛ kide mi ode, mɔ mi a kĩ mideĩ nɛ awã a flee!","Nɛ vu suni, pavle ki demi, o de, momiɛ ki mi de lɛ nɛ awu afle.",0.9375,0.3261
+927,"Kĩ bɛbɔa mpaɛ biyua a, kɔla kĩ koe kamɛ bɛna a kuna.","Kibe gbe wam pɛ bi uɛ, kɔla kikwe ka mɛ be na ku",1.0,0.3846
+928,"Ntɛ kɔlɛ akɔ odi ni, ɛnya nɛ kɔla ayekĩ ntɛ miyatsɛna nɛ Baguma kɔla kamɛ ni owula lɛláana kadzɛ ɛkpa ye akũ.","Ntɛ kwalɛ akudini, ɛnyɛ na ekola. Ayɛkintɛ miacɛ na ne baguma kola kamɛni, ulalɛla na kaje ekpayɛ akuli.",0.9091,0.3023
+929,"Yesu bɔa be lɛgbã kĩĩ, lɛmɛ bɛtánu lɛtsa a kĩ yatsa a kayɔ.","Yes, ŋu ba bɛ la gba ki lɛ na bɛ ta nu lɛ chaki ya chaka.",1.2308,0.4222
+930,"Ɛtsa be fɔtsa pii nɛ fɔgbã kamɛ ɛlɛ kĩ, “Luwi a onyole odi naasã kamɔnɛ.","Ẹ̀kà méfúnyábii, náfúgbánkámẹ̀ ẹ̀lẹ́kín, lóyà. Ọ̀yín ló dináásà kámẹ́ nù.",1.0,0.6727
+931,"Bati badi kĩ bɛwɛ kĩ babɔɛ fɔlɛtsa nɛ Yesu akũ na nɛ awã, foesũ bivia ye kĩ, “Boe mbla kpa osi kĩ bɛtsa fɔsɔ nɛ Kawɛya Luwi akũ?",Bati bati ki bewe ki babo efre ka Yesu akuna ne awa. Fosi bi bi a eki. Boye mlapa osi ki be chapo so neka wiya luya,0.8929,0.3918
+932,"” Kĩ Yesu lɛ fukĩĩ eyua a, ebuki ɛkahɔ nɛ Galilea.","Tiekie so lafu kie yua, e buke a ka honi Galilea.",1.0,0.3784
+933,"“Mivia fɔtsa lɔkɔa baakpa mi, miwɛ fɔtsa lɔkɔa míamɔ foe, mibɔa opunu lɔkɔa baabinya bɛkpa mi.","Miviya fɔ caa, lɔkɔ baa kpɔmi, miwɛ fɔ caa lɔkɔ miamɔ fɛɛ, mibɔɔ punu, lɔkɔ baabinya bɛɛ kpami.",1.0,0.2
+934,Lɛtalɛta kɔla tupunu a flee binya ade nkɔsɔnkɔsɔ a wɔlɔ nɛ kɔlabawanɛ a flee akũ tɛtɔ a.,"Lete lete kɔla tu punu aflia bina, adɛn kɔsɔŋ kɔsɔ a wolo nɛ, kɔlabawa nɛ a fili ya kunte to.",0.9412,0.2676
+935,Finyaa kɔ̃ binyina kĩ lɛtsa nyɛ lɛtsa kĩ ɔkɔa ɔkpa yĩ a flee to nɔ sɛkɛ̃.,Sinya ko binyinakyi lacanya lakyin okokwaye aflei tonosake,1.0,0.4364
+936,Bɛwɛ kĩ bakɔa be nkpã bɛkpa faa ntɛ fɔ́anya wuda malo.,"Me wee gi, me kpe bin pan, me kpe fa, nte fo nya wu da ma lo.",1.5455,0.5
+937,"Bɔtsɛlɛ ovoli kĩĩ katsɛlɛ bɔama mi, ayekĩ boe kawɔlɛkamɔ a aakpɔla.","Bɔ̀cɛ̀lɛ̀-bòlìkìní bɔ̀àmàmì, àyìkìgbɛ̀ kàwɔ̀lɛ̀gàmwá àkpòlò.",1.0,0.6
+938,Bati nɛ tite kĩĩ akũ a tɛ boe mɔ kawɔlɛ paa a.,"Bè tì ne tì tì kìn à kuà, tègbe mò kà wòlè pa.",1.0833,0.5588
+939,"Nɛ lɔkɔ a na kamɛ a, fɔtsa bakɔlɛnɛ a ya nɛ Yesu sɛkɛ̃, bivia ye kĩ, “Owei bɛ̃ flee nɛ ode lɛgãkanyakɔ̃ a kamɛ?","Nɛlɔkwana kǎmìa fɔtabakɔlɛnɛa nyììsú sěkɛ́, bìbìa yèkì, ɔwɛ́ì bɛ́nfìlɛ nɛ́ ɔdɛ́lɛga kan yakwa am.",0.9583,0.3625
+940,"Nwaɛ̃ amɛ, atɔ kutse aapuli kuwũ gowa babi, ĩye akateleku aapuli ewũ atɔ babi, mbɔɛɛ?","Mwame atoku chie aple ku ngu ababi, ye akatelekue aple enu atonbabi mwae.",1.0,0.4091
+941,"Bipi osi ade bɛnamɔ lɛtsa nyɛ lɛtsa pɛpɛɛpɛ ndɛ ayekĩ Yesu bi be a, ade bɛtɔ Wuda Katɛ̃ funitsã a nɛ awã a.",Bibi osi. Adibena mole cha nyela cha pepepe n dia eki Yesu bibia. Adibe to wuda kateng funi chania wan. Yesu mwaye fotoba nyaniya na jino punua kun ki banya.,1.2174,0.878
+942,"Awaɛ̃ ɔtɛ odonɛ a kĩ ye katɛkado tábo anɛ, lɛmɛ Kristo ku nɛ ye lɔlɔ a ni, yaawɔ nɛ nɔ kadi a kĩ onyina a sũ.","Ayowee, wote odoona aki, ye kataka do tabuane. Lame kristo kuna yilo oloani, yiawo, neno kadiaki onyinaa.",0.9231,0.35
+943,"“Midã, mado mi ndɛ baveli aye nɛ kulikii kamɛ, foesũ minyi kadi ndɛ bɔɛ aye, midɔla akũ bɔɛɛ ndɛ mblɔduma aye.",Mɛdomi dabawɛli ayɛ nɛ kuliki kamɛn. Vɔsun minyikadi ndaboɛ ayɛ mɛdɔla akubɔɛ ndɛ mblɔduma ayɛ.,0.8571,0.2706
+944,"Yesu lɛ ɛnaa lɔtɔ kĩ, “Onyole odi na babinyole nviã.",Yesue lẹ èná lò tó kí. Ònyíléyò dí nà bàbínylẹ̀ inviè.,1.1,0.525
+945,"Ɛlamɛna boe kadani kanamɛna ye kutidu odu a kamɛ, ade boe kukũkpalɛ lɛmɛ ade nɛ ode kabu a.",Elamena bueka dannikana amena yikutidu oduakame. Adebu kukupaleme adené odekabua.,1.0,0.2361
+946,Foesũ bimuniki bɛtsã Misia bɛnawo Troa ɔmatɔ a kĩ ɛwaa nɛ mpo abuĩ a kamɛ.,Pues un binini ki becha misia be na o tro o matua ki e wane npua bwiya kama.,1.1333,0.4237
+947,"Nɛ lɔkɔ a na kamɛ a, Herodes lɛnya Galilea tite akũ, ade ɔwaɛ̃ Filipo nyá Iturea mɔ Trakoniti tite akũ a.",nelo kwana kamea herudis lenyagali titieku ade owa filipuo nya utiria motrekoniti titieku,0.9524,0.321
+948,"Misum ye a kĩ ɛkbɔa tite mɔ ode, mpo mɔ mui kĩ banɛ nɛ tite kamɛ a!",Misi muya kea bo ti temo ode. Umpo mo muiki banneneti te kame.,0.9412,0.3469
+949,"Fɔgãkpo tɛya-ana bɛbã keni fusinya lɛgãkpo a, ade banɔkɔɛ̃ tɛya-ana kĩ bido tɛtadiɛ ovoe, bɛtsa sika ngbã fɔgãbɔɛ dzi nɛ foe akũ a.","Foga kpo te anabe bakeni fusi nyale gakpo a, adibana kwei te ana, kibi dote tari o vwei, beki asika nga Foga boe jine fu yakuna.",1.087,0.3786
+950,’ Ade ke Baguma kɛna lɛkpati katsua ndɛ apam aye nɛ Abraham mɔ Ye Baguma kayite a.,A kɛ́ bɛ́ bɛ́ àsùmwá kɛ́lɛ̀tí bɛ́ àjàkú nɛ́títì àákúbɛ́yà àsùmwá yíné á ùkí. Àdɛ́kɛ́ bɛ́ gùmákɛ́nɛ́lɛ̀ kpàtíkàchuwá ndé àpwámwà àyé nɛ́ àbràhámó yébɛ́ gùmákáyítá.,1.5625,1.0781
+951,“Tsɛlɛ fɔlɛtsa kĩĩ kamɛna Sardis Asɔli a ode fɔtɔ ɔnyanɛ a kĩ.,"Kyerɛɛ frɛɛ kyerɛɛ kyerɛɛ kyerɛɛ kyerɛɛ kyerɛɛ kyerɛɛ, sɔdisi asɔliɛ, ode fɔtɔɔ ɔnyɛniɛ.",1.0833,1.0
+952,"Foesũ, nwaɛ̃ amɛ, mivɛlɛ mi akũ nɛ baviɔ̃ kasum ɔwɛ̃.","Fwɛsun, unɛmɛ, nɛvɛlɛmyakuna ba viɔ ka sun o.",1.0,0.3947
+953,"Aabi katinya kamɛ bati flee lɛtsa kĩ ɔmɔ́ nɛ awĩ, mɔ fɔtsa a kĩ maanyɛ ntsa nɔ a.","Abí kàtí nyà kà mì bàtí flè le càkì o mònè àwí. Mòfò càkì màn yɛ́n chànwà. Àdè kà kònyè kà kòkí mà dù nònì, mà jànè",1.5,1.0656
+954,Katɛkado lɛfɔ̃ Yeriko ɔmatɔ foebi a kĩ Israelfɔ tsã bisinya foe fuwi evũkɔnɔ a veliveli.,"katɛka dɔlɛ fɔ yɛrɛ ku ɔmatɔ fwi biaki, Izɛlɛ fɔ cambisi ɲafwi fwiɛvukuna vɛlivɛli",1.0,0.3611
+955,"Ewo ɛnaa ode mɔawɛ a, awã kĩ finyaa ɛnanyɛ ye akũ nɛ Baguma anɛ nɛ boe onukpɛ̃.","ewe na udemawe a, ama kifinnya ena nyeyakuni nebaguma ne nebwe unu",0.9412,0.4333
+956,"Ntɛ odi kɔna kĩ yaapuli ɛkɔa anɛ ete nɛ te akũ ni, ndeĩ kadzakɔ̃ kĩ makɔna lɔmɔ mbɛ̃ oti a na kɔlaa.",ntekuna kini yapli ekwa ne tene tiakunindi nkajako kinamuna lomu mben utia nakona,1.0,0.4533
+957,"Lɛmɛ kĩ Yudafɔ a kĩ bideĩ nɛ Tesalonika nu kĩ Paulo ya ɛlamɛna Baguma kalɛ a katsa nɛ Beroia, bɛnaa awã bɛnado ɔtutũ nɛ bati a kamɛ.","Mɛɛ ki yuda fɔɔ ki bi deni Tessalonika nuki Paulo yaala mna ba guma ka lee ya kachana beru ya, bena wa bena duo tutu ne batia ka mɛɛ",1.0741,0.2788
+958,"Nɛ kĩ Festo awɛ kĩ Yudafɔ a bɛwɛ ye kalɛ sũ ni, evia Paulo kĩ, “Ɔwɛ kĩ anaa Yerusalem lɔkɔa ndzɛ nɔ fɔlɛtsa a nɛ awã mbɔɛɛ?","Na kyi feso o o wɛɛ kyi yudafoɔ bɛ wɛɛ yɛ kalesunɛ ɛvviapawulo kyi owɛɛ kyi ana Yerusalem, nɔkwanjɛ nɔ fɛlɛɛ cha nɛ",0.8889,0.4409
+959,"Yesu kpa ye mbuayɛ kĩ, “Awã kĩ manaa, ɔláapuli otomɔ yĩ finyaa bɔnaa, lɛmɛ ke liti ni, aatomɔ yĩ liti.","O nyɛ nyi ŋa? Ke e sulɛ flɛca ke e yu a, fɔ hɛe ówɔ lapa. Ade ɛlɛ yɛdɛdɛ dɛ kin. Ma bi mini, nɛ onɔ kwalekamɛ kin, mikamɛ odi anyɛnyɛpa. Ama na",1.65,1.0519
+960,"Bubi mi fukĩĩ tɔ̃, buke mi awɛ nɛ akũ mɔ ɔsĩ mɔ ɔsĩ kĩ boe Ɔlate aavɛlɛ bikĩ bakɛna fɔtsa kĩĩ bamɛ a sɔtɔ.","Bube mi fu ki ntu bu ke mi a wa ne a ku, mo si mo si ki bo la ti a va le bi ki, ba ke na fo cha ki ba me a so to.",1.4167,0.375
+961,"Ade fukĩĩ sũ Baguma vɛ mi a, kitonɛkĩ Kristo mɔawɛ a malo mɔ́ lubo nɛ mi lɔlɔ, ɛkɔa foe ɛtsa mi nfantuhũ kĩ míatsã ye abɔa kakekɔ̃.","A defo kisu bama vemian, kito na ki kristo mwawe amalo, mwa lubo nami lolo. Ekwafwe echa mi nfantu hu, ki mi achaye agbwa kaka ko.",0.9259,0.33
+962,"Ntɛ bɛta oti a, fɔawo ndɛ ayekĩ kakpɔ̃na kata aye.","Mbetta otián, fawun nekyi kakpuna attai.",1.0,0.5263
+963,Bati dza nɛ ɔwɔ lutubu baũ a abuĩ ade Yesu katsa be fɔtsa nɛ fɔgbã kamɛ a.,Batijane owolutubu bawa abuin adesusu kachia befochane fogbakamini.,1.0,0.386
+964,Fɔkɛna be wãwã paa kĩ bɛmɔ́ kĩ ye mɔ otsole bɛlamɛna kɔdzɛla kalɛ.,ki olono naono kwalika meni ojimo,1.0,0.8654
+965,"Otidziwa odima lɛláapuli ɛkɔlɛ ɔnɔ a na, mbɔɛntɛ bati mpim ɔha tɛna-ana a kĩ be odi lɔlɔ kɔtɔ bise nɛ tite akũ a.","Ti di wa odi mala la pli a kule onwana. Mbo nte bati mpim o ha te nana, ki be odi lo lo koto bi se ne ti ti a kwo.",1.087,0.2955
+966,"Mose akũ Baguma mbla a tsã ɛya, lɛmɛ ye kɔnyakamɔ mɔ ɔnɔkɔali a tsã Yesu Kristo akũ fɔya.","Mɔ se Akubaguman bla chan eya, le me ye konyaka mɔ mɔ ɔnɔ kwa le a chan Yesu Kristo aku fɔ ya.",0.9444,0.2571
+967,"Ovoli kĩĩ to yĩ, Petro, Yesu Kristo fɔtɔ ɔnyanɛ sɛkɛ̃.",ovuli ki toi Petro Yesu Kristo foto o nyanesi,0.7,0.2927
+968,"Nfɔ̃ emuniki yaya nɛ nɔ sɛkɛ̃, ade fɔakɛna yĩ ndɛ yĩ ɔwɔlɛ flee tomɔ ye a.","M̀ fɔ́n ɛ̀ m̀ nù kì yà ànɛ̀ nɔ̀ sákɛ́. Àdɛ̀ fákɛ́ nà ìn de, ìn yɔ̀ wɛlɛ́ fɛlɛ́ɛ̀ tɔmɔ̀ yɛ̀.",1.25,0.5091
+969,Yaanɛ eto lɛkɛ dzununuunu a kamɛ ɛyaatɛ̃ ɛnaa bɛwɔla ye.,"Ya nneto leke jununu nu a kame, e ya tenna be wola",1.1,0.3778
+970,Fɔtsa katsa kĩĩ a deĩ nɛ Kalɛ Wĩ a kĩ bɛkɔa bido nɛ yĩ awɛ kĩ nlɛ a kamɛ.,"Focacakiyade, nkalewuya kibe kobidone yawe, kenle akama.",1.0,0.4444
+971,"Mbla a kĩ Kristo kpa boe nyɛ kĩ odi nyɛ odi kĩ yawɛ Baguma kalɛ ni, ɛwɛ ɔwaɛ̃ lɛmɛ kalɛ.",Mbala ki kristo pagbe nyeki odinyodi ki awe bagumakaleni ewe wine mekale,0.95,0.3333
+972,Kitonɛkĩ boe flee bɔakɛna nfumusu pii.,"Kitonéki, buwúflé, buwukina mbwonsu-pi.",1.0,0.5312
+973,"Lɛmɛ ntáwɛ kĩ mahɛ nɔ kĩ kpa yĩ kabumɛna, mbom mawɛ kĩ kɛna foe futo nɔ ɔwɔlɛ kamɛ.",Lamentao we ki maheno ki kwaika bumana mbo mmawo ki kenafufu no woleka.,1.0,0.4062
+974,"Bati a kĩ bite bidzi nkpã a flee, kĩ bɛtákɔ be nɛ lubo kamɔ kĩĩ kamɛ a, támuniki nɛ fɔtsa a kĩ be mɔawɛ bɛkɔa awɛ bɛmɛ a kasum liti.",bati akibe te bijin pa afle ke beta kobe ne luboka moki inkame a. Ta muninke nefoca akibe muaye beko awe be me a kasumulite,0.9,0.36
+975,Fɔlɛtsa kĩĩ gba nɛ Yesu batomɛnanɛ a kamɛ kĩ fɔtɔ ɔnyanɛ kĩĩ lɛláaku.,kanea fo jaba kula nyan kae ta okuloa ve viliasawa ki eji mokofa bia beya menane owu abu I will be na mo owu abule le,2.0,1.3036
+976,"Ke liti a, ɛkɔa mui ɛtsɛka mɔ kutukpabi mɔ banantsue babɔanɛ, ɛkɔa kuveli tɛtsã mɔ tuwĩ mɔ ɔlɛ̃ ɛta ade ɛnyɛ ɛsã nɛ mbla ovoli a mɔ bati a flee akũ.","Kɛlɛti-a, ɛkwa-nwi ɛcɛ kamo kucukpabi moba nancuɛ babɔnɛ. Ekwa kuvɛli tɛcan mɔtuwi mɔlɛn, ɛta adɛ ɛnyɛ ɛsannɛ mbla uvɛli a mɔbati a fɛli ya.",0.8387,0.2895
+977,"Ade finyaakĩĩ lɛtsa nyɛ lɛtsa kĩ lɛkɛna lɔkɔɛ ni, owi lɛláabuna mɔ laatɛ̃ lɛnaa.","Adefinyaki, lechyanyelechyakilɛ kenalokwɛni. Owillɛlagunamolaten lena.",1.0,0.3906
+978,Hũhũ Kpalɛwa a Kaya Nɛ Pentekoste Luwi a Akũ.,Colombia,1.0,0.8889
+979,"Ade Yudani mbla ɔtsanɛ odi kĩ ɛna nɛ awã a, nu fɔlɛtsa kamɛ kasa a.","E di ku e funa o chon. Ki be moye beta amani, o wae nyule e kunao kunaoa, lo kpa be ma babi, be kpa otonyade.",1.7333,1.1765
+980,"Ɛvɛ ye fɔtsa bakɔlɛnɛ ewua-nviã a ɛkpɔta, ade edo be nviã nviã a.",Fɛ fɛ fɔ cɛba kɔlɛ nɛ ɛwan viɛn ɛkpɔta. Adɛ ɛdɔbɛn viɛn viɛn,1.0,0.36
+981,"Luwi a, kĩ Yesu katsa fɔtsa a, Farisifɔ mɔ Yudafɔ mbla batsanɛ a kĩ bito tɛmatɔ kumɛkumɛ nɛ Galilea mɔ Yudea tite akũ, mɔ Yerusalem na nɛ awã.",Ti Yesu ka cha facha Feresifo moyu da fon balaba chani aki bito te mato kume kume na Galileya moyu di a ti te aku moyu Yerusalem na ne ayu,1.0,0.3423
+982,"Nda, fɔ̃ be malo bɛna nɛ boe kamɛ ndɛ ayekĩ odeĩ nɛ yĩ kamɛ, ade yĩ malo ndeĩ nɛ nɔ kamɛ a.","Na fobe malo bonane bwekame, nde ki o deni ikame, ade nyimale nde nono kame",0.9091,0.3485
+983,Ade fukĩĩ kamɛ bunyi lɛtsa a kĩ liti lɛnyɛ ɔdɔ a.,Aɖu fukɛ̃ kɛme bɛwuɲilɛ caki litilɛ ɲɛwɔdɔ.,1.0,0.4737
+984,"Boe Ɔlate, ade fukĩĩ sũ Yudafɔ a bɔɛ fɔlɛtsa nɛ yĩ akũ a.","Bua la ti, a lefu ke ensuyo da foa boefole cha ne iya ku.",1.0769,0.5116
+985,"Nɛ futeli nviã liti a, bɛnyɛ Felike ade bɛkɔa Porkio Festo bɛyamɛna nɛ ye kadzakɔ̃ a.","Ne fute le envi ti, benye feliki adebe kwa pwoki yo festu benye amana neye ka jaka.",1.0625,0.3582
+986,"Luwi a ke olobe a, Yesu vɛ ye fɔtsa bakɔlɛnɛ a ɛlɛ kĩ, “Mifɔ̃ bunyina ɔwɔ lutubu baũ a bɔnaa de abuĩ atide a.","Lugu ya ke olo ya, Yesu fe fo chabakolenya, eleki. Ni fo bo nyina owo luti bu ba wa. Bona de abunu ati de.",0.875,0.358
+987,Ade deedimɔapɛ tite kuna mɔ ɔsĩ mɔ ɔsĩ ade kɔla a flee kuna kɔnake a.,"Ah, tu me plaît, tu es cool, tu es mon si, mon si. Ah, dis quoi là, tu es cool, ou quoi, hein, qui ?",1.6,0.9815
+988,“Tsɛlɛ fɔlɛtsa kĩĩ kama Efeso asɔli a ode fɔtɔ ɔnyanɛ a.,Lòfòlò jèèkí ngmáfèsì ósòlìa òdífòtóyánnè.,1.0,0.6591
+989,"Awã na bɛkabɔa fɔwɔla kĩ, “Bati badi tsɛ̃mɔ ɔtutũ kado nɛ kakɔ nyɛ kakɔ, ade bɛkɔa foe bɛyamɛna nɛ awĩ kĩĩ lɛmɛ a.",A wóna békabwá fólèkí bati bati cemo otutu kadone kakònyé kakó adebe kwofè bɛ ama na anwukíilè mè.,0.9565,0.4138
+990,"Ntɛ odi lɛlá katɛkado ni, ye fɔlɛtsa lɛláawo Baguma anɛ, kitonɛkĩ odi nyɛ odi kĩ yaya nɛ Baguma sɛkɛ̃ ni, kɛnɛ kĩ ɛna katɛkado kĩ Baguma deĩ, ade ɛnyɛ bikĩ bawɛ ye liti osi a kɔtɔ osenɛ a.","Tɛ odi la laka tɛ kaduni, ifulɛ kyɛlɛ la o bagumani, kɛtɛnɛki odi nɛ odiki yaya nɛ baguma sɛkɛni, kɛnɛki ɛn laka tɛ kadu ki baguma dɛŋ, ani ɛnyɛ bi ki bawɛyɛ litio sia kotoosɛni.",0.8421,0.2345
+991,"Salmon mɔ Rahab ma Boaz, ade Boaz mɔ Rut ma Obed a.","sɛ mɔ mɔ rahabɛ ma bʊɛ, ale bʊɛ mɔ rut ma obɛri",0.6667,0.3947
+992,"Yudafɔ banɔkɔɛ̃ a kawɛ ye nɛ luwi a kanyakɔ̃, bɛkavia kĩ, “Nde oti a?","Ediáfo banákuia kowé i nẹlúi akanya kọ, beka viakí nọti",1.0,0.44
+993,"Mi bapopo, ntsɛlɛ mma mi, kitonɛkĩ mideĩ kɔbɛ̃, Baguma kalɛ a deĩ nɛ mi kamɛ, ade minya Oti Kpa a akũ a.","Meba pupu nkyere mami, kyete nkyemide nkobeng, bagumakalae den nemigame, ademi nya wutikpa aku.",1.0,0.4026
+994,"Ade fɔláasĩ malo kĩ miabinya onukpɛ̃ milɛ kadima, kitonɛkĩ baamɔ ayekĩ mi ɔbla kabɔa nɛ Baguma kavila kamɛ kpalɛ mi akũ.",ade forla si maloki mi abin ya onukpe mi le kadi ma kito ne ki bamo aiki mi oblakaba ne baguma kabila ka mekpale mi aku,1.0952,0.2165
+995,fuketimɔ ayekĩ edzi nɛ akũ kahɛhɛ mɔ nkpã kanya kamɛ a.,"Fuketi mo aiki e gine aku, ka hehe mo mpakanya ka me.",1.0909,0.3636
+996,Baguma hila oti a kĩ ɛtamɔ́ nfumusu adima nɛ yĩ akũ.,Ba guma kile otia ki atamo fumu su ade mananya.,1.0,0.3
+997,"Foesũ biwula atsɛ biwo nɛ bati a kamɛ, bɛbɔa fɔwɔla kĩ, “Nda amɛ, nde sũ miakɛna fukĩĩ odu?",ku tɔ bi wu la tɛ bi wu ne ba tɛ ya ka me be bɔ fɔ wula ki? nda me nde sumi kɛ na fɔ ki yɔdɔ,1.4444,0.3623
+998,"Ayekĩ bati pii fɔli nɛ ye akũ sũ ni, ewo edzi nɛ ɔkɔlɔ kĩ eteĩ nɛ mui anɛ kamɛ.","Aya ke bati pi folinɛ yɛ akusuni, ɛwɔ ɛjinɛ okɔlɔki ɛtɛi nɛ mwii ane ka",0.9474,0.3729
+999,"Ntɛ ɔta fu sɛnɛta ni, nɔ mɔawɛ akũ opila.","Ente o ta fuse na tani, nwo ma waye ku o pula.",1.3333,0.4194

@@ -299,3 +299,703 @@ sample_id,reference,hypothesis,wer,cer
 297,To wan eŋɛ la bem pa’alɛ ti to bo’ori to deodoma gilema?,ti waan iŋ la bee paal ti ti boori tudeeduma gilima,0.75,0.2619
 298,to sunsɔa san nyie?,yoo ni kɔb ki li,1.25,0.8
 299,Beni n sɔi ti nɛra la a zaba nara ti ba na’asɛ Yehowa ba pɔɣedire daarɛ?,bi nin sɔi ti nɛri laa zaba nara ti ba naahi yehowa ba pɔgidiiri daarɛ,0.4375,0.1455
+300,ŊMIBERA HO LUƔERƐ KPƐ’A SAN TUE HO,ŋmibira ho lugir kpia san tuu ho,0.5714,0.2222
+301,MALUM BISƐ HON TUKERI SE’EM LA,maal bisi hun ti kurosein la,0.8333,0.4167
+302,PA’ALƐ HO KƆMA TI BA TA’AN DITA SƐƐRA,ti ba ta dia sia,0.75,0.6071
+303,Bem n wan soŋɛ nɛra la a pɔɣa ti ba ana du’a du’a la taaba?,bee nwan suŋ nɛra la a pɔga ti ba ana duodua la taaba,0.4667,0.119
+304,a Ba tee yu’ura ase’a mɛ.,tiŋa nɔɔrin yelsun la yeti ba tee yuuraasiɛ ma tiŋa nɔɔri n yelisun la baasiya,2.1667,2.8824
+305,TO TƐ̃RI TO MABIISI N TARI YELEMƐŊƐRƐ LA MƐ,to tiɛri ti mɔbɔnr n tari yilmɛŋli mɛ,0.5556,0.3824
+306,Beni n sɔi ti to wan ta’an yeti Yehowa dela ‘Taŋa la’?,bi nin sɔe ti tunwantaan yeti yehuwa dila taŋa la,0.6667,0.1538
+307,Beni n sɔi ti la nara ti to pɛ̃ɣera Yehowa?,bi nin sɔ la na ti tu piɛnra yahua,0.8,0.4062
+308,To wan zamesɛ baŋɛ sɛla n sɔi ti to loe ti to pu’usa Yehowa.,ti wan zams baŋ sɛla nsɔi ti to loo te ti puosa yehowa,0.6429,0.1778
+309,TO WAN EŊƐ LA WANI KƆ’ƆN GURƐ YELEMƐŊƐRƐ LA KANKAŊI?,ti wan iŋ la wɔni kɔɔ gur yelimaŋ la kankaŋi,0.6,0.2683
+310,Tɛ̃ra Naayinɛ Puti’irɛ N De Se’em Daam Nyua Poan,tanri naayinn potenɛrin di seim daan nyuɔ puan,1.0,0.3784
+311,HON WAN LEBESE LA WANI?,un wan lebis le wan ni,1.0,0.3333
+312,"Ho San Tara Sakerɛ Tuna Tuuma, Ho Wan Ta’an Dɛna Tontɔɔdaana",hu han tara sakir tuna tooma u wan taan da na tun tɔɔdaana,0.8182,0.2083
+313,Beni n wan soŋɛ hɔ ti ho ta’an yese ho suuren zusɛ Yehowa?,bi ni wan suŋ hɔ ti ho taan yesu hu suonri nzusi yehua,0.6154,0.2727
+314,NƐREBA N WAN TA’AN SOŊƐ SE’EM,nɛriba nwantaan suŋ seem,0.8333,0.1364
+315,"c FOOTE LA VUURƐ: Mabia n kaali daily text bulika, kaala Baabule la wuntɛɛŋa ge nyaa keŋɛ bakwai tiŋasuka zamesegɔ zaanɔɔrɛ",fot la vɔɔnrɛ mabɔa n kaali deli tek bulika kaala babul la wonteɛŋa ge nyaa keŋɛ bakɔ tiŋasoka zamsigo zaayɔɔnrɛ,0.5714,0.2475
+316,REINO KESK N TƆƔƐ SƐLA,zoe,1.0,0.8889
+317,"“SƐBA WOO N ZOTE NA’AYENƐ, SƐLA KA DAANE BA”",siba woo n zoti naayin ni sala ka daani ba,0.6667,0.2188
+318,BASƐ TI HO SAKERƐ KPE’EM NANANAWA,baha ti husakr kpeem nanana wa,0.8333,0.1852
+319,"Sɛba N Kuregɛ Wa, Ya Dela Tuulum Nɛreba Tansugere La Poan",see ban kurku waa ya di la toolo nɛrba tan sugu la puan,1.0,0.3478
+320,TO WAN EŊƐ LA WANI TA’AN ZE’A KANKANŊI?,tiwaiŋ la wan ni ctaan zia kan kaŋɛ,1.0,0.3103
+321,TO KA MI SANSƐKA TI BA’ASEGƆ LA WAN WA’ANA,to ka mi sansɛka ti baahigu la wan waan na,0.3333,0.125
+322,MAASUM SOŊA,maase suŋa,1.0,0.3
+323,TO SAN TARA PUTƐSONƐ TO WAN NYƐ NYUURƆ,tuwhan tar potesune ti wan nyi nyɔɔrɔ,0.875,0.3871
+324,BENI N SƆI TI LA NARA TI TO TARA SUURE LUA TI YEHOWA WAN DI SUGERI BO TO?,beni nsɔ ti la nari te titara suunri lɔɔ ti yehuwa wan di sugr bo tu,0.6111,0.2182
+325,ZUSEGA LA ZAMESEGƆ WAN BO HO PAŊA,zuuga lazamligu wan boh o paŋa,0.7143,0.2222
+326,KƆ’ƆN BASƐ TI HO PUURƐ PEE LA YEHOWA TIISEGƆ YƐLA LA,kam baa ti hu poorb pee l yehowa teɛnsigu yɛla la,0.5455,0.3659
+327,d Bisɛ vidiyo la n boi jw.org ti la zuo dɛna Wa’ana Dɛna Yehowa Zɔ​—Maasum Ho Lebesego .,tiŋanɔɔr yelson la yeti bii vidio la m boe je dabilu dɔt ɔɔg la zuo da na waana dɛna yehowa zɔ maasu ho libsigo tiŋanɔɔr yelson la baasiya,1.2353,0.9848
+328,ho san kɔ’ɔn tɛ̃ra ninmu’urɛ yɛla la?,o saŋ kɔɔn tar ni mɔɔr yɛla la,0.7143,0.2963
+329,YEHOWA BO’ORI TO LA YELESE’A N PAKƐ TƆ,yehowa buudi tu la yelisiɛm paki to,0.75,0.3448
+330,Mabiisi la soŋeri mam mɛ ti to bɔna wuu deodoma la,foo di la gɔɔlug la yeti mɔbin la suŋr man mɛ te to bɔr na woo deeduma la,1.2727,0.775
+331,MABIBURAASI N WAN TA’AN EŊƐ SƐLA,daka la zuu nde mabia buraahim wan taa yiŋ sala la yiti,1.8333,0.9615
+332,"Ba san yese nɛra tansugere la poan, bem yɛla poan ti mabiisi wan ta’an kɔ’ɛ ba puti’irɛ ti la makɛ la Baabule la?",ba han yihi nara tansu la poan bihin yala pɔɔn ti mɔbɔr wan tan koo ba potiɛr ti lan maki labaabu la,0.6522,0.3605
+333,Beem nɛreba ti ba wa’an Tiirɛ Dia la na.,beem nɛriba ti ba wɔan teeri diya la na,0.4444,0.2
+334,"Yeletoo san paɛ tɔ, to wan ta’an eŋɛ la bem?",yeli to sampaai tɔ tɔntaan eŋ la beem,0.8,0.3125
+335,KELUM DƐNA YEHOWA SAANA,kpeelun diɛ na yewua saana,1.0,0.35
+336,BEM ZUO TI LA NARA TI TO ZAMESA BAABULE YETƆƔEBIŊ’A?,ben zuu ti la nara te tu zamsabaabu yetɔɣbin a,0.7,0.2195
+337,YEHOWA LA YEZU KA BOTI ŊMƐLEMA TUUMA,yehowa le yesu ka bo ti ŋmari ma tooma,1.0,0.2333
+338,Ho Wan Eŋɛ La Bem Pa’alɛ Ti Ho Puurɛ Pee Ya La Lua Bunɔ La?,u wanyiŋi le be paa ti u poori peeya liluol bun la,0.8667,0.4186
+339,ti ho tara suure lua ti Naayinɛ wan yɔ hɔ?,ti ho tar suun lɔɔ ti naayin wan yɔhɔ,0.6,0.1875
+340,MABIBURAASI WAN EŊƐ LA WANI ITA PƆƔESI WUU YEHOWA N ITI BA SE’EM LA?,m mabi buraa si wan eŋ la wan ni itapɔgsi woo yehowa n eti ba seem la,0.7143,0.1509
+341,Sodeni poan ti Yehowa yuun bo Samson paŋa ti a zabɛ nyaŋɛ Filistidoma la?,sodinim pɔɔn ti yehowa yoon bo samson paŋa ti a zab nyaŋɛ filistiduma la,0.3571,0.1356
+342,KELUM ZAMESA YELEPAALA,kelim zamiha yelipaa la,1.3333,0.2
+343,Hon Bɔŋa La Ani Wuu Bamam?,daka la zuo m di humbɔŋa le ani ubama la yeti,1.6667,1.15
+344,Sokese’a Ti Sɛba N Kaali La Sɔkera,sogsia tisaba n kaan la sokira,0.7143,0.2963
+345,NYƐTA YA NƐŊA ITA YELESE’A N WAN BASƐ TI YA ANA DU’A DU’A LA TAABA,nya ta ya nɛŋa ita yelisea nwan ba ti aa ni doo doo li taaba,0.7333,0.2245
+346,YEHOWA YUUN NƆŊƐ ISRAELDOMA LA ZA’A MƐ,yehowayun nɔŋ israɛlduma la zaa mi,0.7143,0.1613
+347,Bɔŋa woo poan Naayinɛ yamesi yuun ni yese la ba suuren zusɛ Yehowa. Hon me iti la bala?,bɔ ŋa woo puan naayinni yaamsi yuunni yeeh la ba suunrin zo si yehua hu mi it la bal a,0.9444,0.25
+348,Ti’isɛ Soke Ana Wa Yele,daka la zuu nde tɛnɛsi soki ana wa ye li la yeti,2.0,1.2778
+349,Pa’alekãtɛ Daana N Gaŋɛ Za’a La N Kɔ’ɔn Pa’ala Tomam Saŋa Woo,paal kantidaana n daaŋ zaan la n kɔm paala tuma saŋa wuu,0.5833,0.3043
+350,Ton Wan Eŋɛ Se’em Ti Tomam La To Mabiisi La Kɔ’ɔn Dɛna Zɔdoma,tinwan sein ti tuma la ti mɔbɔnr la kɔɔn danna zɔdima,0.6923,0.3617
+351,TON WAN EŊƐ SE’EM GƐƐLA TOMEA WUU YEHOWA N GEELE TO SE’EM LA,tiwan eŋ seem giala tu miɛ wuu yehe wa ngeel tu seen la,0.8462,0.2609
+352,Beni n sɔi ti la yele pakɛ ti to baŋɛ yelemɛŋɛrɛ la?,benisoda yel pak ti ti baŋ yelimaŋl,0.8333,0.4
+353,Bem yɛla anaasi ti to wan eŋɛ ta’an ze’a kankaŋi?,ben yɛla anaasi tiwan eŋɛ taan zɛɛkankaŋɛ,0.6,0.1622
+354,YEHOWA EŊƐ LA BEM PA’ALƐ TI A PUURƐ PEE MƐ LA TƆ?,yehuwayiŋ la ben paal te a poor peemi la tɔ,0.6667,0.3056
+355,YEHOWA N YUUN PA’ALƐ ISRAELDOMA TI BA BASƐ BA BE’EM SE’EM,yehowa nyuun paal israelroma ti ba bah ba been seem,0.5455,0.1136
+356,YEHOWA PUURƐ PEE MƐ LA HON ITI YELESE’A BƆƆRA EN LA,ye uwapoorb pee mɛ la hun eti yelisiea bɔɔra n la,0.5455,0.25
+357,wan gura Yehowa dabeserɛ la?,wan gura yehowadabirisi la,0.4,0.2174
+358,TARA BAABULE NARESUM YƐLA TUNA TUUMA,taara babilɔn narisin yɛla tona tooma,0.8333,0.3548
+359,to le tara bɔnsoŋa la Yehowa la wani?,tuu li tara bɔnsuŋa la yehua la wan ni,0.75,0.2414
+360,Zamesegɔ Yɛla,zamsigo yɛla,0.5,0.25
+361,TƆƔESA TO MALEMA NƐŊADAANA LA ZINA BEERE WA,tɔ a tu ma li ma niŋadaana la zina beer wa,1.0,0.1944
+362,BEM TI YEHOWA BƆTA TI HO EŊƐ?,bem ti yehuwa bɔto ti u iŋa,0.5714,0.2727
+363,"Hagai, Zekaria La Ezra Saŋa",daaka la zuu n di hagai zakaraya la ezra saŋa la yeti,1.6,1.0
+364,HON WAN LEBESE LA WANI?,hun wan lebisi la wan ni,0.8,0.2222
+365,Yehowa n ka gaseri nɛreba la basɛ ti to nyɛta la bem nyuurɔ?,yehuwa n ka gasir nɛriba la basa ti tunyata la beenyɔɔrɔ,0.6154,0.2128
+366,Yehowa tigere la bo to la lɔɣɔrɔ zo’e zo’e n wan soŋɛ nɛreba la ba pɔɣeba ti ba ta’an tara bɔnsoŋa la taaba bii ba ta’an maalɛ ba yeledaaŋɔ. Hon dekɛ lɔɣetuna wa tum tuuma?,yehuwatiig la bɔrti la lɔgri zuu zooi nwan suŋ nɛriba li ba pɔgiba ti ba taa tar bunsoŋ la taaba bee ba taa maali ba yilidaaŋu n diki lɔgir tuna wa tontoonmaa,0.7429,0.3409
+367,HON WAN LEBESE LA WANI?,to sannya ti to mɔbisin,1.0,0.8889
+368,Yakob N Yuun Tɔɣɛ Sɛla,yakob yin tɔbi sɛla,0.6,0.2778
+369,zusega la zamesegɔ poan?,zoosika lazamsigu pɔin,1.0,0.45
+370,"Buraa la n yuun tee la, Paul yuun yele Korint mabiisi la ti ba eŋɛ la bem?",buraa la nyuun tee la pɔɔl yuun yel korint mɔbɔnr la ti ba eŋ la bem,0.3529,0.1607
+371,To Wan Eŋɛ La Wani Ta’an Basɛ Ti To Sakerɛ Kpe’em La Yehowa N Pu’ulum Biŋe Ti Tinpaalega Wan Bɔna La?,ti wan iŋ la wan nitaanbaa tisakr kpeem li ye uwanpuul biŋ ti ti paal gawanbɔna la,0.7619,0.2338
+372,Zaseŋɔ wa wan soŋɛ tɔ ti to giila kan kɔ’ɔsɛ to san tara kunkoma’asum be’ero ge bisɛ ton wan eŋɛ se’em ta’an nyaŋɛ a.,zaahu ŋan wan suŋ tɔ ti tu giin la kan kɔɔhi ti han tar kunko maahu beero gi bih tinwan seem taa nyaŋ aa,0.8333,0.2955
+373,"To san ka gɛɛla yɛla wuu Yehowa n geeli yɛla se’em la, la wan ta’an daam to la wani?",to sahŋ ka giɛ la yɛla wuu yeh wa ngeel yɛla seem la la wan taan daan tu la wan ni,0.5263,0.129
+374,GULESEGƆ ANA WA WAN TA’AN BUƔELƐ HO SUURE LA WANI?,golusko a nawa wan chaŋ bogir u suŋul na wan ni,1.0,0.5128
+375,BENI N SƆI TI TO PƐ̃ƔERA YEHOWA?,be ni n sɔe ti topiɛngira yehowa,0.7143,0.2083
+376,Sɛla N Sɔi Ti To Ti’isa Ti La Kan Ta’an Tum,sɛla n sɔi ti ti tɛɛh ti lakan taan tom,0.4545,0.1935
+377,"Ho San Tee Tansugere, Ho Wan Eŋɛ La Wani Ta’an Malum Mabiisi La?",u han tee tansuguri u wan eŋ la ŋɔni taamann mabiihi la,0.6923,0.3061
+378,TON WAN EŊƐ SE’EM TA’AN NYƐ BAABULE NARESUM YƐLA N WAN SOŊƐ TƆ,tinwan eŋ seem taa nya baawul narsun yɛla nwan suŋ tɔ,0.7692,0.2083
+379,ZAMESEGƆ YƐLA,zamsbo yɛla,0.5,0.3333
+380,TON KA MI SƐLA,toon ka mi sala,0.5,0.1818
+381,ZI’IREGO POAN YƐLA,zinir kupuɔn yɛla,0.6667,0.4
+382,HO SAN TI’ISA YELESE’A TI HO DEKƐ BASƐ LA YELE,o han tɛnɛha yelisia ti o diki bahi la yeli,0.8,0.4
+383,"To wan baŋɛ lua bunɔ la n basɛ ti Yehowa dita sugeri bɔ’ɔra to se’em, ti to tara puti’irɛ ti to wan ta ana kasi ge me tara bɔnsoŋa la Yehowa.",ti wan baŋ lua bun la n bahi ti yehuwa dita sugiri bɔɔra tu seem ti di tari potinɛr ti ti wan ti a na kasi ge mi tar bɔn soŋa le yehuwa,0.6452,0.1981
+384,YEHOWA NƆŊƐ TO MƐ PAA,yehowa naŋ tumi paaa,0.8,0.2941
+385,BENI N SƆI TI TO WAN TA’AN DEKƐ TOMEA DELUM YELEMƐŊƐRƐ NAAYINƐ LA?,beni nsɔi ti tunwan taan di tumia delim yelimɛŋ na yin la,0.7692,0.2692
+386,Yehowa yuun soŋɛ a yamesi la wani Baabule saŋa la?,yehuwa yuun suŋ a yamsi la wan ni baabosaŋa la,0.6,0.2
+387,BAABULE LA PA’ALƐ LA NAAYINƐ YƐM,baayibu la paa la naayini yɛm,0.5,0.2692
+388,"HO NƆŊƐ LA YELEMƐŊƐRƐ, LA SƐLA N DE TONTƆƆ",hu nɔŋ le yilmɛŋri la sala ndi tintɔɔ,0.8889,0.303
+389,"ZILAM BƆ’Ɔ, LA ZILAM SARAA LA",zilam bɔ ɔ la zilam saraa la,0.3333,0.0
+390,"To wan zamesɛ baŋɛ ton nari ti to eŋɛ sɛla kelum dɛna Yehowa zɔdoma, la Yehowa n boti to ita a zɔdoma se’em.",ti wan zamsi baŋi tunnar ti tu eŋ sɛla keelmdi na yehuwa zodima la yihuwa nbo ti tu ita azodima seem,0.7391,0.2289
+391,Kpemese pɔka la giila ti a geele amea wuu Yehowa n geele en se’em la ge kelum ita amea zamesegɔ ge zusera.,kpimi pɔka le giinla tia geela mia wuo yehu wan geelin seen la ki ken itaa mia zamsigɔ ge zuhura,0.8636,0.2771
+392,Mabipɔka Ayima Dekɛ La Baabule La Faaɛ Nɛra Vom Basɛ,daka la zuu n de mabia po kaa ye madik la baabu la faan nɛravoom baha la yeti,1.6,0.6744
+393,Bem n yuun soŋɛ ya ti ya ta’an ŋmɛresɛ yamea ge me tara pupeelum ya satiŋa na’am yetɔɣum yalegerɛ tuuma la poan?,bee yun soŋ ya ti yataa ŋmirisi ya mia ge mi tari popiilin ya sateŋa naan yetɔg yaligir tooma la puan,0.7727,0.3068
+394,"To wan ta’an zamesɛ la bem la sɛla n yuun paɛ Moses, la Israeldoma la?",ti wan taan zamihi le beim la sɛla nyuun paab moziz la isiraɛl dima la,0.6667,0.2642
+395,Ɛɛra Vo’osum Poan Yɛla Ti Ho Wan Ta’an Dekɛ Tum Tuuma,eɛra voosun pɔɔn yɛla ti hu wan taan di ki tuntooma,0.6364,0.2439
+396,Bunbilipaalesi—Ya Wan Bɔta Ti Ya Eŋɛ La Bem Ya Vom Poan?,bumbilii paal se ya wan bɔta ti ya iŋ le bee ya vom puan,0.7273,0.2045
+397,"Ho san bisera sokere sɔsega n boi bakwai la poan zamesegɔ ba’asegɔ bɔberɛ la, tɛ̃ra sɛba n puɣum diŋɛ bo lebesego la, ta’an bo sɛba n nan ka bo lebesego la yɔ’ɔ ti ba tɔɣɛ.",u san bihira sokursɔhiga m bo bakɔ la puan zamsigo baahig bɔbr la tirsɛba m pugim diŋ bolibsik la taan bo sɛba n nan ka bolibsk la yɔɔ ti ba tɔgi,0.6,0.3053
+398,HON WAN LEBESE LA WANI?,m paar siɛba nsak pɔgsaka ndi gerigu la beeŋu la,1.8,1.8333
+399,"To san zɔta Yehowa ge siregera tomea, la wan soŋɛ to la wani ti to baŋɛ yelemɛŋɛrɛ la ge dɔla ku?",ti sanzɔta yewowa ge sidigra timia la wan suŋ ti le ŋɔni ti ti baŋ yelimaŋl la ge dɔla ku,0.619,0.2667
+400,Keendoma n iti se’em soŋera sɛba n tum be’em tansugere la poan.,keenduma n iti seim soŋra sɛban tum beem tan su la puan,0.6667,0.1633
+401,TO YIA SATIŊA NA’AM YETƆƔUM YALEGERƐ TUUMA,tu yiya sateŋan naan yitɔg yalir tooma,1.0,0.4286
+402,YEZU YUUN EŊƐ LA WANI KA BASƐ TI YƐLA BURUM A PUTI’IRƐ?,yesu yoon iŋla waani ka bahi ti yala boran a potɛnɛra,0.75,0.4048
+403,"Jody Jedele la a pɔɣa, Damaris",foo te jodi jedili le a pɔga damares,1.1667,0.4583
+404,TO BOI LA “TEŊA BA’AHEGƆ DABEHA LA” POAN,ti bo le teŋa baasga dabiha la puan,0.75,0.2667
+405,To wan eŋɛ la wani pa’alɛ ti to tari putɛsonɛ imma’asum yɛla poan?,ti waiŋ la wan nin paali ti totari potensu na imaasum yɛlba puwan,0.9231,0.3137
+406,To wan eŋɛ la wani zaɣesɛ ‘lika’ poan tuuma?,tiwaiŋ la wani zaasilika poan toŋma,0.6667,0.2727
+407,SƐLA N SƆI TI YEHOWA DƐNA TAŊA,sɛ le n sɔi ti yehowadanataŋa,0.7143,0.0833
+408,Sɛla N Sɔi Ti To Ti’isa Ti La Kan Ta’an Tum,shɛla n sɔi ti titeɛnh te la kan taan tom,0.4545,0.2581
+409,BENI N SƆI TI NƐREBA YAƐ TƆ?,beini n sɔi ti nɛriba yaa tɔ,0.4286,0.1429
+410,Tara Sukpe’ene La Yelemɛŋɛrɛ Wuu Benaiah,tara su kpeeni la yelimaŋri woo be naya,1.0,0.2647
+411,Hon tɛ̃ri Yehowa pu’ulumbiŋ’a ase’a ti a basɛ ti la tum tuuma?,un tɛnr yehowa puul bii ŋaasia ti yaa bahir ti li tom toomaa dak kalapɔɔn ya la baasi ya,1.25,0.8696
+412,Hon wan eŋɛ se’em kan tara puti’ira ayi ayi ti Yehowa puurɛ pee mɛ la hɔ.,nwan seem kan tar putiɛra yi yite yehuwa puor peemi la hɔ,0.75,0.2545
+413,ya hala san bɔna to’ore to’ore?,ya hale han bɔ na tooi toori,1.0,0.2174
+414,TO YUUN KEŊƐ LA ESTONIA LA BALTIC TISI,le yiɛsa ma yinzu le dabeen te daan seer ba ta du keŋ afrika tiŋa kaa ye ma,2.25,1.4839
+415,HO WAN EŊƐ LA WANI TA’AN NA’ASƐ YEHOWA?,uwan iŋ la ŋɔ ni taan naahin yehuwa,0.875,0.3448
+416,KELUM ITA YELESE’A N WAN BASƐ TI HO ANA DU’A DU’A LA YEHOWA,kelim ita yelisiɛm wan bah ti hu a na duodua le yehowa,0.6923,0.2273
+417,"SƐLA SAN GIŊƐ HƆ, DA BASƐ TI HO GIILA KƆ’ƆSƐ",sɛla saŋgeŋ hɔ da basi ti ho giin la kɔɔsi,0.6,0.1818
+418,Nɛra wan eŋɛ la wani ta’an nyɛ siresonkɔ bii pɔɣesonkɔ?,nɛra wan iŋ la wani taa nya sir suŋ ku bee pɔgsuŋkɔ,0.8,0.3182
+419,tigere la san bo to pa’alegɔ?,tiigi le sanboti paaliku,1.0,0.4091
+420,"Nɛra san eŋɛ ho sɛla ti la daam hɔ, ho wan eŋɛ la wani ta’an di sugeri?",nɛra saan eŋ ho sɛɛ la ti ladaan hɔ waan eŋ le wa ni tan di suguri,0.7647,0.2115
+421,Yezu Yuun “Kelom . . . Nana” Mɛ,yesu yuŋ keelim nana mɛ,0.6,0.2632
+422,YEHOWA N NƆŊƐ TO SE’EM LA BASƐ TI LA ANA HON LA WANI?,yehuwa naŋ tu seem la baaril anahon la wan ni,0.7692,0.2564
+423,BENI N SƆI TI LA NARA TI TO TARA GILEMA BƆ’ƆRA NƐREBA LA BAN KƆ’Ɛ BA PUTI’IRƐ SE’EM LA?,beni sɔt la nara tititar giilima bɔɔr nɛriba la ban kɔɔ ba potiɛr seim na,0.6842,0.2344
+424,"Mam, Adel, la to kɔma Samuel, la Shirley n laɣum bɔna Palawan tiŋa",foo di la gɔɔlig la yeti mam adel la ti kɔ ma samiɛl la shili nlagin bɔna kpalawan tiŋa,1.0769,0.5686
+425,YEHOWA FAAƐ TO LA BE’EM LA KUM POAN BASƐ TI TO NYAA DƐNA TONTƆƆDOMA,yehuwa faan tu la been la kuum pɔɔn bahi ti tunya di ni tuntɔɔdima,0.7857,0.283
+426,TO WAN EŊƐ LA WANI TA’AN TARA BƆKERƐ WUU  . . .,ti waiŋ le wan ni taan tar bɔkir wuu,0.7778,0.2903
+427,KƆ’ƆN SOŊERA HO MABIISI,kɔnsoŋra u mɔbɔnha,1.0,0.4737
+428,YEZU YUUN EŊƐ LA BEM PA’ALƐ TI A TARI NƆŊERƐ BƆ’ƆRA A TUUNTUNEBA LA?,yesu yuun iŋ la beempaal ti a tari nɔŋni bɔr aatuntɔniba la,0.5714,0.2308
+429,soŋɛ sɛba n ma’ɛ la?,soŋ sɛba m maa la,0.6,0.2143
+430,TO WAN EŊƐ LA WANI TA’AN DEKƐ SAKERƐ TUM TUUMA . . .,ti wan eŋ la nwan ni taan di ke sakiri ton tooma,0.9,0.3333
+431,YEZU BASƐ TI TO BAŊƐ LA YEHOWA N NƆŊƐ TO SE’EM,yesu baa ti tu baŋ la yehuwa nnɔŋ tu seem,0.7273,0.2286
+432,YEHOWA PUƔUM EŊƐ LA BEM?,yehuwo puɣ iŋ le beŋ,1.0,0.4211
+433,MAM N YUUN NYƐ NƐŊA TƆLEGA SE’EM VO’OSUM POAN,man youn ye nɛ ŋatɔliga seim voosom pɔan,1.0,0.2286
+434,HO WAN EŊƐ LA WANI TI HON LA HO MABIISI LA KƆ’ƆN DƐNA ZƆDOMA . . .,u waniŋ la ŋɔni ti huɔn la u mɔbɔinr la kɔɔn dan na zɔr ma,0.7857,0.3913
+435,Yames n yuun gulesɛ sɛla la basɛ ti to baŋɛ sakerɛ la itigɔ n makɛ taaba se’em la wani?,jyemsi nyun gulisi sɛla la bas ti tu baŋ sakra la itikɔ mmak taaba seim la wan ni,0.7368,0.2537
+436,SAMSON YUUN DEKƐ AMEA DELUM LA YEHOWA,samsin yuun dik amia din la yehowa,0.5714,0.2581
+437,basɛ ti Yehowa pu’usegɔ dɛna yia a vom poan?,baa tii waapoo ku dana yia a fum puan,0.7778,0.5
+438,EŊƐ PA’ALƐ TI HO TARI SAKERƐ LA SIREGE N MEA,eŋi paal ti wu tar sakra la sirigimmiya,0.8,0.3529
+439,YELE ANA WA WAN SOŊƐ HO LA WANI TI HO TA’AN TA MUSE KO’OM?,yel ana wa wan suŋ hu le ŋɔn ni te u taan tamuskoon,0.7857,0.3095
+440,Beni n sɔi ti Baabule la ni tɔɣera yɛla taɣesa?,benin sɔ ti baa wu la ni tɔgra yɛla tagasa,0.7,0.2162
+441,LUA BUNƆ LA N PA’ALƐ TƆ YEHOWA YELE SE’EM,liwa bun lan paal to yifua yel seem,0.8889,0.3226
+442,a Zaseŋɔ wa wan soŋɛ tɔ ti to tara suure lua ti Yehowa doli la nɔŋerɛ la tontɔɔ sore poan lɛbesa to zusega.,zaaŋma wan suŋ tɔ ti tu tara suunr luɔ ti yehuwado le nɔŋri le tintɔɔ sur poan lɛbsa tuzuhga,0.7391,0.2976
+443,Simeon la Levi la?,simiɔn la levi la,0.25,0.1429
+444,TON WAN TA’AN EŊƐ SƐLA NANANAWA ŊMƐLEMA TUUMA POAN,tiwantaan iŋ sala nana na wa ŋmalima tooma pɔan,1.0,0.2439
+445,YEHOWA WAN KƆ’ƆN SOŊERA TƆ,yehuwa wan kɔɔ soŋ da tɔ,0.8,0.1905
+446,Bisɛ hon wan ta’an zamesɛ sɛla ge dekɛ a tum tuuma. Soke homea yeti:,taa zamihi sla gedikaa tɔntoma suku miɛ yeti,0.9286,0.5192
+447,Basɛ Ti Ho Suure Gã’a Ma’asumi Ti Yehowa Puurɛ Pee Mɛ La Hɔ,bahi ti u suunri gaan maahimi te ye huwa poor peemi la ho,0.8462,0.3778
+448,Gɔnseko ti ba yuun gulesɛ bo Hebrudoma la tari la ka’aŋɔ n wan soŋɛ tɔ ti to ta’an ŋmibe ta paɛ ba’asegɔ.,goŋ sigu ti ba yn golihi bo hiburuduma la tala kaaŋa nwan suŋ tɔ ti titaa ŋmi bi tapaa baahigu,0.7727,0.325
+449,"c Diimi sa la, nadoma sɛba n yuun daɣɛ Israel buuri la yuun san ni zabɛ nyaŋɛ tiŋa, ba yuun ni kaabera la tiŋa la baɣa.",tiŋanɔɔra yelsun la yeti deemisa la nadumasɛba n yuun daga israel buud la yuun sanizɛb nyaŋ teŋa ba yoo ni kaanbira la teŋa la baga tiŋanɔɔr yelsun la baasiya,0.8462,0.6813
+450,ta’an soŋera ho mabiisi?,tan suŋra u mabisi,1.0,0.3158
+451,TƐ̃RA TI YEHOWA NƆŊERƐ LA DELA BAABULE PA’ALEGƆ,tara ti yehun nɔŋi la dela baabul paaligu,0.625,0.2632
+452,YELEMƐŊƐRƐ NAAYINƐ LA BASƐ TI A PUTI’IRƐ LA TUM LA TUUMA,yelimaŋra nayin la bas ti a potɛnɛ la ton la tooma,0.5455,0.3333
+453,Yezu Yuun Basɛ Ti Yehowa Yu’urɛ La Ana La Fa’a,daka la zuu n die yesu n baa ti yehowa yi u la ani lafaa la yeti,1.3,0.7143
+454,Yehowa Demese A Nɛreba Mɛ Fii Fii,daka la zuu nde yehuwa demisa nɛ ba mɛ fiin fiin la yeti,1.7143,0.9259
+455,Dɔreŋɛ Ta’an Tɛ̃ra Yɛla La,dɔri ni taan tɛra yɛla la,0.4,0.15
+456,Yehowa yuun pa’ali diimi Kristakɔma la wani?,yehuwa yuun paali deem kristo kama la wani,0.5714,0.1667
+457,Bakwai La Poan Zamesegɔ Ka’aŋɔ,bako la poozamsugu kaaŋu la yeti,1.0,0.6
+458,YELESE’A N BASƐ TI LA KPE’EM,yelisiɛa mbaasi ti la kpeem,0.5,0.2857
+459,b FOOTE VUURƐ: Mabipɔka n doose zusega poan pu’usa Yehowa la eŋa n eŋɛ yelese’a bo en la.,fuud la vɔɔnrɛ mabia po kan doosi zoska puan poosa yihuwa la inŋa n iŋ yelsea bon la,0.8889,0.3824
+460,NA’AM MƆƆLEGƆ GURUP LA N SOŊERI TO SE’EM,naa moolg grup la nsuŋr tiseem,0.875,0.3226
+461,KEENDOMA LA SOŊERI TO LA WANI?,keenduma le suŋri tu la ŋɔn ni,1.0,0.3333
+462,Yele ani poan ti la nara ti to bisɛ tomea soŋa ge da tum be’em?,yel ani puan ti la nara te to bis tumia suŋa ge da tom beem,0.4667,0.1702
+463,TO WAN KƆ’ƆN MƆƆLA LA BALA TA PAƐ BA’ASEGƆ,ti wan kɔɔŋ muula la bala ta paa baasigu,0.5556,0.2188
+464,TO DEODOMA LA YUUN KA TARI NƐŊAN,to dee duma la yonn ka tari nɛɛŋa,0.5714,0.2308
+465,“Vo’osum Wɔla la Dela . . . ”,daka la zu n de voosun wala la dela la yiti,2.25,1.1875
+466,To wan sɔsɛ baŋɛ sɛla n sɔi ti la yele pakɛ ti to yele keendoma ti ba soŋɛ tɔ.,ti wan son si baŋa sala nsɔi ti la yel paki ti ti ye likeennuma ti ba sɔŋ tɔ,0.6316,0.2373
+467,Zusɛ Yehowa ti a soŋɛ hɔ ti ho ta’an dita sugeri.,zoohi yehowa tia sum hɔ ti ho taan dita suguri,0.4545,0.2162
+468,Sarɔtɔ ani poan ti to wan ta’an tɔɣesa Yehowa hala la?,saratu ana puan ti ti wan taan tɔg ha yehoa halala,0.7273,0.2143
+469,Beni n sɔi ti la nara ti to kɔ’ɔn pigera?,bee ni n sɔ tilanara te ti kɔɔm pigra,0.9,0.2
+470,"Naayinɛ basɛ ti a yamesi n boi tinparɛ wa zuo baŋɛ ti a kan tamɛ ba yele, a san tari looredoma sɛba n gee la keŋɛ saazuo.",naayini baaata yamsi bo ti par wae zuu baŋ te a kan tam ba yele a han tar loboduma siba ngee la keŋ saazuo,0.7407,0.2366
+471,MARCEL GILLET N TƆƔƐ SƐLA,masel gelet n tɔɣi sɛla,0.6,0.2381
+472,Hon wan eŋɛ se’em ta’an dekɛ hon pɔsɛ zamesɛ yelese’a Baabule poan la tum tuuma.,nŋan iŋ seim taandiki hun pɔhi zamisi yɛlisia baabul puan la tomtooma,0.9333,0.3387
+473,YEHOWA N YUUN KPEMESE TO GIILA ZABERƐ SAŊA,un  a,1.0,0.9143
+474,Lan Yuun Tum Tuuma Se’em,la yun tom tooma sei,1.0,0.3684
+475,"BA YUUN TEE LA TUUNƐ BO TO, TI DAAŊƆ ASE’A ME BƆNA",bayoonn tee le tooni bo to ti dan ŋa siɛ mi bɔ na,0.8333,0.3243
+476,BENI N SƆI TI LƐKA YELE PAKƐ?,be nin sɔi ti lɛka yeli paka,0.5714,0.0909
+477,Be’em,daka le zuu ndi been la yeti,7.0,4.75
+478,YEZU LUA BUNƆ LA N YƆ TO’E TO,yesu lua bun la nyɔ too to,0.625,0.1429
+479,To wan ta’an yeti Yehowa yuun doose la malesi poan lebese mabiisi wa zusega?,tiwan taan yeti yuhuwa yoondoosi la malisi puan lebisi mabias wa zubig aa,0.7857,0.2459
+480,d FOOTE LA VUURƐ: Nɛra la a pɔɣa n sɔseri la ba bipugela n naɛ la a sira tuna mɛa tuuma,foot le vɔɔnra nɛra laapɔga nsɔhin le ba bipuub la nnaa le a sira tuna miatuma,0.7619,0.2879
+481,Yehowa ta’an lerege to zusega la wani?,yehowa taan leri kitizosika le wan ni,0.7143,0.3
+482,Basɛba tari la inganɛ poan tɔregɔ. Bisɛ zi’irego poan yele n eŋɛ East Africa n boi daka la zuo n de “ Mabipɔka Ayima Dekɛ La Baabule La Faaɛ Nɛra Vom Basɛ .”,basɛbatar la ingani puan tɔrigɔ bihiziiriga puan ye li n eŋ est afrika n bo dak la zuu nde mabi pokaayima dik la baabu la faan naravom bahi,0.8065,0.2083
+483,Yon La Paul Yuun Tɔɣeri La Be’em Buyina Yele?,daka la zuu ndi jɔnn la pɔɔl yin tɔg la biin buyina ye li la yiti,1.4444,0.9143
+484,MAASUM HON WAN EŊƐ SƐLA BEERE SA’AM,maasun hun wan eŋ sala beeri saam,0.7143,0.1786
+485,Zamesɛ Sɛla Baabule Yetɔɣebiŋ’a Poan,zamsi sɛla baabu yetɔg biŋ a pɔɔn,1.2,0.2581
+486,Bem yɛla anaasi ti Yehowa ita soŋera tɔ biɣi biɣi saŋa poan?,bin yel anaasi ti yehɔwa ita suŋra to beegbeeg saŋa puan,0.6667,0.3125
+487,mabiisi zɛ’an?,mɔbɔa si zinan,1.5,0.4545
+488,Ho san maasum soŋa,ho san maasin suŋa,0.5,0.2
+489,Sugeri Dia,sugridia,1.0,0.1111
+490,Sɛla N Sɔi Ti To Ti’isa Ti La Kan Ta’an Tum,sɛla n sɔi ti ditiɛhi ti lakantaan ton,0.5455,0.2258
+491,SITAANA LAƔUM WA’AN BIM ME NA,sitaana lagin waabimina,0.8333,0.2609
+492,HON WAN LEBESE LA WANI?,fuwee lebeh la wan ni,1.0,0.4444
+493,DI’ISA SUURE GE DA ITA SUNSƆA,diinha suunre gi da ita sunsɔn,0.6667,0.2174
+494,"Ban viisɛ nyɛ birikimise, la ban iti se’em maala ba diimi Babilon tiŋa la basɛ ti la makɛ la Baabule yelesum la wani?",ban veensi nya birkimsi la ban etisee mmaal la badiemin babilɔn tiŋa la baatilamak la baabul yelsun la wan ni,0.7391,0.2174
+495,"NƐRA SAN TUM HO ŊMƐLEMA TUUMA, GURA YEHOWA TI A MAALƐ YELE LA",nɛra san tɔm ho ŋmɛlima tooma gura yehuwa ti a maali yel la,0.4615,0.1458
+496,TO YUUN NAƐ TAABA MƐ BƆNA CAMEROON TIŊA POAN,tiyo naa taaba mɛ bɔ na ke mirin tiŋa poan,0.7778,0.2778
+497,Tara Suure Lua Ti Yehowa Di Sugeri Bo Ho,tar suunri lu wa ti yehoa dii suuri bo ho,0.7778,0.25
+498,EŊƐ PA’ALƐ TI HO NƆŊƐ BA,eŋ paal te hu nɔŋ ba,0.8333,0.2778
+499,To wan ta’an zamesɛ la bem yɛla Peter yele la poan?,ti wan taan zams le bem yɛla piita yel le pɔan,0.6364,0.2821
+500,TO YUUN KEŊƐ LA EASTERN EUROPE NYAA TA KEŊƐ AFRICA,to yi keŋ la esten yurop nin ata keŋe afrika,0.8,0.2927
+501,“N BAHƐ TE BA MINA HƆ”,m baah ti ba mina hɔ,0.5,0.2667
+502,Yehowa Sugeri Dia,daka la zuu nde yehowa sugur die la yeti,2.6667,1.3333
+503,To wan eŋɛ la wani tara nɔŋerɛ zo’e zo’e bɔ’ɔra to mabiisi?,ale ti yehuwawan kaboto ti titaridaar uu nyuvuri tingɔŋ ŋa puan,1.0,1.0
+504,“Mam Yuun Ka Boi N Ma’a”,ma yeŋ ka boom maa,0.6667,0.375
+505,BEM HALƐ TI LA NARA TI N TARA?,beŋ hale ti la nara ti n tara,0.25,0.0909
+506,Bisɛ Yelese’a N Tabelɛ Bɔna jw.org Pɔsega Bɔberɛ La,bihi ye li siɛn tabili bona jidab dɔt ɔg pɔhu ka bɔbiri la,1.3333,0.5122
+507,INKPEŊERE YELE PAKƐ MƐ,n kpeŋiri yeli pak ma,1.25,0.3158
+508,HON WAN LEBESE LA WANI?,un wan lebsi le wan ni,1.0,0.3333
+509,TO WAN TA’AN TƆƔESA GIBEONDOMA LA WANI . . .,ti wan taan tɔgha gibiondoma le wan ni,0.8571,0.2258
+510,KƆ’ƆN TARI YA BƆNSOŊA LA YEHOWA,kaon tar ya bon soŋa la yehowa,0.6667,0.16
+511,Itipa’alegɔ Wan Ta’an Soŋɛ Ho Deodoma,daka la zuo n de itipaalkɔ wan taan suŋ hu deeduma le yeti,1.8333,0.8333
+512,YEHOWA NI DEKƐ LA A ZILAM VO’OSUM LA SOŊƐ TƆ TI LA ANA TO MAMA,yehuwa ni dik la a zilanvoohn la suŋ tɔ ti la a na tu mamaa,0.6,0.234
+513,KƆ’ƆN TARA YELEMƐŊƐRƐ BƆ’ƆRA YEHOWA,kontar yilmɛŋrɛ bɔɔr yehuwa,1.0,0.2759
+514,Gɔnseko N Wan Soŋɛ Tɔ Ti To Ta’an Ŋmibe Ta Paɛ Ba’asegɔ,gonsiku wan suŋ tɔ ti tutaan ŋmi bi tapaa baahigɔ,0.75,0.2619
+515,To wan eŋɛ la wani ta’an deŋɛ nɛŋa na’asa to mabiisi?,ti waan iŋ la nmɔani taan dɛŋ nnɛŋa nnaa satu mabɔsi,0.8182,0.325
+516,ZI’IREGO POAN YƐLA,zirg poɔn yɛla,0.6667,0.2667
+517,LA TA’AN KPE’EM BO TO TI TO TARA PUPEELUM TO KUREGERƐ POAN,la taan kpee nbo tu tititar pupieluŋ ti kurkir pɔɔn,0.8333,0.2889
+518,YELEKPINE,yelkpini,1.0,0.2222
+519,TON WAN EŊƐ SE’EM TA’AN BUƔELA NƐREBA SUURE,ti maa yiŋ seem taan bɔgil la nɛriba suunri,0.875,0.3824
+520,TO YUUN TUNI LA SORE ŊMƐ’A TUUMA GE UGERA TO KƆMA,tuyuntunn le sor ŋmɛa tooma ge ugira tu kɔ ma,0.9091,0.2368
+521,b FOOTE LA VUURƐ: Mabiisi fii laɣesɛ taaba. Ba tari suure lua ti Yehowa wan te’ele a nɛreba zɛsɛka woo ti ba bɔna.,fuud la vɔnrɛ mabins fiin nlaa si taaba ba tar suunri lɔ a te yehuwa wan tee la nɛriba zanseka woo ti ba bɔna,0.7391,0.2841
+522,MAM BUNBILEMEN TI MAM PƆSƐ ƐƐRA NAAYINƐ,mam bumbilmin ti man pɔh eeri naayi nan,0.8571,0.3333
+523,HON WAN LEBESE LA WANI?,hu ŋɔn lebi le ŋɔn ni,1.2,0.5556
+524,DA BASƐ YEHOWA,daa basi yehua,1.0,0.3333
+525,Lua Bunɔ La Pa’alɛ To La Bem?,luba buni la paal to la be,0.5714,0.1905
+526,Mam la Sirkka puurɛ pee mɛ la Yehowa n bo to yɔ’ɔ ti to ta’an tum tɛm woo na’am tuuma la. Mam me suure sukɛ mɛ la Yehowa n basɛ ti mam di pɔɣesɛka n tari nɔŋerɛ la sakerɛ la.,malaseka poor pee ma la yoonbu ti yɔɔ ti li taan ton tim woo naan tooma la man mi chuun sokk ma le yuwon baah ti man di pɔgsiɛka n tar nɔŋri la sakir la,0.7,0.3615
+527,Yehowa Wan Soŋɛ Hɔ Biɣi Biɣi Saŋa Poan,yehuwa wan suŋ hɔ bigbig saŋa poan,0.5,0.2258
+528,Basɛ Ti Baabule La Ana Wuu Biseŋa Bɔ’ɔra Hɔ,bahi ti baabu la ana woo behi ŋa bɔɔra fɔ,0.6667,0.2941
+529,KƆ’ƆN TARA BƆKERƐ,ka ɔn tara bɔkire,1.0,0.2143
+530,TO WAN EŊƐ LA WANI TO GIILA SAN KƆ’ƆSƐ?,ti wan eeŋ la wan ni tu giin la saŋnkɔɔsi,0.8889,0.2759
+531,Ti’isa beere sa’am puti’irɛ la yele,tɛnɛsabeeri saam potɛnɛr la yeli,0.6667,0.3704
+532,TI’ISA BEERE SA’AM PUTI’IRƐ LA YELE,tɛɛsa beeri saam potɛnɛr la yeli,0.6667,0.3333
+533,c FOOTE LA VUURƐ: Mabia n de bunbilipaalega n eeri ka’aŋɔ ge nyaa viisera Baabule la poan ti a baŋɛ Yehowa puti’irɛ n de se’em.,foot la vɔnra mabia di bimbil paal kan eer kaaŋu ge nya vɛɛhr baabo la puan ta baŋ ihuwa potiɛr ni seim,0.84,0.3571
+534,Hon Wan Maasum Se’em Muse Ko’om,n wan maahim seem n musi koom,0.6667,0.25
+535,FABELA NƐREBA YELE,fabela nɛriba yele,0.3333,0.0625
+536,Zaseŋɔ yɛla la n de “ Help for the Family ”,zahiŋ yɛa la n de help fo the famili,0.4444,0.1935
+537,Tɔɣesa ‘Subuɣelegɔ Naayinɛ La’,tɔgsa suunbɔgɔliko naayin la,0.75,0.44
+538,"Elly la to bia, Serge",fo u ti sa ka ntagir la dila eli la tu bia se ge,2.4,1.5
+539,Tomam la to bipugela la a sira n boi laɣesegɔ poan,fu ti gastabul la eimilia n zin la ba bipuugila la aasira fuu ti la golihiga la yeti tu ma la tu bipuugila le aasira mbulagahigu puan,2.2727,1.95
+540,‘NYƐ NƐREBA DEKƐ A YU’URƐ LA SIƔƐ BA’,n nya nɛriba dikaayoo la siɣi ba,0.75,0.3704
+541,TO WAN NYƐ NYUURƆ LA WANI TO SAN SIREGE TOMEA GE SAKƐ TI TO KA MI . . .,ti wan nyanyɔɔŋ la ŋɔn ni ti han sirig tu mia gi sak ti ti ka mii,0.875,0.38
+542,beni n sɔi ti to tara suure lua ti Yehowa wan gãkɛ tontɔɔ sore poan?,beni n sɔ ti tutara suunr loor ti yehowa wan ga ke tuntɔɔb sur puan,0.6667,0.2642
+543,LA NARI TI N NI YELE NƐREBA TI BA KƆ’Ɛ PUTI’IRƐ BO MAM?,tkalikuzinan piel bunuub sor,1.0,0.8
+544,La vuurɛ dela bem ho san muse ko’om la poan ge la vuurɛ dela bem ba san yaɛ ho ko’om la poan?,la vɔnri dila bim hosamus kuom la pua ge la vɔnri dila bim ba sanyaahig kuom la puan,0.7273,0.2899
+545,SITAANA KELUM PARENA LA YƐLA BƆ’ƆRA YEHOWA LA YEZU,sitaana kelim paar na la yala bɔɔra yehowa la yesu,0.5556,0.122
+546,"“N SƆ NA’AYENƐ, . . . BAHƐ TE HO YU’URƐ N NYƐ PƐNKA”",n sɔ naaye na baa tewu yoore n nya pɛka,0.7,0.3125
+547,"Zamesɛ baŋɛ vo’osum paradiisi la n soŋeri to se’em, la ton wan soŋɛ nɛreba se’em ti ba me baŋɛ dɛ.",zamsi baŋa voosum paradiisi la nsuŋri ti seem la ti wan suŋ nɛrba seem ti ba mi baŋ dɛ,0.5,0.1757
+548,La Boi Bim Ti Mam Yuun Zoti La Valum Ge Mam Yuun Dela Satiŋa Na’am Yetɔɣum Yalegerɛdaana,libobin ti ma yuun zoti la valum ge ma yuun dela satiŋa naan yetɔg yaalgirdaan na,0.5294,0.1972
+549,MABIISI WAN TA’AN SOŊƐ HƆ TI HO NYƐ PAŊA,mabia wantaan suŋ hɔ ti ho nya kpaŋa,0.6667,0.2258
+550,BAABULE NƐRA,baabu nɛra,0.5,0.1818
+551,HON WAN LEBESE LA WANI?,hun wan lebihi le nwan ni,1.0,0.3889
+552,NAAYINƐ WAN BO HO PAŊA,naayinɛ wan bo fo paŋa,0.2,0.0556
+553,Bem n basɛ ti Yehowa dita sugeri bɔ’ɔra tɔ?,bee baahi te yehuwa dita suur bɔra tɔ,0.7778,0.3333
+554,Basɛ Ti Ho Puurɛ Pee La Hon Boi Yehowa Vo’osum Pu’usegɔ Yire La Poan Pu’usa En La,basa ti hu poor pee la hun bo yehuwa voosun puo kuyil la puwan poosa in la,0.7059,0.3387
+555,Manaen—Basɛ Ti Yehowa Pu’usegɔ Dɛna Ninmu’urɛ Ho Vom Poan,manian baah ti ye huo poosigo dina ni mɔɔr huvom poan,1.0,0.3696
+556,Beni n sɔi ti to sunsɔa ni nyie ba san tuna tɔ bii basɛba ŋmɛlema tuuma?,be nin sɔi ti ti sunso ni nyee ba san tuna to bee basaba ŋmalima tooma,0.625,0.2143
+557,Viisegɔ Gɔŋɔ la pa’alegɔ yɛla ni kɔ’ɔn bɔna Pigera Zontua INTANƐT TUUMA ZƐ’AN GƆNƆ ZAALEŊA ™ la poan mɛ.,veesgogɔŋ la paalku yɛla ni kɔɔn bɔna pigrazuntua intanɛt tooma zinen gɔnɔ zaaliŋa la puan mɛ,0.5,0.2099
+558,BAABULE LA N TƆƔƐ DAAM NYUA YELE SE’EM,baayibu la ntɔbidaana nyuo yeli seem,0.75,0.3333
+559,To ‘da tara daaŋɔ’ ge ‘tuna sɛla n ani soŋa’ vuurɛ?,tudataradaaŋɔ ge tuna sala an suŋa voore,0.8182,0.2222
+560,“Sɛba n de yiremɔɔsi la ma’a n sakɛ ti Naayinɛ boi mɛ.”,sɛba n di yir mos la maa nsak te naayin bo mɛ,0.6667,0.225
+561,Ton wan eŋɛ se’em pa’alɛ ti Yehowa dela zilamdaana ge ti sɛla woo ti Sitaana yele la dɛna pumpɔreŋɔ.,tiwaiŋ seem paal ti yehowa dila zilamdaana ge ti sala woo ti sitaana yel la da na pumpɔriŋɔ,0.5263,0.1392
+562,“YELEHEGO KAN BƆNA YA TEŊASOKA”,yelihigu ka m bɔna ya tiŋasuka,0.8,0.24
+563,Burasa’ara Wa—Dɛna Ya Kristakɔma N Bĩ Vo’osum Poan,burasaara wa de niya krista ka man m bi voohm poan,1.125,0.175
+564,To wan viisa tomea bisa saŋa woo la wani?,ti wan viinha tumiya biha saŋa woo la wɔn ni,0.6667,0.2812
+565,LA NARI TI TO SIREGERA TOMEA,lanarite tu sirgra tumiya,1.0,0.3043
+566,To pɔɣedire daarɛ,footi ken li mi waakokiuchi pɔgidiiri daari footi le golf le yeti ti pɔgdiiri daari,5.0,3.8
+567,Bɔkɛ Ko’om Musega Vuurɛ N De Sɛla,bɔ ki koo muus ka vɔnri n di sɛla,1.0,0.3077
+568,"Yamam n pa’ali Yehowa n soŋɛ ya se’em ti ya ta’an ŋmibe la, ya daa yeti, Yehowa zãli ya mɛ wuu “gɛla” la. Bala vuurɛ?",yamam m paal yehuwa nsuŋ ya seim ti yataa ŋmi bi la ya daa yeti yehuwa zanli ya mi woo gela la bala vunre,0.6,0.2024
+569,To nyɛti nyuurɔ la wani to san “lɛna Yɛnɛ”?,ti nyɛtinyɔɔr la wani tisonle na yen ni,0.7778,0.3125
+570,LUA BUNƆ LA WAN BASƐ TI TO TA ANA KASI,luwa bun la wan bahi ti tutaana kasi,0.6,0.1724
+571,"Ho san ɛɛra luɣerɛ kpɛ’a, ho wan ta’an eŋɛ la bem?",ho san eɛra lugɔr kpiea hu wan taan iŋ la bim,0.5455,0.2778
+572,To wan ta’an zamesɛ la bem Yon ba’asegɔ yetɔɣum la poan?,slebem jɔnn baahigu yitɔgim la puan,0.9091,0.5814
+573,NA’ASA YA TAABA,naasa yaa taa ba,1.0,0.0833
+574,HON TƐ̃RI?,hon tari,0.5,0.1429
+575,ZINZAƔESI LA,zen zagiso la,1.0,0.3636
+576,Ti’isɛ bisɛ ti ho boi la tinpaalega la poan ge sɔkera sɛba ti ba isige ba la soke ana wa:,ti i bihi ti hu bo le tim paaliga le puan ge sɔkra sɛba ti ba ihig ba la suk ana wa,0.65,0.2353
+577,"Ho San Ka’ana Nɛra, Tɔɣesa Yezu",o saŋ kaa na nɛra tɔgsa yesu le yeti,1.3333,0.4583
+578,Yehowa Fabeli Ho Yele Mɛ,daka la zuu nde yehuwa fabili hu yili mi la yiti,2.2,1.2
+579,"WUU TIMOTI LA, TI’ISA NƐREBA YELE",woo timoti la tɛɛsa nɛriba yeli,0.6667,0.2308
+580,Bisɛ hon wan ta’an zamesɛ sɛla. Soke homea yeti:,bisihun wan taan zamsi sɛla sok u miɛ yeti,0.6667,0.2432
+581,HON ZAMESƐ LA BEM GULESEGƆ ANA WA POAN?,hun zaŋ la bi golsk a nawa puan,0.875,0.4194
+582,Beni n wan soŋɛ hɔ ti ho tara paŋa ta’an ŋmibera?,tiwantar giin li bɔɔraba ge suŋ ba ti ba nya sala pak ba,1.0909,0.9189
+583,Yele wa pa’alɛ mam ti Yehowa ani la wani?,ye liwa paal man te yehua ana la nmɔn ni,1.0,0.3548
+584,To zamesɛ la bem Yezu yelekiresi la poan?,tuzams le bem yesu yelkiris le puan,0.875,0.303
+585,YEHOWA N PA’ALI TƆ ZAMESEGƆ POAN,yehuwa n paali to zaŋ kupɔɔn,0.6667,0.3846
+586,e FOOTE LA VUURƐ: Yehowa tigeri la n tari dia la lɔɣɔrɔ bɔ’ɔra mabiisi n boi Malawi tiŋa ge me buɣela ba suure.,fɔra la vɔnre yehuwa tigiri la ntar dia la lɔgir bɔɔra mabiasi m bo malawi teŋa ge mi buge la ba suunre,0.6957,0.2442
+587,Ho Wan Tara Pupeelum Ho San Ma’ɛ Homea Gura Yehowa,hu wan tar popeelum hu san maa hu mia gura yehowa,0.7,0.175
+588,NAAYINƐ DAYƆBA’ARƐ WA’AN TINPARƐ WA ZUO NA,naayin ni dayabubaari waan tim par wa zuu na,0.8571,0.2647
+589,HON WAN LEBESE LA WANI?,n wan lebis la wan ni,0.8,0.2778
+590,HON WAN LEBESE LA WANI?,nwan n lebis la nwan ni,1.0,0.3889
+591,beni n sɔi ti la nara ti ho tiregɛ maalɛ yele la?,be ni n sɔi ti lan nara tee hoterig maal yel la,0.6667,0.2162
+592,LA SAN DƐNA TI HO DEKƐ SIREGE N MEA TUM TUUMA,la san de na te u di kishirigi mia tontooma,0.8182,0.4286
+593,YEZU ZƆ TI A NƆŊƐ EN PAA N KI,yesu zɔ taa nɔŋ mpaa nki,0.8889,0.2381
+594,"Hon nyaŋɛ kaalɛ yuunɛ wa Pigera Zontua zamesegɔ yɛla la ? La san dɛna bala, bisɛ nyaa ho wan ta’an lebese soke ana wa:",u nyaan kaan le yoon waa pigri zan tiwan zamseg yala la la sa nda na ba la bi sinyaan wan taa leb sisuk aana wa,0.9565,0.3187
+595,Da Makɛ Yese Vo’osum Paradiisi La Poan,da mak yeese voosum paradiisi la puan,0.4286,0.0968
+596,"Yehowa n tari nɔŋerɛ se’em la basɛ ti to vurege du en mɛ, basɛ ti to bɔna la fai, basɛ ti to baŋɛ ti a ti’isɛ to yele ge me basɛ ti la ana to mama.",yehuwan tar nɔŋr seem la baa ti ti vir ki duun ma baa ti ti bɔna la fai baa ti tu baŋ ti a taɛhi tu yele ge mbaa ti la a na tumamaa,0.6111,0.2804
+597,TI’ISA TAƔESA HO BEERE SA’AM YELE,tɛɛsa tagasa ho beeri saam yi li,0.8333,0.2692
+598,Biɣi biɣi saŋa ta’an basɛ ti la ana to la wani la Yehowa pu’usegɔ?,bigbig saŋa taan basi ti la ani tu la ŋɔni la yehowa poosikɔ,0.5,0.26
+599,Beni n sɔi ti ho wan ta’an tara puti’irɛ ti Yehowa nɔŋɛ ho mɛ paa?,beni nsɔi ti hu wan taan tar putiɛr ti yihi wan nɔŋ humi paaa,0.6667,0.2245
+600,Piisi sɛba n buregɛ la,piisɔba n borig la,0.6,0.3333
+601,YELEKPINE,yel pini ti wan zamsi baŋa sɔdɔ ti a naasi puan ti yehowa bihila tɔ,15.0,5.2222
+602,Ton tari sugeri vuurɛ?,ton tadisugiri bure,0.75,0.2778
+603,MAM DƆƔEREBA YUUN TUNI LA SATIŊA NA’AM YETƆƔUM YALEGERƐ TUUMA,man dɔgiriba yun tun la sateŋa naam yitɔgum yaligir tooma,0.8,0.2745
+604,YEHOWA N BASƐ TI BA GULESƐ BAABULE LA,yehowa m baa ti ba golisi baibul la,0.5,0.2667
+605,basɛ ti la niɛ peelumi ti to basɛ to be’em?,baha ti la niepeel nte to bas tibeem,0.7,0.2812
+606,Tara Vom Somɔ Daarewoo! gɔŋɔ la tari la sokere zo’e zo’e n wan soŋɛ tɔ ti to ta’an pa’alɛ to Baabule zamesegɔdoma ti ba baŋɛ Yehowa soŋa. Basɛba dela:,tar von sum daar wuu gɔŋ la tar la sukir zoo zoo wan suŋ tɔ ti i taan paal tubaabuzankudima ti ba baŋ i wasuŋa basiba di laa,0.7931,0.3391
+607,Sodeni poan ti Yehowa yuun dekɛ a yu’urɛ la bo Yezu?,so di ni puwan ti yehowayoondikaayoor la bu yesu,0.9091,0.3
+608,YELE ANA WA KALUM TO SUURE LA WANI TI TO BƆTA TI TO MUSE KO’OM?,yel ana wa kalin tusuunr la wan ni ti dibɔdite ti muskoom,0.7333,0.2979
+609,TON TƆƔƐ PO’E YEHOWA NƐREBA SE’EM,tuntɔgi po o yehuwa nɛriba seem,0.8333,0.2308
+610,GUSTAVO JOSEPH N TƆƔƐ SƐLA,gastavol josef n tɔg sɛla foote gastavol la emilia josef,1.6,1.4091
+611,Yeledaaŋɔ paari Kristakɔma mɛ. To wan zamesɛ baŋɛ sɛba n nan muse ko’om la n wan ta’an maasum gura yeledaaŋɔ ana wa se’em.,yelidaaŋu paar krista kama ma ti ban zamim baŋi sɛba n nan muhir koon la nmɔntaan maahim gura yelidaaŋ ani wa seim,0.7826,0.2421
+612,Ho Ta’an Le Wa’ana Pu’usa Yehowa!,daka la zuu n di u taan le waa poosa yehua la yeti,1.8333,1.0
+613,ANA YA DU’A DU’A LA TAABA YELEDAAŊƆ SAN PUƔUM BƆNA YA PƆƔEDIRE LA POAN,a na ye doodoo le taaba yulidaaŋ sanpom bɔna yepɔgidiir le puan,0.8571,0.3455
+614,ho mabia san namesa bii a suure n sa’am?,u mabɔnya han namha biya suunri nsaan,1.0,0.4
+615,Dekɛ homea delum Yehowa ge daɣɛ homea puti’irɛ.,di ka hu mia delin yehuwa die daa ho mia potiɛre,1.375,0.3947
+616,"Wuu National Institute on Aging (NIA) n boi United States intanɛt tuuma zɛ’an n pa’alɛ se’em la, ho ta’an soke homea soke ana wa:",woo nasinal institut on azin m bon yunaited stet intanɛt toon ma zinen mpaali seem la hu taa sok hu mia sok aanawaab,0.8333,0.3367
+617,"Hon basɛ ti ho yetɔɣum, la ho itigɔ kpɛmesa ho mabiisi giila? Hon nyɛti ho mabiisi me n tɔɣeri ge ita yelese’a kpɛmesa ho giila?",hun baa ti hu yetɔgim la hu er ku kpɛ maa hu sabɔra giin la a hun nya ti hu mabiir mi ntɔgri ge ita yelisiɛ kpɛ maa hu giin la a,1.12,0.38
+618,Da Ba’ɛ Ti’isa Ho Ma’a Yele,dabaa tiɛn isaah ma a yele,0.8333,0.2632
+619,Ba Puurɛ Pee Mɛ La Ban Kɔ’ɛ Ba Puti’irɛ Se’em La,daka le zuu n dee ba poor peemi le ba kɔɔ ba potiɛr seen la yetii,1.2727,0.8286
+620,Beni n sɔi ti to bɔta ti to ita som?,beni n sɔ ti to bɔrtate to ita soŋ,0.4,0.1538
+621,Lan Tum Tuuma Se’em,lanton tooma se,1.0,0.4
+622,Bem ti ho wan bɔta ti ho yele dɔɣereba?,beŋ ti ho wan bɔri ti ho ye lidɔgirba,0.4444,0.2333
+623,Beni n sɔi ti la nara ti to tuna Naayinɛ puti’irɛ n boti sɛla hali biɣi biɣi saŋa poan?,beni n sɔ ti lanar ti tu tona naayin n potɛɛr mbu ti sɛla hali biigbig saŋa pɔɔ,0.6842,0.2687
+624,"Ho san tiregɛ kaalɛ ge me ti’isɛ taɣesɛ yelese’a n boi zaseŋɔ yɛla wa poan, ho wan nyɛ nyuurɔ zo’e zo’e.",u han terki kaanle gi mi tiɛhi ta yel seem buzaanu yala wa puwan u wan nyanyɔɔr zoo zoe daka la puwan yɛla baahiya,1.0476,0.7564
+625,Lua bunɔ la tari la bem kã’a bɔ’ɔra tɔ nananawa?,lua bun la tar la bi kaan bɔra to nanann wa,0.8,0.25
+626,To wan zamesɛ baŋɛ to wan bɔ’ɔra nɛreba gilema se’em hali la san puɣum kpe’em bo to.,ti waan zamsi baŋ tiwan bɔɔra niriba gilima seim hali la sanpɔŋ kpeen bo to,0.7059,0.2344
+627,DI’ISA SUURE GE TARA PUTƐ̃SONƐ,din nha suunre ge tara potɛnsuni,0.8,0.3333
+628,Tara Sukpe’ene Wuu Zadok,tanisukpee ni woo zadok,0.75,0.25
+629,Sitaana ni tiregɛ doose la sarɔtɔ ani poan ti a kɔ’ɔsɛ to giila ti to ana buulegɔ?,sutaana na terigi doosi le sɔrɔ tiana pua ti aa kɔɔsi ti giinra ti aana bɔɔlig,0.8824,0.3594
+630,To wan zamesɛ baŋɛ ton wan eŋɛ se’em bo Yehowa pɛ̃ka sɛka n nari en.,ti wan zamihi baŋ tiwan seim mbo yehowa pɛɛn kasika nar in,0.8667,0.3333
+631,Beni n sɔi ti la yele pakɛ ti to kelum tara sugeri?,bi nin sɔ ti la yel pake ti ti kelm tar suguri,0.75,0.2051
+632,bem ti to ka mina?,ben titu kamina,1.0,0.1538
+633,To wan zamesɛ baŋɛ ton wan eŋɛ se’em ta’an tara bɔnsoŋa la to yire nɛreba sɛba n ka pu’useri Yehowa ge me bisɛ ton wan eŋɛ se’em ta’an tɔɣɛ Yehowa yɛla bo ba.,ti wan zam mi baŋi tinwan eŋ seem taantara bɔŋsoŋa la ti yii niriba sɛba n ka pooh yehowa ge mi bihi tiwan iŋ seem taan tɔg yehowa yɛla bo ba,0.5758,0.2333
+634,Basɛ Ti Nɔŋerɛ Soŋɛ Hɔ Ti Ho Kelum Mɔɔla!,m basa ti nɔŋir soŋ hɔ ti ho kelim mɔɔ la,0.7778,0.1875
+635,To wan ta’an eŋɛ la bem soŋɛ sɛba n kuregɛ la?,ti wan taan eŋ la bim soŋ sɛba nkurig la,0.5455,0.1765
+636,DA NƆŊƐ LIGERI,din nɔŋi ligiri,1.0,0.3333
+637,PAUL LA ANNE CRUDASS N TƆƔƐ SƐLA,la an krudas n tɔki sal la la y,1.1429,0.5769
+638,"Mabiburaasi, Yamam Tiregeri Ti Ya Ta’an Dɛna Keendoma Soŋeredoma?",yamaŋ tirkere ti yataan dan na keeni ma sŋurdima a,1.1111,0.4444
+639,Ton Wan Eŋɛ Se’em Kan Yee Pooren La Yelese’a Ti Ba Malum Demese La,tiwaŋ seim kan yi poorin le yilisia ti bamalin dimsi la,0.7857,0.3529
+640,HO LUƔERƐ KPƐ’A SAN BISERA YALUMFƆƆRA HO WAN EŊƐ LA WANI?,hu lugri kpia han bira yalin fɔɔra hu wan eŋ le wan ni,1.0909,0.3111
+641,TO MALEMA NƐŊADAANA LA TA’AN SOŊƐ HƆ,tu malima niŋadaana la taan suŋ ho,0.7143,0.2069
+642,"HO SAN TABELƐ KƆ’Ɛ HO PUTI’IRƐ YELE POAN TI HO BISƐ TI LA KA ANI SOŊA, HO WAN EŊƐ LA WANI?",hu san tabil kɔɔ hu potiɛr yil puan ti hu bihi tee lakaa ni soŋa hu wan eŋ la nwan ni,0.8095,0.303
+643,siregera tomea?,siirikirato mia,1.0,0.3846
+644,Kumesa,fuuti bebobimɛta la naan poo kudiek ti mɔbiya paala mabia pɔka ba ŋma ti dɔgir seem fuud la golk le yeti kumsa,22.0,13.8333
+645,KPƐMESA YA TAABA GIILA TANSUGERE KÃTƐ POAN,kpiɛmisaya taab ba giin la tan sugri kati puan,1.2857,0.25
+646,Bem yɛla atã n wan soŋɛ tɔ ti to ta’an zusa soŋa?,ben yɛla ata nwan suŋ tɔ titotaan zosa suŋa,0.8333,0.1667
+647,nɛreba fii san bɔ’ɔra lebesego zamesegɔ poan?,nɛriba fiin san bɔɔra libisigi zamsigu puan,0.7143,0.2703
+648,"Mam ni gee fii la n dekɛ n loore la ta ŋmɛ sɛla, bii mam tabelɛ dekɛ n loore la ta ŋmɛ la sɛla ti la ŋmɛɣelɛ ge me kɔ̃ kɔ̃?",ma ni geehi fiin la n dike nloori la ta ŋmɛ sala bie man tabi dike nloori la ta ŋmɛ le sala ti la ŋmig li ge mi kɔkɔɔn,0.6452,0.2809
+649,"Nɛra San Eŋɛ Ho Sɛla Ti Bala Ta’asɛ Daaŋɔ Ase’a, Ho Wan Eŋɛ La Wani?",daka la zuu ndie nɛra sa nmɔ sɛ la ti ba la taahi daaŋ aasea u wan iŋ la nmɔ ni la yeti,1.2667,0.66
+650,"To wan zamesɛ baŋɛ tuntuna Peter n yuun tɔɣesɛ Yezu n ti’iseri se’em, la tomam me n wan tɔɣesa bala se’em.",ti wan zamihi baŋa tuntoŋna piita nyoonn tɔgihi yesu nteɛhir seem la tuma mi nwan tɔbih a bala seein,0.8095,0.3951
+651,Eŋɛ Kalam Maalɛ Yele La!,n kalam maa li yeli la,0.8,0.2632
+652,Mam ba’ɛ tukera la bãla bãla ti la giŋera lɔa zo’e zo’e?,man baa tukura la ban la ba la ti la geŋra loya zoo zoo yi,1.0,0.3415
+653,"Gage Fleegle la a pɔɣa, Nadia",foot la di la aa m mabya geet fligel laa pɔga nadia,1.6667,1.0435
+654,Ho ta’an dekɛ yele ana wa eŋɛ homea zamesegɔ:,ho taan di ke yel a nan waa eŋan ho mia zamskɔ,1.1111,0.3143
+655,To wan zamesɛ baŋɛ Yezu n yuun eŋɛ se’em eŋa n yuun nyɛ nɛreba ti ba ita ba se’em la ge me bisɛ ton wan tɔɣesa en se’em.,ti wan zam bu baŋ yesu nyuuŋ seim iŋayunya nɛriba ti ba itaba seem la ge mi bihi tiwan tɔgh n seim,0.7857,0.3034
+656,KEENDOMA LA N SOŊERI SƐBA N TUM BE’EM SE’EM,kiindimala nsuŋr sɛba n tom been seem,0.6667,0.2424
+657,ZI’IREGO POAN YƐLA,zinirigi pɔɔn yɛla,0.6667,0.3333
+658,Beni n sɔi ti la yele pakɛ ti to ŋmibera?,beni n sɔ ti la yel pak ti tiŋmibira,0.5,0.1613
+659,"Burasa’ara Wa, Tɔɣesa Ya Mark La Timoti",burasara wa tɔgisaya maak la timoti,0.5714,0.129
+660,"Ho san kaala Baabule la ge bɔta ti ho nyɛ nyuurɔ zo’e zo’e, ho ta’an soke homea soke ana wa:",ho saŋkaanla baabu la ge bɔta tee ho nyanyɔɔr zoo zoe u taa sok hu mia soki ana wa,0.6,0.2647
+661,HON KÃ HOMEA VUURƐ?,hun ka hu miya vɔnrie,1.25,0.6
+662,To tara zoolum bɔ’ɔra Yehowa vuurɛ?,bryehua vunr tuan taan zamihi li bim,1.1667,1.0
+663,SARƆTƆ ANI POAN TI YEHOWA . . .,solot a ni puan ti yehowa,0.8,0.2381
+664,bem tuulum bo’olum ti Yehowa bo to?,ben toolim boolum ti yehowa bo to,0.2857,0.1481
+665,ti’isa taɣesa lua bunɔ la?,te isa tagisa luo bon la,1.0,0.3
+666,Dekɛ Homea Delum Sɔ’ɔlum Za’adaana La,dikhomiya dilin soolom zanandaana la,0.8333,0.4
+667,"A san ita la sɛla ti Yehowa ka bɔta, mam n nari ti n soŋɛ en bii la nari ti n yele keema ti a soŋɛ en?",a saan itaa la sa la ti yehowa kabɔta mam nnaar ti n suŋ in bei lanaar ti n yelikeema ti a suŋ in daka la puan yɛla baasiya,0.8148,0.473
+668,KƆ’ƆN TIREGƐ NYƐTA NƐŊA TƆLEGA HO PA’ALEGƆ POAN,kuɔn terig nya ta niŋatɔliga u paalku puan,1.0,0.3421
+669,TO BEERE SA’AM PUTI’IRƐ,to beeri saan potiɛrɛ,0.75,0.2222
+670,Yehowa Beem To Ti To Dɛna A Saama,yehowa been to titudana a saama,0.5,0.1154
+671,LAN SOŊERI TO SE’EM NANANAWA,lan somir to seem nannanna wa,0.6,0.2174
+672,ANI N WAN TA’AN KA’AM MAM SOŊA?,ani nwantaan kaan man soŋa,0.7143,0.0909
+673,BASƐ TI HO NƆŊERƐ KPE’EM,saŋkaŋa la ti mɔbɔ wa,1.0,0.9474
+674,To wan zamesɛ baŋɛ ti nananawa n nari ti ho tara bɔnsoŋa la Yehowa ge muse ko’om.,ti wan zamhi baŋ ti nanana wa nnari te hu tar bonsuŋa le ye hu wa ge mukk koon,0.9412,0.2381
+675,JW.ORG intanɛt tuuma zɛsɛka zuo n de “ Marriage and Family ”,jee dablyu dɔt ɔg ntarnɛt tuoma zinsaka zuo n di marih and famili daaki la pɔɔn ya li baasiya,1.6,0.9783
+676,BANI TI BA WAN “DEKƐ” KEŊƐ?,bani ti ba wan ni kikeŋe,0.3333,0.2105
+677,Bani n boi ‘Zilam Sore La’ zuo zina beere wa ge sore la wan tara ba ta paɛ la bɛ?,mani m bo zilam sor la zuu zinabeer wa ge sor la wan tar batapaa la bɛ,0.6,0.1525
+678,nɛreba zo’e zo’e san bɔ’ɔra lebesego?,nariba zoo zoo saabɔɔra libisigu,1.0,0.3214
+679,Yehowa N Boti Mabiisi Ita Sɛba N Tum Be’em Se’em,yehuwan bo ti mɔbɔɔr yitasɛba ntun been seem,0.9,0.2162
+680,Yehowa Nɔŋerɛ La N Soŋeri To Se’em,yehowa nɔŋri la n suŋr to seem,0.2857,0.1852
+681,HON WAN LEBESE LA WANI?,nwan libis la wan ni,1.0,0.3333
+682,"HO SAN TI’ISA TI HON KA TARI VUURƐ YEHOWA NƐŊAN, HO WAN EŊƐ LA WANI?",ho san taɛha ti hon ga tar vɔɔnra ye huwa nɛŋan hu wan eŋ la nwan ni,0.6667,0.2745
+683,“A WAN BO YA VOM YUUMA ZO’E ZO’E”,m yuma zoo zoo,1.0,0.5909
+684,Mam n yuun boi Cameroon tigere yile tuna,footi andre m boo ofis kemeronn tigri yil la puan foot la golig la yeti man ye m bo kameronn tigri yil litɔ na,3.0,1.9394
+685,To wan eŋɛ la wani ta’an soŋɛ mabisɛba n kuregɛ la?,ti wan iŋ la mɔ ni taansoŋ mɔbɔ sɛba nkurg la,0.7273,0.2564
+686,TO NƐRA SAN KI TI TO SUURE SA’AM,to nɛra han ki te di suund saan,0.625,0.2917
+687,Onesimus yele la poan?,onisimus yil le puan,1.0,0.2778
+688,HON WAN LEBESE LA WANI?,hunwan lebis le wan ni,1.0,0.2778
+689,Ton wan eŋɛ sɛla ti Yehowa soŋɛ tɔ biɣi biɣi saŋa poan.,tinwan eŋ sɛla ti yehuwa soŋ tɔ bigbig saŋa poan,0.5833,0.186
+690,Mam Kɔ’ɔn Zamesa Mɛ,,1.0,1.0
+691,HON MAASUM TI HO KÃ HOMEA GE MUSE KO’OM?,hun maahim ti hu kan hu mia ge mu kuoŋ,0.8889,0.4
+692,Bem n wan ta’an basɛ ti to kan tara pupeelum?,bem nwantaam baa ti tu kan tara popeelum,0.6,0.1471
+693,bɔ’ɔra to yelese’a n pakɛ tɔ?,bɔgga tu yelsiɛ pak tu,1.0,0.4286
+694,To wan eŋɛ la wani ta’an buɣelɛ nɛreba suure?,ti wan eŋ la wani taan bugili nɛriba suunri,0.5556,0.2286
+695,To Wan Ta’an Zamesɛ La Bem Yezu Ki’i Dabesa Pinaasi La Poan?,tiwan taa zamihi le beem yesu kee dabisapiinaah la puan,0.9167,0.3261
+696,To wan zamesɛ baŋɛ ton wan eŋɛ se’em dɛna Yehowa Saama a tɛnti deo la poan ge kelum baŋɛ eŋa n biseri to se’em.,ti wan zaan baŋ tiwan eŋ seem dana yehowasaama atentidee la pua ge kelim baŋ iŋa m bisir tu seem,0.7917,0.2471
+697,YA SAN KA BƆKƐ TAABA,yi han ka bɔg taaba,0.6,0.25
+698,"f FOOTE LA VUURƐ: Yehowa yamesi n ni ita Tiirɛ Dia la tingɔŋɔ wa zɛ’an kayima la, zɛ’ɛsi ase’a tingɔŋɔ wa poan me, basɛba ni maasena mɛ ti ba eŋɛ.",fot la vori yehoa yamsi n ni eta teerdiɛ la teŋoŋwa zinen kayima la ziin haasea tiŋoŋwa po mi basaba nimas nan ma ti ba eŋi,0.7333,0.3545
+699,To wan nyɛ nyuurɔ la wani zina beere wa to san nana Yehowa pa’alegɔ?,ti wan nya nyɔɔr la wani yinabeer wa tu sannana yehuwa paaliko,0.7143,0.2264
+700,Ana Du’a Du’a La Yehowa Ho San Yeti Ho Keŋɛ Sukuu Pa’asɛ,a naduaduwa le yehowa u san yeti u keŋ sukuu paasi,0.6667,0.1905
+701,HO WAN EŊƐ LA WANI LƐƔƐ NƐRA?,uwaa iŋ la waa ni lɛɣi nɛra,0.8571,0.3182
+702,KƆ’ƆN TUULEGERA TA’AN SOŊƐ NƐREBA,kuɔn tolgira taan suŋ nɛriba,0.8,0.2963
+703,Yezu yuun eŋɛ la wani basɛ ti a podɔleba la baŋɛ Yehowa yu’urɛ la?,yesu yun iŋ la wa nimbahataa po doliba la baŋ yuhi wa yuur la,0.8571,0.2745
+704,"Hon wan eŋɛ se’em lɛɣɛ nɛra nyaŋɛ ta di bii ele en, la mabiisi me n wan eŋɛ sɛla ta’an soŋɛ hɔ.",nwan eŋ seem lɛg nɛra nyaŋ ta dii bii el in la mabɔn mi nwan eŋ sɛla taan soŋ fɔ,0.6818,0.2429
+705,HON WAN TA’AN ZAMESƐ SƐLA,,1.0,1.0
+706,Yehowa n nɔŋɛ to la?,yehowa nniŋ to la,0.4,0.1333
+707,gingilega kaarɛ bisegadoma tuuma?,kingilkakaari biskaduma toonma,1.0,0.3448
+708,“YA DIN’INHE SUUNRE”,ya diinhi suunre,0.3333,0.1333
+709,Basɛ ti ho puurɛ pee la hon tari sɛla la,baah ti hu poori peel la hun tar sɛla le,0.7,0.3226
+710,Yob yele la wan ta’an soŋɛ to la wani ti to ŋmibera yeledaaŋɔ poan?,yop yel la wan taan suŋ ti le ŋɔ ni ti tu ŋmibira yelidaaŋ puan,0.7857,0.25
+711,Yehowa Tari La Giile Bɔ’ɔra Hɔ,yehowa tar la giin le bɔɔrahɔ,0.6667,0.0833
+712,"Ho san ti’isa ti hon ka tari vuurɛ Yehowa nɛŋan, ho wan eŋɛ la wani?",u han tiɛha te mun ka tar vɔɔnr yehuwan niŋa huwaiŋ la wɔn ni,0.9333,0.451
+713,"Yehowa N Yuun Kpemese To Giila Zaberɛ, La Suma’asum Saŋa",kpee hi tugiin a sebire le sum maahi saŋa,0.9,0.5556
+714,"Ba me fabeli ho loore tukere yele mɛ? La san dɛna bala, bem n wan soŋɛ hɔ ti ho ta’an kɔ’ɛ ho puti’irɛ soŋa loore tukere poan?",ba mi fabil ho loorotukuri yel ma la sandani ba la been wan suŋ ho ti hu taan kɔɔ ho potinɛr suŋa looro tukur puan,0.7407,0.266
+715,PAUL KA’AŊƆ LA WAN TA’AN SOŊƐ HƆ,pɔɔl kaaŋ la wan taan suŋ ho,0.5714,0.25
+716,TO SAN ƐƐRA TUUMA,tosanɛɛra tooma,1.0,0.1429
+717,Yakob N Yuun Tɔɣɛ Sɛla,yakob n yin tɔgi sala,0.6,0.2778
+718,La vuurɛ dela bem ti to “bahɛ ya te Na’ayenɛ ihege suunre la ba”?,bim ti ti baahya ti naayin iigisuun la ba,0.7857,0.4792
+719,Nɛra la a zaba wan eŋɛ la bem ti ba pɔɣedire daarɛ la ta ana soŋa ti gilema bɔna bim?,nɛri la zaba u iŋ li biŋ ti bapɔgidiib daari la taana suŋa ti gilima bɔnabin,0.75,0.2769
+720,MAM YUUN PƆSƐ TUNA LA TƐM WOO NA’AM TUUMA,t mu  natu    a,1.0,0.7812
+721,Vo’osum paradiisi la dela bem?,voosum paradiisi la di li bi,0.6,0.1667
+722,Kristakɔma nari ti ba geele sukuu kenɛ yele la wani?,kristo koa ma naa ti ba gee e si ku ke ni yel le n wan ni,1.5,0.3095
+723,Yehowa N Soŋɛ Tɔ Ti To Ze’a Kankaŋi Zɛ’an Woo Ti To Bɔna,yehuwa n sɔŋ to ti tu ziya kan kaŋi zina woo ti ti bɔ na,0.8462,0.2619
+724,NƆYINƐ NA’AM MƆƆLEGƆ POAN,nuyini naa muɔliga poan,0.75,0.2857
+725,Beni n sɔi ti podɔla Mark yele la wan ta’an soŋɛ mabiburaasi n de bunbilipaalesi?,be ni sɔ ti po dɔla maak yel la wan taan suŋi mabiu buraasi n di bimbil paal si,0.9333,0.1846
+726,Pɛ̃ɣɛ ba. To pɛ̃ɣɛ ba la ban bo yɔ’ɔ ti ba sireba tuna se’em soŋera tansugere la.,kpiɛng ba ti kpiɛngba la ban bo yɔɔ ti ba sirba tona seem soŋra tansugur la,0.4706,0.2373
+727,Hon Wan Eŋɛ Se’em Ta’an Zamesa Bakwai Woo,tiiŋ taan zamha bakɔ woo,0.75,0.5312
+728,Sɛla n sɔi ti Naayinɛ bo yɔ’ɔ ti namesegɔ bɔna,sɛla n so ti naayin ni bo yɔɔ ti namsig bɔna,0.4,0.1944
+729,To wan zamesɛ Yob gɔŋɔ la poan baŋɛ sɛla n sɔi ti Naayinɛ bo yɔ’ɔ ti Namesegɔ bɔna la to wan eŋɛ se’em ta’an ŋmibe namesegɔ poan.,ti wan zam yobgɔŋa la puan baŋ sala nsɔi ti naayin buyɔɔl ti namihigu bɔ na le tiŋwan iŋ siin taan ŋmi bi namihigu puan,0.8519,0.2929
+730,ya san ka bɔkɛ taaba?,ya han ka bɔg taaba,0.4,0.1875
+731,"To San Nɔŋɛ Nɛreba, To Nyɛti La Kã’a Zo’e Zo’e",tu sa n nɔŋ nɛrba tu nyɛti la kaa zoo zoo rasalreed n tɔg sala,1.3,0.697
+732,Tiregɛ tɔɣesa Yehowa ge bisera nɛra la halesoma.,terki tɔ waa yehowa ge bihira nɛra la halsuma,0.625,0.275
+733,TON WAN TA’AN ZAMESƐ SIREGE N MEA SE’EM,tinwantaan zam si siriginmia seem,0.875,0.2
+734,kan basɛ ti nɛreba tee ho puti’irɛ?,kan baa ti nɛrba teeh u potinɛr,0.7143,0.2963
+735,BEM N WAN SOŊƐ TƆ TI TO TARA SAKERƐ TI YEHOWA NƆŊƐ TO MƐ?,beim nwan suŋ tɔ ti li tar sakir ti yehowa nɔŋ tu man,0.7143,0.2791
+736,Zaseŋɔ wa wan soŋɛ tɔ ti to tiregɛ kan tuna be’em ge me wan soŋɛ tɔ ti to kan ita yelese’a n wan ta basɛ ti to tum be’em.,zahiŋ waa wan suŋ tɔ ti bi teriga kan tu na beem gimi wan suŋ tɔ ti bi kan itayelisia nwan ta bahar ti di tom beem,0.6207,0.2809
+737,TO SAN TABELƐ TUM BE’EM TI LA KELUM DAANA TƆ,tu han tabil tunbeen tilakelindaana tɔ,0.9,0.2353
+738,TON WAN EŊƐ SE’EM KAN TUNA BE’EM,tinwaniŋ seem kan tun na beem,0.7143,0.1667
+739,Sokese’a Ti Sɛba N Kaali La Sɔkera,sugsia ti sɛba nkaan la sɔkira,0.5714,0.2593
+740,YEHOWA TARI LA TO MABIISI LA BUƔELA TO SUURE,yehuwa tar la ti u mɔbinr la bugila tisuunre,0.8889,0.3333
+741,Yehowa puurɛ pee mɛ la hon kɔ’ɛ ho puti’irɛ ti ho pu’usa en la,yehuwa puurb pee mi la hun kɔɔ hu putiɛr ti hu poo han la,0.7143,0.2826
+742,Yehowa N Lebeseri To Zusega Se’em,yehuwa n lebisir tizosgaseem,0.8333,0.2593
+743,Beni ti la ka nara ti to tamɛ?,ben ti la ka nara teetotami,0.5,0.1818
+744,la nari ti to geele yɛla n giŋeri to la wani?,lanar te tugee li yɛla ngeŋri to la ŋɔni,0.7273,0.2353
+745,Lan Daɣɛ Sɛla,dagka la zuu n de lan dag sɛla la yeti,2.6667,1.8182
+746,YEHOWA WAN EŊƐ LA BEM BEERE SA’AM TI NƐRA WOO BAŊƐ TI LA NARI TI BA PU’USA LA EŊA MA’A?,yehuwa wan iŋ la bi beeri saan ti nɛra woo baaŋ ti la naa ti ba pooha la iŋa maa,0.45,0.2344
+747,Hon Wan Eŋɛ Se’em Ta’an Dɛna Zɔsonkɔ,nwan iŋ seem taanda na zɔ suŋkɔ,1.0,0.25
+748,"Bala la, kaalegɔ zɛ’an wa basɛ ti ‘birikindoma’ tara la puti’irɛ ti Naayinɛ wan soŋɛ ba.",bala la kaaliga zien wabaa tibil chinduma tara le poteer ti ti naayinn wansuŋ ba,0.6875,0.2836
+749,Yele wa soŋɛ mam ti n bɔkɛ la bem Baabule la poan?,yel wa sɔŋ man ti m bɔk la bim baabu la pɔan,0.6667,0.2632
+750,TARA GIILE BƆ’ƆRA HO YIRE NƐREBA,tadagiin li bɔɔra hooyir nɛriba,0.8333,0.2308
+751,Yehowa Paŋa Ka Pɔ’ɛ,yehuwa paŋa ka pɔɔi,0.5,0.2
+752,"Be’em seto ti to tum ti la tole la san kelum daana tɔ, Yehowa ni soŋɛ to la wani?",bin si ti titutu tilatul la hankilindaana tɔ ye wan ni suŋ ti le ŋɔni,0.8421,0.3667
+753,Yelese’a N Wan Soŋɛ Hɔ Ti Ho Ta’an Tara Bɔnsoŋa La Ho Luɣerɛ Kpɛ’a,daka li zuu n di yesia wan soŋ ho ti ho taa tara bɔnsuŋa lahu lɔr kpiɛli yiti,0.9286,0.6
+754,ho san mu’ɛ nini tuna Yehowa tuuma?,u saŋ mam u nini tuona yehowa tooma,0.8571,0.3333
+755,KƆ’ƆN BƆNA VO’OSUM PARADIISI LA POAN,kɔɔm bɔna voosim paradiis la puan,0.6667,0.1379
+756,Ho wan eŋɛ la wani ta’an vurege du Yehowa zusega poan?,u an iŋ la ŋan ni taan vur ki dui yihoa zoska pɔɔn,1.0,0.4286
+757,Ton nɔŋɛ Yehowa la a yu’urɛ la,ton nɔŋ yehowa laayɔɔr la,0.5714,0.1739
+758,Daniel yuun eŋɛ la wani pa’alɛ ti a tari sukpe’ene?,daniɛl yuun eŋ la wan paal ti a tari sunkpee ni,0.6,0.1538
+759,Nazardoma la n yuun biŋe nɔɔrɛ se’em la basɛ ti Yehowa tara suure lua la wani a yamesi poan?,nazaiduma la nyuun biŋ nɔɔri seem la baas ti yehowa tara suunri lua le wani a yaimsi pɔɔn,0.5263,0.1806
+760,HON WAN LEBESE LA WANI?,nwan lebisi le wan ni,1.0,0.3333
+761,GULESEGƆ ANA WAN SOŊƐ TO LA WANI TI TO TARA GILEMA BƆ’ƆRA NƐREBA N KƆ’Ɛ BA PUTI’IRƐ SE’EM LA?,gohiligu a nawan suŋ ti lan ŋɔ ni ti ti tar gilima bɔɔr nɛriba n kɔɔ ba putiɛr seim la,0.8421,0.3
+762,Ho Wan Eŋɛ La Wani Ta’an Tɔɣesa Yehowa N Diti Sugeri Se’em La?,u wan eŋ la ŋɔn ni taantɔgiha yehuwa n di disugur seem la,0.6154,0.2766
+763,Beni n sɔi ti Yehowa bɔta ti a di sugeri bo to?,be ni sɔi ti yehowabɔtɔ te adisuur bo to,0.6667,0.1714
+764,Bem n wan ta’an sa’am sɛba n kuregɛ la pupeelum?,bee wan taan saan sɛban kurig la popeelum,0.7,0.1667
+765,YELE N YUUN KPE’EM BO TO TI TO KƆ’Ɛ TO PUTI’IRƐ DE POAN,yi li nyun kpeen bo tu ti ti kɔɔ ti putinɛr di pɔɔn,0.8462,0.35
+766,“Soŋoreba sɛba te a loe la” ti Paul tɔɣɛ ba yele la ta’an dɛna malesi sɛba n boi saazuo ge tara yelemɛŋɛrɛ bɔ’ɔra “Yenɛ la Krista Yesu” la.,lti pɔɔl tuɔn ubayel le tan dan na malasaba mbu saazuo gi tar yelmɛŋr bɔɔra yena la kristo yesu la,0.8214,0.4095
+767,TO SAN “LƐNA YENƐ” TO WAN TARA VOM SOMƆ LA BEERE SA’AM PUTI’IRƐ,to sal le naye ni ti wan tar von sum ba beeri saam potɛɛra,0.8462,0.2979
+768,Baabule gulesegɔ ana wa basɛ ti to baŋɛ ti Yehowa fabeli ho yele mɛ:,baabu golihigu a nawa baah ti tu baŋ ti ye hu wa fabili hu yil mɛ,0.9286,0.2963
+769,Sokese’a Ti Sɛba N Kaali La Sɔkera,sugsiɛ tisɛba nkaa la sɔkira,0.8571,0.2963
+770,Sɛla N Sɔi Ti Yehowa Yu’urɛ La Pakɛ Yezu,sala nsɔ ti yehowa yɔɔr la pak yesu,0.6667,0.2258
+771,c Ba yuun yi’iri tiŋa wa la Turkey.,tiŋa nɔɔri yelisun la yeti bayoon yiiri tiŋa wa la teki tiŋa nɔɔri yelisun la baasiya,1.5,1.8846
+772,Kɔ’ɔn Tara Pupeelum Ho San Bisera Nɛra,kɔɔn tar popeelum u sanbihira nɛra,0.7143,0.1935
+773,YELEKPINE,yelikpiini ti wan zamihi baŋ yoob gɔɔŋ la wan soŋ ti seem ti ti taan kaan narasoŋa,17.0,6.4444
+774,BƐ TI TO WAN TA’AN NYƐ YELEMƐŊƐRƐ LA?,ba tidɔbataa nyɛ yelimɛŋri la,0.75,0.3214
+775,DƆƔEREBA WAN EŊƐ LA WANI SOŊƐ BA KƆMA TI BA . . .,la wa ni suŋ ba kɔma tia,0.8,0.5
+776,"Mi’ilum, bɔkerɛ la hon wan ti’isa nyɔkera yɛla n wan soŋɛ ho se’em ti ho kɔ’ɛ ho puti’irɛ soŋa.",mii luun bɔkirɛ lahn wan tee ha nyɔkira yɛla mɔn suŋ u seem ti hu kɔɔ putiinr suŋa,0.8421,0.3143
+777,Viisɛ Baabule la poan. Baabule la bɔberɛ deni ti ba yuun le tɔɣɛ yele wa? Yɛla la makɛ taaba la wani?,vinsi baabu la poan baabu la bɔb dini ti ba yuun litɔg yil wa yɛla la maak taaba la wani,0.4286,0.2179
+778,Beni n sɔi ti lua bunɔ la yele pakɛ? Beni n sɔi ti Yehowa yuun ka di sugeri bo Adam la Hawa?,bi nin sɔ ti lua bun la yel paki bi nin sɔ ti yehoa yoon ka di sugr bu adam la hawa,0.5909,0.1884
+779,Tɛ̃ra Ba Pɔɣeba Yele,daka la zuu n de tɛra ba pɔgiba yel la yeti,2.25,1.1875
+780,SOŊƐ NƐREBA TI BA BƆKƐ NAAYINƐ YELESUM LA,suŋ nɛriba ti ba bɔke naayin yelhu la,0.625,0.2353
+781,Sokese’a Ti Sɛba N Kaali La Sɔkera,soksia tisaba nkaan la sɔkiraf,0.8571,0.2593
+782,Homea Zamesegɔ Yɛla,nubiŋsia m boo baabul la pɔan la mpaali naayin potɛɛr seem,3.6667,2.4706
+783,"e Bisɛ fɔɔra la, la daka la zuo n de “Mabiisi La Eŋɛ La Wani? ” Mabia n ma’ɛ ti la kpe’em bo en ti a kɛ̃ Na’am Pu’usegɔ Deon ge a nyaŋɛ a dabeem la mɛ. Ba toe en la soŋa ti a puurɛ pee.",fɔra la vɔnra mabia m maa ti la kpeembɔin ti a kɛn naan poosku dee puan ge a nyan kɛ ma mabi la too n la suŋa ti a poorpee,0.7778,0.5271
+784,SAKERƐ LA ITIGƆ MAKƐ TAABA LA WANI?,sakre le itikɔ mak taaba la wɔni,0.7143,0.2143
+785,MAM N YUUN LAƔUM TUNA KOOTIN YƐLA WELE TUUMA LA,man nyunn lagim tuna kootin yɛla wiili tooma la,0.6,0.2368
+786,"YEHOWA, TO PU’USƐ YA!",yehowa ti puohiya,0.75,0.2667
+787,To wan geele maɣesa atã ti Yezu yuun tɔɣɛ ba yele ge bisɛ maɣesa atã wa n pa’alɛ yelese’a n wan ta ita ba’asegɔ dabesa wa poan.,ti wan geel magihaata ti yesu yoon tɔg bi yi le ge bihi magihaata wa mpaal yelisia nwan ta eta baahigu dabiha wa puwa,0.8148,0.3299
+788,EŊƐ PA’ALƐ TI HO PUURƐ PEE YA LA YEHOWA N NƆŊƐ HO SE’EM LA,eŋ paal te hu poori piɛya la yehowa nnam hu seen la,0.7857,0.3256
+789,YELEKPINA a,yelkpina,1.0,0.2
+790,Yehowa Wan Soŋɛ Tɔ Ti To Tara Pupeelum Zo’e Zo’e,yehoa wan suŋ tɔ ti totara popeelm zooi zooi,0.7,0.2432
+791,KAABEGƆ BIMBINA LA BAN YUUN ITI KAABEGƆ SE’EM,kaab kubimbina la ba nyun eti kaab ki see,1.0,0.2432
+792,To wan eŋɛ la wani ta’an pɔsɛ sɔsega la nɛra n boti a zamesɛ Baabule la?,ti waiiŋ le wani taan pɔ sonsika li nɛra mbudaazamis bawul la,0.75,0.3636
+793,KƆ’Ɛ HO PUTI’IRƐ TI LA TA ANA HO SOŊA,koɔ fu potiɛr le ti lataa na fu suŋma,1.0,0.4444
+794,Yehowa n wan ta eŋɛ sɛla beere sa’am?,yehowa nwan ta eŋ siɛla beer saan,0.75,0.1429
+795,NI TI’ISƐ TAƔESƐ HON KAALI SƐLA LA,n ni tɛnɛsi tagasa hun kaan li sala la,1.0,0.4074
+796,TO WAN EŊƐ LA WANI TA’AN TƆƔESA YEZU MAKESONƐ LA?,ti waa iŋ la nwani taan tɔgisa yesu magsɔn la,0.7,0.3158
+797,Mam la Heinz la Tatjana (tiŋasuka),man la hains la tatiaana ti ŋa suka marian la hains wee taus,1.8333,0.9259
+798,YEZU YUUN TARI LA NAAŊƆ LƆƔƆRƆ PA’ALA A SƆ LA YƐLA,yesu yuu tari la naaŋu lɔgir paala a sɔ la yɛla,0.3636,0.1538
+799,”Kɔma Dela Kan’an Ze’ele Na’ayenɛ Zen’an Na”,kɔma dela kaa zieli naayin zinen na footi nɛra laa pɔga nnyɔ ki ba bipugila ti ba poor pee,2.2857,1.5312
+800,Bisɛ ya naaŋɔ lɔyɔrɔ ge ti’isa taɣesa bii sɔsɛ lan pa’alɛ Yehowa yɛla se’em. a,bihiya naaŋa lɔgɔrɔ ge tɛɛha tabiha bii sɔhu la npaal yehowa yɛla seim,0.7333,0.25
+801,Yakob Yetɔɣebiŋ’a,daka li zuu n di yakob yitɔgb biŋa le yeti,4.5,1.4
+802,Beni n sɔi ti Yehowa yuun nɔŋɛ Daniel?,be ni nsɔ ti yehua yuun nɔŋ daniɛl,0.75,0.1667
+803,ZI’IREGO POAN YƐLA,,1.0,1.0
+804,Kɔ’ɔn Tiregera Wuu Peter La,koon terigra woo pita la,0.8,0.4545
+805,Nɛreba yuun pɛregɛ ya mɛ ti ya dɔɣɛ kɔma zo’e zo’e?,niariba yuun pɛnr chɛ mi ti ya dɔg kɔma zuo zuo,0.6364,0.3947
+806,d FOOTE LA VUURƐ : Mabipɔka n de looredoma la ayima n zameseri pɔka ayima Baabule la na’am mɔɔlegɔ poan.,fɔra mabia pɔka mpaasi loori kristo koma la pɔan la pɔka ayima mbobi itabaa buzamihigu foopekala paalai yesu mak la ntɔɣiri liibɔris la yeli,1.1053,1.061
+807,Yehowa dabeserɛ la wan wa’an la wani?,yehuwa dabisil la wan waa le nwɔn ni bani,1.0,0.4483
+808,Mam la n pɔɣa n yuun boi kaarɛ tuuma la poan,man la m pɔga nyuon bokaar tuŋma la puan man ye u zaaa,1.0909,0.5294
+809,TON WAN ZAMESƐ SƐLA LA YEZU N YUUN TARI NƐREBA GIILE LA,tinwan zamsi sɛla la yesu nyoonn tar nɛriba giinli la,0.75,0.25
+810,TON YUUN PƆSƐ TUM TƐM WOO NA’AM TUUMA LA SE’EM,tonyin pɔgi tom taŋ woo naan toŋ ma la siim,0.9,0.3429
+811,MAM YUUN ZAMESƐ YEHOWA YƐLA MƐ LAƔESEKÃRA POAN,a,1.0,0.9744
+812,"To san kaala Baabule la ge ita viisegɔ, to wan nyɛ vo’osum poan yɛla. Ge to wan eŋɛ la wani ta’an nyɛ nyuurɔ soŋa soŋa?",tisankaan la baabu la ge ta veensigɔ ti wan nya voosom pɔan yɛla ge ti wan eŋ la wan ni taa nya nyɔɔr suŋsuŋa,0.72,0.2667
+813,Beni n sɔi ti la ka nara ti to ba’ɛ nam tomea?,bi nin sɔr la ka naar ti tugbaa nam tumiya,0.6667,0.3636
+814,“SƐLA KA BOI N BASƐ TI MAM PUURƐ BA’Ɛ PEE”,m bahi timam poori baapee,1.0,0.5333
+815,BAABULE LA TƆƔƐ YOB YELE LA WANI TI LA PA’ALƐ TI . . .,baabu la tɔgi yoob yie la nwani ti la paal tee,0.6364,0.2973
+816,Beni N Sɔi Ti To Puurɛ Pee La Yehowa N Diti Sugeri Se’em La?,beni n sɔi ti ti poor piel li yehuwa n di ti sugur seem la,0.5714,0.2222
+817,To wan eŋɛ la wani kan tɔɣesa Naba Yehoas?,yoonɛ bota a,1.0,0.8182
+818,Gɔnlɛmlɛm la zuo n de Ho Deodoma Wan Ta’an Tara Pupeelum,goml le le mi la zuu n di udieduma wan taan tar popeelu,0.9091,0.3556
+819,LA SAN TA ANA WUU NƐREBA PUURƐ KA PEE LA TON BO’ORI LA,la san ti anawuu nɛriba poor ka peek la tun boor la,0.6154,0.1951
+820,"Dɔreŋɛ yɛla la. Ho san dɔreŋɛ Baabule yɛla, la wan soŋɛ hɔ ti ho bisa nyɛta yɛla la soŋa ge tɛ̃ra hon kaali sɛla la hali ho san puɣum ka mina dɔreŋɔ.",dɔliŋi yada la hu saam dɔliŋa baabu yala la wan suŋ hu ti hu biha nyata yada la suŋa ge tinra un kaanr sara la hali hu saam pun ka mina dɔliŋu,0.6875,0.3509
+821,Ton Wan Eŋɛ Se’em Ta’an Ŋmibe Ba San Tum To Ŋmɛlema Tuuma,tinwan taa iŋ seem taa ŋmu bi basan tontɔb ŋmali matɔɔma,0.9167,0.3864
+822,Mabia san eŋɛ sɛla ti la daam tɔ,m mabia an iŋ sɛla ti la daan tɔ,0.5,0.2
+823,Mam n pa’ali tansugere keendoma sukuu poan,ma npaa litansugur keeni masuko puan ma le zaŋ,1.2857,0.4286
+824,b FOOTE LA VUURƐ: Nɛresɛba n yaɛ to la n tɔɣɛ to yɛla bo pɔka ayima n boi to laɣesegɔ zɛ’an kenkɛleŋa. Pooren ti pɔka la paɛ to gɔnɔ toroko zɛ’an ti ba tɔɣɛ yelemɛŋɛrɛ la bo en.,fɔɔla la vɔɔnrɛ nɛriseba yiyaa to la n tɔg ti yala bopɔ kaa yima m bo to la ku zien kinkaliŋa poorin ti pɔka la paa ti bɔntolig zien ti ba tɔg yil maŋra la boi,0.7632,0.3704
+825,Yehowa n tari a tigere la tuna,yehowa n tari atiig le tɔn na,0.5714,0.2917
+826,"NƐRA SAN EŊƐ HO SƐLA N KA ANI SOŊA, TƆƔESA YEZU",u sɛla nkaan suŋa tɔgsa yesu,0.9091,0.4722
+827,Sirege Homea Sakɛ Sɛla Ti Ho Ka Mina,sirigi ho miya saki sɛla ti ho ka mi na,0.75,0.1724
+828,YEHOWA N YUUN BO TO PAŊA TI TO SAKƐ TOE TUUNƐ,nyunbo ti paŋa ti tu sak ti u toon na,0.9091,0.4571
+829,SƆSƐ YA BAŊƐ TAABA SOŊA SOŊA,suɔn ya beŋ taaba suŋa suŋa,0.6667,0.3043
+830,"Ya San Ti’isa Ti Ya Loe Mabiisi, Tari Ya Sirege N Mea",nde ya san tɛɛsa ti ya loo mɔbisi tari ya sirigi m mia la yeti,0.75,0.45
+831,To wan eŋɛ la wani ta’an kumesɛ to putɛkeeŋa la?,tiwan iŋ le wɔni taan kom si ti potekeeŋa la,0.9,0.2973
+832,Yelese’a N Ka Ani Soŋa,yeli seɛn kaa ni suŋa,1.0,0.1765
+833,KEENDOMA SOŊEREDAANA TUUNƐ DELA BEM?,sdana tooni di la bi,1.0,0.6452
+834,Pɔɣesa’ara la n tari yɛm la sɛba n de geto makerɛ la?,pɔgsira la n tar yam la sɛba n di gee ti makir la,0.5833,0.275
+835,MABIISI LA ME WAN TA’AN EŊƐ LA BEM?,m mɔbia le mii wan tan eŋ le beŋ,1.0,0.4615
+836,MABIISI NYƐ YƆ’Ɔ MƐ MƆƆLA CUBA POAN,mabɔa sin nyɛ yɔɔ ma mɔɔla kiiban puan,0.7143,0.3214
+837,"Zaseŋɔ wa wan soŋɛ tɔ ti to baŋɛ ti to suure san sa’am, Yehowa mi lan ani to se’em mɛ ge me wan soŋɛ tɔ.",zaahimga wan sum tɔ ti to baŋ te ti suunri han saan yehowami la antu sei mɛ ge mi wan sum tɔ,0.68,0.3158
+838,SORE ŊMƐ’A TUUMA BO’ORI LA PUPEELUM,sur ŋmɛa tooma be u leb pupeelum,0.8333,0.3571
+839,"To wan zamesɛ baŋɛ Isaiah gɔŋɔ la n wan ta’an kpemese to giila se’em, to suure san sa’am.",ti wan zamihi baŋ azaya gɔɔŋ la wantan kpeemi tugiin le seem ti suunr sansaan,0.8333,0.3433
+840,TƐM WOO NA’AM TUUMA,tem woo n naaŋ tooma,1.0,0.3333
+841,Sankani ti to wan kɔ’ɔn ɛɛra ti Yehowa soŋɛ tɔ?,saŋ kani ti tiwankɔɔn eɛra ti yehowa soŋ tɔ,0.7,0.1111
+842,"To wan sɔsɛ Baabule kaalegɔ zɛ’ɛsi n pa’alɛ ti to san basɛ to be’em, Yehowa wan di sugeri bo to, la sɛla n sɔi ti la yele pakɛ ti to sakɛ yele wa.",ti wan sosi baabɔkaanligu zinisi mpaali ti tusambas tu biim yehuwa wan di suuri bu tu la sila nsɔ ti la yeli paki ti tu saki yeli wa,0.7273,0.2963
+843,LA VUURƐ DELA BEM TI TO MINA YEHOWA?,la fɔɔnri daleben te tumina yehowa,0.75,0.3571
+844,KƆ’ƆN PU’USA YEHOWA LA YELEMƐŊƐRƐ,kɔɔn puɔ yehua le ye limɛŋra,1.0,0.3333
+845,Sɛla N Sɔi Ti To Ti’isa Ti La Kan Ta’an Tum,siɛl la n sɔ ti titiɛnhi te lakantaan tom,0.9091,0.3226
+846,Paul yuun boti a yeti bo la eŋa n yuun yeti ‘daɣɛ hon doli Lɔɔ la n wan basɛ ti ho dɛna tontɔɔdaana ge hon tari sakerɛ’ la?,pɔɔl yuun bo taa yiti bo la eŋanyuun yeti daga hun dol lɔɔ la nwan bas ti u dɛni tun tɔɔdaana ge hun tar sakr la,0.7143,0.1828
+847,LUA BUNƆ LA BASƐ TI . . .,luwo bun la bahi tii,0.8,0.4
+848,Geele Baabule Naresum Yɛla,daka la zuu n dee geel babul narihim yɛla le yiti,2.5,1.087
+849,KƆ’ƆN TUNA NAAYINƐ PUTI’IRƐ N BOTI SƐLA,kɔɔn tun na a yin potiɛr m busala,1.0,0.3226
+850,a Zaseŋɔ wa pa’alɛ la ton wan eŋɛ se’em ta’an tɔɣɛ po’e to sakerɛ mama sore poan se’em ma’a ti to sunsɔa nyie bii ba ŋmɛ’ɛra nɔkpe’ene la tɔ.,zaahiŋ u wa paal la tiwanyiŋ seem taan tɔgi puo utusakir mama sori puan seim maa ti tususu nyie bii ba ŋmɛɛra nɔkpeehn la tɔ,0.5517,0.2596
+851,(Zuɔ) Jack Redford,zuor jak redfood,1.0,0.2857
+852,Zaseŋɔ seko n pa’asɛ butã la wan pa’alɛ tɔ Yehowa n yuun boti mabiisi la n boi Korint tansugere la poan la eŋɛ buraa ayima n yuun tum be’em ge ka bɔta a tee la se’em.,zaahu seko mpaah buta la wan paal tɔ yehuwa nyoon boti mɔbɔr la m bo korintansugur la puan la iŋi buraa ayema nyoon tom beem ge kabɔta a tee la seim,0.6111,0.2381
+853,BASƐ TI HO PUURƐ PEE LA HON TARI SƐLA LA,bah ti hu poori peek la hun tar sɛla la,0.6,0.2903
+854,ti’isa taɣesa Yehowa paŋa la?,tiisa tagisa yehuwa paŋa la,0.4,0.1304
+855,"Zaseŋɔ seko n pa’asɛ buyi la poan, to wan zamesɛ baŋɛ nɛra n nari ti a eŋɛ sɛla pa’alɛ ti a basɛ a be’em, la Yehowa n soŋɛ nɛreba ti ba nyaŋɛ basɛ ba be’em se’em.",zaahuŋsegu m paahi buyi la puan ti wan zamsi baŋa nara nnari ti a iŋ sala paal ti a bahi abeim la yehuwa nsɔŋ nɛriba ti ba yaŋ bahi ba beem seem,0.6389,0.2521
+856,YEHOWA WAN TA EŊƐ LA BEM BEERE SA’AM?,yehowa wata eŋ le beŋ beerisaa,0.875,0.2143
+857,Bo makerɛ pa’alɛ Yehowa n doli sarɔtɔ se’a poan lɛbesa to zusega.,bo makri paali yehuwa n doli sɔrɔtisia poan lɛbista ti zosika,0.6667,0.2549
+858,"To san ɛɛra subuɣelegɔ, la nari ti to eŋɛ la bem?",tu sanɛɛri sun buɣilika la nar ti tu eŋ libim,0.8182,0.3243
+859,Wani ma’a ti to kan le mɔɔla na’am yelesoma la?,nwani maa ti to kan li mɔɔ la naan yelisuma la,0.6,0.1429
+860,Beni n sɔi ti la ni nara ti to nyɛta nɛŋa viisa naaŋɔ lɔɣɔrɔ bisa?,be nin sɔi ti la nara tee tu nyata niŋa viinsa n naaŋ lɔgɔrbisa,0.7333,0.2353
+861,SAŊA ase’a Baabule gulesegɔdoma basɛba ni tɔɣɛ yɛla ase’a taɣesɛ mɛ. Geele yɛla atã n yuun ta’an basɛ ti ba eŋɛ bala:,saŋaasea baabugolisiguduma basaba ni tɔɣi yala asia taɣisi mi geeli yala ata nnyuŋ taambaa ti ba iŋ bala,0.8182,0.2747
+862,Zamesɛ baŋɛ ton wan eŋɛ se’em dekɛ tomea delum Yehowa ti dabeem da nyaŋɛ tɔ.,zamihi baŋi tiwan eŋ see digi ti miɛ deli yehowa ti dabeen da nyaŋ tɔ,0.7333,0.3
+863,"To wan zamesɛ baŋɛ Yehowa n yuun geele Israel nadoma la se’em, la wan eŋɛ se’em ti to bɔkɛ Yehowa n boti a yamesi ita sɛla zina beere wa.",ti wan zamsi baŋ yehowa nyoon geeli israel naduma le seim le wan iŋ seem ti ti bɔki yehuwa mbuti a yamsi itasala zina beer wa,0.6897,0.2
+864,Dekɛ Homea Delum Yehowa Wuu Samson La,dig hu mia dilim yehowa woo samsin la,0.8571,0.3226
+865,To zamesɛ baŋɛ ti Yehowa la Yezu tari putɛsonɛ la wani?,ti zami baŋ ti yehuwa le yesu tare potɛsun le ŋmɔ ni,1.0,0.3636
+866,TO KAN MALUM ZAMESƐ BAŊƐ YEHOWA YƐLA BA’ASƐ,tika mali zamihi baŋ yehowayala baahi,1.0,0.3143
+867,ho san gɛɛla yɛla wuu Yehowa n geeli yɛla se’em la?,u saŋ gɛɛra yala woo ye howa ngeeri yɛla seim lna,0.9091,0.2564
+868,KƆ’ƆN VUREGE DU YEHOWA ZUSEGA POAN,kɔɔn vuur ki du yihɔa zosikapuɔn,0.8333,0.4286
+869,Zaɣesɛ Lika Poan Tuuma Ge Kelum Bɔna Nɛɛsum La Poan,zagisi lika puɔn tooma ge kelim bɔna neesin la puan,0.6,0.3095
+870,TON WAN EŊƐ SE’EM TA’AN ANA MAMA,tiwaai seim taan anamamaa,0.8571,0.3333
+871,“HO YU’URƐ PAŊA LA POAN TE HO DAA DEKƐ BO MAM”,u yɔɔr paŋa la puan ti ou daa deki buma,0.7273,0.3636
+872,YEHOWA WAN TE’ELE HO,yehuwa wan teel hu,0.75,0.1875
+873,BEM YƐLA N WAN TA’AN BURUM TO PUTI’IRƐ?,bin yɛla nwataan burin ti potinɛri,0.875,0.3448
+874,Baabule la tari la na’asegɔ yu’ura la yɛla ase’a n wan soŋɛ tɔ ti tomam la Yehowa bɔŋa la ana soŋa. Dekɛ viisegɔ lɔɣɔrɔ n boi ho yetɔɣum poan la viisɛ yele ana wa:,baabu la ta la naahig yuura la yɛla asia wan soŋ tɔ ti tuma le yehe wa bɔŋa la a na suŋaa diki viihiŋ lɔgɔr boh o yitɔgm poon la viinh yel ana wa,0.6471,0.264
+875,LUA BUNƆ LA PA’ALƐ TI YEHOWA TARI LA NINBƆ̃ZORE,luwa bun la paa ti yehuwatal le nimbɔnzore,0.7778,0.2703
+876,"To boti la to eŋɛ pa’alɛ ti to puurɛ pee mɛ la Yehowa n diti sugeri se’em la. To san wan ta’an eŋɛ bala, la nari ti to zamesɛ baŋɛ Yehowa n diti sugeri bɔ’ɔra to se’em.",ti boti le tu iŋ paal ti ti puorb pee miɛ la yehuwa n di disugri seem la tusanwantaan eŋ ba la la nar ti tu zamihi baŋ yehuwa n di disugri bɔɔra tu seeim,0.7027,0.2097
+877,YELEKPINE,yilkpini,1.0,0.3333
+878,TON WAN EŊƐ SE’EM TA’AN BASƐ TI TO BEERE SA’AM PUTI’IRƐ LA MALUM KPE’EM PA’ASƐ,tiwan eŋ seem taan baah ti tu bee si a potiɛr la man kpeem paahi,0.7333,0.3103
+879,HON WAN EŊƐ SE’EM TA’AN NYƐ SIRESONKƆ BII PƆƔESONKƆ,n wan eŋ seim taa nya sirsunko bee pɔgsunko,0.8889,0.3659
+880,BA YUUN KƆ’ƆN NƆŊƐ YEHOWA MƐ LA BA SUURE ZA’A,bayooŋ kɔɔ n nɔŋ yehowa mɛ la ba suunr zanan,0.6,0.2353
+881,Nɛra la a pɔɣa wan eŋɛ la bem ta’an nyɛta nɛŋa bɔ’ɔra taaba?,nɛra la a pɔga wan iŋ libeem taa nyɛ ti niŋa bɔɔra taaba,0.5385,0.1778
+882,BEM N WAN KPEMESE HO GIILA TI HO BƆTA TI HO TUNA BƆ’ƆRA HO MABIISI LA?,eemsu giin la tiu bɔta te u tona bɔɔra u mɔbɔra la,0.8125,0.4906
+883,BAABULE LA N TƆƔƐ SUBUƔELEGƆ YELE SE’EM,baabo la n tɔg suubogilg yeli seim,0.7143,0.4062
+884,"Viisegɔ pa’alɛ ti buranya’asi la pɔɣenya’asi sɛba n soŋeri nɛreba tari la imma’asum, ti’isa soŋa ge me vɔna yuura.",viinsk paal ti buraa nyaahi le pɔgnyaahi sɛba nsuŋri nɛriba ta li imaahuu tiɛha suŋa ge mi vɔna yuura,0.7895,0.2697
+885,dɔla pa’alegɔ ge tara sukpe’ene?,dɔla paalikɔ ge tar sukpeeni,0.6,0.16
+886,To beere sa’am puti’irɛ.,tu beer saan putiɛra,1.0,0.2778
+887,"c Greek Gulesegɔ la poan, Hebru gɔŋɔ la ma’a n yeti, Yezu dela Malema Nɛŋadaana.",tiŋa nɔɔr yelsum la yeti giriik golgsugɔ la poan hibur gɔn la maa n yeti yesu dela malima niŋadaana tiŋanɔɔr yelsun la baasiya,1.0667,0.9032
+888,ZI’IREGO POAN YƐLA,ziir kipɔɔn yala,1.0,0.4
+889,Ho San Lɛɣera Nɛra N Boi Zɛ’an N Zaaɛ,ndakpa la zuu ndee u san lɛgira nɛr mbozie nzaan la yeti,1.3333,1.0714
+890,DA BASƐ TI NƐREBA TEE HO PUTI’IRƐ,daa baaha ti nɛriba tee ho potinɛra,0.5714,0.3462
+891,"Hon nyaŋɛ kaalɛ yuunɛ wa Pigera Zontua zamesegɔ yɛla la? La san dɛna bala, bisɛ nyaa ho wan ta’an lebese soke ana wa:",u nyaan kaan le yooni wa pigrazan tiwazamabu yala la la sanda na ba la bi sinyaa wan taan lebihisu a na wa,0.7826,0.3297
+892,Yakob N Yuun Tɔɣɛ Sɛla,yakob bu yun tɔgi sala,0.8,0.3333
+893,SƐLA N SƆI TI BASƐBA GU’UNA,shɛla n sɔi ti basiɛba goo na,0.6667,0.1905
+894,ZAMESEGƆ YƐLA,zamiku yɛla,0.5,0.4167
+895,Viisɛ baŋɛ yele n pɔsɛ se’em. Ani n yuun yele bala? Bem n yuun ta’asɛ ti a yele bala? Beni n sɔi ti a yuun pa’alɛ yele la bala?,viinhi baŋ yel pɔh seim a na yuun yel bala ben yuun taahi tia yel bala bi ni sɔ tia yin paal yil la bala,0.7931,0.2609
+896,KƆ’ƆN SOŊERA HO KƆMA TI BA SAKERƐ KPE’EM,k ti bak pem,0.875,0.7097
+897,YELE ANA WA SOŊERI TO LA WANI TI TO MƆƆLA?,yel a na waa suŋr tu la wani ti to mɔɔla,0.6,0.1875
+898,"Yaloma la, la goo duŋa n pɔresɛ la som taaba la wani? Yaloma la puɣum “zin’an” la goo duŋa la zuo, kã’ara bɔ’ɔra goo duŋa la ge tiregera ti a tee a puti’irɛ ge sɔna en bisa.",yalima la la gooduŋa n pɔnrih la sunn taaba la wan ni yalima la pu zinan la goo duŋa la zuo kaar bɔɔra goo duŋa la ge tirigra ti a tiɛa potiɛr ge sɔ nan biha,0.4595,0.189
+899,"To wan zamesɛ Paul, Filemon, la Onesimus yele ti la soŋɛ tɔ ti to baŋɛ ton wan eŋɛ se’em ti suma’asum kɔ’ɔn bɔna tansugere la poan.",ti wan zamsi pɔɔl filimonn la onisimus yili ti la suŋ tɔb ti tu baŋ tiwanŋ seem ti sumaahum kɔɔ nbɔna tan suk le puan,0.7692,0.26
+900,TI’ISƐ BISƐ YEHOWA N “NƆŊƐ [HO]” SE’EM,tensi be yehuwa n nɔŋ hoseim,0.8571,0.3462
+901,sɛla n wan eŋɛ beere sa’am?,sɛɛla wa n gbee saan,1.0,0.4
+902,Beni n sɔi ti Baabule zamesegɔdaana nara ti a baŋɛ Yehowa soŋa?,bene sɔ ti baabusankudaana nari taa bam yehe wa sumi,0.9167,0.3922
+903,To san ti’isa yelese’a ti to dekɛ basɛ la yele,tu han tiɛhi yelisia ti li diki bah la yele,0.7,0.3714
+904,kpemese nɛreba giila la wani?,kpim si nɛriba giinla le wan ni,1.4,0.2917
+905,SOŊERƐ KƆ’ƆN BƆNA MƐ,suŋri kɔɔ m bɔ na ma,1.5,0.3125
+906,TO WAN EŊƐ LA WANI TA’AN ZE’A KANKAŊI?,ti waiŋ la woni taanziɛ kan kaŋɛ,0.875,0.2857
+907,SAŊA BUSEBO TI YEZU YUUN LE DEKƐ MAKERƐ TƆƔƐ SƐLA N ANI BALA,ti yesu yuun li diki makr tɔg sɛla nanbala,0.7692,0.3958
+908,Gɔnpika la n de Message of Hope,food la gulihig la yiti gompeka lan de masage of hop,1.1429,1.0
+909,Lua bunɔ la wan soŋɛ to la wani beere sa’am?,lua bun la wan suŋ ti la nmɔn i beerdisaan,0.6,0.303
+910,"To san bisɛ kaalegɔ zɛ’ɛsi wa soŋa, to wan baŋɛ ti yelebire la n de ‘ba’ la ze’ele bo la nɛreba.",tu saŋbii kaalga zinins wa suŋa ti wan baŋ ti yelbiir la ndi bala zeel bu la nɛrba,0.7619,0.3
+911,Zaseŋɔ wa wan kpemese mabiburaasi n muse ko’om giila ti ba bɔta ti ba dɛna keendoma soŋeredoma ge me sirum tiregɛ eŋɛ bala.,wan kpeemihi mabiburaahi muhi koon giin la ti ba bɔta ti ba da na keenima soŋriduma gi mi sir nterig en bala,0.7391,0.3333
+912,"SUSA’AŊƆ, N MA’A BƆŊA LA PUPEELUM YELE",sunsaaŋmɔ m maa bɔŋa le popieili yili,0.7143,0.3793
+913,To wan eŋɛ la wani dekɛ tomea delum Yehowa biɣi biɣi saŋa poan?,tu wan eŋ la wan ni dige tumiɛ dilim yehowa bigbig saŋa puɔ,0.7692,0.36
+914,TON WAN TA’AN NYƐ FÃARƐ SE’EM,tiwan taa nya faariseim,1.0,0.3182
+915,HON WAN LEBESE LA WANI?,kunwan lebis le ŋɔn ni,1.0,0.4444
+916,"Mam ni ta’an eŋɛ kalam tɛ̃ra accelerator, la brake n boi zɛ’an?",mini taan n kalam tiɛnra a sarital libirik n bo zinan,0.75,0.4681
+917,Na’am Mɔɔlegɔ Gurup Maaseŋɔ La N Soŋeri To Se’em,naa moligguruup maaŋu la nsuŋr tu seem,0.7778,0.3421
+918,Beni n sɔi ti to ka dekɛ tomea delum nɛresaala ti a yese to namesegɔ basɛ?,be ni nsɔi ti tu ka dike tu miɛ delim a saala ti a yihi tunam ku bahi,0.875,0.3793
+919,Sokese’a N Wan Ta’an Soŋɛ Tɔ Ti To Pa’ala Soŋa,daka la zuu nde sugsiɛm wan taan suŋ tɔ ti di paala suŋa la yiti,1.0,0.7941
+920,"To wan zamesɛ baŋɛ sɛla n sɔi ti Yezu yuun yeti eŋa basɛ ti nɛreba baŋɛ Naayinɛ yu’urɛ, la eŋa n yuun eŋɛ se’em pa’alɛ ti Yehowa dela zilam ti Sitaana dɛna pumpɔrema.",ti waa zamsi baŋ ni saɛla nsɔi ti yesu yuon ye ti iŋa baa ti narba ba naayini yoɔre la iŋa nyuonn inn see mpaal ti ye huwadi la zilam ti sitaana da na pumpɔrma,0.8788,0.2403
+921,Yehowa Yu’urɛ La Pakɛ To La Wani?,yehowa yuur la pak tu la wan ni,0.7143,0.16
+922,Bem zuo ti basɛba ta’an ni ti’isa ti Yehowa puurɛ ka pee la ba?,ben zuu ti basɛbaataan ni tɛnɛsa ti yehowa poor kapeela ba,0.6429,0.1915
+923,TO KA MI YEHOWA N WAN TA EŊƐ SƐLA,to ka mii howa nŋɔn ta eŋ sala,0.6667,0.24
+924,KUMESƐ HOMEA YELESE’A POAN N WAN SOŊƐ HƆ,kom suhun mia yelisiɛ puan nwan suŋ hɔ,0.875,0.375
+925,Yehowa dela Kpe’eŋo Za’adaana?,yehowa dila kpeeŋma zaandaan na,1.0,0.2083
+926,TO ZAMESƐ LA BEM . . .,,1.0,1.0
+927,Beni N Sɔi Ti Baabule Naresum Yɛla Pakɛ Tɔ?,beni sɔ ti baa bunarsun yala pak tɔ,0.6667,0.2353
+928,To wan eŋɛ la wani ta’an tara sakerɛ to san bɔta ti to baŋɛ Yehowa n lebeseri to zusega se’em?,ti wan eŋ la wani taan tara sakrɛ ti san bɔti ti ti baŋ yehowa n lebisir tizus kaseem,0.55,0.1806
+929,Beni n sɔi ti to kɔ’ɔn tara suure lua ti Yehowa diti sugeri bɔ’ɔra tɔ?,be ni sɔ cte tikɔn tara suunri lɔɔ ti yehowa di ti suur bɔɔra tɔ,0.7333,0.2264
+930,Zaseŋɔ yele wa wan soŋɛ pɔka ti a sira bisera yalumfɔɔra. a Ku tari la Baabule naresum yɛla n wan buɣelɛ a suure ge basɛ ti a baŋɛ ti Yehowa nɔŋɛ en mɛ ge bɔta ti a soŋɛ en ti a ta’an tara suma’asum ge ana du’a du’a la en. b,zaaŋ u yel u wansuŋ pɔka ti aa sira bihira yalu fɔɔra,0.9412,0.7976
+931,To wan zamesɛ baŋɛ sɛla n wan soŋɛ tɔ to giila san kɔ’ɔsɛ.,ti wan zam si baŋi sala nwan suŋ tɔ ti giin la sankoosi,0.8462,0.2727
+932,‘Yele wa wan soŋɛ la ani ge wani ma’a ti n wan ta’an dekɛ tɔɣɛ bo nɛra?’,yel wa wan suŋ la a ni ge wan nin maa ti wan taan di ke tɔgi bu nira daka la puan yɛla baasiya,1.0,0.6471
+933,MINA HO TƆREGƆ BEENE,mina kutɔrugu bee ni,0.75,0.2941
+934,Soŋɛ Nɛreba Ti Ba Mina Yehowa,suŋ nɛriba ti ba mi na yehowa,0.6667,0.125
+935,Hon Iti Pɔɣesi Wuu Yehowa N Iti Ba Se’em La?,hun e ti pɔgsi wuu yehowa n e ti ba seen la a,0.8,0.2121
+936,To wan eŋɛ la wani kelum tara yelemɛŋɛrɛ bɔ’ɔra Yehowa?,tuaayiŋ la wani kilim tar yelimɛŋr bɔɔra yehowa,0.6,0.25
+937,"Yehowa yuun pa’alɛ Israeldoma la bem, la ban wan basɛ ba be’em se’em?",yehuwa yuu paali izraɛl dima la bim la ban wan bahi ba beim seim,0.6923,0.2115
+938,KƆ’ƆN BASƐ TI YOB GƆŊƆ LA KELUM SOŊERA HƆ,kɔɔ baa ti yoob gɔŋ la kelim suŋra hɔ,0.6667,0.25
+939,La ka nari ti ho bo yɔ’ɔ ti hon tabelɛ tum be’em sebo la basɛ ti ho suure sa’am,bihi le di suuboolku yel seem yihuwa di gankkantidaana la ka tɛnr tubeen la bala la tumam mi ka na ti tutɛnra ba bee tubaatiladaana tɔ,1.2632,1.4655
+940,La vuurɛ dela bem ti to mina Yehowa?,la vuunr deli ben ti ti mina yehowa,0.5,0.1786
+941,Hon wan bɔta ti ho bɔkɛ hon zameseri sɛla la soŋa? Ho ta’an eŋɛ yele ana wa ta’an nyɛ zɛ’an ani soŋa zamesɛ:,hu bo ki hu zamhir sɛla la suŋau taan i yil anawaa taa nyɛ ziin a nisuŋa zamisi,0.8261,0.4321
+942,Yehowa yuun eŋɛ pa’alɛ ti la yele pakɛ en mɛ ti a bisera tɔ inganɛ poan. Tomam tuunɛ yeen dɛna la to basɛ ti Na’am la dɛna yia.,yehowa yuun in paal te la yil pak n ma ti aa bihira tɔ i gani puan tima tooni yindan la ti baah ti naan la dana yiiya,0.7143,0.3333
+943,TO MABIISI SAN NAMESA,ti mɔbi ha namha,1.0,0.5
+944,KEENDOMA N MU’Ɛ NINI “TONA LA YA”,keenduma m muu n nini to na la ya,0.8571,0.1667
+945,SARƆTƆ SETO TI TO WAN TA’AN DOOSE KPEMESE TAABA GIILA,sɔr ti sei to ti tuwan taan doosi kpeemisi taaba giin la,0.9,0.2326
+946,siregeri bamea se’em la?,sirgiri ba miya seen la,1.0,0.2632
+947,Hon Keleseri Ka Ka La?,hun kye li di kaka laa,1.2,0.4118
+948,LA NARI TI TO BISA TOMEA SOŊA TO SAN BISERA YELESE’A N ITI TINGƆŊƆ WA POAN,la nar te tu bisi tumia suŋa tu sambisira yel siɛm ititiŋgɔŋ wa pɔan,0.875,0.2931
+949,To pɔɣedire daarɛ,fɔra tupɔgdiri daare,1.0,0.6
+950,Yehowa me boti tomam eŋɛ la bem?,yehowa mi but tu ma iŋ libiŋ,0.8571,0.4
+951,BEM N NARI TI TO TƐ̃RA . . .,nɛra han ye to te to kan,1.0,0.8125
+952,Beni n sɔi ti la nari ti to ti’isa ton wan nyɛta kã’a se’em to san “lɛna Yɛnɛ”?,beeni n sɔ ti lanarite to tiɛsa tinwan yɛ kaaseem tusanle na yen ni,0.8333,0.25
+953,BEERE SA’AM PUTI’IRƐ LA N WAN BASƐ TI TO SAKERƐ KPE’EM,beeri saŋ putiɛn la nŋan baha ti tisakiri kpeem,0.7273,0.2927
+954,"Ton wan ta’an zamesɛ sɛla Yakob n yuun tɔɣɛ sɛla doose Areuben, Simeon, Levi la Yuda poan.",tunwantaan zamihi sɛla yakob i yuun tɔgib sɛla doohi a ruben simeon levi la yuda puan,0.5882,0.1714
+955,"Naayinɛ San Tɔɣɛ Sɛla, La Ni Tum Mɛ",daka la zuu n die naayin nin san tɔbib sala le ni tum mi le yeti,1.625,1.037
+956,Nyɔɣɛ zɔdoma,foo ti mabɔa ba yi la bipɔgba mbobin dita fɔɔri la golk le yiti nyɔgi zɔrmal,8.0,5.0
+957,TO SAN ƐƐRA LIGERI TI TO BISA TO DEODOMA,tu saneɛra ligiri ti tu biha tudeedima,0.8889,0.25
+958,Hon Maasum Gura Mɛlesekãtɛ La?,hu maahim guura mɛlhikant la,0.8,0.44
+959,Sankani Ti Ba Yuun To’e Korint Buraa La Lebe Tansugere La Poan Na?,daka la zuu nde san kani ti ba yoonn too i korinti buraa la leb tansug la poan na la yeti,1.0769,0.5385
+960,Hon Wan Ta Soke Ba La Bem?,daka li zuu nde hu wan ta sok ba la bem la yeti,1.1429,1.0526
+961,"Ho san bɔta ti ho tara suure lua paa ti Yehowa dela sɔ se’em ti ho ɛɛra, zamesɛ bii malum zamesɛ gɔŋɔ wa.",u sam bɔta ti hu tara suunr lu wa paa ti yehowa dila sɔ seem ti hu eera zamis bii malzamsi gɔŋ wa daka la puan yala baasiya,0.7826,0.4875
+962,Bem n wan ta’an sa’am sɛba n biseri ba nɛreba la pupeelum?,bem nwontaan saam siɛba m bihir ba nɛriba lipopeelu,0.75,0.2273
+963,Maasum na’am mɔɔlegɔ. Ya poan ayima ta’an dɛna yidaana ti ya maasum yan wan tɔɣɛ sɛla.,maahuu naa mɔlig ya po ayima taandinayidaan na ti ya maahuu ya mɔn tɔ sɛla,0.6875,0.2537
+964,GINGILEGA KAARƐ BISEGADOMA KPEMESERI LA TO GIILA,gingil ga kaar biskaduma kpeem si le tu giin la,1.4286,0.2857
+965,pu’usa Yehowa la to suure za’a?,po wusa yehuwa le ti suunr zaan,1.1667,0.3478
+966,KƆ’ƆN TARA SUURE LUA TI YEHOWA NƆŊƐ HO MƐ,kaɔn tar suun luwa te yehuwa nɔŋ ho ma,0.8889,0.2812
+967,Hon wan eŋɛ la wani ta’an basɛ ti ho sakerɛ kpe’em kum isigere puti’irɛ la poan?,huwaniŋ la nwan ni taan baa ti hu sakir kpeeŋ kuniigri potiɛr la poan,0.75,0.3115
+968,TO ZAMESƐ LA BEM?,tozaŋin le ben,1.0,0.4615
+969,‘MAƔESƐ YA YELESE’ERE WOO BISƐ’,magiya yelseeri woo biha,0.8,0.3333
+970,Bo sɛba n wa’an Tiirɛ Dia la na zaarɛ.,busɛba n waa tiinri diɛla na zaari,0.7778,0.2143
+971,Ni Maasum Ge Nyaa Zamesɛ,nimmaahuu gi nyaa zamihi,0.8,0.35
+972,YEHOWA BOTI LA TO TARA BƆNSOŊA LA EN,yehuwa boti la tu tar bonsoŋa la in,0.625,0.1724
+973,soŋɛ nɛreba ti ba nyɛ nyuurɔ de poan?,suŋ nɛriba ti ban nyan yɔɔr di pɔɔŋ,0.875,0.4138
+974,La boi bim ti ho kan ta’an baŋɛ yelese’a woo ti ho sira ita ge yɛla ase’a boi mɛ ti ho wan ta’an eŋɛ ge tara suma’asum. Geele yɛla wa bisɛ.,labobinte ho kan taa baŋ yelisia woo ti ho sir eta ge helasia bu mɛ ti wantaan eŋɛ ge tar sumaahu gii li yɛl wa bihɛ,0.6774,0.2451
+975,ZI’IREGO POAN YƐLA,zinirigi poɔn yɛla,0.6667,0.2667
+976,Right: Ton tari dia bɔ’ɔra to mabiisi la,fuuti sakan tagir la yeti toon taridia bɔɔra ti mabɔs la,1.125,0.7419
+977,YEHOWA TE’ELI TO MƐ,yehuwa tail to mi,0.75,0.3333
+978,Mam yuun zamesɛ la ninmu’urɛ yele mam n yuun bo yetɔɣum French poan la,futi adir m bobin bɔɔra yetɔgim fout la golihig la yeti man yoon zams la nimɔɔr ye le man yoon bo yetɔgim frens pɔa la,1.5714,1.1071
+979,"Se’em ma’a ti mabia ayima yuun tum be’em Korint tansugere la poan la, ba yuun maalɛ yele la, la wani? Ge tomam me wan ta’an zamesɛ la bem yele la poan?",see maa ti mɔbɔa ayima yuu tum beem korinti tansugir la puan la ba yu maal yi la la ŋani ge tumam mi wantaan zamhi la bi yi la puan,0.5806,0.2301
+980,HON WAN LEBESE LA WANI?,hun wɔn lebis la wan ni,1.0,0.2778
+981,"To wan zamesɛ baŋɛ ton wan eŋɛ se’em ta’an soŋɛ to Baabule zamesegɔdoma ti ba baŋɛ Yehowa, la a hala ge me baŋɛ sɛla ti a bɔta la sɛla ti a ka bɔta.",ti wan zamihi baŋ tiwan see ntaan suŋ tibaabu zaŋkudima ti ba baŋ yehowa la hale ki mi baŋ sɛla taa bɔta la sɛla taah ka bɔta,0.6667,0.2946
+982,"Mam keŋɛ Cuba mɛ sugumnɔɔrɛ zo’e zo’e ti n ta tɔɣɛ po’e to tuuma la kootin poan. Mam san keŋɛ bim, mam ni tiregɛ mɛ ti mam la gɔmɛt kpɛ’ɛndoma la wan nyɔɣɛ zɔtɔ.",man kiŋ kii ba mɛ sugnɔɔr zoo zoo tin ta tɔg poon titoonma la kootin puan ma san kingbim man ni tergi m tima la gomt kpɛnima la wan nyɔgi zɔtɔ,0.7353,0.2975
+983,YELESE’A N WAN BASƐ TI HO DƐNA KRISTABIA N BĨ VO’OSUM POAN,yilisia nwan bah ti ho dana kristabia m bii voom puan,0.75,0.2667
+984,SAMSON YUUN BO YƆ’Ɔ MƐ TI YEHOWA SOŊƐ EN,saamisinyunbo yɔɔ ma ti yahuasoŋ i,0.7778,0.3548
+985,Yehowa ti’iseri ho yele mɛ,ye howa tiɛnr hu yel mɛ,1.0,0.2857
+986,SOŊERA TO MABIISI N BOI RWANDA,suŋgira tu mɔbiasi mboe randa,1.0,0.36
+987,HO BÃ’A N KA BASERI TI HO KAASA,ho baaŋ ka bahiri ti ho kaaha,0.5,0.2174
+988,TO ZAMESƐ LA BEM MAƔESA WA POAN?,tu zami la bem maasa wa pɔan,0.5714,0.28
+989,BENI N SƆI TI LA NARA TI TO KƆ’ƆN ZAMESA YEHOWA YƐLA?,be ni sɔr ti li nara titokɔɔ zamiha yehowa yɛla,0.6667,0.15
+990,(Gɔbega) Ulysses Glass,fout la boligo la yiti gobiga yulisis glas,2.6667,1.3889
+991,Gu Homea ‘Be’em Pã’asegɔ’ Yɛla Poan,daaka le zuu ndi gohomiya beem paasgu yala poɔl le yeti,1.6667,1.0769
+992,Sitaana yuun eŋɛ la wani parum yɛla bo Yehowa la Yezu?,sitaana yuun eŋ la wan ni paar yala bo yehua le yesu,0.7273,0.2326
+993,‘Kɔ’ɔn Ãregera Homea Ta Bi Kãsegɛ’,kɔɔn aarigra hɔmia ta be kanha ga,0.8333,0.4615
+994,HO WAN EŊƐ LA WANI NYAŊƐ HO DABEEM HO SAN TI’ISA TAƔESA . . .,u wan iŋma u nin nyaŋɛ u dabeem u san tiɛsa tagsa,0.6667,0.3488
+995,To wan eŋɛ la wani soŋɛ Baabule zamesegɔdaana ti a tara eŋa n zamesɛ yelese’a la tuna tuuma?,ti wee ŋaŋ ni suŋ baabuzankudaa na taah tar nŋinzamb yelsiɛ la to na tooma,1.0,0.4247
+996,Burasɛba N Yuun Tari Sakerɛ La Ba’asegɔ Yetɔɣum N Pa’alɛ To Sɛla,nyoon ta sak la baahigu yetɔgim mpaa tu sa la,0.9167,0.4902
+997,SOŊƐ BAABULE ZAMESEGƆDAANA TI A BAŊƐ YEHOWA SOŊA,suŋ baabosaamgdaa na taah baŋ ye uwasoŋ na,1.0,0.3902
+998,“Beni n sɔi ti Yehowa Sɛɛradoma pɛ̃regera nɛreba ti ba basɛ ba pu’usegɔ?”,beni nsɔi ti ye uwasiɛraduma pirkira nɛriba te ba baa ba poohiko,0.6923,0.3214
+999,Zi’irego Poan Yɛla,ziinr kipɔɔn yeli,1.0,0.5333

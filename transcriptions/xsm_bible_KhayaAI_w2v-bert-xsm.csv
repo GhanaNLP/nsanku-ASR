@@ -299,3 +299,703 @@ sample_id,reference,hypothesis,wer,cer
 297,"Kokuri to, Jerusalem teo tiina ta wó daare.",kokuri to jerusalem teo tiina ta wó daare,0.0,0.0
 298,nenɛɛne ba ye chwoŋa ni bworu to.,nenɛɛne ba ye chwoŋa ni bworu t,0.1429,0.0385
 299,Nam ta ke-na sabu-seŋa kwana yalei se ya meeli gare-pale dem kuri dem seeni.,am ta kena se buseŋa kwana yalei se ya meeli garepalo dem kuri dem seen,0.3571,0.0678
+300,Ko nye de nywoŋo ya mo jege a kwi sem ko yara.,ko nye de nywoŋo ya mo jege akwi sem ko yare,0.25,0.0294
+301,Ka-tole tete tui abam tei mo se á bere-ba!,a tole tete tui abam tei mo se a bereb,0.4444,0.0968
+302,ne kayere na yeini se deilimi kara se ja tega tei to.,ne ka yere na yeini se deilimi kara se ja tega tei,0.25,0.0488
+303,dé ja vara dé zwɛ dé pa‑m.,de javara de zwɛ de pa,0.8571,0.2222
+304,"Moses ná yeini o maa vei se o zo jeerim vwei dem wone, nɔɔna bam maama wó nwoŋi ba zege ba vwoa yam nia ne mo.",moses ná yeini o maa vei se o zo jeerim vweerom wone nɔɔna bam maama wó nwoŋi ba zege ba vwoa ya nia ne,0.1538,0.0723
+305,"Amo Baŋa Wɛ wó pa se Asiria pɛ wom boboŋa vugimi pa se o ni sawea, ye o da ka ŋwaane o jwoori o tete teo.",amo baŋa wɛ wó pa se asiria pɛ wom boboŋa vugimi pa se o ni sawea ye o da ka ŋwaane o jwoori o teste,0.0769,0.0385
+306,"A vei Jerusalem mo, de Judah teene dedwonna dem, de ba pwa de ba nakwa bam tei.",a vei jerusalem mo de judah teene dedwonna dem de ba pwa de ba nakwa bam tei,0.0,0.0
+307,"Faŋa tɩn, a dɛɛn yǝni a ŋɔɔnɩ a cɔgɩ Zezi yɩrɩ, yɩ a kwǝri a twɩ-o, yɩ a ta yaarɩ o nɔɔna bam.",faŋa tam a dɛɛm yeini a ŋɔɔne a chɔge zeizwei yere ye a kwori a teo ye a ta yaare o nɔɔna ba,0.5652,0.2985
+308,"A maa wó jwoŋi o wɛ-lworo kom, se a yé waare abam de jworim delo á na ke to.",a ma wó jwoŋi o wɛlworo kom se a ye waare abam de jworim delo á na ke t,0.1579,0.0545
+309,ye nabare de taa wo te-kora kam ne se dura.,ye nabare de ta wo te kora kam ne sedura,0.5,0.0312
+310,Nɔɔn-nɔɔno tera o na wó wane o jwoŋi-ba a jeŋa ne o yage.,ɔɔnnɔɔno tera o na wó wane o jwoŋiba a jeŋa ne o yage,0.0769,0.0238
+311,Ba ma bwori nɔɔna sam ba zoore ba vere ba wonnu.,ba maa bwori nɔɔna sam ba zoore ba vere ba wonnu,0.0909,0.027
+312,"Á taá loori Wɛ á paɩ pwa dɩdaanɩ dɩdɛɛra balʋ maama na jɩgɩ dam nɔɔna baŋa nɩ tɩn, sɩ kʋ pa dɩ́ taá zʋʋrɩ dɩ yazurǝ dɩ ni-ywǝm, sɩ dɩ́ wanɩ dɩ́ taá tɔgɩ Wɛ lanyɩranɩ, sɩ dɩ́ taá ŋwɩ nɩ kʋ na maŋɩ te tɩn.",á taá lwoori we á pa pwa dedaane dedɛɛra balo maama na jege dam nɔɔna baŋa ne ta se ko pa dé ta zoore de yezura de niywom se dé wane dé ta tɔge wɛ lanyerane se dé ta ŋwe ne ko na maŋe tei t,0.8043,0.302
+313,Nam ta sare-na Isarele dwi maama yera fuga-yalei yam kandwa yam baŋa ne.,nam ta sarena isarele dwi maama yera fuga yalei yam kandwa yam baŋa n,0.2308,0.0175
+314,ba wolowolo bá di paare Judah tiina baŋa ne.,a wolowolo bá di paare judas teo baŋa n,0.4444,0.2
+315,"Pwa bam konto dedaane ba nakwa wó yeini ba di sisei-torokooro de sisein-nɔɔna baŋa ne ba tɔge manchwo-peena yanto ba kɛ mo, ye ba nɔɔna bam de tɔge ba kwaga.",ɔɔ bam konto daane ba nakwa wó yeini ba dii sise terokooru de sise nɔɔna baŋa ne mo ba tɔge menchopeena yam ba kɛ ye ba nɔɔna bam de tɔge ba wag,0.4,0.1789
+316,Ba de maa jwoŋi pɛɛra yalo maama nɔɔna bam na pɛ se ba maa ke wara-jei sem to Moses jeŋa ne.,a dem ma jwoŋi pɛɛra yalo maama nɔɔna bam na pɛ se ba ma ke wara jei sento moses jeŋa,0.381,0.0857
+317,Dɩ́ ye nɩ Wɛ cullu tɩm lana dɩ wʋlʋ na ni tɩ kuri nɩ kʋ na maŋɩ te tɩn.,dé yeini wɛ chullu tem lana de wolo na nii tei kuri ne ko na maŋe tei t,0.7368,0.3333
+318,"Ba ta wae ba sɔ gare-fefale ye ba kwei gare-ŋone selo nyenyero na ye nazwon-pupwia, de nasoŋ-pupwia, de nasoŋo chwɛ-chwɛ to ba ma gɔgere nyenyero ba ke da.",ba ta wae ba sɔ gare fefale ye ba kwei gareŋoem selo nyenyero na ye nazwoŋi pupuia de nasoŋɔ pupuia de nasoŋo chwɛ chwɛ to ba ma gɔgɔre nynyero ba ke da,0.3929,0.075
+319,"O na ŋɔɔne de nɔɔna bam o ti to, mo o kwei gare-fefala o ma o kwoli o yibia.",na ŋɔɔne nɔɔna bam o ti to mo o kwei gare fefala o ma kwoli o yeubi,0.3158,0.1273
+320,” Moses ma sare kandwa-pelɛ selei ne boboa nyena yam na ye tei to.,moses ma sara kandwɛ pilasilei ne boboa nyena yam na ye tit,0.3846,0.14
+321,"A ta wó beeri nayera balo yiga na wo ba wone to a pa-ba, se ba taa nii ba baŋa ne.",ta wó beeri na yera balo yiga na wo a wone to a paba se ba ta nii ba baŋa ne,0.2381,0.0508
+322,Ko na tiini ko chɛ amo yera ne tei to ta wo su abam yi na?,ko na tiini ko chɛ anyera ne tei to ta wo su abam yi n,0.1875,0.0714
+323,Nmo laam ma‑n wó zwɛ ka wone n nane yɔle-yɔle.,mo laam ma wó zwɛ ka wone n nane yɔleyɔle,0.2,0.0588
+324,Kayɔlɔ baŋa maa ye jatwogo de noa ni maŋem dedoa de chichworo.,kayalɔ baŋa maa ye jatɔge de nɔɔni maŋem dedoa de chchor,0.4167,0.18
+325,"Bɛŋwaanɩ zǝnzǝnnu wʋlʋ maama na tʋŋɩ o tɩtʋŋa lanyɩranɩ tɩn wʋ́ na zulǝ zanzan nɔɔna tee nɩ, yɩ o daarɩ o na baarɩ dɩ wʋpolo o na kɩ o wʋ-dɩdʋa dɩ Zezi Krisi tɩn ŋwaanɩ.",bɛŋwaane zemnzennu wolo maama na toŋe o totoŋa lanyerane ta wó na zula zanzam nɔɔna tei ne ye o daare o na baare de wopwolo o na ke o wodedoa de yezu krisa ta ŋwaan,0.6857,0.2748
+326,"Ko na ye tei to, amo boboŋa jaane ya ti se a pa lɛɛro mo yi teo konto, ye ko dae lam.",o na ye tei to amo boboŋa jaane ya ti se a pa lɛɛro mo yi teo konto ye ko dae la,0.0909,0.0328
+327,"Amo nam za bá tɔge de abam se dé vo, á na ye zwabani-nyena to ŋwaane.",amo nam zaa bá tɔge de abam se de vo á na ye yezuba ninyena to ŋwan,0.3125,0.1569
+328,"Laam sare-na ko baŋa ne we, ‘Wose mo Baŋa Wɛ ŋwaane’.",aam sare na ko baŋa ne we wosɛ mo baŋa wɛ ŋwaane,0.3636,0.0526
+329,"A ma pa ba nyɔ na-zoŋa kam wo sana bam, se ko bere we ba lage ba na chɔgem ye ba teene dem ji di-dwonnu yerane.",a ma pa ba nyɔ nazoa kam wo sana bam se ko bere we ba lage ba na chɔgem ye ba teene dem ji didwonnu yeran,0.0769,0.0244
+330,A ta wó pa se Akore bwolo kom pipiri ko ji teena jeiga ko pa‑o.,a ta wó pa se á kuri bwolo kom pipiri ko ji teena a jeiga ko pa o,0.3333,0.0851
+331,Ko maŋe se tia lei taa wo ba ni ne.,ko maŋe se tialei ta wo ba ni ne,0.3,0.04
+332,"Wɛ na kuri dɩbam sɩ dɩ́ taá yɩ DƖ nɔɔna tɩn, kʋ daɩ sɩ DƖ ban-zɔŋɔ kʋm ba kʋ cɔgɩ dɩbam.",wɛ na kuri debam se dé ta ye de nɔɔna tem ko dae se debanzɔŋɔ kom ba ko chɔge deb,0.7619,0.2969
+333,-O ta ma kwei sabu-seŋa o ma mɔ wonnu telei na nye de malese ye ba bwoi-ba we cherubi to.,o ta ma kwei sabuseŋa o ma mɔ wonnu telei na nye de malese ye ba bwoa we charebuit,0.15,0.0909
+334,Pa-na dé tei Baŋa Wɛ!,pana de tei baŋa wɛ,0.2,0.0667
+335,"de talwoŋ-ywoŋa kalo ba na wó ma ba ke Wɛ swolim nuga kam, de kalo ba na wó zwɛ wara-vwei dem totoŋa ŋwaane to.",dé talimywoŋa kalo ba na wó maae ba ke wɛ swoli nuga kam de kalo ba na wó zwɛ wara vwei dem totoŋa ŋwaane t,0.2917,0.0952
+336,Ba ba yeini ba lwoori-ne de ba wo maama.,aba yeini ba lwoorine de ba wo maama,0.2222,0.0333
+337,"Kʋntʋ, dɩ́ wʋ́ ta wʋ dɩ́ Yuutu wʋm tee nɩ maŋa maama.",konto de wó taa wo de yuutu wom tei ne maŋa maama,0.75,0.2703
+338,O kwo-nakwe yere maa ye Zerora ye wonto de kwo yere ye Bekorafa.,o kwo nakwe yere maa ye zerora ye wonto de kwo yere ye bɛkora f,0.3077,0.04
+339,Pun-kogele dedwe maama na wo daa kam yera ne to mo teili nɛ selei selo maama na jeeri daane ka yera ne to.,unkɔgle dedwe maama na wo daa kam yerane to mo teili nɛ selei selo maama na jeeri daane ka yera ne t,0.1739,0.0488
+340,"O na yagɩ-ba kʋntʋ, kʋʋ́ yaarɩ Zezi nɔɔna bam kʋ pa ba daa bá wanɩ ba nii kadǝnǝ balʋ na ba jɩgɩ nɔɔn-nɔɔnʋ tɩn baŋa nɩ.",o ná yageba konto ko wó yaare ze zi nɔɔna bam ko pa ba daa bá wane ba nii kadeina balo na ba jege nɔɔnnɔɔno tem baŋa,0.6538,0.2444
+341,"Bɛŋwaanɩ, bantʋ wʋbʋŋa daa na lǝni yɩ ba warɩ ba tɩtɩ ba ja, baá yagɩ ni dɩlʋ ba na goni dɩ Zezi Krisi tɩn, yɩ ba daarɩ ba daa zʋ banna.",bɛŋwaane banto woboŋa daa ná leini ye ba ware ba tete ba ja ba yeigi ni delo ba na gwoni de zei zikrista to ye ba daare ba daa zo ba na,0.6774,0.2745
+342,nmo bimbini dem baŋa ne.,nmo bimbini dem baŋa ne,0.0,0.0
+343,Pa-na dé tei Baŋa Wɛ!,pana de tei baŋa wɛ,0.2,0.0667
+344,amo ta lage a la-ba mo a ke daane se a waare-ba.,amo ta lage a laba mo a ke daane se a waareba,0.0,0.0
+345,Nii amo wolo na ye a pɛ wom nabwom to na jege dam delo to.,ni amo wolo na ye á pɛ wom nabwoŋm to na jege dam delo t,0.2667,0.093
+346,de ba na nye de na-bale selo na ware se ja to mo.,de ba na nye de nabale selo na ware se ja to mo,0.0,0.0
+347,Kɔ ŋwaane mo nmo bane wó zaŋe de-ba se n chɔge-ba?,kɔ ŋwaane mo n ba n wó zaŋe deba se n chɔge,0.3636,0.1351
+348,Wɛ ye nɩ dɩbam na tagɩ kʋlʋ tɩn yɩ cɩga mʋ.,wɛ yeini debam na tage kolo te ye chega,0.8182,0.4062
+349,"Ba na gilimi ba ti to, ba ma mɔ na ba lwo tega ne ba pa Baŋa Wɛ.",a na gilimi ba ti to ba ma mɔ na ba lwoi tega ne ba pa baŋa wɛ,0.1111,0.0444
+350,"Ko ta ná ye Hamafa, de Arapade, de Sefavayim, de Hena, de Ivaa, teene dem konto pwa bam de wo yein-seeni mo?",o ta ná ye hamafa de aripadi de sɛfiayin de hena de ayeva teene dem konto pwa bam de wo yeini seeni,0.2727,0.175
+351,Abam wɛleera yam ta wó taa wo amo yiga ne mo taa.,abam wɛleera yam ta wó ta wo amo yiga ne mo ta,0.1667,0.0541
+352,a yaara yam daa ta pa-ne foone mo.,ayaara yam daa ta pane foone mo,0.25,0.0
+353,O kwo-nakwe maa ye Hura ye wonto nwoŋi Judah dwi dem wone.,o kwo nake maa ye ura ye wonto nwoŋi judah dwi dem won,0.3333,0.0667
+354,lɔre-na totoŋ-kamunnu telo amo na ke to.,lɔrena totoŋkamuna telo amo na ke t,0.2857,0.0968
+355,"Ko kwaga ne se n pa Aron zo kaanem tiina gwaaro tem: gare-dedɔrɔ kom, de gare-bwora kam, de gare-wogo kom, dedaane nyɔɔne gare-pale dem.",ko kwaga ne se n pa aron zo kaanem tiina gwa tem garededɔrɔ kom de gare bwora kam de gare wogo kom dedaane nyɔɔn garepa,0.3333,0.0865
+356,A nam jaane-ba mo a nwoŋi Ejipti ne a ba ywo-seeni se a taa zoore de-ba.,a nam jaaneba mo a nwoŋi ejipti ne a ba yoseeni se a ta zɔɔ deb,0.25,0.1321
+357,"Baŋa Wɛ nam zege a tei ne mo, ne babea tei.",aŋa wɛ nam zege a tei ne mo ne ba bea te,0.3636,0.0645
+358,"” Konto ŋwaane, a lage a zage sabare mo a kwei a maa che o chwoŋa.",konto ŋwaane a lage a zage sabare mo a kwei a ma che o chwoŋa,0.0667,0.0208
+359,Tedwonna tiini te lana.,a we mɔɔ dedwia yalei mo a nɛa tedwonna tiini te la na,2.5,1.2105
+360,Kʋ maŋɩ sɩ o taa yɩ nɔn-yoŋo mʋ dɩ nɔɔnʋ maama.,ko maŋe se o ta ye nɔnywoŋo mo de nɔɔno maama,0.8182,0.2571
+361,ba waasa ye ba we: “Ba fugi debam jei maama ne!,ba waasa ye ba we ba fugi debam jei maama ne,0.0,0.0
+362,Jwoni dem yuu dedaane de jataala maama bwori mo te tigi diga kam ni ne dáa dáa.,woni dem yuu dedaan de jataala maama bwori mo te tigi diga kam niini daa daa,0.3529,0.0968
+363,"O laam maa wó ta o tete ne we, “Yage se a jwoori a vo a baro wom tei, ne ko déem na ye tei to.",o laam ma wó ta o tete ne we yae se a jwoori a vo a bare wom tei ne ko déem na ye tei t,0.1538,0.0615
+364,O ma daare o vere ba jara-keim nantane sem o zwɛ de mini.,oma daare o vere ba jara keim nam tane sem o zwɛ de min,0.5385,0.0465
+365,Taanɩ dɩntʋ yɩ cɩga yɩ dɩ maŋɩ sɩ nɔɔna sɛ-dɩ mʋ.,taana demnto ye chega ye de maŋe se nɔɔna sɛ dem,0.9091,0.3514
+366,Jworru bá na chwoŋa se ba beeri ka wone.,jworu bá na chwoŋa se bá beeri ka wone,0.2222,0.0645
+367,ne á ye Vini tio kolo na tiini ko lana to mo.,á ye vone tio kolo na tiini ko lana to m,0.25,0.1515
+368,Saron te-ywoŋa kam de jigi kagoa mo.,siron te ywoŋa kam de jigi kagoa m,0.5714,0.0714
+369,Baŋa Wɛ ma chu kunkwoŋo kom wone o zege Moses tei ne.,baŋa wɛ ma chu kunkwoŋo kom wone o zege moses tei n,0.0833,0.0244
+370,Nam yé pa-na se Judah dwi tiina bam de tɔge á na-bɔŋa kam.,nam ye pana se judas dwi tiina bam de tɔge á na baŋa ka,0.3846,0.093
+371,Amo mo wó jwoŋi á wara yam.,mo mo wó jwoŋi á wara ya,0.2857,0.1
+372,"Ba ma kɛ ba vo ba yi Saalim, ye ba wo nɛ-se dáane de.",ba ma kɛ ba vo ba yiru salem ye ba wo nɛ se daane de,0.3571,0.1351
+373,"Amo tete nam wó zeili Kanaan tiina bam, de Amori tiina bam, de Hiti tiina bam, de Pɛrizi tiina bam, de Hivi tiina bam, de Jebusi tiina bam maama.",amo tente nam wo zeili kanan tiina bam de amori tiina bam de hiti tiina bam de parizi tiina bam de hevi tiina bam de jabuzi tinabama,0.3103,0.1081
+374,"Ba laam wó tiini ba kɔre Baŋa Wɛ, ye o de wó ke-ba lanyerane.",ba laam wó tiini ba kɔre baŋa wɛ ye o de wó keba lanyerane,0.0,0.0
+375,Baŋa Wɛ jeini de wɔ mo se ba bane daane.,a wɛ jeini de wɔ mo se ba bane daane,0.1,0.1
+376,Konto mo wó pa Baŋa Wɛ nenɔŋ-fɔrɔ kom taa nae jaja.,konto mo wó pa baŋa wɛ nenɔŋfɔrɔ kom ta nae jaj,0.1818,0.0513
+377,se o nyɔ Dam-fɔrɔ Tu wom.,e o nyɔ damfɔrɔ tu wom,0.1667,0.0556
+378,"Mʋ kʋ kuri amʋ bʋŋɩ nɩ kʋʋ́ ta lamma sɩ kadǝnǝ balʋ na yɩ ka-bwǝnǝ tɩn taa zʋʋrɩ banna sɩ ba lʋ biǝ, sɩ ba daarɩ ba taa nii ba tɩtɩ sam baŋa nɩ.",mo kokuri amo boŋene ko wó ta lamma se kadeina balo na ye kabwona tem ta zoore banna se ba lo bia se ba daare ba ta nii ba tete sambaŋa n,0.7353,0.2991
+379,Ba na jeeri to mo Asiria teo dedɛɛra yiga tu wom tage de-ba se ba ja Asiria pɛ wom kwora ba vo ba ta de Pɛ Hezekia.,a na jeerio to mo asiria teo dedɛɛra yigatu wom tage deba se ba ja asiria pɛ wom kwora ba vo ba ta de pɛ hezekia,0.1481,0.023
+380,A nam lage a woli bena fuga-yanu mo n bena yam wone.,a nam lage a woli bena fuga yanu mo n bena yam wone,0.1667,0.0
+381,Nam pa se ba ke woŋo maama se ko tɔge amo na bere‑m tei to.,nam pa se ba ke woŋo maama se ko tɔge amo na berem teit,0.1333,0.0233
+382,"Baŋa Wɛ maa yeini o tɔge banto baŋa o ta we, “Abam maama pipiri-na á yage chwo-balwaaro telo á na vei se wone to, se á daa yé ta‑á tɔge lwarem kikia.",aŋa wɛ maa yeini o tɔge banto baŋa o ta we abam maama pipirina á yage chwobalwaaro telo á ná vei se wone to se á daa yé taá tɔge lwaarem kiki,0.125,0.036
+383,Amo nam ye ba Nenɔŋ-fɔrɔ Tu Baŋa Wɛ wom mo!,amo nam ye ba nenɔŋfɔrɔ tu baŋa wɛ wom,0.1,0.0625
+384,Bɛɛre-na ba dem seeni maama se ko yé kaare.,bɛɛrena baarem seeni maama se ko ye kaar,0.4444,0.1212
+385,ne ba nabaaro David déem na di paare tei to.,ne ba nabaaro david déem na di paare tei to,0.0,0.0
+386,Ka maa ye jeiga kalo Paŋwa Tu Baŋa Wɛ na di paare cherubi sem tetare laŋa ne to mo.,ka maa ye jeiga kalo paŋwa tu baŋa wɛ na di paare chɛrubi sem tetare laŋa ne to m,0.1053,0.0312
+387,Ya kayɔlɔ baŋa maa ye jatwogo de noa ni maŋem kuni bena.,ya kayɔlɔ baŋa maa ye jatɔge de nɔɔni maŋe kuni ban,0.4167,0.1818
+388,"Ko wó taa ye jatwogo de noa ni maŋem bedwe mo, se wɛ-baŋa maŋem taa ye jatwogo de noa ni maŋem kuni belei.",o wó ta ye je tɔgo de nwɔɔni maŋem bedwe mo se wɛ baŋa maŋem taa ye jeitɔgɔ de nɔɔni maŋem kuni bele,0.5217,0.1975
+389,"Bɛŋwaanɩ, dɩbam dɛɛn na tu dɩ́ tɔɔlɩ Wɛ kwǝr-ywǝŋǝ kam dɩ́ brɩ abam tɩn, kʋ daɩ dɩ ni-taanɩ má.",ɛŋwaane debam déem na tu de tɔɔle wɛ kwori ywoŋa kam de bere abam tam ko dae de ni taane,0.7895,0.3286
+390,nenɛɛne á déem na to tei Asiria tiina jeŋa ne to.,nenɛɛne á déem na to tei asiria tiina jeŋa ne t,0.0909,0.0263
+391,"Kʋ na yɩ kazɩna, n maŋɩ sɩ n kwe-ba nɩ n niinǝ mʋ te.",ko ná ye kazena n maŋe se n kweiba ne n niina mo t,0.7857,0.2973
+392,o déem zo jaŋa mo de o choro Esawu.,o déem zo jaŋa mo de o choro isau,0.1111,0.0769
+393,Baŋa Wɛ ma tɔge Moses yiga ne o kɛ ye o we: “Amo mo ye Baŋa Wɛ wom.,baŋa wɛ ma tɔge moses yiga ne o kɛ ye o we amo ye baŋa wɛ wɔ,0.1111,0.0851
+394,ne Kamele de Saron jei sem na ye tei to mo.,ne kamele de seron jei sem na ye tei to,0.1818,0.0938
+395,O ma kwei ya dedoa dedoa o meeli dakaa kam nɛ sena maama yera ne.,o ma kwei ya dedoa dedoa o meeli daka kam nɛ sena maama yerane,0.2,0.02
+396,"Ba wó taa bwoi Zion teo tiina ta na daare ye ba wo Jerusalem ne to we, “Wose tiina.",ba wó taa bwoi zion teo tiina ta na daare ye ba wo jerusalem ne to we wose tiin,0.0526,0.0161
+397,Efrayim dwi tiina bam lɔge kaanem bimbina dedɛ.,ɛfarem dwi tiina bam lɔge kaanem bimbina dedɛ,0.125,0.1026
+398,Giligal ne ba yeini ba ma nabɛ mo.,geligaalo ne ba yeini bamma na bɛ mo,0.5,0.1538
+399,"Kʋ maŋɩ sɩ ba kaana dɩ taa yɩ balʋ nɔɔna na nɩgɩ tɩn mʋ, sɩ ba yɩ taa yɩ bɩbarɩ-nyɩna.",ko maŋe se ba kaana de ta ye balo nɔɔna na negete mo se ba yé ta ye bebarenyen,0.75,0.3125
+400,"Sɔɔl laam ma bwei‑o o we, “Dé nam ná lage dé vo nɔɔno wom tei, bɛ mo dé wó ja dé vo dé pa‑o ye dé wodiu maama ti tento to?",ɔɔl laam ma bweio o we de nam ná lage de vo nɔɔno wom tei pɛ mo de wó ja de vo de pao ye dé wodiu maama ti tento t,0.2581,0.093
+401,"Nam ta kwei teiŋa vovwe sem n vɔ ba tei ne, se n daare n kwei ba yipwi sem n pu ba yuni ne.",nam ta kwei teiŋa vuvwoi sem n vɔ ba teine se n daare n kwei ba yipui sem n po ba ywoni,0.2917,0.1364
+402,Balʋ na sɛ Zezi Krisi yɩ ba tɩ tɩn wʋ́ da yigǝ ba bi ba yagɩ tʋʋnɩ.,balo na sɛ zei krista ye ba te ta o wó da yiga ba bi ba yage toone,0.6471,0.2857
+403,"Kʋ nan daɩ kʋntʋ yɩranɩ, baá ji bɩbarɩ-nyɩna dɩ ŋwaŋ-yɔɔrʋ tiinǝ, yɩ ba ŋɔɔnɩ wǝǝnu tɩlʋ na daɩ sɩ ba ya ŋɔɔnɩ tɩn.",ko nam dae konto yerane baá ji bibare nyena de ŋɔnyɔɔro tiina ye ba ŋoone wonnu telo na dae se ba ya ŋɔɔne t,0.8261,0.3409
+404,O maa wó jwoori o ŋwe ba tusim kikia yam jene ba yuu ne.,ma wó jwoori o ŋwi ba tusim kikia yam jene ba yuu ne,0.2143,0.0714
+405,"Kʋntʋ ŋwaanɩ, á taá maɩ cɩga kam kʋntʋ á kwe daanɩ, sɩ á bɩcara taa tigi jǝgǝ dɩdʋa.",konto ŋwaane á taá mae chega kam konto á kwei daane se á bochara ta tigi jeiga dedoa,0.8889,0.3594
+406,O ta wae o kwei kandwa-nyenno de dɛ o sara o maa gɔgere wonnu dwi dwi.,o taa wae o kwei kanwanyenno de dɛ o sara o maa gɔgero waane dwi dw,0.3125,0.1321
+407,"Á ná wo ke konto, a bane wó zaŋe de di abam ne mini tei to.",á ná wo ke konto a bane wó zaŋe de de di abam ne mini tei t,0.125,0.0714
+408,Ba ma ja-ka ba zo ba jwo-dɛɛre diga kam ye ba daare ba zege-ka jwoni dem kamɔgɔ kom teiŋa ne.,a ma jaka ba zo ba jwoidɛɛro diga kam ye ba daare ba zegeka jwoni dem ka mɔgeɔo kom teiŋa n,0.25,0.0857
+409,mo sensɔla kalo na wo tɔge chwoŋa to na ye tei.,mosensɔla kalo na wo tɔge chwoŋa to na ye te,0.2727,0.0278
+410,se gaaro tedwonna de daa puli tega kam konto ne.,e gaaro tedwonna de daa puli tega kam konto n,0.2,0.0526
+411,"Aron ná yeini o lage o toŋe kaanem totoŋa, se o zo gare-bwora kam konto.",aron ná yeini o lage o toŋe kaane totoŋa se o zo garebwora kam konto,0.0667,0.0182
+412,"Nmʋ maŋɩ sɩ n ta-ba sɩ ba yagɩ ba wʋbʋŋa sɩnswalɩ sɩlʋ na daɩ cɩga tɩn, sɩ ba daarɩ ba yagɩ ba kwǝ dwi natɔga kalʋ na ba jɩgɩ gurim je tɩn.",mo maŋe se n taba se ba yage ba wo boŋa sensɔle selo na dae chega tam se ba daare ba yage ba kwoa dwi natɔga kalo na ba jege gurim jei t,0.625,0.2857
+413,O déem kwei sabu-seŋa kandwɛ-dale dedwe mo o mage-de o ke cherubi selei sem dedaane ni-pugu kom tete.,o déem kwei sebuseŋa kandwɛ dale dedwe mo o magede cherebi sem,0.6111,0.3797
+414,"Ba wó taa bwoi-ka we, “Wose Chwoŋa” mo.",ba wó taa bwoika we wose chwoŋa mo,0.0,0.0
+415,Wɛ dedwoŋi tera á na jege se á lɔre-de.,wɛ dedwoŋi tera á na jege se á lɔre de,0.2222,0.0
+416,"Nmo ná ke konto dakaa kam baŋa ne se ko yi da yarepɛ, ka wó yɔɔre ka taa ye wose mo amo ŋwaane.",am ná ke konto daa ka kam baŋa ne se ko yi da a yerepae ko wó yɔɔre ko taa ye wose mo amo ŋwaane,0.3043,0.1408
+417,Moses na wora to mo Baŋa Wɛ maleka kam veere ka tete ded‑o ne min-vogo tei to.,moses na wora to mo baŋa wɛ maleka kam veeri ka tete dedo ne minvuga tei,0.1765,0.0847
+418,"de zwɛɛm kaanem dakaa kam de ka zela yam maama, de ware-zoŋa kam de ka na wó zege woŋo kolo baŋa ne to.",de zwɛm kaanem dakaa kam de kazola yam maama de wara zoŋa kam de kana wó zege woŋo kolo baŋa ne t,0.3478,0.0513
+419,Zare-ne se a daa yé taa jege totoŋ-lwanno.,arene se a daa ye ta jege totoŋlwann,0.5,0.125
+420,"Bena fuserepɛ sem nam ná yia, amo wó waare Babilon teo pɛ de o teo kom maama ba wɛleera yam ŋwaane.",bena fuserepɛ sem nam ná yia amo wó waare babiloni teo pɛ de o teo kom maama ba wɛleera yam ŋwaane,0.0476,0.013
+421,Nam kwei-na sabu-seŋa na ye chekke to á ke wo-pelɔgɔ.,am kweina sabuseŋa na ye cheke to á ke wopelɔge,0.3,0.075
+422,"Dɩ́ bá wanɩ dɩ́ kɩ dɩ́ Tu Wɛ le dɩ́ ti abam ŋwaanɩ, dɩdaanɩ dɩ́ na nɛ wʋpolo kʋlʋ zanzan DƖ yigǝ nɩ abam ŋwaanɩ tɩn.",dé bá wane dé ke dé tu wɛ lei dé ti abam ŋwaane dé taane de na nɛ wopwolo kolo zaanzaŋa de yiga ne abam ŋwaane te,0.7692,0.3095
+423,"Baŋa Wɛ ma ta de Moses o we, “Ke lela n tu n nɔɔna bam tei ne.",ŋa wɛ ma taade moses o we ke lela n tu nɔɔna bam tei n,0.2941,0.1163
+424,Baŋa Wɛ nam tage tento mo se ko vo Judah teo pɛ sɔŋɔ kom seeni: “Sɔ-fɔrɔ kom konto tiini ko lana amo yia ne.,baŋa wɛ nam tage tento mo se ko vo judas teo pɛ sɔŋɔ kom seeni sɔfɔrɔ kom konto tiini ko lana amo yia n,0.0833,0.0247
+425,"Kʋ na yɩ abam naa nɔɔnʋ wʋlʋ maama dɩ, dɩ́ wʋ kɩ dɩ́ wʋbʋŋa nɩ sɩ nabiinǝ taa zuli dɩbam.",ko ná ye abam nanɔɔno wolo maama de dé wɛ ke dé wo boŋane se nabiina ta zuli de ba,0.9,0.303
+426,Pa-na dé tei Baŋa Wɛ!,pana de tei balona wɛ,0.4,0.2667
+427,Kasogo kom wó seere mo ko zɔ wolo maama na zei-ko to jeŋa.,kasogo kom wó seere mo ko zɔ wolo maama na zeiko to jeŋ,0.0769,0.0227
+428,"Moses ma ná yeini o ŋɔɔne de-ba o ti, o wó jwoori o kwei o gare-fefala kam mo o kwoli o yibia.",moses maa ná yeini o ŋɔɔne de ba o ti o wó jwoori o kwei o gare fefala kam mo o kwoli o yibi,0.2727,0.029
+429,Wɔ mo abam nam wó kwei á maŋe de Wɛ?,wɔ mo abam nam wó kwei á maŋe de wɛ,0.0,0.0
+430,Wɛ chege a yiga mo se a yé na chwoŋa a tɔge da a kɛ.,wɛ chega yiga mo se a ye na chwoŋa a tɔge da a k,0.2667,0.0811
+431,"Dɩbam na ŋɔɔnɩ te tɩn, kʋ daɩ sɩ dɩ́ ma dɩ́ poli nabiinǝ wʋrʋ, kʋ yɩ sɩ dɩ́ pa Wɛ dɩlʋ na maŋɩ dɩbam bɩcara DƖ nii tɩn wʋ mʋ poli.",debam na ŋɔɔne tei tem ko dae se de ma de pwoli nabiina woro ko ye se de pa wɛ delo na maŋe debam bochara de nii tem wo mo pwoli,0.8065,0.3191
+432,ye ba daare ba tɔge jwo-yɔɔro kwaga.,ye ba daare ba tɔge joyɔɔro kwaga,0.1429,0.0357
+433,Dé lage se dé taa nye nenɛɛne teene dedwonna dem na ye tei to mo.,dé lage se de taa nye nenɛɛnm teene dedwonna dem na ye tei to,0.2,0.08
+434,"Abam nam ná wo sɛ amo nia yam konto, amo tage a du de a tete yere we, sɔ-fɔrɔ konto lage ko ji di-dwoŋo mo.",abam nam ná wo sɛ amo nia yam konto amo tage a du de a tete yere we sɔfɔrɔ konto lage ko ji dedwoŋi m,0.08,0.0385
+435,Kʋntʋ mʋ wʋ́ pa nɔɔna maama taa naɩ nmʋ na ve yigǝ te tɩn.,konto mo wó pa nɔɔna maama ta nae omo na vei yigatei se,0.7143,0.3023
+436,"Bene maama ne, o déem yeini o vei o kare teene dento mo: Bɛtel, de Giligal, dedaane Mizipa.",om maama ne o déem yeini o vei o kaare teene demnto mo bɛtele de gilgala de nane mizip,0.4444,0.1739
+437,Ya ma nwoŋi logo baŋa jei selo na wo yiga yiga to ne ya beene.,a ma nwoŋi logo baŋa jei selo na wo yiga yiga to ne ya been,0.1333,0.0426
+438,"Ko ná ye nabiina de vara bam maama, jawe-chɛɛro mo lage te go-ba.",o ná ye nabiina de vara bam maama jawochɛɛru mo lage te goba,0.1538,0.0612
+439,Á taá zuli-ba lanyɩranɩ dɩ sono ba tɩtʋŋa yam ŋwaanɩ.,á taá zuliba lanyerane de swono ba totoŋa yam ŋwaan,0.7,0.2143
+440,Jei selo maama na jege zwonnu de peero to.,ei selo maama na jege zwonnu de peero t,0.2222,0.0606
+441,se banto de ta-de se ba de bia ni de ŋwa.,se banto de ta de se ba de bia niri ŋ,0.4545,0.1379
+442,"Bene maama wone, se á kwei da yarepɛ á ma á di bworobworo kolo sabɔle na wo woli ko wone to, Abibi chana kam ne.",oem maama wone se á kwe da yerepɛ á ma di bworobworo kolo sabɔle na wo woli ko won to á bi bi chana kam,0.36,0.1176
+443,"A ta wó chɔge jara zela maama, ko ná ye tɛ de se-zɔɔro, se tigura daa yé zaŋe tega kam baŋa ne.",a ta wó chɔge chara zela maama ko ná ye tɛ de sezɔɔro se tegura daa ye zaŋe tega kam baŋa ne,0.1364,0.0571
+444,"-Kwei-na gare-ŋone selo nyenyero na ye nazwon-pupwia, de nasoŋ-pupwia, de nasoŋo chwɛ-chwɛ to á gɔgere Pomegara tio-bia nyenyero pa se te kaare gɔrɔ kom kuri nia yam maama te pu.",kwei na gareŋom selo nyenyero na ye nazoŋi pupwa de nasoŋo pupwia de nasoŋo chwɛ chwɛ to á gɔgere pɔmegerana tiyobia nyenyero pa se te kaare gɔrɔ kom kuri nia yam maama te pu,0.3667,0.0863
+445,Aron de o dwi dem maama jege se ba taa tɔge a ni dem konto mo se ko taa vei wuu.,aron de o dwi dem maama jege se ba ta tɔge a ni dem konto mo se ko ta vei wuu,0.0952,0.0339
+446,Wɛyuu kom wó bere o tusim dem mo jaja.,wɛyuu kom wó bere o tusim dem mo jaj,0.1111,0.0345
+447,O laam ma vo o zoore Ninevɛ teo ne.,o o zoore ninivɛ teo ne dɛ dedwe o déem ma zo o jwoni nisiroka diga kam se o zulide,1.8889,1.9615
+448,"O nam ná zo vwei dem wone, kunkwoŋo kolo na zege deiki to laam yeini ko ba ko dɔge vwei dem ni dem ne mo, ye Baŋa Wɛ laam zege kunkwoŋo kom wone o ŋɔɔne de Moses.",o nam ná zo vwei dem wone kunkoŋo kolo na zege dekke to laam yeini ko ba ko dɔge vwei dem ni dem ne mo ye baŋa wɛ laam zege kunkoŋo kom wone o ŋɔɔne de moses,0.0811,0.0325
+449,ga-korro mo wó ji bu wolo á na wó lo to.,gakoro mo wó di bu wolo á na wó lo t,0.2727,0.1071
+450,A yera digiru tem wó pa se a tete yera gwaaro tem chɛɛse-ne mo.,a yera digiru tem wó pa se a tete yera gwaaro tem chɛ se nmo,0.2143,0.0417
+451,Laam go nabea kam wara-jei sem manchwo-peena ni dem ne se ko taa bwola de amo kaanem dakaa kam.,aam go nabea kam wara jei sem bam cho peena ni dem ne se ko ta bwola de an kaanem dakaga ka,0.5263,0.1216
+452,Baŋa Wɛ mo pae nabiina maama pwooni pa ba nae.,baŋa wɛ mo pae nabiina maama pwooni pa ba nae,0.0,0.0
+453,ye ba daare ba ke nuga pipiu de Ejipti tiina.,ye ba daare ba ke nuga pipiu de ejipti tiina,0.0,0.0
+454,"O chorro maama, de o nakwa, de o badwonna balo maama déem na vei ded‑o to ma ba o tei ye ba di kuri daane o sɔŋɔ ne.",ochorro maama de o nakwa de o badwonna balo maama déem na vei dedo to ma ba o tei ye ba di kuri daane o sɔŋɔ ne,0.0714,0.0
+455,"Nɔɔno wolo maama ná toŋe totoŋa dɛ dem konto ne, kotu daa yé tɔge o woli Isarele dwi dem wone.",ɔɔno wolo maama ná toŋe totoŋa dɛ dem konto ne ko tu daa ye tɔge o woli isarele dwi dem on,0.25,0.0548
+456,Á ta wó jeiri Vini teeni ye á daare á di de wo-bia bam.,á ta wó jeiri vini teeni ye á daare á di de wobia bam,0.0,0.0
+457,"Kʋ daarɩ, kadǝm na jɩgɩ biǝ naa naarʋ, bantʋ mʋ maŋɩ sɩ ba taa nii-o, ba na yɩ o tɩtɩ sɔŋɔ tiinǝ tɩn ŋwaanɩ.",ko daare kedeim ná jege bia naa naaro banto mo maŋe se ba ta niio ba na ye o tete sɔŋɔ tiina tam ŋwaane,0.7083,0.275
+458,"Wea de tete maama wone, teo kom mini bá dwei.",wea de tete maama wone teo kom mini bá dwei,0.0,0.0
+459,Mo kokuri Ejipti tiina bam wó taa jege-ba ba mɔna.,mo kokuri ejipti tiina bam wó taa jegeba ba mɔna,0.0,0.0
+460,Ba ta ma pipiri ba lɔ amo kwaga ne.,ba ta ma pipiri ba lɔ amo kwaga ne ye ba yiga tera amo wone,0.6667,0.7308
+461,"Dɩ́ dɛɛn tɔgɩ cwǝŋǝ mʋ dɩ wʋ-poŋo abam balʋ na sɛ Zezi Krisi tɩn tɩtarɩ nɩ, yɩ dɩ́ tɩtʋŋa maama jɩgɩ cɩga, yɩ dɩ́ wʋ jaanɩ kʋlʋkʋlʋ dɩ́ cɔgɩ.",dedɛɛm tɔge chwoŋa mo de wo pwoŋo abam balo na sɛ zezikrisi tem tetare ne ye de tetoŋa maama jege chega ye de wo jaane kolokolo de chɔge,0.8621,0.3333
+462,"Nam ta‑á zwɛ-ya dɛ maama, ye amo de wó jeeri abam dáane se dé ŋɔɔne daane.",nam taá zwɛnaya dɛ maama y amo de wó jeeri abam daane se de ŋɔɔne daan,0.3125,0.1091
+463,"Job déem na lwoori Wɛ o pa o badwonna bam to kwaga ne, mo Baŋa Wɛ daa pɛ se Job jwoori o zege de dam.",job déem na lwoori wɛ o pa o badwonna bam to kwaga ne mo baŋa wɛ daa pɛ se job jwoori o zege de d,0.04,0.0267
+464,"Ba na zǝŋi ba jɩa wɛɛnɩ sɩ ba warɩ Wɛ, sɩ ba taa jɩgɩ wʋ-poŋo mʋ, sɩ ba yɩ taa jɩgɩ ban-zɔŋɔ naa kantɔgɔ dɩ nɔɔn-nɔɔnʋ.",ba ná zeiŋi ba jea wɛɛne se ba ware wɛ se ba ta jege wopwoŋo mo se ba yé ta jege banzɔŋɔ naa kantɔgɔ de nɔɔnnɔɔn,0.6538,0.2386
+465,Ba ma dole teene dem konto jwona ba de mini wone ba zwɛ-ya.,a ma dole teene dem konto jwona ba de mini wone ba zwɛ y,0.2308,0.0444
+466,A ma vo a yi yiga yiga a di ba peero tem yuu.,a ma vo a yi yiga yiga a dii ba peero tem yuu,0.0769,0.0312
+467,Nam ta kwei-na sabu-seŋa na ye chekke to á ke chaponno telei nenɛɛne ŋone dwoŋi to.,am ta kwei na sabuseŋa na ye chekke to á ke chapoŋtelei nenɛɛne ŋondwoŋi t,0.5,0.0923
+468,"Dɩ kʋntʋ dɩ, o nan ta duri a ŋwaŋa, bɛŋwaanɩ amʋ ya wʋ sɛ-o yɩ kʋ pa a yǝri woŋo kʋlʋ a na jɩgɩ a kɩ tɩn.",de konto de o nam ta duri a ŋwaŋa bɛŋwaane amo ya a wo sɛo ye ko pa a yeiri woŋo kolo a na jege a ke te,0.5556,0.2667
+469,Pa-na se á kwori zege Basan ne se zaŋe wɛɛne.,pana se á kwori zege basanm ne se zaŋe wɛɛne,0.1,0.0294
+470,"Dé pɛ wom wó taa nii dé baŋa ne, ye o ta wó tɔge dé yiga se dé yeini dé kwaare jara dwi maama!",dé pɛ wom wó taa nii de baŋa ne ye o ta wó tɔge de yiga se de yeini de kwaare jara dwi maama,0.1667,0.058
+471,Sɔɔ kom konto wó jage ko yi logo baŋa jei maama.,sɔɔ kom konto wó jage ko yi logo baŋa jei maam,0.0909,0.027
+472,"O déem laam jege pei morro fuga-tena , de kona morro teredo , de nabɛ morro telei , de bonɛ moro .",o déem nam jege pei morro fuga tena de kona morro teredo de na bɛ morro telei de bonɛ morro,0.3333,0.0417
+473,Bɛ mo ye á boŋe se á vo Ejipti.,bɛ mo ye á boŋa se á vo ejipti,0.1111,0.0455
+474,Tɔge-na ni delo á na pwooli de amo to.,tɔgena ni delo á na pwooli de amo to,0.0,0.0
+475,Ba maa tɔge de-ba ba ke kaanem ba pa jwona.,aama tɔgedeba ba ke kaanem ba pa jwona,0.4,0.0625
+476,Ko maa wó pa se ba ga wonnu telo maama na jege lonne te pa-ba to.,ko maa wó pa se ba ga wonnu telo maama na jegelone te paba to,0.125,0.0208
+477,"Baŋa Wɛ na ŋɔɔne de Moses Sinayi Peo kom yuu ne o ti to, mo o kwei kandwa-pelɛ selei sem o pa‑o.",aŋa wɛ na ŋɔɔne de mosesenae peo kom yu ni o ti to mo o kwei kandwɛ pelɛsilei sem o pa,0.3636,0.1408
+478,Ni-gwonim dakaa kam de ka ni-pugu kom wó taa wo gare-jale dem kwaga ne.,e gwonim dakaa kam de ka nipuu kom wó taa wɛe garejale dem kwaga n,0.3571,0.1111
+479,se a zo churu ye a maŋe dáane taa wuu.,se a zo turu ye a maŋe dáane taa wo,0.2,0.1429
+480,te ya wó dwoni naneo ni kasolo kom maama na mae tei to.,tea wó dwoni naneo ni kasolo kom maama na ma tei t,0.3077,0.0714
+481,O ta ma kwei sabu-seŋa o mɔ kwana yana o meeli tabolo kom nɛ sena sem na wo mɛ to.,o ta ma kwei sebuseŋa o mɔ kwana ya na o meeli tabolo kom nɛ sena sem na wo mɛ t,0.2,0.0328
+482,Ko zege tega kam ne mo ko meeli se ko taa diini baŋa kam mɛ sabu-seŋa kwane dem na leigi da to.,ko zege tega kam ne mo ko meeli se ko ta diini baŋa kam mɛ sebuseŋa kwaane dem na leigi da to,0.1364,0.0417
+483,Á ye lanyɩranɩ nɩ dɩ́ wʋ tu dɩ́ ŋɔɔnɩ ni-sʋŋɩ ŋwaŋa dɩ abam.,á yei lanyerane ne dé wo tu de ŋɔɔne naswoŋe ŋwaŋa de á ba,0.9231,0.3636
+484,Badwoŋ-ywoŋo bera nam gare tento.,badwonywoŋo bera nam gare tento,0.2,0.037
+485,Lura ná le digiru lu-nyenno yera ne.,lura ná le digiru lonyeno yerane,0.4286,0.0714
+486,"Ko daare bena yatɔ bene dem ne, abam wó du wodiiru ye á pe-te.",o daare bena yatɔ bene dem ne abam wó du wodiiru ye á pe t,0.2143,0.0435
+487,"Nɔɔna bam ma vo ba jeeri Aron tei ne ba we, “Moses mo seene o ja debam o nwoŋi Ejipti ne o ba ywo-seeni.",ɔɔna bam ma vo ba jeeri aron tei ne ba we moses mo seene o ja debam o nwoŋi ejipti ne o ba ywoseen,0.0833,0.026
+488,"Ba maŋɩ sɩ ba taa yɩrɩ ba tɩtɩ mʋ, sɩ nɔɔna taa jɩgɩ ba cɩga woŋo maama baŋa nɩ.",ba maŋe se ba taa yere ba tete mo se nɔɔna taa jege ba chega woŋo maama baŋa ne,0.4737,0.2167
+489,"Ba ma ke kuna finnu ba lei gare-pum ni-dedɔrɔ kom seeni, ye ba daare ba ke konto gare-pum dedwoŋi dem ne.",ba ma ke ku na finnu ba lei garepum ni dedɔrɔ kom seeni ye ba daare ba ke konto garepum dedwoŋi dam,0.2857,0.0375
+490,Ta‑n yei we ka-bworo ye gwoŋ-chanluŋu mo.,an yei we kabworo ye gonchaluŋu,0.4286,0.1935
+491,"Toroko kom dɛ konto mo taa ko vo ko yi nɔɔno dedoa kara ko zege da, peo kamunu kodwoŋi teiŋa ne.",am maama baŋa ne se á daa ye na chɔgem bɛ mo ye á boŋe se á bochara ke dam yerane nenɛɛne ejipti tiina bam de ba pafaro wom de déem na ke tei,1.5714,1.1892
+492,Dɛ sem konto wó taa ye golesaa dɛ mo á wó ma á ke ye á daare á kwei sabu-seŋa á kwoli se maama.,ɛ sem konto wó taa ye golesa dɛ mo á wó ma á ke ye á daare á kwei sabuseŋa á kwoli se maama,0.0833,0.0286
+493,Ba wó bwoŋi balo na swoi se ba taa boŋe lwarem ba pae ba dwonna to we nankɔ-nyena.,bwoŋi balo na swoi se ba ta boŋe lɔrem ba pa badwonna to we nankwa nyen,0.5,0.1746
+494,Kunkworru wó sɔ te pworu da.,kunkwooru wó sɔ tupworu d,0.6667,0.1364
+495,"A maa wó toŋe-ba se ba ke jara de abam balo na zoore tega kanto wone to, de teene delo maama na gilimi abam to.",a maa wó toŋeba se ba ke jara de abam balo na zoore tega kanto wone to dé teene delo maama na gilimi abam t,0.08,0.0238
+496,Amo nɛ totoŋ-zɔɔne Isarele dwi tiina bam tetare ne.,amo nɛ totoŋzwɔɔnem isarele dwi tiina bam tetare n,0.2222,0.0732
+497,O maa wó pa se tega kam taa tigi yɔɔ yerane.,o maa wó pa se tega kam ta tigi yɔɔ yerane,0.0909,0.0303
+498,"Hezekia de ma bwei we, “Keim dɔ mo wó ke se ko bere we, amo daa wó na chwoŋa se a zo Baŋa Wɛ diga kam wo a zuli‑o?",hezekiah de ma bwei we keindɔ mo wó ke se ko bere we amo daa wó na chwoŋa se a zo baŋa wɛ diga kam wo,0.1724,0.0988
+499,"Abam ma ve ye á we, ‘Dé bá cheigi nmo ni-kaana yam.",abam ma ve ye a wo de bá cheigi nmo nikaana yam,0.25,0.0833
+500,"” Wɛ ma ta o we, “Yé tiini n twɛ ywo.",o da ta ma ta o we amo ye nmo kwo wɛ wom mo a maa kwori a ye n nabaara wɛ wom abaraham wɛ wom de isaaka wɛ wom dedaane jakob wɛ wom mo moses déem na nigi konto to mo,3.7,4.7391
+501,"Dɩbam yǝni dɩ́ ŋɔɔnɩ nɩ Wɛ na lagɩ te tɩn mʋ, bɛŋwaanɩ dɩntʋ mʋ kuri dɩbam yɩ DƖ kwe DƖ kwǝr-ywǝŋǝ kam DƖ kɩ dɩ́ jɩŋa nɩ.",debam yeini de ŋɔɔnene wɛ na lage tei to mo bɛŋwaane dento mo kuri debam ye de kwei de kwori ywoŋa kam de ke de jeŋa,0.8889,0.3333
+502,O ma kwei jar-keira tɛ sem dedaane ba chichwoa yam o bwori.,wom ma kwei jarekera tɛ sem dedaane ba chichwoa yam o bwori,0.1667,0.087
+503,Amo nam wó pa se ko ji ne kagoa dwoŋi.,amo nam wó pa se ko ji kagoa bedwoŋi,0.2,0.1429
+504,"Dɩ́ maŋɩ dɩ́ brɩ abam cwǝŋǝ kam kʋntʋ, yɩ á tɔgɩ-ka dɩ zɩm maama.",dé maŋe de bere abam chwoŋa kam konto ye á tɔgeka de zem maam,0.8571,0.3404
+505,Sɛ se amo daa jwoori a na ywoni.,se amo de a jwoori a na ywon,0.5,0.1667
+506,Á ya ná me de amo na ye á Tu Wɛ wom to.,á ya nam me de amo na ye á tu wɛ wonto,0.2308,0.1154
+507,"Abam dwi-gɛ tiina, fɔɔre-na á yi se á cheigi.",abam dwigɛ tiina fɔɔrena á yi se á cheig,0.1111,0.0303
+508,Ba na ŋɔɔne tei to nye de ba bibeigi mo.,a na ŋɔɔne tei to nye de ba bibeigi m,0.2,0.0667
+509,"Tega na poore to, Filisi tiina bam ma jwoori jara kapworo kom ne se ba zane ba le jejegero twa bam yera ne.",ega na poore to filisi tiina bam ma jwoori jara kaporo kom ne se ba zane ba le jijegerotoa bam yeran,0.2609,0.0602
+510,Banto ye balo a na pɔɔre a zege dáa ne.,banto ye balo a na pɔɔre a zege dáa ne,0.0,0.0
+511,A ta wó pa á jwoori á ta‑á zoore vwoa wone.,a ta wó pa á jwoori á taá zoore vwa won,0.1818,0.0645
+512,"Á ye nɩ dɩ́ dɛɛn jɩgɩ abam maama dɩ jɩ sɩle mʋ, nɩ ko na yǝni o jɩgɩ o biǝ te tɩn.",á yeini dedɛm jege abam maama de ji selei mo ne kwo na jeini o jege o bia tei te,0.7727,0.4138
+513,"Tetare dagara kam ma tole ka zege saŋa kam daa dedoa ne ka vo ka yi daa kadwoŋi kam, ka twoŋi ywoa yam maama ka ke daane.",tetare dagara kam ma tole ka zege saŋa kam dáa dedoa ne ka vo ka ye dáa kadwoŋi kam ka toŋe ywoa yam maama ka ke daan,0.1852,0.0645
+514,o nye de teo kolo kabiri na sirimi se to se daare-ko to mo.,o nye de teo kolo ka biri na sirimi se to se daareko to mo,0.1429,0.0
+515,ye ne Gomora teo tiina déem na ye tei to mo.,yini gomora te ywo tiina déem na ye tei to m,0.4545,0.1515
+516,Ba yeini ba ke ne kunkwoŋa na kare ka lɔgese teeni tei to mo.,a yeini ba kene kunkwoŋa na kare kalɔge se teene tei to,0.5,0.0851
+517,DƖ nan kuri dɩbam sɩ dɩ́ taá jɩgɩ wʋ-poŋo mʋ DƖ yigǝ nɩ.,de nam kuri deba se de dá ta jege wopwoŋo mo de jega ne,1.0,0.4634
+518,"Abam yiga tiina bam, keeri-na á sisigi.",abam yiga tiina bam keerina á sisigi,0.0,0.0
+519,Nmo ná kwei kwora n ke nɔn-jworo jeŋa ne se o vo o pa nɔɔna.,nmo ná kwei kwora n ke nɔnjworo jeŋa ne se o vo o pa nɔɔna,0.0,0.0
+520,"Ba maa tɛ daane ba we, ‘Isarele tiina bam, á wɛ dem mo tento, de na jaane abam de nwoŋi Ejipti ne de ba ywo-seeni.",ama tɛ daane ba we isarele tiina bam á wɛ dem mo tento de na jaane abam de nwoŋi ejipti ne de ba ywoseen,0.12,0.0357
+521,"Izaya déem ya tage de Pɛ Hezekia mo o we, “Pa se ba zɔ mɔɔro se ba kwei-te ba taare n ŋɔn-pwona kam, se n wó na yazura.",isayah déem tage de pɛ hezekiah mo o wo pa se ba zɔ mɔɔro se ba kweite ba taare ŋɔnpwona kam se no wó na yezura,0.25,0.1047
+522,Kaanɩ wʋlʋ na sɩɩnɩ o yɩ kadǝm yɩ o ba jɩgɩ nɔɔn-nɔɔnʋ sɩ o taa nii o baŋa nɩ tɩn tiŋi o tɩɩna Wɛ baŋa nɩ mʋ.,kaane wolo na seene o yikadeim ye o ba jege nɔɔnnɔɔno se o ta nii o baŋa ne tintiŋi o teena wɛ baŋa ne m,0.5926,0.2593
+523,ne jugu diga wo mini na guguli tei to.,ná jugio diga wo mini na guguli tei t,0.3333,0.1379
+524,"Banto maa ye Asekelon teo pɛ, de Gaza teo pɛ, de Ekoron teo pɛ, de balo ta na daare Asedodi teo wone to.",anto maa ye asikilon teopɛ de gaza teo pɛ de akiron teo pɛ de balo ta na daare asidodi teo wone t,0.3043,0.0897
+525,"Ba déem ma kwei golesaa dɛ ba ma ke ywoa yalo na zege cheppe to, se ba ma ke wara-vwei dem.",ba déem ma kwei golesaa dɛ ba ma ke ywia yalo na zege chepo to se ba ma ke wara veer,0.1905,0.1029
+526,A ta pɛ se teene dem konto nɔn-bia bam dam ti.,a ta pɛ se teene dem konto nɔnbia bam dam ti,0.0,0.0
+527,O maa zoore wɛyuu kom baŋa jei sem ne.,o maa zoore wɛyuu kom baŋa jei sem n,0.1111,0.0345
+528,Nɔɔno wolo de woŋo kolo maama na dwei-ka to de nam pwɛ mo amo ŋwaane.,ɔɔno wolo de woŋo kolo maama na dweika to de nam pwɛ mo amo ŋwaane,0.0667,0.0189
+529,Amo nam ta wó zege nmo baŋa ne se a pa n dwi dem puli de ji te-zɔŋɔ.,mo nam ta wó zege n baŋa ne mo se a pa n dwi dem puli de jeitezoŋ,0.2778,0.1633
+530,” Ba ma maane we ko ye Wɛ ni-gwonim dakaa kam mo tu ka yi Isarele tiina bam na tigisi daane mɛ to.,ba ma maane we ko ye wɛ nigwonim daga kam mo tu ka yi isarele tiina bam na tigisi daane ɛ t,0.1364,0.0548
+531,‘De wó beeri dé vo dé na lage mɛ to mo.,dé wó beeri de vo dé ná lage mɛ to,0.3636,0.1852
+532,"Wolo ná toŋe de dɛ dem ne, se á go kotu.",wo la toŋe dedɛ dem ne se a go kontu,0.5455,0.1786
+533,"Ba nakwa bam ma bwei daane ba we, “Bɛ mo ke ye Baŋa Wɛ pa se Filisi tiina bam wane debam zem konto?",ba nakwa bam ma bwei daane ba we bɛ mo ke ye baŋa wɛ pa se filisi tiina bam wane debam zem konto,0.0,0.0
+534,"O ma pa Job daa lo bia fuga, bakeiri serepɛ, de bukwa batɔ.",o ma pa job daa lo bia fuga ba keiri serepɛ de bukwa bat,0.2308,0.0227
+535,O ta wó taa tɔge chega de o na ke nɔɔna tei to mo.,o ta wó taa tɔge chega de o na ke nɔɔna tei too,0.1429,0.0278
+536,"Lele kʋntʋ, dɩ́ laan ŋwɩ dɩ wʋpolo á na zɩgɩ kǝŋkǝŋ dɩ́ Yuutu wʋm tɔgɩm dɩm wʋnɩ tɩn ŋwaanɩ.",leilei konto dé laam ŋo de wopwolo á na zege keinkeiŋi de yuutu wom tɔgem dem wonne to ŋwaan,0.8947,0.4286
+537,"Mo kokuri, mena yam ná tu ya be, ye sa-doora bam de ná bega, a lage a yiri a pɛɛra yam konto mo.",mo kokuri mena yam ná tu yabee ye sadoora bam de ná bega a lage a yiiri a pɛɛra yam konto m,0.1739,0.0435
+538,"Ko ná dae konto, ba wó na ba chaveera ye ba te ko ŋwaane.",ko ná dae konto ba wó na ba chaveera ye ba te koŋwaan,0.1429,0.0238
+539,"A ta ma pa‑o lu-nyenno de sabu-seŋa dedɛ, ye o kwei-te o ma zuli Baal jwona yam.",a ta ma pao lonyenno de sabuseŋa dedɛ ye o kweite o maa zuli baalo jwona ya,0.2353,0.069
+540,Á ta wó yage á naane de á bonɛ sem.,á ta wó yage á naane de á bonɛ sem,0.0,0.0
+541,O déem mɛ lu-nyenno o mɔ gwoli o meeli dɛ sem yera ne ye o ke se lu-vɔɔro tem.,o déem mɛ linyenno o mɔ gwoli o meeli dɛ sem yerane ye o ke selu vɔɔro te,0.3158,0.0351
+542,"Wɛ dam dɩm mʋ wʋ dɩbam tee nɩ dɩ DƖ Joro kʋm, yɩ dɩ́ brɩ Wɛ cɩga kam dɩ dɩ́ wʋ maama.",wɛ dam dem mo wo debam tei ne de de jworo kom ye de bere wɛ chega kam de dé wo maama,0.7727,0.3167
+543,á ta nɛ konto woŋo dwoŋi na ke á yibia ne na?,á ta nɛ konto woŋo o dwoŋi na keá yibia ne n,0.3333,0.0606
+544,Amo nɛ pwola mo a tɔge jawɔre-nyem kara seeni a kɛ.,amo nɛ pwola mo a tɔge jawɔrenyem kara nu seeni a ke,0.1818,0.0769
+545,de gare-jale delo na wó che konkɔlɔ kom manchwo-peena ni dem to.,de gareja delo na wó che konkɔlɔ kom mancho peena ni dem t,0.3333,0.08
+546,"Konto to, dé Tu Baŋa Wɛ, yɔɔre n jwoŋi debam n yage Asiria teo pɛ jeŋa ne se logo baŋa teene dem maama lɔre we nmo yerane mo ye Baŋa Wɛ.",konto to dé tu baŋa wɛ yɔɔre n jwoŋi debam n yage asiria teo pɛ jeŋa ne se logo baŋa teene dem maama lɔre we nmo yera ne mo ye baŋa wɛ,0.0645,0.0
+547,Nɔɔn-nɔɔno daa bá tɔge ba tega kam ne o kɛ.,ɔɔnnɔɔno daa bá tɔge ba tega kam ne o k,0.2,0.0625
+548,Kokuri to á fara bam maama daa tera jei jei.,kokuri to afara bam maama daa tera jeije,0.4,0.0588
+549,"Ko ná ye wolo ba ya na bwoi o yere we “Swono tera” to, amo mo wó taa swoi kotu.",ko ná ye wolo ba ya na bwoi o yere we swono tera to amo wó ta swoi konto,0.15,0.0893
+550,"De ko de, jwoori n vo n bere‑o nmo na jege o swono tei to.",de ko de jwoori n vo n bereo nmo na jege oswono tit,0.2667,0.0488
+551,De yera ŋone de nam bá kɔ se de chɔge.,de yera ŋwone de nam bá keo se de chɔge,0.2,0.1071
+552,Job ta ma ta o we: “A daa ba jege ŋwea teena.,job ta ma ta o we a daa ba jege ŋwea teen,0.0833,0.0323
+553,ba cheeri á teo kom ba daare yu-kwolo ba tiŋi.,ba cheeri á teo kom ba daare yukwolo ba tiŋ,0.1,0.0286
+554,Lɛɛro lage te yi abam balo na kare á chɔge amo nɔɔna bam to mo.,ɛɛre lago te yi abam balo na kare á chɔge amo nɔɔna banto,0.3333,0.125
+555,"Chega to, na-mɔra jwoni delo Samaria tiina na zuli to.",chega to namɔra jwoni delo samaria tiina na zuli t,0.1,0.0238
+556,"O maa kwei sabu-seŋa kalo na ye chekke to o kwoli dakaa kam maama, ye o daare o ma sabu-seŋa kam o tɔge ka nia yam maama.",o ma kwei sabuseŋa kalo na ye chekke to o kwoli dakaga kam maama ye o daare o ma sabuseŋa kam o tɔge ka nia yam maam,0.1111,0.033
+557,Min-vogo pae ba yei lu-nyenno.,minvogo pae ba yei lonyenn,0.2,0.087
+558,"Baŋa Wɛ daa ma ta de Moses o we, “Zaŋe-na se á kɛ!",aŋa wɛ daa ma ta de moses o wo zaŋe se á ke,0.3077,0.1471
+559,Asiria pɛ wom nam na tage tei to mo tento: Abam maama jege se á nwoŋi á teo kom wone mo se á ba á to á pa-ne.,asiria pɛ wom nam na tage tei to nmo tonto abam maama jege se á nwoŋi á teo kom wone mo se á ba á to á pane,0.0714,0.0253
+560,"Kʋ daarɩ kadǝnǝ balʋ na yɩ ka-bwǝnǝ tɩn, abam wʋ maŋɩ sɩ á ga-ba á wǝli da.",ko daare kadeina balo na ye kabwona to abam wo maŋe se á gaba á woli da,0.7647,0.3091
+561,"Nɔɔnʋ maama kwaanɩ o tʋŋɩ sɩ o na o ni-wʋdiu, nɩ dɩ́ na maŋɩ dɩ́ ta abam te tɩn.",ɔɔno maama kwaane o toŋe se o na o niwodiu ne de na maŋe de ta abam tei ta,0.5789,0.2456
+562,Kʋ maa paɩ ba bʋŋɩ nɩ Wɛ cwǝŋǝ tɔgɩm yɩ woŋo kʋlʋ ba na wʋ́ na nadunni ka wʋnɩ tɩn mʋ.,ko maa pae ba boŋene wɛ chwoŋa tɔgem ye woŋo kolo ba na wó na naduna ka wona tem,0.619,0.3125
+563,Konto mo wó ke de wolo maama na sale Ejipti Pa-faro wom yera ne to.,konto mo wó ke de wolo maama na sale ejipti pafaro wom yerane t,0.2,0.0196
+564,Kokuri to o yeini o jwoŋi nabwona mo.,kokuri to o yeini o jwoŋi nabwona,0.125,0.069
+565,A nam na pɛ á kwoa bam wodiu se ba di to.,a nam na pɛ á kwoa bam wodiu se ba di to,0.0,0.0
+566,Amo nam ná lage se a zeini a nɔɔna bam.,amo nam ná lage se a zeini a nɔɔna bam,0.0,0.0
+567,ye ba ta taana ko nwoŋi.,ye ba ta taana ko nwoŋi,0.0,0.0
+568,"Kwǝr-ywǝŋǝ kam kʋntʋ nuŋi Wʋpolo Tu Baŋa-Wɛ dɩlʋ na jɩgɩ paarɩ-zulǝ tɩn te mʋ, yɩ dɩntʋ kɩ-ka amʋ jɩŋa nɩ sɩ a taa tɛa.",koriywoŋa kam konto nwoŋi wopwolo tu baŋa wɛ delo na jege paare zula tem tei mo ye dento keka amo jeŋa ne se a ta,0.9167,0.3667
+569,ye o daare o kwei peero tem de zwonnu tem.,ye o daare o kwei peero tem de zwonnu te,0.1,0.0312
+570,Ko ye wa yam konto mo déem pɛ se chanɛɛre dwi dwi ja Ejipti tiina bam kagoa kam ne ya go.,o ye wa yam konto déem mo pɛ se chanɛɛre dwi dwi ja ejipti tiina bam kagoa kam yu ne yago,0.2857,0.1029
+571,"O wó pa ba badwonna taa chwo o jara-keim torokooro, se badaara taa diini sisein-nɔɔna, ye badaara duri torokooro tem yiga ne ba kwɛ chwoŋa kam ba pa‑o.",o wó pa ba badwonna ta cho o jarakeim torokorro se badaara taa diini siseim nɔɔna ye badaara duri torokorro tem yiga ne ba kwɛ chwoŋa kam ba pao,0.2143,0.0424
+572,Kʋntʋ wʋ́ pa nɔɔn-nɔɔnʋ bá wanɩ o ŋɔɔnɩ o cɔgɩ Wɛ yɩrɩ dɩdaanɩ dɩbam zaasɩm dɩm.,konto wó pa nɔɔnnɔɔno bá wane o ŋɔɔne o chɔge wɛ yere dedaane debam zasem de,0.75,0.2903
+573,"Kokuri to, ko kwaga ne nmo wó maane we.",ko kuri to ko kwaga ne nmo wó maa wo,0.4444,0.1034
+574,Aron ma na kolo na ke to ye o lɔ bimbini na-mɔra kam yiga ne.,aron ma naɛ kolo na ke to ye o lɔ bembeni namɔra kam yiga n,0.2,0.0889
+575,"Dedɛɛro wom ma vo o zege na-fera kalo na zoore baŋa seeni chɔgɔ kom to ni ne, se ko maŋe de chwoŋa kam mɛ ba na sɔ gwaaro to.",dedɛɛro wom ma vo o zege nafera kalo na zoore baŋa seeni chɔgɔ kom to ni ne se o maŋe de chwoŋa kam mɛ ba na sɔɔ gwaaro t,0.1034,0.0319
+576,"Wɛ sampwora Izaya na ye Amozi bu to ma vo o tei ye o ta‑o o we, “Baŋa Wɛ na tage kolo to mo tento: Bere n sɔŋɔ tiina bam ba na wó ke tei ne n ná tera.",wɛ sampwora isayah na ye amoe bu to ma vo o tei ye o tao o we baŋa wɛ na tage kolo to nmo tento berem sɔŋɔ tiina bam ba na wó ke tei ne n na ter,0.1795,0.0748
+577,Lwoŋini dedoa wó taa wora Pomegara tio-bia balei maama tetare ne mo se ba taa saŋe daane.,woŋone dedoa wó taa wora pɔmegera tiobia balei bam tetare ne mo se ba ta saŋe daane,0.2353,0.1268
+578,‘Baŋa Wɛ mo bore debam bora de chega.,baŋa wɛ mo bore debam bora de chega,0.0,0.0
+579,se ba kɛ ba dole‑o ba yage teo kom kabira kwaga ne.,e ba kɛ ba doleo ba yage teo kom kabira kwaga n,0.1667,0.0526
+580,"Ba na kɩ kʋntʋ, kʋʋ́ pa dɩbam dʋna daa bá na cwǝŋǝ sɩ ba ŋɔɔnɩ wo-lwaanʋ ba pa dɩbam.",ba ná ke konto ko wó pa de bandona daa bá na chwoŋa se ba ŋɔɔne wolwanno ba pa deba,0.6842,0.3175
+581,Judah teo pɛ Josia bu Jehoyakim paare dim bena yana bene dem wone mo Baŋa Wɛ pɛ Jeremia kwora se o ta o bere Judah tiina bam maama.,uda teo pɛ josia bu johiakim paare dim bena yanabene dem ne mo baŋa wɛ pɛ jeremiah kwora se o ta o bere juda tiina bam maama,0.25,0.0874
+582,Nam ta lage-na mun-bwei se á ma á ke bworobworo kolo sabɔle na wo woli ko wone to.,nam ta lage mo bwei se á maa ke bworobworo kolo sabɔle na wo woli ko wone,0.3333,0.1129
+583,"Pwori-na muni dem se á viiri dedwoŋi de nuga á bibili á ma á ke bworobworo kamuna, se á daare á fɔge bworobworo balwa de.",ora nam muni dem se á viiri dedwoŋi de nuga á bebeili á maa ke bworobworo kamuna se á daare á fɔge bworobworo balwa de,0.2,0.0745
+584,"Se ko ná ye gwoli sem de lu-vɔɔro tem, lu-nyenno mo ba mɛ ba ke-te se te meeli da-dɛɛro tem maama yera ne.",se ko ná ye gwoli sem de luvɔɔro tem lonyenne mo ba mɛ ba kete se te meeli dadɛɛro tem maama yerane,0.1304,0.0256
+585,"Aron ná yeini o tui amo Baŋa Wɛ yiga ne, o wó taa yeini o zeŋe ba yera yam konto mo, se o yé swei ba swia maŋa de maŋa.",aron ná yeini o tui amo baŋa wɛ yiga nee o wó taa yeini o zeŋe ba yera yam konto mo se o ye su ye ba swia maŋa de maŋa,0.1333,0.0575
+586,Baara de kaana balo maama wo na pwoli to ma ja sabu-seŋa wo-nyenno dwi dwi ba ba.,baara de kaana balo maama wo na pwolo to ma ja sabuseŋa wonyɔnno dwi dwi ba ba,0.1176,0.0323
+587,ye ba daa ba jwoori to.,e ba daa ba jwoori to,0.1667,0.0588
+588,"” Asiria teo dedɛɛro wom ma leiri o we, “Á boŋe we amo tu wom kwora kam ye abam de á pɛ wom yerane nyem mo na?",asiria teo dedɛɛro wom ma leiri o we á boŋe we amo tu wom kwora kam ye abam de á pɛ wom yerane nyem mo,0.0385,0.025
+589,se ko maŋe de á totoŋa na ye tei to.,se ko maŋe de á totoŋa na ye tei t,0.1,0.0385
+590,Voro bia laam mo bere-ba kolo na maŋe se ba ke to.,oria laam mo bereba kolo na maŋe se ba ke t,0.25,0.1081
+591,Sabu kom wó taa ye ŋwea jwoŋim pɛɛra mo ko pa-ne.,sabu kom wó taa ye ŋwea jwoŋim pɛɛra mo ko pane,0.0,0.0
+592,"Ko ná dae konto, wonto wó wane o ba.",o ná dae konto wonto wó wane o b,0.2222,0.0769
+593,"Kokuri, nɔn-ŋom ná to kuni berepɛ de.",kokuri nɔ nŋom ná to kuni berepa d,0.5714,0.0714
+594,se ko ma ko ŋwe ba jene dem kuni belei ko pa‑o.,se ko ma ko ŋwe ba jene dem kuni belei ko pao,0.0,0.0
+595,"Ba ná nyɔga, ba wó yirisi mo, jara yalo amo na wó pa se ya to ba tetare ne to ŋwaane.",a ná nyɔga ba wó yirise mo jara yalo amo na wó pa se ya to ba tetare ne to ŋwaane,0.0952,0.0323
+596,"Zimiri pwa bam, de Elam pwa bam, de Media pwa bam.",zimiri pwa bam de elam pwa bam de midia pwa bam,0.0909,0.027
+597,Ba ta ma ke ywoa yalei ba woli da se ba chwi-ya vwei dem kwaga saŋa kam gugworru telei tem ne.,ba ta ma ke ywo yalei ba woli da se ba chwiya vwei dem kwaga saŋa kam gugworru telei tan,0.1429,0.0556
+598,"Konto to, tiŋi pɛ n pa debam, se kotu taa nii dé baŋa ne, nenɛɛne teene dedwonna dem na jege pwa tei to.",konto to ti pɛ n pa debam se ko tu ta nii de baŋa ne nenɛɛne teene dedwonna dem na jege pwa tet,0.3043,0.0769
+599,Zezeŋa ne amo wó tiŋi a taane dem nmo yiga ne mo.,snseŋa ne amo wó tiŋi a taane dem nmo yiga nem,0.25,0.1081
+600,"Á wó ma gare-ŋone selo nyenyero na ye sabu-seŋa, de nazwon-pupwia, de nasoŋ-pupwia de nasoŋo chwɛ-chwɛ to á gɔgere-de, nenɛɛne gare-wogo kom de na ye tei to mo.",á wó ma garenŋom selo nyenyero na ye sabuseŋa de nazwoni pupuia de nasɔŋɔ pupuia de nasɔŋɔ chwa chwa to á gɔgerede nenɛɛne garewogo kom de na ye tei to,0.3214,0.1148
+601,"se kotu ta we, “A weele mo.",e kotu ta we a weeli m,0.4286,0.1667
+602,Wɛ dem na ke lunluŋu kolo to ma seene ko jwoori kwaga naba-laara yia kuni fuga.,ɛ dem na ke luluŋo kolo to ma seene ko jwoori kwaga na balaara yia ko ni fuga,0.375,0.0645
+603,Wɔ baŋa ne mo n teege ye n lɔ amo kwaga ne?,wɔ baŋa ne mo n teege ye n lɔ amo kwaga ne,0.0,0.0
+604,Baŋa Wɛ ta ma ta de Moses o we: “Pa se ba kwei channa ba ma ke ware-zoŋa de ka na wó taa zege woŋo kolo baŋa ne to.,baŋa wɛ ta ma ta de moses o we pa se ba kwei chana ba ma ke warazoŋa de ka na wó taa zege wonŋo kolo baŋa ne,0.1379,0.0602
+605,nenɛɛne ka-dooro baro na nwoŋi diga ne de wopwolo tei to.,nenɛɛne kadoore baro na nwoŋi diga ne de wopwolo te,0.2727,0.0889
+606,"Kʋ na daɩ kʋntʋ, nɔɔna wʋ́ goon-o yɩ o na cavɩɩra, yɩ o tʋ sʋtaanɩ cɩgɩrʋ tɩm wʋnɩ.",ko ná dae konto nɔɔna wó gwoonio ye o na chaveera ye o to setaane chegero tem won,0.7778,0.377
+607,Wolo na beeri swa to kwo wo pwoli mo.,wolo na beeri swa to kwo wo pwolim,0.2222,0.0357
+608,"Setaana pɛ de ma leiri Baŋa Wɛ o we, “A yɔɔre a kare tega kam baŋa ne mo a kekara.",setaana pɛ de ma leiri baŋa wɛ o we a yɔɔre a kare tega kam baŋa ne mo a kekara baŋa wɛ daa ma ta o we n nam maa ne nii a,0.65,0.4833
+609,Pɛ wom tete de tɔge de nɔn-jworru o kwɛɛre mo.,ɛ wom tete de tɔge de nɔnjworu o kwɛɛre m,0.3,0.0857
+610,"Kwei-na da yaredo á toŋe á totoŋa, se á daare á sii da yarepɛ dɛ dem ne.",weina da yaredo á toŋe á totoŋa se á daare á seeni da yarepɛ dɛ dem n,0.1765,0.0943
+611,"Te na pwɛ amo ŋwaane konto to, wolo maama ná dwei-te, konto tu de pwɛ mo amo ŋwaane.",ta na pwɛ a ŋwaane konto to wolo maama ná dweite kotu de pwɛ mo amo ŋwaan,0.2778,0.1111
+612,A laam maa wó pa se Jerusalem ji teo kolo logo baŋa dwi maama na wó ma ko yere ba sɔɔle lwarem ba pa daane to.,a laam maa wó pa se jerusalem ji teo kolo logo baŋa dwi maama na wó ma ko yere ba sɔɔle lɔrem ba pa daane t,0.0769,0.0357
+613,"Kaana maŋɩ sɩ ba taa je cɩm mʋ ba cǝgi balʋ na brɩ-ba Wɛ cwǝŋǝ tɩn, sɩ ba daarɩ ba taa sɛ-ba.",kaana maŋe se ba ta jei cheim mo ba cheigi balo na bereba wɛ chwoŋa tem se ba daare ba ta sɛ ba,0.7273,0.3235
+614,Abam bá swei á na wó yaale tei to ni ne.,ento dae bedwe ne ye menswano na dae mena yam chekke tei to baŋa wɛ na tage tei to mo konto amo taane zwɛ wonnu ne mini,2.0909,2.5172
+615,Abam ye wǝǝnu tɩlʋ dɩ́ na brɩ abam yɩ tɩ yɩ dɩ́ Yuutu Zezi nyɩm tɩn.,abam yei wonnu telo de na bere abam ye te ye de yuutu zwezi nyenta,0.75,0.34
+616,Nɔɔna ma ja o kwǝrǝ ba zʋ dwi maama wʋ ba tɔɔlɩ.,nɔɔna ma ja o kwora ba zo dwi maama wo ba tɔɔl,0.3333,0.1389
+617,"Dé wó taa jege chega dé pa daane, ye dé bá jwoori da-kwaga.",de wó taa jege chega de pa daane ye de ba jwoori da kwag,0.4615,0.1136
+618,O nam bere o ba sɛ se o toŋe lwarem.,o nam bere o ba sɛ se o toŋe lwaaro,0.1,0.1154
+619,"Pɛɛre dem konto mo á lage á ma‑á ywoori ba wɛ dem, se de yage á wɛleere dem jene de ma chɛ abam.",pɛɛre dem konto mo á lage á maa ywoori ba wɛ dem se de yage á wɛleere dem jene de ma chɛ a ba,0.1304,0.0282
+620,“Amo nii a na sampwori selo na wo Samaria ne.,amo niia a nae sanpworo selo na wo samaria n,0.4,0.1471
+621,Kotu ye-daa ta nugi lanyerane.,u ya daa ta nugi lanyeran,0.8,0.2083
+622,"Dɛ sem tete maa ye golesaa dɛ mo o mɛ o ke, ye o daare o kwei sabu-seŋa o kwoli se maama.",dɛ sem tete maa ye golosaa dɛ mo o mɛ o ke ye o daare o kwei sabuseŋa o kwoli se maam,0.0909,0.0308
+623,"pa se o de wo pwoli, ye o ta ded‑o o we.",pa se o de wo pwoli ye o ta dedo o wo,0.0833,0.0385
+624,de taane delo o na ŋɔɔne banto seeni to ŋwaane mo.,dé taane delo o na ŋɔɔne banto seeni to ŋwaane m,0.1818,0.0513
+625,"Kʋntʋ ŋwaanɩ, dɩ́ yɩ pa dɔɔm taa jɩgɩ dɩbam nɩ balʋ na yǝri Wɛ tɩn.",konto ŋwaane dé yé padɔɔrem ta jege debam ne balo na yeiri wɛ ta,0.8667,0.34
+626,Ko nam ná ye á pɛ wolo ba na kale.,ko nam ná ye á pɛ wolo ba na kale,0.0,0.0
+627,Lɛɛro wó yi Isarele tiina de Judah tiina.,ɛɛne wó yi isarele tiina de juda tiina,0.25,0.1212
+628,"Daa‑n ta ta de nɔɔna bam we, ‘Baŋa Wɛ wom na tage tei to mo tento: Amo zem pɛ abam chwoŋa mo se á kuri chwei selei tetare ne: kuri-na ŋwea, naa toone.",aa n ta taa de nɔɔna bam we baŋa wɛ wom na tage tei to mo tento amo zem pɛ abam chwoŋa mo se a kuri chwei selei tetare ne kurina ŋwea naa toone,0.1212,0.0273
+629,konto mo nɔn-jworo de wo maŋe se n zuli‑o.,konto mo nɔnjworo de wo maŋe se n zuli,0.1111,0.0323
+630,Ba Teiru wom wó jwoori o ŋwe ba wɛleera yam jene ba yuu ne.,ba teiru wom wó jwoori o ŋwe ba wɛleera yam jene ba yuu n,0.0714,0.0222
+631,Bɛŋwaanɩ dɩ́ na brɩ abam kʋlʋ tɩn yɩ dɩ́ Yuutu wʋm kwǝrǝ mʋ.,bɛŋwaane de na bere abam kolo tem ye de yuutu wom kwora,0.7692,0.3333
+632,Dɛ delo nɔɔna bam wó cheigi amo kwora kam ye ba daare ba yage ba lwarem kikia yam.,dɛ delo nɔɔna bam wó cheigi amo kwora kam ye ba daare ba yage ba lwaarem kikia ya,0.1111,0.0312
+633,"Ko ze ná ye mena varem maŋa naa wodiiru zagem maŋa de, se á sii da yarepɛ dɛ dem ne.",ose ná ye mena varem maŋa naa wadiiru zaŋe maŋa de se á see da yarepa dɛ dem,0.35,0.1587
+634,O ta ma kwei channa o ke dakaa kam yera totoŋa zela maama.,o ta ma kwei chana o ke daka kam yera totoŋa zla mɔm,0.3077,0.1333
+635,O déem kwei sabu-seŋa kalo ye chekke ye ka dunni maŋe de kilo fintɔ-tenu to mo o ma ke min-zwon-zego kom de ko zela yam maama.,o déem kwei sa buseŋa kalo na ye chekke ye kadum maŋe de kilo fentɔ tenu to mo o ma ke minzonzogo kom de ko zola yam maa,0.3846,0.1146
+636,se de taa kare de beeri yɔɔ de di gaao.,se de ta kare de beeri yɔɔ de di gao,0.2,0.069
+637,Pa-na dé tei Baŋa Wɛ!,pana de tei baŋa wɛ,0.2,0.0667
+638,"Wɛ sampwora Izaya déem ma vo Hezekia tei o bwei‑o o we, “Nɔɔna banto nwoŋi yein-seeni mo ba ba nmo tei?",wɛ sampwora isayah déem ma vo hezekiah tei o bweio o we nɔɔna banto nwoŋi yeini seeni mo ba ba nmo tei,0.1905,0.0513
+639,"Kʋntʋ tɩn, kwaanɩ n guli ba na tagɩ te tɩn sɩ n tʋŋɩ Wɛ tɩtʋŋa lanyɩranɩ, nɩnɛɛnɩ n na lagɩ n magɩ jara cɩga cɩga te tɩn.",konto to kwaane n gulli bam na tage tei to se n toŋe wɛ totoŋa lanyerane nenɛɛne n na lage n mage jara chega chega tei to,0.7037,0.3152
+640,"Kokuri to, á baara bam tete de peini de ka-tole mo.",kokuri to á baara bam tete de peini de katolo m,0.1818,0.0526
+641,Nɔɔna wó taa jege-ba ba yaala ye ba mae ba yera ba sɔɔle lwarem ba pa daane.,ɔɔna wó ta jegeba ba yaala ye ba mae ba yera ba sɔɔle lɔrem ba pae daane,0.2353,0.0862
+642,"Chega to, yia yalo zem na nae amo to daa bá na-ne.",chega to ye yalo zem na nae amo to daa bá nane,0.0833,0.0556
+643,"O ná wo sɛ se o ke konto, a wó choore o yera zela a daare‑o, ne o nu de o kwo na loge‑o tei to.",o ná wo sɛ se o ke konto á choore o yera zela a daareo ne o nu de o kwo na logeo te t,0.1538,0.0769
+644,Vɔ-na chaponno tem kuna yalei yam yera ne se te ja gare-wogo kom yiga de kwaga.,vɔa na chapom to ko na yalei yam yera ne se te ja garewogo kom yiga de kwag,0.4375,0.1311
+645,"Kwei-na sabu-seŋa kalo na ye chekke to á kwoli dakaa kam maama, ye á daare á ma sabu-seŋa kam á tɔge ka nia yam.",weina sabuseŋa kalo na ye chekke to á kwoli dakaa kam maama y daare amo sabuseŋa kam á tɔge ka nia ya,0.25,0.0714
+646,Mo kokuri Solomon de nɔn-kɔgɔ kom maama vei dáane se ba ware Baŋa Wɛ.,mo kokuri solomon de nɔnkɔgɔ kom maama vei dáane se ba ware baŋa wɛ,0.0,0.0
+647,Ta-kuri nye de sabu-seŋa de lu-nyenno na gɔgere te ke daane tei to mo.,ta kuri nye de sabuseŋa de lunyenno na gɔgere te ke daane tei to m,0.2143,0.0189
+648,"Ba ma ta ded‑o ba we, “Leile konto, nmo tiini n kwe mo.",ba ma ta dedo ba we leilei konto nmo tiini n kwe m,0.1538,0.0526
+649,"Isarele tiina bam maa keeri chekke, ye ba lwoori Baŋa Wɛ se o jwoŋi-ba o yage.",sarele tiina bam ma keeri chekke ye ba lwoori baŋa wɛ se o jwoŋiba o yag,0.1875,0.05
+650,"Konto kwaga ne, se n jwoŋi nɔna yam de bworobworo kom maama n daŋe zwɛɛm kaanem dem baŋa ne se n zwɛ-te kaanem dakaa kam baŋa ne.",onto kwaga ne se n jwoŋi nɔɔna yam de bworobworo kom maama n daŋe zwɛ kaanem dem baŋa ne se n zwɛte kaanem da ka kam baŋa n,0.2222,0.06
+651,"Wʋntʋ mʋ tɩgɩ dɩbam ŋwaanɩ, sɩ dɩ́ wanɩ dɩ́ tɔgɩ dɩd-o dɩ́ na ŋwɩa Wɛ tee nɩ.",wonto mo tege debam ŋwaane se de wane de tɔge dedo dé na ŋwea wɛ tei ne,0.8824,0.3091
+652,"O ma sare golesaa dɛ selo ba na wó taa mae ba zeŋe dakaa kam to, ye o daare o taare-se de channa.",ma sare golesaa dɛ selo ba na wó ta ma ba zeŋe daka kam to ye o daare o taare se de chan,0.3043,0.0833
+653,De laam wó taa ye ‘Ba fugi-ne jei maama ne’ mo.,de laam wó taa ye ba fugine jei maama ne m,0.0909,0.0303
+654,"Ko ná ye pwɛɛm totoŋe pi-bea kam, kwei ka nyɔɔne seeni nɔna yam, se n zeiŋi-ya wɛɛne n yaare amo yiga ne, se n laam daare n wane-ya n di.",ko ná ye pwɛ totoŋe pibia kam kwei ka nyɔɔn seeni nɔɔna yam se n zeiŋiya wɛɛne n yaare amo yiga ne se n laam daare n wane ya n d,0.2333,0.0594
+655,Ni taane yerane ba de kabɛ chwoŋa ne.,ni taane yerane ba dege kabɛ chwoŋa ne,0.125,0.069
+656,se á bwɛa yam nam lage ya woli tetɛ seeni mo?,se á bwea yam nam lage ya woli tete se nmo,0.3636,0.1176
+657,"A laam ma sii da yarepɛ dɛ dem ne, a naanem totoŋe dem na ti to ŋwaane.",laam ma seene da yerepɛ dɛ dem ne a nam ne totoŋem dem na ti to ŋwae,0.4118,0.2075
+658,N daa bá fɔge n bwoŋi-ne we n Baal jwoni dem.,daan bam fɔge n bwoŋine we n bale jwoni de,0.4545,0.2121
+659,"Dɛ dem konto maama ne, ba ya vɔge ba nia mo ye ba we, “Dé seene dé ke lwarem dé chɔge Baŋa Wɛ yiga.",dɛ dem konto maama ne ba ya vɔge ba nia mo ye ba we de seene de ke lɔro de chɔge baŋa wɛ yiga,0.1667,0.0972
+660,"Dɩ́ na wʋ dɩ́ Ko Wɛ yigǝ nɩ, dɩ́ yǝni dɩ́ guli abam na kɩ á wʋ-dɩdʋa dɩ Zezi Krisi yɩ kʋ paɩ á tʋŋɩ lanyɩranɩ te tɩn mʋ, dɩ́ guli abam sono kʋm na paɩ á tiini á tʋŋɩ te tɩn.",dé na wo dé kwo wɛ yiga ne de yeini dé guli abam na ke á wodedoa de zwezua krista ye ko pae á toŋe lanyerane tei to mo dé guli abam swono kom na pae á tiini á toŋe tei t,0.7857,0.3577
+661,"Ko ná ye sabu-seŋa kalo nɔɔna bam na jaane ba ba ba pa Baŋa Wɛ wara-jei sem totoŋa ŋwaane to, ka dum maŋem dem déem maa ye kilo moro dedoa mo, se ko tɔge wara-jei sem maŋem chekke na ye tei to.",o ná ye sabuseŋa kalo nɔɔna bam na jaane ba ba ba pa baŋa wɛ wara jei sem totoŋa yam ŋwaane to kadum maŋe dem déem maa ye kilo morro dedoa mo se ko tɔge wara jei sem maŋe dem cheke na ye tet,0.3571,0.0753
+662,Pɛ wom maa we: “Amo laam wó pa se Baŋa Wɛ na tage tei to nwoŋi pwooni.,ɛ wom maa we amo laam wó pa se baŋa wɛ na tage tei to nwoŋi pwooni,0.0588,0.0196
+663,"Kʋntʋ ŋwaanɩ, nɔɔnʋ wʋlʋ na vɩn dɩ́ na brɩ kʋlʋ tɩn, kʋ daɩ nabiinǝ mʋ o vɩa, kʋ yɩ Wɛ dɩlʋ na kɩ DƖ Joro kʋm abam bɩcara nɩ tɩn mʋ o vɩa.",konto ŋwaane nɔɔno wolo ná ve de na bere kolo ta ko dae nabiina mo o vea ko ye wɛ delo na ke de joro kom abam bocharena ta mo o ve,0.7879,0.3663
+664,"Á na joŋi Wɛ kwǝr-ywǝŋǝ kam tɩn, kʋ pɛ á na yaara zanzan.",á na jwoŋi wɛ kwori ywoŋa kam tam ko pɛ á na yaara zanza,0.6154,0.2619
+665,"Nam pa-ne swa chekke de yeino, se a taa mae a nii nɔɔna banto baŋa ne.",nam pane se a chekke de yeno se a ta ma a nii nɔɔna banto baŋa ne,0.3125,0.0769
+666,Kwei da yarepɛ se n ma n tiŋi Aron de o bia bam amo kaanem totoŋa yam ŋwaane.,we da ya depɛ se n ba tiŋi aron de o bia bam amo kaanem totoŋa yam ŋwaan,0.3333,0.1017
+667,banto maama yuu ne mo.,banto maama yuu ne mo,0.0,0.0
+668,Ba wó taa jege nenɔŋa nenɛɛne kantɔgela na ye tei to.,bábá ta jege nenɔŋa nenɛɛne kantɔgela na ye teit,0.4545,0.119
+669,Amo tete wó tore ba yera yam yera-yera.,amo tete wó tore ba yera yam yera yer,0.25,0.0333
+670,"DƖ nan zʋʋrɩ pooni dɩlʋ na tiini dɩ daga tɩn wʋnɩ mʋ, yɩ nɔɔn-nɔɔnʋ bá wanɩ o twɛ da.",de nam zoore pwooni delo na tiini de daga tem wone mo ye nɔɔnnɔɔno bá wane o twɛ d,0.7368,0.2969
+671,"Ba wó yɔɔre ba chɔge á tega kam maama de jei selo na gilimi abam to fase, pa se ka maama ji di-dwonnu yerane.",a wó yɔɔre ba chɔge a tega kam maama de jei selo na gilimi abam to fase pa se ka maama ji didwonnu yerane,0.0833,0.0241
+672,Na bam nam ware kɔɔra bam konto wone se ba maŋe da kɔtaa!,na bam nam ware kɔɔra bam konto wone se ba maŋe da ko taa,0.1538,0.0227
+673,ne amo na wora a ke tei zem to.,ne amo na wora a ke teizem t,0.3333,0.0455
+674,Boboŋa tu taana yadwonna mo tento: Ko dae ko chwoŋa ne.,boboŋa tu taana ya dwonna mo tento ko dae ko chwoŋa n,0.2727,0.0233
+675,Nmo bá‑n sɛ se n tete wo-pwoŋo tu wom yera pɔ.,mo bá sɛ se n tete wopwoŋo tu wom yera p,0.2727,0.0909
+676,O nii ba maama we ba ye yɔɔ yerane mo.,o ni ba maama we ba ye yɔ yerane m,0.3,0.1071
+677,ye dé daare dé beeri dé tete yera gwaaro.,ye de daare de beeri de tete yera gwaaro,0.3333,0.0938
+678,-Ba daa ta maa kwei gare-ŋone selo nyenyero na ye nazwon-pupwia to ba ke kuna finnu ba lei gare-pum ni-dedɔrɔ kom seeni.,ara ta ma kwei gareŋom selo nyenyero na ye nazoŋi pupwia to ba ke kuna finnu ba le garepum ni dedɔrɔ kom seen,0.4545,0.1183
+679,te na di-ba ye te laare ba ŋwaane.,te na diba ye te laare ba ŋwaane,0.0,0.0
+680,"Kokuri to, ko nye de mini mo zwɛ gaao maama kula!",kokuri to ko nye de mini mo zwɛ gaao maama kulo,0.0909,0.027
+681,Ya ye kandwa-gula mo se ya guli Isarele tiina bam ba dwia yam yera.,ya ye kaneba gula mo se ya guli isarele tina bam badwia yam yer,0.4286,0.0769
+682,Ni dem jazem seeni mo ba leigi gwaaro telo dedɔrem na ye jatwogo de noa ni maŋem kuni fuga-benu ye te daŋe da-dɛɛro tetɔ de te luuru tetɔ tem baŋa ne to.,i dem jazem seeni mo ba leigi gwaaro telo dedɔrem na ye jatɔge de nɔɔne maŋem kuni fuga ba nu ye te daŋe dadɛɛro te tɔ de te luuri tetɔ tem baŋa ne t,0.3438,0.084
+683,Ba ma meeli lu-nyenno gwoli dɛ sem yera ne ye ba ke se lu-vɔɔro tem.,a ma meeli lonyenno golidɛ sem yera ne ye ba ke seluvɔɔro ta,0.4667,0.098
+684,"Moses ma ta o tete ne we, “Amo wó fɔɔre mo a yi a nii wo-kenkagele dento, se a lɔre bɛ mo ke ye sabara kam ba zwɛa to.",moses ma tɔ tete ne we amo wó fɔɔre mo a yi a nii wokenkagele dento se a lɔre bɛ mo ke ye sabara kam ba zwɛ te,0.1379,0.0471
+685,se te taa jege te bia te nii da.,se te ta jege te bia te nii d,0.2222,0.087
+686,Ta‑á yei-na se á yé ke ni-sɛɛm de nɔɔna balo na zoore tega kam konto ne to.,aá yeina se á ye ke nisɛɛm de nɔɔna balo na zoore tega kam konto nnt,0.2353,0.0727
+687,"Gena betɔ tu wom maa wó taa jege kandwa-nyenno tento: Jakinfa, de Agate, dedaane Ametisita.",ena batɔ tu wom ma wó taa jege kandanyennɔ tento jakimfa de agate dedaane a mɛtisit,0.4667,0.1111
+688,"Gwaro tem ma kwei gare-fefale selo na ye chekke to, ye ba laam woli de gare-ŋone selo nyenyero na ye nazwon-pupwia, de nasoŋ-pupwia, de nasoŋo chwɛ-chwɛ to ba ma sɔ gare-wogo kom.",waro tem ma kwei gare fefale selo na ye chekke to ye ba laam woli de gareŋom selo nenyorro na ye nazoŋi pupuia de nasoŋo pupuia de nasoŋo chwɛ chwɛ to ba ma sɔ garewogo ko,0.375,0.0942
+689,"O ma daare o kwei gare-nyenyaaro o zo, ye o vo o zo Baŋa Wɛ diga kam.",o ma daare o kwei gɔrenyenyaaro o zo ye o vo o zo baŋa wɛ diga ka,0.1176,0.04
+690,Amʋ wʋ sɛ sɩ kaana taa brɩ baara naa ba taa te-ba.,amo wo sɛ se kaana ta bere baara naa ba ta tei b,0.6667,0.2432
+691,Ba maa yeini ba bɛ ba yera ba wara wone.,ba maa yeini ba bɛ ba yera ba wara won,0.1,0.0333
+692,"Kokuri to, ba chɔge ni delo a na gwoni de-ba to.",kokuri to ba chɔge ni delo a na gwoni de bat,0.1818,0.0286
+693,Luuru telei maa wora ywei dedoa maama ŋwaane.,luuru tele maa wora yweidedoa maama ŋaan,0.5,0.0811
+694,Banto déem nwoŋi Benjamin dwi tu Afiya sɔ-yuu kom ne mo.,banto déem nwoŋi benjamin dwi tu asia sɔyuu kom na m,0.2727,0.0909
+695,Ba déem kwei gare-fefale selo na ye chekke to ba ma sɔ gwaaro telo na wó che wara-jei sem konkɔlɔ kom to.,ba déem kwei gare fefale selo na ye chekke to mo ba ma sɔ gwaaro telo na wó che wara jei sem konkɔlɔ kom t,0.2727,0.037
+696,"Gambɛ sɩlʋ na tʋŋɩ ba paɩ ba yum tiinǝ balʋ dɩ na tɔgɩ Wɛ tɩn, kʋ wʋ maŋɩ sɩ ba taa gooni-ba ba na yɩ ba ko-biǝ Wɛ cwǝŋǝ wʋnɩ tɩn ŋwaanɩ.",gambɛ selo na toŋe ba pae bɛ yimi tiina balo de na tɔge wɛ to ko wo maŋe se ba taa gwooniba ba na ye ba kwo via wɛ chwoŋa wone to ŋwaan,0.6875,0.3039
+697,“A lage a te a nɔn-donne maŋa ne mo.,a lage a te a nɔndonne maŋa ne m,0.1111,0.04
+698,Baŋa Wɛ lage o twe o jeŋa Edom tega kam baŋa ne.,aŋa wɛ lageo twe o jeŋa edom tega kam baŋa n,0.3333,0.0556
+699,ko nye de a nɛ mɔ-lelea na bega kaporo yuu ne to mo.,ko nye de a nɛ mɔ lilea na biga kaporo yuu ne to,0.3077,0.1053
+700,"Baá pa nɔɔna sɛ vwan yam ciciri na fɔɛ tɩn, yɩ ba daarɩ ba taa tɔgɩ sʋtaanɩ zaasɩm na yɩ te tɩn.",bá pa nɔɔna sɛ vwa yam chichiri na fɔta ye ba daare ba ta tɔge setaane zɛsem na ye tei t,0.6364,0.2877
+701,Yiga tiina bam ma ja Onika kandwa de kandwa-nyenno dwi dwi ba ba se ba kwei-ya ba meeli kaanem yiga tu gare-wogo kom dedaane o gare-pale dem yera ne.,igatiina bam ma ja onika kandwa de kandwanyonno dwi dwi ba ba se ba kweiya ba meeli kaanem yigatu gare wogo kom dedaane o gare pale dem yera ne,0.2759,0.0172
+702,Ko ta ná ye pi-ni selo na jege bia to.,o ta buki pipeilise mo o ja kukworo ne ye o ja se o ba o feiri o bochare ne ko ta ná ye pini selo na jege bia t,2.1,2.1111
+703,Maao mo jaane wɛyuu ne ko foore.,aa mo jaane wɛ yuu ne ko foor,0.5714,0.12
+704,"Kolokolo daa tera dé tampɔro tem wone, naa woŋo wora?",kolokolo daa tera de tampɔro tem wone na woŋo wora,0.2,0.0476
+705,Ahisamaki bu Oholiaba de ya nwoŋi Dan dwi dem wone mo.,yisa a ma ke bu owilia bama de ya nwoŋi daan bwiirim wone,0.9091,0.3488
+706,te wó lɛɛre te taa zoore dáane mo taa wuu.,te wó lɛɛre te ta zoore daane mo taa wuu,0.2,0.0625
+707,O ma gwoni golesaa dɛ selei o daare o kwei sabu-seŋa o kwoli dɛ sem konto maama.,o ma gwoni golasadɛ s lei o daare o kwei sabuseŋa o kwoli dɛ sem konto maama,0.1765,0.0484
+708,Baŋa-Wɛ dɩlʋ na yɩ dɩbam Vɩrnʋ dɩ Zezi Krisi wʋlʋ dɩbam na jɩgɩ o tɩɩna tɩn mʋ pɛ-nɩ ni sɩ a taa yɩ o tɩntʋŋnʋ.,baŋa wɛ delo na ye debam vereno de zwei zikirisi wolo debam na jege o teena ta mo penani se a ta ye o tontoŋen,0.84,0.3571
+709,Swa tu ba saŋe nɔn-jworo pɛ sɔŋɔ ne.,soa tu ba saŋe nnjworo pɛ sɔŋɔ n,0.375,0.1111
+710,Filisi tiina bam déem ma ke jara yam de ba dam maama.,filisi tiina bam déem ma ke jara yam de ba dam maama,0.0,0.0
+711,Amo nam le Dan dwi tu Ahisamaki bu Oholiaba mo se ba taa toŋe daane.,amo nam le dan dwi tu ayisamake bu oholia ba mo se ba ta toŋe daane,0.2667,0.0566
+712,Amo mo ye á Tu Baŋa Wɛ wolo wom na jaane abam.,amo mo ye á tu baŋa wɛ wolo wom na jaane ba,0.0833,0.0588
+713,Ba-na á nii Baŋa Wɛ na toŋe wo-kamunnu telo logo baŋa ne.,bána á nii baŋa wɛ na toŋe wokamunnu telo logo baŋa ne,0.0833,0.0233
+714,"Kokuri to, o Tu Baŋa Wɛ mo wo o tei ne, pa se o yere tiini de zaŋe.",kokuri to o tu baŋa wɛ mo wo o tei ne pa se o yere tiini de zaŋe,0.0,0.0
+715,Baŋa Wɛ na wó sii vio o yage te yera ne to ŋwaane.,baŋa wɛ na wó sin vio o yage te yerane to ŋwaane,0.2308,0.027
+716,Wɛ yerane nam ta mo lware wɛyuu kom.,wɛ yerane nam ta mo lɔre wɛyuu ko,0.25,0.1071
+717,Ko daare ye o zaane wo balo na tu ba tete to yuu ne.,ko daare ye o zaane wo balo na tu ba tete to yuu ne,0.0,0.0
+718,Konto mo tei tega kam koga ka peere pa se balo maama na zoore ka wone to bugi.,konto mo tei tega kam koga ka peere pa se balo maama na zoore ka wone to bugi,0.0,0.0
+719,ne vwei delo na ba bebege to.,ne vwei delo na ba bibigi to,0.1429,0.1364
+720,Wonto mo wae o pae logo baŋa dedɛɛra jia.,wonto mo wae o pae logo baŋa dedɛɛra ji,0.1111,0.0312
+721,O wae o cho balo na tui ba zoore o woro ne to.,o wae o cho balo na tu ba zoore woro ne t,0.2308,0.0909
+722,"A ta wó jwoŋi nmo de Jerusalem teo konto a yage Asiria teo pɛ wom jeŋa ne, se a daare a taa kwoli teo konto.",a ta wó jwoŋi nmo de jerusalem teo konto a yage asiria pɛ wom jeŋa ne se a daare a taá kwoli teo konto,0.08,0.0488
+723,se o maŋe-ka ye o daare o jeeli ka chɔgem dem.,se o maŋeka ye o daare o jeeli ka chɔgem de,0.0909,0.0294
+724,Ko nam ná ye sampwori selo na wo Jerusalem teo kom ne to de.,o nam ná ye sampwori selo na wo jerusalem teo kom ne te de,0.1429,0.0435
+725,Konto déem ke ko tɔge de Baŋa Wɛ ya na bere Moses tei to mo.,konto déem ke ko tɔge de baŋa wɛ ya na bere moses tei to,0.0667,0.0444
+726,Ba yeini ba zuli da-kwolo mo ye ba we.,a yeini ba zuli dakwollu mo ye ba wo,0.3333,0.1429
+727,"Chega to, nabiina mo nam nye de gaaro tem konto.",chega to nabiinu nam nye de gaaro tem kont,0.3,0.1081
+728,Baŋa Wɛ se-zɔɔ kom maama yɔɔre ko ye jana yerane mo.,baŋa wɛ sezɔɔ kom maama yɔɔre ko ye jana yerane mo,0.0,0.0
+729,ne nmo ni ná ŋɔɔne chega taane yerane.,nmo ná ŋɔɔne chega taane yeran,0.375,0.1667
+730,"Kaanem tiina bam kɔgɔ kom na daga tetei to, ba lwarem totoŋa yam de daga konto dwoŋi mo pa se ba tusi ba chɔge amo yiga dedɛ.",kaanem tiina bam kɔgɔ kom na daga te tei to ba lɔrem totoŋa yam de daga konto dwoŋi mo pa se ba tusi ba chɔge amo yiga dedɛ,0.1111,0.0206
+731,"Nɔɔno wolo maama na yi bena finlei ye o tɔge o wo jeelim dem wone to ya ŋwe sɛkɛle chichworo mo, se ko dunni tɔge wara-jei sem maŋem chekke.",ɔɔno wolo maama na yi bena finlei ye o tɔge o wo jeelim dem wone to ya ŋwe skɛle chichwooro mo se ko duuni tɔge wara jei sem maŋe danchek,0.2759,0.0826
+732,"de pi-bea twanno telo ba na seini to, de twan-nyenno.",de pebwia twano telo ba na semi to de twanyenn,0.4,0.2
+733,Aron wó yeini o ja-te mo o zo o zege amo yiga ne se o taa ma-te o lɔre amo Baŋa Wɛ boboŋa Isarele tiina bam ŋwaane.,ron wom yeini o jato mo o zo o zege amo yiga ne se o ta malete o lɔre amo baŋa wɛ boboŋa isarele tiina bamŋwaan,0.2593,0.093
+734,"Waarem delo maama na popone de tiŋi tɔnɔ konto wone to, dedaane wonnu telo maama Jeremia na pworisi o pa dwi-gɛ tiina bam maama to wó yi-ba.",waarem delo maama na popone de tiŋi tɔnɔ konto wone to dedaane wonnu telo maama jeremiah na pworisi o pa dwigɛ tiina bam maama to wó ye b,0.1111,0.0273
+735,"Ko ye bedwe de amo Baŋa Wɛ de na swoi Isarele tiina bam tei to mo, de ba na maŋe ba ywori a kwaga ne ye ba zuli wa yadwonna tei to de.",ko ye bedwe de amo bpaŋa wɛ de na swoi isarele tiina bam tei to mo de ba na maŋe ba ywori a kwaga ne ye ba zuli wa yadwonna tei to d,0.0606,0.02
+736,ye ba jege wo-zɔɔne delo ba ke to.,ye ba jege wozɔɔne delo ba ke to,0.0,0.0
+737,Nam pa se dé ba bebara dé daŋe o baŋa ne!,nam pa se de ba bebara de daŋe o baŋa ne,0.1818,0.0667
+738,"O lage o te sa-teo ne mo yiga yiga, se o daa yé na o nabaara tega kam.",o lage o te sateo ne mo yiga yiga se o daa ye na o nabaara tega ka,0.1111,0.04
+739,Boboŋa tu duri o seigi cham mo se de yé yi‑o.,boboŋa tu duru seigi cham mo se de yuyu,0.3636,0.1515
+740,Baŋa Wɛ kwora mo tento: Dɛ dem konto ne amo wó leiri ba wɛ-lworo kom.,baŋa wɛ kwora mo tento tdɛɛrem konto ne amo wó leiri ba wɛloro ko,0.2667,0.0962
+741,"Kʋ nan daɩ swan mʋ dɩ́ kɩa, sɩ dɩ́ ma dɩ́ ganɩ abam.",ko nam dae swane mo dé kea se de ma de gane a ba,1.0,0.3429
+742,"Ba ma kwei-se ba gɔgere nyenyero ba woli de gare-fefale sem de gare-ŋone selo nyenyero na ye nazwon-pupwia, de nasoŋ-pupwia, de nasoŋo chwɛ-chwɛ to.",a ma kweise ba gɔgere nyenyero wɛ woli de gare fofaro sem de gareŋem selo nyenyero na ye nazoŋi pupuia de nasɔŋɔ pupuia de nasɔŋɔ chwɛ chwɛ,0.5,0.1724
+743,Dé tuli sem maama laam chɔge mo se zega.,de tuli sem maama laam chɔge mo se zege,0.2222,0.0645
+744,Nam yé swei we n tete mo kuri dwi dem konto nɔɔna bam se ba taa ye nmo nyem.,nam ye swei we n tete mo kuri dwi dem konto nɔɔna bam se ba taa ye nmo nyem,0.0526,0.0175
+745,Moses ma toŋe kwora se ka yi nɔɔna bam maama se ba daa yé ja pɛɛra ba ba wara-jei sem totoŋa yam ŋwaane.,moses ma toŋe kwora se ka ye nɔɔna bam maama se ba daa ye ja pɛɛra ba ba wara jei sem totoŋa yam ŋwaan,0.2174,0.0375
+746,mo kayere kɔro telo na saŋe to tu se di maama nyɔ!,mo ka yere kɔro telo na saŋe to tu se di maama ny,0.25,0.0263
+747,Wodiu kom konto nam wó su banto kana yerane mo.,wodiu kom konto nam wó su banto kana yera ne,0.2,0.0541
+748,"Woo, nii teo konto na swoi wɛleera keim tei!",u nii teo konto na swoi wɛleera keim te,0.2222,0.1176
+749,"Kʋ dɛɛn daɩ Adam mʋ sʋtaanɩ ganɩ, kʋ yɩ kaanɩ wʋm mʋ dɩ ganɩ dɩ pa o vɩn Wɛ ni.",ko déem dae adam mo ses o taane gane ko ye kaane wom mo de gane de pa o vo wɛ n,0.9,0.3793
+750,"Edom tiina bam, de Moaba tiina bam, de Amon tiina bam.",edom tiina bam de moaba tiina bam de amon tiina bam,0.0,0.0
+751,Tete ne nmo ta woli-ne a boboŋa ne mo se a yé tusi.,tetene n ta woline a boboŋa ne mo se a ye tusi,0.3077,0.0811
+752,Ba déem ma jwoori ba gɔ-de ba chwi de zega jei sem ne.,ba déem ma jwoori ba gɔre ba chwi de zega jei sem n,0.1538,0.05
+753,Konto ŋwaane amo wó seene a pa‑m swa de yeino.,konto ŋwaane amo wó seene a pa nm swa de yen,0.3,0.0857
+754,Bɛŋwaanɩ sǝbu-swǝnǝ mʋ yɩ lwarɩm dwi maama pulim je.,ɛ ŋwaane sabuswona mao ye lɔre di maama pulim j,0.8889,0.3333
+755,Sedare da-ŋonno de maa ba jege zore nenɛɛne kaporro na daga tei wɛ-zoore seeni bwollu tem ne to.,se daare daŋonno de maa ba jege zore nenɛɛne kaporre na daga tei wɛ zoore seeni bwollu tem na t,0.3889,0.0526
+756,Nmo ná maŋe n pa n kabaa ywooli o biini maŋa ne.,mo na maŋe n pa kaba ywooli o biin maŋa ne,0.4167,0.1389
+757,Ko nam ya gɛ fee mo se chɔgem pu amo kwaga de ja.,o nam ya gɛ fee mo se chɔgem pu amo kwaga de ja,0.0769,0.0278
+758,"A ta wó lɔ kabira a maa pe‑o, se o daa yé wane o nwoŋi pwooni.",a ta wó lɔe kabira a ma peo se o daa ye wane o nwoŋi pwoon,0.25,0.0909
+759,ne na-zura na zuri na-nyɔm faao-ni maŋa ne tei to.,ne nazura na zuri nanyɔm fani maŋa ne teit,0.3,0.0811
+760,A liiri abam a ja a nwoŋi tega baŋa gugworru tem ne mo.,a lii abam á ja a nwoŋi tega baŋa gugworru tem ne m,0.2308,0.0952
+761,Paŋwa Tu Baŋa Wɛ nam tage tento mo o we: “Nii mo!,a ŋwa tu baŋa wɛ nam tage tento mo o we nii nmo,0.25,0.0571
+762,"Dɩ́ maŋɩ dɩ́ kaanɩ abam lanyɩranɩ nɩ, nɔɔnʋ na kɩ wo-zɔɔna yantʋ doŋ, dɩ́ Yuutu wʋm wʋ́ pa o na cam.",dé maŋe dé kaane abam lanyerane ne nɔɔno ná ke wozɔɔna yanto dwoŋi dé yuutu wom wó pa o na cha,0.7143,0.25
+763,ye ba tɛ ba we: “Debam wone wɔ mo wó wane o taa zoore.,ye ba tɛ ba we debam wone wɔ mo wó wane o ta zoore,0.0714,0.0263
+764,Dɩ́ nan ta tiini dɩ́ loori abam sɩ á kwaanɩ sɩ kʋ dwǝni á na maŋɩ á kɩ te tɩn.,dé nam tei tiini de lwoori abam se á kwaane se ko dwoni á na maŋe á ke tei t,0.85,0.3393
+765,de o na daga o dwoi kamunim dwi maama to ŋwaane.,de o na daga o dwoi kamunim dwi maama to ŋwaan,0.0909,0.027
+766,Isarele tiina bam yuu nam lage ko yaale mo.,sarele tiina bam yuu nam lage ko yaale nmo,0.2222,0.0588
+767,Bu-donno tete wae ba buga ye ba yera chɛa.,nyaare ba yera yam mo o ta maa pae balo na bugi to dam puli de ke da boedwonnu tete wae ba buga ye ba yera chɛa nɔndonno de maa wae ba tiri ba,2.8889,2.4375
+768,Wʋlʋ na maŋɩ sɩ o wǝli da tɩn maŋɩ sɩ o ban-zʋrɩ taa yɩ bɩdwɩ yɩranɩ mʋ.,wolo na maŋe se o woli date maŋe se o bane zoore taa ye bedwe yerane m,0.8235,0.3519
+769,Baŋa Wɛ ta wó pa vo-loŋo nwoŋi wɛ-puli seeni.,baŋa wɛ ta wó pa vo loŋo nɔno wopuli seeni,0.4444,0.1471
+770,O ta ma ke kampina se o ma o yale-ko o zege.,ta maa ke kampina se o ma o yaleko o zege,0.1667,0.0645
+771,Nmo ma‑n wó zwɛ te maama se te taa ye zwɛɛm kaanem te pa-ne.,maan wó zwɛ te maama se te taa ye zwɛm kaana te pan,0.3571,0.1591
+772,Chaveera laam wó di abam ye á yuu yaale.,chaveera laam wó di abam ye á yuu yaale,0.0,0.0
+773,"Foone ma tiini de ja Filisi tiina bam, pa se ba duri Isarele tiina bam yiga ne ba jage jei maama ne!",oone ma tiini de ja filisi tiina bam pa se ba duri isarele tiina bam yiga ne ba jage jei maama ne,0.0455,0.013
+774,o wó pɔpɔ o na chɔgem mo ye o bá lu de wone.,wó pɔpɔ o na chɔgem mo ye o bá lu de won,0.1538,0.0645
+775,” Nɔɔna bam ma seene ba ja sabu-seŋa zwa-kwana yam konto ba vo ba pa‑o.,ɔna bam ma seene ba ja sabuseŋa zakwana yam konto ba vo ba pa,0.2143,0.0769
+776,Ni-som nyem maa jaane chɔgem o tui.,naswonyem maa jaane chɔgem o tui,0.2857,0.1111
+777,"Kʋntʋ mʋ wʋ́ cɩ dɩbam lwarɩm wʋnɩ, nɩ nɔɔnʋ na maa ve jara yɩ o kwe luguru gɔrɔ o lɛ o ma cɩ o nyɔɔnɩ te tɩn.",konto mo wó che debam lɔre wone ne nɔɔno na maa veio jara jei ye o kwei luguru gɔrɔ o lɛ o ma che o nyɔɔno tei te,0.6296,0.35
+778,"David déem pane leiŋa kanto maŋa kalo Zifi tiina na vei Pɛ Sɔɔl tei ba ta ba bere‑o we, “David tu o seigi o tete debam tetare ne” to.",david déem pa leiŋa kanto maŋa kalo zifi tiina na vei pɛ sɔɔl tei ba ta ba bereo ba we david tu seigi o tete debam tetare ne to,0.1034,0.05
+779,Konto ŋwaane o jege se o zo gare-pale dem maŋa kalo maama o na wó zo amo tei ne to mo.,konto ŋwaane o jege se o zo garepalo dem maŋa kalo maama o na wó zo amo tei ne to nm,0.0952,0.0469
+780,ye n daare n jege n nɔɔna bam n bɛɛsa de dam.,ye n daare n jege n nɔɔna bam n bɛɛsa de dam,0.0,0.0
+781,Moses déem ma bwoŋi Bezaleli de Oholiaba dedaane gwaro telo maama Baŋa Wɛ na pɛ-ba dam ye ba boboŋa ja se ba toŋe to se ba ba.,moes déem ma bwoŋi bɛzalle de ohwulia bama dedaane garo telo maama baŋa wɛ na pɛba dam ye ba boboŋa ja se ba toŋem to se ba ba,0.2222,0.102
+782,"Amo wó pa‑m sisei morro telei, ne nmo ná wó wane n na se dira bam n ke da.",amo wó pam sise morro telei ne nmo ná wó wane n na sedira bam n ke da,0.1579,0.0189
+783,Aron de o bia bam wó yeini ba ma na bam konto mo ba se ba je de ba nɛ.,aron de o bia bam wo yeini ba ma na bam konto mo ba sɛ ba je de ba n,0.15,0.06
+784,"Nɔɔna badaara mʋ wʋra ba na paɩ ba jɩgɩ yi-pʋrʋ kʋm kʋntʋ, yɩ kʋ laan pa ba ywǝri Wɛ cwǝŋǝ kam wʋnɩ.",nɔɔna badaara mo wora ba na pae ba jege yiporo kom konto ye ko laam pa ba ywori wɛ chwoŋa kam won,0.5909,0.25
+785,"Pwa balo na zoore baŋa seeni teene dem ne to, ko ná ye delo na bwola daane to, dedaane delo na ye yiga yiga to de.",pa balo na zoore baŋa seeni teene dem ne to ko ná ye delo na bwola daane to dedaane delo na ye yiga yiga ton,0.1154,0.0349
+786,pa se o nɔne ba pwa bam o se tega ne.,a se o nɔne ba pwa bam o sene tega n,0.2727,0.1538
+787,Pa nmo de n faro wom jeini á kwɛ daane.,anmo de n faro wom jeina kwɛ daan,0.5,0.1379
+788,Puseŋ-nyena de ma chuli nɔn-ŋona bam jei.,osenyena de maa chuli nɔnŋona bam jei,0.2857,0.125
+789,A nu puga kam ya wó lɛɛre ka ji a yibeeli.,a nupuga kam ya wó lɛɛre ka ji a yibeeli,0.1818,0.0
+790,Á lage á yɔɔre á to tega ne mo á chochoge.,á lage á yɔɔre á to tega ne mo a chichog,0.1818,0.0968
+791,Venverena de ma zi nɔɔna teo kom pwooni yiga ne ba jwoŋi ba wonnu.,venverena de ma zi nɔɔna teo kom pwooni yiga ne ba jwoŋi ba wonnu,0.0,0.0
+792,Baŋa Wɛ lage o pa lunluŋu kom fɔɔre ko jwoori kwaga naba-laara yia kuni fuga mo.,an wɛ lage o pa lluŋu kom fɔɔre ko jwoori kwaga na balaara yia ko ni fuga nm,0.4375,0.127
+793,"Baŋa Wɛ déem na ŋɔɔne de Job o ti to, mo o tage de Teman tu Elifaza o we, “A bane zaŋe de nmo, de n badwonna balei bam mo.",baŋa wɛ déem na ŋɔɔne de job o ti to mo o tage de teman tu ɛlifaza o we a ba n zaŋe de nmo de n badwonna balei bam,0.1333,0.0455
+794,"O déem ma kwei sabu-seŋa na ye chekke to o kwoli ko yiga de ko kwaga maama, ye o daare o pa se sabu-seŋa kam tɔge ko nia yam.",o déem ma kwei sabuseŋa na ye chekke to o kwoli ko yiga de ko kwaga maama ye o daare o pa se sabuseŋa kam tɔge ko nia ya,0.0345,0.0108
+795,Logo baŋa jei maama nɔɔna yera tiini ya sae mo.,logo baŋa jei maama nɔɔna yera tiini ya sae nmo,0.1,0.027
+796,"” Chega to, amo wó pa se a nɔɔna bam fɔge ba na kugu jei tega kam baŋa ne se ba taa ye a tete nyem.",chega to amo wó pa se a nɔɔna bam fɔge ba na kugu jei tega kam baŋa ne se ba ta ye a tete nyem,0.04,0.0141
+797,Wolo na wó ta n yera chega to mo seene o ye n badwoŋi chekke.,wolo na wó ta n yera chega to mo seene o ye n badwoŋi chek,0.0667,0.0435
+798,Vara lara de maa taare ko maama.,vara lara de ma taare ko maama,0.1429,0.04
+799,Ba jana mo wó bugi ba tega kam maama.,ba jana mo wo bugi ba tega kam maama,0.1111,0.0357
+800,O maa we: “Amo laam jigi kagoa mo a pa Isarele tiina bam na?,o maa we amo laam jigi kagoa mo a pa isarele tiina bam n,0.0714,0.0227
+801,se á ba amo yiga ne de á wo-chechɔgɔ.,se á ba amo yiga ne de á wochechɔge,0.1111,0.037
+802,Amo yɔɔre a ni nɔɔna na jege a taane mo.,amo yɔɔre a nii nɔɔna na jege a taane m,0.2,0.0667
+803,Pa-kamuna de dwia yadwonna dedɛ mo wó di dam Babilon tiina bam baŋa ne pa se ba ji ba kabɛ.,akamuna de dwoa yadwonna dedɛ mo wó di dam babiloni tiina bam baŋa ne pa se ba ji ba kab,0.2,0.0571
+804,Ya maa wo de kwaga seeni na sale de gare-wogo kom to mo.,a maa wo de kwaga seeni na sale de garewogo konto,0.3077,0.0952
+805,Bene maama wone se á ja á kare sem wodiiru telo na lwoori yiga te ke ye te lamma to á ja á jeeri abam Tu Baŋa Wɛ wara-jei sem ne.,em maama wone se á ja á kare sem wodiiru te na lwoori yiga te ke ye te lamma to á ja á jeeri abam tu baŋa wɛ wara jei semn,0.1613,0.0619
+806,Dé daa bá di sisein-nɔɔna baŋa dé zo jara wo.,de daa bá dii sisei nɔɔna baŋa de zo jara w,0.6,0.1471
+807,Ba ma daare ba lɔɔre o jara zela yam na wo o yera ne to.,a ma daare ba lɔɔre o jara zela yam na wo o yerane t,0.2667,0.0488
+808,Daa dedoa mo wó ke dakaa kam dedaane nyea yana se ya cheili wɛɛne nenɛɛne nabea nyea tei.,daa dedoa mo wó ke dakaa kam dedaane nyea ya na se ya cheili wɛno nenɛɛne nabɛa nyea te,0.2778,0.0563
+809,Wɛ wʋ́ pa abam yu-yoŋo.,wɛ wó pa abam yuywoŋo,0.4,0.125
+810,"Ba nan maŋɩ sɩ ba kwe ba wʋbʋŋa maama ba pa Wɛ mʋ, bɛŋwaanɩ dɩntʋ mʋ yǝni DƖ pa dɩbam woŋo maama yɩ kʋ yi dɩbam, sɩ dɩ́ taá jɩgɩ wʋpolo dɩ́ di ywǝǝni.",ba nam maŋe se ba kwei ba woboŋa maama ba pa wɛ mo bɛŋwaane dento mo yeinim de pa debam ŋwoŋo maama ye ko yi debam se de ta jege wopwolo de de ywoni,0.7059,0.2768
+811,"Kokuri to, nmo pɛ se amo mo ji pɛ se a taa tei kɔ-fɔrɔ kolo ni na daga dedɛ ne tega kasolo tei to.",kokuri to nmo pɛ se amo ji pɛ se a ta tei kɔfɔrɔ kolo ni na daga dedɛ ne tega kasolo tei t,0.125,0.0556
+812,Ko maama déem ke ko tɔge nenɛɛne Baŋa Wɛ na bere Moses tei to.,ko maama déem ke ko tɔge nɛɛne baŋa wɛ na bere moses teit,0.2143,0.0625
+813,ne sabare na zwɛ ye se ji tentwarem tei to.,ne sabare na zwɛ ye se di tentreme tet,0.4,0.1818
+814,"Nmo nam ná jwoŋi sabu kom konto Isarele tiina bam tei ne, se á ta‑á ma-ko á kwɛ wara-jei sem de se totoŋa yam.",nmo nam ná jwoŋi sabu kom konto isarele tiina bam tei ne se á taá mako á kwɛ wara jei sem de sɛ totoŋa ya,0.1667,0.0244
+815,Kaane wom laam wó leeni lei ne o déem na ke tei ye o nwoŋi Ejipti teo kom ne o biini maŋa ne to.,kaane wom laam wó leeni lei ne o déem na ke tei ye o nwoŋi ejipti teo kom ne o beene maŋa na t,0.125,0.0694
+816,Ba maama jigi ne Sodom teo tiina na ye tei to mo a yiga ne.,a maama a jigine sodom teo tiina na ye tei to mo a yiga ni,0.2667,0.0682
+817,Chanfene de sea ná daga tei maama.,chan fone de sɛa na daga tei maama,0.5714,0.1111
+818,Efrayim dwi tiina bam me de jwona kaanem.,efarayim dwi tiina bam me de jwona kaana,0.25,0.0909
+819,Nɔɔna bam maa we: “Pa-na se dé jwoori dé Tu Baŋa Wɛ wom tei.,nɔɔna bam maa we pana se de jwoori de tu baŋa wɛ wom tei,0.1429,0.0465
+820,” Isarele tiina bam ma seene ba dole Baal dedaane Asetare jwona yalo na wo ba tetare ne to ba yage.,sarele tiina bam ma seene ba dole baa dedaane asetare jwona yalo na wo ba tetare ne to ba yage,0.1,0.026
+821,"Amo kwei a jworo mo a pa‑o, pa se o jege swa, de yi-poro, de yeino se ko tiini ko gaale, ye o wae o gɔgere wonnu dwi dwi.",amo kwei a jwooro mo a pao pa se o jege swa de yeporo de yeino se ko tiini ko gaale ye o wɔe o gɔgero woane dwi d,0.2069,0.093
+822,Dɛ dedwe mo Kisi bonɛ sedwonna ywori se jei.,ɛ dedwe mo ke se bonɛ sedwonna ywori se ja,0.4444,0.1429
+823,Maŋa daa ma yi se wɛyuu nɔɔna bam jeeri Baŋa Wɛ yiga ne.,maŋa daa ma yi se wɛyuu nɔɔna bam jeeri baŋa wɛ yiga n,0.0769,0.0233
+824,"” Tega na poore tetete to, nɔɔna bam ma ba ba go vara se ba ma ke zwɛɛm kaanem, ye ba kwei badaara ba ke yazura kaanem se ba di nɔna yam.",tega na poore tetete to nɔɔna bam ma ba ba go vara se ba ma ke zwɛ kaanem ye ba kwei badaara ba ke yezura kaanem se ba di nɔɔna ya,0.129,0.049
+825,o ke pɛ wolo o na kuri to lanyerane se ko taa vei wuu.,o ke pɛ wolo o na kuri to lanyerane se ko taa vei wu,0.0714,0.025
+826,"Ba na zege wara-vwei dem yiga ne konto to, mo Solomon fɔɔre o yi channa kaanem dakaa kam, ye o ke zwɛɛm kaanem kuni moro bimbini dem baŋa ne o pa Baŋa Wɛ.",a na zege wara vei dem yiga ne konto to mo solomon fɔɔre o yi chana kaanem daga kam ye o ke zwɛɛnm kaanem kuni morro bembini dem baŋa ne o pa baŋa wɛ,0.2424,0.0678
+827,"Zezi kɔgɔ kʋm zǝnzǝnnu maŋɩ sɩ o taa jɩgɩ kaanɩ dɩdʋa yɩranɩ mʋ, sɩ o daarɩ o taa waɩ o nii o biǝ dɩ o sɔŋɔ tiinǝ maama baŋa nɩ lanyɩranɩ.",ei kɔgɔ kom zeizeinnu maŋe se o ta jege kaane dedoa yerane mo se o daare o ta wae o nii o bia de o sɔŋɔ tiina maama baŋa ne lanyeran,0.6452,0.2642
+828,Amo wó jwoori a ŋwe ba keim-balwaaro tem jene se ko maŋe de ba je na ke wonnu telo to.,amo wó jwoori a ŋwe ba keimbalwaaro tem jene se ko maŋe de ba je na ke wonnu telo,0.05,0.0308
+829,"Se ko kweeli to, Babilon teo pɛ wom de maa wó nyɔ ka wone.",e ko kweeli to babilon teo pɛ wom de maa wó nyɔ ka wone,0.0714,0.0233
+830,"Nam lɔre-na we, abam ná go-ne, á go wolo na wo ke kolokolo o chɔge to mo.",nam lɔrena we abam ná goone á go wolo na wo ke kolokolo o chɔge to,0.1176,0.0577
+831,"Nɔɔnʋ yigǝ na tǝrǝ dɩ o sɔŋɔ tiinǝ, kʋ na tiini kʋ dwe dɩdɩ dɩ o tɩtɩ digǝ tiinǝ, kʋntʋ tu yagɩ Wɛ cwǝŋǝ mʋ.",nɔɔno yiga ná teira de o sɔŋɔ tiina ko na tiini ko dwoi dede de o tete diga tiina konto tu yage wɛ chwoŋa m,0.72,0.321
+832,ye ba daare ba jwoŋi kadeina nabɛ jena ŋwaane.,ye ba daare ba jwoŋi kadeinabunɛ jena ŋwaan,0.3333,0.1081
+833,"A wó che kwɛɛra yalo o na di ywoni ya baŋa ne to, ko ná maŋe ko ye kuri delo maama o na yeini o guli o di to.",á che kwɛɛra yalo o na di ywoni ya baŋa ne to ko ná maŋe ko ye kuri delo maama o na yeini o guli o di t,0.1034,0.0506
+834,"Konto wó pa se Baŋa Wɛ taa wo dé tei ne, ye o jwoŋi debam o yage dé dona bam jeŋa ne.",konto wó pa se baŋa wɛ ta wo dé tei ne ye o jwoŋi debam o yage de dona bam jeŋa ne,0.0909,0.0323
+835,Ko maama déem ke ko tɔge nenɛɛne Baŋa Wɛ ya na bere Moses tei to mo.,ko maama déem ke ko tɔge nenɛɛne baŋa wɛ ya na bere moses tei to,0.0625,0.0385
+836,Bombwaano de ga-cheiŋo de maa wó cheiŋi ba dam jei sem maama.,bam bɔɔna de gachwoŋo de ma wó cheiŋi ba dam jei sem maama,0.3333,0.1667
+837,"Kaanem tiina bam, de sampwori sem laam ma ta de teo nakwa bam, de nɔn-bia bam maama ba we, “Nɔɔno wonto maŋe se o te mo.",aanem tiina bam de sampwori sem laam ma ta de teo nakwa bam de nɔnbia bam maama ba we nɔɔno wonto maŋe se o te m,0.0769,0.0225
+838,"Moses de Baŋa Wɛ nam ya na ŋɔɔne daane to, mo o yibia tiini ka nyeena ye o yeiri ko ni ne.",moses de baŋa wɛ nam ya na ŋɔɔne daane to mo o yibia tiini ka nyeena ye o yeiri ko ni n,0.0455,0.0149
+839,dedaane gare-jale delo na wó pale wara-vwei dem ni ne to.,dedaane ne garejale doro na wó pale wara vwei dem ni nt,0.5455,0.1364
+840,"Da yam konto ne, Hezekia déem yɔɔre o weele mo ye o bwola de toone.",da yam konto ne hezekiah déem yɔɔre o weele mo ye o bwola de toone,0.0667,0.0196
+841,Pipiri-na á sɛ á Tu Baŋa Wɛ ni dem.,ipirina á sɛ á tu baŋa wɛ ni dem,0.1111,0.04
+842,Wɛ wó kwei ba wɛleera o yage o chɛ-ba.,wɛ wó kwei ba wɛleera o yage o chɛba,0.0,0.0
+843,O kwora kam maa tiini ka zaŋa de baare!,okwora kam maa tiini ka zaŋa de baare,0.2222,0.0
+844,Baŋa Wɛ maleka déem ma zaŋe ka vo Asiria jar-keira bam na tigisi mɛ to.,baŋa wɛ maleka déem ma zaŋe ka vo asiria jerekeira bam na tigisi mɛ,0.1333,0.0727
+845,"se á ta we, “Dedɛɛra yiga tu wom bɛ?",se á ta we dedɛɛra yigatu wom bɛ,0.2222,0.0
+846,"Bantʋ mʋ yɩ balʋ na kwaanɩ ba wǝli ba nii zaasɩm dɩlʋ na yɩ cɩga tɩn baŋa nɩ, nɩnɛɛnɩ ywǝ na wǝli digǝ sɩ ka yɩ vi te tɩn.",banto mo ye balo na kwaane ba woli ba nii zasem delo na ye chega tem baŋa ne nenɛɛne ywo na woli diga se ka ye vi tei to,0.6897,0.2826
+847,"Isarele tiina bam na nigi ko ŋwa to, mo foone tiini de zo-ba.",isarele tiina bam na nigi ko ŋwa to mo foone tiini de ob,0.0769,0.0435
+848,"Kʋ na yɩ ka-bwǝnǝ, n maŋɩ sɩ n kwe-ba nɩ n nakwa mʋ te dɩ wʋ-poŋo.",ko ná ye kabwona n maŋe se n kweiba ne n nakwa mo tei de wopuŋ,0.75,0.3261
+849,Nam ta pa-na se ba tiini ba gɔgere o teiŋa vovoa kam lanyerane.,nam ta pana se ba tiini ba gɔgɔre o teiŋa vovoa kam lanyeran,0.1538,0.0408
+850,O déem ma bwoŋi o bukɔ-kwea kam yere we Jemima.,o déem ma bwoŋi o bokɔkwea kam yere we jimm,0.2,0.1111
+851,Ba ma toŋe ba bwoŋi Jeroboam se o tɔge de Isarele kɔgɔ kom maama se ba vo Rehoboam tei.,a ma toŋe ba bwoŋi jerobowam se o tɔge de isarele kɔgɔ kom maama se ba vo rehuboam tei,0.1579,0.0441
+852,Baŋa Wɛ de ma sɛ wɛ-lworo kolo Job na ke ba ŋwaane to.,aŋa wɛ de ma sɛ wɛlworo kolo job na ke ba ŋwaane to,0.0769,0.025
+853,"Ba ta ma sare golesaa da-dɛɛro tena mo ba taare-se de sabu-seŋa, se gare-jale dem lei se yera ne.",ba ta ma sɔre bulesa dadɛɛro tena mo ba taarese de se buseŋa se galejale dem le se yeran,0.4211,0.1096
+854,"ye á bochara yam wone de, yazura tera.",ye á bochara yam wone de yezura tere,0.25,0.069
+855,"Nam gwoni pia kam nɔna yam yera yera, se n daare n zare ka wo-zela yam de ka nɛ sem.",nam gwoni pia kam nɔɔna yam yera yera se daare n zare ka wozola yam de ka nɛ se,0.2,0.0645
+856,ye kolokolo daa ware o ni dem konto ko chɔge.,ye kolokolo daa ware o ni dem konto ko chɔge,0.0,0.0
+857,Amo sɔŋɔ veira de a tontoŋ-kana bam maama laam nii-ne.,amo sɔŋɔ veira daa tontoŋno kaana bam maama laam niin,0.4,0.119
+858,"Ba na vɩn Wɛ kwǝrǝ kam kʋntʋ tɩn, kʋ ma pa ba na kɩ kǝm-balwaarʋ tɩlʋ maŋa maama tɩn fɔgɩ tɩ puli tɩ wǝli da.",ba na fe wɛ kwora kam konto tem ko ma pa ba na ke keimbalwaaro telo maŋa maama tem fɔge te puli te woli da,0.52,0.2683
+859,De nyoa kam de wó taa zaŋe wɛɛne mo wuu.,de nyɔa kam de wó ta zaŋe wɛɛne mo wuu,0.2,0.0667
+860,"Kokuri to, amo yei a wɛleera yam ni ne.",kokuri to amo yei a wɛleera yam ni n,0.1111,0.0345
+861,Da yarepɛ dɛ dem wó taa ye de yera mo amo ŋwaane.,aarapɛ dɛ dem wó taa ye de yera mo a ŋwaane,0.25,0.1351
+862,Sampwori sem de ma da ba to tega ne.,ampworu sem de ma da ba to tega n,0.2222,0.1111
+863,Amo wó pa se n ji a kaane ye n ta‑n wo a tei ne taa wuu.,amo wó pa se n ji a kaane ye n ta n wo a tei ne taa wuu,0.1176,0.0
+864,Nmo ná wae n dwoŋi n wola leile.,mo ná wae n dwoŋi n wola leile,0.125,0.0417
+865,Mahalafa ma lo bakeiri setɔ o pa Rehoboam.,mhalafa ma lo ba keirisetɔ o pa rehobwa,0.5,0.0882
+866,wó guri-ba chaveera wone mo.,wó guriba chaveera wone mo,0.0,0.0
+867,Kʋ nan yɩ sɩ DƖ vrɩ dɩbam ŋwɩa mʋ dɩ́ Yuutu Zezi Krisi ŋwaanɩ.,ko nam ye se de vere debam ŋwea mo de yuutu zwei yezukrista ŋwaan,0.9286,0.4043
+868,Bene dem konto ne mo Babilon teo Pɛ Nebukadeneza de déem bobo se o di o paare.,bene dem konto ne mo babilon teo pɛ nibukaniza de déem bobo se o di o paare,0.0588,0.0656
+869,Baŋa Wɛ zeini pɛ wolo o na kuri to.,baŋa wɛ zeini pɛ wolo o na kuri t,0.1111,0.0385
+870,Wara-jei sem manchwoŋo ni dem maa wo wɛ-puli seeni saŋa kam ne mo.,wara jei sem bamchwoŋi ni dem maa wo wɛ puri seeni saŋa kam namo,0.5385,0.098
+871,Ko kwaga ne o de o teo nɔɔna bam maama ma lɔ Baŋa Wɛ nia yam kwaga ne.,ko kwaga ne o de o teo nɔɔna bam maama ma lɔ baŋa wɛ nia yam kwaga n,0.0556,0.0192
+872,Ba ye balo taane na ye de yera ye á ba ni de kuri to mo.,a ye balo taane na ye de yera ye a ba ni de kuri temo,0.25,0.075
+873,Abam balo maa na nye de Gomora tiina bam to.,abam balo maa na nye de gomora tiina banto,0.2,0.0294
+874,"Ŋwɩa kam kʋntʋ mʋ Wɛ bǝŋi-m sɩ n ba n joŋi, dɩ nmʋ dɛɛn na zaŋɩ n zɩgɩ nɔn-kɔgɔ kʋm yigǝ nɩ n pa ba lwarɩ nɩ nmʋ tɔgɩ cɩga cwǝŋǝ kam tɩn.",ŋwea kam konto mo wɛ beiŋi se n ba n jwoŋi de nmo dɛm na zaŋe n zege nɔnkɔgɔ kom yiga ne n paba lɔrene nmo tɔge chega chwoŋa kam ta,0.697,0.3168
+875,kunkwon-lilirru wo o nɛ kuri ne mo.,kunkon liluru wo nɛ kuri no,0.7143,0.2222
+876,Kʋ maa paɩ ba fra zʋʋrɩ wo-yɔɔrʋ zanzan tɩlʋ na wʋ́ cɔgɩ-ba tɩn.,ko maa pa ba fera zoore woyɔoɔro zanzam telo na wó chɔgeba ta,0.7692,0.3333
+877,mini delo na bá dwei maŋa de maŋa to yiga ne?,mini delo na ba dwei maŋa de maŋa to yiga n,0.1818,0.0588
+878,"David bu Solomon déem yɔɔre o jege o paare o di teo kom maama ne mo, ye o kuri ja tega.",david bu solomon déem ywoori o jege o paare o di teo kom maama ne mo ye o kuri ja teg,0.0952,0.0769
+879,Badaara ke wo-goo mo de nɔɔna.,badaara ke wogoo mo de nɔɔna,0.0,0.0
+880,"O maŋɩ sɩ o taa waɩ o nii o sɔŋɔ tiinǝ baŋa nɩ mʋ lanyɩranɩ, sɩ o daarɩ o pa o biǝ sɛ-o dɩ zulǝ yalʋ na maŋɩ tɩn.",o maŋe se o ta wae o nii o sɔŋɔ tiina baŋa ne mo lanyerane se o daare o pa o bia sɛo de zula yalo na maŋe t,0.5517,0.2195
+881,"Ta n yɩrɩ n tɩtɩ, sɩ n daarɩ n ta n yɩrɩ n zaasɩm dɩm na yɩ te tɩn dɩ.",an yere n tete se n daare n tan yere n zagesem dem na ye tei tem d,0.75,0.3673
+882,ne wɛle-keira na maŋe ba ke tei to na?,wɛlekeira na maŋe ba ke tei to n,0.2222,0.1071
+883,"Nɔɔna bam nam ná nɛ kunkwoŋo kom konto, ba wó yeini ba zege ba vwoa yam nia ne mo, ye ba chɔɔle tega ne ba zuli Wɛ.",nɔɔna bam na nɛ kunkoŋoo konto ba wó yeini ba zege ba vwoa yam nia ne mo ye ba chɔɔle tega ne ba zuli wɛ,0.1481,0.0698
+884,Á laam ma‑á go sampwori selo a na toŋe abam tei ne to.,a laam ma go sampwori selo a na toŋe ba tei ne t,0.3077,0.125
+885,Bɛ nyenyego mo abam wó kwei á maŋe ded‑o?,bɛ nenego mo abam wó kwei á maŋe dedo,0.1111,0.0645
+886,Ba na kwei talwoŋ-ywoŋa kam konto ba pa amo to ŋwaane mo ka ye wose.,ba na kwei ta linywoŋa kae konto ba pa nm to ŋwaane mo ka ye wo s,0.4,0.1346
+887,A kwei o maama a ke n dam kuri ne.,a yage chwoŋa se o na chɔgem kafɛ ŋwaane de ko de job ta zege de o chega mo ne,1.7,1.9167
+888,"” Ba ta maa we, “Pa-na se dé toŋe nɔɔna se ba vo Siloo ba ja Wɛ ni-gwonim dakaa kam ba ba ywo-seeni.",ba ta maa we pana se de toŋe nɔɔna se ba vo silo ba ja wɛ nigwonim daa kam ba ba ywoseeni,0.1364,0.0563
+889,ba tɔre mini ba ma zwɛ kaanem dem konto.,libanɔnvara bam muri se ba kweiba ba ma ke zwɛɛm kaanem ko teeni dem de ma muri se ba ma dedɛ sem ba tɔre mini ba ma zwɛ kaanem dem konto,2.4444,2.4516
+890,Baŋa Wɛ daa ma ta de Moses o we: “Pa se ba jeeli Isarele baara bam ni se n lɔre ba na mae tei.,aŋa wɛ daa ma ta de moses o we pa se ba jeeli isarele baara bam ni se n lɔre ba na ma te,0.125,0.0441
+891,"Wonnu tem mo tento: Wara-vwei dem, de ni-gwonim dakaa kam, de wɛleera saarem ni-pugu kom na kwoli-ka to, dedaane wonnu telo maama na pae se vwei dem lamma to mo konto.",wonnu tem mo tento wara vwei dem de nigwonim daka kam de wɛleera saarem ne pugu kom na kwolika to dedaane wonnu telo maama na pae se vwei dem lamma to mo konto,0.1613,0.0156
+892,"Josia bu Jehoyakim déem na bobo se o di Judah teo paare to, mo kwora kanto tu Jeremia tei.",josia bu johiyakeim de na bobo se o di judah teo paare to nmo kwora kanto tu jeremiah te,0.2632,0.1143
+893,á nyɔ Naili buga na bam?,anyɔ naeli buga na ba,0.6667,0.1667
+894,"Pɛ wom we: Yé sɛ-na se Hezekia taa jege abam o gana, se o bá wane abam o jwoŋi o yage!",ɛ wom we yé sɛna se hezekiah ta jege abam o gana se o bá wane abam o jwoŋi o yage,0.1429,0.0484
+895,"Ko ná ye teo kolo na ye a tete nyem to, amo bobo banto baŋa ne mo se a pa ba na chɔgem.",o ná ye teo kolo na ye a tete nyem to amo bobo banto baŋa ne mo se a pa ba na chɔge,0.087,0.0317
+896,ye wonto Jworo kom mo lage ko la-te ko ja jeeri daane.,e wonto jworo kom mo lage ko late ko ja jeeri daane,0.0833,0.0244
+897,Job ma leiri o we: “Fɔge á cheigi-na taane delo a na jege se a ta to.,jɔb ma leiri o we fɔgeá cheigina taane delo a na jege se a ta t,0.2353,0.0408
+898,Pɛ Rehoboam déem jwoŋi dam mo ye o paare dem kuri ja tega.,ɛrhubn déem jwoŋi dam mo ye o paare dem kuri jatega,0.3077,0.1333
+899,"Amo tete mo wó tɔge a dam baŋa ne a toŋe wo-kamunnu ye a kwaare jara de abam, a bane na tiini de fuli á baŋa ne to ŋwaane.",amo tete mo wó tɔge a dam baŋa ne a toŋe wokamunu ye á kwaare jara de abam a bane na tiini de fuli á baŋa ne to ŋwaan,0.1034,0.033
+900,Nmo maŋe n ni Asiria teo pwa bam na toŋe tei de logo baŋa teene maama to.,nmo maŋe n ni asiria teo pwa bam na toŋe tei de logo baŋa teene maama to,0.0,0.0
+901,Ba laam ma toŋe kwora se ka yi Filisi tiina teene dem maama we ba di Sɔɔl.,ba laam ma toŋe kwora se ka yi filisi teene dem maama we ba di sɔɔ,0.1176,0.1053
+902,"Amo bu, ta‑n kɔre Baŋa Wɛ de pɛ.",bu ta n kɔre baŋa wɛ de,0.5,0.2273
+903,Baŋa Wɛ tete ni taane mo o déem nam popone de o jeŋa.,baŋa wɛ tete ni taane mo o déem nam popone de o cheŋa,0.0769,0.05
+904,Abam ta nye de bona-kana kalo na wo kagoa yuu ne.,abam ta nye de bonakana kalo na wo kagoa yuu ne,0.0,0.0
+905,"Konto wó pa se foone daa yé ja a nɔɔna bam, ye ba wolowolo de bá jei.",konto wó pa se foone daa ye ja a nɔɔna bam ye ba wolowolo de ba jee,0.1765,0.0588
+906,"Moses ma zege peo kom yuu ne o tu nɔɔna bam tei, ye o zei kandwa-pelɛ sem Wɛ ni-gwonim dem botara na popone da to.",moses ma zege peo kom yuu ne o tu nɔɔna bam tei ye o zei kandwa pelɛ sem wɛ nigwonim dem botara na popone da t,0.12,0.0116
+907,"Ba wʋ maŋɩ sɩ ba tiini ba kwɛ ba yum ba ja gaalɩ, naa ba zuli ba tɩtɩ dɩ nɩnwaŋa wǝǝnu, kʋ na yɩ sǝbu-sɩŋa naa kandwa-ŋʋna naa gwaarʋ tɩlʋ sǝbiǝ na damma tɩn.",ba wo maŋe se ba tiini ba kwɛ ba yum ba ja gale naa ba zuli ba tete de nenɔŋa wonnu ko ná ye sabuseŋa naa kandwaŋona naa gwaaro telo sabvia na damma te,0.5,0.225
+908,A wó ta de wɛyuu kunkwonnu tem se te pa doa taa nena tega kam baŋa ne.,á ta de wɛyuu kunkwonnu tem se te pa doa taa nena tega kam baŋa n,0.1765,0.0755
+909,"Ba na jaane Wɛ ni-gwonim dakaa kam ba yi ba tigisim dem jei ye Isarele tiina bam na-ka to, mo ba déem tiini ba chwoosi wɛ-wɛ pa se tega kam maama ziziŋi.",a na jaane wɛ nigwonim daga kam ba yi ba tigisim dem jei ye isarele tiina bam naaka to mo ba déem tiini ba choose wɛ wɛ pa se tega kam maama ziziŋi,0.1875,0.0513
+910,"Ta ke-na sabu-seŋa kwana yalei á meeli-ya dakaa kam sɛ selei sem ne, se ya maŋe de ka nia yam kuri seeni.",akena se buseŋa kwana yalei á meeliya dakaga kam sɛ selei sem ne se ya maŋem de ka nia yam kuri seen,0.2727,0.0633
+911,"Kokuri to, á lɔge á Tu Wɛ wom kwaga ne.",kokuri to á lɔge á tu wɛ wom kwaga n,0.1,0.0357
+912,"” Ba ma leiri ba we, “Abam ná lage á toŋe Isarele tiina Wɛ dem dakaa kam se ka jwoori ka na nwoŋi mɛ to, ko nam ye se á toŋe-ka dedaane pɛɛre mo.",a ma leiri ba we abam ná lage á toŋe isarele tiina wɛ dem daka kam se ka jwoori ka na nwoŋi mɛ to ko nam ye se á toŋeka dedaane pɛɛre mo,0.0606,0.0189
+913,"Kʋ yɩ cɩga mʋ, á sɩɩnɩ á soe á ko-biǝ balʋ maama na zʋʋrɩ Masɩdʋanɩ tɩɩnɩ dɩm nɩ tɩn.",ko ye chega mo á seene á swoi á kwo bia balo maama na zoore ma sedwane teene dem na te,1.0,0.4531
+914,"Ko kwaga seeni, a tontoŋeno Job wó lwoori-ne o pa abam.",ko kwaga seeni ye a tonpwoŋeno job wó lwoorine o pa aba,0.2727,0.119
+915,"Aron nam ná tega, se á tiŋi o kaanem gwaaro tem se te taa cheigi o bu wolo na wó leiri o yuu ne o ji kaanem nakwe tu to.",aron nam ná tega se á tiŋi o kaanem gwa o tem se te taa cheigi o bu wolo na wo leiri o yuu ne o ji kaanem nake,0.2,0.0899
+916,Kago-vara tete de keeri mo ba jare nmo.,ka go vara tete de keeri mo ba jare mo,0.5,0.0333
+917,Ba ma vo ba ja Yuria ba jwoori ba vo ba ke Pɛ Jehoyakim jeŋa ne.,ba ma vo ba ja yuuria ba jwoori ba vo ba ke pɛ jehayakenjeŋa n,0.25,0.1042
+918,"Nan dɩ kʋ dɩ, dɩ́ Tu Wɛ pɛ dɩbam pu-dɩa sɩ dɩ́ tɔɔlɩ DƖ kwǝr-ywǝŋǝ kam dɩ́ brɩ abam dɩ baarɩ.",nam de ko de dé tu wɛ pɛ debam pudɛa se de tɔɔle de kwori ywoŋa kam dé bere abam de baare,0.8095,0.303
+919,"Nam ja pi-bea kadwoŋi kam n nwoŋi, se Aron de o bia bam laam kwei ba je ba daŋe ka yuu ne.",nam ja pibia kadwoŋa kam n nwoŋi se aron de o bia bam laam kwei ba je ba dane ka yuu,0.1818,0.0758
+920,Mo kokuri nɔɔna bam konto bá dáane ye ba jei.,mo kokuri nɔɔna bam konto bá daane ye ba jei,0.1,0.0286
+921,"Dɩ́ ko-biǝ-ba, kʋlʋ na daarɩ tɩn, dɩ́ loori abam dɩ́ Yuutu Zezi ŋwaanɩ sɩ á da cwǝŋǝ sɩ kʋ poli Wɛ wʋ.",dé kwo bia ba kolo na daare te de lwoori abam de yuutu zeozim ŋwaane se á dae chwoŋa se ko pwoli wɛ,0.9091,0.3425
+922,pa o beeri nɔn-ŋom de o sɔŋɔ tiina se o de chɔge to.,pa o beeri nɔnŋom de o sɔŋɔ tiina se o de chɔge t,0.0769,0.0263
+923,Job ta ma ta o we: “Bɛŋwaane mo Dam-fɔrɔ Tu Wɛ wom wo kwei maŋa o tiŋi.,ob ta ma ta o we bɛŋwaane mo damfɔrɔ tu wɛ wom wo kwei maŋa o tiŋi,0.0588,0.0196
+924,Wʋntʋ doŋ tiini o lagɩ sɩ o taa magɩ kantɔgɔ mʋ wǝǝnu tɩlʋ na ba jɩgɩ kuri tɩn baŋa nɩ.,wonto dwoŋi tiini o lage se o ta mage kantɔgɔ mo wonnu telo na ba jege kuri tem baŋa n,0.6,0.2687
+925,nywoŋ-kuri de kunkworru na zoore to.,nyoŋkuri de kunkworru na zoore t,0.3333,0.069
+926,"Ba ta ma kwei-ka ba ke zwɛɛm kaanem dakaa kam, de ka tetare luu kom, de ka yera zela yam maama.",a ta ma kweika ba ke zwɛɛmkaanem dakaa kam de ka tetare luu kom de ka yera zola yam maam,0.2381,0.0423
+927,N ta daare n yage a wɛleera yam maama n chɛ-ne.,n ta daare n yage awɛleera yam maama n chɛ ne,0.3636,0.0
+928,Nam cheigi taane delo a na jege se a pa nmo de nɔɔna banto maama to.,am cheigi taane delo a na jege se a pa nmo de nɔɔna banto maama,0.125,0.0577
+929,"Kokuri to, Baŋa Wɛ mo wó jwoŋi debam o yage.",kokuri to baŋa wɛ mo wó jwoŋi debam o yage,0.0,0.0
+930,Wolo na teege o tete yeino baŋa ne to ye jworo mo.,wolo na teege o tete ywonio baŋa ne to ye jworo m,0.1667,0.1053
+931,o la o ke tetɔgɔ wone.,o maŋe wɛyuu kom maama o ti wɔ nam mo wó wane tega kasolo kom maama o la o ke tetɔgɔ wone,2.6667,3.25
+932,"O ma vo o jei chwoŋa ni ne, se o cheigi o ni jara-keim dem taane.",o ma vo o jei chwoŋa ni ne se o cheigi o ni jarakeim dem taane,0.0,0.0
+933,Baŋa Wɛ maa we: “Amo déem na bobo a na Isarele tiina bam to.,aŋa wɛ maa we amo déem na bobo a na isarele tiina banto,0.2143,0.0455
+934,Abam tɩtɩ maŋɩ á ye nɩ dɩbam maŋɩ sɩ dɩ́ na yaara yam kʋntʋ doŋ mʋ.,abam tete maŋe á yeine debam maŋe se de na yaara yam konto dwoŋi,0.75,0.3
+935,pa se se taa chaka de wopwolo.,a se se ta chekka de wopwol,0.5714,0.2174
+936,Ba nam nii-ya pa ya ye wo-veiro mo ba tei ne.,ba nam niiya pa ya ye wovero mo ba tei n,0.1818,0.0625
+937,Yini-gwia nam wó ja wolo na kare o toŋe wo-yɔɔro to.,yinugwia nam wó ja wolo na kare o toŋe woyɔɔro to,0.0909,0.0256
+938,O ta maa kare wɛyuu siseina yam ne o via.,o ta maa kare wɛyuu siseina yam ne o via,0.0,0.0
+939,Boŋe n nii n kwo Josia na ye tei to.,boŋe nii n kwo josia na ye tei t,0.2,0.0769
+940,Wɛ nam ya mo mɛ o tete jeŋa o popone o ni-gwonim dem botara ya baŋa ne.,wɛ nam ya mo mɛ o tete jeŋa o popone o nigwonim dem botara ya baŋa ne,0.0,0.0
+941,Kotu ba sɛ se o pini nɔɔna se o ma o duni.,o tu bá sɛ se o peini nɔɔno se o ma o duni,0.4167,0.1333
+942,Nɛ setɔ maa wo jazem baŋa ne ye setɔ wo jagwia baŋa ne.,nɛ setɔ maa wo jazem baŋa ne ye setɔ wo jagwia baŋa,0.0769,0.0476
+943,"Jakob dwi dem, a lage a pa se nmo ji ne.",jakob dwi dem a lage a pa se nmo ji ne,0.0,0.0
+944,Ka-tola kam ye vole delo ni na ye voloa to mo.,katola kam ye volo delo ni na ye voloa to,0.1818,0.0882
+945,Ba bá wane abam ba woli de fenfee de.,ba bá wane abam ba woli de fenfee de,0.0,0.0
+946,"Tega ná yi, ba ban-zɔŋɔ kom guguli mo.",tega ná yi ba banzɔŋɔ kom gugulim,0.25,0.0357
+947,Ta-na se nɔɔna bam jeeri ba vɔ ni Wɛ ŋwaane!,taana se nɔɔna bam jeeri ba vɔ ni wɛ ŋwaane,0.1,0.0303
+948,Ba ta swoi se ba taa kwei kekan-wogila ba pae ba jwona.,ba ta swoi se ba ta kwei kenkanwɔgela ba pae ba jwon,0.25,0.119
+949,"Tega na poore to, ba ma na we ba jei sem su de twa yerane mo.",tega na poore to ba ma nae we ba jei sem su de toa yerane mo konto baŋa ne m,0.375,0.3182
+950,O ma lɛɛre o jege Isarele teo paare dem o di.,o ma lɛɛre o jege isarele teo paare dem o di,0.0,0.0
+951,ko ye n na kɔre‑o to ŋwaane mo na?,ko ye n na kɔreo to ŋwaane mo n,0.1111,0.0417
+952,Dáane mo Baŋa Wɛ laam wó taa ye dé Dam Tu.,dáane mo baŋa wɛ laam wó taa ye de dam t,0.1818,0.0645
+953,"Maŋa kalʋ na maŋɩ tɩn na yiǝ, Wʋpolo Tu Baŋa-Wɛ dɩlʋ yɩranɩ na yɩ dam-fɔrɔ tu tɩn laan wʋ́ pa Zezi Krisi joori o ba.",maŋa kalo na maŋetem ná yia wopwolo tu baŋa wɛ delo yerane na ye damfɔrɔ tu tem laam wó pa zɛzikise jwoori o b,0.72,0.2529
+954,"Wolo ná toŋe de dɛ dem konto ne, se á go kotu.",wola toŋe dedɛ rem konto ne se á go kontu,0.5,0.1515
+955,Baŋa Wɛ de nam bá wane o vere Jerusalem o yage amo jeŋa ne.,baŋa wɛ de nam bá wane o vere jerusalem o yage amo jeŋa n,0.0714,0.0222
+956,ye á daare á dole ŋwe-choa á jare Tabora peo kom yuu maama.,ye á daare á dole ŋo chwa á jare tibwora peo kom yuu maama,0.2308,0.1111
+957,Ya dedɔrem baŋa ye jatwogo de noa ni maŋem kuni fintɔ.,a dedaarem baŋa ye jei tɔgo de nwani maŋa funifent,0.8182,0.3023
+958,Á swoi se á ta‑á jwoŋa kabworim kikia sabu.,á swoi se á taá jwoŋa ka bworim kikia sabu,0.2222,0.0
+959,"Ka dedɔrɔ baŋa maa ye jatwogo de noa ni maŋem belei de chichworo, ka kayɔlɔ baŋa de maa ye jatwogo de noa ni maŋem dedoa de chichworo.",kadedɔrɔ baŋa maa ye jatɔgo de nwni maŋa belei de chchworo kakayaleo baŋa de maa ye jatɔgo de nwoni maŋa dedoa de chichwor,0.5185,0.1604
+960,Siseiŋa maa yeigi de lu-nyenno sabu-dala bi de finnu .,siseiŋa maa yeigi de lonyeno sabudala bi de finnu,0.1111,0.0476
+961,a lage a ma ŋwe-choa mo a che-ba a ja ne zuna tei.,lage a ma ŋwe choa mo a cheba a jane zuna tei,0.3846,0.0286
+962,"Nɔɔna bam laam maa ná nwoŋi Judah teene dem maama wone ba ba ba zo da se ba zuli amo Baŋa Wɛ, se n ta kwora kanto maama n bere-ba.",nɔɔna bam laam maa ná nwoŋi judah teene de maama wone ba ba ba zo da se ba zuli amo baŋa wɛ se n ta kwora kanto maama n bere ba,0.1,0.0102
+963,"Wɛ ma leiri Solomon o we, “Nmo boboŋa yam lana dedɛ.",wɛ ma leiri solomon o we nmo boboŋa yam lana dedɛ,0.0,0.0
+964,Ba tega kam wó taa tigi yɔɔ yerane mo.,ba tega kam wó ta tigi yɔɔ yerane m,0.2222,0.069
+965,"Nɔɔno mo tage o we, “Ta‑n tɔɔle n yaga!",ɔɔno mo tage o we ta n tɔɔle n yaga amo de ma bwei,0.7778,0.4444
+966,ko jeeri bwolo kolo na wo ko kuri ne to.,ko jeeri bwolo kolo na wó kurine t,0.5,0.1333
+967,O ma kwei-se o tore kwana yana yam na wo dakaa kam sɛ sem ne to.,o ma kwei se o tore kwana yana yam na wo da kaa kam sɛ sem net,0.375,0.0213
+968,o maŋe o ke o jaguli ne?,yeini o kalese o vei mɛmɛ mo wɔ mo wane naneo nafaaro tem o maŋe o ke o jaguli n,2.0,2.7059
+969,"Daa‑n ja pi-bea dedoa n nwoŋi, se Aron de o bia bam kwei ba je ba daŋe ka yuu ne, se n laam go-ka n daare n kwei ka jana bam n zezage kaanem dakaa kam sɛ sena sem maama ne.",aa n ja pibia dedoa n nwoŋi se aron de o bia bam kwei ba jei ba daŋe ka yuu ne sinlaam ko ka n daare n kwei ka jana bam n zezege kaanem da kakamsɛsena sem maama n,0.3415,0.0635
+970,"Tete dem konto mo Wɛ veere o tete ded‑o, ye o we, “Solomon, lwoori n na lage kolo maama to, se amo wó pa‑m”.",tete dem konto mo wɛ viere o tete dedo ye o we solomon lwoori n na lage kolo maama to se amo wó pa,0.0833,0.0263
+971,Amo wó waare ba maama chwei selo ba na tɔge to ŋwaane.,amo wó waare ba maama chwei selo ba na tɔge to ŋwaane,0.0,0.0
+972,"O na joori o ba, yɩ dɩ́ na ŋwɩ naa dɩ́ na tɩga, dɩ́ ta wʋ́ na ŋwɩa dɩd-o Wɛ tee nɩ.",o ná jwoori o ba ye de ná ŋwe naa de ná tega dé ta wó na ŋwea dedo wɛ tei n,0.6818,0.2778
+973,O ma beeri nɔn-wo-korro o de o kwaga ne pa ba vo ba dwoni de Solomon bu Rehoboam.,o ma beeri nɔno wokororo o de o kwaga ne pa ba vo ba dwoni de solomon bwoori hoboa,0.2222,0.1148
+974,"á na-bale, de pipeili, de bo-bwaalo jana balo.",á na bale de pipeili de bobwalo jana balo,0.375,0.0294
+975,Hezekia lwoori wolim Baŋa Wɛ tei ne.,hizekiah lwoori wolim baŋa wɛ tei n,0.2857,0.1034
+976,"Bɛŋwaanɩ, Wɛ dɛɛn na kɩ nabiinǝ tɩn, DƖ kɩ Adam mʋ yigǝ, yɩ DƖ laan daarɩ DƖ kɩ Awa.",bɛŋwaane wɛ dɛɛm na ke nabiina tam de ke ádam mo yiga ye de laam daare de ke awɛ,0.8947,0.2903
+977,Dáane ba bá taa kwei sana ba ke pɛɛra.,dáane ba bá ta kwei sana ba kepɛɛr,0.3333,0.069
+978,Ko ye o tɔge Baŋa Wɛ yere ŋwaane mo o ŋɔɔne de debam.,ko ye o tɔge baŋa wɛ yere ŋwaane mo o ŋɔɔne de debam,0.0,0.0
+979,"O ná di o ti, kolokolo daa ba daara.",mo ná di o ti kolokolo daa badaare,0.3333,0.0769
+980,"Dɩntʋ mʋ lagɩ sɩ nɔɔna maama na vrɩm, sɩ ba kwǝri ba lwarɩ kʋlʋ na yɩ cɩga tɩn.",dento mo lage se nɔɔna maama ná verem se ba kwori ba lɔre kolo na ye chega t,0.7222,0.3333
+981,Abam nam ná tiini á ware-ne á dáane tei maama de.,abam nam ná tiini á warene á daane tei maama de,0.0909,0.027
+982,"Ba ta ma kwei gare-fefale de gare-ŋone selo nyenyero na ye nazwon-pupwia, de nasoŋ-pupwia, de nasoŋo chwɛ-chwɛ to ba ma sɔ gare-jale delo na wó che Wɛ di-yun-gala kam to.",a ta ma kwei gare fefale de gareŋom selo nyenyero na ye nazwoŋ pupwia de nasoŋo pupuia de nasoŋo chwɛ chwa to ba ma sɔ gajale delo na wó che wɛ dii yuu gala kant,0.5,0.1
+983,"Pa-na dɩ́ taá jɩgɩ wʋ-dɩdʋa dɩ Zezi, sɩ dɩ́ taá soe daanɩ.",fana dé ta jege wodedoa de zweizi se dé tɛ swoi daane,1.0,0.439
+984,Baŋa Wɛ ban-lom dem na zaŋe to ŋwaane.,baŋa wɛ banlom de na zaŋe to ŋwaane,0.125,0.0345
+985,ye o daare o ma lu-nyenno o gɔgere de maama.,ye o daare o ma lui nyeno o gɔgere de maama,0.2,0.0606
+986,Laam pa se wolo na yei terale keim lanyerane to gwaane-te daane.,aam pa se wolo na yei terale keim lanyerane to wanano ta daan,0.3333,0.1176
+987,Nɔn-balɔrɔ wɛleera jigi da-bunnu mo ya gare‑o pa o to.,nɔnbalɔre wɛleera jigi dabunnu mo ya gareo pɔt,0.4,0.0976
+988,Te yɔɔre te dae ba ke ni ne.,e dwonna tiini te lana te temtem ba lana te yɔɔre te dae ba ke ni,1.25,1.7
+989,Nmo ta ma‑n tɛ we nmo yei amo wo ye a kikia su n yi.,nta ma n tɛ we n yi nmo wo yan kekeyezu n y,0.7333,0.3889
+990,kolo ŋwaane pɛɛra daa tera se ba ma zuli Baŋa Wɛ.,kolo ŋwaane pɛɛra daa tera se ba ma zuli baŋa wɛ,0.0,0.0
+991,"O ta maŋɩ sɩ o taa yɩrɩ o tɩtɩ, sɩ o taa waɩ o tɩtɩ o jaana nɩ kʋ na maŋɩ te tɩn.",o ta maŋe se o ta yere o tete se o taa wae o tete o jaana ne ko na maŋe tei,0.5652,0.2982
+992,o dam-fɔrɔ kom na dwoi woŋo maama to ŋwaane.,odamfɔrɔ kom na dwoi woŋu maama to ŋwaane,0.3333,0.0294
+993,"Dɩbam nan ye nɩ, Wɛ na pɛ DƖ cullu tɩm tɩn, DƖ wʋ pɛ-tɩ nɔn-ŋʋna ŋwaanɩ.",debam nam yeini wɛ na pɛ de chullu tem to de wo pɛ te nɔnŋona ŋwaan,0.875,0.2692
+994,"Ahisamaki bu Oholiaba de maa wora, o na nwoŋi Dan dwi dem wone to.",ayisama ke bu ohuliaba de maa wora o na nwoŋi daan dwi dem wont,0.4286,0.1176
+995,"Ya maa wo ko teiŋa vovoa kam baŋa seeni, gare-yia yam na twoŋi daane mɛ to.",a maa wo ko teŋa vo voa kam baŋa seeni gareyia na twoŋi daa mɛ t,0.4375,0.1404
+996,Asiria teo pɛ ke chichuŋu de Judah tiina.,asiria teo pɛ ke chichuŋu de judah tiin,0.125,0.0303
+997,ye chilibugu mo ba kwei ba lwo da.,ye chelibugu mo ba kwei ba lora,0.375,0.1154
+998,Nam lɔɔre-na á yera wo-nyenno se Wɛ laam lɔre o na wó ke abam tei to.,nam lɔɔrena á yera wonyenmo tem se wɛ laam lɔre o na wó ke abam teit,0.25,0.098
+999,"Se ko ná ye nɔɔna bam, ba ta yɔɔre ba jaane wo-ywoŋo pɛɛra mo ba tui Moses tei dɛ maama zezeŋa ne, ye ya laam tiini ya gaale.",ko ná ye nɔɔna bam ba ta yɔɔre ba jaane woywoŋo pɛɛra mo ba tui moses tei dɛ maama se zeŋa ne ye ya laam tiini ya gaale,0.1071,0.0319
