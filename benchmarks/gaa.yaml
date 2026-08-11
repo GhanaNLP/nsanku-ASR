@@ -5,6 +5,27 @@ categories:
 - finance
 - jw
 benchmarks:
+- model: GhanaNLP/khaya-asr-v3
+  model_url: https://translation-api.ghananlp.org/
+  owner: GhanaNLP
+  model_class: non-llm
+  params: API
+  wer: 0.648
+  cer: 0.2986
+  per_category:
+    finance:
+      wer: 0.8331
+      cer: 0.3567
+      samples: 1000
+      valid: 977
+      avg_seconds_per_sample: 0.36
+    jw:
+      wer: 0.4629
+      cer: 0.2404
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.5
+  source: evaluated
 - model: KhayaAI/w2v-bert-gaa
   model_url: https://huggingface.co/KhayaAI/w2v-bert-gaa
   owner: KhayaAI

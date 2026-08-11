@@ -5,6 +5,27 @@ categories:
 - bible
 - jw
 benchmarks:
+- model: GhanaNLP/khaya-asr-v3
+  model_url: https://translation-api.ghananlp.org/
+  owner: GhanaNLP
+  model_class: non-llm
+  params: API
+  wer: 0.3259
+  cer: 0.1947
+  per_category:
+    bible:
+      wer: 0.1901
+      cer: 0.1557
+      samples: 1000
+      valid: 999
+      avg_seconds_per_sample: 0.98
+    jw:
+      wer: 0.4616
+      cer: 0.2336
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.5
+  source: evaluated
 - model: KhayaAI/w2v-bert-nzi
   model_url: https://huggingface.co/KhayaAI/w2v-bert-nzi
   owner: KhayaAI

@@ -40,6 +40,39 @@ benchmarks:
       avg_seconds_per_sample: 2.75
   source: evaluated
   model_class: non-llm
+- model: GhanaNLP/khaya-asr-v3
+  model_url: https://translation-api.ghananlp.org/
+  owner: GhanaNLP
+  model_class: non-llm
+  params: API
+  wer: 0.7984
+  cer: 0.579
+  per_category:
+    bible:
+      wer: 0.4361
+      cer: 0.2572
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.67
+    finance:
+      wer: 1.1965
+      cer: 1.0838
+      samples: 1000
+      valid: 944
+      avg_seconds_per_sample: 0.39
+    jw:
+      wer: 0.7481
+      cer: 0.4018
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.37
+    unicef:
+      wer: 0.8128
+      cer: 0.5733
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.84
+  source: evaluated
 - model: azunre/wav2vec2large-xlsr-akan
   model_url: https://huggingface.co/azunre/wav2vec2large-xlsr-akan
   owner: azunre
