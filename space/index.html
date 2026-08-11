@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Automatic Speech Recognition benchmark for Ghanaian languages, evaluated on ghana-speech-eval. WER/CER averaged across Bible, JW, Finance, and UNICEF categories.">
 <title>nsanku ASR Benchmark</title>
 
 <style>
@@ -48,30 +49,14 @@ a:hover { text-decoration: underline; }
 /* ====== Layout ====== */
 .container { max-width: 1180px; margin: 0 auto; padding: 0 20px 72px; }
 
-/* ====== Header / Banner ====== */
-.banner {
-  background: linear-gradient(120deg, #0b3d66 0%, #1668a8 55%, #2f97e0 100%);
-  color: #fff;
-  border-radius: 0 0 var(--radius) var(--radius);
-  padding: 34px 36px 30px;
-  margin-bottom: 26px;
-  box-shadow: var(--shadow);
+/* ====== Header ====== */
+.site-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  flex-wrap: wrap; gap: 8px; padding: 18px 0 12px; margin-bottom: 20px;
+  border-bottom: 1px solid var(--border);
 }
-.banner .eyebrow {
-  font-size: 0.78rem; letter-spacing: .14em; text-transform: uppercase;
-  color: var(--accent-soft); font-weight: 600; margin-bottom: 8px;
-}
-.banner h1 { font-size: 2rem; font-weight: 700; letter-spacing: -.01em; margin-bottom: 10px; }
-.banner p { color: #dcecfb; font-size: 0.98rem; max-width: 900px; }
-.banner p strong { color: #fff; font-weight: 600; }
-.banner .links { margin-top: 16px; display: flex; gap: 10px; flex-wrap: wrap; }
-.banner .chip {
-  display: inline-flex; align-items: center; gap: 6px;
-  background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.22);
-  color: #fff; padding: 6px 12px; border-radius: 999px; font-size: 0.85rem; font-weight: 500;
-}
-.banner .chip:hover { background: rgba(255,255,255,.2); text-decoration: none; }
-.banner .chip svg { width: 15px; height: 15px; }
+.site-head h1 { font-size: 1.35rem; font-weight: 700; color: var(--text-strong); letter-spacing: -.01em; }
+.site-head .tagline { color: var(--text-muted); font-size: 0.88rem; }
 
 /* ====== Stat cards ====== */
 .stats-grid {
@@ -147,6 +132,12 @@ tbody tr:hover td:nth-child(2) { background: var(--accent-soft); }
 .badge-nonllm { background: var(--accent-hi); color: #1668a8; }
 
 .mtype { display: inline-block; padding: 1px 8px; border-radius: 4px; font-size: 0.75rem; background: var(--neutral-100); color: var(--text-muted); }
+.recipe-link {
+  display: inline-block; margin-left: 7px; font-size: 0.7rem; font-weight: 600;
+  color: var(--link); border: 1px solid var(--border-strong); border-radius: 4px;
+  padding: 0 5px; vertical-align: 1px; line-height: 1.5;
+}
+.recipe-link:hover { background: var(--accent-hi); text-decoration: none; }
 
 /* ====== Scrollbar ====== */
 ::-webkit-scrollbar { width: 9px; height: 9px; }
@@ -172,10 +163,11 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
   margin-top: 44px; text-align: center; color: var(--text-muted);
   font-size: 0.82rem; padding-top: 22px; border-top: 1px solid var(--border);
 }
+.footer .footer-links { margin-bottom: 8px; display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+.footer .footer-links a { color: var(--text-strong); font-weight: 600; font-size: 0.85rem; }
 
 @media (max-width: 600px) {
-  .banner { padding: 24px 20px; }
-  .banner h1 { font-size: 1.5rem; }
+  .site-head { flex-direction: column; align-items: flex-start; gap: 2px; }
   .filters { flex-direction: column; align-items: stretch; gap: 8px; }
   .filters select, .filters input { min-width: 100%; }
   th, td { padding: 8px 10px; font-size: 0.82rem; }
@@ -185,23 +177,10 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
 
 <body>
 <div class="container">
-  <!-- ====== Banner ====== -->
-  <div class="banner">
-    <div class="eyebrow">Ghana NLP · ASR Benchmark</div>
+  <!-- ====== Header ====== -->
+  <div class="site-head">
     <h1>nsanku ASR Benchmark</h1>
-    <p>Automatic Speech Recognition benchmark for <strong>Ghanaian languages</strong>, evaluated on the
-       <a href="https://huggingface.co/datasets/ghananlpcommunity/ghana-speech-eval" target="_blank" style="color:#fff;text-decoration:underline">ghana-speech-eval</a> dataset.
-       Models are scored per category (Bible / JW / Finance / UNICEF) and the reported WER/CER is the
-       <strong>average across categories</strong>, on up to 1000 samples each. Two tracks:
-       <strong>Non-LLM</strong> — dedicated ASR models that explicitly target the language — and
-       <strong>LLM</strong> — general multimodal models (Gemini) run across all languages.</p>
-    <div class="links">
-      <a href="https://github.com/GhanaNLP/nsanku-ASR" target="_blank" class="chip">
-        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-        GhanaNLP/nsanku-ASR
-      </a>
-      <a href="https://huggingface.co/datasets/ghananlpcommunity/ghana-speech-eval" target="_blank" class="chip">🗣️ ghana-speech-eval</a>
-    </div>
+    <span class="tagline">Automatic Speech Recognition for Ghanaian languages · evaluated on ghana-speech-eval</span>
   </div>
 
   <!-- ====== Loading ====== -->
@@ -218,9 +197,9 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
 
     <!-- ====== Tabs ====== -->
     <div class="tabs">
-      <div class="tab active" data-tab="global">🏆 Global Leaderboard</div>
-      <div class="tab" data-tab="per-lang">🌐 Per-Language</div>
-      <div class="tab" data-tab="model-status">📋 Model Status</div>
+      <div class="tab active" data-tab="global">Global Leaderboard</div>
+      <div class="tab" data-tab="per-lang">Per-Language</div>
+      <div class="tab" data-tab="model-status">Model Status</div>
     </div>
 
     <!-- ====== Tab: Global Leaderboard ====== -->
@@ -317,8 +296,14 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
 
     <!-- ====== Footer ====== -->
     <div class="footer">
+      <div class="footer-links">
+        <a href="https://github.com/GhanaNLP/nsanku-ASR" target="_blank">GitHub</a>
+        <a href="https://huggingface.co/datasets/ghananlpcommunity/ghana-speech-eval" target="_blank">ghana-speech-eval dataset</a>
+        <a href="https://github.com/GhanaNLP/nsanku-ASR/tree/main/recipes" target="_blank">Model recipes</a>
+      </div>
       <p>WER = Word Error Rate · CER = Character Error Rate · Lower is better</p>
       <p>Some models failed due to: gated repos, cuDNN compatibility (H200 Hopper), outdated generation configs, or unsupported architectures.</p>
+      <p>Each model links to its <strong>code</strong> badge → the exact inference code used to run it. Model authors can correct how their model is evaluated via a <a href="https://github.com/GhanaNLP/nsanku-ASR/tree/main/recipes" target="_blank">recipe pull request</a>.</p>
     </div>
   </div>
 </div>
@@ -403,6 +388,15 @@ function fmt(v, decimals = 2) {
 function modelLink(model, url) {
   if (!url) url = `https://huggingface.co/${model}`;
   return `<a href="${url}" target="_blank" title="${model}">${model}</a>`;
+}
+
+function recipeLink(model) {
+  const safe = model.replace(/\//g,'_').replace(/:/g,'_');
+  return `<a class="recipe-link" href="https://github.com/${REPO}/blob/${BRANCH}/recipes/${safe}.md" target="_blank" title="View inference code used to run this model">code</a>`;
+}
+
+function modelCell(model, url) {
+  return `${modelLink(model, url)}${recipeLink(model)}`;
 }
 
 function escapeHtml(s) {
@@ -678,7 +672,7 @@ function renderGlobal(data) {
     <tr>
       <td>${i+1}</td>
       <td>${LANG_NAMES[r.iso] || r.iso}</td>
-      <td>${modelLink(r.model, r.url)}</td>
+      <td>${modelCell(r.model, r.url)}</td>
       <td><span class="mtype">${r.model_type}</span></td>
       <td>${trackBadge(r.model_class)}</td>
       <td>${r.params || '—'}</td>
@@ -747,7 +741,7 @@ function renderPerLanguage(data) {
         return `
       <tr>
         <td>${i+1}</td>
-        <td>${modelLink(r.model, r.url)}</td>
+        <td>${modelCell(r.model, r.url)}</td>
         <td><span class="mtype">${r.model_type}</span></td>
         <td>${trackBadge(r.model_class)}</td>
         <td>${r.params || '—'}</td>
@@ -766,7 +760,7 @@ function renderPerLanguage(data) {
         return `
           <tr>
             <td>${i+1}</td>
-            <td>${modelLink(r.model, r.url)}</td>
+            <td>${modelCell(r.model, r.url)}</td>
             <td><span class="mtype">${r.model_type}</span></td>
             <td>${trackBadge(r.model_class)}</td>
             <td>${r.params || '—'}</td>
@@ -802,7 +796,7 @@ function renderModelStatus(data) {
         return `
           <tr>
             <td>${LANG_NAMES[r.iso] || r.iso}</td>
-            <td>${modelLink(r.model, r.url)}</td>
+            <td>${modelCell(r.model, r.url)}</td>
             <td><span class="mtype">${r.model_type}</span></td>
             <td>${trackBadge(r.model_class)}</td>
             <td>${r.params || '—'}</td>
