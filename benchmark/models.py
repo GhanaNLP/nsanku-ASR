@@ -15,6 +15,7 @@ from transformers import (
     Wav2Vec2Processor,
 )
 from .config import TORCH_DTYPE, HF_TOKEN
+from .recipes import load_recipe
 
 
 def _hf_auth_kwargs():
@@ -211,16 +212,25 @@ def _hf_login():
             pass
 
 
-def load_asr_model(model_id, device="cuda:0", recipe=None):
+def load_asr_model(model_id, device="cuda:0"):
     """Load model, auto-detecting architecture. Returns wrapper or None on failure.
 
-    `recipe` is the dict of overrides read from the model's recipe front-matter
-    (see benchmark/recipes.py). Raises with descriptive error so caller can
+    If the model has a recipe (recipes/{owner}_{model}.py) with a
+    `build_wrapper(device)`, that is used as-is — model authors can fully
+    customize inference. Otherwise the standard wrapper for the detected
+    architecture is used. Raises with descriptive error so caller can
     categorize pass/fail.
     """
-    recipe = recipe or {}
     torch.backends.cudnn.enabled = False
     _hf_login()
+
+    recipe = load_recipe(model_id)
+    if recipe is not None and hasattr(recipe, "build_wrapper"):
+        wrapper = recipe.build_wrapper(device=device)
+        if wrapper is not None:
+            print(f"    Using recipe: {recipe.__name__}.build_wrapper()")
+            return wrapper
+
     arch = _detect_arch(model_id)
     if arch == "seamless":
         # SeamlessM4T speech-to-text: these repos ship only the base seamless
@@ -228,14 +238,8 @@ def load_asr_model(model_id, device="cuda:0", recipe=None):
         raise RuntimeError("ARCH_UNSUPPORTED: SeamlessM4T ASR (no target-language code)")
     try:
         if arch == "ctc" or (arch.startswith("name:") and is_ctc_model(model_id)):
-            return CTCModel(model_id, device=device, ctc_decoder=recipe.get("ctc_decoder", "greedy"))
-        return WhisperModel(
-            model_id,
-            device=device,
-            language=recipe.get("language"),
-            task=recipe.get("task", "transcribe"),
-            initial_prompt=recipe.get("initial_prompt"),
-        )
+            return CTCModel(model_id, device=device)
+        return WhisperModel(model_id, device=device)
     except Exception as e:
         err = str(e)
         if "gated repo" in err.lower() or "403" in err:

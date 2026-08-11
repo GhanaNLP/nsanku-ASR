@@ -393,7 +393,7 @@ function modelLink(model, url) {
 
 function recipeLink(model) {
   const safe = model.replace(/\//g,'_').replace(/:/g,'_');
-  return `<a class="recipe-link" href="https://github.com/${REPO}/blob/${BRANCH}/recipes/${safe}.md" target="_blank" title="View inference code used to run this model">code</a>`;
+  return `<a class="recipe-link" href="https://github.com/${REPO}/blob/${BRANCH}/recipes/${safe}.py" target="_blank" title="Recipe used to run this model — edit it and open a PR">code</a>`;
 }
 
 function modelCell(model, url) {

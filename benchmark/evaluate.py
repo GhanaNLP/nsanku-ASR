@@ -20,7 +20,6 @@ from .dataset import load_eval_samples
 from .metrics import compute_metrics
 from .models import load_asr_model
 from .owners import filter_models
-from .recipes import load_recipe
 
 
 def load_eval_configs():
@@ -208,10 +207,7 @@ def evaluate_language(iso_code, model_filter=None, device="cuda:0"):
         print(f"\n  {'-' * 50}\n  [{model_id}] ({params})\n  {'-' * 50}")
 
         try:
-            recipe = load_recipe(model_id)
-            if recipe:
-                print(f"    Recipe overrides: {recipe}")
-            model = load_asr_model(model_id, device=device, recipe=recipe)
+            model = load_asr_model(model_id, device=device)
         except Exception as load_err:
             err = str(load_err)
             reason = ("gated_repo" if err.startswith("GATED:") else

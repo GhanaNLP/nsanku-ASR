@@ -1,52 +1,39 @@
-"""Recipe front-matter loader.
+"""Recipe loader.
 
-Each model in this benchmark has a recipe file (`recipes/{owner}_{model}.md`)
-that records the exact inference code used to evaluate it. The YAML front-matter
-block at the top of a recipe may override evaluation defaults; the benchmark
-reads it before running a model, so editing a recipe and opening a pull request
-really changes how the model is evaluated on the next run.
+Each model has a per-model recipe module `recipes/{owner}_{model}.py`. The
+module is real Python: edit it and open a pull request to change how that model
+is evaluated on the next benchmark run. By default it exposes
+`build_wrapper(device)` returning the standard wrapper; model authors can
+customize anything (subclass, custom `transcribe_batch`, LM post-processing,
+tokenizer handling, ...).
+
+A broken recipe (import error) does not kill the run: it logs a warning and
+falls back to the standard wrapper.
 """
+import importlib.util
 from pathlib import Path
 
-import yaml
-
 RECIPES_DIR = Path(__file__).resolve().parent.parent / "recipes"
-
-OVERRIDE_KEYS = ("language", "task", "initial_prompt", "ctc_decoder")
 
 
 def recipe_path(model_id: str) -> Path:
     safe = model_id.replace("/", "_").replace(":", "_")
-    return RECIPES_DIR / f"{safe}.md"
+    return RECIPES_DIR / f"{safe}.py"
 
 
-def _split_front_matter(text: str):
-    if not text.startswith("---"):
-        return None, text
-    lines = text.split("\n")
-    for i in range(1, len(lines)):
-        if lines[i].strip() == "---":
-            return "\n".join(lines[1:i]), "\n".join(lines[i + 1:])
-    return None, text
-
-
-def load_recipe(model_id: str) -> dict:
-    """Return the recipe's front-matter overrides (known keys, nulls dropped)."""
+def load_recipe(model_id: str):
+    """Import and return the model's recipe module, or None if it has none."""
     path = recipe_path(model_id)
     if not path.exists():
-        return {}
-    fm, _ = _split_front_matter(path.read_text(encoding="utf-8"))
-    if fm is None:
-        return {}
+        return None
+    name = "nsanku_recipe_" + path.stem
+    spec = importlib.util.spec_from_file_location(name, path)
+    if spec is None or spec.loader is None:
+        return None
+    mod = importlib.util.module_from_spec(spec)
     try:
-        data = yaml.safe_load(fm) or {}
-    except Exception:
-        return {}
-    if not isinstance(data, dict):
-        return {}
-    overrides = {}
-    for k in OVERRIDE_KEYS:
-        v = data.get(k)
-        if v not in (None, "", "null"):
-            overrides[k] = v
-    return overrides
+        spec.loader.exec_module(mod)
+    except Exception as e:
+        print(f"    WARN: recipe {path.name} failed to import ({e}); using defaults")
+        return None
+    return mod
