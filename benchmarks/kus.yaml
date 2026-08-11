@@ -19,6 +19,7 @@ benchmarks:
       valid: 1000
       avg_seconds_per_sample: 0.53
   source: evaluated
+  score: 0.2616
 - model: KhayaAI/w2v-bert-kus
   model_url: https://huggingface.co/KhayaAI/w2v-bert-kus
   owner: KhayaAI
@@ -34,6 +35,7 @@ benchmarks:
       avg_seconds_per_sample: 0.09
   source: evaluated
   model_class: non-llm
+  score: 0.2761
 - model: PrinceAlhassanNasamu/kusaal-whisper-small-lora
   model_url: https://huggingface.co/PrinceAlhassanNasamu/kusaal-whisper-small-lora
   owner: PrinceAlhassanNasamu

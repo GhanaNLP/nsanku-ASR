@@ -19,6 +19,7 @@ benchmarks:
       avg_seconds_per_sample: 0.07
   source: evaluated
   model_class: non-llm
+  score: 0.4634
 - model: GhanaNLP/khaya-asr-v3
   model_url: https://translation-api.ghananlp.org/
   owner: GhanaNLP
@@ -34,6 +35,7 @@ benchmarks:
       valid: 1000
       avg_seconds_per_sample: 0.48
   source: evaluated
+  score: 0.4788
 - model: CLEAR-Global/w2v-bert-2.0-clearglobal-hausa-asr-1.0.0
   model_url: https://huggingface.co/CLEAR-Global/w2v-bert-2.0-clearglobal-hausa-asr-1.0.0
   owner: CLEAR-Global
@@ -49,6 +51,7 @@ benchmarks:
       avg_seconds_per_sample: 0.06
   source: evaluated
   model_class: non-llm
+  score: 0.5482
 - model: Akashpb13/Hausa_xlsr
   model_url: https://huggingface.co/Akashpb13/Hausa_xlsr
   owner: Akashpb13
@@ -64,6 +67,7 @@ benchmarks:
       avg_seconds_per_sample: 0.02
   source: evaluated
   model_class: non-llm
+  score: 0.5667
 - model: CLEAR-Global/whisper-small-clearglobal-hausa-asr-1.0.0
   model_url: https://huggingface.co/CLEAR-Global/whisper-small-clearglobal-hausa-asr-1.0.0
   owner: CLEAR-Global
@@ -79,6 +83,7 @@ benchmarks:
       avg_seconds_per_sample: 0.27
   source: evaluated
   model_class: non-llm
+  score: 0.6227
 - model: anuragshas/wav2vec2-large-xls-r-300m-ha-cv8
   model_url: https://huggingface.co/anuragshas/wav2vec2-large-xls-r-300m-ha-cv8
   owner: anuragshas
@@ -94,6 +99,7 @@ benchmarks:
       avg_seconds_per_sample: 0.03
   source: evaluated
   model_class: non-llm
+  score: 0.6705
 - model: Mofe/xls-r-hausa-40
   model_url: https://huggingface.co/Mofe/xls-r-hausa-40
   owner: Mofe
@@ -109,21 +115,7 @@ benchmarks:
       avg_seconds_per_sample: 0.03
   source: evaluated
   model_class: non-llm
-- model: infinitejoy/wav2vec2-large-xls-r-300m-hausa
-  model_url: https://huggingface.co/infinitejoy/wav2vec2-large-xls-r-300m-hausa
-  owner: infinitejoy
-  params: '?'
-  wer: 1.1042
-  cer: 2.8679
-  per_category:
-    bible:
-      wer: 1.1042
-      cer: 2.8679
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.03
-  source: evaluated
-  model_class: non-llm
+  score: 0.6825
 - model: alphaedge-ai/whisper-large-v3-turbo-hau-16384
   model_url: https://huggingface.co/alphaedge-ai/whisper-large-v3-turbo-hau-16384
   owner: alphaedge-ai
@@ -139,6 +131,7 @@ benchmarks:
       avg_seconds_per_sample: 0.63
   source: evaluated
   model_class: non-llm
+  score: 1.0339
 - model: alphaedge-ai/whisper-large-v3-turbo-hau-32768
   model_url: https://huggingface.co/alphaedge-ai/whisper-large-v3-turbo-hau-32768
   owner: alphaedge-ai
@@ -154,21 +147,7 @@ benchmarks:
       avg_seconds_per_sample: 0.66
   source: evaluated
   model_class: non-llm
-- model: alphaedge-ai/whisper-medium-hau-16384
-  model_url: https://huggingface.co/alphaedge-ai/whisper-medium-hau-16384
-  owner: alphaedge-ai
-  params: 0.7B
-  wer: 1.7521
-  cer: 1.9085
-  per_category:
-    bible:
-      wer: 1.7521
-      cer: 1.9085
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 3.03
-  source: evaluated
-  model_class: non-llm
+  score: 1.1366
 - model: alphaedge-ai/whisper-tiny-hau-32768
   model_url: https://huggingface.co/alphaedge-ai/whisper-tiny-hau-32768
   owner: alphaedge-ai
@@ -184,21 +163,23 @@ benchmarks:
       avg_seconds_per_sample: 0.76
   source: evaluated
   model_class: non-llm
-- model: alphaedge-ai/whisper-medium-hau-32768
-  model_url: https://huggingface.co/alphaedge-ai/whisper-medium-hau-32768
+  score: 1.6802
+- model: alphaedge-ai/whisper-medium-hau-16384
+  model_url: https://huggingface.co/alphaedge-ai/whisper-medium-hau-16384
   owner: alphaedge-ai
   params: 0.7B
-  wer: 1.9369
-  cer: 1.9617
+  wer: 1.7521
+  cer: 1.9085
   per_category:
     bible:
-      wer: 1.9369
-      cer: 1.9617
+      wer: 1.7521
+      cer: 1.9085
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 3.44
+      avg_seconds_per_sample: 3.03
   source: evaluated
   model_class: non-llm
+  score: 1.8303
 - model: alphaedge-ai/whisper-base-hau-32768
   model_url: https://huggingface.co/alphaedge-ai/whisper-base-hau-32768
   owner: alphaedge-ai
@@ -214,6 +195,7 @@ benchmarks:
       avg_seconds_per_sample: 1.05
   source: evaluated
   model_class: non-llm
+  score: 1.8557
 - model: alphaedge-ai/whisper-base-hau-16384
   model_url: https://huggingface.co/alphaedge-ai/whisper-base-hau-16384
   owner: alphaedge-ai
@@ -229,6 +211,23 @@ benchmarks:
       avg_seconds_per_sample: 1.04
   source: evaluated
   model_class: non-llm
+  score: 1.8888
+- model: alphaedge-ai/whisper-medium-hau-32768
+  model_url: https://huggingface.co/alphaedge-ai/whisper-medium-hau-32768
+  owner: alphaedge-ai
+  params: 0.7B
+  wer: 1.9369
+  cer: 1.9617
+  per_category:
+    bible:
+      wer: 1.9369
+      cer: 1.9617
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 3.44
+  source: evaluated
+  model_class: non-llm
+  score: 1.9493
 - model: alphaedge-ai/whisper-tiny-hau-16384
   model_url: https://huggingface.co/alphaedge-ai/whisper-tiny-hau-16384
   owner: alphaedge-ai
@@ -244,6 +243,23 @@ benchmarks:
       avg_seconds_per_sample: 0.86
   source: evaluated
   model_class: non-llm
+  score: 1.9834
+- model: infinitejoy/wav2vec2-large-xls-r-300m-hausa
+  model_url: https://huggingface.co/infinitejoy/wav2vec2-large-xls-r-300m-hausa
+  owner: infinitejoy
+  params: '?'
+  wer: 1.1042
+  cer: 2.8679
+  per_category:
+    bible:
+      wer: 1.1042
+      cer: 2.8679
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.03
+  source: evaluated
+  model_class: non-llm
+  score: 1.9861
 - model: alphaedge-ai/whisper-small-hau-32768
   model_url: https://huggingface.co/alphaedge-ai/whisper-small-hau-32768
   owner: alphaedge-ai
@@ -259,6 +275,7 @@ benchmarks:
       avg_seconds_per_sample: 2.78
   source: evaluated
   model_class: non-llm
+  score: 2.2748
 - model: alphaedge-ai/whisper-small-hau-16384
   model_url: https://huggingface.co/alphaedge-ai/whisper-small-hau-16384
   owner: alphaedge-ai
@@ -274,6 +291,7 @@ benchmarks:
       avg_seconds_per_sample: 2.73
   source: evaluated
   model_class: non-llm
+  score: 2.6308
 - model: Cdial/hausa-asr
   model_url: https://huggingface.co/Cdial/hausa-asr
   owner: Cdial

@@ -26,6 +26,7 @@ benchmarks:
       valid: 195
       avg_seconds_per_sample: 1.21
   source: evaluated
+  score: 0.2858
 - model: waxal-benchmarking/mms-300m-waxal-dag
   model_url: https://huggingface.co/waxal-benchmarking/mms-300m-waxal-dag
   owner: waxal-benchmarking
@@ -47,6 +48,7 @@ benchmarks:
       avg_seconds_per_sample: 0.05
   source: evaluated
   model_class: non-llm
+  score: 0.4731
 - model: waxal-benchmarking/whisper-small-waxal-dag
   model_url: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-dag
   owner: waxal-benchmarking
@@ -68,6 +70,7 @@ benchmarks:
       avg_seconds_per_sample: 0.68
   source: evaluated
   model_class: non-llm
+  score: 0.5583
 - model: waxal-benchmarking/whisper-tiny-waxal-dag
   model_url: https://huggingface.co/waxal-benchmarking/whisper-tiny-waxal-dag
   owner: waxal-benchmarking
@@ -89,3 +92,4 @@ benchmarks:
       avg_seconds_per_sample: 0.43
   source: evaluated
   model_class: non-llm
+  score: 0.6816

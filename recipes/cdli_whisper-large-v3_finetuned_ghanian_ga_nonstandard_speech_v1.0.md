@@ -1,3 +1,10 @@
+---
+model: cdli/whisper-large-v3_finetuned_ghanian_ga_nonstandard_speech_v1.0
+language: null
+task: transcribe
+initial_prompt: null
+---
+
 # cdli/whisper-large-v3_finetuned_ghanian_ga_nonstandard_speech_v1.0
 
 | Field | Value |
@@ -8,7 +15,7 @@
 | **Architecture** | Whisper seq2seq (AutoModelForSpeechSeq2Seq) |
 | **Precision** | bf16 |
 | **Benchmarked languages** | gaa |
-| **Status** | passed - best avg WER 91.39% |
+| **Status** | passed - best avg WER 91.39% (avg WER+CER 65.93%) |
 
 ## Inference code used
 
@@ -18,7 +25,7 @@ This model was run with the inference code below from [`benchmark/models.py`](..
 class WhisperModel:
     """Whisper-based ASR (seq2seq). Processes samples sequentially with no_grad."""
 
-    def __init__(self, model_id, device="cuda:0"):
+    def __init__(self, model_id, device="cuda:0", language=None, task="transcribe", initial_prompt=None):
         self.model_id = model_id
         self.device = device
         torch_dtype = getattr(torch, TORCH_DTYPE) if isinstance(TORCH_DTYPE, str) else TORCH_DTYPE
@@ -38,7 +45,11 @@ class WhisperModel:
 
         self.model.config.forced_decoder_ids = None
         self.model.generation_config.forced_decoder_ids = None
-        self.gen_kwargs = {"task": "transcribe", "return_timestamps": False}
+        self.gen_kwargs = {"task": task, "return_timestamps": False}
+        if language:
+            self.gen_kwargs["language"] = language
+        if initial_prompt:
+            self.gen_kwargs["prompt"] = initial_prompt
 
         self.batch_size = resolve_batch_size(getattr(self.model.config, "params", ""))
 
@@ -75,4 +86,11 @@ class WhisperModel:
 
 ## Update this recipe
 
-If this model needs custom inference (custom tokenizer / processor, language decoding, LM post-processing, etc.) and you believe the WER above is not representative, edit this file and open a pull request at [github.com/GhanaNLP/nsanku-ASR](https://github.com/GhanaNLP/nsanku-ASR). The benchmark will use your updated recipe on the next run.
+The YAML front-matter above controls how this model is evaluated. The following overrides are supported:
+
+- `language` — force a source language (Whisper-style seq2seq)
+- `task` — `transcribe` or `translate` (seq2seq)
+- `initial_prompt` — decoder prompt text (seq2seq)
+- `ctc_decoder` — `greedy` for wav2vec2/MMS/Wav2Vec2-BERT
+
+Edit the front-matter (or the inference code notes) and open a pull request at [github.com/GhanaNLP/nsanku-ASR](https://github.com/GhanaNLP/nsanku-ASR). The benchmark reads the recipe before running a model, so the next run will use your updated recipe.

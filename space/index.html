@@ -212,7 +212,7 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
           <option value="llm">LLM (Gemini)</option>
         </select>
       </div>
-      <p style="color:var(--text-muted); margin-bottom:14px;">Best model per language — ranked by averaged WER. Individual category scores shown for transparency.</p>
+      <p style="color:var(--text-muted); margin-bottom:14px;">Best model per language — ranked by the average of WER and CER (lower is better). Individual WER/CER scores shown for transparency.</p>
       <div class="table-wrap">
         <table id="global-table">
           <thead id="global-thead">
@@ -245,6 +245,7 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
         <select id="per-type-select"><option value="All">All</option></select>
         <label>Sort:</label>
         <select id="per-sort-select">
+          <option value="avg">Avg WER+CER (best first)</option>
           <option value="wer">WER (best first)</option>
           <option value="cer">CER (best first)</option>
         </select>
@@ -287,7 +288,7 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
       <div class="table-wrap">
         <table id="ms-table">
           <thead>
-            <tr><th data-sort="language">Language</th><th data-sort="model">Model</th><th data-sort="model_type">Type</th><th data-sort="model_class">Track</th><th data-sort="params">Params</th><th data-sort="wer">WER (%)</th><th data-sort="cer">CER (%)</th><th data-sort="status">Status</th><th>Fail Reason</th></tr>
+            <tr><th data-sort="language">Language</th><th data-sort="model">Model</th><th data-sort="model_type">Type</th><th data-sort="model_class">Track</th><th data-sort="params">Params</th><th data-sort="score">Avg (WER+CER) (%)</th><th data-sort="wer">WER (%)</th><th data-sort="cer">CER (%)</th><th data-sort="status">Status</th><th>Fail Reason</th></tr>
           </thead>
           <tbody id="ms-body"></tbody>
         </table>
@@ -459,7 +460,7 @@ function parseYAML(text) {
       const m = body.match(/^(\w+):\s*(.*)$/);
       if (m) {
         const [, k, v] = m;
-        if (k === 'wer' || k === 'cer') current[k] = v === 'null' ? null : parseFloat(v);
+        if (k === 'wer' || k === 'cer' || k === 'score') current[k] = v === 'null' ? null : parseFloat(v);
         else current[k] = scalar(v);
       }
       curCat = null;
@@ -497,9 +498,10 @@ async function loadCSV() {
     return parseCSV(text).map(row => {
       const wer = row.wer ? parseFloat(row.wer) : null;
       const cer = row.cer ? parseFloat(row.cer) : null;
+      const score = wer !== null && cer !== null ? (wer + cer) / 2 : null;
       return {
         iso: row.language, model: row.model, model_type: modelType(row.model),
-        params: row.params, wer: wer, cer: cer,
+        params: row.params, wer: wer, cer: cer, score: score,
         status: row.status || (wer !== null ? 'pass' : 'fail'),
         fail_reason: row.fail_reason || '',
       };
@@ -525,18 +527,20 @@ async function loadYAMLs() {
         const data = parseYAML(text);
         for (const b of data.benchmarks) {
           if (b.per_category) Object.keys(b.per_category).forEach(c => catSet.add(c));
+          const wer = b.wer !== undefined ? b.wer : null;
+          const cer = b.cer !== undefined ? b.cer : null;
+          const score = b.score != null ? b.score : (wer != null && cer != null ? (wer + cer) / 2 : null);
           rows.push({
             iso, model: b.model, model_type: modelType(b.model),
             owner: b.owner || b.model.split('/')[0],
             model_class: b.model_class || (String(b.model).toLowerCase().includes('gemini') ? 'llm' : 'non-llm'),
             categories: (data.categories||[]).map(c=>CATEGORY_LABELS[c]||c).join(', '),
             params: b.params || '?',
-            wer: b.wer !== undefined ? b.wer : null,
-            cer: b.cer !== undefined ? b.cer : null,
+            wer: wer, cer: cer, score: score,
             per_category_raw: b.per_category || {},
             per_category_wer: fmtCategories(b.per_category),
             speed: null,
-            status: b.wer !== null && b.wer !== undefined ? 'pass' : 'fail',
+            status: wer !== null && wer !== undefined ? 'pass' : 'fail',
             fail_reason: b.error ? classifyError(b.error) : '',
             url: b.model_url || `https://huggingface.co/${b.model}`,
           });
@@ -565,9 +569,9 @@ function renderOverview(data) {
 
   // Best overall
   const passedRows = data.filter(r => r.status === 'pass' && r.wer !== null);
-  passedRows.sort((a,b) => a.wer - b.wer);
+  passedRows.sort((a,b) => a.score - b.score);
   const best = passedRows[0];
-  const bestStr = best ? `${best.model} (${LANG_NAMES[best.iso] || best.iso}) — ${(best.wer*100).toFixed(2)}%` : '—';
+  const bestStr = best ? `${best.model} (${LANG_NAMES[best.iso] || best.iso}) — ${(best.score*100).toFixed(2)}%` : '—';
 
   const stats = [
     {label:'Languages',value:totalLangs},
@@ -612,14 +616,14 @@ function renderStats(data) {
   const models = new Set(data.map(r => r.model)).size;
   const nonllm = new Set(data.filter(r => r.model_class === 'non-llm').map(r => r.model)).size;
   const llm = new Set(data.filter(r => r.model_class === 'llm').map(r => r.model)).size;
-  const best = passed.slice().sort((a,b) => a.wer - b.wer)[0];
-  const bestStr = best ? `${(best.wer*100).toFixed(1)}%` : '—';
+  const best = passed.slice().sort((a,b) => a.score - b.score)[0];
+  const bestStr = best ? `${(best.score*100).toFixed(1)}%` : '—';
   const bestSub = best ? `${best.model.split('/').pop()} · ${LANG_NAMES[best.iso]||best.iso}` : '';
   const cards = [
     {label: 'Languages', value: langs},
     {label: 'Models evaluated', value: models},
     {label: 'Non-LLM · LLM', value: `${nonllm} · ${llm}`},
-    {label: 'Best WER', value: bestStr, sub: bestSub},
+    {label: 'Best (avg WER+CER)', value: bestStr, sub: bestSub},
   ];
   el.innerHTML = cards.map(c => `
     <div class="stat-card">
@@ -636,11 +640,11 @@ function renderGlobal(data) {
   if (classFilter !== 'All') passed = passed.filter(r => r.model_class === classFilter);
   const byLang = {};
   for (const r of passed) {
-    if (!byLang[r.iso] || r.wer < byLang[r.iso].wer) byLang[r.iso] = r;
+    if (!byLang[r.iso] || r.score < byLang[r.iso].score) byLang[r.iso] = r;
   }
-  let rows = Object.values(byLang).sort((a,b) => a.wer - b.wer);
+  let rows = Object.values(byLang).sort((a,b) => a.score - b.score);
 
-  // Build dynamic headers: fixed cols + per-category WER cols + avg WER/CER
+  // Build dynamic headers: fixed cols + per-category WER cols + avg score/WER/CER
   const cats = ALL_CATEGORIES;
   const catHeaders = cats.map(c => `<th data-sort="cat_${c}">${CATEGORY_LABELS[c]||c} WER (%)</th>`).join('');
   document.getElementById('global-thead').innerHTML = `
@@ -652,12 +656,13 @@ function renderGlobal(data) {
       <th data-sort="model_class">Track</th>
       <th data-sort="params">Params</th>
       ${catHeaders}
-      <th data-sort="wer" style="border-left:2px solid var(--border)">Avg WER (%)</th>
+      <th data-sort="score" style="border-left:2px solid var(--border)">Avg (WER+CER) (%)</th>
+      <th data-sort="wer">Avg WER (%)</th>
       <th data-sort="cer">Avg CER (%)</th>
     </tr>`;
 
   const body = document.getElementById('global-body');
-  const ncols = 6 + cats.length + 2;
+  const ncols = 6 + cats.length + 3;
   if (rows.length === 0) { body.innerHTML = `<tr class="empty-row"><td colspan="${ncols}">No data</td></tr>`; return; }
 
   body.innerHTML = rows.map((r,i) => {
@@ -677,7 +682,8 @@ function renderGlobal(data) {
       <td>${trackBadge(r.model_class)}</td>
       <td>${r.params || '—'}</td>
       ${catCells}
-      <td style="font-weight:700;border-left:2px solid var(--border);color:${r.wer < 0.1 ? 'var(--success)' : r.wer < 0.3 ? 'var(--accent-hover)' : 'var(--warning)'}">${(r.wer*100).toFixed(2)}</td>
+      <td style="font-weight:700;border-left:2px solid var(--border);color:${r.score < 0.1 ? 'var(--success)' : r.score < 0.3 ? 'var(--accent-hover)' : 'var(--warning)'}">${r.score !== null ? (r.score*100).toFixed(2) : '—'}</td>
+      <td style="font-weight:600">${r.wer !== null ? (r.wer*100).toFixed(2) : '—'}</td>
       <td style="font-weight:600">${r.cer !== null ? (r.cer*100).toFixed(2) : '—'}</td>
     </tr>`;
   }).join('');
@@ -717,17 +723,18 @@ function renderPerLanguage(data) {
 
   if (sortBy === 'wer') passed.sort((a,b) => a.wer - b.wer);
   else if (sortBy === 'cer') passed.sort((a,b) => (a.cer||1) - (b.cer||1));
+  else passed.sort((a,b) => a.score - b.score);
 
   // Dynamic headers for pass table
   const catHeaders = langCats.map(c => `<th>${CATEGORY_LABELS[c]||c} WER (%)</th>`).join('');
   document.getElementById('per-lang-pass-thead').innerHTML = `
     <tr><th>#</th><th>Model</th><th>Type</th><th>Track</th><th>Params</th>
     ${catHeaders}
-    <th style="border-left:2px solid var(--border)">Avg WER (%)</th><th>Avg CER (%)</th></tr>`;
+    <th style="border-left:2px solid var(--border)">Avg (WER+CER) (%)</th><th>Avg WER (%)</th><th>Avg CER (%)</th></tr>`;
 
   // Render passed
   const passBody = document.getElementById('per-lang-pass-body');
-  const ncols = 5 + langCats.length + 2;
+  const ncols = 5 + langCats.length + 3;
   passBody.innerHTML = passed.length === 0
     ? `<tr class="empty-row"><td colspan="${ncols}">No passed models</td></tr>`
     : passed.map((r,i) => {
@@ -746,7 +753,8 @@ function renderPerLanguage(data) {
         <td>${trackBadge(r.model_class)}</td>
         <td>${r.params || '—'}</td>
         ${catCells}
-        <td style="font-weight:700;border-left:2px solid var(--border)">${r.wer !== null ? (r.wer*100).toFixed(2) : '—'}</td>
+        <td style="font-weight:700;border-left:2px solid var(--border)">${r.score !== null ? (r.score*100).toFixed(2) : '—'}</td>
+        <td style="font-weight:600">${r.wer !== null ? (r.wer*100).toFixed(2) : '—'}</td>
         <td style="font-weight:600">${r.cer !== null ? (r.cer*100).toFixed(2) : '—'}</td>
       </tr>`;
     }).join('');
@@ -784,13 +792,13 @@ function renderModelStatus(data) {
   sub.sort((a,b) => {
     if (a.iso !== b.iso) return a.iso.localeCompare(b.iso);
     if (a.status !== b.status) return a.status === 'pass' ? -1 : 1;
-    return (a.wer || 1) - (b.wer || 1);
+    return (a.score || 1) - (b.score || 1);
   });
 
   document.getElementById('ms-count').textContent = `${sub.length} rows`;
   const body = document.getElementById('ms-body');
   body.innerHTML = sub.length === 0
-    ? '<tr class="empty-row"><td colspan="9">No matching rows</td></tr>'
+    ? '<tr class="empty-row"><td colspan="10">No matching rows</td></tr>'
     : sub.map(r => {
         const reason = r.fail_reason ? classifyError(r.fail_reason) : '';
         return `
@@ -800,6 +808,7 @@ function renderModelStatus(data) {
             <td><span class="mtype">${r.model_type}</span></td>
             <td>${trackBadge(r.model_class)}</td>
             <td>${r.params || '—'}</td>
+            <td style="font-weight:700">${r.score !== null ? (r.score*100).toFixed(2) : '—'}</td>
             <td>${r.wer !== null ? (r.wer*100).toFixed(2) : '—'}</td>
             <td>${r.cer !== null ? (r.cer*100).toFixed(2) : '—'}</td>
             <td><span class="badge badge-${r.status}">${r.status}</span></td>

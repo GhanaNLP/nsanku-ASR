@@ -26,6 +26,7 @@ benchmarks:
       valid: 1000
       avg_seconds_per_sample: 0.47
   source: evaluated
+  score: 0.2248
 - model: KhayaAI/w2v-bert-dga
   model_url: https://huggingface.co/KhayaAI/w2v-bert-dga
   owner: KhayaAI
@@ -47,6 +48,7 @@ benchmarks:
       avg_seconds_per_sample: 0.05
   source: evaluated
   model_class: non-llm
+  score: 0.2408
 - model: waxal-benchmarking/mms-300m-waxal-dga
   model_url: https://huggingface.co/waxal-benchmarking/mms-300m-waxal-dga
   owner: waxal-benchmarking
@@ -68,6 +70,7 @@ benchmarks:
       avg_seconds_per_sample: 0.01
   source: evaluated
   model_class: non-llm
+  score: 0.4112
 - model: waxal-benchmarking/whisper-small-waxal-dga
   model_url: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-dga
   owner: waxal-benchmarking
@@ -89,6 +92,7 @@ benchmarks:
       avg_seconds_per_sample: 0.23
   source: evaluated
   model_class: non-llm
+  score: 0.4462
 - model: waxal-benchmarking/whisper-tiny-waxal-dga
   model_url: https://huggingface.co/waxal-benchmarking/whisper-tiny-waxal-dga
   owner: waxal-benchmarking
@@ -110,3 +114,4 @@ benchmarks:
       avg_seconds_per_sample: 0.13
   source: evaluated
   model_class: non-llm
+  score: 0.5706

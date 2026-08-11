@@ -16,8 +16,16 @@ from benchmark.evaluate import load_eval_configs
 API_DIR = Path("benchmarks_api")
 
 
+def _score(b):
+    if b.get("score") is not None:
+        return b["score"]
+    if b.get("wer") is not None and b.get("cer") is not None:
+        return round((b["wer"] + b["cer"]) / 2, 4)
+    return None
+
+
 def _rank(benchmarks):
-    return sorted(benchmarks, key=lambda x: (x.get("wer") is None, x.get("wer") or 1e9))
+    return sorted(benchmarks, key=lambda x: (_score(x) is None, _score(x) or 1e9))
 
 
 def main():

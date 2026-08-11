@@ -1,3 +1,7 @@
+---
+model: GhanaNLP/khaya-asr-v3
+---
+
 # GhanaNLP/khaya-asr-v3
 
 | Field | Value |
@@ -8,7 +12,7 @@
 | **Architecture** | Hosted API |
 | **Precision** | n/a |
 | **Benchmarked languages** | ada, bwu, dag, dga, ewe, fat, gaa, gjn, gur, hau, kus, maw, nzi, twi, xon, xsm |
-| **Status** | passed - best avg WER 7.05% |
+| **Status** | passed - best avg WER 7.05% (avg WER+CER 5.65%) |
 
 ## Inference code used
 
@@ -39,4 +43,11 @@ def _transcribe(wav_bytes, khaya_code, key):
 
 ## Update this recipe
 
-If this model needs custom inference (custom tokenizer / processor, language decoding, LM post-processing, etc.) and you believe the WER above is not representative, edit this file and open a pull request at [github.com/GhanaNLP/nsanku-ASR](https://github.com/GhanaNLP/nsanku-ASR). The benchmark will use your updated recipe on the next run.
+The YAML front-matter above controls how this model is evaluated. The following overrides are supported:
+
+- `language` — force a source language (Whisper-style seq2seq)
+- `task` — `transcribe` or `translate` (seq2seq)
+- `initial_prompt` — decoder prompt text (seq2seq)
+- `ctc_decoder` — `greedy` for wav2vec2/MMS/Wav2Vec2-BERT
+
+Edit the front-matter (or the inference code notes) and open a pull request at [github.com/GhanaNLP/nsanku-ASR](https://github.com/GhanaNLP/nsanku-ASR). The benchmark reads the recipe before running a model, so the next run will use your updated recipe.

@@ -20,6 +20,7 @@ from .dataset import load_eval_samples
 from .metrics import compute_metrics
 from .models import load_asr_model
 from .owners import filter_models
+from .recipes import load_recipe
 
 
 def load_eval_configs():
@@ -96,7 +97,7 @@ def save_benchmark(iso_code, language, categories, results):
     for r in results:
         merged[r["model"]] = r  # new result overrides
 
-    ranked = sorted(merged.values(), key=lambda x: (x.get("wer") is None, x.get("wer") or 1e9))
+    ranked = sorted(merged.values(), key=lambda x: (x.get("score") is None, x.get("score") or 1e9))
     out = {
         "iso_639_3": iso_code,
         "language": language,
@@ -207,7 +208,10 @@ def evaluate_language(iso_code, model_filter=None, device="cuda:0"):
         print(f"\n  {'-' * 50}\n  [{model_id}] ({params})\n  {'-' * 50}")
 
         try:
-            model = load_asr_model(model_id, device=device)
+            recipe = load_recipe(model_id)
+            if recipe:
+                print(f"    Recipe overrides: {recipe}")
+            model = load_asr_model(model_id, device=device, recipe=recipe)
         except Exception as load_err:
             err = str(load_err)
             reason = ("gated_repo" if err.startswith("GATED:") else
@@ -253,6 +257,7 @@ def evaluate_language(iso_code, model_filter=None, device="cuda:0"):
 
             avg_wer = round(sum(cat_wers) / len(cat_wers), 4) if cat_wers else None
             avg_cer = round(sum(cat_cers) / len(cat_cers), 4) if cat_cers else None
+            avg_score = round((avg_wer + avg_cer) / 2, 4) if (avg_wer is not None and avg_cer is not None) else None
             result = {
                 "model": model_id,
                 "model_url": model_info.get("url", f"https://huggingface.co/{model_id}"),
@@ -261,6 +266,7 @@ def evaluate_language(iso_code, model_filter=None, device="cuda:0"):
                 "params": params,
                 "wer": avg_wer,
                 "cer": avg_cer,
+                "score": avg_score,
                 "per_category": per_category,
                 "source": "evaluated",
             }

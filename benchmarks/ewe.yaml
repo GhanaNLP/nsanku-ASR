@@ -33,6 +33,7 @@ benchmarks:
       valid: 199
       avg_seconds_per_sample: 1.53
   source: evaluated
+  score: 0.2494
 - model: waxal-benchmarking/mms-300m-waxal-ewe
   model_url: https://huggingface.co/waxal-benchmarking/mms-300m-waxal-ewe
   owner: waxal-benchmarking
@@ -60,6 +61,7 @@ benchmarks:
       avg_seconds_per_sample: 0.05
   source: evaluated
   model_class: non-llm
+  score: 0.3952
 - model: waxal-benchmarking/whisper-small-waxal-ewe
   model_url: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-ewe
   owner: waxal-benchmarking
@@ -87,33 +89,7 @@ benchmarks:
       avg_seconds_per_sample: 0.89
   source: evaluated
   model_class: non-llm
-- model: dodziraynard/Shona2
-  model_url: https://huggingface.co/dodziraynard/Shona2
-  owner: dodziraynard
-  params: 0.2B
-  wer: 0.7564
-  cer: 0.2962
-  per_category:
-    bible:
-      wer: 0.6102
-      cer: 0.2097
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.34
-    jw:
-      wer: 0.8618
-      cer: 0.3303
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.28
-    unicef:
-      wer: 0.7971
-      cer: 0.3485
-      samples: 199
-      valid: 199
-      avg_seconds_per_sample: 1.23
-  source: evaluated
-  model_class: non-llm
+  score: 0.4978
 - model: dodziraynard/Shona
   model_url: https://huggingface.co/dodziraynard/Shona
   owner: dodziraynard
@@ -141,6 +117,7 @@ benchmarks:
       avg_seconds_per_sample: 0.97
   source: evaluated
   model_class: non-llm
+  score: 0.5217
 - model: dodziraynard/whisper-small-ee
   model_url: https://huggingface.co/dodziraynard/whisper-small-ee
   owner: dodziraynard
@@ -168,6 +145,35 @@ benchmarks:
       avg_seconds_per_sample: 0.92
   source: evaluated
   model_class: non-llm
+  score: 0.5257
+- model: dodziraynard/Shona2
+  model_url: https://huggingface.co/dodziraynard/Shona2
+  owner: dodziraynard
+  params: 0.2B
+  wer: 0.7564
+  cer: 0.2962
+  per_category:
+    bible:
+      wer: 0.6102
+      cer: 0.2097
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.34
+    jw:
+      wer: 0.8618
+      cer: 0.3303
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.28
+    unicef:
+      wer: 0.7971
+      cer: 0.3485
+      samples: 199
+      valid: 199
+      avg_seconds_per_sample: 1.23
+  source: evaluated
+  model_class: non-llm
+  score: 0.5263
 - model: waxal-benchmarking/whisper-tiny-waxal-ewe
   model_url: https://huggingface.co/waxal-benchmarking/whisper-tiny-waxal-ewe
   owner: waxal-benchmarking
@@ -195,6 +201,7 @@ benchmarks:
       avg_seconds_per_sample: 0.67
   source: evaluated
   model_class: non-llm
+  score: 0.7082
 - model: Mimi1782/KMEANS
   model_url: https://huggingface.co/Mimi1782/KMEANS
   owner: Mimi1782

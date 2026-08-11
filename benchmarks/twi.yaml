@@ -7,72 +7,6 @@ categories:
 - jw
 - unicef
 benchmarks:
-- model: GiftMark/akan-whisper-model
-  model_url: https://huggingface.co/GiftMark/akan-whisper-model
-  owner: GiftMark
-  params: 0.2B
-  wer: 0.7941
-  cer: 0.4215
-  per_category:
-    bible:
-      wer: 0.66
-      cer: 0.3097
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 1.0
-    finance:
-      wer: 0.8515
-      cer: 0.4302
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.29
-    jw:
-      wer: 0.7601
-      cer: 0.3153
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.78
-    unicef:
-      wer: 0.9048
-      cer: 0.6306
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 2.75
-  source: evaluated
-  model_class: non-llm
-- model: GhanaNLP/khaya-asr-v3
-  model_url: https://translation-api.ghananlp.org/
-  owner: GhanaNLP
-  model_class: non-llm
-  params: API
-  wer: 0.7984
-  cer: 0.579
-  per_category:
-    bible:
-      wer: 0.4361
-      cer: 0.2572
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.67
-    finance:
-      wer: 1.1965
-      cer: 1.0838
-      samples: 1000
-      valid: 944
-      avg_seconds_per_sample: 0.39
-    jw:
-      wer: 0.7481
-      cer: 0.4018
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.37
-    unicef:
-      wer: 0.8128
-      cer: 0.5733
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 0.84
-  source: evaluated
 - model: azunre/wav2vec2large-xlsr-akan
   model_url: https://huggingface.co/azunre/wav2vec2large-xlsr-akan
   owner: azunre
@@ -106,72 +40,75 @@ benchmarks:
       avg_seconds_per_sample: 0.08
   source: evaluated
   model_class: non-llm
-- model: teckedd/serendepify-gsl-asr-ak-waxal-whisper-small-only-lowlr-freezeenc-fullft-v0.4
-  model_url: https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-whisper-small-only-lowlr-freezeenc-fullft-v0.4
-  owner: teckedd
+  score: 0.5859
+- model: GiftMark/akan-whisper-model
+  model_url: https://huggingface.co/GiftMark/akan-whisper-model
+  owner: GiftMark
   params: 0.2B
-  wer: 0.9046
-  cer: 0.6158
+  wer: 0.7941
+  cer: 0.4215
   per_category:
     bible:
-      wer: 0.7971
-      cer: 0.3771
+      wer: 0.66
+      cer: 0.3097
       samples: 1000
       valid: 1000
       avg_seconds_per_sample: 1.0
     finance:
-      wer: 0.894
-      cer: 1.0037
+      wer: 0.8515
+      cer: 0.4302
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 0.25
+      avg_seconds_per_sample: 0.29
     jw:
-      wer: 0.8596
-      cer: 0.38
+      wer: 0.7601
+      cer: 0.3153
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 0.72
+      avg_seconds_per_sample: 0.78
     unicef:
-      wer: 1.0676
-      cer: 0.7022
+      wer: 0.9048
+      cer: 0.6306
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 2.41
+      avg_seconds_per_sample: 2.75
   source: evaluated
   model_class: non-llm
-- model: teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-broad-lowlr-freezeenc-fullft-v0.3
-  model_url: https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-broad-lowlr-freezeenc-fullft-v0.3
-  owner: teckedd
-  params: 0.2B
-  wer: 0.9342
-  cer: 0.6146
+  score: 0.6078
+- model: GhanaNLP/khaya-asr-v3
+  model_url: https://translation-api.ghananlp.org/
+  owner: GhanaNLP
+  model_class: non-llm
+  params: API
+  wer: 0.7984
+  cer: 0.579
   per_category:
     bible:
-      wer: 0.7864
-      cer: 0.3595
+      wer: 0.4361
+      cer: 0.2572
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 0.93
+      avg_seconds_per_sample: 0.67
     finance:
-      wer: 1.0815
-      cer: 1.0657
+      wer: 1.1965
+      cer: 1.0838
       samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.24
+      valid: 944
+      avg_seconds_per_sample: 0.39
     jw:
-      wer: 0.8483
-      cer: 0.3574
+      wer: 0.7481
+      cer: 0.4018
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 0.62
+      avg_seconds_per_sample: 0.37
     unicef:
-      wer: 1.0206
-      cer: 0.6757
+      wer: 0.8128
+      cer: 0.5733
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 2.35
+      avg_seconds_per_sample: 0.84
   source: evaluated
-  model_class: non-llm
+  score: 0.6887
 - model: teckedd/serendepify-gsl-asr-ak-gnlp-whisper-small-only-lowlr-freezeenc-fullft-v0.5
   model_url: https://huggingface.co/teckedd/serendepify-gsl-asr-ak-gnlp-whisper-small-only-lowlr-freezeenc-fullft-v0.5
   owner: teckedd
@@ -205,105 +142,7 @@ benchmarks:
       avg_seconds_per_sample: 3.16
   source: evaluated
   model_class: non-llm
-- model: teckedd/serendepify-gsl-asr-ak-waxal-gnlpclean-whisper-small-replay-fullft-v0.6
-  model_url: https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-gnlpclean-whisper-small-replay-fullft-v0.6
-  owner: teckedd
-  params: 0.2B
-  wer: 0.9458
-  cer: 0.6237
-  per_category:
-    bible:
-      wer: 0.7834
-      cer: 0.3785
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.96
-    finance:
-      wer: 1.1126
-      cer: 1.0973
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.25
-    jw:
-      wer: 0.8351
-      cer: 0.3466
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.66
-    unicef:
-      wer: 1.052
-      cer: 0.6723
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 2.36
-  source: evaluated
-  model_class: non-llm
-- model: teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-replay-fullft-v0.1
-  model_url: https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-replay-fullft-v0.1
-  owner: teckedd
-  params: 0.2B
-  wer: 0.9789
-  cer: 0.6143
-  per_category:
-    bible:
-      wer: 0.783
-      cer: 0.3356
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.9
-    finance:
-      wer: 1.102
-      cer: 1.0653
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.25
-    jw:
-      wer: 0.8748
-      cer: 0.3648
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.68
-    unicef:
-      wer: 1.1559
-      cer: 0.6914
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 3.05
-  source: evaluated
-  model_class: non-llm
-- model: teckedd/whisper_small-waxal_akan-asr
-  model_url: https://huggingface.co/teckedd/whisper_small-waxal_akan-asr
-  owner: teckedd
-  params: 0.2B
-  wer: 0.9953
-  cer: 0.5444
-  per_category:
-    bible:
-      wer: 0.8001
-      cer: 0.3438
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 1.07
-    finance:
-      wer: 1.0733
-      cer: 0.6362
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.29
-    jw:
-      wer: 0.8435
-      cer: 0.4021
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.66
-    unicef:
-      wer: 1.2643
-      cer: 0.7953
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 3.27
-  source: evaluated
-  model_class: non-llm
+  score: 0.6987
 - model: teckedd/whisper-small-serlabs-twi-asr
   model_url: https://huggingface.co/teckedd/whisper-small-serlabs-twi-asr
   owner: teckedd
@@ -337,138 +176,143 @@ benchmarks:
       avg_seconds_per_sample: 1.87
   source: evaluated
   model_class: non-llm
-- model: teckedd/whisper-small-waxal-akan-continuation-v1
-  model_url: https://huggingface.co/teckedd/whisper-small-waxal-akan-continuation-v1
+  score: 0.734
+- model: teckedd/serendepify-gsl-asr-ak-waxal-whisper-small-only-lowlr-freezeenc-fullft-v0.4
+  model_url: https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-whisper-small-only-lowlr-freezeenc-fullft-v0.4
   owner: teckedd
   params: 0.2B
-  wer: 1.0177
-  cer: 0.6415
+  wer: 0.9046
+  cer: 0.6158
   per_category:
     bible:
-      wer: 0.9166
-      cer: 0.4277
+      wer: 0.7971
+      cer: 0.3771
       samples: 1000
       valid: 1000
       avg_seconds_per_sample: 1.0
     finance:
-      wer: 1.1194
-      cer: 1.0211
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.32
-    jw:
-      wer: 0.8857
-      cer: 0.3821
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.62
-    unicef:
-      wer: 1.149
-      cer: 0.7353
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 3.35
-  source: evaluated
-  model_class: non-llm
-- model: teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-balanced-fullft-v0.2
-  model_url: https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-balanced-fullft-v0.2
-  owner: teckedd
-  params: 0.2B
-  wer: 1.0197
-  cer: 0.6851
-  per_category:
-    bible:
-      wer: 0.8283
-      cer: 0.406
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.95
-    finance:
-      wer: 1.2136
-      cer: 1.1703
+      wer: 0.894
+      cer: 1.0037
       samples: 1000
       valid: 1000
       avg_seconds_per_sample: 0.25
     jw:
-      wer: 0.9755
-      cer: 0.4732
+      wer: 0.8596
+      cer: 0.38
       samples: 1000
       valid: 1000
       avg_seconds_per_sample: 0.72
     unicef:
-      wer: 1.0614
-      cer: 0.6908
+      wer: 1.0676
+      cer: 0.7022
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 2.4
+      avg_seconds_per_sample: 2.41
   source: evaluated
   model_class: non-llm
-- model: teckedd/whisper-small-waxal-round2-specaug-v1
-  model_url: https://huggingface.co/teckedd/whisper-small-waxal-round2-specaug-v1
+  score: 0.7602
+- model: teckedd/whisper_small-waxal_akan-asr
+  model_url: https://huggingface.co/teckedd/whisper_small-waxal_akan-asr
   owner: teckedd
   params: 0.2B
-  wer: 1.0204
-  cer: 0.6674
+  wer: 0.9953
+  cer: 0.5444
   per_category:
     bible:
-      wer: 0.9013
-      cer: 0.4537
+      wer: 0.8001
+      cer: 0.3438
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 1.02
+      avg_seconds_per_sample: 1.07
     finance:
-      wer: 0.9373
-      cer: 1.0045
+      wer: 1.0733
+      cer: 0.6362
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 0.26
+      avg_seconds_per_sample: 0.29
     jw:
-      wer: 0.8617
-      cer: 0.3669
+      wer: 0.8435
+      cer: 0.4021
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 0.71
+      avg_seconds_per_sample: 0.66
     unicef:
-      wer: 1.3812
-      cer: 0.8446
+      wer: 1.2643
+      cer: 0.7953
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 3.02
+      avg_seconds_per_sample: 3.27
   source: evaluated
   model_class: non-llm
-- model: teckedd/whisper_small-waxal_akan-asr-v1
-  model_url: https://huggingface.co/teckedd/whisper_small-waxal_akan-asr-v1
+  score: 0.7698
+- model: teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-broad-lowlr-freezeenc-fullft-v0.3
+  model_url: https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-broad-lowlr-freezeenc-fullft-v0.3
   owner: teckedd
   params: 0.2B
-  wer: 1.0219
-  cer: 0.7096
+  wer: 0.9342
+  cer: 0.6146
   per_category:
     bible:
-      wer: 0.8655
-      cer: 0.4342
+      wer: 0.7864
+      cer: 0.3595
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 0.98
+      avg_seconds_per_sample: 0.93
     finance:
-      wer: 1.1475
-      cer: 1.264
+      wer: 1.0815
+      cer: 1.0657
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 0.38
+      avg_seconds_per_sample: 0.24
     jw:
-      wer: 0.8228
-      cer: 0.3314
+      wer: 0.8483
+      cer: 0.3574
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 0.64
+      avg_seconds_per_sample: 0.62
     unicef:
-      wer: 1.2518
-      cer: 0.8085
+      wer: 1.0206
+      cer: 0.6757
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 2.8
+      avg_seconds_per_sample: 2.35
   source: evaluated
   model_class: non-llm
+  score: 0.7744
+- model: teckedd/serendepify-gsl-asr-ak-waxal-gnlpclean-whisper-small-replay-fullft-v0.6
+  model_url: https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-gnlpclean-whisper-small-replay-fullft-v0.6
+  owner: teckedd
+  params: 0.2B
+  wer: 0.9458
+  cer: 0.6237
+  per_category:
+    bible:
+      wer: 0.7834
+      cer: 0.3785
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.96
+    finance:
+      wer: 1.1126
+      cer: 1.0973
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.25
+    jw:
+      wer: 0.8351
+      cer: 0.3466
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.66
+    unicef:
+      wer: 1.052
+      cer: 0.6723
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 2.36
+  source: evaluated
+  model_class: non-llm
+  score: 0.7848
 - model: Raydox10/Raydox11-whisper-small
   model_url: https://huggingface.co/Raydox10/Raydox11-whisper-small
   owner: Raydox10
@@ -502,6 +346,143 @@ benchmarks:
       avg_seconds_per_sample: 2.0
   source: evaluated
   model_class: non-llm
+  score: 0.7948
+- model: teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-replay-fullft-v0.1
+  model_url: https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-replay-fullft-v0.1
+  owner: teckedd
+  params: 0.2B
+  wer: 0.9789
+  cer: 0.6143
+  per_category:
+    bible:
+      wer: 0.783
+      cer: 0.3356
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.9
+    finance:
+      wer: 1.102
+      cer: 1.0653
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.25
+    jw:
+      wer: 0.8748
+      cer: 0.3648
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.68
+    unicef:
+      wer: 1.1559
+      cer: 0.6914
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 3.05
+  source: evaluated
+  model_class: non-llm
+  score: 0.7966
+- model: teckedd/whisper-small-waxal-akan-continuation-v1
+  model_url: https://huggingface.co/teckedd/whisper-small-waxal-akan-continuation-v1
+  owner: teckedd
+  params: 0.2B
+  wer: 1.0177
+  cer: 0.6415
+  per_category:
+    bible:
+      wer: 0.9166
+      cer: 0.4277
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 1.0
+    finance:
+      wer: 1.1194
+      cer: 1.0211
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.32
+    jw:
+      wer: 0.8857
+      cer: 0.3821
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.62
+    unicef:
+      wer: 1.149
+      cer: 0.7353
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 3.35
+  source: evaluated
+  model_class: non-llm
+  score: 0.8296
+- model: teckedd/whisper-small-waxal-round2-specaug-v1
+  model_url: https://huggingface.co/teckedd/whisper-small-waxal-round2-specaug-v1
+  owner: teckedd
+  params: 0.2B
+  wer: 1.0204
+  cer: 0.6674
+  per_category:
+    bible:
+      wer: 0.9013
+      cer: 0.4537
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 1.02
+    finance:
+      wer: 0.9373
+      cer: 1.0045
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.26
+    jw:
+      wer: 0.8617
+      cer: 0.3669
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.71
+    unicef:
+      wer: 1.3812
+      cer: 0.8446
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 3.02
+  source: evaluated
+  model_class: non-llm
+  score: 0.8439
+- model: teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-balanced-fullft-v0.2
+  model_url: https://huggingface.co/teckedd/serendepify-gsl-asr-ak-waxal-gnlp-whisper-small-balanced-fullft-v0.2
+  owner: teckedd
+  params: 0.2B
+  wer: 1.0197
+  cer: 0.6851
+  per_category:
+    bible:
+      wer: 0.8283
+      cer: 0.406
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.95
+    finance:
+      wer: 1.2136
+      cer: 1.1703
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.25
+    jw:
+      wer: 0.9755
+      cer: 0.4732
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.72
+    unicef:
+      wer: 1.0614
+      cer: 0.6908
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 2.4
+  source: evaluated
+  model_class: non-llm
+  score: 0.8524
 - model: tiffany101/whisper-twi-v2
   model_url: https://huggingface.co/tiffany101/whisper-twi-v2
   owner: tiffany101
@@ -535,6 +516,41 @@ benchmarks:
       avg_seconds_per_sample: 1.09
   source: evaluated
   model_class: non-llm
+  score: 0.8565
+- model: teckedd/whisper_small-waxal_akan-asr-v1
+  model_url: https://huggingface.co/teckedd/whisper_small-waxal_akan-asr-v1
+  owner: teckedd
+  params: 0.2B
+  wer: 1.0219
+  cer: 0.7096
+  per_category:
+    bible:
+      wer: 0.8655
+      cer: 0.4342
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.98
+    finance:
+      wer: 1.1475
+      cer: 1.264
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.38
+    jw:
+      wer: 0.8228
+      cer: 0.3314
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.64
+    unicef:
+      wer: 1.2518
+      cer: 0.8085
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 2.8
+  source: evaluated
+  model_class: non-llm
+  score: 0.8658
 - model: Lagyamfi/whisper-small-tw
   model_url: https://huggingface.co/Lagyamfi/whisper-small-tw
   owner: Lagyamfi
@@ -568,6 +584,7 @@ benchmarks:
       avg_seconds_per_sample: 2.39
   source: evaluated
   model_class: non-llm
+  score: 1.0032
 - model: tiffany101/whisper-small
   model_url: https://huggingface.co/tiffany101/whisper-small
   owner: tiffany101
@@ -601,6 +618,7 @@ benchmarks:
       avg_seconds_per_sample: 1.88
   source: evaluated
   model_class: non-llm
+  score: 1.3561
 - model: dkt-py-bot/whisper-small-DL-Twi
   model_url: https://huggingface.co/dkt-py-bot/whisper-small-DL-Twi
   owner: dkt-py-bot
@@ -634,6 +652,7 @@ benchmarks:
       avg_seconds_per_sample: 1.48
   source: evaluated
   model_class: non-llm
+  score: 1.6706
 - model: dkt-py-bot/TG-Whisper-Tiny-FineTuned-DL-Twi
   model_url: https://huggingface.co/dkt-py-bot/TG-Whisper-Tiny-FineTuned-DL-Twi
   owner: dkt-py-bot
@@ -667,6 +686,7 @@ benchmarks:
       avg_seconds_per_sample: 1.11
   source: evaluated
   model_class: non-llm
+  score: 1.8528
 - model: dkt-py-bot/TG-Whisper-Small-FineTuned-DL-Twi
   model_url: https://huggingface.co/dkt-py-bot/TG-Whisper-Small-FineTuned-DL-Twi
   owner: dkt-py-bot
@@ -700,6 +720,7 @@ benchmarks:
       avg_seconds_per_sample: 1.74
   source: evaluated
   model_class: non-llm
+  score: 1.8731
 - model: 233-Yorozuya/dl_twi_asr
   model_url: https://huggingface.co/233-Yorozuya/dl_twi_asr
   owner: 233-Yorozuya
@@ -733,6 +754,7 @@ benchmarks:
       avg_seconds_per_sample: 4.23
   source: evaluated
   model_class: non-llm
+  score: 2.1986
 - model: jdapaah/whisper-small-twi-arxiv
   model_url: https://huggingface.co/jdapaah/whisper-small-twi-arxiv
   owner: jdapaah

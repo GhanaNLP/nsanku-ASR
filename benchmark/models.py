@@ -80,7 +80,7 @@ def cleanup_gpu():
 class WhisperModel:
     """Whisper-based ASR (seq2seq). Processes samples sequentially with no_grad."""
 
-    def __init__(self, model_id, device="cuda:0"):
+    def __init__(self, model_id, device="cuda:0", language=None, task="transcribe", initial_prompt=None):
         self.model_id = model_id
         self.device = device
         torch_dtype = getattr(torch, TORCH_DTYPE) if isinstance(TORCH_DTYPE, str) else TORCH_DTYPE
@@ -100,7 +100,11 @@ class WhisperModel:
 
         self.model.config.forced_decoder_ids = None
         self.model.generation_config.forced_decoder_ids = None
-        self.gen_kwargs = {"task": "transcribe", "return_timestamps": False}
+        self.gen_kwargs = {"task": task, "return_timestamps": False}
+        if language:
+            self.gen_kwargs["language"] = language
+        if initial_prompt:
+            self.gen_kwargs["prompt"] = initial_prompt
 
         self.batch_size = resolve_batch_size(getattr(self.model.config, "params", ""))
 
@@ -137,7 +141,7 @@ class WhisperModel:
 class CTCModel:
     """CTC-based ASR (wav2vec2/MMS/HuBERT)."""
 
-    def __init__(self, model_id, device="cuda:0"):
+    def __init__(self, model_id, device="cuda:0", ctc_decoder="greedy"):
         self.model_id = model_id
         self.device = device
         # wav2vec2/xls-r/MMS raw-waveform conv encoders trigger a broken cuDNN
@@ -145,6 +149,9 @@ class CTCModel:
         # disabled is stable and these models are small enough.
         self.dtype = torch.float32
         torch_dtype = self.dtype
+        if ctc_decoder != "greedy":
+            raise ValueError(f"unsupported ctc_decoder '{ctc_decoder}' (only 'greedy' is available)")
+        self.decoder = "greedy"
 
         # AutoProcessor resolves the right processor (Wav2Vec2 / Wav2Vec2Bert / SeamlessM4T
         # feature extractor); fall back to Wav2Vec2Processor for older CTC repos.
@@ -204,11 +211,14 @@ def _hf_login():
             pass
 
 
-def load_asr_model(model_id, device="cuda:0"):
+def load_asr_model(model_id, device="cuda:0", recipe=None):
     """Load model, auto-detecting architecture. Returns wrapper or None on failure.
 
-    Raises with descriptive error so caller can categorize pass/fail.
+    `recipe` is the dict of overrides read from the model's recipe front-matter
+    (see benchmark/recipes.py). Raises with descriptive error so caller can
+    categorize pass/fail.
     """
+    recipe = recipe or {}
     torch.backends.cudnn.enabled = False
     _hf_login()
     arch = _detect_arch(model_id)
@@ -218,8 +228,14 @@ def load_asr_model(model_id, device="cuda:0"):
         raise RuntimeError("ARCH_UNSUPPORTED: SeamlessM4T ASR (no target-language code)")
     try:
         if arch == "ctc" or (arch.startswith("name:") and is_ctc_model(model_id)):
-            return CTCModel(model_id, device=device)
-        return WhisperModel(model_id, device=device)
+            return CTCModel(model_id, device=device, ctc_decoder=recipe.get("ctc_decoder", "greedy"))
+        return WhisperModel(
+            model_id,
+            device=device,
+            language=recipe.get("language"),
+            task=recipe.get("task", "transcribe"),
+            initial_prompt=recipe.get("initial_prompt"),
+        )
     except Exception as e:
         err = str(e)
         if "gated repo" in err.lower() or "403" in err:

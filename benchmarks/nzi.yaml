@@ -26,6 +26,7 @@ benchmarks:
       valid: 1000
       avg_seconds_per_sample: 0.5
   source: evaluated
+  score: 0.2603
 - model: KhayaAI/w2v-bert-nzi
   model_url: https://huggingface.co/KhayaAI/w2v-bert-nzi
   owner: KhayaAI
@@ -47,3 +48,4 @@ benchmarks:
       avg_seconds_per_sample: 0.07
   source: evaluated
   model_class: non-llm
+  score: 0.449

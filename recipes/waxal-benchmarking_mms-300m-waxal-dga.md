@@ -1,3 +1,8 @@
+---
+model: waxal-benchmarking/mms-300m-waxal-dga
+ctc_decoder: greedy
+---
+
 # waxal-benchmarking/mms-300m-waxal-dga
 
 | Field | Value |
@@ -8,7 +13,7 @@
 | **Architecture** | CTC (AutoModelForCTC) |
 | **Precision** | fp32 (wav2vec2/xls-r/MMS conv encoders crash in bf16 on Hopper) |
 | **Benchmarked languages** | dga |
-| **Status** | passed - best avg WER 58.50% |
+| **Status** | passed - best avg WER 58.50% (avg WER+CER 41.12%) |
 
 ## Inference code used
 
@@ -18,7 +23,7 @@ This model was run with the inference code below from [`benchmark/models.py`](..
 class CTCModel:
     """CTC-based ASR (wav2vec2/MMS/HuBERT)."""
 
-    def __init__(self, model_id, device="cuda:0"):
+    def __init__(self, model_id, device="cuda:0", ctc_decoder="greedy"):
         self.model_id = model_id
         self.device = device
         # wav2vec2/xls-r/MMS raw-waveform conv encoders trigger a broken cuDNN
@@ -26,6 +31,9 @@ class CTCModel:
         # disabled is stable and these models are small enough.
         self.dtype = torch.float32
         torch_dtype = self.dtype
+        if ctc_decoder != "greedy":
+            raise ValueError(f"unsupported ctc_decoder '{ctc_decoder}' (only 'greedy' is available)")
+        self.decoder = "greedy"
 
         # AutoProcessor resolves the right processor (Wav2Vec2 / Wav2Vec2Bert / SeamlessM4T
         # feature extractor); fall back to Wav2Vec2Processor for older CTC repos.
@@ -78,4 +86,11 @@ class CTCModel:
 
 ## Update this recipe
 
-If this model needs custom inference (custom tokenizer / processor, language decoding, LM post-processing, etc.) and you believe the WER above is not representative, edit this file and open a pull request at [github.com/GhanaNLP/nsanku-ASR](https://github.com/GhanaNLP/nsanku-ASR). The benchmark will use your updated recipe on the next run.
+The YAML front-matter above controls how this model is evaluated. The following overrides are supported:
+
+- `language` — force a source language (Whisper-style seq2seq)
+- `task` — `transcribe` or `translate` (seq2seq)
+- `initial_prompt` — decoder prompt text (seq2seq)
+- `ctc_decoder` — `greedy` for wav2vec2/MMS/Wav2Vec2-BERT
+
+Edit the front-matter (or the inference code notes) and open a pull request at [github.com/GhanaNLP/nsanku-ASR](https://github.com/GhanaNLP/nsanku-ASR). The benchmark reads the recipe before running a model, so the next run will use your updated recipe.
