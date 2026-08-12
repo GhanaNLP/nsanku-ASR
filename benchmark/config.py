@@ -46,6 +46,12 @@ MIN_CARD_CHARS = 150
 # explicitly targets a modest set of languages (HF language-tag count <= this).
 MAX_LANG_TAGS = 60
 
+# Hard ceiling on model size. Anything larger is not benchmarked at all — the
+# eval budget does not stretch to multi-billion-parameter models generating a
+# transcript token by token (a 7B audio LLM is ~20x slower per sample than a
+# w2v-bert CTC model, before counting the ~16GB download).
+MAX_PARAMS = 2_500_000_000  # 2.5B — headroom so a ~2B fine-tune is not lost on a rounding edge
+
 # Only benchmark models trained for a SINGLE language (drops multilingual models such
 # as Simba, Sunbird, Whisper/MMS bases, and multi-language fine-tunes). A model counts
 # as single-language when its HF config language tags resolve to exactly one distinct
@@ -63,6 +69,7 @@ EVAL_CONFIGS_FILE = DATA_DIR / "eval_configs.json"   # iso -> {language, categor
 OWNER_TYPES_FILE = DATA_DIR / "owner_types.json"     # cache: owner -> "org" | "user"
 MODEL_LICENSES_FILE = DATA_DIR / "model_licenses.json"  # cache: model_id -> license string ("" = none)
 MODEL_CARDS_FILE = DATA_DIR / "model_cards.json"        # cache: model_id -> reason ("" = card ok)
+MODEL_PARAMS_FILE = DATA_DIR / "model_params.json"      # cache: model_id -> param count (0 = unknown)
 
 # Models to benchmark per language
 # Loaded dynamically from ghana_asr_results.json at runtime

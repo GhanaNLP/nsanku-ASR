@@ -14,6 +14,7 @@ from .config import (
     OWNER_TYPES_FILE, HF_TOKEN, ORG_ONLY, MAX_LANG_TAGS, DATA_DIR,
     SINGLE_LANGUAGE_ONLY, LANG_CONFIG, ORG_OVERRIDES,
     MODEL_LICENSES_FILE, MODEL_CARDS_FILE, REQUIRE_MODEL_CARD, MIN_CARD_CHARS,
+    MODEL_PARAMS_FILE, MAX_PARAMS,
 )
 
 LANGTAG_COUNTS_FILE = DATA_DIR / "model_lang_tags.json"  # cache: model_id -> [lang codes]
@@ -83,6 +84,40 @@ def is_unsupported_artifact(model_id):
     import re
     tokens = set(re.split(r"[^a-z0-9]+", model_id.split("/")[-1].lower()))
     return bool(tokens & UNSUPPORTED_ARTIFACT_TOKENS)
+
+
+def model_params(model_id, cache=None):
+    """Parameter count from the repo's safetensors index; 0 when unknown. Cached."""
+    own = cache is None
+    cache = _load_json_cache(MODEL_PARAMS_FILE) if own else cache
+    if model_id in cache:
+        return cache[model_id]
+    total = 0
+    try:
+        r = requests.get(f"https://huggingface.co/api/models/{model_id}",
+                         headers=_headers(), timeout=20)
+        if r.status_code == 200:
+            st = r.json().get("safetensors") or {}
+            total = int(st.get("total") or 0)
+            if not total:
+                # Older repos expose only a per-dtype breakdown.
+                total = int(sum((st.get("parameters") or {}).values()) or 0)
+    except Exception:
+        total = 0
+    cache[model_id] = total
+    _save_json_cache(MODEL_PARAMS_FILE, cache)
+    return total
+
+
+def is_too_large(model_id, cache=None):
+    """True if the model exceeds MAX_PARAMS. Unknown size counts as small.
+
+    A repo with no safetensors metadata cannot be measured without downloading
+    it, and most such repos are old small CTC checkpoints — excluding them on
+    suspicion would silently drop real models.
+    """
+    n = model_params(model_id, cache)
+    return bool(n) and n > MAX_PARAMS
 
 
 def _headers():
@@ -345,7 +380,8 @@ def filter_models(models, iso_codes=None, name_tokens=(), require_card=None):
     Drops: personal accounts, non-ASR models (TTS/aligner/LID), LMs and runtime
     exports we cannot load (kenlm/ct2/onnx/gguf — see UNSUPPORTED_ARTIFACT_TOKENS),
     generic global
-    base models (>MAX_LANG_TAGS languages), models shipping only a placeholder
+    base models (>MAX_LANG_TAGS languages), models above MAX_PARAMS parameters,
+    models shipping only a placeholder
     model card, and — when `iso_codes` is given — any model whose config does
     not explicitly declare the language (see `targets_language` for how
     `name_tokens` is used). A declared license is NOT required.
@@ -361,6 +397,7 @@ def filter_models(models, iso_codes=None, name_tokens=(), require_card=None):
     otype = _load_cache()
     ltags = _load_langtag_cache()
     cards = _load_json_cache(MODEL_CARDS_FILE)
+    sizes = _load_json_cache(MODEL_PARAMS_FILE)
     kept = []
     for m in models:
         name = m["name"]
@@ -370,6 +407,8 @@ def filter_models(models, iso_codes=None, name_tokens=(), require_card=None):
         if ORG_ONLY and not is_org(owner, otype):
             continue
         if is_general_model(name, ltags):
+            continue
+        if is_too_large(name, sizes):
             continue
         if SINGLE_LANGUAGE_ONLY and distinct_language_count(name, ltags) > 1:
             continue

@@ -6,8 +6,8 @@ one of the eval languages and is not already in benchmarks/{iso}.yaml. Candidate
 are then bucketed by the model-card gate (see benchmark/owners.py). A declared
 license is reported but NOT required.
 
-  APPROVE  — ships a real model card
-  BLOCKED  — only a placeholder / missing card (reason shown)
+  APPROVE  — within MAX_PARAMS and ships a real model card
+  BLOCKED  — over the size cap, or only a placeholder / missing card
 
 Namespaces in ORG_OVERRIDES (FarmerlineML, GhanaNLP) are exempt from the gate and
 always land in APPROVE.
@@ -26,12 +26,13 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from benchmark.config import BENCHMARK_DIR, ORG_OVERRIDES, RESULTS_FILE
+from benchmark.config import BENCHMARK_DIR, MAX_PARAMS, ORG_OVERRIDES, RESULTS_FILE
 from benchmark.evaluate import (
     _all_org_asr_models, language_codes, language_name_tokens, load_eval_configs,
 )
 from benchmark.owners import (
-    card_problem, filter_models, model_license, warm_caches_from_universe,
+    card_problem, filter_models, model_license, model_params,
+    warm_caches_from_universe,
 )
 
 
@@ -67,12 +68,17 @@ def main(only=None):
     with ThreadPoolExecutor(max_workers=12) as ex:
         list(ex.map(model_license, sorted(candidates)))
         list(ex.map(card_problem, sorted(candidates)))
+        list(ex.map(model_params, sorted(candidates)))
 
     def verdict(name):
+        n = model_params(name)
+        size = f"{n / 1e9:.2f}B" if n else "size ?"
+        if n > MAX_PARAMS:
+            return f"too large ({size} > {MAX_PARAMS / 1e9:.0f}B)", size
         if name.split("/")[0] in ORG_OVERRIDES:
-            return "", "exempt (ORG_OVERRIDES)"
+            return "", f"{size}, exempt (ORG_OVERRIDES)"
         lic = model_license(name).strip()
-        return card_problem(name), lic or "no license"
+        return card_problem(name), f"{size}, {lic or 'no license'}"
 
     approve, blocked = {}, {}
     for iso, names in by_lang.items():
@@ -87,7 +93,7 @@ def main(only=None):
     for iso in sorted(approve):
         print(f"\n{lang_name.get(iso, iso)} ({iso}):")
         for n, lic, _ in sorted(approve[iso]):
-            print(f"  {n:70s} license: {lic}")
+            print(f"  {n:70s} {lic}")
             total += 1
     if not approve:
         print("  (none)")
