@@ -17,6 +17,11 @@ jiwer>=3.0.0
 # Gemini API
 google-genai>=1.0.0
 
+# Qwen3-ASR fine-tunes. Their checkpoints are saved in this library's layout
+# (tensors under a `thinker.` prefix), which transformers cannot load — it
+# matches only part of the state dict and silently random-initialises the rest.
+qwen-asr>=0.0.6
+
 # Data formats
 pyyaml>=6.0
 requests>=2.31.0
