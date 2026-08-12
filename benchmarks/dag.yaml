@@ -27,6 +27,28 @@ benchmarks:
       avg_seconds_per_sample: 1.21
   source: evaluated
   score: 0.2858
+- model: FarmerlineML/w2v-bert-2.0_2026_dagbani_ASR
+  model_url: https://huggingface.co/FarmerlineML/w2v-bert-2.0_2026_dagbani_ASR
+  owner: FarmerlineML
+  model_class: non-llm
+  params: '?'
+  wer: 0.6624
+  cer: 0.2552
+  score: 0.4588
+  per_category:
+    bible:
+      wer: 0.7419
+      cer: 0.304
+      samples: 1000
+      valid: 999
+      avg_seconds_per_sample: 0.09
+    unicef:
+      wer: 0.5829
+      cer: 0.2063
+      samples: 195
+      valid: 195
+      avg_seconds_per_sample: 0.27
+  source: evaluated
 - model: waxal-benchmarking/mms-300m-waxal-dag
   model_url: https://huggingface.co/waxal-benchmarking/mms-300m-waxal-dag
   owner: waxal-benchmarking

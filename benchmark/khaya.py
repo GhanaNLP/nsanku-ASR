@@ -41,7 +41,7 @@ MAX_RETRIES = 3
 
 # eval iso_639_3 -> Khaya API language code (only Ghanaian languages Khaya supports)
 EVAL_TO_KHAYA = {
-    "twi": "atw",   # Akuapem Twi
+    "twi": "twi",   # general Twi (the eval set mixes Akuapem + Asante)
     "ada": "ada", "bwu": "bwu", "dag": "dag", "dga": "dga", "ewe": "ewe",
     "fat": "fat", "gaa": "gaa", "gjn": "gjn", "gur": "gur", "hau": "hau",
     "kus": "kus", "maw": "maw", "nzi": "nzi", "xsm": "xsm",
@@ -76,23 +76,41 @@ def _transcribe(wav_bytes, khaya_code, key):
 
 
 def _has_result(iso_code):
+    """True if THIS track already scored this language.
+
+    Must match on MODEL_ID: benchmarks_api/{iso}.yaml is shared with the other
+    hosted-API tracks, so "any benchmark has a wer" would make Khaya skip every
+    language Google had already done, and vice versa.
+    """
     path = API_BENCHMARK_DIR / f"{iso_code}.yaml"
     if not path.exists():
         return False
     d = yaml.safe_load(open(path)) or {}
-    return any(b.get("wer") is not None for b in d.get("benchmarks", []))
+    return any(b.get("model") == MODEL_ID and b.get("wer") is not None
+               for b in d.get("benchmarks", []))
 
 
 def _save(iso_code, language, category_names, result):
+    """Merge this track's result into benchmarks_api/{iso}.yaml.
+
+    The file is shared with the other hosted-API tracks, so the existing entries
+    are kept and only this model's row is replaced — writing [result] outright
+    deleted whichever track had run first.
+    """
     API_BENCHMARK_DIR.mkdir(parents=True, exist_ok=True)
+    path = API_BENCHMARK_DIR / f"{iso_code}.yaml"
+    existing = yaml.safe_load(open(path)) if path.exists() else None
+    entries = (existing or {}).get("benchmarks", []) if existing else []
+    merged = [b for b in entries if b.get("model") != result["model"]] + [result]
+    cats = list(dict.fromkeys((existing or {}).get("categories", []) + category_names))
     out = {
         "iso_639_3": iso_code,
         "language": language,
         "num_samples_per_category": NUM_SAMPLES,
-        "categories": category_names,
-        "benchmarks": [result],
+        "categories": cats,
+        "benchmarks": merged,
     }
-    with open(API_BENCHMARK_DIR / f"{iso_code}.yaml", "w") as f:
+    with open(path, "w") as f:
         yaml.dump(out, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
 
 

@@ -62,6 +62,34 @@ benchmarks:
   source: evaluated
   model_class: non-llm
   score: 0.3952
+- model: FarmerlineML/w2v-bert-2.0_ewe_2
+  model_url: https://huggingface.co/FarmerlineML/w2v-bert-2.0_ewe_2
+  owner: FarmerlineML
+  model_class: non-llm
+  params: '?'
+  wer: 0.6382
+  cer: 0.1769
+  score: 0.4075
+  per_category:
+    bible:
+      wer: 0.5426
+      cer: 0.1401
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.08
+    jw:
+      wer: 0.8146
+      cer: 0.2774
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.08
+    unicef:
+      wer: 0.5575
+      cer: 0.1131
+      samples: 199
+      valid: 199
+      avg_seconds_per_sample: 0.42
+  source: evaluated
 - model: waxal-benchmarking/whisper-small-waxal-ewe
   model_url: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-ewe
   owner: waxal-benchmarking

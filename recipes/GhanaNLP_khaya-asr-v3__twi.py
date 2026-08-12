@@ -15,7 +15,10 @@ next benchmark run.
 """
 
 
-LANGUAGE_CODE = 'atw'
+# 'atw' (Akuapem Twi) was the original choice and wins on the bible category
+# (WER 8.93% vs 34.84%), but the twi eval set is mixed-dialect and 'atw' loses
+# badly on jw (88.69% vs 49.52%). 'twi' is the general-Twi endpoint.
+LANGUAGE_CODE = 'twi'
 
 
 # def transcribe(wav_bytes, khaya_code, key):

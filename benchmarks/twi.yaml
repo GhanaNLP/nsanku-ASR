@@ -7,6 +7,74 @@ categories:
 - jw
 - unicef
 benchmarks:
+- model: FarmerlineML/w2v-bert-2.0_twi_alpha_v1
+  model_url: https://huggingface.co/FarmerlineML/w2v-bert-2.0_twi_alpha_v1
+  owner: FarmerlineML
+  model_class: non-llm
+  params: '?'
+  wer: 0.6572
+  cer: 0.2836
+  score: 0.4704
+  per_category:
+    bible:
+      wer: 0.5943
+      cer: 0.2372
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.11
+    finance:
+      wer: 0.6551
+      cer: 0.2656
+      samples: 1000
+      valid: 996
+      avg_seconds_per_sample: 0.08
+    jw:
+      wer: 0.6208
+      cer: 0.2198
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.1
+    unicef:
+      wer: 0.7585
+      cer: 0.4118
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.31
+  source: evaluated
+- model: waxal-benchmarking/mms-300m-waxal-aka
+  model_url: https://huggingface.co/waxal-benchmarking/mms-300m-waxal-aka
+  owner: waxal-benchmarking
+  model_class: non-llm
+  params: '?'
+  wer: 0.7945
+  cer: 0.3298
+  score: 0.5621
+  per_category:
+    bible:
+      wer: 0.7309
+      cer: 0.2804
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.04
+    finance:
+      wer: 0.8328
+      cer: 0.32
+      samples: 1000
+      valid: 999
+      avg_seconds_per_sample: 0.04
+    jw:
+      wer: 0.7814
+      cer: 0.281
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.03
+    unicef:
+      wer: 0.833
+      cer: 0.4378
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.07
+  source: evaluated
 - model: GhanaNLP/khaya-asr-v3
   model_url: https://translation-api.ghananlp.org/
   owner: GhanaNLP
@@ -41,6 +109,74 @@ benchmarks:
       avg_seconds_per_sample: 0.84
   source: evaluated
   score: 0.6887
+- model: waxal-benchmarking/whisper-small-waxal-aka
+  model_url: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-aka
+  owner: waxal-benchmarking
+  model_class: non-llm
+  params: '?'
+  wer: 0.9314
+  cer: 0.5323
+  score: 0.7319
+  per_category:
+    bible:
+      wer: 0.8051
+      cer: 0.3831
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.41
+    finance:
+      wer: 1.2104
+      cer: 0.8437
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.12
+    jw:
+      wer: 0.8047
+      cer: 0.345
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.25
+    unicef:
+      wer: 0.9053
+      cer: 0.5575
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 1.11
+  source: evaluated
+- model: waxal-benchmarking/whisper-tiny-waxal-aka
+  model_url: https://huggingface.co/waxal-benchmarking/whisper-tiny-waxal-aka
+  owner: waxal-benchmarking
+  model_class: non-llm
+  params: '?'
+  wer: 1.1694
+  cer: 0.8733
+  score: 1.0213
+  per_category:
+    bible:
+      wer: 1.1454
+      cer: 0.6822
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.97
+    finance:
+      wer: 1.3684
+      cer: 1.2605
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.05
+    jw:
+      wer: 0.9743
+      cer: 0.4944
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.12
+    unicef:
+      wer: 1.1896
+      cer: 1.0559
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.51
+  source: evaluated
 - model: Google/speech-recognition
   model_url: https://www.google.com/
   owner: Google
@@ -110,18 +246,27 @@ benchmarks:
 - model: ghananlpcommunity/w2v-bert-2.0_twi_alpha_v1_farmerline-ct2
   model_url: https://huggingface.co/ghananlpcommunity/w2v-bert-2.0_twi_alpha_v1_farmerline-ct2
   owner: ghananlpcommunity
+  model_class: non-llm
   params: '?'
   wer: null
   cer: null
   error: load_failed
   source: evaluated
-  model_class: non-llm
 - model: ghananlpcommunity/FarmerlineWav2Vec-Twi-Demo
   model_url: https://huggingface.co/ghananlpcommunity/FarmerlineWav2Vec-Twi-Demo
   owner: ghananlpcommunity
+  model_class: non-llm
   params: '?'
   wer: null
   cer: null
   error: load_failed
   source: evaluated
+- model: ghananlpcommunity/whisper-large-v3-turbo-akan-ct2
+  model_url: https://huggingface.co/ghananlpcommunity/whisper-large-v3-turbo-akan-ct2
+  owner: ghananlpcommunity
   model_class: non-llm
+  params: '?'
+  wer: null
+  cer: null
+  error: load_failed
+  source: evaluated
