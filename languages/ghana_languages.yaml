@@ -22,7 +22,7 @@
 
 languages:
   - name: Akuapem_Twi
-    iso_639_3: twi
+    iso_639_3: twi_akuapem
     iso_639_1: tw
     family: Kwa
     utterances: 52650
@@ -34,7 +34,7 @@ languages:
     utterances: 13986
     hours: 20.95
   - name: Asante_Twi
-    iso_639_3: twi
+    iso_639_3: twi_asante
     iso_639_1: tw
     family: Kwa
     utterances: 143383
@@ -132,6 +132,11 @@ languages:
     family: Gur
     utterances: 12302
     hours: 17.63
+  - name: Ikposo
+    iso_639_3: kpo
+    family: Kwa
+    utterances: 0
+    hours: 0.0
   - name: Kasem
     iso_639_3: xsm
     family: Gur
@@ -248,9 +253,21 @@ languages:
     utterances: 0
     hours: 0.0
 
-# Deduplicated ISO codes with combined stats
-iso_groups:
+# Akuapem and Asante Twi were evaluated as one `twi` language until 2026-08-12.
+# That was a mistake: the two are orthographically distinct enough that a model
+# or API tuned for one is penalised on the other (Khaya scored 8.93% WER on the
+# Akuapem-heavy bible split with its `atw` endpoint but 88.69% on jw with the
+# same endpoint). They are now separate languages, `twi_akuapem` and
+# `twi_asante`, and the merged `twi` key is retired.
+#
+# Neither has its own ISO 639-3 code — both are `twi` in the standard — so these
+# keys are ours, not ISO. Anything reading them as ISO must map both back to
+# `twi` (see benchmark/evaluate.py LANG_TAG_ALIASES, which is what lets HF
+# models tagged `twi`/`ak` still match).
+retired_iso_groups:
   twi:
     name: Twi (Akuapem + Asante)
     utterances: 196033
     hours: 263.27
+    retired: 2026-08-12
+    replaced_by: [twi_akuapem, twi_asante]

@@ -38,7 +38,12 @@ def language_categories(iso_code):
 # Extra language-tag tokens accepted as an explicit mention of a language.
 # Akan (macrolanguage `ak`/`aka`) covers Twi, so Akan-tagged models count for twi.
 LANG_TAG_ALIASES = {
-    "twi": {"ak", "aka", "akan"},
+    # Akuapem and Asante Twi are separate eval languages but neither has its own
+    # ISO code — HF models are tagged `twi`/`tw`/`ak`, never by dialect — so both
+    # keys accept the whole Akan tag family and draw on the same model pool.
+    "twi_akuapem": {"tw", "twi", "ak", "aka", "akan"},
+    "twi_asante": {"tw", "twi", "ak", "aka", "akan"},
+    "twi": {"ak", "aka", "akan"},   # retired key, kept so old data still resolves
 }
 
 # Direction words that appear in language names ("Birifor_Southern") and must not
@@ -187,16 +192,32 @@ def _progress(i, total):
     print(f"      Progress: {i}/{total}")
 
 
-def _done_models(iso_code):
+def _done_models(iso_code, categories=None):
+    """Models already scored on EVERY category this language currently has.
+
+    A model is not "done" just because it has a WER: the reported WER is the
+    average across the language's categories, so a model scored before a new
+    category existed carries an average over the old set and must be re-run.
+    Passing `categories` makes that check; omitting it keeps the old
+    has-a-WER behaviour.
+    """
     path = BENCHMARK_DIR / f"{iso_code}.yaml"
     if not path.exists():
         return set()
     with open(path) as f:
         data = yaml.safe_load(f) or {}
-    return {b["model"] for b in data.get("benchmarks", []) if b.get("wer") is not None}
+    done = set()
+    want = set(categories or [])
+    for b in data.get("benchmarks", []):
+        if b.get("wer") is None:
+            continue
+        if want and not want <= set((b.get("per_category") or {})):
+            continue     # scored, but not on every current category
+        done.add(b["model"])
+    return done
 
 
-def evaluate_language(iso_code, model_filter=None, device="cuda:0"):
+def evaluate_language(iso_code, model_filter=None, device="cuda:0", force=False):
     """Benchmark all org ASR models for a language across every eval category.
 
     Each model is loaded once, scored per category, then final WER/CER is the
@@ -236,12 +257,15 @@ def evaluate_language(iso_code, model_filter=None, device="cuda:0"):
         print(f"  No org ASR models to evaluate for {iso_code}")
         return
 
-    done = _done_models(iso_code)
+    done = set() if force else _done_models(iso_code, category_names)
     pending = [m for m in models if m["name"] not in done]
     if not pending:
         print(f"  All {len(models)} org models already benchmarked for {iso_code}")
         return
-    print(f"  Models: {len(pending)} pending (of {len(models)} org ASR models)")
+    scored_before = _done_models(iso_code)          # has a WER, over any category set
+    stale = sum(1 for m in pending if m["name"] in scored_before)
+    note = f" — {stale} re-running for new categories" if stale else ""
+    print(f"  Models: {len(pending)} pending (of {len(models)} org ASR models){note}")
 
     results = []
     for model_info in pending:

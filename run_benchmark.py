@@ -40,6 +40,8 @@ def main():
     parser.add_argument("--langs", nargs="+", help="ISO codes (default: all eval langs)")
     parser.add_argument("--models", help="Filter model names containing this string")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--force", action="store_true",
+                        help="re-run models even if already scored on every current category")
     parser.add_argument("--device", default="cuda:0")
     args = parser.parse_args()
 
@@ -56,7 +58,8 @@ def main():
 
     from benchmark.evaluate import evaluate_language
     for iso in langs:
-        evaluate_language(iso, model_filter=args.models, device=args.device)
+        evaluate_language(iso, model_filter=args.models, device=args.device,
+                          force=args.force)
 
 
 if __name__ == "__main__":

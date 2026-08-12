@@ -32,7 +32,8 @@ MAX_RETRIES = 4
 
 # eval iso_639_3 -> Google BCP-47 language code
 EVAL_TO_GOOGLE = {
-    "twi": "ak",   # Akan / Twi
+    "twi_akuapem": "ak",   # Akan — Google has no dialect-level code
+    "twi_asante": "ak",
     "ewe": "ee",   # Ewe
     "gaa": "gaa",  # Ga
 }
@@ -80,8 +81,14 @@ def _has_result(iso_code):
     if not path.exists():
         return False
     d = yaml.safe_load(open(path)) or {}
-    return any(b.get("model") == MODEL_ID and b.get("wer") is not None
-               for b in d.get("benchmarks", []))
+    want = {c for c, _ in language_categories(iso_code)}
+    for b in d.get("benchmarks", []):
+        if b.get("model") != MODEL_ID or b.get("wer") is None:
+            continue
+        # Scored, but the reported WER averages whatever categories existed
+        # then; a language that has since gained one must be re-run.
+        return want <= set(b.get("per_category") or {})
+    return False
 
 
 def _save(iso_code, language, category_names, result):

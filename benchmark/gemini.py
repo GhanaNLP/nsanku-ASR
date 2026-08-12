@@ -107,11 +107,23 @@ def _transcribe_task(args):
 
 
 def _has_result(iso_code):
+    """True only if Gemini is scored on every category this language now has.
+
+    The reported WER averages the categories that existed when it ran, so a
+    language that has since gained one (lds, waxal) must be re-run rather than
+    skipped. Per-category checkpointing means the re-run only pays for the
+    categories it is missing.
+    """
     path = LLM_BENCHMARK_DIR / f"{iso_code}.yaml"
     if not path.exists():
         return False
     d = yaml.safe_load(open(path)) or {}
-    return any(b.get("wer") is not None for b in d.get("benchmarks", []))
+    want = {c for c, _ in language_categories(iso_code)}
+    for b in d.get("benchmarks", []):
+        if b.get("model") != MODEL_ID or b.get("wer") is None:
+            continue
+        return want <= set(b.get("per_category") or {})
+    return False
 
 
 def _save(iso_code, language, category_names, result):

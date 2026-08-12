@@ -41,7 +41,12 @@ MAX_RETRIES = 3
 
 # eval iso_639_3 -> Khaya API language code (only Ghanaian languages Khaya supports)
 EVAL_TO_KHAYA = {
-    "twi": "twi",   # general Twi (the eval set mixes Akuapem + Asante)
+    # Khaya exposes both dialects; with the eval set split by dialect they now
+    # map one-to-one instead of one endpoint straddling mixed audio. Measured on
+    # 60 samples/category: atw beat twi 8.93% vs 34.84% on the Akuapem-heavy
+    # bible split, and lost 88.69% vs 49.52% on jw.
+    "twi_akuapem": "atw",   # Akuapem Twi
+    "twi_asante": "twi",    # Twi (Asante)
     "ada": "ada", "bwu": "bwu", "dag": "dag", "dga": "dga", "ewe": "ewe",
     "fat": "fat", "gaa": "gaa", "gjn": "gjn", "gur": "gur", "hau": "hau",
     "kus": "kus", "maw": "maw", "nzi": "nzi", "xsm": "xsm",
@@ -86,8 +91,14 @@ def _has_result(iso_code):
     if not path.exists():
         return False
     d = yaml.safe_load(open(path)) or {}
-    return any(b.get("model") == MODEL_ID and b.get("wer") is not None
-               for b in d.get("benchmarks", []))
+    want = {c for c, _ in language_categories(iso_code)}
+    for b in d.get("benchmarks", []):
+        if b.get("model") != MODEL_ID or b.get("wer") is None:
+            continue
+        # Scored, but the reported WER averages whatever categories existed
+        # then; a language that has since gained one must be re-run.
+        return want <= set(b.get("per_category") or {})
+    return False
 
 
 def _save(iso_code, language, category_names, result):

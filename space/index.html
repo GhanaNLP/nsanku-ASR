@@ -327,7 +327,8 @@ const RAW = `https://raw.githubusercontent.com/${REPO}/${BRANCH}`;
 const API = `https://api.github.com/repos/${REPO}/contents`;
 
 const LANG_NAMES = {
-  twi:'Twi (Akuapem + Asante)',ewe:'Ewe',hau:'Hausa',kbp:'Kabiye',dag:'Dagbani',
+  twi_akuapem:'Akuapem Twi',twi_asante:'Asante Twi',kpo:'Ikposo',
+  twi:'Twi (Akuapem + Asante, retired)',ewe:'Ewe',hau:'Hausa',kbp:'Kabiye',dag:'Dagbani',
   dga:'Dagaare',fat:'Fante',nko:'Nkonya',any:'Anyin',avn:'Avatime',
   bud:'Bassar Ntcham',bim:'Bimoba',biv:'Birifor Southern',bib:'Bissa',bwu:'Buli',
   ncu:'Chumburung',ada:'Dangme',mzw:'Deg',ffm:'Fulfulde Maasina',acd:'Gikyode',
@@ -345,7 +346,7 @@ const LANG_NAMES = {
 // dashboard with no HTML change. The literal below is only the fallback for
 // when that fetch fails (offline, rate-limited), and may lag the file.
 let LANG_FAMILIES = {
-  twi:'Kwa',fat:'Kwa',any:'Kwa',nzi:'Kwa',sfw:'Kwa',aha:'Kwa',gaa:'Kwa',ada:'Kwa',
+  twi_akuapem:'Kwa',twi_asante:'Kwa',kpo:'Kwa',twi:'Kwa',fat:'Kwa',any:'Kwa',nzi:'Kwa',sfw:'Kwa',aha:'Kwa',gaa:'Kwa',ada:'Kwa',
   gjn:'Kwa',ncu:'Kwa',naw:'Kwa',acd:'Kwa',nko:'Kwa',avn:'Kwa',lef:'Kwa',
   lip:'Kwa',snw:'Kwa',akp:'Kwa',bov:'Kwa',
   ewe:'Gbe',
