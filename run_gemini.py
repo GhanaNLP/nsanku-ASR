@@ -12,8 +12,9 @@ import sys
 import time
 
 sys.path.insert(0, ".")
-os.environ.setdefault("HF_HOME", "/mnt/volume_d2wey28/hf_cache")
-os.environ.setdefault("HUGGINGFACE_HUB_CACHE", "/mnt/volume_d2wey28/hf_cache/hub")
+if os.path.isdir("/mnt/volume_d2wey28/hf_cache"):
+    os.environ.setdefault("HF_HOME", "/mnt/volume_d2wey28/hf_cache")
+    os.environ.setdefault("HUGGINGFACE_HUB_CACHE", "/mnt/volume_d2wey28/hf_cache/hub")
 
 from benchmark.gemini import evaluate_gemini
 from benchmark.evaluate import load_eval_configs

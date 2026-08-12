@@ -1,4 +1,4 @@
-"""LLM ASR track — Gemini (gemini-2.5-flash concurrent with thread-local clients).
+"""LLM ASR track — Gemini (gemini-3.6-flash concurrent with thread-local clients).
 
 Transcribes the ghana-speech-eval audio with Google Gemini (a multimodal LLM) and
 scores it per category, averaged across the categories each language appears in —
@@ -33,7 +33,7 @@ if env_path.exists():
                 k, v = line.split("=", 1)
                 os.environ.setdefault(k.strip(), v.strip())
 
-GEMINI_MODEL = "gemini-2.5-flash"
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.6-flash")
 MODEL_ID = f"google/{GEMINI_MODEL}"
 MODEL_URL = f"https://ai.google.dev/gemini-api/docs/models#{GEMINI_MODEL}"
 
@@ -141,10 +141,25 @@ def evaluate_gemini(iso_code):
     category_names = [c for c, _ in cats]
     print(f"\n{'=' * 60}\n  Gemini ({GEMINI_MODEL}) - {iso_code} ({language})  categories={category_names}\n{'=' * 60}", flush=True)
 
-    per_category = {}
-    cat_wers, cat_cers = [], []
+    # Resume from existing checkpoint if present (per-category granularity)
+    existing = {}
+    path = LLM_BENCHMARK_DIR / f"{iso_code}.yaml"
+    if path.exists():
+        d = yaml.safe_load(open(path)) or {}
+        for b in d.get("benchmarks", []):
+            if b.get("model") == MODEL_ID:
+                existing = b.get("per_category") or {}
 
+    per_category = dict(existing)
+    cat_wers, cat_cers = [], []
     for category, config in cats:
+        if category in per_category and per_category[category].get("wer") is not None:
+            print(f"  Category '{category}' already done - skipping", flush=True)
+            w = per_category[category]["wer"]
+            if w is not None:
+                cat_wers.append(w); cat_cers.append(per_category[category]["cer"])
+            continue
+
         samples = load_eval_samples(config, NUM_SAMPLES)
         if not samples:
             continue
@@ -190,6 +205,24 @@ def evaluate_gemini(iso_code):
             cat_wers.append(wer)
             cat_cers.append(cer)
             print(f"    WER {wer:.2%}  CER {cer:.2%}  (valid {valid}/{len(samples)})", flush=True)
+
+        # Checkpoint after every category so interruptions resume cleanly
+        avg_wer = round(sum(cat_wers) / len(cat_wers), 4) if cat_wers else None
+        avg_cer = round(sum(cat_cers) / len(cat_cers), 4) if cat_cers else None
+        result = {
+            "model": MODEL_ID,
+            "model_url": MODEL_URL,
+            "owner": "google",
+            "model_class": "llm",
+            "params": "API",
+            "wer": avg_wer,
+            "cer": avg_cer,
+            "per_category": per_category,
+            "source": "evaluated",
+        }
+        if avg_wer is None:
+            result["error"] = "no_valid_output"
+        _save(iso_code, language, category_names, result)
 
     avg_wer = round(sum(cat_wers) / len(cat_wers), 4) if cat_wers else None
     avg_cer = round(sum(cat_cers) / len(cat_cers), 4) if cat_cers else None
