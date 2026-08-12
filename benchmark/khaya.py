@@ -22,6 +22,7 @@ import yaml
 from .config import NUM_SAMPLES, ROOT
 from .dataset import load_eval_samples
 from .evaluate import load_eval_configs, language_categories, save_transcriptions, _score
+from .recipes import load_lang_recipe, recipe_get
 
 # Load .env for KHAYA_API_KEY
 _env = ROOT / ".env"
@@ -100,7 +101,11 @@ def evaluate_khaya(iso_code):
     key = os.environ.get("KHAYA_API_KEY")
     if not key:
         raise ValueError("KHAYA_API_KEY required (set in .env).")
-    khaya_code = EVAL_TO_KHAYA.get(iso_code)
+    # Per-language recipe (recipes/GhanaNLP_khaya-asr-v3__{iso}.py) owns the API
+    # language code and may replace the transcribe call entirely.
+    recipe = load_lang_recipe(MODEL_ID, iso_code)
+    khaya_code = recipe_get(recipe, "LANGUAGE_CODE", EVAL_TO_KHAYA.get(iso_code))
+    transcribe = recipe_get(recipe, "transcribe", _transcribe)
     if not khaya_code:
         print(f"  {iso_code}: not supported by Khaya API - skipping")
         return
@@ -127,7 +132,7 @@ def evaluate_khaya(iso_code):
         hyps = [""] * len(samples)
         t0 = time.time()
         with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
-            fut = {pool.submit(_transcribe, _encode_wav(s["audio"], s["sample_rate"]), khaya_code, key): i
+            fut = {pool.submit(transcribe, _encode_wav(s["audio"], s["sample_rate"]), khaya_code, key): i
                    for i, s in enumerate(samples)}
             done = 0
             for f in as_completed(fut):

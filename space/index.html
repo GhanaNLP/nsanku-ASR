@@ -391,13 +391,22 @@ function modelLink(model, url) {
   return `<a href="${url}" target="_blank" title="${model}">${model}</a>`;
 }
 
-function recipeLink(model) {
+// API / LLM tracks are one endpoint run on every language, so their recipe is
+// per language: recipes/{model}__{iso}.py (see recipes/README.md).
+const PER_LANGUAGE_RECIPE_TRACKS = ['GhanaNLP/khaya-asr', 'Google/speech-recognition', 'google/gemini'];
+
+function recipeLink(model, iso) {
   const safe = model.replace(/\//g,'_').replace(/:/g,'_');
-  return `<a class="recipe-link" href="https://github.com/${REPO}/blob/${BRANCH}/recipes/${safe}.py" target="_blank" title="Recipe used to run this model — edit it and open a PR">code</a>`;
+  const perLang = iso && PER_LANGUAGE_RECIPE_TRACKS.some(p => model.startsWith(p));
+  const file = perLang ? `${safe}__${iso}.py` : `${safe}.py`;
+  const title = perLang
+    ? `Recipe used to run this model on this language — edit it and open a PR`
+    : `Recipe used to run this model — edit it and open a PR`;
+  return `<a class="recipe-link" href="https://github.com/${REPO}/blob/${BRANCH}/recipes/${file}" target="_blank" title="${title}">code</a>`;
 }
 
-function modelCell(model, url) {
-  return `${modelLink(model, url)}${recipeLink(model)}`;
+function modelCell(model, url, iso) {
+  return `${modelLink(model, url)}${recipeLink(model, iso)}`;
 }
 
 function escapeHtml(s) {
@@ -677,7 +686,7 @@ function renderGlobal(data) {
     <tr>
       <td>${i+1}</td>
       <td>${LANG_NAMES[r.iso] || r.iso}</td>
-      <td>${modelCell(r.model, r.url)}</td>
+      <td>${modelCell(r.model, r.url, r.iso)}</td>
       <td><span class="mtype">${r.model_type}</span></td>
       <td>${trackBadge(r.model_class)}</td>
       <td>${r.params || '—'}</td>
@@ -748,7 +757,7 @@ function renderPerLanguage(data) {
         return `
       <tr>
         <td>${i+1}</td>
-        <td>${modelCell(r.model, r.url)}</td>
+        <td>${modelCell(r.model, r.url, r.iso)}</td>
         <td><span class="mtype">${r.model_type}</span></td>
         <td>${trackBadge(r.model_class)}</td>
         <td>${r.params || '—'}</td>
@@ -768,7 +777,7 @@ function renderPerLanguage(data) {
         return `
           <tr>
             <td>${i+1}</td>
-            <td>${modelCell(r.model, r.url)}</td>
+            <td>${modelCell(r.model, r.url, r.iso)}</td>
             <td><span class="mtype">${r.model_type}</span></td>
             <td>${trackBadge(r.model_class)}</td>
             <td>${r.params || '—'}</td>
@@ -804,7 +813,7 @@ function renderModelStatus(data) {
         return `
           <tr>
             <td>${LANG_NAMES[r.iso] || r.iso}</td>
-            <td>${modelCell(r.model, r.url)}</td>
+            <td>${modelCell(r.model, r.url, r.iso)}</td>
             <td><span class="mtype">${r.model_type}</span></td>
             <td>${trackBadge(r.model_class)}</td>
             <td>${r.params || '—'}</td>

@@ -41,6 +41,48 @@ LANG_TAG_ALIASES = {
     "twi": {"ak", "aka", "akan"},
 }
 
+# Direction words that appear in language names ("Birifor_Southern") and must not
+# become match tokens on their own.
+_NAME_STOPWORDS = {
+    "north", "northern", "south", "southern", "east", "eastern",
+    "west", "western", "central", "standard",
+}
+
+
+def language_name_tokens(iso_code):
+    """Language-name words used to match MODEL NAMES, e.g. dag -> {'dagbani'}.
+
+    Many org models name the language in full ("w2v-bert-2.0-hausa_250_250h")
+    rather than by ISO code, so the names from the language metadata count as
+    explicit mentions in a model's name.
+
+    These are deliberately NOT matched against a model's declared language tags:
+    tags are ISO codes, and a name can collide with a different language's code
+    (Tem/Kotokoli is kdh, but "tem" as a tag is Temne).
+    """
+    import yaml as _yaml
+    from .config import LANG_CONFIG
+    tokens = set()
+    try:
+        meta = _yaml.safe_load(open(LANG_CONFIG))
+    except Exception:
+        return tokens
+    for l in meta.get("languages", []):
+        if l.get("iso_639_3") != iso_code:
+            continue
+        for part in str(l.get("name", "")).lower().split("_"):
+            if len(part) >= 3 and part not in _NAME_STOPWORDS:
+                tokens.add(part)
+    return tokens
+
+
+def language_codes(iso_code):
+    """ISO tokens that count as an explicit language tag (639-3, 639-1, aliases)."""
+    iso1 = _iso1_map().get(iso_code)
+    return ({iso_code}
+            | ({iso1} if iso1 else set())
+            | LANG_TAG_ALIASES.get(iso_code, set()))
+
 
 def _iso1_map():
     """iso_639_3 -> iso_639_1, from the language metadata (only where one exists)."""
@@ -58,13 +100,15 @@ def _iso1_map():
 
 
 def _all_org_asr_models():
-    """Union of every discovered model across languages -> {name: info}."""
+    """Union of every discovered model across languages + the org scan -> {name: info}."""
     with open(RESULTS_FILE) as f:
         data = json.load(f)
     universe = {}
     for lang in data["languages"].values():
         for m in lang.get("asr_models", []):
             universe.setdefault(m["name"], m)
+    for m in data.get("org_models", []):
+        universe.setdefault(m["name"], m)
     return universe
 
 
@@ -77,9 +121,8 @@ def get_language_models(iso_code):
     and it is not a generic global base model.
     """
     universe = list(_all_org_asr_models().values())
-    iso1 = _iso1_map().get(iso_code)
-    codes = {iso_code} | ({iso1} if iso1 else set()) | LANG_TAG_ALIASES.get(iso_code, set())
-    return filter_models(universe, iso_codes=codes)
+    return filter_models(universe, iso_codes=language_codes(iso_code),
+                         name_tokens=language_name_tokens(iso_code))
 
 
 def save_benchmark(iso_code, language, categories, results):

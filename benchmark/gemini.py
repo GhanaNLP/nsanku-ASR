@@ -22,6 +22,7 @@ import yaml
 from .config import NUM_SAMPLES, ROOT
 from .dataset import load_eval_samples
 from .evaluate import load_eval_configs, language_categories, save_transcriptions, _score
+from .recipes import load_lang_recipe, recipe_get
 
 # Load .env file for GEMINI_API_KEY
 env_path = ROOT / ".env"
@@ -67,15 +68,19 @@ def _parse(text):
     return cleaned or None
 
 
-def _transcribe(wav_bytes, language_name=None):
-    from google.genai import types
-    client = _get_thread_client()
+def default_prompt(language_name=None):
+    """Prompt used when a language has no per-language recipe of its own."""
     lang = f"The language is {language_name}. " if language_name else ""
-    prompt = (
+    return (
         "Transcribe the speech in this audio exactly as spoken. " + lang +
         "Put the transcription inside square brackets, e.g. [the man went to the market]. "
         "Output ONLY the bracketed transcription, nothing else."
     )
+
+
+def _transcribe(wav_bytes, prompt):
+    from google.genai import types
+    client = _get_thread_client()
     for attempt in range(MAX_RETRIES):
         try:
             resp = client.models.generate_content(
@@ -96,8 +101,8 @@ def _transcribe(wav_bytes, language_name=None):
 
 
 def _transcribe_task(args):
-    idx, wav_bytes, lang_name = args
-    res = _transcribe(wav_bytes, lang_name)
+    idx, wav_bytes, prompt, transcribe = args
+    res = transcribe(wav_bytes, prompt)
     return idx, res or ""
 
 
@@ -139,7 +144,13 @@ def evaluate_gemini(iso_code):
     meta = load_eval_configs()[iso_code]
     language = meta["language"]
     category_names = [c for c, _ in cats]
+    # Per-language recipe (recipes/google_{model}__{iso}.py) owns this language's
+    # prompt and may replace the transcribe call entirely.
+    recipe = load_lang_recipe(MODEL_ID, iso_code)
+    transcribe = recipe_get(recipe, "transcribe", _transcribe)
     print(f"\n{'=' * 60}\n  Gemini ({GEMINI_MODEL}) - {iso_code} ({language})  categories={category_names}\n{'=' * 60}", flush=True)
+    if recipe is not None:
+        print(f"  recipe: {recipe.__name__.replace('nsanku_recipe_', '')}.py", flush=True)
 
     # Resume from existing checkpoint if present (per-category granularity)
     existing = {}
@@ -164,13 +175,15 @@ def evaluate_gemini(iso_code):
         if not samples:
             continue
         refs = [s["text"] for s in samples]
-        lang_name = samples[0].get("language") or language
+        lang_name = recipe_get(recipe, "LANGUAGE_NAME",
+                               samples[0].get("language") or language)
+        prompt = recipe_get(recipe, "PROMPT", default_prompt(lang_name))
         print(f"  Category '{category}' ({len(samples)} samples, {MAX_WORKERS} workers)...", flush=True)
 
         tasks = []
         for i, s in enumerate(samples):
             wav_bytes = _encode_wav(s["audio"], s["sample_rate"])
-            tasks.append((i, wav_bytes, lang_name))
+            tasks.append((i, wav_bytes, prompt, transcribe))
 
         hyps = [""] * len(samples)
         done_count = 0

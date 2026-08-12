@@ -284,6 +284,50 @@ def fetch_models_for_language(iso_639_1, iso_639_3, pipeline_tag):
     return search_huggingface(iso_639_1, iso_639_3, 'models', pipeline_tag)
 
 
+def fetch_models_for_org(org, pipeline_tag="automatic-speech-recognition"):
+    """Fetch ALL of an org's models for a pipeline tag via the REST API.
+
+    Uses the models API with the `author` filter (which supports full pagination
+    via cursor links), so every model under the org is captured — not just the
+    ones that surface in a language search page. Returns a list of
+    {'name', 'url', 'downloads', 'likes', 'size'} dicts, deduplicated.
+    """
+    items, seen = [], set()
+    url = f"https://huggingface.co/api/models?author={org}&pipeline_tag={pipeline_tag}&limit=500"
+    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
+    page = 0
+    while url and page < 10:
+        page += 1
+        r = requests.get(url, headers=headers, timeout=20)
+        r.raise_for_status()
+        for m in r.json():
+            name = m.get("modelId")
+            if not name or name in seen:
+                continue
+            seen.add(name)
+            item = {
+                "name": name,
+                "url": f"https://huggingface.co/{name}",
+                "downloads": m.get("downloads", 0),
+                "likes": m.get("likes", 0),
+            }
+            size = (m.get("safetensors") or {}).get("total")
+            if size:
+                item["size"] = size
+            items.append(item)
+        # Follow the cursor in the Link header for the next page, if present
+        link = r.headers.get("Link", "")
+        url = None
+        if 'rel="next"' in link:
+            for part in link.split(","):
+                if 'rel="next"' in part:
+                    url = part.split(";")[0].strip("<> ")
+                    break
+        if items:
+            print(f"      {org}: {len(items)} {pipeline_tag} models (page {page})")
+    return items
+
+
 def fetch_datasets_for_language(iso_639_1, iso_639_3, task_category):
     """Fetch datasets for a language and task type.
 

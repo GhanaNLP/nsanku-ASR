@@ -23,6 +23,31 @@ wrappers in `benchmark/models.py`:
 If a model has no recipe (or the recipe fails to import), the benchmark falls
 back to the standard wrapper for the detected architecture.
 
+## API / LLM tracks: one recipe **per language**
+
+Khaya, Google ASR and Gemini are a single endpoint evaluated on every language,
+so a single file per model would mean nobody could change one language without
+touching the rest. These tracks therefore get a recipe **per language**:
+
+```
+recipes/GhanaNLP_khaya-asr-v3__twi.py      # Khaya, Twi only
+recipes/Google_speech-recognition__ewe.py  # Google ASR, Ewe only
+recipes/google_gemini-3.6-flash__gaa.py    # Gemini, Ga only
+```
+
+| Track | Knobs | Full override |
+|---|---|---|
+| Khaya | `LANGUAGE_CODE` — the `?language=` value | `transcribe(wav_bytes, khaya_code, key)` |
+| Google ASR | `LANGUAGE_CODE` — BCP-47 code | `transcribe(pcm_bytes, sample_rate, google_code)` |
+| Gemini | `PROMPT`, `LANGUAGE_NAME` | `transcribe(wav_bytes, prompt)` |
+
+`PROMPT` is the per-language prompt Gemini actually receives — tune the wording,
+orthography hints or examples for one language and the other languages are
+unaffected. `LANGUAGE_CODE = None` disables that language for that track.
+
+Languages an API does not support yet ship a recipe with `LANGUAGE_CODE = None`
+and a comment, so enabling one is a one-line pull request.
+
 ## How to update a recipe
 
 1. Open your model's file in [`recipes/`](.) — e.g.
@@ -38,9 +63,10 @@ Every model row in the leaderboard links to its recipe via the **code** badge.
 ## Regenerating
 
 ```bash
-python3 generate_recipes.py
+python3 generate_recipes.py       # per-model recipes (HF models)
+python3 generate_api_recipes.py   # per-language recipes (Khaya / Google / Gemini)
 ```
 
-`generate_recipes.py` creates recipes for models that don't have one yet.
+Both scripts only create recipes that don't exist yet.
 **Existing recipe files are never overwritten** — once a recipe exists it is
 treated as the author's code, so edits always survive regeneration.

@@ -23,6 +23,7 @@ import speech_recognition as sr
 from .config import NUM_SAMPLES, ROOT
 from .dataset import load_eval_samples
 from .evaluate import load_eval_configs, language_categories, save_transcriptions, _score
+from .recipes import load_lang_recipe, recipe_get
 
 MODEL_ID = "Google/speech-recognition"
 MODEL_URL = "https://www.google.com/"
@@ -95,7 +96,11 @@ def evaluate_google(iso_code, num_samples=NUM_SAMPLES):
     Checkpoints after every category (writes benchmarks_api/{iso}.yaml), so an
     interrupted run resumes from the last completed category.
     """
-    google_code = EVAL_TO_GOOGLE.get(iso_code)
+    # Per-language recipe (recipes/Google_speech-recognition__{iso}.py) owns this
+    # language's BCP-47 code and may replace the transcribe call entirely.
+    recipe = load_lang_recipe(MODEL_ID, iso_code)
+    google_code = recipe_get(recipe, "LANGUAGE_CODE", EVAL_TO_GOOGLE.get(iso_code))
+    transcribe = recipe_get(recipe, "transcribe", _transcribe)
     if not google_code:
         print(f"  {iso_code}: no Google language code configured - skipping")
         return
@@ -135,7 +140,7 @@ def evaluate_google(iso_code, num_samples=NUM_SAMPLES):
         hyps = [""] * len(samples)
         t0 = time.time()
         with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
-            fut = {pool.submit(_transcribe, _encode_pcm(s["audio"], s["sample_rate"]), s["sample_rate"], google_code): i
+            fut = {pool.submit(transcribe, _encode_pcm(s["audio"], s["sample_rate"]), s["sample_rate"], google_code): i
                    for i, s in enumerate(samples)}
             done = 0
             for f in as_completed(fut):

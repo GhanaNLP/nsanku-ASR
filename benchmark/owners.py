@@ -12,11 +12,11 @@ import requests
 
 from .config import (
     OWNER_TYPES_FILE, HF_TOKEN, ORG_ONLY, MAX_LANG_TAGS, DATA_DIR,
-    SINGLE_LANGUAGE_ONLY, DEDUP_SAME_BASENAME, LANG_CONFIG,
+    SINGLE_LANGUAGE_ONLY, LANG_CONFIG, ORG_OVERRIDES,
+    MODEL_LICENSES_FILE, MODEL_CARDS_FILE, REQUIRE_MODEL_CARD, MIN_CARD_CHARS,
 )
 
 LANGTAG_COUNTS_FILE = DATA_DIR / "model_lang_tags.json"  # cache: model_id -> [lang codes]
-MODEL_CREATED_FILE = DATA_DIR / "model_created.json"     # cache: model_id -> ISO created date
 
 # Collapse language-code synonyms to a single canonical language when counting how many
 # distinct languages a model targets. iso 639-1 <-> 639-3 pairs are read from the language
@@ -60,7 +60,7 @@ def distinct_language_count(model_id, cache=None):
 # Keywords marking a model as NOT automatic-speech-recognition.
 # These org models exist but cannot transcribe (TTS, aligners, language-ID).
 NON_ASR_KEYWORDS = [
-    "tts", "text-to-speech",
+    "tts", "text-to-speech", "vits", "voxcpm",
     "forced-aligner", "forced_aligner", "aligner",
     "-slid", "slid-", "-lid-", "langid", "language-id", "spoken-language-id",
 ]
@@ -85,7 +85,13 @@ def _save_cache(cache):
 
 
 def owner_type(owner, cache=None):
-    """Return 'org' or 'user' for a HuggingFace namespace, cached."""
+    """Return 'org' or 'user' for a HuggingFace namespace, cached.
+
+    Namespaces listed in ORG_OVERRIDES are always treated as orgs regardless of
+    what HuggingFace's org lookup returns.
+    """
+    if owner in ORG_OVERRIDES:
+        return "org"
     cache = _load_cache() if cache is None else cache
     if owner in cache:
         return cache[owner]
@@ -156,28 +162,182 @@ def is_general_model(model_id, cache=None):
     return lang_tag_count(model_id, cache) > MAX_LANG_TAGS
 
 
-def targets_language(model_id, iso_codes, cache=None):
-    """True if the model's config explicitly declares one of the given codes.
+def targets_language(model_id, iso_codes, cache=None, name_tokens=()):
+    """True if the model explicitly declares/names one of the given codes.
 
-    iso_codes: iterable of acceptable tokens for the language (639-3 and 639-1).
+    iso_codes: acceptable ISO tokens for the language (639-3, 639-1, aliases).
     Macrolanguage codes (e.g. 'ak' for Akan) are intentionally NOT auto-expanded —
     a model must name the specific language.
+
+    Declared HF language tags are matched against `iso_codes` ONLY, because tags
+    are ISO codes: a tag of "tem" means Temne (tem), never Tem/Kotokoli (kdh),
+    whose English name merely happens to be spelled the same.
+
+    `name_tokens` (the language's English name, e.g. 'hausa') is used only for
+    models that declare NO tags, where the model's own basename is the sole
+    evidence — "w2v-bert-2.0-hausa_250_250h" or "w2v-bert-2.0_twi_alpha_v1". A
+    token must match whole (delimited by non-alphanumerics) so names like
+    "brianyan918" don't match "any"; 1-2 letter codes are too noisy to use.
     """
     tags = set(lang_tags(model_id, cache))
-    return bool(tags & set(iso_codes))
+    if tags & set(iso_codes):
+        return True
+    if not tags:
+        import re
+        basename = set(re.split(r"[^a-z0-9]+", model_id.split("/")[-1].lower()))
+        wanted = {t for t in set(iso_codes) | set(name_tokens) if len(t) >= 3}
+        return bool(basename & wanted)
+    return False
 
 
-def filter_models(models, iso_codes=None):
+# ---------------------------------------------------------------------------
+# Model-card quality (a declared license is reported but NOT required)
+# ---------------------------------------------------------------------------
+
+# License values that count as "no license declared" (reporting only).
+NO_LICENSE = {"", "none", "unknown", "no-license", "no license", "???"}
+
+# Substrings marking a README as an auto-generated / unfilled stub rather than a
+# real model card.
+CARD_PLACEHOLDER_MARKERS = [
+    "provide a quick summary of what the model is/does",
+    "provide a longer summary of what this model is",
+    "this model card has been automatically generated",
+    "this model card is under construction",
+    "this model has no card",
+    "no model card",
+    "write a model card here",
+    "more information needed",
+    "lorem ipsum",
+]
+
+
+def _load_json_cache(path):
+    if path.exists():
+        try:
+            return json.load(open(path))
+        except Exception:
+            return {}
+    return {}
+
+
+def _save_json_cache(path, cache):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    json.dump(cache, open(path, "w"), indent=2, sort_keys=True)
+
+
+def model_license(model_id, cache=None):
+    """Declared license of a model ("" when none), cached."""
+    own = cache is None
+    cache = _load_json_cache(MODEL_LICENSES_FILE) if own else cache
+    if model_id in cache:
+        return cache[model_id]
+    lic = ""
+    try:
+        r = requests.get(f"https://huggingface.co/api/models/{model_id}?full=true",
+                         headers=_headers(), timeout=20)
+        if r.status_code == 200:
+            lic = str((r.json().get("cardData") or {}).get("license") or "")
+    except Exception:
+        lic = ""
+    cache[model_id] = lic
+    _save_json_cache(MODEL_LICENSES_FILE, cache)
+    return lic
+
+
+def license_ok(model_id, cache=None):
+    return model_license(model_id, cache).strip().lower() not in NO_LICENSE
+
+
+def _card_body(text):
+    """README prose with YAML front-matter, HTML comments and headings removed."""
+    import re
+    if text.startswith("---"):
+        parts = text.split("---", 2)
+        if len(parts) == 3:
+            text = parts[2]
+    text = re.sub(r"<!--.*?-->", " ", text, flags=re.S)
+    text = re.sub(r"^\s*#+.*$", " ", text, flags=re.M)     # headings
+    text = re.sub(r"^\s*[-*|>]+\s*", " ", text, flags=re.M)  # list/table/quote markers
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def card_problem(model_id, cache=None):
+    """'' if the model ships a real card, else a short reason string. Cached."""
+    own = cache is None
+    cache = _load_json_cache(MODEL_CARDS_FILE) if own else cache
+    if model_id in cache:
+        return cache[model_id]
+    try:
+        r = requests.get(f"https://huggingface.co/{model_id}/raw/main/README.md",
+                         headers=_headers(), timeout=20)
+        if r.status_code != 200:
+            reason = f"no README (HTTP {r.status_code})"
+        else:
+            body = _card_body(r.text)
+            low = body.lower()
+            hit = next((k for k in CARD_PLACEHOLDER_MARKERS if k in low), None)
+            if hit:
+                reason = f"placeholder card ({hit!r})"
+            elif len(body) < MIN_CARD_CHARS:
+                reason = f"card too short ({len(body)} chars)"
+            else:
+                reason = ""
+    except Exception as e:
+        reason = f"card fetch failed ({type(e).__name__})"
+    cache[model_id] = reason
+    _save_json_cache(MODEL_CARDS_FILE, cache)
+    return reason
+
+
+def card_ok(model_id, cache=None):
+    return card_problem(model_id, cache) == ""
+
+
+def warm_caches_from_universe(models):
+    """Seed the language-tag and license caches from org-scan `cardData`.
+
+    Avoids one HF API call per model when the scan already captured the metadata.
+    `models` is a list of dicts with 'name' and optionally 'license'/'language'.
+    """
+    ltags = _load_langtag_cache()
+    lic = _load_json_cache(MODEL_LICENSES_FILE)
+    for m in models:
+        name = m.get("name")
+        if not name:
+            continue
+        if "language" in m and name not in ltags:
+            langs = m["language"] or []
+            if isinstance(langs, str):
+                langs = [langs]
+            ltags[name] = [str(x).lower() for x in langs]
+        if "license" in m and name not in lic:
+            lic[name] = str(m["license"] or "")
+    _save_langtag_cache(ltags)
+    _save_json_cache(MODEL_LICENSES_FILE, lic)
+    return ltags, lic
+
+
+def filter_models(models, iso_codes=None, name_tokens=(), require_card=None):
     """Keep only org-owned ASR models that explicitly target the language.
 
     Drops: personal accounts, non-ASR models (TTS/aligner/LID), generic global
-    base models (>MAX_LANG_TAGS languages), and — when `iso_codes` is given —
-    any model whose config does not explicitly declare the language.
+    base models (>MAX_LANG_TAGS languages), models shipping only a placeholder
+    model card, and — when `iso_codes` is given — any model whose config does
+    not explicitly declare the language (see `targets_language` for how
+    `name_tokens` is used). A declared license is NOT required.
+
+    Namespaces in ORG_OVERRIDES bypass the model-card gate. Pass
+    `require_card=False` to skip that gate entirely (used by the curation
+    report to show why candidates fail).
 
     `models` is a list of dicts each with a 'name' key ("owner/model").
     """
+    if require_card is None:
+        require_card = REQUIRE_MODEL_CARD
     otype = _load_cache()
     ltags = _load_langtag_cache()
+    cards = _load_json_cache(MODEL_CARDS_FILE)
     kept = []
     for m in models:
         name = m["name"]
@@ -190,61 +350,10 @@ def filter_models(models, iso_codes=None):
             continue
         if SINGLE_LANGUAGE_ONLY and distinct_language_count(name, ltags) > 1:
             continue
-        if iso_codes is not None and not targets_language(name, iso_codes, ltags):
+        if iso_codes is not None and not targets_language(name, iso_codes, ltags,
+                                                          name_tokens):
+            continue
+        if require_card and owner not in ORG_OVERRIDES and not card_ok(name, cards):
             continue
         kept.append(m)
-    if DEDUP_SAME_BASENAME:
-        kept = dedupe_by_basename(kept)
     return kept
-
-
-def _load_created_cache():
-    if MODEL_CREATED_FILE.exists():
-        try:
-            return json.load(open(MODEL_CREATED_FILE))
-        except Exception:
-            return {}
-    return {}
-
-
-def model_created_at(model_id, cache=None):
-    """ISO creation timestamp of a model repo (cached); '' on failure."""
-    cache = _load_created_cache() if cache is None else cache
-    if model_id in cache:
-        return cache[model_id]
-    try:
-        r = requests.get(f"https://huggingface.co/api/models/{model_id}",
-                         headers=_headers(), timeout=15)
-        created = r.json().get("createdAt", "") if r.status_code == 200 else ""
-    except Exception:
-        created = ""
-    cache[model_id] = created
-    MODEL_CREATED_FILE.parent.mkdir(parents=True, exist_ok=True)
-    json.dump(cache, open(MODEL_CREATED_FILE, "w"), indent=2, sort_keys=True)
-    return created
-
-
-def dedupe_by_basename(models):
-    """Collapse models that share a basename across different orgs.
-
-    Rule: if one copy is owned by ghananlpcommunity, drop that copy (keep the other);
-    otherwise keep the earliest-published repo.
-    """
-    from collections import defaultdict
-    groups = defaultdict(list)
-    for m in models:
-        groups[m["name"].split("/")[-1]].append(m)
-    kept = []
-    for base, group in groups.items():
-        if len(group) == 1:
-            kept.append(group[0])
-            continue
-        non_gnlp = [m for m in group if m["name"].split("/")[0] != "ghananlpcommunity"]
-        pool = non_gnlp if non_gnlp else group
-        if len(pool) == 1:
-            kept.append(pool[0])
-        else:
-            kept.append(min(pool, key=lambda m: model_created_at(m["name"]) or "9999"))
-    # preserve original order
-    order = {id(m): i for i, m in enumerate(models)}
-    return sorted(kept, key=lambda m: order[id(m)])
