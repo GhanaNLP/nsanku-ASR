@@ -6,6 +6,8 @@ Each wrapper: load → transcribe batch → cleanup GPU memory.
 
 import os
 import gc
+import re
+import sys
 import torch
 import numpy as np
 from transformers import (
@@ -281,6 +283,105 @@ class Qwen2AudioModel:
     def cleanup(self):
         del self.model
         del self.processor
+        cleanup_gpu()
+
+
+class Qwen3ASROnnxModel:
+    """Qwen3-ASR fine-tunes run through ONNX Runtime instead of PyTorch.
+
+    The `qwen_asr` PyTorch path works but is unusably slow here — ~8s per sample
+    on an H200, single CPU core pegged and the GPU idle, because generation runs
+    layer-by-layer in Python. Exported to ONNX the same model reaches RTF ~0.25,
+    roughly 5x faster, with accuracy unchanged (12.48% vs 13.30% WER on the same
+    16 bible samples; the exporter's own check puts encoder/decoder max_diff at
+    0.000000/0.000010).
+
+    Export once with https://github.com/Wasser1462/Qwen3-ASR-onnx (`run.sh`,
+    pointing MODEL_DIR at the HF snapshot) to produce conv_frontend.onnx,
+    encoder.onnx and decoder.onnx, then point `onnx_dir` here.
+
+    Inference shells out to that repo's `infer_qwen3_asr.py` per batch rather
+    than reimplementing its decode loop — that script is the reference decoder
+    and is what the numbers above were measured with. INT8 weights are NOT used
+    by default: they are no faster (the bottleneck is per-token session calls,
+    not weight size) and on CUDA they are slower.
+    """
+
+    LINE_RE = re.compile(r"^\[(?:.*/)?(\d+)\.wav\]\s*(?:language\s+\S+<asr_text>)?(.*)$")
+
+    def __init__(self, model_id, device="cuda:0", onnx_dir=None, export_repo=None,
+                 snapshot_dir=None, batch_size=16, max_new_tokens=100,
+                 encoder="encoder.onnx", decoder="decoder.onnx"):
+        import shutil
+        self.model_id = model_id
+        self.device = "cuda" if str(device).startswith("cuda") else "cpu"
+        self.onnx_dir = onnx_dir or os.environ.get("QWEN3_ASR_ONNX_DIR", "")
+        self.export_repo = export_repo or os.environ.get(
+            "QWEN3_ASR_EXPORT_REPO", "/mnt/volume_d2wey28/projects/qwen3-onnx-export")
+        self.batch_size = batch_size
+        self.max_new_tokens = max_new_tokens
+        self.encoder = encoder
+        self.decoder = decoder
+        if not self.onnx_dir or not os.path.isdir(self.onnx_dir):
+            raise RuntimeError(
+                f"ONNX_MISSING: no exported model at {self.onnx_dir!r}. "
+                "Run Qwen3-ASR-onnx/run.sh for this checkpoint first.")
+        self.snapshot_dir = snapshot_dir or self._resolve_snapshot(model_id)
+        self.script = os.path.join(self.export_repo, "infer_qwen3_asr.py")
+        if not os.path.isfile(self.script):
+            raise RuntimeError(f"ONNX_MISSING: exporter repo not found at {self.export_repo}")
+        self._tmp = shutil  # kept only so cleanup() has something to release
+
+    @staticmethod
+    def _resolve_snapshot(model_id):
+        """Local path of the HF snapshot (the decoder needs its tokenizer/config)."""
+        from huggingface_hub import snapshot_download
+        return snapshot_download(model_id, token=HF_TOKEN or None)
+
+    def transcribe_batch(self, audio_arrays, sample_rate=16000, progress_cb=None):
+        import subprocess, tempfile
+        import soundfile as sf
+        results = []
+        for start in range(0, len(audio_arrays), self.batch_size):
+            batch = audio_arrays[start:start + self.batch_size]
+            with tempfile.TemporaryDirectory(dir=os.environ.get("TMPDIR") or None) as tmp:
+                for i, arr in enumerate(batch):
+                    if isinstance(arr, np.ndarray):
+                        arr = arr.astype(np.float32)
+                    if arr.ndim > 1:
+                        arr = arr.squeeze()
+                    sf.write(os.path.join(tmp, f"{i:04d}.wav"), arr, sample_rate)
+                cmd = [
+                    sys.executable, self.script,
+                    "--conv_frontend", os.path.join(self.onnx_dir, "conv_frontend.onnx"),
+                    "--encoder", os.path.join(self.onnx_dir, self.encoder),
+                    "--decoder", os.path.join(self.onnx_dir, self.decoder),
+                    "--model", self.snapshot_dir,
+                    "--device", self.device,
+                    "--max-new-tokens", str(self.max_new_tokens),
+                    "--wav",
+                ] + [os.path.join(tmp, f"{i:04d}.wav") for i in range(len(batch))]
+                proc = subprocess.run(cmd, cwd=self.export_repo, capture_output=True,
+                                      text=True, timeout=3600)
+            texts = {}
+            for line in proc.stdout.splitlines():
+                m = self.LINE_RE.match(line.strip())
+                if m:
+                    texts[int(m.group(1))] = m.group(2).strip()
+            if not texts and proc.returncode != 0:
+                raise RuntimeError(f"ONNX inference failed: {proc.stderr[-400:]}")
+            # A single wav prints without the "[path] " prefix.
+            if len(batch) == 1 and not texts:
+                out = [l for l in proc.stdout.splitlines() if l and not l.startswith("RTF")]
+                texts = {0: re.sub(r"^language\s+\S+<asr_text>", "", out[-1]).strip()} if out else {}
+            results.extend(texts.get(i, "") for i in range(len(batch)))
+
+            if progress_cb:
+                progress_cb(min(start + self.batch_size, len(audio_arrays)),
+                            len(audio_arrays))
+        return results
+
+    def cleanup(self):
         cleanup_gpu()
 
 
