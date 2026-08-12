@@ -397,9 +397,15 @@ const PER_LANGUAGE_RECIPE_TRACKS = ['GhanaNLP/khaya-asr', 'Google/speech-recogni
 
 function recipeLink(model, iso) {
   const safe = model.replace(/\//g,'_').replace(/:/g,'_');
-  const perLang = iso && PER_LANGUAGE_RECIPE_TRACKS.some(p => model.startsWith(p));
-  const file = perLang ? `${safe}__${iso}.py` : `${safe}.py`;
-  const title = perLang
+  const isTrack = PER_LANGUAGE_RECIPE_TRACKS.some(p => model.startsWith(p));
+  // API/LLM tracks have NO model-level recipe — only per-language ones. Without
+  // an iso there is no real file to point at, so link the recipes folder rather
+  // than a 404.
+  if (isTrack && !iso) {
+    return `<a class="recipe-link" href="https://github.com/${REPO}/tree/${BRANCH}/recipes" target="_blank" title="Per-language recipes for this track">code</a>`;
+  }
+  const file = isTrack ? `${safe}__${iso}.py` : `${safe}.py`;
+  const title = isTrack
     ? `Recipe used to run this model on this language — edit it and open a PR`
     : `Recipe used to run this model — edit it and open a PR`;
   return `<a class="recipe-link" href="https://github.com/${REPO}/blob/${BRANCH}/recipes/${file}" target="_blank" title="${title}">code</a>`;

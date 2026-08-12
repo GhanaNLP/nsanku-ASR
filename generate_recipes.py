@@ -212,23 +212,9 @@ def _body(model_id, arch):
                 "",
             ]
         )
-    # api
-    safe = safe_name(model_id)
-    return "\n".join(
-        [
-            "# This is a hosted endpoint, not a checkpoint loaded through",
-            "# benchmark/models.py, and it runs on many languages. The knobs that",
-            "# matter (API language code, or the prompt for an LLM track) therefore",
-            "# live in the PER-LANGUAGE recipes next to this file:",
-            "#",
-            "#     recipes/" + safe + "__twi.py",
-            "#     recipes/" + safe + "__ewe.py",
-            "#     ...one per eval language (see generate_api_recipes.py)",
-            "#",
-            "# Edit the file for the language you care about; the others are untouched.",
-            "",
-        ]
-    )
+    # Hosted API/LLM tracks never reach here — main() skips them so they only
+    # ever get per-language recipes (generate_api_recipes.py).
+    raise ValueError(f"no recipe body for arch {arch!r} ({model_id})")
 
 
 def render(model_id, model, arch):
@@ -276,7 +262,13 @@ def main():
     created = 0
     skipped = 0
     for model_id, model in sorted(models.items()):
-        arch = "api" if _is_api_track(model_id) else _hf_arch(model_id)
+        if _is_api_track(model_id):
+            # One endpoint, many languages: these are covered entirely by the
+            # per-language recipes from generate_api_recipes.py. A model-level
+            # file here would only be a signpost pointing at those, and a
+            # signpost is what the "code" badge would land people on.
+            continue
+        arch = _hf_arch(model_id)
         out = RECIPES_DIR / (safe_name(model_id) + ".py")
         if out.exists():
             skipped += 1

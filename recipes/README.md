@@ -27,7 +27,9 @@ back to the standard wrapper for the detected architecture.
 
 Khaya, Google ASR and Gemini are a single endpoint evaluated on every language,
 so a single file per model would mean nobody could change one language without
-touching the rest. These tracks therefore get a recipe **per language**:
+touching the rest. These tracks therefore have **no model-level recipe at all** —
+only one **per language**, and that is what the leaderboard's **code** badge
+links to:
 
 ```
 recipes/GhanaNLP_khaya-asr-v3__twi.py      # Khaya, Twi only
