@@ -4,11 +4,21 @@
 # `family` is the mid-level genetic grouping, not the top-level phylum: Kwa and
 # Gur rather than "Niger-Congo", which would label almost every row identically
 # and say nothing useful. Values used:
-#   Kwa      — Akan/Bia, Ga-Dangme, Gbe, Guang, Ghana-Togo Mountain
+#   Kwa      — Akan/Bia, Ga-Dangme, Guang, Ghana-Togo Mountain
+#   Gbe      — Ewe (Volta-Niger, NOT Kwa)
 #   Gur      — Oti-Volta (Mabia), Gurma, Grusi, Buli-Koma
 #   Mande    — Bissa
 #   Atlantic — Fulfulde (Senegambian)
 #   Chadic   — Hausa (Afro-Asiatic, not Niger-Congo at all)
+#
+# Follows the grouping used by https://www.omniglot.com/writing/langfam.htm,
+# which lists Akan/Akuapem/Fante/Ga under Kwa, Dagbani/Kasem/Konkomba under Gur,
+# Fula(ni) under Senegambian, Bissa under Mande, Hausa under Afroasiatic/Chadic,
+# and Gbe as its own branch of Volta-Niger rather than part of Kwa.
+#
+# THIS FILE IS THE SOURCE OF TRUTH: the leaderboard fetches it at page load and
+# builds its Family column from it, so editing a `family:` here updates the
+# dashboard without touching any HTML.
 
 languages:
   - name: Akuapem_Twi
@@ -88,7 +98,7 @@ languages:
   - name: Ewe
     iso_639_3: ewe
     iso_639_1: ee
-    family: Kwa
+    family: Gbe
     utterances: 108240
     hours: 160.87
   - name: Fante

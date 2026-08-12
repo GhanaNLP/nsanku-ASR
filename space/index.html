@@ -337,26 +337,85 @@ const LANG_NAMES = {
   akp:'Siwu',tpm:'Tampulma',  kdh:'Tem',bov:'Tuwuli',vag:'Vagla',gaa:'Ga',aha:'Ahanta',
 };
 
-// Mid-level genetic grouping (Kwa / Gur, not "Niger-Congo" which would label
-// almost every row identically). Mirrors `family:` in languages/ghana_languages.yaml.
-const LANG_FAMILIES = {
+// Mid-level genetic grouping (Kwa / Gur / Gbe, not "Niger-Congo" which would
+// label almost every row identically).
+//
+// LIVE FROM THE REPO: loadFamilies() fetches languages/ghana_languages.yaml and
+// rebuilds this map at page load, so editing a `family:` there updates the
+// dashboard with no HTML change. The literal below is only the fallback for
+// when that fetch fails (offline, rate-limited), and may lag the file.
+let LANG_FAMILIES = {
   twi:'Kwa',fat:'Kwa',any:'Kwa',nzi:'Kwa',sfw:'Kwa',aha:'Kwa',gaa:'Kwa',ada:'Kwa',
-  ewe:'Kwa',gjn:'Kwa',ncu:'Kwa',naw:'Kwa',acd:'Kwa',nko:'Kwa',avn:'Kwa',lef:'Kwa',
+  gjn:'Kwa',ncu:'Kwa',naw:'Kwa',acd:'Kwa',nko:'Kwa',avn:'Kwa',lef:'Kwa',
   lip:'Kwa',snw:'Kwa',akp:'Kwa',bov:'Kwa',
+  ewe:'Gbe',
   dag:'Gur',maw:'Gur',kus:'Gur',gur:'Gur',dga:'Gur',biv:'Gur',bwu:'Gur',kma:'Gur',
   xsm:'Gur',sil:'Gur',sig:'Gur',tpm:'Gur',vag:'Gur',mzw:'Gur',xon:'Gur',bim:'Gur',
   bud:'Gur',kbp:'Gur',kdh:'Gur',ntr:'Gur',
   bib:'Mande',ffm:'Atlantic',hau:'Chadic',
 };
 
+// Colours for known families; anything new in the YAML gets one from the cycle
+// below, so adding a family to the file never renders as an unstyled blank.
 const FAMILY_COLORS = {
-  Kwa:'#2f9e6b', Gur:'#c2761a', Mande:'#7a5cc4', Atlantic:'#2b7fb8', Chadic:'#b8456a',
+  Kwa:'#2f9e6b', Gbe:'#1f8a8a', Gur:'#c2761a', Mande:'#7a5cc4',
+  Atlantic:'#2b7fb8', Chadic:'#b8456a',
 };
+const FAMILY_FALLBACK_COLORS = ['#6b7a8f','#8f6b7a','#7a8f6b','#8f7a6b','#6b8f8a'];
+
+function familyColor(f) {
+  if (FAMILY_COLORS[f]) return FAMILY_COLORS[f];
+  let h = 0;
+  for (const ch of f) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+  return FAMILY_FALLBACK_COLORS[h % FAMILY_FALLBACK_COLORS.length];
+}
+
+// Minimal reader for languages/ghana_languages.yaml: each language is a
+// "- name:" item whose fields sit at a deeper indent. Only iso_639_3 + family
+// are needed, and `iso_groups:` at the end is ignored because its entries have
+// neither key.
+function parseLanguageFamilies(text) {
+  const out = {};
+  let iso = null, family = null;
+  for (const raw of text.split('\n')) {
+    const line = raw.replace(/\s+$/, '');
+    if (/^\s*#/.test(line) || !line.trim()) continue;
+    if (/^\s*-\s/.test(line)) { iso = null; family = null; }
+    let m = line.match(/^\s*-?\s*iso_639_3:\s*(\S+)/);
+    if (m) iso = m[1].replace(/['"]/g, '');
+    m = line.match(/^\s*-?\s*family:\s*(.+)$/);
+    if (m) family = m[1].trim().replace(/['"]/g, '');
+    if (iso && family) { out[iso] = family; iso = null; family = null; }
+  }
+  return out;
+}
+
+async function loadFamilies() {
+  try {
+    const r = await fetch(`${RAW}/languages/ghana_languages.yaml`);
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const parsed = parseLanguageFamilies(await r.text());
+    if (Object.keys(parsed).length) LANG_FAMILIES = parsed;
+  } catch (e) {
+    console.warn('Family list fetch failed; using built-in fallback.', e);
+  }
+}
+
+function populateFamilyFilter() {
+  const sel = document.getElementById('ms-family-select');
+  if (!sel) return;
+  const current = sel.value;
+  const fams = [...new Set(Object.values(LANG_FAMILIES))].sort();
+  sel.innerHTML = '<option value="All">All</option>' +
+    fams.map(f => `<option value="${f}">${f}</option>`).join('');
+  if (fams.includes(current)) sel.value = current;
+}
 
 function familyCell(iso) {
   const f = LANG_FAMILIES[iso];
   if (!f) return '<td style="color:var(--text-muted)">—</td>';
-  return `<td><span class="fam" style="background:${FAMILY_COLORS[f]}22;color:${FAMILY_COLORS[f]};border:1px solid ${FAMILY_COLORS[f]}55">${f}</span></td>`;
+  const c = familyColor(f);
+  return `<td><span class="fam" style="background:${c}22;color:${c};border:1px solid ${c}55">${f}</span></td>`;
 }
 
 // ====== State ======
@@ -906,12 +965,20 @@ function setupSortableHeaders(tableId, dataExtractor, renderer) {
 // ====== Main ======
 async function main() {
   try {
-    let data = await loadAll();
+    // Families come from languages/ghana_languages.yaml in the repo, so the
+    // classification is edited there, not here. Fetched before the first render
+    // and alongside the benchmarks so it costs no extra round trip.
+    let [data] = await Promise.all([loadAll(), loadFamilies()]);
+    // loadAll() stamps each row's family from whatever map existed when it ran,
+    // which may be the fallback if it finished first. Restamp now that the
+    // fetched map is authoritative, so the sortable column matches the file.
+    data.forEach(r => { r.family = LANG_FAMILIES[r.iso] || ''; });
     ALL_DATA = data;
 
     document.getElementById('loading').style.display = 'none';
     document.getElementById('main').style.display = 'block';
 
+    populateFamilyFilter();
     renderStats(data);
     renderGlobal(data);
     populatePerLangSelects(data);
