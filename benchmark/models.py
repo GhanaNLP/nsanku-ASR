@@ -285,56 +285,62 @@ class Qwen2AudioModel:
 
 
 class Qwen3ASRModel:
-    """Qwen3-ASR fine-tunes (transformers `Qwen3ASRForConditionalGeneration`).
+    """Qwen3-ASR fine-tunes, loaded with the `qwen_asr` package (pip install qwen-asr).
 
-    Purpose-built ASR rather than a chat model, so there is no prompt to tune:
-    `apply_transcription_request` builds the request and the processor parses the
-    `language …<asr_text>…` reply back down to the transcript.
+    NOT loadable through transformers. These checkpoints are saved in qwen_asr's
+    layout — every tensor under a `thinker.` prefix, an audio tower carrying
+    proj1/proj2 — while `Qwen3ASRForConditionalGeneration` expects
+    `model.language_model.*` / `model.audio_tower.*` / `lm_head.weight`. Only 393
+    of 708 tensors line up, and transformers does not fail on the mismatch: it
+    randomly initialises every unmatched weight and runs happily, producing
+    scores from an untrained model. Hence the dedicated library, which is also
+    what the model cards document.
 
-    `language` forces a transcription language, but only Qwen's ~30 supported
-    language NAMES are accepted — no Ghanaian language is among them, so the
-    default is None (auto-detect) and the fine-tune's own bias carries it.
+    `language` forces a transcription language but accepts only Qwen's own ~30
+    language names, none of them Ghanaian, so the default is None (auto-detect).
+    `context` is an optional prompt-style hint the library supports.
     """
 
-    def __init__(self, model_id, device="cuda:0", language=None, max_new_tokens=256):
-        from transformers import AutoProcessor, Qwen3ASRForConditionalGeneration
+    def __init__(self, model_id, device="cuda:0", language=None, context="",
+                 max_new_tokens=256, batch_size=8):
+        from qwen_asr import Qwen3ASRModel as _QwenASRModel
         self.model_id = model_id
         self.device = device
-        self.dtype = getattr(torch, TORCH_DTYPE)
         self.language = language
-        self.max_new_tokens = max_new_tokens
-        self.processor = AutoProcessor.from_pretrained(model_id, **_hf_auth_kwargs())
-        self.model = Qwen3ASRForConditionalGeneration.from_pretrained(
-            model_id, dtype=self.dtype, **_hf_auth_kwargs(),
-        ).to(device)
-        self.model.eval()
+        self.context = context
+        self.batch_size = batch_size
+        self.model = _QwenASRModel.from_pretrained(
+            model_id,
+            dtype=getattr(torch, TORCH_DTYPE),
+            device_map=device,
+            max_new_tokens=max_new_tokens,
+            max_inference_batch_size=batch_size,
+        )
 
     def transcribe_batch(self, audio_arrays, sample_rate=16000, progress_cb=None):
         results = []
-        for i, arr in enumerate(audio_arrays):
-            if isinstance(arr, np.ndarray):
-                arr = arr.astype(np.float32)
-            if arr.ndim > 1:
-                arr = arr.squeeze()
+        for start in range(0, len(audio_arrays), self.batch_size):
+            chunk = []
+            for arr in audio_arrays[start:start + self.batch_size]:
+                if isinstance(arr, np.ndarray):
+                    arr = arr.astype(np.float32)
+                if arr.ndim > 1:
+                    arr = arr.squeeze()
+                chunk.append((arr, sample_rate))
 
-            kw = {"language": self.language} if self.language else {}
-            inputs = self.processor.apply_transcription_request(
-                audio=arr, sampling_rate=sample_rate, **kw,
-            ).to(self.device, self.dtype)
+            out = self.model.transcribe(chunk, context=self.context,
+                                        language=self.language)
+            for t in out:
+                text = getattr(t, "text", None)
+                results.append((text or "").strip())
 
-            with torch.no_grad():
-                out = self.model.generate(**inputs, max_new_tokens=self.max_new_tokens)
-            generated = out[:, inputs["input_ids"].shape[1]:]
-            text = self.processor.decode(generated, return_format="transcription_only")[0]
-            results.append((text or "").strip())
-
-            if progress_cb and (i + 1) % 50 == 0:
-                progress_cb(i + 1, len(audio_arrays))
+            if progress_cb:
+                progress_cb(min(start + self.batch_size, len(audio_arrays)),
+                            len(audio_arrays))
         return results
 
     def cleanup(self):
         del self.model
-        del self.processor
         cleanup_gpu()
 
 

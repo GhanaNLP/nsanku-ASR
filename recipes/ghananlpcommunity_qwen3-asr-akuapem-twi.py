@@ -14,15 +14,25 @@ from benchmark.models import Qwen3ASRModel
 
 MODEL = "ghananlpcommunity/qwen3-asr-akuapem-twi"
 
-# Qwen3-ASR can be told which language to transcribe, but only accepts
-# its own ~30 supported language NAMES — none of them Ghanaian — so this
-# stays None (auto-detect) and the fine-tune's own bias carries it.
+# Requires the `qwen-asr` package (pip install qwen-asr). This checkpoint is
+# saved in that library's layout, not HuggingFace's: loading it through
+# transformers' Qwen3ASRForConditionalGeneration matches only 393 of 708 tensors
+# and silently random-initialises the rest, so it would score as noise.
+
+# Qwen3-ASR can be told which language to transcribe, but only accepts its own
+# ~30 supported language NAMES — none of them Ghanaian — so this stays None
+# (auto-detect) and the fine-tune's own bias carries it.
 LANGUAGE = None
+
+# Optional free-text hint passed to every utterance; "" means no hint.
+CONTEXT = ""
+
 MAX_NEW_TOKENS = 256
+BATCH_SIZE = 8
 
 
 def build_wrapper(device="cuda:0", **kwargs):
     return Qwen3ASRModel(
-        MODEL, device=device, language=LANGUAGE,
-        max_new_tokens=MAX_NEW_TOKENS, **kwargs,
+        MODEL, device=device, language=LANGUAGE, context=CONTEXT,
+        max_new_tokens=MAX_NEW_TOKENS, batch_size=BATCH_SIZE, **kwargs,
     )
