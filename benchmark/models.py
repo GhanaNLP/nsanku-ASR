@@ -44,7 +44,7 @@ CTC_MODEL_TYPES = {
 
 
 def _detect_arch(model_id):
-    """Return 'ctc' | 'whisper' | 'seq2seq' | 'unknown' from the HF config.
+    """Return 'ctc' | 'whisper' | 'qwen2audio' | 'qwen3asr' | 'seamless' | 'seq2seq'.
 
     Falls back to the model name only if the config can't be read.
     """
@@ -57,6 +57,10 @@ def _detect_arch(model_id):
             return "ctc"
         if mtype == "whisper" or any("Whisper" in a for a in archs):
             return "whisper"
+        if mtype in ("qwen2_audio", "qwen2audio") or any("Qwen2Audio" in a for a in archs):
+            return "qwen2audio"
+        if mtype in ("qwen3_asr", "qwen3asr") or any("Qwen3ASR" in a for a in archs):
+            return "qwen3asr"
         if mtype.startswith("seamless") or any("SeamlessM4T" in a for a in archs):
             return "seamless"  # not supported as ASR here (no Ghanaian tgt_lang codes)
         return "seq2seq"
@@ -202,6 +206,138 @@ class CTCModel:
         cleanup_gpu()
 
 
+class Qwen2AudioModel:
+    """Audio-LLM ASR (Qwen2-Audio fine-tunes).
+
+    Unlike CTC/Whisper models these are instruction-following multimodal LLMs:
+    the audio is one turn of a chat and the transcript is generated as a reply,
+    so the PROMPT is part of the model's inference contract. The defaults follow
+    the prompt FarmerlineML documents on the model cards; a recipe can override
+    `system_prompt` / `user_prompt` per model.
+    """
+
+    DEFAULT_SYSTEM = ("You are a speech recognition system. Transcribe the audio "
+                      "exactly as spoken. Return only the transcript, nothing else.")
+    DEFAULT_USER = "Transcribe this audio exactly."
+
+    def __init__(self, model_id, device="cuda:0", system_prompt=None,
+                 user_prompt=None, max_new_tokens=256):
+        from transformers import AutoProcessor, Qwen2AudioForConditionalGeneration
+        self.model_id = model_id
+        self.device = device
+        self.dtype = getattr(torch, TORCH_DTYPE)
+        self.system_prompt = system_prompt or self.DEFAULT_SYSTEM
+        self.user_prompt = user_prompt or self.DEFAULT_USER
+        self.max_new_tokens = max_new_tokens
+        self.processor = AutoProcessor.from_pretrained(model_id, **_hf_auth_kwargs())
+        self.model = Qwen2AudioForConditionalGeneration.from_pretrained(
+            model_id, dtype=self.dtype, attn_implementation="sdpa",
+            **_hf_auth_kwargs(),
+        ).to(device)
+        self.model.eval()
+
+    def _chat_text(self):
+        conversation = [
+            {"role": "system", "content": self.system_prompt},
+            {"role": "user", "content": [
+                {"type": "audio", "audio_url": "audio.wav"},
+                {"type": "text", "text": self.user_prompt},
+            ]},
+        ]
+        return self.processor.apply_chat_template(
+            conversation, add_generation_prompt=True, tokenize=False)
+
+    def transcribe_batch(self, audio_arrays, sample_rate=16000, progress_cb=None):
+        text = self._chat_text()
+        sr = getattr(self.processor.feature_extractor, "sampling_rate", sample_rate)
+        results = []
+        for i, arr in enumerate(audio_arrays):
+            if isinstance(arr, np.ndarray):
+                arr = arr.astype(np.float32)
+            if arr.ndim > 1:
+                arr = arr.squeeze()
+
+            try:
+                inputs = self.processor(text=text, audio=arr, sampling_rate=sr,
+                                        return_tensors="pt")
+            except TypeError:
+                # transformers < 4.46 named the argument `audios`
+                inputs = self.processor(text=text, audios=arr, sampling_rate=sr,
+                                        return_tensors="pt")
+            inputs = inputs.to(self.device)
+
+            with torch.no_grad():
+                out = self.model.generate(**inputs, max_new_tokens=self.max_new_tokens,
+                                          do_sample=False)
+            n = inputs["input_ids"].shape[1]
+            results.append(
+                self.processor.batch_decode(out[:, n:], skip_special_tokens=True)[0].strip()
+            )
+
+            if progress_cb and (i + 1) % 50 == 0:
+                progress_cb(i + 1, len(audio_arrays))
+        return results
+
+    def cleanup(self):
+        del self.model
+        del self.processor
+        cleanup_gpu()
+
+
+class Qwen3ASRModel:
+    """Qwen3-ASR fine-tunes (transformers `Qwen3ASRForConditionalGeneration`).
+
+    Purpose-built ASR rather than a chat model, so there is no prompt to tune:
+    `apply_transcription_request` builds the request and the processor parses the
+    `language …<asr_text>…` reply back down to the transcript.
+
+    `language` forces a transcription language, but only Qwen's ~30 supported
+    language NAMES are accepted — no Ghanaian language is among them, so the
+    default is None (auto-detect) and the fine-tune's own bias carries it.
+    """
+
+    def __init__(self, model_id, device="cuda:0", language=None, max_new_tokens=256):
+        from transformers import AutoProcessor, Qwen3ASRForConditionalGeneration
+        self.model_id = model_id
+        self.device = device
+        self.dtype = getattr(torch, TORCH_DTYPE)
+        self.language = language
+        self.max_new_tokens = max_new_tokens
+        self.processor = AutoProcessor.from_pretrained(model_id, **_hf_auth_kwargs())
+        self.model = Qwen3ASRForConditionalGeneration.from_pretrained(
+            model_id, dtype=self.dtype, **_hf_auth_kwargs(),
+        ).to(device)
+        self.model.eval()
+
+    def transcribe_batch(self, audio_arrays, sample_rate=16000, progress_cb=None):
+        results = []
+        for i, arr in enumerate(audio_arrays):
+            if isinstance(arr, np.ndarray):
+                arr = arr.astype(np.float32)
+            if arr.ndim > 1:
+                arr = arr.squeeze()
+
+            kw = {"language": self.language} if self.language else {}
+            inputs = self.processor.apply_transcription_request(
+                audio=arr, sampling_rate=sample_rate, **kw,
+            ).to(self.device, self.dtype)
+
+            with torch.no_grad():
+                out = self.model.generate(**inputs, max_new_tokens=self.max_new_tokens)
+            generated = out[:, inputs["input_ids"].shape[1]:]
+            text = self.processor.decode(generated, return_format="transcription_only")[0]
+            results.append((text or "").strip())
+
+            if progress_cb and (i + 1) % 50 == 0:
+                progress_cb(i + 1, len(audio_arrays))
+        return results
+
+    def cleanup(self):
+        del self.model
+        del self.processor
+        cleanup_gpu()
+
+
 def _hf_login():
     """Authenticate with HuggingFace if HF_TOKEN is set."""
     if HF_TOKEN:
@@ -237,6 +373,10 @@ def load_asr_model(model_id, device="cuda:0"):
         # language codes (no Ghanaian tgt_lang), so we can't transcribe reliably.
         raise RuntimeError("ARCH_UNSUPPORTED: SeamlessM4T ASR (no target-language code)")
     try:
+        if arch == "qwen2audio":
+            return Qwen2AudioModel(model_id, device=device)
+        if arch == "qwen3asr":
+            return Qwen3ASRModel(model_id, device=device)
         if arch == "ctc" or (arch.startswith("name:") and is_ctc_model(model_id)):
             return CTCModel(model_id, device=device)
         return WhisperModel(model_id, device=device)

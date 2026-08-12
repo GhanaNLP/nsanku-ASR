@@ -25,6 +25,8 @@ RECIPES_DIR = ROOT / "recipes"
 REPO_URL = "https://github.com/GhanaNLP/nsanku-ASR"
 
 PRECISION = {
+    "qwen2audio": "bf16",
+    "qwen3asr": "bf16",
     "ctc": "fp32 (wav2vec2/xls-r/MMS conv encoders crash in bf16 on Hopper)",
     "whisper": "bf16",
     "seq2seq": "bf16",
@@ -33,6 +35,8 @@ PRECISION = {
 }
 
 ARCH_LABEL = {
+    "qwen2audio": "Qwen2-Audio (audio LLM, prompt-driven)",
+    "qwen3asr": "Qwen3-ASR (Qwen3ASRForConditionalGeneration)",
     "ctc": "CTC (AutoModelForCTC)",
     "whisper": "Whisper seq2seq (AutoModelForSpeechSeq2Seq)",
     "seq2seq": "Seq2Seq (AutoModelForSpeechSeq2Seq)",
@@ -90,7 +94,10 @@ def _khaya_src():
 
 def _docstring(model_id, model, arch):
     langs = ", ".join(sorted(model["langs"]))
-    status = "passed" if model["passed"] else "failed to produce valid output"
+    if model.get("pending"):
+        status = "not yet benchmarked (queued for the next run)"
+    else:
+        status = "passed" if model["passed"] else "failed to produce valid output"
     if model["best_wer"] is not None:
         status += " - best avg WER {:.2f}%".format(model["best_wer"] * 100)
         if model["best_score"] is not None:
@@ -127,6 +134,54 @@ def _body(model_id, arch):
                 "",
             ]
         )
+    if arch == "qwen2audio":
+        return "\n".join(
+            [
+                "from benchmark.models import Qwen2AudioModel",
+                "",
+                'MODEL = "' + model_id + '"',
+                "",
+                "# Qwen2-Audio transcribes by *following an instruction*, so these prompts",
+                "# are part of inference — tune them and the next run uses your wording.",
+                "SYSTEM_PROMPT = (",
+                '    "You are a speech recognition system. "',
+                '    "Transcribe the audio exactly as spoken. "',
+                '    "Return only the transcript, nothing else."',
+                ")",
+                'USER_PROMPT = "Transcribe this audio exactly."',
+                "MAX_NEW_TOKENS = 256",
+                "",
+                "",
+                "def build_wrapper(device=\"cuda:0\", **kwargs):",
+                "    return Qwen2AudioModel(",
+                "        MODEL, device=device, system_prompt=SYSTEM_PROMPT,",
+                "        user_prompt=USER_PROMPT, max_new_tokens=MAX_NEW_TOKENS, **kwargs,",
+                "    )",
+                "",
+            ]
+        )
+    if arch == "qwen3asr":
+        return "\n".join(
+            [
+                "from benchmark.models import Qwen3ASRModel",
+                "",
+                'MODEL = "' + model_id + '"',
+                "",
+                "# Qwen3-ASR can be told which language to transcribe, but only accepts",
+                "# its own ~30 supported language NAMES — none of them Ghanaian — so this",
+                "# stays None (auto-detect) and the fine-tune's own bias carries it.",
+                "LANGUAGE = None",
+                "MAX_NEW_TOKENS = 256",
+                "",
+                "",
+                "def build_wrapper(device=\"cuda:0\", **kwargs):",
+                "    return Qwen3ASRModel(",
+                "        MODEL, device=device, language=LANGUAGE,",
+                "        max_new_tokens=MAX_NEW_TOKENS, **kwargs,",
+                "    )",
+                "",
+            ]
+        )
     if arch in ("whisper", "seq2seq"):
         return "\n".join(
             [
@@ -158,14 +213,19 @@ def _body(model_id, arch):
             ]
         )
     # api
+    safe = safe_name(model_id)
     return "\n".join(
         [
-            "# This model is a hosted API (benchmark/khaya.py), not run through",
-            "# benchmark/models.py. Add a build_wrapper() here only if you want to",
-            "# replace the hosted-API evaluation.",
-            "",
-            "if False:",
-            "    from benchmark.khaya import _encode_wav, _transcribe",
+            "# This is a hosted endpoint, not a checkpoint loaded through",
+            "# benchmark/models.py, and it runs on many languages. The knobs that",
+            "# matter (API language code, or the prompt for an LLM track) therefore",
+            "# live in the PER-LANGUAGE recipes next to this file:",
+            "#",
+            "#     recipes/" + safe + "__twi.py",
+            "#     recipes/" + safe + "__ewe.py",
+            "#     ...one per eval language (see generate_api_recipes.py)",
+            "#",
+            "# Edit the file for the language you care about; the others are untouched.",
             "",
         ]
     )
@@ -175,16 +235,48 @@ def render(model_id, model, arch):
     return _docstring(model_id, model, arch) + "\n\n" + _body(model_id, arch)
 
 
+def _pending_models(models):
+    """Eval-list models that have no benchmark entry yet, so they get a recipe too.
+
+    A model author should be able to review and correct the recipe BEFORE the
+    first run, not only after it has already scored badly.
+    """
+    import json
+    from benchmark.evaluate import get_language_models
+    from benchmark.config import EVAL_CONFIGS_FILE
+    for iso in json.load(open(EVAL_CONFIGS_FILE)):
+        for m in get_language_models(iso):
+            name = m["name"]
+            if name in models:
+                models[name]["langs"].add(iso)
+                continue
+            models[name] = {
+                "url": m.get("url") or f"https://huggingface.co/{name}",
+                "owner": name.split("/")[0],
+                "langs": {iso},
+                "passed": False, "best_wer": None, "best_score": None,
+                "pending": True,
+            }
+    return models
+
+
+# Tracks that are a hosted endpoint rather than a loadable checkpoint. They are
+# driven by benchmark/{khaya,google,gemini}.py and configured per language in
+# recipes/{model}__{iso}.py (see generate_api_recipes.py).
+API_TRACK_PREFIXES = ("GhanaNLP/khaya-asr", "Google/speech-recognition", "google/gemini")
+
+
+def _is_api_track(model_id):
+    return model_id.startswith(API_TRACK_PREFIXES)
+
+
 def main():
-    models = _collect_models()
+    models = _pending_models(_collect_models())
     RECIPES_DIR.mkdir(exist_ok=True)
     created = 0
     skipped = 0
     for model_id, model in sorted(models.items()):
-        if model_id == "GhanaNLP/khaya-asr-v3":
-            arch = "api"
-        else:
-            arch = _hf_arch(model_id)
+        arch = "api" if _is_api_track(model_id) else _hf_arch(model_id)
         out = RECIPES_DIR / (safe_name(model_id) + ".py")
         if out.exists():
             skipped += 1
@@ -195,10 +287,47 @@ def main():
     print("\nCreated {} recipes, skipped {} existing (never overwrite author edits).".format(created, skipped))
 
 
+# config.json model_type -> recipe arch, for repos whose architecture the locally
+# installed transformers is too old to recognise.
+MODEL_TYPE_ARCH = {
+    "qwen2_audio": "qwen2audio",
+    "qwen3_asr": "qwen3asr",
+    "whisper": "whisper",
+}
+
+
+def _arch_from_config_json(model_id):
+    """Read model_type straight off the Hub, independent of local transformers.
+
+    `_detect_arch` goes through AutoConfig, so a model whose architecture this
+    machine's transformers does not know yet degrades to a name guess — and a
+    Qwen3-ASR model would silently get a Whisper recipe that cannot run it.
+    """
+    import requests
+    try:
+        r = requests.get(f"https://huggingface.co/{model_id}/raw/main/config.json", timeout=20)
+        if r.status_code != 200:
+            return None
+        cfg = r.json()
+    except Exception:
+        return None
+    mtype = (cfg.get("model_type") or "").lower()
+    if mtype in MODEL_TYPE_ARCH:
+        return MODEL_TYPE_ARCH[mtype]
+    for a in cfg.get("architectures") or []:
+        if "Qwen3ASR" in a:
+            return "qwen3asr"
+        if "Qwen2Audio" in a:
+            return "qwen2audio"
+    return None
+
+
 def _hf_arch(model_id):
     arch = _detect_arch(model_id)
-    if arch.startswith("name:"):
-        arch = "ctc" if is_ctc_model(model_id) else "whisper"
+    if arch.startswith("name:") or arch == "seq2seq":
+        arch = _arch_from_config_json(model_id) or (
+            "ctc" if is_ctc_model(model_id) else "whisper"
+        )
     return arch
 
 

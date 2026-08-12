@@ -284,25 +284,69 @@ def fetch_models_for_language(iso_639_1, iso_639_3, pipeline_tag):
     return search_huggingface(iso_639_1, iso_639_3, 'models', pipeline_tag)
 
 
+# An ASR repo that never set `pipeline_tag` is still an ASR repo. These tags (or
+# the same words as whole tokens in the model name) count as the author saying so.
+ASR_TAGS = {"automatic-speech-recognition", "asr", "speech-recognition",
+            "speech-to-text", "stt"}
+
+# Adapter-only repos: real weights live in the base model, so they cannot be
+# loaded and benchmarked on their own.
+ADAPTER_TAGS = {"lora", "peft", "adapter", "adapters"}
+
+
+def _looks_like_asr(model):
+    """True if the repo presents itself as ASR (pipeline tag, tags, or name)."""
+    if model.get("pipeline_tag") == "automatic-speech-recognition":
+        return True
+    tags = {str(t).lower() for t in (model.get("tags") or [])}
+    if tags & ASR_TAGS:
+        return True
+    name = (model.get("modelId") or "").split("/")[-1].lower()
+    return bool(set(re.split(r"[^a-z0-9]+", name)) & ASR_TAGS)
+
+
+def _is_adapter(model):
+    """True if the repo is a LoRA/PEFT adapter rather than a standalone model."""
+    tags = {str(t).lower() for t in (model.get("tags") or [])}
+    if tags & ADAPTER_TAGS:
+        return True
+    name = (model.get("modelId") or "").split("/")[-1].lower()
+    return bool(set(re.split(r"[^a-z0-9]+", name)) & ADAPTER_TAGS)
+
+
 def fetch_models_for_org(org, pipeline_tag="automatic-speech-recognition"):
-    """Fetch ALL of an org's models for a pipeline tag via the REST API.
+    """Fetch ALL of an org's ASR models via the REST API.
 
     Uses the models API with the `author` filter (which supports full pagination
-    via cursor links), so every model under the org is captured — not just the
-    ones that surface in a language search page. Returns a list of
-    {'name', 'url', 'downloads', 'likes', 'size'} dicts, deduplicated.
+    via cursor links) and does NOT filter on `pipeline_tag` server-side: plenty of
+    real ASR repos never set one (FarmerlineML's Qwen2-Audio models tag themselves
+    `asr`, `twi`, `dagbani` but leave `pipeline_tag` empty), and filtering on it
+    server-side hides them entirely. ASR-ness is decided from the pipeline tag,
+    the tag list or the model name instead; LoRA/PEFT adapters are skipped because
+    they cannot be loaded standalone.
+
+    Returns a list of {'name', 'url', 'downloads', 'likes', 'size'} dicts,
+    deduplicated. Note the list endpoint returns no `cardData` even with
+    `full=true`, so licenses and language tags are NOT available here — they are
+    fetched per model (and cached) by benchmark/owners.py.
     """
     items, seen = [], set()
-    url = f"https://huggingface.co/api/models?author={org}&pipeline_tag={pipeline_tag}&limit=500"
+    url = f"https://huggingface.co/api/models?author={org}&limit=500&full=true"
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
     page = 0
+    skipped_adapters = 0
     while url and page < 10:
         page += 1
-        r = requests.get(url, headers=headers, timeout=20)
+        r = requests.get(url, headers=headers, timeout=30)
         r.raise_for_status()
         for m in r.json():
             name = m.get("modelId")
             if not name or name in seen:
+                continue
+            if not _looks_like_asr(m):
+                continue
+            if _is_adapter(m):
+                skipped_adapters += 1
                 continue
             seen.add(name)
             item = {
@@ -324,7 +368,8 @@ def fetch_models_for_org(org, pipeline_tag="automatic-speech-recognition"):
                     url = part.split(";")[0].strip("<> ")
                     break
         if items:
-            print(f"      {org}: {len(items)} {pipeline_tag} models (page {page})")
+            extra = f", {skipped_adapters} adapters skipped" if skipped_adapters else ""
+            print(f"      {org}: {len(items)} ASR models (page {page}{extra})")
     return items
 
 

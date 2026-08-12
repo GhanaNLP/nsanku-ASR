@@ -66,6 +66,25 @@ NON_ASR_KEYWORDS = [
 ]
 
 
+# Repos that ARE ASR but cannot be loaded by benchmark/models.py: language models
+# used for decoding rather than transcription, and runtime-specific exports that
+# need a different engine (CTranslate2/faster-whisper, ONNX Runtime, llama.cpp).
+# Benchmarking them only produces null rows — ghananlpcommunity/…_farmerline-ct2
+# is already in the leaderboard with wer: null for exactly this reason.
+UNSUPPORTED_ARTIFACT_TOKENS = {
+    "kenlm", "arpa", "ngram", "2gram", "3gram", "4gram", "5gram", "6gram",
+    "ct2", "ctranslate2", "onnx", "gguf", "openvino", "tflite", "coreml",
+    "int4", "int8",
+}
+
+
+def is_unsupported_artifact(model_id):
+    """True if the repo is an LM or a runtime export we cannot run as ASR."""
+    import re
+    tokens = set(re.split(r"[^a-z0-9]+", model_id.split("/")[-1].lower()))
+    return bool(tokens & UNSUPPORTED_ARTIFACT_TOKENS)
+
+
 def _headers():
     return {"Authorization": f"Bearer {HF_TOKEN}"} if HF_TOKEN else {}
 
@@ -297,8 +316,10 @@ def card_ok(model_id, cache=None):
 def warm_caches_from_universe(models):
     """Seed the language-tag and license caches from org-scan `cardData`.
 
-    Avoids one HF API call per model when the scan already captured the metadata.
+    Avoids one HF API call per model when a caller already has the metadata.
     `models` is a list of dicts with 'name' and optionally 'license'/'language'.
+    Empty values are ignored rather than cached: caching "" or [] would mask a
+    real license/tag behind a cache hit and no live lookup would ever correct it.
     """
     ltags = _load_langtag_cache()
     lic = _load_json_cache(MODEL_LICENSES_FILE)
@@ -306,13 +327,13 @@ def warm_caches_from_universe(models):
         name = m.get("name")
         if not name:
             continue
-        if "language" in m and name not in ltags:
-            langs = m["language"] or []
-            if isinstance(langs, str):
-                langs = [langs]
+        langs = m.get("language") or []
+        if isinstance(langs, str):
+            langs = [langs]
+        if langs and name not in ltags:
             ltags[name] = [str(x).lower() for x in langs]
-        if "license" in m and name not in lic:
-            lic[name] = str(m["license"] or "")
+        if m.get("license") and name not in lic:
+            lic[name] = str(m["license"])
     _save_langtag_cache(ltags)
     _save_json_cache(MODEL_LICENSES_FILE, lic)
     return ltags, lic
@@ -321,7 +342,9 @@ def warm_caches_from_universe(models):
 def filter_models(models, iso_codes=None, name_tokens=(), require_card=None):
     """Keep only org-owned ASR models that explicitly target the language.
 
-    Drops: personal accounts, non-ASR models (TTS/aligner/LID), generic global
+    Drops: personal accounts, non-ASR models (TTS/aligner/LID), LMs and runtime
+    exports we cannot load (kenlm/ct2/onnx/gguf — see UNSUPPORTED_ARTIFACT_TOKENS),
+    generic global
     base models (>MAX_LANG_TAGS languages), models shipping only a placeholder
     model card, and — when `iso_codes` is given — any model whose config does
     not explicitly declare the language (see `targets_language` for how
@@ -342,7 +365,7 @@ def filter_models(models, iso_codes=None, name_tokens=(), require_card=None):
     for m in models:
         name = m["name"]
         owner = name.split("/")[0]
-        if is_non_asr(name):
+        if is_non_asr(name) or is_unsupported_artifact(name):
             continue
         if ORG_ONLY and not is_org(owner, otype):
             continue
