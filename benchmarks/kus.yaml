@@ -36,6 +36,21 @@ benchmarks:
   source: evaluated
   model_class: non-llm
   score: 0.2761
+- model: google/gemini-3.6-flash
+  model_url: https://ai.google.dev/gemini-api/docs/models#gemini-3.6-flash
+  owner: google
+  model_class: llm
+  params: API
+  wer: 0.8512
+  cer: 0.4357
+  per_category:
+    bible:
+      wer: 0.8512
+      cer: 0.4357
+      samples: 1000
+      valid: 999
+      avg_seconds_per_sample: 0.56
+  source: evaluated
 - model: PrinceAlhassanNasamu/kusaal-whisper-small-lora
   model_url: https://huggingface.co/PrinceAlhassanNasamu/kusaal-whisper-small-lora
   owner: PrinceAlhassanNasamu

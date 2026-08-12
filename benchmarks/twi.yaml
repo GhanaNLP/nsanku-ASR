@@ -7,6 +7,72 @@ categories:
 - jw
 - unicef
 benchmarks:
+- model: Google/speech-recognition
+  model_url: https://www.google.com/
+  owner: Google
+  model_class: non-llm
+  params: API
+  wer: 0.4977
+  cer: 0.2776
+  per_category:
+    bible:
+      wer: 0.4853
+      cer: 0.3273
+      samples: 1000
+      valid: 998
+      avg_seconds_per_sample: 0.23
+    finance:
+      wer: 0.5002
+      cer: 0.1769
+      samples: 1000
+      valid: 983
+      avg_seconds_per_sample: 0.11
+    jw:
+      wer: 0.3693
+      cer: 0.1848
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.19
+    unicef:
+      wer: 0.6361
+      cer: 0.4215
+      samples: 200
+      valid: 171
+      avg_seconds_per_sample: 0.59
+  source: evaluated
+- model: google/gemini-3.6-flash
+  model_url: https://ai.google.dev/gemini-api/docs/models#gemini-3.6-flash
+  owner: google
+  model_class: llm
+  params: API
+  wer: 0.758
+  cer: 0.4123
+  per_category:
+    bible:
+      wer: 0.6874
+      cer: 0.3796
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.61
+    finance:
+      wer: 0.8278
+      cer: 0.4042
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.34
+    jw:
+      wer: 0.7319
+      cer: 0.3745
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.54
+    unicef:
+      wer: 0.7849
+      cer: 0.4907
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.88
+  source: evaluated
 - model: azunre/wav2vec2large-xlsr-akan
   model_url: https://huggingface.co/azunre/wav2vec2large-xlsr-akan
   owner: azunre

@@ -93,3 +93,24 @@ benchmarks:
   source: evaluated
   model_class: non-llm
   score: 0.6816
+- model: google/gemini-3.6-flash
+  model_url: https://ai.google.dev/gemini-api/docs/models#gemini-3.6-flash
+  owner: google
+  model_class: llm
+  params: API
+  wer: 0.9408
+  cer: 0.5153
+  per_category:
+    bible:
+      wer: 0.9365
+      cer: 0.4922
+      samples: 1000
+      valid: 641
+      avg_seconds_per_sample: 1.06
+    unicef:
+      wer: 0.9451
+      cer: 0.5384
+      samples: 195
+      valid: 149
+      avg_seconds_per_sample: 1.38
+  source: evaluated

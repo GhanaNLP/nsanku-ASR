@@ -174,6 +174,33 @@ benchmarks:
   source: evaluated
   model_class: non-llm
   score: 0.5263
+- model: google/gemini-3.6-flash
+  model_url: https://ai.google.dev/gemini-api/docs/models#gemini-3.6-flash
+  owner: google
+  model_class: llm
+  params: API
+  wer: 0.8715
+  cer: 0.3852
+  per_category:
+    bible:
+      wer: 0.8404
+      cer: 0.3772
+      samples: 1000
+      valid: 616
+      avg_seconds_per_sample: 1.08
+    jw:
+      wer: 0.9519
+      cer: 0.4502
+      samples: 1000
+      valid: 677
+      avg_seconds_per_sample: 1.1
+    unicef:
+      wer: 0.8221
+      cer: 0.3281
+      samples: 199
+      valid: 145
+      avg_seconds_per_sample: 1.61
+  source: evaluated
 - model: waxal-benchmarking/whisper-tiny-waxal-ewe
   model_url: https://huggingface.co/waxal-benchmarking/whisper-tiny-waxal-ewe
   owner: waxal-benchmarking
