@@ -3,7 +3,7 @@
 
 # HF model loading + ASR
 torch>=2.4.0
-transformers>=4.46.0
+transformers>=5.0.0   # 4.x breaks waxal Wav2Vec2 tokenizers (see the qwen-asr note)
 accelerate>=1.0.0
 datasets>=3.0.0
 soundfile>=0.12.0
@@ -17,10 +17,15 @@ jiwer>=3.0.0
 # Gemini API
 google-genai>=1.0.0
 
-# Qwen3-ASR fine-tunes. Their checkpoints are saved in this library's layout
-# (tensors under a `thinker.` prefix), which transformers cannot load — it
-# matches only part of the state dict and silently random-initialises the rest.
-qwen-asr>=0.0.6
+# Google Speech Recognition track (benchmark/google.py)
+SpeechRecognition>=3.10.0
+
+# NOT installed: qwen-asr. It is the only way to load Qwen3-ASR checkpoints
+# (saved under a `thinker.` prefix that transformers cannot read), but it pins
+# transformers to 4.x, and 4.57 rejects the tokenizer config of every
+# waxal-benchmarking Wav2Vec2/MMS model with
+# "'list' object has no attribute 'keys'". Install it in a separate venv if you
+# need it; see SKIP_MODELS in benchmark/config.py.
 
 # Data formats
 pyyaml>=6.0
