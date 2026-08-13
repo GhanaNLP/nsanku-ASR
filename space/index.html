@@ -134,6 +134,8 @@ tbody tr:hover td.lang-cell { background: var(--accent-soft); }
 .mtype { display: inline-block; padding: 1px 8px; border-radius: 4px; font-size: 0.75rem; background: var(--neutral-100); color: var(--text-muted); }
 .fam { color: var(--text-muted); font-weight: 400; white-space: nowrap; }
 .code { color: var(--text-muted); font-weight: 400; font-variant-numeric: tabular-nums; }
+.lic { color: var(--text-muted); font-weight: 400; white-space: nowrap; }
+.lic.na { opacity: .55; }
 .recipe-link {
   display: inline-block; margin-left: 7px; font-size: 0.7rem; font-weight: 600;
   color: var(--link); border: 1px solid var(--border-strong); border-radius: 4px;
@@ -256,7 +258,7 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
       <h3 style="margin-bottom:10px; font-size:0.95rem; color:var(--success)">✅ Passed</h3>
       <div class="table-wrap" style="margin-bottom:24px;">
         <table id="per-lang-pass-table">
-          <thead id="per-lang-pass-thead"><tr><th>#</th><th>Model</th><th>Type</th><th>Track</th><th>Params</th></tr></thead>
+          <thead id="per-lang-pass-thead"><tr><th>#</th><th>Model</th><th>Type</th><th>Track</th><th>Params</th><th>License</th></tr></thead>
           <tbody id="per-lang-pass-body"></tbody>
         </table>
       </div>
@@ -264,7 +266,7 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
       <h3 style="margin-bottom:10px; font-size:0.95rem; color:var(--danger)">❌ Failed</h3>
       <div class="table-wrap">
         <table id="per-lang-fail-table">
-          <thead><tr><th>#</th><th>Model</th><th>Type</th><th>Track</th><th>Params</th><th>Reason</th></tr></thead>
+          <thead><tr><th>#</th><th>Model</th><th>Type</th><th>Track</th><th>Params</th><th>License</th><th>Reason</th></tr></thead>
           <tbody id="per-lang-fail-body"></tbody>
         </table>
       </div>
@@ -299,7 +301,7 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
       <div class="table-wrap">
         <table id="ms-table">
           <thead>
-            <tr><th data-sort="language">Language</th><th data-sort="iso">Code</th><th data-sort="family">Family</th><th data-sort="model">Model</th><th data-sort="model_type">Type</th><th data-sort="model_class">Track</th><th data-sort="params">Params</th><th data-sort="score">Avg (WER+CER) (%)</th><th data-sort="wer">WER (%)</th><th data-sort="cer">CER (%)</th><th data-sort="status">Status</th><th>Fail Reason</th></tr>
+            <tr><th data-sort="language">Language</th><th data-sort="iso">Code</th><th data-sort="family">Family</th><th data-sort="model">Model</th><th data-sort="model_type">Type</th><th data-sort="model_class">Track</th><th data-sort="params">Params</th><th data-sort="license">License</th><th data-sort="score">Avg (WER+CER) (%)</th><th data-sort="wer">WER (%)</th><th data-sort="cer">CER (%)</th><th data-sort="status">Status</th><th>Fail Reason</th></tr>
           </thead>
           <tbody id="ms-body"></tbody>
         </table>
@@ -377,6 +379,26 @@ function parseLanguageFamilies(text) {
     if (iso && family) { out[iso] = family; iso = null; family = null; }
   }
   return out;
+}
+
+// model id -> licence, from data/model_licenses.json in the repo. "api" marks
+// hosted endpoints that have no HF repo to carry one; "" means the repo
+// declares none. Both render as N/A.
+let MODEL_LICENSES = {};
+
+async function loadLicenses() {
+  try {
+    const r = await fetch(`${RAW}/data/model_licenses.json`);
+    if (r.ok) MODEL_LICENSES = await r.json();
+  } catch (e) {
+    console.warn('Licence list fetch failed; showing N/A.', e);
+  }
+}
+
+function licenseCell(model) {
+  const l = (MODEL_LICENSES[model] || '').trim();
+  if (!l || l === 'api') return '<td><span class="lic na">N/A</span></td>';
+  return `<td><span class="lic">${l}</span></td>`;
 }
 
 async function loadFamilies() {
@@ -755,6 +777,7 @@ function renderGlobal(data) {
       <th data-sort="model_type">Type</th>
       <th data-sort="model_class">Track</th>
       <th data-sort="params">Params</th>
+      <th data-sort="license">License</th>
       ${catHeaders}
       <th data-sort="score" style="border-left:2px solid var(--border)">Avg (WER+CER) (%)</th>
       <th data-sort="wer">Avg WER (%)</th>
@@ -762,7 +785,7 @@ function renderGlobal(data) {
     </tr>`;
 
   const body = document.getElementById('global-body');
-  const ncols = 8 + cats.length + 3;
+  const ncols = 9 + cats.length + 3;
   if (rows.length === 0) { body.innerHTML = `<tr class="empty-row"><td colspan="${ncols}">No data</td></tr>`; return; }
 
   body.innerHTML = rows.map((r,i) => {
@@ -783,6 +806,7 @@ function renderGlobal(data) {
       <td><span class="mtype">${r.model_type}</span></td>
       <td>${trackBadge(r.model_class)}</td>
       <td>${r.params || '—'}</td>
+      ${licenseCell(r.model)}
       ${catCells}
       <td style="font-weight:700;border-left:2px solid var(--border);color:${r.score < 0.1 ? 'var(--success)' : r.score < 0.3 ? 'var(--accent-hover)' : 'var(--warning)'}">${r.score !== null ? (r.score*100).toFixed(2) : '—'}</td>
       <td style="font-weight:600">${r.wer !== null ? (r.wer*100).toFixed(2) : '—'}</td>
@@ -854,6 +878,7 @@ function renderPerLanguage(data) {
         <td><span class="mtype">${r.model_type}</span></td>
         <td>${trackBadge(r.model_class)}</td>
         <td>${r.params || '—'}</td>
+        ${licenseCell(r.model)}
         ${catCells}
         <td style="font-weight:700;border-left:2px solid var(--border)">${r.score !== null ? (r.score*100).toFixed(2) : '—'}</td>
         <td style="font-weight:600">${r.wer !== null ? (r.wer*100).toFixed(2) : '—'}</td>
@@ -874,6 +899,7 @@ function renderPerLanguage(data) {
             <td><span class="mtype">${r.model_type}</span></td>
             <td>${trackBadge(r.model_class)}</td>
             <td>${r.params || '—'}</td>
+            ${licenseCell(r.model)}
             <td><span class="${badgeClass(reason)}">${reason}</span></td>
           </tr>
         `;
@@ -902,7 +928,7 @@ function renderModelStatus(data) {
   document.getElementById('ms-count').textContent = `${sub.length} rows`;
   const body = document.getElementById('ms-body');
   body.innerHTML = sub.length === 0
-    ? '<tr class="empty-row"><td colspan="12">No matching rows</td></tr>'
+    ? '<tr class="empty-row"><td colspan="13">No matching rows</td></tr>'
     : sub.map(r => {
         const reason = r.fail_reason ? classifyError(r.fail_reason) : '';
         return `
@@ -914,6 +940,7 @@ function renderModelStatus(data) {
             <td><span class="mtype">${r.model_type}</span></td>
             <td>${trackBadge(r.model_class)}</td>
             <td>${r.params || '—'}</td>
+            ${licenseCell(r.model)}
             <td style="font-weight:700">${r.score !== null ? (r.score*100).toFixed(2) : '—'}</td>
             <td>${r.wer !== null ? (r.wer*100).toFixed(2) : '—'}</td>
             <td>${r.cer !== null ? (r.cer*100).toFixed(2) : '—'}</td>
@@ -962,7 +989,7 @@ async function main() {
     // Families come from languages/ghana_languages.yaml in the repo, so the
     // classification is edited there, not here. Fetched before the first render
     // and alongside the benchmarks so it costs no extra round trip.
-    let [data] = await Promise.all([loadAll(), loadFamilies()]);
+    let [data] = await Promise.all([loadAll(), loadFamilies(), loadLicenses()]);
     // loadAll() stamps each row's family from whatever map existed when it ran,
     // which may be the fallback if it finished first. Restamp now that the
     // fetched map is authoritative, so the sortable column matches the file.
