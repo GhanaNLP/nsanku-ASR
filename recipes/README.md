@@ -32,7 +32,7 @@ only one **per language**, and that is what the leaderboard's **code** badge
 links to:
 
 ```
-recipes/GhanaNLP_khaya-asr-v3__twi.py      # Khaya, Twi only
+recipes/KhayaAI_khaya-asr-v3__twi_asante.py      # Khaya, Twi only
 recipes/Google_speech-recognition__ewe.py  # Google ASR, Ewe only
 recipes/google_gemini-3.6-flash__gaa.py    # Gemini, Ga only
 ```

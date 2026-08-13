@@ -34,7 +34,7 @@ if _env.exists():
             os.environ.setdefault(_k.strip(), _v.strip())
 
 API_URL = "https://translation-api.ghananlp.org/asr/v3/transcribe"
-MODEL_ID = "GhanaNLP/khaya-asr-v3"
+MODEL_ID = "KhayaAI/khaya-asr-v3"
 MODEL_URL = "https://translation-api.ghananlp.org/"
 MAX_WORKERS = 8
 MAX_RETRIES = 3
@@ -130,7 +130,7 @@ def evaluate_khaya(iso_code):
     key = os.environ.get("KHAYA_API_KEY")
     if not key:
         raise ValueError("KHAYA_API_KEY required (set in .env).")
-    # Per-language recipe (recipes/GhanaNLP_khaya-asr-v3__{iso}.py) owns the API
+    # Per-language recipe (recipes/KhayaAI_khaya-asr-v3__{iso}.py) owns the API
     # language code and may replace the transcribe call entirely.
     recipe = load_lang_recipe(MODEL_ID, iso_code)
     khaya_code = recipe_get(recipe, "LANGUAGE_CODE", EVAL_TO_KHAYA.get(iso_code))
@@ -186,7 +186,7 @@ def evaluate_khaya(iso_code):
     avg_wer = round(sum(cat_wers) / len(cat_wers), 4) if cat_wers else None
     avg_cer = round(sum(cat_cers) / len(cat_cers), 4) if cat_cers else None
     result = {
-        "model": MODEL_ID, "model_url": MODEL_URL, "owner": "GhanaNLP",
+        "model": MODEL_ID, "model_url": MODEL_URL, "owner": "KhayaAI",
         "model_class": "non-llm", "params": "API",
         "wer": avg_wer, "cer": avg_cer, "per_category": per_category, "source": "evaluated",
     }

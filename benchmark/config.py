@@ -26,11 +26,13 @@ HF_TOKEN = os.environ.get("HF_TOKEN", "")
 ORG_ONLY = True
 
 # Namespaces to treat as organizations even though HuggingFace classifies them
-# as personal accounts (e.g. FarmerlineML) or does not know at all (GhanaNLP is
-# an API entry, not an HF repo). Ensures their models are not dropped by the
-# org-only rule, are included in org scans, and are exempt from the
-# license/model-card gate below.
-ORG_OVERRIDES = {"FarmerlineML", "GhanaNLP"}
+# as personal accounts (e.g. FarmerlineML). Ensures their models are not dropped
+# by the org-only rule, are included in org scans, and are exempt from the
+# model-card gate below.
+#
+# GhanaNLP was here while khaya-asr-v3 sat under that namespace; the model is
+# KhayaAI's, and KhayaAI is a real HF org, so the override is no longer needed.
+ORG_OVERRIDES = {"FarmerlineML"}
 
 # A model only reaches the eval list if it ships a real (non-placeholder) model
 # card. Licenses are NOT required — too many otherwise-good org models on HF

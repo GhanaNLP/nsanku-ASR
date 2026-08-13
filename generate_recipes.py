@@ -249,7 +249,7 @@ def _pending_models(models):
 # Tracks that are a hosted endpoint rather than a loadable checkpoint. They are
 # driven by benchmark/{khaya,google,gemini}.py and configured per language in
 # recipes/{model}__{iso}.py (see generate_api_recipes.py).
-API_TRACK_PREFIXES = ("GhanaNLP/khaya-asr", "Google/speech-recognition", "google/gemini")
+API_TRACK_PREFIXES = ("KhayaAI/khaya-asr", "Google/speech-recognition", "google/gemini")
 
 
 def _is_api_track(model_id):

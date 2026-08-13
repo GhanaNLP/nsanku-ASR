@@ -7,7 +7,7 @@ evaluated on every language, where the thing that actually varies per language i
 the API language code (Khaya, Google) or the prompt (Gemini). So each of those
 tracks gets one recipe FILE PER LANGUAGE:
 
-    recipes/GhanaNLP_khaya-asr-v3__twi.py
+    recipes/KhayaAI_khaya-asr-v3__twi_asante.py
     recipes/Google_speech-recognition__twi.py
     recipes/google_gemini-3.6-flash__twi.py
 

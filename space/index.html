@@ -475,7 +475,7 @@ function modelLink(model, url) {
 
 // API / LLM tracks are one endpoint run on every language, so their recipe is
 // per language: recipes/{model}__{iso}.py (see recipes/README.md).
-const PER_LANGUAGE_RECIPE_TRACKS = ['GhanaNLP/khaya-asr', 'Google/speech-recognition', 'google/gemini'];
+const PER_LANGUAGE_RECIPE_TRACKS = ['KhayaAI/khaya-asr', 'Google/speech-recognition', 'google/gemini'];
 
 function recipeLink(model, iso) {
   const safe = model.replace(/\//g,'_').replace(/:/g,'_');
