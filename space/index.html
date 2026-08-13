@@ -381,18 +381,48 @@ function parseLanguageFamilies(text) {
   return out;
 }
 
-// model id -> licence, from data/model_licenses.json in the repo. "api" marks
-// hosted endpoints that have no HF repo to carry one; "" means the repo
-// declares none. Both render as N/A.
+// model id -> licence. Two sources, in this order:
+//   1. data/model_licenses.json in the repo — instant, always available, and
+//      refreshable with scripts/fetch_licenses.py.
+//   2. the model cards themselves, read live from the HF API after first paint
+//      (it sends CORS headers for this origin), so a licence changed on the Hub
+//      shows here without anyone re-running anything.
+// "api" marks hosted endpoints with no HF repo; "" means none declared. Both
+// render as N/A.
 let MODEL_LICENSES = {};
+// Hosted endpoints rather than HF repos: no licence to read, and their recipes
+// are per language. Used by both the licence lookup and the recipe links.
+const API_TRACKS = ['KhayaAI/khaya-asr', 'Google/speech-recognition', 'google/gemini'];
+const isApiTrack = m => API_TRACKS.some(p => m.startsWith(p));
 
 async function loadLicenses() {
   try {
     const r = await fetch(`${RAW}/data/model_licenses.json`);
     if (r.ok) MODEL_LICENSES = await r.json();
   } catch (e) {
-    console.warn('Licence list fetch failed; showing N/A.', e);
+    console.warn('Cached licence list unavailable; falling back to live lookup.', e);
   }
+}
+
+// Read licences off the model cards. Runs after the tables are already on
+// screen, so a slow or rate-limited Hub costs nothing but staleness.
+async function refreshLicensesFromCards(models) {
+  const targets = [...new Set(models)].filter(m => !isApiTrack(m));
+  let changed = 0;
+  const CONCURRENCY = 6;
+  for (let i = 0; i < targets.length; i += CONCURRENCY) {
+    const slice = targets.slice(i, i + CONCURRENCY);
+    await Promise.all(slice.map(async m => {
+      try {
+        const r = await fetch(`https://huggingface.co/api/models/${m}`);
+        if (!r.ok) return;                       // gone, gated or rate-limited
+        const d = await r.json();
+        const lic = ((d.cardData || {}).license || '').toString().trim();
+        if (lic && lic !== MODEL_LICENSES[m]) { MODEL_LICENSES[m] = lic; changed++; }
+      } catch (e) { /* leave the cached value in place */ }
+    }));
+  }
+  return changed;
 }
 
 function licenseCell(model) {
@@ -495,13 +525,11 @@ function modelLink(model, url) {
   return `<a href="${url}" target="_blank" title="${model}">${model}</a>`;
 }
 
-// API / LLM tracks are one endpoint run on every language, so their recipe is
-// per language: recipes/{model}__{iso}.py (see recipes/README.md).
-const PER_LANGUAGE_RECIPE_TRACKS = ['KhayaAI/khaya-asr', 'Google/speech-recognition', 'google/gemini'];
-
+// API/LLM tracks are one endpoint run on every language, so their recipe is per
+// language: recipes/{model}__{iso}.py (see recipes/README.md).
 function recipeLink(model, iso) {
   const safe = model.replace(/\//g,'_').replace(/:/g,'_');
-  const isTrack = PER_LANGUAGE_RECIPE_TRACKS.some(p => model.startsWith(p));
+  const isTrack = isApiTrack(model);
   // API/LLM tracks have NO model-level recipe — only per-language ones. Without
   // an iso there is no real file to point at, so link the recipes folder rather
   // than a 404.
@@ -1018,6 +1046,15 @@ async function main() {
     document.getElementById('ms-search').addEventListener('input', () => renderModelStatus(ALL_DATA));
 
     setupTabs();
+
+    // Licences straight from the model cards, once the page is usable.
+    refreshLicensesFromCards(ALL_DATA.map(r => r.model)).then(changed => {
+      if (!changed) return;
+      console.info(`${changed} licence(s) updated from the model cards`);
+      renderGlobal(ALL_DATA);
+      renderPerLanguage(ALL_DATA);
+      renderModelStatus(ALL_DATA);
+    });
   } catch (e) {
     console.error(e);
     document.getElementById('loading').innerHTML = `
