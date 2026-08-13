@@ -20,7 +20,8 @@ RAW_BASE = f"https://raw.githubusercontent.com/{REPO}/{BRANCH}"
 API_BASE = f"https://api.github.com/repos/{REPO}/contents"
 
 LANG_NAMES = {
-    "twi": "Twi (Akuapem + Asante)", "ewe": "Ewe", "hau": "Hausa",
+    "twi_akuapem": "Akuapem Twi", "twi_asante": "Asante Twi", "kpo": "Ikposo",
+    "ewe": "Ewe", "hau": "Hausa",
     "kbp": "Kabiye", "dag": "Dagbani", "dga": "Dagaare",
     "fat": "Fante", "nko": "Nkonya", "any": "Anyin", "avn": "Avatime",
     "bud": "Bassar Ntcham", "bim": "Bimoba", "biv": "Birifor Southern",
@@ -36,6 +37,7 @@ LANG_NAMES = {
 
 CATEGORY_LABELS = {
     "bible": "Bible", "jw": "JW", "finance": "Finance", "unicef": "UNICEF",
+    "lds": "LDS", "waxal": "WAXAL",
 }
 
 

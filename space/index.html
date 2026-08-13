@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Automatic Speech Recognition benchmark for Ghanaian languages, evaluated on ghana-speech-eval. WER/CER averaged across Bible, JW, Finance, and UNICEF categories.">
+<meta name="description" content="Automatic Speech Recognition benchmark for Ghanaian languages, evaluated on ghana-speech-eval. WER/CER averaged across Bible, JW, Finance, UNICEF, LDS and WAXAL categories.">
 <title>nsanku ASR Benchmark</title>
 
 <style>
@@ -440,7 +440,7 @@ function modelType(m) {
   return 'Other';
 }
 
-const CATEGORY_LABELS = { bible:'Bible', jw:'JW', finance:'Finance', unicef:'UNICEF' };
+const CATEGORY_LABELS = { bible:'Bible', jw:'JW', finance:'Finance', unicef:'UNICEF', lds:'LDS', waxal:'WAXAL' };
 function fmtCategories(pc) {
   if (!pc) return '';
   return Object.keys(pc).map(c => {
