@@ -23,42 +23,52 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-import requests
-
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from benchmark.config import EVAL_CONFIGS_FILE, GHANA_SPEECH_EVAL, HF_TOKEN
 
-ROWS_API = "https://datasets-server.huggingface.co/rows"
-SPLITS_API = "https://datasets-server.huggingface.co/splits"
 
-
-def _headers():
-    return {"Authorization": f"Bearer {HF_TOKEN}"} if HF_TOKEN else {}
+def _fs():
+    from huggingface_hub import HfFileSystem
+    return HfFileSystem(token=HF_TOKEN or None)
 
 
 def dataset_configs(dataset):
-    r = requests.get(f"{SPLITS_API}?dataset={dataset}", headers=_headers(), timeout=120)
-    r.raise_for_status()
-    return sorted({s["config"]: s["split"] for s in r.json()["splits"]}.items())
+    """Config names, from the repo's own file tree.
+
+    Deliberately not the datasets-server: its viewer 500s for a while after
+    every push (it re-indexes all ~60 configs), which is exactly when this
+    script needs to run.
+    """
+    from huggingface_hub import HfApi
+    api = HfApi(token=HF_TOKEN or None)
+    files = api.list_repo_files(dataset, repo_type="dataset")
+    return sorted({f.split("/")[0] for f in files if f.endswith(".parquet") and "/" in f})
 
 
-def config_identity(dataset, config, split):
-    """(iso, language) for a config, read from its first row."""
-    url = f"{ROWS_API}?dataset={dataset}&config={config}&split={split}&offset=0&length=1"
-    r = requests.get(url, headers=_headers(), timeout=120)
-    r.raise_for_status()
-    rows = r.json().get("rows") or []
-    if not rows:
+def config_identity(dataset, config, _split=None):
+    """(iso, language) for a config, read straight from its parquet.
+
+    Only those two columns are read, so parquet column pruning keeps this to a
+    few KB per config rather than downloading the audio.
+    """
+    import pyarrow.parquet as pq
+    fs = _fs()
+    paths = sorted(fs.glob(f"datasets/{dataset}/{config}/*.parquet"))
+    if not paths:
         return None, None
-    row = rows[0]["row"]
-    return (row.get("iso") or "").strip(), (row.get("language") or "").strip()
+    t = pq.read_table(paths[0], columns=["iso", "language"], filesystem=fs)
+    d = t.to_pydict()
+    if not d["iso"]:
+        return None, None
+    return (d["iso"][0] or "").strip(), (d["language"][0] or "").strip()
 
 
 def main(dry_run=False, dataset=GHANA_SPEECH_EVAL):
     langs = defaultdict(lambda: {"language": "", "categories": []})
     skipped = []
-    for config, split in dataset_configs(dataset):
+    for config in dataset_configs(dataset):
+        split = None
         category = config.split("_")[0]
         try:
             iso, language = config_identity(dataset, config, split)

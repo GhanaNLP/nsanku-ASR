@@ -1,4 +1,4 @@
-"""Evaluation recipe for Google/speech-recognition — Twi (twi).
+"""Evaluation recipe for Google/speech-recognition — Asante Twi (twi_asante).
 
 Track: Hosted API — Google Speech Recognition
 Scope: THIS LANGUAGE ONLY. Every eval language has its own recipe file, so
@@ -10,7 +10,7 @@ language. Define `transcribe(pcm_bytes, sample_rate, google_code)` to
 replace the API call itself.
 
 Edit this file and open a pull request at
-https://github.com/GhanaNLP/nsanku-ASR to change how Twi is evaluated on the
+https://github.com/GhanaNLP/nsanku-ASR to change how Asante Twi is evaluated on the
 next benchmark run.
 """
 

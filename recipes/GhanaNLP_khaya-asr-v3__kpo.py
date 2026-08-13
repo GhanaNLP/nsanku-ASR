@@ -1,4 +1,4 @@
-"""Evaluation recipe for GhanaNLP/khaya-asr-v3 — Twi (twi).
+"""Evaluation recipe for GhanaNLP/khaya-asr-v3 — Ikposo (kpo).
 
 Track: Hosted API — Khaya (GhanaNLP)
 Scope: THIS LANGUAGE ONLY. Every eval language has its own recipe file, so
@@ -10,15 +10,12 @@ language. Define `transcribe(wav_bytes, khaya_code, key)` to replace the
 API call itself.
 
 Edit this file and open a pull request at
-https://github.com/GhanaNLP/nsanku-ASR to change how Twi is evaluated on the
+https://github.com/GhanaNLP/nsanku-ASR to change how Ikposo is evaluated on the
 next benchmark run.
 """
 
 
-# 'atw' (Akuapem Twi) was the original choice and wins on the bible category
-# (WER 8.93% vs 34.84%), but the twi eval set is mixed-dialect and 'atw' loses
-# badly on jw (88.69% vs 49.52%). 'twi' is the general-Twi endpoint.
-LANGUAGE_CODE = 'twi'
+LANGUAGE_CODE = None  # Khaya has no code for Ikposo yet — set one to enable
 
 
 # def transcribe(wav_bytes, khaya_code, key):

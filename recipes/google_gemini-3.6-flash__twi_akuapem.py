@@ -1,4 +1,4 @@
-"""Evaluation recipe for google/gemini-3.6-flash — Twi (twi).
+"""Evaluation recipe for google/gemini-3.6-flash — Akuapem Twi (twi_akuapem).
 
 Track: LLM — Gemini (gemini-3.6-flash)
 Scope: THIS LANGUAGE ONLY. Every eval language has its own recipe file, so
@@ -11,16 +11,16 @@ brackets (see `benchmark.gemini._parse`), so keep that instruction unless
 you also override `transcribe(wav_bytes, prompt)`.
 
 Edit this file and open a pull request at
-https://github.com/GhanaNLP/nsanku-ASR to change how Twi is evaluated on the
+https://github.com/GhanaNLP/nsanku-ASR to change how Akuapem Twi is evaluated on the
 next benchmark run.
 """
 
 
-LANGUAGE_NAME = 'Twi'
+LANGUAGE_NAME = 'Akuapem Twi'
 
 PROMPT = (
     "Transcribe the speech in this audio exactly as spoken. "
-    "The language is Twi. "
+    "The language is Akuapem Twi. "
     "Put the transcription inside square brackets, e.g. [the man went to the market]. "
     "Output ONLY the bracketed transcription, nothing else."
 )
