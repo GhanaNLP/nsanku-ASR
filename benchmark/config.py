@@ -48,6 +48,19 @@ MIN_CARD_CHARS = 150
 # explicitly targets a modest set of languages (HF language-tag count <= this).
 MAX_LANG_TAGS = 60
 
+# Models excluded by decision rather than by rule. Each entry needs a reason:
+# the point is to skip work we know is wasted, not to hide results.
+SKIP_MODELS = {
+    # Runs correctly but costs ~2.5s/sample even through ONNX (the PyTorch path
+    # was ~8s), i.e. hours per language for one model. Judged not worth the
+    # budget on 2026-08-12; the ONNX export and recipe are kept, so re-enabling
+    # is a one-line change.
+    "ghananlpcommunity/qwen3-asr-akuapem-twi",
+    # Repo ships no feature-extractor config, so it cannot load at all. Failed
+    # every attempt across three runs; retrying it just burns a download.
+    "ghananlpcommunity/FarmerlineWav2Vec-Twi-Demo",
+}
+
 # Hard ceiling on model size. Anything larger is not benchmarked at all — the
 # eval budget does not stretch to multi-billion-parameter models generating a
 # transcript token by token (a 7B audio LLM is ~20x slower per sample than a

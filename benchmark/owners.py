@@ -14,7 +14,7 @@ from .config import (
     OWNER_TYPES_FILE, HF_TOKEN, ORG_ONLY, MAX_LANG_TAGS, DATA_DIR,
     SINGLE_LANGUAGE_ONLY, LANG_CONFIG, ORG_OVERRIDES,
     MODEL_LICENSES_FILE, MODEL_CARDS_FILE, REQUIRE_MODEL_CARD, MIN_CARD_CHARS,
-    MODEL_PARAMS_FILE, MAX_PARAMS,
+    MODEL_PARAMS_FILE, MAX_PARAMS, SKIP_MODELS,
 )
 
 LANGTAG_COUNTS_FILE = DATA_DIR / "model_lang_tags.json"  # cache: model_id -> [lang codes]
@@ -377,7 +377,8 @@ def warm_caches_from_universe(models):
 def filter_models(models, iso_codes=None, name_tokens=(), require_card=None):
     """Keep only org-owned ASR models that explicitly target the language.
 
-    Drops: personal accounts, non-ASR models (TTS/aligner/LID), LMs and runtime
+    Drops: models in SKIP_MODELS, personal accounts, non-ASR models
+    (TTS/aligner/LID), LMs and runtime
     exports we cannot load (kenlm/ct2/onnx/gguf — see UNSUPPORTED_ARTIFACT_TOKENS),
     generic global
     base models (>MAX_LANG_TAGS languages), models above MAX_PARAMS parameters,
@@ -402,6 +403,8 @@ def filter_models(models, iso_codes=None, name_tokens=(), require_card=None):
     for m in models:
         name = m["name"]
         owner = name.split("/")[0]
+        if name in SKIP_MODELS:
+            continue
         if is_non_asr(name) or is_unsupported_artifact(name):
             continue
         if ORG_ONLY and not is_org(owner, otype):
