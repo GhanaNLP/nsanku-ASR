@@ -213,8 +213,8 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
     <!-- ====== Tab: Global Leaderboard ====== -->
     <div class="tab-pane active" id="pane-global">
       <div class="filters">
-        <label class="switch" title="A language tested on just one dataset has nothing to check its score against.">
-          <input type="checkbox" id="global-single-source"> Include single-dataset languages
+        <label class="switch" title="Languages with only one domain dataset available">
+          <input type="checkbox" id="global-single-source"> Include single-domain languages
         </label>
         <label>Track:</label>
         <select id="global-class-select">
@@ -850,16 +850,13 @@ function renderGlobal(data) {
   if (note) {
     if (hiddenLangs.size && !showSingle) {
       note.style.display = '';
-      const n = hiddenLangs.size, isAre = n === 1 ? 'is' : 'are', plural = n === 1 ? '' : 's';
-      note.innerHTML = `Showing languages tested on <strong>two or more datasets</strong>. ` +
-        `${n} language${plural} tested on only one dataset ${isAre} hidden, because one dataset ` +
-        `on its own can make a model look better or worse than it really is. ` +
-        `Tick the box above to include them, or open the Per-Language tab.`;
+      const n = hiddenLangs.size;
+      note.innerHTML = `This leaderboard covers languages with <strong>more than one domain dataset</strong>. ` +
+        `${n} language${n === 1 ? '' : 's'} with only one are hidden — tick the box above to include them.`;
     } else if (showSingle && hiddenLangs.size) {
       note.style.display = '';
       const n = hiddenLangs.size;
-      note.innerHTML = `Including <strong>${n}</strong> language${n === 1 ? '' : 's'} tested on only one ` +
-        `dataset. Those scores have nothing to check them against, so compare them with care.`;
+      note.innerHTML = `Including <strong>${n}</strong> language${n === 1 ? '' : 's'} with only one domain dataset.`;
     } else {
       note.style.display = 'none';
     }
