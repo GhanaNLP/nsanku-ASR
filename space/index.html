@@ -213,8 +213,8 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
     <!-- ====== Tab: Global Leaderboard ====== -->
     <div class="tab-pane active" id="pane-global">
       <div class="filters">
-        <label class="switch" title="A single-source score has no corroboration: the same audio provenance produced both the training-adjacent material and the test set for many of these languages.">
-          <input type="checkbox" id="global-single-source"> Include single-source languages
+        <label class="switch" title="A language tested on just one dataset has nothing to check its score against.">
+          <input type="checkbox" id="global-single-source"> Include single-dataset languages
         </label>
         <label>Track:</label>
         <select id="global-class-select">
@@ -850,14 +850,16 @@ function renderGlobal(data) {
   if (note) {
     if (hiddenLangs.size && !showSingle) {
       note.style.display = '';
-      note.innerHTML = `Showing languages evaluated on <strong>two or more sources</strong>. ` +
-        `${hiddenLangs.size} language${hiddenLangs.size === 1 ? '' : 's'} scored on a single source ` +
-        `${hiddenLangs.size === 1 ? 'is' : 'are'} hidden — one provenance cannot corroborate itself. ` +
-        `Tick “Include single-source languages” to see them, or use the Per-Language tab.`;
+      const n = hiddenLangs.size, isAre = n === 1 ? 'is' : 'are', plural = n === 1 ? '' : 's';
+      note.innerHTML = `Showing languages tested on <strong>two or more datasets</strong>. ` +
+        `${n} language${plural} tested on only one dataset ${isAre} hidden, because one dataset ` +
+        `on its own can make a model look better or worse than it really is. ` +
+        `Tick the box above to include them, or open the Per-Language tab.`;
     } else if (showSingle && hiddenLangs.size) {
       note.style.display = '';
-      note.innerHTML = `Including <strong>${hiddenLangs.size}</strong> language${hiddenLangs.size === 1 ? '' : 's'} ` +
-        `scored on a single source — those numbers have no second provenance to corroborate them.`;
+      const n = hiddenLangs.size;
+      note.innerHTML = `Including <strong>${n}</strong> language${n === 1 ? '' : 's'} tested on only one ` +
+        `dataset. Those scores have nothing to check them against, so compare them with care.`;
     } else {
       note.style.display = 'none';
     }
