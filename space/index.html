@@ -897,13 +897,13 @@ function renderPerLanguage(data) {
   // Dynamic headers for pass table
   const catHeaders = langCats.map(c => `<th>${CATEGORY_LABELS[c]||c} WER (%)</th>`).join('');
   document.getElementById('per-lang-pass-thead').innerHTML = `
-    <tr><th>#</th><th>Model</th><th>Type</th><th>Track</th><th>Params</th>
+    <tr><th>#</th><th>Model</th><th>Type</th><th>Track</th><th>Params</th><th>License</th>
     ${catHeaders}
     <th style="border-left:2px solid var(--border)">Avg (WER+CER) (%)</th><th>Avg WER (%)</th><th>Avg CER (%)</th></tr>`;
 
   // Render passed
   const passBody = document.getElementById('per-lang-pass-body');
-  const ncols = 5 + langCats.length + 3;
+  const ncols = 6 + langCats.length + 3;
   passBody.innerHTML = passed.length === 0
     ? `<tr class="empty-row"><td colspan="${ncols}">No passed models</td></tr>`
     : passed.map((r,i) => {
