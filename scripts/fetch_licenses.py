@@ -28,6 +28,11 @@ from benchmark.owners import model_license
 # Tracks that are hosted endpoints, not HuggingFace repos.
 API_TRACKS = ("KhayaAI/khaya-asr", "Google/speech-recognition", "google/gemini")
 
+# Licences we know but cannot read from a repo, because there is no repo.
+KNOWN_LICENSES = {
+    "KhayaAI/khaya-asr-v3": "apache-2.0",   # confirmed by KhayaAI
+}
+
 
 def leaderboard_models():
     models = set()
@@ -46,7 +51,7 @@ def main(refresh=False):
     api = [m for m in todo if m.startswith(API_TRACKS)]
     hub = [m for m in todo if m not in api]
     for m in api:
-        cache[m] = "api"
+        cache[m] = KNOWN_LICENSES.get(m, "api")
 
     print(f"{len(models)} models on the leaderboard; {len(hub)} to fetch, {len(api)} API tracks")
     if hub:

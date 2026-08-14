@@ -135,6 +135,8 @@ tbody tr:hover td.lang-cell { background: var(--accent-soft); }
 .fam { color: var(--text-muted); font-weight: 400; white-space: nowrap; }
 .code { color: var(--text-muted); font-weight: 400; font-variant-numeric: tabular-nums; }
 .lic { color: var(--text-muted); font-weight: 400; white-space: nowrap; }
+.tr-link { color: inherit; text-decoration: none; border-bottom: 1px dotted currentColor; }
+.tr-link:hover { text-decoration: none; border-bottom-style: solid; }
 .lic.na { opacity: .55; }
 .recipe-link {
   display: inline-block; margin-left: 7px; font-size: 0.7rem; font-weight: 600;
@@ -455,6 +457,25 @@ function populateFamilyFilter() {
 function familyCell(iso) {
   const f = LANG_FAMILIES[iso];
   return `<td><span class="fam">${f || '—'}</span></td>`;
+}
+
+// Per-category score -> the transcriptions CSV it was computed from
+// (transcriptions/{iso}_{category}_{model}.csv, written by save_transcriptions).
+// The number itself is the link, so the tables stay uncluttered.
+function transcriptUrl(iso, category, model) {
+  const safe = model.replace(/\//g,'_').replace(/:/g,'_');
+  return `https://github.com/${REPO}/blob/${BRANCH}/transcriptions/${iso}_${category}_${safe}.csv`;
+}
+
+function catCell(row, category) {
+  const pc = row.per_category_raw[category];
+  if (!pc || pc.wer == null) return '<td style="color:var(--text-muted)">—</td>';
+  const w = (pc.wer * 100).toFixed(1);
+  const color = pc.wer < 0.3 ? 'var(--success)' : pc.wer < 0.6 ? 'var(--accent-hover)' : 'var(--warning)';
+  const inner = pc.valid
+    ? `<a class="tr-link" href="${transcriptUrl(row.iso, category, row.model)}" target="_blank" title="Transcriptions used for this score (${pc.valid}/${pc.samples} clips)">${w}</a>`
+    : w;
+  return `<td style="font-weight:500;color:${color}">${inner}</td>`;
 }
 
 function codeCell(iso) {
@@ -817,13 +838,7 @@ function renderGlobal(data) {
   if (rows.length === 0) { body.innerHTML = `<tr class="empty-row"><td colspan="${ncols}">No data</td></tr>`; return; }
 
   body.innerHTML = rows.map((r,i) => {
-    const catCells = cats.map(c => {
-      const pc = r.per_category_raw[c];
-      const w = pc && pc.wer != null ? (pc.wer * 100).toFixed(1) : null;
-      if (w === null) return '<td style="color:var(--text-muted)">—</td>';
-      const color = pc.wer < 0.3 ? 'var(--success)' : pc.wer < 0.6 ? 'var(--accent-hover)' : 'var(--warning)';
-      return `<td style="font-weight:500;color:${color}">${w}</td>`;
-    }).join('');
+    const catCells = cats.map(c => catCell(r, c)).join('');
     return `
     <tr>
       <td>${i+1}</td>
@@ -892,13 +907,7 @@ function renderPerLanguage(data) {
   passBody.innerHTML = passed.length === 0
     ? `<tr class="empty-row"><td colspan="${ncols}">No passed models</td></tr>`
     : passed.map((r,i) => {
-        const catCells = langCats.map(c => {
-          const pc = r.per_category_raw[c];
-          const w = pc && pc.wer != null ? (pc.wer * 100).toFixed(1) : null;
-          if (w === null) return '<td style="color:var(--text-muted)">—</td>';
-          const color = pc.wer < 0.3 ? 'var(--success)' : pc.wer < 0.6 ? 'var(--accent-hover)' : 'var(--warning)';
-          return `<td style="font-weight:500;color:${color}">${w}</td>`;
-        }).join('');
+        const catCells = langCats.map(c => catCell(r, c)).join('');
         return `
       <tr>
         <td>${i+1}</td>
