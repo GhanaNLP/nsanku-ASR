@@ -5,41 +5,49 @@ categories:
 - bible
 - jw
 - unicef
+- waxal
 benchmarks:
 - model: KhayaAI/khaya-asr-v3
   model_url: https://translation-api.ghananlp.org/
   owner: KhayaAI
   model_class: non-llm
   params: API
-  wer: 0.3669
-  cer: 0.1319
+  wer: 0.3499
+  cer: 0.1251
   per_category:
     bible:
       wer: 0.1993
       cer: 0.0814
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 0.53
+      avg_seconds_per_sample: 0.54
     jw:
       wer: 0.4405
       cer: 0.209
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 0.47
+      avg_seconds_per_sample: 0.49
     unicef:
       wer: 0.4608
       cer: 0.1053
       samples: 199
       valid: 199
-      avg_seconds_per_sample: 1.53
+      avg_seconds_per_sample: 1.46
+    waxal:
+      wer: 0.299
+      cer: 0.1045
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.89
   source: evaluated
-  score: 0.2494
 - model: waxal-benchmarking/mms-300m-waxal-ewe
   model_url: https://huggingface.co/waxal-benchmarking/mms-300m-waxal-ewe
   owner: waxal-benchmarking
+  model_class: non-llm
   params: 0.3B
-  wer: 0.6186
-  cer: 0.1719
+  wer: 0.5258
+  cer: 0.147
+  score: 0.3364
   per_category:
     bible:
       wer: 0.5058
@@ -59,105 +67,96 @@ benchmarks:
       samples: 199
       valid: 199
       avg_seconds_per_sample: 0.05
+    waxal:
+      wer: 0.2474
+      cer: 0.0724
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.03
   source: evaluated
-  model_class: non-llm
-  score: 0.3952
 - model: FarmerlineML/w2v-bert-2.0_ewe_2
   model_url: https://huggingface.co/FarmerlineML/w2v-bert-2.0_ewe_2
   owner: FarmerlineML
   model_class: non-llm
   params: '?'
-  wer: 0.6382
-  cer: 0.1769
-  score: 0.4075
+  wer: 0.5548
+  cer: 0.1579
+  score: 0.3564
   per_category:
     bible:
       wer: 0.5426
       cer: 0.1401
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 0.08
+      avg_seconds_per_sample: 0.06
     jw:
       wer: 0.8146
       cer: 0.2774
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 0.08
+      avg_seconds_per_sample: 0.05
     unicef:
       wer: 0.5575
       cer: 0.1131
       samples: 199
       valid: 199
-      avg_seconds_per_sample: 0.42
+      avg_seconds_per_sample: 0.18
+    waxal:
+      wer: 0.3045
+      cer: 0.1011
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.11
   source: evaluated
 - model: waxal-benchmarking/whisper-small-waxal-ewe
   model_url: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-ewe
   owner: waxal-benchmarking
+  model_class: non-llm
   params: 0.2B
-  wer: 0.7308
-  cer: 0.2647
+  wer: 0.6211
+  cer: 0.2262
+  score: 0.4236
   per_category:
     bible:
       wer: 0.5845
       cer: 0.1691
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 0.44
+      avg_seconds_per_sample: 0.4
     jw:
       wer: 0.8627
       cer: 0.3164
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 0.27
+      avg_seconds_per_sample: 0.72
     unicef:
       wer: 0.7452
       cer: 0.3085
       samples: 199
       valid: 199
-      avg_seconds_per_sample: 0.89
-  source: evaluated
-  model_class: non-llm
-  score: 0.4978
-- model: google/gemini-3.6-flash
-  model_url: https://ai.google.dev/gemini-api/docs/models#gemini-3.6-flash
-  owner: google
-  model_class: llm
-  params: API
-  wer: 0.8715
-  cer: 0.3852
-  per_category:
-    bible:
-      wer: 0.8404
-      cer: 0.3772
+      avg_seconds_per_sample: 2.88
+    waxal:
+      wer: 0.2919
+      cer: 0.111
       samples: 1000
-      valid: 616
-      avg_seconds_per_sample: 1.08
-    jw:
-      wer: 0.9519
-      cer: 0.4502
-      samples: 1000
-      valid: 677
-      avg_seconds_per_sample: 1.1
-    unicef:
-      wer: 0.8221
-      cer: 0.3281
-      samples: 199
-      valid: 145
-      avg_seconds_per_sample: 1.61
+      valid: 1000
+      avg_seconds_per_sample: 1.25
   source: evaluated
 - model: waxal-benchmarking/whisper-tiny-waxal-ewe
   model_url: https://huggingface.co/waxal-benchmarking/whisper-tiny-waxal-ewe
   owner: waxal-benchmarking
+  model_class: non-llm
   params: 37.8M
-  wer: 0.9699
-  cer: 0.4465
+  wer: 0.7857
+  cer: 0.3567
+  score: 0.5712
   per_category:
     bible:
       wer: 0.8144
       cer: 0.3456
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 0.19
+      avg_seconds_per_sample: 0.22
     jw:
       wer: 1.0394
       cer: 0.4457
@@ -169,7 +168,77 @@ benchmarks:
       cer: 0.5482
       samples: 199
       valid: 199
-      avg_seconds_per_sample: 0.67
+      avg_seconds_per_sample: 0.46
+    waxal:
+      wer: 0.2331
+      cer: 0.0873
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.3
   source: evaluated
+- model: google/gemini-3.6-flash
+  model_url: https://ai.google.dev/gemini-api/docs/models#gemini-3.6-flash
+  owner: google
+  model_class: llm
+  params: API
+  wer: 0.8741
+  cer: 0.3967
+  per_category:
+    bible:
+      wer: 0.8694
+      cer: 0.3866
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.92
+    jw:
+      wer: 0.964
+      cer: 0.4758
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.81
+    unicef:
+      wer: 0.8217
+      cer: 0.3279
+      samples: 199
+      valid: 199
+      avg_seconds_per_sample: 1.46
+    waxal:
+      wer: 0.8412
+      cer: 0.3965
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 1.05
+  source: evaluated
+- model: Google/speech-recognition
+  model_url: https://www.google.com/
+  owner: Google
   model_class: non-llm
-  score: 0.7082
+  params: API
+  wer: 1.0309
+  cer: 0.8328
+  per_category:
+    bible:
+      wer: 1.0151
+      cer: 0.8141
+      samples: 1000
+      valid: 999
+      avg_seconds_per_sample: 0.79
+    jw:
+      wer: 1.1101
+      cer: 0.8353
+      samples: 1000
+      valid: 996
+      avg_seconds_per_sample: 0.63
+    unicef:
+      wer: 0.9976
+      cer: 0.849
+      samples: 199
+      valid: 199
+      avg_seconds_per_sample: 2.09
+    waxal:
+      wer: 1.0007
+      cer: 0.8328
+      samples: 1000
+      valid: 997
+      avg_seconds_per_sample: 1.57
+  source: evaluated
