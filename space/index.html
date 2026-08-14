@@ -814,12 +814,14 @@ function renderGlobal(data) {
   const classFilter = (document.getElementById('global-class-select')||{}).value || 'All';
   const showSingle = (document.getElementById('global-single-source')||{}).checked;
   let passed = data.filter(r => r.status === 'pass' && r.wer !== null);
-  // A language scored on one source has no corroboration — the number rests
-  // entirely on one provenance. Hidden here by default; the toggle shows them,
-  // and the other tabs are unaffected.
+  // Track filter first, so the hidden-language count reflects what this view
+  // would otherwise show — counting it beforehand overstates the total whenever
+  // a track filter is active.
+  if (classFilter !== 'All') passed = passed.filter(r => r.model_class === classFilter);
+  // Languages with one domain dataset are held back by default; the checkbox
+  // brings them in. Other tabs are unaffected.
   const hiddenLangs = new Set(passed.filter(r => (r.n_categories || 0) < 2).map(r => r.iso));
   if (!showSingle) passed = passed.filter(r => (r.n_categories || 0) >= 2);
-  if (classFilter !== 'All') passed = passed.filter(r => r.model_class === classFilter);
   const byLang = {};
   for (const r of passed) {
     if (!byLang[r.iso] || r.score < byLang[r.iso].score) byLang[r.iso] = r;
