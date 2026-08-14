@@ -135,6 +135,8 @@ tbody tr:hover td.lang-cell { background: var(--accent-soft); }
 .fam { color: var(--text-muted); font-weight: 400; white-space: nowrap; }
 .code { color: var(--text-muted); font-weight: 400; font-variant-numeric: tabular-nums; }
 .lic { color: var(--text-muted); font-weight: 400; white-space: nowrap; }
+.switch { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; color: var(--text); font-weight: 500; }
+.switch input { cursor: pointer; }
 .tr-link { color: inherit; text-decoration: none; border-bottom: 1px dotted currentColor; }
 .tr-link:hover { text-decoration: none; border-bottom-style: solid; }
 .lic.na { opacity: .55; }
@@ -211,6 +213,9 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
     <!-- ====== Tab: Global Leaderboard ====== -->
     <div class="tab-pane active" id="pane-global">
       <div class="filters">
+        <label class="switch" title="A single-source score has no corroboration: the same audio provenance produced both the training-adjacent material and the test set for many of these languages.">
+          <input type="checkbox" id="global-single-source"> Include single-source languages
+        </label>
         <label>Track:</label>
         <select id="global-class-select">
           <option value="All">All models</option>
@@ -218,7 +223,8 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
           <option value="llm">LLM (Gemini)</option>
         </select>
       </div>
-      <p style="color:var(--text-muted); margin-bottom:14px;">Best model per language — ranked by the average of WER and CER (lower is better). Individual WER/CER scores shown for transparency.</p>
+      <p style="color:var(--text-muted); margin-bottom:8px;">Best model per language — ranked by the average of WER and CER (lower is better). Individual WER/CER scores shown for transparency.</p>
+      <p id="global-source-note" class="section-note" style="display:none; margin-bottom:14px;"></p>
       <div class="table-wrap">
         <table id="global-table">
           <thead id="global-thead">
@@ -704,6 +710,7 @@ async function loadYAMLs() {
             owner: b.owner || b.model.split('/')[0],
             model_class: b.model_class || (String(b.model).toLowerCase().includes('gemini') ? 'llm' : 'non-llm'),
             categories: (data.categories||[]).map(c=>CATEGORY_LABELS[c]||c).join(', '),
+            n_categories: (data.categories||[]).length,
             params: b.params || '?',
             wer: wer, cer: cer, score: score,
             per_category_raw: b.per_category || {},
@@ -805,7 +812,13 @@ function renderStats(data) {
 // ====== Rendering: Global Leaderboard ======
 function renderGlobal(data) {
   const classFilter = (document.getElementById('global-class-select')||{}).value || 'All';
+  const showSingle = (document.getElementById('global-single-source')||{}).checked;
   let passed = data.filter(r => r.status === 'pass' && r.wer !== null);
+  // A language scored on one source has no corroboration — the number rests
+  // entirely on one provenance. Hidden here by default; the toggle shows them,
+  // and the other tabs are unaffected.
+  const hiddenLangs = new Set(passed.filter(r => (r.n_categories || 0) < 2).map(r => r.iso));
+  if (!showSingle) passed = passed.filter(r => (r.n_categories || 0) >= 2);
   if (classFilter !== 'All') passed = passed.filter(r => r.model_class === classFilter);
   const byLang = {};
   for (const r of passed) {
@@ -832,6 +845,23 @@ function renderGlobal(data) {
       <th data-sort="wer">Avg WER (%)</th>
       <th data-sort="cer">Avg CER (%)</th>
     </tr>`;
+
+  const note = document.getElementById('global-source-note');
+  if (note) {
+    if (hiddenLangs.size && !showSingle) {
+      note.style.display = '';
+      note.innerHTML = `Showing languages evaluated on <strong>two or more sources</strong>. ` +
+        `${hiddenLangs.size} language${hiddenLangs.size === 1 ? '' : 's'} scored on a single source ` +
+        `${hiddenLangs.size === 1 ? 'is' : 'are'} hidden — one provenance cannot corroborate itself. ` +
+        `Tick “Include single-source languages” to see them, or use the Per-Language tab.`;
+    } else if (showSingle && hiddenLangs.size) {
+      note.style.display = '';
+      note.innerHTML = `Including <strong>${hiddenLangs.size}</strong> language${hiddenLangs.size === 1 ? '' : 's'} ` +
+        `scored on a single source — those numbers have no second provenance to corroborate them.`;
+    } else {
+      note.style.display = 'none';
+    }
+  }
 
   const body = document.getElementById('global-body');
   const ncols = 9 + cats.length + 3;
@@ -1049,6 +1079,7 @@ async function main() {
     document.getElementById('per-class-select').addEventListener('change', () => renderPerLanguage(ALL_DATA));
     document.getElementById('per-sort-select').addEventListener('change', () => renderPerLanguage(ALL_DATA));
     document.getElementById('global-class-select').addEventListener('change', () => renderGlobal(ALL_DATA));
+    document.getElementById('global-single-source').addEventListener('change', () => renderGlobal(ALL_DATA));
     document.getElementById('ms-status-select').addEventListener('change', () => renderModelStatus(ALL_DATA));
     document.getElementById('ms-lang-select').addEventListener('change', () => renderModelStatus(ALL_DATA));
     document.getElementById('ms-family-select').addEventListener('change', () => renderModelStatus(ALL_DATA));
