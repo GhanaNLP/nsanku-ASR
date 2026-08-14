@@ -10,6 +10,7 @@ concurrently with the GPU pipeline without racing its YAML writes; a later merge
 step folds them into benchmarks/{iso}.yaml tagged model_class="llm".
 """
 
+import collections
 import os
 import re
 import time
@@ -39,7 +40,15 @@ MODEL_ID = f"google/{GEMINI_MODEL}"
 MODEL_URL = f"https://ai.google.dev/gemini-api/docs/models#{GEMINI_MODEL}"
 
 MAX_WORKERS = 10
-MAX_RETRIES = 3
+
+# A clip that comes back empty is dropped from the score entirely (see
+# evaluate._score), so an impatient retry does not lower a model's WER — it
+# quietly removes hard clips from the set it is judged on. A 3-attempt policy
+# left 731 clips unscored across six languages; every one of them succeeded on
+# a later retry, meaning the failures were transient and the gaps were an
+# artefact of the retry budget, not of the audio.
+MAX_RETRIES = 6
+RETRY_BACKOFF_CAP = 30.0
 
 LLM_BENCHMARK_DIR = ROOT / "benchmarks_llm"
 _thread_local = threading.local()
@@ -58,6 +67,27 @@ def _encode_wav(audio_array, sample_rate=16000):
     buf = BytesIO()
     sf.write(buf, audio_array, sample_rate, format="WAV", subtype="PCM_16")
     return buf.getvalue()
+
+
+# Why clips failed, so an empty result is explainable rather than anonymous.
+# Reset per category; folded into the saved result.
+_failures = collections.Counter()
+_failures_lock = threading.Lock()
+
+
+def _record_failure(reason):
+    with _failures_lock:
+        _failures[reason] += 1
+
+
+def reset_failures():
+    with _failures_lock:
+        _failures.clear()
+
+
+def failure_summary():
+    with _failures_lock:
+        return dict(_failures)
 
 
 def _parse(text):
@@ -79,8 +109,16 @@ def default_prompt(language_name=None):
 
 
 def _transcribe(wav_bytes, prompt):
+    """Transcribe one clip, or return None after exhausting the retry budget.
+
+    Records WHY it gave up (see failure_summary): a transient API error, a
+    safety block, or a response the bracket parser could not read. Those are
+    very different failures and the caller could not previously tell them
+    apart.
+    """
     from google.genai import types
     client = _get_thread_client()
+    reason = "unknown"
     for attempt in range(MAX_RETRIES):
         try:
             resp = client.models.generate_content(
@@ -90,13 +128,21 @@ def _transcribe(wav_bytes, prompt):
                     types.Part.from_text(text=prompt),
                 ])],
             )
+            # A safety block will not resolve on retry; stop and say so.
+            block = getattr(getattr(resp, "prompt_feedback", None), "block_reason", None)
+            if block:
+                _record_failure(f"blocked ({block})")
+                return None
             raw = (resp.text or "").strip()
             out = _parse(raw)
             if out:
                 return out
+            reason = "empty response" if not raw else "unparseable response"
         except Exception as e:
-            if attempt < MAX_RETRIES - 1:
-                time.sleep(1.5 * (attempt + 1))
+            reason = type(e).__name__
+        if attempt < MAX_RETRIES - 1:
+            time.sleep(min(2.0 ** attempt, RETRY_BACKOFF_CAP))
+    _record_failure(reason)
     return None
 
 
@@ -199,6 +245,7 @@ def evaluate_gemini(iso_code):
 
         hyps = [""] * len(samples)
         done_count = 0
+        reset_failures()
         t0 = time.time()
 
         with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
@@ -219,13 +266,21 @@ def evaluate_gemini(iso_code):
 
         wer, cer, valid = _score(refs, hyps)
         save_transcriptions(iso_code, MODEL_ID, category, refs, hyps)
+        failures = failure_summary()
         per_category[category] = {
             "wer": round(wer, 4) if wer is not None else None,
             "cer": round(cer, 4) if cer is not None else None,
             "samples": len(samples),
             "valid": valid,
             "avg_seconds_per_sample": round(elapsed / max(len(samples), 1), 2),
+            # Unscored clips are excluded from WER/CER, so record why they were
+            # lost — otherwise a thinner sample is indistinguishable from a
+            # cleaner one.
+            **({"failures": failures} if failures else {}),
         }
+        if failures:
+            detail = ", ".join(f"{k}: {v}" for k, v in sorted(failures.items()))
+            print(f"    {len(samples) - valid} clip(s) unscored — {detail}", flush=True)
         if wer is not None:
             cat_wers.append(wer)
             cat_cers.append(cer)

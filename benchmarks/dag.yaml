@@ -6,33 +6,6 @@ categories:
 - unicef
 - waxal
 benchmarks:
-- model: KhayaAI/khaya-asr-v3
-  model_url: https://translation-api.ghananlp.org/
-  owner: KhayaAI
-  model_class: non-llm
-  params: API
-  wer: 0.3549
-  cer: 0.1526
-  per_category:
-    bible:
-      wer: 0.2746
-      cer: 0.1719
-      samples: 1000
-      valid: 999
-      avg_seconds_per_sample: 1.02
-    unicef:
-      wer: 0.5103
-      cer: 0.1866
-      samples: 195
-      valid: 195
-      avg_seconds_per_sample: 2.32
-    waxal:
-      wer: 0.2797
-      cer: 0.0993
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 1.25
-  source: evaluated
 - model: FarmerlineML/w2v-bert-2.0_2026_dagbani_ASR
   model_url: https://huggingface.co/FarmerlineML/w2v-bert-2.0_2026_dagbani_ASR
   owner: FarmerlineML
@@ -150,8 +123,8 @@ benchmarks:
   owner: google
   model_class: llm
   params: API
-  wer: 0.9011
-  cer: 0.4784
+  wer: 0.9012
+  cer: 0.4783
   per_category:
     bible:
       wer: 0.9361
@@ -171,4 +144,32 @@ benchmarks:
       samples: 1000
       valid: 1000
       avg_seconds_per_sample: 1.15
+  source: evaluated
+  score: 0.6897
+- model: KhayaAI/khaya-asr-v3
+  model_url: https://translation-api.ghananlp.org/
+  owner: KhayaAI
+  model_class: non-llm
+  params: API
+  wer: 0.3549
+  cer: 0.1526
+  per_category:
+    bible:
+      wer: 0.2746
+      cer: 0.1719
+      samples: 1000
+      valid: 999
+      avg_seconds_per_sample: 1.02
+    unicef:
+      wer: 0.5103
+      cer: 0.1866
+      samples: 195
+      valid: 195
+      avg_seconds_per_sample: 2.32
+    waxal:
+      wer: 0.2797
+      cer: 0.0993
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 1.25
   source: evaluated

@@ -37,7 +37,10 @@ API_URL = "https://translation-api.ghananlp.org/asr/v3/transcribe"
 MODEL_ID = "KhayaAI/khaya-asr-v3"
 MODEL_URL = "https://translation-api.ghananlp.org/"
 MAX_WORKERS = 8
-MAX_RETRIES = 3
+# An empty result is dropped from the score rather than penalised, so a short
+# retry budget silently thins the set a model is judged on instead of hurting
+# it. Gemini lost 731 clips this way and every one succeeded on a later retry.
+MAX_RETRIES = 6
 
 # eval iso_639_3 -> Khaya API language code (only Ghanaian languages Khaya supports)
 EVAL_TO_KHAYA = {

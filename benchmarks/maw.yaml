@@ -41,13 +41,14 @@ benchmarks:
   owner: google
   model_class: llm
   params: API
-  wer: 0.8462
-  cer: 0.3597
+  wer: 0.8463
+  cer: 0.3598
   per_category:
     bible:
-      wer: 0.8462
-      cer: 0.3597
+      wer: 0.8463
+      cer: 0.3598
       samples: 1000
-      valid: 999
+      valid: 1000
       avg_seconds_per_sample: 0.55
   source: evaluated
+  score: 0.6031

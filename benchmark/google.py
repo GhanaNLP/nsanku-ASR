@@ -28,7 +28,10 @@ from .recipes import load_lang_recipe, recipe_get
 MODEL_ID = "Google/speech-recognition"
 MODEL_URL = "https://www.google.com/"
 MAX_WORKERS = 4
-MAX_RETRIES = 4
+# An empty result is dropped from the score rather than penalised, so a short
+# retry budget silently thins the set a model is judged on instead of hurting
+# it. Gemini lost 731 clips this way and every one succeeded on a later retry.
+MAX_RETRIES = 6
 
 # eval iso_639_3 -> Google BCP-47 language code
 EVAL_TO_GOOGLE = {
