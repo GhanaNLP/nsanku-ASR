@@ -38,7 +38,7 @@ sample_id,reference,hypothesis,wer,cer
 36,"Eyi maa Hiob sɔre gyinaa hɔ, sunsuan nʼatade mu na oyii ne tinwi.","Neimaheo sɔre gye na hɔ, sensa na atade mu no yɛ nitini.",0.9231,0.3137
 37,"Na mmom monyɛ kronkron wɔ biribiara a moyɛ mu, sɛnea Onyankopɔn a ɔfrɛɛ mo no yɛ kronkron no.","Nɛm mu mu yɛkron kru no bribeer a mu yi mu, sɛ ne unyankopɔ na afre mɔno yɛkron kuo no.",0.9444,0.2973
 38,"Abobow ano no trɛw yɛ anammɔn dunum, na afasu a epuepue wɔ afaanu no trɛw yɛ anammɔn ason ne fa.","’aboboa no terawyaa na mmɔn du noom, na ɛfɛs yi epu epu wɔ afa enu no terawyaa na mmɔ no sɔw ne fa.",0.9,0.2667
-39,"Afei osusuw abɔntenpon no ano kwan, na ne trɛw yɛ anammɔn dunum na ne tenten mu nso yɛ anammɔn dunkron ne fa.",,1.0,1.0
+39,"Afei osusuw abɔntenpon no ano kwan, na ne trɛw yɛ anammɔn dunum na ne tenten mu nso yɛ anammɔn dunkron ne fa.",,,
 40,"Na sɛ muhu amane wɔ mo Kristosom mu a, mommma mo ani nnwu, na mmom, monna Onyankopɔn ase sɛ moyɛ Kristo de.","Sɛmuh wɔ ma ne wɔ mu kretosu ma, no momma nni wu, na mom wɔn na ɔn na kɔ pɔas sɛmo yɛ kretode.",1.0,0.3293
 41,"Nanso wɔde ɔhene frɛtumi nkra kɔmaa ɔhemmea Wasti no, wamma.",na ɛso wɔde ɔhe ne ɛ,1.0,0.7143
 42,"Wubefi wʼasase so wɔ atifi fam nohɔ tɔnn, wo ne aman bebree a wɔn nyinaa tete apɔnkɔ so, nnipadɔm kɛse, asraafodɔm a ɛso.",wubefe wɔas ase so wɔtifi firm no hotɔn wɔne amanbe birak wɔ nnye na atetia pɔnkɔ so nipadom kase asraphodom asun,0.9565,0.2421
@@ -220,7 +220,7 @@ sample_id,reference,hypothesis,wer,cer
 218,"“Afei bɔ kuruwa no wɔ wɔn a wɔka wo ho no anim ma wɔnhwɛ, na ka kyerɛ wɔn se, ‘Sɛɛ na Asafo Awurade se: Mɛbɔ saa ɔman yi ne kuropɔn yi sɛnea wɔabɔ ɔnwemfo kuruwa yi a wɔrentumi nsiesie bio.",Fae Bokuwalu wɔwɔn a wakaa wɔhunno ɛnum na wɔnhwɛ Kachewon sɛ ɛ na asa foe wrade sɛ Mebɔ saa oman yi nkurupoe sɛ nea wabɔ omionfukuruw e a wɔrentumin siese biop.,0.875,0.3333
 219,"Enti Saulo hyɛn torobɛnto wɔ Israel nyinaa se, “Hebrifo, monsɔre!",انتسأل اشيان تروبان تو اعيز لان يناسي,1.0,1.0
 220,"Esiane sɛ moyɛ Onyankopɔn mma a ɔdɔ wɔn no nti, munsuasua no na motena ase ɔdɔ mu sɛnea Kristo dɔɔ yɛn, na ɔde ne nkwa too hɔ maa yɛn sɛ afɔrebɔde a ɛyɛ huam ma Onyankopɔn no.","’Esa ne sɛ moe a onyankopɔm maa ɔdɔm on nti, ’munsiɛ suya no, ’namon tenase ɔdɔm wwe sɛnea krizo dɔ a yɛn, ’na ɔde nn kwato ho maa a yɛn sɛ afoarebɔdea ei yu hoam ma onyankopɔ no.",0.7838,0.2206
-221,"Afei, ɔne atamfo no de ɔko hyehyɛɛ so, ma wɔko tiaa no.",,1.0,1.0
+221,"Afei, ɔne atamfo no de ɔko hyehyɛɛ so, ma wɔko tiaa no.",,,
 222,"“ ‘Afahyɛ no da a ɛto so asia no, momfa de anantwinini awotwe, adwennini abien ne nguantenmma a wɔadi afe dunan a wonnii dɛm biara mmɔ afɔre.","aforhyɛ n'adaw tɔswɛ sia no, mɔmfa ho nne ntwe nne wɔtwe, ɛdyeone ne bihe nnwante ma ɔde afi dwu na n, a-wɔ ne den biara maa fore.",1.0,0.4182
 223,"ɛyɛ ɔkwa, efisɛ wɔn a ɔdɔ wɔn no, ɔma wɔn wɔ wɔn nnae mu.","Hvis du siger, hvilken er adorøb, er ma' wɔn wɔn nae mu.",0.7857,0.7073
 224,"Nebaiot a ɔyɛ nʼabakan, Kedar, Adbeel, Mibsam, Misma, Duma, Masa, Hadad, Tema, Yetur, Nafis ne Kedema.","nnyeba at ɔyɛ n abakɛn, ɔkkaeda, adbɛl, mismam, misma, duma, masa, hada, tema, yatao, nafis ne kede",0.625,0.2763
@@ -594,7 +594,7 @@ sample_id,reference,hypothesis,wer,cer
 592,"Ɛberɛ a Yehoahas dii ɔhene no, na wadi mfeɛ aduonu mmiɛnsa, na ɔdii adeɛ Yerusalem abosome mmiɛnsa.","‐aibre a yɛwɔ a zi ohere no, nwodin fiye dw no miensa, na odi adea yiwyee salem aboso me miensa.",1.0,0.4375
 593,"Na mmom, ɛsiane sɛ mempɛ sɛ wɔfa yɛn ho abufuo no enti, kɔ asuo no mu kɔto darewa.","Nɛnɛ mom, esa asa mempɛsa wɔfa yɛ hoe bufo nunti, kɔ ɛsua no mu kɔto dara wɔ. Apataa wubɛ yi no a edika no. Buena no mu wubɛ wunusika a abɛsɔ mene wotu",1.6667,1.1774
 594,"Sɛ onipa bi wɔ nnwanten ɔha, na wɔn mu baako fom kwan a, ɔrennya aduɔkron nkron no mmepɔ so, na ɔnkɔhwehwɛ deɛ wafom kwan no anaa?","Sɔnipa bi wɔnya nteɛ a, na wɔmuba akɔ foam kwan a, wɔn yɛde okron kron no, mepauso, na ɔnkɔhye hedee wɔ foam kwan no ana.",0.7692,0.2871
-595,"Afei, Farao Neko de Eliakim a ɔyɛ Yosia babarima, dii adeɛ, ma ɔsii nʼagya ananmu.",,1.0,1.0
+595,"Afei, Farao Neko de Eliakim a ɔyɛ Yosia babarima, dii adeɛ, ma ɔsii nʼagya ananmu.",,,
 596,"Mefɛre sɛ mɛgye yei ato mu, nanso yɛn ahoɔmmerɛ na ɛma yɛyɛɛ saa.",مفرسة مجيئة توم نانسو ياهو امرَ نمائع يسا,1.0,1.0
 597,"Mmaa yi akoma tuiɛ na wɔkotokotoo wɔn na mmarima no bisaa wɔn sɛ, “Adɛn enti na morehwehwɛ ɔteasefoɔ wɔ awufoɔ mu?","’e mei akumetui no wakotokotow on, na mehre mehne busa a wɔn sɛ ’ adente na mɔhyɛhyɛ ɔteate fo wɔ ɛwufuo",0.8571,0.3736
 598,Na wɔn na wɔboaa Dawid ne afomfafoɔ asafo no dii asie.,Nawɔa na wabuɔa de wɛd ne afom fafo asafo ne de sio.,0.9091,0.2791

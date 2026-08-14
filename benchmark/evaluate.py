@@ -158,7 +158,14 @@ def save_benchmark(iso_code, language, categories, results):
 
 
 def save_transcriptions(iso_code, model_name, category, references, hypotheses):
-    """Save per-sample reference/hypothesis pairs for one (lang, model, category)."""
+    """Save per-sample reference/hypothesis pairs for one (lang, model, category).
+
+    A clip the model returned nothing for is written with EMPTY wer/cer, not
+    1.0: `_score` excludes those clips from the averages entirely, and writing a
+    number here would imply a penalty the leaderboard does not apply. Blank
+    means "not scored" — the same clips the `valid` count in the results leaves
+    out.
+    """
     TRANSCRIPTIONS_DIR.mkdir(parents=True, exist_ok=True)
     safe = model_name.replace("/", "_").replace(":", "_")
     path = TRANSCRIPTIONS_DIR / f"{iso_code}_{category}_{safe}.csv"
@@ -170,11 +177,16 @@ def save_transcriptions(iso_code, model_name, category, references, hypotheses):
                 m = compute_metrics(ref, hyp)
                 w.writerow([i, ref, hyp, round(m["wer"], 4), round(m["cer"], 4)])
             else:
-                w.writerow([i, ref, "", 1.0, 1.0])
+                w.writerow([i, ref, "", "", ""])
 
 
 def _score(references, hypotheses):
-    """Return (avg_wer, avg_cer, valid_count) over samples with a hypothesis."""
+    """Return (avg_wer, avg_cer, valid_count) over samples with a hypothesis.
+
+    Clips the model returned nothing for are EXCLUDED, not scored as 100% error:
+    the metric describes quality on what was transcribed. `valid_count` records
+    how many clips that was, so coverage stays visible next to the score.
+    """
     total_wer = total_cer = 0.0
     valid = 0
     for ref, hyp in zip(references, hypotheses):

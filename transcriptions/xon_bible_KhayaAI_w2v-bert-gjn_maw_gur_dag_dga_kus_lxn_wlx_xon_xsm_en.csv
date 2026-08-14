@@ -40,7 +40,7 @@ sample_id,reference,hypothesis,wer,cer
 38,kaa ban ke bi kpeln baabimbin ki dii maasan.,a ban ke bi kpenn bibimbem ki nɔɔ nsa,0.5556,0.4
 39,hali ŋikpan aasui i bi Lebanonn aatiŋ ni na mu kool la.,ali ŋikpen aa sii bi libanɔn aatiŋ ni na iu kool,0.5833,0.2093
 40,M kpa limakl ke Uwumbɔr ga gbiin tipuur ti u nan puu tii tiyaajatiib na.,n jɔɔ limagil ke utindaan uwonbɔr le sin ni ŋa ibamɔn tipoo nan wee u nan poo ki sei tiyaajai i,1.2,0.7895
-41,"Pɔɔn aabaa, ki li pel maah ban m len pu na.",,1.0,1.0
+41,"Pɔɔn aabaa, ki li pel maah ban m len pu na.",,,
 42,"Kina pu le Ubɔr Asa nyan tikunabr ni salmaa u mɔmɔk nan gur Uwumbɔr Aadichal, ni libɔrdichal ni na, ki di tun waaninkpiib bibaa Damaskus aatiŋ ni, Siria Aabɔr Ben‑Hadad chee.",kina pu le ubɔr a sa nyan tikunɔb ni salima u mɔmɔk nan gur uwumbɔr a dichal ni libɔr dichal ni na ki di tun waaninkpiib biba damasikus a tiŋ ni siriya abɔ beneda ch,0.5161,0.1079
 43,"” Le u bui bi, “Paacham yaa maln kijook kan, le ni bui ke utaal aan nu.",ugbeeb taa mann kijɔ ke le ni len ke utaa kaaya,0.8125,0.54
 44,"Ubɔr Neko nan di Joahas aakpel Eliakim le kaan Juda aanaan, le ki kpeln waayimbil ke Jehoyakim.",baneko nan di johas a kpel eliakim le kaan juda a naa le ki kpen waayimbil ke jehoakim,0.5294,0.1169
@@ -248,7 +248,7 @@ sample_id,reference,hypothesis,wer,cer
 246,"Kina pu na, maan li ŋmin, m ga gaa ilahn ki pak si.",kina pu na maa li ŋm n ga gaa i la ki pa,0.5385,0.2222
 247,"Le u gar bi ke, “Gir ni man iwiin itaa aapuwɔb aan m nan tii nimi ngarm.",le u gar bi ke gir nima iwiin ita a puwa aan nan ti nimi ngaaa,0.4706,0.1698
 248,"Jakob aapuu Rachel nan ma mbijabim bilee la, Josef ni Benjaminn.",ekob apuu rechel nan man bijabimbilee la josef ni benjamin,0.6364,0.1154
-249,Binib pam ga dii baasanwanbir ngbaan.,,1.0,1.0
+249,Binib pam ga dii baasanwanbir ngbaan.,,,
 250,"Uwumbɔr aatuun aah gbaa bi lir pu na, cha baasan li bɔɔn ki ŋar.",wumbɔr aatuun aah gbaa bi lir pu na cha baasa li bɔɔnkiŋa,0.3571,0.0612
 251,"Nima pu na, Josef nan san ijawaan, kaa ban u buen nima.",mambu see josef nan sam bujawaam taa ban u jon niiya,0.6667,0.4146
 252,"Sainai Aateersakpiin ni, le Moses nan kahn binib ngbaan.",ainai a tee sakpiin ni le moses nan kan binib ngbaa,0.6667,0.1087
@@ -279,11 +279,11 @@ sample_id,reference,hypothesis,wer,cer
 277,"Bi nan kan tiwan ni ŋa na, le biyidam ngbaan mɔmɔk nyan baadabil.",bi nan kan tiwan ni a na le biyuda ngbaan mɔmɔk nyan bada,0.2308,0.1373
 278,"Naah woln aan m bui u ke ti ga ŋmɔ ujapɔɔn na, le u di u bɔr.",awon an m bui u ke ti ga ŋma ujapɔɔn na le udi ubɔ,0.4706,0.1628
 279,"-Bijab bi nan ye ŋibin moninko, ni bi jer kina, ki ŋeer bi to butɔb na, bi nan ŋmee baayimbil baataŋaal ni, ni baamaal ponn ni.",bijab bi nan ye ŋibimɔ ni ko ni bi jer kina ki ŋeer bito butɔb na bi nan ŋmee baayimbil baa taa ŋaal ni nibaamaal pon,0.4231,0.0729
-280,"Simeonn ni Liifai, ni ye naabitiib la.",,1.0,1.0
+280,"Simeonn ni Liifai, ni ye naabitiib la.",,,
 281,"Le binib joo ni mbim ki di dan Yesu chee ke u nan di uŋaal paan bi pu, ki mee Uwumbɔr tii bi.",le bininfob joɔ ni mbum ki dan yisa ban ke u nan ta u nɔɔ ki paan bi bu ki miɛ utindaa uwonbɔr ki sb,0.6957,0.5072
 282,"Aa kpa nlan, ki ter timi aanib sakpen.",kt,1.0,0.931
 283,"Uwumbɔr, aa nyi maah ban ni na; aa ŋun maadun mɔmɔk pu.",uwumbɔ a nyi maa ban ni na aa ŋun maa do mɔmɔ,0.5,0.1951
-284,Nimi le yeh tipuur ngbaan.,,1.0,1.0
+284,Nimi le yeh tipuur ngbaan.,,,
 285,"Bidim gaa mmɔɔsan a, ki seer tidir ti fɔk ki pɔɔ na mmii lii.",id masa a ki se tidi tifɔ kip a ii,0.8571,0.4565
 286,"Teer ke maatuun ga loln ni pu nsan; tɔ, n‑yoonn choo le m ga daa binib ngbaan aatafal, baatunwanbir pu.",e ke maatuun ga lon ni posan tɔ nyonn choo le n ga daa binib nbaan atafal baaai,0.5,0.2405
 287,"’ Njɔtiib, nima pu na, chuu nibaa man.",mabu oo,1.0,0.8889
@@ -360,7 +360,7 @@ sample_id,reference,hypothesis,wer,cer
 358,"Taah fuu nima na, le bi cha Pɔɔl koo kidiik kibaa ni, le butɔb aaja ubaa si kii u.",taah foo ni yaan ni le bi che pɔɔl kɔɔ kidii kiba ni le soja uba si ki guu,0.6842,0.3443
 359,Min mbaa aan dii nimi buen; ba pu?,i,1.0,0.96
 360,"Tɔ, li lik man tiwan ni ga ŋa n‑yoonn mue ki joo cha na.",tɔ li lik maa tiwan ni ga ŋa nyonn mu ki joo cha naa,0.2857,0.1
-361,"Sin Dann, sin le ga li lik saamaal aanib.",,1.0,1.0
+361,"Sin Dann, sin le ga li lik saamaal aanib.",,,
 362,"Le u baa bi, ‘Ba pu ni si kina nwimɔn, kaa tun nibaa?",lubbabu ni si mam nwomun kaa tu nia,0.7692,0.4054
 363,Uwumbɔr nan puu tipuur tii niyaajatiib.,oo to,1.0,0.9697
 364,"Dulnyaa aah ga li bi cha na, liwanbuul ni liwancheel aayoonn ga li bi la.",lnya aah ga li bi cha na liwanbuul ni liwancheel aayonn ga li bi,0.2,0.1053
@@ -413,7 +413,7 @@ sample_id,reference,hypothesis,wer,cer
 411,"N‑yaayoonn ngbaan le bi bui tɔb ke, “Naa ŋan ke ti li bi ŋani kina.",ayoon gbaan le bi bui tɔb ke naa ŋan ke ti li bi ŋan n ina,0.3333,0.1429
 412,Ipiin i ga cha m cha pinn bitotoorb ngbaan aatunwanbir na le na.,ipin ga c  cha penn bitotoon ngbaan aatunanbir n l n,0.7692,0.2353
 413,"Kookoo na, binib bi nan gee Omri na le nan jin; Tibni nan kpo, le Omri jin nnaan.",ooko na binib nan gee omri le nan nan ji ti ni nan kpo le ri jin naa,0.5,0.2333
-414,"Aser ŋichur imonko ilee ni libaa, ni ikui iŋmu.",,1.0,1.0
+414,"Aser ŋichur imonko ilee ni libaa, ni ikui iŋmu.",,,
 415,Juu yaab aaninkpiib aah jin Piita ni Jɔnn tibɔr pu na.,uyaab aninkpeeb kaa ka piita ni jɔnn saa,0.7273,0.4186
 416,"Bipiib bi mɔmɔk ŋmaa fik tikokonn na nan joo ni tikokonn ti ŋan na, ni tibɔmbɔnn, ni timamann, ni tikur mamann aakokonn mu.",bipiib bi mɔmɔk ŋmaa fik tikokon na nan jooni tikokoln ti ŋan na ni tibɔbɔnn ni timaman ni tikur mamann aakokom,0.3478,0.0722
 417,"Ni jer ni mɔmɔk na, ti kan ŋiniwɔk aayaabitiib bi nima chee.",i je ni mɔmɔk na ti ka ŋiiwɔk yaabitiib bi nimache,0.5833,0.1489
@@ -668,7 +668,7 @@ sample_id,reference,hypothesis,wer,cer
 666,Njikaabim mu lir nsan ponn ni na le na.,dibim mɔn lu nsanpoolin ni le yen,0.7778,0.5333
 667,"Jehoyachinn nan dii ute aasan, le ki tun Uwumbɔr titunwanbir.",akiin nan dii ute asan le ki tun uwumbɔ titunan bi,0.5,0.24
 668,"Taah nan bi bu ponn ni na, ni nan yunn le taa ŋmaa kan nwiin, kaa waa ŋiŋmabil mu, ntaalangbam pu.",taa b kuŋɔbuŋi yaapoolin ni ŋi nan yuur kaa ga nween kaa gaa iŋmabil mu iaaan ban,0.8095,0.5135
-669,Le u cha bi ponn ni bi ye bibum na pɔɔk.,,1.0,1.0
+669,Le u cha bi ponn ni bi ye bibum na pɔɔk.,,,
 670,Libuul ni le Ubɔr Joram nyan Samaria aatiŋ ni ki kuun waatɔb aajab mɔmɔk.,ibuu ni le ubɔr joram nyan samaria a tiŋ ni ki kuun waatɔb ajab mɔmɔɔ,0.3571,0.0847
 671,"Ubiindaan kpokl ki ban uninyaan la, le ki lik u ni kinanaŋ.",biindaa kpo ki ban uninyaan la le ki li u ni kiana,0.3333,0.1522
 672,"” U laa bi len kina, le ubɔr kpaan fuu ni ki nan bui ke, “Uwumbɔr le cha tibɔbir timina dan ti pu.",aa bi len kina le ubɔ kpaan fuu ni ki nan bui ke uwumbɔr le chaa tibɔbir timina dan ti,0.2273,0.0845
@@ -749,7 +749,7 @@ sample_id,reference,hypothesis,wer,cer
 747,"Le bi mu bui ke, “Taan pel.",le bi mu bui ke taa pe leuwumbɔr bui ke nimi ŋitibol lip,1.1429,1.5556
 748,"U nan kuun bisalolm imonko itaa ni kipiik na, le ki cha bi sil mann goln Uwumbɔr Aabool.",nan kuun bisalom imɔnkoe taa nin kipiik na le ki cha bi sil man gon uwumbɔr aabuo,0.4444,0.1304
 749,"Bi nan beenin ŋmɔ tijar ki len yɔl yɔl le nwiin ti kpar; le nibaa aa nin ŋa, hali kifuuk kina aa nyan ni.",nan bei ni ŋma tijar ki len yɔl yɔl len wiin tikpar le niba a nii ŋa hal ki fuk kina aa nya ni,0.625,0.1392
-750,"Waah yaa na, le mubaa lir nsan ponn ni.",,1.0,1.0
+750,"Waah yaa na, le mubaa lir nsan ponn ni.",,,
 751,"Limakl ngbaan pu, le bi buu mi tikululn tee.",duma bu le bi lolmi tkulonan,0.7778,0.5588
 752,"Bi ga li joo baajaak aajum kuln ŋitimbol, kaa san ŋi kinimbaak kina le ki cha aa?",ga li jo baajaa a jum kun ŋitimbol kaa san bi kininbaag kina le ki cha aa,0.4706,0.1429
 753,"Litambol libaa nan dɔ nnyun ponn ni, le baa waa li, ki di dii lipaab.",litambiii liba dɔ nnyumi a poolin baa nan ga li le ki nɔɔ lipaaa,0.8667,0.4808
@@ -957,7 +957,7 @@ sample_id,reference,hypothesis,wer,cer
 955,"Ni ga nan buen ke ni ti chuun ndaan ikinja ilee, le ki ti mui mu ye nkinja mubaa baanja la.",n ga nan buen ke ni ti chuun ndaan ikinja ilee le ki ti muin mu ye ikinja mu baa baanja la,0.2381,0.0435
 956,Le aa yaa bui ntaamii ke mu li moor lak lak kan.,lea yaa bui ntaamii ke mu li moo lalɔ kan,0.4167,0.1389
 957,"Libaa mɔk bub joo liken kin kin la, le libuln aan ŋmaa sakr jer.",libamɔ bujoob liken kinken la le libul aa ŋmaa saajo,0.7143,0.2245
-958,Ubaa aa len ke waawan nibaa le ye uyaan.,,1.0,1.0
+958,Ubaa aa len ke waawan nibaa le ye uyaan.,,,
 959,Di cha ti man.,dataak ubaa le ŋa mam le bi baan u aa ban tijo ki tan ŋab timɔr mɔn naa le u len ke aai ni jin,6.25,6.2
 960,"Tiwan nimina mɔmɔk aah ga bii kina na, ni ŋan ke ni li ye ba aanibol?",tiwan nan biɛ ka i be man ni  ni ŋan ke ni li ye baaobo,0.5625,0.4231
 961,N‑yoonn mɔmɔk m bi aaŋaal ni la; nyan mi maadim aaŋaal ni.,n mɔmɔ  al nila ai,1.0,0.7045
