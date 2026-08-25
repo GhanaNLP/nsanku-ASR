@@ -496,6 +496,9 @@ let sortState = { tab: null, col: null, asc: true };
 // ====== Helpers ======
 function modelType(m) {
   m = m.toLowerCase();
+  if (m.includes('omniasr') || m.includes('omni-asr') || m.includes('omni_asr')) return 'OmniASR';
+  if (m.includes('gemini')) return 'Gemini';
+  if (m.includes('khaya')) return 'Khaya';
   if (m.includes('faster-whisper')) return 'Faster-Whisper';
   if (m.includes('whisper')) return 'Whisper';
   if (m.includes('w2v-bert') || m.includes('w2v_bert') || m.includes('wav2vec2-bert')) return 'Wav2Vec2-BERT';
