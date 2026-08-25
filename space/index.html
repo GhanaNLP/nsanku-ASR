@@ -220,7 +220,7 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
         <select id="global-class-select">
           <option value="All">All models</option>
           <option value="non-llm">Non-LLM (dedicated ASR)</option>
-          <option value="llm">LLM (Gemini)</option>
+          <option value="llm">LLM</option>
         </select>
       </div>
       <p style="color:var(--text-muted); margin-bottom:8px;">Best model per language — ranked by the average of WER and CER (lower is better). Individual WER/CER scores shown for transparency.</p>
@@ -251,7 +251,7 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
         <select id="per-class-select">
           <option value="All">All</option>
           <option value="non-llm">Non-LLM</option>
-          <option value="llm">LLM (Gemini)</option>
+          <option value="llm">LLM</option>
         </select>
         <label>Type:</label>
         <select id="per-type-select"><option value="All">All</option></select>
@@ -783,6 +783,16 @@ function trackBadge(cls) {
     : '<span class="badge badge-nonllm">Non-LLM</span>';
 }
 
+// ====== Shared filter for Global tab (stats + table) ======
+function getGlobalFiltered(data) {
+  const classFilter = (document.getElementById('global-class-select')||{}).value || 'All';
+  const showSingle = (document.getElementById('global-single-source')||{}).checked;
+  let filtered = data;
+  if (classFilter !== 'All') filtered = filtered.filter(r => r.model_class === classFilter);
+  if (!showSingle) filtered = filtered.filter(r => (r.n_categories || 0) >= 2);
+  return filtered;
+}
+
 // ====== Rendering: Summary stats ======
 function renderStats(data) {
   const el = document.getElementById('stats-grid');
@@ -1068,7 +1078,7 @@ async function main() {
     document.getElementById('main').style.display = 'block';
 
     populateFamilyFilter();
-    renderStats(data);
+    renderStats(getGlobalFiltered(data));
     renderGlobal(data);
     populatePerLangSelects(data);
     renderPerLanguage(data);
@@ -1079,8 +1089,8 @@ async function main() {
     document.getElementById('per-type-select').addEventListener('change', () => renderPerLanguage(ALL_DATA));
     document.getElementById('per-class-select').addEventListener('change', () => renderPerLanguage(ALL_DATA));
     document.getElementById('per-sort-select').addEventListener('change', () => renderPerLanguage(ALL_DATA));
-    document.getElementById('global-class-select').addEventListener('change', () => renderGlobal(ALL_DATA));
-    document.getElementById('global-single-source').addEventListener('change', () => renderGlobal(ALL_DATA));
+    document.getElementById('global-class-select').addEventListener('change', () => { const f = getGlobalFiltered(ALL_DATA); renderStats(f); renderGlobal(ALL_DATA); });
+    document.getElementById('global-single-source').addEventListener('change', () => { const f = getGlobalFiltered(ALL_DATA); renderStats(f); renderGlobal(ALL_DATA); });
     document.getElementById('ms-status-select').addEventListener('change', () => renderModelStatus(ALL_DATA));
     document.getElementById('ms-lang-select').addEventListener('change', () => renderModelStatus(ALL_DATA));
     document.getElementById('ms-family-select').addEventListener('change', () => renderModelStatus(ALL_DATA));
@@ -1092,6 +1102,7 @@ async function main() {
     refreshLicensesFromCards(ALL_DATA.map(r => r.model)).then(changed => {
       if (!changed) return;
       console.info(`${changed} licence(s) updated from the model cards`);
+      renderStats(getGlobalFiltered(ALL_DATA));
       renderGlobal(ALL_DATA);
       renderPerLanguage(ALL_DATA);
       renderModelStatus(ALL_DATA);
