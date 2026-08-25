@@ -712,7 +712,7 @@ async function loadYAMLs() {
             model_class: b.model_class || (String(b.model).toLowerCase().includes('gemini') ? 'llm' : 'non-llm'),
             categories: (data.categories||[]).map(c=>CATEGORY_LABELS[c]||c).join(', '),
             n_categories: (data.categories||[]).length,
-            params: b.params || '?',
+            params: b.params === 'API' ? 'N/A' : (b.params || 'N/A'),
             wer: wer, cer: cer, score: score,
             per_category_raw: b.per_category || {},
             per_category_wer: fmtCategories(b.per_category),
