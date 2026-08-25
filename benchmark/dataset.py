@@ -5,6 +5,7 @@ and decoding raw bytes with soundfile.
 """
 
 import io
+import os
 
 import numpy as np
 import soundfile as sf
@@ -26,14 +27,26 @@ def _eval_features():
     })
 
 
-def load_eval_samples(config_name, num_samples=NUM_SAMPLES):
-    """Load up to num_samples from a ghana-speech-eval category-config.
+def _load_dataset(config_name):
+    """Stream the eval config, preferring a local snapshot when configured.
 
-    Streams the 'eval' split with decode=False, decoding raw audio bytes with
-    soundfile (avoids torchcodec). Returns list of dicts:
-        [{text, audio, sample_rate, length, language, iso, category}, ...]
+    Set NSANKU_EVAL_LOCAL_DIR to a snapshot of the dataset repo (e.g.
+    /mnt/.../hf_datasets/ghana-speech-eval) to read parquet from disk instead
+    of the HF CDN — the VM's CDN route drops connections, which used to stall
+    category loading in endless retries. Streaming semantics are unchanged.
     """
-    ds = load_dataset(
+    local_dir = os.environ.get("NSANKU_EVAL_LOCAL_DIR", "")
+    if local_dir:
+        import glob
+        files = sorted(glob.glob(os.path.join(local_dir, config_name, "eval-*.parquet")))
+        if files:
+            # Same explicit decode=False features as the hub path — without
+            # them datasets infers a decoding Audio column and demands
+            # torchcodec.
+            return load_dataset("parquet", data_files=files, split="train",
+                                streaming=True, features=_eval_features())
+        print(f"    WARN: no local files for {config_name} under {local_dir}; using HF hub")
+    return load_dataset(
         GHANA_SPEECH_EVAL,
         config_name,
         split="eval",
@@ -41,6 +54,16 @@ def load_eval_samples(config_name, num_samples=NUM_SAMPLES):
         features=_eval_features(),
         token=HF_TOKEN or None,
     )
+
+
+def load_eval_samples(config_name, num_samples=NUM_SAMPLES):
+    """Load up to num_samples from a ghana-speech-eval category-config.
+
+    Streams with decode=False, decoding raw audio bytes with soundfile
+    (avoids torchcodec). Returns list of dicts:
+        [{text, audio, sample_rate, length, language, iso, category}, ...]
+    """
+    ds = _load_dataset(config_name)
 
     category = config_name.split("_")[0]
     samples = []

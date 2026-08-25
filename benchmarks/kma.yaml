@@ -1,0 +1,36 @@
+iso_639_3: kma
+language: Konni
+num_samples_per_category: 1000
+categories:
+- bible
+benchmarks:
+- model: facebook/omniASR-LLM-7B-v2
+  model_url: https://github.com/facebookresearch/omnilingual-asr
+  owner: facebook
+  model_class: llm
+  params: 7B
+  wer: 0.173
+  cer: 0.0569
+  per_category:
+    bible:
+      wer: 0.173
+      cer: 0.0569
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.57
+  source: evaluated
+- model: google/gemini-3.6-flash
+  model_url: https://ai.google.dev/gemini-api/docs/models#gemini-3.6-flash
+  owner: google
+  model_class: llm
+  params: API
+  wer: 0.9941
+  cer: 0.441
+  per_category:
+    bible:
+      wer: 0.9941
+      cer: 0.441
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.52
+  source: evaluated

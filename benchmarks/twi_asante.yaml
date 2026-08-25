@@ -86,6 +86,47 @@ benchmarks:
       valid: 993
       avg_seconds_per_sample: 1.15
   source: evaluated
+- model: facebook/omniASR-LLM-7B-v2
+  model_url: https://github.com/facebookresearch/omnilingual-asr
+  owner: facebook
+  model_class: llm
+  params: 7B
+  wer: 0.7193
+  cer: 0.4003
+  per_category:
+    bible:
+      wer: 0.3575
+      cer: 0.1428
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.52
+    finance:
+      wer: 0.7779
+      cer: 0.3138
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.19
+    lds:
+      wer: 1.4051
+      cer: 1.0182
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.37
+    unicef:
+      wer: 0.6528
+      cer: 0.378
+      samples: 196
+      valid: 194
+      avg_seconds_per_sample: 1.36
+      failures:
+        audio_too_long (> 39s): 2
+    waxal:
+      wer: 0.403
+      cer: 0.1487
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.78
+  source: evaluated
 - model: FarmerlineML/w2v-bert-2.0_twi_alpha_v1
   model_url: https://huggingface.co/FarmerlineML/w2v-bert-2.0_twi_alpha_v1
   owner: FarmerlineML

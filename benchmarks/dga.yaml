@@ -6,6 +6,33 @@ categories:
 - jw
 - waxal
 benchmarks:
+- model: KhayaAI/khaya-asr-v3
+  model_url: https://translation-api.ghananlp.org/
+  owner: KhayaAI
+  model_class: non-llm
+  params: API
+  wer: 0.2866
+  cer: 0.1461
+  per_category:
+    bible:
+      wer: 0.1433
+      cer: 0.1119
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.61
+    jw:
+      wer: 0.4405
+      cer: 0.2032
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.53
+    waxal:
+      wer: 0.2759
+      cer: 0.1231
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.84
+  source: evaluated
 - model: KhayaAI/w2v-bert-dga
   model_url: https://huggingface.co/KhayaAI/w2v-bert-dga
   owner: KhayaAI
@@ -33,6 +60,33 @@ benchmarks:
       samples: 1000
       valid: 1000
       avg_seconds_per_sample: 0.11
+  source: evaluated
+- model: facebook/omniASR-LLM-7B-v2
+  model_url: https://github.com/facebookresearch/omnilingual-asr
+  owner: facebook
+  model_class: llm
+  params: 7B
+  wer: 0.4129
+  cer: 0.1846
+  per_category:
+    bible:
+      wer: 0.1503
+      cer: 0.1116
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.53
+    jw:
+      wer: 0.535
+      cer: 0.2076
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.54
+    waxal:
+      wer: 0.5533
+      cer: 0.2346
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.85
   source: evaluated
 - model: waxal-benchmarking/mms-300m-waxal-dga
   model_url: https://huggingface.co/waxal-benchmarking/mms-300m-waxal-dga
@@ -144,32 +198,4 @@ benchmarks:
       samples: 1000
       valid: 1000
       avg_seconds_per_sample: 1.1
-  source: evaluated
-  score: 0.6234
-- model: KhayaAI/khaya-asr-v3
-  model_url: https://translation-api.ghananlp.org/
-  owner: KhayaAI
-  model_class: non-llm
-  params: API
-  wer: 0.2866
-  cer: 0.1461
-  per_category:
-    bible:
-      wer: 0.1433
-      cer: 0.1119
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.61
-    jw:
-      wer: 0.4405
-      cer: 0.2032
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.53
-    waxal:
-      wer: 0.2759
-      cer: 0.1231
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.84
   source: evaluated

@@ -5,6 +5,27 @@ categories:
 - bible
 - jw
 benchmarks:
+- model: facebook/omniASR-LLM-7B-v2
+  model_url: https://github.com/facebookresearch/omnilingual-asr
+  owner: facebook
+  model_class: llm
+  params: 7B
+  wer: 0.6796
+  cer: 0.4026
+  per_category:
+    bible:
+      wer: 0.8741
+      cer: 0.5539
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.51
+    jw:
+      wer: 0.4851
+      cer: 0.2513
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.49
+  source: evaluated
 - model: KhayaAI/khaya-asr-v3
   model_url: https://translation-api.ghananlp.org/
   owner: KhayaAI
@@ -32,19 +53,19 @@ benchmarks:
   owner: google
   model_class: llm
   params: API
-  wer: 1.0584
-  cer: 0.5992
+  wer: 1.0714
+  cer: 0.5993
   per_category:
     bible:
       wer: 1.0498
-      cer: 0.6649
+      cer: 0.6663
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 1.1
+      avg_seconds_per_sample: 0.54
     jw:
-      wer: 1.067
-      cer: 0.5334
+      wer: 1.0931
+      cer: 0.5323
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 0.77
+      avg_seconds_per_sample: 0.49
   source: evaluated

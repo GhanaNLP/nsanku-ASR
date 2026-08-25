@@ -1,0 +1,42 @@
+iso_639_3: twi
+language: Twi
+num_samples_per_category: 1000
+categories:
+- bible
+- finance
+- jw
+- unicef
+benchmarks:
+- model: google/gemini-3.6-flash
+  model_url: https://ai.google.dev/gemini-api/docs/models#gemini-3.6-flash
+  owner: google
+  model_class: llm
+  params: API
+  wer: 0.758
+  cer: 0.4123
+  per_category:
+    bible:
+      wer: 0.6874
+      cer: 0.3796
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.61
+    finance:
+      wer: 0.8278
+      cer: 0.4042
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.34
+    jw:
+      wer: 0.7319
+      cer: 0.3745
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.54
+    unicef:
+      wer: 0.7849
+      cer: 0.4907
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.88
+  source: evaluated

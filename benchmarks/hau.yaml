@@ -4,6 +4,21 @@ num_samples_per_category: 1000
 categories:
 - bible
 benchmarks:
+- model: facebook/omniASR-LLM-7B-v2
+  model_url: https://github.com/facebookresearch/omnilingual-asr
+  owner: facebook
+  model_class: llm
+  params: 7B
+  wer: 0.4446
+  cer: 0.3667
+  per_category:
+    bible:
+      wer: 0.4446
+      cer: 0.3667
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.54
+  source: evaluated
 - model: KhayaAI/w2v-bert-hau
   model_url: https://huggingface.co/KhayaAI/w2v-bert-hau
   owner: KhayaAI
@@ -57,15 +72,15 @@ benchmarks:
   owner: google
   model_class: llm
   params: API
-  wer: 0.6968
-  cer: 0.4684
+  wer: 0.6943
+  cer: 0.4636
   per_category:
     bible:
-      wer: 0.6968
-      cer: 0.4684
+      wer: 0.6943
+      cer: 0.4636
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 0.65
+      avg_seconds_per_sample: 0.56
   source: evaluated
 - model: CLEAR-Global/whisper-small-clearglobal-hausa-asr-1.0.0
   model_url: https://huggingface.co/CLEAR-Global/whisper-small-clearglobal-hausa-asr-1.0.0

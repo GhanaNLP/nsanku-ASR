@@ -173,15 +173,26 @@ def _has_result(iso_code):
 
 
 def _save(iso_code, language, category_names, result):
+    """Upsert Gemini's entry into benchmarks_llm/{iso}.yaml.
+
+    The file can hold entries for several LLM-track models (OmniASR LLM writes
+    here too), so this merges by model id instead of replacing the file.
+    """
     LLM_BENCHMARK_DIR.mkdir(parents=True, exist_ok=True)
+    path = LLM_BENCHMARK_DIR / f"{iso_code}.yaml"
+    base = {}
+    if path.exists():
+        base = yaml.safe_load(open(path)) or {}
+    by_model = {b["model"]: b for b in base.get("benchmarks", [])}
+    by_model[MODEL_ID] = result
     out = {
         "iso_639_3": iso_code,
         "language": language,
         "num_samples_per_category": NUM_SAMPLES,
         "categories": category_names,
-        "benchmarks": [result],
+        "benchmarks": list(by_model.values()),
     }
-    with open(LLM_BENCHMARK_DIR / f"{iso_code}.yaml", "w") as f:
+    with open(path, "w") as f:
         yaml.dump(out, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
 
 
