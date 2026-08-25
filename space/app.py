@@ -43,6 +43,10 @@ CATEGORY_LABELS = {
 
 def _categorize_model(model_id):
     m = model_id.lower()
+    if "omniasr" in m or "omni-asr" in m or "omni_asr" in m:
+        return "OmniASR"
+    if "gemini" in m:
+        return "Gemini"
     if "faster-whisper" in m:
         return "Faster-Whisper"
     if "whisper" in m:
@@ -63,6 +67,8 @@ def _categorize_model(model_id):
         return "Simba"
     if "xeus" in m or "espnet" in m:
         return "ESPnet"
+    if "khaya" in m:
+        return "Khaya"
     return "Other"
 
 
@@ -204,6 +210,20 @@ def build_model_status(df, status_filter="All", lang_filter="All", search=""):
     return sub[cols].sort_values(["language", "wer"], na_position="last").reset_index(drop=True)
 
 
+def _apply_filters(df, track="All", model_type="All", single_domain=False):
+    """Apply the shared filter controls across all tabs."""
+    if df is None or df.empty:
+        return df
+    sub = df.copy()
+    if track != "All":
+        sub = sub[sub["track"] == track]
+    if model_type != "All":
+        sub = sub[sub["model_type"] == model_type]
+    if single_domain:
+        sub = sub[sub["n_categories"] == 1]
+    return sub
+
+
 def build_header(df):
     total_langs = df["iso"].nunique()
     total_models = df["model"].nunique()
@@ -245,6 +265,12 @@ with gr.Blocks(
     with gr.Row():
         refresh_btn = gr.Button("Load / Refresh Data", variant="primary", size="lg")
 
+    # --- Shared filter controls ---
+    with gr.Row():
+        track_dd = gr.Dropdown(label="Track", choices=["All", "non-llm", "llm"], value="All", scale=1)
+        type_dd_global = gr.Dropdown(label="Model Type", choices=["All"], value="All", scale=1)
+        single_domain_cb = gr.Checkbox(label="Single-domain only (1 category)", value=False, scale=1)
+
     def _load():
         df = load_all_data()
         header = build_header(df)
@@ -256,6 +282,13 @@ with gr.Blocks(
                 gr.update(choices=lang_choices, value=first_lang),
                 gr.update(choices=type_choices),
                 gr.update(choices=lang_choices))
+
+    def _apply_and_refresh(df, track, mtype, single_domain):
+        """Rebuild header + global leaderboard after any shared filter change."""
+        filtered = _apply_filters(df, track, mtype, single_domain)
+        header = build_header(filtered)
+        global_lb = build_global_leaderboard(filtered)
+        return header, global_lb
 
     with gr.Tab("Global Leaderboard"):
         gr.Markdown("**Best org model per language** — ranked by average WER (lower is better).")
@@ -307,9 +340,17 @@ with gr.Blocks(
     Some models fail to load (gated repos, CTranslate2/ESPnet formats, unsupported architectures, cuDNN on Hopper).
     """)
 
+    # Shared filter triggers update the header + global leaderboard
+    for trigger in [track_dd, type_dd_global, single_domain_cb]:
+        trigger.change(
+            _apply_and_refresh,
+            inputs=[df_state, track_dd, type_dd_global, single_domain_cb],
+            outputs=[header_md, global_df],
+        )
+
     refresh_btn.click(
         _load,
-        outputs=[df_state, header_md, global_df, lang_dd, type_dd_lang, lang_dd_status],
+        outputs=[df_state, header_md, global_df, lang_dd, type_dd_global, lang_dd_status],
     ).then(
         _update_lang,
         inputs=[df_state, lang_dd, type_dd_lang, sort_dd],
