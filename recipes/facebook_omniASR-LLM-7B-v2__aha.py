@@ -4,8 +4,6 @@ Track: LLM — Meta Omnilingual ASR (omniASR_LLM_7B_v2)
 Scope: THIS LANGUAGE ONLY. Every eval language has its own recipe file, so
 changing this one does not affect the others.
 
-Language conditioning: aha_Latn
-
 Edit this file and open a pull request at
 https://github.com/GhanaNLP/nsanku-ASR to change how Ahanta is evaluated.
 """
@@ -13,8 +11,13 @@ https://github.com/GhanaNLP/nsanku-ASR to change how Ahanta is evaluated.
 
 LANGUAGE_NAME = 'Ahanta'
 
-NOTES = 'Language conditioning: aha_Latn'
+# Language conditioning id passed to Meta's pipeline.
+# Set to None to decode unconditioned (no language hint).
+# Supported ids: https://github.com/facebookresearch/omnilingual-asr
+# e.g. "dag_Latn", "ewe_Latn", "aka_Latn" (Twi), "hau_Latn", ...
+LANG_ID = "aha_Latn"
 
-# def transcribe(audio_arrays, sample_rate, lang_ids):
-#     """Custom transcription override (optional)."""
-#     pass
+
+def lang_id_for(iso_code):
+    """Return LANG_ID for this language. Override to customize."""
+    return LANG_ID
