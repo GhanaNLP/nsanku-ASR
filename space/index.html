@@ -219,7 +219,10 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
         <label>Track:</label>
         <select id="global-class-select">
           <option value="All">All models</option>
-          <option value="non-llm">Non-LLM (dedicated ASR)</option>
+          <!-- Default view: dedicated ASR models. The LLM track is a different
+               kind of system (general-purpose, prompt-driven, mostly hosted), so
+               mixing it in by default compares unlike things. -->
+          <option value="non-llm" selected>Non-LLM (dedicated ASR)</option>
           <option value="llm">LLM</option>
         </select>
       </div>
