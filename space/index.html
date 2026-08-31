@@ -403,6 +403,23 @@ let MODEL_LICENSES = {};
 const API_TRACKS = ['KhayaAI/khaya-asr', 'Google/speech-recognition', 'google/gemini'];
 const isApiTrack = m => API_TRACKS.some(p => m.startsWith(p));
 
+// Models withheld from the published leaderboard, from data/hidden_models.json
+// in the repo. The results stay in benchmarks/*.yaml and the transcriptions stay
+// on disk — this only controls what is rendered, and is edited by committing to
+// that file rather than by touching this page.
+let HIDDEN_MODELS = {};
+
+async function loadHiddenModels() {
+  try {
+    const r = await fetch(`${RAW}/data/hidden_models.json`);
+    if (r.ok) HIDDEN_MODELS = (await r.json()).hidden || {};
+  } catch (e) {
+    console.warn('Hidden-model list unavailable; showing everything.', e);
+  }
+}
+
+const isHiddenModel = m => Object.prototype.hasOwnProperty.call(HIDDEN_MODELS, m);
+
 async function loadLicenses() {
   try {
     const r = await fetch(`${RAW}/data/model_licenses.json`);
@@ -1068,7 +1085,11 @@ async function main() {
     // Families come from languages/ghana_languages.yaml in the repo, so the
     // classification is edited there, not here. Fetched before the first render
     // and alongside the benchmarks so it costs no extra round trip.
-    let [data] = await Promise.all([loadAll(), loadFamilies(), loadLicenses()]);
+    // The hidden list must be in hand before the rows are filtered, so it is
+    // fetched alongside the benchmark data rather than after first paint.
+    let [data] = await Promise.all([loadAll(), loadFamilies(), loadLicenses(), loadHiddenModels()]);
+    const withheld = new Set(data.filter(r => isHiddenModel(r.model)).map(r => r.model));
+    if (withheld.size) data = data.filter(r => !isHiddenModel(r.model));
     // loadAll() stamps each row's family from whatever map existed when it ran,
     // which may be the fallback if it finished first. Restamp now that the
     // fetched map is authoritative, so the sortable column matches the file.
