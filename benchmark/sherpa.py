@@ -42,13 +42,13 @@ _SOURCE_REPO = "michsethowusu/sherpa-onnx-omnilingual-asr-1600-languages-ctc-v2"
 # Each entry is one leaderboard row. `dir` is relative to MODEL_ROOT.
 MODELS = {
     "300m-v2-fp32": {
-        "model": "michsethowusu/sherpa-onnx-omniASR-CTC-300M-v2-fp32",
+        "model": "facebook/sherpa-onnx-omniASR-CTC-300M-v2-fp32",
         "dir": f"{_V2_300M}-2026-02-05",
         "onnx": "model.onnx",
         "params": "300M",
     },
     "300m-v2-int8": {
-        "model": "michsethowusu/sherpa-onnx-omniASR-CTC-300M-v2-int8",
+        "model": "facebook/sherpa-onnx-omniASR-CTC-300M-v2-int8",
         "dir": f"{_V2_300M}-int8-2026-02-05",
         "onnx": "model.int8.onnx",
         "params": "300M",

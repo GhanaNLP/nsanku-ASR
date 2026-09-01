@@ -18,8 +18,11 @@ from .config import (
 )
 from .dataset import load_eval_samples
 from .metrics import compute_metrics
-from .models import load_asr_model
 from .owners import filter_models
+
+# .models imports torch, and the config/scoring helpers here are shared with
+# tracks that run in venvs without it (the sherpa-onnx ONNX/CPU runner). Import
+# it where it is used instead of making torch a requirement of this module.
 
 
 def load_eval_configs():
@@ -298,6 +301,7 @@ def evaluate_language(iso_code, model_filter=None, device="cuda:0", force=False)
         print(f"\n  {'-' * 50}\n  [{model_id}] ({params})\n  {'-' * 50}")
 
         try:
+            from .models import load_asr_model
             model = load_asr_model(model_id, device=device)
         except Exception as load_err:
             err = str(load_err)

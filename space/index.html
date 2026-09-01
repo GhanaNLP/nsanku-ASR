@@ -420,7 +420,7 @@ const isApiTrack = m => API_TRACKS.some(p => m.startsWith(p));
 // (so they keep the model-card licence lookup above) but each language still
 // has its own editable recipe file, which is what the run reads.
 const PER_LANG_RECIPE_MODELS = [...API_TRACKS, 'facebook/omniASR',
-                               'michsethowusu/sherpa-onnx-omniASR'];
+                               'facebook/sherpa-onnx-omniASR'];
 const hasPerLangRecipe = m => PER_LANG_RECIPE_MODELS.some(p => m.startsWith(p));
 
 // Models withheld from the published leaderboard, from data/hidden_models.json
