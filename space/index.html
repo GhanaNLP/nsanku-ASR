@@ -130,6 +130,7 @@ tbody tr:hover td.lang-cell { background: var(--accent-soft); }
 .badge-outdated { background: #cffafe; color: #0e7490; }
 .badge-llm { background: #f3e8ff; color: #7e22ce; }
 .badge-nonllm { background: var(--accent-hi); color: #1668a8; }
+.badge-api { background: #fff1e6; color: #9a5b1f; }
 
 .mtype { display: inline-block; padding: 1px 8px; border-radius: 4px; font-size: 0.75rem; background: var(--neutral-100); color: var(--text-muted); }
 .fam { color: var(--text-muted); font-weight: 400; white-space: nowrap; }
@@ -140,6 +141,7 @@ tbody tr:hover td.lang-cell { background: var(--accent-soft); }
 .tr-link { color: inherit; text-decoration: none; border-bottom: 1px dotted currentColor; }
 .tr-link:hover { text-decoration: none; border-bottom-style: solid; }
 .lic.na { opacity: .55; }
+.asof { color: var(--text-muted); font-weight: 400; font-size: 0.8rem; font-variant-numeric: tabular-nums; margin-left: 6px; }
 .recipe-link {
   display: inline-block; margin-left: 7px; font-size: 0.7rem; font-weight: 600;
   color: var(--link); border: 1px solid var(--border-strong); border-radius: 4px;
@@ -218,15 +220,18 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
         </label>
         <label>Track:</label>
         <select id="global-class-select">
-          <option value="All">All models</option>
-          <!-- Default view: dedicated ASR models. The LLM track is a different
-               kind of system (general-purpose, prompt-driven, mostly hosted), so
-               mixing it in by default compares unlike things. -->
-          <option value="non-llm" selected>Non-LLM (dedicated ASR)</option>
+          <!-- Three kinds of system, not one ranking: downloadable ASR
+               checkpoints, LLM-based transcribers, and hosted APIs whose weights
+               can change under us. ASR is the default because it is the only
+               track whose artefacts are fixed and re-runnable by anyone. -->
+          <option value="non-llm" selected>ASR (dedicated models)</option>
           <option value="llm">LLM</option>
+          <option value="api">API (hosted services)</option>
+          <option value="All">All</option>
         </select>
       </div>
       <p style="color:var(--text-muted); margin-bottom:8px;">Best model per language — ranked by the average of WER and CER (lower is better). Individual WER/CER scores shown for transparency.</p>
+      <p id="global-api-note" class="section-note" style="display:none; margin-bottom:8px;"></p>
       <p id="global-source-note" class="section-note" style="display:none; margin-bottom:14px;"></p>
       <div class="table-wrap">
         <table id="global-table">
@@ -253,8 +258,9 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
         <label>Track:</label>
         <select id="per-class-select">
           <option value="All">All</option>
-          <option value="non-llm">Non-LLM</option>
+          <option value="non-llm">ASR</option>
           <option value="llm">LLM</option>
+          <option value="api">API</option>
         </select>
         <label>Type:</label>
         <select id="per-type-select"><option value="All">All</option></select>
@@ -568,9 +574,16 @@ function fmt(v, decimals = 2) {
   return parseFloat(v).toFixed(decimals);
 }
 
-function modelLink(model, url) {
+function modelLink(model, url, row) {
   if (!url) url = `https://huggingface.co/${model}`;
-  return `<a href="${url}" target="_blank" title="${model}">${model}</a>`;
+  const link = `<a href="${url}" target="_blank" title="${model}">${model}</a>`;
+  // Hosted services are versioned by the day we called them, not by a tag: the
+  // weights behind the endpoint can change with no notice and no version
+  // number, so the name on its own does not say what was measured.
+  if (row && row.model_class === 'api' && row.evaluated_at) {
+    return `${link} <span class="asof" title="Tested on ${row.evaluated_at}. Hosted services can change at any time; this score describes the endpoint on that date.">${row.evaluated_at}</span>`;
+  }
+  return link;
 }
 
 // API/LLM tracks are one endpoint run on every language, so their recipe is per
@@ -591,8 +604,8 @@ function recipeLink(model, iso) {
   return `<a class="recipe-link" href="https://github.com/${REPO}/blob/${BRANCH}/recipes/${file}" target="_blank" title="${title}">code</a>`;
 }
 
-function modelCell(model, url, iso) {
-  return `${modelLink(model, url)}${recipeLink(model, iso)}`;
+function modelCell(model, url, iso, row) {
+  return `${modelLink(model, url, row)}${recipeLink(model, iso)}`;
 }
 
 function escapeHtml(s) {
@@ -730,6 +743,7 @@ async function loadYAMLs() {
             model: b.model, model_type: modelType(b.model),
             owner: b.owner || b.model.split('/')[0],
             model_class: b.model_class || (String(b.model).toLowerCase().includes('gemini') ? 'llm' : 'non-llm'),
+            evaluated_at: b.evaluated_at || '',
             categories: (data.categories||[]).map(c=>CATEGORY_LABELS[c]||c).join(', '),
             n_categories: (data.categories||[]).length,
             params: b.params === 'API' ? 'N/A' : (b.params || 'N/A'),
@@ -799,9 +813,9 @@ function renderOverview(data) {
 
 // ====== Track badge (LLM / Non-LLM) ======
 function trackBadge(cls) {
-  return cls === 'llm'
-    ? '<span class="badge badge-llm">LLM</span>'
-    : '<span class="badge badge-nonllm">Non-LLM</span>';
+  if (cls === 'llm') return '<span class="badge badge-llm">LLM</span>';
+  if (cls === 'api') return '<span class="badge badge-api">API</span>';
+  return '<span class="badge badge-nonllm">ASR</span>';
 }
 
 // ====== Shared filter for Global tab (stats + table) ======
@@ -879,6 +893,26 @@ function renderGlobal(data) {
       <th data-sort="cer">Avg CER (%)</th>
     </tr>`;
 
+  // Hosted services carry the date they were tested, because the endpoint can
+  // change without a version number — the date is the only thing tying a score
+  // to what actually ran.
+  const apiNote = document.getElementById('global-api-note');
+  if (apiNote) {
+    if (classFilter === 'api') {
+      const dates = [...new Set(rows.map(r => r.evaluated_at).filter(Boolean))].sort();
+      const when = dates.length === 0 ? ''
+        : dates.length === 1 ? `on ${dates[0]}`
+        : `between ${dates[0]} and ${dates[dates.length - 1]}`;
+      apiNote.style.display = '';
+      apiNote.innerHTML = `These are hosted services, tested ${when}. ` +
+        `The date is shown against each one because the provider can change the ` +
+        `model behind an endpoint at any time, without notice and without a version ` +
+        `number — so a score here describes that service on that date, not today.`;
+    } else {
+      apiNote.style.display = 'none';
+    }
+  }
+
   const note = document.getElementById('global-source-note');
   if (note) {
     if (hiddenLangs.size && !showSingle) {
@@ -907,7 +941,7 @@ function renderGlobal(data) {
       <td class="lang-cell">${LANG_NAMES[r.iso] || r.iso}</td>
       ${codeCell(r.iso)}
       ${familyCell(r.iso)}
-      <td>${modelCell(r.model, r.url, r.iso)}</td>
+      <td>${modelCell(r.model, r.url, r.iso, r)}</td>
       <td><span class="mtype">${r.model_type}</span></td>
       <td>${trackBadge(r.model_class)}</td>
       <td>${r.params || '—'}</td>
@@ -973,7 +1007,7 @@ function renderPerLanguage(data) {
         return `
       <tr>
         <td>${i+1}</td>
-        <td>${modelCell(r.model, r.url, r.iso)}</td>
+        <td>${modelCell(r.model, r.url, r.iso, r)}</td>
         <td><span class="mtype">${r.model_type}</span></td>
         <td>${trackBadge(r.model_class)}</td>
         <td>${r.params || '—'}</td>
@@ -994,7 +1028,7 @@ function renderPerLanguage(data) {
         return `
           <tr>
             <td>${i+1}</td>
-            <td>${modelCell(r.model, r.url, r.iso)}</td>
+            <td>${modelCell(r.model, r.url, r.iso, r)}</td>
             <td><span class="mtype">${r.model_type}</span></td>
             <td>${trackBadge(r.model_class)}</td>
             <td>${r.params || '—'}</td>
@@ -1035,7 +1069,7 @@ function renderModelStatus(data) {
             <td class="lang-cell">${LANG_NAMES[r.iso] || r.iso}</td>
             ${codeCell(r.iso)}
             ${familyCell(r.iso)}
-            <td>${modelCell(r.model, r.url, r.iso)}</td>
+            <td>${modelCell(r.model, r.url, r.iso, r)}</td>
             <td><span class="mtype">${r.model_type}</span></td>
             <td>${trackBadge(r.model_class)}</td>
             <td>${r.params || '—'}</td>

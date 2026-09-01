@@ -5,7 +5,8 @@ Transcribes the ghana-speech-eval audio with Google's speech recognition
 `recognize_google`, i.e. Google's free speech-input service). It is scored per
 category and averaged, like the other tracks. Results go to
 benchmarks_api/{iso}.yaml and are merged into benchmarks/ tagged
-model_class="non-llm".
+model_class="api" — a hosted endpoint is not a fixed artefact like a
+downloadable checkpoint, so its results carry the run date.
 
 Language codes follow Google's BCP-47: Twi/Akan "ak", Ewe "ee", Ga "gaa".
 """
@@ -22,7 +23,8 @@ import speech_recognition as sr
 
 from .config import NUM_SAMPLES, ROOT
 from .dataset import load_eval_samples
-from .evaluate import load_eval_configs, language_categories, save_transcriptions, _score
+from .evaluate import (load_eval_configs, language_categories, save_transcriptions,
+                       _score, _today)
 from .recipes import load_lang_recipe, recipe_get
 
 MODEL_ID = "Google/speech-recognition"
@@ -195,7 +197,8 @@ def evaluate_google(iso_code, num_samples=NUM_SAMPLES):
         avg_cer = round(sum(cat_cers) / len(cat_cers), 4) if cat_cers else None
         result = {
             "model": MODEL_ID, "model_url": MODEL_URL, "owner": "Google",
-            "model_class": "non-llm", "params": "API",
+            "model_class": "api", "params": "API",
+        "evaluated_at": _today(),
             "wer": avg_wer, "cer": avg_cer, "per_category": per_category, "source": "evaluated",
         }
         if avg_wer is None:

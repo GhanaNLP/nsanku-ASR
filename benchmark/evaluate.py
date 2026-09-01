@@ -180,6 +180,18 @@ def save_transcriptions(iso_code, model_name, category, references, hypotheses):
                 w.writerow([i, ref, "", "", ""])
 
 
+def _today():
+    """UTC date a result was produced.
+
+    A score describes a system as it was on this date. For hosted APIs that is
+    not a formality: their weights can change with no version number and no
+    notice, so the run date is the only evidence a reader has for what was
+    actually measured.
+    """
+    from datetime import datetime, timezone
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+
 def _score(references, hypotheses):
     """Return (avg_wer, avg_cer, valid_count) over samples with a hypothesis.
 

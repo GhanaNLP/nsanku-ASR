@@ -19,6 +19,7 @@ benchmarks:
       valid: 1000
       avg_seconds_per_sample: 0.54
   source: evaluated
+  evaluated_at: '2026-08-25'
 - model: KhayaAI/w2v-bert-hau
   model_url: https://huggingface.co/KhayaAI/w2v-bert-hau
   owner: KhayaAI
@@ -35,10 +36,11 @@ benchmarks:
   source: evaluated
   model_class: non-llm
   score: 0.4634
+  evaluated_at: '2026-08-10'
 - model: KhayaAI/khaya-asr-v3
   model_url: https://translation-api.ghananlp.org/
   owner: KhayaAI
-  model_class: non-llm
+  model_class: api
   params: API
   wer: 0.5357
   cer: 0.422
@@ -51,6 +53,7 @@ benchmarks:
       avg_seconds_per_sample: 0.48
   source: evaluated
   score: 0.4788
+  evaluated_at: '2026-08-13'
 - model: CLEAR-Global/w2v-bert-2.0-clearglobal-hausa-asr-1.0.0
   model_url: https://huggingface.co/CLEAR-Global/w2v-bert-2.0-clearglobal-hausa-asr-1.0.0
   owner: CLEAR-Global
@@ -67,6 +70,7 @@ benchmarks:
   source: evaluated
   model_class: non-llm
   score: 0.5482
+  evaluated_at: '2026-08-10'
 - model: google/gemini-3.6-flash
   model_url: https://ai.google.dev/gemini-api/docs/models#gemini-3.6-flash
   owner: google
@@ -82,6 +86,7 @@ benchmarks:
       valid: 1000
       avg_seconds_per_sample: 0.56
   source: evaluated
+  evaluated_at: '2026-08-25'
 - model: CLEAR-Global/whisper-small-clearglobal-hausa-asr-1.0.0
   model_url: https://huggingface.co/CLEAR-Global/whisper-small-clearglobal-hausa-asr-1.0.0
   owner: CLEAR-Global
@@ -98,6 +103,7 @@ benchmarks:
   source: evaluated
   model_class: non-llm
   score: 0.6227
+  evaluated_at: '2026-08-10'
 - model: alphaedge-ai/whisper-large-v3-turbo-hau-16384
   model_url: https://huggingface.co/alphaedge-ai/whisper-large-v3-turbo-hau-16384
   owner: alphaedge-ai
@@ -114,6 +120,7 @@ benchmarks:
   source: evaluated
   model_class: non-llm
   score: 1.0339
+  evaluated_at: '2026-08-10'
 - model: alphaedge-ai/whisper-large-v3-turbo-hau-32768
   model_url: https://huggingface.co/alphaedge-ai/whisper-large-v3-turbo-hau-32768
   owner: alphaedge-ai
@@ -130,6 +137,7 @@ benchmarks:
   source: evaluated
   model_class: non-llm
   score: 1.1366
+  evaluated_at: '2026-08-10'
 - model: alphaedge-ai/whisper-tiny-hau-32768
   model_url: https://huggingface.co/alphaedge-ai/whisper-tiny-hau-32768
   owner: alphaedge-ai
@@ -146,6 +154,7 @@ benchmarks:
   source: evaluated
   model_class: non-llm
   score: 1.6802
+  evaluated_at: '2026-08-14'
 - model: alphaedge-ai/whisper-medium-hau-16384
   model_url: https://huggingface.co/alphaedge-ai/whisper-medium-hau-16384
   owner: alphaedge-ai
@@ -162,6 +171,7 @@ benchmarks:
   source: evaluated
   model_class: non-llm
   score: 1.8303
+  evaluated_at: '2026-08-10'
 - model: alphaedge-ai/whisper-base-hau-32768
   model_url: https://huggingface.co/alphaedge-ai/whisper-base-hau-32768
   owner: alphaedge-ai
@@ -178,6 +188,7 @@ benchmarks:
   source: evaluated
   model_class: non-llm
   score: 1.8557
+  evaluated_at: '2026-08-10'
 - model: alphaedge-ai/whisper-base-hau-16384
   model_url: https://huggingface.co/alphaedge-ai/whisper-base-hau-16384
   owner: alphaedge-ai
@@ -194,6 +205,7 @@ benchmarks:
   source: evaluated
   model_class: non-llm
   score: 1.8888
+  evaluated_at: '2026-08-10'
 - model: alphaedge-ai/whisper-medium-hau-32768
   model_url: https://huggingface.co/alphaedge-ai/whisper-medium-hau-32768
   owner: alphaedge-ai
@@ -210,6 +222,7 @@ benchmarks:
   source: evaluated
   model_class: non-llm
   score: 1.9493
+  evaluated_at: '2026-08-10'
 - model: alphaedge-ai/whisper-tiny-hau-16384
   model_url: https://huggingface.co/alphaedge-ai/whisper-tiny-hau-16384
   owner: alphaedge-ai
@@ -226,6 +239,7 @@ benchmarks:
   source: evaluated
   model_class: non-llm
   score: 1.9834
+  evaluated_at: '2026-08-14'
 - model: alphaedge-ai/whisper-small-hau-32768
   model_url: https://huggingface.co/alphaedge-ai/whisper-small-hau-32768
   owner: alphaedge-ai
@@ -242,6 +256,7 @@ benchmarks:
   source: evaluated
   model_class: non-llm
   score: 2.2748
+  evaluated_at: '2026-08-10'
 - model: alphaedge-ai/whisper-small-hau-16384
   model_url: https://huggingface.co/alphaedge-ai/whisper-small-hau-16384
   owner: alphaedge-ai
@@ -258,3 +273,4 @@ benchmarks:
   source: evaluated
   model_class: non-llm
   score: 2.6308
+  evaluated_at: '2026-08-10'

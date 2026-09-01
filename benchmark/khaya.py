@@ -7,7 +7,8 @@ header Ocp-Apim-Subscription-Key, body audio/wav -> {"text": ...}).
 Khaya is a hosted multilingual API and is included explicitly (exempt from the
 single-language model filter). It is scored per category and averaged, like the
 other tracks. Results go to benchmarks_api/{iso}.yaml and are merged into
-benchmarks/ tagged model_class="non-llm".
+benchmarks/ tagged model_class="api" — a hosted endpoint is not a fixed
+artefact like a downloadable checkpoint, so its results carry the run date.
 """
 
 import os
@@ -21,7 +22,8 @@ import yaml
 
 from .config import NUM_SAMPLES, ROOT
 from .dataset import load_eval_samples
-from .evaluate import load_eval_configs, language_categories, save_transcriptions, _score
+from .evaluate import (load_eval_configs, language_categories, save_transcriptions,
+                       _score, _today)
 from .recipes import load_lang_recipe, recipe_get
 
 # Load .env for KHAYA_API_KEY
@@ -190,7 +192,8 @@ def evaluate_khaya(iso_code):
     avg_cer = round(sum(cat_cers) / len(cat_cers), 4) if cat_cers else None
     result = {
         "model": MODEL_ID, "model_url": MODEL_URL, "owner": "KhayaAI",
-        "model_class": "non-llm", "params": "API",
+        "model_class": "api", "params": "API",
+        "evaluated_at": _today(),
         "wer": avg_wer, "cer": avg_cer, "per_category": per_category, "source": "evaluated",
     }
     if avg_wer is None:
