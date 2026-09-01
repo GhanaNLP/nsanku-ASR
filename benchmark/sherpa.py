@@ -34,28 +34,39 @@ from .recipes import load_lang_recipe, recipe_get
 # SHERPA_MODEL_DIR when running somewhere other than the H200.
 MODEL_ROOT = os.environ.get("SHERPA_MODEL_DIR", "/mnt/volume_d2wey28/models/sherpa")
 
-_V2_300M = "sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-v2"
-# The v2 int8 build is only published in this repo — the upstream
-# csukuangfj2/...-300M-ctc-int8-v2-2026-02-05 repo is empty (.gitattributes only).
-_SOURCE_REPO = "michsethowusu/sherpa-onnx-omnilingual-asr-1600-languages-ctc-v2"
+_V2_300M = "sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-v2-2026-02-05"
+_V2_1B = "sherpa-onnx-omnilingual-asr-1600-languages-1B-ctc-v2-2026-02-05"
+
+# Where each build came from. The 300M export is published in the GhanaNLP
+# mirror; the 1B one only upstream.
+SOURCE_REPOS = {
+    "300m-v2": "michsethowusu/sherpa-onnx-omnilingual-asr-1600-languages-ctc-v2",
+    "1b-v2": "csukuangfj2/sherpa-onnx-omnilingual-asr-1600-languages-1B-ctc-v2-2026-02-05",
+}
 
 # Each entry is one leaderboard row. `dir` is relative to MODEL_ROOT.
+# These are the unquantised builds — the id carries no precision claim because
+# the export does not state one and sherpa-onnx picks the runtime dtype. An
+# int8 build, if ever added, takes an explicit "-int8" suffix.
 MODELS = {
-    "300m-v2-fp32": {
-        "model": "facebook/sherpa-onnx-omniASR-CTC-300M-v2-fp32",
-        "dir": f"{_V2_300M}-2026-02-05",
+    "300m-v2": {
+        "model": "facebook/sherpa-onnx-omniASR-CTC-300M-v2",
+        "dir": _V2_300M,
         "onnx": "model.onnx",
         "params": "300M",
     },
-    "300m-v2-int8": {
-        "model": "facebook/sherpa-onnx-omniASR-CTC-300M-v2-int8",
-        "dir": f"{_V2_300M}-int8-2026-02-05",
-        "onnx": "model.int8.onnx",
-        "params": "300M",
+    "1b-v2": {
+        "model": "facebook/sherpa-onnx-omniASR-CTC-1B-v2",
+        "dir": _V2_1B,
+        # ONNX external weights: model.onnx is a 1 MB graph beside a 3.9 GB
+        # model.weights, so both files must be present in the directory.
+        "onnx": "model.onnx",
+        "params": "1B",
     },
 }
 
-MODEL_URL = f"https://huggingface.co/{_SOURCE_REPO}"
+def model_url(variant):
+    return f"https://huggingface.co/{SOURCE_REPOS[variant]}"
 
 DEFAULT_WORKERS = max(1, (os.cpu_count() or 4) // 2)
 DEFAULT_NUM_THREADS = 2
@@ -183,12 +194,12 @@ def evaluate_sherpa(iso_code, variant, workers=DEFAULT_WORKERS,
 
             # Checkpoint after every category so an interrupted run resumes.
             save_benchmark(iso_code, language, category_names,
-                           [_build_result(spec, per_category, cat_wers, cat_cers)])
+                           [_build_result(spec, variant, per_category, cat_wers, cat_cers)])
     finally:
         pool.close()
         pool.join()
 
-    result = _build_result(spec, per_category, cat_wers, cat_cers)
+    result = _build_result(spec, variant, per_category, cat_wers, cat_cers)
     save_benchmark(iso_code, language, category_names, [result])
     if result["wer"] is not None:
         print(f"  FINAL (avg of {len(cat_wers)} categories): "
@@ -196,14 +207,14 @@ def evaluate_sherpa(iso_code, variant, workers=DEFAULT_WORKERS,
     return result
 
 
-def _build_result(spec, per_category, cat_wers, cat_cers):
+def _build_result(spec, variant, per_category, cat_wers, cat_cers):
     avg_wer = round(sum(cat_wers) / len(cat_wers), 4) if cat_wers else None
     avg_cer = round(sum(cat_cers) / len(cat_cers), 4) if cat_cers else None
     score = (round((avg_wer + avg_cer) / 2, 4)
              if avg_wer is not None and avg_cer is not None else None)
     result = {
         "model": spec["model"],
-        "model_url": MODEL_URL,
+        "model_url": model_url(variant),
         "owner": spec["model"].split("/")[0],
         "model_class": "non-llm",
         "params": spec["params"],
