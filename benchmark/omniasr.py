@@ -208,14 +208,21 @@ def _save_merged(iso_code, language, category_names, result, model_id=MODEL_ID):
         yaml.dump(out, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
 
 
-def _build_result(model_id, params, per_category, cat_wers, cat_cers):
+def _build_result(model_id, params, per_category, cat_wers, cat_cers,
+                  model_class="llm"):
+    """Assemble one benchmark entry.
+
+    model_class decides the leaderboard track: the LLM-decoder checkpoints are
+    "llm", but the same pipeline also serves the CTC checkpoints, which are
+    plain downloadable ASR models and belong in the open ASR track ("non-llm").
+    """
     avg_wer = round(sum(cat_wers) / len(cat_wers), 4) if cat_wers else None
     avg_cer = round(sum(cat_cers) / len(cat_cers), 4) if cat_cers else None
     result = {
         "model": model_id,
         "model_url": MODEL_URL,
         "owner": "facebook",
-        "model_class": "llm",
+        "model_class": model_class,
         "params": params,
         "wer": avg_wer,
         "cer": avg_cer,
@@ -228,21 +235,21 @@ def _build_result(model_id, params, per_category, cat_wers, cat_cers):
 
 
 def evaluate_omniasr(iso_code, model=None, force=False, model_id=MODEL_ID,
-                     card=MODEL_CARD, params="7B"):
-    """Evaluate the OmniASR LLM model on one language across all its categories."""
+                     card=MODEL_CARD, params="7B", model_class="llm"):
+    """Evaluate an OmniASR checkpoint on one language across all its categories."""
     cats = language_categories(iso_code)
     if not cats:
         print(f"  {iso_code} not in eval set - skipping")
         return
     if not force and _has_result(iso_code, model_id):
-        print(f"  OmniASR LLM already done for {iso_code} - skipping")
+        print(f"  OmniASR ({card}) already done for {iso_code} - skipping")
         return
 
     meta = load_eval_configs()[iso_code]
     language = meta["language"]
     category_names = [c for c, _ in cats]
     cond = lang_id_for(iso_code)
-    print(f"\n{'=' * 60}\n  OmniASR LLM ({card}) - {iso_code} ({language})  "
+    print(f"\n{'=' * 60}\n  OmniASR ({card}) - {iso_code} ({language})  "
           f"categories={category_names}  lang_cond={cond or 'none'}\n{'=' * 60}", flush=True)
 
     # Resume from the existing checkpoint if present (per-category granularity)
@@ -313,10 +320,12 @@ def evaluate_omniasr(iso_code, model=None, force=False, model_id=MODEL_ID,
                   f"({elapsed:.0f}s, {len(samples) / elapsed:.2f}/s)", flush=True)
 
         # Checkpoint after every category so interruptions resume cleanly
-        result = _build_result(model_id, params, per_category, cat_wers, cat_cers)
+        result = _build_result(model_id, params, per_category, cat_wers, cat_cers,
+                              model_class)
         _save_merged(iso_code, language, category_names, result, model_id)
 
-    result = _build_result(model_id, params, per_category, cat_wers, cat_cers)
+    result = _build_result(model_id, params, per_category, cat_wers, cat_cers,
+                              model_class)
     _save_merged(iso_code, language, category_names, result, model_id)
     if result["wer"] is not None:
         print(f"  FINAL (avg of {len(cat_wers)} categories): "
@@ -328,8 +337,14 @@ _shared_model = None
 
 
 def get_shared_model(card=MODEL_CARD):
-    """Load (once) the pipeline reused across all languages in a run."""
+    """Load (once) the pipeline reused across all languages in a run.
+
+    Keyed on the card: a run that switches checkpoints must not silently keep
+    scoring with the first one that happened to be loaded.
+    """
     global _shared_model
+    if _shared_model is not None and _shared_model.model_card != card:
+        drop_shared_model()
     if _shared_model is None:
         _shared_model = OmniASRLlamaModel(card)
     return _shared_model
