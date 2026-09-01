@@ -34,36 +34,36 @@ from .recipes import load_lang_recipe, recipe_get
 # SHERPA_MODEL_DIR when running somewhere other than the H200.
 MODEL_ROOT = os.environ.get("SHERPA_MODEL_DIR", "/mnt/volume_d2wey28/models/sherpa")
 
+_V1_300M = "sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-2025-11-12"
 _V2_300M = "sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-v2-2026-02-05"
-_V2_1B = "sherpa-onnx-omnilingual-asr-1600-languages-1B-ctc-v2-2026-02-05"
 
-# Where each build came from. The 300M export is published in the GhanaNLP
-# mirror; the 1B one only upstream.
+# Where each build came from. v1 is the original November export; v2 is the
+# December retrain, mirrored in the GhanaNLP repo as a tarball.
 SOURCE_REPOS = {
+    "300m-v1": f"csukuangfj/{_V1_300M}",
     "300m-v2": "michsethowusu/sherpa-onnx-omnilingual-asr-1600-languages-ctc-v2",
-    "1b-v2": "csukuangfj2/sherpa-onnx-omnilingual-asr-1600-languages-1B-ctc-v2-2026-02-05",
 }
 
 # Each entry is one leaderboard row. `dir` is relative to MODEL_ROOT.
-# These are the unquantised builds — the id carries no precision claim because
-# the export does not state one and sherpa-onnx picks the runtime dtype. An
-# int8 build, if ever added, takes an explicit "-int8" suffix.
+# Both are the unquantised builds — the id carries no precision claim because
+# the export does not state one and sherpa-onnx picks the runtime dtype. Holding
+# the size fixed at 300M makes the pair a clean v1-vs-v2 comparison: it isolates
+# what the December retrain changed on these languages.
 MODELS = {
+    "300m-v1": {
+        "model": "facebook/sherpa-onnx-omniASR-CTC-300M-v1",
+        "dir": _V1_300M,
+        "onnx": "model.onnx",
+        "params": "300M",
+    },
     "300m-v2": {
         "model": "facebook/sherpa-onnx-omniASR-CTC-300M-v2",
         "dir": _V2_300M,
         "onnx": "model.onnx",
         "params": "300M",
     },
-    "1b-v2": {
-        "model": "facebook/sherpa-onnx-omniASR-CTC-1B-v2",
-        "dir": _V2_1B,
-        # ONNX external weights: model.onnx is a 1 MB graph beside a 3.9 GB
-        # model.weights, so both files must be present in the directory.
-        "onnx": "model.onnx",
-        "params": "1B",
-    },
 }
+
 
 def model_url(variant):
     return f"https://huggingface.co/{SOURCE_REPOS[variant]}"
