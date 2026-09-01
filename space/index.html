@@ -415,6 +415,13 @@ let MODEL_LICENSES = {};
 const API_TRACKS = ['KhayaAI/khaya-asr', 'Google/speech-recognition', 'google/gemini'];
 const isApiTrack = m => API_TRACKS.some(p => m.startsWith(p));
 
+// Recipes are per language for any model run across the whole eval set, whether
+// or not it is a hosted API: the omniASR checkpoints are downloadable weights
+// (so they keep the model-card licence lookup above) but each language still
+// has its own editable recipe file, which is what the run reads.
+const PER_LANG_RECIPE_MODELS = [...API_TRACKS, 'facebook/omniASR'];
+const hasPerLangRecipe = m => PER_LANG_RECIPE_MODELS.some(p => m.startsWith(p));
+
 // Models withheld from the published leaderboard, from data/hidden_models.json
 // in the repo. The results stay in benchmarks/*.yaml and the transcriptions stay
 // on disk — this only controls what is rendered, and is edited by committing to
@@ -589,11 +596,11 @@ function modelLink(model, url, row) {
   return link;
 }
 
-// API/LLM tracks are one endpoint run on every language, so their recipe is per
-// language: recipes/{model}__{iso}.py (see recipes/README.md).
+// Models run on every language have a recipe per language:
+// recipes/{model}__{iso}.py (see recipes/README.md).
 function recipeLink(model, iso) {
   const safe = model.replace(/\//g,'_').replace(/:/g,'_');
-  const isTrack = isApiTrack(model);
+  const isTrack = hasPerLangRecipe(model);
   // API/LLM tracks have NO model-level recipe — only per-language ones. Without
   // an iso there is no real file to point at, so link the recipes folder rather
   // than a 404.

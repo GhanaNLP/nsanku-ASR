@@ -29,6 +29,7 @@ import yaml
 from .config import NUM_SAMPLES, ROOT, SAMPLE_RATE
 from .dataset import load_eval_samples
 from .evaluate import load_eval_configs, language_categories, save_transcriptions, _score
+from .recipes import load_lang_recipe, recipe_get
 
 MODEL_CARD = os.environ.get("OMNIASR_MODEL_CARD", "omniASR_LLM_7B_v2")
 MODEL_ID = "facebook/omniASR-LLM-7B-v2"
@@ -57,12 +58,26 @@ def _supported_lang_ids():
     return _supported_langs_cache
 
 
-def lang_id_for(iso_code):
+def lang_id_for(iso_code, model_id=None):
     """Meta lang id for an eval iso, or None to decode unconditioned.
 
-    Twi has no lang id of its own but its macrolanguage Akan does; everything
-    else is matched by ISO 639-3 prefix of the "{lang}_{script}" ids.
+    The per-language recipe wins when it defines one, so a contributor can
+    change the conditioning for a single language of a single checkpoint by
+    editing recipes/{model}__{iso}.py. Each checkpoint has its own set of those
+    files — the CTC and LLM runs read different recipes even though they share
+    this harness.
+
+    Falling back: Twi has no lang id of its own but its macrolanguage Akan does;
+    everything else is matched by ISO 639-3 prefix of the "{lang}_{script}" ids.
     """
+    if model_id:
+        recipe = load_lang_recipe(model_id, iso_code)
+        if recipe is not None:
+            fn = recipe_get(recipe, "lang_id_for")
+            if callable(fn):
+                return fn(iso_code)
+            if hasattr(recipe, "LANG_ID"):
+                return recipe.LANG_ID
     ids = _supported_lang_ids()
     if iso_code.startswith("twi"):
         return "aka_Latn" if "aka_Latn" in ids else None
@@ -248,7 +263,7 @@ def evaluate_omniasr(iso_code, model=None, force=False, model_id=MODEL_ID,
     meta = load_eval_configs()[iso_code]
     language = meta["language"]
     category_names = [c for c, _ in cats]
-    cond = lang_id_for(iso_code)
+    cond = lang_id_for(iso_code, model_id)
     print(f"\n{'=' * 60}\n  OmniASR ({card}) - {iso_code} ({language})  "
           f"categories={category_names}  lang_cond={cond or 'none'}\n{'=' * 60}", flush=True)
 
