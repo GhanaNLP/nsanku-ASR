@@ -220,11 +220,11 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
         </label>
         <label>Track:</label>
         <select id="global-class-select">
-          <!-- Three kinds of system, not one ranking: downloadable ASR
-               checkpoints, LLM-based transcribers, and hosted APIs whose weights
-               can change under us. ASR is the default because it is the only
-               track whose artefacts are fixed and re-runnable by anyone. -->
-          <option value="non-llm" selected>ASR (dedicated models)</option>
+          <!-- Three kinds of system, not one ranking: open ASR models anyone can
+               download and re-run, LLM-based transcribers, and hosted APIs whose
+               weights can change under us. ASR is the default because it is the
+               only track whose artefacts are fixed and independently checkable. -->
+          <option value="non-llm" selected>ASR (open models)</option>
           <option value="llm">LLM</option>
           <option value="api">API (hosted services)</option>
           <option value="All">All</option>
