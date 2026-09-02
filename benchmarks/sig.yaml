@@ -4,6 +4,38 @@ num_samples_per_category: 1000
 categories:
 - bible
 benchmarks:
+- model: facebook/sherpa-onnx-omniASR-CTC-300M-v1
+  model_url: https://huggingface.co/csukuangfj/sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-2025-11-12
+  owner: facebook
+  model_class: non-llm
+  params: 300M
+  wer: 0.3838
+  cer: 0.0893
+  score: 0.2365
+  per_category:
+    bible:
+      wer: 0.3838
+      cer: 0.0893
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.55
+  source: evaluated
+- model: facebook/sherpa-onnx-omniASR-CTC-300M-v2
+  model_url: https://huggingface.co/michsethowusu/sherpa-onnx-omnilingual-asr-1600-languages-ctc-v2
+  owner: facebook
+  model_class: non-llm
+  params: 300M
+  wer: 0.3885
+  cer: 0.0949
+  score: 0.2417
+  per_category:
+    bible:
+      wer: 0.3885
+      cer: 0.0949
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.54
+  source: evaluated
 - model: facebook/omniASR-LLM-7B-v2
   model_url: https://github.com/facebookresearch/omnilingual-asr
   owner: facebook

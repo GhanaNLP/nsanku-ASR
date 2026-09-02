@@ -226,14 +226,14 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
                the open track, and what a reader cares about. Open is the default
                because it is the only track whose weights are fixed and whose
                scores anyone can reproduce. -->
-          <option value="non-llm" selected>ASR (open)</option>
-          <option value="api">ASR (proprietary)</option>
+          <option value="non-llm" selected>ASR (open models)</option>
+          <option value="api">ASR (closed models)</option>
           <option value="llm">LLM</option>
           <option value="All">All</option>
         </select>
       </div>
       <p style="color:var(--text-muted); margin-bottom:8px;">Best model per language — ranked by the average of WER and CER (lower is better). Individual WER/CER scores shown for transparency.</p>
-      <p style="color:var(--text-muted); margin-bottom:8px;">Open models are the core of this benchmark: their weights can be downloaded and the scores re-run by anyone. The proprietary and LLM tracks are shown for comparison.</p>
+      <p style="color:var(--text-muted); margin-bottom:8px;">Open models are the core of this benchmark: their weights can be downloaded and the scores re-run by anyone. The closed models and LLM tracks are shown for comparison.</p>
       <p id="global-api-note" class="section-note" style="display:none; margin-bottom:8px;"></p>
       <p id="global-source-note" class="section-note" style="display:none; margin-bottom:14px;"></p>
       <div class="table-wrap">
@@ -261,8 +261,8 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
         <label>Track:</label>
         <select id="per-class-select">
           <option value="All">All</option>
-          <option value="non-llm">ASR (open)</option>
-          <option value="api">ASR (proprietary)</option>
+          <option value="non-llm">ASR (open models)</option>
+          <option value="api">ASR (closed models)</option>
           <option value="llm">LLM</option>
         </select>
         <label>Type:</label>
@@ -592,7 +592,7 @@ function modelLink(model, url, row) {
   // weights behind the endpoint can change with no notice and no version
   // number, so the name on its own does not say what was measured.
   if (row && row.model_class === 'api' && row.evaluated_at) {
-    return `${link} <span class="asof" title="Tested on ${row.evaluated_at}. A proprietary service can change at any time; this score describes it on that date.">${row.evaluated_at}</span>`;
+    return `${link} <span class="asof" title="Tested on ${row.evaluated_at}. A closed model can change at any time; this score describes it on that date.">${row.evaluated_at}</span>`;
   }
   return link;
 }
@@ -825,8 +825,8 @@ function renderOverview(data) {
 // ====== Track badge (LLM / Non-LLM) ======
 function trackBadge(cls) {
   if (cls === 'llm') return '<span class="badge badge-llm">LLM</span>';
-  if (cls === 'api') return '<span class="badge badge-api">Proprietary</span>';
-  return '<span class="badge badge-nonllm">Open</span>';
+  if (cls === 'api') return '<span class="badge badge-api">Closed models</span>';
+  return '<span class="badge badge-nonllm">Open models</span>';
 }
 
 // ====== Shared filter for Global tab (stats + table) ======
@@ -915,7 +915,7 @@ function renderGlobal(data) {
         : dates.length === 1 ? `on ${dates[0]}`
         : `between ${dates[0]} and ${dates[dates.length - 1]}`;
       apiNote.style.display = '';
-      apiNote.innerHTML = `These are proprietary services, tested ${when}. ` +
+      apiNote.innerHTML = `These are closed models (proprietary services), tested ${when}. ` +
         `The date is shown against each one because the provider can change the ` +
         `model behind an endpoint at any time, without notice and without a version ` +
         `number — so a score here describes that service on that date, not today.`;

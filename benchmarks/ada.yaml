@@ -51,6 +51,50 @@ benchmarks:
   model_class: non-llm
   score: 0.1341
   evaluated_at: '2026-08-10'
+- model: facebook/sherpa-onnx-omniASR-CTC-300M-v2
+  model_url: https://huggingface.co/michsethowusu/sherpa-onnx-omnilingual-asr-1600-languages-ctc-v2
+  owner: facebook
+  model_class: non-llm
+  params: 300M
+  wer: 0.7689
+  cer: 0.2569
+  score: 0.5129
+  per_category:
+    bible:
+      wer: 0.7404
+      cer: 0.2267
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.52
+    jw:
+      wer: 0.7974
+      cer: 0.2872
+      samples: 261
+      valid: 261
+      avg_seconds_per_sample: 0.35
+  source: evaluated
+- model: facebook/sherpa-onnx-omniASR-CTC-300M-v1
+  model_url: https://huggingface.co/csukuangfj/sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-2025-11-12
+  owner: facebook
+  model_class: non-llm
+  params: 300M
+  wer: 0.8094
+  cer: 0.2701
+  score: 0.5397
+  per_category:
+    bible:
+      wer: 0.7792
+      cer: 0.231
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.5
+    jw:
+      wer: 0.8395
+      cer: 0.3092
+      samples: 261
+      valid: 261
+      avg_seconds_per_sample: 0.35
+  source: evaluated
 - model: facebook/omniASR-LLM-7B-v2
   model_url: https://github.com/facebookresearch/omnilingual-asr
   owner: facebook

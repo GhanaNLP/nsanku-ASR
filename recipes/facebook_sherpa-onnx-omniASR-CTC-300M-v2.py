@@ -1,6 +1,6 @@
 """Evaluation recipe for facebook/sherpa-onnx-omniASR-CTC-300M-v2 — all languages.
 
-Track: ASR (open) — sherpa-onnx ONNX export of Meta omniASR CTC 300M v2
+Track: ASR (open models) — sherpa-onnx ONNX export of Meta omniASR CTC 300M v2
 Scope: ALL LANGUAGES. This is the base recipe; the per-language recipes
 (recipes/facebook_sherpa-onnx-omniASR-CTC-300M-v2__{iso}.py) are what a run actually reads.
 

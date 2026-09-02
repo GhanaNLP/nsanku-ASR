@@ -5,50 +5,6 @@ categories:
 - bible
 - finance
 benchmarks:
-- model: Google/speech-recognition
-  model_url: https://www.google.com/
-  owner: Google
-  model_class: api
-  params: API
-  wer: 0.558
-  cer: 0.2878
-  per_category:
-    bible:
-      wer: 0.599
-      cer: 0.4155
-      samples: 1000
-      valid: 994
-      avg_seconds_per_sample: 0.5
-    finance:
-      wer: 0.5171
-      cer: 0.1602
-      samples: 1000
-      valid: 956
-      avg_seconds_per_sample: 0.38
-  source: evaluated
-  evaluated_at: '2026-08-14'
-- model: facebook/omniASR-LLM-7B-v2
-  model_url: https://github.com/facebookresearch/omnilingual-asr
-  owner: facebook
-  model_class: llm
-  params: 7B
-  wer: 0.6529
-  cer: 0.3375
-  per_category:
-    bible:
-      wer: 0.4146
-      cer: 0.2725
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.48
-    finance:
-      wer: 0.8912
-      cer: 0.4025
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.31
-  source: evaluated
-  evaluated_at: '2026-08-25'
 - model: FarmerlineML/w2v-bert-2.0_twi_alpha_v1
   model_url: https://huggingface.co/FarmerlineML/w2v-bert-2.0_twi_alpha_v1
   owner: FarmerlineML
@@ -72,6 +28,50 @@ benchmarks:
       avg_seconds_per_sample: 0.04
   source: evaluated
   evaluated_at: '2026-08-14'
+- model: facebook/sherpa-onnx-omniASR-CTC-300M-v2
+  model_url: https://huggingface.co/michsethowusu/sherpa-onnx-omnilingual-asr-1600-languages-ctc-v2
+  owner: facebook
+  model_class: non-llm
+  params: 300M
+  wer: 0.8171
+  cer: 0.3394
+  score: 0.5783
+  per_category:
+    bible:
+      wer: 0.7284
+      cer: 0.3262
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.31
+    finance:
+      wer: 0.9057
+      cer: 0.3526
+      samples: 1000
+      valid: 986
+      avg_seconds_per_sample: 0.27
+  source: evaluated
+- model: facebook/sherpa-onnx-omniASR-CTC-300M-v1
+  model_url: https://huggingface.co/csukuangfj/sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-2025-11-12
+  owner: facebook
+  model_class: non-llm
+  params: 300M
+  wer: 0.8822
+  cer: 0.3608
+  score: 0.6215
+  per_category:
+    bible:
+      wer: 0.8143
+      cer: 0.3415
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.27
+    finance:
+      wer: 0.9501
+      cer: 0.3802
+      samples: 1000
+      valid: 986
+      avg_seconds_per_sample: 0.37
+  source: evaluated
 - model: waxal-benchmarking/mms-300m-waxal-aka
   model_url: https://huggingface.co/waxal-benchmarking/mms-300m-waxal-aka
   owner: waxal-benchmarking
@@ -93,50 +93,6 @@ benchmarks:
       samples: 1000
       valid: 985
       avg_seconds_per_sample: 0.01
-  source: evaluated
-  evaluated_at: '2026-08-14'
-- model: google/gemini-3.6-flash
-  model_url: https://ai.google.dev/gemini-api/docs/models#gemini-3.6-flash
-  owner: google
-  model_class: llm
-  params: API
-  wer: 0.884
-  cer: 0.5111
-  per_category:
-    bible:
-      wer: 0.8843
-      cer: 0.5395
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.9
-    finance:
-      wer: 0.8836
-      cer: 0.4828
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.6
-  source: evaluated
-  evaluated_at: '2026-08-14'
-- model: KhayaAI/khaya-asr-v3
-  model_url: https://translation-api.ghananlp.org/
-  owner: KhayaAI
-  model_class: api
-  params: API
-  wer: 0.984
-  cer: 1.0139
-  per_category:
-    bible:
-      wer: 0.5126
-      cer: 0.4137
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 1.03
-    finance:
-      wer: 1.4555
-      cer: 1.6142
-      samples: 1000
-      valid: 886
-      avg_seconds_per_sample: 0.86
   source: evaluated
   evaluated_at: '2026-08-14'
 - model: waxal-benchmarking/whisper-small-waxal-aka
@@ -183,5 +139,93 @@ benchmarks:
       samples: 1000
       valid: 1000
       avg_seconds_per_sample: 0.07
+  source: evaluated
+  evaluated_at: '2026-08-14'
+- model: Google/speech-recognition
+  model_url: https://www.google.com/
+  owner: Google
+  model_class: api
+  params: API
+  wer: 0.558
+  cer: 0.2878
+  per_category:
+    bible:
+      wer: 0.599
+      cer: 0.4155
+      samples: 1000
+      valid: 994
+      avg_seconds_per_sample: 0.5
+    finance:
+      wer: 0.5171
+      cer: 0.1602
+      samples: 1000
+      valid: 956
+      avg_seconds_per_sample: 0.38
+  source: evaluated
+  evaluated_at: '2026-08-14'
+- model: facebook/omniASR-LLM-7B-v2
+  model_url: https://github.com/facebookresearch/omnilingual-asr
+  owner: facebook
+  model_class: llm
+  params: 7B
+  wer: 0.6529
+  cer: 0.3375
+  per_category:
+    bible:
+      wer: 0.4146
+      cer: 0.2725
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.48
+    finance:
+      wer: 0.8912
+      cer: 0.4025
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.31
+  source: evaluated
+  evaluated_at: '2026-08-25'
+- model: google/gemini-3.6-flash
+  model_url: https://ai.google.dev/gemini-api/docs/models#gemini-3.6-flash
+  owner: google
+  model_class: llm
+  params: API
+  wer: 0.884
+  cer: 0.5111
+  per_category:
+    bible:
+      wer: 0.8843
+      cer: 0.5395
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.9
+    finance:
+      wer: 0.8836
+      cer: 0.4828
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.6
+  source: evaluated
+  evaluated_at: '2026-08-14'
+- model: KhayaAI/khaya-asr-v3
+  model_url: https://translation-api.ghananlp.org/
+  owner: KhayaAI
+  model_class: api
+  params: API
+  wer: 0.984
+  cer: 1.0139
+  per_category:
+    bible:
+      wer: 0.5126
+      cer: 0.4137
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 1.03
+    finance:
+      wer: 1.4555
+      cer: 1.6142
+      samples: 1000
+      valid: 886
+      avg_seconds_per_sample: 0.86
   source: evaluated
   evaluated_at: '2026-08-14'

@@ -1,11 +1,9 @@
 ---
-title: nsanku-ASR Leaderboard
+title: nsanku ASR Benchmark
 emoji: 🎤
 colorFrom: blue
 colorTo: indigo
-sdk: gradio
-sdk_version: 5.0.0
-app_file: app.py
+sdk: static
 pinned: true
 license: apache-2.0
 tags:
@@ -16,14 +14,16 @@ tags:
   - leaderboard
 ---
 
-# nsanku-ASR Leaderboard
+# nsanku ASR Benchmark
 
-Benchmarking **organization-owned** ASR models on **43 Ghanaian languages** using the
+Benchmarking ASR models on **Ghanaian languages** using the
 [ghana-speech-eval](https://huggingface.co/datasets/ghananlpcommunity/ghana-speech-eval) dataset.
 
-Each model is scored on every eval category a language appears in (Bible / JW / Finance /
-UNICEF / LDS / WAXAL); the reported WER/CER is the **average across categories**.
-Akuapem and Asante Twi are evaluated as separate languages. Only models from
-organizations (not personal accounts) are included.
+Three tracks: **ASR (open models)** (downloadable weights anyone can re-run), **ASR (closed models)**
+(proprietary hosted APIs) and **LLM**.
+Scored per category (Bible / JW / Finance / Unicef / LDS / WAXAL), averaged as the final WER/CER.
+**Ranking uses the average of WER and CER** — every model row links to a recipe
+(`code` badge) showing the exact inference code used to run it, so model authors
+can correct how their model is evaluated via a pull request.
 
 Data source: [GhanaNLP/nsanku-ASR](https://github.com/GhanaNLP/nsanku-ASR)

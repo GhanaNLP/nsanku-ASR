@@ -1,6 +1,6 @@
 """Evaluation recipe for facebook/omniASR-CTC-1B-v2 — all languages.
 
-Track: ASR (open) — Meta Omnilingual ASR, CTC head (omniASR_CTC_1B_v2)
+Track: ASR (open models) — Meta Omnilingual ASR, CTC head (omniASR_CTC_1B_v2)
 Scope: ALL LANGUAGES. This is the base recipe; per-language recipes
 (recipes/facebook_omniASR-CTC-1B-v2__{iso}.py) hold the knobs for individual
 languages and are what the run actually reads.

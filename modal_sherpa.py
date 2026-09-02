@@ -44,17 +44,16 @@ THREADS_PER_WORKER = 2
 MODEL_VOLUME = modal.Volume.from_name("nsanku-sherpa-models", create_if_missing=True)
 MODEL_DIR = "/models"
 
-# Each build's source repo. The 300M export is published in the GhanaNLP mirror
-# (as a tarball); the 1B one only upstream, as a plain directory with ONNX
-# external weights.
+# Each build's source repo. v2 300M is published in the GhanaNLP mirror as a
+# tarball; v1 300M lives upstream as a plain directory.
 DOWNLOADS = {
+    "300m-v1": {
+        "repo": "csukuangfj/sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-2025-11-12",
+        "snapshot": "sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-2025-11-12",
+    },
     "300m-v2": {
         "repo": "michsethowusu/sherpa-onnx-omnilingual-asr-1600-languages-ctc-v2",
         "tarball": "sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-v2-2026-02-05.tar.bz2",
-    },
-    "1b-v2": {
-        "repo": "csukuangfj2/sherpa-onnx-omnilingual-asr-1600-languages-1B-ctc-v2-2026-02-05",
-        "snapshot": "sherpa-onnx-omnilingual-asr-1600-languages-1B-ctc-v2-2026-02-05",
     },
 }
 

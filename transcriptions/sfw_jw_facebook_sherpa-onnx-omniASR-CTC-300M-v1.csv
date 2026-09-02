@@ -1,0 +1,1001 @@
+sample_id,reference,hypothesis,wer,cer
+0,"b Sɛ ɛpena suahu pee bɔ ɔfa sɔ dwirɛ he anwo a, nea Nhoma a Yehowa Adansefo De Yɛ Nhwehwɛmu nanu. Ekonwu ye wɔ edwirɛti bɔ yenwa “ Abɔfo ” nabo.",ɛbobiredwura ne kɛngakyɛɛ sɛɛpenasuahu pein bɔɔfaso dwurɛ he ano a ne anwoma a yiho adaranfodeɛ nhwehwemu nan ɛkɔnwi wu dwureti bɔye nɔ a abɔfo nambɔ ɛbobredwura ne asi,0.931,0.5872
+1,"Sɛ Ɛkyɛ Nikye A, Ɔkɔmaa Wɔnye Kɔgye Paa",sɛ ɛkyenkye a ɔkoma wɔnye kɔgye paa,0.375,0.129
+2,"BƐBƆ BƐNEA YAREFOƐ ANAA AWOROWAA NE, BƆ ƆMAA ƆYƐ SE KYƐ BƐNYE KƆHƆSO KƆGYE Ɔ",bɛbɔ bɛneayarefoɛ anaaworowa n bɔ mɔɔ yɛ sekyɛ bɛnye kɔhɔ so kɔgyeɔ,0.8,0.0984
+3,"KURO ALIEMAAMƆ DWIRƐ, NA SÕ BƐ WƆFOƐ",kuro aliema mo jurɛ na so bɛ wɔfoɛ,0.5714,0.2069
+4,Nzu yeɛ ɔkɔboka yɛ maa yɛkɔɔyɛ Kristofoɛ bɔ bɛbɔ bɛnwo mmɔden ɔ?,ɛzu yɛkɔboka yɛmaa yɛkɔɔ yɛ kristofo bɛbɛbɔ bɛ wo mɔ deɛ o,1.0,0.1731
+5,"Yekonwu mmerɛ bɔ odikyɛ yɛkã Bible adesua nwo dwirɛ yekyire mmenia, ɔne mmerɛ bɔ odikyɛ yɛto yɛsa yɛfrɛ bɛ maa bɛba adesua ɔ.",ikon mrɛbɔ ditiɛ ka bae bola disiandwre e chre menea ɔne mrɛbɔ odiciɛ tuɛsae frɛ bɛmaa bɛba diswia ɔ,0.8696,0.4158
+6,mmerɛ bɔ ɛpena kyɛ ɛkɔso di nahorɛ ma Yehowa ne?,merɛbayeponakyɛ ɛkɔsu di nahorɛ mayehoa n,0.8,0.2105
+7,Fa Nyameɛ Afutue Bɔ Ɔfa Nzãa Nwo Ne Bɔ Wɔ Bra,fanyameafoto bɔɔfanzanwo ne bɔɔbera,0.9091,0.2
+8,"Sɛ yɛte edwirɛ bo a, sɛɛ yeɛ ɔkɔboka yɛ mmerɛ bɔ nningyein asesã wɔ y’asetena nu ne?",seɛteɛ dwurabo a seɛyɛ ɛkɔbo kayɛ norabɔ ninyiase sa ɔyease tena nu n,0.8824,0.3077
+9,"Aliemaa bɔ ɔkɔyɛ kyaaman wɔ dapɛen afia adesua nabo ne, ɛyɛ a ɔfa afutue ma bɛbɔ bɛyɛ asuafoɛ dwumadie ne. Yeti sɛ sona ne yɛ ye dwumadie ne a, ɔfa yenye di yesi nea kyɛ, akwangyerɛ bɔ ɔfa ye dwumadie nanwo ne, ɔyɛ ye sɔ pɛpɛɛpɛ anaa.",ɛlima bɔkɔɛkyama wɔdapɛɛfia de suana bo n ɛyɛ ɔfa fotue ma bɛ wɔbɛyɛ suafo edwumadiɛ n itisɛsonane yɛ dwumadiɛ ne a ɔfanye di isiniakyɛ akwangyɛ bɔwɔ dwumadie no anwo n ɔyɛe sɔ pɛpɛpɛ anaa,0.7872,0.2253
+10,"KYƐBƆ YEHOWA SE YƐ NE, ƆBO Y’ADWENE NE YƐ NDEASEƐ SO",kyɛ boyiho aseeɛ n ɔboyɛ adwene ne yɛnde aseɛ so,0.8182,0.15
+11,"Yehowa se aworabɔlɛ bɔ yedi ne mukoraati, yeti yekonwu kyɛbɔ ɔboka yɛ maa y’ahone tɔ ye kunu ɔ.",yehuasawra boiboidine mo kre ki iki yehohkyebo bokayɛma yahone to yekuno,0.9444,0.3867
+12,BƆ YETI YEƐ YASI GYINAYƐƐ KYƐ YƐKƆSÕ YEHOWA Ɔ,oyi tia yasi gyaa ya cɛya kwasun yehuwawo,0.8889,0.5405
+13,"Yekonwu mvasoɛ bɔ yenya yefi honhom nu paradise naso, ɔne kyɛbɔ yɛkɔboka mmenia maa bɛ koso bɛkɔwa nu bie ɔ.",yɛkɔhuvasoɔbɔ yɛnya yɛfihomu no praadise na so ɔnekyeɛbɔ yɛkɔɔbo kameniamaa bɛko so bɛkɔwɔ anobui ho,1.0,0.2644
+14,"Bible ne mma edwirɛ he anwo mmuayɛɛ. Nakoso sɛ yɛnea edwirɛ biemɔ bɔ ɔwɔ Bible nanu a, ɔmaa yenwu bɔ yeti yeɛ ebia besili sɔ gyinayɛɛ ne ɔ.",bayebo ne mma adwere heawo woa yɛ na koso sɛ ne adwerɛ bie mo bɔwo baebo ne no a ɔmare yɛ nnwobɔyi tiɛ ɛbi a besiri songyenayeɛ neɔ,0.9286,0.367
+15,SUESUA KYƐBƆ YEHOWA SI NWU ANWUMVOIN NE,siosi a chebo ihoa si wonvoen,1.0,0.5758
+16,"Yeti kyẽa foforɛ bɔ ekosua nikyee ne, ɛyɛ a drɔ bɔ asua ne to berɛ. Sɛ ɛyɛ sɔ a, nningyein bɔ ɛkɔkae ne, ɔkɔyɛ wɔ nwanwa.",yiti hyeafoforɛbokosuankyein ɛyɛ adorɔboasua no tobrɛ sɛ ye so a ne ngyem ba kɔ kaen ɔkɔ ye wɔ wanhu a,0.9615,0.2857
+17,mmerɛ bɔ asafo ne ama yɛ akwangyerɛ bie ne?,merebo asafoneama y akw angyere bia n,1.0,0.2059
+18,YƐFA AKOKODURO YƐNEA KYẼABIE ATEE,yafa koko duro yɛ nniakyeɛndi aten,1.2,0.3448
+19,"Bɛbɔ bayɛ mbanyi bɔ bɛwɔ y’asafo nu ne, yɛkɔyɛ sɛɛ ne yaboka bɛ?",bɛbɔbayembani bɔbɛwɔ yasafo nu n yɛkayɛsɛ ne yabo kabɛ,0.7692,0.102
+20,"Ndeaseɛ bɔ yele ye kyɛ Yehowa kɔla anwumvoinnwunɛ ali, na wabua ndɛen turoloo mmerɛ bɔ otingye bɛbɔ bɛndengyɛ ne, adesua he kɔboka yɛ maa yɛkɔte yebo yé.",ndiase ebue lɛ ekyɛ yehuakɔ lɛ womvo enwuna li na wɔbua nde ntyerolo mra bootingyɛ bɛbɔ bɛndengyɛn adihuayekɔ bokayɛ maayɛkɔte ɛbui ye,0.9259,0.2742
+21,Edwirɛ beni yeɛ Nyameɛ ahã bɔ ɔmaa yenya gyidie kyɛ nningyein bɔ wahyɛ yenwo bɔ ne kɔwa nu ɔ?,ɛdwerɛ beni yɛ nyamenaha bɔ maayi nyagyedie kyerɛ ne ngyen boahyɛ nwo bɔne kɔwanu ɔ,0.8421,0.2297
+22,MMERƐ BƆ W’ADWENE YƐ WƆ KYƐ YEHOWA NDWENE WƆNWO NE,mme bowa dunu yoo ce yihuan dune wo wunna,1.0,0.55
+23,kyɛbɔ Yehowa bua ndɛen turoloo nanwo ɔ?,kyɛboyi hoabuandɛ ntolo na woɔ,1.0,0.25
+24,"Yɛ ebie bɔ mmenia de wɔ di ɔ. Boka adwuma bɔ bɛyɛ ye wɔ Ahennie Asa so ne. Sɛ bɛfa adwuma bie bewura wɔsa koso a, fa akwangyerɛ bɔ ɔwɔ yenwo ne yɛ adwuma pɛpɛɛpɛ.",yɛ bie bɔminia deode ɔ boka adwuma bɔ bɛyɛe wɔ ahiniasa son sɛ bɛfa adwuma bie bɛwuraɔsa ko so a faakwandyerɛ bɔ wɔnnwone yɛ adwuma pɛpɛɛ pɛ,0.6286,0.1371
+25,ASAFO NHYIAMU BOKALE ALIEMAAMƆ MAA BƐYƐLE KÕ,asafunsia m bo kareɛriemaamo ŋaa bɛyɛre kun,1.0,0.3158
+26,YƐHYƐLE MMERƐ MUKORAATI SOEN ADWUMA NABO,yɛsɛle mere mu korelete sonɛ dwumana bo,1.1667,0.2857
+27,BƆ ƐKƆHORA KƆYƐ YE KESAALAE Ɔ,bo e con raccòiei che sala eo,1.1667,0.6667
+28,"Sɛ Ɛdrɔ Nikyee A, Wɔ Wora Ngofi",sai droncaa wa urangu fi,1.0,0.5
+29,"Edwirɛ pee wɔ Bible nanu bɔ ɔkyekye yɛ wora mmerɛ bɔ yɛte moen ne, na ɔmaa yenwu kyɛ Yehowa nwu bɔ yɛfa nu ne, na ɔkɔboka yɛ. Ebie yeɛ olili so ye:",idwurapin wɔba ibonano bɔkyekyeyɛ wora mrɛ bɔyɛ te mmoɛ n na mmaye nokyɛ yehuaho bɔyɛ fa no n na kɔbo kayɛ ebiyɛ wɔlele so e,0.875,0.3125
+30,BƆ ƆKƆBOKA WƆ MAA EKOSŨA NIKYEE YÉ Ɔ,bọkɔbụkọmaa ekosua nchee ye ọ,1.0,0.4138
+31,"Sɛ “amaneɛnwunɛ piri” ne hyɛ yebo a, nzuati yeɛ yenwo kohia paa kyɛ yɛyɛ sotie ɔ?",sa amaneɛ wo nepiri ne hyɛe bɔ a nzue tia ye wo kɔhiapaa tiɛ yɛ su tiɛ ɔ,0.9375,0.2903
+32,FA BƆ ƐKƆHORA KODWU YENWO NE SIE WƆNYE SO,foaboɛkɔhorako dwuin wo ne sie wanye so,0.6667,0.1515
+33,"BƆ ƐKORA YƐ BIALA, YEHOWA NYE GYE YENWO",boekora ye biala yehu anye gyewu,0.875,0.2903
+34,"Ɛwɛnelɛ Waen bɔ ɔwale afoɛ he ne, ato wɔ boase akenga nu anaa? Sɛ ahora ayɛ sɔ a, yede sɛɛ yeɛ ɛkɔye edwirɛ hemɔ noa ɔ?",ɛwɛni rɛ wan bɔ ware afoahe n atoɔbɔ ase akenganua naa sɛ ahora yɛ so a ɛdi sɛɛ yɛ kɔyi dwere hɛ mɔ noa o,0.8462,0.2444
+35,"Yesu Ngoa Bɔ Ɔfa Bɔle Afɔleɛ Ne, Nzu Yeɛ Ɔmaa Yenwu Ye Ɔ?",yesu ǹgun ábọfa bọle afọlee nzu yewa mayigu ye o,0.7692,0.3953
+36,KYƐBƆ YOB DWIRƐ NE BOKA YƐ MAA YEMIA YƐNYE YEGYINA YƐ HAW NOA Ɔ,kyɛ bɔyeyɛ obodwɛ ne bokayɛma yɛmmia yɛnye yɛ gyira yɛhawo noaho,0.7857,0.28
+37,MMERƐ BƆ W’ADWENE YƐ WƆ KYƐ WƆNWO NHIA YEHOWA NE,merɛ bowaadune yɔɔ tɛ wowunhia yehuan,1.0,0.3947
+38,Kyɛbɔ Ɛkɔhora Kogyina Ndɛengyea Noa Ɔ,kyebwekopulakugira ndenjianuwawu,1.0,0.5625
+39,BƆ ƆKƆBOKA WƆ MAA EKODWU BƆ AFA ASIE WƆNYE SO NANWO Ɔ,bɔ ɔkɔboka maa yekogwubwafa si wɛne sona wo,0.75,0.2619
+40,"Gyidie bɔ yele ye wɔ Yehowa ahyehyɛdeɛ nanu ne, yɛkɔyɛ sɛɛ ne yahɔso yamaa nu ayɛ se?",gyiidia bo yelei wo yeho ahyehyɛdeɛ na nun yɛkɔ yɛsɛɛ ne yahɔso yamaa nua yɛse,0.7647,0.1343
+41,Ngɔm Bɔ Yakob Hyɛle Kora Yeɛ Owu Ne,ebule bɔwalakananunikenga châ ngɔn bɔ ya kwɔpoherale kora yoowon,1.125,1.3929
+42,"Ɔkɔboka yɛ maa yɛkɔyere yenwo yɛkɔkenga Bible ne kyẽa biala, yɛkɔdwenedwene yenwo, na yafa bɔ yasua ne yabɔ yɛ bra.",ɔkɔ bokayɛmaa yɛkɔ yiriɛwo yɛkɔkengabae bo ne kyea bia la yɛkɔ dwendwene wo ne yɛafa bo yisua ne yɛabbɔyɛbra,0.95,0.2151
+43,"BƆ ƆMAA YENWU KYƐ ƐNNƐ KOSO, YEHOWA NYƐ NYEYEMUƐ Ɔ",bɔmaayɛwu kyɛ ɛnnɛ koso yehu a nnyeyhi muɛo,0.7,0.25
+44,BAFI AWOSII NU BAWA KANEA NU,bafia wosii no bawowakaneɛn,1.0,0.2174
+45,NHYIAMU AHOROƐ HÃNE ALIEMAAMƆ BƆLE NU,nhiemu ahoruehaneeriemeamọ bọre nu,0.8333,0.3438
+46,Nzu Yeɛ Ɔkɔboka Wɔ Maa Wɔnye Kɔgye Mmerɛ Bɔ Ɛnwondɛ Yehowa Ne?,nzu yɔkɔ bokaomaa wanye kwa gye mrɛbaanwonde yefo a ne,0.8333,0.28
+47,YEHOWA MANE YƐ ANWOSERƐ MMERƐ PO BƆ NÉ YƐ WORA ABƆ NE,ehu amane yɛ awo srɛ merepo bɔ ne yɛwora bɔ ne,0.75,0.2143
+48,BƆ ƆHƆLESO WƆ M’ASETENA NU WƆ FINLAND Ɔ,bụhụọso wɔ masịtịna enu wofenlando,0.875,0.3548
+49,"SƐ EHŨ KƆSO NEA PONOGRAFI A, NZU YEƐ ƐKƆHORA KƆYƐ Ɔ?",sɛ ɛhu kɔso ne yaponograpi a nzu yɛɛ kɔhaa kɔyɛo,0.6364,0.2
+50,YƐKƆYƐ SƐƐ NÉ YAYƐ KRISTONIƐ BƆ WANYI WƆ SUNZUM NU Ɔ?,yekwayese niraye kristo niebuwanyuwo sunzunuo,1.0,0.3571
+51,"Nningyein benimɔ anu yeɛ odikyɛ yɛnea yé, na yangɔ nzɔhwɛ nu ɔ?",ne ngye deni mua no yodekyeryɛ ni yaye na yaangɔnzohwe nu ɔ,0.8333,0.36
+52,BƆ YETI YEƐ ODIKYƐ YEKYIRE OBUO YƐMA ALIEMAA MMRASUA NEMƆ Ɔ,bu e tie dekye yɛ kyire obuo yɛ maali maamre esuya ne mo,1.0909,0.3061
+53,Mvasoɛ beni yeɛ yekonya yekofi Yesu wue naso kyẽabie ɔ?,mvaso ɛbɛni ɛ kɔnya ɛkɔfi yesu wie naaso tea bi ɔ ɛdwere bɔ woalaka na no ne ɛsi,1.6,0.8222
+54,BOKA ALIEMAAMƆ BƆ BAHA SUA NU NE,boka alema mommɔ bahasia nun,0.8571,0.2692
+55,"Anwokeka bɔ Yesu fayɛle asɛnga adwuma ne, yɛkɔnea atee nna bɔ yɛkɔfaso yekosuesua ɔ.",anwo keka bo yesu fayɛle asɛŋga joman yɛkɔne aten na bɔ yɛkɔfase ye kosue suao,0.9286,0.1594
+56,SƐƐ YEƐ ƐKƆYE EDWIRƐ HEMƆ NOA Ɔ?,sɛɛ iyɛkɔ yɛidura hemmɔ noa ɔ,0.5714,0.36
+57,ENYA YENWO ATEE KƆ WƆ NYUNU,enya yo wɔtị koonyunu,0.8333,0.4091
+58,Yehowa Boka Ye Mmenia Maa Bɛte Bible Nabo,alaka na no dwurɛ ne kakyeɛɛ yehu abo kayeminiamaa bɛte bae boɔna bo,1.5,0.9118
+59,Yɛkɔyɛ sɛɛ né yafa Yehowa yayɛ yɛ Nyɔbotaen?,yɛkɔ yɛ sɛ miyafa yehuayayɛyɛ nyɔbotae,1.0,0.1667
+60,NZU YEƐ YESUA YEFI AFUTUE BƆ ƆPƐ YEBO BƆ . . .,nzu yɛyesua ye fi afotuo bɔpɛe bo,0.8889,0.2188
+61,YERE WƆNWO KYƐ ƐKƆHƆSO KOGYINA PINDINN,yere wɔ ho kyɛ ɛkɔwɔsoko gina pendii,0.8333,0.2121
+62,"Nningyein beni yeɛ odikyɛ yɛyere yɛnwo kyɛ yɛkɔyɛ ɔ, na nzu yeɛ ɔnzɛkyɛ yɛmaa yɛ wora fi ye llé ɔ?",ne ngyem ben ye wodekyɛɛ yɛ yereyɛ wo kyɛyɛ kɔyɛɔ na nzu yɛɔnza kyɛyɛ maa yɛwuraafiile o,0.95,0.2338
+63,"Nningyein beni yeɛ Yehowa nate so maa yenwu ye kyɛ, yenye gye yɛnwo ɔ?",ninjen beni yââ ehuanatesomaa ye woe châ e nye jeeâ åôô,0.9286,0.4364
+64,Si Gyinayɛɛ Bɔ Yehowa Nye Kɔgye Yenwo Ɔ,signayabeyihwani kwajewo,1.0,0.5
+65,“MAYIE ADWUMA BƆ ƐFA MANE ME KYƐ NYƆ NE”,mayi adwuma boɔfamane mekyɛɛ nnyɔn,0.8889,0.2
+66,Nzu yeɛ Bible ne kã kyɛ yekonya ye kyẽabie ɔ?,ezu ɛbaa bɔne kakye yɛ kɔnya kyea bi ɔ,0.9,0.4286
+67,BƆ ƆKƆMAA EKONWU KYƐ WƆNWO HIA YEHOWA Ɔ,bɔkɔ mekoo nwukyɛ wɔ nuhia yekowa wɔ,1.0,0.25
+68,KƆSO NYA GYIDIE WƆ YEHOWA AHYEHYƐDEƐ NANU,kɔ so n nyajidie woyehoahɛhyɛdie n nen,1.0,0.3429
+69,BƆ ODIKYƐ YƐMAA YENWO HIA YƐ PAA Ɔ,boodi kyɛ yɛma yɛohia yɛpaa ɔ,0.875,0.1852
+70,"Ɔdɔ Bɔ Ɔwɔ Agyaa Nu Ne, Ɔte Kyɛ Sẽe. Nnɛmaa Onua",ɔdɔ bɔ wɔagyaanu n ɔtekyɛɛ sen na maawo nua,0.8182,0.1667
+71,"SUESUA KYƐBƆ YEHOWA BUA NDƐEN TUROLOO, NÁ ONWU ANWUMVOIN NE",suiso yakyebweyehua buyanda ntulo nawouwa muvweni,1.0,0.5102
+72,"‘AWURADE ANWUMVOINNWUNƐ SONE, NA OSA LE TEMA MAA ƆBO SO’",awuradea womvo nwone asone na wosale tema a ma ɔbo so,0.8,0.2273
+73,YƐNATE RADIO SO YƐHANE NZƐMBA NE,gyɛ natewadii so yɛ hanezɛba n,0.8333,0.2222
+74,"BƆ YEHOWA AHYƐ BƆ KYƐ ƆKƆYƐ YE KYẼA BIE NE, ƆKYEKYE YƐ WORA",boyiho ahyɛbɔkyɛ ɔkɔyɛ ɛkyena biɛ n ɔkyekyeeyɛ wora,0.8462,0.2391
+75,"Sɛ yenwu bɔ yeti yeɛ Yehowa mane atee maa Yob nwuni amaneɛ ne a, sɛɛ yeɛ ɔkɔboka yɛ ɔ?",sɛ yɛ nwoboitie yɛhu amaneate maayɛbu nwoneamaneɛ ne a sɛɛyɔkɔbɔkayɛɔ,0.8421,0.2727
+76,"BƐBƆ BƐKƆHƆ ANWURO NE, SƐ BENU SONA BƆ ƆPƐ YEBO NE FI ASEƐ HE SO A,",bɛpɔ bɛkɔhɔ aworɔn sɛ bɛnno suna bɔpɛɛbono efiasɛ ɛhea so a,0.75,0.3
+77,YƐ NZƐMBATRƐLƐ ADWUMA BƆ OLIMOA Ɔ,yenzemba trelaeduma boli moawo,1.0,0.3214
+78,YƐKƆYƐ SƐƐ NÉ YAHƆSO YASÕ YEHOWA MMERƐ BƆ . . .,yɛkɔyɛ sɛɛ ne ahɔso aso yɛhu a merɛ bɔ,0.75,0.2353
+79,Nzu Yeɛ Asafo Nu Mbanyi Kɔhora Kɔyɛ Ɔ?,egyureyo ba waala kɛna no ne keŋ gakyɛɛ nsu yasaafonom baayikorhaa kɔ yɛɔ,1.625,1.3
+80,"Kyɛbɔ né Yesu susu nningyein nwo ne, yɛkɔnea bɔ somafoɛ Petro sua fili nu, ɔne bɔ yɛkoso yɛkɔhora yekosua yekofi nu ɔ.",kyɛbɔne yesu susu ne ngyenwon yɛkɔ neabɔ somafɔ petro suafilin ɔne bɔ yɛko so yɛkɔhorayɛ kosua ɛ kɔfi no ɔ,0.8182,0.1489
+81,"Ɔbaadwu sɔ mmerɛ ne mukoraati, ne Bible Asuafoɛ nemɔ falle dumaa Yehowa Adanzefoɛ ne bɛtolle bɛnwo so. Nakoso ngakangaka, beenwuni kyɛ yenwo hia paa kyɛ bekoli Yehowa nwo adanzeɛ.",ɔbaadwu sɔ merɛ na mu koratin ne baabu asuafoa ne mɔfale dumaa yehu adanzefoɛn bɛtole bɛnwo so na akosongakangaka bɛwuni kyɛ ɛwu nhiapaakyɛ bɛkɔ li yɛhu aho adanzeɛ,0.7586,0.2109
+82,Ɛwɛnelɛ Waen INTANƐT SO NWOMAA AKORAEƐ ™,ɛwɛ nenɛ wanta nɛ soo ma akora ye,1.3333,0.303
+83,Ɔhene Yoase yɛle nanu ɔ?,ɔ heme yoase yɛle na nuɔn,0.8,0.1053
+84,ATEE BƆ YƐKƆFA SO YƐKƆHÃ NAHORƐ NANWO DWIRƐ Ɔ,aten bɔ yɛfaso yɛ kana horɛ na awondwerɛ ɔ ngyikyɛmu eburuemisa,1.0,0.7568
+85,BƆ ƆKƆBOKA WƆ MAA EKOSŨA NIKYEE YÉ Ɔ,bo kobukho mai kusiani chi yo,1.0,0.5862
+86,BƆ ƆKƆBOKA YƐ MAA YƐKƆFA YƐNWO YƐKƆTO YEHOWA SO Ɔ,bɔ ɔkɔbokayɛ maa yɛkɔfayɛwo yɛkɔ tee ho asoo,0.8,0.125
+87,ɔboka mmenia maa benya ngõa ɔ?,obɔkaminiama be nyangwao,1.0,0.2917
+88,Yɛkã nzɛmba ne yekyire mmenia ahoroɛ wɔ Tanzania,edwuro wo baahwere bagbiafoto nawo ne kengachɛ yɛ kanzɛmba ne yɛchereminia horrɛ wɔtanzania,1.5,1.1951
+89,"e Nikyee bɔ né sɔfo panyi ne yɛ ye wɔ Mbata Kyẽa ne, sɛ ɛpena kyɛ enwu bɔ okyire a, nea vidio bɔ ɔwɔ jw.org so bɔ ye dwirɛti yeɛ ole The Tent ne .",ebo bredwira ne kengakyɛ nkhee bɔ ne sofro pan ne yɛ wɔ mbata kyean sɛ kpanakye ŋwu bo khiraa nea video bɔ ɔwɔ gye dobw dotɔk so bo idwretio le de tenten ebo brejwure nasi,0.8529,0.6667
+90,"Y’abusuafoɛ bɔ bɛnne asafo nanu ne, nzuati yeɛ odikyɛ yenya bɛnwo aboterɛ, na yenya gyidie kyɛ bɛkɔhora bɛkɔɔsõ Yehowa kyẽabie ɔ?",yɛbusunafoɔ bɔ bɛneasafona nu no ngye ɛteɛ ɔdekyɛ yɛ nya bɛnhwa botrɛ na yɛnnya agyidie kyɛ bɛkɔhɔra bɛkɔɔso yɛhu akye abia ɔ,0.8571,0.2571
+91,YEHOWA NE YESU TE EDWIRƐ BO,yehrua ne yesu tie dwurabo,0.6667,0.2273
+92,"“Mangora mammɔ edwirɛ naso mangyire ebiala, yeti ɛyalɛ bɔ né mefa nu, mva nwurale menwo.”",maagora maamu edwere naaso maangyire ibia la yiti ɛya lɛbɔne mefa no nni mvanwurale mewo,0.9333,0.2143
+93,Aso Étie Kɔkɔbɔ Ahoroɛ Ne?,asụ etie kɔkɔbaahụre n,1.0,0.3333
+94,Yekonwu bɔ yɛkɔhora yekosua yekofi abɔfo nemɔ berɛ ɔ.,yekom bɔɛkɔhora ɛkosua ekofi abɔfo ne mɔ berɛ ɔ,0.7778,0.1591
+95,BƆ ƆKƆMAA GYINAYƐƐ BƆ ESI NE KƆHƆ YÉ Ɔ,bɛkɔma agyena yɛba ɛsi ne kɔhoyɛ ɔ,0.7778,0.2667
+96,Tworɔ wɔ mmuayɛɛ ne wura wa,nnyikyeremo wɔngora nzemmisa a solo ma nwo dwere benni yi ayɛnzee ɔ,2.0,2.0909
+97,nzu yeɛ yɛkɔhora yɛkɔyɛ mmerɛ bɔ ɔyɛ se ma yɛ kyɛ yekodwu yenwo ne?,nzuɛ yɛkɔhora yɛ kɔ yɛ merɛbɔ yɛse ma yɛkyɛ yɛkɔdwue nwo ne,0.7857,0.1321
+98,"Mmerɛ bɔ bɛwole Yesu ne, nzuati yeɛ Yosef ne Mary hɔleso tenane Betlehem, ná baangɔ Nasarɛte ɔ?",merebɔ bɛwole yesu n nziatiera yosef ne manre hɔ le so tena ne beteleham na bangɔ nazareteo,0.8824,0.2105
+99,YEHOWA KORA FA YE TUMI SI NIKYEEBIE ATEE,yiho akorafa yitum si ne kye biaten,1.0,0.2424
+100,"a BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Yesu yɛ nikyeebie fa boka ye asuafoɛ nemɔ wɔ foto bɔ ɔwɔ bɛen so nanu. Yeɛ foto bɔ ɔwɔ famaa so ne koso, asafo nu somvoɛ bie boka biaa panyi bie bɔ ɔwɔ asafo nanu ne.",foto bɔ yesu suawo wɔ gyikye maburu ni kon ye wo dwurahe yesu iyɛ nikye bie faa boka yɛɛsuafɔne mmɔ wɔ foto bɔ wɔ bɛn so ne n yɛɛ foto bɔ wɔfɔmaaso ne koso asafo no somvo abie boka biakpan abie bɔ wɔ asafona nu n,0.8182,0.3733
+101,‘Yehowa Yeɛ Koɛ Ne Te Ye Deɛ Ɔ’,yehua yeẹko ẹne tee di ọ,1.0,0.3636
+102,ƐNNƐ PAA YEƐ ODIKYƐ YƐMAA ALIEMAAMƆ NWU YE KYƐ YEKURO BƐ DWIRƐ Ɔ,ɛnɛ payo dekyemalimamu nwui kyɛ yekuru bedwuroo,0.9231,0.3846
+103,"“Sunzum Nu Akyɛdeɛ” Bɔ Ele Ye Ne, Ɛne Mmenia Hyɛ",sonzum no atɛ de bolaye n ɛnemeniasɛ,1.0,0.3333
+104,"KYƐBƆ ƐKÃ KAR NE, ENWU YE SƐ?",ca bwɛ ka kan e wui sɛ,0.8571,0.4762
+105,yɛkɔpena mmerɛ yɛkɔkenga Bible ne ɔ?,ya kwa pnamri ya kwa kingabibu nio,1.1667,0.5
+106,"KYƐBƆ YEHOWA FA BƆNE KYƐ NE, BƆ YESUA YEFI NU Ɔ",kyɛ bɔyɛ ho afa bɔne kyɛn bɔyɛ sua yɛfi no o,1.0,0.1944
+107,NWU BƆ YETI YEƐ BƐNYE NGYE ASAFO NANWO NE,wuboiti ɛ bɛnyengye asafo na ho n nyikye mu wɔ nzow ɛnzemisaa,1.3333,0.8182
+108,Né somafoɛ Pɔɔlo mbena kyɛ ɔfa ye haw to aliemaamɔ so,foto na nunu yanwui kyɛ somafo pɔɔlo na merenzia neobie mɔ nwo ɛtene sua ɛgyerɛ bɔ bahyerɛ bagua foto na abɔne kenga kyɛ na somafo pɔɔlo mbena kyɛ ɔfa ye ha oto ɛreɛmaamɔ so,2.5455,2.3953
+109,YƐKƆYƐ SƐƐ NÉ YAHƆSO YAGYINA PINDINN?,yɛkɔ yɛsɛ ne ahɔ so yɛgyena pendin,1.1667,0.2258
+110,"SƐ YƐKƆHORA YƐKƆFA Y’ADWENE YEKOSIE YEHOWA SOEN SO A, NZUATI YEƐ  . . .",sɛ kɔhorɛ kɔfa yɛ adwene yɛkɔsie yɛ hu asonso a,0.9091,0.3846
+111,"Sɛ Ɛyɛ Agyaa Nhyehyɛɛ A, Bɔ Ɔkɔboka Wɔ Maa Ɔkɔhɔ Yé Ɔ",sɛɛ yɛ janshushaa bɔkɔ bɔkɔ maa ɔkɔho yɛɔ,0.9167,0.3902
+112,"Sɛ me gya gyi gas naso, na odikyɛ meye mefa metia breke naso ndɛ a, aso ɛyɛ a ɔyɛ se mame kyɛ ngɔyɛ sɔ anaa?",sɛ migya gyinga ase na so na odikyɛ meyɛ mefa mitia brek na so nda a aso ɛyɛ a ɔyɛ sema mekyɛngɔyɛ so anaa,0.64,0.1111
+113,"Kyɛbɔ Benwu Ebie Bɔ Wayɛ Bɔne Anwumvoin, Na Befi Ɔdɔ Nu Bɛboka Ye Ɔ",kyɛ bo benwuebie bo ayebɔnea wunvo i na befeɛɔdo nu bɛbokayɛɔ,0.8571,0.2075
+114,"Sɛ Nningyein Angɔ Kyɛbɔ Ekuro Po A, Nnɛmaa W’aba Nu Bu",sɛ ninjen angɔchɛ bwokuro pɔ a nâ mmaa wa ba nu bu,0.8182,0.2619
+115,"KƆSO BƆ MBAEƐ, NA ƆKƆMAA EKOPINGYE YEHOWA",kɔso bɔmba yɛ na kɔmaiko pinjee ho a,0.8571,0.2353
+116,"Nzu yeɛ bɛbɔ bagya ne yɛ a, okohyire kyɛ bele obuo bɛma bɛnwo ɔ?",nzu yɛɛ bɛwo bagyaa ne yaa o gohyerɛkyɛ beloo buo bema bɛn ɔ,0.7857,0.2449
+117,NZU YEƐ ƆBOKALE PETRO MAA ƆHƆLE SO SÕNE YEHOWA Ɔ?,nzwiye bokale petro maa ɔhɔle so sene yɛho a,0.6,0.2051
+118,Yasua Nningyein Pee Yafi Yɛ Kyerɛkyerɛniɛ Bɔ Ɔtra Biala Ne Berɛ Wɔ Y’asetena Nu,yɛsɛ ne ngyɛ pɛ yɛfi yɛkyerɛtwɛ nneɛ bɔtrɛ biɛla ne brɛ wɔ yɛse tene ne,0.9286,0.3692
+119,SƆƆLO BƆ OFI TAASO NE BƆLE ASU,sɔɔl bo fitaa sɔɔ ne bɔlea su,0.8571,0.1667
+120,"Yɛkɔnea bɔ yeti yeɛ odikyɛ yɛbɔ asu, mvasoɛ bɔ ɔwɔ so, ɔne bɔ odikyɛ ebie yɛ kora ne wabɔ asu ɔ.",yɛkɔneaboitye odikyɛ yɛbo asu mva so ɛbɔ wɔ so ɔne boodekyɛ ebie yɛkwra ne wabo asu ɔ,0.6667,0.1507
+121,Nya Gyidie Kyɛ Yehowa Le Tumi Bɔ Ɔkɔfa Kɔboka Wɔ Ɔ,niagyidiekyɛ yɛhua letumi pɔfa kɔbokawɔ,1.0,0.225
+122,BƆ YƐKƆHORA YƐKƆYƐ YƐKƆBOKA BƐ Ɔ,boyekohrayeko yeyekobukabeo,1.0,0.4444
+123,Nhyiraa beni yeɛ ɛmɔanya ye wɔ sɔ afoɛ he mukoraati nu ɔ?,nisurabi ni yɛ wɔma anya e wɔ sɔ afo ahiam kurɛɛ ti no ɔ,0.9167,0.4
+124,"Kyɛbɔ Yesu yɛle ne, yɛkɔyɛ sɛɛ né yanya gyidie kyɛ mmenia kotie nzɛmba ne?",nkyɛbo yesu yelen yɛkɔ yɛ sɛɛ ne yɛ nyagyidie kyɛ meneakɔti nzɛmba ne,0.6429,0.1695
+125,"Yekonwu kyɛbɔ Yehowa boka yɛ maa yɛtwe yɛnwo yefi bɔne nwo ɔ. Yekosa yɛkɔnea nningyein biemɔ bɔ wayɛ, kyɛbɔ ɔkɔyɛ a ɔkɔye bɔne kofi yɛnwo, ná wama yɛ daa ngoa ɔ.",yɛkonh kyɛbɔ yeho abokayɛma yɛtwenyɛwo yɛfibɔne nwɔ yɛko sɛɛkɔneane ngyem biomaɔ bɔ wɔayɛ kyɛbɔ kɔye a ɔkɔyebɔne kɔfi yɛ nh na wɔamayɛdaa ngoa ɔ,0.8065,0.2047
+126,Kɔso Nea Kuro Bɔ Ɔngɔsɛkye Lé Ne Atee,kɔ so nea kro bɔngɔ sâchile na te,1.0,0.3
+127,"BƆ ƆKƆ SO WƆ “SORƆ DƆ HENE NE” ƆNE “NGWAEN DƆ HENE NE” B’AFĨA NE, NZU YEƐ ƆMAA YENWU YE Ɔ?",baɔkɔso wɔ sorɔ dɔɔhene ne ɔnengaan dɔ ɔhene ne bafia ne ndu yɔ ɔmaa yɛ nwue o,0.6667,0.1905
+128,"Gyidie bɔ yele ye wɔ Yehowa nu ne, sɛ yɛmaa enu yɛse a, ɔkɔboka yɛ maa esuronyi ngɔhã yɛ.",gyidie boilei woyihoanu n seɛma ye no yɛ se a ɔkɔgbokayɛ mai soi ngɔ ha yɛ,0.8421,0.3088
+129,"Dɔktafoɛ biemɔ kã kyɛ, bɛbɔ bayɛ mbanyi ne sɛ bɛboka mmenia a, benyi bɛkyɛ na adwene-dwene nhyɛ bɛ so.",dɔrtafo biemɔ kankyɛɛ bɛbɔ bayɛmbain sɛ bɛbɔ kamani a bɛnyi bɛkyɛ na adwendwere nhyɛ bɛso,0.6316,0.1875
+130,“Ɛ́MƆLE ƐMƆ NWO ƐMƆ NWO BƐTO NU”,ɛmale mɔnwo mɔnwo bɛtun,1.0,0.2174
+131,Yehowa kyẽa ne bɔ yɛkɔhɔso yɛkɔnwondɛ nanwo ɔ?,yehu akyeane bɔɛ kɔɔseɛ kɔ ndɛ na oo,1.0,0.3421
+132,Pena Nekaa Pá Bɔ Ɛkɔtena Kosua Nikye Ɔ,pananka pa ba kacela kusencao,1.0,0.5484
+133,BƆ YETI YEƐ YƐKƆHORA YƐKƆFA YƐNWO YƐKƆTO YEHOWA SO Ɔ,bɔ yiti yɛ yɛkora yɛkɔfayɛo yɛkɔ toyeho asoɔo,0.9,0.186
+134,"Sɛ Bible ne ka “bɔne” a, ɔkora kyire nningyein pee:",sɛ barbɔne ka bɔne a ɔkora ɛkyere ne ngem pen,0.6,0.3158
+135,"BƆ NÉ “ATẼE KRONGRON” NE KYIRE WƆ YUDAFOƐ NEMƆ ABERƐ SO, ƆNE ƐNNƐ Ɔ",bɔne atee koronvro ne kyere wɔ yudafoɛ ne muabrɛ so ɔneɛ na ɔ,0.6429,0.1961
+136,"Nzu yeɛ sɛ ebie yɛ a, okyire kyɛ ole aboterɛ ɔ?",nzuesɛ ebia ya a okyirekyo laa boteraɔ,0.9091,0.2
+137,"Mmerɛ beni yeɛ mmenia hyɛle yebo kyɛ bɛ́fa “Atẽe Krongron” naso wɔ yɛ mmerɛ he anu ɔ, na adwuma beni yeɛ ebiemɔ yɛle fa siesiele sɔ atẽe naso ɔ?",mmerɛ beni yɛ mmeniahyɛlee bokyɛ bɛfaatee konlongoro na so wɔ yɛ mere hea nu ɔ na adwuma beni yɛ ebiemɔ yɛ lefa sie siele so atee na so ɔ,0.7241,0.1171
+138,"SƐ NNINGYEIN SESÃ WƆ W’ASETENA NU A, DA NDEASEƐ ALI",sɛ ningense sa wa wase tera no a dandeasiali,0.9,0.225
+139,NZU YEƐ ODIKYƐ YƐKAE MMERƐ BƆ . . .,nzu yɛwdekyɛ yɛ kae merebɔ,0.8333,0.2083
+140,"Bɛbɔ bɛbaagya ne, sɛ bɛmaa b’ayeforɔ ne yɛ korokoro a, ɔkɔboka bɛ sɛ?",bɛbɔ bɛbaagyane sɛ bɛmaa bayeforɔ ne yɛ kro kro a ɔkɔbɔka bɛsɛ,0.5385,0.0566
+141,"Mmerɛ bɔ né mmenia nemɔ pena kyɛ bɛfa Yesu besi hene ne, nzu yeɛ yesua yefi bɔ ɔyɛle nanu ɔ?",merɛbɔ ne menia ne mɔponakyɛ bɛfa yesu bɛsihenɛ ne nwie yɛsua ɛfi bɔɔyɛle na nu ɔ,0.8,0.1831
+142,Yɛkɔnea kyɛbɔ yɛkɔfa animnyam bɔ ɔfata Yehowa ne yɛkɔma ye ɔ.,yakonia chebo yekofaa ni mnyambo fata ihua ni yekomayeo,1.0,0.38
+143,"b BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Taluwa bie pɛnu wɔ nekaa bɔ bɛ́yɛ nhyiamu ɔ, na wate kyɛ yɛ pɔfoɛ biemɔ kekã yɛnwo dwirɛ bɔ ɔtte nahorɛ wɔ aluo dɔ. Siɛ ye waagyina trɔg bie anwo, na aliemaamɔ di ye adanzeɛ.",oto na nu n yɛnwukyɛ tɛre wa bie pe nu wɔ ne kaa bɔ bɛyɛnhyiɛmu ɔ na wɔ atekyɛ yɛpɔfo biɛmɔ keka yɛ nwu dwerɛ bɔtena horɛ waareodɔ siayi wa agyinatoragubia nho na areemaa mɔ dia danzeɛ,0.907,0.2675
+144,MMERƐ BƆ YAHYƐ YEBO YƐNE YE SUA BIBLE NE,mrɛ bɔyahyɛ e bo yɛnii suanba e bon,1.0,0.375
+145,"Nzu yeɛ ɔbokale Pɔɔlo maa ɔfale anigye sone Yehowa, ɔmva yenwo kyɛ odwu mmerɛ bie a ne ye abanu abu ne?",nzio bokale pɔɔl maɔfalɛ ne gyesu ne yeho a ɔmvan nho kyo ogwumre bi a ne aba no abu n,0.8571,0.3086
+146,Jody Jedele ne ɔye Damaris,foto na non yenualiema jɔ di jedli ni ɔ ye damaris,2.0,1.0455
+147,NZU YEƐ YEHOWA AYƐ BƆ OKYIRE KYƐ OBU MMRASUA Ɔ?,nnzu yeyeho a yɛ botyekye hɔbu mrɛ sua ɔ,0.9,0.3514
+148,“Mengɔye Me Sa Wɔ Wɔ Bo Le”!,mg 예에싸오 보l리,1.0,0.8421
+149,Kɔso Tu Amirika Ne,âjwerâ bwô waala ka na nu ne keŋga châ kôso tua mne kan,3.0,2.3333
+150,NZUATI YEƐ ƐPENA KYƐ ƐBAYƐ ASAFO NU SOMVOƐ Ɔ?,ezuɛ ti ɛ ɛpena kye ɛbaye asafo no so ovua wɔ,1.0,0.3056
+151,Ngɔm Bɔ Yakob Hyɛle Kora Yeɛ Owu Ne,ejure ba walakana nu ni keŋga chɛ ngɔn ba yakɔboshale korayeo wun,1.5,1.2857
+152,NWA YEƐ ƆKƆHORA KƆMA ME AFUTUE BƆ ƆTE PÁ Ɔ?,nwa yokora kɔmamea futue bɔte paɔ,0.9,0.2121
+153,"NEKAA BIALA BƆ YƐHƆ YƐƐSÕNE NE, YƐNYE GYELE",nekaabiala bɔyɛhɔ yɛɛso ne n yɛnye gyele,0.75,0.0571
+154,MMERƐ BENI YEƐ ODIKYƐ YƐMAA MMENIA NWU NAHORƐ NE Ɔ?,mere ben yiodikyɛ yɛmami neenwu nahorɛ ne ɔ ngyekye muburu ne na nsɛ misa,1.3,0.8293
+155,Srɛ Yehowa kyɛ ɔboka wɔ maa ɛhora fa bɔne hyɛ.,sre yɛhuwakyɛ ɔbo kawo m ɛhorafa bɔne hyɛ,0.8,0.1667
+156,b BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Mmrandeɛ nanu kõ yɛ nhwehwɛmuɛ nea kyɛ odikyɛ ɔkɔ paati ne bie anaa ɔnzɛkyɛ ɔkɔ.,fotobɔ yɛ asusui mwɔ ndekye muammɔtwrɛn hwu dwerɛhe marandee na no koyɛ nhwe mua ne akyɛ odekye ɔkɔ paate ne bie anaa ɔnzekyɛ ɔkɔ,0.8261,0.5057
+157,"Bible kengalɛ nwo nhyehyɛɛ bɔ ɔfa Yesu wue nanwo bɔ bɛfa bɛba Daa Asɛm nanu ne, bɔ mmɔden kyɛ ekoli ye si.",bare bɔ kenga lɛ mo nyehyɛ bɔfa yesu yiwe na ho bɔbɛfa bɛbadaasɛm na no ni bɔmɔde nkyɛ ɛkɔlesi,0.9545,0.2771
+158,MBAEƐ,ngyikye muansa nzɛmi sa nzietiɛɛ kɔhrae kɔhakyɛ mbayɛte awawadeɛ ɔ,10.0,10.4
+159,"Mmrandeɛmɔ, Nzu Yeɛ Ɔkɔboka Ɛmɔ Maa Ɛmɔkɔɔyɛ Mmenia Bɔ Bɛbɔ Bɛnwo Mmɔden Ɔ?",mmra ndeɛ mɔ nyi ɔkɔbokɛ momɛmɔ kɔyemenia ɔbɛbɔbɛ nwomɔde ɔ,0.9231,0.2295
+160,"MMENIA BƆ BƆNE WƆ BƐNWO NE, ANYELASOƐ BENI YEƐ YEHOWA AMAA BANYA Ɔ?",meniabɔbɔne wɔ bɛwɔn anye lasoebbeni yeye hu amaa banyao,0.8462,0.2075
+161,"Yekonwu kyɛbɔ nimdeɛ, ndeaseɛ, ɔne nworɛ kɔboka yɛ maa yekosi gyinayɛɛ pá ɔ.",ɛkɔnukyɛbɔ nimdeɛ ndeaseɛ ɔne nwrɛkɔbokaɛmaa ye kosi gyina yɛ paa o,0.7692,0.1639
+162,Nnefi Honhom Nu Paradise Nanu Lé,ne fi huomum nu paadise nanunle,1.0,0.2963
+163,KYƐBƆ ƐNE EBIE KƆHYƐ YEBO KƆYƐ AGYAA NHYEHYƐƐ Ɔ,kyɛbɔ ane ɛbie kɔhyɛɛ bo kɔyɛagyaanhyehyɛɛ wɔ,0.8889,0.1282
+164,"Adesũa he kɔboka yɛ maa yekonwu bɔ odikyɛ yɛyɛ, na wamaa gyidie bɔ yele ye wɔ Yehowa ahyehyɛdeɛ nanu ne ayɛ se.",adesuan heekɔbka ɛmaa yekowu bodicyɛ yɛyɛ na wamaa gidie boyelee woyehu ahyehyɛdeɛ na nu niayɛ se,0.7727,0.1818
+165,"Sɛɛ yeɛ Yob dwirɛ ne maa yenwu kyɛ, Yehowa le tumi wɔ nikyeebiala so ɔ?",sɛɛ yɛɛ iyɛobodwrɛ ne maa yɛ nwu kyɛ yihɔ letumi wɔ nikyɛ biala so ɔ,0.6667,0.2182
+166,YƐ SƆFO PANYI NE KƆHORA KƆBOKA WƆ,yesofu pen kohra kobuko,1.0,0.5556
+167,Bɔ Ɔkɔboka Wɔ Maa Ekoli Akɔnnɔ Bɔne So Ngunim Ɔ,mboko bukoma ekoriakono boni soŋguni mo,1.0,0.4474
+168,Bɔ Ɔmaa Yenwu Kyɛ Yehowa Kuro Yɛ Dwirɛ Paa Ɔ,edwerɛ bɔ walakana nu ne kengakyɛ bɔmmayɛwukyɛ yɛho akreyɛ dwerɛ paa ɔ,0.9,0.9714
+169,"Yeti nnɛmɔmaa yɛyɛ pɛsɛmangomenya, na yɛmoma yɛnwo so kyɛbɔ mmeni pee yɛ ye ɛnnɛ ne. Na mmom nhyiraa biala bɔ Yehowa afa alo yɛ ne, ɛmɔma yehyire kyɛ yɛnye sɔ.",na mo maa yɛyɛ pɛsamanguminya na yɛmomaa yɛwonso kyɛ bɔ menipen yɛ ɛnɛ ne na mom nzerɛ bialabo yɛhu afaalo yɛ ne ɛmo maayɛ sere keɛ yɛnye sɔ,0.7667,0.2857
+170,"SƐ BEBUA WƆ NDƐNGYEA A, NEA YÉ WƆ KYƐBƆ ƐKƆYƐ WƆ NIKYEE NANWO",sɛbebuawandangye a niaye wakyɛbɔ kwayɛwɔ ni kye nao,0.9231,0.25
+171,Aso Aboa Wɔnwo Ama Kyẽa Bɔ Yenwo Hia Paa Wɔ Afoɛ Nanu Ne?,aso aboa wowoamakyea bɔɛ nwuhia paa wɔafoɔ na nu nu,0.7692,0.1818
+172,Nzuati yeɛ odikyɛ yedé yɛtonu kyɛ Yehowa afa yɛ bɔne ahyɛ yɛ ɔ?,nhueti i odikye yɛde ya tunu kyɛɛ yeko afa yɛbɔne ahyɛyɛ ɔ,0.9231,0.28
+173,"SƐ ƐTO WƆ BOASE SŨA NYAMEƐ DWIRƐ NE YÉ A, WƆNYE KƆGYE",sɛ ɛtowɔbo ase seɛ nyame edwura ne yi a wɔnye kɔgye,0.5833,0.1463
+174,BOKA WƆ BIBLE SUANIƐ NE MA ONWU KYƐBƆ ƆKƆFA YEHOWA SOEN KOLIMOA Ɔ,bɔkɔɔbae busuɛneɛn ma onwukyɛ bɔkɔfa yehu asoe kole moa ɔ,0.8462,0.283
+175,Yɛkɔyɛ sɛɛ né yasiesie yɛnwo yama Yehowa kyẽa bɔ ɔba ne?,yɛkɔ ɛsɛ ne asise yɛ wɔyama yoho akyeabɔban,1.0,0.2889
+176,Mvasoɛ beni yeɛ yenya yefi Yesu wue naso ɛnnɛ ɔ?,mfasoebin iyinyayifiiyesu iwe nasoɛ neɔ,1.0,0.3421
+177,Mene Heinz ne Tatjana (Tatjana yeɛ owura afia berɛ ne),ejurebọbavire egwia fo oton abọnekenga che mene henzne tasjana tasjana yi owre finabrel,1.3,1.1628
+178,"SƐ ƐTE AWOFOƐ A, ƐKƆYƐ SƐƐ NE ABOKA ƐWA MAA . . .",sɛɛtiaofu wa ɛkwakɛsɛɛ na bokaɛ wa maa,0.9,0.2424
+179,"Ɔnate kyɛ Yehowa nyɛ nyeyemuɛ nati, sɛɛ yeɛ ɛhene boka yɛ ɔ?",ɔna tikyɛ ihu anyɛ yii muanati sɛɛyɛɛ ɛhene bokayɛɔ,0.9167,0.234
+180,NZU YEƐ YESU YƐLE BƆ ƆBOKALE YE MAA ƆFALE YE ADWENE SIELE YEHOWA SOEN SO Ɔ?,nzuo yesu yɛle bɔ ɔbokae maa ɔfaa yɛadwene siele yɛho ason so ɔ,0.5625,0.2034
+181,"TWORƆNZƐM BƆ OLILI SO YE, NZU YEƐ ƆMAA ENWU YE FA GYINAYƐƐ PÁ BƆ EKOSI NANWO Ɔ?",trensɛm bolili sɔ e nhi yɛ ɔma ewui fɛgyena yɛɛ paa boekosi na hɔn,1.0,0.377
+182,Sũa Yehowa Subaen Bɔ Ɔyɛ Nyemene Nanwo Nikye,sia yehowaso ban bɔyɛ nyimeni na wo ni kyi,1.125,0.2162
+183,YƐKƆYƐ SƐƐ NA YAHƆSO YANYA ABOTERƐ?,yɛkwɛ yɛ sɛɛ na yahɔso yɛnya aboterɛ,0.5,0.1034
+184,"ƆDƆ BƆ YEHOWA LE MA YƐ NE, ƆBOKA BIBLE NU DWIRƐ BIEMƆ BƆ YEDIMOA YESUA NASO",ɔdɔ boyɛ hualemayɛ n ɔbokabaa bono dwure biama boyɛdimuayɛsuana so,0.9375,0.3051
+185,BƆ ƆKƆBOKA WƆ MAA EKOSŨA NIKYEE YÉ Ɔ,boko bukoma īkusia ncheio,1.0,0.6207
+186,"SƐ EHŨ NEA PONOGRAFI A, NZU YEƐ ƐKƆHORA KƆYƐ Ɔ?",sɛ ahu niapo no grafia a nzu yɛ ɛkoha kɔ yɛo,0.8,0.25
+187,KƆSO NYA GYIDIE KYƐ YEHOWA AFA WƆ BƆNE AHYƐ WƆ,kɔso nnyagyidiekyɛɛ ihu afa wɔbɔne ahyɛ ɔ,0.7,0.1892
+188,Bɔ Ɔkɔboka Wɔ Maa Ekosũa Nikyee Yé Ɔ,gboọkọbo ka wọmai ku suẹ ni ceiyọọ,1.0,0.5172
+189,"Sɛ ɛfa w’adwene sie bɔ ele ye naso, na ɛbrɛ wɔnwo ase a, sɛɛ yeɛ ɔkɔboka wɔ maa wɔnye kɔsɔ bɔ ele ye ɔ?",sɛfa waadweni sii buelai na so na berɛ wɔnoase a sɛ yɛkɔbɔka ɔmaa wɔnyekɔso belai ɔ,0.875,0.2763
+190,"Y’abusuafoɛ Bɔ Bɛnne Asafo Nanu Ne, Nzu Yeɛ Yɛyɛ A Ɔkɔmaa Yɛne B’afia Kɔyɛ Kama Ɔ?",yɛ busuafoɛ bɔbɛneasafona nu no nziyɛ yɛyɛ a ɔkɔmaayɛ ne bafiakɔ yɛ kam,0.875,0.1111
+191,KYƐBƆ YEHOWA HYIRELE YISRAELFOƐ NEMƆ ATẼE Ɔ,gyabo yi hu ahyɛle israelfo ne mo ateɛ ɔ,1.1429,0.3784
+192,Bible Nanu Dwirɛ Biemɔ Bɔ Ɛkɔhora Kɔyɛ Nu Nhwehwɛmuɛ Ɔ,edwere bɔ waaraka na no ne kengakyɛ bae bo nano dwere biɛmɔ bɛkɔworakɔyɛ no nhwe mu ɔ,1.6,0.9333
+193,MA MMENIA NYE GYE YENWO KYƐ BƐKƆWA HONHOM NU PARADISE NANU BIE,mam mɛnianye gyee wo kyɛ dɛ kɔ wa hom noperaadise na no bii,1.0833,0.2353
+194,"Sɛ Ayɛ Panyi Po A, Nzu Yeɛ Ɔkɔmaa Wɔnye Kɔgye Ɔ?",sɛ yɛ pan poa njyiyɔ kɔma wanyekɔgyeo,0.9091,0.2778
+195,Asafo Nu Mbanyi—Ɛmɔ Kɔyɛ Sɛɛ Ná Ɛmɔ Asuesũa Gideon?,asafono mban ɛmɔkɔ ɛsɛɛ na mmɔ asuosua gidio,1.0,0.2439
+196,Sɔ ndworɔleɛ mmaammaa ne maa enwu bɔ oliliso hemɔ:,sondralea maamaane maa âwu bo olilee so he mɔ,1.0,0.2927
+197,"Boka aliemaamɔ. Sɛ ɛkɔ adesua a, ɛne aliemaamɔ bɔ ngɔmmɔ, na wamaa bɛnye aha. Bɛbɔ bayɛ mbanyi ne koso, yɛ nningyein biemɔ fa boka bɛ.",bokaliemaamɔ sɛɛkwade sua a anealiemaamɔ bɔngɔ mɔ na wɔamaa bɛnyia ha bɛbɔ bayembani ne ko so yɛ ningye bie mɔ fa boka bɛ,0.76,0.1058
+198,"BƆ YETI YEƐ ƐNÕ NZÃA, ƆNE NZÃA PẼEMBE BƆ ƐNÕ NE, SUSU YENWO",boitiyeɛnonzaa ɔnenzaa pen ben bɔ ɛno ne susuyen,0.8462,0.2889
+199,"MMERƐYƐLƐ BƆ NÉ PETRO LE YE, ƆNE NHYIRAA BƆ ONYANE Ɔ",merɛ yɛlɛ bɔ ne petro lɛe ɔne nsyerabɔɔnyaneo,0.8182,0.2195
+200,"‘ASEƐ YE ASO MUKORAA NDƐENBUALƐNIƐ NE, OKOBUA NDƐEN BƆ ƆTENGYƐ Ɔ’",aseɛ nyɛsoɛmukoraa ndenbuale nian ɔkɔgbuandɛne bɔtengyɛwo,0.9091,0.3077
+201,"ALIEMAAMƆ BƆ BƐTE SIGYAFOƐ NE, SƐƐ YEƐ YƐKƆHORA YƐKƆBOKA BƐ Ɔ?",alima maɔ bɛte sigyafoɛn sɛɛɛ kohoayɛ kɔboka bɛɔ,0.9091,0.22
+202,"d BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ.: Horst Henschel ne ye awofoɛ babɔ nu bɛbɔ mbaeɛ, kyɛbɔ ɔkɔyɛ a okonya akokoduro, na wayɛ bɔ Yehowa kuro ɔ.",foto bɔwondekyemoa broniza ne broni nu n yenwo dwureehe host henkel ne yaawofoɛ babo nu bɛbɔm bae kyɛ bɔkɔye a okonyiakokoduro na waayɛ bɔ yɛho akoran,0.8214,0.4667
+203,Yekonwu kyɛbɔ Sadoke nwo dwirɛ ne kɔboka yɛ maa yekonya akokoduro ɔ.,yɛkonkyɛbɔ saadɔkon dwura ne kɔ bokae maɛkon yakudura ɔ,0.8333,0.3571
+204,Ɛkɔyɛ Sɛɛ Né Anwu Ye Kyɛ Yehowa Nye Gye Wɔnwo?,âkɔ yɛ sɛɛ neâwun e kyɛ yehu anye gye wɔ nw,0.9,0.2222
+205,"SƐ ANGORA ANNDWU BƆ AFA ASIE WƆNYE SO NANWO A, NNƐMAA W’ABA NU BU",saangran gwubua fa sii wɔne sona wo a ne maa waba no bu,0.8571,0.26
+206,"Kyɛbɔ Yehowa ye yekunu kyɛ nikyee ne, atee benimɔ yeɛ yɛkɔhora yɛkɔfa so yekosuesua ye ɔ?",tɛbɔ yeho ayei kuru tenkyɛn atem beni mɔ iɛ kɔraa yɛkɔfaso yɛkɔsuosuae o,1.0,0.3611
+207,"Sɔ dwirɛ bɔ makenga ye, ngɔyɛ sɛɛ né mafa maboka mmeni foforɛ?",sodure bɔmaakengae ngayɛ sɛ ne mafamaa bɔ kamenifofrɛ,1.0,0.2653
+208,yenwu ye kyɛ odikyɛ yetu ebie foɛ ne?,iwunchẹ odi che etu eli efuẹn,1.0,0.5517
+209,"FA WƆNWO TO YEHOWA SO, OFIKYƐ ƆNGƆYE YE SA WƆ WƆ BO LÉ",fa wɔwo tue hu a so o fechɛ ɔngwɔ yee sawo wɔ bolle,0.8462,0.3171
+210,Nzu yeɛ ɔkɔboka bɛbɔ bagya ne maa bekonya mmerɛ bɛkɔbɔ ngɔmmɔ ɔ?,nzui ɔkɔ boka bɛ wɔ bɛgya ne maa bɛkonyamerɛ bɛkɔbɔngɔ mɔ ɔ,0.8333,0.1538
+211,Yehowa To Yesa Frɛ Yɛ Kyɛ Yɛbra Ye Tena Sua Nanu,yehua to esa frâ yɛ chɛ yɛ bera ye tena sua nân,0.6364,0.2368
+212,Ngɔm Bɔ Yakob Hyɛle Kora Yeɛ Owu Ne,edwurɛ bô waalaka na nunikeŋga chɛ ngɔn bô yakôpohɛle kora yeo wun,1.5,1.3214
+213,"Bɔ ɔtɔ so nnu, sɛ ebie yɛ bɔne na wanzakyera ye adwene maa yeti bɛye ye befi asafo nanu a, sɛɛ aliemaamɔ kohyire kyɛ beté kuro ye dwirɛ, na bahɔso banwu ye anwumvoin ɔ?",bɔtɔso nnu sɛibeɛyɛ bɔne na wanza kyera yɛ adone maayit baiyi bafiasafone no a sɛyɛ nnebaamokɔhyii kyɛ bɛtekoroi dwure na bahɔhye bawui awnuvoɛɔ,0.8235,0.3282
+214,BOA WƆNWO MA NNINGYEIN BIEMƆ BƆ ƐKƆYƐ YE KYẼABIE Ɔ,boawan womaninjean biomɔ bɔ ɛkɔ yɛɛ chian bie ɔ,0.9,0.2927
+215,"Bɔ Ɔkɔboka Wɔ Maa Ekosũa Nikyee Yé Ɔ​—Sɛ Ɛkenga Bible Nu Dwirɛ Bie A, Fa Ye Kyɛ Edwirɛ Ne Sili Ne, Ne Ɛwɔ Berɛ Bie",sɛ ɛkendaba bu ne dwure bie a faekyɛ adwure ni silem ne ɛwɔberɛ bie,0.84,0.5116
+216,"SƐ W’ADWENE NU YƐ WƆ NAA A, NZU YEƐ ƆKƆBOKA WƆ Ɔ?",se wo dununu yowonna nzia kobukawoo,1.0,0.5143
+217,BƆ ƆMAA YƐKƆSO YENYA GYIDIE KYƐ BƆ YƐNYE LA SO NE KƆWA NU Ɔ,bɔɔmmaa yɛkɔ so yɛ nyaagyediekyɛ bɔyanyela so ne kɔwa nu o,0.7143,0.1304
+218,ƐMƆYERE ƐMƆNWO KYƐ ƐMƆKOPINGYÉ YEHOWA,ɛmɔ yerɛ mɔn ce mokopingye yehu a,1.4,0.3333
+219,Ɔkɔhyɛ aliemaa mmrienzua bɔ babɔ asu nemɔ ngunaen maa bɛkɔyere bɛnwo bɛkɔɔyɛ asafo nu asomvoɛ.,ɔkɔhyɛle ma noezuabɔ babo asone mɔ nguran maa bɛkɔ yere bɛnwo bɛkɔ ɔyɛ asafo nu aso mvoɛ,0.9333,0.1519
+220,"Sɛ yɛmaa mmenia nwu kyɛ yɛte edwirɛ bo a, sɛɛ yeɛ ɔkɔmaa asomdwee kɔtena asafo nanu ɔ?",sɛɛ maa meni anwu kyɛ yɛtie dwurɛbo a sɛ ɛyɛ kɔmaasom yie kɔtenasafo nɛ no ɔ,0.8235,0.1912
+221,"BƐBƆ BƐNYE GYE NZƐMBA NANWO NE, YESA YƐHƆLE BƐ BERƐ",bɛbɔ bɛnyi gyenzɛmbana nwo n yesayɛ hɔle bɛbrɛ,0.9,0.0732
+222,EDWIRƐ BƆ ANGELITO BALBOA HÃNE Ɔ,edere bɔ anjyale ito baaboahaneɔ foto na nun yewalema angyale ito baaboa,1.8333,1.5556
+223,BƐBƆ BABƆ ASU DADA NE,bebɔ ba bo sudadan,1.0,0.2353
+224,"Sɛ ɛte brasua na ehũ nea ponografi a, nzu yeɛ ɛkɔhora kɔyɛ ɔ?",sɛɛte brafia ne ewoniapono brafia a nviakoraakɔ yɛɔ,0.9231,0.3617
+225,SƐƐ YEƐ ƐKƆYE EDWIRƐ HEMƆ NOA Ɔ?,sɛyɛ ɛkɔyɛdurɛ hema noa o,0.8571,0.32
+226,KYƐBƆ EKOFI W’AHONE NU KƆBƆ MBAEƐ Ɔ,kyɛbo akofiw ahure nu kɔbɔmba yɛ ɔ,0.7143,0.1786
+227,Nzu yeɛ yesũa yefi bɔ Samson yɛle mmerɛ bɔ olili mvomsoɛ nanu ɔ?,enzu yɛyesuɛ efibɔsam sɛ yɛle merɛbo ɔlilivomswɛ ne nu ɔ,0.8462,0.2549
+228,BƆ ADESŨA NE KƆHÃ YENWO DWIRƐ Ɔ,ijreti yole obemáwayẹ den,1.0,0.92
+229,Aso Ɛkae Bɔ Yasũa Ne?,aso ɛkayi boya sian,0.8,0.3125
+230,KƆSO BOKA ƐWA MA YE GYIDIE YƐ SE,kɔso bo kaɛwa ma yagyedie yɛse,0.75,0.08
+231,SƐƐ YEƐ ƐKƆYE EDWIRƐ HEMƆ NOA Ɔ?,sɛɛ yɛɛkɔ yeɛdwura hemɔnoɔ,0.8571,0.2
+232,"Edwirɛ sɔaa mɔ bɔ ɔfa Yehowa nwo ne, yenwu pee wɔ Bible nanu, bɔ ɔboka yɛ ma yɛtwe yepingyé ye ɔ. Nningyein bɔ bɛfa bɛyɛ nhwehwɛmuɛ bɔ ɔwɔ wɔ dwudwolɛ nu ne, ɛyɛ a fa yɛ bɔ olili so ye:",ɛdwure so ama bɔ ɔfa yehoanwon yɛ nwu pee wɔ baebo ne n bɔɔbokayɛmaa yɛ twe yɛ pingyeyɛɔ mingyen bɔ bɛfa bɛyɛndwuhwemua bɔ wɔodwudwure no n ɛye a fa yɛ bɔlili soe,0.725,0.2624
+233,“YƐFA YƐ TI YƐWURA MBANYI NIKYEESUALƐ NU”,yafayeti yewulwa mu bayi ne kyesanino,1.0,0.3939
+234,Nzuati yeɛ odikyɛ yɛmaa yɛ gyidie yɛ se ɔ?,in siatiu diceia mai di diiessio,1.0,0.6667
+235,Sɛɛ yeɛ mbanyi nemɔ kɔhora kosuesua kyɛbɔ Yehowa nwu anwumvoin ne ɔ?,sɛɛyɛ mbany ne mɔkɔra kohohuakyɛbo yihoɔnwa nvoeni ɔ,0.9167,0.3393
+236,FA YEHOWA SÕEN DIMOA WƆ W’ASETENA NU,fayehoasoe dimwo a wɔwaseten,1.0,0.2414
+237,"Sɛ yɛbɔ mbaeɛ a, sɛɛ yeɛ Yehowa kɔhora kɔma yenwo mmuayɛɛ ɔ?",sia bombaya seiiwuakurakumaiwuayoɔ,1.0,0.5745
+238,"Sɛ Ɛsuro Nyameɛ A, Ɛhẽne Bɔ Wɔnwo Waen",sesoronyami a ɛhene bɔwɔ nwo wan,0.875,0.2333
+239,"Bɛbɔ Bekuro Kyɛ Betie Nzɛmba Ne, Boka Bɛ Ndɛ",bɛwo bɛkurokye bɛtinzemban bokabɛndɛ,1.0,0.2286
+240,"Gyidie bɔ yele ye kyɛ Yehowa kɔboka yɛ maa yɛsa kɔhã bɔ yehia ye wɔ y’asetena nu ne, adesua he kɔboka yɛ maa nu kɔyɛ se.",gyidie bɔyelai kyɛ yɛhua kɔboka yɛmaa yɛsa kɔha bɔyeheae wɔye ase tena nu nu adusuahe kɔboka yɛma nukɔ yɛ se,0.7308,0.1413
+241,Nzuati yeɛ Yehowa dumaa nanwo hia nahorɛ Kristofoɛ sɔ ne?,nzuatiɛ yiho aduma na wo hia n ahorɛ kristofoe sɔn,0.9,0.1702
+242,"Yekonwu kyɛ sɔ mmerɛ he yeɛ odikyɛ ɛyere wɔnwo fa Yehowa adamvoa, na ɛbɔ asu ɔ.",yɛkɔnhu kyɛ sɔ merɛ heyɛ odikyɛɛ yerewɔ nwofa yeho adamvo a na bɔ asu ɔ ngyekye mu ɛko nze misaaboli mu a,1.125,0.5645
+243,"‘Edwirɛ beni yeɛ sɛ ɔto me a, ɔkɔmaa ɔkɔyɛ se kyɛ ngɔfa menwo ngɔto Yehowa so ɔ?’",edwure beniɛ sɛ ɔtrome a ɔkomɔkɔyɛ sekyɛ ngɔfamengɔtoehu aso ɔ,0.8235,0.2295
+244,"Sɛ yésusu bɔ yɛkɔyɛ yɛkɔfa yɛkɔnea yɛnwo kyẽabie nanwo a, nzu yeɛ odikyɛ yɛmaa ɔtena y’adwene nu ɔ?",sɛ yesu su bɔ yɛkwɔ yɛyɛfaɛkɔneayɛwo kyea abie na awo a nzi odekyeɛɛma ɔtna yɛadee no ɔ,0.8333,0.2785
+245,YƐNZE MMERƐ BƆ AYIELEƐ NE KƆWA Ɔ,yansemere bɔ ayialeɛ ne kɔwa ɔ,0.4286,0.1923
+246,Yehowa yeɛ odikyɛ okyire bɔ ɔfata yɛ ɔ. Ɛmɔma yɛnea ɛhe anwo nneasoɛ ahoroɛ.,yɛhowa yɛ ɔdikyɛ ɔkyerɛ bɔ ɔfaka yɛɔ ɛbomaayɛ ne a ɛhea nwo ne asoahore,0.9286,0.2295
+247,"Fa Wɔnwo To Yehowa So, Kyɛbɔ Samson Yɛle Ne",fa wa woto yi hu a so kyɛ bɔsam sen yale n,1.1111,0.2353
+248,wahora wahyirehyire gyidie bɔ ole ye kyɛ ebie yeɛ ɔbɔle nningyein nanu?,wahorɛ wɔhyerhyeregyediɛ bolae kyɛ abie yɔ bɔle nengyer ne n,1.0,0.322
+249,ATẼE AHOROƐ BƆ SATAN FA SO MAA YƐYƐ BƆ YEHOWA NGURO Ɔ,atye ahorɛ bose taafa so maayɛ yɛ boyewuom gurao,0.9167,0.3095
+250,Bɔ Mmɔden Kye “Sunzum Nu Dwein” Ne Bie Gua Wɔ Tianu,bɔmɔde nkye sonzum no dwua ni biaguawotiɛ no,1.0,0.2821
+251,SƐƐ YEƐ YEHOWA KƆHYƐ YE DUMAA NE ANIMNYAM ƐLƐSAEN ALA Ɔ?,sɛ yɛ yehuakɔ sɛ yiduma ne animinyame lɛsae ala ɔ,0.7273,0.2444
+252,maa yenya awerɛkyekyerɛ yefi aliemaamɔ berɛ ɔ?,maye nyawerɛkyekyerɛ ifiɛlee ma mɔblɛ ɔ,0.8571,0.2308
+253,Nzuati Yeɛ Né Ɛwɔfoɛmɔ Boka Ɔhene Dawide Sogyafoɛ Nemɔ Aso Ɔ?,isieti yɛɛneyɛwɔfoɔ mo boka ɔhene dew dyi sogyafoa ne mo aso ɔ,0.8182,0.3
+254,"Sɛ Ɛte Edwirɛ Biemɔ Bɔ Ɔtte Nahorɛ A, Nzu Yeɛ Odikyɛ Ɛyɛ Ɔ?",edwe bô w alaka na nu ne kenga châ sɛ âte edwebii bôôtena hor a nzue o di chɛ âyâô,1.4615,0.9778
+255,KAE KYƐ ƆNGƆHYƐ AYIELEƐ NE KƆWA,kaecwɔɔ ngɔ hyɛ ayialea ne kɔwa ngyekyɛ mu eburu nzemisa,1.3333,1.0
+256,"Yede nzu yeɛ yɛkɔhora yɛkɔyɛ na yangɔ ɔhaw bɔ ɔte sɔ nu ɔ? Yeɛ ole kyɛ, yɛkɔfa Nyameɛ akwangyerɛ bɔ ɔfa nzãanonɛ nwo ne yɛkɔyɛ adwuma ɔ.",ye de nzu yɛ yɛkɔyɛ yɛkɔyɛ ne yɛngbɔɔ ha bɔte sɛ nuɔ yi o le kyɛ yɛkɔfanyamia kwangyerɛ bɔɔfa nzaa no na wo ne yɛkɔ yɛ adwumaɔn,0.8889,0.1776
+257,"MMABUNU BƆ BƐSE NWORƐ, ƆNE MMABUNU NGWASEAFOƐ NE",mabunu bɔ bɛse nworɛ ɔne mma bunu ngwaseafowɛn,0.5,0.075
+258,"Sɛ bɛkã kyɛ ‘bɛhã ye nyunu wɔ bɛbɔ bɛwɔ berɛ ne amukoraa nyunu’ a, okyire sɛɛ?",sɛ bɛkakyɛ bɛhane nyunu ɔbɛbɔ bɛ ɔbɛ na mmokora nyun a okyere sɛɛ,0.75,0.2203
+259,mmoaen ne mmɔngye nwo mvandoho nanu ɔ?,moai ni mode wovandowo na nuɔ,1.0,0.3871
+260,"“BABA, HYƐ WƆ DUMAA ANIMNYAM”",baba hyɛ wodumaanimnyam,0.6,0.0909
+261,"Bɛbɔ bɛyɛ agyaa nhyehyɛɛ ne, ɔkɔyɛ sɛɛ né bahora banwu bɛnwo yé?",bâbo bâ yɛɛjaan shwehɛɛ n okɛɛ sɛɛne ba hora bawu bâåwu ye,1.0,0.3725
+262,BƐNATE SO BABUA YƐ BE KYƐ YƐTE TENENEEFOƐ,nate so babia yɛben kyɛ yɛte kne ne ɛfoɛ,0.875,0.2059
+263,"Sɛ bɛkã kyɛ yɛbɔ asu ‘wɔ Baba ne, Baa ne, ɔne sunzum krongron ne dumaa nu’ a, okyire sɛɛ?",sɛ bɛkakye yɛboasu ɔbaban baan ɔne sunsungronkro ne dumaa no a okyire sɛɛ,0.6316,0.1846
+264,"Nningyein ahoroɛ bɔ Yehowa abɔ ne, ɛmɔkɔhora bekofité bɛkɔɔnea bie, na bɔ ɔmaa ɛmɔnwu ye bɛfa Yehowa nwo ne, ɛmɔsusu yenwo. a",afe nzia ningya howorɛbɔ yehu abɔn mo kɔhora bɛkɔfite bɛkɔɔ nnia bie na bɔ manmu nwii bɛfa yehu a hon mo susie nhu,0.9091,0.41
+265,"Sɛ bɛkã kyɛ ebie suro Yehowa a, okyire sɛɛ?",sɛ bɛkakyɛ ebiesure yeho a okyere sɛɛ,0.6667,0.1515
+266,ƆHAW AHOROƐ BƆ YUDAFOƐ BƆ BESA BƐHƆLE BƐ KURO NE FALE NU Ɔ,oha wa hore bo yudafue bobisabeholibi kro ne fali nuo,0.9231,0.3261
+267,Ngɔm Bɔ Yakob Hyɛle Kora Yeɛ Owu Ne,âjuro bwa walakana nuni keŋga chɛ n gôn bô yakôpohale kora yoo won,1.625,1.4286
+268,akwangyerɛ bɔ Yehowa ahyehyɛdeɛ ne fa ma yɛ ne ɔ?,akwanjereboyi hwuashịshe dịenifamahe niọ,1.0,0.4872
+269,"Menea me kar nanwo a, yenwo abondo-bondo anaa yenwo atwitwi, ofikyɛ metaa mefa mepemo-pemo nningyein anaa? Anaa kãa ne mepena menya asedɛnt?",menea meka na ho a iwa bondo bondo anaa ihwa twutwi ofikyɛ metaa mefa mepem pem nengye anaa anaaka na mepene mennya acident,0.7273,0.2212
+270,"Kesaalae, sɛ ɛ́bɔ mbaeɛ a, nzu yeɛ ɛpena kyɛ ɛyɛ ɔ?",kesaala e sɛɛbɔmba yɛ a nzu yɛɛpanakyɛɛ yɛɔ,0.8182,0.0811
+271,"Ɔnate Ɔdɔ Bɔ Ele Ye Nati, Kɔso Kã Nzɛmba Ne!",ɔnaate wɔ dɔ bɔe leyi na ti kɔso kanzemba n,1.0,0.1818
+272,"Afutue bɔ yeɛ ole kyɛ “nekaabiala bɔ ɛkɔhɔ ne, wɔnye kɔhora kɔhã” ne, sɛɛ yeɛ waboka ɛmɔ wɔ ɛmɔ nzɛmbatrɛlɛ adwuma nanu ɔ?",afotue bo le kyɛ ne ka biala bɔɛ kɔhɔ n wɔnye korakɔ han sɛɛ yɛ wɔaboka wɔ mɔ wɔmɔ zɛmbaterɛ la dwumana nu ɔ,0.9565,0.2
+273,Yɛkɔyɛ sɛɛ ne yafa obuo yama y’abusuafoɛ?,yɛkɔyɛ sɛ ne yafo buo yammayɛ abusuafoɛ,0.7143,0.1212
+274,Ngɔ Ayeforɔ Anaa Sɛen Ne Bie Anaa?,ngwayeforɔ anaa sɛanibi anaa,0.7143,0.1852
+275,EDWIRƐ BƆ PHILIP BRUMLEY HÃNE Ɔ,ederɔbɔ felip bramle haneɔ foto na nu n yenwele ma felip bramle,2.0,1.4615
+276,"Nzuati yeɛ odikyɛ enwu ebie subaen yé kora, né ɛne ayɛ agyaa nhyehyɛɛ ɔ?",nsueti ɔnekyɛ wu ibiesu banyɛ kora ne yɛ ne yɛaywɛ agyanhehyɛ ɔ,0.8571,0.3684
+277,“Nyane adwene kyɛ Yehowa ndwene menwo.”,nyane adwune kyɛ ye woan dwone me,0.8333,0.2258
+278,"Bɔ ɔtɔ so nyɔ, sɛ bɛkã kyɛ ebie asakyera ye adwene a, sɛɛ yeɛ Yehowa aboka yɛ maa yate yebo ɔ, na sɛɛ yeɛ waboka abɔnefoɛ maa basakyera b’adwene ɔ?",bɔɔtɔ so nya sɛ bɛkakyɛ abiasakyera yɛ adorea sɛ yɛɛyɛwo aboka maa yɛatee bo na sɛ yɛɛ wabokaabo ne foɛ maaba sakyerabadoee,0.8333,0.2212
+279,Nzuati yeɛ yenwo hia kyɛ yekonwu nahorɛ ne ɔ?,nzi eti eyiwu hiache iku wu na hre ni o,1.1111,0.5
+280,"Sɛ yenya ‘bɛbɔ bekuro kyɛ benya daa ngoa’ ne a, ahyɛaseɛ nala nzu yeɛ odikyɛ yɛyɛ ɔ?",sie nya bɛwɔ bekro che be nyadaa nguane a ashia siɛ na la nziodi cheɛyɛↄ,0.9412,0.3281
+281,"Sɛ ésua nikyee a, nzu yeɛ ɔkɔboka wɔ maa ekonya so mvasoɛ paa ɔ? Edwirɛ bɔ oliliso hemɔ kɔboka wɔ maa ɛkɔhora kɔfa w’adwene kosie bɔ esua naso:",sɛesua nkya a nziyɛ kɔbokɔɔ maa yɛko nyasɔn vaso ɛpaaɔ edwura booli nli sɔ yɛ ma kɔbokɔɔ maa ɛkora kofawadwune ko sibo esua na sɔ,0.8929,0.2679
+282,"NEKAA KRONGRON, ƆNE KRONGRON NU KRONGRON NE",ni kaa krongro oni krugro nu krongro ni,1.0,0.25
+283,"Brɛ wɔnwo ase. Sɛ ebie bu yenwo tra so a, ɔtaa nya adwene kyɛ odikyɛ onya yenwo atee pee boka bɔ ole ye naso. Ɛhe te nikyee bɔ ɔyɛ suro paa, nakoso anwobrɛaseɛ yeɛ ɔkɔboka yɛ na yannya sɔ adwene ne bie ɔ.",brɛw w ase sɛ ɛbiebui nwo tara so a ɔta ɛnyaadwone kyɛ odikyɛ wo nyaye nwoaten pen boka boo lɛe na so ahe tini kyeɛ bo yɛ suro pa na akoso ahobraseɛ yɔkɔ boka yɛ na yɛɛnyaso adwone ni biaɔ,0.7907,0.2102
+284,"Sɛ yɛ sikasɛm yɛ basaa a, yɛkɔyɛ sɛɛ né yahyire kyɛ yɛfa yɛnwo yɛto Yehowa so?",sɛ yɛsikaasɛme yɛbasaa yɛkɔ yɛsɛɛ ne yɛsrekyɛ yɛfayɛwon yɛto yɛho aso,0.875,0.1967
+285,"BƆ ƐYƐ A, OKYIRE KYƐ ƐTE ADAMVOA PÁ Ɔ",bo eya utywekye etyadamvua pao,1.0,0.4643
+286,ADWENE BƆ ‘BƆNEFOƐ’ NE PENA KYƐ YENYA Ɔ,agene bɔ bɔne foɛ ne prakyee nya o,0.875,0.2333
+287,YƐKƆYƐ SƐƐ NÉ YAHORA . . .,yɛkɔ yɛsɛa ne ahora yɛ aboayɛno yɛamaatenaboɛkɔfɛ kɔ kaa yesu wia ne,3.0,2.5294
+288,"Yekonwu kyɛbɔ Bible ne kɔboka ebie maa okonya ebie bɔ sɛ ogya ye a, ɔkɔboka ye ɔ. Afei koso, yekonwu kyɛbɔ yɛkɔhora yɛkɔboka aliemaamɔ bɔ bɛte sigyafoɛ bɔ bɛwɔ asafo nanu ne ɔ.",ikɔwukyɛwɔ bae wone kɔbokeebie maa okonyeebiebɔse ogyaye a ɔkɔbokaeɔ afe ekoso ikɔwukyɛwɔ yɛkɔraa yɛkɔbokalimamɔ bɔbɛti sigyafoɛ bo bɛwɔasafona nu ni o,0.9091,0.2071
+289,"Yɛkɔyɛ yeɛ sɛɛ né yamaa yɛnye ala berɛ, na yangɔ nzɔhwɛ nu?",yɛkɔyɛ sɛ ne yamaayɛnia laberɛ ne yɛangɔnzo hwen,0.9167,0.2609
+290,nzuati yeɛ ɔnzɛkyɛ ɛfa yenwo dwirɛ wura wɔ nu ɔ?,inzuetiyianzɛkyafayinujure wurawonuo,1.0,0.4211
+291,"Bɛen so: WORD radio stehyɛn bɔ ne ɔwɔ Batavia, Illinois ne",foto ne nun yewu wɛ radio station bɔno wɔwɔ batavia ili nɔ ne,1.0,0.4783
+292,kyɛbɔ yekoli esuroen so ná yanya akokoduro nanwo ɔ?,kyɛbu yɛkori surin so neɛyɛ kukudro na olon,0.8889,0.4286
+293,Yesu Nate Nahorɛ Bɔ Olili Naso Tele Yehowa Dumaa Nanwo,de bɔ ɔwaalakana no ne kengakye yesu natenahora bɔ liri na so teleyɛ hoa adumana ho,1.5,0.7556
+294,"Ndeaseɛ Foforɛ Bɔ Yanya Ye Wɔ Bible Nu Dwirɛ Bie Nu Ne, Ɛkɔyɛ Sɛɛ Na Anwu Ye?",ndeaseɛfoforɛ bɔyɛnnyae wɔbae bu no dwure bie mɔ nnun ɛkɔyɛsɛɛ na awun,0.8824,0.2881
+295,"Yekonwu subaen ahoroɛ bɔ ɔwɔ Yehowa nwo bɔ ɔmaa bɛkã kyɛ ɔte nyɔbotaen, ɔne kyɛbɔ yɛkɔhora yekosuesua sɔ subaen ne bie ɔ.",yɛkɔmu subaa horɛbɔɔye ho anho bɔ ɔma bɛkakyɛ ɔte nyɔbotan ɔne kyɛ bɔ yɛkɔhorɛɛkɔsuosua so suban ne bi ɔ,0.7727,0.2245
+296,BƆ ƆKƆBOKA WƆ MAA WƆNYE KƆGYE MMERƐ BƆ ƐNWONDƐ NE,bɔ ɔkɔbokawa m awɔ nyi kɔ gye merɛ bɔwondɛn,0.9,0.175
+297,"Ɔte kyɛ ɛdwetɛ bɔ bapɔ ye nwo wɔ ɛfaa afaa nu ɔ, bɔ bapɔ ye nwo pɛen nzoo ɔ.",ɔtekyɛ dwetɛ bɔ bapoanyamɔ wɔ ɛfaa faa nu ɔ bɔ bapoanyamɔ pɛɛ ne zoɔ,0.6842,0.3393
+298,"Nzuati yeɛ ɔnzɛkyɛ yenya adwene kyɛ, nekaa bɔ yanya ngɔsoɛ yadwu nala te pá ɔ?",nzuatiɛ wasekyɛ yɛ nyaadwene kyɛ ne kaabɔ yɛ nyangɔsoɛ yɛ adwu na late pao,0.9333,0.1774
+299,"Ndworɔleɛ Mmaammaa Bɔ Ɔkora Maa Enwu Tworɔnzɛm Foforɛ Bie Ne, Mvasoɛ Bɔ Ɔwɔ So Ɔ",nderɔleamaamaa mbɔɔkora maawu trɔnzɛmfofrabien mvasoɛ bɔwɔ so ɔ,0.8,0.2154
+300,NGYINANE PINDINN MANE NZƐMBA NE WƆ MMRAA ATEE SO,ngyinane pindi mane nzɛmba n wɔmr atee so,0.4444,0.15
+301,"Sɛ Yɛfa Aliemaamɔ Adamvoa Na Yɛboka Bɛ A, Yenya Nhyiraa",siɛfɛreɛ maama damvoa na yɛ bokabe a ye nyɛnshire a,0.9,0.2889
+302,"Sɛ yenwu ye kyɛ ɔdɔ bɔ Yehowa le ma yɛ ne, ɔboka Bible nu dwirɛ biemɔ bɔ yedimoa yesua naso a, sɛɛ yeɛ ɔboka yɛ ɔ?",sɛ ɛnwuikyɛwɔdɔ boyɛhu ɛlɛmayɛn ɔbokabaa bono dwure bie mɔ boyɛdi mo ayɛsuana so a sɛɛye ɔbokayɛ,0.9231,0.2791
+303,"Sɛ bɛkã kyɛ Kristofoɛ ‘fa b’asɛndua daa biala’ a, okyire sɛɛ?",sâ bâkachɛ kristofoɛ fa base ndua dââ bialaa ocherâ sâ,0.8182,0.3043
+304,"Sɛ yesusu edwirɛ bɔ ɔwɔ sɔ dwein nanu nanwo a, yenwu ye kyɛ ‘bɛ’ ne, ogyi berɛ ma mmenia.",se yesu sujura bowoso juyenenunawuak yenu yicha ben wojim bre ma minia,0.9474,0.5
+305,BƆ ADESŨA NE KƆHÃ YENWO DWIRƐ Ɔ,nekoma m nsusu yɛ bɔdesuanekɔhae mo dwuroɔ,1.0,0.88
+306,"SƐ YƐFA NIKYEEBIE YESIE YƐNYE SO WƆ YEHOWA SÕEN NU A, . . .",seɛfa nkye beyɛ siɛya e so ihɔ asoi no a,0.8182,0.4762
+307,"Ndaluwamɔ, Nzu Yeɛ Ɔkɔboka Ɛmɔ Maa Ɛmɔkɔɔyɛ Mmrasua Bɔ Bɛbɔ Bɛnwo Mmɔden Ɔ?",ndɛ luwa mbɔ nzuiɔ kɔbokayɛ mɔmmae môkɔa yɛ mele suyabɔ bɛ bɔ bɛ ho mɔdee ɔ,1.0769,0.2951
+308,Nya Foto Ahoroɛ Naso Mvasoɛ,nnya foto ahore na so mva soɛ,1.2,0.1304
+309,Suesua Abɔfo Bɔ Bedi Nahorɛ Ne,heehwuabɔfo bɔ bedi na horɛn,0.6667,0.24
+310,"AFƆLEƐ BOKYEA NE, ƆNE AFƆLEƐ AHOROƐ BƆ NÉ BƐBƆ YE WƆ SO Ɔ",afolea bokyiane ɔne afole ahorɛ bɔne bɛbaɛ wɔ soɔ,0.8462,0.2273
+311,"Nneasoɛ benimɔ yeɛ okyire kyɛ, Yehowa kora fa atẽe foforɛ so maa yenya yɛ mbaeɛ nwo mmuayɛɛ ɔ?",nneasorɛbeni mɔ yɛ wokyerɛkyɛ yɛhu akoraafa ateefofora so maayɛ nyiayɛmba yɛ no muayɛ ɔ,0.8333,0.2267
+312,"Bɔ ɔte yeɛ ole kyɛ, ɛngɔhora ngɔhyɛ ehũ kyɛ ɔyakyi sɔ bra bɔ ɔbɔ ne. Nakoso, ɛkɔhora kɔyɛ nningyein biemɔ bɔ ɔkɔboka wɔ maa ekogyina ɛyalɛ bɔ ɛfa nu ne noa ɔ. Ebie ɛhe:",bate yɛyile kyɛ nwoha ngɔhye ɛhukyɛ wo yakyi sɔbraa bɔɔbɔ ne na ekoso ɛkorakɔyɛningyem biemo bakɔboka omma ɛkogyina ɛyane baɛfanenne nnoaho ebiyɛ ɛhe,0.9118,0.3
+313,"Me ne Sirkka de, ɔyɛ yɛ fɛ paa kyɛ Yehowa maa yenyane yenwo atee yɛyɛle mmerɛ mukoraati soen adwuma ne bie ɔ. Mesa meda Yehowa ase kyɛ, ɔmaa nyane brasua bɔ okuro me, na odi nahorɛ ɔ.",menesɛɛ kade ɔyɛ yɛfɛpaa akye yehua maayɛ enyane enoate yɛ yɛle merem koroa ɛte suna adumani biao misa meda yehuasekyɛ ɔmaa yenyane brɛsua bo okurom na odi n ahorao,0.8649,0.2465
+314,Krataa Bie Bɔ Ɔkɔboka Yɛ Maa Yekomia Yɛnye Yekoli Nahorɛ Yekoodwu Ayieleɛ Ɔ,krataabie bɔkɔbokaɛma yɛkɔmmia yɛ ni yekolina ahɔrɛ yɛkoɔdwuayiɛreɛo,0.9231,0.2381
+315,Me ne Adel,poto na nu n yiwalema baaboane ye adel edwure bo bahwerɛ bagua poto na bo ne kengakyɛ mene adel,5.6667,8.625
+316,Nzuati yeɛ odikyɛ yɛkɔso yɛmaa yɛnye da berɛ ɔ?,nzu ɛ teyɛ wodikyeyɛ kɔso yɛ mayɛ nye dabrow,1.0,0.2368
+317,Yuda,ejurɛ ni ase,3.0,2.0
+318,"ƆMVA yenwo kyɛ yɛte akwalaa anaa panyi ne, sɛ odwu mmerɛ bie a, y’adwene nu kora yɛ yɛ naa. a Ebie yeɛ ole kyɛ, ebia Yehowa Danzeniɛ abrandeɛ anaa taluwa bie konya adwene kyɛ Yehowa ndwene yenwo. Sɛ ɔba sɔ a, ɔkɔhora kɔyɛ se kɔma ye kyɛ ɔkɔbɔ asu ɔ. Anaa wɔde susu sɔ aliemaa he anwo nea. Mmerɛ bɔ né ɔte abrandeɛ ne, ɔfale Yehowa lilimoa wɔ ye asetena nu tra kyɛ ɔkɔpena anwonyadeɛ pee wɔ ewiase he anu ɔ. Nakoso mmerɛ bɔ ɔyɛle panyi ne, esikaa kaa bie yeɛ né ole ye bɔ ɔfa nea ye abusua ɔ. Ɔba sɔ a, ebia okobisa yenwo kyɛ yeti nzili gyinayɛɛ pá ne? Anaa susu aliemaa brasua bie bɔ wayɛ panyi, ná olle anwoserɛ pee nanwo nea. Ebia ye abanu kobu, ofikyɛ okonya adwene kyɛ ɔngora nyɛ pee tekyɛ dáa ne. Abisa wɔnwo le kyɛ: ‘Mmɔden bɔ mebɔ ye, aso Yehowa anwu ye ɛɛn? Mvasoɛ wɔ so kyɛ mafa nningyein mabɔ afɔleɛ mama Yehowa anaa? Aso me nwo té hia Yehowa?",ɔnvɛ okyɛ yɛte akola anaapanyi sodwumire bi a yɛdwunu kora yɛyɛ nnaa,0.9824,0.9181
+319,SƐƐ YEƐ ƐKƆYE EDWIRƐ HEMƆ NOA Ɔ?,sɛɛyɛ ɛkɔye idwureahemɔ noao,0.8571,0.24
+320,odikyɛ yɛyɛ nningyein bɔ ɔkɔmaa yekopingye Yehowa ɔ?,nsuɛti odi kyɛ yɛ ye ni ngyen bɔkɔma ye kɔ pingye ye hoa ɔ,1.625,0.2955
+321,BƆ ASAFO NE KƆHORA KƆYƐ Ɔ,bɔ asafone kɔhra kɔyɛɔ,0.8333,0.05
+322,"‘Nningyein benimɔ yeɛ sɛ mefa mebɔ afɔleɛ a, ɔkɔmaa ngonya mmerɛ pee ngɔsõ Yehowa ɔ?’",ne ngye beni mɔ yɛsɛ mefa mɛ bɔ afoɔle a ɔkɔmangonyammerɛ pen gɔsonyɛ hua ɔ,0.9333,0.2239
+323,ƆFALE YE NGOA TOLE BERƐ MANE YƐ: Yesu nate ye mogya bɔ ohwie guale naso tuale yɛ bɔne nwo kerɛ,ɔfare ngoatɔle e brɛmane yɛ yesu naateimogya bɔ ɔhwiɛ guarɛ na aso tyiale yɛbɔne na anwo krɛ,0.9,0.2703
+324,"Sɛ bɛbɔ bagya ne bɔ nu sõ Yehowa a, sɛɛ yeɛ ɔkɔboka bɛ maa bɛnye kɔgye ɔ?",sɛ bɛwɔ bagya ne bo nu sun yɛhu a sɛ yɛkɔboka bɛmaa bɛ nye kɔ gyeɛɔ,0.6471,0.2182
+325,"ATẼE BƆ MMENIA FA SO YƐ BƐ NIKYEE NE, DÉ TONU",aten bominiafa so yɛ bɛnikyera no detun,0.8182,0.3235
+326,Atee beni aso yeɛ Yehowa fale ye dumaa ne mane Yesu ɔ?,atem beni aso yɛ yɛho afale yɛdumaa ne mma ne yɛɛsu ɔ,0.75,0.1905
+327,NNINGYEIN BIEMƆ BƆ ƆTE Y’ASƐDEƐ Ɔ,ne ngyem bie mɔ bɔteyasɛɛ de ɔ,1.0,0.2593
+328,Nzu yeɛ ebiaa ɔmaa ebiemɔ twe b’asubɔ sa ɔ?,sɛ yɛɛkwagyeadwura hemɔ noao,1.0,0.7879
+329,Nzu yeɛ ɔbokale Petro maa ɔhɔle so sõne Yehowa ɔ?,nziyɛ ɔbo kale petroma ɔhɔle soso ne yɛhua wo,0.9,0.2308
+330,"Adwene bɔ yeɛ ole kyɛ Yehowa nguro yɛ dwirɛ ne, yɛkɔyɛ sɛɛ ne yaye yafi yɛ tianu?",adweme boyiolɛkyɛ yɛhua ngoo yɛdwure n yɛkwayɛsɛɛ na yayeyɛ fiɛ tie n,1.0,0.3175
+331,Nzuati yeɛ odikyɛ yedé yɛtonu kyɛ Yehowa kuro yɛ dwirɛ ɔ?,nsuɛti odikyɛ yɛ de atu no kyɛ ihua koreedure ɔ,0.8182,0.4783
+332,NISUA YEƐ YƐKƆHORA YEKONWU NAHORƐ NE Ɔ?,nisua yɛɛkɔhorae kunwu na horɛ neɔ ngyikyemuɛna nzemisa,1.0,0.7188
+333,"Sɛ ɛkenga edwirɛ bie, ɛnea vidio, anaa etie tɔɔk bɔ bahyɛda bayɛ bama bɛbɔ bahyɛ yebo besua Bible ne a, susu yenwo nea kyɛbɔ ɛkɔhora kɔfa kɔboka mmeni foforɛ ɔ. Ɛkɔhora kobisa wɔnwo kyɛ:",sɛɛkenkedwura bie anea video anaa ɛtii tɔɔkobɔ bahyɛdaba yɛ bama bɛbɔ bahyɛe bɔbɛsua baebɔ ne a susui nho nneakyɛ bɔ ɛkɔhorakɔfa kɔ bɔ kaminifofra ɔ ɛkɔhrakɔ bisa wɔ ɔkyɛ,0.7941,0.2027
+334,"Sɛ ɛnea yɛ nwomaa ahoroɛ nu a, enwu foto pee, na ɔboka yɛ maa yɛte bɔ yesua nabo. Yede ɛkɔyɛ sɛɛ né anya sɔ foto ahoroɛ naso mvasoɛ?",sɛne aɛ nwoma ahore no a ɛwu foto pee na ɔbokaɛma yɛte bo ɛsua na bo ɛdea kaɛ sɛ neɛnya so foto ahore naso mva soɛ,0.7857,0.2376
+335,"TIE “MAEN MBANYI,” NA DI BƐ MMRAA SO",tie man banin na di bɛmmaraso,0.625,0.2308
+336,Nzɛngyerɛnneɛ Bɔ Ɔmaa Mmeni Pee Nyane Paanoo Lili Ɔ,nzɛndiraneɛ boma menipe nyanepaanoo leleao,1.0,0.3256
+337,"Sɛ bɛkã kyɛ yenwu mmenia anwumvoin a, okyire sɛɛ?",sɛ bɛkakyɛ yewominea womvoe nya wokyerɛ sɛɛ,0.7778,0.359
+338,Nningyein benimɔ ati yeɛ odikyɛ yekuro aliemaamɔ dwirɛ ɔ?,ninjen mbeni muati yu dice nyi kuralemaamu jura wɔ,1.0,0.4375
+339,"Sɛ yenya adwene kyɛ yɛngɔhora yengoli akɔnnɔ bɔne so, na y’anyelasoɛ ayie a, nzu yeɛ ɔkɔboka yɛ ɔ?",siɛnyaadwen kyɛe nkohrae ngori akɔnɔɔbɔne so na yanyelaso aye a nhin ɔkɔbo kaeɔ,0.8333,0.2727
+340,nzu yeɛ ɔkɔboka yɛ ná y’aba nu ammu ɔ?,nzu yɛɔkɔbokayɛ na yaba noamu ɔ,0.6667,0.1429
+341,NHYƐLE MMERƐ MUKORAATI SOEN ADWUMA NABO,njɛ merɛmu koree ti nsu nyɛ adwuma na bo,1.3333,0.3529
+342,SƐƐ YEƐ ƐKƆYE EDWIRƐ HEMƆ NOA Ɔ?,sɛ yɛkɔ yɛ adwurɛ hemɔ noa nho,0.7143,0.36
+343,"Edwirɛ bɔ ɔwɔ sɔ dwein nanu ne, ɔmaa yenwu kyɛ mmenia nwo dwirɛ yeɛ né ɔkã ɔ.",edurɛ bɔwɔso binyina nu n ɔma yemokyɛ menianwo durɛ yɛ ne ɔka ho,1.0,0.3729
+344,b Nea vidio he: ‘Dɛn Na Ɛretwe W’asubɔ San?’ Ekonwu ye wɔ jw.org so.,eboberedwera ne kengakyɛ nea video he dɛn na ɛtwre wasubɔsan ɛkɔnwui wɔ gyee dabiidotɔke so eboberedwera ne asi,1.0,1.2083
+345,"SƐ YƐYE YEHOWAA DUMAA NE AYƐ A, ƆMAA YENYE GYE PAA",sɛayie ho adumaneayea ɔmae nyegyepaa,1.0,0.2564
+346,SƐƐ YEƐ ƐKƆYE EDWIRƐ HEMƆ NOA Ɔ?,sɛ yɛɛkɔ yɛ edwirɛhe mɔnoa nho,1.0,0.24
+347,"BOKA WƆ BIBLE SUANIƐ NE MA ƆDƆ BƆ OLE MA YEHOWA NE, ƆYƐ PIRI",bɔka obai bushienien ma odɔ bole ma yehuan oye pre,0.8571,0.4348
+348,YƐKƆYƐ SƐƐ NÉ YAFA YEHOWA MMRAA YABƆ YƐ BRA?,yekoyesɛ ni yafayihua mla yahabo ye mblaa,1.0,0.4857
+349,NGƆYƐ SƐƐ NÉ MAHYIRE KYƐ MEPENA AFUTUE AMBA?,nga yɛsɛ ne mahyire kyɛ mepena fotuya mba,0.625,0.1667
+350,NZUATI YEƐ WƆNYE SƆ ADWUMA BƆ . . .,nzue ti yɛwɔnye sɔadwuma bɔ,0.8333,0.0833
+351,"SƐ YƐBƆ MBAEƐ A, NNÁ MMERƐ BIALA YEƐ YEHOWA MA YENWO MMUAYƐƐ KYƐBƆ YEKURO Ɔ",sɛ yɛbɔmbayɛ a na mmere biela yɛ yɛho ama yɛ nyanwo mu ayɛ ɛkyɛ boye korɔɔ,1.0,0.2667
+352,KƆSO FA WƆNWO TO YEHOWA SO MA OHYIRE WƆ ATEE,kɔ sofɔ wu to yeho asomu shre waten,0.9,0.3143
+353,NZU YEƐ YESU WUE NE MAA ENWU YE FA . . .,inzie yesu weni ma iwuifa,0.8889,0.4231
+354,Famaa so: Ralph Leffler yɛ adwuma wɔ radio stehyɛn berɛ,yɛsa yɛ wuikyɛ alema wurafilifla yɛ adwuma ɔrrɛdiu statien berɛ,0.8,0.6889
+355,Yɛkɔyɛ sɛɛ na yafa Yob nwomaa nanu dwirɛ yaboka mmenia?,yɛkɔ yɛ sɛɛ ne afa yobonwma ne nnogwira yɛ abo kamenea,1.0,0.2889
+356,"Sɛ ɛpena ebie bɔ ekogya ye a, nzu yeɛ ɛkɔhora kɔyɛ ɔ?",sɛɛpne biebɔkogyaye a nzu yɛ kɔhora kɔyɛɔ,0.8333,0.125
+357,"NGYALE BRASUA BƆ ƆBƆ YENWO MMƆDEN, NA NYƐLE ATẼEPAKYELƐNIƐ",njyare brɛsuabo bewo mɔden na nyere aten pakyere ni,1.0,0.3265
+358,"Pena nekaa pá tena . Bɔ mmɔden kyɛ ɛkɔtena nekaa bɔ ɛberɛ te kama, bɔ ekonya kanea kosua nikyee ɔ. Ɛkɔhora kɔtena table nwo wɔ sua nu anaa aluo.",pena nkaa paatema bɔmɔ den khe ɛkɔtena nkaabɔ berɛte kama beekonya kanea kohie ncyɛo ɛkɔra kɔtena teo bon wɔsue n anaa lio,0.7857,0.2679
+359,Nzuati yeɛ Yesu sili gyinayɛɛ kyɛ ɔkɔsõ Yehowa ɔ?,nzu eti yɛ yesu sɛ gyinaayɛ kyɛkɔ su yɛho a wo,1.1111,0.325
+360,"Yehowa Dumaa Ne, Sɛɛ Yeɛ Yenwo Hia Yesu Ɔ?",yeho aduma no sɛyɛ ɛyɛ wo hia yesu ɔɔ,0.7778,0.25
+361,Yehowa Bɔne Fakyɛ—Mvasoɛ Bɔ Ɔwɔ So Ma Yɛnu Biala Ɔ,yɛhu a bɔne fakye mvasoɛbɔwɔ so mayɛ no biala o,0.8,0.175
+362,"YƐKÃ NZƐMBA NE, OFIKYƐ YEKURO MMENIA DWIRƐ",yɛkanzɛmban o fichɛ yɛ koromin yɛjurɛ,1.0,0.3714
+363,NZU YEƐ YEHOWA YƐ FAKYIRE KYƐ YENYE GYE YƐNWO Ɔ?,nzua eho ayɛ fa cyerecyɛ yɛ nyɛ geyɛ noɔ,1.0,0.3158
+364,SƐƐ YEƐ ƐKƆYE EDWIRƐ HEMƆ NOA Ɔ?,sɛɛ yɛkɔ yi jwurɛhemɔ noaɔ,0.8571,0.24
+365,"Nzu yeɛ yɛyɛ a, ɔkɔmaa mmenia nye kɔgye yenwo kyɛ bɛkɔwa honhom nu paradise nanu ɔ?",ezu ya yɛya a ɔkomamenianyi kɔ gye wokyɛ bɛkɔ waho hum no pradise ne nu o,0.9375,0.2576
+366,Yɛkɔyɛ sɛɛ né yahora yagyina pindinn yafa Yehowa mmraa yayɛ adwuma?,yɛkpɛyɛ sɛɛ deyavora yɛgyena pindi yafayehoamena a yayɛduma,0.9091,0.25
+367,"Ɛmɔsũa kyɛbɔ ɛmɔkoli adanzeɛ wɔ asɛnga nu ɔ. Bɔ ɛmɔkɔhora bɛkɔyɛ ne bie yeɛ ole kyɛ, ɛmɔnu kõ kɔhora kɔyɛ yenwo kyɛ waato ebie wɔ asɛnga nu bɔ odi ye adanzeɛ ɔ.",nnu nmosuakyɛ bonmo koliadanzeɛ wo asɛngen na bɔnmo kɔhora bɛkɔyɛ ni bieyɛ olekyɛ ɛmo nu ko kɔhora kɔyɛ ɛwo kyɛ wɔatoebiewɔ asɛngen bɔ ɔdiyadanzeɛ o,0.8438,0.2222
+368,"AFUTUE BƆ ƆWƆ TWORƆNZƐM HEMƆ ANU NE, HUƐ BIE KƆYƐ SƐƐ NÉ WAFA WAYƐ ADWUMA?",afotue bɔ wɔ kyrɔ nzɛm hema nun hoa bie kɔyɛsɛ no wafa wayɛ aduma,0.7333,0.2069
+369,a BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Aliemaa bie fa atee bie aso di abrandeɛ bie adanzeɛ wɔ petro hyɛll.,poto na non yɛwukyɛ aleemaa bie faten biaso deaberande bia danzeɛ wɔ peterohyɛ ɔ,0.9048,0.3553
+370,"Asomdwee Nu Oo, Kõɛ Nu Oo, Yehowa Mane Yɛ Anwoserɛ",a suŋ jie nuo kũe nuoo ye hu a mani yaawɔ sirɛ,1.2,0.3846
+371,NZU YEƐ ESŨA FILI TWORƆNZƐM BƆ OLILI SO HEMƆ NU Ɔ?,nnzu iɛsuɛ filikyeroɔzɛmboleliso he mo nu ɔ,0.8182,0.359
+372,Ɔhene Yosia yɛle nanu ɔ?,ɔhene yoosia yɛle na nuɔ,0.6,0.0526
+373,"Sɛ yeɛ Yehowa surolɛ ne anwobrɛaseɛ boka yɛ maa yenwu nahorɛ ne, ná yɛfa yɛbɔ yɛ bra ɔ?",sɛɛ yɛ yi ho asulo lɛ ne awoberaseɛ bokayɛ maa yi wuna horɛn ne afae abɔyɛ bera o,1.0,0.2647
+374,Yɛkɔyɛ sɛɛ né yamaa mmeni foforɛ koso ahora ama mmuayɛɛ wɔ asafo nhyiamu bo?,dɛakonɛsɛ ne ɛma mmenimfoforɛkoso ahoramma muayɛwɔasafonhyiembo,1.0,0.2419
+375,"a EDWIRƐ BIE BƆ BAHYIREHYIRE NU Ɔ: “Honhom nu paradise ne,” yeɛ ole asomdwee bɔ ɔwɔ yɛne Yehowa ne yeliemamɔ Kristofoɛ afia ne.",iyibobrɛdure ane kengakyɛ edurɛ biobɔ basesie nu o hom no fawade sɛn y ola asumjwuobɔ wɔyɛ ne yihu a ne yeniemamo kristofo fia n iyibobrɛjwurɛ ne sii,1.0435,0.72
+376,"Yehowa ayɛ nningyein biemɔ bɔ ɔboka yɛ maa yɛkora yemia yɛnye yegyina yɛ haw noa ɔ, na yɛkɔnea kyɛbɔ yekonya so mvasoɛ ɔ.",yehu ayɛ ni ngyen biemɔbɔ ɔbokaɛmaa yɛ koraɛ miaanyi yɛgyina yɛhawo no ao na ɛkɔneakye woɛkonyasonva so aɔ,0.8261,0.2268
+377,NZONZOLEƐ BƆ ƆWƆ EDWIRƐ NYƆ BƆ YESU HANE NANU Ɔ,nzonzo leɛbɔ wɔedwule neɔ bɔ yesu hane na no ɔ,0.7,0.1579
+378,"Nahorɛ ne bɔ Yehowa amaa yanwu ye, ɔne ngondombo bɔ Satan ne yɛ pɔfoɛmɔ ato apete ne, odikyɛ yɛbɔ mmɔden yenwu nzonzoleɛ bɔ ɔwɔ nu ɔ.",na horɛ ne bɔyɛhu amaa yawu ɔne ngon duom bɔbɔ see taanee pafu atoapeten ɔdikyɛ yɛ bɔmɔ den yɛwuozonleɛ bɔwu nu ɔ,0.8462,0.2762
+379,"Mbaeɛ bɔ ebiemɔ bɔle bɔ yenwo dwirɛ wɔ Bible nanu ne, ɛkɔhora kɔkenga bie na adwenedwene yenwo. Sɛ ɛyɛ sɔ a, ɔkɔboka wɔ maa ɛkɔhora kofi w’ahõne nu kɔbɔ mbaeɛ.",nzan mbayɛ bɔ abie mɔbɔle bɔɛnwodwere wɔ bae bo na nu n ɛkɔhorakɔkengabie na adwɛndwee nho sɛ yɛso a ɔkɔbokaɔ ma ɛkɔhorakɔ siwo ahunu no kɔbbɔ mbayɛ,0.8667,0.264
+380,"a BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Basɛnde aliemaa mmrandeɛ ne ndaluwa biemɔ mɛsegye kyɛ bɛbra paati bie, na bɛbɔ yenwo ngɔmmɔ.",foto boyasusu iwɔnde kye mu ɛnan ewo bwira he basandeale mammarandeɛ ne ndɛlowa bie mɔ mɛsɛgyi kyɛ bɛbrapaatibie na bɛbɔnw ngɔ mɔ,0.913,0.3878
+381,Nzu yeɛ ɔkɔboka wɔ maa ekole kɔtonu kyɛ Yehowa afa wɔ bɔne ahyɛ wɔ ɔ?,ǹji ọkọbọkà wọ́ má èkwèle kọtunichẹ ihu afa ọbọni a shẹwọ,0.9333,0.6667
+382,"John hane kyɛ: “Yóo, bɔ ngɔhora ngɔhworɔ alaa ɛne.”",jom hanice yoo gbọngọ hra ngọ shiralen,1.0,0.5263
+383,YƐKƆYƐ SƐƐ NÉ YABOKA YƐ BIBLE SUANIƐ MAA . . .,yɛkɔ yɛsɛ ne yaboka ebaabohwia neɛmmaa,0.875,0.3636
+384,YEHOWA MA YƐ AWERƐHYƐMUƐ KYƐ YƐNWO HIA YE,ifo ama yarehye muekyɛ yanwuhiai,1.0,0.4118
+385,BƆ ƆKƆBOKA YƐ MAA YEKOLE YEKOLI KYƐ YEHOWA KURO YƐ DWIRƐ Ɔ,boɔkɔboka yemaa ekole ekoli che ehua kurei dwereo,1.0,0.3404
+386,Nzu yeɛ Yehowa kuro kyɛ mmenia mukoraa nya ɔ?,enzu yeyehuwakurekyeminiye mukorayenyawo,1.0,0.3611
+387,"c BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Aliemaa bie yɛ daa asɛm ngyerɛmɔ. Eyia bɔ bama break wɔ adwuma nu ne koso, ɔkenga Bible. Afei ye nɔsoa ne, wahɔ dapɛen afia adesua.",foto bɔ wɔkrata abɔtɔ so buru no mɔ twɛn ɛnwu dwere hɛ areema abia yɛdaa sɛ mo ngyerɛ mɔ ɛyi abɔ bama briki wa adwuma nu ne koso ɔkengabae bo afe yi nɔ soroa no maahɔdapene afia adi sua,0.9697,0.4597
+388,SUESUA DAWIDE NA MA YEHOWA BƆ WƆNWO WAEN,sue sua darid na ma yeho a bɔ n wae,0.875,0.2424
+389,"Yekonwu kyɛbɔ yɛkɔboka yɛ Bible asuafoɛ nemɔ maa bekonya gyidie ne akokoduro, na wamaa bahora basi gyinayɛɛ basõ Yehowa.",yikɔnwu kyɛ bɔyɛkɔ boka yɛ bare bosuafoɛ ne mɔ maa bekonya agyidi na akokoduro mamamaa bahora basi gyenayɛ baso yeho a,0.8421,0.16
+390,"YEHOWA NWU YƐ ANWUMVOIN, NA ƆFA YƐ BƆNE KYƐ YƐ",iɛhuanwuyɛnw mvoni na ɔfa yɛbɔne kyɛyɛ,0.8,0.2222
+391,Pena Bible Nu Dwirɛ Bie Bɔ Ɛkɔfa Kɔbɔ Wɔ Bra Ɔ,penabai bo no dwureebie bɛkɔfa kɔ bɔ brao,1.0,0.3056
+392,"John koso hane kyɛ: “Tikya mepa wɔ kyerɛ o, . . . sɛ ekyire yɛ nikyee na yɛnde yebo a, ɛyɛ a yemmisa wɔ hɔ ɔ?”",jɔn nkoso hanekyɛ tikya mepoɔ kyerɛ wo sɛɛkyere yɛ nkyee nnayɛndee bo a ɛyɛ a yɛ mmisa ɔ hɔ,0.7391,0.1711
+393,Ngɔm Bɔ Yakob Hyɛle Kora Yeɛ Owu Ne,edwure bô waalaka nanu ni keŋgachâ ngɔn bô yakɔphyâle kora yeo wu n,1.5,1.2857
+394,Nzu yeɛ yɛte yenwo adanzefoɛ ɛnnɛ ɔ?,nzuɛ yɛtee nwoadanzefoɔ ɛnnɛ ɔ,0.7143,0.1379
+395,"KYƐBƆ YEHOWA KOBUA MMENIA NDƐEN KYẼABIE NE, . . .",chebwe yehua kubuya meniandɛnciabien,1.0,0.4167
+396,Sɛɛ yeɛ Yehowa kɔhora kɔboka yɛ maa yɛkɔsesã yɛ subaen tekyɛ somafoɛ Pɔɔlo ɔ?,sɛɛyɛ yehu a kɔhora kɔ bokaɛmaɛkɔ sesa ɛ so bantekyɛ somafɔ pɔl,0.9286,0.2381
+397,Yɛkɔyɛ sɛɛ na yafa y’adwene yasie bɔ ɔkɔ so wɔ anwuro dɔ naso?,nyakwayɛsɛ ne afayɛ adwon yɛsie boɔkɔ so wo anwurodɔ na so,0.9231,0.2708
+398,Kyɛbɔ Bɛkɔboka Bɛbɔ Baye Bɛ Bafi Asafo Nanu Ɔ,kyɛbɔ bɛkɔboka bɛbɔ baye bɛbafiasafo na nu ɔ,0.4444,0.0
+399,EDWIRƐ BƆ FRANCO DAGOSTINI HÃNE Ɔ,igre bɔ franko dagɔstini haneɔ foto na nu n yi ŋwɔli maa franko dagɔstini,2.1667,1.5
+400,"c Sɛ ɛpena ɛhe anwo dwirɛ bɔ wawa ɛlɛsa ye a, kɔ jw.org so na bɔ “Atoyerɛnkyɛm Bere Mu Mmoa” gua nekaa bɔ bɛfa bɛpena nikyee ne.",yeboberejwurɛ ne kɛngakyɛ sɛɛpenaheano dwure bɔ wa wɔɛlɛsan a kɔgyee de woyi dɔt ɔkso na bɔ atorengyɛm bremu mmoa gianekaabɔ bɛfa bɛpena ni kyɛɛ n yebubregwurɛ ne asi,0.9259,0.6701
+401,“EDWIRƐ HEMƆ TE TUROLOO NE NAHORƐ. . . . WAYIE!”,idweraa hemate toroloo ne nahorɛ wayie,0.5714,0.1875
+402,c BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Aliemaa bie kyekyɛ asafo nwomaa ma aliemaamɔ ɔmva yenwo kyɛ babra yɛsõen ne wɔ sɔ maen nanu ne.,foto bɔwɔ ndikye mo eburo ne kɔn yinwudwura ɛhe aliemaabie kyekye asafo womaa ma aliemaa mɔ ɔvane wokyɛ babra yɛ soe ne wɔma na nun,0.8846,0.3737
+403,BƆ ƆKƆBOKA WƆ MAA EKOSUA NIKYEE YÉ Ɔ,bɔkɔbokaɔmaɛ kosua nikye yɛ ɔ,0.875,0.2069
+404,Edwirɛ Bɔ Ɔma Anyelasoɛ trakt ne,foto nanu ne yewuikyɛ edwɛbɔmaanyelasorɛ trakte ne yɛ ɔlabrɛn,1.3333,1.1111
+405,"‘BƐ BƆ BEDE BEDI NE, BƐ KRA NYA DAA NGOA’",bɛbɔ bɛde bede n bɛkrɛ nnyadaa ngo a,0.9,0.1724
+406,ɔkɔboka wɔ maa ekonya anwoserɛ ɔ?,okobukaomaai kuinyaosrao,1.0,0.5185
+407,"Bɔ olimoa, nhyehyɛɛ beni yeɛ Yehowa yɛle, bɔ né ɔkɔboka ye mmaamɔ bɔ bɛwɔ aseɛ he aso ne maa bekoli bɔne so ngunim ɔ?",boli moa nzeɛben yɛyi hoayɛle bɔne ɔkɔbokae mamo bɛbɔ aseɛ yeasode maa bekoli bɔne sunguni mu ɔ,0.7917,0.2418
+408,"‘WƆ BABA NE, BAA NE, ƆNE SUNZUM KRONGRON NE DUMAA NU’",wɔ baba n baa n ɔnesunsungrongro ne dumaa n,0.5455,0.1795
+409,Mmerɛ beni yeɛ ɔte pá kyɛ ɛkɔbɔ asu ɔ?,miribin yɛ ɔte paakyɛɛ ɛkɔ boasu ɔ,0.7778,0.3448
+410,"b Obadia bɔ yɛkã yenwo dwirɛ wɔ wa ne, nná ye yeɛ ole diyifoɛ Obadia bɔ ɔhworɔle Bible nu nwomaa bɔ ye dumaa la so ne.",yeboberejwerɛ ne kengakyɛ o bɛdiabɔ yɛkaa wo jwurɛ wɔwan na yiyole diifuɛ obɛdiabɔhyorɔle bae bo no woman boyidumaa la son yeboberejerɛ ne yasi,1.0,0.7143
+411,"Ngɔm bɔ Yakob hyɛ fale ye mma mmrienzua mmɔtwɛ bɔ baha nanwo kora yeɛ owu ne, yɛkɔnea bɔ yekosua yekofi nu ɔ.",ngɔm bɔyakɔpehyɛfaleemamilenzua mmɔpwɛɔ baha na a nwo kora yɛɔ wo n yɛkɔ ne aboyɛkosua yɛkɔfe no ɔ,0.8636,0.2442
+412,"Yehowa subaen ahoroɛ bɔ ɔmaa ɔyɛ nyɔbotaen ne, yɛkɔyɛ sɛɛ né yasuesua?",yɛhu ɔsu b ahora bɔmɔ yɛ yɛ botaen yɛ kɔyɛ sɛɛ ne yɛ asoasua,1.0833,0.3509
+413,"Sɛ yɛkenga Bible ne a, edwirɛ biemɔ bɔ yenwo hia paa ne, yɛkɔhora yɛkɔyɛ yenwo nhwehwɛmuɛ. Nakoso, yɛkɔyɛ sɛɛ né yanya mvasoɛ pẽe yafi sɔ nhwehwɛmuɛ naso ɔ?",sɛ yɛkengabibo ne a adwere ebiemubɔn wo hiapaa n yɛkoraɛkoa yiɛ wo hwehwemu ɛ na ako so yɛkɔ yɛsɛɛ ne ɛyamvasoɔ pin yɛfisonhwemu ɛ na so ɔ,0.8571,0.2661
+414,"Yesu ngoa bɔ ɔfa tole berɛ mane yɛ ne, yɛkɔnea bɔ yɛnu biala kɔyɛ kɔfa kohyire kyɛ yenye sɔ ɔ.",yesu ngoa bɔfa to brɛma ne yɛ ne yɛkone aboyɛnu biala kɔyɛ kofa kohyekyɛ yɛnye sɔ ngyikyemu akone nyo yezɛmisaa,0.8,0.4932
+415,Nzu yeɛ ɔkɔboka wɔ maa ekomia wɔnye kogyina wɔ haw ahoroɛ noa ɔ?,inuziiro pôbokaro maa ekômia wô yikôjena wo hawahura nan,0.9231,0.4902
+416,Bɔ yeti yeɛ Nyameɛ ma atee maa yenwu amaneɛ ɔ,poi tiɛ nya miɛ maa tɛn ma ye wamaniɛ ɔ,0.9,0.3611
+417,KYIRE KYƐ WƆNYE SƆ BƆ YEHOWA AYƐ AMA WƆ NE,cirice wanu šoboyihu ayamawon,1.0,0.5758
+418,"SƐ YƐFA AKWANGYERƐ BƆ YEHOWA FA MA YƐ NE YƐYƐ ADWUMA A, ƆBOKA YƐ BƆBƆ",seɛfaa kwangyeɛ bɔ yihu afa ma yɛ ne yɛyi adwumaa ɔbokayɛbɔbɔ,0.7333,0.1296
+419,NYAMEƐ TEASEFOƐ NE KƆMA WƆ ANWOSERƐ,la men teasɛ foɛ ne kɔmaa wɔ aɔn srɛ,1.1667,0.3
+420,BOKA WƆ BIBLE SUANIƐ NE MA ONWU BƆ ƆKƆYƐ MMERƐ BƆ MMENIA TANE YENYE NE,bokɔ baa bosuɛneɛ maowu bɔkɔ yɛ merebomeniataneɛnyen,1.0,0.3393
+421,Atẽe Beni Yeɛ Yehowa Fa So Maa Yenya Yɛ Mbaeɛ Nwo Mmuayɛɛ Ɔ?,atee beni ɛyɛho afasomayɛ nyayɛmba yɛ mu muayɛ ɔ,0.7692,0.2766
+422,"ASAFO NU MBANYI, ƐMƆNEA MMOAEN KURE NASO",asafono wbai ɛmɔ nne ɛmo ankuyi no so,1.1429,0.3333
+423,BƆ ƆKƆMAA WƆNYE KƆGYE Ɔ,bɔ kɔ ma wanyi kɔ jeɔ,1.0,0.3158
+424,ATEE FOFORƐ BƆ YƐFA SO YEKYIRE KYƐ YEHOWA DUMAA NANWO HIA YƐ Ɔ,atenfoforɛbɔyɛfaso yɛ kyere kyɛ yɛhu aduma na wo hia yɛ ɔ,0.7692,0.16
+425,"Yekonwu kyɛbɔ Yesu maa mmenia nwuni Yehowa dumaa ne, kyɛbɔ ɔtele yenwo, na osa sale Yehowa ti ɔ.",yɛkonwo kyɛbɔ yesu maa menia nhwu ne yehu aduma n kyɛbɔ ɔteleo n na wosa sale ehu ati ɔ,0.6667,0.2237
+426,NNƐMAA WƆ WORA FI BƆ YEHOWA KAE NE,nna mawɔ wrɛfi boyihu akae n,1.0,0.3333
+427,"Bɛbɔ baye bɛ bafi asafo nanu ne, gyinayɛɛ beni yeɛ aliemaamɔ kɔhora kogyina bɛ tiboa so kosi kɔfa bɛnwo ɔ?",bɛwo baye bɛbɛfia asafo na nu n gyina yɛ ben yɛ aleema mɔ kɔra kɔ gyina bɛtiboa so kɔsi kɔfa bɛnwoo,0.95,0.1765
+428,"Gyidie bɔ yele ye wɔ Yehowa nu ne, nzuati yeɛ odikyɛ yɛmaa nu yɛ se paa ɛnnɛ ɔ?",gi die boye lɛ woyehoa nun nzua teo dechea ma nu yâ se paa ɛ nâo,0.8333,0.3667
+429,"Nningyein pee wɔ ewiase he anu bɔ ɔkɔhora kɔye y’adwene kofi Yehowa soen so ɔ. Yeti yɛbaanea bɔ yɛyɛ a, ɔngɔma ɔngɔwa ye sɔ ɔ.",ne ngyempin wɔwia sehie nu bɔkora kɔ yeyadwene kɔfie hu ason so ɔ itiyɛ baa ne abɔyɛya a ɔngɔmangɔ wae sɔ,0.84,0.2347
+430,Yehowa Pena Kyɛ Ebiala Sakyera Ye Adwene,yihoa pena chɛ ɛ bia la sachera yaa jonɛ,1.1429,0.3529
+431,"Yeti, sɛ wɔ bɔbɔ esũa nikye a, ɛkɔhora kɔyɛ nhwehwɛmuɛ kɔfa ndeaseɛ foforɛ bɔ yanya ye ɛlɛsaen, ɔne tworɔnzɛm bɔ begyinane so bɛyɛle sɔ nzakrayɛɛ ahoroɛ nanwo.",yiti sɛ wɔbɔbɔ asua nikya a ɛkɔhorakɔ ye nhwe mu ɛkɔfa ndiaseɛfoforɛ bɔyɛanyayɛ le sann ɔnetweranzɛm bɔ begyane so bɛyɛle sɔ nsakraa ahorɛ na nho,0.8148,0.1783
+432,"SƐ WAYƐ SE WAMA WƆ KYƐ ƐKƆBƆ ASU A, NZU YEƐ ƐKƆHORA KOSUA KOFI TETE KRISTOFOƐ HEMƆ BERƐ Ɔ?",sɛwayɛ se wa mookyɛ kɔba su a nzu yɛ kora kɔsua kɔfitete kristofa hɛmɔ bereɔ,0.8421,0.2143
+433,Edwirɛ Bɔ Ebiemɔ Bisa Ɔ,ɛdwerebo ebie ma bisaɔ,1.0,0.2632
+434,SƐƐ YEƐ EDWIRƐ HEMƆ KƆBOKA WƆ MAA EKOLI ESURONYI SO Ɔ?,sị ejai mwọkụbụkaụmeekori esorei sụọ,1.0,0.6047
+435,"Sɛ yesuro Yehowa a, sɛɛ yeɛ ɔboka yɛ ɔ?",seesoro yeho a sɛ yɛ ɔbokaɛ ɔ,0.7778,0.2759
+436,BƆ ƆKƆBOKA WƆ MAA EKOSŨA NIKYEE YÉ Ɔ,boko bukooma ekusya ntyeiyo,1.0,0.5172
+437,ɔkɔmaa ekonya gyidie kyɛ okoyira wɔ ɔ?,ɔkɔma ekonya gyidie kyɛ okɔyira wɔɔ,0.5714,0.0645
+438,ASAFO NU MBANYI NEMƆ YƐ ‘ADWUMA SERƐ’,asafonom baine mɔ yɛ adwuma serɛ,0.5714,0.1034
+439,SŨA NNINGYEIN BIEMƆ BƆ ƆKƆBOKA WƆ WƆ W’ASETENA NU Ɔ,suɛnengyen biemɔ bɔ ɔkɔboka wɔ ɔ asetena nu ɔ,0.4,0.1707
+440,KYƐBƆ BELILI BƆNE PIRIKUA BIE NWO DWUMAA WƆ ASOMAFOƐ NEMƆ ABERƐ SO Ɔ,kyɛbɔ beriribɔne pirikuia biemo dwumaa wɔasomaafoɔ ne mu aberɛ so ɔ,0.6154,0.1429
+441,"SƐ YƐYE YEHOWA DUMAA NE AYƐ A, ƆBOKA MMENIA MAA BENYA NGÕA",hyeɛyiɛho adumaa ne ayɛ a ɔbokameniamaabenyangoa,0.75,0.1957
+442,SUESUA KYƐBƆ YEHOWA YE YEKUNU KYƐ NIKYEE NE,siosiacɛpɔ yiho ayii kunu cenkeɛn,1.0,0.5
+443,BƆ YETI YEƐ WASIESIE YƐNE NYAMEƐ AFIA Ɔ,boitie wɛsese anenyami afia ho,0.875,0.4375
+444,BƆ ƆMAA EBIEMƆ TWE B’ASUBƆ SA Ɔ,bɔɔmaa ebiemɔ twe ba subɔ sa ɔ ngyekyɛ mu enwɔ nze misa,1.2857,0.8333
+445,KƆSO PINGYE NYAMEƐ TEASEFOƐ NE,kɔso pengyenyame ɛte asefoanne,0.8,0.1154
+446,Nningyein benimɔ yeɛ yɛkɔhora yɛkɔbɔ yenwo mbaeɛ ɔ?,ni njeimbinimwayeyekokula yekobba ewumbayo,1.0,0.5116
+447,Nzu yeɛ ɔkɔhora kɔmaa y’anigye kɔte kɔhɔ ɔ?,nhu yɛ kɔhora kɔma yɛ ne gye kɔte kɔhɔ,1.0,0.2059
+448,KYƐBƆ BIBLE NE BƆ EKOSUA NE KƆBOKA WƆ Ɔ,kyɛbɔbaa bɔ ne bɛkɔsuane kɔbo kawɔɔ,0.7778,0.2258
+449,"Ɔwale sɔ ne, panyi nanwo dwirili ye, na obisale ye kyɛ: “Blankson yeti bɔ ɛpena kyɛ ɛtworɔ hɔ ɛne?”",ɔwale sɔ no pɛanyina wo gwereri na ɔbisalee kyɛ blankson yeti bɔɛkana kyɛɛ kwere hwɔɛ n,0.6842,0.24
+450,"KYƐBƆ YEHOWA SI ‘KURO WƆ DWIRƐ’ NE, DWENEDWENE YENWO",kyɛ boyehu ase kurowodwulɛn dwulɛndwae ho,1.0,0.439
+451,"Né meyɛ adwuma wɔ Ewiase Mukoraati Adwumayɛbeati bɔ ɔwɔ New York, U.S.A ne. Yede, Yehowa Adanzefoɛ dwirɛ bɔ né bédi ye wɔ Europe ne, ɔyɛle sɛɛ yeɛ menwo wale nu bie ɔ?",ne meyɛ adwuma wɔwiaso mukoraa ti adwuma ɛbi ati bɔwɔ new yɔrk iwasi n yɛde yɛhoadansefo ɛdwerɛ bɔ ne bedii wɔ irupu n ɔyelɛ sɛɛ yɛɛme wo nwale no bia ɔ,0.8125,0.2636
+452,NZUATI YEƐ YEHOWA PENA KYƐ YƐNWONDƐ YE Ɔ?,nziyɛtiɛ ho apemate yɛ won dɛ yɛɔ,1.0,0.4242
+453,YESU NATE NZƐNGYERƐNNEƐ SO MANE MMENI LƆEN PAANOO,yesu natenzangyɛne so mmanemenilɔn panno,0.75,0.2381
+454,BƆ ADESŨA NE KƆHÃ YENWO DWIRƐ Ɔ,bọ̀ dì si áníkọ hàíú jrẹ ọ,1.0,0.72
+455,"Vidio ahoroɛ bɔ asafo ne ayɛ ne, wɔ bɔbɔ anaa ɛne w’abusũa ne kɔhora kɔnea bie na ɛmɔsusu yenwo. Ɛhẽne sĩ ne, ɛmɔkɔhora bɛkɔhworɔ bɔ ɛmɔ asũa bafi vidio nanu ne bɛkɔto berɛ.",nna video ahorɛbɔ asafo ne ayɛ n wɔbɔbɔ anaaɛ ne waabusua ne kɔhora kɔnnea bie na m asusuɛ h ahinisi n mɔ kɔhoraa bɛkɔhwerɛbɔ mɔ asua bafi vidio ne anun bɛkɔtobrɛ,0.697,0.2206
+456,"Mmerɛ bɔ ebie yɛle bɔne wɔ Korinto asafo nanu bɔ wanzakyera ye adwene ne, nzu yeɛ Pɔɔlo hane kyɛ bɛyɛ ɔ?",mmerɛ bɛbii yɛreboane wɔkɔrento asafono no bɔwɔanzakyera yɛ adwere n nzu yɛ pɔhane kyɛ bɛyɛɔ,0.8571,0.2195
+457,EBIE BƆ YENWO DWIRƐ WƆ BIBLE NANU Ɔ,ibii boyiwu juro wobai bunanuo,1.0,0.5357
+458,NYAMEƐ MANE ATEE MAA YOB NWUNI AMANEƐ,nyameɛmaneaten maa yɛbunnwuneamaneɛ,0.8571,0.1613
+459,Dé Tonu Kyɛ Yehowa Afa Wɔ Bɔne Ahyɛ Wɔ,diɛtu no kyɛ yɛhu afa wɔbɔ ne ahyɛ ɔ,0.6667,0.3
+460,"“Mehũ yɛle sɔ ne, nwuni kyɛ wagua me nyunu ase, meso llé mvasoɛ, na onguro me kõ.”",mehu yɛle sɔ ne nwuni kyɛ waagua menyunase mesum le mvasoɛ na ɔn guro meke,0.5882,0.1333
+461,"Bɔ yesua yefi nu ɔ: Sɛ yele suahu ne nimdeɛ pee wɔ asetena nu po a, ɔnzɛkyɛ yɛbɔ yɛtianu yɛfa afutue yɛma ebie, na mmom odikyɛ yɛfa yegyina Nyameɛ Dwirɛ naso.",boyesuɛ yefi ni ɔ si yɛlesuɛ ho ninimdeɛpɛn wɔaseteɛ no pɔ a ɔnzɛtie boyɛtiɛn yɛfafotue yɛmaabie na mmom oditɛyɛfa ye gyenanyame edwurɛ na so,0.8387,0.2419
+462,"d BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Ɔnate kõɛ ti, aliemaa brasua bie ne ɔwa atu awa maen foforɛ so. Aliemaamɔ aayia bɛ, na bɛyɛ bɛ akwaaba.",bɔfotɔ ne kae nwo dwerɛ ɔ ɔnate konwoti aliemaa belɛ so abie nu ɔwɔ atua wɔamanefoforɛ so aliema mɔ ayiabɛ na bɛyɛ bakɔ aba,0.75,0.2255
+463,"SƐ YƐMAA MMENIA NWU KYƐ YƐTE EDWIRƐ BO A, YENYA SO MVASOƐ",sɛ yɛmaa meni anhu kyɛ yɛtie dwurabo a yɛnnyaso mva soɛ,0.6667,0.1556
+464,BƐMAA BƐTELE EDWIRƐ BIE ABO,bɛma bɛtsele edwri biabo,1.0,0.2174
+465,Nzu yeɛ ɔmaa Yehowa yɛle nhyehyɛɛ kyɛ ɔkɔfa yɛ bɔne kɔhyɛ yɛ ɔ?,ngi yɔ maa yɛhu ayɛle nyehyɛ ɛkyɛ ɔkɔfa yɛbɔne kɔhyɛyɛɔ,0.9231,0.16
+466,"MVASOƐ BENI YEƐ YENYA YE Ɔ, NA NZU YEƐ ODIKYƐ YƐYƐ Ɔ?",nvaso ebe ni yɛeyinyayɛɔ na nzu yɛ odikyɛyɛ yɛɔ,0.8333,0.175
+467,"ME WORA BƆLE, NYƐLE ANGONAM, NAKOSO NYANE ANIGYE",merra bole enyeleya ngunam nakaso nyenyani gye,1.0,0.2564
+468,Nningyein Nza Bɔ Ɔkɔboka Wɔ Maa Ɛkɔfa Bɔne Kɔhyɛ Ɔ,ɛdweɛ bɔwalakana nu ne kengakyɛ mengyenzaa bɔkɔboka wɔ maa kɔfa bɔne kɔhyɛo,1.0,0.7561
+469,Nzu yeɛ Yehowa yɛ fakyire kyɛ okuro wɔ dwirɛ ɔ?,nzuɛ yeho ayɛfakyirekyɛ okoro wɔbwerɛ wɔ,0.9,0.1892
+470,SƐƐ YEƐ YEHOWA NATE ƐHEMƆ ASO BOKA YƐ MAA YEMIA YƐNYE YEGYINA YƐ HAW NOA Ɔ?,sɛ yɛ ehua naate ɛhemo aso boka yɛmaa yɛ mia yɛnyi yɛ gyina yɛha o noɔ h,0.875,0.2203
+471,"Sɛ sona ne kora twẽ yenwo fi ponografi nwo a, ɛmɔhɔso bɛboka ye kyɛbɔ ɔkɔyɛ a, ongosa ngɔnea ye kõ ɔ.",sɛsola no kora tweye wo afipono agrafi wu a ɛma ɔhɔse bɛbo kaekyɛ bɔ ɔkɔyɛ a ɔngɔsanga ɔneae koɔ,0.8571,0.2051
+472,"Y’abusuafoɛ bɔ bɛnne asafo nanu ne, sɛ yenwu b’anwumvoin a, sɛɛ yeɛ ɔkɔmaa yɛkɔhɔ so yɛkɔboka bɛ ɔ?",yɛbusuafoɔ bɔ bɛnnoasafona anu n sɛ yɛwuba womvoni a sɛɛyɛkɔmayɛkɔɔso yɛkɔ bokabɛɔ,0.8333,0.1948
+473,‘ƐMƆYE AMUMUYƐƐNIƐ NE BÉFI ƐMƆ NU’,ɛmɔyiɛ mu muyeeniɛn befie munu,1.0,0.2963
+474,YEHOWA PENA KYƐ YEDE YƐTO NU KYƐ WAFA YƐ BƆNE WAHYƐ YƐ,iwɔ apna kye ede yɛ tone kyɛ wafaɛbɔne wahyɛɛ,0.9167,0.2558
+475,Nea bɔ ɛkɔhora kosua kofi nu ɔ. Bisa wɔnwo kyɛ:,ne abɔ ekɔrakosua kofi niɔ bisawoɔwecɛ,0.9,0.25
+476,Tworɔnzɛm bɔ olili so hemɔ maa yenwu ye kyɛ wɔnwo hia Yehowa:,kyerɔnzabɔlele so e mɔ mma ye nwui kyɛ wɔnwohia ye ho a,0.9167,0.2653
+477,"Sɛ odwu mmerɛ bɔ yɛfa yɛkae Yesu wue ne a, fa mmerɛ pee yɛ asɛnga adwuma ne.",so dwurumaa bɔ yɛfa yɛ ka yesu we ni a famerɛ pen yɛ asɛnge dwuman,0.7647,0.2414
+478,Yɛkɔyɛ Sɛɛ Ne Yahã Nahorɛ Nanwo Dwirɛ Maa Wahã Mmenia Ahone?,yɛkɔ yɛsɛ ne ahanahora n' awonduramaa kɔahameni ahone,0.8182,0.2857
+479,MVALE MENWO NDOLE YEHOWA SO WƆ NEKAA BƆ NÉ KÕƐ AMAA ƐBERƐ AYƐ BASAA NE,mvare mewɔndoreeho aso wɔ ne kaabɔ ne koenama ebra yɛ basaa ne,0.8,0.25
+480,Sɛɛ yeɛ Daniel hyirele kyɛ ole akokoduro ɔ?,sɛ yɛdaneɛ isuraele kyɛ ɔlile akokodurɔɔ,0.875,0.3429
+481,"Sɛ W’adwene Nu Yɛ Wɔ Naa A, Bible Ne Kɔboka Wɔ Maa Ekoli So",edwurɛ bɔ waa waakana nu ne kengakyeɛ sɛ waagwuno no yɛwɔ na bayebono kɔ bakawa maakɔli so,1.0714,1.0227
+482,BƆ MMRANDEƐ KƆHORA KƆFA KOSIE BƐNYE SO Ɔ,edwua bɔ wɔala kana no ne kengakyɛ bɔmmeran deɛ kɔhoraakɔfa kɔsie bɛnye so ɔ,1.25,0.9394
+483,NZU YEƐ ƆKƆBOKA YƐ MAA YEKOSURO NYAMEƐ Ɔ?,nziakɔ bokayɛ ma ye kosoronyamia ɔ,0.875,0.2727
+484,NWU BƆ WAMAA ANYA ADWENE KYƐ YEHOWA NGURO WƆ DWIRƐ NE,muboamanenyi adwen kyɛ yɛhu a nguro wodwurɛ n,0.9091,0.3256
+485,NZU YEƐ ESUA FILI TWORƆNZƐM HEMƆ NU Ɔ?,enzu yɛ esue filictrenzɛm himonuɔ,1.0,0.3
+486,BƆ YESU WUE NE MAA YENWU YE YƐFA YENWO Ɔ,bɔ yesu we nimaa yegw yɛ fa ye wõɔ,0.8,0.2581
+487,Yob nwomaa ne maa yenwu bɔ yeti yeɛ Nyameɛ ma atee maa yenwu amaneɛ ɔ. Osa maa yenwu bɔ ɔkɔboka yɛ maa yekogyina yɛ haw noa ɔ.,yubɔ womane mayɛ mu bɔiteɛ nyameɛ maate mayɛ wumamanee ɔ osa mayɛ mu bɔ kɔbokayɛ maayɛ kogyinayɛhawo no ram,0.8519,0.2653
+488,Nzu yeɛ yɛkɔhora yɛkɔyɛ na wamaa yɛnye asa agye ɔ?,enju yeekaulayekoye nuwamaye nyiesaadio,1.0,0.525
+489,BƐFALE ƐPƆEN BƐWALE YƐ SO WƆ NIGER,be fareɛ poi bɛ waleyɛ so wonii jɛɛ,1.0,0.3571
+490,NZU YEƐ YƐNEA YE ATEE Ɔ?,nzu yɛyɛ nnea yɛate o,0.8333,0.2778
+491,"Sɛ ɛkɔ asafo foforɛ nu a, ɛkɔyɛ sɛɛ né wɔnye aha?",sikwasafofufire nu a ɛkwae sɛ ne waneaha,0.8182,0.3514
+492,Ɔkɔmaa yekonwu bɔ yeti yeɛ yasi gyinayɛɛ kyɛ yɛkɔsõ Yehowa ne.,ɔkɔmayekwo mu boetiɛ yɛsigyina yɛ kyeyɛ kɔso ye hoa no,1.0,0.2745
+493,YENYANE AKOKODURO ƆMVA YENWO KYƐ NE ESURONYI AHÃ YƐ NE,nyanagekuduru omve awoncɛ ne esrin ahayɛn,0.9,0.4222
+494,DWENEDWENE MBAEƐ BIEMƆ BƆ BAYƐ YENWO TWORƆTOHƆ WƆ BIBLE NANU NANWO,dwenɛdwenemba yɛ bie mɔ bɔɔ ba yɛ ho thorɛto hɔo bae bona nu na o,1.3636,0.3036
+495,"“Me tikya nwa ndworɔ krataa mva mba wɔ kyerɛ, nakoso koraka ngɔyɛ sɔ ne, sana ede to nu kyɛ bɔ ekyirekyire ne, ɔtte nahorɛ.”",miti kyan wa ndwerɔkrataa mvam boɔ kyere na koso korakangɔyɛ so n sana ɛdetuni kyɛ boɛkyerekyere n ɔte na horɛ,0.9167,0.1684
+496,Sɛ Ebie Yɛ Nikyeebie Maa Ɔte W’ahone Koso Ɛɛ?,ɛdwere bɔ wɔalaka na no ne kengakyɛ sɛ ɛbieyɛ nikyei maɔte wɔ ahone kosoaɛ,1.5556,1.0286
+497,‘ƐMƆFI ƐMƆ AHONE NU BEHUROHURO ƐMƆ NWO DWIRƐ’,eme fie mahụro ni behwurohwru emu nwu jwere e,1.125,0.5
+498,"SƐ NNINGYEIN NGƆ YÉ WƆ W’AGYAA NU PO A, NNƐMAA W’ABA NU BU",sɛ ninjen go ye wôwôjââ nu pɔ a nâ maawa bâ nu bu,0.6923,0.3953
+499,Aso Bɔne Kõ Nala Yeɛ Né Yohane Ne Pɔɔlo Bɛkã Yenwo Dwirɛ Ne Anaa?,ɛdwra bɔala ka na no ne kengacyɛ aso bɔne kona la yɛa ne yɛohane ne pɔɔ bɛkan wodwura ne anaa,1.1429,0.7451
+500,"Sɛ bɛkã adwenesakyera a, yekonwu bɔ okyire ɔ. Afei yekonwu bɔ yeti yeɛ odikyɛ ebie sakyera ye adwene, ɔne kyɛbɔ Yehowa aboka mmeni pee maa basakyera b’adwene ɔ.",sâ bâkadwen sachera a yekowu boo cherao afâ yekoåu bo e tie o di châ ebie sachera ya dwone ône châ bo yehu abokamenipeen maa ba sachera ba dwene ô,1.0,0.3203
+501,"Nzuati yeɛ ebiemɔ kɔhora konya adwene kyɛ, Yehowa nye ngye bɛnwo ɔ?",nzue tie biomô kohora ko nyaajwone chɛ yeho anyen je bâ nwoô,1.0,0.2963
+502,"Yehowa Ayira Yɛ Maa Wabo So, Na Yasũa Nningyein Pẽe Wɔ Ye Sõen Nu",yɛwu ayira yɛma wɔ abo so na yɛsuaningyempe wa esui no,0.7857,0.3529
+503,"Atee bɔ Elihu fale so tuli Yob foɛ ne, nzu yeɛ yesua yefi nu ɔ?",aten beeri hofare soturoyɛ obufoan ɛnhuɛ yɛsua yefi noɔn,0.9333,0.3617
+504,BƆ ƆKƆBOKA WƆ MAA EKOSŨA NIKYEE YÉ Ɔ,boka boka ma ekusiancia io,1.0,0.5517
+505,"Gade, Asɛ, ɔne Nafetali",gaad assa wane naftali,1.0,0.3889
+506,Kyɛbɔ Yehowa Boka Yɛ Maa Yegyina Yɛ Haw Noa Ɔ,kyɛ ba yihu abokayɛmaa yɛ gyinaye ha o noa ho,0.9,0.25
+507,"Sɛ Yɛfa Nyumaa Yɛboka Yɛ Gyidie So A, Ɔmaa Yɛyɛ Bɔ Ɔte Pá Ɔ",sɛ yɛfa nwuma ayɛbo kayegyidie so a ɔmaa yɛyɛbo ɔte pao,0.5714,0.1111
+508,"Yekonwu bɔ yeti yeɛ yenwo hia kyɛ yɛtwe yɛnwo yefi bɔne, ɔne agyirɛ biemɔ bɔ sɛ yetu a, ɔkɔmaa yɛkɔɔyɛ sɔ bɔne nanwo ɔ.",yɛkɔ mombɔriti yɛn wo hiakyɛ yɛtwe yɛ wo yɛfi bɔne ɔne agyire biemo bɔ sɛ yɛtu a ɔkɔmayekoɔ yɛ sɛ bɔne na ho,0.75,0.2366
+509,"c BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Atee bɔ asafo nu panyi bie fale so dwudwole wɔ mbanyi nhyiamu bo ne, ye mmango panyi bie fa yenwo afutue ma ye.",foto na no n enwui kyɛ mbaninna bie mɔ yiɛ n na bɛnukoafɛe aboo dwudwɔ ɔ sian abraamdeɛ ko bɔye ko so ɔwɔbre biɛ n ɔne sɔliimma ne dwudwo wɔka bie no,1.0323,0.844
+510,YƐKƆYƐ SƐƐ NÉ YAFA ANIMNYAM BƆ ƆFATA YEHOWA NE YAMA YE?,yakɔyɛ sɛɛ ne yafa nniminyam bɔ fata yɛhuane yamman,0.7273,0.25
+511,"MMERƐ BƆ ƆTE PÁ KYƐ YETU EBIE FOƐ, ƆNE KYƐBƆ YƐKƆYƐ YE Ɔ",merebɔte pa kyɛ yituebiifoa wo ɔne kyɛbɔyɛkɔyɛyɛɔ,0.8462,0.2326
+512,Obadia​—Né Osuro Nyameɛ Paa. Yɛkɔyɛ Sɛɛ Ne Yasuesua Ye?,ɔbɛdea ne osuro nyameɛ paa yɛkɔyɛsɛ neyasuosua,0.7778,0.186
+513,c BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ : Aliemaamɔ yɛ bɛbɔ baabɔ asu ne akwaaba.,foto na no n yemukyɛ ebi mɔ bɔ so wɔ nsiemu bo na liema mɔ bɔ bɛsɛ no bɛma bɛ,1.3333,0.8333
+514,Nzuati Yeɛ Odikyɛ Yesuro Yehowa Ɔ?,nziekyiɛ wodekyɛ ye sereyehoa o,1.0,0.3929
+515,BOA WƆNWO MA NNINGYEIN BƆ ƐKƆHORA KƆYƐ YE KYẼABIE Ɔ,boawɔnwomani ngyen bɔkɔhorakɔ yɛ ɛkyee bi ɔ,0.9,0.1905
+516,Gyinayɛɛ Bɔ Ebiemɔ Asi Wɔ Nzãanonɛ Nwo Ɔ,edwurobɔ ɔwɔalaka na ano kingakyɛ gyira yɛboedie muasi wɔnzaa no no nwoɔ,1.5,1.0606
+517,Nea bɔ ɛkɔhora kosua kofi nu ɔ. Bisa wɔnwo kyɛ:,ne abɔ ikọre kosua kofini ọ bisawọ mọchɛ,0.9,0.3611
+518,Yɛkɔyɛ sɛɛ né yahora yahwẽ yɛnwo yafi “awosii” nu nningyein nwo?,yɛkɔyɛ sɛɛ miahorayaheyɛnhu yɛfia wo si nu ni ngye hu,0.8182,0.2941
+519,"Sebulun, Yisaka, ɔne Dan",sâbolɔn yesa ka ône dan,1.0,0.2632
+520,"Sɛ yedé yɛto nu kyɛ Yehowa se yɛ paa a, sɛɛ yeɛ ɔkɔboka yɛ ɔ?",seidea tuni kyɛ ihuase yɛpa a sɛ yɛ ɔkɔbokayɛɔ,0.8,0.3333
+521,"Ɛwɛnelɛ Waen bɔ ɔwale afoɛ he ne, ato wɔ boase akenga nu anaa? Sɛ sɔ a, yede nea sɛ ɛkɔhora kɔye edwirɛ hemɔ noa a:",ɔwane lɛ wanbɔ wale afoɔ he ne atoɔ bo ahyeakenganu ana sɛ so a yɛde neasɛ akoraakɔ yie dwirahemɔ no a,0.8,0.2069
+522,"Sɛ yɛkyɛ mmenia nikyee a, yɛnye gye paa, yeti yɛkɔnea bɔ yɛkɔyɛ na yahɔ so yatira sɔ anigye nanu ɔ.",sɛ yɛkyeɛ menie nkya a yɛnye gye paaa yeti yɛkɔ ne abɔ yɛkɔ yɛ na a ɔso yɛtirasoa ne gye na nu ɔ,0.8,0.1558
+523,Sɛɛ yeɛ Yehowa hyirele tete Kristofoɛ nemɔ atẽe ɔ?,sɛɛyɛ yihu ahyeraleteti kristofoɛ ne mo ateo,0.8889,0.2439
+524,Nzuati yeɛ Bible ne ka kyɛ Yehowa te “Nyɔbotaen” ɔ?,nziati a baibo ne kakyɛ yɛho ate yɔbotae o,0.9,0.3077
+525,"BƐBƆ BƐWƆ HONHOM NU PARADISE NANU NE, NHYIRAA BƆ BENYA YE Ɔ",bɛbɔ bɛwɔhommɔm nuprawadi sɛ namni n ehyiraabɔ bɛnyayewawo,0.9167,0.2979
+526,NYAMEƐ AWA BƆ ƆLA YE AHONE SO NE WALE ASEƐ SO,ɲyamiawaabolaya hulesone waasieso,1.0,0.3714
+527,"SƐ YƐFA ALIEMAAMƆ ADAMVOA NA YƐBOKA BƐ A, YENYA NHYIRAA",se yɛfare maama damvoa na yɛbokabɛ a enyɛnsyire a,0.8,0.2
+528,"Yesu asubɔ ne, ɔte sorongõ wɔ bɛbɔ beli yesĩ nanwo. Nzuati ɔ?",yesu asu bɔn ɔte suromgo abebɔ beliisi nao nzie tie o,0.8333,0.3404
+529,‘Fa Wɔ Ti Wura Mbanyi Nikyeesualɛ Nu’,fawoti wura mbanenekyei sua le nu,0.8571,0.2069
+530,BƆ ƆMAA ƆYƐ SE KYƐ YƐNYE KƆGYE MMERƐ BƆ YAYƐ MBANYI NE,bɔmɔɔ yɛse chɛyɛ nyɩkɔ gye mbɛ bʋyayɩmbɛnɩn,1.0,0.3488
+531,"Bayɛ sɔ dwirɛ he bama brasua bɔ ohũ nea ponografi ɔ. a Bible nu afutue bɔ ɔwɔ sɔ dwirɛ he anu ne, ɔkɔboka brasua bɔ ɔte sɔ ne maa okonwu kyɛ Yehowa dwene yenwo, na ɔkɔboka ye maa okogyina ɔhaw bɔ ɔfa nu ne noa. b",bayɛsodwura he bammaberesuabowo honniapɔ no grafia ɔ,0.9565,0.7853
+532,"Sɛ akɔnnɔ bɔne bie ha yɛ a, yekonwu bɔ yeti yeɛ ɔnzɛkyɛ yɛmaa y’abanu bu, ɔne kyɛbɔ yekoli so ngunim ɔ.",saakɔnobɔne ibie hay a ikommbɔ i kyi ɔngyɛkyɛɛ mayabɛ no bu ɔne kyɛbo ekolisonguni mɔɔ,0.8571,0.3165
+533,Claude Brown,cloud brown yɛɛyɛnwui wofotoma no nu,2.5,2.0909
+534,MA NYAMEƐ DWIRƐ NE ‘YƐ ADWUMA WƆ WƆ́ NU’,mmanyami edwurɛ ne yɛ adwuma wɔ wonnu,0.5556,0.2069
+535,Kyɛbɔ mbanyi nemɔ to bɛ boase bɛboka ebie bɔ wayɛ bɔne pirikua wɔ asafo nanu ɔ.,kyɛ bɔmban ne mɔtobɛbo ahye bɛbo kaebie bɔ wɔaeboane priikria wɔasafona nu ɔ,0.875,0.2063
+536,"Bɛbɔ bayɛ mbanyi ne, nzu yeɛ ɔmaa bɛ wora bɔ ɔ?",bɛbɔbayɛ mbai n nziɔmaabaroaboɔ,1.0,0.3143
+537,BƐHÃNE KYƐ YƐƐSÕ WƆ ESTONIA NE NGURO FOFORƐ SO,bɛhane kyɛre yɛso e wɔ estonia ne nguruofoforɛ so,0.6667,0.1842
+538,"Y’abusuafoɛ bɔ bɛnne asafo nanu ne, yekonwu bɔ yɛyɛ a ɔkɔmaa yɛne b’afia kɔyɛ kama, na wamaa yahora yali bɛ adanzeɛ ɔ.",yɛbusuafoɔ bɛne asafo na nu ne yɛ kɔwumbɔyɛyɛ a ɔkɔmaayɛ ne bafiakɔyɛ kama na ama yahora yɛ libadanze ɔ,0.7273,0.1413
+539,Nzu Yeɛ Né Yuda Pena Kyire Ɔ?,izu yɛa ne yudaprakye wokyere ɔ,0.8571,0.5
+540,"NHYƐLE YEBO NZŨANE YEHOWA NWO NIKYE, NA ƐHẼNE MAA MVALE MENWO NDOLE YE SO",nzɛle gbo zuane yihua wone tye ne hine mma nvale me wɔn doleye so,0.9286,0.322
+541,sɛɛ yeɛ ɔfa bokale mmenia maa besusuli tworɔnzɛm nanwo ɔ?,sɛ yɛ ɔfa bokale meniamaabɛsusule turazɛm na woɔ,0.8,0.2128
+542,b Nea edwirɛ bɔ yeɛ ole “ Wotuu Wɔn Ho Mae Koraa ” bɔ ɔwɔ Twi nu ne koso.,yeboberedwure ne keŋgakyɛ ne edwure bô ye ole wotuwɔho maekoraa bô wɔ twi nu ne koso yeboberedwure maasi,0.8824,0.9038
+543,Mmerɛ Bɔ Ɛne Ebie Bɔ Ɔwɔ Dede Ayɛ Agyaa Nhyehyɛɛ Ɔ,ɛdwurɛ bɔ woala ka ne nno ne keŋgakyɛ merɛ bɔ aneɛbie bɔwɔde de ayɛ gyaanhyehyɛ ɔ,1.1818,0.875
+544,YE MMERƐ SIE BERƐ BƆ ƐKƆFA KƆKENGA BIBLE NE Ɔ,iyɛ mmere siebrɛ bɛkɔfa kɔ kengabaa bɔ ne ɔ,0.8,0.25
+545,"Kesaalae, kyɛbɔ edé di kyɛ bɔ wɔnye la so ne kɔwa nu ne, sɛ ɛfa toto mmerɛ bɔ ɛhyɛle yebo kyɛ esũa nikyee nanwo a, enwu ye sɛ́?",kesaala e kyɛ bɔɛdedi kyɛ bɔanyilaaso ne kɔ waannun sɛɛ fa totomerɛ bɔhyare ɛbɔkye suɛne kyei na nnwo a ɛnwu i sɛ,0.8571,0.2632
+546,"Edwirɛ titire bɔ ɔwɔ Bible nanu ne, sɛɛ yeɛ sɔ tworɔnzɛm he boka me maa mete yebo ɔ?",edwudati treboɔ wɔbaebo na nu n sɛ ɛyɛ sɛɔtweɛnzɛm hɛ bokammaa meteeboɔ,1.0,0.2769
+547,"Aliemaa Mmrienzuamɔ, Ɛmɔyere Bɛnwo Bɛbayɛ Asafo Nu Asomvoɛ Anaa?",alemaa mere nzua mmɔ ɛmɔ yere bɛ nwo bɛbaye asafo no asomvo a naa,1.4444,0.1296
+548,"Sɛ bɛkã kyɛ Yehowa ato yesa afrɛ ebie awa ye tena sua nu a, yekonwu bɔ okyire ɔ. Afei koso, yekonwu atee bɔ Yehowa faso nea yɛ, mmerɛ bɔ yawa ye tena sua nanu ne.",sɛ bɛkacyɛ yehu atoesa afere bia woayetena sua nu a yɛkɔwu boocyira ɔ afei koso yɛkɔwu atem bo yehu afaso nnea yɛ mere bɔ yɛ awoayetena sua na nun,0.7143,0.2358
+549,BƆ ƆKƆMAA WƆNYE KƆHƆSO KƆGYE Ɔ,bɔɔ kɔ maan wɔ nye kɔhɔ so kɔ jeɛ ɔ njyece mɔ ɛ ngonlan ɛnze mesa,2.5,1.04
+550,"Mekã kar a akyekyere po kora sa menwo, maa yeti daa sana bɛbɔ meso awɛen anaa?",mekakaa akyekyerepo kora sa me o mayiti daa sana bɛbɔ me soawɛnanaa,0.6875,0.1148
+551,"GYIDIE BƆ YELE YE KYƐ YEHOWA BƆHYƐ KƆWA NU NE, BƆ ƆKƆMAA ENU KƆYƐ SE Ɔ",gyidie boye layekyere yɛhu abɔhyɛ kɔ wa no n bɔkɔmayɛnu kɔyɛse ɔ,0.875,0.2407
+552,Yɛkɔyɛ sɛɛ né yahora yayɛ Kristoniɛ bɔ wanyi wɔ sunzum nu ɔ?,yɛkwayɛ sɛɛ ne yɛ ahoraya yɛ kristo ne ɛbowa anyi wɔsunzu nu ɔ,0.8333,0.1667
+553,"d BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Vidio bɔ ɔba toatoa so bɔ yeɛ ole Aso Bɛbɔle? ne, akwalaa bie ye bie kyire ye mmango sukuuniɛ bie",foto na no n yɛnwuekyɛ video bɔbatɔtɔaso bayeo lɛ aso bɛbɔle n akwala abie yi bie kyerɛye mango skoo ne abie,0.8571,0.3265
+554,YEHOWA MAA YOB AMANEHUNU NE WALE AYIELEƐ,yeho amaa yobaamanihunu ne walea yeleɛ,0.8571,0.1176
+555,"“Sunzum Ne De, Ɔma . . . ”",eâ jure bô waa la ka namnuni keŋga châ sunzomne de om ma,3.0,2.5385
+556,Ngɔm Bɔ Yakob Hyɛle Kora Yeɛ Owu Ne,ɛdwore bô waalakana nu ne keŋgachɛ ngɔn bô yakɔpohyɛle kora yɛo won,1.5,1.3214
+557,SUESUA PETRO NA KƆSO SUA NYAMEƐ DWIRƐ NE,siesua petro nakọsụ sua nyami ejren,0.75,0.303
+558,YEHOWA NGOME YEƐ ƆKƆHORA KƆBƆ YƐNWO WAEN Ɔ,ihua ngom yɛ ɔkɔrakɔbɔyɛ nowayɛɔ,1.0,0.3143
+559,MVASOƐ BƆ YEKONYA YEKOFI YESU WUE NASO KYẼABIE Ɔ,nbasoɛbo yikɔnya ɛkɔfii yesu we na sohyeɛ bia,0.8889,0.375
+560,SUBAEN BƆ ƆKƆBOKA YƐ MAA YEKONWU NAHORƐ NE Ɔ,suban bɔkɔbụka yɛ maa ikowunahore ne ɔ,0.5556,0.1944
+561,“FA PAA DI BƆNE SO NGONIM”,fapaa di bɔne songuni n,0.6667,0.1053
+562,Maria maa ebiemɔ bokale maa onyane anwoserɛ. Nzu yeɛ yesũa yefi nu ɔ?,maria meibie mo bu kale mawonyaniaŋosere nsiyesiifinuwa,0.9231,0.3818
+563,"SƐ NGONYA AFUTUE SO MVASOƐ A, NZUATI YEƐ ODIKYƐ . . .",sɛ ngonyafutue sombaso a nwieti odi kyɛ,0.7778,0.2368
+564,"Nningyein Bɔ Wɔnye La So Ne, Ɔkɔwa Nu",nnengyen bɔwɔnye la son ɔkɔwwan,0.875,0.1724
+565,Yɛkɔyɛ sɛɛ né yahora yatu ngõa nwo amirika ne yayie?,yɛkɔyɛsɛɛ ne yafora yɛ tungoan wa mirika ne yɛyie,0.9,0.1429
+566,“Ɛ́MƆYAKYI BƐ́MA NYAMEƐ AHONEHULƐ NE”,ɛmɔyɛkyi bɛma nyameɛ ahone kolɛne,0.6,0.1034
+567,Suesua Anwokeka Bɔ Yesu Fa Hane Nzɛmba Ne,siesiawo ke ka bɔ yesu fa hane nzɛmbano,0.625,0.1471
+568,"Teaseɛnam beni yeɛ né Yitiopianiɛ sayɛɛ ne te nu, mmerɛ bɔ Filipo hɔle yenwo berɛ ne?",teaseɛ na mbeni yeɛ ne yitiopia nnie sa yɛɛ ne tin mriborg filippo ɔleɛwɔ brɛn,1.0,0.2794
+569,TIE MBANYI BƆ BELI NNINGYEIN NYUNU NE,tiem ban bu belininjie nyunin,1.0,0.3226
+570,ƐKƆYƐ SƐƐ NÉ AHORA AAYƐ ASAFO NU SOMVOƐ?,ɛkwa yɛ sɛ ne ahora aaye asafo no sovoɛ,0.875,0.2188
+571,"Nyameɛ asomvoɛ bɔ ne bedi nahorɛ bɛma ye ne, befili b’ahone nu bɛbɔle ye mbaeɛ. Nakoso ɔsono bɔ ɔmaa benu biala bɔle sɔ mbaeɛ ne ɔ. Bɔ ne bɛfa nu ne, aso ebie ato wɔ le?",nyame asomvoɛ bɔne bɛdinahorɛ bɛmae n bɛfili bahone nu bɛbɔlee mba yɛ na koso ɔsono bɔmaa bɛnu biala bɔle sɔ mba yɛ ne ɔ bɔne bɛfa nun aso ebi ato ole,0.7222,0.1094
+572,NZU YEƐ YEHOWA YƐ FAKYIRE KYƐ OKURO WƆ DWIRƐ Ɔ?,nzu yeiho a yɛfa kyerekyɛ ɔkorowɔ dwerewɔ,0.9,0.2703
+573,"Yekonwu bɔ ɔkɔhora kɔmaa y’anigye kɔte kɔhɔ, ɔne bɔ yɛyɛ a yɛnye kosa kɔgye ɔ.",yekɔwu bɔkɔrakɔma yɛ nnu gye kɔte kɔhɔ ɔne bɔyɛyɛ a yɛnnyi kosa kɔgye ɔ,0.5333,0.1803
+574,Yekonwu atee bɔ awofoɛ kɔhora kɔfa so kɔboka bɛwa maa okonya gyidie bɔ nu yɛ se wɔ Nyameɛ ne Bible nanu ɔ.,yɛkɔwuaten baawofo ɛkɔworakɔfoaso kɔ boka bɛwa maa okɔnya gyedeɛ bɔnu yɛ se wɔnyameyɛ ne bae bo na anu ɔ,0.8182,0.2024
+575,nzu yeɛ ɔkɔboka yɛ maa yekodwu yenwo ɔ?,nzu yɔkɔbokaɛ ma yikodwui wo,0.875,0.2903
+576,MMERƐ BƆ YAYƐ EBIE PÁ NAKOSO WANNA Y’ASE NE,mere bɔ yɛ ayeebie pa na koso wanna yasen,0.8889,0.1765
+577,Nningyein benimɔ yeɛ ɔte adesoa bɔ odikyɛ “yɛgyi yegua” ɔ?,ne ngye beni mɔyɔ teade sɔboro kyeye gyee gua o,1.0,0.3478
+578,Ɛkɔyɛ Sɛɛ Ne Ahora Afi W’ahone Nu Abɔ Mbaeɛ?,ɛkwaesɛ ne afiw' ahuru no abɔmba yɛ,0.8889,0.4118
+579,Sɛɛ yeɛ yekohyire kyɛ yɛnye sɔ Yesu wue ne ɔ?,sɛ eyekohyrekyɛ yɛnyi sɔ yesu weni ɔ,0.7,0.2
+580,"Sɛ yɛ́kã nningyein bɔ osisi wɔ ewiase nanwo dwirɛ a, nzu yeɛ odikyɛ yɛmaa ɔtena y’adwene nu ɔ?",sɛ yɛta ne ngyemboosisiwiase na wodwura a nvio dikyeɛ maɔtera yadwone nuɔn,0.8889,0.3288
+581,"Mmrandeɛ Ne Ndaluwa, Nzu Yeɛ Ɔkɔmaa Okosi Ɛmɔ Yé Ɔ?",meraandeɛ ne ndaru a nzuyɛkɔ mma ɔkosie mu yɛ ɔ,0.8,0.275
+582,Edwirɛ Foforɛ Bɔ Ɔwɔ Ɛwɛnelɛ Waen Nanu Ɔ,ɛdwurɛfofrɛ bɔↄ wɔywɛlelɛ wae na nu a,1.0,0.2424
+583,Nná mmerɛ biala yeɛ Yehowa maa yenya yɛ mbaeɛ nwo mmuayɛɛ kyɛbɔ yekuro ɔ. Nzuati ɔ?,na mmere biala yɛɛwho ama yɛ nyayɛmba yɛ mo mu ayɛ kyɛboye korɔɔ nzue teo,0.875,0.303
+584,Ɛkora Nwu Nzonzoleɛ Bɔ Ɔwɔ Nahorɛ Ne Ngondombo Afia Anaa?,ɛkorɛwonzo azoleɛ bɔɔwɔ nahorɛ ne ngondom bɔ afie a naa,1.0,0.1277
+585,John Blankson,john blankson yɛɛyɛwui wɔfotona nu nu,2.0,1.6667
+586,EDWIRƐ BƆ ERKKI MÄKELÄ HÃNE Ɔ,ejudọbọ ẹ ki makelahaniọ,1.0,0.5833
+587,Yere Wɔnwo Sũa Ngɔmhyɛ Bɔ Ɔwɔ Bible Nanu Ne,yiriwɔwu suangɔm sɛ bᴐᴐ bai bu nanu ni,0.8889,0.4286
+588,"Kyɛbɔ Yehowa kora kã bɔ okosi kyẽabie nwo dwirɛ ne, nzu yeɛ Bible ne kã fa yenwo ɔ?",chi ọbọ yeghu akara kanbo kosi chian bien ujudeen eyzu eba ebọ ne kan faewunọ,0.9444,0.5781
+589,"c Nea vidio bɔ yeɛ ole, “ Bɔ Okofi Tenenee Nu Kɔwa Ne Te Asomdwee ” bɔ ɔwɔ jw.org so ne.",eboberedwura ne kengakyɛ nea video bɔ ye o le bo kofiterene ne no kɔwane te asomdue bɔ ɔgyei dwdt ɔgson e boberedwura nea si,1.0526,0.8571
+590,NNINGYEIN NNA BƆ ƐYƐ A OKYIRE KYƐ EBU ƐYE Ɔ,ejuo bowala kane none kengace ninjen na boya ocece ebuayio,1.0,1.0588
+591,ASƐNGA ADWUMA NE HÃNE ALIEMAAMƆ BƆLE NU,asanga jwumane haneɛleɛmaamɔ bɔle nu,0.7143,0.2121
+592,"Gyidie Bɔ Ele Ye Wɔ Yehowa Ahyehyɛdeɛ Nanu Ne, Ma Nu Yɛ Se",ji die bwõileewo yehu ashadie na nun ma i nu ya se,0.8462,0.4444
+593,"Sɛ Esuronyi Kã Wɔ A, Fa Wɔnwo To Yehowa So",sɛsorɛ i ka wɔ a fɔ nwɔn toyehu aso,0.8,0.375
+594,KYƐBƆ YEHOWA ABOKA ABƆNEFOƐ MAA BASAKYERA B’ADWENE Ɔ,chɛ bo yehu a bo kaabɔne fôɛ maaba sa chera ba jwone ɔ,1.5,0.25
+595,"Nekaabiala Bɔ Yɛhɔle Ne, Yehowa Bokale Yɛ Maa Yɛnye Hane",neka biala bɔ yɛhɔle n yeho abokale yɛ ma yɛ nye ha ne,1.0,0.087
+596,"Ɔwɔ nu, né bahyɛ Pɔɔlo kyɛ nnɛmaa ofite fi ye awuro, koso ɔhora hyɛle aliemaamɔ ngunaen, ofikyɛ ye damvo nemɔ bokale ye",egwire bɔbaahwerɛ obaguafoto na bone kengakyɛ ɔwo n ne bahyɛ pɔɔ kyɛ na ma wofite fiyawuro koso ɔhorahyɛleɛlemaamonguran wofi kyɛ edanvone mɔ bokale,1.0455,0.6105
+597,"Odikyɛ ɛmɔte yebo kyɛ, sɛ ebie nea ponografi a, ɔkora ka ye berɛ. Afei koso, odikyɛ ɛmɔnwu atẽe bɔ ɛmɔkɔfa so kɔboka ebie bɔ wahɔ sɔ haw nanu maa ɔkɔyakyi ɔ.",odikyɛ mmɔtee bokyɛ sɛ ebieniapono gurafia ɔkorakaye brɛ afeekoso odikyemowu ate bɔɔ mɔ kofasokɔ boka ebie bɔwahɔso ɔ hao na nnu mmaa ɔkɔ yaakyia,0.9032,0.1557
+598,"b BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Aliemaamɔ kãa bie ayia nu wɔ sua bie nu. Bele gyidie kyɛ Yehowa le tumi bɔ ɔkɔfa kɔbɔ ye mmenia nwo waen, ɔmva yenwo ne nekaa biala bɔ bɛwɔ ne.",foto na nho dwerɛhɛ ariemaamɔ ka biayi anu ɔsua bie n bɛlegyideekye yɛhoaretumi bɔkɔfa kɔ bɔ yemenia nwo wa ɔmvaa nwone ne ka biara bɔbɛwɔ n,0.8684,0.2406
+599,Nzu yeɛ ole honhom nu paradise ne?,nʒiwo le wowunnu pra di sen,1.0,0.4444
+600,"BƐBƆ BEDI NAHORƐ BƐMA YEHOWA NE, OKURO BƐ DWIRƐ",bɛbo bedi nahorɛ bɛma yehoa n okuro bedwurɛ,0.5556,0.1316
+601,MANZINI SONEAFOƐ MƆ HYƐ YƐ NGUNAEN,manzinsun niafɔ mɔ sɛyen guran,0.8333,0.3793
+602,“Nyane adwene tekyɛ bɔ mehũ taa fa mesĩ ne.”,nyane adwene tekyɛ bɔ mi hu taafa misi ne n,0.5556,0.1515
+603,NZU YEƐ ƆMAA YƐHYƐ YEHOWA ANIMNYAM Ɔ?,nzu yɛ ɔmaa yɛ sɛ yehua ne minyamɔ,0.8571,0.2667
+604,Nya Yehowa Ne Yesu Adwene Wɔ Nningyein Nwo,nnya yehua ni yesu ajuni wo ni njewu,0.875,0.4571
+605,"Sɛ bɛkã kyɛ Kristoniɛ bie anyi wɔ sunzum nu a, okyire sɛɛ?",sɛ bɛkakye kristo ne abia nyi wɔsunzumu a wɔkyirɛ sɛ,0.8333,0.2222
+606,"Bɛbɔ bayɛ mbanyi ne, yekonwu bɔ yeti yeɛ odikyɛ bɛmaa bɛnye kɔso gye, ɔne bɔ bɛyɛ a ɔkɔmaa bɛnye kɔgye ɔ.",bewo bayem ben yekooboyiti wodice bemaa benye ko so je onebo beyaa okoma benye ko jeo,1.0,0.4512
+607,"Sɛ Ɛbɔ Asu Yie A, Kɔso ‘Di Yesu Si’",sɛɛbɔaso yi a kɔso de yesu si,0.5556,0.125
+608,"Yesu ngoa bɔ ɔfa bɔle afɔleɛ mane yɛ ne, yɛkɔnea mvasoɛ bɔ yenya yefi so, ɔne kyɛbɔ yekohyire kyɛ yɛnye sɔ bɔ Yehowa ayɛ ama yɛ ne ɔ.",yesu nwoan bɔfa bɔle afaleɛmane yɛn yɛkɔne amvasoɛbɔ ye nya yifi so wanekyɛ boyi kohyiri kyɛ yɛnyi sɔ boyi ho ayama yɛ neɔ,0.7857,0.165
+609,"Ɛkɔyɛ Sɛɛ Na Anya Ebie Bɔ Sɛ Egya Ye A, Ɔkɔboka Wɔ Ɔ?",ɛkwaɛsɛ na nyeebiibɔ seegyae a ɔkabokawo,0.8462,0.2821
+610,"Ye nwo waenbɔlɛ bɔ yeɛ ɔpena ne, ngɔfa ngɔma ye.”",ewon wane bo le bạ e openan nwo fan wo mmae,1.1,0.4865
+611,"Nzu yeɛ ɔmaa yenwu ye paa kyɛ, Yehowa pena kyɛ ɔfa yɛ adamvoa ɔ?",nzi oma ye nwuipaa che yehu apụnache ọfa ya danvu awọ,0.9286,0.4694
+612,Bɔ Ɔkɔmaa Ɛkɔkenga Bible Ne Kyẽa Biala Ɔ,bo okoma ekokengam bai bune tyia bialawo,1.0,0.4242
+613,"Solomon asɔre awuro ne abrannaa ne, ofi ye aseɛnwo bɔ ɔkwaadwu ye anwuro ne, né ye tendenn te sɛɛ?",soro ma woasɔre awurɔ ne ablaanaa no ɔfi aseɛ no bɔɔkɔ adwue anwura n ne tende te sɛɛ,0.8421,0.2727
+614,"SƐ Y’ABANU BU A, NZU YEƐ ƆKƆHORA KƆBOKA YƐ Ɔ?",sɛ yaba no bu a nzeɔkɔhorakɔbokaeɔ,0.8,0.1818
+615,"Braa bɔ ne mogya tu ye ne, sɛɛ yeɛ Yesu bokale ye ɔ?",belaaboane mogya toi ne sɛɛyɛ yesu bokale yɔo,0.6923,0.2632
+616,NNESUESŨA BƆ ƆHENE YEHOASE YƐLE NE,nlésiesia bɔɔnynɩ yého asɩɛlɩ,1.0,0.4483
+617,"Mmerɛ bɔ né Nyameɛ ne Lɔto dwudwo ne, nzu yeɛ Nyameɛ yɛle bɔ okyire kyɛ ɔbrɛ yenwo ase, na ɔte edwirɛ bo ɔ?",merɛbane nyame ne latudujɔn nvie nyame yɛle wuotetɛ ɔberɛnase na ɔtee dwuraboɔ,0.8696,0.378
+618,Mvasoɛ beni yeɛ yekonya yekofi Yesu wue naso kyẽabie ɔ?,nvasoebin eeko naa yekofi yesu yena so kyee biɔ,0.8,0.2889
+619,Nzuane nningyein pee mvili Dorothée berɛ (ye yeɛ ɔwɔ bɛen so ne),edwura bɔbaherɛ agua foto no ɔbɔne kengakyeɛ nvia ne ngyempai nvii dorɔti berɛ eeyɛ ɔwɔ bɛnso n,1.4167,0.9608
+620,Nzuati yeɛ yɛkɔhora yɛkɔfa yɛnwo yɛkɔto Yehowa so ɔ?,izietiyakoayakofa ya uyako tiivwaswo,1.0,0.5814
+621,SƐƐ YEƐ TWORƆNZƐM HEMƆ KYEKYE WƆ WORA Ɔ?,seri kironzamuhimwake kewalulawo,1.0,0.6562
+622,Tworɔ wɔ mmuayɛɛ ne wura wa,ngyikyemuangona nsɛ misa merɛbɔyɛ wɔ nu n sɛɛyɛ wɔte sorongowɔ israelefoɛ ɔne kristofo bɔ bɛtɔn ne ase wɔ asomafoɛ ne mɔwie sie ne deɛ na anwoɔ,4.0,4.7273
+623,Wɔnwo Hia Yehowa,edwɛbɔ wɔala kane no ne kengakyɛɛ wɔho hia yeho a,3.0,2.0
+624,"Dwumadie bɔ yɛ́yɛ yɛfa yɛkae Yesu wue ne, to wɔsa frɛ mmenia maa bɛbra bie.",dwumadeɛ bɔyɛyɛyɛfa yɛ ka yesu we n to asaa freminɛmaa bɛbrɛ bie,0.8,0.2414
+625,"“Ɛmɔgyina Pindinn, Nnɛmaa Ɛmɔhinhim”",emo jirapindi nema emô giigimin,1.25,0.5667
+626,Yekonwu bɔ Kristofoɛ kɔyɛ na wamaa b’ayeforɔ ahyɛ Yehowa animnyam ɔ.,yɛkonu bɔ kristofɔ kɔyɛ na wɔamaabayeforahyɛ e hɔ ane minyam ɔ,0.6364,0.2143
+627,"‘AWURADE nwa nyoo, “Ɔnate kyɛ sona bɔ olle bie ne, bɛhyɛ ye,",ewradî wayn yo onatiçasuna bole biyel beşei,1.0,0.5
+628,"Nikyee bɔ ɔhyɛ yɛ ngunaen maa yɛfa yenwo atẽe biala bɔ yekonya ye ne yɛye Yehowa dumaa ayɛ ne, adesũa he kɔboka yɛ maa yekonwu ye.",ni kyei bɔhye ye ŋgunan maa yɛfae ŋwaten bia bu yekonyan yɛ yiyehu adu maa yɛ ni adehuayekɔ bo kaɛ maa yɛko win,0.9231,0.301
+629,Má Wɔnye La Berɛ Ná Angɔ Nzɔhwɛ Nu,ma wa nyin labirɛ naa n gɔnzuhin,1.0,0.3704
+630,c BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Yehowa Danzeniɛ abayaa bie pena afutue yeti ɔkenga Bible ne. Bɔ ɔyɛ ne kyire kyɛ ɔpena Yehowa sĩ atee.,foto bɔ yesusuinwangyekyemuangona n iwudwerɛhe yehua dansiniaba yabiepena fotue ituwakengabae bo n bɔyɛmicyere kyɛ opena yehua siaten,0.9259,0.5577
+631,BOKA BƐBƆ BAYAKYI ADESŨA NE ASƐNGA HƆLƐ NE,bokaa bɛ bɔ bɛyɛ kyerɛ disua ne asangan hɔlen,1.125,0.3429
+632,"Y’abusuafoɛ bɔ bɛnne asafo nanu ne, yɛkɔyɛ sɛɛ ne yamaa banwu ye kyɛ yekuro bɛ dwirɛ?",yɛabusuneafoɛ bɔ bɛaniasaafona ni n yɛkɔyɛsɛɛ ne ama baanwu ikyɛ yɛ koro bedwure dwen yɛ abura asia yɛyɛkɔto yɛkɔpɔ noɔ idwire te yole,1.3125,0.8955
+633,"Yekonwu bɔ yɛkɔyɛ yɛkɔfa yɛkɔte Yehowa dumaa nanwo, na yamaa wala ali kyɛ Satan te ngondomboniɛ ɔ.",yɛkɔnu bɔ yɛkɔ yɛɛ yɛkɔfa yɛkɔte yeho aduma na nho na yamawalaali kyɛ seetantengondom bo nian,0.7647,0.15
+634,"b Dumaa ne bie wɔ berɛ a, basesã ye.",yebuberedwure ne kengacyɛ duma ni bia wɔ braa baasesan yeboberedwure na si,1.2222,1.6923
+635,"Yɛkɔnea kyɛbɔ sɛ y’adwene nu yɛ yɛ naa a, yekotu yenwo agyirɛ ndɛ, na wanga soen bɔ yɛfa yɛma Yehowa ne ɔ.",yɛkɔne yɛkyɛbɔse yaadwuni no yɛɛ naa yɛkɔtuim wagyire ndɛ na waanga som mbo yɛfemma yɛhua neɔm,0.8636,0.3333
+636,"SƐ YƐYE YEHOWA DUMAA NE AYƐ A, ƆMAA YESU NYE GYE PAA",seɛyɛehu adumaa ne ayɛ a ɔmaa yɛesu nyɛ gye paa,0.5,0.2
+637,Nzu yeɛ wamaa asi gyinayɛɛ kyɛ ɛkɔsõ Yehowa ɔ?,inzu yɛ wɔma asigyina yɛkyɛ kɔ su yɛho a wo,1.1111,0.2973
+638,"Sɛ bɛkã kyɛ, “Ɛ́mɔyakyi bɛ́ma Nyameɛ ahonehulɛ ne” a, okyire sɛɛ?",sɛ bɛka kyɛ ɛmuoyɛkyi bɛmanyami ahone bule a okyire sɛɛ,0.5455,0.1875
+639,Ɛkɔbɔ bɛ nwo waen kofi sɔ aworɛ ndoatoasoɛ he anu afebɔɔ.’,eko bɔ be onwon e ku fisoa urendu ato asoa hi e nu afe boo,1.3636,0.3913
+640,‘Mvandoho bie wɔ nu bɔ ngɔhora ngɔfa ngohyirehyire sɔ nahorɛ dwirɛ he anu ngohyire mmenia anaa?’,mvandoo biewo nu bɔngɔhorangɔfa ngɔhye hye sɔ na hore dweehee nu ŋgɔhye meni anaa,0.8125,0.2308
+641,"Edwirɛ bɔ ɔfa “Atẽe Krongron” nanwo ne, Yudafoɛ nemɔ tele yebo sɛɛ?",ɛdwure bɔɔfa ateyɛ koronguro naawon widafoɛ ne mɔ tele ye bo sɛɛ,0.8333,0.25
+642,"Sɛ ɛdwenedwene anyelasoɛ bɔ ele ye nanwo a, sɛɛ yeɛ ɔkɔboka wɔ maa wɔnye kɔsɔ bɔ ele ye ɔ?",siadwenjwulanilasoe buelai na nwu a sɛɛ yɔkɔ boka ɔ maa wɔnye kɔ so boele ɔ,0.7368,0.3143
+643,"KƆSO TU MMENIA FOƐ, NA WƆ KOSO TIE AFUTUE",kɔso tumeniafoɛ na wɔkoso tiafotue,0.7778,0.0938
+644,Yehowa Ama Yɛ Adanzeɛ Bɔ Okyire Kyɛ Ɔkɔmaa Aseɛ Ne Kɔyɛ Paradise Ɔ,yɛho a mayɛdanzeɛ bokyerɛkyɛ ɔkɔmaaseɛ ne kɔyɛ paladisɛo,0.8462,0.2037
+645,Ngɔm Bɔ Yakob Hyɛle Kora Yeɛ Owu Ne,ebule bwawalaka nenunikengache ngombo yakabushlalekulali owuni,1.0,1.4643
+646,"Nningyein bɔ Yehowa hyɛle yenwo bɔ ne, ɛmɔma yɛnea nu biemɔ bɔ wawa nu ɔ.",nengyeebɔ yeho ahyɛlewombɔn ɛwoma yɛ nnea no bie mɔ bɔwwa no o,1.0,0.2982
+647,"ODIKYƐ YƐBRƐ YƐNWO ASE, YENYA GYIDIE, NA YƐKƆSO YƐSRƐ NYAMEƐ KYƐ ƆBOKA YƐ",odikyɛ yɛ brɛɛ nwa sɛ yɛnnyagyedie na yɛkɔso yɛsoɛnameɛkyɛ ɔ bo kaɛ,0.7692,0.1525
+648,"Bɛbɔ Bɛkɔhɔ Anwuro Ne, Asu Beni Bieku Yeɛ Bɛbɔ Ɔ?",bɛbɔ bɛkɔhɔ anwuran asu beni bieku yɛɛ bɛbɔɔ,0.5,0.0789
+649,Nzu yeɛ Yehowa ayɛ bɔ okyire kyɛ obu mmrasua ɔ?,nzu ya yewu ayɛbokyerekyɛ wubumrahiawo,0.9,0.3784
+650,Fa w’adwene sie subaen pá bɔ ɔwɔ sona nanwo naso kyɛbɔ Yehowa yɛ ne.,fa waadweni sii so banpabɔɔson anawo na so kɛ boyɛhuayɛ n,0.9286,0.283
+651,"Nzu paa yeɛ né Yesu kuro kyɛ ɔyɛ fa Yehowa dumaa nanwo ɔ, na nzuati ɔ?",izupaayɛ ne yesu kurokyɛ ɔyɛfa yɛhu aduma na woɔ na nzua te ɔ,0.875,0.1698
+652,"Sɛ Ɛyere Wɔnwo Sua Nikyee A, Ɔkɔboka Wɔ Maa Ɛkɔhɔso Kɔwɛne",sairo we wunsianca okoboko maikogoso koreni,1.0,0.5957
+653,“EKONYA NGOA NÁ ANYI AHYƐ”,ekwenyangua neenyiashe,1.0,0.4
+654,"d BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Aliemaa bie kyikyi mboma nu kyɛbɔ ɔkɔyɛ a, okonya esikaa kɔnea ye abusua ɔ, na ɔdwenedwene nhyiraa bɔ okonya ye wɔ Paradise nanwo.",foto bo yesu iwɔngyekye moburu ne nza n iwu durɛhe alemaa bie kitimbu man kyɛ bɔkɔ ya a okonyaska akɔ neɛyɛ agusuna ɔ na ɔdurdunnhyera bɔkonnyaa woparadis nam,0.9032,0.5039
+655,BƆ YESU MAA YE ASUAFOƐ NEMƆ NWU FALE ADWENESAKYERA NWO Ɔ,bɔ yesu maa yɛ suafô ne mɔ wun faaleadwensa kyera woɔ,0.7273,0.1957
+656,"Kue bie wɔ United States, na bɛtaa bɛkã bɛbɔ bayɛ mbanyi nanwo dwirɛ. Bɛhane ye wɔ bɛ wɛbsait so kyɛ, sɛ ɛpena kyɛ enwu ye kyɛ odikyɛ ɛtoa so kã kar anaa ɛyakyi a, ɛkɔhora kobisa wɔnwo kyɛ:",ko abie wɔ united state na bɛtaa bɛka bɛbɔ bayɛmbanyina ho dwerɛ bɛhane wɔ bɛwɛpsa ɛkye so kyɛ sɛɛpenakye wui kyɛ ɔdi kyɛ toaso kaka a anaɛ yɛ kye a ɛkɔhorakɔ bisa wa nho kyɛ,0.6842,0.1905
+657,"c Nea vidio bɔ ɔwɔ jw.org so, bɔ ye dwirɛti yeɛ ole Baakoyɛ a Yɛwɔ No Yɛ Akyɛde a Ɛsom Bo, Enti Bɔ Ho Ban ne .",yeboberejwure dekengakyɛ na vidio bɔwɔgye dɔbi dɔt ɔgso bo e jwure ti yole baakon ya a yɛ wo ne yakyɛ deyɛ son bo nti bɔhombain ebo berejwure na si,1.0,0.825
+658,Dɔ Mmenia— Na Boka Bɛ Má Bɛɛyɛ Asũafoɛ,idwebɔ waalaka ne nu nekengachɛ dominia na mboka bɛmaa bɛɛ yɛɛ suafoɛ,1.375,1.1
+659,"Ɔdɔ bɔ Yehowa le ma yɛ ne, ɛkɔhã yenwo dwirɛ sɛɛ?",o dɔbo yi huwa le ma yen ɛkɔ hayi wʋ gbire see,0.9091,0.4054
+660,"Bible Nu Dwirɛ Biemɔ Bɔ Elimoa Suane Ne, Aso Ɔkɔhora Kɔboka Wɔ Ɛnnɛ?",baebo no dwuebiemɔɔbɔ eli mɔ suane n ase ɔkɔhoakɔ boka wɛnɛ,0.9231,0.2963
+661,Ne yɛtaa yetutu atee yɛkɔsõ asafo ahoroɛ,edwurɛ bɔ baahwere bagiafotonanwo ne kengakyɛ ne yɛtaa yɛ tutuaten yɛkɔ so asafoahorrɛ n,1.7143,1.3235
+662,"d BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ. : Aliemaa brasua bie ahora ayɛ dwumadie bie kama wɔ nhyiamu bo, na ɔfa yenwo animnyam ne ma Yehowa.",fotobɔ wɔ ngyekyemuado ni kon ye nwondwure ɛhe alemmaabrɛsoɛbiɛhor aye dwumadie bie kama wonhyiɛmbo na ɔfae wɔaniminyam ne mma yeho a,0.8462,0.43
+663,SƐƐ YEƐ ƐKƆYE EDWIRƐ HEMƆ NOA Ɔ?,sɛ iɛkɔyɛedwurɛhemɔno anho,1.0,0.36
+664,Nzu yeɛ ɔkɔboka yɛ maa yɛkɔsɔ nahorɛ nanu yé ɔ?,nzu yɛ kɔgbokayɛmaa yɛ kɔsɔ nahre ne nu yɛ ɔ,0.7,0.1892
+665,"“Sɛ odwu mmerɛ bie na me wora bɔ anaa m’abanu bu a, dwein ahoroɛ bɔ ɔwɔ JW Broadcasting ® so ne, Yehowa nate so hyɛ me ngunaen.”—Lorraine, ɔwɔ U.S.A.",sɛ odwumbrebie na me ra abɔ anaama bana bu a dwen ahorɛ baɔwɔ geder wi broatkasten son yehu ana ate so hyɛ me ngunan laren ɔwɔ yu ɛse,0.75,0.3028
+666,"To Wɔ Boase Sũa Nyameɛ Dwirɛ Ne, Na Yɛ Nu Nhwehwɛmuɛ Kɔ Sĩɛ",to wɔboase suanyame edwurɛ n na yie nu nhwe mu ɔkɔsia,0.7692,0.2609
+667,KYƐBƆ YESUESUA YƐ SƆFO PANYI NE ƐNNƐ Ɔ,sôbi sisan yésufupèníno,1.0,0.7097
+668,NZU YEƐ ƐKƆHORA KOSŨA KOFI BƆ . .,iizu yɛkɔhora kɔsua kofi bɔ,0.6667,0.25
+669,"BIBLE NU DWIRƐ HEMƆ BƆ ELIMOA SUANE NE, SƐƐ YEƐ ƆKƆHORA KƆBOKA WƆ ƐNNƐ Ɔ?",bae bo no dwura he mɔ bɔlimu asuane n sɛɛ yeɛ ɔkɔhora kɔ boka wɔ ɛnɛ ɔ,0.8,0.193
+670,"Adesũa he kɔboka yɛ maa yekonwu atẽe bɔ Yehowa faso ma y’akwangyerɛ ɛnnɛ, ɔne nhyiraa bɔ yekonya ye, mmerɛ bɔ yafa sɔ akwangyerɛ ne yayɛ adwuma ne.",adusua he kɔ bokayɛmaayikɔhu aten bɔyihu afa so mma yɛ akwangyerɛ nɛ ɔnenhyire a bɔyikonnyae merɛ bɔyɛ afaso akwangyerɛ ne yayegya adwuma no,0.8519,0.2308
+671,"Yehowa le tumi wɔ nikyeebiala so. Ɛhene ati ɔhaw biala bɔ yɛfa nu ɛnnɛ, ɔne bɔ ɔkɔwa yɛ so kyẽabie ne, yele gyidie kyɛ ɔkɔboka yɛ maa yekogyina yenoa.",yihoa le tumi wɔ nekye biala so aheniɛte ɔhaw biala bɔyɛfa noannɛ ɔne bɔɔkɔ wa yɛso kyea bian yɛ legyidee kyɛ ɔkɔbokayɛmaa yɛkɔgyinae noa,0.7586,0.1525
+672,Metõ aleɛ wɔ Waiswa abusua ne awuro berɛ,edwurabo bahereaguafotanabɔ ne kengakyɛ meto alee wɔ wansu amusua na wurubere,1.375,1.3636
+673,mmerɛ bɔ bɔne bie bɔ yayɛ yapɛ nu nwo adwenedwene aatɔ yɛso ne?,mlɛ bɔ bɔ ni bie bɔ yai ya penu waa jɛn junɛ aa tɔɔ yɛ suɔn,1.0,0.42
+674,"Ɛkɔhora kɔfɛ yaa, nakoso kyɛ ɛkɔfa ɛyaafɛlɛ ne kowura wɔ nu ne de, ogyi wɔ so",ɛkɔhola kɔfɛya a na kosokyɛ kɔfaeyaafelɛ ne kɔwula wɔnu ne de ɔgyin wɔ so,0.6875,0.1333
+675,"Mbaeɛ biemɔ bɔ bayɛ yenwo tworɔtohɔ wɔ Bible nanu ne, sɛ yesusu yenwo a, ɔkɔboka yɛ maa yekofi y’ahone nu yɛkɔbɔ mbaeɛ.",mba yɛ bie mɔ bɔba yɛ nwo twrɛte wɔ bare bo na nun siɛ susui nwo a ɔkɔbɔkae ma yɛ kofi ahoni nu yɛ kɔbɔ mba yɛ,1.0909,0.2872
+676,Nzu yeɛ Yehowa maa Yisraelfoɛ nemɔ nwu fale adwenesakyera nwo ɔ?,nzu ye eho ama israelfɔ no mɔ wu fale adwensa kyera nwoɔ,0.9091,0.1887
+677,"SƐ ESURO BƆ MMENIA KƆHÃ KƆFA WƆNWO A, ƐKƆYƐ SƐƐ NA ANYA AKOKODURO?",sɛ ɛsurobominiako hakɔfawoora ɛkɔ ɛsɛ na anyako koduru,0.8462,0.2692
+678,Sɛɛ yeɛ mbaeɛ kɔhora kɔboka yɛ maa yekogyina ndɛengyea noa ɔ?,sɛɛyi mba yɛ kɔrora kɔbokayɛ maa ikuginandɛngye a noao,0.9091,0.2
+679,"Yɛkɔnea bɔ Bible ne kã kyɛ odikyɛ aliemaa bie dwu yenwo kora, né wahora waayɛ asafo nu panyi ɔ.",yɛkɔ neabɔ baibɔ ne kakyɛ ɔdikyɛlemaabie dwui wo kora ne wahora wɔayɛ asafo no panyɛ ɔ,0.7368,0.1867
+680,"Mmɔden bɔ yɛbɔ kyɛ yɛkɔfa Yehowa mmraa yɛkɔbɔ yɛ bra ne, atẽe beni yeɛ Satan maa ɔyɛ se ma yɛ ɔ?",mɔdem bɔyɛbɔkye yɛkɔfa yɛwu amara yɛkɔ bɔyɛ bra n atem bani yɛ se tanmaa ɔyɛ sema yɛwɔ,0.8571,0.2162
+681,"Brienzua Bɔ Né Ɔwɔ Korinto Asafo Nanu Ne, Mmerɛ Beni Yeɛ Besa Belɛle Ye Ɔ?",ɛdwe yɛ bɔ wɔalaka na nu ne kengakyɛ bereesuaboa no wɔ wɔ korintoasafo na nu n mmire be ni yɛ besa belɛle yɛ,1.4,0.7241
+682,"Bɔ ɔtɔ so nza, ebie bɔ ne wayɛ bɔne pirikua bie wɔ Korinto asafo nanu bɔ né ɔmbena kyɛ ɔsakyera ye adwene ne, sɛɛ yeɛ bɛhane kyɛ beli yenwo dwumaa ɔ?",bɔntosooda ɛbie bɔne waɛ bɔne prekia bie wɔ kɔrintoasafona nu bɔne ɛm bɛna kye  sakyera ya deran sɛyɛ bɛharekyɛ bɛni wo dwumaa,0.871,0.25
+683,ƐNNƐ PAA YEƐ ODIKYƐ ƐFA WƆNWO TO YEHOWA SO Ɔ,ɛnɛ paa yo dicyɛ fo wo tuye huasoọɔ,0.9,0.3714
+684,“ƐMƆSÓ NNINGYEIN AMUKORAA BƐNEA”,ɛmo so nengye mukuraa bɛne a,1.5,0.2963
+685,NIKYEE FOFORƐ BƆ YƐKƆHORA YEKOSŨA YƐKƆFA DANIEL NWO Ɔ,nikyefofrɛ bɔ yɛkora yekosua ye kɔfadaneɛnu ɔ,0.7778,0.2222
+686,MMERƐ BƆ EBIE BAAPENA AFUTUE FI YƐ BERƐ NE,merbɔ ebie baapanaforotoe fi yɛbrɛ n,0.7778,0.2941
+687,"Huɛmɔ, Ɛmɔfa Anidie Bɛma Bɛyemɔ",e mo emo faanidie bema beyimo,1.2,0.3846
+688,SƐƐ YEƐ EKOHYIREHYIRE EDWIRƐ HEMƆ NU Ɔ?,sɛ yɛkohywihyi idwurɛhe munuo,1.0,0.375
+689,ƐMƆNWU SUBAEN BƆ ƆWƆ ƐMƆ NU BIALA NWO Ɔ,ɛmo nwu hwuban bɔwɔ ɛmo nu biala wo,0.7778,0.2581
+690,‘KÃ BƐ NYUNU WƆ BƐBƆ BƐWƆ BERƐ NE AMUKORAA NYUNU’,ka bɛnyunu wɔbɛbɔ bɛ wɔbrɛ ne mmu kora nyunu,0.9,0.1053
+691,"Sɛ W’adwene Nu Yɛ Wɔ Naa A, Nzu Yeɛ Odikyɛ Ɛyɛ Ɔ?",se wo juninu yo na nzu yo dice yoo,0.9167,0.5429
+692,NÉ OLE GYIDIE KYƐ EBIEMƆ KOTIE YE,ni olejidiyece ebiemokotie,1.0,0.3704
+693,"Sɛ enwu ye kyɛ odikyɛ ɛbɔ asu a, nzuati yeɛ ɔnzɛkyɛ ɛtwe sa ɔ?",sɛ wui kyɛ wɔdi kyɛɛ boa so a nzueti yɛ honzɛkyɛɛ twi sa o,0.7857,0.2979
+694,Nzu yeɛ Yesu maa ye asuafoɛ nemɔ nwu fale adwenesakyera nwo ɔ?,nzu yɛ yesu maa yɛsuafɔ ne ma wufale adwensa kyera woɔ,0.75,0.18
+695,"Kyɛbɔ mekã kar nati, polisifoɛ ahye me le anaa?",kyɛbɔ mekakaa nati polisi fo ahyemi laanaa,0.7778,0.1351
+696,BƆ YETI YEƐ ODIKYƐ YEDÉ YƐTONU KYƐ YEHOWA KURO YƐ DWIRƐ Ɔ,bɔ yitiɛ ɔdikyɛ yɛde yɛtuno kyɛɛ ehu akura ye dwerɛ ɔ,0.8333,0.3043
+697,KYƐBƆ MBANYI NEMƆ BOKA EBIE BƆ WAYƐ BƆNE PIRIKUA Ɔ,kyɛbɔn bɛɛne mɔ bokaebie bɔ wa yebɔne prekwrea o,0.9,0.2927
+698,"Akwangyerɛ bɔ ɔwɔ Bible nanu bɔ ɔfa nzãanonɛ nwo ne, ɛmɔma yesusu enu biemɔ nwo. Ɛhẽne sĩ ne, yɛkɔnea bɔ ɔmaa ebiemɔ nõ nzãa ɔ.",akwangyere bɔwɔbaebo na nu bɔɔfaa nzan no na nwone n ɔmmɔma yɛsusowanu bie mawo ɛhenesim ne n yɛkɔnea bɔɔmaa ɛbie mano nzan o,0.96,0.2929
+699,"c BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Nzakrayɛɛ bɔ Julia yɛle bɔ ɔmaa ɔhora sone Yehowa ne, yenwo foto ɛhe.",foto nwane maa yɛmu nzakra yɛ bɔdwuli ayɛree ɔ bɛn sodeɛ na nu n ɔgye meni lon biɛ nwuno ɔtodwen yɛɛfamaa sodeɛ ne koso wane ohu bɛtodwen waasafonhyeɛm bɔ,1.2857,1.1558
+700,"Nzuati yeɛ kesaalae de, yɛkã kyɛ Yehowa dumaa bɔ yenwo kɔte ne, yeɛ ɔte nikye bɔ yenwo hia paa ɔ? Nningyein nzã biemɔ ti yeɛ yɛkã sɔ ɔ.",nziɛ atiɛ kesa laede yɛkakyɛ ehwo aduma bɔe wo kɔten yɛ ɔte ne kyei bɔn wo hiapaao ne ngyɛ nsa biemuotiɛ yɛka sao,0.9643,0.3173
+701,ANIMIA,ejwere bɔ bahwerɛ baabuafoto na bɔ ne kenkacyɛ animia,8.0,6.5
+702,MMERƐ BƆ BALI YƐ HWAMƆ MAA YƐ WORA ABƆ NE,mnɛ bobɛreye hamoma yaworabɔn,1.0,0.4375
+703,"Yekonwu kyɛbɔ asafo nu asomvoɛ, asafo nu mbanyi, ɔne manzini soneafoɛ mɔ boka yɛ maa yɛsõ Yehowa ɔ. Afei yɛkɔnea kyɛbɔ yekohyire kyɛ yɛnye sɔ bɔ bɛyɛ ne ɔ.",yekɔnu kyɛ bɔ asafonu asomvoɛ asafono mbann ɔne mmanzi so neafa mɔbokayɛmaa yɛse eho a o afei yɛkɔneakyɛ bo yɛkɔhyirekyɛ yɛnye sɔ bɔbɛyɛ ne o,0.7931,0.1463
+704,YƐ BƆ ƐKƆHORA BIALA FA BOKA MMENIA,yaboa kohorai biala fa bokaminia,0.7143,0.25
+705,"Bɛbɔ Bedi Nahorɛ Ne, Sɛ Bɛhyɛ Bɔ A, Bedi So",bebɔ bide nahureen sɛ bashia boa bidi so,0.8,0.4062
+706,"mmabunu bɔ bɛse nworɛ, ɔne mmabunu ngwaseafoɛ nwo mvandoho nanu ɔ?",mabu no bɔbɛsemworɛ ɔne mmab no ngwasiafo wɔnwo mvando ho na nua,1.0909,0.1667
+707,"Yekonwu nningyein biemɔ bɔ yɛkɔyɛ na sɛ ebie fõ yɛ a, yahora afa yahyɛ ye ɔ.",yɛkɔ wuno ngyen bie ma bɔ yɛkɔyɛ na sɛ ebie fon a yahora yɛ afayɛ ahyɛyɛo,0.6875,0.2542
+708,Hulda Hora Dwuli Bɔ Né Wafa Wasie Yenye So Nanwo,hoodafregulibɔnowɔfoɔ sie nyo so na wɔ,1.0,0.4359
+709,"nzuati yeɛ yɛkɔhora yekonya gyidie kyɛ, Yehowa kobua ndɛen turoloo?",nziete yɛ korekɔnyagyidie kyɛ yɛhu akɔ buandɛ ntuo loɔ,1.0,0.3036
+710,YƐKƆYƐ SƐƐ NÁ YASIESIE YƐNWO YAMA YEHOWA KYẼA NE?,yokoise na yo sisiyawa ya muyohu acenyan,1.0,0.55
+711,BƆ YASUA YAFI BƆ WATO YƐ NE MUKORAATI NU Ɔ,bɔyɛsuɛ yɛ fi bɔ wato yɛ nem graat nu hɔn,0.6,0.2727
+712,Ahoboa Beni Yeɛ Ayɛ Ama Amaneɛnwunɛ Piri Bɔ Ɔba Ne Ɔ?,ahomboa be ni yɛ ayɛ ama amani wurepii bô ɔba neo,0.8182,0.2381
+713,"Sɛ yɛnea edwirɛ bɔ Yakobo hworɔle ne a, nzuati yeɛ sɛ ebie le gyidie a, odikyɛ ɔfa nyumaa boka so ɔ?",sɛ yɛ niedwere bɔ yakubohweale ne a nsueti yɛ see bie legyidi a odikyaɔfa nyumaa bo kaso ɔ,0.6667,0.1818
+714,Yekonwu kyɛbɔ ɔdɔ bɔ yele ye ne boka yɛ maa yɛyere yɛnwo yɛyɛ asɛnga adwuma ne.,yɛkohu chɛ bɔ ôdɔ boyilai ne bo ka yɛmaa yɛ jereyɛw yɛ yasɛngɛɛ joman,0.875,0.3333
+715,SAMSON FALE YENWO TOLE YEHOWA SO,sam senfale wan tolyehu aso,1.0,0.2963
+716,"Sɛ ɔhaw bie to yɛ a, yekonwu bɔ odikyɛ yɛyɛ kyɛbɔ ɔkɔyɛ a, yekonya mmokalɛ bɔ Yehowa fama yɛ naso mvasoɛ ɔ.",sɛ ɔhawo biɛto yɛ a yɛkɔmmbɔditɛ yɛ yiɛkyɛ boɔkɔyɛ a yɛko nyamokalɛ moyiku afammayɛ nasom masoɛ ɔ,0.7727,0.2651
+717,"bɔ yɛnwo waen, ná ɔkyekye yɛ wora ɔ?",bɔyenwan na ɔkyekyeɛ raa ɔ,0.875,0.3333
+718,"Sɛ ekuro a, nea foto bɔ ɔwɔ nwomaa he anu ne bieku, na nea sɛ ɛkɔkae bɔ esua fili nu ne a.",sɛikura a neafoto bɔ wɔ nwoma ahea no mbieku na nease ɛkɔ kae bo asuɔfili no neaa,0.8636,0.1818
+719,"e BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Aliemaa brasua bie kã kyire ye damvo kyɛ, ɔɔhã bɔne bɔ wayɛ nanwo dwirɛ hyire mbanyi nemɔ. Nakoso, ɔneane kãa bɔ ye damvo ne angɔ ne, ye bɔbɔ ɔbɔ mbanyi nemɔ amaneɛ.",foto naawondwure he alima berɛso abiekankyɛ yɛdanvo kyɛɛ ɔɔha bɔne bɔwayɛ naawodwure hyiri mbanini mɔ na akoso ɔneanekaa bɔ yedanvo na angɔn ebɔbɔ ɔbɔ mbanini mɔ amaneɛ,0.875,0.2781
+720,BELƐLE YƐ: Yesu nate ye mogya bɔ ohwie guale fa yɛle mbata naso tuale yɛ bɔne nwo kerɛ wafa wale yɛ,blleyɛyesu natee mogya bɔhwɛguale fa yɛle mbata na so teale yɛbɔne wo krɛ waafa wɔllɛ yɛ,0.7619,0.1667
+721,"c BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Yakobo hyɛle Kristofoɛ mukoraati ngunaen kyɛ sɛ yɛyɛ mmenia pá na yɛboka bɛbɔ bɛnwo ahyere bɛ ne a, ɛhẽne yeɛ okyire kyɛ yele gyidie ɔ.",fotobɔ krataabɔtɔ so nnu n he nwondwurɛ ɛhe yakobu hyele kriftofuamukuraa tingurakyɛ seɛyɛ nwomapaa ne ɛboka bɛbɔ bɛnwoahyere bɛne a ɛhene okyirikyɛ yɛlegyideɛ ɔ,0.9091,0.3893
+722,Fa Yehowa soen dimoa wɔ w’asetena nu.,faye howaasuyin diimuwaawawaasitinen,1.0,0.4828
+723,BƆ ƆKƆBOKA WƆ MAA EKOSŨA NIKYEE YÉ Ɔ,okobukao maikusiani keieo,1.0,0.5517
+724,NZU YEƐ YESU YƐ FA LƐLE SONA Ɔ?,nzu yia yeesu yɛfa le le sonao,0.875,0.2174
+725,Ofi Tete Yeɛ Yehowa Ali Ye Bɔhyɛ So Ɔ,alaka ne nu dwue ne keŋgakyɛ ofite te ge ye hua liibɔhyɛsoo,1.3333,1.069
+726,Bɛfa WBBR radio pole ne kõ besie berɛ,ɛdwerɛ bɔ baahwere maguafoto na bo ne kengakyɛ bɛfawbb radio pol ne ko bɛsei berɛ,1.5,1.5
+727,SUESUA PƆƆLO NA NYA SUBAEN BƆ ƆKƆMAA NYAMEƐ NYE KƆGYE WƆNWO Ɔ,suesua pɔɔ na nnyasubaem bɔkɔmaanyameanye kɔgyeɔ wɔ,0.8333,0.18
+728,"Sɛ nzue nu asubɔ ne la ahameɛ a, bɛbɔ bele anyelasoɛ kyɛ bɛkɔhɔ anwuro ne de, bɛbɔ bɛ asu foforɛ bie. Ɛhene yeɛ olili so ye:",sɛ nzue no asubɔne lahame a bɛbɔ bela anyelasoɛkyɛ bɛkɔhɔ anuro ne de bɛbɔ baasufofrebie ahene yɛ olili sɔ ye,0.6154,0.1158
+729,Nzu yeɛ yɛkɔhora yekosũa yekofi Petro dwirɛ nanu ɔ?,nzu yɛ yɛ kɔhora ye kosua ye kɔfi petro dwerɛe na no o,1.2222,0.1667
+730,"b BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Krataa bɔ Pɔɔlo hworɔ ɔɔmane Ɛfesofoɛ nemɔ ne, tete deɛ ne bie yeɛ yenwu ye wɔ ɛwa ne.",fotobɔ wɔ krataabɔtɔso aboronwɔ ne kon ewu dwera hɛ krataabɔ pɔl hwerɛ wɔmane afisufoa ne mmɔn tetedeɛ ne bie yɛ yɛwuin waɛwa n,0.8846,0.5506
+731,"Mmerɛ bɔ ne ɛte abrandeɛ anaa taluwa ne, ɛyerele wɔnwo sone Yehowa, na kesaalae bɔ ayɛ panyi ne koso ɛyɛ bɔ ɛkɔhora ɔ.",edwiɛbɔ banhwerɛ bagu afotu no abɔ ne aken kakyeɛ merɛbɔ ne yɛte abrandeɛ anaa telua n ayere wɔnso n yiho a nakesaalaa bo ayɛpai ne koso ɛyɛ bɔɛkɔhora ɔ,1.0435,0.6129
+732,Yehowa Yeɛ Ɔmaa ‘Yɛnye Gye Bo So Ɔ’,yehua yɛ ɔmaayɛ nye gye boso ɔ,0.75,0.1154
+733,"Bɛbɔ bɛkɔwa adesua foforɛ ne, yɛkɔyɛ sɛɛ ne yamaa bɛnye ahã?",bɛwɔ bɛkɔ wɔ adisuafo frɛn yɛkɔ yɛ sɛɛ ne yama bɛnyiaha,0.9091,0.1667
+734,NYA WƆ BIBLE SUANIƐ NANU GYIDIE,nekye ma bro na ngora ngye misa nzue yesu yɛlebɔ ne okyekyɛ ole yasuafo ne mɔ ano gyidia ɔ ne yɛkɔyɛsɛ ne yɛsuosuan,3.8333,2.8462
+735,“Baba Bɔ Yengonya Ye So Bie Lle Ɔ”,alakana no dwurɛ ne kengakyɛɛ bababɔ yɛngonyaaɛ so bierila ɔ,1.125,1.24
+736,"‘Sɛ menea a, nwa yeɛ yenye kɔgye sɔ dwirɛ he anwo ɔ, na mmerɛ beni yeɛ ngɔhora ngɔhã yenwo dwirɛ ngohyire ye ɔ?’",sɛmene a nwaanyɛ ɛye nyi kɔgye sodwure hea nwoɔ na mere beni yɛngɔhorangbɔ haɛ wo dwure ngohyereye ɔ ɛdwure bɔ wɔalakana nu ni asi,1.0,0.5059
+737,"YEHOWA YEƐ ƆMAA ‘YEKURO KYƐ YƐYƐ, NA YƐYƐ NNWUMAA KYƐBƆ ƆSƆ YE NYE Ɔ’",yekowayɛ ɔmaa yi kuruteyɛ yɛ na yɛ yɛ enyimua kyebɔ osɔ ɛnyi ɔ,0.7857,0.3019
+738,Nzu yeɛ odikyɛ yɛyɛ na wamaa Yehowa ahora aboka yɛ ɔ?,nzu odikyee yɛyɛ na wamaaye hu ahora bo ka yɛɔ,0.6364,0.2143
+739,Tena Yehowa Tena Sua Nanu Daa!,tena yeho atena asuɛ no anu daa,0.8333,0.1667
+740,"NYA BƐNWO ABOTERƐ, NA NYA GYIDIE KYƐ BƐKƆHORA BƐKƆƆSÕ YEHOWA KYẼABIE",nya bɛnwoabotrɛ nanya gyidiekyɛ bɛkɔhora bɛkɔɔso yɛ ko akyea bie,0.9091,0.1053
+741,"Sɛ Yesuro Nyameɛ A, Sɛɛ Yeɛ Ɔboka Yɛ Ɔ?",idwebɔala ka na no ne kengakyɛ sieso nyame a sɛ yɛɔ bokayɛ ɔ,1.3333,1.0345
+742,MMERƐ BƆ ƆYƐ SE MA WƆ KYƐ ƐKƆBRƐ WƆNWO ASE Ɔ,merɛbɔ ɔyɛse ma ɔkyɛkɔboroɔno asio,0.9091,0.2647
+743,"Nningyein Bɔ Ɛnze Ne, Brɛ Wɔnwo Ase Na Dé Tonu",ningyem bɔanzen berɛwɔ nwase na de tun,0.9,0.2778
+744,"a Sɔ mmerɛ he bɔ yɛwɔ nu ne, yeɛ odikyɛ yenya ɔdɔ yɛma aliemaamɔ paa ɔ. Nzuati yeɛ yɛkã sɔ ɔ, na yɛkɔyɛ sɛɛ né yamaa aliemaamɔ anwu kyɛ yekuro bɛ dwirɛ?",sombora ye go yɛ wo nun yɛo dekye yɛ nyɔ dɔ yɛ maaliemaammɔ paa o nsu yekyi yɛ kasaɔ mayɛkɔ yɛsɛɛ ne yɛ maaliimaammɔ mmu kyɛ yɛ kurubedwerɛ,0.9375,0.3248
+745,"Mele ayire bie bɔ meno a, ɔmaa mengora menga kar yé anaa?",inayirebie mubɔ meno a ɔmaa mengra me ngaka eyɛ anaa,0.6667,0.2045
+746,"BƐBƆ BƐTENANE ASE TETE NE, NÉ BƆNE WƆ BƐNWO, NAKOSO ƆYƐLE SƐƐ YEƐ BƐHORA BƐYƐLE BƆ ƆSƆ YEHOWA NYE Ɔ?",bɛbɔ bɛtenane asɛ teten ne bɔ ne wɔ bɛo na kosoɔyɛle sɛɛ bɛhora be yɛle bɔ so yɛho anyɛo,0.7,0.1923
+747,NZUATI YEƐ YƐMAA MMENIA NWU NAHORƐ NE Ɔ?,nzueti yɛ yɛmaa mi neanwu na horɛ ne ɔ ngyekyemua nzoo ne mmɔtwrɛ nzembi sa,1.5,1.125
+748,MVALE ƆHAW NU WƆ DWUMADIE BIE BƆ BƐFA BEWURALE ME SA NANU,nvale yɔhao no wɔadwumadie bie bɔ bɛfa bewurale mesɛne n,0.6667,0.1739
+749,SUESUA YEHOWA SUBAEN BƆ ƆMAA ƆYƐ NYƆBOTAEN NE,siasua yɛho asuban bɔmaɔ yɛ nyɔbotae,1.0,0.2632
+750,Nzuati yeɛ Yehowa ne Yesu le anigye ɔ?,nhweɛ tiɛ ehoa ne yesu lɛ ne gyi ɔ,0.75,0.4
+751,"Kyɛbɔ Yehowa si nwu yɛ ne, yɛkɔyɛ sɛɛ ne yɛ koso yanwu yɛnwo sɔ?",kyɛ boyɛhuasi nwunyɛ n yɛkwɔyɛsɛa ne yɛkoso yɛ anwunyɛ no nsɔ,0.8571,0.2449
+752,"ƐTE ALIEMAA BRIENZUA A, NZU YEƐ ƆKƆBOKA WƆ MAA EKOBU MMRASUA TEKYƐ YEHOWA Ɔ?",ɛteelemmaa bere nzu a nzue ɔkɔbɔka ɔ maa ɛko bumraɛso ɛtekye ye ho a ɔ,0.9286,0.2787
+753,"Bɔ Yehowa Ayɛ Ama Yɛ Ne, Mvasoɛ Bɔ Yenya Yefi So Ɔ",oyeho ayɛmayɛn foasoɛbɔ inya yefisoɔ,1.0,0.2632
+754,"Yɛkɔnea kyɛbɔ yekohyire kyɛ yele gyidie, mmerɛ bɔ yesi gyinayɛɛ biemɔ bɔ yenwo hia paa ne.",yɛkɔneakyɛ boyekohyirekyɛ ye legyidie mmrɛ boye sigina yɛbie mɔ bɔye wuhia paan,1.0,0.1096
+755,"Yɛ Bɔne Bɔ Yehowa Afa Ahyɛ Yɛ Ne, Bɔ Yeti Yeɛ Yɛnye Sɔ Ɔ",iyɛbɔne bɔyɛhu afahyɛyɛ n bɔyitiyɛ yɛ nye sɔo,0.9286,0.2381
+756,"Bɛbɔ bɛnea yarefoɛ anaa aworowaa ne, nzu yeɛ ɔkɔmaa bɛnye kɔgye ɔ?",bɛwɔ bɛ neayarefoa na aworo wa n nzii ɔ kɔmaa bɛ nye kɔgeo,1.0833,0.2075
+757,FA ANIDIE MA BƐBƆ BESURO YEHOWA NE,fa ani die ma bɛbɔ bɛsuroe huan,0.7143,0.1786
+758,EDWIRƐ BƆ ISRAEL ITAJOBI HÃNE Ɔ,igrebo  israel itajo bihanio,0.8333,0.3462
+759,"Sɛ yede yɛto nu kyɛ nna nikyeebiala yeɛ yɛse a, ɔkɔboka yɛ maa yɛkɔfa yɛnwo yɛkɔto Yehowa so, na yafa y’adwene yasie bɔ yɛse naso. Ɛhene kɔmaa yɛkɔhora yekogyina ɔhaw biala bɔ ɔkɔto yɛ ne noa.",se ede yɛtunu kyɛ na nekyei biala yɛ yɛse a ɔkɔbɔ kaɛma yɛkɔfayɛ wo yɛ kɔto yɛho aso na yɛafayɛadwe ne yasii bɔ yɛse na so ɛhe kɔma yɛkɔhora yɛ kɔgyi na ɔha o biala bɔ ɔkɔtoyɛ ne no a,0.8889,0.1447
+760,Atee beni yeɛ mbanyi nemɔ fa so boka yɛ ɔ?,aten beni yɛ mbaa ni mɔfa so bokayɛɔ,0.8,0.1875
+761,BƆ YEHOWA MAA YISRAELFOƐ NEMƆ NWU FALE ADWENESAKYERA NWO Ɔ,bɔ yehu ama israelfô ne mowu fale adwensa kyera åwoɔ,0.8,0.2041
+762,DWENEDWENE BƆ NYAMEƐ ABƆ YE TIANU KYƐ ƆKƆYƐ NANWO,dwenendwene boanyami aboyitie no kyɛ kɔ yɛ nnao,1.0,0.2927
+763,NZUATI YEƐ ODIKYƐ ESŨA NGƆMHYƐ BƆ ƆWƆ BIBLE NANU NE Ɔ?,mviati y odikye esuangɔmhyɛ bɔɔ baabo na nu ni ɔ,0.9091,0.3256
+764,NZU YEƐ NYAMEƐ PENAKYƐ ƐYƐ Ɔ?,nzu yɛnyamiɛpnakyɛyi ɔ,0.6667,0.2174
+765,Yekonwu kyɛbɔ yekotu ebie foɛ maa ɔkɔboka ye ɔ.,yikonkyɛbo yikotue biefoɛ maɔkɔbokaeɔ,1.0,0.1842
+766,"a Adesũa he kɔboka mmenia bɔ bɛbɔ mmɔden kyɛ bekoli bɛ mmerɛyɛlɛ bie so ne, kyɛbɔ ɔkɔyɛ a, bɛkɔhɔso bɛkɔsõ Yehowa nahorɛ nu ɔ.",adusuahee kɔ bo kame nea bɔbɛbɔ mɔdenkyɛ bɛkoli bɛmerɛyɛ la bie son kyɛ bɔkɔ yɛ a bɛkɔɔso bɛkɔso yɛhua nahore non,0.9167,0.2
+767,"Ɛkɔhora kɔkenga Bible nu dwirɛ bie. Sɛ eyie a, dwenedwene bɔ akenga nanwo, anaa tworɔ bɔ asũa afi nu ne to berɛ.",nnyɔn ɛkɔhorakɔkenga baibu no dwurebie sɛeyie a dwendwen boakenga na o ana akyerɔbaasuafini no to brɛ,0.9091,0.2874
+768,Nzu yeɛ ɔmaa yenwu kyɛ Yehowa dwene yɛnwo ɔ?,ny ma ye wucɛ ye hua dunuyɛ wo,1.0,0.4571
+769,"Yekonwu bɔ yeti yeɛ odikyɛ yɛfa obuo yɛma mmenia, ɔne kyɛbɔ yɛkɔyɛ sɔ mmerɛ po bɔ ɔyɛ se ma yɛ ne.",yɛkɔm bɔyiti odi kyɛ yɛfobu yɛ mmameni a ɔne kyɛ bɔyɛkɔ yɛ so mmerpo bɔyɛ semayɛ n,0.9524,0.2237
+770,“Nyameɛ Kuro Wɔ Dwirɛ Paa”!,ye kosuasodwulehe gyenu arekyeabɔtɔso abrɛ nyɔ ni nzia kodwufe bo arekyeabole mo a,2.6,2.95
+771,bɔ mmɔden kyɛ bɛkɔmaa asafo nanwo kɔte ne?,bɔmɔde nkyɛ bɛkɔmaasafona wokɔ ten,1.0,0.1176
+772,BƆ ƆBOKA YƐ MAA YƐ ANYELASOƐ NANU YƐ SE Ɔ,bɔɔbokayɛ maayɛ nyilasoana nu yɛseɔ,1.0,0.0938
+773,Mmerɛ beni yeɛ yehia Yehowa mmokalɛ paa ɔ?,merɛ be ni eyi hia yehu a mokalɛ paa ɔ,1.0,0.2059
+774,"Aliemaamɔ bɔ baha sua nu ne, ɛne bɛ bɔnu yɛ asɛnga adwuma ne",edwure bɔbahwerɛ obaguafoto no abɔne kengakyɛ aleemaabɔbɔbahasuano n ɛne bɛbo no yɛ asɛnga dwoma n,0.9231,1.0426
+775,BƆ ƆKƆBOKA WƆ MAA ƐKƆSESÃ WƆ SUBAEN Ɔ,boko bʋkoʋ maa ekʋsɩ sanosu bayam,0.875,0.5333
+776,d BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Jack suahu nanwo ɔyɛkyerɛ.,foto nanun yɛwugya dwerɛ na awo ɔyɛ kerɛ polisfɔ ne mɔfaye fiprisan brɛ na bɛworabɔ bɛnu kupo de osu na ɔfae sɛ kikhi nye mɔ i,2.0833,1.8182
+777,"SƐ EBIE LE GYIDIE A, NZUATI YEƐ ODIKYƐ ƆFA NYUMAA BOKA SO Ɔ?",sɛ biele gyidi a nsueti odikya ɔfa nwuma a bokaso ɔ,0.6923,0.1957
+778,"Ɔhaw beni yeɛ ɛmɔ afa nu ɔ, na sɛɛ yeɛ ɛmɔ gyinane yenoa ɔ?",ɔhawo beni yɛ ɔmafa nu ɔ na sɛɛ yɛ ɔmogyinanee noa o,0.6429,0.2045
+779,"KƆSO ‘DI YESU SI,’ ƆMVA YENWO NE NZƆHWƐ BIALA BƆ ƆKƆTO WƆ NE",kɔso de yesu si ɔmvaa nwone nzo hwɛ biara bɔkɔto wɔ n,0.6923,0.1556
+780,KƆSO MA WƆNYE GYE YEHOWA DWIRƐ NANWO,kɔsoma wanye jee hoajwurɛ na o,1.0,0.3
+781,"Bɔ Bible ne kã fa ɔdɔ bɔ Yehowa le ma yɛ nanwo ne, sɛ yɛte yebo a, ɔkɔmaa sɛ ɔhaw bie to yɛ a yekonya anwoserɛ yɛkɔfa yekogyina yenoa.",bɔbaa bɔne kafa ɔdɔbɔ yɛhu alɛ mayɛ na ho n sɛ yɛtee bo a ɔkɔma sɛ ɔhawo bi toe a yɛkɔnnyianwo serɛ yɛkɔfa yɛkɔ kyinan no a,0.8966,0.2621
+782,“Ɛ́MƆNEANEA ƐMƆ AHONE NU BƐNEA . . . Ɛ́MƆSO ƐMƆ NWO BƐNEA”,ɛmɔ neɛ neaɛmo ahoe nu bɛne a ɛmu so ɛmoa wo bɛne a,1.3333,0.15
+783,"Sɛ Bible ne kã kyɛ ebie “bra te sannwuu,” na “ɔyɔ bɔ ɔtengyɛ” a, okyire sɛɛ?",sɛ baibo ne kakyɛ ebie brate sau na ɔyɛ boɔtengya a wokyiri sɛɛ,0.625,0.2407
+784,NZU YEƐ YEHOWA KƆYƐ YE KYẼABIE Ɔ?,iziɛ yeho akɔ yɛ ɛkyea bie ɔ,0.8571,0.3077
+785,"Kyɛbɔ ne Petro yere yenwo sua Nyameɛ Dwirɛ ne, yɛkɔyɛ sɛɛ ne yasuesua ye?",kyɛbɔ no petro yire h nsuanyamiedurɛ no yɛkɔyɛsɛɛ ne yɛsuɛsuae,0.7857,0.2414
+786,wanwu mvasoɛ bɔ ɔwɔ so kyɛ ɔkɔfa Bible nu dwirɛ kɔbɔ ye bra?,wa wumvasoɛbɔ sekyɛkɔfa baa bɔnu gwirakɔbae bra,0.9231,0.2979
+787,"Sɔ dwirɛ bɔ oliliso hemɔ anu ne, aso ɔkɔhora kɔwa kyɛ né abɔfo nemɔ nwo wɔ nu anaa?",sodwire bɔ lili so hemaanu n aso ɔkɔrorakɔ wakyɛ ne abɔfɔ ne mɔn wɔ nuanaa,0.8333,0.1562
+788,Yekosusu Bible nu dwirɛ biemɔ bɔ ɔmaa yenwu kyɛbɔ Yehowa fa bɔne kyɛ koraa nanwo. Afei yɛkɔnea kyɛbɔ yekohyire sɔ nikyee nanwo anisɔ paa ɔ.,yɛkɔ susu bae bo no dwure biɛmɔ bɔɔmaa yɛnwu kyɛ bɔ yɛhu afa bɔne kyɛ koraa na no afe yɛkɔneakyɛ boyɛkɔ hyereso ne kyeri na wani sɔ paa o,1.0,0.2389
+789,Nzu yeɛ aliemaamɔ kɔhora kɔyɛ kɔboka bɛbɔ bɛyɛ agyaa nhyehyɛɛ ne ɔ?,nziɛlimamô kora kɔ yɛ kɔboka bɛ ɔ bɛyɛgaahehɛ neho,0.9167,0.3273
+790,"YAKOB DWIRƐ BƆ ƆHAFALE YE MMAA NEMƆ NWO NE, NZU YEƐ ASUA AFI NU Ɔ?",iakɔpodwurɛ bɔ hafale emane mɔ nwon nzu asuafi nu ɔ,0.7333,0.28
+791,"Sɛ Ɛnea Yarefoɛ Anaa Aworowaa Bie A, Nzu Yeɛ Ɔkɔmaa Wɔnye Kɔgye Ɔ?",sɛɛ ne ayalefoɛ anaawolo wa bi a nzuɔkɔma wɔ nye kɔ gye ɔ,0.8462,0.1731
+792,SUA NIKYEE FI MOSE NE YISRAELFOƐ DWIRƐ NANU,suane kye fi mose ne israelf edere na nu,0.75,0.2222
+793,Awofoɛ—Ɛmɔboka Ɛmɔ Mmaamɔ Má Bɛ Gyidie Yɛ Se,awofoa ɛma bokamomaamoma bɛgyidie yɛ se,0.75,0.1944
+794,ƐKƆYƐ SƐƐ NÉ ASUESUA SADOKE AKOKODURO NE . . .,akwa yɛ sɛɛ ne esu esuasa dɔka kokudurɔ ne,1.0,0.2647
+795,Yɛyɛ sɛɛ yeɛ yenwu ye kyɛ Yehowa kyikyi yɛ bɔne ɔ?,yɛyɛsɛɛyɛhu ikyɛ yɛho atikyi yɛbane ho,1.0,0.359
+796,Bɔ Ɔkɔboka Wɔ Maa Ekosũa Nikyee Yé Ɔ,bɔkɔ bokaɔ meekosia nikyee yɛ ɔ,0.75,0.2069
+797,"BƆ NE BƐNYE LA SO NE, WAMMA NU",bɔne bɛnyɛ la son waa mman,0.875,0.1818
+798,"Odwu mmerɛ bie a, nzu yeɛ ɔkɔyɛ kyɛ ne ɔmaa somafoɛ Pɔɔlo abanu bu ɔ?",ogwumre bi a nzi ɔkɔ ɛkyɛ no ɔmasomafo pɔr aba no buɔ,0.9333,0.3208
+799,MMERƐ BƆ ƆYƐ SE MA YƐ KYƐ YEKODWU BƆ YAFA YASIE YƐNYE SO NANWO Ɔ,ɛdweleti bɔyadwi sone nwo a merɛbɔ yɛ se ma yɛkyɛ ɛkodwubɔ yɛ afaɛ yɛsieyɛ nye sona nnwo,1.0667,0.62
+800,Mmrasua Biemɔ Bɔ Bafa Ateetee Nu Ne​—Bɔ Waboka Bɛ Ɔ,merese abie mɔ bɔ bafaateete emu n bɔwaboka bɛwɔ,1.0,0.15
+801,"Kristoniɛ bɔ wanyi wɔ sunzum nu ne, adesũa he kɔmaa yekonwu atee bɔ ɔfa so bɔ ye bra, ɔne kyɛbɔ osisi gyinayɛɛ ahoroɛ bɔ ɔsɔ Nyameɛ nye ɔ.",kristo neɛbɔwa annyi wɔsunzu nnu n adi soayekɔmaa yekɔnwu aten bɔ ɔfaso gbae bera ɔnekyɛ boɔsisigyeraye a hɔrɛ bɔsɔ nyameɛ nyeo,0.9286,0.2222
+802,"Solomon asɔre awuro ne abrannaa ne, ofi ye aseɛnwo bɔ ɔkwaadwu ye anwuro ne, né ye tendenn te sɛɛ?",solomo na so yawuro no abranaa ne ofiyɛ asoɔm bɔkɔ adwu yɛ awuno ne ne tendente sɛ,0.9474,0.2727
+803,"YAKOB DWIRƐ BƆ ƆHAFALE YE MMAA NEMƆ NWO NE, NZU YEƐ ASUA AFI NU Ɔ?",iakɔpodwelɛ bɔ hafale emane mmɔnwon nzu asu afi no ɔ,0.7333,0.34
+804,"Yekonwu kyɛbɔ brienzua bie kɔhora kɔfa yenoa dwudwolɛ, ɔne ye nneyɛɛ so kohyire kyɛ ɔfa anidie ma ɔye ɔ.",ekonu kyɛbɔ berenviɛ be kɔhra kɔfae no dwudwurɛ ɔne ne yɛsu kohyire kyɛ ɔfa ni deɛ ma wɔye ɔ,0.6842,0.2619
+805,ATEE BENI YEƐ MBANYI NEMƆ FA SO BOKA YƐ Ɔ?,atem bɛniɛ mbaa ne mmɔfoa so bokayeo,0.9,0.3438
+806,"Wɔ sunzum nu akyɛdeɛ ne, yeti ɛma aliemaamɔ bie ɛne? Na aliemaamɔ deɛ ne koso, edé bie?",wosunzum na akyɛ deɛ n yitiɛ ma liema mo bien na liema mɔ deɛ ne koso ede bie,0.7647,0.1791
+807,"c BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Foto ahoroɛ ne bie wɔ berɛ a, ɔte ɔyɛkyerɛ",foto ahore ni bia ɔ bera a ɔteɛ ɔyɛ kyerɛ,0.8824,0.5273
+808,"Nzuati yeɛ ne Yesu wue nanwo hia ɔ? Mmerɛ bɔ Adam ne Hawa yɛle bɔne ne, nzuati yeɛ Yehowa amva angyɛ bɛ ɔ?",ɛnzueti yɛ yesu wie na wo hia mvele bɔadamene ha wɔ ayɛrebɔ ne n ɛnzuetiyɛ yɛhu avaa ngyɛ bɛwo,0.913,0.2963
+809,"SƐ YƐKƆYƐ TENENEEFOƐ A, SANA YENYA GYIDIE",sɛɛ kɔ yɛtenene nefo a sane yi nnyagyidie,1.0,0.1765
+810,odikyɛ yenya Yehowa adwene wɔ nningyein nwo ɔ?,nsuɛti ɔdikyeɛ nnyayɛho adwene wɔne ngye mmɔ,0.875,0.5263
+811,DI NAHORƐ TEKYƐ SƆFO PANYI YEHOADA,dinahorɛ tecyɛ sɔfo pɛn yɛfo ada,1.0,0.2069
+812,NNESURO KYƐ ƐKƆBƆ YEHOWA MBAEƐ,ne suokyɛ kɔbɔ ye hoa m ba yɛ,1.6,0.1923
+813,"Kyɛbɔ Yehowa ye yɛ bɔne fi berɛ ne, sɛɛ yeɛ Bible ne ka yenwo dwirɛ ɔ?",kyɛbɔyɛhu ayɛyɛbɔne fibera n sɛ yɛbaabɔne kan hodwerɛo,1.0,0.3208
+814,Yɛkɔyɛ sɛɛ né yahɔ so yali nahorɛ yama Yehowa?,yɛkɔyɛ sɛɛ ne yawɔsoelinahore ama yɛho a,0.7778,0.2162
+815,Afutue Bɔ Bɛfa Bɛma Wɔ Dapɛen Afia Adesua Nabo Ne,egwɛ bɔwalakano no n kengakyɛ afotuo bɔ bɛfa bemma wodaapa nfia de suano bo ne,1.2,0.9
+816,"Mmenia bɔ bɔne wɔ yɛnwo ne, anyelasoɛ beni yeɛ Yehowa amaa yanya ye ɔ?",miniabɔbɔ ne wɔyɛ won aye lasoebe n ye yeho amaayɛ anyayeɔ,1.0,0.2
+817,NNINGYEIN FOFORƐ BƆ ODIKYƐ ƐMƆSUSU YENWO Ɔ,nengyemfofrɛ bɛɔdikyɛ ɛmosusui wo,1.0,0.3333
+818,BƆ ƆKƆMAA YEHOWA KƆHƆSO ‘KOLE YƐ KƆTO NU’ Ɔ,bɔkɔma yehu akɔhɔso kule ye kɔtunu ɔ,0.8889,0.2121
+819,"Adesũa he kɔboka yɛ maa yekonwu kyɛ, bɛbɔ bɛkɔhɔ anwuro ne, sɛ bemu befi aseɛ he aso bɛkɔ a, Yehowa kɔhɔso kɔboka ye mmenia bɔ baha aseɛ he aso ne.",adehyia ne kɔbokaye mayɛɛ kɔmu kyɛ bɛbɔ bɛkɔhɔ anwuro n sɛ bem befiaseɛheaso bɛkɔ a yehoa kɔhɔ so kɔbokae menia bɔbaha aseɛheaso n,0.7667,0.1491
+820,"YƐKÃ NZƐMBA NE, OFIKYƐ YELE ƆDƆ YƐMA YEHOWA NE YE DUMAA NE",yɛkanzɛmban wofiche yele wɔdɔ yɛma yehowa ne i dumaan,0.6667,0.1957
+821,Dé Tonu Kyɛ Yehowa Kuro Wɔ Dwirɛ,detu no kyɛ ɛhuwakurowo dwerɛ,0.8571,0.3077
+822,"Kristofoɛ bɔ bɛte Hebrifoɛ ne, nzuati yeɛ somafoɛ Pɔɔlo hworɔle krataa ɔɔmane bɛ ɔ?",kristofoɛ bɔbɛte hibirifoa no ndwiati yɛ somafoɛ pɔɔ here krata ɔwoma ne bɛwɔ,0.8571,0.2647
+823,WASIESIE YƐNE NYAMEƐ AFIA: Yehowa pena kyɛ ɔne mmenia afia yɛ kama,wɔsese yɛnenyame afia yɛhu apnakye wɔ ne mmania afia yɛ kama,0.6667,0.2037
+824,"Yehowa bɔle David nwo waen fili ye pɔfoɛmɔ sa nu. Ɛhe maa yenwu kyɛ, Yehowa tiele ye mbaeɛ",bɔ baahwerɛ ewɔfoto na nwone kengakyɛ yɛhu abɔle debidi wonwae nferie pɔfoɔ mɔ sɛn ɛhemaa yɛ nwu kyɛ yɛhu atiɛre mba yɛ,1.1667,0.7324
+825,NZUATI YEƐ ƆNZƐKYƐ ƐTWE W’ASUBƆ SA Ɔ?,nhwiati yɛwo nzɛkyɛ atwewɔ sobɔ sa ɔ ngyekyɛ muiburu ne nsi a nsiemisa,1.5714,1.2759
+826,MENE MEYE FALE YƐNWO TOLE YEHOWA SO,mene me ye fali ya wantolyerwaso,0.8571,0.2759
+827,"BƆNE BƆ ƆWƆ YƐNWO NE, ADWENE BENI YEƐ ƆMAA YENYA Ɔ?",boni bɔ wo ya wan ajuni beni yomaayenyao,0.8182,0.4103
+828,Yɛkɔyɛ sɛɛ ne yahyire kyɛ Yehowa dumaa nanwo hia yɛ?,yɛkwayɛ sɛɛ ne yɛhyire kyɛ yɛhu adumana wo hiayɛ,0.7,0.1905
+829,"Yehowa Dumaa Ne, Sɛɛ Yeɛ Yenwo Hia Wɔ Ɔ?",yɛho adumaa ne sɛɛ yɛ ye wo hea wɔɔ,0.7778,0.1667
+830,Kyɛbɔ Ekotu Ebie Foɛ Maa Ɔkɔboka Ye Ɔ,kyɛ bokotue biefoɛ makɔbokaɛ,1.0,0.2333
+831,NZU YEƐ OKYIRE KYƐ EBIE TE KRISTONIƐ BƆ WANYI WƆ SUNZUM NU Ɔ?,nzu yiwokyerɛkyɛ ebiete kristo neɛbowa nnyi wɔso nzu nu ɔ,0.7692,0.1875
+832,"Gyina pindinn. Kenga Bible ne kyẽa biala, na dwenedwene yenwo. Afei sua kyɛ ekogyina Bible nu dwirɛ so kosi gyinayɛɛ.",gyenapindi kenga baebo no kyea biala na dwenedwene o afei suakyɛ ɛkɔ gyena baebo no dwerɛ so kɔ si gyenaɛ ɛdwene bɔwɔala kana no nasi,1.0,0.5
+833,KYƐBƆ EKONYA BIAA ANAA BRAA PÁ KOGYA YE Ɔ,kyɛbɔ ɛkɔnyapia anaabera apaakogyayɛo,0.8889,0.2727
+834,Kyɛbɔ Asafo Ne Suesua Adwene Bɔ Yehowa Le Ye Wɔ Abɔnefoɛ Nwo Ne Ɔ,kyɛboasaafone soeso adwene bɔyɛhu alai wɔabɔne afoa nwo ne o,0.7857,0.2692
+835,"Sɛɛ yeɛ Yob dwirɛ ne maa yenwu kyɛ, ɛkɔhora kɔfa wɔnwo kɔto Yehowa, bɔ tumi mukoraa te ye deɛ naso ɔ?",sɛɛyɛ yɛ ɔbudwura ne ma yɛ anhukyɛ ɛkɔhorakɔfa wɔ nwo kɔtee ho a bɔtumi mu kuree tintee deɛ na so ɔ,0.9048,0.2564
+836,NIKYEE FOFORƐ BƆ ƆMAA YENWU YE KYƐ YEHOWA NYE GYE YƐNWO Ɔ,nicyefofrɛbɔma yɛnwui chɛ yeho anye gyeɛwon,1.0,0.3043
+837,BƆ ODIKYƐ YƐYƐ NA YANGƆ NZƆHWƐ NU Ɔ,boodi cilya ye ni yangonzowe nuo,1.0,0.4286
+838,Yɛkɔyɛ sɛɛ né yahɔso yanya gyidie kyɛ nningyein bɔ Nyameɛ ahyɛ yenwo bɔ ne kɔwa nu ɔ?,yɛkɔyɛsɛɛ ne awɔso yɛ nyagyedee kyɛ nengyen bɔnyame ahyɛ nwo bɔne kɔwa nu ɔ,0.7059,0.1765
+839,"Mbaeɛ biemɔ bɔ bayɛ yenwo tworɔtohɔ wɔ Bible nanu ne, sɛ ɛdwenedwene yenwo a, sɛɛ yeɛ ɔkɔboka wɔ ɔ?",mba yɛ bie mɔ bɔba yɛ nwo toɛto hɔwɔ bae bo na nu sɛ ɛdwonendwene nwo a sɛ ɛ ɔkɔ bɔka ɔɔ,1.0526,0.2692
+840,YƐ BIBLE NANU NHWEHWƐMUƐ KƆ SĨƐ,yɛ babone no nwuhwe mu ɔkɔsi ɛ,1.0,0.3846
+841,Nzu yeɛ ɔkɔmaa nningyein kɔhɔ yé mmerɛ bɔ atu ahɔ nekaa foforɛ ne ɔ?,edwurel bɔ wɔ ala ka na no ne kenga kyɛ izu yɔ kɔmaa ne ngenka hɔ ye mere bɔtua hɔnekaafo frenie,1.4286,0.7778
+842,BƆ ƆKƆBOKA WƆ MAA EKOLI AKƆNNƆ BƆNE SO NGUNIM Ɔ,bokobokau meekoriyakono gbɔni suŋguni moɔ,1.0,0.4211
+843,KƆSO FA WƆNWO TO YEHOWA SO,kɔso fawa tei waso,0.8333,0.381
+844,“NIKYEE BIALA MMA ME ANIGYE BƆ ƆTRA SO”,nekye biala mma mia nigye bɔtraso,0.75,0.1333
+845,FA W’ADWENE SIE BƆ ƆKƆ SO WƆ ANWURO DƆ NASO,fa waadwene siebɔɔkɔ so wa awurodɔ na so,0.8,0.0909
+846,BƆ ƆKƆBOKA WƆ MAA EKOSŨA NIKYEE YÉ Ɔ,bwakwa bukamu ekusisyenikyeyoo,1.0,0.5862
+847,"BƆ ODIKYƐ ƐYƐ, MMERƐ BƆ ESŨA BIBLE NU NGƆMHYƐ Ɔ",boo dicɛɛyɛ nra bori suabaabu nungɔm sɛo,1.0,0.4865
+848,Nzu yeɛ ɔkɔboka wɔ maa ekofi w’ahone nu kɔbɔ mbaeɛ ɔ?,nzi ɔkɔbokaɔ maakɔfi w' ahune no kɔbɔmbayɛ ɔ,0.9091,0.2439
+849,Edwirɛ Biemɔ Bɔ Ɔkɔkyekye Yɛ Wora Mmerɛ Bɔ Yɛte Moen Ne,ebwe bowalakane no ne kengakye edwe bie mo bokakyekyeyawora mre boyɛte moen,1.0909,0.8667
+850,"BƆ NÉ ASAFO KƆYƐ, MMERƐ BƆ SƆ BRIENZUA NE SAKYERALE YE ADWENE Ɔ",bɔ ne asafo ne kɔyɛ mmerɛ bɔ ne so berenzia ne asakyera yɛ adweneɔ,0.6923,0.26
+851,Bɔne,ibire bowalakandenu ne kenga ce boni,6.0,7.0
+852,Sɛɛ yeɛ yɛ Sɔfo Panyi ne boka yɛ ɛnnɛ ɔ?,sɛ yɛ yesu afo pɛne mbo kayɛneo,0.9,0.4667
+853,"Yehowa bokale Simeon maa onwuni Yesu bɔ ne bawo ye foforɛ ne, na ɔhyɛle adɔma nanwo ngɔm kyɛ ye yeɛ kyẽabie ɔkɔyɛ Mɛsaya ne ɔ",edwɛ bo baahwɛ babia foto na bone kenakyɛ yɛhu a bo kalisimi ɔmaawune yesu bɔne baawɔefofrɛd na ɔhyekyɛle adɔma na wo ngɔm kyɛ eyɛ akyea bie ɔkɔyɛ mesaia ne ɔ,0.92,0.59
+854,SƐƐ YEƐ ƐKƆYE EDWIRƐ HEMƆ NOA Ɔ?,sɛɛ yɛɛkɔ yɛ edwurɛhe mɔ noa ho,0.7143,0.2
+855,NZU YEƐ YƐKƆHORA YEKOSŨA YEKOFI PETRO DWIRƐ NANU Ɔ?,nyizie yɛ kɔhora ye kosia ye kɔfi petro gwire na non,1.1111,0.2619
+856,ɔkɔmaa ɛkɔhɔ so kopingye ye ɔ?,ɔkɔma ɛkɔɔso ko pingyeyaɔ,1.0,0.125
+857,KƆSO TENA HONHOM NU PARADISE NANU,kosotina huwom no pradisenen,1.0,0.3214
+858,"Nzuati yeɛ odikyɛ yɛyere yɛnwo kyɛ yɛkɔyɛ bɔ Nyameɛ kuro ɔ, ɔmva yenwo kyɛ yahɔ ɔhaw bie nu ne?",nyiati odikye deyere yɛ hokyɛ yɛkayɛbɔnyame yekoroo ɔmvan hokyɛ yahoɔ ha wo benu n,1.0,0.2933
+859,Nzuati yeɛ odikyɛ yɛkɔso yenya gyidie kyɛ Yehowa afa yɛ bɔne ahyɛ yɛ ɔ?,nvieti yɛɔdikyɛɛ yɛ kɔso yɛ nyagyidiekyɛɛ yɛhu afaɛbɔne ahyɛyɔɔ,0.9286,0.2456
+860,"Bɔ yeti yeɛ odikyɛ yedé yɛtonu kyɛ Yehowa kuro yɛ dwirɛ, ɔne bɔ yɛyɛ a, ɔkɔmaa yekole yekoli paa kyɛ okuro yɛ dwirɛ ne, yekonwu ye.",bɔ yɛtie odikye yɛde atuni kyɛ yehua kuroye dwerɛ ɔne bɔyɛyɛ a ɔkɔmaa yɛkole ye kolipaa kyɛ okuro ye dwerɛ yɛkonwui,0.7308,0.2157
+861,BƆ YETI YEƐ NYAMEƐ MA ATEE MAA YENWU AMANEƐ Ɔ,boe tie nyamiɛ ma tin ma ye wunamania ɔ,0.8,0.3611
+862,BƆ ƆKƆBOKA WƆ MAA ƐKƆƆYƐ  KRISTONIƐ BƆ ƆBƆ YENWO MMƆDEN Ɔ,bɔkɔbokɔ maa ɛkɔ yɛ kristo nea bɔboe wɔmoadeo,0.9091,0.3261
+863,KYƐBƆ YEHOWA MAA YENYA YƐ MBAEƐ NWO MMUAYƐƐ ƐNNƐ Ɔ,chebe yehua maaye nyayamba ye mumuayeneo,1.0,0.4634
+864,"SƐ YEHOWA KÃ KYƐ YƐYƐ ADWUMA BIE A, ODIKYƐ YƐYERE YƐNWO YƐYƐ",sɛ yewoakakyɛ nyɛyɛ adwoma bia a ɔdikyɛ yɛyereɛ wo nyɛyɛ,0.8333,0.2083
+865,NNƐYƐ BONIAYƐ,nayye boniya ye,1.5,0.4167
+866,BƆ YEHOWA AYƐ NA WAMAA YE BƆHYƐ AWA NU Ɔ,bwo ye wo wa yɛ ne wa ma ye bɔsha wo noo,1.2,0.3871
+867,"Ɛbɔ bɔ ahyɛ Yehowa kyɛ ɛkɔsõ ye ne, sɛ ɛdwenedwene yenwo a, sɛɛ yeɛ ɔkɔboka wɔ maa ekoli nahorɛ ɔ?",ɛbɔbɔahye yɛhu ateɛkɔ soe n sɛ ɛdwendwelee ho a sɛɛyɔkɔbokɔ mekoli nahoreo,0.9,0.3026
+868,"SƐ BƐKÃ KYƐ YƐHYƐ YEHOWA ANIMNYAM A, OKYIRE SƐƐ?",sɛ bekakyɛ yɛsɛ yɛhuaniminyam a ɔtyiresɛɛ,0.7778,0.2895
+869,"Me ne Adel ne yɛ mmaamɔ Samuel ne Shirley, yɛsõ wɔ Palawan",foto na nun yɛnwu alemaa baaboa ne ɔye ne bɛmaa mɔ ɛdwurɛ bɔ bahyorɔ bagua foto na bɔ ne kenga kyɛ meniadɛɛ ne yɛmaa mɔ samɔ ne hyɛli yɛ soŋɔ palaawɔn,2.3333,1.9783
+870,"Bɔ Ne Bɛfa Nu Ne, Aso Ebie Ato Wɔ Le?",bɔne bâ fa nun aswe bi a tuo le,0.9,0.2692
+871,EDWIRƐ BƆ MARIANNE WERTHOLZ HÃNE Ɔ,ejure bọ marian wethhold aneo foto na nu ye walema bresia marian wethhold,2.1667,1.5862
+872,BƐHÃNE NZƐMBA NE WƆ MAEN FOFORƐ SO,bɛhane zɛmba ne wɔ maefofrɛ so,0.5714,0.1429
+873,YEHOWA KƆBOKA WƆ MAA ƐKƆYƐ ADWUMA BIALA BƆ OWURA WƆ SA NE,yeho akɔ bokɔ meɛkɔ ya dwuma bia bowuroɔsan,1.0,0.2609
+874,"Yɛ bɔne bɔ Yehowa afa ahyɛ yɛ ne, mvasoɛ beni yeɛ yanya yafi so ɔ?",yɛboano boyɛho afahyɛ yɛ n mvoasoa bɛno yɛyɛnyɛ yɛfi soo ɔ,0.8667,0.36
+875,Yehowa ‘Kyekye Bɛ Bɔ Bɛ Wora Abɔ Ne Wora’,iho akyekye bɛbɔ bɛwra bɔ ne woraa,0.8889,0.1935
+876,"Sɛ ebie yɛ nikyee maa ɔyɛ yɛ yea, na yɛfa yenwo dwirɛ yewura yɛ nu a, yɛnwo ngɔtɔ yɛ lle.",sɛɛ bie yɛ nicyei mɔa yɛyɛya na yɛfae nåwodwure yɛ wula yɛ nu a yɛ nwongɔtɔ yɛ le,0.7,0.194
+877,"Ebiekũ koso, honhom nu asɔre awuro ne, nná ye yeɛ ole asomdwee bɔ ɔwɔ yɛne yeliemamɔ bɔ yɛne bɛ sõ Yehowa ne afĩa bɔ yeɛ ole honhom nu paradise ne.",ɛbiikonkoso honhum nu ɔsɔrɛ wuɔ n na yi ola asomdwee bɔwɔ yɛne yɛlie mammɔ bɔyɛne bɛso yehua na afia bɔyɛwo lɛ hohom no paradisɛn ɛdwerɛ bɔwɔalakan na nu na si,0.9667,0.4783
+878,Kɔso Nya Ɔdɔ Ma Yehowa Ɔne Aliemaamɔ,koso nyaↄdom ma yehu a ↄnealiemaamo,0.8571,0.2667
+879,"MVASOƐ BƆ ƆWƆ SO KYƐ ƐKƆFA BƆNE KƆHYƐ NE, FA W’ADWENE SIE SO",mvasoobɔwɔ sokyɛkɔfa abane kɔhyɛ n fa waadwini siɛ so,0.7692,0.2174
+880,BƆ YETI YEƐ ODIKYƐ YƐBRƐ YƐNWO ASE Ɔ,mɔ eti odikyɛ yɛ brɛ yɛ nwo ase ɔ,0.875,0.1724
+881,Bɔ Ɔkɔboka Wɔ Maa Ekosua Nikyee Daa Ɔ,bo okabuka omayikosieni chee daa o,0.875,0.4333
+882,Nzu yeɛ ɔkɔboka yɛ maa yekole yekoli kyɛ Yehowa kuro yɛ dwirɛ ɔ?,nhi ɔkɔbokayɛmaa ikole ekolikyɛ ehu aku yedwere ɔ,0.9231,0.3137
+883,MMERƐ BƆ W’ADWENE YƐ WƆ KYƐ ANZI GYINAYƐƐ PÁ MMERƐ BIE BƆ WAPƐ NU NE,mere bowaadwene yɛwakyɛ nzi gina yɛ paa mere bie bowapenu nu,0.8667,0.2642
+884,"EDWIRƐ bie bɔ yɛnnea atẽe kɔhora kɔto yɛ. Sɔ yeɛ ɔtole aliemaa bie bɔ bɛfrɛ ye Luis a ɔ. Onyane kansa, na né ɔyɛ suro paa. Dɔktaniɛ bɔ ɔnea ye ne, ɔhãhyirele ye kyɛ, ɔnate sɔ anwonyerɛ nati, ɔngɔhyɛ okowu. Monika ne ohũ koso, né bɛbɔ bɛnwo mmɔden paa wɔ asafo nanu. Nakoso ɛlɛhõ kõ Monika nwuni kyɛ, sãa ohũ bɔ ɔte asafo nu panyi ne, ɔyɛ bɔne fea, na wayɛ sɔ afoɛ pẽe. Aliemaa brasua Olivia koso te sigyaniɛ. Ɔnate mvrama pirikua bie bɔ né ɔbaatu nati, bɛhã behyirele ye kyɛ otu fi ye awuro berɛ. Mmerɛ bɔ mvrama ne tu yiele bɔ ɔɔneane bɔ wasi ne, onwuni kyɛ mvrama ne asɛkye ye awuro ne koraa. Nningyein sesãne kõmapɛ wɔ sɔ aliemaa hemɔ asetena nu bɔ né bɛnnea atẽe ɔ. Wɔ koso, edwirɛ bɔ ɔte sɔ ne bie ato wɔ le anaa?",edwere biebɔ yɛ ne atee kɔhora kɔtoeɛ so yɛ ɔtolealeemaa biebɔ bɛfra ɛ lowii soɔ,0.986,0.8881
+885,"a Nea vidio bɔ ɔwɔ jw.org so bɔ yeɛ ole, Nikyehorɛ Tibɔ Nahorɛ Kristofoɛ Hia Akokoduro—Wɔ Bue Biala Bɔ Bɛngogyina Nu ne.",e bu beredwure ne keŋgakyɛ neɛ video bowɔ gyeredobyudɔt ɔɔgeso boye lɛ ngyavore ti bo kristofoahia kukuduro wo buwo biala bo bɛŋgodina nu n e bo beredwure na si,1.2273,0.8421
+886,"Bɛbɔ bɛbaagya ne, nzuati yeɛ odikyɛ bɛfa b’ayeforɔ bɛhyɛ Yehowa animnyam ɔ?",bɛbɔ bɛbaagyan nzuɛtiɛ odikyɛ bɛfa bayeforɔ bɛhyɛe ho animinyam o,0.6667,0.1475
+887,Nya Akokoduro Tekyɛ Sadoke,nyakukudro tiche sadok,1.0,0.3913
+888,"“BƐYERELE BƐNWO BƐSÕNE YEHOWA, NA ƐHẼNE MAA BƐNYE GYELE”",bɛyerere bɛun bɛ suni yehua na hinni maa bɛ nye jere,1.0,0.3333
+889,"Wɔ tete Korinto asafo nanu ne, ebie yɛle bɔne pirikua bie, na kyɛbɔ belili yenwo dwumaa ne, yɛkɔnea bɔ yekosua yekofi nu ɔ.",wɔtete korintoas afon na nun ɛbie yɛle bɔne pirikuua bie na akyɛ bobelilii no dwuman yɛkɔne abo yekosuɛ ɛkofi no ɔ,0.7826,0.1649
+890,"Panyi ne hahyirele John kyɛ sɛ sɔ a, yede ɔhworɔ krataa ɔfa ɔɔpa sɔfo ne kyerɛ. Yeɛ John hworɔle krataa ne kyɛ:",paanyini hahyɛle dwɔnkyɛ sɛ so a yɛde ɔhwerɔ krataa ɔfa ɔɔpa sɔfo ne kyere yɛ adwon hwerɔle krataa ne kyɛ,0.5455,0.2069
+891,"Sɛ anyɛ boniayɛ a, sɛɛ yeɛ ɔkɔboka wɔ maa wɔnye kɔsɔ bɔ ele ye ɔ?",saanye buniayɛ a sɛyɛkɔbɔkɔɔ maa wanye kɔ sɔboelɛyɛɔ,0.8667,0.2653
+892,"Sɛ ebiemɔ kwaabɔ asu a, nzu dwirɛ yeɛ ɛyɛ a bebisa bɛ ɔ, na nzuati ɔ?",sɛ ebie mɔkwaa baasu a nzudwurɛ yɛ ɛyaa bɛbisa bɛwo na azueti ɔ,0.75,0.1765
+893,"Atee beni yeɛ Yehowa nate so kɔfa Satan wiase ne kɔwa ayieleɛ ɔ, na nzu yeɛ oguso ɔyɛ na wamaa bɔ wabɔ yetianu kyɛ ɔkɔyɛ ne awa nu ɔ?",atemben ye eho ana ate so kɔfa se tawiase ne kɔɔ wɔ yelia o na nzu ye oguso wɔ yɛ na wa maabo wa boɔ yekye no cyɔkɔye na wɔn nnoɔ,0.8276,0.301
+894,"Gyinayɛɛ bɔ asi kyɛ ɛkɔsõ Yehowa ne, yɛnye gye yenwo paa",jena yibɔ sicyɛ kɔson yehuwa n i nye jeo paa,0.9091,0.4444
+895,SƐƐ YEƐ ƐKƆYE EDWIRƐ HEMƆ NOA Ɔ?,se yeko yijule himonuwam,1.0,0.68
+896,Yehowa ama yɛ akwangyerɛ pee bɔ ɔboka yɛ maa yɛnye gye ɔ. Yɛkɔnea bɔ odikyɛ yɛyɛ na wamaa yahɔso yafa yɛnwo yato ye so ɔ.,yiho ama yakwangyerɛpen bɔbokayɛ ma yɛ nyi gyi ɔ yɛkɔneabɔdikye ɛyɛ na wama yahɔso yafayɛ no yatɔe so ɔ,0.72,0.1684
+897,FA W’ADWENE SIE ASETENA PÁ BƆ EKONYA YE KYẼABIE NASO,fa wɔadwun sɛ asetena pa aboɛkɔnya akyeabie na so,0.8,0.3095
+898,"Aso w’abusuafoɛ nemɔ se kyɛ amammerɛ bie bɔ Bible ne dwudwo tia ne, ɛngɔfa wɔnwo ngowura nu bie anaa?",aso waabusunafoɔ ne mɔse kyɛ ama meribi bɔbae bo ne gwudwo tia n ɛnwofɔ wongɔ wura no bianaa,0.7895,0.25
+899,Nzu yeɛ ɔmaa edé di kyɛ Yehowa kuro wɔ dwirɛ paa ɔ?,nzu yɛ ɔmma yɛdedikyɛ yɛhoa korowɔbwerɛ paa wɔ,0.8333,0.2821
+900,SƐƐ YEƐ ƐKƆYE EDWIRƐ HEMƆ NOA Ɔ?,sayɛ kɔ yɛedwerɛ he mɔ noa o,0.8571,0.28
+901,ABUSUA KOROKORO BƆ BƐBƆ BƐNWO MMƆDEN Ɔ,ebusuya kro kro b bobe wo madiyawo,1.0,0.5312
+902,ODIKYƐ MEMAA EBIE SI GYINAYƐƐ MA ME ANAA?,odice memebie sijinaye mamiyana,1.0,0.3636
+903,NZU YEƐ ƐKƆYƐ KƆFA KOHYIRE KYƐ WƆNYE SƆ YESU WUE NE Ɔ?,ndiɛ kɔyɛ kɔfa kɔse kyɛ wɔnye sɔ yesu wie neao nkyemu bro ne nzoo ne bro ne motwrɛ nzɛmisa,1.1667,1.119
+904,Aso Ɛmaa Wɔnye Sɔ Bɔ Ele Ye Ɔ?,asu ɛma wa nyi soboe le yɔɔ,1.0,0.3182
+905,Ɛmɔkae Bɛyemɔ,ɛdwurɛ bɔwoalaka na nu na kengakyɛ ɛmɔ kae bɛye mɔ,5.0,2.4167
+906,"SƐ ƐKAE KYƐ YEHOWA TE “NYAMEƐ TEASEFOƐ” A, SƐƐ YEƐ . . .",sɛ ɛka ekyɛ ehuatenyame ɛte asefo a sɛɛyɛ,0.8,0.1316
+907,NZUATI YEƐ ODIKYƐ ƐMƆFA ƐMƆ AYEFORƆ BƐHYƐ YEHOWA ANIMNYAM Ɔ?,ndwiatiɛ odi kyɛ ɛmafa ɛmo ayeforɔ bɛhyɛ ye hɔ aneminyamɔ,0.8,0.24
+908,"ƆDƆ BƆ ALIEMAAMƆ YELE YE ALI HYIRELE YƐ NE, ƆHYƐLE YƐ NGUNAEN",ɔdo bɔleemamɔ yilyelihyireyel n ɔhyɛl ye ngunaanyi,1.0,0.3265
+909,Yɛkɔyɛ sɛɛ né yamaa aliemaamɔ anwu kyɛ yekuro bɛ dwirɛ?,yɛkɔ yɛsɛ ne yɛmaali maamonwu kyɛ yɛ kunu bedwurɛ,0.9,0.2667
+910,"Kyɛbɔ Yehowa ne Yesu te edwirɛ bo ne, nzu yeɛ yɛyɛ a, okyire kyɛ yesuesũa bɛ ɔ?",kyɛ bo yihoa ne yesu tie dwuraboɔ n nzua yɛyɛ a okyee kyɛ yesu esuabɛɔ,0.7647,0.2333
+911,AFOƐ NE MUKORAATI TE K.Y.B.,afoɛ ne mu korayɛ tintɛ korayɛ yesu ba ɔ,1.4,0.7
+912,"Yɛsrɛ ɛmɔ, ɔyɛle sɛɛ yeɛ ɛmɔ nwuni nahorɛ ne ɔ?",yɛsrɛmɔ ɔyɛ le sɛɛ yeɔmuwun nahrɛ ni ɔ,0.8,0.2222
+913,BƆ ƆMAA EBIEMƆ KORA NYA ADWENE KYƐ NYAMEƐ NYE NGYE BƐNWO Ɔ,bɔmaa ɛbiemɔ kora nyaadwene kyɛ nyamea nye n gye bɛ nwoo,0.8333,0.0851
+914,Yɛbaanea kyɛbɔ Yob nwomaa ne kɔboka yɛ maa yekonwu kyɛbɔ yekotu ebie foɛ ɔ.,yɛbaa ne akyɛbɔ yɛbomoma ne kɔboka yɛmaa yɛkɔnhu kyɛbɔ yɛkɔtue biɛfoɛ o,0.7857,0.1803
+915,Sɛɛ yeɛ Yesu bokale mmenia maa benwuni kyɛ bɛnwo hia Nyameɛ ɔ?,se ye yesu bokariminiamaabe ŋwunicebe wu hianyamio,0.9167,0.34
+916,Kesaalae yɛwɔ Myanmar,e jura bahwere bagwiafoto nao ne keŋgachɛ ke salae yɛ ɔ mayama e jure niâ si,5.3333,2.4737
+917,sɛɛ yeɛ ɔfa hyɛle mmenia ngunaen ɔ?,sɛɛyɛ ɔfa hyɛle menia ngunaeo,0.7143,0.1429
+918,‘Nningyein benimɔ anu yeɛ odikyɛ meda akokoduro ali ɔ?’,ninjyen be nima nu yɛodi kyɛ midakukudurali ɔ,0.8889,0.2273
+919,Atẽe beni yeɛ odikyɛ yɛfa so yesũa Bible ngɔmhyɛ ɔ?,atin be ni yi o dikɛɛ ɛfasu ye suan baabongɔm sɛɔ,1.1,0.3659
+920,Bɔ mbaeɛ srɛ Yehowa kyɛ ɔboka wɔ ma ɛfa bɔne hyɛ.,bɔmba yɛsɛ yɛhu akyɛ ɔbokɔ maɛfa bɔne hyɛ,0.8182,0.1842
+921,KƆSO NYA GYIDIE KYƐ YEHOWA KURO WƆ DWIRƐ,kɔso nnyagyidie kyɛ yɛho akurowo dwerɛ,0.75,0.1515
+922,"Nningyein benimɔ yeɛ yɛyɛ a, okyire kyɛ yele gyidie ɔ?",ni njen bi ni mọyẹẹyẹ ya a use cẹle nlẹ jidiọ,1.1,0.5814
+923,YEHOWA AHYEHYƐDEƐ NE SUESUA BƆ YESU YƐLE NE,eho ahyehyɛdea ne suesuabɔ yesu yialɛn,0.75,0.2222
+924,Nzu yeɛ yesũa yefi bɔ Obadia ne Sɔfo Panyi Yehoada yɛle nanu ɔ?,nzuye yesuɛ ye fi bɔ ɔbadea ne sɔfo pɛ yeho ada yɛle nɛ nɔɔ,0.7692,0.22
+925,MENYE SƆ KYƐBƆ YEHOWA ABOKA ME NE,menye nsochebo yi huabụkamịn,0.8571,0.4815
+926,"Nzuati yeɛ odikyɛ yesua kyɛ yekohuro aliemaamɔ dwirɛ, na yasõ bɛ wɔfoɛ ɛnnɛ ɔ?",nzueti ɔodece esuancyɛ yɛkɔhuralema modwurɛ na yɛason bɛ wɔfoɛ ɛnnɛɔ,0.7857,0.3333
+927,"Bɔ ɔtole Mose ne Yisraelfoɛ nemɔ ne, nzu yeɛ yɛkɔhora yekosua yekofi nu ɔ?",bọtoli mose ne israel fọ de mọn nju yɛ kɔhọ yɛkosie yekofi nu ọ,0.7857,0.339
+928,"Bɔ asua ye wɔ asetena nu ne, kã yenwo dwirɛ kyire mmenia. Bɔ yɛ kã ye, ma yɛnea yenwo dwirɛ kaa wɔ Bible nanu:",bɔasua wɔ asetena nu n ka wodwure kyerɛ benia bɔyɛ kan mayɛnea wodwureɛkan wɔbae bo ne n,0.875,0.3373
+929,Nningyein benimɔ yeɛ ɛkɔhora kɔyɛ kɔfa kohyire kyɛ ekuro aliemaamɔ dwirɛ ɔ?,ningyen be ni mɔ yɛkorakɔ yɛkofa kpohyerekyɛ akurale maa muodwura ɔ,0.9167,0.254
+930,"YƐKÃ NZƐMBA NE, OFIKYƐ YƐNYE GYE YENWO",yɛkanzɛmban ofichɛ yanye ge ŋ,1.0,0.3548
+931,MVASOƐ BƆ ƆWƆ SO KYƐ YƐKƆMAA YƐNYE KƆLA BERƐ Ɔ,mva so ɔbɔ wɔ so kyɛ yɛkɔ maayɛ nye kɔ laberɛ o,1.0,0.0811
+932,"NEKAA BIALA BƆ YƐWƆ NE, NYAMEƐ MAA YƐSA KÃ BƆ YEHIA Ɔ",nnekaa bialaabɔyɛ wɔn nyameɛmaa yɛsa ka boye hia ɔ,0.8333,0.122
+933,NÉ YEHOWA APƐDEƐ NWO HIA YE,हiाए iजiसेमu eनो,1.0,0.9545
+934,wanwu bɔ ɔmaa ɔyɛ se ma ye kyɛ ɔkɔsõ Yehowa ne?,bɔm bɔmɔyɛ se ma ekyɛ ɔkɔhye eho ano,0.8182,0.3889
+935,AFUTUE BENI YEƐ PETRO FAMANE YƐ FALE . . .,afokyiebin yɛ petu fama ne yɛ fale,0.7143,0.3
+936,Kyɛbɔ Ekohyire Kyɛ Wɔnye Sɔ Bɔ Yehowa Ayɛ Ama Wɔ Ne,ebio bɔ wo alaka no nu ne kena kye kye bokoshire kye wonyi sobɔ yeho ayama won,1.5455,0.9512
+937,yaboka aliemaamɔ bɔ bayakyi adesũa ne asɛnga hɔlɛ ne?,yɛ abokaree ma mɔbɔ bɛyɛkyerɛde suane yasɛnga hɔlen,1.0,0.3182
+938,"Edwirɛ hemɔ bɔ ɔfa Yehowa nwo ne, sɛ esua nikyee a, ɛkɔhora kɔyɛ yenwo nhwehwɛmuɛ:",edwuri ahe maɔbɔɔfa yeho a won sɛasuanikya a ɛkɔhora kɔ yeɛnwo dwehwe mu a,1.0,0.2615
+939,Suesũa Yehowa Bɔ Ɔte Edwirɛ Bo Ne,seehua yiho a bɔ tedwerɛbon,1.0,0.3333
+940,Yekonwu atee nna bɔ Yehowa fa so boka yɛ ɔ.,yekonwaten na boyehu afaso bokayɛo,1.0,0.1818
+941,"g BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Aliemaa bie wɔ adwuma nu, na bɛbɔ ɔne bɛyɛ adwuma bɔ bɛtte Yehowa Adanzefoɛ ne, bɛpena kyɛ ɔbanea ponografi nwo foto.",foto na nu nu ewu kyɛle mma bieti fita neɛ na bɛwɔ ne bɛwɔ adwuma nu nu bɛpana kyɛ ɔbaneapo no grafin foto na koso wan dɛ bɛ so,1.0,0.6034
+942,Yɛkɔyɛ sɛɛ ne yahɔso ‘yasɔ yɛnwo yanea?’,yɛko yɛ sɛ ne ya wɔ so yasɔ yɛ nwo yaneya,1.2857,0.129
+943,BƆ ƆKƆBOKA WƆ MAA EKOSŨA NIKYEE YÉ Ɔ,bọkọgbụka ọmai kusueniteyọ,1.0,0.5862
+944,"Yɛle gyidie kyɛ kyẽabie, Yehowa kobua mmenia ndɛen bɔ ɔte turoloo.",yele gyidie kyɛkyea bie yehuakobua meniandɛn bɔte tro loo,0.9091,0.1481
+945,Subaen Beni Yeɛ Aliemaamɔ Lale Ye Ali Ɔ?,ɛbwura bɔ woala kane nu ne keŋngakyɛ suban be ni yareemaamɔ laleyɛleɔ,1.5,1.125
+946,BOKA ƐWA MA ONWU KYƐBƆ OKOHYIREHYIRE YE GYIDIE NU Ɔ,bokaɛwano mo ɔnwukyɛ bokohyehyerɛ egyedii no ɔ,0.9,0.3095
+947,Nea bɔ ɛkɔhora kosua kofi nu ɔ. Bisa wɔnwo kyɛ:,ne aboɛkora kosua kofi no ɔ bisa ɔ ho kyɛ,0.6,0.1944
+948,"Ngrataa Nyɔ Bɔ Petro Hworɔle Ne, Bɔ Yɛkɔhora Yekosũa Yekofi Nu Ɔ",ngaatainyubu petru israleni bwaekora ikusyaikufinuu,1.0,0.4423
+949,"e BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Aliemaa bie aboka ye Bible suaniɛ maa wasusu tworɔnzɛm nanwo yé wate yebo. Ɛhene ati, nningyein biemɔ bɔ bɛfa bedi Bronya ne, wasesa ɔkwaagyi gua.",fotobɔ ya dwuson e wo dwera ɛhe alema biabo kae baebo suaneɛmaa wa su transɛm na wo ye waatee bɔ aheniɛte ningyan bie mɔ bɔ bɛfa bediboronyan wɔase sa ɔkɔ agyi gua,0.9091,0.35
+950,"SONALUWAA NE, YE GYA TASAA BƆ YE BUE BIE TE ƐFAA, NA YE BUE BIE TE BURALƐ NE, SƐ ƐTE YEBO A, SƐƐ YEƐ ƆKƆBOKA WƆ Ɔ?",sonɔluwaane igyatasa a ba yi buebiete ɛfa a na ibuebieti buralɛ ne sɛɛteebo a sɛɛyɔɔkɔ boka wo,0.8519,0.1566
+951,"Nhyehyɛɛ beni yeɛ Yehowa yɛle, bɔ ɔnate so fale yɛ bɔne hyɛle yɛ ɔ?",nhyɛhyɛyɛ bɛni ɛyɛhu ayɛle bɔno atesofareyɛ bɔne hyɛreyɛo,0.9286,0.25
+952,ANWUMVOINNWUNƐ,egberebôbaahoro babuafo to na bane kpengachâ awonowowu nâ,8.0,3.0
+953,SƐƐ YEƐ ƐKƆYE EDWIRƐ HEMƆ NOA Ɔ?,sɛɛ yɛkɔ yɛdwurɛ hemɔ noao,0.7143,0.24
+954,"Sɛ yɛ wora bɔ anaa y’abanu bu a, yekonwu bɔ yɛkɔhora yɛkɔyɛ ɔ.",sɛ yɛworabo anayaba no bu a yekom bɔyɛkɔhwraye kɔyɛɔ,0.7692,0.1702
+955,"FA W’ADWENE SIE BƆ ELE YE NASO, NA BRƐ WƆNWO ASE",fa wadwuni sii boilai na so na brɛwɔ nwu ase,0.7273,0.25
+956,"Nahorɛ bɔ ɔwɔ Bible nanu ne, sɛ yɛ́kã yenwo dwirɛ yekyire mmenia a, yekonwu kyɛbɔ yɛkɔhã ye maa bɛnye kɔgye yenwo ɔ. Yekosa yekonwu bɔ yeti yeɛ odikyɛ yɛkã nahorɛ ɔ.",na horɛ bɔɔbae bo na nun seɛkan wo dwure ekyere mini a yeko nwkyɛbɔɛkɔ hanmaa bɛnye kɔ gyen ɔ eko sɛ ekon boitiɛ odikyeɛka nahorɛɔ ngyekye mu ɛko nemisa,0.9355,0.4538
+957,"Sɛ Etu Ebie Foɛ A, Sɛɛ Yeɛ Yob Nwomaa Ne Kɔboka Wɔ Ɔ?",sɛɛtu ebiafo a sɛɛ yɛyiɔbowoma ne kɔbɔkawɔ,0.7692,0.2564
+958,Sɛɛ yeɛ Yesu boka yɛ maa yenwu kyɛ Yehowa kuro yɛ dwirɛ ɔ?,sɛɛ yesu bɔka yɛmaa yɛnwukyɛ yɛhuakoro yedwerɛ ɔ,0.7692,0.2444
+959,"Sɛ yɛkae kyɛ Nyameɛ bɔ yɛso ye ne, ɔte “Nyameɛ Teasefoɛ” a, ɔkɔboka yɛ paa.",tiɛkae kyɛ nyameɛpɔ yɛ sɛe n ɔte nyameɛte asɛfo a ɔkɔ bokayɛ paan,0.8,0.1786
+960,Yɛkɔyɛ sɛɛ ne yamma ‘bɔne anni yɛ so hene?’,yɛkɔ yɛ sɛ na yaama bɔ ne yɛ ne yɛso hene,1.0,0.1875
+961,"Subaen bɔ ɔttemayé beni yeɛ né ɔwɔ Petro nwo, bɔ né odikyɛ ɔbɔ mmɔden kyɛ ɔkɔyakyi ɔ?",suban bɔtema ye beniɛ ne ɔwɔ pɛtron bɔ ne odikyɛ bɔ mɔ denkyɛ ɔkɔyɛkyeao,0.8235,0.2537
+962,"Yɛkɔnea bɔ yeti yeɛ odikyɛ bɛye ebiemɔ befi asafo nanu, ɔne kyɛbɔ mbanyi nemɔ kɔboka bɛbɔ bɛte sɔ ne maa bɛkɔsakyera b’adwene, na Yehowa asa ale bɛ ato nu ɔ.",yɛkɔne abo yeti ɔdi kyɛ bɛye bie mo bɛhiasafonen ɔnekyɛ bɔmbɛyini mɔ kɔboka bɛ wɔ bɛte sɔ ne maa bɛkɔsakyerabadwene na yɛhɔ ɛsa le batonuo,0.7667,0.1855
+963,"Menwu saen bɔɔd a, menwu bɔ ogua so ne yé, na odwu kɔngɔen koso a, menwu nikyee yé anaa?",mi wun sáiboda miwu gbogwiasuniye n' ojukọngbọẹnkosu a mi wun ni cheyna,0.9474,0.5152
+964,Fasie Wɔnye So Kyɛ Ɛkɔbɔ Asu,fa sii wɔnye so kyɛɛ ɛkɔbɔasu tworansɛm bɔdusua ne gyi so ɔ,1.6667,1.1304
+965,"Yekonwu bɔ yeti yeɛ odikyɛ yedé yɛtonu kyɛ Yehowa afa yɛ bɔne ahyɛ yɛ, ɔne kyɛbɔ Bible ne boka yɛ maa yenwu kyɛ abɔnefoɛ bɔ benu bɛnwo ne, Yehowa fa bɛ bɔne kyɛ bɛ ɔ.",yɛkon boiti odi kyɛ ɛdeɛ tunu kyɛ yɛhu afa yɛbɔne ahyɛyɛ ɔnekyɛ bɔbae bone bokayɛma yɛ wu kyɛ abɔnefoɛ bɔ bɛnu bɛnwon yehu afa bɛbɔne kyɛ bɛ ɔ,0.7429,0.2248
+966,YEHOWA AMA YƐ ADANZEƐ BƆ OKYIRE KYƐ ƐBƆ BƆ WAHYƐ NE KƆWA NU,yɛhua ma yɛ adanze bokyerɛkye ɛbɔ bowahye ne kɔbɔ no,0.7692,0.2979
+967,Jacob Rumph ne ɔye Inga,foto nanon yenwualie ma jecop ramph ne ɔye enga,1.4,1.2632
+968,MVA NZIELE MENYE SO KYƐ NGƆYƐ NZƐMBATRƐLƐNIƐ,mvanziɛ menyeso kyɛ ngɔyɛ nzɛmbaterɛ le niɛ,1.0,0.1316
+969,"Sɛɛ yele ndeaseɛ a, sɛɛ yeɛ ɔkɔboka yɛ maa yekonya aboterɛ mmerɛ bɔ ebie abisa yɛ gyidie nwo dwirɛ bie ne?",se yelendi ase  sɛ yɛ ɔkɔbokaemeekunya boterɛ merebu ebiebi sɛɛgyidi wodwure bia n,0.9524,0.3095
+970,"Sɛ yetie brasua bɔ ɔse nworɛ ne a, ɔkɔboka yɛ sɛ́?",sietie berasia bɔ seworɛ ne a ɔbokayɛ sɛ,0.6364,0.2162
+971,"MMERƐ BƆ ƆYƐ SE MA WƆ KYƐ EKONYA AKOKODURO, NÁ AYƐ SOTIE Ɔ",merɛbɔ yɛse mɔɔkye konya kukuduro na yɛsutiɔɔ,1.0,0.2444
+972,Bɔ Yehowa Ayɛ Kyɛbɔ Ɔkɔyɛ A Okole Mmenia Kofi Bɔne Nu Ɔ,bɔ yɛ ho ayɛ kyɛbɔɔkɔ yɛ ɔkoleminiɛ kofibɔ ne nuɔ,0.9167,0.1818
+973,Ɛkɔhora Kɔtena Ase Daa—Atee Beni Aso?,ekohra ko tanase da ati venea so,1.1667,0.3667
+974,Benyane Bɛ Mbaeɛ Nwo Mmuayɛɛ,edwirebɔɔ wɔala kane no ne kengakyɛɛ bɛnnyane bɛnba yɛ mumu ayɛɛ,2.2,1.5417
+975,Kyire Kyɛ Wɔnye Sɔ Mmrienzua Bɔ Bɛte “Akyɛdeɛ” Bɛma Yɛ Ne,kyere kyɛ wɔnye sɔ mmere nzu a ɔbɛte akyɛ deɛ bɛma yɛ ne,0.6364,0.0889
+976,NGƆNYƐLE ADWUMA WƆ NEKAA BƆ BƐNEA MMRAA NWO DWIRƐ SO WƆ BƐTƐL,nkɔ nnyeleedwuma wo nkaabɔbɛneamraa wo ndwere so wɔ bɛsɛ wo,0.9167,0.28
+977,"Panyi ne hane kyɛ: “Oo nzuɔ, ɛmɔbisa.”",pɛnyine hanekyɛ o nziɔ amobisa,1.0,0.1852
+978,NZU YEƐ ƆKƆMAA YEKOLE YƐKƆTO NU KYƐ YEHOWA AFA YƐ BƆNE AHYƐ YƐ Ɔ?,nzu yɔkɔma yikule yɛ kɔtunu kyɛ yɛho afa yɛbɔne ahyɛ yɔɔ,0.7143,0.1961
+979,"Kyɛbɔ Yehowa kobua Ɔhene Solomon, mmenia bɔ bewuli wɔ Sodom ne Gomora, yeɛ bɛbɔ bewuli wɔ Nzueyilɛ nanu ndɛen ne, yenwo dwirɛ beni yeɛ yɛse ɔ, na beni yeɛ yɛnze ɔ?",kyɛbɔ yehɔɔkobuɔ hene solomu meniabo bɛwolo wɔ sodom ni gomora yɛɛ bɛbɔ bɛwolu wɔ nzu yiri na nu ndɛn ne yenwondwere beni yɛyɛseɔ na beni yɛyɛ nzi ɔ,0.7097,0.2031
+980,Nningyein benimɔ yeɛ ɔte y’asɛdeɛ bɔ odikyɛ yɛyɛ yenwo adwuma ɔ?,nengye beni bɔyɔ ɔte yasɛ deɛ bodekye yɛ yɛɛ nwo adwuma ɔ,0.8182,0.2308
+981,FA OBUO MA ELIEMAMƆ KRISTOFOƐ,fɔbúo mèlíe má mɔ kristo fɔ ɛ,1.4,0.32
+982,Nya Gyidie Kyɛ Yehowa Le Tumi Bɔ Ɔkɔfa Kole Wɔ Ɔ,nyagyidiekyɛ yehua le tumi bɔkofa kolɛwɔɔ,0.8182,0.1316
+983,Nzuati yeɛ yɛpena kyɛ yɛyɛ mmenia pá ɔ?,nwiɛtiɛɛ pnakyɛ yɛyɛmenia pao,1.0,0.3226
+984,Te edwirɛ nabo yé. Nwa yeɛ ɔhane ɔ? Nzu yeɛ osili bɔ ɔmaa bɛhane sɔ ɔ? Nzu yeɛ ebia ɔmaa bɛfale sɔ dwirɛ ne bɛyɛle adwuma ɔ?,tiɛdwurɛ na bo ye wanyɛ ɔhaneɔ nsu yɛ sili bɔ ɔmaa bɛhane sɔ ɔ nsu yɛbi a ɔmaa bɛfale so dwurɛ ne bɛyɛle adwuma o,0.6296,0.1702
+985,Nzu yeɛ Yehowa abɔ ye tianu kyɛ ɔkɔyɛ ɔ?,enju yihuabaite mukyokoyo,1.0,0.6452
+986,"Sɛ Bɛkã Asubɔ A Yeɛ Ole Nzu, Na Nzuati Yeɛ Yenwo Hia Ɔ?",sɛ bɛka subo a yɛ olɛ nzu na nzuetia yi wo nhiawo,0.6923,0.3171
+987,SƐƐ YEƐ ƐKƆYE EDWIRƐ HEMƆ NOA Ɔ?,sɛ niakọigijwureke mua nuao,1.0,0.68
+988,"Sɛ esũa Yesu wue nanwo nikyee a, edwirɛ bɔ olili so ye, ɛkɔhora kɔyɛ enu nhwehwɛmuɛ:",sɛsua yɛsu wie nawo ne kya a ɛdwere bɔnine soe ɛkɔworakɔ yɛ nnunhwe mu a,0.9375,0.3333
+989,Nningyein Bɔ Ɛkɔhora Kɔfa Kɔyɛ Nhwehwɛmuɛ Ɔ,ningyein bɔ ɛkɔhora kɔfa kɔyɛ nhwihwe muɔ,0.4286,0.1081
+990,YELIEMAMƆ KRISTOFOƐ,jelie mamo kristofoj,1.5,0.1667
+991,"c BƆ FOTO NE KÃ YENWO DWIRƐ Ɔ: Bɛen so: Aliemaa bie aatena nekaabie ɔno kɔfe, na wanwu ye kyɛ mmrandeɛ nyɔ biemɔ di aweweɛ. Famaa so: Aliemaa brasua bie anwu kyɛ mmenia nyɔ biemɔ bɛno dwɔɔt.",fotoo na noɛ n yɛwukyɛ lemara bie asane kaa bie ɔnɔ kɔfe na wanwunikyɛ marande nywobie modiaweweɛ yiɛlemarabɛɛsɛ bie koso wanwuikyɛ miniɛnwobie bɛno gwɔɔte,0.8649,0.4324
+992,SƐƐ YEƐ EDWIRƐ BƆ OLILISO HEMƆ BOKA YƐ MAA YƐYƐ ASƐNGA ADWUMA NE Ɔ?,sɛɛ yɛ ɛdwurɛbɔ ɔlili so he mɔ bo kayɛmaa yɛ yiasɛngaɛ dwuma ne ɔ,0.7857,0.1132
+993,"MA WƆ BRA YƐ SANNWUU, NA YƐ BƆ ƆTENGYƐ Ɔ",mma wɔbera yɛ sa na yɛ boɔtengyɛ ɔ,0.6,0.2667
+994,"Ɛmɔma brasua ne nwu kyɛ Yehowa, asafo nu mbanyi, ɔne aliemaamɔ mukoraati kuro ye dwirɛ, na bebu ye paa.",ɛmommabre so ane wui kyɛ yɛhu a asafonom ban ɔneɛle mamo mu koraɛti koro yi dwerɛ na beɛbu ye paaa,0.8947,0.2716
+995,"Yeɛ John hane kyɛ: “Edwirɛ nala ɛne oo. Né biaa ne kyirekyire yɛ Bible nu dwirɛ bie, yeɛ mmisale ye kosã ɔ. Sɛ wangora wanye me dwirɛ ne noa a, yede nzuati yeɛ odikyɛ metworɔ krataa mekɔpa ye kyerɛ ɔ?”",yɛɛgwɔn hanekyɛ ɛdwera ne alaane o ne bia ne kyeekyereɛbaabo no dwera bie yɛɛmisalei kɔ sa ɔ sɛ wankwra waanyɛ me dwera ne no a yɛde nziɛti ode kyɛ metwerɔkrataa mekɔpae kyerɛ ɔ,0.775,0.2922
+996,MMERƐ BƆ YƐPENA EBIE BƆ YEKOGYA YE NE,mmerɛ bɔ yɛ pene ebiɛbuyekogya ayɛ n,0.75,0.2
+997,Nzu yeɛ Yesu yɛ fa lɛle sona fili bɔne nu ɔ?,nzie yeesu yɛfa lele suna filibɔni nuam,1.0,0.2727
+998,"Bɛhɔle, Na Besa Bɛwale",e didɔ bɛwalakanemnu ne kenga kyɛ bɛhɔle na misa bɛwale,1.75,1.6667
+999,Nningyein benimɔ yeɛ ɛkɔhora kɔyɛ mmerɛ bɔ ɛpena kyɛ ɛbɔ mbaeɛ ne?,nengem beni mɔ yɛ kɔhora kɔ yɛ mora bɔyɛ pachɛ bɔm ba yɛn,1.0833,0.3333

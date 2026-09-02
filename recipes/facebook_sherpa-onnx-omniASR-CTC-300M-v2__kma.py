@@ -1,6 +1,6 @@
 """Evaluation recipe for facebook/sherpa-onnx-omniASR-CTC-300M-v2 — Konni (kma).
 
-Track: ASR (open) — sherpa-onnx ONNX export of Meta omniASR CTC 300M v2
+Track: ASR (open models) — sherpa-onnx ONNX export of Meta omniASR CTC 300M v2
 Scope: THIS LANGUAGE ONLY. Every eval language has its own recipe file, so
 changing this one does not affect the others, and each model size has its own
 set.

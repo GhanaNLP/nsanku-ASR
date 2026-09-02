@@ -1,6 +1,6 @@
 """Evaluation recipe for facebook/omniASR-CTC-1B-v2 — Asante Twi (twi_asante).
 
-Track: ASR (open) — Meta Omnilingual ASR, CTC head (omniASR_CTC_1B_v2)
+Track: ASR (open models) — Meta Omnilingual ASR, CTC head (omniASR_CTC_1B_v2)
 Scope: THIS LANGUAGE ONLY. Every eval language has its own recipe file, so
 changing this one does not affect the others, and it is separate from the
 recipes for the other omniASR checkpoints.

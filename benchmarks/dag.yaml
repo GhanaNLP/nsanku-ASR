@@ -6,34 +6,6 @@ categories:
 - unicef
 - waxal
 benchmarks:
-- model: KhayaAI/khaya-asr-v3
-  model_url: https://translation-api.ghananlp.org/
-  owner: KhayaAI
-  model_class: api
-  params: API
-  wer: 0.3549
-  cer: 0.1526
-  per_category:
-    bible:
-      wer: 0.2746
-      cer: 0.1719
-      samples: 1000
-      valid: 999
-      avg_seconds_per_sample: 1.02
-    unicef:
-      wer: 0.5103
-      cer: 0.1866
-      samples: 195
-      valid: 195
-      avg_seconds_per_sample: 2.32
-    waxal:
-      wer: 0.2797
-      cer: 0.0993
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 1.25
-  source: evaluated
-  evaluated_at: '2026-08-14'
 - model: FarmerlineML/w2v-bert-2.0_2026_dagbani_ASR
   model_url: https://huggingface.co/FarmerlineML/w2v-bert-2.0_2026_dagbani_ASR
   owner: FarmerlineML
@@ -92,36 +64,6 @@ benchmarks:
       avg_seconds_per_sample: 0.03
   source: evaluated
   evaluated_at: '2026-08-14'
-- model: facebook/omniASR-LLM-7B-v2
-  model_url: https://github.com/facebookresearch/omnilingual-asr
-  owner: facebook
-  model_class: llm
-  params: 7B
-  wer: 0.5728
-  cer: 0.2207
-  per_category:
-    bible:
-      wer: 0.5161
-      cer: 0.2472
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.6
-    unicef:
-      wer: 0.5674
-      cer: 0.1839
-      samples: 195
-      valid: 163
-      avg_seconds_per_sample: 1.2
-      failures:
-        audio_too_long (> 39s): 32
-    waxal:
-      wer: 0.635
-      cer: 0.2309
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.93
-  source: evaluated
-  evaluated_at: '2026-08-25'
 - model: waxal-benchmarking/whisper-small-waxal-dag
   model_url: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-dag
   owner: waxal-benchmarking
@@ -180,6 +122,120 @@ benchmarks:
       avg_seconds_per_sample: 0.42
   source: evaluated
   evaluated_at: '2026-08-14'
+- model: facebook/sherpa-onnx-omniASR-CTC-300M-v2
+  model_url: https://huggingface.co/michsethowusu/sherpa-onnx-omnilingual-asr-1600-languages-ctc-v2
+  owner: facebook
+  model_class: non-llm
+  params: 300M
+  wer: 0.7862
+  cer: 0.2943
+  score: 0.5403
+  per_category:
+    bible:
+      wer: 0.7991
+      cer: 0.3027
+      samples: 1000
+      valid: 999
+      avg_seconds_per_sample: 0.57
+    unicef:
+      wer: 0.7545
+      cer: 0.2821
+      samples: 195
+      valid: 195
+      avg_seconds_per_sample: 2.25
+    waxal:
+      wer: 0.8049
+      cer: 0.298
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 1.21
+  source: evaluated
+- model: facebook/sherpa-onnx-omniASR-CTC-300M-v1
+  model_url: https://huggingface.co/csukuangfj/sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-2025-11-12
+  owner: facebook
+  model_class: non-llm
+  params: 300M
+  wer: 0.7998
+  cer: 0.307
+  score: 0.5534
+  per_category:
+    bible:
+      wer: 0.7956
+      cer: 0.309
+      samples: 1000
+      valid: 999
+      avg_seconds_per_sample: 0.49
+    unicef:
+      wer: 0.7706
+      cer: 0.3008
+      samples: 195
+      valid: 195
+      avg_seconds_per_sample: 2.41
+    waxal:
+      wer: 0.8332
+      cer: 0.3112
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 1.14
+  source: evaluated
+- model: KhayaAI/khaya-asr-v3
+  model_url: https://translation-api.ghananlp.org/
+  owner: KhayaAI
+  model_class: api
+  params: API
+  wer: 0.3549
+  cer: 0.1526
+  per_category:
+    bible:
+      wer: 0.2746
+      cer: 0.1719
+      samples: 1000
+      valid: 999
+      avg_seconds_per_sample: 1.02
+    unicef:
+      wer: 0.5103
+      cer: 0.1866
+      samples: 195
+      valid: 195
+      avg_seconds_per_sample: 2.32
+    waxal:
+      wer: 0.2797
+      cer: 0.0993
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 1.25
+  source: evaluated
+  evaluated_at: '2026-08-14'
+- model: facebook/omniASR-LLM-7B-v2
+  model_url: https://github.com/facebookresearch/omnilingual-asr
+  owner: facebook
+  model_class: llm
+  params: 7B
+  wer: 0.5728
+  cer: 0.2207
+  per_category:
+    bible:
+      wer: 0.5161
+      cer: 0.2472
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.6
+    unicef:
+      wer: 0.5674
+      cer: 0.1839
+      samples: 195
+      valid: 163
+      avg_seconds_per_sample: 1.2
+      failures:
+        audio_too_long (> 39s): 32
+    waxal:
+      wer: 0.635
+      cer: 0.2309
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.93
+  source: evaluated
+  evaluated_at: '2026-08-25'
 - model: google/gemini-3.6-flash
   model_url: https://ai.google.dev/gemini-api/docs/models#gemini-3.6-flash
   owner: google
