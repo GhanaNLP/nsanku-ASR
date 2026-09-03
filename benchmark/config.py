@@ -32,7 +32,7 @@ ORG_ONLY = True
 #
 # GhanaNLP was here while khaya-asr-v3 sat under that namespace; the model is
 # KhayaAI's, and KhayaAI is a real HF org, so the override is no longer needed.
-ORG_OVERRIDES = {"FarmerlineML"}
+ORG_OVERRIDES = {"FarmerlineML", "Qlerqly"}
 
 # A model only reaches the eval list if it ships a real (non-placeholder) model
 # card. Licenses are NOT required — too many otherwise-good org models on HF
@@ -80,6 +80,10 @@ SINGLE_LANGUAGE_ONLY = True
 # on the board (e.g. Sunbird's 51-African-language Whisper).
 FORCE_INCLUDE_MODELS = {
     "Sunbird/asr-whisper-51-african-languages",
+    # Personal-account model (Qlerqly is in ORG_OVERRIDES) the user explicitly
+    # asked to benchmark: multilingual Ghanaian (Akan, Dagbani, Ewe, Ga) so it
+    # needs the single-language gate lifted, like Sunbird.
+    "Qlerqly/griot-nano-1",
 }
 
 # Paths
