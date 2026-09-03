@@ -210,8 +210,8 @@ def evaluate_sherpa(iso_code, variant, workers=DEFAULT_WORKERS,
 def _build_result(spec, variant, per_category, cat_wers, cat_cers):
     avg_wer = round(sum(cat_wers) / len(cat_wers), 4) if cat_wers else None
     avg_cer = round(sum(cat_cers) / len(cat_cers), 4) if cat_cers else None
-    score = (round((avg_wer + avg_cer) / 2, 4)
-             if avg_wer is not None and avg_cer is not None else None)
+    # Ranking metric is CER (lower is better). WER/CER kept for display.
+    score = round(avg_cer, 4) if avg_cer is not None else None
     result = {
         "model": spec["model"],
         "model_url": model_url(variant),

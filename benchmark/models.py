@@ -455,21 +455,30 @@ def _hf_login():
             pass
 
 
-def load_asr_model(model_id, device="cuda:0"):
+def load_asr_model(model_id, device="cuda:0", iso_code=None):
     """Load model, auto-detecting architecture. Returns wrapper or None on failure.
 
     If the model has a recipe (recipes/{owner}_{model}.py) with a
     `build_wrapper(device)`, that is used as-is — model authors can fully
-    customize inference. Otherwise the standard wrapper for the detected
-    architecture is used. Raises with descriptive error so caller can
-    categorize pass/fail.
+    customize inference. A multilingual model's recipe may also accept
+    `iso_code`, so its wrapper can pick the right per-language decoding (e.g.
+    Sunbird's remapped Whisper language token). Otherwise the standard wrapper
+    for the detected architecture is used. Raises with descriptive error so
+    caller can categorize pass/fail.
     """
     torch.backends.cudnn.enabled = False
     _hf_login()
 
     recipe = load_recipe(model_id)
     if recipe is not None and hasattr(recipe, "build_wrapper"):
-        wrapper = recipe.build_wrapper(device=device)
+        import inspect
+        params = inspect.signature(recipe.build_wrapper).parameters
+        kwargs = {"device": device}
+        # Only recipes that EXPLICITLY name iso_code receive it; recipes that
+        # forward **kwargs to a wrapper constructor must not (it would crash them).
+        if "iso_code" in params:
+            kwargs["iso_code"] = iso_code
+        wrapper = recipe.build_wrapper(**kwargs)
         if wrapper is not None:
             print(f"    Using recipe: {recipe.__name__}.build_wrapper()")
             return wrapper

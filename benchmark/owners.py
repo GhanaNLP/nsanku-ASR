@@ -14,7 +14,7 @@ from .config import (
     OWNER_TYPES_FILE, HF_TOKEN, ORG_ONLY, MAX_LANG_TAGS, DATA_DIR,
     SINGLE_LANGUAGE_ONLY, LANG_CONFIG, ORG_OVERRIDES,
     MODEL_LICENSES_FILE, MODEL_CARDS_FILE, REQUIRE_MODEL_CARD, MIN_CARD_CHARS,
-    MODEL_PARAMS_FILE, MAX_PARAMS, SKIP_MODELS,
+    MODEL_PARAMS_FILE, MAX_PARAMS, SKIP_MODELS, FORCE_INCLUDE_MODELS,
 )
 
 LANGTAG_COUNTS_FILE = DATA_DIR / "model_lang_tags.json"  # cache: model_id -> [lang codes]
@@ -403,17 +403,18 @@ def filter_models(models, iso_codes=None, name_tokens=(), require_card=None):
     for m in models:
         name = m["name"]
         owner = name.split("/")[0]
+        forced = name in FORCE_INCLUDE_MODELS  # exempt from general/single-language/size only
         if name in SKIP_MODELS:
             continue
         if is_non_asr(name) or is_unsupported_artifact(name):
             continue
         if ORG_ONLY and not is_org(owner, otype):
             continue
-        if is_general_model(name, ltags):
+        if not forced and is_general_model(name, ltags):
             continue
-        if is_too_large(name, sizes):
+        if not forced and is_too_large(name, sizes):
             continue
-        if SINGLE_LANGUAGE_ONLY and distinct_language_count(name, ltags) > 1:
+        if not forced and SINGLE_LANGUAGE_ONLY and distinct_language_count(name, ltags) > 1:
             continue
         if iso_codes is not None and not targets_language(name, iso_codes, ltags,
                                                           name_tokens):

@@ -73,6 +73,15 @@ MAX_PARAMS = 2_500_000_000  # 2.5B — headroom so a ~2B fine-tune is not lost o
 # language (iso 639-1/639-3 synonyms and Akan variants are collapsed).
 SINGLE_LANGUAGE_ONLY = True
 
+# Multilingual models included by decision despite SINGLE_LANGUAGE_ONLY. Each still only
+# runs on the languages it explicitly declares, and still must pass the org/ASR/card
+# gates — it is only exempt from the single-language, general-base (MAX_LANG_TAGS) and
+# size (MAX_PARAMS) rules. Use for notable multilingual baselines we deliberately want
+# on the board (e.g. Sunbird's 51-African-language Whisper).
+FORCE_INCLUDE_MODELS = {
+    "Sunbird/asr-whisper-51-african-languages",
+}
+
 # Paths
 ROOT = Path(__file__).parent.parent
 DATA_DIR = ROOT / "data"

@@ -302,7 +302,7 @@ def evaluate_language(iso_code, model_filter=None, device="cuda:0", force=False)
 
         try:
             from .models import load_asr_model
-            model = load_asr_model(model_id, device=device)
+            model = load_asr_model(model_id, device=device, iso_code=iso_code)
         except Exception as load_err:
             err = str(load_err)
             reason = ("gated_repo" if err.startswith("GATED:") else
@@ -348,7 +348,8 @@ def evaluate_language(iso_code, model_filter=None, device="cuda:0", force=False)
 
             avg_wer = round(sum(cat_wers) / len(cat_wers), 4) if cat_wers else None
             avg_cer = round(sum(cat_cers) / len(cat_cers), 4) if cat_cers else None
-            avg_score = round((avg_wer + avg_cer) / 2, 4) if (avg_wer is not None and avg_cer is not None) else None
+            # Ranking metric is CER (lower is better). WER/CER kept for display.
+            avg_score = round(avg_cer, 4) if avg_cer is not None else None
             result = {
                 "model": model_id,
                 "model_url": model_info.get("url", f"https://huggingface.co/{model_id}"),
@@ -402,9 +403,9 @@ def _print_leaderboard(iso_code):
     with open(path) as f:
         final = yaml.safe_load(f) or {}
     ranked = sorted(
-        [b for b in final.get("benchmarks", []) if b.get("wer") is not None],
-        key=lambda x: x["wer"],
+        [b for b in final.get("benchmarks", []) if b.get("cer") is not None],
+        key=lambda x: (x["cer"] is None, x["cer"] or 1e9),
     )
-    print(f"\n  Leaderboard for {iso_code} (avg across categories):")
+    print(f"\n  Leaderboard for {iso_code} (ranked by CER, avg across categories):")
     for rank, b in enumerate(ranked[:10], 1):
         print(f"    {rank}. {b['model'][:42]:42s} WER {b['wer']:.2%}  CER {b['cer']:.2%}")

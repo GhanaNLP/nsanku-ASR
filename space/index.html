@@ -232,7 +232,7 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
           <option value="All">All</option>
         </select>
       </div>
-      <p style="color:var(--text-muted); margin-bottom:8px;">Best model per language — ranked by the average of WER and CER (lower is better). Individual WER/CER scores shown for transparency.</p>
+      <p style="color:var(--text-muted); margin-bottom:8px;">Best model per language — ranked by CER (lower is better). Individual WER/CER scores shown for transparency.</p>
       <p style="color:var(--text-muted); margin-bottom:8px;">Open models are the core of this benchmark: their weights can be downloaded and the scores re-run by anyone. The closed models and LLM tracks are shown for comparison.</p>
       <p id="global-api-note" class="section-note" style="display:none; margin-bottom:8px;"></p>
       <p id="global-source-note" class="section-note" style="display:none; margin-bottom:14px;"></p>
@@ -269,7 +269,7 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
         <select id="per-type-select"><option value="All">All</option></select>
         <label>Sort:</label>
         <select id="per-sort-select">
-          <option value="avg">Avg WER+CER (best first)</option>
+          <option value="avg">Avg CER (best first)</option>
           <option value="wer">WER (best first)</option>
           <option value="cer">CER (best first)</option>
         </select>
@@ -321,7 +321,7 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
       <div class="table-wrap">
         <table id="ms-table">
           <thead>
-            <tr><th data-sort="language">Language</th><th data-sort="iso">Code</th><th data-sort="family">Family</th><th data-sort="model">Model</th><th data-sort="model_type">Type</th><th data-sort="model_class">Track</th><th data-sort="params">Params</th><th data-sort="license">License</th><th data-sort="score">Avg (WER+CER) (%)</th><th data-sort="wer">WER (%)</th><th data-sort="cer">CER (%)</th><th data-sort="status">Status</th><th>Fail Reason</th></tr>
+            <tr><th data-sort="language">Language</th><th data-sort="iso">Code</th><th data-sort="family">Family</th><th data-sort="model">Model</th><th data-sort="model_type">Type</th><th data-sort="model_class">Track</th><th data-sort="params">Params</th><th data-sort="license">License</th><th data-sort="score">CER (%)</th><th data-sort="wer">WER (%)</th><th data-sort="status">Status</th><th>Fail Reason</th></tr>
           </thead>
           <tbody id="ms-body"></tbody>
         </table>
@@ -717,7 +717,7 @@ async function loadCSV() {
     return parseCSV(text).map(row => {
       const wer = row.wer ? parseFloat(row.wer) : null;
       const cer = row.cer ? parseFloat(row.cer) : null;
-      const score = wer !== null && cer !== null ? (wer + cer) / 2 : null;
+      const score = cer !== null ? cer : null;
       return {
         iso: row.language, model: row.model, model_type: modelType(row.model),
         params: row.params, wer: wer, cer: cer, score: score,
@@ -748,7 +748,7 @@ async function loadYAMLs() {
           if (b.per_category) Object.keys(b.per_category).forEach(c => catSet.add(c));
           const wer = b.wer !== undefined ? b.wer : null;
           const cer = b.cer !== undefined ? b.cer : null;
-          const score = b.score != null ? b.score : (wer != null && cer != null ? (wer + cer) / 2 : null);
+          const score = b.score != null ? b.score : (cer != null ? cer : null);
           rows.push({
             iso, family: LANG_FAMILIES[iso] || '',
             model: b.model, model_type: modelType(b.model),
@@ -855,7 +855,7 @@ function renderStats(data) {
     {label: 'Languages', value: langs},
     {label: 'Models evaluated', value: models},
     {label: 'Non-LLM · LLM', value: `${nonllm} · ${llm}`},
-    {label: 'Best (avg WER+CER)', value: bestStr, sub: bestSub},
+    {label: 'Best (lowest CER)', value: bestStr, sub: bestSub},
   ];
   el.innerHTML = cards.map(c => `
     <div class="stat-card">
@@ -899,9 +899,8 @@ function renderGlobal(data) {
       <th data-sort="params">Params</th>
       <th data-sort="license">License</th>
       ${catHeaders}
-      <th data-sort="score" style="border-left:2px solid var(--border)">Avg (WER+CER) (%)</th>
-      <th data-sort="wer">Avg WER (%)</th>
-      <th data-sort="cer">Avg CER (%)</th>
+      <th data-sort="score" style="border-left:2px solid var(--border)">CER (%)</th>
+      <th data-sort="wer">WER (%)</th>
     </tr>`;
 
   // Hosted services carry the date they were tested, because the endpoint can
@@ -941,7 +940,7 @@ function renderGlobal(data) {
   }
 
   const body = document.getElementById('global-body');
-  const ncols = 9 + cats.length + 3;
+  const ncols = 9 + cats.length + 2;
   if (rows.length === 0) { body.innerHTML = `<tr class="empty-row"><td colspan="${ncols}">No data</td></tr>`; return; }
 
   body.innerHTML = rows.map((r,i) => {
@@ -960,7 +959,6 @@ function renderGlobal(data) {
       ${catCells}
       <td style="font-weight:700;border-left:2px solid var(--border);color:${r.score < 0.1 ? 'var(--success)' : r.score < 0.3 ? 'var(--accent-hover)' : 'var(--warning)'}">${r.score !== null ? (r.score*100).toFixed(2) : '—'}</td>
       <td style="font-weight:600">${r.wer !== null ? (r.wer*100).toFixed(2) : '—'}</td>
-      <td style="font-weight:600">${r.cer !== null ? (r.cer*100).toFixed(2) : '—'}</td>
     </tr>`;
   }).join('');
 }
@@ -1006,11 +1004,11 @@ function renderPerLanguage(data) {
   document.getElementById('per-lang-pass-thead').innerHTML = `
     <tr><th>#</th><th>Model</th><th>Type</th><th>Track</th><th>Params</th><th>License</th>
     ${catHeaders}
-    <th style="border-left:2px solid var(--border)">Avg (WER+CER) (%)</th><th>Avg WER (%)</th><th>Avg CER (%)</th></tr>`;
+    <th style="border-left:2px solid var(--border)">CER (%)</th><th>WER (%)</th></tr>`;
 
   // Render passed
   const passBody = document.getElementById('per-lang-pass-body');
-  const ncols = 6 + langCats.length + 3;
+  const ncols = 6 + langCats.length + 2;
   passBody.innerHTML = passed.length === 0
     ? `<tr class="empty-row"><td colspan="${ncols}">No passed models</td></tr>`
     : passed.map((r,i) => {
@@ -1026,7 +1024,6 @@ function renderPerLanguage(data) {
         ${catCells}
         <td style="font-weight:700;border-left:2px solid var(--border)">${r.score !== null ? (r.score*100).toFixed(2) : '—'}</td>
         <td style="font-weight:600">${r.wer !== null ? (r.wer*100).toFixed(2) : '—'}</td>
-        <td style="font-weight:600">${r.cer !== null ? (r.cer*100).toFixed(2) : '—'}</td>
       </tr>`;
     }).join('');
 
@@ -1072,7 +1069,7 @@ function renderModelStatus(data) {
   document.getElementById('ms-count').textContent = `${sub.length} rows`;
   const body = document.getElementById('ms-body');
   body.innerHTML = sub.length === 0
-    ? '<tr class="empty-row"><td colspan="13">No matching rows</td></tr>'
+    ? '<tr class="empty-row"><td colspan="12">No matching rows</td></tr>'
     : sub.map(r => {
         const reason = r.fail_reason ? classifyError(r.fail_reason) : '';
         return `
@@ -1087,7 +1084,6 @@ function renderModelStatus(data) {
             ${licenseCell(r.model)}
             <td style="font-weight:700">${r.score !== null ? (r.score*100).toFixed(2) : '—'}</td>
             <td>${r.wer !== null ? (r.wer*100).toFixed(2) : '—'}</td>
-            <td>${r.cer !== null ? (r.cer*100).toFixed(2) : '—'}</td>
             <td><span class="badge badge-${r.status}">${r.status}</span></td>
             <td>${r.status === 'fail' ? `<span class="${badgeClass(reason)}">${reason}</span>` : ''}</td>
           </tr>

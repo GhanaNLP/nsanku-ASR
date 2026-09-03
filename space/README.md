@@ -22,7 +22,7 @@ Benchmarking ASR models on **Ghanaian languages** using the
 Three tracks: **ASR (open models)** (downloadable weights anyone can re-run), **ASR (closed models)**
 (proprietary hosted APIs) and **LLM**.
 Scored per category (Bible / JW / Finance / Unicef / LDS / WAXAL), averaged as the final WER/CER.
-**Ranking uses the average of WER and CER** — every model row links to a recipe
+**Ranking uses CER** — every model row links to a recipe
 (`code` badge) showing the exact inference code used to run it, so model authors
 can correct how their model is evaluated via a pull request.
 
