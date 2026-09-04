@@ -19,7 +19,7 @@ benchmarks:
       valid: 1000
       avg_seconds_per_sample: 0.57
   source: evaluated
-  score: 0.2026
+  score: 0.1216
   evaluated_at: '2026-08-13'
 - model: facebook/sherpa-onnx-omniASR-CTC-300M-v1
   model_url: https://huggingface.co/csukuangfj/sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-2025-11-12
@@ -28,7 +28,7 @@ benchmarks:
   params: 300M
   wer: 0.5626
   cer: 0.1761
-  score: 0.3694
+  score: 0.1761
   per_category:
     bible:
       wer: 0.5626
@@ -44,7 +44,7 @@ benchmarks:
   params: 300M
   wer: 0.5854
   cer: 0.1899
-  score: 0.3877
+  score: 0.1899
   per_category:
     bible:
       wer: 0.5854
@@ -69,6 +69,7 @@ benchmarks:
       avg_seconds_per_sample: 0.52
   source: evaluated
   evaluated_at: '2026-08-25'
+  score: 0.1632
 - model: google/gemini-3.6-flash
   model_url: https://ai.google.dev/gemini-api/docs/models#gemini-3.6-flash
   owner: google
@@ -85,6 +86,7 @@ benchmarks:
       avg_seconds_per_sample: 0.51
   source: evaluated
   evaluated_at: '2026-08-25'
+  score: 0.3665
 - model: google/gemini-2.5-flash-lite
   model_url: https://ai.google.dev/gemini-api/docs/models#gemini-2.5-flash-lite
   owner: google
@@ -101,3 +103,4 @@ benchmarks:
       avg_seconds_per_sample: 0.4
   source: evaluated
   evaluated_at: '2026-08-25'
+  score: 102.0852

@@ -11,7 +11,7 @@ benchmarks:
   params: 300M
   wer: 0.5072
   cer: 0.1661
-  score: 0.3367
+  score: 0.1661
   per_category:
     bible:
       wer: 0.5072
@@ -27,7 +27,7 @@ benchmarks:
   params: 300M
   wer: 0.5072
   cer: 0.17
-  score: 0.3386
+  score: 0.17
   per_category:
     bible:
       wer: 0.5072
@@ -52,6 +52,7 @@ benchmarks:
       avg_seconds_per_sample: 0.62
   source: evaluated
   evaluated_at: '2026-08-25'
+  score: 0.1063
 - model: google/gemini-3.6-flash
   model_url: https://ai.google.dev/gemini-api/docs/models#gemini-3.6-flash
   owner: google
@@ -68,3 +69,4 @@ benchmarks:
       avg_seconds_per_sample: 0.54
   source: evaluated
   evaluated_at: '2026-08-25'
+  score: 0.4593

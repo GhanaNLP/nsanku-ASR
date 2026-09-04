@@ -11,7 +11,7 @@ benchmarks:
   params: 300M
   wer: 0.5032
   cer: 0.3681
-  score: 0.4356
+  score: 0.3681
   per_category:
     bible:
       wer: 0.5032
@@ -27,7 +27,7 @@ benchmarks:
   params: 300M
   wer: 0.5281
   cer: 0.371
-  score: 0.4496
+  score: 0.371
   per_category:
     bible:
       wer: 0.5281
@@ -51,7 +51,7 @@ benchmarks:
       avg_seconds_per_sample: 0.07
   source: evaluated
   model_class: non-llm
-  score: 0.4634
+  score: 0.3951
   evaluated_at: '2026-08-10'
 - model: KhayaAI/khaya-asr-v3
   model_url: https://translation-api.ghananlp.org/
@@ -68,8 +68,24 @@ benchmarks:
       valid: 1000
       avg_seconds_per_sample: 0.48
   source: evaluated
-  score: 0.4788
+  score: 0.422
   evaluated_at: '2026-08-13'
+- model: Sunbird/asr-whisper-51-african-languages
+  model_url: https://huggingface.co/Sunbird/asr-whisper-51-african-languages
+  owner: Sunbird
+  model_class: non-llm
+  params: 2B
+  wer: 0.6267
+  cer: 0.4221
+  score: 0.4221
+  per_category:
+    bible:
+      wer: 0.6267
+      cer: 0.4221
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.42
+  source: evaluated
 - model: CLEAR-Global/w2v-bert-2.0-clearglobal-hausa-asr-1.0.0
   model_url: https://huggingface.co/CLEAR-Global/w2v-bert-2.0-clearglobal-hausa-asr-1.0.0
   owner: CLEAR-Global
@@ -85,7 +101,7 @@ benchmarks:
       avg_seconds_per_sample: 0.06
   source: evaluated
   model_class: non-llm
-  score: 0.5482
+  score: 0.4247
   evaluated_at: '2026-08-10'
 - model: CLEAR-Global/whisper-small-clearglobal-hausa-asr-1.0.0
   model_url: https://huggingface.co/CLEAR-Global/whisper-small-clearglobal-hausa-asr-1.0.0
@@ -102,7 +118,7 @@ benchmarks:
       avg_seconds_per_sample: 0.27
   source: evaluated
   model_class: non-llm
-  score: 0.6227
+  score: 0.4726
   evaluated_at: '2026-08-10'
 - model: alphaedge-ai/whisper-large-v3-turbo-hau-16384
   model_url: https://huggingface.co/alphaedge-ai/whisper-large-v3-turbo-hau-16384
@@ -119,7 +135,7 @@ benchmarks:
       avg_seconds_per_sample: 0.63
   source: evaluated
   model_class: non-llm
-  score: 1.0339
+  score: 0.862
   evaluated_at: '2026-08-10'
 - model: alphaedge-ai/whisper-large-v3-turbo-hau-32768
   model_url: https://huggingface.co/alphaedge-ai/whisper-large-v3-turbo-hau-32768
@@ -136,7 +152,7 @@ benchmarks:
       avg_seconds_per_sample: 0.66
   source: evaluated
   model_class: non-llm
-  score: 1.1366
+  score: 0.9547
   evaluated_at: '2026-08-10'
 - model: alphaedge-ai/whisper-tiny-hau-32768
   model_url: https://huggingface.co/alphaedge-ai/whisper-tiny-hau-32768
@@ -153,7 +169,7 @@ benchmarks:
       avg_seconds_per_sample: 0.76
   source: evaluated
   model_class: non-llm
-  score: 1.6802
+  score: 1.5543
   evaluated_at: '2026-08-14'
 - model: alphaedge-ai/whisper-medium-hau-16384
   model_url: https://huggingface.co/alphaedge-ai/whisper-medium-hau-16384
@@ -170,7 +186,7 @@ benchmarks:
       avg_seconds_per_sample: 3.03
   source: evaluated
   model_class: non-llm
-  score: 1.8303
+  score: 1.9085
   evaluated_at: '2026-08-10'
 - model: alphaedge-ai/whisper-base-hau-32768
   model_url: https://huggingface.co/alphaedge-ai/whisper-base-hau-32768
@@ -187,7 +203,7 @@ benchmarks:
       avg_seconds_per_sample: 1.05
   source: evaluated
   model_class: non-llm
-  score: 1.8557
+  score: 1.7692
   evaluated_at: '2026-08-10'
 - model: alphaedge-ai/whisper-base-hau-16384
   model_url: https://huggingface.co/alphaedge-ai/whisper-base-hau-16384
@@ -204,7 +220,7 @@ benchmarks:
       avg_seconds_per_sample: 1.04
   source: evaluated
   model_class: non-llm
-  score: 1.8888
+  score: 1.8093
   evaluated_at: '2026-08-10'
 - model: alphaedge-ai/whisper-medium-hau-32768
   model_url: https://huggingface.co/alphaedge-ai/whisper-medium-hau-32768
@@ -221,7 +237,7 @@ benchmarks:
       avg_seconds_per_sample: 3.44
   source: evaluated
   model_class: non-llm
-  score: 1.9493
+  score: 1.9617
   evaluated_at: '2026-08-10'
 - model: alphaedge-ai/whisper-tiny-hau-16384
   model_url: https://huggingface.co/alphaedge-ai/whisper-tiny-hau-16384
@@ -238,7 +254,7 @@ benchmarks:
       avg_seconds_per_sample: 0.86
   source: evaluated
   model_class: non-llm
-  score: 1.9834
+  score: 1.7457
   evaluated_at: '2026-08-14'
 - model: alphaedge-ai/whisper-small-hau-32768
   model_url: https://huggingface.co/alphaedge-ai/whisper-small-hau-32768
@@ -255,7 +271,7 @@ benchmarks:
       avg_seconds_per_sample: 2.78
   source: evaluated
   model_class: non-llm
-  score: 2.2748
+  score: 2.0883
   evaluated_at: '2026-08-10'
 - model: alphaedge-ai/whisper-small-hau-16384
   model_url: https://huggingface.co/alphaedge-ai/whisper-small-hau-16384
@@ -272,7 +288,7 @@ benchmarks:
       avg_seconds_per_sample: 2.73
   source: evaluated
   model_class: non-llm
-  score: 2.6308
+  score: 2.2853
   evaluated_at: '2026-08-10'
 - model: facebook/omniASR-LLM-7B-v2
   model_url: https://github.com/facebookresearch/omnilingual-asr
@@ -290,6 +306,7 @@ benchmarks:
       avg_seconds_per_sample: 0.54
   source: evaluated
   evaluated_at: '2026-08-25'
+  score: 0.3667
 - model: google/gemini-3.6-flash
   model_url: https://ai.google.dev/gemini-api/docs/models#gemini-3.6-flash
   owner: google
@@ -306,3 +323,4 @@ benchmarks:
       avg_seconds_per_sample: 0.56
   source: evaluated
   evaluated_at: '2026-08-25'
+  score: 0.4636

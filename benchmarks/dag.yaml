@@ -13,7 +13,7 @@ benchmarks:
   params: '?'
   wer: 0.5078
   cer: 0.1898
-  score: 0.3488
+  score: 0.1898
   per_category:
     bible:
       wer: 0.7419
@@ -35,6 +35,34 @@ benchmarks:
       avg_seconds_per_sample: 0.11
   source: evaluated
   evaluated_at: '2026-08-14'
+- model: Sunbird/asr-whisper-51-african-languages
+  model_url: https://huggingface.co/Sunbird/asr-whisper-51-african-languages
+  owner: Sunbird
+  model_class: non-llm
+  params: 2B
+  wer: 0.5229
+  cer: 0.2232
+  score: 0.2232
+  per_category:
+    bible:
+      wer: 0.7457
+      cer: 0.3255
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.58
+    unicef:
+      wer: 0.5853
+      cer: 0.2583
+      samples: 195
+      valid: 195
+      avg_seconds_per_sample: 1.31
+    waxal:
+      wer: 0.2378
+      cer: 0.0858
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 1.12
+  source: evaluated
 - model: waxal-benchmarking/mms-300m-waxal-dag
   model_url: https://huggingface.co/waxal-benchmarking/mms-300m-waxal-dag
   owner: waxal-benchmarking
@@ -42,7 +70,7 @@ benchmarks:
   params: 0.3B
   wer: 0.56
   cer: 0.2053
-  score: 0.3827
+  score: 0.2053
   per_category:
     bible:
       wer: 0.7175
@@ -71,7 +99,7 @@ benchmarks:
   params: 0.2B
   wer: 0.6003
   cer: 0.2815
-  score: 0.4409
+  score: 0.2815
   per_category:
     bible:
       wer: 0.8202
@@ -100,7 +128,7 @@ benchmarks:
   params: 37.8M
   wer: 0.6867
   cer: 0.3754
-  score: 0.5311
+  score: 0.3754
   per_category:
     bible:
       wer: 0.9813
@@ -129,7 +157,7 @@ benchmarks:
   params: 300M
   wer: 0.7862
   cer: 0.2943
-  score: 0.5403
+  score: 0.2943
   per_category:
     bible:
       wer: 0.7991
@@ -157,7 +185,7 @@ benchmarks:
   params: 300M
   wer: 0.7998
   cer: 0.307
-  score: 0.5534
+  score: 0.307
   per_category:
     bible:
       wer: 0.7956
@@ -206,6 +234,7 @@ benchmarks:
       avg_seconds_per_sample: 1.25
   source: evaluated
   evaluated_at: '2026-08-14'
+  score: 0.1526
 - model: facebook/omniASR-LLM-7B-v2
   model_url: https://github.com/facebookresearch/omnilingual-asr
   owner: facebook
@@ -236,6 +265,7 @@ benchmarks:
       avg_seconds_per_sample: 0.93
   source: evaluated
   evaluated_at: '2026-08-25'
+  score: 0.2207
 - model: google/gemini-3.6-flash
   model_url: https://ai.google.dev/gemini-api/docs/models#gemini-3.6-flash
   owner: google
@@ -264,6 +294,7 @@ benchmarks:
       avg_seconds_per_sample: 0.74
   source: evaluated
   evaluated_at: '2026-08-25'
+  score: 0.4755
 - model: google/gemini-2.5-flash-lite
   model_url: https://ai.google.dev/gemini-api/docs/models#gemini-2.5-flash-lite
   owner: google
@@ -280,3 +311,4 @@ benchmarks:
       avg_seconds_per_sample: 0.52
   source: evaluated
   evaluated_at: '2026-08-25'
+  score: 174.9668

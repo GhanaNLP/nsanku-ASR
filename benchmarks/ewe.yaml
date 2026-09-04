@@ -14,7 +14,7 @@ benchmarks:
   params: 0.3B
   wer: 0.5258
   cer: 0.147
-  score: 0.3364
+  score: 0.147
   per_category:
     bible:
       wer: 0.5058
@@ -49,7 +49,7 @@ benchmarks:
   params: '?'
   wer: 0.5548
   cer: 0.1579
-  score: 0.3564
+  score: 0.1579
   per_category:
     bible:
       wer: 0.5426
@@ -77,6 +77,40 @@ benchmarks:
       avg_seconds_per_sample: 0.11
   source: evaluated
   evaluated_at: '2026-08-14'
+- model: Sunbird/asr-whisper-51-african-languages
+  model_url: https://huggingface.co/Sunbird/asr-whisper-51-african-languages
+  owner: Sunbird
+  model_class: non-llm
+  params: 2B
+  wer: 0.5557
+  cer: 0.1832
+  score: 0.1832
+  per_category:
+    bible:
+      wer: 0.5222
+      cer: 0.142
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.56
+    jw:
+      wer: 0.8575
+      cer: 0.3135
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.41
+    unicef:
+      wer: 0.5969
+      cer: 0.1864
+      samples: 199
+      valid: 199
+      avg_seconds_per_sample: 1.59
+    waxal:
+      wer: 0.2461
+      cer: 0.0911
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 1.11
+  source: evaluated
 - model: facebook/sherpa-onnx-omniASR-CTC-300M-v2
   model_url: https://huggingface.co/michsethowusu/sherpa-onnx-omnilingual-asr-1600-languages-ctc-v2
   owner: facebook
@@ -84,7 +118,7 @@ benchmarks:
   params: 300M
   wer: 0.61
   cer: 0.1586
-  score: 0.3843
+  score: 0.1586
   per_category:
     bible:
       wer: 0.5178
@@ -118,7 +152,7 @@ benchmarks:
   params: 0.2B
   wer: 0.6211
   cer: 0.2262
-  score: 0.4236
+  score: 0.2262
   per_category:
     bible:
       wer: 0.5845
@@ -153,7 +187,7 @@ benchmarks:
   params: 300M
   wer: 0.8153
   cer: 0.2472
-  score: 0.5312
+  score: 0.2472
   per_category:
     bible:
       wer: 0.6723
@@ -187,7 +221,7 @@ benchmarks:
   params: 37.8M
   wer: 0.7857
   cer: 0.3567
-  score: 0.5712
+  score: 0.3567
   per_category:
     bible:
       wer: 0.8144
@@ -251,6 +285,7 @@ benchmarks:
       avg_seconds_per_sample: 0.84
   source: evaluated
   evaluated_at: '2026-08-25'
+  score: 0.1065
 - model: KhayaAI/khaya-asr-v3
   model_url: https://translation-api.ghananlp.org/
   owner: KhayaAI
@@ -285,6 +320,7 @@ benchmarks:
       avg_seconds_per_sample: 0.89
   source: evaluated
   evaluated_at: '2026-08-14'
+  score: 0.1251
 - model: google/gemini-3.6-flash
   model_url: https://ai.google.dev/gemini-api/docs/models#gemini-3.6-flash
   owner: google
@@ -319,6 +355,7 @@ benchmarks:
       avg_seconds_per_sample: 1.05
   source: evaluated
   evaluated_at: '2026-08-14'
+  score: 0.3967
 - model: Google/speech-recognition
   model_url: https://www.google.com/
   owner: Google
@@ -353,3 +390,4 @@ benchmarks:
       avg_seconds_per_sample: 1.57
   source: evaluated
   evaluated_at: '2026-08-14'
+  score: 0.8328

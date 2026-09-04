@@ -15,7 +15,7 @@ benchmarks:
   params: '?'
   wer: 0.7666
   cer: 0.4013
-  score: 0.5839
+  score: 0.4013
   per_category:
     bible:
       wer: 0.5379
@@ -56,7 +56,7 @@ benchmarks:
   params: '?'
   wer: 0.8069
   cer: 0.4113
-  score: 0.6091
+  score: 0.4113
   per_category:
     bible:
       wer: 0.6861
@@ -90,6 +90,46 @@ benchmarks:
       avg_seconds_per_sample: 0.04
   source: evaluated
   evaluated_at: '2026-08-14'
+- model: Sunbird/asr-whisper-51-african-languages
+  model_url: https://huggingface.co/Sunbird/asr-whisper-51-african-languages
+  owner: Sunbird
+  model_class: non-llm
+  params: 2B
+  wer: 0.8309
+  cer: 0.4593
+  score: 0.4593
+  per_category:
+    bible:
+      wer: 0.6689
+      cer: 0.2654
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.66
+    finance:
+      wer: 0.9324
+      cer: 0.414
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.17
+    lds:
+      wer: 1.5428
+      cer: 1.0657
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.47
+    unicef:
+      wer: 0.8189
+      cer: 0.4805
+      samples: 196
+      valid: 196
+      avg_seconds_per_sample: 1.22
+    waxal:
+      wer: 0.1917
+      cer: 0.0707
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 1.07
+  source: evaluated
 - model: facebook/sherpa-onnx-omniASR-CTC-300M-v2
   model_url: https://huggingface.co/michsethowusu/sherpa-onnx-omnilingual-asr-1600-languages-ctc-v2
   owner: facebook
@@ -97,7 +137,7 @@ benchmarks:
   params: 300M
   wer: 0.8685
   cer: 0.4239
-  score: 0.6462
+  score: 0.4239
   per_category:
     bible:
       wer: 0.5987
@@ -137,7 +177,7 @@ benchmarks:
   params: 300M
   wer: 0.9256
   cer: 0.4502
-  score: 0.6879
+  score: 0.4502
   per_category:
     bible:
       wer: 0.6577
@@ -177,7 +217,7 @@ benchmarks:
   params: '?'
   wer: 0.9147
   cer: 0.5242
-  score: 0.7194
+  score: 0.5242
   per_category:
     bible:
       wer: 0.7353
@@ -218,7 +258,7 @@ benchmarks:
   params: '?'
   wer: 1.1407
   cer: 0.85
-  score: 0.9953
+  score: 0.85
   per_category:
     bible:
       wer: 0.9831
@@ -292,6 +332,7 @@ benchmarks:
       avg_seconds_per_sample: 0.82
   source: evaluated
   evaluated_at: '2026-08-14'
+  score: 0.3567
 - model: Google/speech-recognition
   model_url: https://www.google.com/
   owner: Google
@@ -332,6 +373,7 @@ benchmarks:
       avg_seconds_per_sample: 1.15
   source: evaluated
   evaluated_at: '2026-08-14'
+  score: 0.3927
 - model: facebook/omniASR-LLM-7B-v2
   model_url: https://github.com/facebookresearch/omnilingual-asr
   owner: facebook
@@ -374,6 +416,7 @@ benchmarks:
       avg_seconds_per_sample: 0.78
   source: evaluated
   evaluated_at: '2026-08-25'
+  score: 0.4003
 - model: google/gemini-3.6-flash
   model_url: https://ai.google.dev/gemini-api/docs/models#gemini-3.6-flash
   owner: google
@@ -414,3 +457,4 @@ benchmarks:
       avg_seconds_per_sample: 0.96
   source: evaluated
   evaluated_at: '2026-08-14'
+  score: 0.5031
