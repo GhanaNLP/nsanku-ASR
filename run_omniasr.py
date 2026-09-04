@@ -64,6 +64,9 @@ def main():
         if getattr(args, key) is not None:
             cfg[key] = getattr(args, key)
 
+    from benchmark.owners import format_params
+    cfg["params"] = format_params(cfg["params"]) or cfg["params"]
+
     from benchmark.omniasr import evaluate_omniasr, drop_shared_model
 
     print("=" * 60)

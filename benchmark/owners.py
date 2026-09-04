@@ -109,6 +109,52 @@ def model_params(model_id, cache=None):
     return total
 
 
+def parse_params_billions(raw):
+    """Normalize any recorded size to a parameter count in BILLIONS (float).
+
+    Accepts an int (raw safetensors count) or the human strings HF exposes
+    ("300M", "0.2B", "2B", "37.8 million", case-insensitive). Returns None when
+    the value cannot be interpreted as a count.
+    """
+    if raw is None:
+        return None
+    if isinstance(raw, bool):
+        return None
+    if isinstance(raw, (int, float)):
+        return raw / 1e9 if raw > 0 else None
+    s = str(raw).strip().lower().replace(",", "")
+    m = __import__("re").match(r"([0-9]*\.?[0-9]+)\s*(b|bn|billion|m|mn|million)?", s)
+    if not m:
+        return None
+    num = float(m.group(1))
+    unit = m.group(2) or ""
+    if unit.startswith("b"):
+        return num if num > 0 else None
+    if unit.startswith("m"):
+        return (num / 1e3) if num > 0 else None   # millions -> billions
+    if unit == "":
+        # Bare number: HF's HTML label is always a count; a plain int like 1e9
+        # means params, but an unlabelled string is ambiguous — treat >=10^7 as
+        # a raw param count, otherwise the caller left it unit-less.
+        return (num / 1e9) if num >= 1e7 else None
+    return None
+
+
+def format_params(raw):
+    """Return `raw` as a canonical parameter label in uniform billions decimals.
+
+    e.g. 300M -> '0.3B', 37.8M -> '0.04B', 2B -> '2B', 241234000 -> '0.24B'.
+    Returns None when `raw` cannot be parsed (caller falls back to its default,
+    so "API" and unknown values are never mangled).
+    """
+    bn = parse_params_billions(raw)
+    if bn is None:
+        return None
+    s = f"{bn:.2f}"
+    s = s.rstrip("0").rstrip(".") if "." in s else s
+    return f"{s}B"
+
+
 def is_too_large(model_id, cache=None):
     """True if the model exceeds MAX_PARAMS. Unknown size counts as small.
 

@@ -153,7 +153,7 @@ benchmarks:
   model_url: https://huggingface.co/michsethowusu/sherpa-onnx-omnilingual-asr-1600-languages-ctc-v2
   owner: facebook
   model_class: non-llm
-  params: 300M
+  params: 0.3B
   wer: 0.61
   cer: 0.1586
   score: 0.1586
@@ -290,7 +290,7 @@ benchmarks:
   model_url: https://huggingface.co/csukuangfj/sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-2025-11-12
   owner: facebook
   model_class: non-llm
-  params: 300M
+  params: 0.3B
   wer: 0.8153
   cer: 0.2472
   score: 0.2472
@@ -324,7 +324,7 @@ benchmarks:
   model_url: https://huggingface.co/waxal-benchmarking/whisper-tiny-waxal-ewe
   owner: waxal-benchmarking
   model_class: non-llm
-  params: 37.8M
+  params: 0.04B
   wer: 0.7857
   cer: 0.3567
   score: 0.3567

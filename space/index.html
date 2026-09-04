@@ -227,6 +227,7 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
                because it is the only track whose weights are fixed and whose
                scores anyone can reproduce. -->
           <option value="non-llm" selected>ASR (open models)</option>
+          <option value="cpu">CPU models (≤0.3B)</option>
           <option value="api">ASR (closed models)</option>
           <option value="llm">LLM</option>
           <option value="All">All</option>
@@ -262,6 +263,7 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
         <select id="per-class-select">
           <option value="All">All</option>
           <option value="non-llm">ASR (open models)</option>
+          <option value="cpu">CPU models (≤0.3B)</option>
           <option value="api">ASR (closed models)</option>
           <option value="llm">LLM</option>
         </select>
@@ -311,6 +313,14 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
           <option value="Mande">Mande</option>
           <option value="Atlantic">Atlantic</option>
           <option value="Chadic">Chadic</option>
+        </select>
+        <label>Track:</label>
+        <select id="ms-class-select">
+          <option value="All">All</option>
+          <option value="non-llm">ASR (open models)</option>
+          <option value="cpu">CPU models (≤0.3B)</option>
+          <option value="api">ASR (closed models)</option>
+          <option value="llm">LLM</option>
         </select>
         <label>Search:</label>
         <input type="text" id="ms-search" placeholder="model name, e.g. whisper, mms, w2v-bert…">
@@ -585,6 +595,21 @@ function fmt(v, decimals = 2) {
   return parseFloat(v).toFixed(decimals);
 }
 
+// Parse a canonical parameter label ('0.3B', '2B', '37.8M') into BILLIONS,
+// so sizes can be compared. Returns NaN for non-numeric values ('API', '?', 'N/A').
+function parseParamsBn(str) {
+  if (typeof str !== 'string') return NaN;
+  const m = String(str).trim().toLowerCase().match(/^([0-9]*\.?[0-9]+)\s*(b|bn|billion|m|mn|million)?$/);
+  if (!m) return NaN;
+  const num = parseFloat(m[1]);
+  const unit = m[2] || '';
+  if (unit.startsWith('b')) return num;
+  if (unit.startsWith('m')) return num / 1000;
+  return NaN; // a bare number is not a size label ('API', '?', 'N/A', ...)
+}
+// A model runs on CPU when it is a small open-model checkpoint (<= 0.3B params).
+const CPU_MAX_BN = 0.3;
+
 function modelLink(model, url, row) {
   if (!url) url = `https://huggingface.co/${model}`;
   const link = `<a href="${url}" target="_blank" title="${model}">${model}</a>`;
@@ -758,6 +783,7 @@ async function loadYAMLs() {
             categories: (data.categories||[]).map(c=>CATEGORY_LABELS[c]||c).join(', '),
             n_categories: (data.categories||[]).length,
             params: b.params === 'API' ? 'N/A' : (b.params || 'N/A'),
+            params_bn: parseParamsBn(b.params),
             wer: wer, cer: cer, score: score,
             per_category_raw: b.per_category || {},
             per_category_wer: fmtCategories(b.per_category),
@@ -830,11 +856,26 @@ function trackBadge(cls) {
 }
 
 // ====== Shared filter for Global tab (stats + table) ======
+// Apply a Track filter value to a row list. Handles the three real classes
+// (non-llm / api / llm), the catch-all 'All', and the derived 'cpu' view which
+// is the subset of small open models (non-llm AND <= 0.3B params).
+function applyTrackFilter(rows, classFilter) {
+  if (classFilter === 'All' || classFilter == null) return rows.slice();
+  if (classFilter === 'cpu') {
+    // cpu is a compound view: keep only open (non-LLM) checkpoints whose size
+    // parses to a number and is <= CPU_MAX_BN. '?'/'API'/'N/A' never match.
+    return rows.filter(r => r.model_class === 'non-llm'
+      && r.params_bn !== undefined && !isNaN(r.params_bn)
+      && r.params_bn <= CPU_MAX_BN);
+  }
+  return rows.filter(r => r.model_class === classFilter);
+}
+
 function getGlobalFiltered(data) {
   const classFilter = (document.getElementById('global-class-select')||{}).value || 'All';
   const showSingle = (document.getElementById('global-single-source')||{}).checked;
   let filtered = data;
-  if (classFilter !== 'All') filtered = filtered.filter(r => r.model_class === classFilter);
+  if (classFilter !== 'All') filtered = applyTrackFilter(filtered, classFilter);
   if (!showSingle) filtered = filtered.filter(r => (r.n_categories || 0) >= 2);
   return filtered;
 }
@@ -873,7 +914,7 @@ function renderGlobal(data) {
   // Track filter first, so the hidden-language count reflects what this view
   // would otherwise show — counting it beforehand overstates the total whenever
   // a track filter is active.
-  if (classFilter !== 'All') passed = passed.filter(r => r.model_class === classFilter);
+  if (classFilter !== 'All') passed = applyTrackFilter(passed, classFilter);
   // Languages with one domain dataset are held back by default; the checkbox
   // brings them in. Other tabs are unaffected.
   const hiddenLangs = new Set(passed.filter(r => (r.n_categories || 0) < 2).map(r => r.iso));
@@ -986,7 +1027,7 @@ function renderPerLanguage(data) {
 
   let sub = data.filter(r => r.iso === iso);
   if (typeFilter !== 'All') sub = sub.filter(r => r.model_type === typeFilter);
-  if (classFilter !== 'All') sub = sub.filter(r => r.model_class === classFilter);
+  if (classFilter !== 'All') sub = applyTrackFilter(sub, classFilter);
 
   // Determine which categories this language has
   const langCats = ALL_CATEGORIES.filter(c => sub.some(r => r.per_category_raw && r.per_category_raw[c]));
@@ -1052,12 +1093,14 @@ function renderModelStatus(data) {
   const statusFilter = document.getElementById('ms-status-select').value;
   const langFilter = document.getElementById('ms-lang-select').value;
   const familyFilter = document.getElementById('ms-family-select').value;
+  const classFilter = (document.getElementById('ms-class-select')||{}).value || 'All';
   const search = document.getElementById('ms-search').value.toLowerCase();
 
   let sub = [...data];
   if (statusFilter !== 'All') sub = sub.filter(r => r.status === statusFilter);
   if (langFilter !== 'All') sub = sub.filter(r => r.iso === langFilter);
   if (familyFilter !== 'All') sub = sub.filter(r => (LANG_FAMILIES[r.iso] || '') === familyFilter);
+  if (classFilter !== 'All') sub = applyTrackFilter(sub, classFilter);
   if (search) sub = sub.filter(r => r.model.toLowerCase().includes(search));
 
   sub.sort((a,b) => {
@@ -1160,6 +1203,7 @@ async function main() {
     document.getElementById('ms-status-select').addEventListener('change', () => renderModelStatus(ALL_DATA));
     document.getElementById('ms-lang-select').addEventListener('change', () => renderModelStatus(ALL_DATA));
     document.getElementById('ms-family-select').addEventListener('change', () => renderModelStatus(ALL_DATA));
+    document.getElementById('ms-class-select').addEventListener('change', () => renderModelStatus(ALL_DATA));
     document.getElementById('ms-search').addEventListener('input', () => renderModelStatus(ALL_DATA));
 
     setupTabs();

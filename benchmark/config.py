@@ -32,7 +32,7 @@ ORG_ONLY = True
 #
 # GhanaNLP was here while khaya-asr-v3 sat under that namespace; the model is
 # KhayaAI's, and KhayaAI is a real HF org, so the override is no longer needed.
-ORG_OVERRIDES = {"FarmerlineML", "Qlerqly"}
+ORG_OVERRIDES = {"FarmerlineML", "Qlerqly", "katrintomanek"}
 
 # A model only reaches the eval list if it ships a real (non-placeholder) model
 # card. Licenses are NOT required — too many otherwise-good org models on HF
@@ -84,6 +84,16 @@ FORCE_INCLUDE_MODELS = {
     # asked to benchmark: multilingual Ghanaian (Akan, Dagbani, Ewe, Ga) so it
     # needs the single-language gate lifted, like Sunbird.
     "Qlerqly/griot-nano-1",
+    # Personal-account (katrintomanek is in ORG_OVERRIDES) Whisper Akan/Twi
+    # fine-tunes the user explicitly asked to benchmark. They declare no HF
+    # language tags, so without FORCE_INCLUDE the name-token Twi/Akan match
+    # alone would be the only evidence; forcing keeps them in the pool.
+    "katrintomanek/whisper-large-v3-turbo_Akan_standardspeech_specaugment",
+    "katrintomanek/whisper-small_twi-standardspeech_v2",
+    # FP16 CTranslate2 (faster-whisper) re-export of the katrintomanek large-v3
+    # turbo weights, published under the GhanaNLP org. The ct2 format is not
+    # loadable by the generic Whisper wrapper, so it needs its own recipe.
+    "ghananlpcommunity/whisper-large-v3-turbo-twi-ctranslate",
 }
 
 # Paths

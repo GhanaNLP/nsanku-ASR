@@ -8,7 +8,7 @@ benchmarks:
   model_url: https://huggingface.co/csukuangfj/sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-2025-11-12
   owner: facebook
   model_class: non-llm
-  params: 300M
+  params: 0.3B
   wer: 0.5032
   cer: 0.3681
   score: 0.3681
@@ -24,7 +24,7 @@ benchmarks:
   model_url: https://huggingface.co/michsethowusu/sherpa-onnx-omnilingual-asr-1600-languages-ctc-v2
   owner: facebook
   model_class: non-llm
-  params: 300M
+  params: 0.3B
   wer: 0.5281
   cer: 0.371
   score: 0.371
@@ -157,7 +157,7 @@ benchmarks:
 - model: alphaedge-ai/whisper-tiny-hau-32768
   model_url: https://huggingface.co/alphaedge-ai/whisper-tiny-hau-32768
   owner: alphaedge-ai
-  params: 30.4M
+  params: 0.03B
   wer: 1.806
   cer: 1.5543
   per_category:
@@ -191,7 +191,7 @@ benchmarks:
 - model: alphaedge-ai/whisper-base-hau-32768
   model_url: https://huggingface.co/alphaedge-ai/whisper-base-hau-32768
   owner: alphaedge-ai
-  params: 62.8M
+  params: 0.06B
   wer: 1.9422
   cer: 1.7692
   per_category:
@@ -208,7 +208,7 @@ benchmarks:
 - model: alphaedge-ai/whisper-base-hau-16384
   model_url: https://huggingface.co/alphaedge-ai/whisper-base-hau-16384
   owner: alphaedge-ai
-  params: 54.4M
+  params: 0.05B
   wer: 1.9683
   cer: 1.8093
   per_category:
@@ -242,7 +242,7 @@ benchmarks:
 - model: alphaedge-ai/whisper-tiny-hau-16384
   model_url: https://huggingface.co/alphaedge-ai/whisper-tiny-hau-16384
   owner: alphaedge-ai
-  params: 24.1M
+  params: 0.02B
   wer: 2.2212
   cer: 1.7457
   per_category:

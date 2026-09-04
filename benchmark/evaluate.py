@@ -18,7 +18,7 @@ from .config import (
 )
 from .dataset import load_eval_samples
 from .metrics import compute_metrics
-from .owners import filter_models
+from .owners import filter_models, format_params
 
 # .models imports torch, and the config/scoring helpers here are shared with
 # tracks that run in venvs without it (the sherpa-onnx ONNX/CPU runner). Import
@@ -297,7 +297,7 @@ def evaluate_language(iso_code, model_filter=None, device="cuda:0", force=False)
     results = []
     for model_info in pending:
         model_id = model_info["name"]
-        params = model_info.get("size", "?")
+        params = format_params(model_info.get("size")) or "?"
         print(f"\n  {'-' * 50}\n  [{model_id}] ({params})\n  {'-' * 50}")
 
         try:
@@ -388,7 +388,7 @@ def _error_result(model_info, reason):
         "model_url": model_info.get("url", f"https://huggingface.co/{model_id}"),
         "owner": model_id.split("/")[0],
         "model_class": "non-llm",
-        "params": model_info.get("size", "?"),
+        "params": format_params(model_info.get("size")) or "?",
         "wer": None, "cer": None,
         "error": reason,
         "source": "evaluated",

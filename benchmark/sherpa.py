@@ -54,13 +54,13 @@ MODELS = {
         "model": "facebook/sherpa-onnx-omniASR-CTC-300M-v1",
         "dir": _V1_300M,
         "onnx": "model.onnx",
-        "params": "300M",
+        "params": "0.3B",
     },
     "300m-v2": {
         "model": "facebook/sherpa-onnx-omniASR-CTC-300M-v2",
         "dir": _V2_300M,
         "onnx": "model.onnx",
-        "params": "300M",
+        "params": "0.3B",
     },
 }
 

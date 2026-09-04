@@ -38,6 +38,29 @@ def parse_stat_number(stat_text):
         return 0
 
 
+def _params_label(raw):
+    """Canonicalize any recorded model size to a uniform 'X.XXB' label.
+
+    Accepts an int (raw safetensors count) or HF's human strings ('2B', '0.2B',
+    '300M', '37.8M'); returns None when it cannot be parsed. Every size written
+    into the benchmark data is stored in this one format so the leaderboard's
+    Params column is consistent (no more '300M' vs '0.2B').
+    """
+    if isinstance(raw, bool) or raw is None:
+        return None
+    if isinstance(raw, (int, float)):
+        return f"{raw / 1e9:.2f}".rstrip('0').rstrip('.') + 'B' if raw > 0 else None
+    m = re.match(r"([0-9]*\.?[0-9]+)\s*(b|bn|billion|m|mn|million)?", str(raw).strip().lower().replace(',', ''))
+    if not m:
+        return None
+    num = float(m.group(1)); unit = m.group(2) or ""
+    bn = num if unit.startswith('b') else (num / 1e3 if unit.startswith('m') else
+                                           (num / 1e9 if num >= 1e7 else None))
+    if bn is None or bn <= 0:
+        return None
+    return f"{bn:.2f}".rstrip('0').rstrip('.') + 'B'
+
+
 def extract_total_count(html_content):
     """Extract the total count from HuggingFace page.
 
@@ -224,7 +247,7 @@ def search_huggingface(iso_639_1, iso_639_3, search_type, pipeline_tag):
                         'likes': likes,
                     }
                     if size is not None:
-                        item['size'] = size
+                        item['size'] = _params_label(size) or size
                     if rows:
                         item['rows'] = rows
 
@@ -357,7 +380,7 @@ def fetch_models_for_org(org, pipeline_tag="automatic-speech-recognition"):
             }
             size = (m.get("safetensors") or {}).get("total")
             if size:
-                item["size"] = size
+                item["size"] = _params_label(size)
             items.append(item)
         # Follow the cursor in the Link header for the next page, if present
         link = r.headers.get("Link", "")
