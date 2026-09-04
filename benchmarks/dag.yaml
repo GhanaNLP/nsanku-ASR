@@ -6,6 +6,35 @@ categories:
 - unicef
 - waxal
 benchmarks:
+- model: KhayaAI/khaya-asr-v3
+  model_url: https://translation-api.ghananlp.org/
+  owner: KhayaAI
+  model_class: api
+  params: API
+  wer: 0.3549
+  cer: 0.1526
+  per_category:
+    bible:
+      wer: 0.2746
+      cer: 0.1719
+      samples: 1000
+      valid: 999
+      avg_seconds_per_sample: 1.02
+    unicef:
+      wer: 0.5103
+      cer: 0.1866
+      samples: 195
+      valid: 195
+      avg_seconds_per_sample: 2.32
+    waxal:
+      wer: 0.2797
+      cer: 0.0993
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 1.25
+  source: evaluated
+  evaluated_at: '2026-08-14'
+  score: 0.1526
 - model: FarmerlineML/w2v-bert-2.0_2026_dagbani_ASR
   model_url: https://huggingface.co/FarmerlineML/w2v-bert-2.0_2026_dagbani_ASR
   owner: FarmerlineML
@@ -35,34 +64,6 @@ benchmarks:
       avg_seconds_per_sample: 0.11
   source: evaluated
   evaluated_at: '2026-08-14'
-- model: Sunbird/asr-whisper-51-african-languages
-  model_url: https://huggingface.co/Sunbird/asr-whisper-51-african-languages
-  owner: Sunbird
-  model_class: non-llm
-  params: 2B
-  wer: 0.5229
-  cer: 0.2232
-  score: 0.2232
-  per_category:
-    bible:
-      wer: 0.7457
-      cer: 0.3255
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.58
-    unicef:
-      wer: 0.5853
-      cer: 0.2583
-      samples: 195
-      valid: 195
-      avg_seconds_per_sample: 1.31
-    waxal:
-      wer: 0.2378
-      cer: 0.0858
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 1.12
-  source: evaluated
 - model: waxal-benchmarking/mms-300m-waxal-dag
   model_url: https://huggingface.co/waxal-benchmarking/mms-300m-waxal-dag
   owner: waxal-benchmarking
@@ -92,6 +93,65 @@ benchmarks:
       avg_seconds_per_sample: 0.03
   source: evaluated
   evaluated_at: '2026-08-14'
+- model: facebook/omniASR-LLM-7B-v2
+  model_url: https://github.com/facebookresearch/omnilingual-asr
+  owner: facebook
+  model_class: llm
+  params: 7B
+  wer: 0.5728
+  cer: 0.2207
+  per_category:
+    bible:
+      wer: 0.5161
+      cer: 0.2472
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.6
+    unicef:
+      wer: 0.5674
+      cer: 0.1839
+      samples: 195
+      valid: 163
+      avg_seconds_per_sample: 1.2
+      failures:
+        audio_too_long (> 39s): 32
+    waxal:
+      wer: 0.635
+      cer: 0.2309
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.93
+  source: evaluated
+  evaluated_at: '2026-08-25'
+  score: 0.2207
+- model: Sunbird/asr-whisper-51-african-languages
+  model_url: https://huggingface.co/Sunbird/asr-whisper-51-african-languages
+  owner: Sunbird
+  model_class: non-llm
+  params: 2B
+  wer: 0.5229
+  cer: 0.2232
+  score: 0.2232
+  per_category:
+    bible:
+      wer: 0.7457
+      cer: 0.3255
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.58
+    unicef:
+      wer: 0.5853
+      cer: 0.2583
+      samples: 195
+      valid: 195
+      avg_seconds_per_sample: 1.31
+    waxal:
+      wer: 0.2378
+      cer: 0.0858
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 1.12
+  source: evaluated
 - model: waxal-benchmarking/whisper-small-waxal-dag
   model_url: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-dag
   owner: waxal-benchmarking
@@ -119,35 +179,6 @@ benchmarks:
       samples: 1000
       valid: 1000
       avg_seconds_per_sample: 0.79
-  source: evaluated
-  evaluated_at: '2026-08-14'
-- model: waxal-benchmarking/whisper-tiny-waxal-dag
-  model_url: https://huggingface.co/waxal-benchmarking/whisper-tiny-waxal-dag
-  owner: waxal-benchmarking
-  model_class: non-llm
-  params: 37.8M
-  wer: 0.6867
-  cer: 0.3754
-  score: 0.3754
-  per_category:
-    bible:
-      wer: 0.9813
-      cer: 0.5676
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.18
-    unicef:
-      wer: 0.744
-      cer: 0.4334
-      samples: 195
-      valid: 195
-      avg_seconds_per_sample: 0.46
-    waxal:
-      wer: 0.3349
-      cer: 0.1252
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.42
   source: evaluated
   evaluated_at: '2026-08-14'
 - model: facebook/sherpa-onnx-omniASR-CTC-300M-v2
@@ -206,66 +237,63 @@ benchmarks:
       valid: 1000
       avg_seconds_per_sample: 1.14
   source: evaluated
-- model: KhayaAI/khaya-asr-v3
-  model_url: https://translation-api.ghananlp.org/
-  owner: KhayaAI
-  model_class: api
-  params: API
-  wer: 0.3549
-  cer: 0.1526
+- model: Qlerqly/griot-nano-1
+  model_url: https://huggingface.co/Qlerqly/griot-nano-1
+  owner: Qlerqly
+  model_class: non-llm
+  params: 0.2B
+  wer: 0.6797
+  cer: 0.3264
+  score: 0.3264
   per_category:
     bible:
-      wer: 0.2746
-      cer: 0.1719
+      wer: 0.3815
+      cer: 0.193
       samples: 1000
       valid: 999
-      avg_seconds_per_sample: 1.02
+      avg_seconds_per_sample: 0.02
     unicef:
-      wer: 0.5103
-      cer: 0.1866
+      wer: 0.7918
+      cer: 0.374
       samples: 195
       valid: 195
-      avg_seconds_per_sample: 2.32
+      avg_seconds_per_sample: 0.03
     waxal:
-      wer: 0.2797
-      cer: 0.0993
+      wer: 0.8657
+      cer: 0.412
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 1.25
+      avg_seconds_per_sample: 0.02
   source: evaluated
-  evaluated_at: '2026-08-14'
-  score: 0.1526
-- model: facebook/omniASR-LLM-7B-v2
-  model_url: https://github.com/facebookresearch/omnilingual-asr
-  owner: facebook
-  model_class: llm
-  params: 7B
-  wer: 0.5728
-  cer: 0.2207
+- model: waxal-benchmarking/whisper-tiny-waxal-dag
+  model_url: https://huggingface.co/waxal-benchmarking/whisper-tiny-waxal-dag
+  owner: waxal-benchmarking
+  model_class: non-llm
+  params: 37.8M
+  wer: 0.6867
+  cer: 0.3754
+  score: 0.3754
   per_category:
     bible:
-      wer: 0.5161
-      cer: 0.2472
+      wer: 0.9813
+      cer: 0.5676
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 0.6
+      avg_seconds_per_sample: 0.18
     unicef:
-      wer: 0.5674
-      cer: 0.1839
+      wer: 0.744
+      cer: 0.4334
       samples: 195
-      valid: 163
-      avg_seconds_per_sample: 1.2
-      failures:
-        audio_too_long (> 39s): 32
+      valid: 195
+      avg_seconds_per_sample: 0.46
     waxal:
-      wer: 0.635
-      cer: 0.2309
+      wer: 0.3349
+      cer: 0.1252
       samples: 1000
       valid: 1000
-      avg_seconds_per_sample: 0.93
+      avg_seconds_per_sample: 0.42
   source: evaluated
-  evaluated_at: '2026-08-25'
-  score: 0.2207
+  evaluated_at: '2026-08-14'
 - model: google/gemini-3.6-flash
   model_url: https://ai.google.dev/gemini-api/docs/models#gemini-3.6-flash
   owner: google
