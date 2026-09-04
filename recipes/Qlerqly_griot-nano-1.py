@@ -88,7 +88,7 @@ class GriotCTC:
             features = audio_to_log_mel(arr, int(sample_rate), self.feat)
             lengths = torch.tensor([features.shape[0]], dtype=torch.long, device=self.device)
             output = self.model(
-                torch.from_numpy(features).unsqueeze(0).to(device=self.device),
+                features.unsqueeze(0).to(device=self.device),
                 lengths,
             )
             text = greedy_decode(
