@@ -81,3 +81,22 @@ benchmarks:
       valid: 1000
       avg_seconds_per_sample: 0.55
   source: evaluated
+- model: google/gemma-4-12B-it-nothink
+  model_url: https://huggingface.co/google/gemma-4-12B-it
+  owner: google
+  model_class: llm
+  params: 11.96B
+  score: 1.5284
+  runtime: local-gpu
+  thinking: nothink
+  wer: 1.7448
+  cer: 1.5284
+  per_category:
+    bible:
+      wer: 1.7448
+      cer: 1.5284
+      samples: 1000
+      valid: 807
+      avg_seconds_per_sample: 3.17
+      no_answer: 193
+  source: evaluated
