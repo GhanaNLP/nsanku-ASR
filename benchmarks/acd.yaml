@@ -4,6 +4,36 @@ num_samples_per_category: 1000
 categories:
 - bible
 benchmarks:
+- model: facebook/omniASR-LLM-7B-v2
+  model_url: https://github.com/facebookresearch/omnilingual-asr
+  owner: facebook
+  model_class: llm
+  params: 7B
+  wer: 0.1311
+  cer: 0.0407
+  per_category:
+    bible:
+      wer: 0.1311
+      cer: 0.0407
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.62
+  source: evaluated
+- model: facebook/omniASR-CTC-1B-v2
+  model_url: https://github.com/facebookresearch/omnilingual-asr
+  owner: facebook
+  model_class: non-llm
+  params: 1B
+  wer: 0.3509
+  cer: 0.0849
+  per_category:
+    bible:
+      wer: 0.3509
+      cer: 0.0849
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.04
+  source: evaluated
 - model: facebook/sherpa-onnx-omniASR-CTC-300M-v1
   model_url: https://huggingface.co/csukuangfj/sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-2025-11-12
   owner: facebook
@@ -36,23 +66,6 @@ benchmarks:
       valid: 1000
       avg_seconds_per_sample: 0.53
   source: evaluated
-- model: facebook/omniASR-LLM-7B-v2
-  model_url: https://github.com/facebookresearch/omnilingual-asr
-  owner: facebook
-  model_class: llm
-  params: 7B
-  wer: 0.1311
-  cer: 0.0407
-  per_category:
-    bible:
-      wer: 0.1311
-      cer: 0.0407
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.62
-  source: evaluated
-  evaluated_at: '2026-08-25'
-  score: 0.0407
 - model: google/gemini-3.6-flash
   model_url: https://ai.google.dev/gemini-api/docs/models#gemini-3.6-flash
   owner: google
@@ -68,5 +81,3 @@ benchmarks:
       valid: 1000
       avg_seconds_per_sample: 0.57
   source: evaluated
-  evaluated_at: '2026-08-25'
-  score: 0.4458

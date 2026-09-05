@@ -94,8 +94,6 @@ benchmarks:
       valid: 1000
       avg_seconds_per_sample: 0.31
   source: evaluated
-  evaluated_at: '2026-08-25'
-  score: 0.3375
 - model: facebook/sherpa-onnx-omniASR-CTC-300M-v2
   model_url: https://huggingface.co/michsethowusu/sherpa-onnx-omnilingual-asr-1600-languages-ctc-v2
   owner: facebook
@@ -184,8 +182,6 @@ benchmarks:
       valid: 1000
       avg_seconds_per_sample: 0.6
   source: evaluated
-  evaluated_at: '2026-08-14'
-  score: 0.5111
 - model: Sunbird/asr-whisper-51-african-languages
   model_url: https://huggingface.co/Sunbird/asr-whisper-51-african-languages
   owner: Sunbird
@@ -207,6 +203,28 @@ benchmarks:
       samples: 1000
       valid: 1000
       avg_seconds_per_sample: 0.18
+  source: evaluated
+- model: ghananlpcommunity/whisper-large-v3-turbo-twi-ctranslate
+  model_url: https://huggingface.co/ghananlpcommunity/whisper-large-v3-turbo-twi-ctranslate
+  owner: ghananlpcommunity
+  model_class: non-llm
+  params: 0.81B
+  wer: 1.0289
+  cer: 0.607
+  score: 0.607
+  per_category:
+    bible:
+      wer: 0.8552
+      cer: 0.4444
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.42
+    finance:
+      wer: 1.2026
+      cer: 0.7696
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.43
   source: evaluated
 - model: waxal-benchmarking/whisper-small-waxal-aka
   model_url: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-aka
@@ -254,6 +272,101 @@ benchmarks:
   source: evaluated
   evaluated_at: '2026-08-14'
   score: 1.0139
+- model: katrintomanek/whisper-small_twi-standardspeech_v2
+  model_url: https://huggingface.co/katrintomanek/whisper-small_twi-standardspeech_v2
+  owner: katrintomanek
+  model_class: non-llm
+  params: 0.24B
+  wer: 1.5212
+  cer: 1.1081
+  score: 1.1081
+  per_category:
+    bible:
+      wer: 1.0994
+      cer: 0.6127
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.31
+    finance:
+      wer: 1.943
+      cer: 1.6034
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.13
+  source: evaluated
+- model: yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1
+  model_url: https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1
+  owner: yuxinlu1
+  model_class: llm
+  params: 11.96B
+  score: 1.6326
+  runtime: local-gpu
+  thinking: nothink
+  wer: 1.7238
+  cer: 1.6326
+  per_category:
+    bible:
+      wer: 1.2161
+      cer: 1.0836
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.79
+    finance:
+      wer: 2.2316
+      cer: 2.1816
+      samples: 1000
+      valid: 999
+      avg_seconds_per_sample: 0.59
+      no_answer: 1
+  source: evaluated
+- model: katrintomanek/whisper-large-v3-turbo_Akan_standardspeech_specaugment
+  model_url: https://huggingface.co/katrintomanek/whisper-large-v3-turbo_Akan_standardspeech_specaugment
+  owner: katrintomanek
+  model_class: non-llm
+  params: 0.81B
+  wer: 1.9742
+  cer: 1.6634
+  score: 1.6634
+  per_category:
+    bible:
+      wer: 0.9578
+      cer: 0.5787
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.2
+    finance:
+      wer: 2.9907
+      cer: 2.748
+      samples: 1000
+      valid: 1000
+      avg_seconds_per_sample: 0.12
+  source: evaluated
+- model: google/gemma-4-12B-it-nothink
+  model_url: https://huggingface.co/google/gemma-4-12B-it
+  owner: google
+  model_class: llm
+  params: 11.96B
+  score: 1.8099
+  runtime: local-gpu
+  thinking: nothink
+  wer: 2.192
+  cer: 1.8099
+  per_category:
+    bible:
+      wer: 2.4494
+      cer: 2.1347
+      samples: 1000
+      valid: 824
+      avg_seconds_per_sample: 4.76
+      no_answer: 176
+    finance:
+      wer: 1.9345
+      cer: 1.485
+      samples: 1000
+      valid: 989
+      avg_seconds_per_sample: 0.71
+      no_answer: 11
+  source: evaluated
 - model: waxal-benchmarking/whisper-tiny-waxal-aka
   model_url: https://huggingface.co/waxal-benchmarking/whisper-tiny-waxal-aka
   owner: waxal-benchmarking
