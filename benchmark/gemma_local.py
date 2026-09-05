@@ -81,8 +81,8 @@ class GemmaLocalASR:
         ).eval()
         self.max_new_tokens = (MAX_NEW_TOKENS_THINKING if enable_thinking
                                else MAX_NEW_TOKENS)
-        # Clips whose generation ran out of budget before producing an answer.
-        self.truncated = 0
+        # Clips for which the model returned no transcription at all.
+        self.no_answer = 0
 
     def transcribe(self, audio_array, sample_rate, prompt):
         """Transcribe one clip. Returns "" if the model produced nothing.
@@ -132,7 +132,7 @@ class GemmaLocalASR:
             # to know where the content field really starts.
             text = _final_answer(self.processor, decoded, inputs["input_ids"])
             if not text:
-                self.truncated += 1
+                self.no_answer += 1
             return text
         finally:
             os.unlink(wav_path)
@@ -248,7 +248,7 @@ def evaluate_gemma_local(iso_code, runner, model_id, label=None, force=False):
         print(f"  Category '{category}' ({len(samples)} samples)...", flush=True)
 
         hyps = []
-        runner.truncated = 0
+        runner.no_answer = 0
         t0 = time.time()
         for i, s in enumerate(samples):
             try:
@@ -273,14 +273,19 @@ def evaluate_gemma_local(iso_code, runner, model_id, label=None, force=False):
             "samples": len(samples),
             "valid": valid,
             "avg_seconds_per_sample": round(elapsed / max(len(samples), 1), 2),
-            # Clips excluded from the score because generation ended without an
-            # answer. Two distinct causes: in thinking mode the model spends the
-            # whole token budget deliberating and never closes the thought; with
-            # thinking off the 12B still sometimes emits a "ghost" thought
-            # channel (the model card warns the larger models do) and leaves it
-            # unclosed. Recorded so a thin sample is distinguishable from a
-            # clean one.
-            **({"no_answer": runner.truncated} if runner.truncated else {}),
+            # Clips excluded from the score because the model returned no
+            # transcription. Two observed causes, both real:
+            #   * thinking on  — the whole token budget goes on deliberation and
+            #     the thought channel never closes, so the parsed response has
+            #     no content field.
+            #   * thinking off — the model declines outright, generating a single
+            #     `<turn|>` token. This is not truncation: retried at a 1024-token
+            #     budget, 0 of 5 such clips produced anything.
+            # The rate is far from uniform (~3-8% on Twi, ~23% on lower-resource
+            # languages like Gikyode and Dangme), so it is recorded per category —
+            # a score computed over 77% of the clips is not comparable to one over
+            # all of them without saying so.
+            **({"no_answer": runner.no_answer} if runner.no_answer else {}),
         }
         if wer is not None:
             cat_wers.append(wer)
@@ -289,9 +294,9 @@ def evaluate_gemma_local(iso_code, runner, model_id, label=None, force=False):
                   flush=True)
         else:
             print(f"    no valid output ({valid}/{len(samples)})", flush=True)
-        if runner.truncated:
-            print(f"    {runner.truncated} clip(s) produced no answer "
-                  f"(no content field — unclosed thought channel)", flush=True)
+        if runner.no_answer:
+            print(f"    {runner.no_answer} clip(s) returned no transcription "
+                  f"(excluded from the score)", flush=True)
 
         # Checkpoint after every category so an interrupted run resumes cleanly.
         _save(iso_code, language, category_names,
