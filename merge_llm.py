@@ -17,10 +17,16 @@ LLM_DIR = Path("benchmarks_llm")
 
 
 def _score(b):
+    """Ranking key: CER, lower is better.
+
+    The average of WER and CER used here originally predates the switch to
+    ranking by CER alone (33ac6ad), which left this fallback ordering LLM
+    entries on a different metric than the board it merges them into.
+    """
     if b.get("score") is not None:
         return b["score"]
-    if b.get("wer") is not None and b.get("cer") is not None:
-        return round((b["wer"] + b["cer"]) / 2, 4)
+    if b.get("cer") is not None:
+        return b["cer"]
     return None
 
 

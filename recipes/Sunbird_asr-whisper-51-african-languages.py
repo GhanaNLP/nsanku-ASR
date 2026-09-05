@@ -4,11 +4,21 @@ Architecture: Whisper (seq2seq), ~2B. Multilingual (51 African languages),
 force-included on the board despite the single-language rule.
 
 IMPORTANT — this model does NOT decode like a standard Whisper. Sunbird overwrote
-unused Whisper language-token ids with their own African-language tokens, so it
-must be driven with explicit `forced_decoder_ids` selecting the right token for
-the language being transcribed, and the processor must apply `do_normalize=True`.
-This is the loading code the model authors document on the model card; using the
-generic Whisper wrapper produces wrong-language / garbage output.
+unused Whisper language-token ids with their own African-language tokens, so
+decoding must start from the right token for the language being transcribed, and
+the processor must apply `do_normalize=True`. Using the generic Whisper wrapper
+produces wrong-language / garbage output.
+
+The language token is placed in the decoder prefix via `decoder_input_ids`, NOT
+via `forced_decoder_ids` as the model card shows. On transformers 5.x
+`WhisperGenerationMixin.generate` no longer accepts or references
+`forced_decoder_ids`: it is swallowed by `**kwargs` and silently ignored, leaving
+decoding to auto-detection. Nothing warns, and because this checkpoint sets no
+`generation_config.language` either, the fallback is a genuine regression rather
+than a harmless one — measured over Asante Twi bible clips, auto-detection scores
+CER ~0.44 against ~0.26 for the forced `<|aka|>` prefix, i.e. the ignored argument
+made the model look far worse than it is. `language="aka"` is not an option: the
+remapped ids are not names the Whisper tokenizer knows.
 
 Because the token depends on the language, `build_wrapper` takes `iso_code` and
 the benchmark passes the eval language through to it.
@@ -61,10 +71,16 @@ class SunbirdWhisper:
         self.model = transformers.WhisperForConditionalGeneration.from_pretrained(
             MODEL, low_cpu_mem_usage=True, **_hf_auth_kwargs()
         ).to(device).eval()
-        transcribe_tok = self.processor.tokenizer.convert_tokens_to_ids("<|transcribe|>")
-        notimestamps_tok = self.processor.tokenizer.convert_tokens_to_ids("<|notimestamps|>")
-        self.forced_decoder_ids = [(1, self.lang_tok), (2, transcribe_tok), (3, notimestamps_tok)]
-        # Custom forced_decoder_ids drive decoding; clear any config defaults.
+        tok = self.processor.tokenizer
+        sot_tok = tok.convert_tokens_to_ids("<|startoftranscript|>")
+        transcribe_tok = tok.convert_tokens_to_ids("<|transcribe|>")
+        notimestamps_tok = tok.convert_tokens_to_ids("<|notimestamps|>")
+        # The full decoder prefix, including <|startoftranscript|>: generate()
+        # continues from these ids rather than predicting the language itself.
+        self.decoder_input_ids = torch.tensor(
+            [[sot_tok, self.lang_tok, transcribe_tok, notimestamps_tok]],
+            device=device,
+        )
         self.model.config.forced_decoder_ids = None
         self.model.generation_config.forced_decoder_ids = None
 
@@ -81,7 +97,7 @@ class SunbirdWhisper:
             ).input_features.to(self.device)
             predicted_ids = self.model.generate(
                 input_features,
-                forced_decoder_ids=self.forced_decoder_ids,
+                decoder_input_ids=self.decoder_input_ids,
                 num_beams=1,
                 do_sample=False,
             )

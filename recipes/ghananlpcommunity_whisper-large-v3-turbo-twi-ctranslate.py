@@ -5,7 +5,14 @@ standardspeech_specaugment, published under the GhanaNLP org. The weights are
 stored as a CTranslate2 `model.bin`, so they cannot be loaded by transformers —
 they must be run through `faster-whisper` (the CTranslate2 runtime), which the
 model card documents. We drive `faster_whisper.WhisperModel` directly, forcing
-the Twi language so decoding never falls back to auto-detection.
+the language so decoding never falls back to auto-detection.
+
+Whisper has no Twi/Akan language code — faster-whisper rejects `language="tw"`
+outright ("'tw' is not a valid language code"), which is what made this model
+error out on every category. The upstream fine-tune
+(katrintomanek/whisper-large-v3-turbo_Akan_standardspeech_specaugment, of which
+this is the CT2 conversion) reuses the Yoruba slot for Twi — its
+`generation_config.json` records `language: "yo"` — so `yo` is the code to pass.
 
 Edit this file and open a PR at https://github.com/GhanaNLP/nsanku-ASR to change
 how this model is evaluated. `build_wrapper(device)` is what the benchmark calls.
@@ -17,6 +24,8 @@ from benchmark.models import _hf_auth_kwargs, cleanup_gpu
 
 MODEL = "ghananlpcommunity/whisper-large-v3-turbo-twi-ctranslate"
 SAMPLE_RATE = 16000
+# Whisper has no Twi code; this fine-tune uses the Yoruba slot (see docstring).
+LANGUAGE = "yo"
 
 
 class TwiWhisperCt2:
@@ -38,7 +47,7 @@ class TwiWhisperCt2:
             if arr.ndim > 1:
                 arr = arr.mean(axis=1)
             segments, _info = self.model.transcribe(
-                arr, language="tw", task="transcribe", beam_size=1, vad_filter=False
+                arr, language=LANGUAGE, task="transcribe", beam_size=1, vad_filter=False
             )
             text = " ".join(seg.text.strip() for seg in segments).strip()
             results.append(text)

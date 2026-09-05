@@ -15,7 +15,12 @@ if _env.exists():
 
 # Dataset — evaluation set with per-category configs ({category}_{Language}_{iso})
 GHANA_SPEECH_EVAL = "ghananlpcommunity/ghana-speech-eval"
-NUM_SAMPLES = 1000  # samples per category-config (dataset provides up to 1000)
+# Samples per category-config (dataset provides up to 1000). Overridable so a
+# model too slow to score the full set can still be measured on a stated subset
+# — a locally-run 12B LLM needs ~28s per clip, i.e. ~8h for one 1000-clip
+# category. Every result records its own per-category `samples`, so a reduced
+# run stays self-documenting rather than silently incomparable.
+NUM_SAMPLES = int(os.environ.get("NSANKU_NUM_SAMPLES", "1000"))
 SAMPLE_RATE = 16000
 
 # HuggingFace authentication — set HF_TOKEN in .env or environment.

@@ -1,13 +1,19 @@
-"""LLM ASR track — Gemini (gemini-3.6-flash concurrent with thread-local clients).
+"""LLM ASR track — Google Gemini / Gemma API models, concurrent workers.
 
-Transcribes the ghana-speech-eval audio with Google Gemini (a multimodal LLM) and
-scores it per category, averaged across the categories each language appears in —
-the same scoring as the non-LLM track. Gemini is a generalist model, so it is run
-on ALL eval languages (not just those with dedicated HF ASR models).
+Transcribes the ghana-speech-eval audio with a hosted multimodal LLM (Gemini or
+Gemma 4 via the Gemini API) and scores it per category, averaged across the
+categories each language appears in — the same scoring as the non-LLM track.
+These models are generalist, so they are run on ALL eval languages (not just
+those with dedicated HF ASR models).
 
-Results are written to a SEPARATE store (benchmarks_llm/{iso}.yaml) so this can run
-concurrently with the GPU pipeline without racing its YAML writes; a later merge
-step folds them into benchmarks/{iso}.yaml tagged model_class="llm".
+One model can be evaluated in several flavours (e.g. a Gemma 4 model with the
+internal thinking/reasoning process on or off); each flavour is recorded as a
+distinct model id (`google/{model}-{label}`). Runs are API-based (no GPU), so
+this can run concurrently with the GPU pipeline.
+
+Results are written to a SEPARATE store (benchmarks_llm/{iso}.yaml) so this can
+run concurrently with the GPU pipeline without racing its YAML writes; a later
+merge step folds them into benchmarks/{iso}.yaml tagged model_class="llm".
 """
 
 import collections
@@ -36,6 +42,7 @@ if env_path.exists():
                 os.environ.setdefault(k.strip(), v.strip())
 
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.6-flash")
+# Default (backward-compatible) model id for the flagship Gemini run.
 MODEL_ID = f"google/{GEMINI_MODEL}"
 MODEL_URL = f"https://ai.google.dev/gemini-api/docs/models#{GEMINI_MODEL}"
 
@@ -108,42 +115,64 @@ def default_prompt(language_name=None):
     )
 
 
-def _transcribe(wav_bytes, prompt):
-    """Transcribe one clip, or return None after exhausting the retry budget.
+def _build_config(thinking_level):
+    """Return a GenerateContentConfig, or None when no special config is needed.
 
-    Records WHY it gave up (see failure_summary): a transient API error, a
-    safety block, or a response the bracket parser could not read. Those are
-    very different failures and the caller could not previously tell them
-    apart.
+    `thinking_level` toggles the model's internal reasoning process where a
+    model supports it: 'high' = thinking on, 'minimal' = reasoning off. For
+    Gemma 4 the API only honours thinking_level (includeThoughts is silently
+    ignored and thinkingBudget is rejected), and 'minimal' reliably produces
+    zero thought tokens.
     """
+    if not thinking_level:
+        return None
     from google.genai import types
-    client = _get_thread_client()
-    reason = "unknown"
-    for attempt in range(MAX_RETRIES):
-        try:
-            resp = client.models.generate_content(
-                model=GEMINI_MODEL,
-                contents=[types.Content(parts=[
-                    types.Part.from_bytes(data=wav_bytes, mime_type="audio/wav"),
-                    types.Part.from_text(text=prompt),
-                ])],
-            )
-            # A safety block will not resolve on retry; stop and say so.
-            block = getattr(getattr(resp, "prompt_feedback", None), "block_reason", None)
-            if block:
-                _record_failure(f"blocked ({block})")
-                return None
-            raw = (resp.text or "").strip()
-            out = _parse(raw)
-            if out:
-                return out
-            reason = "empty response" if not raw else "unparseable response"
-        except Exception as e:
-            reason = type(e).__name__
-        if attempt < MAX_RETRIES - 1:
-            time.sleep(min(2.0 ** attempt, RETRY_BACKOFF_CAP))
-    _record_failure(reason)
-    return None
+    return types.GenerateContentConfig(
+        thinking_config=types.ThinkingConfig(thinking_level=thinking_level),
+    )
+
+
+def _make_transcribe(model, thinking_level):
+    """Build the per-run transcribe callable bound to a model + thinking level.
+
+    `thinking_level` of 'high' enables reasoning, 'minimal' disables it; None
+    leaves the model's default untouched.
+    """
+    config = _build_config(thinking_level)
+
+    def _transcribe(wav_bytes, prompt):
+        """Transcribe one clip, or return None after exhausting the retry budget."""
+        from google.genai import types
+        client = _get_thread_client()
+        reason = "unknown"
+        for attempt in range(MAX_RETRIES):
+            try:
+                resp = client.models.generate_content(
+                    model=model,
+                    contents=[types.Content(parts=[
+                        types.Part.from_bytes(data=wav_bytes, mime_type="audio/wav"),
+                        types.Part.from_text(text=prompt),
+                    ])],
+                    config=config,
+                )
+                # A safety block will not resolve on retry; stop and say so.
+                block = getattr(getattr(resp, "prompt_feedback", None), "block_reason", None)
+                if block:
+                    _record_failure(f"blocked ({block})")
+                    return None
+                raw = (resp.text or "").strip()
+                out = _parse(raw)
+                if out:
+                    return out
+                reason = "empty response" if not raw else "unparseable response"
+            except Exception as e:
+                reason = type(e).__name__
+            if attempt < MAX_RETRIES - 1:
+                time.sleep(min(2.0 ** attempt, RETRY_BACKOFF_CAP))
+        _record_failure(reason)
+        return None
+
+    return _transcribe
 
 
 def _transcribe_task(args):
@@ -152,8 +181,8 @@ def _transcribe_task(args):
     return idx, res or ""
 
 
-def _has_result(iso_code):
-    """True only if Gemini is scored on every category this language now has.
+def _has_result(iso_code, model_id):
+    """True only if `model_id` is scored on every category this language now has.
 
     The reported WER averages the categories that existed when it ran, so a
     language that has since gained one (lds, waxal) must be re-run rather than
@@ -166,17 +195,18 @@ def _has_result(iso_code):
     d = yaml.safe_load(open(path)) or {}
     want = {c for c, _ in language_categories(iso_code)}
     for b in d.get("benchmarks", []):
-        if b.get("model") != MODEL_ID or b.get("wer") is None:
+        if b.get("model") != model_id or b.get("wer") is None:
             continue
         return want <= set(b.get("per_category") or {})
     return False
 
 
 def _save(iso_code, language, category_names, result):
-    """Upsert Gemini's entry into benchmarks_llm/{iso}.yaml.
+    """Upsert an LLM entry into benchmarks_llm/{iso}.yaml.
 
-    The file can hold entries for several LLM-track models (OmniASR LLM writes
-    here too), so this merges by model id instead of replacing the file.
+    The file can hold entries for several LLM-track models (Gemini, OmniASR LLM,
+    and each Gemma flavour), so this merges by model id instead of replacing the
+    file.
     """
     LLM_BENCHMARK_DIR.mkdir(parents=True, exist_ok=True)
     path = LLM_BENCHMARK_DIR / f"{iso_code}.yaml"
@@ -184,7 +214,7 @@ def _save(iso_code, language, category_names, result):
     if path.exists():
         base = yaml.safe_load(open(path)) or {}
     by_model = {b["model"]: b for b in base.get("benchmarks", [])}
-    by_model[MODEL_ID] = result
+    by_model[result["model"]] = result
     out = {
         "iso_639_3": iso_code,
         "language": language,
@@ -196,28 +226,44 @@ def _save(iso_code, language, category_names, result):
         yaml.dump(out, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
 
 
-def evaluate_gemini(iso_code):
-    """Evaluate Gemini on one language across all its eval categories."""
+def evaluate_gemini(iso_code, model=None, thinking_level=None, label=None,
+                    max_workers=None):
+    """Evaluate a hosted LLM on one language across all its eval categories.
+
+    model            — Gemini API model string, e.g. 'gemma-4-12b-it'.
+    thinking_level   — 'high' (thinking on) / 'minimal' (reasoning off) / None.
+    label            — suffix for the recorded model id ('thinking' / 'nothink').
+    max_workers      — concurrency; defaults to MAX_WORKERS.
+    """
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         raise ValueError("GEMINI_API_KEY required. Make sure it is set or in .env")
+
+    model = model or GEMINI_MODEL
+    workers = max_workers or MAX_WORKERS
+    model_id = f"google/{model}" + (f"-{label}" if label else "")
+    model_url = f"https://ai.google.dev/gemini-api/docs/models#{model}"
+    thinking_tag = f" thinking={thinking_level}" if thinking_level else ""
+    transcribe = recipe_transcribe = _make_transcribe(model, thinking_level)
 
     cats = language_categories(iso_code)
     if not cats:
         print(f"  {iso_code} not in eval set - skipping")
         return
-    if _has_result(iso_code):
-        print(f"  Gemini already done for {iso_code} - skipping")
+    if _has_result(iso_code, model_id):
+        print(f"  {model_id} already done for {iso_code} - skipping")
         return
 
     meta = load_eval_configs()[iso_code]
     language = meta["language"]
     category_names = [c for c, _ in cats]
     # Per-language recipe (recipes/google_{model}__{iso}.py) owns this language's
-    # prompt and may replace the transcribe call entirely.
-    recipe = load_lang_recipe(MODEL_ID, iso_code)
-    transcribe = recipe_get(recipe, "transcribe", _transcribe)
-    print(f"\n{'=' * 60}\n  Gemini ({GEMINI_MODEL}) - {iso_code} ({language})  categories={category_names}\n{'=' * 60}", flush=True)
+    # prompt and may replace the transcribe call entirely. Named after the base
+    # api model (not the labelled flavour) so one recipe serves both thinking
+    # modes of the same model.
+    recipe = load_lang_recipe(f"google/{model}", iso_code)
+    transcribe = recipe_get(recipe, "transcribe", recipe_transcribe)
+    print(f"\n{'=' * 60}\n  {model_id} ({model}{thinking_tag}) - {iso_code} ({language})  categories={category_names}\n{'=' * 60}", flush=True)
     if recipe is not None:
         print(f"  recipe: {recipe.__name__.replace('nsanku_recipe_', '')}.py", flush=True)
 
@@ -227,7 +273,7 @@ def evaluate_gemini(iso_code):
     if path.exists():
         d = yaml.safe_load(open(path)) or {}
         for b in d.get("benchmarks", []):
-            if b.get("model") == MODEL_ID:
+            if b.get("model") == model_id:
                 existing = b.get("per_category") or {}
 
     per_category = dict(existing)
@@ -247,7 +293,7 @@ def evaluate_gemini(iso_code):
         lang_name = recipe_get(recipe, "LANGUAGE_NAME",
                                samples[0].get("language") or language)
         prompt = recipe_get(recipe, "PROMPT", default_prompt(lang_name))
-        print(f"  Category '{category}' ({len(samples)} samples, {MAX_WORKERS} workers)...", flush=True)
+        print(f"  Category '{category}' ({len(samples)} samples, {workers} workers)...", flush=True)
 
         tasks = []
         for i, s in enumerate(samples):
@@ -259,7 +305,7 @@ def evaluate_gemini(iso_code):
         reset_failures()
         t0 = time.time()
 
-        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
+        with ThreadPoolExecutor(max_workers=workers) as pool:
             futures = {pool.submit(_transcribe_task, t): t for t in tasks}
             for future in as_completed(futures):
                 idx, hyp = future.result()
@@ -276,7 +322,7 @@ def evaluate_gemini(iso_code):
         print(f"      Done {len(samples)} samples in {elapsed:.0f}s ({rate:.1f}/s)", flush=True)
 
         wer, cer, valid = _score(refs, hyps)
-        save_transcriptions(iso_code, MODEL_ID, category, refs, hyps)
+        save_transcriptions(iso_code, model_id, category, refs, hyps)
         failures = failure_summary()
         per_category[category] = {
             "wer": round(wer, 4) if wer is not None else None,
@@ -301,8 +347,8 @@ def evaluate_gemini(iso_code):
         avg_wer = round(sum(cat_wers) / len(cat_wers), 4) if cat_wers else None
         avg_cer = round(sum(cat_cers) / len(cat_cers), 4) if cat_cers else None
         result = {
-            "model": MODEL_ID,
-            "model_url": MODEL_URL,
+            "model": model_id,
+            "model_url": model_url,
             "owner": "google",
             "model_class": "llm",
             "params": "API",
@@ -318,8 +364,8 @@ def evaluate_gemini(iso_code):
     avg_wer = round(sum(cat_wers) / len(cat_wers), 4) if cat_wers else None
     avg_cer = round(sum(cat_cers) / len(cat_cers), 4) if cat_cers else None
     result = {
-        "model": MODEL_ID,
-        "model_url": MODEL_URL,
+        "model": model_id,
+        "model_url": model_url,
         "owner": "google",
         "model_class": "llm",
         "params": "API",

@@ -6,10 +6,20 @@ or tokenizer files — so the generic wrapper's `AutoProcessor` cannot load it.
 The processor therefore comes from the vanilla `openai/whisper-large-v3-turbo`,
 and the fine-tuned weights from this repo.
 
-The Akan/Twi token is forced through `forced_decoder_ids` (exactly as the model
-was trained / as Sunbird's recipe does) so decoding always emits the Twi
-language rather than relying on auto-detection, which on Twi audio can pick the
-wrong language.
+Whisper has no Twi/Akan language token — `<|tw|>` and `<|ak|>` are absent from
+the vocabulary, and `convert_tokens_to_ids` silently returns the unk id. This
+fine-tune reuses the Yoruba slot for Twi: its own `generation_config.json`
+records `language: "yo"`, so "yo" is the code to decode with, and it is passed
+explicitly here rather than left to that default.
+
+The language must go through `generate(language=..., task=...)`. Building
+`forced_decoder_ids` and passing it to `generate()` — which this recipe did
+originally — is silently DEAD on transformers 5.x: `WhisperGenerationMixin.generate`
+no longer accepts or references that argument, so it was swallowed by `**kwargs`
+and never applied. It happened to be harmless here only because the checkpoint's
+generation_config already defaults to `yo`: decoding with the forced ids, with
+auto-detection, and with `language="yo"` all produce byte-identical output. The
+explicit kwarg is kept so the recipe no longer depends on that default holding.
 
 Edit this file and open a PR at https://github.com/GhanaNLP/nsanku-ASR to change
 how this model is evaluated. `build_wrapper(device)` is what the benchmark calls.
@@ -25,6 +35,8 @@ MODEL = "katrintomanek/whisper-large-v3-turbo_Akan_standardspeech_specaugment"
 # The repo ships no feature-extractor/tokenizer; use the base turbo ones.
 BASE = "openai/whisper-large-v3-turbo"
 SAMPLE_RATE = 16000
+# Whisper has no Twi code; this fine-tune uses the Yoruba slot (see docstring).
+LANGUAGE = "yo"
 
 
 class AkanWhisperTurbo:
@@ -35,10 +47,6 @@ class AkanWhisperTurbo:
         self.model = transformers.WhisperForConditionalGeneration.from_pretrained(
             MODEL, low_cpu_mem_usage=True, **_hf_auth_kwargs()
         ).to(device).eval()
-        tw_tok = self.processor.tokenizer.convert_tokens_to_ids("<|tw|>")
-        transcribe_tok = self.processor.tokenizer.convert_tokens_to_ids("<|transcribe|>")
-        notimestamps_tok = self.processor.tokenizer.convert_tokens_to_ids("<|notimestamps|>")
-        self.forced_decoder_ids = [(1, tw_tok), (2, transcribe_tok), (3, notimestamps_tok)]
         self.model.config.forced_decoder_ids = None
         self.model.generation_config.forced_decoder_ids = None
 
@@ -55,7 +63,8 @@ class AkanWhisperTurbo:
             ).input_features.to(self.device)
             predicted_ids = self.model.generate(
                 input_features,
-                forced_decoder_ids=self.forced_decoder_ids,
+                language=LANGUAGE,
+                task="transcribe",
                 num_beams=1,
                 do_sample=False,
             )
