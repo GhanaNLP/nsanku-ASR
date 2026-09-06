@@ -184,6 +184,25 @@ benchmarks:
   model_class: non-llm
   score: 0.9547
   evaluated_at: '2026-08-10'
+- model: google/gemma-4-12B-it-nothink
+  model_url: https://huggingface.co/google/gemma-4-12B-it
+  owner: google
+  model_class: llm
+  params: 11.96B
+  score: 1.2868
+  runtime: local-gpu
+  thinking: nothink
+  wer: 1.4256
+  cer: 1.2868
+  per_category:
+    bible:
+      wer: 1.4256
+      cer: 1.2868
+      samples: 1000
+      valid: 847
+      avg_seconds_per_sample: 1.67
+      no_answer: 153
+  source: evaluated
 - model: alphaedge-ai/whisper-tiny-hau-32768
   model_url: https://huggingface.co/alphaedge-ai/whisper-tiny-hau-32768
   owner: alphaedge-ai
