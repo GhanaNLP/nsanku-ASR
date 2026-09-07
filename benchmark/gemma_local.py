@@ -57,10 +57,23 @@ ASR_PROMPT = (
 # Transcriptions of <=30s clips; generous enough for a long verse but bounded so
 # a degenerate repeat loop cannot stall a 1000-clip category.
 MAX_NEW_TOKENS = 256
-# Thinking mode needs room for the thought block AND the answer after it. At 256
-# the 12B reliably spends the whole budget deliberating ("Wait, let's re-listen")
-# and never closes the thought, yielding a response with no content field at all.
-MAX_NEW_TOKENS_THINKING = 1024
+
+# Thinking mode needs a HARD budget, not a bigger one. Asked to transcribe, the
+# 12B does not converge: it re-listens and second-guesses itself indefinitely
+# ("Wait, that sounds like... let's re-listen"), so raising the ceiling buys more
+# deliberation rather than an answer. At 256 tokens nothing ever closed the
+# thought channel, and at 1024 no clip finished at all.
+#
+# So the thought is capped and then CLOSED for the model: generate up to
+# THINK_BUDGET tokens, and if the thought channel is still open, append the
+# closing marker and generate the transcription from there. That is the same
+# contract as the hosted API's `thinking_level` — think, but within a bound —
+# and it guarantees a scorable answer instead of an empty response.
+THINK_BUDGET = 512
+ANSWER_BUDGET = 96
+# The thought channel's open/close markers, from the tokenizer's response_template.
+THOUGHT_OPEN = "<|channel>thought"
+THOUGHT_CLOSE = "<channel|>"
 
 
 class GemmaLocalASR:
@@ -79,10 +92,11 @@ class GemmaLocalASR:
         self.model = transformers.AutoModelForMultimodalLM.from_pretrained(
             model_id, dtype=torch.bfloat16, device_map=device,
         ).eval()
-        self.max_new_tokens = (MAX_NEW_TOKENS_THINKING if enable_thinking
-                               else MAX_NEW_TOKENS)
+        self.max_new_tokens = THINK_BUDGET if enable_thinking else MAX_NEW_TOKENS
         # Clips for which the model returned no transcription at all.
         self.no_answer = 0
+        # Clips whose thought channel had to be closed for the model to answer.
+        self.forced_close = 0
 
     def transcribe(self, audio_array, sample_rate, prompt):
         """Transcribe one clip. Returns "" if the model produced nothing.
@@ -131,11 +145,52 @@ class GemmaLocalASR:
             # closed empty thought block), and parse_response needs to see that
             # to know where the content field really starts.
             text = _final_answer(self.processor, decoded, inputs["input_ids"])
+
+            if (not text and self.enable_thinking
+                    and THOUGHT_OPEN in decoded and THOUGHT_CLOSE not in decoded):
+                # Out of thinking budget with the channel still open. Close it
+                # and let the model answer from there, rather than discarding a
+                # clip the model was still working on.
+                text = self._answer_after_forced_close(inputs, out[0])
+                if text:
+                    self.forced_close += 1
+
             if not text:
                 self.no_answer += 1
             return text
         finally:
             os.unlink(wav_path)
+
+    def _answer_after_forced_close(self, inputs, sequence):
+        """Append the thought-close marker and generate the transcription.
+
+        `sequence` is the full prompt+generation so far. The audio inputs are
+        passed again unchanged: the prompt half of the sequence still holds the
+        audio placeholder tokens they align to.
+        """
+        import torch
+
+        close_ids = self.processor.tokenizer(
+            THOUGHT_CLOSE, add_special_tokens=False, return_tensors="pt"
+        ).input_ids.to(sequence.device)
+        seq = torch.cat([sequence.unsqueeze(0), close_ids], dim=-1)
+        kwargs = {k: v for k, v in inputs.items()
+                  if k not in ("input_ids", "attention_mask")}
+        prefix_len = seq.shape[-1]
+        with torch.inference_mode():
+            out = self.model.generate(
+                input_ids=seq,
+                attention_mask=torch.ones_like(seq),
+                max_new_tokens=ANSWER_BUDGET,
+                do_sample=False,
+                **kwargs,
+            )
+        tail = self.processor.decode(out[0][prefix_len:], skip_special_tokens=False)
+        # The thought is already closed, so what follows is the content itself;
+        # parse_response is not given a prefix it can align to here.
+        for tok in ("<turn|>", "<eos>", "<end_of_turn>", THOUGHT_CLOSE):
+            tail = tail.replace(tok, "")
+        return " ".join(tail.split()).strip()
 
     def cleanup(self):
         import torch
@@ -249,6 +304,7 @@ def evaluate_gemma_local(iso_code, runner, model_id, label=None, force=False):
 
         hyps = []
         runner.no_answer = 0
+        runner.forced_close = 0
         t0 = time.time()
         for i, s in enumerate(samples):
             try:
@@ -286,6 +342,9 @@ def evaluate_gemma_local(iso_code, runner, model_id, label=None, force=False):
             # a score computed over 77% of the clips is not comparable to one over
             # all of them without saying so.
             **({"no_answer": runner.no_answer} if runner.no_answer else {}),
+            # Clips that only answered because the thinking budget ran out and
+            # the thought channel was closed for the model (see THINK_BUDGET).
+            **({"forced_close": runner.forced_close} if runner.forced_close else {}),
         }
         if wer is not None:
             cat_wers.append(wer)
@@ -297,6 +356,9 @@ def evaluate_gemma_local(iso_code, runner, model_id, label=None, force=False):
         if runner.no_answer:
             print(f"    {runner.no_answer} clip(s) returned no transcription "
                   f"(excluded from the score)", flush=True)
+        if runner.forced_close:
+            print(f"    {runner.forced_close} clip(s) answered after the thinking "
+                  f"budget was closed off", flush=True)
 
         # Checkpoint after every category so an interrupted run resumes cleanly.
         _save(iso_code, language, category_names,
