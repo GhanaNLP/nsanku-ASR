@@ -6,7 +6,6 @@ be run through the Gemini API at all):
 
   google/gemma-4-12B-it-thinking   base 12B, thinking ON
   google/gemma-4-12B-it-nothink    base 12B, thinking OFF
-  yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1   a 12B-it fine-tune
 
 Each variant loads its model ONCE and then walks every language, because the
 load is the expensive part (~24GB of weights) and a per-language reload would
@@ -27,6 +26,7 @@ so pass --langs and NSANKU_NUM_SAMPLES to bound what is actually run.
 Run:  python3 run_gemma_local.py 2>&1 | tee gemma_local.log
       python3 run_gemma_local.py --langs twi_asante twi_akuapem
       python3 run_gemma_local.py --variants base-nothink
+      python3 run_gemma_local.py --variants base-thinking --langs twi_asante
 """
 import argparse
 import os
@@ -42,16 +42,18 @@ from benchmark.evaluate import load_eval_configs
 from benchmark.gemma_local import GemmaLocalASR, evaluate_gemma_local
 
 BASE = "google/gemma-4-12B-it"
-CODER = "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1"
 
 # name -> (hf repo, record-id suffix, thinking on?)
 VARIANTS = {
     "base-thinking": (BASE, "thinking", True),
     "base-nothink": (BASE, "nothink", False),
-    # The fine-tune is run in one flavour only, matching the base's no-thinking
-    # run so the comparison isolates the fine-tune rather than the mode.
-    "coder": (CODER, None, False),
 }
+# The yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1 fine-tune was evaluated and
+# then dropped from the board. It scored CER 3.92 on Asante Twi against the base
+# model's 1.36 — a code/instruction tune answering every clip at length where a
+# bare transcription was asked for. It measured how far a coder fine-tune degrades
+# audio ability, not anything about ASR on these languages, so it is not carried
+# as a leaderboard entry.
 
 
 def main():

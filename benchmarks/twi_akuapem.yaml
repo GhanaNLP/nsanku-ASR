@@ -294,31 +294,6 @@ benchmarks:
       valid: 1000
       avg_seconds_per_sample: 0.13
   source: evaluated
-- model: yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1
-  model_url: https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1
-  owner: yuxinlu1
-  model_class: llm
-  params: 11.96B
-  score: 1.6326
-  runtime: local-gpu
-  thinking: nothink
-  wer: 1.7238
-  cer: 1.6326
-  per_category:
-    bible:
-      wer: 1.2161
-      cer: 1.0836
-      samples: 1000
-      valid: 1000
-      avg_seconds_per_sample: 0.79
-    finance:
-      wer: 2.2316
-      cer: 2.1816
-      samples: 1000
-      valid: 999
-      avg_seconds_per_sample: 0.59
-      no_answer: 1
-  source: evaluated
 - model: katrintomanek/whisper-large-v3-turbo_Akan_standardspeech_specaugment
   model_url: https://huggingface.co/katrintomanek/whisper-large-v3-turbo_Akan_standardspeech_specaugment
   owner: katrintomanek
