@@ -10,7 +10,7 @@ language. Define `transcribe(wav_bytes, khaya_code, key)` to replace the
 API call itself.
 
 Edit this file and open a pull request at
-https://github.com/GhanaNLP/nsanku-ASR to change how Kusaal is evaluated on the
+https://github.com/GhanaNLP/nsanku-asr-benchmark to change how Kusaal is evaluated on the
 next benchmark run.
 """
 

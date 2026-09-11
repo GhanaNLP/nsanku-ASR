@@ -1,4 +1,4 @@
-# nsanku-ASR
+# nsanku-ASR Benchmark
 
 Benchmarking **organization-owned** ASR models on Ghanaian languages — WER/CER evaluation
 across 43 Ghanaian language varieties using the
@@ -46,7 +46,7 @@ JW, Finance, and UNICEF WERs.
 ## Structure
 
 ```
-nsanku-ASR/
+nsanku-asr-benchmark/
 ├── benchmark/
 │   ├── config.py       # Paths, dataset name, HF_TOKEN, ORG_ONLY, sample count
 │   ├── dataset.py      # ghana-speech-eval loader (streaming, decode=False + soundfile)

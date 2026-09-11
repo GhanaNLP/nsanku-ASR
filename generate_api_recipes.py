@@ -29,7 +29,7 @@ from benchmark.google import MODEL_ID as GOOGLE_ID, EVAL_TO_GOOGLE
 from benchmark.khaya import MODEL_ID as KHAYA_ID, EVAL_TO_KHAYA
 
 RECIPES_DIR = Path(__file__).parent / "recipes"
-REPO_URL = "https://github.com/GhanaNLP/nsanku-ASR"
+REPO_URL = "https://github.com/GhanaNLP/nsanku-asr-benchmark"
 
 
 def _header(track, model_id, language, iso, note):

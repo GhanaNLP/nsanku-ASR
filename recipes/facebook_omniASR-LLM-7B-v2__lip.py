@@ -5,7 +5,7 @@ Scope: THIS LANGUAGE ONLY. Every eval language has its own recipe file, so
 changing this one does not affect the others.
 
 Edit this file and open a pull request at
-https://github.com/GhanaNLP/nsanku-ASR to change how Sekpele is evaluated.
+https://github.com/GhanaNLP/nsanku-asr-benchmark to change how Sekpele is evaluated.
 """
 
 

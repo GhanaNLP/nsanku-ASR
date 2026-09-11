@@ -16,7 +16,7 @@ Variant key:    300m-v1
     .venv-sherpa/bin/python run_sherpa.py --variant 300m-v1
 
 Edit this file and open a pull request at
-https://github.com/GhanaNLP/nsanku-ASR to change how this model is evaluated.
+https://github.com/GhanaNLP/nsanku-asr-benchmark to change how this model is evaluated.
 """
 
 MODEL_ID = "facebook/sherpa-onnx-omniASR-CTC-300M-v1"

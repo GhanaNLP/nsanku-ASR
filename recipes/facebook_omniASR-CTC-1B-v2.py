@@ -21,7 +21,7 @@ pins torch 2.8 while the main benchmark venv uses torch 2.11:
     .venv-omniasr/bin/python run_omniasr.py --preset ctc-1b
 
 Edit this file and open a pull request at
-https://github.com/GhanaNLP/nsanku-ASR to change how this model is evaluated.
+https://github.com/GhanaNLP/nsanku-asr-benchmark to change how this model is evaluated.
 """
 
 MODEL_ID = "facebook/omniASR-CTC-1B-v2"

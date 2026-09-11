@@ -26,7 +26,7 @@ are measurably slower).
 
 Set ONNX_DIR below (or the QWEN3_ASR_ONNX_DIR environment variable) to wherever
 the export landed. Edit this file and open a pull request at
-https://github.com/GhanaNLP/nsanku-ASR to change how this model is evaluated on
+https://github.com/GhanaNLP/nsanku-asr-benchmark to change how this model is evaluated on
 the next benchmark run. `build_wrapper(device)` is what the benchmark calls.
 """
 import os

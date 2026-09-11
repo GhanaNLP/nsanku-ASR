@@ -22,7 +22,7 @@ from benchmark.models import _detect_arch, is_ctc_model
 
 ROOT = Path(__file__).parent
 RECIPES_DIR = ROOT / "recipes"
-REPO_URL = "https://github.com/GhanaNLP/nsanku-ASR"
+REPO_URL = "https://github.com/GhanaNLP/nsanku-asr-benchmark"
 
 PRECISION = {
     "qwen2audio": "bf16",

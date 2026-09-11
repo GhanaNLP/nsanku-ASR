@@ -10,7 +10,7 @@ language. Define `transcribe(pcm_bytes, sample_rate, google_code)` to
 replace the API call itself.
 
 Edit this file and open a pull request at
-https://github.com/GhanaNLP/nsanku-ASR to change how Asante Twi is evaluated on the
+https://github.com/GhanaNLP/nsanku-asr-benchmark to change how Asante Twi is evaluated on the
 next benchmark run.
 """
 

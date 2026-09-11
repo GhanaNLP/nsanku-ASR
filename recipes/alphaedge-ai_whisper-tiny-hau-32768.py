@@ -6,7 +6,7 @@ Benchmarked languages: hau
 Status: passed - best avg WER 180.60% (avg WER+CER 168.02%)
 
 Edit this file and open a pull request at
-https://github.com/GhanaNLP/nsanku-ASR to change how this model is evaluated on the next
+https://github.com/GhanaNLP/nsanku-asr-benchmark to change how this model is evaluated on the next
 benchmark run. `build_wrapper(device)` is what the benchmark calls.
 """
 

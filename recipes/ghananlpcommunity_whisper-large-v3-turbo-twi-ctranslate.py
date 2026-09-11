@@ -14,7 +14,7 @@ error out on every category. The upstream fine-tune
 this is the CT2 conversion) reuses the Yoruba slot for Twi — its
 `generation_config.json` records `language: "yo"` — so `yo` is the code to pass.
 
-Edit this file and open a PR at https://github.com/GhanaNLP/nsanku-ASR to change
+Edit this file and open a PR at https://github.com/GhanaNLP/nsanku-asr-benchmark to change
 how this model is evaluated. `build_wrapper(device)` is what the benchmark calls.
 """
 

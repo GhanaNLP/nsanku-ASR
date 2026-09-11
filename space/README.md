@@ -26,4 +26,4 @@ Scored per category (Bible / JW / Finance / Unicef / LDS / WAXAL), averaged as t
 (`code` badge) showing the exact inference code used to run it, so model authors
 can correct how their model is evaluated via a pull request.
 
-Data source: [GhanaNLP/nsanku-ASR](https://github.com/GhanaNLP/nsanku-ASR)
+Data source: [GhanaNLP/nsanku-asr-benchmark](https://github.com/GhanaNLP/nsanku-asr-benchmark)

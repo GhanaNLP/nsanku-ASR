@@ -11,7 +11,7 @@ model directly: download the repo to a local dir, import `conformer_ctc` from it
 `src`, and run `greedy_decode`. The benchmark calls `transcribe_batch(audio, ...)`
 with 16 kHz float numpy arrays.
 
-Edit this file and open a PR at https://github.com/GhanaNLP/nsanku-ASR to change
+Edit this file and open a PR at https://github.com/GhanaNLP/nsanku-asr-benchmark to change
 how this model is evaluated.
 """
 

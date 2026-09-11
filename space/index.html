@@ -341,20 +341,20 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
     <!-- ====== Footer ====== -->
     <div class="footer">
       <div class="footer-links">
-        <a href="https://github.com/GhanaNLP/nsanku-ASR" target="_blank">GitHub</a>
+        <a href="https://github.com/GhanaNLP/nsanku-asr-benchmark" target="_blank">GitHub</a>
         <a href="https://huggingface.co/datasets/ghananlpcommunity/ghana-speech-eval" target="_blank">ghana-speech-eval dataset</a>
-        <a href="https://github.com/GhanaNLP/nsanku-ASR/tree/main/recipes" target="_blank">Model recipes</a>
+        <a href="https://github.com/GhanaNLP/nsanku-asr-benchmark/tree/main/recipes" target="_blank">Model recipes</a>
       </div>
       <p>WER = Word Error Rate · CER = Character Error Rate · Lower is better</p>
       <p>Some models failed due to: gated repos, cuDNN compatibility (H200 Hopper), outdated generation configs, or unsupported architectures.</p>
-      <p>Each model links to its <strong>code</strong> badge → the exact inference code used to run it. Model authors can correct how their model is evaluated via a <a href="https://github.com/GhanaNLP/nsanku-ASR/tree/main/recipes" target="_blank">recipe pull request</a>.</p>
+      <p>Each model links to its <strong>code</strong> badge → the exact inference code used to run it. Model authors can correct how their model is evaluated via a <a href="https://github.com/GhanaNLP/nsanku-asr-benchmark/tree/main/recipes" target="_blank">recipe pull request</a>.</p>
     </div>
   </div>
 </div>
 
 <script>
 // ====== Configuration ======
-const REPO = 'GhanaNLP/nsanku-ASR';
+const REPO = 'GhanaNLP/nsanku-asr-benchmark';
 const BRANCH = 'main';
 const RAW = `https://raw.githubusercontent.com/${REPO}/${BRANCH}`;
 const API = `https://api.github.com/repos/${REPO}/contents`;
@@ -1223,7 +1223,7 @@ async function main() {
       <div style="color:var(--danger)">
         <p>Failed to load benchmark data.</p>
         <p style="font-size:0.85rem; margin-top:8px">${escapeHtml(e.message)}</p>
-        <p style="margin-top:12px; font-size:0.85rem">Visit <a href="https://github.com/GhanaNLP/nsanku-ASR" target="_blank">GitHub repo</a> directly.</p>
+        <p style="margin-top:12px; font-size:0.85rem">Visit <a href="https://github.com/GhanaNLP/nsanku-asr-benchmark" target="_blank">GitHub repo</a> directly.</p>
       </div>
     `;
   }

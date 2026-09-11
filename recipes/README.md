@@ -57,7 +57,7 @@ and a comment, so enabling one is a one-line pull request.
 2. Edit the constants, or replace/extend `build_wrapper()` with a custom wrapper
    (subclass, custom `transcribe_batch`, LM post-processing, tokenizer handling,
    anything — it's plain Python).
-3. Open a pull request on [GhanaNLP/nsanku-ASR](https://github.com/GhanaNLP/nsanku-ASR).
+3. Open a pull request on [GhanaNLP/nsanku-asr-benchmark](https://github.com/GhanaNLP/nsanku-asr-benchmark).
 4. Once merged, the next benchmark run executes your code.
 
 Every model row in the leaderboard links to its recipe via the **code** badge.

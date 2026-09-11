@@ -23,7 +23,7 @@ remapped ids are not names the Whisper tokenizer knows.
 Because the token depends on the language, `build_wrapper` takes `iso_code` and
 the benchmark passes the eval language through to it.
 
-Edit this file and open a PR at https://github.com/GhanaNLP/nsanku-ASR to change
+Edit this file and open a PR at https://github.com/GhanaNLP/nsanku-asr-benchmark to change
 how this model is evaluated. `build_wrapper(device, iso_code)` is what the
 benchmark calls.
 """

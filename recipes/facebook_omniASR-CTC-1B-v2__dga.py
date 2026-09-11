@@ -6,7 +6,7 @@ changing this one does not affect the others, and it is separate from the
 recipes for the other omniASR checkpoints.
 
 Edit this file and open a pull request at
-https://github.com/GhanaNLP/nsanku-ASR to change how Dagaare is evaluated.
+https://github.com/GhanaNLP/nsanku-asr-benchmark to change how Dagaare is evaluated.
 """
 
 

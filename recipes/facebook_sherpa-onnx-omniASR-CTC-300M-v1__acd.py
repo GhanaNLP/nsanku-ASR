@@ -6,7 +6,7 @@ changing this one does not affect the others, and each model size has its own
 set.
 
 Edit this file and open a pull request at
-https://github.com/GhanaNLP/nsanku-ASR to change how Gikyode is evaluated.
+https://github.com/GhanaNLP/nsanku-asr-benchmark to change how Gikyode is evaluated.
 """
 
 

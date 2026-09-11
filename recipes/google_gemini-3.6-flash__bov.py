@@ -11,7 +11,7 @@ brackets (see `benchmark.gemini._parse`), so keep that instruction unless
 you also override `transcribe(wav_bytes, prompt)`.
 
 Edit this file and open a pull request at
-https://github.com/GhanaNLP/nsanku-ASR to change how Tuwuli is evaluated on the
+https://github.com/GhanaNLP/nsanku-asr-benchmark to change how Tuwuli is evaluated on the
 next benchmark run.
 """
 

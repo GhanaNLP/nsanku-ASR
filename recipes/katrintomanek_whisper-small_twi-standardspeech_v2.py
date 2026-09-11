@@ -21,7 +21,7 @@ generation_config already defaults to `yo`: decoding with the forced ids, with
 auto-detection, and with `language="yo"` all produce byte-identical output. The
 explicit kwarg is kept so the recipe no longer depends on that default holding.
 
-Edit this file and open a PR at https://github.com/GhanaNLP/nsanku-ASR to change
+Edit this file and open a PR at https://github.com/GhanaNLP/nsanku-asr-benchmark to change
 how this model is evaluated. `build_wrapper(device)` is what the benchmark calls.
 """
 

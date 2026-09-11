@@ -6,7 +6,7 @@ Benchmarked languages: kus
 Status: passed - best avg WER 37.90% (avg WER+CER 27.61%)
 
 Edit this file and open a pull request at
-https://github.com/GhanaNLP/nsanku-ASR to change how this model is evaluated on the next
+https://github.com/GhanaNLP/nsanku-asr-benchmark to change how this model is evaluated on the next
 benchmark run. `build_wrapper(device)` is what the benchmark calls.
 """
 

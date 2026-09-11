@@ -6,7 +6,7 @@ Benchmarked languages: dag
 Status: not yet benchmarked (queued for the next run)
 
 Edit this file and open a pull request at
-https://github.com/GhanaNLP/nsanku-ASR to change how this model is evaluated on the next
+https://github.com/GhanaNLP/nsanku-asr-benchmark to change how this model is evaluated on the next
 benchmark run. `build_wrapper(device)` is what the benchmark calls.
 """
 
